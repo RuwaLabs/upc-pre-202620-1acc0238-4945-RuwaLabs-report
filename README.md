@@ -20,7 +20,7 @@ Mayta Guillermo, Jorge Luis
 RuwaLabs
 
 **Proyecto**  
-[En proceso]
+MiPosta PE
 
 **Integrantes**
 
