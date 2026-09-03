@@ -74,8 +74,4 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> - </td>
     </tr>
 </table>
-        <td> - </td>
-        <td> Ingeniería de Software </td>
-        <td> - </td>
-    </tr>
-</table>
+
