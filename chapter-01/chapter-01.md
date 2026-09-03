@@ -26,4 +26,52 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
         <td> Innovación, accesibilidad, compromiso, responsabilidad y orientación al usuario. </td>
     </tr>
 </table>
+### 1.1.2. Perfiles de los integrantes del equipo ###
+
+En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
+
+<table>
+    <tr>
+        <td> Foto </td>
+        <td> Integrante </td>
+        <td> Código </td>
+        <td> Carrera </td>
+        <td> Habilidades y conocimientos técnicos </td>
+    </tr>
+    <tr>
+        <td> - </td>
+        <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
+        <td> - </td>
+        <td> Ingeniería de Software </td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td> https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true </td>
+        <td>Meza Solórzano, Didier Sebastian</td>
+        <td>u202319950</td>
+        <td> Ingeniería de Software </td>
+        <td>Soy estudiante de Ingeniería de Software con interés en el desarrollo de aplicaciones móviles y soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
+    </tr>
+    <tr>
+        <td> - </td>
+        <td>Montoya Nina, Paula Fernanda</td>
+        <td> - </td>
+        <td> Ingeniería de Software </td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td> - </td>
+        <td>Ramos Mera, Neo Daniel</td>
+        <td> - </td>
+        <td> Ingeniería de Software </td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td> - </td>
+        <td>Torres Juárez, Alisee Muriel</td>
+        <td> - </td>
+        <td> Ingeniería de Software </td>
+        <td> - </td>
+    </tr>
+</table>
 
