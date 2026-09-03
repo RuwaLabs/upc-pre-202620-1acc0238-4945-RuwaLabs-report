@@ -86,7 +86,7 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
   <img
     src="https://i.imgur.com/7aTgCkT.jpeg"
     alt="Icono de SaludYa"
-    width="300"
+    width="500"
   />
 </p>
 
