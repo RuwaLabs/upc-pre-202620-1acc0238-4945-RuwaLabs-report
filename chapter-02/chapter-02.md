@@ -21,3 +21,19 @@
 | **Análisis SWOT — Debilidades** | Requiere una conexión estable a internet y la adopción digital del personal administrativo del establecimiento. | Enfocado en el sector privado, sin cobertura de establecimientos públicos de salud. | Enfocado únicamente en consultorios y clínicas privadas. | Cobertura limitada a determinados hospitales, sin funcionalidades como lista de espera dinámica, check-in por QR o gestión interna del flujo de atención. |
 | **Análisis SWOT — Oportunidades** | Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud. | Expansión hacia convenios con aseguradoras y nuevas especialidades. | Expansión hacia convenios con establecimientos públicos de salud. | Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades. |
 | **Análisis SWOT — Amenazas** | Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas. | Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos. | Competencia de plataformas más consolidadas como Doctoralia. | Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público. |
+
+### 2.1.2. Estrategias y tácticas frente a competidores ###
+
+Una vez realizado la identificación de fortalezas, oportunidades, debilidades y amenazas con el análisis FODA de nuestros competidores en el sector del mercado, pasaremos a plantear las estrategias y tácticas para hacerle frente a estos mismos.
+
+* Expansión de integraciones: Integrar SaludYa con los sistemas de información del MINSA y del Seguro Integral de Salud (SIS), así como con los sistemas hospitalarios (HIS) de los establecimientos, facilitando la interoperabilidad y el registro unificado de citas.
+
+* Soporte Postventa: Brindar soporte técnico y asesoría continua al personal asistencial y administrativo, garantizando el máximo aprovechamiento de las funcionalidades y una adopción institucional sostenida en el tiempo.
+
+* Visibilidad y seguimiento en tiempo real: Incorporar capacidades de seguimiento del flujo de pacientes, cupos y listas de espera mediante herramientas accesibles y de fácil comprensión tanto para el paciente como para el personal.
+
+* Diferenciación por soporte y capacitación: Ofrecer capacitación digital al personal asistencial y administrativo de los establecimientos públicos de salud, muchos de los cuales presentan resistencia o poca familiaridad con herramientas tecnológicas.
+
+* Alianzas estratégicas con el sector público: Establecer alianzas con el MINSA, redes de salud y DIRIS para promover una adopción institucional temprana y respaldada oficialmente.
+
+* MVP enfocado en lo esencial: Iniciar con un MVP centrado en las funcionalidades esenciales —reserva de citas, lista de espera dinámica y notificaciones— para minimizar riesgos y validar la solución antes de escalar nuevas funciones.
