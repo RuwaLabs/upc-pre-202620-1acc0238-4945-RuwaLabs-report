@@ -84,7 +84,7 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/chapter-01/chapter-01/assets/Icon_SaludYa.jpg"
+    src="https://i.imgur.com/7aTgCkT.jpeg"
     alt="Icono de SaludYa"
     width="300"
   />
@@ -206,7 +206,7 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/chapter-01/chapter-01/assets/Modelo_Ishikawa.JPG"
+    src="https://i.imgur.com/V84h3fK.jpeg"
     alt="Diagrama de Ishikawa"
     width="700"
   />
@@ -225,3 +225,4 @@ El diagrama identifica **seis categorías principales de causas** que contribuye
 - **Entorno:** Infraestructura limitada, alta demanda de pacientes, condiciones socioeconómicas que pueden dificultar el acceso y distancia entre el domicilio del paciente y el establecimiento de salud.
 
 - **Medición:** Falta de indicadores relacionados con el ausentismo, tiempos de espera y satisfacción de los pacientes, así como disponibilidad limitada de reportes para apoyar la mejora continua.
+
