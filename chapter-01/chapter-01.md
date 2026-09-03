@@ -46,7 +46,7 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> - </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" width="160"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" width="220"> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
         <td> Ingeniería de Software </td>
@@ -69,6 +69,11 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
     <tr>
         <td> - </td>
         <td>Torres Juárez, Alisee Muriel</td>
+        <td> - </td>
+        <td> Ingeniería de Software </td>
+        <td> - </td>
+    </tr>
+</table>
         <td> - </td>
         <td> Ingeniería de Software </td>
         <td> - </td>
