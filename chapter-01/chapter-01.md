@@ -272,4 +272,23 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - Si los pacientes cuentan con una lista de espera dinámica y reciben notificaciones ante cupos liberados por cancelaciones, entonces se aprovechará mejor la disponibilidad existente y se reducirán los tiempos de espera.
 - Si el personal asistencial y administrativo dispone de una aplicación que les permita visualizar el flujo de pacientes y gestionar cambios o cancelaciones, entonces podrán optimizar la atención y reducir la carga operativa asociada a la gestión manual de citas.
 
+#### 1.2.2.3. Lean UX Hypothesis Statements ####
+
+- **Hypothesis Statement 1**
+**Creemos que** lograremos una reducción en las colas presenciales y un mejor aprovechamiento de los cupos disponibles.
+**Sabremos que** si los pacientes
+**Obtienen** visibilidad en tiempo real sobre la disponibilidad de citas y la posibilidad de unirse a una lista de espera dinámica
+**Cuando veamos** una solución digital que permita reservar, gestionar y recibir notificaciones sobre sus citas médicas.
+
+- **Hypothesis Statement 2**
+**Creemos que** lograremos un aumento en la satisfacción de los pacientes y una reducción en los tiempos de espera percibidos.
+**Sabremos que** los pacientes
+**Cuando veamos** mejor acceso a recordatorios, orientación inicial sobre síntomas y check-in mediante código QR
+**Con** una funcionalidad que agilice su llegada y atención en el establecimiento.
+
+- **Hypothesis Statement 3**
+**Creemos que** lograremos una mejora en el control del flujo de atención y una reducción en la carga operativa del personal.
+**Sabremos que** si el personal asistencial y administrativo
+**Obtiene** la capacidad de gestionar cambios, cancelaciones y el estado de las atenciones en tiempo real
+**Cuando veamos** con una aplicación que centralice la información de pacientes y citas programadas.
 
