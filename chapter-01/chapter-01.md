@@ -84,7 +84,7 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/refs/heads/chapter-01/chapter-01/assets/Icon_SaludYa.jpg"
+    src="https://imgur.com/7aTgCkT"
     alt="Icono de SaludYa"
     width="300"
   />
@@ -206,7 +206,7 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/refs/heads/chapter-01/chapter-01/assets/Modelo_Ishikawa.JPG"
+    src="https://imgur.com/V84h3fK"
     alt="Diagrama de Ishikawa"
     width="700"
   />
