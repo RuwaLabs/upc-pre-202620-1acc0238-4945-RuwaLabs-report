@@ -327,8 +327,4 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Problema:** La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - **Necesidad:** Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
 
-      <td>Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público.</td>
-    </tr>
-  </tbody>
-</table>
 
