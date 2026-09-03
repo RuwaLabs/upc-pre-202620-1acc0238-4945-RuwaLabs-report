@@ -37,3 +37,64 @@ Una vez realizado la identificación de fortalezas, oportunidades, debilidades y
 * Alianzas estratégicas con el sector público: Establecer alianzas con el MINSA, redes de salud y DIRIS para promover una adopción institucional temprana y respaldada oficialmente.
 
 * MVP enfocado en lo esencial: Iniciar con un MVP centrado en las funcionalidades esenciales —reserva de citas, lista de espera dinámica y notificaciones— para minimizar riesgos y validar la solución antes de escalar nuevas funciones.
+
+## _2.2. Entrevistas_ ##
+
+### 2.2.1. Diseño de entrevistas ###
+
+**Segmento objetivo 1: Pacientes de zonas urbanas periféricas**
+
+**Preguntas demográficas:**
+- ¿Qué edad tienes?
+- ¿En qué distrito vives?
+- ¿A qué te dedicas actualmente?
+- ¿Con qué frecuencia tú o algún familiar utilizan una posta, centro de salud o materno-infantil?
+
+**Preguntas principales:**
+- Cuéntame la última vez que necesitaste sacar una cita médica. ¿Cómo fue todo el proceso?
+- ¿Normalmente tienes que ir presencialmente para conseguir una cita?
+- ¿Cuánto tiempo aproximadamente sueles esperar para conseguir una cita?
+- ¿Alguna vez has llegado al establecimiento y ya no había cupos disponibles? ¿Qué hiciste?
+- ¿Cuál consideras que es la parte más complicada de conseguir una cita?
+- ¿Alguna vez has tenido que madrugar para conseguir una cita? ¿Cómo fue esa experiencia?
+- ¿Alguna vez has perdido una cita que ya habías conseguido? ¿Por qué?
+- Cuando no consigues una cita, ¿qué alternativas utilizas?
+
+**Preguntas sobre la solución:**
+- ¿Qué celular utilizas actualmente y qué aplicaciones usas con mayor frecuencia?
+- ¿Has utilizado alguna vez una aplicación o página web para reservar una cita o turno?
+- ¿Qué tan cómodo/a te sientes realizando trámites desde tu celular y qué dificultades encuentras al hacerlo?
+- Si pudieras cambiar algo del proceso actual para conseguir una cita, ¿qué cambiarías?
+- ¿Qué información te gustaría conocer antes de acudir al establecimiento?
+- ¿Qué tan útil sería para ti saber desde tu celular qué días y horarios tienen disponibilidad?
+- Si una cita se libera porque otra persona canceló, ¿cómo te gustaría enterarte?
+- ¿Qué características tendría que tener una aplicación para que confiaras en ella para gestionar tus citas médicas?
+- Si mañana necesitas una cita médica, ¿qué parte del proceso actual te gustaría evitar?
+
+---
+
+**Segmento objetivo 2: Personal asistencial y administrativo**
+
+**Preguntas demográficas:**
+- ¿Cuál es su cargo dentro del establecimiento?
+- ¿Cuánto tiempo lleva trabajando aquí?
+- ¿Cuáles son sus principales funciones relacionadas con la atención de pacientes?
+
+**Preguntas principales:**
+- ¿Podría explicarme cómo funciona actualmente el proceso desde que un paciente solicita una cita hasta que recibe atención?
+- ¿Cómo se asignan actualmente los cupos y cómo se informa a los pacientes sobre los horarios disponibles?
+- ¿Qué ocurre cuando los cupos se agotan?
+- ¿Cómo gestionan actualmente las cancelaciones y qué ocurre cuando un paciente no se presenta a su cita?
+- ¿Cómo controlan actualmente a los pacientes que están esperando ser atendidos?
+- ¿Cuál considera que es el principal problema en la gestión de citas?
+- ¿En qué momentos del día suelen tener mayor cantidad de pacientes?
+- ¿Qué actividades relacionadas con las citas les toman más tiempo, y qué errores o dificultades ocurren con mayor frecuencia?
+- ¿Qué sucede cuando existe una gran cantidad de pacientes esperando?
+- ¿Qué parte del proceso actual considera que debería mejorarse primero?
+
+**Preguntas sobre la solución:**
+- ¿Qué sistemas o aplicaciones utilizan actualmente para gestionar las citas y qué dificultades tienen con ellas?
+- ¿Qué información considera que sería útil visualizar en tiempo real?
+- ¿Qué tan útil sería contar con un sistema que muestre el estado de cada paciente y qué información debería mostrar ese sistema para facilitar su trabajo?
+- Si pudiera eliminar una tarea problemática de su trabajo relacionada con la gestión de citas o pacientes, ¿cuál sería?
+- ¿Qué cambiaría del proceso actual para mejorar la atención de los pacientes y facilitar el trabajo del personal?
