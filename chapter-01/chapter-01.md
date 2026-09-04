@@ -307,17 +307,17 @@ La imagen presenta una matriz dividida en ocho secciones que abordan desde la id
 
 A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución **SaludYa** para la gestión de citas médicas en establecimientos públicos de salud.
 
-**Segmento objetivo 1: Pacientes de zonas urbanas periféricas**
+**Segmento objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud**
 
 - **Datos demográficos:**
-  - Edad: Rango amplio, incluyendo adultos que gestionan sus propias citas y las de familiares o dependientes (hijos, adultos mayores).
+  - Edad: Entre 18 y 65 años, incluyendo adultos que gestionan sus propias citas y las de familiares o dependientes (hijos, adultos mayores).
   - Ocupación: Diversa, incluyendo personas que trabajan, estudian o se dedican a labores del hogar.
   - Lugar de residencia: Zonas urbanas periféricas de Lima Metropolitana, Perú.
 - **Perfil:** Pacientes que acuden con cierta frecuencia a postas, centros de salud o establecimientos materno-infantiles públicos, y que muchas veces también gestionan la atención médica de familiares o personas a su cargo.
 - **Problema:** La dependencia de procesos presenciales o telefónicos para conseguir una cita genera tiempos de espera elevados, cupos limitados, desinformación sobre la disponibilidad y el riesgo de perder citas ya conseguidas por falta de recordatorios.
 - **Necesidad:** Una solución digital accesible desde el celular que permita reservar citas médicas, conocer la disponibilidad en tiempo real, recibir notificaciones cuando se libere un cupo y gestionar tanto sus propias citas como las de sus familiares o dependientes.
 
-**Segmento objetivo 2: Personal asistencial y administrativo**
+**Segmento objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
 
 - **Datos demográficos:**
   - Edad: Mayores de 18 años.
@@ -326,5 +326,4 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Perfil:** Personal responsable de la gestión de citas, la atención de pacientes y el control del flujo de atención dentro de los establecimientos públicos de salud.
 - **Problema:** La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - **Necesidad:** Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
-
 
