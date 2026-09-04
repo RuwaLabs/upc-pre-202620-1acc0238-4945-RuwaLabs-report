@@ -42,13 +42,14 @@ Una vez realizado la identificación de fortalezas, oportunidades, debilidades y
 
 ### 2.2.1. Diseño de entrevistas ###
 
-**Segmento objetivo 1: Pacientes de zonas urbanas periféricas**
+**Segmento objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud**
 
 **Preguntas demográficas:**
 - ¿Qué edad tienes?
 - ¿En qué distrito vives?
 - ¿A qué te dedicas actualmente?
-- ¿Con qué frecuencia tú o algún familiar utilizan una posta, centro de salud o materno-infantil?
+- ¿A qué posta, centro de salud o establecimiento materno-infantil acudes con mayor frecuencia?
+- ¿Con qué frecuencia tú o algún familiar utilizan dicho establecimiento?
 
 **Preguntas principales:**
 - Cuéntame la última vez que necesitaste sacar una cita médica. ¿Cómo fue todo el proceso?
@@ -73,10 +74,12 @@ Una vez realizado la identificación de fortalezas, oportunidades, debilidades y
 
 ---
 
-**Segmento objetivo 2: Personal asistencial y administrativo**
+**Segmento objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
 
 **Preguntas demográficas:**
 - ¿Cuál es su cargo dentro del establecimiento?
+- ¿En qué establecimiento de salud trabaja (posta, centro de salud u hospital)?
+- ¿En qué distrito se ubica dicho establecimiento?
 - ¿Cuánto tiempo lleva trabajando aquí?
 - ¿Cuáles son sus principales funciones relacionadas con la atención de pacientes?
 
