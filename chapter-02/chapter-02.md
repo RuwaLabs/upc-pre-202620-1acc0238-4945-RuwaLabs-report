@@ -93,3 +93,61 @@ Entrevista 6:
 | <p align="center"></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante |
 | [Link]() | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda.|
+
+### 2.2.3. Análisis de entrevistas ###
+
+En primer lugar, con base en las tres entrevistas realizadas al primer segmento objetivo, conformado por los pacientes de zonas urbanas periféricas, se puede concluir lo siguiente:
+
+* Los usuarios perciben que el proceso actual para conseguir una cita médica presencial no satisface sus necesidades, ya que depende de madrugar y hacer largas colas sin certeza de conseguir cupo, lo cual afecta su tiempo laboral y personal.
+
+* Aunque algunos usuarios no han utilizado antes una aplicación para reservar citas médicas, sí manifiestan interés en contar con una herramienta digital que les permita conocer la disponibilidad en tiempo real. Consideran que esto les brindaría mayor seguridad, ahorro de tiempo y una mejor planificación de sus actividades diarias.
+
+* Los usuarios requieren una aplicación que les permita conocer la disponibilidad de citas, recibir notificaciones ante cupos liberados y gestionar sus citas sin necesidad de acudir físicamente al establecimiento. Esta solución debe estar orientada a reducir la incertidumbre del proceso actual y facilitar el acceso oportuno a la atención médica.
+
+A continuación, se presentan los porcentajes destacados en las respuestas de los entrevistados a las preguntas planteadas:
+
+* Uso previo de aplicaciones para reservar citas o turnos:
+
+  <p align="center"><img src="https://i.imgur.com/jQEpbDj.png" alt="uso_apps_pacientes"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos.
+
+* Comodidad realizando trámites desde el celular:
+
+  <p align="center"><img src="https://i.imgur.com/nSAfgXx.png" alt="comodidad_celular_pacientes"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones.
+
+* Utilidad de ver la disponibilidad de citas en tiempo real:
+
+  <p align="center"><img src="https://i.imgur.com/KN9jH35.png" alt="utilidad_disponibilidad_pacientes"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento.
+
+Segundo, con base en las tres entrevistas realizadas al segundo segmento objetivo, conformado por el personal asistencial y administrativo, se puede concluir lo siguiente:
+
+* El personal reconoce que el proceso actual de gestión de citas depende en gran medida de registros manuales, lo cual puede generar errores, pérdida de información y una atención desorganizada cuando hay mucha demanda.
+
+* El personal enfrenta dificultades para controlar en tiempo real la disponibilidad de cupos, las cancelaciones y el flujo de pacientes en espera, lo que puede generar malentendidos, reclamos y sobrecarga operativa.
+
+* El personal considera que contar con un sistema digital que centralice la información de los pacientes y muestre el estado de la atención en tiempo real facilitaría considerablemente su trabajo diario, permitiendo una mejor organización y un servicio más eficiente.
+
+A continuación, se presentan los porcentajes destacados en las respuestas de los entrevistados a las preguntas planteadas:
+
+* Sistema de gestión utilizado actualmente:
+
+  <p align="center"><img src="https://i.imgur.com/2xmnVjy.png" alt="sistema_actual_personal"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel.
+
+* Necesidad de un sistema con información en tiempo real:
+
+  <p align="center"><img src="https://i.imgur.com/2I5aa41.png" alt="necesidad_sistema_personal"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes.
+
+* Momento del día con mayor cantidad de pacientes:
+
+  <p align="center"><img src="https://i.imgur.com/sEnlY8C.png" alt="mayor_demanda_personal"/></p>
+
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes.
