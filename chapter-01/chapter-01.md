@@ -53,11 +53,11 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td>Soy estudiante de Ingeniería de Software con interés en el desarrollo de aplicaciones móviles y soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
     </tr>
     <tr>
-        <td> - </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
         <td>Montoya Nina, Paula Fernanda</td>
-        <td> - </td>
+        <td>u20241d934</td>
         <td> Ingeniería de Software </td>
-        <td> - </td>
+        <td>Mi nombre es Paula Fernanda Montoya Nina, tengo 19 años y curso el 6.º ciclo de la carrera de Ingeniería de Software, con código u20241D934. Tengo un enfoque de trabajo que prioriza la planificación y el orden estructural antes de iniciar cualquier implementación técnica. Mis fortalezas son la organización de flujos de trabajo eficiente y, además, puedo desempeñar múltiples roles dentro de un proyecto, ya sea en frontend o backend, aunque prefiero dedicarme a la gestión de datos. Mi propósito es profundizar mis conocimientos en la arquitectura de Software, además de mejorar mi capacidad de colaboración en equipo para contribuir activamente en la creación de soluciones tecnológicas.</td>
     </tr>
     <tr>
         <td> - </td>
