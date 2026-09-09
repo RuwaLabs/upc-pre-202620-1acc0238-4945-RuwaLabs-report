@@ -610,3 +610,32 @@ Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisi
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, módulo de inscripción a lista de espera dinámica, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, controles manuales de reasignación y priorización preferencial, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional.
 
 <p align="center"> <img src="https://i.imgur.com/0D0vHje.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+---
+
+### 2.4.4. Product Backlog
+
+El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints.
+
+#### Tabla del Product Backlog
+
+| # Orden | User Story ID | Título | Story Points | Sprint |
+| :---: | :---: | :--- | :---: | :---: |
+| 1 | US-00 | Landing Page informativa y captura de pacientes/centros | 2 | Sprint 1 |
+| 2 | US-01 | Reserva de cita médica por especialidad | 5 | Sprint 1 |
+| 3 | US-02 | Registro de llegada mediante código QR | 3 | Sprint 1 |
+| 4 | US-03 | Monitoreo de la sala de espera y llamado a consultorio | 5 | Sprint 2 |
+| 5 | US-04 | Reasignación manual de turnos por prioridad de atención | 3 | Sprint 2 |
+| 6 | US-05 | Generación de reportes de tiempos de espera y métricas de asistencia | 3 | Sprint 2 |
+| 7 | TS-01 | API Endpoint para la validación y registro de Check-in QR | 3 | Sprint 2 |
+| 8 | SP-01 | Investigación de arquitectura para notificaciones en tiempo real | 2 | Sprint 1 |
+
+---
+
+#### Evidencia de Herramienta de Gestión (Product Backlog)
+
+**Enlace Público al Product Backlog:**  
+[Ver Product Backlog en la herramienta]
+
+**Captura del Product Backlog:**
+[Product Backlog en Herramienta]
