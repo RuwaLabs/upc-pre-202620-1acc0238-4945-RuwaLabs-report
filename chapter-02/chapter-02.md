@@ -258,5 +258,19 @@ En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del n
 
 <p align="center"> <img src="https://i.imgur.com/QDRTLVm.png" alt="Step 4 - Hotspots and Exceptions" width="85%"/> </p>
 
+---
 
 ### 2.3.6. Ubiquitous Language
+
+Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el **Lenguaje Ubicuo**. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema.
+
+| Ubiquitous Language (Inglés / Código) | Definición en el Dominio de SaludYa |
+| :--- | :--- |
+| `Patient` | Usuario final que solicita, reserva o gestiona atenciones médicas para sí mismo o para sus familiares dependientes en un centro de salud público. |
+| `Admission Staff` | Usuario operativo encargado de aperturar agendas, gestionar la atención en ventanilla y monitorear el flujo de la sala de espera. |
+| `Time Slot` | Intervalo de tiempo asignado a una especialidad médica para la atención de un único paciente en una fecha y horario determinado. |
+| `Booking` / `Appointment` | Proceso mediante el cual un paciente asegura un cupo médico a través de la aplicación móvil antes de acudir presencialmente. |
+| `Check-in` | Validación de asistencia presencial realizada por el paciente mediante el escaneo de un código QR al llegar al centro de salud. |
+| `Dynamic Waitlist` | Mecanismo automatizado que gestiona las solicitudes en cola y reasigna inmediatamente los cupos liberados por cancelaciones o inasistencias. |
+| `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
+| `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
