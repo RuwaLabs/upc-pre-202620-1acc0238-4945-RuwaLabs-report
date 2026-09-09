@@ -152,13 +152,30 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes.
 
+---
+
 ## 2.3 Needfinding
 
   Con el análisis de datos completado, pasamos a la fase de Needfinding (Búsqueda de Necesidades). El objetivo es empatizar con los usuarios para diseñar una solución técnica y humana que elimine fricciones administrativas y brinde tranquilidad a las familias. Mediante herramientas como User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, definiremos quiénes son nuestros usuarios, sus acciones, emociones y necesidades reales.
 
 ### 2.3.1. User Personas
 
+---
 
+A partir de la investigación realizada con personas de zonas periféricas y del entorno de la salud pública, se definieron dos perfiles clave de usuario. Estos representan los segmentos principales que interactúan directa e indirectamente con la plataforma: los **pacientes de zonas urbanas periféricas** que buscan un acceso ágil y oportuno a sus citas médicas, y el **personal asistencial y administrativo**, encargado de la gestión operativa diaria.
+
+Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar una experiencia accesible, eficiente y adaptada a la realidad de la atención pública.
+
+
+
+#### Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud
+
+<p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="user_persona_paciente"/></p>
+
+
+#### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
+
+<p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="user_persona_paciente"/></p>
 
 ### 2.3.2. User Task Matrix
 
