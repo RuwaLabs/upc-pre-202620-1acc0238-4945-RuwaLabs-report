@@ -158,9 +158,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
   Con el análisis de datos completado, pasamos a la fase de Needfinding (Búsqueda de Necesidades). El objetivo es empatizar con los usuarios para diseñar una solución técnica y humana que elimine fricciones administrativas y brinde tranquilidad a las familias. Mediante herramientas como User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, definiremos quiénes son nuestros usuarios, sus acciones, emociones y necesidades reales.
 
-### 2.3.1. User Personas
-
 ---
+
+### 2.3.1. User Personas
 
 A partir de la investigación realizada con personas de zonas periféricas y del entorno de la salud pública, se definieron dos perfiles clave de usuario. Estos representan los segmentos principales que interactúan directa e indirectamente con la plataforma: los **pacientes de zonas urbanas periféricas** que buscan un acceso ágil y oportuno a sus citas médicas, y el **personal asistencial y administrativo**, encargado de la gestión operativa diaria.
 
@@ -192,8 +192,6 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
 | Controlar el flujo y estado de la atención en sala de espera | | X | Low | Low | High | High |
 | Registrar admisión y actualizar datos en registros/sistemas | | X | Low | Low | High | High |
 
----
-
 #### Análisis del Task Matrix
 
 A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos:
@@ -216,6 +214,20 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 <p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="user_journey_personal"/></p>
 
+---
+
 ### 2.3.4. Empathy Mapping
+
+El diseño de una solución de software orientada a la salud pública requiere comprender no solo las acciones operativas de los usuarios, sino también sus vivencias emocionales y percepciones del servicio. En este sentido, el Empathy Mapping nos permite trascender el perfil demográfico tradicional para examinar las dinámicas internas de nuestros segmentos objetivo. Al sistematizar lo que el paciente y el personal de salud oyen, ven, dicen, piensan y hacen, se identifican las barreras críticas y las expectativas del dominio. Este análisis asegura que SaludYa no solo sea una plataforma funcionalmente robusta, sino también una herramienta que genere confianza, previsibilidad y bienestar en la atención diaria.
+
+#### Segmento 1: Pacientes de zonas urbanas periféricas
+
+<p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
+
+#### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
+
+<p align="center"><img src="https://i.imgur.com/5z2pe4Y.png" alt="Empathy Map - Personal Asistencial y Administrativo" width="80%"/></p>
+
 ### 2.3.5. Big Picture EventStorming
+
 ### 2.3.6. Ubiquitous Language
