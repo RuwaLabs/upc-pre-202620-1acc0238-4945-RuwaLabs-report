@@ -283,7 +283,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 ---
 
-#### 2.4.1. To-Be Scenario Mapping
+### 2.4.1. To-Be Scenario Mapping
 
 El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los usuarios interactuando con la solución digital, reduciendo la fricción presencial y automatizando la gestión de cupos.
 
@@ -300,3 +300,301 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   * **To-Be (Solución):** Si un turno se cancela o no se confirma dentro de la tolerancia, el sistema notifica automáticamente al siguiente usuario en la lista de espera digital.
 
 ---
+
+### 2.4.2. User Stories
+
+<!-- US-01 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>US-01</b></td>
+    <td>Patient</td>
+    <td>High</td>
+    <td>EP-01: Medical Appointment and Booking Management</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Reserva de cita médica por especialidad</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Paciente,<br>
+      <b>Quiero</b> consultar la disponibilidad por especialidad y reservar una cita,<br>
+      <b>Para</b> asegurar la atención médica sin realizar filas presenciales.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Búsqueda y reserva exitosa de cupo médico</b><br>
+      <b>Given</b> que el paciente autenticado requiere una cita médica,<br>
+      <b>When</b> selecciona una especialidad, una fecha y confirma un horario disponible,<br>
+      <b>Then</b> el sistema asigna el cupo, genera un comprobante de reserva y registra el turno como reservado.<br><br>
+      <b>Scenario 2: Intento de reserva sin disponibilidad de cupos</b><br>
+      <b>Given</b> que el paciente consulta una especialidad sin disponibilidad para la fecha elegida,<br>
+      <b>When</b> solicita verificar los horarios,<br>
+      <b>Then</b> el sistema notifica la ausencia de cupos y habilita la inscripción en la lista de espera dinámica.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US-02 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>US-02</b></td>
+    <td>Patient</td>
+    <td>High</td>
+    <td>EP-02: On-site QR Verification and Check-in</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Registro de llegada mediante código QR</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Paciente,<br>
+      <b>Quiero</b> validar el código QR al llegar al centro de salud,<br>
+      <b>Para</b> confirmar la asistencia e ingresar a la sala de espera sin acudir a ventanilla.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Confirmación de asistencia dentro del margen de tiempo</b><br>
+      <b>Given</b> que el paciente cuenta con una reserva activa y se encuentra en el establecimiento de salud,<br>
+      <b>When</b> valida el código QR de llegada dentro del tiempo de tolerancia,<br>
+      <b>Then</b> el sistema confirma la presencia, actualiza el estado del turno a en espera y asigna la posición en cola.<br><br>
+      <b>Scenario 2: Registro fuera del margen de tolerancia permitido</b><br>
+      <b>Given</b> que el paciente valida el código QR pasados los 15 minutos de tolerancia de su cita,<br>
+      <b>When</b> el sistema procesa la solicitud,<br>
+      <b>Then</b> rechaza la confirmación, marca el turno como inasistencia y libera el cupo.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US-03 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>US-03</b></td>
+    <td>Admission Staff</td>
+    <td>High</td>
+    <td>EP-03: Admission Flow and Waiting Room Control</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Monitoreo de la sala de espera y llamado a consultorio</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Personal de Admisión,<br>
+      <b>Quiero</b> consultar los pacientes que confirmaron su presencia,<br>
+      <b>Para</b> gestionar los turnos y emitir el llamado al consultorio correspondiente.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Consulta de pacientes confirmados en tiempo real</b><br>
+      <b>Given</b> que el personal de admisión inicia su turno operativo,<br>
+      <b>When</b> solicita la lista de la sala de espera,<br>
+      <b>Then</b> el sistema presenta el listado ordenado de pacientes en espera con sus tiempos de llegada.<br><br>
+      <b>Scenario 2: Emisión de llamado a consultorio</b><br>
+      <b>Given</b> que un profesional médico se encuentra disponible,<br>
+      <b>When</b> el personal de admisión selecciona al siguiente paciente en cola y emite el llamado,<br>
+      <b>Then</b> el sistema actualiza el estado del turno a llamado y envía la notificación de turno al paciente.
+    </td>
+  </tr>
+</table>
+
+<br>
+<!-- US-04 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>US-04</b></td>
+    <td>Admission Staff</td>
+    <td>High</td>
+    <td>EP-03: Admission Flow and Waiting Room Control</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Reasignación manual de turnos por prioridad de atención</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Personal de Admisión,<br>
+      <b>Quiero</b> modificar manualmente el orden de atención o aplicar prioridades,<br>
+      <b>Para</b> atender casos de atención preferencial, emergencias o imprevistos en consultorio.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Asignación exitosa de prioridad preferencial</b><br>
+      <b>Given</b> que un paciente con cita requiere atención preferencial (adulto mayor o emergencia),<br>
+      <b>When</b> el personal de admisión selecciona al paciente y marca la casilla de prioridad,<br>
+      <b>Then</b> el sistema posiciona al paciente en el inicio de la cola de espera y reordena la lista en pantalla.<br><br>
+      <b>Scenario 2: Reasignación de paciente a otro consultorio por imprevisto</b><br>
+      <b>Given</b> que un consultorio presenta demoras o inactividad,<br>
+      <b>When</b> el personal de admisión selecciona un grupo de pacientes y los transfiere a un consultorio disponible,<br>
+      <b>Then</b> el sistema actualiza el destino de los turnos y notifica el cambio a los pacientes afectados.
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<!-- US-05 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>US-05</b></td>
+    <td>Admission Staff</td>
+    <td>Medium</td>
+    <td>EP-03: Admission Flow and Waiting Room Control</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Generación de reportes de tiempos de espera y métricas de asistencia</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Personal de Admisión,<br>
+      <b>Quiero</b> consultar y exportar un resumen analítico de la jornada,<br>
+      <b>Para</b> evaluar los tiempos promedio de espera y la tasa de absentismo del centro de salud.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Consulta de métricas diarias de atención</b><br>
+      <b>Given</b> que el personal de admisión requiere analizar el desempeño del turno,<br>
+      <b>When</b> selecciona un rango de fechas y la especialidad requerida,<br>
+      <b>Then</b> el sistema despliega el promedio de tiempo de espera, cantidad de pacientes atendidos e inasistencias registradas.<br><br>
+      <b>Scenario 2: Exportación de reporte de gestión</b><br>
+      <b>Given</b> que se requiere enviar la información a la dirección del establecimiento,<br>
+      <b>When</b> el personal de admisión presiona la opción de exportación,<br>
+      <b>Then</b> el sistema genera y descarga un archivo en formato PDF/CSV con el consolidado de datos.
+    </td>
+  </tr>
+</table>
+
+<br>
+<!-- TS-01 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>TS-01</b></td>
+    <td>Developer</td>
+    <td>High</td>
+    <td>EP-04: Backend Services Integration</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">API Endpoint para la validación y registro de Check-in QR</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Developer,<br>
+      <b>Quiero</b> exponer un endpoint RESTful (<code>POST /api/v1/checkin</code>),<br>
+      <b>Para</b> permitir la recepción y validación de peticiones de registro de presencia.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Validación exitosa de petición de Check-in (HTTP 200)</b><br>
+      <b>Given</b> una petición <code>POST</code> enviada con token de autorización válido y payload con <code>appointmentId</code> y <code>qrHash</code>,<br>
+      <b>When</b> el endpoint válida las credenciales y la autenticidad del hash,<br>
+      <b>Then</b> responde con un código <code>HTTP 200</code>, actualiza el estado en la base de datos a <code>CHECKED_IN</code> y retorna la estructura del turno asignado.<br><br>
+      <b>Scenario 2: Petición no autorizada por credenciales inválidas (HTTP 401)</b><br>
+      <b>Given</b> una petición <code>POST</code> enviada sin cabecera de autorización o con token alterado,<br>
+      <b>When</b> el endpoint valida la solicitud,<br>
+      <b>Then</b> rechaza el procesamiento y responde con un código <code>HTTP 401 Unauthorized</code>.
+    </td>
+  </tr>
+</table>
+
+<br>
+<!-- SP-01 -->
+<table width="100%">
+  <tr>
+    <th width="15%">Story ID</th>
+    <th width="20%">User</th>
+    <th width="20%">Priority</th>
+    <th width="45%">Epic</th>
+  </tr>
+  <tr>
+    <td><b>SP-01</b></td>
+    <td>Developer</td>
+    <td>High</td>
+    <td>EP-05: Research and Technical Feasibility</td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td colspan="3">Investigación de arquitectura para notificaciones en tiempo real en lista de espera</td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td colspan="3">
+      <b>Como</b> Developer,<br>
+      <b>Quiero</b> investigar y comparar la viabilidad técnica entre Firebase Cloud Messaging (FCM) y WebSockets,<br>
+      <b>Para</b> determinar la mejor arquitectura de notificaciones instantáneas ante la liberación de cupos en la lista de espera.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Acceptance Criteria</b></td>
+    <td colspan="3">
+      <b>Scenario 1: Pruebas de carga y análisis de latencia comparativo</b><br>
+      <b>Given</b> que el entorno de pruebas está configurado con ambas tecnologías (FCM y WebSockets),<br>
+      <b>When</b> se ejecutan simulación de 100 cancelaciones de citas en paralelo,<br>
+      <b>Then</b> se registra una latencia de entrega inferior a 2 segundos y se documenta el consumo de recursos en el informe técnico.<br><br>
+      <b>Scenario 2: Validación y entrega de PoC (Prueba de Concepto)</b><br>
+      <b>Given</b> que la investigación y las pruebas de esfuerzo han sido completadas,<br>
+      <b>When</b> el equipo técnico evalúa los resultados obtenidos,<br>
+      <b>Then</b> se entrega el prototipo funcional en código fuente junto con el documento de recomendación de arquitectura aprobado.
+    </td>
+  </tr>
+</table>
