@@ -201,7 +201,21 @@ A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos
 * **Tareas con mayor frecuencia e importancia para ambos segmentos:** Consultar la disponibilidad de cupos, solicitar/asignar citas y realizar el registro de llegada (check-in) representan el núcleo del proceso de atención. Ambos segmentos les asignan importancia **High**, reflejando que la desinformación en tiempo real y las largas colas presenciales son los cuellos de botella principales que SaludYa busca resolver tanto para el usuario como para el personal.
 * **Principales diferencias entre segmentos:** El personal asistencial y administrativo concentra sus actividades en tareas de gestión operativa interna de frecuencia **High**, como controlar el flujo de la sala de espera y registrar admisiones para evitar la pérdida de información en cuadernos o archivos físicos. En cambio, el paciente enfoca su interacción en tareas puntuales de alta importancia (**High**), como la gestión de citas para familiares dependientes y el seguimiento de recordatorios para evitar la pérdida de turnos previamente conseguidos.
 * **Coincidencias relevantes:** La gestión de la lista de espera ante cancelaciones e inasistencias es percibida con importancia **High** por ambas partes. Para el personal, representa una oportunidad crítica para reducir la sobrecarga operativa y optimizar el aprovechamiento de los cupos disponibles; para el paciente, constituye el mecanismo clave para acceder a un cupo liberado de forma oportuna sin necesidad de madrugar o realizar viajes innecesarios.
+
+---
 ### 2.3.3. User Journey Mapping
+
+A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal de salud, se elaboraron los User Journey Maps utilizando la herramienta UXPressia. Estos esquemas analizan la experiencia de cada segmento a lo largo del proceso de atención, contrastando las fricciones de la gestión presencial/manual actual contra las oportunidades de optimización que introduce la plataforma **SaludYa**.
+
+
+#### Segmento 1: Pacientes de zonas urbanas periféricas
+
+<p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="user_journey_paciente"/></p>
+
+#### Segmento 2: Personal asistencial y administrativo
+
+<p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="user_journey_personal"/></p>
+
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Big Picture EventStorming
 ### 2.3.6. Ubiquitous Language
