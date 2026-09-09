@@ -228,6 +228,35 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 <p align="center"><img src="https://i.imgur.com/5z2pe4Y.png" alt="Empathy Map - Personal Asistencial y Administrativo" width="80%"/></p>
 
+---
+
 ### 2.3.5. Big Picture EventStorming
+
+Para armar un sistema que funcione bien, primero hay que entender cómo trabaja el centro de salud en el día a día. El **Big Picture EventStorming** es una dinámica en equipo que nos sirve para ver todos los hechos importantes que pasan en la posta médica. Al organizar estos sucesos paso a paso, podemos descubrir en qué momentos el proceso se vuelve lento, dónde se pierden los datos o dónde se forman las largas filas de pacientes.
+
+#### Step 1 – Free Exploration
+
+En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: *Cita reservada* o *Check-in realizado*), sin preocuparnos por la parte técnica ni por el diseño del software.
+
+<p align="center"> <img src="https://i.imgur.com/JwMsEx4.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+#### Step 2 – Enforcing Timelines
+
+En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud.
+
+<p align="center"> <img src="https://i.imgur.com/rkI5utV.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+#### Step 3 – People and Systems (Actors & Read Models)
+
+En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e identificamos a los **Actores** (tarjetas amarillas) que desencadenan cada acción (*Patient* y *Admission Staff*). También mapeamos la información visible o **Read Models** (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera.
+
+<p align="center"> <img src="https://i.imgur.com/qX7SP87.png" alt="Step 3 - People and Systems" width="85%"/> </p>
+
+#### Step 4 – Explicit Hotspots & Exceptions
+
+En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica.
+
+<p align="center"> <img src="https://i.imgur.com/QDRTLVm.png" alt="Step 4 - Hotspots and Exceptions" width="85%"/> </p>
+
 
 ### 2.3.6. Ubiquitous Language
