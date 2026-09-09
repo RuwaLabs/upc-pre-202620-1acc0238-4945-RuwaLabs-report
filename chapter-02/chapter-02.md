@@ -179,7 +179,28 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 ### 2.3.2. User Task Matrix
 
+Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica.
 
+| Tarea | Paciente (Zonas Periféricas) | Personal Asistencial / Administrativo | Frecuencia (Paciente) | Importancia (Paciente) | Frecuencia (Personal) | Importancia (Personal) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Consultar disponibilidad de cupos y horarios | X | X | High | High | High | High |
+| Solicitar o asignar un cupo / cita médica | X | X | Medium | High | High | High |
+| Registrar o gestionar citas de familiares y dependientes | X | | Medium | High | Low | Medium |
+| Confirmar la asistencia o recibir recordatorios de cita | X | | Medium | High | Low | Medium |
+| Realizar el check-in / registro de llegada al establecimiento | X | X | Medium | High | High | High |
+| Gestionar la lista de espera y reasignación de cupos liberados | X | X | Low | High | High | High |
+| Controlar el flujo y estado de la atención en sala de espera | | X | Low | Low | High | High |
+| Registrar admisión y actualizar datos en registros/sistemas | | X | Low | Low | High | High |
+
+---
+
+#### Análisis del Task Matrix
+
+A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos:
+
+* **Tareas con mayor frecuencia e importancia para ambos segmentos:** Consultar la disponibilidad de cupos, solicitar/asignar citas y realizar el registro de llegada (check-in) representan el núcleo del proceso de atención. Ambos segmentos les asignan importancia **High**, reflejando que la desinformación en tiempo real y las largas colas presenciales son los cuellos de botella principales que SaludYa busca resolver tanto para el usuario como para el personal.
+* **Principales diferencias entre segmentos:** El personal asistencial y administrativo concentra sus actividades en tareas de gestión operativa interna de frecuencia **High**, como controlar el flujo de la sala de espera y registrar admisiones para evitar la pérdida de información en cuadernos o archivos físicos. En cambio, el paciente enfoca su interacción en tareas puntuales de alta importancia (**High**), como la gestión de citas para familiares dependientes y el seguimiento de recordatorios para evitar la pérdida de turnos previamente conseguidos.
+* **Coincidencias relevantes:** La gestión de la lista de espera ante cancelaciones e inasistencias es percibida con importancia **High** por ambas partes. Para el personal, representa una oportunidad crítica para reducir la sobrecarga operativa y optimizar el aprovechamiento de los cupos disponibles; para el paciente, constituye el mecanismo clave para acceder a un cupo liberado de forma oportuna sin necesidad de madrugar o realizar viajes innecesarios.
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Big Picture EventStorming
