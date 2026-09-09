@@ -154,7 +154,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 ---
 
-## 2.3 Needfinding
+## 2.3. Needfinding
 
   Con el análisis de datos completado, pasamos a la fase de Needfinding (Búsqueda de Necesidades). El objetivo es empatizar con los usuarios para diseñar una solución técnica y humana que elimine fricciones administrativas y brinde tranquilidad a las familias. Mediante herramientas como User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, definiremos quiénes son nuestros usuarios, sus acciones, emociones y necesidades reales.
 
@@ -274,3 +274,29 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 | `Dynamic Waitlist` | Mecanismo automatizado que gestiona las solicitudes en cola y reasigna inmediatamente los cupos liberados por cancelaciones o inasistencias. |
 | `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
 | `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
+
+---
+
+## 2.4. Requirements Specification
+
+En esta sección definimos la especificación formal de requisitos para la plataforma **SaludYa**, tomando como base los hallazgos del *Needfinding* y los flujos identificados en el *EventStorming*. A través de mapeos de escenarios futuros, Historias de Usuario (*User Stories*), *Impact Mapping* y un *Product Backlog* priorizado, transformamos las necesidades del dominio público de salud en entregables técnicos y funcionales ejecutables.
+
+---
+
+#### 2.4.1. To-Be Scenario Mapping
+
+El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los usuarios interactuando con la solución digital, reduciendo la fricción presencial y automatizando la gestión de cupos.
+
+* **Fase 1: Búsqueda y Reserva Autónoma**
+  * **As-Is (Problema):** El paciente realiza filas desde la madrugada en el centro de salud sin garantía de obtener un turno.
+  * **To-Be (Solución):** El paciente consulta la oferta de citas desde la app móvil de SaludYa, selecciona la especialidad y reserva un cupo en segundos con confirmación digital.
+
+* **Fase 2: Check-in y Registro Presencial**
+  * **As-Is (Problema):** Congestionamiento en las ventanillas de admisión para validar la llegada antes de la consulta.
+  * **To-Be (Solución):** Al llegar al centro de salud, el paciente escanea un código QR en el tótem o recepción desde la app para validar su presencia y pasa a la sala de espera.
+
+* **Fase 3: Reasignación Dinámica por Cancelación**
+  * **As-Is (Problema):** Si un paciente no asiste, el cupo médico se pierde totalmente mientras otros pacientes quedan desatendidos.
+  * **To-Be (Solución):** Si un turno se cancela o no se confirma dentro de la tolerancia, el sistema notifica automáticamente al siguiente usuario en la lista de espera digital.
+
+---
