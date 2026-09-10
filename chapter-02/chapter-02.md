@@ -303,300 +303,968 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
 
 ### 2.4.2. User Stories
 
-<!-- US-01 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>US-01</b></td>
-    <td>Patient</td>
-    <td>High</td>
-    <td>EP-01: Medical Appointment and Booking Management</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Reserva de cita médica por especialidad</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Paciente,<br>
-      <b>Quiero</b> consultar la disponibilidad por especialidad y reservar una cita,<br>
-      <b>Para</b> asegurar la atención médica sin realizar filas presenciales.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Búsqueda y reserva exitosa de cupo médico</b><br>
-      <b>Given</b> que el paciente autenticado requiere una cita médica,<br>
-      <b>When</b> selecciona una especialidad, una fecha y confirma un horario disponible,<br>
-      <b>Then</b> el sistema asigna el cupo, genera un comprobante de reserva y registra el turno como reservado.<br><br>
-      <b>Scenario 2: Intento de reserva sin disponibilidad de cupos</b><br>
-      <b>Given</b> que el paciente consulta una especialidad sin disponibilidad para la fecha elegida,<br>
-      <b>When</b> solicita verificar los horarios,<br>
-      <b>Then</b> el sistema notifica la ausencia de cupos y habilita la inscripción en la lista de espera dinámica.
-    </td>
-  </tr>
+<!-- US-01: Registro de Paciente -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-01</td>
+      <td>New Patient</td>
+      <td>High</td>
+      <td>EP-01: Authentication</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Creación de Cuenta de Paciente</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente nuevo,<br>
+        <b>Quiero</b> registrarme en la plataforma ingresando mis datos personales (nombre, apellidos, edad, fecha de nacimiento, correo) y contraseña,<br>
+        <b>Para</b> disponer de un perfil activo que me permita gestionar mis citas médicas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Registro exitoso de paciente</b><br>
+        • <b>Given</b> que un paciente accede al formulario de registro,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> ingresa su nombre, apellidos, edad, fecha de nacimiento, correo válido y contraseña segura,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos obligatorios, crea la cuenta de paciente y envía un correo de verificación.<br><br>
+        <b>Scenario 2: Correo previamente registrado</b><br>
+        • <b>Given</b> que el correo ingresado ya existe en la base de datos,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta enviar el formulario,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema despliega una alerta indicando que la cuenta ya se encuentra registrada.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-01B: Registro de Médico -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-01B</td>
+      <td>New Doctor / Administrator</td>
+      <td>High</td>
+      <td>EP-01: Authentication</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Creación de Cuenta de Médico / Profesional</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Médico o Profesional de Salud,<br>
+        <b>Quiero</b> registrarme ingresando mi nombre, apellidos, edad, fecha de nacimiento, especialidad médica, correo y contraseña,<br>
+        <b>Para</b> disponer de un perfil profesional activo que me permita recibir turnos y gestionar mis consultas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Registro exitoso de médico</b><br>
+        • <b>Given</b> que un profesional accede al registro de médicos,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> ingresa nombre, apellidos, edad, fecha de nacimiento, especialidad médica (ej. Cardiología, Pediatría), correo corporativo y contraseña,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos obligatorios, registra al médico con su especialidad asignada y envía un correo de confirmación.<br><br>
+        <b>Scenario 2: Fallo por datos incompletos o correo existente</b><br>
+        • <b>Given</b> que la especialidad no está seleccionada o el correo ya está registrado,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> intenta completar el registro,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el envío y muestra los errores correspondientes en pantalla.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-02: Inicio de Sesión -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-02</td>
+      <td>Patient / Doctor / Admission Staff</td>
+      <td>High</td>
+      <td>EP-01: Authentication</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Inicio de Sesión por Rol</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente, Médico o Personal de Admisión,<br>
+        <b>Quiero</b> autenticarme con mi correo y contraseña,<br>
+        <b>Para</b> acceder a las funcionalidades del sistema según mi rol asignado.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Autenticación exitosa</b><br>
+        • <b>Given</b> el usuario con credenciales correctas,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> hace clic en "Iniciar Sesión",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> otorga acceso y redirige a su panel correspondiente (Panel de Paciente o Dashboard Médico).<br><br>
+        <b>Scenario 2: Credenciales erróneas</b><br>
+        • <b>Given</b> una contraseña o correo incorrecto,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta iniciar sesión,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> muestra una alerta de credenciales inválidas y bloquea el acceso.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-03: Búsqueda -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-03</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Búsqueda de Disponibilidad y Médicos</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> buscar médicos y turnos por especialidad, fecha o profesional,<br>
+        <b>Para</b> encontrar un horario conveniente para mi atención.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Búsqueda con resultados</b><br>
+        • <b>Given</b> la selección de especialidad y fecha,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> ejecuta la búsqueda,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> despliega los médicos disponibles filtrados por especialidad con sus respectivos horarios.<br><br>
+        <b>Scenario 2: Búsqueda sin disponibilidad</b><br>
+        • <b>Given</b> la ausencia de turnos para los filtros seleccionados,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se realiza la consulta,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> ofrece la opción de inscribirse en la lista de espera para esa especialidad.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-04: Reserva -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-04</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Reserva con Límite de Citas Activas</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> solicitar la reserva de un turno médico disponible,<br>
+        <b>Para</b> asegurar mi cupo respetando la política de límite de citas simultáneas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Reserva dentro del límite</b><br>
+        • <b>Given</b> un paciente con menos del máximo permitido de citas activas (ej. máximo 3),<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> selecciona y confirma un turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> agenda la cita como "Reservada".<br><br>
+        <b>Scenario 2: Límite de citas excedido</b><br>
+        • <b>Given</b> haber alcanzado el límite de reservas simultáneas,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> intenta agendar un nuevo turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> bloquea la transacción e indica cancelar una cita previa para continuar.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-05: Notificación Cita -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-05</td>
+      <td>Patient</td>
+      <td>Medium</td>
+      <td>EP-02: Appointments & Booking</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Notificación de Cita Aprobada / Confirmada</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> recibir una notificación tras confirmar mi reserva,<br>
+        <b>Para</b> tener el comprobante de mi cita y los detalles del turno.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Confirmación de reserva enviada</b><br>
+        • <b>Given</b> una reserva confirmada en el sistema,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se completa el registro del turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> envía notificación (email/SMS/push) con fecha, hora, médico asignado, especialidad y código de reserva.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-06: Cancelación -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-06</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Cancelación de Cita Médica</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> cancelar una cita médica previamente agendada,<br>
+        <b>Para</b> liberar el cupo en favor de otros usuarios si no puedo asistir.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Cancelación confirmada</b><br>
+        • <b>Given</b> el paciente visualizando sus citas programadas,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> selecciona "Cancelar cita" y confirma la acción,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema libera el turno, lo marca como "Cancelada" y notifica al usuario.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-07: Inscripción Lista de Espera -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-07</td>
+      <td>Patient</td>
+      <td>Medium</td>
+      <td>EP-03: Dynamic Waitlist</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Inscripción a Lista de Espera por Especialidad</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> anotarme en una lista de espera para especialidades sin cupo inmediato,<br>
+        <b>Para</b> optar por un turno en caso de que se libere una cita por cancelación.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Inclusión en lista de espera</b><br>
+        • <b>Given</b> la falta de disponibilidad en la fecha o especialidad solicitada,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> selecciona "Unirme a lista de espera",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> guarda la solicitud asignándole una posición en la cola.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-08: Reasignación Automática -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-08</td>
+      <td>System / Admission Staff</td>
+      <td>High</td>
+      <td>EP-03: Dynamic Waitlist</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Reasignación Automática por Ausentismo / Cancelación</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Sistema / Personal de Admisión,<br>
+        <b>Quiero</b> que el sistema reasigne automáticamente los cupos liberados o vencidos por tolerancia,<br>
+        <b>Para</b> maximizar la ocupación de los consultorios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Reasignación de turno liberado</b><br>
+        • <b>Given</b> una cita cancelada o vencimiento de tolerancia sin check-in,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el cupo queda disponible,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> asigna automáticamente el turno al primer paciente elegible en la lista de espera de esa especialidad.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-09: Notificación Reasignación -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-09</td>
+      <td>Waitlisted Patient</td>
+      <td>High</td>
+      <td>EP-03: Dynamic Waitlist</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Notificación de Reasignación de Cupo</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente en lista de espera,<br>
+        <b>Quiero</b> recibir un aviso inmediato cuando se me reasigne un cupo liberado,<br>
+        <b>Para</b> confirmar o rechazar oportunamente la nueva cita.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Alerta de nuevo cupo disponible</b><br>
+        • <b>Given</b> la reasignación de un cupo a un paciente en espera,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se procesa la reasignación,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> envía una alerta push/SMS con un tiempo límite para confirmar el turno.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-10: Actualización Tiempo Real -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-10</td>
+      <td>Admission Staff / Patient</td>
+      <td>Medium</td>
+      <td>EP-03: Dynamic Waitlist</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Actualización de Lista de Espera</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal de Admisión / Paciente,<br>
+        <b>Quiero</b> que la lista de espera se actualice dinámicamente en tiempo real,<br>
+        <b>Para</b> visualizar con precisión el orden y posición actual de los turnos.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Sincronización en vivo de la cola</b><br>
+        • <b>Given</b> una cancelación, confirmación o reasignación,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> ocurre el evento,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> recalcula el orden de la lista instantáneamente en las pantallas activas.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-11: Check-in QR -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-11</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP-04: Arrival & QR Check-in</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Lectura y Check-in mediante Código QR</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> escanear el código QR al llegar al centro médico,<br>
+        <b>Para</b> confirmar mi presencia física dentro del margen de tolerancia sin hacer filas.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Check-in exitoso en sitio</b><br>
+        • <b>Given</b> el paciente en el establecimiento dentro del tiempo de tolerancia,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> escanea el código QR desde la app,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> valida la llegada y cambia el estado a "Presente en sala".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-12: Ticket Digital -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-12</td>
+      <td>Patient</td>
+      <td>Medium</td>
+      <td>EP-04: Arrival & QR Check-in</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Generación de Ticket Digital de Atención</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> recibir un ticket digital tras realizar el check-in,<br>
+        <b>Para</b> conocer mi número de turno y el consultorio asignado.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Confirmación de llegada y generación de ticket</b><br>
+        • <b>Given</b> el check-in QR o asistido exitoso,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la presencia,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> genera en pantalla un ticket digital con un identificador único.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-13: Panel Sala -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-13</td>
+      <td>Admission Staff</td>
+      <td>High</td>
+      <td>EP-05: Consultation & Reports</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Panel de Control de Sala de Espera en Tiempo Real</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal de Admisión,<br>
+        <b>Quiero</b> visualizar un panel de control con los pacientes en sala, confirmados y llamados,<br>
+        <b>Para</b> gestionar el flujo operativo y el orden de paso a consultorios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Actualización del estado de la sala</b><br>
+        • <b>Given</b> el acceso del personal al panel de sala,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> los pacientes hacen check-in o son llamados,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> actualiza los estados en tiempo real sin recargar la página.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-14: Ausencias -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-14</td>
+      <td>Admission Staff / Doctor</td>
+      <td>High</td>
+      <td>EP-05: Consultation & Reports</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Protocolo ante Ausencia al Llamado</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal de Admisión / Médico,<br>
+        <b>Quiero</b> ejecutar el protocolo de ausencia cuando un paciente no responda al llamado en pantalla,<br>
+        <b>Para</b> reordenar el turno o dar paso al siguiente paciente en la cola.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Paciente no responde al llamado</b><br>
+        • <b>Given</b> un paciente llamado en pantalla que no se presenta tras reintentos (ej. 3),<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se activa el protocolo de ausente,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> desplaza al paciente al final de la cola o lo marca como "No presentado".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-15: Registro Consulta -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-15</td>
+      <td>Doctor</td>
+      <td>High</td>
+      <td>EP-05: Consultation & Reports</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Registro de Inicio y Fin de Consulta Médica</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Médico,<br>
+        <b>Quiero</b> marcar el inicio y la finalización de cada consulta desde mi panel,<br>
+        <b>Para</b> actualizar el estado del paciente y registrar los tiempos de atención.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Inicio de atención</b><br>
+        • <b>Given</b> el ingreso del paciente al consultorio,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el médico presiona "Iniciar Consulta",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> cambia el estado a "En Atención".<br><br>
+        <b>Scenario 2: Finalización de atención</b><br>
+        • <b>Given</b> la conclusión de la atención médica,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se presiona "Finalizar Consulta",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> cambia a "Atendido".
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-16: Reportes -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-16</td>
+      <td>Administrator / Admission Staff</td>
+      <td>Low</td>
+      <td>EP-05: Consultation & Reports</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Dashboard y Exportación de Reportes Diarios</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Administrador / Personal de Admisión,<br>
+        <b>Quiero</b> ver métricas diarias de atención y exportar reportes de la jornada,<br>
+        <b>Para</b> analizar tiempos de espera, ausentismo y productividad.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Consulta de métricas diarias</b><br>
+        • <b>Given</b> la conclusión de un turno diario,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se consulta el dashboard de reportes,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> muestra promedios de espera, atenciones e inasistencias.<br><br>
+        <b>Scenario 2: Exportación de datos de atención</b><br>
+        • <b>Given</b> la opción de "Exportar Reporte",<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> confirma el formato (PDF/CSV),<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> descarga el archivo consolidado.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-17: Consulta de Citas del Médico -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-17</td>
+      <td>Doctor</td>
+      <td>High</td>
+      <td>EP-05: Consultation & Reports</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Consulta e Historial de Citas Asignadas al Médico</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Médico,<br>
+        <b>Quiero</b> consultar la lista de mis citas programadas para el día o fechas futuras,<br>
+        <b>Para</b> revisar la agenda de pacientes a atender y organizar mi jornada de consulta.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Visualización de agenda diaria</b><br>
+        • <b>Given</b> que el médico inicia sesión en su panel,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> accede a la sección "Mi Agenda",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> despliega el listado de pacientes citados ordenados por hora, mostrando estado (Reservado, Presente, Atendido, Cancelado).<br><br>
+        <b>Scenario 2: Filtrado por fecha</b><br>
+        • <b>Given</b> que el médico selecciona una fecha específica en el calendario,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> aplica el filtro,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> muestra únicamente los turnos correspondientes a dicho día.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-18: Visualización de Citas del Paciente -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-18</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Consulta e Historial de Citas del Paciente</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> visualizar la lista de mis citas agendadas y mi historial de atenciones,<br>
+        <b>Para</b> conocer los detalles de mis turnos (médico, fecha, hora, especialidad) y contar con el acceso directo para cancelar un turno si lo necesito.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Visualización de citas activas e historial</b><br>
+        • <b>Given</b> que el paciente inicia sesión y accede a "Mis Citas",<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> carga la sección,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> despliega el listado de turnos programados con los datos del médico, especialidad, fecha, hora y estado (Reservada, Presente, Atendida, Cancelada).<br><br>
+        <b>Scenario 2: Acceso a la cancelación de cita</b><br>
+        • <b>Given</b> que el paciente selecciona una cita en estado "Reservada",<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> presiona el botón "Cancelar cita",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> abre la confirmación del flujo de cancelación de la US-06.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<b>Spikes</b>
+<table>
+  <thead>
+    <tr>
+      <th>Spike ID</th>
+      <th>Título / Investigación</th>
+      <th>Prioridad</th>
+      <th>Épica Asociada</th>
+      <th>Objetivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPK-01</td>
+      <td>Evaluación de WebSockets vs Server-Sent Events (SSE)</td>
+      <td>High</td>
+      <td>EP-03: Dynamic Waitlist</td>
+      <td>Investigar la arquitectura óptima para la actualización en tiempo real de la lista de espera y paneles de sala sin sobrecargar el servidor.</td>
+    </tr>
+    <tr>
+      <td>SPK-02</td>
+      <td>Investigación de Generación y Lectura Segura de QR</td>
+      <td>Medium</td>
+      <td>EP-04: Arrival & QR Check-in</td>
+      <td>Evaluar librerías de generación de QR dinámicos con encriptación temporal para evitar duplicación o fraudes en el check-in presencial.</td>
+    </tr>
+    <tr>
+      <td>SPK-03</td>
+      <td>Investigación de Arquitectura e Infraestructura de Notificaciones (Push/SMS/Email)</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+      <td>Evaluar proveedores (ej. Firebase Cloud Messaging, Twilio, SendGrid) y definir la estrategia de retentativas para garantizar la entrega inmediata de avisos de reasignación y confirmaciones.</td>
+    </tr>
+  </tbody>
 </table>
 
 <br>
-
-<!-- US-02 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>US-02</b></td>
-    <td>Patient</td>
-    <td>High</td>
-    <td>EP-02: On-site QR Verification and Check-in</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Registro de llegada mediante código QR</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Paciente,<br>
-      <b>Quiero</b> validar el código QR al llegar al centro de salud,<br>
-      <b>Para</b> confirmar la asistencia e ingresar a la sala de espera sin acudir a ventanilla.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Confirmación de asistencia dentro del margen de tiempo</b><br>
-      <b>Given</b> que el paciente cuenta con una reserva activa y se encuentra en el establecimiento de salud,<br>
-      <b>When</b> valida el código QR de llegada dentro del tiempo de tolerancia,<br>
-      <b>Then</b> el sistema confirma la presencia, actualiza el estado del turno a en espera y asigna la posición en cola.<br><br>
-      <b>Scenario 2: Registro fuera del margen de tolerancia permitido</b><br>
-      <b>Given</b> que el paciente valida el código QR pasados los 15 minutos de tolerancia de su cita,<br>
-      <b>When</b> el sistema procesa la solicitud,<br>
-      <b>Then</b> rechaza la confirmación, marca el turno como inasistencia y libera el cupo.
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<!-- US-03 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>US-03</b></td>
-    <td>Admission Staff</td>
-    <td>High</td>
-    <td>EP-03: Admission Flow and Waiting Room Control</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Monitoreo de la sala de espera y llamado a consultorio</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Personal de Admisión,<br>
-      <b>Quiero</b> consultar los pacientes que confirmaron su presencia,<br>
-      <b>Para</b> gestionar los turnos y emitir el llamado al consultorio correspondiente.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Consulta de pacientes confirmados en tiempo real</b><br>
-      <b>Given</b> que el personal de admisión inicia su turno operativo,<br>
-      <b>When</b> solicita la lista de la sala de espera,<br>
-      <b>Then</b> el sistema presenta el listado ordenado de pacientes en espera con sus tiempos de llegada.<br><br>
-      <b>Scenario 2: Emisión de llamado a consultorio</b><br>
-      <b>Given</b> que un profesional médico se encuentra disponible,<br>
-      <b>When</b> el personal de admisión selecciona al siguiente paciente en cola y emite el llamado,<br>
-      <b>Then</b> el sistema actualiza el estado del turno a llamado y envía la notificación de turno al paciente.
-    </td>
-  </tr>
-</table>
-
-<br>
-<!-- US-04 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>US-04</b></td>
-    <td>Admission Staff</td>
-    <td>High</td>
-    <td>EP-03: Admission Flow and Waiting Room Control</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Reasignación manual de turnos por prioridad de atención</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Personal de Admisión,<br>
-      <b>Quiero</b> modificar manualmente el orden de atención o aplicar prioridades,<br>
-      <b>Para</b> atender casos de atención preferencial, emergencias o imprevistos en consultorio.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Asignación exitosa de prioridad preferencial</b><br>
-      <b>Given</b> que un paciente con cita requiere atención preferencial (adulto mayor o emergencia),<br>
-      <b>When</b> el personal de admisión selecciona al paciente y marca la casilla de prioridad,<br>
-      <b>Then</b> el sistema posiciona al paciente en el inicio de la cola de espera y reordena la lista en pantalla.<br><br>
-      <b>Scenario 2: Reasignación de paciente a otro consultorio por imprevisto</b><br>
-      <b>Given</b> que un consultorio presenta demoras o inactividad,<br>
-      <b>When</b> el personal de admisión selecciona un grupo de pacientes y los transfiere a un consultorio disponible,<br>
-      <b>Then</b> el sistema actualiza el destino de los turnos y notifica el cambio a los pacientes afectados.
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<!-- US-05 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>US-05</b></td>
-    <td>Admission Staff</td>
-    <td>Medium</td>
-    <td>EP-03: Admission Flow and Waiting Room Control</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Generación de reportes de tiempos de espera y métricas de asistencia</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Personal de Admisión,<br>
-      <b>Quiero</b> consultar y exportar un resumen analítico de la jornada,<br>
-      <b>Para</b> evaluar los tiempos promedio de espera y la tasa de absentismo del centro de salud.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Consulta de métricas diarias de atención</b><br>
-      <b>Given</b> que el personal de admisión requiere analizar el desempeño del turno,<br>
-      <b>When</b> selecciona un rango de fechas y la especialidad requerida,<br>
-      <b>Then</b> el sistema despliega el promedio de tiempo de espera, cantidad de pacientes atendidos e inasistencias registradas.<br><br>
-      <b>Scenario 2: Exportación de reporte de gestión</b><br>
-      <b>Given</b> que se requiere enviar la información a la dirección del establecimiento,<br>
-      <b>When</b> el personal de admisión presiona la opción de exportación,<br>
-      <b>Then</b> el sistema genera y descarga un archivo en formato PDF/CSV con el consolidado de datos.
-    </td>
-  </tr>
-</table>
-
-<br>
-<!-- TS-01 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>TS-01</b></td>
-    <td>Developer</td>
-    <td>High</td>
-    <td>EP-04: Backend Services Integration</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">API Endpoint para la validación y registro de Check-in QR</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Developer,<br>
-      <b>Quiero</b> exponer un endpoint RESTful (<code>POST /api/v1/checkin</code>),<br>
-      <b>Para</b> permitir la recepción y validación de peticiones de registro de presencia.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Validación exitosa de petición de Check-in (HTTP 200)</b><br>
-      <b>Given</b> una petición <code>POST</code> enviada con token de autorización válido y payload con <code>appointmentId</code> y <code>qrHash</code>,<br>
-      <b>When</b> el endpoint válida las credenciales y la autenticidad del hash,<br>
-      <b>Then</b> responde con un código <code>HTTP 200</code>, actualiza el estado en la base de datos a <code>CHECKED_IN</code> y retorna la estructura del turno asignado.<br><br>
-      <b>Scenario 2: Petición no autorizada por credenciales inválidas (HTTP 401)</b><br>
-      <b>Given</b> una petición <code>POST</code> enviada sin cabecera de autorización o con token alterado,<br>
-      <b>When</b> el endpoint valida la solicitud,<br>
-      <b>Then</b> rechaza el procesamiento y responde con un código <code>HTTP 401 Unauthorized</code>.
-    </td>
-  </tr>
-</table>
-
-<br>
-<!-- SP-01 -->
-<table width="100%">
-  <tr>
-    <th width="15%">Story ID</th>
-    <th width="20%">User</th>
-    <th width="20%">Priority</th>
-    <th width="45%">Epic</th>
-  </tr>
-  <tr>
-    <td><b>SP-01</b></td>
-    <td>Developer</td>
-    <td>High</td>
-    <td>EP-05: Research and Technical Feasibility</td>
-  </tr>
-  <tr>
-    <td><b>Title</b></td>
-    <td colspan="3">Investigación de arquitectura para notificaciones en tiempo real en lista de espera</td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td colspan="3">
-      <b>Como</b> Developer,<br>
-      <b>Quiero</b> investigar y comparar la viabilidad técnica entre Firebase Cloud Messaging (FCM) y WebSockets,<br>
-      <b>Para</b> determinar la mejor arquitectura de notificaciones instantáneas ante la liberación de cupos en la lista de espera.
-    </td>
-  </tr>
-  <tr>
-    <td><b>Acceptance Criteria</b></td>
-    <td colspan="3">
-      <b>Scenario 1: Pruebas de carga y análisis de latencia comparativo</b><br>
-      <b>Given</b> que el entorno de pruebas está configurado con ambas tecnologías (FCM y WebSockets),<br>
-      <b>When</b> se ejecutan simulación de 100 cancelaciones de citas en paralelo,<br>
-      <b>Then</b> se registra una latencia de entrega inferior a 2 segundos y se documenta el consumo de recursos en el informe técnico.<br><br>
-      <b>Scenario 2: Validación y entrega de PoC (Prueba de Concepto)</b><br>
-      <b>Given</b> que la investigación y las pruebas de esfuerzo han sido completadas,<br>
-      <b>When</b> el equipo técnico evalúa los resultados obtenidos,<br>
-      <b>Then</b> se entrega el prototipo funcional en código fuente junto con el documento de recomendación de arquitectura aprobado.
-    </td>
-  </tr>
+<b>Technical Tasks</b>
+<table>
+  <thead>
+    <tr>
+      <th>Task ID</th>
+      <th>Título</th>
+      <th>Prioridad</th>
+      <th>Épica Asociada</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TECH-01</td>
+      <td>Configuración de Servidor SMTP y Proveedor SMS</td>
+      <td>High</td>
+      <td>EP-01: Authentication / EP-02</td>
+      <td>Integrar la infraestructura de envío masivo de correos de verificación y alertas por SMS/Push para notificaciones.</td>
+    </tr>
+    <tr>
+      <td>TECH-02</td>
+      <td>Diseño de Esquema de Base de Datos e Índices</td>
+      <td>High</td>
+      <td>EP-02: Appointments & Booking</td>
+      <td>Crear el modelo relacional para citas, bloqueos y usuarios, optimizando con índices las consultas por fecha y especialidad.</td>
+    </tr>
+    <tr>
+      <td>TECH-03</td>
+      <td>Implementación de Tareas Programadas (Cron Jobs) para Tolerancia</td>
+      <td>Medium</td>
+      <td>EP-03: Dynamic Waitlist</td>
+      <td>Configurar procesos en segundo plano que liberen turnos automáticamente cuando un paciente excede el margen de tiempo de llegada.</td>
+    </tr>
+  </tbody>
 </table>
 
 ---
@@ -618,24 +1286,3 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints.
 
 #### Tabla del Product Backlog
-
-| # Orden | User Story ID | Título | Story Points | Sprint |
-| :---: | :---: | :--- | :---: | :---: |
-| 1 | US-00 | Landing Page informativa y captura de pacientes/centros | 2 | Sprint 1 |
-| 2 | US-01 | Reserva de cita médica por especialidad | 5 | Sprint 1 |
-| 3 | US-02 | Registro de llegada mediante código QR | 3 | Sprint 1 |
-| 4 | US-03 | Monitoreo de la sala de espera y llamado a consultorio | 5 | Sprint 2 |
-| 5 | US-04 | Reasignación manual de turnos por prioridad de atención | 3 | Sprint 2 |
-| 6 | US-05 | Generación de reportes de tiempos de espera y métricas de asistencia | 3 | Sprint 2 |
-| 7 | TS-01 | API Endpoint para la validación y registro de Check-in QR | 3 | Sprint 2 |
-| 8 | SP-01 | Investigación de arquitectura para notificaciones en tiempo real | 2 | Sprint 1 |
-
----
-
-#### Evidencia de Herramienta de Gestión (Product Backlog)
-
-**Enlace Público al Product Backlog:**  
-[Ver Product Backlog en la herramienta]
-
-**Captura del Product Backlog:**
-[Product Backlog en Herramienta]
