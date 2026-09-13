@@ -1828,3 +1828,12 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 
 ![Context Map](assets/ContextMapping.png)
 
+### 2.5.3. Software Architecture
+
+#### 2.5.3.1. Context Level Diagram
+
+En el Software Architecture Context Diagram se pueden apreciar los componentes más importantes que interactúan con el sistema SaludYa, así como los usuarios principales y las funciones que desempeñan dentro del ecosistema de gestión de citas médicas en establecimientos públicos de salud.
+
+El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pacientes** que reservan y gestionan citas médicas, el **personal de admisión** que controla el flujo de atención en el establecimiento, y el **Super Admin** que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto.
+
+![ContextSys](assets/ContextDiagram.png)
