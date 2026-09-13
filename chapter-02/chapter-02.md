@@ -1429,3 +1429,24 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 <p align="center">
   <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
 </p>
+
+
+#### 2.5.1.1. Candidate Context Discovery
+
+A partir del modelado realizado en el EventStorming, se llevó a cabo una sesión de Candidate Context Discovery con el objetivo de identificar los bounded contexts dentro del dominio de SaludYa. Para ello, se aplicó la técnica **"look-for-pivotal-events"**, que permitió detectar los eventos clave del negocio que marcan transiciones de estado y delimitan responsabilidades entre diferentes partes del proceso.
+
+Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
+
+Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
+
+| # | Bounded Context | Propósito | Eventos clave |
+| :--- | :--- | :--- | :--- |
+| 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Cuenta creada, Sesión iniciada, Menor vinculado |
+| 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. | Cita solicitada, Cupo verificado, Cita reservada, Cita cancelada |
+| 3 | **Dynamic Waitlist & Reassignment** | Gestionar la lista de espera dinámica y la reasignación de cupos liberados. | Cupo liberado, Cita reasignada |
+| 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente y emitir el ticket digital de atención. | Check-in realizado, Ticket emitido, Paciente ausente |
+| 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Reglas actualizadas, Reporte generado |
+
+<p align="center">
+  <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
+</p>
