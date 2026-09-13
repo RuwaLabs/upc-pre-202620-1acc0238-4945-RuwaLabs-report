@@ -1394,3 +1394,38 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 | 18 | TECH-03 | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias | 5 | Sprint 4 |
 | 19 | TECH-04 | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas | 5 | Sprint 4 |
 | 20 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
+
+
+## 2.5. Strategic-Level Domain-Driven Design
+
+### 2.5.1. EventStorming
+
+Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio de la gestión de citas médicas en establecimientos públicos de salud, y definir las interacciones principales entre los actores, comandos y políticas del sistema **SaludYa**.
+
+La sesión se realizó con una duración aproximada de **2 horas**, con la participación de los cinco integrantes del equipo RuwaLabs, utilizando **Miro** como tablero colaborativo.
+
+**Pasos del proceso:**
+
+**1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Cita reservada", "Cupo liberado", "Check-in realizado"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio.
+
+<p align="center">
+  <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%"/>
+</p>
+
+**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta.
+
+<p align="center">
+  <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%"/>
+</p>
+
+**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo.
+
+<p align="center">
+  <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
+</p>
+
+**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa.
+
+<p align="center">
+  <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
+</p>
