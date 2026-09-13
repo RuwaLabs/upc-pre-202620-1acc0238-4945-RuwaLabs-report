@@ -1773,3 +1773,58 @@ El contexto cumple un rol de soporte esencial para el resto del sistema. Su dise
 | **Open Questions** | ¿Se implementará un módulo de analítica predictiva en futuras versiones? <br> ¿Cómo se integrará el dashboard con los sistemas HIS existentes? |
 
 Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa.
+
+
+### 2.5.2. Context Mapping
+
+El proceso de Context Mapping nos permitió analizar y definir las relaciones estructurales y los patrones de integración entre los bounded contexts del sistema SaludYa. Este análisis fue clave para garantizar una comunicación clara, minimizar dependencias innecesarias y mantener una alta cohesión interna dentro de cada contexto.
+
+**Análisis del proceso**
+
+Durante la elaboración de los context maps, el equipo se planteó las siguientes preguntas para refinar los límites y relaciones entre los bounded contexts:
+
+- **¿Qué pasaría si movemos ciertas capacidades del Identity & Access Management al Appointments & Booking?**
+
+  Se descartó esta opción, ya que se perdería la independencia del módulo de autenticación y se generaría una sobrecarga innecesaria en el proceso de reserva. La autenticación debe ser un servicio transversal consumido por el resto de contextos.
+
+- **¿Qué pasaría si descomponemos el Appointments & Booking en subcontextos separados para reservas y cancelaciones?**
+
+  Se concluyó que no era necesario, ya que ambos flujos comparten las mismas reglas de negocio, aggregates y políticas de agenda. Descomponerlo generaría duplicidad y aumentaría la complejidad de coordinación.
+
+- **¿Qué pasaría si el Arrival & QR Check-in dependiera directamente del Appointments & Booking?**
+
+  Se determinó mantener la dependencia mediante **eventos de dominio** (`Cita reservada`, `Cita cancelada`) para evitar acoplamientos fuertes y permitir que el check-in funcione de manera desacoplada.
+
+- **¿Qué pasaría si creamos un servicio compartido para la gestión de notificaciones?**
+
+  Se decidió implementar una comunicación **event-driven** con un **Shared Kernel** (plantillas, canales y prioridades compartidas), dado que varios contextos requieren enviar mensajes al usuario final: Identity & Access Management (confirmaciones de cuenta), Appointments & Booking (confirmación de reservas), Dynamic Waitlist (propuestas de adelanto) y Arrival & QR Check-in (ticket emitido).
+
+- **¿Qué pasaría si aislamos el core de reservas y movemos la configuración a un contexto aparte?**
+
+  Se confirmó la separación actual: **Hospital Operations & Configuration** funciona como contexto de soporte que parametriza el comportamiento de los contextos core sin acoplarse a su lógica interna.
+
+**Patrones de integración aplicados**
+
+A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa:
+
+| Bounded Context origen | Bounded Context destino | Patrón | Justificación |
+| :--- | :--- | :--- | :--- |
+| Identity & Access Management | RENIEC API (externo) | **ACL** | Se traduce el modelo externo de RENIEC al modelo interno de identidad. |
+| Identity & Access Management | Appointments & Booking | **Shared Kernel** | Comparten el modelo de identidad y sesión activa del paciente. |
+| Identity & Access Management | Arrival & QR Check-in | **Shared Kernel** | Comparten la validación de sesión para el check-in. |
+| Identity & Access Management | Hospital Operations & Configuration | **Shared Kernel** | Comparten el modelo de roles para autorizar al Super Admin. |
+| Appointments & Booking | Dynamic Waitlist & Reassignment | **Customer/Supplier** | Booking publica eventos que Waitlist consume. |
+| Appointments & Booking | Arrival & QR Check-in | **Customer/Supplier** | Booking publica eventos que Check-in consume. |
+| Arrival & QR Check-in | Dynamic Waitlist & Reassignment | **Customer/Supplier** | Check-in publica el evento de ausencia que Waitlist consume. |
+| Hospital Operations & Configuration | Appointments & Booking | **Conformist** | Booking adopta el modelo de parámetros operativos sin traducirlo. |
+| Hospital Operations & Configuration | Arrival & QR Check-in | **Conformist** | Check-in adopta el modelo de tolerancias sin traducirlo. |
+
+**Leyenda de patrones:**
+
+- **ACL (Anticorruption Layer):** Capa de traducción entre el modelo externo y el modelo interno.
+- **SK (Shared Kernel):** Modelo compartido entre dos o más contextos.
+- **CF (Conformist):** Un contexto adopta el modelo de otro sin traducirlo.
+- **C/S (Customer/Supplier):** Relación donde el supplier publica y el customer consume.
+
+![Context Map](assets/ContextMapping.png)
+
