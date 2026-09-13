@@ -1553,3 +1553,223 @@ El administrador accede al panel de configuración de la aplicación. El **Hospi
 | 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
 
 Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa.
+
+
+#### 2.5.1.3. Bounded Context Canvases
+
+Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo versión 5 propuesto por el Domain Driven Design Group.
+En cada uno de los canvases registramos las secciones específicas como el Context Overview Definition, Business Rules Distillation y el Ubiquitous Language, identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos.
+
+## Bounded Context Canvas – Identity & Access Management
+
+**Context Overview Definition**
+
+Se encarga del registro, autenticación, vinculación de menores y gestión de roles de los usuarios en la aplicación SaludYa. Permite validar la identidad de los pacientes y el personal administrativo antes de acceder a los módulos principales del sistema.
+
+**Capability Analysis**
+
+- Registro de nuevos pacientes con verificación de DNI.
+- Inicio y cierre de sesión por rol.
+- Recuperación de contraseña.
+- Edición de perfil de usuario.
+- Vinculación de menores de edad a la cuenta del titular.
+- Alta de personal administrativo por parte del Super Admin.
+
+**Capability Layering**
+
+- Capa de presentación: Pantallas móviles de registro, login y perfil.
+- Capa de dominio: Lógica de autenticación, validación de identidad y gestión de roles.
+- Capa de infraestructura: Integración con la API externa de RENIEC y con el servicio de autenticación JWT.
+
+**Dependencies Capture**
+
+Depende del servicio externo de RENIEC para la validación de identidad y del sistema de notificaciones para confirmar el registro, la recuperación de contraseña y la vinculación de menores.
+
+**Design Critique**
+
+El contexto está bien delimitado y desacoplado del resto de bounded contexts. Solo maneja autenticación e identidad, sin interferir en la lógica de reservas o atención. La integración con RENIEC y la gestión de roles por tipo de usuario son sus principales fortalezas.
+
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Name** | Identity & Access Management |
+| **Purpose** | Se encarga del registro, autenticación, vinculación de menores y gestión de roles de los usuarios en la aplicación SaludYa. Permite validar la identidad de los pacientes y el personal administrativo antes de acceder a los módulos principales del sistema. |
+| **Strategic Classification** | **Domain:** Generic · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
+| **Domain Roles** | Execution Context |
+| **Inbound Communication** | **Collaborator:** RENIEC API · **Messages:** Validación de identidad por DNI <br> **Collaborator:** Patient · **Messages:** Solicitud de registro y login <br> **Collaborator:** Super Admin · **Messages:** Alta de personal administrativo |
+| **Outbound Communication** | **Messages:** Usuario autenticado · **Collaborator:** Appointments & Booking, Arrival & QR Check-in <br> **Messages:** Cuenta creada · **Collaborator:** Patient <br> **Messages:** Menor vinculado · **Collaborator:** Appointments & Booking <br> **Messages:** Sesión iniciada · **Collaborator:** Patient |
+| **Ubiquitous Language** | **Cuenta:** Perfil verificado de un usuario en el sistema. <br> **Rol:** Tipo de usuario: Patient, Admission Staff o Super Admin. <br> **Menor vinculado:** Paciente menor de edad asociado a la cuenta de un adulto responsable. <br> **Verificación de identidad:** Validación de los datos del usuario contra el servicio externo de RENIEC. <br> **Sesión:** Periodo de acceso autenticado a la aplicación. |
+| **Business Decisions** | Toda cuenta debe estar verificada con un DNI válido antes de permitir el acceso. <br> Un menor solo puede ser vinculado a un adulto responsable registrado. <br> Las credenciales se manejan con tokens JWT con expiración controlada. <br> El correo registrado debe ser único en el sistema. |
+| **Assumptions** | Los usuarios cuentan con un DNI válido y vigente. <br> El servicio externo de RENIEC está disponible para la validación. |
+| **Verification Metrics** | Tasa de registro exitoso de nuevos pacientes. <br> Porcentaje de cuentas verificadas correctamente por DNI. <br> Tiempo promedio de autenticación. |
+| **Open Questions** | ¿Se implementará autenticación biométrica en futuras versiones? <br> ¿Cómo se gestionará la recuperación de cuenta en caso de pérdida del correo? |
+
+## Bounded Context Canvas – Appointments & Booking
+
+**Context Overview Definition**
+
+Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento.
+
+**Capability Analysis**
+
+- Consulta de disponibilidad en tiempo real.
+- Reserva de citas para el titular o para un menor vinculado.
+- Cancelación de citas dentro del plazo permitido.
+- Notificación de confirmación de reserva.
+- Gestión del historial de citas.
+
+**Capability Layering**
+
+- Capa de presentación: Pantallas de búsqueda, reserva e historial de citas.
+- Capa de dominio: Lógica de asignación de cupos, validación de solapamientos y cancelaciones.
+- Capa de infraestructura: Integración con la base de datos de agendas y con el sistema de notificaciones.
+
+**Dependencies Capture**
+
+Depende de Identity & Access Management para validar la sesión del usuario, de Hospital Operations & Configuration para conocer los parámetros operativos, y del sistema de notificaciones para confirmar reservas y cancelaciones.
+
+**Design Critique**
+
+El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
+
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Name** | Appointments & Booking |
+| **Purpose** | Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. |
+| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
+| **Domain Roles** | Execution Context |
+| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Patient · **Messages:** Búsqueda de disponibilidad y reserva <br> **Collaborator:** Hospital Operations & Configuration · **Messages:** Parámetros operativos |
+| **Outbound Communication** | **Messages:** Cita reservada · **Collaborator:** Patient, Dynamic Waitlist & Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
+| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
+| **Business Decisions** | No se permite reservar dos citas en el mismo intervalo de tiempo para el mismo paciente. <br> Las cancelaciones solo se permiten dentro del plazo configurado por el hospital. <br> Un menor solo puede tener una cita activa en el mismo intervalo. <br> La confirmación de reserva se envía al correo del titular, incluso si la cita es para un menor. |
+| **Assumptions** | Los establecimientos publican su catálogo de especialidades y cupos en el sistema. <br> El paciente cuenta con un dispositivo con acceso a internet para reservar. |
+| **Verification Metrics** | Número de citas reservadas por día. <br> Tasa de cancelación dentro del plazo permitido. <br> Porcentaje de reservas realizadas sin asistencia técnica. |
+| **Open Questions** | ¿Se permitirá reprogramación automática de citas en futuras versiones? <br> ¿Cómo se gestionará la sobreventa de cupos en caso de error del sistema? |
+
+## Bounded Context Canvas – Dynamic Waitlist & Reassignment
+
+**Context Overview Definition**
+
+Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. Permite reducir los cupos desaprovechados y optimizar el uso de las agendas médicas.
+
+**Capability Analysis**
+
+- Registro de pacientes en lista de espera por especialidad.
+- Detección de cupos liberados por cancelación o ausencia.
+- Envío de propuestas de adelanto con tiempo límite de respuesta.
+- Reasignación automática de cupos aceptados.
+- Gestión de expiración de propuestas no respondidas.
+
+**Capability Layering**
+
+- Capa de presentación: Notificaciones push y en pantalla dentro de la app móvil.
+- Capa de dominio: Lógica de priorización, temporización y asignación de cupos.
+- Capa de infraestructura: Integración con el sistema de notificaciones y con la agenda médica.
+
+**Dependencies Capture**
+
+Depende de Appointments & Booking para recibir los eventos de cancelación, de Arrival & QR Check-in para recibir los eventos de ausencia, y del sistema de notificaciones para enviar las propuestas a los pacientes en espera.
+
+**Design Critique**
+
+El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. La gestión de expiración por tiempo y el control de respuestas concurrentes son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
+
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Name** | Dynamic Waitlist & Reassignment |
+| **Purpose** | Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. Permite reducir los cupos desaprovechados y optimizar el uso de las agendas médicas. |
+| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
+| **Domain Roles** | Execution Context |
+| **Inbound Communication** | **Collaborator:** Appointments & Booking · **Messages:** Cita cancelada <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Paciente ausente <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
+| **Outbound Communication** | **Messages:** Cupo liberado · **Collaborator:** Arrival & QR Check-in, Patient <br> **Messages:** Cita reasignada · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Notificación enviada · **Collaborator:** Patient en lista de espera |
+| **Ubiquitous Language** | **Dynamic Waitlist:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente en espera. <br> **Tiempo de respuesta:** Plazo máximo para aceptar o rechazar una propuesta. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
+| **Business Decisions** | Toda propuesta de adelanto expira automáticamente tras el tiempo límite configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> La notificación de oportunidad se envía al paciente con mayor antigüedad en la lista. |
+| **Assumptions** | Los pacientes en lista de espera tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
+| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. |
+| **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
+
+## Bounded Context Canvas – Arrival & QR Check-in
+
+**Context Overview Definition**
+
+Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado.
+
+**Capability Analysis**
+
+- Validación del código QR al llegar al establecimiento.
+- Verificación de la ventana de tolerancia.
+- Emisión del ticket digital con identificador de llamado.
+- Actualización de la cola de atención.
+- Declaración de ausencia por vencimiento de tolerancia.
+
+**Capability Layering**
+
+- Capa de presentación: Pantalla de check-in y visualización del ticket digital.
+- Capa de dominio: Lógica de validación temporal, declaración de ausencia y control de tolerancia.
+- Capa de infraestructura: Integración con el lector de códigos QR y con el servicio de generación de tickets.
+
+**Dependencies Capture**
+
+Depende de Identity & Access Management para validar la sesión del paciente, de Appointments & Booking para verificar la existencia de la cita, y del sistema de notificaciones para informar al paciente sobre el estado de su atención.
+
+**Design Critique**
+
+El contexto tiene un alcance claro y su flujo principal (validar → emitir ticket → actualizar cola) es sencillo y bien delimitado. Su principal desafío es la precisión del control de tolerancia y la integración con dispositivos sin smartphone. El diseño permite agregar mecanismos alternativos de check-in (reconocimiento facial, código de barras) en el futuro.
+
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Name** | Arrival & QR Check-in |
+| **Purpose** | Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. |
+| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
+| **Domain Roles** | Execution Context |
+| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Appointments & Booking · **Messages:** Cita reservada <br> **Collaborator:** Patient · **Messages:** Escaneo de código QR <br> **Collaborator:** Admission Staff · **Messages:** Llamado a consultorio |
+| **Outbound Communication** | **Messages:** Check-in realizado · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
+| **Ubiquitous Language** | **Check-in:** Validación de asistencia presencial mediante código QR. <br> **Ventana de tolerancia:** Intervalo de tiempo configurado para permitir el check-in. <br> **Ticket digital:** Comprobante con identificador de llamado y datos de atención. <br> **Cola de atención:** Lista ordenada de pacientes presentes en el establecimiento. <br> **Ausencia:** Estado del paciente que no se presentó dentro de la tolerancia. |
+| **Business Decisions** | El check-in solo es válido dentro de la ventana de tolerancia configurada por el hospital. <br> Un paciente que excede la tolerancia es declarado ausente automáticamente. <br> El ticket digital solo se emite si el check-in fue confirmado. <br> El estado de la cita se actualiza a "En Atención" al ingresar al consultorio. |
+| **Assumptions** | El establecimiento cuenta con códigos QR visibles en la recepción. <br> El paciente porta un dispositivo móvil con la aplicación instalada. |
+| **Verification Metrics** | Porcentaje de check-ins exitosos dentro de la tolerancia. <br> Tasa de ausencias registradas por día. <br> Tiempo promedio entre check-in y llamado a consultorio. |
+| **Open Questions** | ¿Se implementará check-in mediante reconocimiento facial? <br> ¿Cómo se gestionará el check-in de pacientes sin smartphone? |
+
+## Bounded Context Canvas – Hospital Operations & Configuration
+
+**Context Overview Definition**
+
+Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
+
+**Capability Analysis**
+
+- Configuración de intervalos y fraccionamientos de atención.
+- Definición de ventanas de tolerancia para check-in.
+- Configuración de plazos y márgenes operativos (cancelación, reserva, adelanto).
+- Generación de reportes operativos.
+- Visualización de dashboards de ocupación y ausentismo.
+- Aplicación de nuevas reglas a bloques y turnos futuros.
+
+**Capability Layering**
+
+- Capa de presentación: Panel de configuración y dashboard operativo.
+- Capa de dominio: Lógica de validación de parámetros y aplicación de reglas operativas.
+- Capa de infraestructura: Integración con la base de datos de configuración y con el motor de reportes.
+
+**Dependencies Capture**
+
+Depende de Identity & Access Management para autorizar al Super Admin, y recibe datos desde Appointments & Booking y Arrival & QR Check-in para alimentar los dashboards y reportes.
+
+**Design Critique**
+
+El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
+
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Name** | Hospital Operations & Configuration |
+| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
+| **Strategic Classification** | **Domain:** Supporting · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
+| **Domain Roles** | Execution Context |
+| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado (Super Admin) <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Datos de atención y ausencias <br> **Collaborator:** Appointments & Booking · **Messages:** Datos de reservas y cancelaciones |
+| **Outbound Communication** | **Messages:** Reglas actualizadas · **Collaborator:** Appointments & Booking, Arrival & QR Check-in <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
+| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
+| **Business Decisions** | Los cambios de configuración solo aplican a los nuevos bloques, no afectan citas ya confirmadas. <br> Los parámetros inválidos o inconsistentes son rechazados por el sistema. <br> Solo el Super Admin puede modificar las reglas operativas del establecimiento. <br> Los reportes se generan con datos anonimizados. |
+| **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
+| **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
+| **Open Questions** | ¿Se implementará un módulo de analítica predictiva en futuras versiones? <br> ¿Cómo se integrará el dashboard con los sistemas HIS existentes? |
+
+Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa.
