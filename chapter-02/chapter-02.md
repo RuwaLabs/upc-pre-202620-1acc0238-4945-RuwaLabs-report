@@ -435,7 +435,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Apoderado del paciente,<br>
+        <b>Como</b> Paciente,<br>
         <b>Quiero</b> registrar y vincular a un menor de edad a mi cuenta principal ingresando su DNI,<br>
         <b>Para</b> gestionar las citas médicas del niño desde mi usuario.
       </td>
@@ -446,7 +446,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     <tr>
       <td colspan="4">
         <b>Scenario 1: Vinculación exitosa de menor</b><br>
-        • <b>Given</b> que el apoderado está autenticado en su cuenta,<br>
+        • <b>Given</b> que el paciente está autenticado en su cuenta,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el DNI del menor y confirma la filiación,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos del niño por su DNI y lo asocia al perfil del adulto responsable.<br><br>
         <b>Scenario 2: Menor previamente vinculado</b><br>
@@ -457,7 +457,6 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
         • <b>Given</b> que el apoderado del paciente ingresa un DNI pero un solo dato no coincide con los registros oficiales,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.<br><br>
-
       </td>
     </tr>
   </tbody>
@@ -566,7 +565,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-06</td>
-      <td>Patient / Admin staff / Administrador</td>
+      <td>Patient / Admin staff / Super Admin</td>
       <td>High</td>
       <td>EP-01: Authentication & Identity Management</td>
     </tr>
@@ -579,8 +578,8 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente o Personal de Admisión,<br>
-        <b>Quiero</b> autenticarme con mi correo y contraseña,<br>
+        <b>Como</b> Paciente, personal administrativo o Super Admin, <br>
+        <b>Quiero</b> autenticarme con mi correo, contraseña y selección de rol,<br>
         <b>Para</b> acceder al panel de usuario correspondiente.
       </td>
     </tr>
@@ -592,13 +591,17 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
         <b>Scenario 1: Login exitoso</b><br>
         • <b>Given</b> credenciales válidas,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se presiona "Iniciar Sesión",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> otorga acceso redirigiendo al dashboard de Paciente o de Admisión.
+        &nbsp;&nbsp;&nbsp;<b>Then</b> otorga acceso redirigiendo al dashboard de Paciente o de Admisión.<br> <br>
+        <b>Scenario 2: Rechazo por credenciales inválidas o usuarios inexistentes</b><br>
+        • <b>Given</b> que un usuario ingresa un correo no registrado, una contraseña incorrecta o un rol no correspondiente,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se presiona "Iniciar Sesión",<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el aceso y notifica de credenciales inválidas.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-07: Búsqueda de Citas -->
+<!-- US-07: Visualización de Calendario y Turnos Médicos -->
 <table>
   <thead>
     <tr>
@@ -611,13 +614,13 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-07</td>
-      <td>Patient</td>
+      <td>Patient / Admission Staff</td>
       <td>High</td>
       <td>EP-02: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Búsqueda de Disponibilidad y Turnos</td>
+      <td colspan="3">Visualización de Calendario y Horarios Disponibles</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
@@ -625,8 +628,8 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     <tr>
       <td colspan="4">
         <b>Como</b> Paciente,<br>
-        <b>Quiero</b> buscar turnos por especialidad o fecha,<br>
-        <b>Para</b> seleccionar el horario más conveniente.
+        <b>Quiero</b> seleccionar una especialidad médica y explorar el calendario de atención,<br>
+        <b>Para</b> visualizar directamente los horarios y turnos disponibles configurados según los intervalos del hospital.
       </td>
     </tr>
     <tr>
@@ -634,16 +637,24 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Búsqueda con cupos</b><br>
-        • <b>Given</b> especialidad y fecha seleccionadas,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> ejecuta la búsqueda,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> muestra la lista de turnos disponibles según la regla de intervalos del hospital.
+        <b>Scenario 1: Despliegue del calendario con horarios disponibles</b><br>
+        • <b>Given</b> una especialidad médica seleccionada que cuenta con agenda activa,<br>
+        <b>When</b> el paciente consulta una fecha del calendario,<br>
+        <b>Then</b> el paciente encuentra bloques de horarios libres.<br><br>
+        <b>Scenario 2: Calendario sin horarios o agenda completa</b><br>
+        • <b>Given</b> una especialidad médica seleccionada,<br>
+        <b>When</b> el paciente explora una fecha sin médicos programados o con cupos agotados,<br>
+        <b>Then</b> la ausencia de turnos para dicho día y destaca en el calendario las fechas más próximas con horarios libres.<br><br>
+        <b>Scenario 3: Restricción por especialidad no seleccionada</b><br>
+        • <b>Given</b> que no se ha seleccionado ninguna especialidad médica,<br>
+        <b>When</b> el paciente intenta explorar los días del calendario,<br>
+        <b>Then</b> se deshabilita la navegación de fechas indicando la requerida selección de la especialidad.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-08: Reserva de Cita -->
+<!-- US-08: Reserva de Cita Médica -->
 <table>
   <thead>
     <tr>
@@ -656,22 +667,22 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-08</td>
-      <td>Patient</td>
+      <td>Patient / Admission Staff</td>
       <td>High</td>
       <td>EP-02: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Reserva de Cita Médica</td>
+      <td colspan="3">Reserva de Cita Médica para Titular o Menor de Edad</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> confirmar la reserva de un turno seleccionado (para mí o para un menor a mi cargo),<br>
-        <b>Para</b> asegurar la atención respetando las restricciones de horarios máximos para sacar cupo.
+        <b>Como</b> Paciente titular o Personal Administrativo,<br>
+        <b>Quiero</b> seleccionar un turno disponible del calendario e indicar si la atención es para el titular o para un menor registrado,<br>
+        <b>Para</b> bloquear el bloque horario y agendar la cita médica.
       </td>
     </tr>
     <tr>
@@ -679,16 +690,24 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Reserva confirmada</b><br>
-        • <b>Given</b> un turno seleccionado dentro de la hora máxima permitida para agendar,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> confirma la solicitud,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> la cita se registra en estado "Reservada".
+        <b>Scenario 1: Reserva exitosa para el paciente titular</b><br>
+        • <b>Given</b> un horario libre seleccionado del calendario y la indicación de que la cita corresponde al paciente titular,<br>
+        <b>When</b> se confirma la reserva del turno,<br>
+        <b>Then</b> el sistema asocia el bloque horario a la cuenta del titular, actualiza el turno a estado reservado y envía la notificación de confirmación.<br><br>
+        <b>Scenario 2: Reserva exitosa para un menor de edad vinculado (US-03)</b><br>
+        • <b>Given</b> un horario libre seleccionado del calendario y la elección de un menor previamente vinculado a la cuenta del titular,<br>
+        ;<b>When</b> se confirma la reserva del turno,<br>
+        <b>Then</b> el sistema asigna la cita al perfil del menor, registra al titular como adulto responsable y emite el comprobante de la reserva.<br><br>
+        <b>Scenario 3: Denegación por solapamiento de horario</b><br>
+        • <b>Given</b> que el paciente (titular o menor seleccionado) ya cuenta con una cita activa registrada en el mismo bloque horario,<br>
+        <b>When</b> se intenta confirmar la nueva reserva,<br>
+        <b>Then</b> el sistema rechaza la operación e informa la incompatibilidad por cruce de horarios.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-09: Notificación de Cita -->
+<!-- US-09: Notificación de Cita Confirmada -->
 <table>
   <thead>
     <tr>
@@ -707,16 +726,16 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Notificación de Cita Confirmada</td>
+      <td colspan="3">Notificación de Cita Confirmada o Reasignada</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> recibir una confirmación inmediata tras reservar o reasignar una cita,<br>
-        <b>Para</b> contar con el comprobante y detalles del turno.
+        <b>Como</b> Paciente titular,<br>
+        <b>Quiero</b> recibir una confirmación por correo electrónico o mensaje al reservar o reasignar una cita (propia o de un menor a cargo),<br>
+        <b>Para</b> contar con el comprobante y los detalles de la atención médica.
       </td>
     </tr>
     <tr>
@@ -724,16 +743,20 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Confirmación enviada</b><br>
-        • <b>Given</b> una cita agendada exitosamente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el proceso concluye,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> emite notificación push/email con código de reserva, especialidad, fecha y hora.
+        <b>Scenario 1: Envío exitoso de confirmación de cita</b><br>
+        • <b>Given</b> una cita médica reservada o reasignada exitosamente para el titular o un menor vinculado,<br>
+        <b>When</b> concluye el proceso de agendamiento,<br>
+        <b>Then</b> el sistema envía una notificación al correo del titular conteniendo el código de reserva, nombre del paciente beneficiario, especialidad, médico, fecha y hora del turno.<br><br>
+        <b>Scenario 2: Contingencia por fallo en el servicio de notificación</b><br>
+        • <b>Given</b> una cita médica reservada exitosamente,<br>
+        <b>When</b> el servicio externo de correo o SMS presenta indisponibilidad,<br>
+        <b>Then</b> el sistema registra la cita correctamente y encola la notificación para reintentar su envío automáticamente sin interrumpir la confirmación del turno.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-10: Reasignación y Notificación de Ausencia -->
+<!-- US-10: Respuesta a Notificación de Adelanto de Cita -->
 <table>
   <thead>
     <tr>
@@ -746,22 +769,22 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-10</td>
-      <td>Admission Staff / Waitlisted Patient</td>
+      <td>Patient</td>
       <td>High</td>
       <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Notificación de Hueco por Ausencia y Reasignación de Cupo</td>
+      <td colspan="3">Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Sistema / Personal de Admisión,<br>
-        <b>Quiero</b> detectar cuando un paciente falta a su turno para notificar al siguiente candidato en lista de espera sobre un cupo más temprano,<br>
-        <b>Para</b> ocupar los espacios vacíos producidos por inasistencias.
+        <b>Como</b> Paciente citado en un intervalo posterior,<br>
+        <b>Quiero</b> responder a la notificación de propuesta de adelanto (aceptando o negando el cambio),<br>
+        <b>Para</b> ocupar el intervalo anterior que quedó libre o mantener mi turno programado originalmente.
       </td>
     </tr>
     <tr>
@@ -769,16 +792,28 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Notificación de adelanto de cupo</b><br>
-        • <b>Given</b> la liberación de un espacio por inasistencia o tolerancia vencida,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se genera el hueco,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> envía una alerta al paciente elegible informando sobre la posibilidad de ser atendido en un horario más temprano.
+        <b>Scenario 1: Aceptación exitosa del cambio de intervalo</b><br>
+        • <b>Given</b> que un paciente recibe la notificación con la propuesta de adelantar su cita a un intervalo anterior disponible,<br>
+        <b>When</b> el paciente selecciona aceptar el cambio de horario,<br>
+        <b>Then</b> el sistema le asigna el nuevo intervalo de atención, libera su horario original para otros usuarios y confirma la reasignación.<br><br>
+        <b>Scenario 2: Rechazo/Negación del cambio de intervalo</b><br>
+        • <b>Given</b> que un paciente recibe la notificación con la propuesta de adelantar su cita,<br>
+        <b>When</b> el paciente selecciona denegar o rechazar el cambio,<br>
+        <b>Then</b> el sistema mantiene su cita intacta en el intervalo original y notifica la disponibilidad al siguiente paciente en cola.<br><br>
+        <b>Scenario 3: Expiración por falta de respuesta (Rechazo implícito)</b><br>
+        • <b>Given</b> la notificación de propuesta enviada con un tiempo límite de respuesta,<br>
+        <b>When</b> el paciente no responde dentro del lapso establecido,<br>
+        <b>Then</b> el sistema asume la negación del cambio, conserva la cita en su hora inicial y transmite la propuesta al posterior en cola.<br><br>
+        <b>Scenario 4: Intento de aceptación sobre un cupo ya asignado</b><br>
+        • <b>Given</b> que la propuesta de cambio fue enviada a más de un paciente,<br>
+        <b>When</b> el usuario intenta aceptar la propuesta pero el intervalo ya fue tomado por otro paciente,<br>
+        <b>Then</b> el sistema notifica que el horario libre ya no se encuentra disponible y mantiene su cita sin modificaciones.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-11: Respuesta a Reasignación y Concurrencia -->
+<!-- US-11: Check-in Presencial mediante Código QR -->
 <table>
   <thead>
     <tr>
@@ -791,22 +826,22 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-11</td>
-      <td>Waitlisted Patient</td>
+      <td>Patient / Admission Staff</td>
       <td>High</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
+      <td>EP-04: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Aceptación o Rechazo de Reasignación con Resolución Concurrente</td>
+      <td colspan="3">Registro de Llegada (Check-in) mediante Código QR</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente en lista de espera,<br>
-        <b>Quiero</b> aceptar o rechazar la propuesta de un turno liberado,<br>
-        <b>Para</b> adelantar mi atención o mantener mi posición original si no puedo asistir antes.
+        <b>Como</b> Paciente,<br>
+        <b>Quiero</b> registrar mi presencia procesando el código QR del establecimiento al llegar al hospital,<br>
+        <b>Para</b> confirmar mi asistencia dentro de la ventana de tolerancia configurada por la institución y habilitar mi turno en la cola de atención.
       </td>
     </tr>
     <tr>
@@ -814,24 +849,28 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Aceptación exitosa</b><br>
-        • <b>Given</b> una alerta de turno disponible,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente presiona "Aceptar",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la cita al nuevo horario.<br><br>
-        <b>Scenario 2: Rechazo de turno</b><br>
-        • <b>Given</b> la propuesta de reasignación,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente presiona "Rechazar",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema notifica de inmediato al siguiente paciente en la lista de espera.<br><br>
-        <b>Scenario 3: Conflicto de respuestas simultáneas (Concurrencia)</b><br>
-        • <b>Given</b> que dos pacientes intentan confirmar el mismo cupo liberado al mismo tiempo,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> ambas peticiones ingresan al servidor,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> asigna el cupo al paciente cuya cita original era más pronta y redirige al segundo paciente hacia el siguiente horario disponible.
+        <b>Scenario 1: Check-in exitoso dentro de la ventana de tolerancia del hospital</b><br>
+        • <b>Given</b> que un paciente con cita agendada se presenta en el establecimiento dentro del intervalo de tolerancia parametrizado por el hospital,<br>
+        <b>When</b> procesa la validación del código QR presencial,<br>
+        <b>Then</b> el sistema valida la cita, cambia el estado del turno a "Presente" y lo ingresa formalmente en la cola de atención del médico.<br><br>
+        <b>Scenario 2: Check-in exitoso para un menor de edad a cargo (US-03)</b><br>
+        • <b>Given</b> un paciente titular autenticado que acompaña a su menor registrado con cita en el intervalo activo,<br>
+        <b>When</b> procesa el código QR seleccionando la cita del menor,<br>
+        <b>Then</b> el sistema confirma la presencia del menor y actualiza el estado de su turno a "Presente".<br><br>
+        <b>Scenario 3: Denegación por tolerancia vencida (Llegada tardía)</b><br>
+        • <b>Given</b> que el tiempo de llegada supera el margen de tolerancia máximo permitido por la configuración del hospital,<br>
+        <b>When</b> el paciente intenta registrar la llegada mediante el código QR,<br>
+        <b>Then</b> el sistema deniega el check-in, marca la cita como "Inasistencia por Tolerancia Vencida" e inicia el protocolo de liberación de cupo (US-10).<br><br>
+        <b>Scenario 4: Intento de Check-in fuera de la ventana horaria (Llegada muy anticipada o fecha incorrecta)</b><br>
+        • <b>Given</b> una cita médica programada para un horario o fecha posterior fuera del margen de anticipación permitido,<br>
+        <b>When</b> el usuario intenta procesar el código QR,<br>
+        <b>Then</b> el sistema rechaza la confirmación notificando que aún no se habilita la ventana de registro para dicho turno.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-12: Visualización en Tiempo Real de Lista de Espera (Paciente) -->
+<!-- US-12: Emisión de Ticket Digital de Atención -->
 <table>
   <thead>
     <tr>
@@ -846,11 +885,11 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
       <td>US-12</td>
       <td>Patient</td>
       <td>Medium</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP-04: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Seguimiento en Tiempo Real de la Lista de Espera</td>
+      <td colspan="3">Emisión de Ticket Digital de Atención</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
@@ -858,8 +897,8 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     <tr>
       <td colspan="4">
         <b>Como</b> Paciente,<br>
-        <b>Quiero</b> consultar el estado en vivo de la lista de espera desde mi dispositivo,<br>
-        <b>Para</b> conocer mi posición actual y la estimación de tiempo sin estar pegado a la pantalla de la sala.
+        <b>Quiero</b> obtener un ticket digital de atención tras confirmar el check-in presencial,<br>
+        <b>Para</b> disponer del identificador alfanumérico y los datos de la sala con los que seré llamado a consultorio.
       </td>
     </tr>
     <tr>
@@ -867,16 +906,77 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Actualización de posición en vivo</b><br>
-        • <b>Given</b> un paciente con un turno activo en lista de espera,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> hay avances en los llamados de consultorio,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> la pantalla de la app actualiza automáticamente la cantidad de turnos por delante en tiempo real.
+        <b>Scenario 1: Generación exitosa de ticket digital para el titular</b><br>
+        • <b>Given</b> que un paciente realiza la confirmación de llegada (check-in) exitosamente,<br>
+        • <b>When</b> el sistema procesa el registro de presencia,<br>
+        • <b>Then</b> emite el ticket digital con un código único de llamado, indicando la especialidad, el médico asignado, la sala de espera y el consultorio correspondiente.<br><br>
+        <b>Scenario 2: Generación de ticket digital para un menor de edad (US-03)</b><br>
+        • <b>Given</b> que el apoderado confirma el check-in para la cita de un menor a su cargo,<br>
+        • <b>When</b> el sistema valida la llegada,<br>
+        • <b>Then</b> genera el ticket digital vinculando el identificador de llamado a la historia del menor y mostrando al titular como adulto responsable.<br><br>
+        <b>Scenario 3: Denegación de emisión por check-in no confirmado</b><br>
+        • <b>Given</b> una cita que no ha registrado el check-in o se encuentra fuera de la ventana de tolerancia,<br>
+        • <b>When</b> se intenta generar el ticket de atención,<br>
+        • <b>Then</b> el sistema bloquea la emisión e informa que se requiere confirmar la presencia presencial previamente.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-13: Check-in QR -->
+<!-- US-12: Ejecución del Protocolo de Ausencia y Liberación de Cupo -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-12</td>
+      <td>Admission Staff</td>
+      <td>High</td>
+      <td>EP-05: Hospital Operations & System Configuration</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal Administrativo,<br>
+        <b>Quiero</b> que el sistema declare la inasistencia de un paciente cuando este no acude al ser llamado tras exceder el tiempo de espera configurado por el hospital,<br>
+        <b>Para</b> dar por perdido su turno y abrir inmediatamente el cupo en el intervalo para los pacientes de los siguientes horarios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Pérdida de turno y liberación de cupo por inasistencia al llamado</b><br>
+        • <b>Given</b> que un paciente con cita (titular o menor a cargo) es llamado a consultorio y transcurre el tiempo límite de tolerancia determinado por el hospital sin que se ingrese a la atención,<br>
+        • <b>When</b> se registra o procesa la inasistencia en el turno,<br>
+        • <b>Then</b> el sistema cambia el estado de la cita a "Ausente / Turno Perdido", libera definitivamente el cupo del intervalo y dispara la notificación de propuesta de adelanto a los pacientes de los intervalos posteriores (US-10).<br><br>
+        <b>Scenario 2: Intento de atención sobre un turno ya declarado como ausente</b><br>
+        • <b>Given</b> un paciente cuyo turno fue marcado como "Ausente / Turno Perdido" por exceder el tiempo hospitalario,<br>
+        • <b>When</b> se intenta iniciar la consulta médica para dicha cita,<br>
+        • <b>Then</b> el sistema rechaza la operación informando la pérdida del turno y sugiriendo la reprogramación del paciente.<br><br>
+        <b>Scenario 3: Cancelación del llamado por presencia a tiempo dentro del margen hospitalario</b><br>
+        • <b>Given</b> un paciente llamado que ingresa al consultorio dentro del tiempo determinado por el hospital,<br>
+        • <b>When</b> se valida su ingreso a la atención médica,<br>
+        • <b>Then</b> el sistema cambia el estado a "En Atención" y detiene el conteo del protocolo de ausencia.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-13: Configuración de Parámetros Operativos del Hospital -->
 <table>
   <thead>
     <tr>
@@ -889,22 +989,22 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>US-13</td>
-      <td>Patient</td>
+      <td>Super Admin</td>
       <td>High</td>
-      <td>EP-04: Arrival & QR Check-in System</td>
+      <td>EP-05: Hospital Operations & System Configuration</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Check-in por Código QR Presencial</td>
+      <td colspan="3">Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> escanear el QR del establecimiento al llegar,<br>
-        <b>Para</b> registrar mi llegada dentro de la hora límite permitida.
+        <b>Como</b> Administrador,<br>
+        <b>Quiero</b> parametrizar los intervalos de atención (fraccionamiento 1 a 1), el máximo de pacientes por bloque, la ventana de tolerancia para check-in (hora límite de llegada), el margen máximo para la recepción de cupos adelantados, la hora límite para reservar citas y la anticipación máxima requerida para cancelaciones,<br>
+        <b>Para</b> adaptar el comportamiento dinámico del sistema a la capacidad operativa y políticas de la institución.
       </td>
     </tr>
     <tr>
@@ -912,16 +1012,24 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Check-in a tiempo</b><br>
-        • <b>Given</b> el paciente dentro del margen de tolerancia asignado por el hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> escanea el código QR en recepción,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> actualiza el estado a "Presente".
+        <b>Scenario 1: Actualización exitosa de la configuración operativa global</b><br>
+        • <b>Given</b> un usuario autenticado con rol de Administrador,<br>
+        • <b>When</b> actualiza y guarda los valores de intervalos de tiempo, límite de tolerancia de llegada, horario de corte para reservas y plazo de cancelación,<br>
+        • <b>Then</b> el sistema persiste la nueva parametrización y la aplica de forma inmediata a la generación de agendas, cálculo de disponibilidad y validaciones de check-in.<br><br>
+        <b>Scenario 2: Rechazo por valores de configuración inválidos o inconsistentes</b><br>
+        • <b>Given</b> un Administrador modificando las reglas operativas,<br>
+        • <b>When</b> ingresa parámetros incoherentes (como una tolerancia de llegada superior a la duración del intervalo o una hora límite de cancelación posterior a la hora de la cita),<br>
+        • <b>Then</b> el sistema bloquea el registro de la configuración e informa sobre los campos en conflicto.<br><br>
+        <b>Scenario 3: Preservación de citas agendadas ante cambios de configuración</b><br>
+        • <b>Given</b> la modificación de los intervalos u horarios operativos del hospital,<br>
+        • <b>When</b> se aplican los nuevos parámetros globales,<br>
+        • <b>Then</b> el sistema mantiene intactas las citas confirmadas con anterioridad y aplica las nuevas reglas únicamente a los nuevos bloques y turnos generados.
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-14: Ticket Digital -->
+<!-- US-14: Consulta y Cancelación de Citas por el Paciente -->
 <table>
   <thead>
     <tr>
@@ -935,201 +1043,21 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     <tr>
       <td>US-14</td>
       <td>Patient</td>
-      <td>Medium</td>
-      <td>EP-04: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Emisión de Ticket Digital de Atención</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> recibir un ticket digital tras confirmar mi llegada,<br>
-        <b>Para</b> conocer el identificador con el que seré llamado a consultorio.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Generación de ticket</b><br>
-        • <b>Given</b> el check-in confirmado,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se procesa la presencia,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> despliega el ticket digital codificado en pantalla.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- US-15: Panel de Control de Admisión -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-15</td>
-      <td>Admission Staff</td>
-      <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Panel de Monitoreo de Sala en Tiempo Real</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Personal de Admisión,<br>
-        <b>Quiero</b> visualizar en un panel la presencia de los pacientes y el avance de los llamados,<br>
-        <b>Para</b> coordinar la fluidez en salas de espera.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Visualización del flujo</b><br>
-        • <b>Given</b> el panel activo,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> ingresan pacientes o cambian estados,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> actualiza la interfaz sin recargas manuales.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- US-16: Protocolo de Ausencia Ajustado -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-16</td>
-      <td>Admission Staff</td>
-      <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Ejecución de Protocolo de Ausencia al Llamado</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Personal de Admisión,<br>
-        <b>Quiero</b> marcar la inasistencia de un paciente que no acude al ser llamado,<br>
-        <b>Para</b> liberar automáticamente su espacio y activar la reasignación de la lista de espera.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Marcado de ausencia</b><br>
-        • <b>Given</b> un paciente llamado que excede el tiempo en sala,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el personal presiona "Marcar Inasistencia",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el turno pasa a estado "No Presentado" y dispara el evento de reasignación a la lista de espera (US-10).
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- US-17: Configuración de Parámetros del Hospital -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-17</td>
-      <td>Administrator</td>
-      <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Configuración de Reglas Operativas y Horarios del Hospital</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Administrador del Hospital,<br>
-        <b>Quiero</b> parametrizar la configuración de horarios 1 a 1, máximo de pacientes por intervalo, hora límite de llegada, hora límite que puede alcanzar cupo, hora máxima para sacar cupo y hora máxima para cancelar citas,<br>
-        <b>Para</b> adaptar las reglas de negocio del sistema a la capacidad operativa de la clínica.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Guardado de parámetros globales</b><br>
-        • <b>Given</b> el módulo de configuración de reglas de atención,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se modifican los rangos de tolerancia y límites de cancelación/reserva,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica las reglas a todas las búsquedas y agendas a partir de ese momento.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- US-18: Historial y Cancelación para Paciente -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-18</td>
-      <td>Patient</td>
       <td>High</td>
       <td>EP-02: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Consulta de Citas y Cancelación por el Paciente</td>
+      <td colspan="3">Consulta de Citas Agendadas y Cancelación Voluntaria</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> consultar mis citas programadas y tener la opción de cancelar un turno dentro del horario límite permitido por el hospital,<br>
-        <b>Para</b> liberar mi cupo formalmente cuando no pueda asistir.
+        <b>Como</b> Paciente titular,<br>
+        <b>Quiero</b> consultar el historial y estado de mis citas (propias o de menores a mi cargo - US-03) y cancelar un turno dentro de la anticipación mínima parametrizada por el hospital (US-13),<br>
+        <b>Para</b> liberar formalmente el espacio en la agenda médica cuando no sea posible asistir y posibilitar la reasignación del turno.
       </td>
     </tr>
     <tr>
@@ -1137,199 +1065,25 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Cancelación dentro del horario permitido</b><br>
-        • <b>Given</b> un turno agendado cuya hora está antes del límite fijado para cancelaciones,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la cancelación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> libera la cita y notifica el evento al sistema.<br><br>
-        <b>Scenario 2: Intento fuera del límite</b><br>
-        • <b>Given</b> que la cita sobrepasó el margen máximo de cancelación previa,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta cancelar,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> deshabilita la opción e indica contactar a admisión.
-      </td>
-    </tr>
-  </tbody>
-</table>
-<!-- SPK-01 -->
-<table border="1">
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SPK-01</td>
-      <td>Equipo de Desarrollo / Arquitecto de Software</td>
-      <td>High</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
-    </tr>
-    <tr>
-      <td>Title</td>
-      <td colspan="3">Evaluación de WebSockets vs Server-Sent Events (SSE) y Push Notifications (FCM)</td>
-    </tr>
-    <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Investigar y definir la arquitectura de comunicación en tiempo real más eficiente para actualizar la posición en lista de espera, pantallas de sala y alertas instantáneas en la app del paciente.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <ul>
-          <li>Benchmarking de latencia y consumo de recursos entre WebSockets y SSE en escenarios de alta concurrencia.</li>
-          <li>Prueba de concepto (PoC) integrada con FCM para notificaciones push en segundo plano.</li>
-          <li>Documento técnico con la arquitectura seleccionada y patrón de implementación recomendado.</li>
-        </ul>
+        <b>Scenario 1: Cancelación exitosa dentro del plazo límite permitido</b><br>
+        • <b>Given</b> una cita médica activa (del titular o de un menor vinculado) cuyo tiempo restante cumple con la regla de anticipación mínima configurada por la institución,<br>
+        • <b>When</b> el paciente efectúa la solicitud de cancelación,<br>
+        • <b>Then</b> el sistema cambia el estado del turno a "Cancelado por el Paciente", libera la franja horaria en la agenda médica y emite el comprobante de cancelación al correo registrado.<br><br>
+        <b>Scenario 2: Denegación de cancelación por superación del límite temporal</b><br>
+        • <b>Given</b> una cita médica agendada cuyo margen de tiempo para cancelaciones ya ha expirado según la regla operativa del hospital,<br>
+        • <b>When</b> el paciente intenta procesar la cancelación del turno,<br>
+        • <b>Then</b> el sistema rechaza la solicitud e indica que la gestión debe realizarse de manera presencial o directa con el personal de admisión.<br><br>
+        <b>Scenario 3: Consulta de citas activas e históricas (Titular y Menores a cargo)</b><br>
+        • <b>Given</b> un paciente titular autenticado en el sistema,<br>
+        • <b>When</b> consulta el registro de turnos,<br>
+        • <b>Then</b> el sistema retorna el desglose de citas programadas, finalizadas y canceladas, discriminando si corresponden al titular o a sus menores vinculados.
       </td>
     </tr>
   </tbody>
 </table>
 
-<br>
-
-<!-- SPK-02 -->
-<table border="1">
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SPK-02</td>
-      <td>Equipo de Desarrollo / Backend Developer</td>
-      <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <td>Title</td>
-      <td colspan="3">Integración, Latencia y Fallback de la API DNI Externa</td>
-    </tr>
-    <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Evaluar tiempos de respuesta, tasa de disponibilidad y diseñar el protocolo de resiliencia/fallback ante caídas del proveedor externo de verificación de datos por DNI.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <ul>
-          <li>Mapeo de respuestas, manejo de errores y tiempos límite (timeouts) de la API externa de DNI.</li>
-          <li>Diseño del mecanismo de reintentos (Exponential Backoff) y Circuit Breaker para evitar bloqueos del sistema.</li>
-          <li>Definición del flujo alternativo (manual o diferido) cuando el servicio externo esté inaccesible.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<!-- SPK-03 -->
-<table border="1">
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SPK-03</td>
-      <td>Equipo de Desarrollo / Database Administrator</td>
-      <td>High</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
-    </tr>
-    <tr>
-      <td>Title</td>
-      <td colspan="3">Estrategia de Concurrencia y Transacciones en Reasignación de Cupos</td>
-    </tr>
-    <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Diseñar el mecanismo de bloqueos (optimista/pesimista) y aislamiento transaccional en base de datos para manejar respuestas simultáneas cuando múltiples pacientes intentan confirmar un mismo cupo liberado.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <ul>
-          <li>Pruebas de estrés para simular la confirmación simultánea de un turno por varios usuarios.</li>
-          <li>Implementación y comparación de Bloqueo Pesimista vs Bloqueo Optimista (p. ej. SELECT FOR UPDATE o versión/timestamp).</li>
-          <li>Estrategia validada que garantice cero asignaciones dobles (race conditions) con tiempos de respuesta reducidos.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<!-- SPK-04 -->
-<table border="1">
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SPK-04</td>
-      <td>Equipo de Desarrollo / Security Engineer</td>
-      <td>Medium</td>
-      <td>EP-04: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <td>Title</td>
-      <td colspan="3">Generación y Validación Segura de Códigos QR Dinámicos</td>
-    </tr>
-    <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Investigar el protocolo de firmado de tokens temporales rotativos codificados en QR para prevenir fraudes, duplicación o check-in remoto no autorizado.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <ul>
-          <li>Definición de algoritmo de cifrado y caducidad para el QR dinámico (ej. HMAC con JWT rotativo).</li>
-          <li>PoC de generación en móvil/web y lectura mediante escáner en tótem de recepción.</li>
-          <li>Validación de imposibilidad de reutilización o captura de pantalla previa.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-
-<!-- ==================== TECHNICAL TASKS ==================== -->
-<h3>2. Tareas Técnicas y Deuda Técnica (Technical Tasks)</h3>
-
-<!-- TECH-01 -->
-<table border="1">
+<!-- TECH-01: Servicio de Notificaciones Transaccionales -->
+<table>
   <thead>
     <tr>
       <th>Story ID</th>
@@ -1341,30 +1095,41 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>TECH-01</td>
-      <td>Equipo Backend / Infrastructure Engineer</td>
+      <td>Developer</td>
       <td>High</td>
       <td>EP-01 / EP-02 / EP-03</td>
     </tr>
     <tr>
-      <td>Title</td>
-      <td colspan="3">Integración del Servicio Transaccional de Correo y Push Notifications</td>
+      <th>Title</th>
+      <td colspan="3">Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM)</td>
     </tr>
     <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Configurar la infraestructura (SMTP/SMS/FCM) para el envío seguro y masivo de tokens de recuperación de contraseña, confirmaciones de reserva y notificaciones de reasignación.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
+      <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <ul>
-          <li>Configuración de plantillas para correos transaccionales.</li>
-          <li>Integración de Firebase Cloud Messaging (FCM) para notificaciones push en móviles.</li>
-          <li>Manejo de colas de mensajes (p. ej. RabbitMQ o Redis Queue) para procesamiento asíncrono.</li>
-        </ul>
+        <b>Como</b> Developer,<br>
+        <b>Quiero</b> integrar los clientes de servicios de mensajería (SMTP, Firebase Cloud Messaging y pasarela SMS),<br>
+        <b>Para</b> proveer componentes reutilizables de envío masivo y seguro de notificaciones transaccionales a través de la arquitectura del sistema.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Envío de correo electrónico transaccional via SMTP</b><br>
+        • <b>Given</b> una solicitud de envío con la plantilla HTML y los datos dinámicos requeridos,<br>
+        • <b>When</b> el servicio invoca la interfaz de transporte SMTP,<br>
+        • <b>Then</b> la pasarela entrega el correo al destinatario y retorna una respuesta con estado `200 OK` y el ID del mensaje enviado.<br><br>
+        <b>Scenario 2: Envío de alerta push a dispositivo móvil vía FCM API</b><br>
+        • <b>Given</b> un payload de notificación Push conteniendo el token del dispositivo destino,<br>
+        • <b>When</b> el servicio ejecuta la petición HTTP POST hacia la API de Firebase Cloud Messaging,<br>
+        • <b>Then</b> FCM responde con código `200 OK` confirmando la entrega del mensaje al dispositivo.<br><br>
+        <b>Scenario 3: Procesamiento asíncrono con colas de mensajería (Broker)</b><br>
+        • <b>Given</b> múltiples solicitudes concurrentes de envío de notificaciones,<br>
+        • <b>When</b> la API receptora inserta los trabajos en la cola de mensajes (RabbitMQ/Redis),<br>
+        • <b>Then</b> el broker confirma la recepción del evento (`202 Accepted`) y delega el procesamiento asíncrono a los workers.
       </td>
     </tr>
   </tbody>
@@ -1372,8 +1137,10 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
 
 <br>
 
-<!-- TECH-02 -->
-<table border="1">
+<br>
+
+<!-- TECH-03: Endpoints API REST y OpenAPI -->
+<table>
   <thead>
     <tr>
       <th>Story ID</th>
@@ -1385,30 +1152,41 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>TECH-02</td>
-      <td>Equipo Backend / Database Administrator</td>
+      <td>Developer</td>
       <td>High</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP-05: Hospital Operations & System Configuration</td>
     </tr>
     <tr>
-      <td>Title</td>
-      <td colspan="3">Diseño del Esquema de Base de Datos e Índices de Consulta de Agenda</td>
+      <th>Title</th>
+      <td colspan="3">Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC</td>
     </tr>
     <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Crear el modelo relacional completo (usuarios, administradores, citas, menores vinculados, reglas paramétricas) e implementar índices compuestos optimizados por especialidad y fecha.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
+      <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <ul>
-          <li>Scripts de migración (DDL) probados para creación de tablas y relaciones de clave foránea.</li>
-          <li>Creación de índices compuestos sobre campos de búsqueda frecuente (ej. especialidad_id, fecha_cita, estado_cita).</li>
-          <li>Documentación del Diagrama Entidad-Relación (DER) actualizado.</li>
-        </ul>
+        <b>Como</b> Developer,<br>
+        <b>Quiero</b> construir los controladores API REST e integrar la especificación OpenAPI/Swagger con control de acceso por roles,<br>
+        <b>Para</b> exponer endpoints estandarizados, seguros y autodocumentados para los clientes del sistema.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Petición HTTP autenticada con rol autorizado (Request/Response Exitoso)</b><br>
+        • <b>Given</b> una solicitud HTTP `GET /api/v1/appointments` con un encabezado `Authorization: Bearer <JWT_VALIDO>` que contiene el rol autorizado,<br>
+        • <b>When</b> el controlador procesa la petición,<br>
+        • <b>Then</b> retorna un código de estado `200 OK` junto con el payload JSON estandarizado y documentado en Swagger UI.<br><br>
+        <b>Scenario 2: Denegación de acceso por rol insuficiente o token inválido</b><br>
+        • <b>Given</b> una solicitud a un endpoint protegido enviada con un token caducado o sin el rol requerido (ej. Paciente accediendo a ruta de Administrador),<br>
+        • <b>When</b> el middleware RBAC valida el token JWT,<br>
+        • <b>Then</b> interrumpe la petición y responde con código HTTP `401 Unauthorized` o `403 Forbidden` según la falla.<br><br>
+        <b>Scenario 3: Manejo estandarizado de errores de request (HTTP Status Codes)</b><br>
+        • <b>Given</b> una petición HTTP POST con un cuerpo JSON malformado o faltante de campos obligatorios,<br>
+        • <b>When</b> el middleware de validación procesa el request,<br>
+        • <b>Then</b> la API responde con un código `400 Bad Request` indicando la lista detallada de errores de validación por campo.
       </td>
     </tr>
   </tbody>
@@ -1416,8 +1194,8 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
 
 <br>
 
-<!-- TECH-03 -->
-<table border="1">
+<!-- TECH-04: Cron Jobs para Control de Tolerancia -->
+<table>
   <thead>
     <tr>
       <th>Story ID</th>
@@ -1429,30 +1207,41 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>TECH-03</td>
-      <td>Equipo Backend Developer</td>
-      <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
+      <td>Developer</td>
+      <td>Medium</td>
+      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
     </tr>
     <tr>
-      <td>Title</td>
-      <td colspan="3">Desarrollo y Documentación de Especificación de Endpoints API REST</td>
+      <th>Title</th>
+      <td colspan="3">Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias</td>
     </tr>
     <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Implementar y documentar los endpoints HTTP (GET, POST, PUT, DELETE) en OpenAPI/Swagger con seguridad JWT y control de acceso basado en roles (RBAC).</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
+      <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <ul>
-          <li>Endpoints documentados y ejecutables desde la interfaz interactiva Swagger UI.</li>
-          <li>Middleware de autenticación JWT e inspección de roles (RBAC) aplicado a rutas protegidas.</li>
-          <li>Respuestas bajo estándar de errores HTTP estructurados.</li>
-        </ul>
+        <b>Como</b> Developer,<br>
+        <b>Quiero</b> implementar workers asíncronos programados (Cron Jobs),<br>
+        <b>Para</b> detectar turnos cuyo tiempo de tolerancia expiró, actualizar su estado a "Ausente" y desencadenar el protocolo de reasignación.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Procesamiento y actualización masiva de citas expiradas</b><br>
+        • <b>Given</b> la ejecución periódica programada de la tarea en segundo plano,<br>
+        • <b>When</b> el worker audita las citas del intervalo actual cuyo margen de tolerancia expiró sin confirmación de check-in,<br>
+        • <b>Then</b> actualiza el estado de la entidad a "Ausente" en la base de datos registrando el timestamp de la acción.<br><br>
+        <b>Scenario 2: Disparo de eventos de reasignación tras detección de ausencia</b><br>
+        • <b>Given</b> una cita médica marcada como "Ausente" por el worker,<br>
+        • <b>When</b> se confirma la persistencia del nuevo estado,<br>
+        • <b>Then</b> el worker publica el evento `AppointmentExpiredEvent` en la cola de mensajes para iniciar el protocolo de invitación a la lista de espera.<br><br>
+        <b>Scenario 3: Bloqueo distribuido para evitar duplicidad de ejecución</b><br>
+        • <b>Given</b> múltiples réplicas del servicio ejecutándose de manera concurrente,<br>
+        • <b>When</b> la tarea Cron se dispara simultáneamente en varios nodos,<br>
+        • <b>Then</b> el primer worker adquiere un bloqueo distribuido (Redis/Database Lock), evitando ejecuciones duplicadas sobre los mismos registros.
       </td>
     </tr>
   </tbody>
@@ -1460,8 +1249,8 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
 
 <br>
 
-<!-- TECH-04 -->
-<table border="1">
+<!-- TECH-05: Consumidor Asíncrono de Notificaciones -->
+<table>
   <thead>
     <tr>
       <th>Story ID</th>
@@ -1473,36 +1262,96 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   <tbody>
     <tr>
       <td>TECH-04</td>
-      <td>Equipo Backend Developer / DevOps</td>
+      <td>Developer</td>
       <td>Medium</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
+      <td>EP-02: Appointments & Booking Engine</td>
     </tr>
     <tr>
-      <td>Title</td>
-      <td colspan="3">Implementación de Cron Jobs para Control de Tolerancia de Ausencias</td>
+      <th>Title</th>
+      <td colspan="3">Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas</td>
     </tr>
     <tr>
-      <td colspan="4">Description</td>
-    </tr>
-    <tr>
-      <td colspan="4">Programar tareas automatizadas en segundo plano (workers) que identifiquen turnos cuya ventana de tolerancia expiró para declararlos "No Presentado" y activar el flujo de reasignación automática.</td>
-    </tr>
-    <tr>
-      <td colspan="4">Acceptance Criteria</td>
+      <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <ul>
-          <li>Planificador programado (Cron Job) con ejecución recurrente.</li>
-          <li>Actualización automática de estado a "Ausente" para citas pasadas de su margen de tolerancia.</li>
-          <li>Disparo inmediato del evento de notificación a la lista de espera al detectar un ausente.</li>
-        </ul>
+        <b>Como</b> Developer,<br>
+        <b>Quiero</b> desarrollar un consumidor asíncrono de eventos de notificaciones,<br>
+        <b>Para</b> procesar los eventos de reserva, cancelación o reasignación de citas enviando las alertas correspondientes sin penalizar el tiempo de respuesta del API REST.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Consumo y despacho exitoso del evento de reserva (Request/Response Event)</b><br>
+        • <b>Given</b> el evento `AppointmentBookedEvent` publicado en la cola de notificaciones,<br>
+        • <b>When</b> el consumidor recupera el mensaje y genera la plantilla correspondiente,<br>
+        • <b>Then</b> efectúa el dispatch hacia el proveedor externo obteniendo un código de entrega exitoso y marcando el mensaje de la cola como procesado (`ACK`).<br><br>
+        <b>Scenario 2: Manejo de fallas temporales mediante Dead Letter Queue (DLQ)</b><br>
+        • <b>Given</b> un fallo de conexión (5xx / Timeout) con la pasarela de notificaciones,<br>
+        • <b>When</b> el consumidor detecta la excepción durante el procesamiento,<br>
+        • <b>Then</b> aplica un reintento con *Exponential Backoff* y, si se supera el límite máximo de reintentos, transfiere el mensaje a la Dead Letter Queue (DLQ) registrando el log de auditoría.
       </td>
     </tr>
   </tbody>
 </table>
 
+<br>
 
+<!-- TECH-06: Endpoint de Integración API DNI -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TECH-05</td>
+      <td>Developer</td>
+      <td>High</td>
+      <td>EP-01: Authentication & Identity Management</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Developer,<br>
+        <b>Quiero</b> implementar el endpoint REST de consulta de DNI con manejo de cache y Circuit Breaker,<br>
+        <b>Para</b> exponer un servicio de validación de identidad rápido y tolerante a fallos para el registro de usuarios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Respuesta exitosa de validación de DNI (HTTP 200 OK)</b><br>
+        • <b>Given</b> una solicitud `POST /api/v1/identity/verify-dni` conteniendo un DNI de 8 dígitos válido en el cuerpo JSON,<br>
+        • <b>When</b> la API consulta el servicio (o la capa de cache en memoria),<br>
+        • <b>Then</b> retorna un código de estado `200 OK` con los nombres y apellidos validados en el payload JSON.<br><br>
+        <b>Scenario 2: Validación de formato de entrada (HTTP 400 Bad Request)</b><br>
+        • <b>Given</b> una petición HTTP enviada con un DNI con formato incorrecto (menos de 8 dígitos o caracteres alfanuméricos),<br>
+        • <b>When</b> el middleware de validación procesa el request,<br>
+        • <b>Then</b> rechaza la petición respondiendo con un código `400 Bad Request` y el detalle del error de formato.<br><br>
+        <b>Scenario 3: Respuesta ante caída o degradación del proveedor externo (HTTP 503 Service Unavailable)</b><br>
+        • <b>Given</b> la API externa inactiva o con el patrón Circuit Breaker en estado abierto (`Open`),<br>
+        • <b>When</b> el frontend realiza la consulta de un DNI,<br>
+        • <b>Then</b> el endpoint responde con un código `503 Service Unavailable` adjuntando la bandera para permitir el registro condicional en el cliente.
+      </td>
+    </tr>
+  </tbody>
+</table>
 ---
 
 ### 2.4.3. Impact Mapping
