@@ -1368,6 +1368,29 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 
 ### 2.4.4. Product Backlog
 
-El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints.
+El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints. La priorización sigue el principio de **valor de negocio primero**: las historias relacionadas con la propuesta de valor visible para el paciente (Landing Page, reserva de citas, check-in QR) y la operación crítica del establecimiento (gestión de cupos, lista de espera dinámica) se ubican en los primeros lugares, mientras que las historias de soporte técnico y configuración avanzada se postergan a Sprints posteriores.
 
 #### Tabla del Product Backlog
+
+| # Orden | User Story Id | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | US-07 | Visualización de Calendario y Horarios Disponibles | 5 | Sprint 1 |
+| 2 | US-08 | Reserva de Cita Médica para Titular o Menor de Edad | 8 | Sprint 1 |
+| 3 | US-01 | Creación de Cuenta de Paciente con Verificación de Identidad por DNI | 5 | Sprint 1 |
+| 4 | US-06 | Inicio de Sesión por Rol | 3 | Sprint 1 |
+| 5 | US-09 | Notificación de Cita Confirmada o Reasignada | 3 | Sprint 1 |
+| 6 | US-11 | Registro de Llegada (Check-in) mediante Código QR | 8 | Sprint 2 |
+| 7 | US-12 | Emisión de Ticket Digital de Atención | 3 | Sprint 2 |
+| 8 | US-14 | Consulta de Citas Agendadas y Cancelación Voluntaria | 5 | Sprint 2 |
+| 9 | US-10 | Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola | 8 | Sprint 2 |
+| 10 | US-03 | Registro de Pacientes Menores de Edad (Niños) | 3 | Sprint 2 |
+| 11 | US-12 (TECH) | Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo | 5 | Sprint 3 |
+| 12 | US-13 | Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital | 8 | Sprint 3 |
+| 13 | US-02 | Creación de Cuenta de Personal Administrativo | 3 | Sprint 3 |
+| 14 | US-04 | Recuperación de Contraseña para Usuarios | 2 | Sprint 3 |
+| 15 | US-05 | Edición de Información Personal | 2 | Sprint 3 |
+| 16 | TECH-01 | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5 | Sprint 3 |
+| 17 | TECH-02 | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC | 8 | Sprint 3 |
+| 18 | TECH-03 | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias | 5 | Sprint 4 |
+| 19 | TECH-04 | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas | 5 | Sprint 4 |
+| 20 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
