@@ -1450,3 +1450,106 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
 </p>
+
+
+#### 2.5.1.2. Domain Message Flows Modeling
+
+En esta sección se presentan los principales flujos de colaboración entre los bounded contexts identificados. Para ello, se utilizó la técnica de visualización **Domain Storytelling**, la cual permite describir de forma narrativa cómo los diferentes sistemas del dominio interactúan para atender los casos de uso clave del negocio.
+
+**Flow 1: Registro y autenticación de paciente**
+
+El paciente solicita crear una nueva cuenta en el sistema ingresando su DNI y datos de contacto. El **Identity & Access Management** valida la información contra el servicio externo de RENIEC y registra el nuevo perfil verificado. Una vez completado el registro, el sistema emite el evento `Cuenta creada`. Posteriormente, cuando el paciente inicia sesión, el sistema valida sus credenciales y emite el evento `Sesión iniciada`. Finalmente, el paciente puede vincular a un menor de edad ingresando el DNI del niño, lo que genera el evento `Menor vinculado`.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Patient | Solicita registro | DNI y datos de contacto | Identity & Access Management |
+| 2 | Identity & Access Management | Valida identidad | RENIEC API | Identity & Access Management |
+| 3 | Identity & Access Management | Crea cuenta | Cuenta creada | Identity & Access Management |
+| 4 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
+| 5 | Identity & Access Management | Valida sesión | Sesión iniciada | Identity & Access Management |
+| 6 | Patient | Vincula menor | DNI del menor | Identity & Access Management |
+| 7 | Identity & Access Management | Registra vínculo | Menor vinculado | Identity & Access Management |
+
+**Flow 2: Reserva de cita médica para el titular**
+
+El paciente inicia sesión en la aplicación y selecciona una especialidad médica. El **Appointments & Booking** consulta el `Calendario de cupos` y verifica la disponibilidad de horarios. El paciente selecciona un `Time Slot` disponible y confirma la reserva. El **Appointments & Booking** registra la cita, emite el evento `Cita reservada` y envía una notificación de confirmación al paciente.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
+| 2 | Patient | Selecciona especialidad | Especialidad médica | Appointments & Booking |
+| 3 | Appointments & Booking | Consulta disponibilidad | Calendario de cupos | Appointments & Booking |
+| 4 | Appointments & Booking | Verifica cupo | Cupo verificado | Appointments & Booking |
+| 5 | Patient | Confirma reserva | Time Slot | Appointments & Booking |
+| 6 | Appointments & Booking | Registra cita | Cita reservada | Appointments & Booking |
+| 7 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
+
+**Flow 3: Reserva de cita médica para un menor a cargo**
+
+El paciente titular inicia sesión y selecciona a un menor previamente vinculado a su cuenta. El **Appointments & Booking** consulta el `Calendario de cupos` para la especialidad pediátrica. El paciente confirma la reserva del `Time Slot` seleccionado. El **Appointments & Booking** registra la cita vinculando al menor como beneficiario y al titular como adulto responsable, emitiendo el evento `Cita reservada` y notificando al titular.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
+| 2 | Patient | Selecciona menor | Menor vinculado | Identity & Access Management |
+| 3 | Patient | Selecciona especialidad | Especialidad pediátrica | Appointments & Booking |
+| 4 | Appointments & Booking | Consulta disponibilidad | Calendario de cupos | Appointments & Booking |
+| 5 | Patient | Confirma reserva | Time Slot para menor | Appointments & Booking |
+| 6 | Appointments & Booking | Registra cita | Cita reservada (menor) | Appointments & Booking |
+| 7 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
+
+**Flow 4: Check-in presencial mediante código QR**
+
+El paciente llega al establecimiento de salud con su cita programada. El **Arrival & QR Check-in** valida el código QR escaneado, verificando que la cita se encuentre dentro de la ventana de tolerancia configurada. Si la validación es exitosa, el sistema emite el evento `Check-in realizado` y actualiza la `Cola de atención`. Finalmente, se emite el ticket digital con el identificador de llamado y se notifica al paciente que ha sido ingresado a la cola.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Patient | Llega al establecimiento | — | — |
+| 2 | Patient | Escanea código QR | Código QR | Arrival & QR Check-in |
+| 3 | Arrival & QR Check-in | Valida tolerancia | Cita y tiempo | Arrival & QR Check-in |
+| 4 | Arrival & QR Check-in | Registra presencia | Check-in realizado | Arrival & QR Check-in |
+| 5 | Arrival & QR Check-in | Emite ticket | Ticket emitido | Arrival & QR Check-in |
+| 6 | Arrival & QR Check-in | Actualiza cola | Cola de atención | Arrival & QR Check-in |
+| 7 | Arrival & QR Check-in | Notifica al paciente | Notificación enviada | Arrival & QR Check-in |
+
+**Flow 5: Cancelación de cita y liberación de cupo**
+
+El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y transfiere el cupo al **Dynamic Waitlist & Reassignment**. Este emite el evento `Cupo liberado` y notifica al siguiente paciente en la `Lista de espera`. Si el paciente acepta la propuesta dentro del tiempo límite, se registra el evento `Cita reasignada`.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Patient | Cancela cita | Cita activa | Appointments & Booking |
+| 2 | Appointments & Booking | Verifica plazo | Reglas de cancelación | Appointments & Booking |
+| 3 | Appointments & Booking | Registra cancelación | Cita cancelada | Appointments & Booking |
+| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Dynamic Waitlist & Reassignment |
+| 5 | Dynamic Waitlist & Reassignment | Notifica oportunidad | Notificación enviada | Dynamic Waitlist & Reassignment |
+| 6 | Patient | Acepta propuesta | Time Slot liberado | Dynamic Waitlist & Reassignment |
+| 7 | Dynamic Waitlist & Reassignment | Registra reasignación | Cita reasignada | Dynamic Waitlist & Reassignment |
+
+**Flow 6: Declaración de ausencia por vencimiento de tolerancia**
+
+El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso. El sistema emite el evento `Paciente ausente` y registra el turno como perdido. El **Dynamic Waitlist & Reassignment** libera el cupo y notifica a los pacientes de los intervalos posteriores, iniciando el protocolo de reasignación.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Admission Staff | Llama al paciente | — | Arrival & QR Check-in |
+| 2 | Arrival & QR Check-in | Verifica tolerancia | Tiempo de tolerancia | Arrival & QR Check-in |
+| 3 | Arrival & QR Check-in | Declara ausencia | Paciente ausente | Arrival & QR Check-in |
+| 4 | Arrival & QR Check-in | Libera cupo | Cupo liberado | Dynamic Waitlist & Reassignment |
+| 5 | Dynamic Waitlist & Reassignment | Notifica oportunidad | Notificación enviada | Dynamic Waitlist & Reassignment |
+| 6 | Patient | Acepta propuesta | Time Slot liberado | Dynamic Waitlist & Reassignment |
+| 7 | Dynamic Waitlist & Reassignment | Registra reasignación | Cita reasignada | Dynamic Waitlist & Reassignment |
+
+**Flow 7: Configuración operativa del establecimiento**
+
+El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación y los horarios de corte. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
+
+| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Super Admin | Accede a configuración | Panel de administración | Hospital Operations & Configuration |
+| 2 | Super Admin | Parametriza reglas | Intervalos y tolerancias | Hospital Operations & Configuration |
+| 3 | Hospital Operations & Configuration | Actualiza parámetros | Reglas actualizadas | Hospital Operations & Configuration |
+| 4 | Hospital Operations & Configuration | Aplica cambios | Nuevos bloques y turnos | Hospital Operations & Configuration |
+| 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
+
+Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa.
