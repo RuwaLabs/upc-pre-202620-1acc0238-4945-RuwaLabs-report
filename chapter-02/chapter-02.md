@@ -1,4 +1,4 @@
-# Capítulo 2: Requirements Elicitation & Analysis
+# Capítulo 2: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
 
