@@ -68,7 +68,7 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> Mi nombre es Neo Daniel Ramos Mera, soy de la carrera de Ingeniería de Software del sexto ciclo. Me considero una persona responsable, atenta y también bastante cooperativa. La comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mis áreas fuertes son la red y el backend, mi meta es especializarme en un campo en el que pueda trabajar con estos puntos. Aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpeg?raw=true" alt="Foto de Alisee" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/b03cb8136267652964f45885d76b0f37173d8a55/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
         <td>Torres Juárez, Alisee Muriel</td>
         <td> U202624323 </td>
         <td> Ingeniería de Software </td>
