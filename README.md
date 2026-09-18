@@ -24,13 +24,13 @@ SaludYa
 
 **Integrantes**
 
-| Código | Apellidos y Nombres |
-| :--- | :--- |
-| [Código] | Aguilar Untiveros, Rodrigo Fabrizio |
+| Código     | Apellidos y Nombres |
+|:-----------| :--- |
+| [Código]   | Aguilar Untiveros, Rodrigo Fabrizio |
 | u202319950 | Meza Solórzano, Didier Sebastian |
 | u20241d934 | Montoya Nina, Paula Fernanda |
-| [Código] | Ramos Mera, Neo Daniel |
-| [Código] | Torres Juárez, Alisee Muriel |
+| [Código]   | Ramos Mera, Neo Daniel |
+| u202624323 | Torres Juárez, Alisee Muriel |
 
 **Período 202620**  
 **Agosto 2026**
@@ -40,10 +40,12 @@ SaludYa
 ---
 # Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :--- | :--- | :--- | :--- |
-| 1.0.0 | 09-11-26 | Montoya Nina Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
-| 1.1.0 | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile, el proceso Lean UX, los segmentos objetivo, el análisis competitivo y el diseño, registro y análisis de entrevistas de SaludYa (secciones 1.2 a 2.2.3). |
+| Versión | Fecha    | Autor                            | Descripción de modificación                                                                                                                                                                |
+|:--------|:---------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0.0   | 09-11-26 | Montoya Nina Paula Fernanda      | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome.                                                                   |
+| 1.1.0   | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile, el proceso Lean UX, los segmentos objetivo, el análisis competitivo y el diseño, registro y análisis de entrevistas de SaludYa (secciones 1.2 a 2.2.3). |
+| 1.2.0   | 08-09-26 | Torres Juárez, Alisee Muriel     | Se desarrolló el Needfinding y la especificación de requisitos (secciones 2.3 a 2.4.4).                                                                                                    |
+
 ---
 
 # Project Report Collaboration Insights
