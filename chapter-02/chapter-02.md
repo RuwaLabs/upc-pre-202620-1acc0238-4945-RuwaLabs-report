@@ -1622,12 +1622,13 @@ El contexto está bien delimitado y desacoplado del resto de bounded contexts. S
 
 **Context Overview Definition**
 
-Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento.
+Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la lista de espera dinámica.
 
 **Capability Analysis**
 
 - Consulta de disponibilidad en tiempo real.
 - Reserva de citas para el titular o para un menor vinculado.
+- Asignación de `bookingOrder` a cada cita reservada.
 - Cancelación de citas dentro del plazo permitido.
 - Notificación de confirmación de reserva.
 - Gestión del historial de citas.
@@ -1635,7 +1636,7 @@ Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médica
 **Capability Layering**
 
 - Capa de presentación: Pantallas de búsqueda, reserva e historial de citas.
-- Capa de dominio: Lógica de asignación de cupos, validación de solapamientos y cancelaciones.
+- Capa de dominio: Lógica de asignación de cupos, asignación de `bookingOrder`, validación de solapamientos y cancelaciones.
 - Capa de infraestructura: Integración con la base de datos de agendas y con el sistema de notificaciones.
 
 **Dependencies Capture**
@@ -1644,18 +1645,18 @@ Depende de Identity & Access Management para validar la sesión del usuario, de 
 
 **Design Critique**
 
-El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
+El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. La incorporación del `bookingOrder` como atributo le permite alimentar al contexto `Dynamic Waitlist & Reassignment` con un criterio de prioridad objetivo y trazable. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Appointments & Booking |
-| **Purpose** | Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. |
+| **Purpose** | Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`. |
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Patient · **Messages:** Búsqueda de disponibilidad y reserva <br> **Collaborator:** Hospital Operations & Configuration · **Messages:** Parámetros operativos |
-| **Outbound Communication** | **Messages:** Cita reservada · **Collaborator:** Patient, Dynamic Waitlist & Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
-| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
-| **Business Decisions** | No se permite reservar dos citas en el mismo intervalo de tiempo para el mismo paciente. <br> Las cancelaciones solo se permiten dentro del plazo configurado por el hospital. <br> Un menor solo puede tener una cita activa en el mismo intervalo. <br> La confirmación de reserva se envía al correo del titular, incluso si la cita es para un menor. |
+| **Outbound Communication** | **Messages:** Cita reservada (con `bookingOrder`) · **Collaborator:** Patient, Dynamic Waitlist & Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
+| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Booking Order:** Número secuencial que representa el orden en que se solicitó una cita. Determina la prioridad en la lista de espera. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
+| **Business Decisions** | Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento. <br> No se permite reservar dos citas en el mismo intervalo de tiempo para el mismo paciente. <br> Las cancelaciones solo se permiten dentro del plazo configurado por el hospital. <br> Un menor solo puede tener una cita activa en el mismo intervalo. <br> La confirmación de reserva se envía al correo del titular, incluso si la cita es para un menor. |
 | **Assumptions** | Los establecimientos publican su catálogo de especialidades y cupos en el sistema. <br> El paciente cuenta con un dispositivo con acceso a internet para reservar. |
 | **Verification Metrics** | Número de citas reservadas por día. <br> Tasa de cancelación dentro del plazo permitido. <br> Porcentaje de reservas realizadas sin asistencia técnica. |
 | **Open Questions** | ¿Se permitirá reprogramación automática de citas en futuras versiones? <br> ¿Cómo se gestionará la sobreventa de cupos en caso de error del sistema? |
@@ -1664,20 +1665,21 @@ El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de 
 
 **Context Overview Definition**
 
-Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. Permite reducir los cupos desaprovechados y optimizar el uso de las agendas médicas.
+Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. Si nadie acepta dentro del `waitlistResponseTimeout`, y `cascadeWaitlistEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
 
 **Capability Analysis**
 
 - Registro de pacientes en lista de espera por especialidad.
 - Detección de cupos liberados por cancelación o ausencia.
-- Envío de propuestas de adelanto con tiempo límite de respuesta.
+- Envío de propuestas de adelanto al paciente con menor `bookingOrder`.
 - Reasignación automática de cupos aceptados.
 - Gestión de expiración de propuestas no respondidas.
+- Activación de la cascada de reasignación si nadie acepta.
 
 **Capability Layering**
 
 - Capa de presentación: Notificaciones push y en pantalla dentro de la app móvil.
-- Capa de dominio: Lógica de priorización, temporización y asignación de cupos.
+- Capa de dominio: Lógica de priorización por `bookingOrder`, temporización y asignación de cupos.
 - Capa de infraestructura: Integración con el sistema de notificaciones y con la agenda médica.
 
 **Dependencies Capture**
@@ -1686,40 +1688,42 @@ Depende de Appointments & Booking para recibir los eventos de cancelación, de A
 
 **Design Critique**
 
-El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. La gestión de expiración por tiempo y el control de respuestas concurrentes son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
+El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. El uso del `bookingOrder` como criterio de prioridad le otorga objetividad y trazabilidad al proceso. La gestión de expiración por tiempo, el control de respuestas concurrentes y la activación de la cascada son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Dynamic Waitlist & Reassignment |
-| **Purpose** | Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. Permite reducir los cupos desaprovechados y optimizar el uso de las agendas médicas. |
+| **Purpose** | Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. La reasignación se ofrece por orden de `bookingOrder`. Si nadie acepta dentro del `waitlistResponseTimeout`, y `cascadeWaitlistEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. |
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Appointments & Booking · **Messages:** Cita cancelada <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Paciente ausente <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
-| **Outbound Communication** | **Messages:** Cupo liberado · **Collaborator:** Arrival & QR Check-in, Patient <br> **Messages:** Cita reasignada · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Notificación enviada · **Collaborator:** Patient en lista de espera |
-| **Ubiquitous Language** | **Dynamic Waitlist:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente en espera. <br> **Tiempo de respuesta:** Plazo máximo para aceptar o rechazar una propuesta. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
-| **Business Decisions** | Toda propuesta de adelanto expira automáticamente tras el tiempo límite configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> La notificación de oportunidad se envía al paciente con mayor antigüedad en la lista. |
+| **Outbound Communication** | **Messages:** Waitlist Offer Sent · **Collaborator:** Patient en lista de espera <br> **Messages:** Waitlist Offer Accepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Waitlist Offer Expired · **Collaborator:** Patient <br> **Messages:** Cascade Reassignment · **Collaborator:** Appointments & Booking |
+| **Ubiquitous Language** | **Dynamic Waitlist:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Waitlist Entry:** Entrada en la lista de espera dinámica, ordenada por `bookingOrder`. <br> **Cascade Reassignment:** Reasignación en cascada: si nadie en la lista de espera acepta, el cupo pasa al siguiente `Time Slot` de la misma especialidad y fecha. <br> **Waitlist Response Timeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente en espera. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
+| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> Toda propuesta de adelanto expira automáticamente tras el `waitlistResponseTimeout` configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si nadie en la lista de espera acepta y `cascadeWaitlistEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. <br> La cascada solo aplica dentro del mismo día y especialidad. |
 | **Assumptions** | Los pacientes en lista de espera tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
-| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. |
+| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Porcentaje de cascadas activadas exitosamente. |
 | **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
 
 ## Bounded Context Canvas – Arrival & QR Check-in
 
 **Context Overview Definition**
 
-Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado.
+Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. La `Attendance Queue` es un agregado interno de este contexto, no un bounded context independiente.
 
 **Capability Analysis**
 
 - Validación del código QR al llegar al establecimiento.
 - Verificación de la ventana de tolerancia.
-- Emisión del ticket digital con identificador de llamado.
+- Creación de un `Queue Entry` en la `Attendance Queue` del `Time Slot`.
+- Cálculo de la posición del paciente según su `checkInTimestamp`.
+- Emisión del ticket digital con posición en la cola.
 - Actualización de la cola de atención.
 - Declaración de ausencia por vencimiento de tolerancia.
 
 **Capability Layering**
 
-- Capa de presentación: Pantalla de check-in y visualización del ticket digital.
-- Capa de dominio: Lógica de validación temporal, declaración de ausencia y control de tolerancia.
+- Capa de presentación: Pantalla de check-in, visualización del ticket digital y consulta de posición en la cola.
+- Capa de dominio: Lógica de validación temporal, cálculo de posición, declaración de ausencia y control de tolerancia.
 - Capa de infraestructura: Integración con el lector de códigos QR y con el servicio de generación de tickets.
 
 **Dependencies Capture**
@@ -1728,18 +1732,18 @@ Depende de Identity & Access Management para validar la sesión del paciente, de
 
 **Design Critique**
 
-El contexto tiene un alcance claro y su flujo principal (validar → emitir ticket → actualizar cola) es sencillo y bien delimitado. Su principal desafío es la precisión del control de tolerancia y la integración con dispositivos sin smartphone. El diseño permite agregar mecanismos alternativos de check-in (reconocimiento facial, código de barras) en el futuro.
+El contexto tiene un alcance claro y su flujo principal (validar → crear Queue Entry → calcular posición → emitir ticket → actualizar cola) es sencillo y bien delimitado. La `Attendance Queue` se modela como agregado interno, evitando la creación innecesaria de un bounded context. Su principal desafío es la precisión del control de tolerancia y la integración con dispositivos sin smartphone. El diseño permite agregar mecanismos alternativos de check-in (reconocimiento facial, código de barras) en el futuro.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Arrival & QR Check-in |
-| **Purpose** | Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. |
+| **Purpose** | Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. |
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Appointments & Booking · **Messages:** Cita reservada <br> **Collaborator:** Patient · **Messages:** Escaneo de código QR <br> **Collaborator:** Admission Staff · **Messages:** Llamado a consultorio |
-| **Outbound Communication** | **Messages:** Check-in realizado · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
-| **Ubiquitous Language** | **Check-in:** Validación de asistencia presencial mediante código QR. <br> **Ventana de tolerancia:** Intervalo de tiempo configurado para permitir el check-in. <br> **Ticket digital:** Comprobante con identificador de llamado y datos de atención. <br> **Cola de atención:** Lista ordenada de pacientes presentes en el establecimiento. <br> **Ausencia:** Estado del paciente que no se presentó dentro de la tolerancia. |
-| **Business Decisions** | El check-in solo es válido dentro de la ventana de tolerancia configurada por el hospital. <br> Un paciente que excede la tolerancia es declarado ausente automáticamente. <br> El ticket digital solo se emite si el check-in fue confirmado. <br> El estado de la cita se actualiza a "En Atención" al ingresar al consultorio. |
+| **Outbound Communication** | **Messages:** CheckInCompleted (incluye `attendanceQueueId` y `position`) · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
+| **Ubiquitous Language** | **Check-in:** Validación de asistencia presencial mediante código QR. <br> **Ventana de tolerancia:** Intervalo de tiempo configurado para permitir el check-in. <br> **Attendance Queue:** Cola virtual dentro de un `Time Slot` que ordena a los pacientes según su timestamp de check-in. <br> **Queue Entry:** Entrada individual en la cola de asistencia. Contiene `appointmentId`, `checkInTimestamp`, `position`, `status`. <br> **Ticket digital:** Comprobante con identificador de llamado, posición en la cola y datos de atención. <br> **Cola de atención:** Lista ordenada de pacientes presentes en el establecimiento. <br> **Ausencia:** Estado del paciente que no se presentó dentro de la tolerancia. |
+| **Business Decisions** | El check-in solo es válido dentro de la ventana de tolerancia configurada por el hospital. <br> La cola de asistencia se ordena por `checkInTimestamp`. <br> Un paciente no puede tener dos `QueueEntry` activas en la misma `AttendanceQueue`. <br> Si un paciente es marcado como `Absent`, su posición se elimina y los demás se reordenan. <br> Un paciente que excede la tolerancia es declarado ausente automáticamente. <br> El ticket digital solo se emite si el check-in fue confirmado y muestra la posición en la cola de asistencia. |
 | **Assumptions** | El establecimiento cuenta con códigos QR visibles en la recepción. <br> El paciente porta un dispositivo móvil con la aplicación instalada. |
 | **Verification Metrics** | Porcentaje de check-ins exitosos dentro de la tolerancia. <br> Tasa de ausencias registradas por día. <br> Tiempo promedio entre check-in y llamado a consultorio. |
 | **Open Questions** | ¿Se implementará check-in mediante reconocimiento facial? <br> ¿Cómo se gestionará el check-in de pacientes sin smartphone? |
@@ -1748,13 +1752,15 @@ El contexto tiene un alcance claro y su flujo principal (validar → emitir tick
 
 **Context Overview Definition**
 
-Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
+Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
 
 **Capability Analysis**
 
 - Configuración de intervalos y fraccionamientos de atención.
 - Definición de ventanas de tolerancia para check-in.
 - Configuración de plazos y márgenes operativos (cancelación, reserva, adelanto).
+- Configuración de `waitlistResponseTimeout` y `cascadeWaitlistEnabled`.
+- Configuración de `maxCapacityPerSlot`.
 - Generación de reportes operativos.
 - Visualización de dashboards de ocupación y ausentismo.
 - Aplicación de nuevas reglas a bloques y turnos futuros.
@@ -1771,23 +1777,23 @@ Depende de Identity & Access Management para autorizar al Super Admin, y recibe 
 
 **Design Critique**
 
-El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
+El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `waitlistResponseTimeout` y `cascadeWaitlistEnabled` le permite controlar el comportamiento de la lista de espera dinámica sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Hospital Operations & Configuration |
-| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
+| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
 | **Strategic Classification** | **Domain:** Supporting · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado (Super Admin) <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Datos de atención y ausencias <br> **Collaborator:** Appointments & Booking · **Messages:** Datos de reservas y cancelaciones |
-| **Outbound Communication** | **Messages:** Reglas actualizadas · **Collaborator:** Appointments & Booking, Arrival & QR Check-in <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
-| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
+| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Dynamic Waitlist & Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
+| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **waitlistResponseTimeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **cascadeWaitlistEnabled:** Parámetro que habilita la reasignación en cascada si nadie acepta. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
 | **Business Decisions** | Los cambios de configuración solo aplican a los nuevos bloques, no afectan citas ya confirmadas. <br> Los parámetros inválidos o inconsistentes son rechazados por el sistema. <br> Solo el Super Admin puede modificar las reglas operativas del establecimiento. <br> Los reportes se generan con datos anonimizados. |
 | **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
 | **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
 | **Open Questions** | ¿Se implementará un módulo de analítica predictiva en futuras versiones? <br> ¿Cómo se integrará el dashboard con los sistemas HIS existentes? |
 
-Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa.
+Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la cola por pedido de cita como atributo (`Booking Order`) dentro de `Appointments & Booking`, y la cola de asistencia como agregado (`Attendance Queue`) dentro de `Arrival & QR Check-in`.
 
 
 ### 2.5.2. Context Mapping
