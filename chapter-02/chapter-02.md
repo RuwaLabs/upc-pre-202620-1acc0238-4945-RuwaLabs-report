@@ -1437,15 +1437,24 @@ A partir del modelado realizado en el EventStorming, se llevó a cabo una sesió
 
 Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
 
+Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
+
 Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
 
 | # | Bounded Context | Propósito | Eventos clave |
 | :--- | :--- | :--- | :--- |
 | 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Cuenta creada, Sesión iniciada, Menor vinculado |
-| 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. | Cita solicitada, Cupo verificado, Cita reservada, Cita cancelada |
-| 3 | **Dynamic Waitlist & Reassignment** | Gestionar la lista de espera dinámica y la reasignación de cupos liberados. | Cupo liberado, Cita reasignada |
-| 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente y emitir el ticket digital de atención. | Check-in realizado, Ticket emitido, Paciente ausente |
+| 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada. | Cita solicitada, Cupo verificado, Cita reservada, Booking Order asignado, Cita cancelada |
+| 3 | **Dynamic Waitlist & Reassignment** | Gestionar la lista de espera dinámica y la reasignación de cupos liberados, ofreciendo las propuestas en orden de `bookingOrder`. | Cupo liberado, Cita reasignada, Reasignación expirada |
+| 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente, emitir el ticket digital de atención y gestionar la `Attendance Queue`. | Check-in realizado, Paciente en cola de asistencia, Paciente llamado, Ticket emitido, Paciente ausente |
 | 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Reglas actualizadas, Reporte generado |
+
+A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery:
+
+- **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento"*.
+- **`Dynamic Waitlist & Reassignment`:** se incorporan los conceptos `Waitlist Entry` (entrada ordenada por `bookingOrder`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Waitlist Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
+- **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Cola de asistencia ordenada por `checkInTimestamp`"*.
+- **`Hospital Operations & Configuration`:** se incorpora el parámetro `waitlistResponseTimeout` (y opcionalmente `cascadeWaitlistEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
