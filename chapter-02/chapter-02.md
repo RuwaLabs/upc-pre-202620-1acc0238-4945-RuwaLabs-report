@@ -2273,10 +2273,25 @@ Publica eventos de dominio usando Spring Events.
 
 ---
 
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="assets/iam_component_diagram.png" alt="IAM component diagram" width="85%"/>
+
+---
+El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos.
 
 #### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img src="assets/iam_uml_diagram.png" alt="IAM class diagram" width="85%"/>
+
+---
+El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory.
+
 ##### 2.6.x.6.2. Bounded Context Database Design Diagram
+
+<img src="assets/iam_database_diagram.png" alt="IAM class diagram" width="85%"/>
+
+---
+El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores.
