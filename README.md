@@ -27,7 +27,7 @@ SaludYa
 | Código | Apellidos y Nombres |
 | :--- | :--- |
 | [Código] | Aguilar Untiveros, Rodrigo Fabrizio |
-| [Código] | Meza Solórzano, Didier Sebastian |
+| u202319950 | Meza Solórzano, Didier Sebastian |
 | u20241d934 | Montoya Nina, Paula Fernanda |
 | [Código] | Ramos Mera, Neo Daniel |
 | [Código] | Torres Juárez, Alisee Muriel |
@@ -43,8 +43,7 @@ SaludYa
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
 | 1.0.0 | 08-28-26 | Montoya Nina Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
-| 1.1.0 | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile de SaludYa (1.2), incluyendo antecedentes, problemática, técnica 5W2H y diagrama de Ishikawa (1.2.1); el proceso Lean UX completo (1.2.2), con problem statement, assumptions, hypothesis statements y el Lean UX Canvas; la definición de los segmentos objetivo (1.3); el análisis competitivo y las estrategias frente a competidores (2.1, 2.1.2); y el diseño, registro y análisis de las entrevistas a ambos segmentos objetivo (2.2.1, 2.2.2, 2.2.3). |
-
+| 1.1.0 | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile, el proceso Lean UX, los segmentos objetivo, el análisis competitivo y el diseño, registro y análisis de entrevistas de SaludYa (secciones 1.2 a 2.2.3). |
 ---
 
 # Project Report Collaboration Insights
@@ -146,13 +145,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <ul>
           <li><strong>AV1:</strong> [Describir acciones específicas]</li>
         </ul>
-        <strong>Meza Solórzano, Didier Sebastian</strong>
-        <ul>
-          <li><strong>AV1:</strong> Aprendí y apliqué la técnica de las 5W y 2H, así como el diagrama de Ishikawa, para estructurar el análisis de la problemática de SaludYa a partir de fuentes reales del MINSA.</li>
-          <li><strong>AV1:</strong> Profundicé en la metodología Lean UX, elaborando el Problem Statement, las Assumptions (Business, User, Outcomes y Features), las Hypothesis Statements y el Lean UX Canvas de SaludYa.</li>
-          <li><strong>AV1:</strong> Adquirí conocimientos sobre análisis competitivo (Competitive Analysis Landscape y FODA), investigando competidores reales del sector salud digital como Doctoralia, Cita Médica y el sistema Citas en Línea del MINSA.</li>
-          <li><strong>AV1:</strong> Apliqué técnicas de diseño de entrevistas cualitativas, elaborando preguntas para ambos segmentos objetivo y sistematizando sus respuestas en gráficos de porcentajes para su análisis.</li>
-        </ul>
+       <strong>Meza Solórzano, Didier Sebastian</strong>
+<ul>
+  <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre la técnica 5W2H, el diagrama de Ishikawa, la metodología Lean UX, el análisis competitivo y el diseño de entrevistas para desarrollar de principio a fin la problemática, la solución y la validación con usuarios de SaludYa.</li>
+</ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> [Describir acciones específicas]</li>
@@ -181,11 +177,9 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
           <li><strong>AV1:</strong> [Describir acciones específicas]</li>
         </ul>
         <strong>Meza Solórzano, Didier Sebastian</strong>
-        <ul>
-          <li><strong>AV1:</strong> Reconocí que aplicar correctamente el Lean UX Process exige seguir aprendiendo de forma continua, ya que cada componente (problem statement, assumptions, hypotheses, canvas) requiere validación constante con información real del sector salud.</li>
-          <li><strong>AV1:</strong> Identifiqué la necesidad de mantenerme actualizado sobre las iniciativas de digitalización del MINSA y las plataformas de citas médicas existentes en el mercado, para que el análisis competitivo de SaludYa sea preciso y esté vigente.</li>
-          <li><strong>AV1:</strong> Reforcé mi capacidad de aprendizaje autónomo al investigar por mi cuenta metodologías de entrevistas y de análisis cualitativo que no había aplicado antes, adaptándolas al contexto de establecimientos públicos de salud.</li>
-        </ul>
+<ul>
+  <li><strong>AV1:</strong> Reconocí la necesidad de seguir aprendiendo de forma autónoma metodologías que no había aplicado antes, como Lean UX y el diseño de entrevistas cualitativas, para poder sustentar con información real el desarrollo de SaludYa.</li>
+</ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> [Describir acciones específicas]</li>
