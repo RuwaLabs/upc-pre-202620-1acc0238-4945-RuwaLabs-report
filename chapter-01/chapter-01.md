@@ -26,6 +26,7 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
         <td> Innovación, accesibilidad, compromiso, responsabilidad y orientación al usuario. </td>
     </tr>
 </table>
+
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
