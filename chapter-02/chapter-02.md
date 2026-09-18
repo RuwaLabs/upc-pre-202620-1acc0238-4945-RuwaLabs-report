@@ -1406,25 +1406,25 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 **Pasos del proceso:**
 
-**1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Cita reservada", "Cupo liberado", "Check-in realizado"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio.
+**1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Cita reservada", "Cupo liberado", "Check-in realizado"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos `BookingOrder asignado`, `Paciente en cola de asistencia` y `Paciente llamado`, que reflejan la existencia de dos colas complementarias dentro del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
 
 <p align="center">
   <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%"/>
 </p>
 
-**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta.
+**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `BookingOrder asignado` ocurre inmediatamente después de `Cita reservada`, mientras que `Paciente en cola de asistencia` y `Paciente llamado` ocurren después de `Check-in realizado`, evidenciando que ambas colas operan en momentos distintos del flujo.
 
 <p align="center">
   <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%"/>
 </p>
 
-**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo.
+**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `bookingOrder`** (que determina la prioridad en la lista de espera) y el **timeout de la waitlist** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **cola de asistencia** y la **lista de espera**.
 
 <p align="center">
   <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
 </p>
 
-**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa.
+**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Asignar bookingOrder`, `Agregar a cola de asistencia` y `Llamar siguiente paciente`; las policies `Cuando se libera un cupo, notificar al paciente con menor bookingOrder` y `Cuando expira el timeout, pasar al siguiente paciente de la lista`; y los read models `Cola de asistencia` y `Lista de espera`.
 
 <p align="center">
   <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
