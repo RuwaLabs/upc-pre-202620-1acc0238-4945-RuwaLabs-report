@@ -75,6 +75,7 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> - </td>
     </tr>
 </table>
+
 ## 1.2. Solution Profile
 
 En esta sección se describe el perfil de la solución propuesta por RuwaLabs, incluyendo los antecedentes y la problemática que aborda. Asimismo, se utiliza la técnica de las **5W's y 2H's** para comprender mejor el contexto, las necesidades de los usuarios y las condiciones en las que se presenta el problema.
