@@ -1879,6 +1879,8 @@ En el Software Architecture Container Diagram se detalla la estructura interna d
 
 El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias y la reasignación automática de cupos.
 
+El Backend API incluye internamente los módulos `AttendanceQueue` (que gestiona la cola de asistencia ordenada por `checkInTimestamp`) y `Waitlist` (que gestiona la lista de espera dinámica ordenada por `bookingOrder` y la cascada de reasignación). La base de datos incorpora las tablas `attendance_queue_entries` y `waitlist_entries`, y la tabla `appointments` incluye el campo `booking_order` que determina la prioridad de reasignación.
+
 El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone.
 
 ![ContainerSys](assets/ContainerDiagram.png)
