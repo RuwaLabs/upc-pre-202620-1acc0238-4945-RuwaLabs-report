@@ -26,7 +26,7 @@ SaludYa
 
 | Código | Apellidos y Nombres |
 | :--- | :--- |
-| [Código] | Aguilar Untiveros, Rodrigo Fabrizio |
+| u202318309 | Aguilar Untiveros, Rodrigo Fabrizio |
 | [Código] | Meza Solórzano, Didier Sebastian |
 | u20241d934 | Montoya Nina, Paula Fernanda |
 | [Código] | Ramos Mera, Neo Daniel |
