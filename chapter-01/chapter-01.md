@@ -68,11 +68,11 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> Mi nombre es Neo Daniel Ramos Mera, soy de la carrera de Ingeniería de Software del sexto ciclo. Me considero una persona responsable, atenta y también bastante cooperativa. La comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mis áreas fuertes son la red y el backend, mi meta es especializarme en un campo en el que pueda trabajar con estos puntos. Aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> - </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpeg?raw=true" alt="Foto de Alisee" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
         <td>Torres Juárez, Alisee Muriel</td>
-        <td> - </td>
+        <td> U202624323 </td>
         <td> Ingeniería de Software </td>
-        <td> - </td>
+        <td> Soy Alisee Muriel Torres Juárez, estudiante de Ingeniería de Software enfocada en la creación de soluciones tecnológicas que simplifiquen y agilicen procesos. Destaco por mi resiliencia, perseverancia y alta capacidad de adaptabilidad ante nuevos desafíos </td>
     </tr>
 </table>
 
@@ -300,7 +300,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 <p align="center">
   <img src="https://i.imgur.com/ESmSAsu.jpeg" alt="lean_ux_canvas"/>
-> <p align="center">Lean Ux Canvas</p>
+  <p align="center">Lean Ux Canvas</p>
 </p>
 
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles.
