@@ -1898,13 +1898,13 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 2.6.1. Bounded Context: Identity & Access Management
+## 2.6.1. Bounded Context: Identity & Access Management
 
 El **bounded context de Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Permite validar la identidad de los pacientes y del personal administrativo antes de acceder a los módulos principales del sistema.
 
 #### 2.6.1.1. Domain Layer
 
-La capa de **Domain** representa el núcleo del negocio de identidad. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de negocio.
+La capa de **Domain** representa el núcleo del negocio de identidad. Aquí se definen las entidades, value objects, enums, aggregates, factories e interfaces que encapsulan las reglas de negocio.
 
 #### UserAccount (Aggregate Root)
 
@@ -2002,17 +2002,6 @@ Define los tipos de usuario del sistema.
 
 **Propósito:**
 Encapsula la creación de cuentas de usuario, validando los datos y asignando el rol correspondiente.
-
----
-
-#### IdentityDomainService (Domain Service)
-
-**Métodos:**
-- `validateIdentity(dni, name, lastname): Boolean`
-- `verifyTutorRelationship(tutorId, minorId): Boolean`
-
-**Propósito:**
-Encapsula la lógica de validación de identidad que no pertenece a una sola entidad y que requiere consultar repositorios.
 
 ---
 
@@ -2212,7 +2201,7 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-### 2.6.1.4. Infrastructure Layer
+#### 2.6.1.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
@@ -2281,12 +2270,6 @@ Envía notificaciones al usuario (correo de bienvenida, recuperación de contras
 **Función:**
 Publica eventos de dominio usando Spring Events.
 **Tecnología:** `ApplicationEventPublisher` de Spring
-
----
-
-#### UserAccountMapper
-**Función:**
-Convierte entre entidades de dominio y DTOs.
 
 ---
 
