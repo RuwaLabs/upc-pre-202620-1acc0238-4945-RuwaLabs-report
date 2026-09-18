@@ -1840,6 +1840,19 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 | Hospital Operations & Configuration | Appointments & Booking | **Conformist** | Booking adopta el modelo de parámetros operativos sin traducirlo. |
 | Hospital Operations & Configuration | Arrival & QR Check-in | **Conformist** | Check-in adopta el modelo de tolerancias sin traducirlo. |
 
+**Mensajes intercambiados entre bounded contexts**
+
+A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio:
+
+| Mensaje | Bounded Context origen | Bounded Context destino | Contenido |
+| :--- | :--- | :--- | :--- |
+| `AppointmentBooked` | Appointments & Booking | Dynamic Waitlist & Reassignment, Arrival & QR Check-in | Incluye `bookingOrder` de la cita reservada. |
+| `CheckInCompleted` | Arrival & QR Check-in | Appointments & Booking, Patient | Incluye `attendanceQueueId` y `position` del paciente en la cola de asistencia. |
+| `WaitlistOfferSent` | Dynamic Waitlist & Reassignment | Patient | Propuesta de cupo liberado enviada al paciente con menor `bookingOrder`. |
+| `WaitlistOfferAccepted` | Dynamic Waitlist & Reassignment | Appointments & Booking, Patient | Confirmación de aceptación del cupo liberado. |
+| `WaitlistOfferExpired` | Dynamic Waitlist & Reassignment | Patient | Expiración del `waitlistResponseTimeout` sin respuesta del paciente. |
+| `CascadeReassignment` | Dynamic Waitlist & Reassignment | Appointments & Booking | Activación de la cascada si nadie en la lista de espera acepta el cupo. |
+
 **Leyenda de patrones:**
 
 - **ACL (Anticorruption Layer):** Capa de traducción entre el modelo externo y el modelo interno.
@@ -1848,6 +1861,7 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 - **C/S (Customer/Supplier):** Relación donde el supplier publica y el customer consume.
 
 ![Context Map](assets/ContextMapping.png)
+
 
 ### 2.5.3. Software Architecture
 
