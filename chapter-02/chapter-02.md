@@ -1898,15 +1898,397 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-### 2.6.x. Bounded Context: <Bounded Context Name>
+### 2.6.1. Bounded Context: Identity & Access Management
 
-#### 2.6.x.1. Domain Layer
+El **bounded context de Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Permite validar la identidad de los pacientes y del personal administrativo antes de acceder a los módulos principales del sistema.
 
-#### 2.6.x.2. Interface Layer
+#### 2.6.1.1. Domain Layer
 
-#### 2.6.x.3. Application Layer
+La capa de **Domain** representa el núcleo del negocio de identidad. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de negocio.
 
-#### 2.6.x.4 Infrastructure Layer
+#### UserAccount (Aggregate Root)
+
+**Atributos:**
+`id`, `email`, `password`, `role`, `isActive`, `createdAt`
+
+**Métodos:**
+- `validatePassword(password)` → verifica si la contraseña ingresada coincide con la almacenada.
+- `assignRole(role)` → asigna un rol al usuario.
+- `activate()` / `deactivate()` → controlan si el usuario puede iniciar sesión.
+
+**Propósito:**
+Representa la cuenta de acceso al sistema. Es aggregate root porque agrupa la lógica de autenticación y estado del usuario.
+
+---
+
+#### Patient (Aggregate Root)
+
+**Atributos:**
+`id`, `idUser`, `dni`, `name`, `lastname`, `birthDate`, `phone`
+
+**Métodos:**
+- `updateContactInfo(phone, email)` → actualiza los datos de contacto.
+- `isMinor()` → retorna `true` si el paciente es menor de edad.
+
+**Propósito:**
+Representa el perfil del paciente. Es aggregate root porque agrupa la información personal del paciente.
+
+---
+
+#### PatientMinor (Entity)
+
+**Atributos:**
+`id`, `idPatient`, `idTutor`
+
+**Métodos:**
+- `validateTutor(tutorId)` → valida que el tutor sea un adulto responsable registrado.
+
+**Propósito:**
+Vincula a un menor de edad con un adulto responsable (tutor).
+
+---
+
+#### Email (Value Object)
+
+**Atributos:**
+`value`
+
+**Métodos:**
+- `isValid()` → valida el formato del correo.
+
+**Propósito:**
+Encapsula el correo electrónico como value object inmutable.
+
+---
+
+#### Dni (Value Object)
+
+**Atributos:**
+`value`
+
+**Métodos:**
+- `isValid()` → valida que el DNI tenga 8 dígitos.
+
+**Propósito:**
+Encapsula el DNI como value object inmutable.
+
+---
+
+#### PasswordHash (Value Object)
+
+**Atributos:**
+`value`
+
+**Propósito:**
+Encapsula el hash de la contraseña como value object inmutable.
+
+---
+
+#### Role (Enum)
+
+**Valores posibles:**
+`PATIENT`, `ADMISSION_STAFF`, `SUPER_ADMIN`
+
+**Propósito:**
+Define los tipos de usuario del sistema.
+
+---
+
+#### UserAccountFactory (Factory)
+
+**Métodos:**
+- `createPatientAccount(email, password, dni, name, lastname, birthDate, phone): UserAccount`
+- `createStaffAccount(email, password, dni, name, lastname): UserAccount`
+
+**Propósito:**
+Encapsula la creación de cuentas de usuario, validando los datos y asignando el rol correspondiente.
+
+---
+
+#### IdentityDomainService (Domain Service)
+
+**Métodos:**
+- `validateIdentity(dni, name, lastname): Boolean`
+- `verifyTutorRelationship(tutorId, minorId): Boolean`
+
+**Propósito:**
+Encapsula la lógica de validación de identidad que no pertenece a una sola entidad y que requiere consultar repositorios.
+
+---
+
+#### UserAccountRepository (Interface)
+
+**Métodos:**
+- `save(userAccount: UserAccount): UserAccount`
+- `findById(id: Int): UserAccount?`
+- `findByEmail(email: String): UserAccount?`
+- `updateStatus(id: Int, isActive: Boolean)`
+
+**Propósito:**
+Define las operaciones de persistencia para cuentas de usuario.
+
+---
+
+#### PatientRepository (Interface)
+
+**Métodos:**
+- `save(patient: Patient): Patient`
+- `findById(id: Int): Patient?`
+- `findByDni(dni: String): Patient?`
+- `findByUserId(userId: Int): Patient?`
+- `saveMinor(patientMinor: PatientMinor): PatientMinor`
+- `findMinorsByTutor(tutorId: Int): List<PatientMinor>`
+
+**Propósito:**
+Define las operaciones de persistencia para pacientes y menores vinculados.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+#### 2.6.1.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
+
+#### UserAccountsController (REST API Controller)
+
+**Endpoints:**
+- `POST /api/v1/user-accounts` → Registra un nuevo paciente con verificación de DNI.
+- `POST /api/v1/user-accounts/login` → Inicia sesión y genera token JWT.
+- `POST /api/v1/user-accounts/logout` → Cierra sesión.
+- `POST /api/v1/user-accounts/recover-password` → Solicita recuperación de contraseña.
+- `GET /api/v1/user-accounts/{id}` → Obtiene el perfil del usuario autenticado.
+- `PUT /api/v1/user-accounts/{id}` → Actualiza datos de contacto.
+- `POST /api/v1/user-accounts/staff` → Crea cuenta de personal administrativo.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `UserAccount`.
+
+---
+
+#### PatientsController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/patients/{id}` → Obtiene el perfil de un paciente.
+- `PUT /api/v1/patients/{id}` → Actualiza datos del paciente.
+- `GET /api/v1/patients/{id}/minors` → Lista los menores vinculados al tutor.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `Patient`.
+
+---
+
+#### PatientMinorsController (REST API Controller)
+
+**Endpoints:**
+- `POST /api/v1/patient-minors` → Vincula un menor a la cuenta del titular.
+- `GET /api/v1/patient-minors/{id}` → Obtiene el detalle del vínculo.
+- `DELETE /api/v1/patient-minors/{id}` → Desvincula un menor.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre la entity `PatientMinor`.
+
+---
+
+#### IamContextFacade (Facade / ACL)
+
+**Métodos:**
+- `getUserById(id): UserAccount?`
+- `getPatientById(id): Patient?`
+- `getMinorsByTutor(tutorId): List<PatientMinor>`
+
+**Propósito:**
+Punto de entrada interno para otros bounded contexts. Evita que otros contextos accedan directamente a los repositorios de IAM.
+
+---
+
+#### 2.6.1.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### UserAccountCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `registerPatient(command: RegisterPatientCommand): Patient`
+- `login(command: LoginCommand): AuthResult`
+- `logout(command: LogoutCommand): void`
+- `recoverPassword(command: RecoverPasswordCommand): void`
+- `updateProfile(command: UpdateProfileCommand): Patient`
+- `createStaffAccount(command: CreateStaffAccountCommand): UserAccount`
+
+**Propósito:**
+Define los comandos relacionados con la cuenta de usuario.
+
+---
+
+#### PatientCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `linkMinor(command: LinkMinorCommand): PatientMinor`
+- `unlinkMinor(command: UnlinkMinorCommand): void`
+
+**Propósito:**
+Define los comandos relacionados con el paciente y sus menores vinculados.
+
+---
+
+#### UserAccountQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getById(id: Int): UserAccount?`
+- `getByEmail(email: String): UserAccount?`
+
+**Propósito:**
+Define las consultas relacionadas con la cuenta de usuario.
+
+---
+
+#### PatientQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getById(id: Int): Patient?`
+- `getByDni(dni: String): Patient?`
+- `getMinorsByTutor(tutorId: Int): List<PatientMinor>`
+
+**Propósito:**
+Define las consultas relacionadas con el paciente.
+
+---
+
+#### UserAccountCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de cuenta de usuario.
+
+**Flujo de `registerPatient`:**
+1. Recibe los datos del paciente.
+2. Valida el DNI contra el servicio externo RENIEC mediante `ReniecService` (ACL).
+3. Valida que el correo no esté duplicado.
+4. Crea la cuenta de usuario con rol `PATIENT` usando `UserAccountFactory`.
+5. Crea el perfil de paciente.
+6. Publica el evento `PatientRegisteredEvent`.
+7. Notifica al paciente vía `NotificationAdapter`.
+
+---
+
+#### PatientCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de paciente.
+
+**Flujo de `linkMinor`:**
+1. Recibe el DNI del menor.
+2. Valida el DNI contra RENIEC.
+3. Valida que el menor no esté vinculado a otra cuenta.
+4. Crea el `PatientMinor` asociando al tutor.
+5. Publica el evento `MinorLinkedEvent`.
+6. Notifica al tutor.
+
+---
+
+#### PatientRegisteredEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `PatientRegisteredEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Envía el correo de bienvenida.
+3. Registra la acción en el log de auditoría.
+
+---
+
+#### MinorLinkedEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `MinorLinkedEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Notifica al tutor que la vinculación fue exitosa.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.1.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### UserAccountRepositoryImpl
+**Implementa:** `UserAccountRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `users`. Mapea entidades del dominio a entidades JPA.
+
+---
+
+#### PatientRepositoryImpl
+**Implementa:** `PatientRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre las tablas `patients` y `patient_minors`.
+
+---
+
+#### ReniecService (ACL)
+**Función:**
+Valida la identidad por DNI contra el servicio externo de RENIEC.
+**Tecnología:** REST Client (RestTemplate / WebClient)
+**Explicación:**
+Implementa un Anticorruption Layer (ACL) que traduce el modelo externo de RENIEC al modelo interno de identidad.
+
+---
+
+#### BCryptHashingService
+**Función:**
+Hashea y valida contraseñas con BCrypt.
+**Tecnología:** BCrypt
+
+---
+
+#### TokenServiceImpl
+**Función:**
+Genera y valida tokens JWT.
+**Tecnología:** java-jwt / jjwt
+
+---
+
+#### WebSecurityConfiguration
+**Función:**
+Configura Spring Security, filtros de autorización y pipeline de autenticación.
+**Tecnología:** Spring Security
+
+---
+
+#### BearerAuthorizationRequestFilter
+**Función:**
+Filtra las peticiones HTTP y valida el token Bearer en cada request.
+**Tecnología:** Spring Security
+
+---
+
+#### NotificationAdapter
+**Función:**
+Envía notificaciones al usuario (correo de bienvenida, recuperación de contraseña).
+**Tecnología:** SMTP + Firebase Cloud Messaging
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+#### UserAccountMapper
+**Función:**
+Convierte entre entidades de dominio y DTOs.
+
+---
 
 #### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
 
