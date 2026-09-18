@@ -42,7 +42,7 @@ SaludYa
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| 1.0.0 | 08-28-26 | Montoya Nina Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
+| 1.0.0 | 09-11-26 | Montoya Nina Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
 | 1.1.0 | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile, el proceso Lean UX, los segmentos objetivo, el análisis competitivo y el diseño, registro y análisis de entrevistas de SaludYa (secciones 1.2 a 2.2.3). |
 ---
 
