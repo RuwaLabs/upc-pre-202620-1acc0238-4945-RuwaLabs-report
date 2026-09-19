@@ -2980,6 +2980,455 @@ El diagrama de base de datos del bounded context Reassignment muestra la tabla r
 
 ---
 
+## 2.6.4. Bounded Context: Arrival & QR Check-in
+
+El **bounded context de Arrival & QR Check-in** gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la **cola de asistencia** (`attendance_queue`), que ordena a los pacientes por orden de llegada dentro de cada `time_slot`. Cuando el paciente escanea el código QR, el sistema valida la ventana de tolerancia, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
+
+### 2.6.4.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de llegada y check-in. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de la cola de asistencia y la validación de presencia.
+
+#### CheckIn (Aggregate Root)
+
+**Atributos:**
+`id`, `idAppointment`, `qrToken`, `status: CheckInStatus`, `checkedInAt`
+
+**Métodos:**
+- `isValid()` → retorna `true` si el estado es `VALID`.
+- `expire()` → cambia el estado a `EXPIRED`.
+- `invalidate()` → cambia el estado a `INVALID`.
+
+**Propósito:**
+Representa la validación de presencia física del paciente. Es aggregate root porque controla el ciclo de vida del check-in.
+
+---
+
+#### AttendanceQueue (Aggregate Root)
+
+**Atributos:**
+`id`, `idTimeSlot`, `date`, `status: AttendanceQueueStatus`
+
+**Métodos:**
+- `open()` → cambia el estado a `OPEN`.
+- `close()` → cambia el estado a `CLOSED`.
+- `pause()` → cambia el estado a `PAUSED`.
+- `getEntriesOrdered()` → retorna las entradas ordenadas por `position`.
+
+**Propósito:**
+Representa la fila de asistencia de un `time_slot` en una fecha. Es aggregate root porque agrupa las `QueueEntry`.
+
+---
+
+#### QueueEntry (Entity)
+
+**Atributos:**
+`id`, `idAttendanceQueue`, `idCheckIn`, `position`, `status: QueueEntryStatus`, `calledAt`, `attendedAt`
+
+**Métodos:**
+- `call()` → cambia el estado a `CALLED`.
+- `startAttention()` → cambia el estado a `IN_ATTENTION`.
+- `markAsAttended()` → cambia el estado a `ATTENDED`.
+- `markAsAbsent()` → cambia el estado a `ABSENT`.
+- `isWaiting()` → retorna `true` si el estado es `WAITING`.
+
+**Propósito:**
+Representa a cada persona en la fila de asistencia.
+
+---
+
+#### QueuePosition (Value Object)
+
+**Atributos:**
+`value`, `totalInQueue`
+
+**Propósito:**
+Encapsula la posición del paciente en la cola de asistencia. Es inmutable y se calcula por timestamp de check-in.
+
+---
+
+#### CheckInStatus (Enum)
+
+**Valores posibles:**
+`VALID`, `EXPIRED`, `INVALID`
+
+**Propósito:**
+Define el estado de la validación del check-in.
+
+---
+
+#### AttendanceQueueStatus (Enum)
+
+**Valores posibles:**
+`OPEN`, `CLOSED`, `PAUSED`
+
+**Propósito:**
+Define el estado de la fila de asistencia.
+
+---
+
+#### QueueEntryStatus (Enum)
+
+**Valores posibles:**
+`WAITING`, `CALLED`, `IN_ATTENTION`, `ATTENDED`, `ABSENT`
+
+**Propósito:**
+Define el estado de cada entrada en la cola de asistencia.
+
+---
+
+#### CheckInFactory (Factory)
+
+**Métodos:**
+- `createCheckIn(appointment, qrToken): CheckIn`
+
+**Propósito:**
+Encapsula la creación de un check-in, validando que la cita exista y que el QR sea válido.
+
+---
+
+#### QueueDomainService (Domain Service)
+
+**Métodos:**
+- `calculatePosition(attendanceQueueId): Int`
+- `validateToleranceWindow(checkInTime, timeSlot): Boolean`
+
+**Propósito:**
+Encapsula la lógica de cálculo de posición en la cola y la validación de la ventana de tolerancia.
+
+---
+
+#### CheckInRepository (Interface)
+
+**Métodos:**
+- `save(checkIn: CheckIn): CheckIn`
+- `findById(id: Int): CheckIn?`
+- `findByAppointment(appointmentId: Int): CheckIn?`
+- `findByQRToken(qrToken: String): CheckIn?`
+- `updateStatus(id: Int, status: CheckInStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para check-ins.
+
+---
+
+#### AttendanceQueueRepository (Interface)
+
+**Métodos:**
+- `save(queue: AttendanceQueue): AttendanceQueue`
+- `findById(id: Int): AttendanceQueue?`
+- `findByTimeSlotAndDate(timeSlotId: Int, date: Date): AttendanceQueue?`
+- `createIfNotExists(timeSlotId: Int, date: Date): AttendanceQueue`
+- `updateStatus(id: Int, status: AttendanceQueueStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para colas de asistencia.
+
+---
+
+#### QueueEntryRepository (Interface)
+
+**Métodos:**
+- `save(entry: QueueEntry): QueueEntry`
+- `findById(id: Int): QueueEntry?`
+- `findByAttendanceQueue(queueId: Int): List<QueueEntry>`
+- `getNextPosition(queueId: Int): Int`
+- `updateStatus(id: Int, status: QueueEntryStatus)`
+- `findExpiredCalledEntries(toleranceMinutes: Int): List<QueueEntry>`
+
+**Propósito:**
+Define las operaciones de persistencia para entradas de la cola.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+#### CheckInCompletedEvent (Domain Event)
+
+**Atributos:**
+`checkInId`, `appointmentId`, `attendanceQueueId`, `position`, `completedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente completó su check-in y fue ingresado a la cola de asistencia.
+
+---
+
+#### PatientCalledEvent (Domain Event)
+
+**Atributos:**
+`queueEntryId`, `attendanceQueueId`, `position`, `calledAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente fue llamado a consultorio.
+
+---
+
+#### PatientAbsentEvent (Domain Event)
+
+**Atributos:**
+`queueEntryId`, `appointmentId`, `freedTimeSlotId`, `absentAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente fue declarado ausente por no presentarse al llamado.
+
+---
+
+### 2.6.4.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
+
+#### CheckInsController (REST API Controller)
+
+**Endpoints:**
+- `POST /api/v1/check-ins/qr` → Valida el QR y registra el check-in.
+- `GET /api/v1/check-ins/{id}` → Obtiene el detalle del check-in.
+- `GET /api/v1/check-ins/appointment/{appointmentId}` → Obtiene el check-in de una cita.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `CheckIn`.
+
+---
+
+#### AttendanceQueuesController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/attendance-queues/{id}` → Obtiene el estado de la cola.
+- `GET /api/v1/attendance-queues/{id}/entries` → Lista las entradas de la cola.
+- `POST /api/v1/attendance-queues/{id}/call-next` → Llama al siguiente paciente.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `AttendanceQueue`.
+
+---
+
+#### QueueEntriesController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/queue-entries/{id}` → Obtiene el detalle de una entrada.
+- `POST /api/v1/queue-entries/{id}/absent` → Marca una entrada como ausente.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre la entity `QueueEntry`.
+
+---
+
+### 2.6.4.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### CheckInCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `validateQR(command: ValidateQRCommand): CheckInResult`
+- `registerCheckIn(command: RegisterCheckInCommand): QueueEntry`
+- `declareAbsence(command: DeclareAbsenceCommand): void`
+- `detectAbsences(): void`
+
+**Propósito:**
+Define los comandos relacionados con el check-in.
+
+---
+
+#### QueueCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `callNextPatient(command: CallNextPatientCommand): QueueEntry`
+
+**Propósito:**
+Define los comandos relacionados con la cola de asistencia.
+
+---
+
+#### CheckInQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getById(id: Int): CheckIn?`
+- `getByAppointment(appointmentId: Int): CheckIn?`
+
+**Propósito:**
+Define las consultas relacionadas con el check-in.
+
+---
+
+#### QueueQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getQueuePosition(checkInId: Int): QueuePosition`
+- `getQueueEntries(queueId: Int): List<QueueEntry>`
+
+**Propósito:**
+Define las consultas relacionadas con la cola.
+
+---
+
+#### CheckInCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de check-in.
+
+**Flujo de `validateQR`:**
+1. Recibe `qrToken`.
+2. Lee `checkInToleranceMinutes` de la configuración.
+3. Busca la cita asociada al QR.
+4. Valida el estado y la ventana de tolerancia con `QueueDomainService.validateToleranceWindow`.
+5. Retorna el resultado.
+
+**Flujo de `registerCheckIn`:**
+1. Crea el `CheckIn` con estado `VALID` usando `CheckInFactory`.
+2. Crea o recupera la `AttendanceQueue`.
+3. Calcula la `position` con `QueueDomainService.calculatePosition`.
+4. Crea el `QueueEntry` con estado `WAITING`.
+5. Actualiza la cita a `CONFIRMED`.
+6. Publica el evento `CheckInCompletedEvent`.
+7. Notifica al paciente con su posición.
+
+**Flujo de `declareAbsence`:**
+1. Lee `postCallToleranceMinutes` de la configuración.
+2. Valida que el `QueueEntry` esté `CALLED`.
+3. Cambia el estado a `ABSENT`.
+4. Publica el evento `PatientAbsentEvent`.
+5. Dispara la reasignación.
+
+---
+
+#### QueueCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de cola.
+
+**Flujo de `callNextPatient`:**
+1. Busca el primer `QueueEntry` con estado `WAITING`.
+2. Cambia su estado a `CALLED`.
+3. Publica el evento `PatientCalledEvent`.
+4. Notifica al paciente.
+
+---
+
+#### CheckInCompletedEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `CheckInCompletedEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Notifica al paciente que ha sido ingresado a la cola.
+3. Registra la acción en el log de auditoría.
+
+---
+
+#### PatientCalledEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `PatientCalledEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Envía una notificación push al paciente.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.4.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### CheckInRepositoryImpl
+**Implementa:** `CheckInRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `check_ins`.
+
+---
+
+#### AttendanceQueueRepositoryImpl
+**Implementa:** `AttendanceQueueRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `attendance_queues`.
+
+---
+
+#### QueueEntryRepositoryImpl
+**Implementa:** `QueueEntryRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `queue_entries`.
+
+---
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Lee `checkInToleranceMinutes`, `postCallToleranceMinutes` y `attendanceQueueVisible` de la configuración del hospital.
+
+---
+
+#### QRValidatorService (ACL)
+**Función:**
+Valida el token QR escaneado.
+**Tecnología:** ZXing / Google ML Kit
+**Explicación:**
+Implementa un Anticorruption Layer (ACL) que decodifica el QR y extrae el `qrToken`.
+
+---
+
+#### TicketGenerationAdapter
+**Función:**
+Genera el ticket digital con identificador de llamado y posición en la cola.
+**Tecnología:** iText / Kotlin PDF
+
+---
+
+#### NotificationAdapter
+**Función:**
+Envía notificaciones al paciente (check-in completado, llamado a consultorio).
+**Tecnología:** SMTP + Firebase Cloud Messaging
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+#### AbsenceDetectionScheduler
+**Función:**
+Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticamente.
+**Tecnología:** `@Scheduled` de Spring
+
+---
+
+### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
+
+---
+El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR (QRValidatorService), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="arrival_class_diagram.png" alt="Arrival class diagram" width="85%"/>
+
+---
+El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent.
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+<img src="arrival_database_diagram.png" alt="Arrival database diagram" width="85%"/>
+
+---
+El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in.
+
+---
+
+
 ## 2.6.5. Bounded Context: Hospital Operations & Configuration
 
 El **bounded context de Hospital Operations & Configuration** gestiona la configuración operativa del establecimiento de salud y provee dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. Parametriza el comportamiento de los demás bounded contexts mediante reglas configurables como la capacidad máxima por bloque horario, las tolerancias de check-in y post-llamado, el tiempo de respuesta para la reasignación y los plazos de reserva y cancelación.
