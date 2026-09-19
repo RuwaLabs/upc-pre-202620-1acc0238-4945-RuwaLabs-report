@@ -1140,10 +1140,6 @@ En esta sección definimos la especificación formal de requisitos para la plata
         • <b>Given</b> un payload de notificación Push conteniendo el token del dispositivo destino,<br>
         • <b>When</b> el servicio ejecuta la petición HTTP POST hacia la API de Firebase Cloud Messaging,<br>
         • <b>Then</b> FCM responde con código `200 OK` confirmando la entrega del mensaje al dispositivo.<br><br>
-        <b>Scenario 3: Procesamiento asíncrono con colas de mensajería (Broker)</b><br>
-        • <b>Given</b> múltiples solicitudes concurrentes de envío de notificaciones,<br>
-        • <b>When</b> la API receptora inserta los trabajos en la cola de mensajes (RabbitMQ/Redis),<br>
-        • <b>Then</b> el broker confirma la recepción del evento (`202 Accepted`) y delega el procesamiento asíncrono a los workers.
       </td>
     </tr>
   </tbody>
@@ -1891,7 +1887,7 @@ El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pac
 
 En el Software Architecture Container Diagram se detalla la estructura interna del sistema SaludYa, mostrando los contenedores principales que lo componen y cómo se comunican entre sí. Este nivel de abstracción permite visualizar las decisiones tecnológicas y la distribución de responsabilidades dentro del sistema.
 
-El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias y la reasignación automática de cupos.
+El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias y la reasignación automática de cupos.
 
 El Backend API incluye internamente los módulos `AttendanceQueue` (que gestiona la cola de asistencia ordenada por `checkInTimestamp`) y `Waitlist` (que gestiona la lista de espera dinámica ordenada por `bookingOrder` y la cascada de reasignación). La base de datos incorpora las tablas `attendance_queue_entries` y `waitlist_entries`, y la tabla `appointments` incluye el campo `booking_order` que determina la prioridad de reasignación.
 
@@ -1904,7 +1900,7 @@ El Backend API se integra con cuatro servicios externos: **RENIEC API** para la 
 
 En el Software Architecture Deployment Diagram se muestra la distribución física de los contenedores del sistema SaludYa sobre la infraestructura tecnológica que los aloja. Este diagrama permite visualizar cómo se despliegan las aplicaciones móviles, los servicios del backend y los componentes de infraestructura en los diferentes nodos del sistema.
 
-El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las **aplicaciones móviles** se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el **backend del sistema** se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs, un servidor de base de datos PostgreSQL, y un servidor de mensajería RabbitMQ. Finalmente, el sistema se integra con **servicios externos** como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
+El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las **aplicaciones móviles** se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el **backend del sistema** se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs y un servidor de base de datos PostgreSQL. Finalmente, el sistema se integra con **servicios externos** como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
 
 Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud.
 
