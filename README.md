@@ -37,8 +37,6 @@
   <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
 </table>
 
-<br>
-
 <p align="center"><strong>Período 202620</strong></p>
 <p align="center"><strong>Septiembre 2026</strong></p>
 
@@ -56,7 +54,7 @@
 | 1.5.0 | 09-17-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se actualizó el Capítulo II incorporando las dos colas complementarias (Booking Order y Attendance Queue): EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases, Context Mapping, Container Level Diagram y sus diagramas asociados. |
 | 1.6.0 | 09-18-26 | Torres Juárez, Alisee Muriel | Se documentó el bounded context de Identity & Access Management (capas Domain, Interface, Application e Infrastructure), se refactorizaron encabezados de sección, se revisó la numeración y se mejoraron las descripciones de los diagramas del Capítulo II. |
 | 1.7.0 | 09-18-26 | Meza Solórzano, Didier Sebastian | Se agregó información adicional del Capítulo II y se actualizó el nombre del capítulo. |
----
+
 
 # Project Report Collaboration Insights
 
