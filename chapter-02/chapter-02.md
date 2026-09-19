@@ -3398,7 +3398,7 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 ### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
+<img src="assets/arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
 
 ---
 El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
@@ -3407,14 +3407,14 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="arrival_class_diagram.png" alt="Arrival class diagram" width="85%"/>
+<img src="assets/arrival_class_diagram.png" alt="Arrival class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent.
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-<img src="arrival_database_diagram.png" alt="Arrival database diagram" width="85%"/>
+<img src="assets/arrival_database_diagram.png" alt="Arrival database diagram" width="85%"/>
 
 ---
 El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in.
