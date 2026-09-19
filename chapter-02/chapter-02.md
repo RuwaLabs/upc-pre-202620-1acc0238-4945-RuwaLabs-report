@@ -2982,7 +2982,7 @@ El diagrama de base de datos del bounded context Reassignment muestra la tabla r
 
 ## 2.6.4. Bounded Context: Arrival & QR Check-in
 
-El **bounded context de Arrival & QR Check-in** gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la **cola de asistencia** (`attendance_queue`), que ordena a los pacientes por orden de llegada dentro de cada `time_slot`. Cuando el paciente escanea el código QR, el sistema valida la ventana de tolerancia, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
+El **bounded context de Arrival & QR Check-in** gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la **cola de asistencia** (`attendance_queue`), que ordena a los pacientes por orden de llegada dentro de cada `time_slot`. Cuando el paciente escanea el código QR, el sistema valida el token firmado por el propio backend, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
 
 ### 2.6.4.1. Domain Layer
 
@@ -3082,7 +3082,7 @@ Define el estado de cada entrada en la cola de asistencia.
 - `createCheckIn(appointment, qrToken): CheckIn`
 
 **Propósito:**
-Encapsula la creación de un check-in, validando que la cita exista y que el QR sea válido.
+Encapsula la creación de un check-in, validando que la cita exista.
 
 ---
 
@@ -3365,12 +3365,12 @@ Lee `checkInToleranceMinutes`, `postCallToleranceMinutes` y `attendanceQueueVisi
 
 ---
 
-#### QRValidatorService (ACL)
+#### JwtQRValidator (Utility)
 **Función:**
-Valida el token QR escaneado.
-**Tecnología:** ZXing / Google ML Kit
+Valida el token QR firmado por el backend usando JWT.
+**Tecnología:** java-jwt / jjwt
 **Explicación:**
-Implementa un Anticorruption Layer (ACL) que decodifica el QR y extrae el `qrToken`.
+Verifica la firma y la expiración del `qrToken` generado por el backend al confirmar la reserva. No se comunica con ningún sistema externo.
 
 ---
 
@@ -3408,7 +3408,7 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 <img src="arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
 
 ---
-El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR (QRValidatorService), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
