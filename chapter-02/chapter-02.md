@@ -2979,3 +2979,172 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
 
 ---
+
+## 2.6.5. Bounded Context: Hospital Operations & Configuration
+
+El **bounded context de Hospital Operations & Configuration** gestiona la configuración operativa del establecimiento de salud y provee dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. Parametriza el comportamiento de los demás bounded contexts mediante reglas configurables como la capacidad máxima por bloque horario, las tolerancias de check-in y post-llamado, el tiempo de respuesta para la reasignación y los plazos de reserva y cancelación.
+
+### 2.6.5.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de configuración y operación del hospital. Aquí se definen las entidades, value objects, enums e interfaces que encapsulan las reglas operativas.
+
+#### HospitalConfiguration (Aggregate Root)
+
+**Atributos:**
+`id`, `maxCapacityPerSlot`, `bookingOrderScope: BookingOrderScope`, `checkInToleranceMinutes`, `postCallToleranceMinutes`, `reassignmentResponseTimeoutMin`, `bookingCutoffTime`, `cancellationDeadlineHours`, `attendanceQueueVisible`, `updatedAt`
+
+**Métodos:**
+- `updateMaxCapacity(value)` → valida que sea mayor a 0 y actualiza la capacidad máxima por bloque.
+- `updateTolerances(checkIn, postCall)` → valida que sean mayores o iguales a 0 y actualiza las tolerancias.
+- `updateReassignmentTimeout(value)` → valida que sea mayor o igual a 0 y actualiza el timeout de reasignación.
+- `validate()` → valida que todos los parámetros sean coherentes entre sí.
+
+**Propósito:**
+Representa la configuración operativa del establecimiento. Es aggregate root porque agrupa todos los parámetros operativos que parametrizan el comportamiento de los demás bounded contexts.
+
+---
+
+#### BookingOrderScope (Enum)
+
+**Valores posibles:**
+`GLOBAL`, `PER_SPECIALTY`
+
+**Propósito:**
+Define si el `bookingOrder` se calcula de forma global al establecimiento o por especialidad.
+
+---
+
+#### HospitalConfigurationRepository (Interface)
+
+**Métodos:**
+- `save(config: HospitalConfiguration): HospitalConfiguration`
+- `findDefault(): HospitalConfiguration?`
+- `update(config: HospitalConfiguration): HospitalConfiguration`
+
+**Propósito:**
+Define las operaciones de persistencia para la configuración del hospital.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+### 2.6.5.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
+
+#### ConfigurationController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/config` → Obtiene la configuración actual del hospital.
+- `PUT /api/v1/config` → Actualiza la configuración operativa.
+- `GET /api/v1/config/reports` → Genera un reporte operativo en PDF/CSV.
+- `GET /api/v1/config/dashboard` → Obtiene métricas operativas del hospital.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `HospitalConfiguration`, incluyendo la consulta y actualización de parámetros, la generación de reportes y la visualización de métricas en el dashboard.
+
+---
+
+### 2.6.5.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### ConfigurationCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `updateConfiguration(command: UpdateConfigurationCommand): HospitalConfiguration`
+
+**Propósito:**
+Define los comandos relacionados con la configuración operativa.
+
+---
+
+#### ConfigurationQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getConfiguration(): HospitalConfiguration?`
+- `generateReport(query: GenerateReportQuery): Report`
+- `getDashboard(query: GetDashboardQuery): Dashboard`
+
+**Propósito:**
+Define las consultas relacionadas con la configuración, reportes y dashboard.
+
+---
+
+#### ConfigurationCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de configuración.
+
+**Flujo de `updateConfiguration`:**
+1. Recibe los nuevos parámetros de configuración.
+2. Valida que los parámetros sean coherentes usando el método `validate()` del aggregate.
+3. Actualiza la configuración en el repositorio.
+4. Publica el evento `ConfigurationUpdatedEvent`.
+5. Retorna la configuración actualizada.
+
+---
+
+#### ConfigurationUpdatedEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `ConfigurationUpdatedEvent`.
+**Flujo:**
+1. Escucha el evento `ConfigurationUpdatedEvent`.
+2. Actualiza la caché local de los bounded contexts que consumen la configuración.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.5.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `hospital_configurations`. Como es un singleton, siempre retorna el único registro existente.
+
+---
+
+#### ReportGeneratorAdapter
+**Función:**
+Genera reportes operativos en formato PDF y CSV a partir de los datos de atención, ausentismo y demanda.
+**Tecnología:** iText / Apache POI
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="HospitalOperations&Configuration_component_diagram.png" alt="Hospital Operations & Configuration component diagram" width="85%"/>
+
+El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="HospitalOperations&Configuration_class_diagram.png" alt="Hospital Operations & Configuration class diagram" width="85%"/>
+
+El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio.
+
+#### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+<img src="HospitalOperations&Configuration_database_diagram.png" alt="Hospital Operations & Configuration database diagram" width="85%"/>
+
+El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia.
