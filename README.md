@@ -168,7 +168,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, diagramas de usuario y la redacción de User Stories para desarrollar de principio a fin la problemática, la solución y la validación de SaludYa </li>
         </ul>
       </td>
       <td width="25%">
@@ -200,7 +200,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.]</li>
+          <li><strong>AV1:</strong> </li>
         </ul>
       </td>
       <td>
