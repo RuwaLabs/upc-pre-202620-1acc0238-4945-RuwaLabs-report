@@ -172,10 +172,13 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 <p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="user_persona_paciente"/></p>
 
+Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención.
 
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="user_persona_paciente"/></p>
+
+Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados.
 
 ### 2.3.2. User Task Matrix
 
@@ -205,14 +208,17 @@ A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos
 
 A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal de salud, se elaboraron los User Journey Maps utilizando la herramienta UXPressia. Estos esquemas analizan la experiencia de cada segmento a lo largo del proceso de atención, contrastando las fricciones de la gestión presencial/manual actual contra las oportunidades de optimización que introduce la plataforma **SaludYa**.
 
-
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
 <p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="user_journey_paciente"/></p>
 
+El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera.
+
 #### Segmento 2: Personal asistencial y administrativo
 
 <p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="user_journey_personal"/></p>
+
+El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro.
 
 ---
 
@@ -224,12 +230,15 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 <p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
 
+Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales.
+
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <p align="center"><img src="https://i.imgur.com/5z2pe4Y.png" alt="Empathy Map - Personal Asistencial y Administrativo" width="80%"/></p>
 
----
+Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos.
 
+---
 ### 2.3.5. Big Picture EventStorming
 
 Para armar un sistema que funcione bien, primero hay que entender cómo trabaja el centro de salud en el día a día. El **Big Picture EventStorming** es una dinámica en equipo que nos sirve para ver todos los hechos importantes que pasan en la posta médica. Al organizar estos sucesos paso a paso, podemos descubrir en qué momentos el proceso se vuelve lento, dónde se pierden los datos o dónde se forman las largas filas de pacientes.
@@ -2662,18 +2671,929 @@ Publica eventos de dominio usando Spring Events.
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a eventos de cancelación y ausencia. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con el BookingDomainService. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA, la publicación de eventos con Spring Events y el envío de notificaciones.
 
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="assets/appointment_class_diagram.png" alt="IAM class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, entities, value objects, enums, domain service e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, y el BookingDomainService.
 
-##### 2.6.1.6.2. Bounded Context Database Design Diagram
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
 <img src="assets/appointment_database_diagram.png" alt="IAM class diagram" width="85%"/>
 
 ---
 El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas.
+
+---
+
+## 2.6.3. Bounded Context: Reassignment
+
+El **bounded context de Reassignment** gestiona la reasignación de cupos liberados por cancelaciones o ausencias. La reasignación opera sobre la **cola de pedido** (`appointments` ordenadas por `booking_order`). No existe lista de espera externa. Cuando se libera un cupo en un `Time Slot X`, el sistema busca en todos los `appointments` de la misma especialidad que no estén en el `Time Slot X`, ordenados por `booking_order`, y notifica al primero. Si rechaza o no responde, pasa al siguiente. Si nadie acepta, el cupo se pierde.
+
+### 2.6.3.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de reasignación de cupos liberados. Aquí se definen las entidades, value objects, enums, aggregates, domain services, domain events e interfaces que encapsulan las reglas de negocio.
+
+#### ReassignmentOffer (Aggregate Root)
+
+**Atributos:**
+`id`, `idAppointment`, `idFreedTimeSlot`, `idOriginalAppointment`, `status: ReassignmentStatus`, `offeredAt`, `respondedAt`, `expiresAt`
+
+**Métodos:**
+- `accept()` → cambia el estado a `ACCEPTED` y registra `respondedAt`.
+- `reject()` → cambia el estado a `REJECTED` y registra `respondedAt`.
+- `expire()` → cambia el estado a `EXPIRED` si pasó `expiresAt`.
+- `isPending()` → retorna `true` si el estado es `PENDING`.
+- `isExpired()` → valida si `expiresAt < now()`.
+
+**Propósito:**
+Representa una oferta de reasignación enviada a un paciente de la cola de pedido. Es aggregate root porque controla el ciclo de vida de la oferta.
+
+---
+
+#### ReassignmentStatus (Enum)
+
+**Valores posibles:**
+`PENDING`, `ACCEPTED`, `REJECTED`, `EXPIRED`
+
+**Propósito:**
+Define el estado de una oferta de reasignación.
+
+---
+
+#### ReassignmentDomainService (Domain Service)
+
+**Métodos:**
+- `findNextCandidate(specialtyId, freedTimeSlotId): Appointment?`
+
+**Propósito:**
+Encapsula la lógica de búsqueda del siguiente candidato en la cola de pedido. Internamente consulta todos los `appointments` de la especialidad con estado `RESERVED` o `CONFIRMED`, excluye los que están en el `Time Slot X`, y los ordena por `booking_order` ascendente para retornar el primero.
+
+---
+
+#### ReassignmentOfferRepository (Interface)
+
+**Métodos:**
+- `save(offer: ReassignmentOffer): ReassignmentOffer`
+- `findById(id: Int): ReassignmentOffer?`
+- `findPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
+- `findExpiredOffers(): List<ReassignmentOffer>`
+- `updateStatus(id: Int, status: ReassignmentStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para ofertas de reasignación.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+#### ReassignmentOfferSentEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `freedTimeSlotId`, `offeredAt`
+
+**Propósito:**
+Representa el hecho de negocio de que se envió una oferta de reasignación a un paciente de la cola de pedido.
+
+---
+
+#### ReassignmentOfferAcceptedEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `acceptedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente aceptó una oferta de reasignación.
+
+---
+
+#### ReassignmentOfferRejectedEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `rejectedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente rechazó una oferta de reasignación.
+
+---
+
+#### ReassignmentOfferExpiredEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `expiredAt`
+
+**Propósito:**
+Representa el hecho de negocio de que una oferta de reasignación expiró sin respuesta.
+
+---
+
+### 2.6.3.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST y consumers de eventos.
+
+#### ReassignmentOffersController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/reassignment-offers/pending` → Lista ofertas pendientes del paciente autenticado.
+- `POST /api/v1/reassignment-offers/{id}/accept` → Acepta una oferta.
+- `POST /api/v1/reassignment-offers/{id}/reject` → Rechaza una oferta.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `ReassignmentOffer`.
+
+---
+
+#### AppointmentCancelledEventConsumer (Event Consumer)
+
+**Función:**
+Escucha el evento `AppointmentCancelledEvent` publicado por `Appointments & Booking`.
+**Tecnología:** `@EventListener` de Spring
+
+---
+
+#### AppointmentAbsentEventConsumer (Event Consumer)
+
+**Función:**
+Escucha el evento `AppointmentAbsentEvent` publicado por `Arrival & QR Check-in`.
+**Tecnología:** `@EventListener` de Spring
+
+---
+
+### 2.6.3.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### ReassignmentCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `sendReassignmentOffer(command: SendReassignmentOfferCommand): ReassignmentOffer`
+- `acceptReassignment(command: AcceptReassignmentCommand): void`
+- `rejectReassignment(command: RejectReassignmentCommand): void`
+- `expireReassignment(command: ExpireReassignmentCommand): void`
+
+**Propósito:**
+Define los comandos relacionados con la reasignación.
+
+---
+
+#### ReassignmentQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
+- `getById(id: Int): ReassignmentOffer?`
+
+**Propósito:**
+Define las consultas relacionadas con la reasignación.
+
+---
+
+#### ReassignmentCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de reasignación.
+
+**Flujo de `sendReassignmentOffer`:**
+1. Recibe `idFreedTimeSlot` e `idOriginalAppointment`.
+2. Lee `reassignmentResponseTimeoutMin` de la configuración.
+3. Busca el siguiente candidato con `ReassignmentDomainService.findNextCandidate`.
+4. Crea un `ReassignmentOffer` con `expiresAt = now + timeout`.
+5. Publica el evento `ReassignmentOfferSentEvent`.
+6. Envía notificación al paciente.
+
+**Flujo de `acceptReassignment`:**
+1. Recibe `offerId`.
+2. Valida que esté `PENDING` y no expirada.
+3. Cambia el estado a `ACCEPTED`.
+4. Actualiza el `appointment` del paciente con el nuevo `time_slot`.
+5. Publica el evento `ReassignmentOfferAcceptedEvent`.
+6. Notifica al paciente.
+
+**Flujo de `rejectReassignment`:**
+1. Recibe `offerId`.
+2. Cambia el estado a `REJECTED`.
+3. Publica el evento `ReassignmentOfferRejectedEvent`.
+4. Dispara `sendReassignmentOffer` para el siguiente candidato.
+
+**Flujo de `expireReassignment`:**
+1. Busca ofertas `PENDING` con `expiresAt < now()`.
+2. Cambia el estado a `EXPIRED`.
+3. Publica el evento `ReassignmentOfferExpiredEvent`.
+4. Dispara `sendReassignmentOffer` para el siguiente candidato.
+
+---
+
+#### AppointmentCancelledEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Dispara `sendReassignmentOffer`.
+3. Registra la acción en el log de auditoría.
+
+---
+
+#### AppointmentAbsentEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Dispara `sendReassignmentOffer`.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.3.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### ReassignmentOfferRepositoryImpl
+**Implementa:** `ReassignmentOfferRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `reassignment_offers`.
+
+---
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Lee `reassignmentResponseTimeoutMin` de la configuración del hospital.
+
+---
+
+#### NotificationAdapter
+**Función:**
+Envía notificaciones de ofertas de reasignación al paciente.
+**Tecnología:** SMTP + Firebase Cloud Messaging
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+#### ReassignmentExpirationScheduler
+**Función:**
+Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas.
+**Tecnología:** `@Scheduled` de Spring
+
+---
+
+### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="assets/reassignment_component_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta y la prioridad por bookingOrder, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED). Se muestran los cuatro Domain Events que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent), el ReassignmentDomainService que encapsula la lógica de búsqueda del siguiente candidato, y las interfaces ReassignmentOfferRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos.
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+<img src="assets/reassignment_database_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
+
+---
+
+## 2.6.4. Bounded Context: Arrival & QR Check-in
+
+El **bounded context de Arrival & QR Check-in** gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la **cola de asistencia** (`attendance_queue`), que ordena a los pacientes por orden de llegada dentro de cada `time_slot`. Cuando el paciente escanea el código QR, el sistema valida el token firmado por el propio backend, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
+
+### 2.6.4.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de llegada y check-in. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de la cola de asistencia y la validación de presencia.
+
+#### CheckIn (Aggregate Root)
+
+**Atributos:**
+`id`, `idAppointment`, `qrToken`, `status: CheckInStatus`, `checkedInAt`
+
+**Métodos:**
+- `isValid()` → retorna `true` si el estado es `VALID`.
+- `expire()` → cambia el estado a `EXPIRED`.
+- `invalidate()` → cambia el estado a `INVALID`.
+
+**Propósito:**
+Representa la validación de presencia física del paciente. Es aggregate root porque controla el ciclo de vida del check-in.
+
+---
+
+#### AttendanceQueue (Aggregate Root)
+
+**Atributos:**
+`id`, `idTimeSlot`, `date`, `status: AttendanceQueueStatus`
+
+**Métodos:**
+- `open()` → cambia el estado a `OPEN`.
+- `close()` → cambia el estado a `CLOSED`.
+- `pause()` → cambia el estado a `PAUSED`.
+- `getEntriesOrdered()` → retorna las entradas ordenadas por `position`.
+
+**Propósito:**
+Representa la fila de asistencia de un `time_slot` en una fecha. Es aggregate root porque agrupa las `QueueEntry`.
+
+---
+
+#### QueueEntry (Entity)
+
+**Atributos:**
+`id`, `idAttendanceQueue`, `idCheckIn`, `position`, `status: QueueEntryStatus`, `calledAt`, `attendedAt`
+
+**Métodos:**
+- `call()` → cambia el estado a `CALLED`.
+- `startAttention()` → cambia el estado a `IN_ATTENTION`.
+- `markAsAttended()` → cambia el estado a `ATTENDED`.
+- `markAsAbsent()` → cambia el estado a `ABSENT`.
+- `isWaiting()` → retorna `true` si el estado es `WAITING`.
+
+**Propósito:**
+Representa a cada persona en la fila de asistencia.
+
+---
+
+#### QueuePosition (Value Object)
+
+**Atributos:**
+`value`, `totalInQueue`
+
+**Propósito:**
+Encapsula la posición del paciente en la cola de asistencia. Es inmutable y se calcula por timestamp de check-in.
+
+---
+
+#### CheckInStatus (Enum)
+
+**Valores posibles:**
+`VALID`, `EXPIRED`, `INVALID`
+
+**Propósito:**
+Define el estado de la validación del check-in.
+
+---
+
+#### AttendanceQueueStatus (Enum)
+
+**Valores posibles:**
+`OPEN`, `CLOSED`, `PAUSED`
+
+**Propósito:**
+Define el estado de la fila de asistencia.
+
+---
+
+#### QueueEntryStatus (Enum)
+
+**Valores posibles:**
+`WAITING`, `CALLED`, `IN_ATTENTION`, `ATTENDED`, `ABSENT`
+
+**Propósito:**
+Define el estado de cada entrada en la cola de asistencia.
+
+---
+
+#### CheckInFactory (Factory)
+
+**Métodos:**
+- `createCheckIn(appointment, qrToken): CheckIn`
+
+**Propósito:**
+Encapsula la creación de un check-in, validando que la cita exista.
+
+---
+
+#### QueueDomainService (Domain Service)
+
+**Métodos:**
+- `calculatePosition(attendanceQueueId): Int`
+- `validateToleranceWindow(checkInTime, timeSlot): Boolean`
+
+**Propósito:**
+Encapsula la lógica de cálculo de posición en la cola y la validación de la ventana de tolerancia.
+
+---
+
+#### CheckInRepository (Interface)
+
+**Métodos:**
+- `save(checkIn: CheckIn): CheckIn`
+- `findById(id: Int): CheckIn?`
+- `findByAppointment(appointmentId: Int): CheckIn?`
+- `findByQRToken(qrToken: String): CheckIn?`
+- `updateStatus(id: Int, status: CheckInStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para check-ins.
+
+---
+
+#### AttendanceQueueRepository (Interface)
+
+**Métodos:**
+- `save(queue: AttendanceQueue): AttendanceQueue`
+- `findById(id: Int): AttendanceQueue?`
+- `findByTimeSlotAndDate(timeSlotId: Int, date: Date): AttendanceQueue?`
+- `createIfNotExists(timeSlotId: Int, date: Date): AttendanceQueue`
+- `updateStatus(id: Int, status: AttendanceQueueStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para colas de asistencia.
+
+---
+
+#### QueueEntryRepository (Interface)
+
+**Métodos:**
+- `save(entry: QueueEntry): QueueEntry`
+- `findById(id: Int): QueueEntry?`
+- `findByAttendanceQueue(queueId: Int): List<QueueEntry>`
+- `getNextPosition(queueId: Int): Int`
+- `updateStatus(id: Int, status: QueueEntryStatus)`
+- `findExpiredCalledEntries(toleranceMinutes: Int): List<QueueEntry>`
+
+**Propósito:**
+Define las operaciones de persistencia para entradas de la cola.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+#### CheckInCompletedEvent (Domain Event)
+
+**Atributos:**
+`checkInId`, `appointmentId`, `attendanceQueueId`, `position`, `completedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente completó su check-in y fue ingresado a la cola de asistencia.
+
+---
+
+#### PatientCalledEvent (Domain Event)
+
+**Atributos:**
+`queueEntryId`, `attendanceQueueId`, `position`, `calledAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente fue llamado a consultorio.
+
+---
+
+#### PatientAbsentEvent (Domain Event)
+
+**Atributos:**
+`queueEntryId`, `appointmentId`, `freedTimeSlotId`, `absentAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente fue declarado ausente por no presentarse al llamado.
+
+---
+
+### 2.6.4.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
+
+#### CheckInsController (REST API Controller)
+
+**Endpoints:**
+- `POST /api/v1/check-ins/qr` → Valida el QR y registra el check-in.
+- `GET /api/v1/check-ins/{id}` → Obtiene el detalle del check-in.
+- `GET /api/v1/check-ins/appointment/{appointmentId}` → Obtiene el check-in de una cita.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `CheckIn`.
+
+---
+
+#### AttendanceQueuesController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/attendance-queues/{id}` → Obtiene el estado de la cola.
+- `GET /api/v1/attendance-queues/{id}/entries` → Lista las entradas de la cola.
+- `POST /api/v1/attendance-queues/{id}/call-next` → Llama al siguiente paciente.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `AttendanceQueue`.
+
+---
+
+#### QueueEntriesController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/queue-entries/{id}` → Obtiene el detalle de una entrada.
+- `POST /api/v1/queue-entries/{id}/absent` → Marca una entrada como ausente.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre la entity `QueueEntry`.
+
+---
+
+### 2.6.4.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### CheckInCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `validateQR(command: ValidateQRCommand): CheckInResult`
+- `registerCheckIn(command: RegisterCheckInCommand): QueueEntry`
+- `declareAbsence(command: DeclareAbsenceCommand): void`
+- `detectAbsences(): void`
+
+**Propósito:**
+Define los comandos relacionados con el check-in.
+
+---
+
+#### QueueCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `callNextPatient(command: CallNextPatientCommand): QueueEntry`
+
+**Propósito:**
+Define los comandos relacionados con la cola de asistencia.
+
+---
+
+#### CheckInQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getById(id: Int): CheckIn?`
+- `getByAppointment(appointmentId: Int): CheckIn?`
+
+**Propósito:**
+Define las consultas relacionadas con el check-in.
+
+---
+
+#### QueueQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getQueuePosition(checkInId: Int): QueuePosition`
+- `getQueueEntries(queueId: Int): List<QueueEntry>`
+
+**Propósito:**
+Define las consultas relacionadas con la cola.
+
+---
+
+#### CheckInCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de check-in.
+
+**Flujo de `validateQR`:**
+1. Recibe `qrToken`.
+2. Lee `checkInToleranceMinutes` de la configuración.
+3. Busca la cita asociada al QR.
+4. Valida el estado y la ventana de tolerancia con `QueueDomainService.validateToleranceWindow`.
+5. Retorna el resultado.
+
+**Flujo de `registerCheckIn`:**
+1. Crea el `CheckIn` con estado `VALID` usando `CheckInFactory`.
+2. Crea o recupera la `AttendanceQueue`.
+3. Calcula la `position` con `QueueDomainService.calculatePosition`.
+4. Crea el `QueueEntry` con estado `WAITING`.
+5. Actualiza la cita a `CONFIRMED`.
+6. Publica el evento `CheckInCompletedEvent`.
+7. Notifica al paciente con su posición.
+
+**Flujo de `declareAbsence`:**
+1. Lee `postCallToleranceMinutes` de la configuración.
+2. Valida que el `QueueEntry` esté `CALLED`.
+3. Cambia el estado a `ABSENT`.
+4. Publica el evento `PatientAbsentEvent`.
+5. Dispara la reasignación.
+
+---
+
+#### QueueCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de cola.
+
+**Flujo de `callNextPatient`:**
+1. Busca el primer `QueueEntry` con estado `WAITING`.
+2. Cambia su estado a `CALLED`.
+3. Publica el evento `PatientCalledEvent`.
+4. Notifica al paciente.
+
+---
+
+#### CheckInCompletedEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `CheckInCompletedEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Notifica al paciente que ha sido ingresado a la cola.
+3. Registra la acción en el log de auditoría.
+
+---
+
+#### PatientCalledEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `PatientCalledEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Envía una notificación push al paciente.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.4.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### CheckInRepositoryImpl
+**Implementa:** `CheckInRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `check_ins`.
+
+---
+
+#### AttendanceQueueRepositoryImpl
+**Implementa:** `AttendanceQueueRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `attendance_queues`.
+
+---
+
+#### QueueEntryRepositoryImpl
+**Implementa:** `QueueEntryRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `queue_entries`.
+
+---
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Lee `checkInToleranceMinutes`, `postCallToleranceMinutes` y `attendanceQueueVisible` de la configuración del hospital.
+
+---
+
+#### JwtQRValidator (Utility)
+**Función:**
+Valida el token QR firmado por el backend usando JWT.
+**Tecnología:** java-jwt / jjwt
+**Explicación:**
+Verifica la firma y la expiración del `qrToken` generado por el backend al confirmar la reserva. No se comunica con ningún sistema externo.
+
+---
+
+#### TicketGenerationAdapter
+**Función:**
+Genera el ticket digital con identificador de llamado y posición en la cola.
+**Tecnología:** iText / Kotlin PDF
+
+---
+
+#### NotificationAdapter
+**Función:**
+Envía notificaciones al paciente (check-in completado, llamado a consultorio).
+**Tecnología:** SMTP + Firebase Cloud Messaging
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+#### AbsenceDetectionScheduler
+**Función:**
+Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticamente.
+**Tecnología:** `@Scheduled` de Spring
+
+---
+
+### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
+
+---
+El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="arrival_class_diagram.png" alt="Arrival class diagram" width="85%"/>
+
+---
+El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent.
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+<img src="arrival_database_diagram.png" alt="Arrival database diagram" width="85%"/>
+
+---
+El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in.
+
+---
+
+
+## 2.6.5. Bounded Context: Hospital Operations & Configuration
+
+El **bounded context de Hospital Operations & Configuration** gestiona la configuración operativa del establecimiento de salud y provee dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. Parametriza el comportamiento de los demás bounded contexts mediante reglas configurables como la capacidad máxima por bloque horario, las tolerancias de check-in y post-llamado, el tiempo de respuesta para la reasignación y los plazos de reserva y cancelación.
+
+### 2.6.5.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de configuración y operación del hospital. Aquí se definen las entidades, value objects, enums e interfaces que encapsulan las reglas operativas.
+
+#### HospitalConfiguration (Aggregate Root)
+
+**Atributos:**
+`id`, `maxCapacityPerSlot`, `bookingOrderScope: BookingOrderScope`, `checkInToleranceMinutes`, `postCallToleranceMinutes`, `reassignmentResponseTimeoutMin`, `bookingCutoffTime`, `cancellationDeadlineHours`, `attendanceQueueVisible`, `updatedAt`
+
+**Métodos:**
+- `updateMaxCapacity(value)` → valida que sea mayor a 0 y actualiza la capacidad máxima por bloque.
+- `updateTolerances(checkIn, postCall)` → valida que sean mayores o iguales a 0 y actualiza las tolerancias.
+- `updateReassignmentTimeout(value)` → valida que sea mayor o igual a 0 y actualiza el timeout de reasignación.
+- `validate()` → valida que todos los parámetros sean coherentes entre sí.
+
+**Propósito:**
+Representa la configuración operativa del establecimiento. Es aggregate root porque agrupa todos los parámetros operativos que parametrizan el comportamiento de los demás bounded contexts.
+
+---
+
+#### BookingOrderScope (Enum)
+
+**Valores posibles:**
+`GLOBAL`, `PER_SPECIALTY`
+
+**Propósito:**
+Define si el `bookingOrder` se calcula de forma global al establecimiento o por especialidad.
+
+---
+
+#### HospitalConfigurationRepository (Interface)
+
+**Métodos:**
+- `save(config: HospitalConfiguration): HospitalConfiguration`
+- `findDefault(): HospitalConfiguration?`
+- `update(config: HospitalConfiguration): HospitalConfiguration`
+
+**Propósito:**
+Define las operaciones de persistencia para la configuración del hospital.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+### 2.6.5.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
+
+#### ConfigurationController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/config` → Obtiene la configuración actual del hospital.
+- `PUT /api/v1/config` → Actualiza la configuración operativa.
+- `GET /api/v1/config/reports` → Genera un reporte operativo en PDF/CSV.
+- `GET /api/v1/config/dashboard` → Obtiene métricas operativas del hospital.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `HospitalConfiguration`, incluyendo la consulta y actualización de parámetros, la generación de reportes y la visualización de métricas en el dashboard.
+
+---
+
+### 2.6.5.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### ConfigurationCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `updateConfiguration(command: UpdateConfigurationCommand): HospitalConfiguration`
+
+**Propósito:**
+Define los comandos relacionados con la configuración operativa.
+
+---
+
+#### ConfigurationQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getConfiguration(): HospitalConfiguration?`
+- `generateReport(query: GenerateReportQuery): Report`
+- `getDashboard(query: GetDashboardQuery): Dashboard`
+
+**Propósito:**
+Define las consultas relacionadas con la configuración, reportes y dashboard.
+
+---
+
+#### ConfigurationCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de configuración.
+
+**Flujo de `updateConfiguration`:**
+1. Recibe los nuevos parámetros de configuración.
+2. Valida que los parámetros sean coherentes usando el método `validate()` del aggregate.
+3. Actualiza la configuración en el repositorio.
+4. Publica el evento `ConfigurationUpdatedEvent`.
+5. Retorna la configuración actualizada.
+
+---
+
+#### ConfigurationUpdatedEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `ConfigurationUpdatedEvent`.
+**Flujo:**
+1. Escucha el evento `ConfigurationUpdatedEvent`.
+2. Actualiza la caché local de los bounded contexts que consumen la configuración.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.5.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `hospital_configurations`. Como es un singleton, siempre retorna el único registro existente.
+
+---
+
+#### ReportGeneratorAdapter
+**Función:**
+Genera reportes operativos en formato PDF y CSV a partir de los datos de atención, ausentismo y demanda.
+**Tecnología:** iText / Apache POI
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="HospitalOperations_Configuration_component_diagram.png" alt="Hospital Operations & Configuration component diagram" width="85%"/>
+
+El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="HospitalOperations_Configuration_class_diagram.png" alt="Hospital Operations & Configuration class diagram" width="85%"/>
+
+El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio.
+
+#### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+<img src="HospitalOperations_Configuration_database_diagram.png" alt="Hospital Operations & Configuration database diagram" width="85%"/>
+
+El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia.
