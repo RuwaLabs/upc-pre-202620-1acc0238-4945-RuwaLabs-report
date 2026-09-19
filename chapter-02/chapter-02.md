@@ -303,6 +303,17 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
 
 ### 2.4.2. User Stories
 
+#### Epics
+
+| ID | Título de la Épica | Descripción Breve |
+| :--- | :--- | :--- |
+| **EP1** | Authentication & Identity Management | Registro y autenticación de usuarios con verificación oficial por DNI, vinculación de menores de edad y recuperación de contraseñas. |
+| **EP2** | Appointments & Booking Engine | Consulta de disponibilidad en calendario, reserva de citas médicas para titulares o menores, y gestión de cancelaciones. |
+| **EP3** | Dynamic Waitlist & Reassignment Protocol | Gestión automatizada de la lista de espera y reasignación de turnos liberados mediante propuestas de adelanto. |
+| **EP4** | Arrival & QR Check-in System | Confirmación presencial de llegada mediante escaneo de código QR y emisión del ticket digital de atención. |
+| **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo y parametrización de reglas globales e intervalos del hospital. |
+
+#### User stories
 <!-- US-01: Registro Paciente Adulto (API DNI) -->
 <table>
   <thead>
@@ -935,7 +946,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   </thead>
   <tbody>
     <tr>
-      <td>US-12</td>
+      <td>US-13</td>
       <td>Admission Staff</td>
       <td>High</td>
       <td>EP-05: Hospital Operations & System Configuration</td>
@@ -988,7 +999,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   </thead>
   <tbody>
     <tr>
-      <td>US-13</td>
+      <td>US-14</td>
       <td>Super Admin</td>
       <td>High</td>
       <td>EP-05: Hospital Operations & System Configuration</td>
@@ -1041,7 +1052,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   </thead>
   <tbody>
     <tr>
-      <td>US-14</td>
+      <td>US-15</td>
       <td>Patient</td>
       <td>High</td>
       <td>EP-02: Appointments & Booking Engine</td>
@@ -1082,6 +1093,7 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
   </tbody>
 </table>
 
+#### Technical stories
 <!-- TECH-01: Servicio de Notificaciones Transaccionales -->
 <table>
   <thead>
@@ -1176,11 +1188,11 @@ El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los us
     <tr>
       <td colspan="4">
         <b>Scenario 1: Petición HTTP autenticada con rol autorizado (Request/Response Exitoso)</b><br>
-        • <b>Given</b> una solicitud HTTP `GET /api/v1/appointments` con un encabezado `Authorization: Bearer <JWT_VALIDO>` que contiene el rol autorizado,<br>
+        • <b>Given</b> una solicitud HTTP `GET /api/v1/appointments` con un encabezado `Authorization: Bearer <JWT_VALIDO> </JWT_VALIDO>` que contiene el rol autorizado,<br>
         • <b>When</b> el controlador procesa la petición,<br>
         • <b>Then</b> retorna un código de estado `200 OK` junto con el payload JSON estandarizado y documentado en Swagger UI.<br><br>
         <b>Scenario 2: Denegación de acceso por rol insuficiente o token inválido</b><br>
-        • <b>Given</b> una solicitud a un endpoint protegido enviada con un token caducado o sin el rol requerido (ej. Paciente accediendo a ruta de Administrador),<br>
+        • <b>Given</b> una solicitud a un endpoint protegida enviada con un token caducado o sin el rol requerido,<br>
         • <b>When</b> el middleware RBAC valida el token JWT,<br>
         • <b>Then</b> interrumpe la petición y responde con código HTTP `401 Unauthorized` o `403 Forbidden` según la falla.<br><br>
         <b>Scenario 3: Manejo estandarizado de errores de request (HTTP Status Codes)</b><br>
