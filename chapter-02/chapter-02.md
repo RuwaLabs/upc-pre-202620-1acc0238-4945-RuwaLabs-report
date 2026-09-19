@@ -172,11 +172,14 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 <p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="user_persona_paciente"/></p>
 
+En la imagen podemos ver el perfil de usuario de Kevin Huamán, un repartidor de 22 años de San Juan de Lurigancho que domina el uso de aplicaciones móviles pero se ve obligado a perder días de trabajo e ingresos haciendo largas filas presenciales desde la madrugada para conseguir una cita médica en su posta local. Ante esta problemática, el perfil destaca su necesidad urgente de una aplicación móvil rápida e intuitiva que le permita consultar disponibilidad en tiempo real, agendar citas sin intermediarios y recibir notificaciones de turnos liberados para optimizar su tiempo sin interrumpir su jornada laboral.
+
 
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="user_persona_paciente"/></p>
 
+En la imagen vemos el perfil de usuario de Franco Alanoca, un técnico de admisión de 26 años en un centro de salud de San Juan de Lurigancho, quien enfrenta una alta carga de trabajo y tensión constante por registrar manualmente a los pacientes en cuadernos y hojas de Excel sin respaldo digital. Su principal desafío radica en la pérdida de cupos por cancelaciones no reasignadas y las aglomeraciones en ventanilla, por lo que necesita un sistema de gestión simple que centralice las citas en tiempo real, valide el ingreso de pacientes de forma ágil y reasigne automáticamente los turnos liberados para reducir los reclamos y optimizar la atención.
 ### 2.3.2. User Task Matrix
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica.
@@ -210,9 +213,13 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 <p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="user_journey_paciente"/></p>
 
+En la imagen se observa un mapa de viaje del paciente enfocado en Kevin Huamán, el cual detalla su proceso de atención médica a lo largo de cinco etapas clave: Sintomatología, Intento de Reserva, Espera y Confirmación, Check-in y Atención Médica. El esquema contrasta sus objetivos y vivencias con los problemas del sistema tradicional (como la falta de información, colas a ciegas, olvido de turnos y aglomeraciones) y propone soluciones digitales para cada fase, tales como un catálogo de especialidades en tiempo real, reserva inmediata, alertas automáticas push/SMS, validación por código QR y un tablero de lista de espera dinámica en la app.
+
 #### Segmento 2: Personal asistencial y administrativo
 
 <p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="user_journey_personal"/></p>
+
+En la imagen vemos el mapa de viaje del usuario (User Journey Map) centrado en Franco Alanoca, donde se detalla la perspectiva del personal administrativo a través de cinco etapas: Apertura de Agenda, Admisión de Pacientes, Liberaciones, Verificación y Cierre y Reporte. El flujo contrasta los problemas operativos del sistema manual (como cuadernos desactualizados, saturación en ventanilla, pérdida de cupos por ausencias y duplicación de trabajo en Excel) con las oportunidades del sistema digital, destacando funciones como la habilitación rápida de agendas, un panel de control en tiempo real, la reasignación automática de turnos mediante una lista de espera dinámica, la verificación instantánea por QR y la generación automatizada de reportes al cierre de la jornada.
 
 ---
 
@@ -224,9 +231,13 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 <p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
 
+La imagen muestra la vivencia del paciente que busca atención médica: escucha comentarios sobre la falta de citas, ve largas filas desde la madrugada y siente la frustración de perder días de trabajo sin garantía de conseguir un cupo. Su principal dolor es la incertidumbre y el tiempo perdido en trámites presenciales, por lo que necesita un canal digital accesible que le permita consultar disponibilidad en tiempo real y agendar desde su celular sin intermediarios.
+
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <p align="center"><img src="https://i.imgur.com/5z2pe4Y.png" alt="Empathy Map - Personal Asistencial y Administrativo" width="80%"/></p>
+
+La imagen refleja la perspectiva del trabajador del centro de salud: lidia con el estrés de ventanillas abarrotadas, reclamos por cupos agotados y el registro manual en cuadernos o Excel. Sus dolores principales son la desorganización de los datos en papel y la pérdida de citas por inasistencias no reportadas, motivándolo a buscar un sistema en tiempo real que automatice la asignación de turnos, ordene la sala de espera y reduzca la carga operativa.
 
 ---
 
@@ -1375,6 +1386,8 @@ Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisi
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, módulo de inscripción a lista de espera dinámica, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, controles manuales de reasignación y priorización preferencial, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional.
 
 <p align="center"> <img src="https://i.imgur.com/0D0vHje.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+Este impact mapp busca reducir el tiempo de espera en el centro de salud de 50 a 15 minutos. Para lograrlo, conecta la reserva de citas y el check-in por QR del paciente con un dashboard de control, reasignación de turnos y reportes para el administrativo.
 
 ---
 
