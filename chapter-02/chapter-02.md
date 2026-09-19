@@ -2686,3 +2686,296 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 
 ---
 El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas.
+
+---
+
+## 2.6.3. Bounded Context: Reassignment
+
+El **bounded context de Reassignment** gestiona la reasignación de cupos liberados por cancelaciones o ausencias. La reasignación opera sobre la **cola de pedido** (`appointments` ordenadas por `booking_order`). No existe lista de espera externa. Cuando se libera un cupo en un `Time Slot X`, el sistema busca en todos los `appointments` de la misma especialidad que no estén en el `Time Slot X`, ordenados por `booking_order`, y notifica al primero. Si rechaza o no responde, pasa al siguiente. Si nadie acepta, el cupo se pierde.
+
+### 2.6.3.1. Domain Layer
+
+La capa de **Domain** representa el núcleo del negocio de reasignación de cupos liberados. Aquí se definen las entidades, value objects, enums, aggregates, domain services, domain events e interfaces que encapsulan las reglas de negocio.
+
+#### ReassignmentOffer (Aggregate Root)
+
+**Atributos:**
+`id`, `idAppointment`, `idFreedTimeSlot`, `idOriginalAppointment`, `status: ReassignmentStatus`, `offeredAt`, `respondedAt`, `expiresAt`
+
+**Métodos:**
+- `accept()` → cambia el estado a `ACCEPTED` y registra `respondedAt`.
+- `reject()` → cambia el estado a `REJECTED` y registra `respondedAt`.
+- `expire()` → cambia el estado a `EXPIRED` si pasó `expiresAt`.
+- `isPending()` → retorna `true` si el estado es `PENDING`.
+- `isExpired()` → valida si `expiresAt < now()`.
+
+**Propósito:**
+Representa una oferta de reasignación enviada a un paciente de la cola de pedido. Es aggregate root porque controla el ciclo de vida de la oferta.
+
+---
+
+#### ReassignmentStatus (Enum)
+
+**Valores posibles:**
+`PENDING`, `ACCEPTED`, `REJECTED`, `EXPIRED`
+
+**Propósito:**
+Define el estado de una oferta de reasignación.
+
+---
+
+#### ReassignmentDomainService (Domain Service)
+
+**Métodos:**
+- `findNextCandidate(specialtyId, freedTimeSlotId): Appointment?`
+
+**Propósito:**
+Encapsula la lógica de búsqueda del siguiente candidato en la cola de pedido. Internamente consulta todos los `appointments` de la especialidad con estado `RESERVED` o `CONFIRMED`, excluye los que están en el `Time Slot X`, y los ordena por `booking_order` ascendente para retornar el primero.
+
+---
+
+#### ReassignmentOfferRepository (Interface)
+
+**Métodos:**
+- `save(offer: ReassignmentOffer): ReassignmentOffer`
+- `findById(id: Int): ReassignmentOffer?`
+- `findPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
+- `findExpiredOffers(): List<ReassignmentOffer>`
+- `updateStatus(id: Int, status: ReassignmentStatus)`
+
+**Propósito:**
+Define las operaciones de persistencia para ofertas de reasignación.
+
+---
+
+#### EventPublisher (Interface)
+
+**Métodos:**
+- `publish(event: DomainEvent)`
+
+**Propósito:**
+Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+
+---
+
+#### ReassignmentOfferSentEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `freedTimeSlotId`, `offeredAt`
+
+**Propósito:**
+Representa el hecho de negocio de que se envió una oferta de reasignación a un paciente de la cola de pedido.
+
+---
+
+#### ReassignmentOfferAcceptedEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `acceptedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente aceptó una oferta de reasignación.
+
+---
+
+#### ReassignmentOfferRejectedEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `rejectedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente rechazó una oferta de reasignación.
+
+---
+
+#### ReassignmentOfferExpiredEvent (Domain Event)
+
+**Atributos:**
+`offerId`, `appointmentId`, `expiredAt`
+
+**Propósito:**
+Representa el hecho de negocio de que una oferta de reasignación expiró sin respuesta.
+
+---
+
+### 2.6.3.2. Interface Layer
+
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST y consumers de eventos.
+
+#### ReassignmentOffersController (REST API Controller)
+
+**Endpoints:**
+- `GET /api/v1/reassignment-offers/pending` → Lista ofertas pendientes del paciente autenticado.
+- `POST /api/v1/reassignment-offers/{id}/accept` → Acepta una oferta.
+- `POST /api/v1/reassignment-offers/{id}/reject` → Rechaza una oferta.
+
+**Explicación:**
+Este controlador gestiona las operaciones sobre el aggregate `ReassignmentOffer`.
+
+---
+
+#### AppointmentCancelledEventConsumer (Event Consumer)
+
+**Función:**
+Escucha el evento `AppointmentCancelledEvent` publicado por `Appointments & Booking`.
+**Tecnología:** `@EventListener` de Spring
+
+---
+
+#### AppointmentAbsentEventConsumer (Event Consumer)
+
+**Función:**
+Escucha el evento `AppointmentAbsentEvent` publicado por `Arrival & QR Check-in`.
+**Tecnología:** `@EventListener` de Spring
+
+---
+
+### 2.6.3.3. Application Layer
+
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+
+#### ReassignmentCommandService (Interface)
+
+**Métodos (Command Handlers):**
+- `sendReassignmentOffer(command: SendReassignmentOfferCommand): ReassignmentOffer`
+- `acceptReassignment(command: AcceptReassignmentCommand): void`
+- `rejectReassignment(command: RejectReassignmentCommand): void`
+- `expireReassignment(command: ExpireReassignmentCommand): void`
+
+**Propósito:**
+Define los comandos relacionados con la reasignación.
+
+---
+
+#### ReassignmentQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
+- `getById(id: Int): ReassignmentOffer?`
+
+**Propósito:**
+Define las consultas relacionadas con la reasignación.
+
+---
+
+#### ReassignmentCommandServiceImpl (Implementation)
+
+**Responsabilidad:** Implementar los comandos de reasignación.
+
+**Flujo de `sendReassignmentOffer`:**
+1. Recibe `idFreedTimeSlot` e `idOriginalAppointment`.
+2. Lee `reassignmentResponseTimeoutMin` de la configuración.
+3. Busca el siguiente candidato con `ReassignmentDomainService.findNextCandidate`.
+4. Crea un `ReassignmentOffer` con `expiresAt = now + timeout`.
+5. Publica el evento `ReassignmentOfferSentEvent`.
+6. Envía notificación al paciente.
+
+**Flujo de `acceptReassignment`:**
+1. Recibe `offerId`.
+2. Valida que esté `PENDING` y no expirada.
+3. Cambia el estado a `ACCEPTED`.
+4. Actualiza el `appointment` del paciente con el nuevo `time_slot`.
+5. Publica el evento `ReassignmentOfferAcceptedEvent`.
+6. Notifica al paciente.
+
+**Flujo de `rejectReassignment`:**
+1. Recibe `offerId`.
+2. Cambia el estado a `REJECTED`.
+3. Publica el evento `ReassignmentOfferRejectedEvent`.
+4. Dispara `sendReassignmentOffer` para el siguiente candidato.
+
+**Flujo de `expireReassignment`:**
+1. Busca ofertas `PENDING` con `expiresAt < now()`.
+2. Cambia el estado a `EXPIRED`.
+3. Publica el evento `ReassignmentOfferExpiredEvent`.
+4. Dispara `sendReassignmentOffer` para el siguiente candidato.
+
+---
+
+#### AppointmentCancelledEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Dispara `sendReassignmentOffer`.
+3. Registra la acción en el log de auditoría.
+
+---
+
+#### AppointmentAbsentEventHandler (Event Handler)
+
+**Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
+**Flujo:**
+1. Escucha el evento.
+2. Dispara `sendReassignmentOffer`.
+3. Registra la acción en el log de auditoría.
+
+---
+
+### 2.6.3.4. Infrastructure Layer
+
+La capa de **Infrastructure** contiene las implementaciones concretas.
+
+#### ReassignmentOfferRepositoryImpl
+**Implementa:** `ReassignmentOfferRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `reassignment_offers`.
+
+---
+
+#### HospitalConfigurationRepositoryImpl
+**Implementa:** `HospitalConfigurationRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Lee `reassignmentResponseTimeoutMin` de la configuración del hospital.
+
+---
+
+#### NotificationAdapter
+**Función:**
+Envía notificaciones de ofertas de reasignación al paciente.
+**Tecnología:** SMTP + Firebase Cloud Messaging
+
+---
+
+#### SpringEventPublisherImpl
+**Implementa:** `EventPublisher`
+**Función:**
+Publica eventos de dominio usando Spring Events.
+**Tecnología:** `ApplicationEventPublisher` de Spring
+
+---
+
+#### ReassignmentExpirationScheduler
+**Función:**
+Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas.
+**Tecnología:** `@Scheduled` de Spring
+
+---
+
+### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta y la prioridad por bookingOrder, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED). Se muestran los cuatro Domain Events que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent), el ReassignmentDomainService que encapsula la lógica de búsqueda del siguiente candidato, y las interfaces ReassignmentOfferRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos.
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+<img src="assets/reassignment_database_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+---
+El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
+
+---
