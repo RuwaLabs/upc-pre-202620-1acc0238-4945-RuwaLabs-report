@@ -230,7 +230,7 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 <p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
 
-Este mapa de empatía refleja la perspectiva de quien gestiona la atención en el establecimiento: escucha reclamos constantes por cupos agotados, observa ventanillas abarrotadas y cuadernos físicos deteriorados, y siente estrés por la sobrecarga de trabajo en las mañanas. Su necesidad principal es asignar cupos de forma transparente y evitar la pérdida de consultas por inasistencias no reportadas.
+Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales.
 
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
