@@ -200,7 +200,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> </li>
+          <li><strong>AV1:</strong> Reconocí la importancia de poner en práctica herramientas y metodologías que no había aplicado antes —como el EventStorming, los diagramas de usuario y la estructuración de User Stories para sustentar y modelar con precisión el desarrollo de SaludYa. La correcta definición de las User Stories técnicas, me exigió un análisis mucho más profundo para alinear los eventos del sistema con la arquitectura tecnológica</li>
         </ul>
       </td>
       <td>
