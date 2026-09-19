@@ -40,13 +40,12 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <td> Habilidades y conocimientos técnicos </td>
     </tr>
     <tr>
-        <td> - </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
         <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
-        <td> - </td>
+        <td>u202318309</td>
         <td> Ingeniería de Software </td>
-        <td> - </td>
+        <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en la construcción de soluciones tecnológicas que resuelvan necesidades reales de las personas. Me considero una persona responsable, organizada y con facilidad para trabajar en equipo, además de comprometida con la mejora continua y la aplicación de buenas prácticas de desarrollo. Durante el proyecto busco fortalecer mis conocimientos técnicos y aportar en la implementación de una solución funcional y de calidad.</td>
     </tr>
-    <tr>
         <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
