@@ -2962,16 +2962,16 @@ Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas
 El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
 
 
-#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta y la prioridad por bookingOrder, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED). Se muestran los cuatro Domain Events que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent), el ReassignmentDomainService que encapsula la lógica de búsqueda del siguiente candidato, y las interfaces ReassignmentOfferRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos.
 
-##### 2.6.2.6.2. Bounded Context Database Design Diagram
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
 <img src="assets/reassignment_database_diagram.png" alt="Reassignment class diagram" width="85%"/>
 
