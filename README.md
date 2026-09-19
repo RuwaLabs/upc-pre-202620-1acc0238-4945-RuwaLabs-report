@@ -1,41 +1,45 @@
 <div align="center">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
-
-### Universidad Peruana de Ciencias Aplicadas
-### Carrera de Ingeniería de Software
-
-**1ACC0238**  
-**Aplicaciones para Dispositivos Móviles**
-
-**NRC**  
-4945
-
-**Informe del Trabajo Final**
-
-**Docente**  
-Mayta Guillermo, Jorge Luis
-
-**Equipo**  
-RuwaLabs
-
-**Proyecto**  
-SaludYa
-
-**Integrantes**
-
-| Código | Apellidos y Nombres |
-| :--- | :--- |
-| u202318309 | Aguilar Untiveros, Rodrigo Fabrizio |
-| [Código] | Meza Solórzano, Didier Sebastian |
-| u20241d934 | Montoya Nina, Paula Fernanda |
-| [Código] | Ramos Mera, Neo Daniel |
-| [Código] | Torres Juárez, Alisee Muriel |
-
-**Período 202620**  
-**Agosto 2026**
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
 </div>
+
+<p align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
+<p align="center"><strong>Carrera de Ingeniería de Software</strong></p>
+
+<br>
+
+<p align="center"><strong>1ACC0238</strong></p>
+<p align="center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
+<p align="center">NRC</p>
+<p align="center"><strong>4945</strong></p>
+
+<h2 align="center">Informe del Trabajo Final</h2>
+
+<p align="center">Docente</p>
+<p align="center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
+
+<br>
+
+<p align="center">Equipo</p>
+<p align="center"><strong>RuwaLabs</strong></p>
+<p align="center">Proyecto</p>
+<p align="center"><strong>SaludYa</strong></p>
+
+<br>
+
+<p align="center"><strong>Integrantes</strong></p>
+
+<table align="center">
+  <tr><th>Código</th><th>Apellidos y nombres</th></tr>
+  <tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr>
+  <tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr>
+  <tr><td>u20241d934</td><td>Montoya Nina, Paula Fernanda</td></tr>
+  <tr><td>u20241e418</td><td>Ramos Mera, Neo Daniel</td></tr>
+  <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
+</table>
+
+<p align="center"><strong>Período 202620</strong></p>
+<p align="center"><strong>Septiembre 2026</strong></p>
+
 
 ---
 # Registro de Versiones del Informe
@@ -51,7 +55,6 @@ SaludYa
 | 1.6.0 | 09-18-26 | Torres Juárez, Alisee Muriel | Se documentó el bounded context de Identity & Access Management (capas Domain, Interface, Application e Infrastructure), se refactorizaron encabezados de sección, se revisó la numeración y se mejoraron las descripciones de los diagramas del Capítulo II. |
 | 1.7.0 | 09-18-26 | Meza Solórzano, Didier Sebastian | Se agregó información adicional del Capítulo II y se actualizó el nombre del capítulo. |
 
----
 
 # Project Report Collaboration Insights
 
@@ -150,28 +153,29 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td width="50%">
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases, Context Mapping y el modelo C4 para documentar la arquitectura de SaludYa. Asimismo, incorporé los conceptos de las dos colas complementarias del dominio (Booking Order y Attendance Queue), refinando los bounded contexts existentes y actualizando los diagramas de EventStorming, Context Mapping y Container Level Diagram.</li>
         </ul>
-        <strong>Meza Solórzano, Didier Sebastian</strong>
-        <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
-        </ul>
+       <strong>Meza Solórzano, Didier Sebastian</strong>
+<ul>
+  <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre la técnica 5W2H, el diagrama de Ishikawa, la metodología Lean UX, el análisis competitivo y el diseño de entrevistas para desarrollar de principio a fin la problemática, la solución y la validación con usuarios de SaludYa.</li>
+</ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Investigué y apliqué conceptos avanzados de arquitectura de software para documentar el diseño a nivel de código de los Bounded Contexts. Esto incluyó la definición técnica de controladores, servicios y repositorios, plasmando esta lógica de negocio en diagramas relacionales de base de datos y diagramas de clases precisos para el proyecto.</li>
         </ul> 
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre el modelado táctico de Domain-Driven Design (DDD), estructurando correctamente las capas de Dominio, Aplicación, Interfaz e Infraestructura. Asimismo, aprendí y utilicé estándares de modelado C4 y UML para elaborar los diagramas de componentes, clases y base de datos de los Bounded Contexts asignados.
+</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, diagramas de usuario y la redacción de User Stories para desarrollar de principio a fin la problemática, la solución y la validación de SaludYa </li>
         </ul>
       </td>
       <td width="25%">
         <p><strong>AV1:</strong><br>
-        [Redactar conclusión grupal sobre cómo el equipo actualizó conceptos en esta entrega]</p>
+        Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.</p>
       </td>
     </tr>
     <tr>
@@ -181,28 +185,28 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td>
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Reconocí la necesidad de investigar de forma autónoma técnicas de modelado estratégico y táctico que no había aplicado antes, como EventStorming y Domain-Driven Design, para sustentar con criterios arquitectónicos sólidos el diseño de SaludYa. La correcta delimitación de los bounded contexts y la identificación de las dos colas del dominio me exigieron un análisis profundo para alinear el lenguaje ubicuo con la arquitectura del sistema.</li>
         </ul>
         <strong>Meza Solórzano, Didier Sebastian</strong>
-        <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
-        </ul>
+<ul>
+  <li><strong>AV1:</strong> Reconocí la necesidad de seguir aprendiendo de forma autónoma metodologías que no había aplicado antes, como Lean UX y el diseño de entrevistas cualitativas, para poder sustentar con información real el desarrollo de SaludYa.</li>
+</ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Comprendí que diseñar soluciones de software requiere una constante actualización en metodologías como DDD. Buscar y estudiar información sobre patrones de integración y persistencia por mi cuenta me permitió resolver problemas técnicos complejos al definir las capas de infraestructura y dominio de SaludYa.
+</li>
         </ul>
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Reconocí la importancia de investigar de manera autónoma sobre arquitectura hexagonal y patrones de diseño. Entendí que este aprendizaje continuo es indispensable para definir correctamente entidades, agregados y repositorios, garantizando que el diseño del software sea escalable y mantenible en el entorno profesional.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Reconocí la importancia de poner en práctica herramientas y metodologías que no había aplicado antes —como el EventStorming, los diagramas de usuario y la estructuración de User Stories para sustentar y modelar con precisión el desarrollo de SaludYa. La correcta definición de las User Stories técnicas, me exigió un análisis mucho más profundo para alinear los eventos del sistema con la arquitectura tecnológica</li>
         </ul>
       </td>
       <td>
-        <p><strong>AV1:</strong><br>
-        [Redactar conclusión grupal sobre cómo el equipo reconoció esta necesidad en esta entrega]</p>
+        <p><strong>AV1:</strong><br> El equipo reconoció que el aprendizaje autónomo es un pilar fundamental en el desarrollo del proyecto. La exigencia de investigar y dominar nuevas herramientas tecnológicas, técnicas de entrevistas y patrones arquitectónicos nos demostró que la actualización constante es la única vía para proponer soluciones de software de calidad.</p>
       </td>
     </tr>
   </tbody>
@@ -210,110 +214,4 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 ---
 
-# Capítulo I: Presentación
 
-## 1.1. Startup Profile
-
-### 1.1.1. Descripción de la Startup
-
-### 1.1.2. Perfiles de integrantes del equipo
-
-## 1.2. Solution Profile
-
-### 1.2.1. Antecedentes y problemática
-
-### 1.2.2. Lean UX Process
-
-#### 1.2.2.1. Lean UX Problem Statements
-
-#### 1.2.2.2. Lean UX Assumptions
-
-#### 1.2.2.3. Lean UX Hypothesis Statements
-
-#### 1.2.2.4. Lean UX Canvas
-
-## 1.3. Segmentos objetivo
-
-# Capítulo II: Requirements Development and Software Solution Design
-
-## 2.1. Competidores
-
-### 2.1.1. Análisis competitivo
-
-### 2.1.2. Estrategias y tácticas frente a competidores
-
-## 2.2. Entrevistas
-
-### 2.2.1. Diseño de entrevistas
-
-### 2.2.2. Registro de entrevistas
-
-### 2.2.3. Análisis de entrevistas
-
-## 2.3. Needfinding
-
-### 2.3.1. User Personas
-
-### 2.3.2. User Task Matrix
-
-### 2.3.3. User Journey Mapping
-
-### 2.3.4. Empathy Mapping
-
-### 2.3.5. Big Picture EventStorming
-
-### 2.3.6. Ubiquitous Language
-
-## 2.4. Requirements specification
-
-### 2.4.1. User Stories
-
-### 2.4.2. Impact Mapping
-
-### 2.4.3. Product Backlog
-
-## 2.5. Strategic-Level Domain-Driven Design
-
-### 2.5.1. EventStorming
-
-#### 2.5.1.1. Candidate Context Discovery
-
-#### 2.5.1.2. Domain Message Flows Modeling
-
-#### 2.5.1.3. Bounded Context Canvases
-
-### 2.5.2. Context Mapping
-
-### 2.5.3. Software Architecture
-
-#### 2.5.3.1. Software Architecture Context Level Diagrams
-
-#### 2.5.3.2. Software Architecture Container Level Diagrams
-
-#### 2.5.3.3. Software Architecture Deployment Diagrams
-
-## 2.6. Tactical-Level Domain-Driven Design
-
-### 2.6.x. Bounded Context: <Bounded Context Name>
-
-#### 2.6.x.1. Domain Layer
-
-#### 2.6.x.2. Interface Layer
-
-#### 2.6.x.3. Application Layer
-
-#### 2.6.x.4 Infrastructure Layer
-
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
-
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
-
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
-
-# Conclusiones
-
-# Bibliografía
-
-# Anexos
