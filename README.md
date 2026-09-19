@@ -153,11 +153,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Investigué y apliqué conceptos avanzados de arquitectura de software para documentar el diseño a nivel de código de los Bounded Contexts. Esto incluyó la definición técnica de controladores, servicios y repositorios, plasmando esta lógica de negocio en diagramas relacionales de base de datos y diagramas de clases precisos para el proyecto.</li>
         </ul> 
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre el modelado táctico de Domain-Driven Design (DDD), estructurando correctamente las capas de Dominio, Aplicación, Interfaz e Infraestructura. Asimismo, aprendí y utilicé estándares de modelado C4 y UML para elaborar los diagramas de componentes, clases y base de datos de los Bounded Contexts asignados.
+</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
@@ -184,20 +185,20 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Comprendí que diseñar soluciones de software requiere una constante actualización en metodologías como DDD. Buscar y estudiar información sobre patrones de integración y persistencia por mi cuenta me permitió resolver problemas técnicos complejos al definir las capas de infraestructura y dominio de SaludYa.
+</li>
         </ul>
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Reconocí la importancia de investigar de manera autónoma sobre arquitectura hexagonal y patrones de diseño. Entendí que este aprendizaje continuo es indispensable para definir correctamente entidades, agregados y repositorios, garantizando que el diseño del software sea escalable y mantenible en el entorno profesional.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.]</li>
         </ul>
       </td>
       <td>
-        <p><strong>AV1:</strong><br>
-        [Redactar conclusión grupal sobre cómo el equipo reconoció esta necesidad en esta entrega]</p>
+        <p><strong>AV1:</strong><br> El equipo reconoció que el aprendizaje autónomo es un pilar fundamental en el desarrollo del proyecto. La exigencia de investigar y dominar nuevas herramientas tecnológicas, técnicas de entrevistas y patrones arquitectónicos nos demostró que la actualización constante es la única vía para proponer soluciones de software de calidad.</p>
       </td>
     </tr>
   </tbody>
