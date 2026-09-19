@@ -1,41 +1,47 @@
 <div align="center">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
-
-### Universidad Peruana de Ciencias Aplicadas
-### Carrera de Ingeniería de Software
-
-**1ACC0238**  
-**Aplicaciones para Dispositivos Móviles**
-
-**NRC**  
-4945
-
-**Informe del Trabajo Final**
-
-**Docente**  
-Mayta Guillermo, Jorge Luis
-
-**Equipo**  
-RuwaLabs
-
-**Proyecto**  
-SaludYa
-
-**Integrantes**
-
-| Código     | Apellidos y Nombres |
-|:-----------| :--- |
-| [Código]   | Aguilar Untiveros, Rodrigo Fabrizio |
-| u202319950 | Meza Solórzano, Didier Sebastian |
-| u20241d934 | Montoya Nina, Paula Fernanda |
-| [Código]   | Ramos Mera, Neo Daniel |
-| u202624323 | Torres Juárez, Alisee Muriel |
-
-**Período 202620**  
-**Agosto 2026**
-
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
 </div>
+
+<p align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
+<p align="center"><strong>Carrera de Ingeniería de Software</strong></p>
+
+<br>
+
+<p align="center"><strong>1ACC0238</strong></p>
+<p align="center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
+<p align="center">NRC</p>
+<p align="center"><strong>4945</strong></p>
+
+<h2 align="center">Informe del Trabajo Final</h2>
+
+<p align="center">Docente</p>
+<p align="center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
+
+<br>
+
+<p align="center">Equipo</p>
+<p align="center"><strong>RuwaLabs</strong></p>
+<p align="center">Proyecto</p>
+<p align="center"><strong>SaludYa</strong></p>
+
+<br>
+
+<p align="center"><strong>Integrantes</strong></p>
+
+<table align="center">
+  <tr><th>Código</th><th>Apellidos y nombres</th></tr>
+  <tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr>
+  <tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr>
+  <tr><td>u20241d934</td><td>Montoya Nina, Paula Fernanda</td></tr>
+  <tr><td>u20241e418</td><td>Ramos Mera, Neo Daniel</td></tr>
+  <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
+</table>
+
+<br>
+
+<p align="center"><strong>Período 202620</strong></p>
+<p align="center"><strong>Septiembre 2026</strong></p>
+
 
 ---
 # Registro de Versiones del Informe
