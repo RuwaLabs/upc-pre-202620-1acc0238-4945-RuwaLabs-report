@@ -46,12 +46,16 @@
 ---
 # Registro de Versiones del Informe
 
-| Versión | Fecha    | Autor                            | Descripción de modificación                                                                                                                                                                |
-|:--------|:---------|:---------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0   | 09-11-26 | Montoya Nina Paula Fernanda      | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome.                                                                   |
-| 1.1.0   | 09-11-26 | Meza Solórzano, Didier Sebastian | Se desarrolló el Solution Profile, el proceso Lean UX, los segmentos objetivo, el análisis competitivo y el diseño, registro y análisis de entrevistas de SaludYa (secciones 1.2 a 2.2.3). |
-| 1.2.0   | 08-09-26 | Torres Juárez, Alisee Muriel     | Se desarrolló el Needfinding y la especificación de requisitos (secciones 2.3 a 2.4.4).                                                                                                    |
-
+| Versión | Fecha | Autor | Descripción de modificación |
+| :--- | :--- | :--- | :--- |
+| 1.0.0 | 08-28-26 | Montoya Nina, Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
+| 1.1.0 | 09-02-26 | Meza Solórzano, Didier Sebastian | Se creó la estructura de carpetas y archivos base del informe (chapter-01 a chapter-06, conclusions, bibliography y glossary). |
+| 1.2.0 | 09-13-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se agregó la sección de Software Architecture del Capítulo II: Context Level Diagrams, Container Level Diagrams, Deployment Diagrams, Context Mapping, Bounded Context Canvases, Domain Message Flows Modeling y Candidate Context Discovery. |
+| 1.3.0 | 09-16-26 | Meza Solórzano, Didier Sebastian | Se agregó la evidencia de la entrevista 6 y las evidencias de entrevistas del Capítulo II. |
+| 1.4.0 | 09-17-26 | Meza Solórzano, Didier Sebastian | Se agregó la evidencia de las entrevistas 5 y 2 del Capítulo II. |
+| 1.5.0 | 09-17-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se actualizó el Capítulo II incorporando las dos colas complementarias (Booking Order y Attendance Queue): EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases, Context Mapping, Container Level Diagram y sus diagramas asociados. |
+| 1.6.0 | 09-18-26 | Torres Juárez, Alisee Muriel | Se documentó el bounded context de Identity & Access Management (capas Domain, Interface, Application e Infrastructure), se refactorizaron encabezados de sección, se revisó la numeración y se mejoraron las descripciones de los diagramas del Capítulo II. |
+| 1.7.0 | 09-18-26 | Meza Solórzano, Didier Sebastian | Se agregó información adicional del Capítulo II y se actualizó el nombre del capítulo. |
 ---
 
 # Project Report Collaboration Insights
