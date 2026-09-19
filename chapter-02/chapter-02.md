@@ -296,19 +296,13 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 ### 2.4.1. To-Be Scenario Mapping
 
-El *To-Be Scenario Mapping* describe la experiencia objetivo que tendrán los usuarios interactuando con la solución digital, reduciendo la fricción presencial y automatizando la gestión de cupos.
-
-* **Fase 1: Búsqueda y Reserva Autónoma**
-  * **As-Is (Problema):** El paciente realiza filas desde la madrugada en el centro de salud sin garantía de obtener un turno.
-  * **To-Be (Solución):** El paciente consulta la oferta de citas desde la app móvil de SaludYa, selecciona la especialidad y reserva un cupo en segundos con confirmación digital.
-
-* **Fase 2: Check-in y Registro Presencial**
-  * **As-Is (Problema):** Congestionamiento en las ventanillas de admisión para validar la llegada antes de la consulta.
-  * **To-Be (Solución):** Al llegar al centro de salud, el paciente escanea un código QR en el tótem o recepción desde la app para validar su presencia y pasa a la sala de espera.
-
-* **Fase 3: Reasignación Dinámica por Cancelación**
-  * **As-Is (Problema):** Si un paciente no asiste, el cupo médico se pierde totalmente mientras otros pacientes quedan desatendidos.
-  * **To-Be (Solución):** Si un turno se cancela o no se confirma dentro de la tolerancia, el sistema notifica automáticamente al siguiente usuario en la lista de espera digital.
+| Fase | Haciendo (Acción) | Pensando (Pensamiento) | Sintiendo (Emoción)      |
+| :--- | :--- | :--- |:-------------------------|
+| **1. Registro y Autenticación (EP1)** | Inicia sesión o se registra ingresando su DNI para validación automática de identidad y vincula a los menores a su cargo. | "Qué rápido es validar mi identidad con el DNI sin hacer trámites presenciales ni llenar formularios largos." | Tranquilidad y confianza |
+| **2. Búsqueda y Reserva de Citas (EP2)** | Selecciona la especialidad médica, explora el calendario de disponibilidad por bloques e ingresa la reserva propia o de su menor. | "Puedo ver todos los turnos disponibles en tiempo real y elegir la franja horaria que mejor me convenga." | Comodidad y control      |
+| **3. Lista de Espera Dinámica (EP3)** | Recibe una notificación de propuesta para adelantar su cita por un cupo liberado; acepta o rechaza la reasignación en su teléfono. | "Excelente que el sistema me avise para atenderme más temprano si alguien canceló su turno." | Sorpresa y satisfacción  |
+| **4. Check-in Presencial por QR (EP4)** | Llega al hospital dentro del margen de tolerancia, escanea el código QR y obtiene su ticket digital con el consultorio asignado. | "Evité la cola de admisión; solo escaneo el QR, confirmo mi presencia y voy directo a la sala." | Agilidad y alivio        |
+| **5. Atención y Control Operativo (EP5)** | Espera el llamado al consultorio según su ticket digital mientras el sistema audita tiempos de tolerancia y confirma la atención. | "El proceso es transparente, sé exactamente a dónde ir y se respetan los horarios de atención." | seguridad y complacencia |
 
 ---
 
