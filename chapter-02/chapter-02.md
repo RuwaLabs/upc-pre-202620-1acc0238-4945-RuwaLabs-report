@@ -1912,15 +1912,15 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
-## 2.6.1. Bounded Context: Identity & Access Management
+### 2.6.1. Bounded Context: Identity & Access Management
 
 El **bounded context de Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Permite validar la identidad de los pacientes y del personal administrativo antes de acceder a los módulos principales del sistema.
 
-### 2.6.1.1. Domain Layer
+#### 2.6.1.1. Domain Layer
 
 La capa de **Domain** representa el núcleo del negocio de identidad. Aquí se definen las entidades, value objects, enums, aggregates, factories e interfaces que encapsulan las reglas de negocio.
 
-#### UserAccount (Aggregate Root)
+##### UserAccount (Aggregate Root)
 
 **Atributos:**
 `id`, `email: Email`, `password: PasswordHash`, `role: Role`, `isActive`, `createdAt`
@@ -1935,7 +1935,7 @@ Representa la cuenta de acceso al sistema. Es aggregate root porque agrupa la l�
 
 ---
 
-#### Patient (Aggregate Root)
+##### Patient (Aggregate Root)
 
 **Atributos:**
 `id`, `idUser`, `dni: Dni`, `name`, `lastname`, `birthDate`, `phone`
@@ -1949,7 +1949,7 @@ Representa el perfil del paciente. Es aggregate root porque agrupa la informaci�
 
 ---
 
-#### PatientMinor (Entity)
+##### PatientMinor (Entity)
 
 **Atributos:**
 `id`, `idPatient`, `idTutor`
@@ -1962,7 +1962,7 @@ Vincula a un menor de edad con un adulto responsable (tutor).
 
 ---
 
-#### Email (Value Object)
+##### Email (Value Object)
 
 **Atributos:**
 `value`
@@ -1975,7 +1975,7 @@ Encapsula el correo electrónico como value object inmutable.
 
 ---
 
-#### Dni (Value Object)
+##### Dni (Value Object)
 
 **Atributos:**
 `value`
@@ -1988,7 +1988,7 @@ Encapsula el DNI como value object inmutable.
 
 ---
 
-#### PasswordHash (Value Object)
+##### PasswordHash (Value Object)
 
 **Atributos:**
 `value`
@@ -1998,7 +1998,7 @@ Encapsula el hash de la contraseña como value object inmutable.
 
 ---
 
-#### Role (Enum)
+##### Role (Enum)
 
 **Valores posibles:**
 `PATIENT`, `ADMISSION_STAFF`, `SUPER_ADMIN`
@@ -2008,7 +2008,7 @@ Define los tipos de usuario del sistema.
 
 ---
 
-#### UserAccountFactory (Factory)
+##### UserAccountFactory (Factory)
 
 **Métodos:**
 - `createPatientAccount(email, password, dni, name, lastname, birthDate, phone): UserAccount`
@@ -2019,7 +2019,7 @@ Encapsula la creación de cuentas de usuario, validando los datos y asignando el
 
 ---
 
-#### UserAccountRepository (Interface)
+##### UserAccountRepository (Interface)
 
 **Métodos:**
 - `save(userAccount: UserAccount): UserAccount`
@@ -2032,7 +2032,7 @@ Define las operaciones de persistencia para cuentas de usuario.
 
 ---
 
-#### PatientRepository (Interface)
+##### PatientRepository (Interface)
 
 **Métodos:**
 - `save(patient: Patient): Patient`
@@ -2047,7 +2047,7 @@ Define las operaciones de persistencia para pacientes y menores vinculados.
 
 ---
 
-#### EventPublisher (Interface)
+##### EventPublisher (Interface)
 
 **Métodos:**
 - `publish(event: DomainEvent)`
@@ -2057,11 +2057,11 @@ Define la interfaz para publicar eventos de dominio. La implementación concreta
 
 ---
 
-### 2.6.1.2. Interface Layer
+#### 2.6.1.2. Interface Layer
 
 La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
 
-#### UserAccountsController (REST API Controller)
+##### UserAccountsController (REST API Controller)
 
 **Endpoints:**
 - `POST /api/v1/user-accounts` → Registra un nuevo paciente con verificación de DNI.
@@ -2077,7 +2077,7 @@ Este controlador gestiona las operaciones sobre el aggregate `UserAccount`.
 
 ---
 
-#### PatientsController (REST API Controller)
+##### PatientsController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/patients/{id}` → Obtiene el perfil de un paciente.
@@ -2089,7 +2089,7 @@ Este controlador gestiona las operaciones sobre el aggregate `Patient`.
 
 ---
 
-#### PatientMinorsController (REST API Controller)
+##### PatientMinorsController (REST API Controller)
 
 **Endpoints:**
 - `POST /api/v1/patient-minors` → Vincula un menor a la cuenta del titular.
@@ -2101,7 +2101,7 @@ Este controlador gestiona las operaciones sobre la entity `PatientMinor`.
 
 ---
 
-#### IamContextFacade (Facade / ACL)
+##### IamContextFacade (Facade / ACL)
 
 **Métodos:**
 - `getUserById(id): UserAccount?`
@@ -2113,11 +2113,11 @@ Punto de entrada interno para otros bounded contexts. Evita que otros contextos 
 
 ---
 
-### 2.6.1.3. Application Layer
+#### 2.6.1.3. Application Layer
 
 La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
 
-#### UserAccountCommandService (Interface)
+##### UserAccountCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `registerPatient(command: RegisterPatientCommand): Patient`
@@ -2132,7 +2132,7 @@ Define los comandos relacionados con la cuenta de usuario.
 
 ---
 
-#### PatientCommandService (Interface)
+##### PatientCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `linkMinor(command: LinkMinorCommand): PatientMinor`
@@ -2143,7 +2143,7 @@ Define los comandos relacionados con el paciente y sus menores vinculados.
 
 ---
 
-#### UserAccountQueryService (Interface)
+##### UserAccountQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getById(id: Int): UserAccount?`
@@ -2154,7 +2154,7 @@ Define las consultas relacionadas con la cuenta de usuario.
 
 ---
 
-#### PatientQueryService (Interface)
+##### PatientQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getById(id: Int): Patient?`
@@ -2166,7 +2166,7 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-#### UserAccountCommandServiceImpl (Implementation)
+##### UserAccountCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de cuenta de usuario.
 
@@ -2181,7 +2181,7 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-#### PatientCommandServiceImpl (Implementation)
+##### PatientCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de paciente.
 
@@ -2195,7 +2195,7 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-#### PatientRegisteredEventHandler (Event Handler)
+##### PatientRegisteredEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `PatientRegisteredEvent`.
 **Flujo:**
@@ -2205,7 +2205,7 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-#### MinorLinkedEventHandler (Event Handler)
+##### MinorLinkedEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `MinorLinkedEvent`.
 **Flujo:**
@@ -2215,11 +2215,11 @@ Define las consultas relacionadas con el paciente.
 
 ---
 
-### 2.6.1.4. Infrastructure Layer
+#### 2.6.1.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-#### UserAccountRepositoryImpl
+##### UserAccountRepositoryImpl
 **Implementa:** `UserAccountRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2227,7 +2227,7 @@ Ejecuta operaciones sobre la tabla `users`. Mapea entidades del dominio a entida
 
 ---
 
-#### PatientRepositoryImpl
+##### PatientRepositoryImpl
 **Implementa:** `PatientRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2235,7 +2235,7 @@ Ejecuta operaciones sobre las tablas `patients` y `patient_minors`.
 
 ---
 
-#### ReniecService (ACL)
+##### ReniecService (ACL)
 **Función:**
 Valida la identidad por DNI contra el servicio externo de RENIEC.
 **Tecnología:** REST Client (RestTemplate / WebClient)
@@ -2244,42 +2244,42 @@ Implementa un Anticorruption Layer (ACL) que traduce el modelo externo de RENIEC
 
 ---
 
-#### BCryptHashingService
+##### BCryptHashingService
 **Función:**
 Hashea y valida contraseñas con BCrypt.
 **Tecnología:** BCrypt
 
 ---
 
-#### TokenServiceImpl
+##### TokenServiceImpl
 **Función:**
 Genera y valida tokens JWT.
 **Tecnología:** java-jwt / jjwt
 
 ---
 
-#### WebSecurityConfiguration
+##### WebSecurityConfiguration
 **Función:**
 Configura Spring Security, filtros de autorización y pipeline de autenticación.
 **Tecnología:** Spring Security
 
 ---
 
-#### BearerAuthorizationRequestFilter
+##### BearerAuthorizationRequestFilter
 **Función:**
 Filtra las peticiones HTTP y valida el token Bearer en cada request.
 **Tecnología:** Spring Security
 
 ---
 
-#### NotificationAdapter
+##### NotificationAdapter
 **Función:**
 Envía notificaciones al usuario (correo de bienvenida, recuperación de contraseña).
 **Tecnología:** SMTP + Firebase Cloud Messaging
 
 ---
 
-#### SpringEventPublisherImpl
+##### SpringEventPublisherImpl
 **Implementa:** `EventPublisher`
 **Función:**
 Publica eventos de dominio usando Spring Events.
@@ -2305,20 +2305,22 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/iam_database_diagram.png" alt="IAM class diagram" width="85%"/>
+<img src="assets/iam_database_diagram.png" alt="IAM database diagram" width="85%"/>
 
 ---
 El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores.
 
-## 2.6.2. Bounded Context: Appointments & Booking
+---
+
+### 2.6.2. Bounded Context: Appointments & Booking
 
 El **bounded context de Appointments & Booking** gestiona el ciclo de vida de una cita médica: consulta de disponibilidad, reserva, confirmación y cancelación. Es el responsable de la **cola de pedido de cita** (`booking_order`), que define la prioridad del paciente para asumir cupos liberados.
 
-### 2.6.2.1. Domain Layer
+#### 2.6.2.1. Domain Layer
 
-La capa de **Domain** representa el núcleo del negocio de reserva de citas. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de negocio.
+La capa de **Domain** representa el núcleo del negocio de reserva de citas. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services, domain events e interfaces que encapsulan las reglas de negocio.
 
-#### Appointment (Aggregate Root)
+##### Appointment (Aggregate Root)
 
 **Atributos:**
 `id`, `idTimeSlot`, `idPatient`, `bookingOrder: BookingOrder`, `status: AppointmentStatus`, `createdAt`, `updatedAt`
@@ -2335,7 +2337,7 @@ Representa una cita médica reservada. Es aggregate root porque agrupa el `booki
 
 ---
 
-#### TimeSlot (Aggregate Root)
+##### TimeSlot (Aggregate Root)
 
 **Atributos:**
 `id`, `idDoctor`, `date`, `startHour`, `endHour`, `maxCapacity`, `currentBookings`, `status: TimeSlotStatus`
@@ -2352,7 +2354,7 @@ Representa un bloque horario concreto de un médico en una fecha. Es aggregate r
 
 ---
 
-#### Doctor (Entity)
+##### Doctor (Entity)
 
 **Atributos:**
 `id`, `idSpecialty`, `name`, `lastname`
@@ -2362,7 +2364,7 @@ Representa a un médico dentro del catálogo.
 
 ---
 
-#### Specialty (Entity)
+##### Specialty (Entity)
 
 **Atributos:**
 `id`, `name`, `description`
@@ -2372,7 +2374,7 @@ Representa una especialidad médica dentro del catálogo.
 
 ---
 
-#### BookingOrder (Value Object)
+##### BookingOrder (Value Object)
 
 **Atributos:**
 `value`, `idSpecialty`
@@ -2382,7 +2384,7 @@ Encapsula el número secuencial de reserva por especialidad. Es inmutable una ve
 
 ---
 
-#### AppointmentStatus (Enum)
+##### AppointmentStatus (Enum)
 
 **Valores posibles:**
 `RESERVED`, `CONFIRMED`, `CANCELLED`, `ABSENT`, `ATTENDED`, `EXPIRED`
@@ -2392,7 +2394,7 @@ Define los estados del ciclo de vida de una cita.
 
 ---
 
-#### TimeSlotStatus (Enum)
+##### TimeSlotStatus (Enum)
 
 **Valores posibles:**
 `AVAILABLE`, `FULL`, `CANCELLED`
@@ -2402,7 +2404,7 @@ Define el estado de disponibilidad de un bloque horario.
 
 ---
 
-#### AppointmentFactory (Factory)
+##### AppointmentFactory (Factory)
 
 **Métodos:**
 - `createAppointment(timeSlot, patient, bookingOrder): Appointment`
@@ -2412,7 +2414,7 @@ Encapsula la creación de citas, validando que el `time_slot` tenga capacidad.
 
 ---
 
-#### BookingDomainService (Domain Service)
+##### BookingDomainService (Domain Service)
 
 **Métodos:**
 - `calculateNextBookingOrder(specialtyId): Int`
@@ -2425,7 +2427,7 @@ Encapsula la lógica de negocio que no pertenece a una sola entidad:
 
 ---
 
-#### AppointmentRepository (Interface)
+##### AppointmentRepository (Interface)
 
 **Métodos:**
 - `save(appointment: Appointment): Appointment`
@@ -2441,7 +2443,7 @@ Define las operaciones de persistencia para citas.
 
 ---
 
-#### TimeSlotRepository (Interface)
+##### TimeSlotRepository (Interface)
 
 **Métodos:**
 - `save(timeSlot: TimeSlot): TimeSlot`
@@ -2456,7 +2458,7 @@ Define las operaciones de persistencia para bloques horarios.
 
 ---
 
-#### EventPublisher (Interface)
+##### EventPublisher (Interface)
 
 **Métodos:**
 - `publish(event: DomainEvent)`
@@ -2466,11 +2468,41 @@ Define la interfaz para publicar eventos de dominio. La implementación concreta
 
 ---
 
-### 2.6.2.2. Interface Layer
+##### AppointmentBookedEvent (Domain Event)
+
+**Atributos:**
+`appointmentId`, `timeSlotId`, `patientId`, `bookingOrder`, `bookedAt`
+
+**Propósito:**
+Representa el hecho de negocio de que se reservó una nueva cita.
+
+---
+
+##### AppointmentCancelledEvent (Domain Event)
+
+**Atributos:**
+`appointmentId`, `freedTimeSlotId`, `cancelledAt`
+
+**Propósito:**
+Representa el hecho de negocio de que una cita fue cancelada y su cupo quedó libre.
+
+---
+
+##### AppointmentAbsentEvent (Domain Event)
+
+**Atributos:**
+`appointmentId`, `freedTimeSlotId`, `absentAt`
+
+**Propósito:**
+Representa el hecho de negocio de que un paciente no se presentó a su cita.
+
+---
+
+#### 2.6.2.2. Interface Layer
 
 La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
 
-#### AppointmentsController (REST API Controller)
+##### AppointmentsController (REST API Controller)
 
 **Endpoints:**
 - `POST /api/v1/appointments` → Reserva una nueva cita.
@@ -2483,7 +2515,7 @@ Este controlador gestiona las operaciones sobre el aggregate `Appointment`.
 
 ---
 
-#### TimeSlotsController (REST API Controller)
+##### TimeSlotsController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/time-slots?doctorId={id}&date={date}` → Lista bloques horarios disponibles.
@@ -2494,7 +2526,7 @@ Este controlador gestiona las operaciones sobre el aggregate `TimeSlot`.
 
 ---
 
-#### SpecialtiesController (REST API Controller)
+##### SpecialtiesController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/specialties` → Lista especialidades disponibles.
@@ -2505,7 +2537,7 @@ Este controlador gestiona las operaciones sobre la entity `Specialty`.
 
 ---
 
-#### DoctorsController (REST API Controller)
+##### DoctorsController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/doctors?specialtyId={id}` → Lista médicos de una especialidad.
@@ -2516,11 +2548,11 @@ Este controlador gestiona las operaciones sobre la entity `Doctor`.
 
 ---
 
-### 2.6.2.3. Application Layer
+#### 2.6.2.3. Application Layer
 
 La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
 
-#### AppointmentCommandService (Interface)
+##### AppointmentCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `bookAppointment(command: BookAppointmentCommand): Appointment`
@@ -2532,7 +2564,7 @@ Define los comandos relacionados con la cita.
 
 ---
 
-#### TimeSlotCommandService (Interface)
+##### TimeSlotCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `createTimeSlot(command: CreateTimeSlotCommand): TimeSlot`
@@ -2543,7 +2575,7 @@ Define los comandos relacionados con el bloque horario.
 
 ---
 
-#### AppointmentQueryService (Interface)
+##### AppointmentQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getById(id: Int): Appointment?`
@@ -2555,7 +2587,7 @@ Define las consultas relacionadas con la cita.
 
 ---
 
-#### TimeSlotQueryService (Interface)
+##### TimeSlotQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getAvailableBySpecialty(specialtyId: Int, date: Date): List<TimeSlot>`
@@ -2566,7 +2598,7 @@ Define las consultas relacionadas con el bloque horario.
 
 ---
 
-#### AppointmentCommandServiceImpl (Implementation)
+##### AppointmentCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de cita.
 
@@ -2594,7 +2626,7 @@ Define las consultas relacionadas con el bloque horario.
 
 ---
 
-#### AppointmentCancelledEventHandler (Event Handler)
+##### AppointmentCancelledEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
 **Flujo:**
@@ -2604,7 +2636,7 @@ Define las consultas relacionadas con el bloque horario.
 
 ---
 
-#### AppointmentAbsentEventHandler (Event Handler)
+##### AppointmentAbsentEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
 **Flujo:**
@@ -2614,11 +2646,11 @@ Define las consultas relacionadas con el bloque horario.
 
 ---
 
-### 2.6.2.4. Infrastructure Layer
+#### 2.6.2.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-#### AppointmentRepositoryImpl
+##### AppointmentRepositoryImpl
 **Implementa:** `AppointmentRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2626,7 +2658,7 @@ Ejecuta operaciones sobre la tabla `appointments`. Implementa el cálculo de `bo
 
 ---
 
-#### TimeSlotRepositoryImpl
+##### TimeSlotRepositoryImpl
 **Implementa:** `TimeSlotRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2634,7 +2666,7 @@ Ejecuta operaciones sobre la tabla `time_slots`.
 
 ---
 
-#### HospitalConfigurationRepositoryImpl
+##### HospitalConfigurationRepositoryImpl
 **Implementa:** `HospitalConfigurationRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2642,14 +2674,14 @@ Lee la configuración del hospital (`maxCapacityPerSlot`, `bookingOrderScope`, `
 
 ---
 
-#### NotificationAdapter
+##### NotificationAdapter
 **Función:**
 Envía notificaciones de confirmación, cancelación o reasignación.
 **Tecnología:** SMTP + Firebase Cloud Messaging
 
 ---
 
-#### SpringEventPublisherImpl
+##### SpringEventPublisherImpl
 **Implementa:** `EventPublisher`
 **Función:**
 Publica eventos de dominio usando Spring Events.
@@ -2657,9 +2689,9 @@ Publica eventos de dominio usando Spring Events.
 
 ---
 
-### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/appointment_component_diagram.png" alt="IAM class diagram" width="85%"/>
+<img src="assets/appointment_component_diagram.png" alt="Appointment component diagram" width="85%"/>
 
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a eventos de cancelación y ausencia. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con el BookingDomainService. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA, la publicación de eventos con Spring Events y el envío de notificaciones.
@@ -2668,29 +2700,29 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/appointment_class_diagram.png" alt="IAM class diagram" width="85%"/>
+<img src="assets/appointment_class_diagram.png" alt="Appointment class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, entities, value objects, enums, domain service e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, y el BookingDomainService.
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/appointment_database_diagram.png" alt="IAM class diagram" width="85%"/>
+<img src="assets/appointment_database_diagram.png" alt="Appointment database diagram" width="85%"/>
 
 ---
 El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas.
 
 ---
 
-## 2.6.3. Bounded Context: Reassignment
+### 2.6.3. Bounded Context: Reassignment
 
 El **bounded context de Reassignment** gestiona la reasignación de cupos liberados por cancelaciones o ausencias. La reasignación opera sobre la **cola de pedido** (`appointments` ordenadas por `booking_order`). No existe lista de espera externa. Cuando se libera un cupo en un `Time Slot X`, el sistema busca en todos los `appointments` de la misma especialidad que no estén en el `Time Slot X`, ordenados por `booking_order`, y notifica al primero. Si rechaza o no responde, pasa al siguiente. Si nadie acepta, el cupo se pierde.
 
-### 2.6.3.1. Domain Layer
+#### 2.6.3.1. Domain Layer
 
 La capa de **Domain** representa el núcleo del negocio de reasignación de cupos liberados. Aquí se definen las entidades, value objects, enums, aggregates, domain services, domain events e interfaces que encapsulan las reglas de negocio.
 
-#### ReassignmentOffer (Aggregate Root)
+##### ReassignmentOffer (Aggregate Root)
 
 **Atributos:**
 `id`, `idAppointment`, `idFreedTimeSlot`, `idOriginalAppointment`, `status: ReassignmentStatus`, `offeredAt`, `respondedAt`, `expiresAt`
@@ -2707,7 +2739,7 @@ Representa una oferta de reasignación enviada a un paciente de la cola de pedid
 
 ---
 
-#### ReassignmentStatus (Enum)
+##### ReassignmentStatus (Enum)
 
 **Valores posibles:**
 `PENDING`, `ACCEPTED`, `REJECTED`, `EXPIRED`
@@ -2717,7 +2749,7 @@ Define el estado de una oferta de reasignación.
 
 ---
 
-#### ReassignmentDomainService (Domain Service)
+##### ReassignmentDomainService (Domain Service)
 
 **Métodos:**
 - `findNextCandidate(specialtyId, freedTimeSlotId): Appointment?`
@@ -2727,7 +2759,7 @@ Encapsula la lógica de búsqueda del siguiente candidato en la cola de pedido. 
 
 ---
 
-#### ReassignmentOfferRepository (Interface)
+##### ReassignmentOfferRepository (Interface)
 
 **Métodos:**
 - `save(offer: ReassignmentOffer): ReassignmentOffer`
@@ -2741,7 +2773,7 @@ Define las operaciones de persistencia para ofertas de reasignación.
 
 ---
 
-#### EventPublisher (Interface)
+##### EventPublisher (Interface)
 
 **Métodos:**
 - `publish(event: DomainEvent)`
@@ -2751,7 +2783,7 @@ Define la interfaz para publicar eventos de dominio. La implementación concreta
 
 ---
 
-#### ReassignmentOfferSentEvent (Domain Event)
+##### ReassignmentOfferSentEvent (Domain Event)
 
 **Atributos:**
 `offerId`, `appointmentId`, `freedTimeSlotId`, `offeredAt`
@@ -2761,7 +2793,7 @@ Representa el hecho de negocio de que se envió una oferta de reasignación a un
 
 ---
 
-#### ReassignmentOfferAcceptedEvent (Domain Event)
+##### ReassignmentOfferAcceptedEvent (Domain Event)
 
 **Atributos:**
 `offerId`, `appointmentId`, `acceptedAt`
@@ -2771,7 +2803,7 @@ Representa el hecho de negocio de que un paciente aceptó una oferta de reasigna
 
 ---
 
-#### ReassignmentOfferRejectedEvent (Domain Event)
+##### ReassignmentOfferRejectedEvent (Domain Event)
 
 **Atributos:**
 `offerId`, `appointmentId`, `rejectedAt`
@@ -2781,7 +2813,7 @@ Representa el hecho de negocio de que un paciente rechazó una oferta de reasign
 
 ---
 
-#### ReassignmentOfferExpiredEvent (Domain Event)
+##### ReassignmentOfferExpiredEvent (Domain Event)
 
 **Atributos:**
 `offerId`, `appointmentId`, `expiredAt`
@@ -2791,11 +2823,11 @@ Representa el hecho de negocio de que una oferta de reasignación expiró sin re
 
 ---
 
-### 2.6.3.2. Interface Layer
+#### 2.6.3.2. Interface Layer
 
 La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST y consumers de eventos.
 
-#### ReassignmentOffersController (REST API Controller)
+##### ReassignmentOffersController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/reassignment-offers/pending` → Lista ofertas pendientes del paciente autenticado.
@@ -2807,7 +2839,7 @@ Este controlador gestiona las operaciones sobre el aggregate `ReassignmentOffer`
 
 ---
 
-#### AppointmentCancelledEventConsumer (Event Consumer)
+##### AppointmentCancelledEventConsumer (Event Consumer)
 
 **Función:**
 Escucha el evento `AppointmentCancelledEvent` publicado por `Appointments & Booking`.
@@ -2815,7 +2847,7 @@ Escucha el evento `AppointmentCancelledEvent` publicado por `Appointments & Book
 
 ---
 
-#### AppointmentAbsentEventConsumer (Event Consumer)
+##### AppointmentAbsentEventConsumer (Event Consumer)
 
 **Función:**
 Escucha el evento `AppointmentAbsentEvent` publicado por `Arrival & QR Check-in`.
@@ -2823,11 +2855,11 @@ Escucha el evento `AppointmentAbsentEvent` publicado por `Arrival & QR Check-in`
 
 ---
 
-### 2.6.3.3. Application Layer
+#### 2.6.3.3. Application Layer
 
 La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
 
-#### ReassignmentCommandService (Interface)
+##### ReassignmentCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `sendReassignmentOffer(command: SendReassignmentOfferCommand): ReassignmentOffer`
@@ -2840,7 +2872,7 @@ Define los comandos relacionados con la reasignación.
 
 ---
 
-#### ReassignmentQueryService (Interface)
+##### ReassignmentQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
@@ -2851,7 +2883,7 @@ Define las consultas relacionadas con la reasignación.
 
 ---
 
-#### ReassignmentCommandServiceImpl (Implementation)
+##### ReassignmentCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de reasignación.
 
@@ -2885,7 +2917,7 @@ Define las consultas relacionadas con la reasignación.
 
 ---
 
-#### AppointmentCancelledEventHandler (Event Handler)
+##### AppointmentCancelledEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
 **Flujo:**
@@ -2895,7 +2927,7 @@ Define las consultas relacionadas con la reasignación.
 
 ---
 
-#### AppointmentAbsentEventHandler (Event Handler)
+##### AppointmentAbsentEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
 **Flujo:**
@@ -2905,11 +2937,11 @@ Define las consultas relacionadas con la reasignación.
 
 ---
 
-### 2.6.3.4. Infrastructure Layer
+#### 2.6.3.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-#### ReassignmentOfferRepositoryImpl
+##### ReassignmentOfferRepositoryImpl
 **Implementa:** `ReassignmentOfferRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2917,7 +2949,7 @@ Ejecuta operaciones sobre la tabla `reassignment_offers`.
 
 ---
 
-#### HospitalConfigurationRepositoryImpl
+##### HospitalConfigurationRepositoryImpl
 **Implementa:** `HospitalConfigurationRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2925,14 +2957,14 @@ Lee `reassignmentResponseTimeoutMin` de la configuración del hospital.
 
 ---
 
-#### NotificationAdapter
+##### NotificationAdapter
 **Función:**
 Envía notificaciones de ofertas de reasignación al paciente.
 **Tecnología:** SMTP + Firebase Cloud Messaging
 
 ---
 
-#### SpringEventPublisherImpl
+##### SpringEventPublisherImpl
 **Implementa:** `EventPublisher`
 **Función:**
 Publica eventos de dominio usando Spring Events.
@@ -2940,20 +2972,19 @@ Publica eventos de dominio usando Spring Events.
 
 ---
 
-#### ReassignmentExpirationScheduler
+##### ReassignmentExpirationScheduler
 **Función:**
 Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas.
 **Tecnología:** `@Scheduled` de Spring
 
 ---
 
-### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/reassignment_component_diagram.png" alt="Reassignment class diagram" width="85%"/>
+<img src="assets/reassignment_component_diagram.png" alt="Reassignment component diagram" width="85%"/>
 
 ---
 El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
-
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2966,22 +2997,22 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/reassignment_database_diagram.png" alt="Reassignment class diagram" width="85%"/>
+<img src="assets/reassignment_database_diagram.png" alt="Reassignment database diagram" width="85%"/>
 
 ---
 El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
 
 ---
 
-## 2.6.4. Bounded Context: Arrival & QR Check-in
+### 2.6.4. Bounded Context: Arrival & QR Check-in
 
 El **bounded context de Arrival & QR Check-in** gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la **cola de asistencia** (`attendance_queue`), que ordena a los pacientes por orden de llegada dentro de cada `time_slot`. Cuando el paciente escanea el código QR, el sistema valida el token firmado por el propio backend, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
 
-### 2.6.4.1. Domain Layer
+#### 2.6.4.1. Domain Layer
 
 La capa de **Domain** representa el núcleo del negocio de llegada y check-in. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de la cola de asistencia y la validación de presencia.
 
-#### CheckIn (Aggregate Root)
+##### CheckIn (Aggregate Root)
 
 **Atributos:**
 `id`, `idAppointment`, `qrToken`, `status: CheckInStatus`, `checkedInAt`
@@ -2996,7 +3027,7 @@ Representa la validación de presencia física del paciente. Es aggregate root p
 
 ---
 
-#### AttendanceQueue (Aggregate Root)
+##### AttendanceQueue (Aggregate Root)
 
 **Atributos:**
 `id`, `idTimeSlot`, `date`, `status: AttendanceQueueStatus`
@@ -3012,7 +3043,7 @@ Representa la fila de asistencia de un `time_slot` en una fecha. Es aggregate ro
 
 ---
 
-#### QueueEntry (Entity)
+##### QueueEntry (Entity)
 
 **Atributos:**
 `id`, `idAttendanceQueue`, `idCheckIn`, `position`, `status: QueueEntryStatus`, `calledAt`, `attendedAt`
@@ -3029,7 +3060,7 @@ Representa a cada persona en la fila de asistencia.
 
 ---
 
-#### QueuePosition (Value Object)
+##### QueuePosition (Value Object)
 
 **Atributos:**
 `value`, `totalInQueue`
@@ -3039,7 +3070,7 @@ Encapsula la posición del paciente en la cola de asistencia. Es inmutable y se 
 
 ---
 
-#### CheckInStatus (Enum)
+##### CheckInStatus (Enum)
 
 **Valores posibles:**
 `VALID`, `EXPIRED`, `INVALID`
@@ -3049,7 +3080,7 @@ Define el estado de la validación del check-in.
 
 ---
 
-#### AttendanceQueueStatus (Enum)
+##### AttendanceQueueStatus (Enum)
 
 **Valores posibles:**
 `OPEN`, `CLOSED`, `PAUSED`
@@ -3059,7 +3090,7 @@ Define el estado de la fila de asistencia.
 
 ---
 
-#### QueueEntryStatus (Enum)
+##### QueueEntryStatus (Enum)
 
 **Valores posibles:**
 `WAITING`, `CALLED`, `IN_ATTENTION`, `ATTENDED`, `ABSENT`
@@ -3069,7 +3100,7 @@ Define el estado de cada entrada en la cola de asistencia.
 
 ---
 
-#### CheckInFactory (Factory)
+##### CheckInFactory (Factory)
 
 **Métodos:**
 - `createCheckIn(appointment, qrToken): CheckIn`
@@ -3079,7 +3110,7 @@ Encapsula la creación de un check-in, validando que la cita exista.
 
 ---
 
-#### QueueDomainService (Domain Service)
+##### QueueDomainService (Domain Service)
 
 **Métodos:**
 - `calculatePosition(attendanceQueueId): Int`
@@ -3090,7 +3121,7 @@ Encapsula la lógica de cálculo de posición en la cola y la validación de la 
 
 ---
 
-#### CheckInRepository (Interface)
+##### CheckInRepository (Interface)
 
 **Métodos:**
 - `save(checkIn: CheckIn): CheckIn`
@@ -3104,7 +3135,7 @@ Define las operaciones de persistencia para check-ins.
 
 ---
 
-#### AttendanceQueueRepository (Interface)
+##### AttendanceQueueRepository (Interface)
 
 **Métodos:**
 - `save(queue: AttendanceQueue): AttendanceQueue`
@@ -3118,7 +3149,7 @@ Define las operaciones de persistencia para colas de asistencia.
 
 ---
 
-#### QueueEntryRepository (Interface)
+##### QueueEntryRepository (Interface)
 
 **Métodos:**
 - `save(entry: QueueEntry): QueueEntry`
@@ -3133,7 +3164,7 @@ Define las operaciones de persistencia para entradas de la cola.
 
 ---
 
-#### EventPublisher (Interface)
+##### EventPublisher (Interface)
 
 **Métodos:**
 - `publish(event: DomainEvent)`
@@ -3143,7 +3174,7 @@ Define la interfaz para publicar eventos de dominio. La implementación concreta
 
 ---
 
-#### CheckInCompletedEvent (Domain Event)
+##### CheckInCompletedEvent (Domain Event)
 
 **Atributos:**
 `checkInId`, `appointmentId`, `attendanceQueueId`, `position`, `completedAt`
@@ -3153,7 +3184,7 @@ Representa el hecho de negocio de que un paciente completó su check-in y fue in
 
 ---
 
-#### PatientCalledEvent (Domain Event)
+##### PatientCalledEvent (Domain Event)
 
 **Atributos:**
 `queueEntryId`, `attendanceQueueId`, `position`, `calledAt`
@@ -3163,7 +3194,7 @@ Representa el hecho de negocio de que un paciente fue llamado a consultorio.
 
 ---
 
-#### PatientAbsentEvent (Domain Event)
+##### PatientAbsentEvent (Domain Event)
 
 **Atributos:**
 `queueEntryId`, `appointmentId`, `freedTimeSlotId`, `absentAt`
@@ -3173,11 +3204,11 @@ Representa el hecho de negocio de que un paciente fue declarado ausente por no p
 
 ---
 
-### 2.6.4.2. Interface Layer
+#### 2.6.4.2. Interface Layer
 
 La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
 
-#### CheckInsController (REST API Controller)
+##### CheckInsController (REST API Controller)
 
 **Endpoints:**
 - `POST /api/v1/check-ins/qr` → Valida el QR y registra el check-in.
@@ -3189,7 +3220,7 @@ Este controlador gestiona las operaciones sobre el aggregate `CheckIn`.
 
 ---
 
-#### AttendanceQueuesController (REST API Controller)
+##### AttendanceQueuesController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/attendance-queues/{id}` → Obtiene el estado de la cola.
@@ -3201,7 +3232,7 @@ Este controlador gestiona las operaciones sobre el aggregate `AttendanceQueue`.
 
 ---
 
-#### QueueEntriesController (REST API Controller)
+##### QueueEntriesController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/queue-entries/{id}` → Obtiene el detalle de una entrada.
@@ -3212,11 +3243,11 @@ Este controlador gestiona las operaciones sobre la entity `QueueEntry`.
 
 ---
 
-### 2.6.4.3. Application Layer
+#### 2.6.4.3. Application Layer
 
 La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
 
-#### CheckInCommandService (Interface)
+##### CheckInCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `validateQR(command: ValidateQRCommand): CheckInResult`
@@ -3229,7 +3260,7 @@ Define los comandos relacionados con el check-in.
 
 ---
 
-#### QueueCommandService (Interface)
+##### QueueCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `callNextPatient(command: CallNextPatientCommand): QueueEntry`
@@ -3239,7 +3270,7 @@ Define los comandos relacionados con la cola de asistencia.
 
 ---
 
-#### CheckInQueryService (Interface)
+##### CheckInQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getById(id: Int): CheckIn?`
@@ -3250,7 +3281,7 @@ Define las consultas relacionadas con el check-in.
 
 ---
 
-#### QueueQueryService (Interface)
+##### QueueQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getQueuePosition(checkInId: Int): QueuePosition`
@@ -3261,7 +3292,7 @@ Define las consultas relacionadas con la cola.
 
 ---
 
-#### CheckInCommandServiceImpl (Implementation)
+##### CheckInCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de check-in.
 
@@ -3290,7 +3321,7 @@ Define las consultas relacionadas con la cola.
 
 ---
 
-#### QueueCommandServiceImpl (Implementation)
+##### QueueCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de cola.
 
@@ -3302,7 +3333,7 @@ Define las consultas relacionadas con la cola.
 
 ---
 
-#### CheckInCompletedEventHandler (Event Handler)
+##### CheckInCompletedEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `CheckInCompletedEvent`.
 **Flujo:**
@@ -3312,7 +3343,7 @@ Define las consultas relacionadas con la cola.
 
 ---
 
-#### PatientCalledEventHandler (Event Handler)
+##### PatientCalledEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `PatientCalledEvent`.
 **Flujo:**
@@ -3322,11 +3353,11 @@ Define las consultas relacionadas con la cola.
 
 ---
 
-### 2.6.4.4. Infrastructure Layer
+#### 2.6.4.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-#### CheckInRepositoryImpl
+##### CheckInRepositoryImpl
 **Implementa:** `CheckInRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -3334,7 +3365,7 @@ Ejecuta operaciones sobre la tabla `check_ins`.
 
 ---
 
-#### AttendanceQueueRepositoryImpl
+##### AttendanceQueueRepositoryImpl
 **Implementa:** `AttendanceQueueRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -3342,7 +3373,7 @@ Ejecuta operaciones sobre la tabla `attendance_queues`.
 
 ---
 
-#### QueueEntryRepositoryImpl
+##### QueueEntryRepositoryImpl
 **Implementa:** `QueueEntryRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -3350,7 +3381,7 @@ Ejecuta operaciones sobre la tabla `queue_entries`.
 
 ---
 
-#### HospitalConfigurationRepositoryImpl
+##### HospitalConfigurationRepositoryImpl
 **Implementa:** `HospitalConfigurationRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -3358,7 +3389,7 @@ Lee `checkInToleranceMinutes`, `postCallToleranceMinutes` y `attendanceQueueVisi
 
 ---
 
-#### JwtQRValidator (Utility)
+##### JwtQRValidator (Utility)
 **Función:**
 Valida el token QR firmado por el backend usando JWT.
 **Tecnología:** java-jwt / jjwt
@@ -3367,21 +3398,21 @@ Verifica la firma y la expiración del `qrToken` generado por el backend al conf
 
 ---
 
-#### TicketGenerationAdapter
+##### TicketGenerationAdapter
 **Función:**
 Genera el ticket digital con identificador de llamado y posición en la cola.
 **Tecnología:** iText / Kotlin PDF
 
 ---
 
-#### NotificationAdapter
+##### NotificationAdapter
 **Función:**
 Envía notificaciones al paciente (check-in completado, llamado a consultorio).
 **Tecnología:** SMTP + Firebase Cloud Messaging
 
 ---
 
-#### SpringEventPublisherImpl
+##### SpringEventPublisherImpl
 **Implementa:** `EventPublisher`
 **Función:**
 Publica eventos de dominio usando Spring Events.
@@ -3389,14 +3420,14 @@ Publica eventos de dominio usando Spring Events.
 
 ---
 
-#### AbsenceDetectionScheduler
+##### AbsenceDetectionScheduler
 **Función:**
 Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticamente.
 **Tecnología:** `@Scheduled` de Spring
 
 ---
 
-### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 <img src="assets/arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
 
@@ -3421,16 +3452,15 @@ El diagrama de base de datos del bounded context Arrival & QR Check-in muestra l
 
 ---
 
-
-## 2.6.5. Bounded Context: Hospital Operations & Configuration
+### 2.6.5. Bounded Context: Hospital Operations & Configuration
 
 El **bounded context de Hospital Operations & Configuration** gestiona la configuración operativa del establecimiento de salud y provee dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. Parametriza el comportamiento de los demás bounded contexts mediante reglas configurables como la capacidad máxima por bloque horario, las tolerancias de check-in y post-llamado, el tiempo de respuesta para la reasignación y los plazos de reserva y cancelación.
 
-### 2.6.5.1. Domain Layer
+#### 2.6.5.1. Domain Layer
 
 La capa de **Domain** representa el núcleo del negocio de configuración y operación del hospital. Aquí se definen las entidades, value objects, enums e interfaces que encapsulan las reglas operativas.
 
-#### HospitalConfiguration (Aggregate Root)
+##### HospitalConfiguration (Aggregate Root)
 
 **Atributos:**
 `id`, `maxCapacityPerSlot`, `bookingOrderScope: BookingOrderScope`, `checkInToleranceMinutes`, `postCallToleranceMinutes`, `reassignmentResponseTimeoutMin`, `bookingCutoffTime`, `cancellationDeadlineHours`, `attendanceQueueVisible`, `updatedAt`
@@ -3439,6 +3469,8 @@ La capa de **Domain** representa el núcleo del negocio de configuración y oper
 - `updateMaxCapacity(value)` → valida que sea mayor a 0 y actualiza la capacidad máxima por bloque.
 - `updateTolerances(checkIn, postCall)` → valida que sean mayores o iguales a 0 y actualiza las tolerancias.
 - `updateReassignmentTimeout(value)` → valida que sea mayor o igual a 0 y actualiza el timeout de reasignación.
+- `updateBookingCutoffTime(value)` → actualiza la hora límite para reservar citas.
+- `updateCancellationDeadline(value)` → actualiza el plazo mínimo para cancelar citas.
 - `validate()` → valida que todos los parámetros sean coherentes entre sí.
 
 **Propósito:**
@@ -3446,7 +3478,7 @@ Representa la configuración operativa del establecimiento. Es aggregate root po
 
 ---
 
-#### BookingOrderScope (Enum)
+##### BookingOrderScope (Enum)
 
 **Valores posibles:**
 `GLOBAL`, `PER_SPECIALTY`
@@ -3456,7 +3488,7 @@ Define si el `bookingOrder` se calcula de forma global al establecimiento o por 
 
 ---
 
-#### HospitalConfigurationRepository (Interface)
+##### HospitalConfigurationRepository (Interface)
 
 **Métodos:**
 - `save(config: HospitalConfiguration): HospitalConfiguration`
@@ -3468,7 +3500,7 @@ Define las operaciones de persistencia para la configuración del hospital.
 
 ---
 
-#### EventPublisher (Interface)
+##### EventPublisher (Interface)
 
 **Métodos:**
 - `publish(event: DomainEvent)`
@@ -3478,11 +3510,11 @@ Define la interfaz para publicar eventos de dominio. La implementación concreta
 
 ---
 
-### 2.6.5.2. Interface Layer
+#### 2.6.5.2. Interface Layer
 
 La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST.
 
-#### ConfigurationController (REST API Controller)
+##### ConfigurationController (REST API Controller)
 
 **Endpoints:**
 - `GET /api/v1/config` → Obtiene la configuración actual del hospital.
@@ -3495,11 +3527,11 @@ Este controlador gestiona las operaciones sobre el aggregate `HospitalConfigurat
 
 ---
 
-### 2.6.5.3. Application Layer
+#### 2.6.5.3. Application Layer
 
 La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
 
-#### ConfigurationCommandService (Interface)
+##### ConfigurationCommandService (Interface)
 
 **Métodos (Command Handlers):**
 - `updateConfiguration(command: UpdateConfigurationCommand): HospitalConfiguration`
@@ -3509,7 +3541,7 @@ Define los comandos relacionados con la configuración operativa.
 
 ---
 
-#### ConfigurationQueryService (Interface)
+##### ConfigurationQueryService (Interface)
 
 **Métodos (Query Handlers):**
 - `getConfiguration(): HospitalConfiguration?`
@@ -3521,7 +3553,7 @@ Define las consultas relacionadas con la configuración, reportes y dashboard.
 
 ---
 
-#### ConfigurationCommandServiceImpl (Implementation)
+##### ConfigurationCommandServiceImpl (Implementation)
 
 **Responsabilidad:** Implementar los comandos de configuración.
 
@@ -3534,7 +3566,7 @@ Define las consultas relacionadas con la configuración, reportes y dashboard.
 
 ---
 
-#### ConfigurationUpdatedEventHandler (Event Handler)
+##### ConfigurationUpdatedEventHandler (Event Handler)
 
 **Responsabilidad:** Reaccionar al evento `ConfigurationUpdatedEvent`.
 **Flujo:**
@@ -3544,11 +3576,11 @@ Define las consultas relacionadas con la configuración, reportes y dashboard.
 
 ---
 
-### 2.6.5.4. Infrastructure Layer
+#### 2.6.5.4. Infrastructure Layer
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-#### HospitalConfigurationRepositoryImpl
+##### HospitalConfigurationRepositoryImpl
 **Implementa:** `HospitalConfigurationRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -3556,14 +3588,14 @@ Ejecuta operaciones sobre la tabla `hospital_configurations`. Como es un singlet
 
 ---
 
-#### ReportGeneratorAdapter
+##### ReportGeneratorAdapter
 **Función:**
 Genera reportes operativos en formato PDF y CSV a partir de los datos de atención, ausentismo y demanda.
 **Tecnología:** iText / Apache POI
 
 ---
 
-#### SpringEventPublisherImpl
+##### SpringEventPublisherImpl
 **Implementa:** `EventPublisher`
 **Función:**
 Publica eventos de dominio usando Spring Events.
@@ -3571,21 +3603,21 @@ Publica eventos de dominio usando Spring Events.
 
 ---
 
-### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 <img src="HospitalOperations_Configuration_component_diagram.png" alt="Hospital Operations & Configuration component diagram" width="85%"/>
 
 El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
 
-### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
-#### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="HospitalOperations_Configuration_class_diagram.png" alt="Hospital Operations & Configuration class diagram" width="85%"/>
 
 El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio.
 
-#### 2.6.5.6.2. Bounded Context Database Design Diagram
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
 <img src="HospitalOperations_Configuration_database_diagram.png" alt="Hospital Operations & Configuration database diagram" width="85%"/>
 
