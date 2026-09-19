@@ -155,7 +155,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td width="50%">
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases, Context Mapping y el modelo C4 para documentar la arquitectura de SaludYa. Asimismo, incorporé los conceptos de las dos colas complementarias del dominio (Booking Order y Attendance Queue), refinando los bounded contexts existentes y actualizando los diagramas de EventStorming, Context Mapping y Container Level Diagram.</li>
         </ul>
        <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
@@ -187,7 +187,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       <td>
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
-          <li><strong>AV1:</strong> [Describir acciones específicas]</li>
+          <li><strong>AV1:</strong> Reconocí la necesidad de investigar de forma autónoma técnicas de modelado estratégico y táctico que no había aplicado antes, como EventStorming y Domain-Driven Design, para sustentar con criterios arquitectónicos sólidos el diseño de SaludYa. La correcta delimitación de los bounded contexts y la identificación de las dos colas del dominio me exigieron un análisis profundo para alinear el lenguaje ubicuo con la arquitectura del sistema.</li>
         </ul>
         <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
