@@ -54,8 +54,8 @@
 | 1.5.0 | 09-17-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se actualizó el Capítulo II incorporando las dos colas complementarias (Booking Order y Attendance Queue): EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases, Context Mapping, Container Level Diagram y sus diagramas asociados. |
 | 1.6.0 | 09-18-26 | Torres Juárez, Alisee Muriel | Se documentó el bounded context de Identity & Access Management (capas Domain, Interface, Application e Infrastructure), se refactorizaron encabezados de sección, se revisó la numeración y se mejoraron las descripciones de los diagramas del Capítulo II. |
 | 1.7.0 | 09-18-26 | Meza Solórzano, Didier Sebastian | Se agregó información adicional del Capítulo II y se actualizó el nombre del capítulo. |
-| 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó el apartado Tactical-Level Domain-Driven Design |
-| 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó el apartado Tactical-Level Domain-Driven Design |
+| 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
+| 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 
 
 # Project Report Collaboration Insights
