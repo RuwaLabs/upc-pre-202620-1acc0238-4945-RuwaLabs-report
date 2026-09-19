@@ -2671,16 +2671,16 @@ Publica eventos de dominio usando Spring Events.
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a eventos de cancelación y ausencia. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con el BookingDomainService. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA, la publicación de eventos con Spring Events y el envío de notificaciones.
 
-#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img src="assets/appointment_class_diagram.png" alt="IAM class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, entities, value objects, enums, domain service e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, y el BookingDomainService.
 
-##### 2.6.1.6.2. Bounded Context Database Design Diagram
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
 <img src="assets/appointment_database_diagram.png" alt="IAM class diagram" width="85%"/>
 
