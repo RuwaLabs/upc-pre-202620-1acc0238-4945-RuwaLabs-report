@@ -177,7 +177,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
       </td>
       <td width="25%">
         <p><strong>AV1:</strong><br>
-        [Redactar conclusión grupal sobre cómo el equipo actualizó conceptos en esta entrega]</p>
+        Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.</p>
       </td>
     </tr>
     <tr>
