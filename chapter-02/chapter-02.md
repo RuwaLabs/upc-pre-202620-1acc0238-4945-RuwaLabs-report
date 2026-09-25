@@ -1,4 +1,4 @@
-# Capítulo 2: Requirements Development and Software Solution Design
+# Capítulo II: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
 
@@ -22,7 +22,7 @@
 | **Análisis SWOT — Oportunidades** | Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud. | Expansión hacia convenios con aseguradoras y nuevas especialidades. | Expansión hacia convenios con establecimientos públicos de salud. | Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades. |
 | **Análisis SWOT — Amenazas** | Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas. | Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos. | Competencia de plataformas más consolidadas como Doctoralia. | Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público. |
 
-### 2.1.2. Estrategias y tácticas frente a competidores ###
+### 2.1.2. Estrategias y tácticas frente a competidores
 
 Una vez realizado la identificación de fortalezas, oportunidades, debilidades y amenazas con el análisis FODA de nuestros competidores en el sector del mercado, pasaremos a plantear las estrategias y tácticas para hacerle frente a estos mismos.
 
@@ -38,7 +38,13 @@ Una vez realizado la identificación de fortalezas, oportunidades, debilidades y
 
 * MVP enfocado en lo esencial: Iniciar con un MVP centrado en las funcionalidades esenciales —reserva de citas, lista de espera dinámica y notificaciones— para minimizar riesgos y validar la solución antes de escalar nuevas funciones.
 
-### 2.2.2. Registro de entrevistas ###
+## 2.2. Entrevistas
+
+### 2.2.1. Diseño de entrevistas
+
+Las entrevistas fueron diseñadas como guías semiestructuradas, considerando tres entrevistas por cada segmento objetivo: pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.
+
+### 2.2.2. Registro de entrevistas
 
 En esta sección, se registra cada entrevista realizada. En total, se realizaron tres entrevistas por cada segmento objetivo. Se detalla el nombre del miembro entrevistador y el del entrevistado. Además, se redacta un resumen general del contenido de la entrevista realizada.
 
@@ -94,7 +100,7 @@ Entrevista 4:
 | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | **Timing:** 00:00-04:10 | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda. |
 
-### 2.2.3. Análisis de entrevistas ###
+### 2.2.3. Análisis de entrevistas
 
 En primer lugar, con base en las tres entrevistas realizadas al primer segmento objetivo, conformado por los pacientes de zonas urbanas periféricas, se puede concluir lo siguiente:
 
@@ -280,42 +286,92 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 | `Time Slot` | Intervalo de tiempo asignado a una especialidad médica para la atención de un único paciente en una fecha y horario determinado. |
 | `Booking` / `Appointment` | Proceso mediante el cual un paciente asegura un cupo médico a través de la aplicación móvil antes de acudir presencialmente. |
 | `Check-in` | Validación de asistencia presencial realizada por el paciente mediante el escaneo de un código QR al llegar al centro de salud. |
-| `Dynamic Waitlist` | Mecanismo automatizado que gestiona las solicitudes en cola y reasigna inmediatamente los cupos liberados por cancelaciones o inasistencias. |
+| `Reassignment` | Mecanismo automatizado que reasigna los cupos liberados por cancelaciones o inasistencias a los pacientes de la cola de reserva, en orden de `bookingOrder`. |
 | `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
 | `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
 
 ---
 
-## 2.4. Requirements Specification
+## 2.4. Requirements specification
 
 En esta sección definimos la especificación formal de requisitos para la plataforma **SaludYa**, tomando como base los hallazgos del *Needfinding* y los flujos identificados en el *EventStorming*. A través de mapeos de escenarios futuros, Historias de Usuario (*User Stories*), *Impact Mapping* y un *Product Backlog* priorizado, transformamos las necesidades del dominio público de salud en entregables técnicos y funcionales ejecutables.
 
 ---
 
-### 2.4.1. To-Be Scenario Mapping
+#### To-Be Scenario Mapping
 
 | Fase                                | Haciendo (Acción) | Pensando (Pensamiento) | Sintiendo (Emoción)        |
 |:------------------------------------| :--- | :--- |:---------------------------|
-| **1. Registro y Autenticació**      | Inicia sesión o se registra ingresando su DNI para validación automática de identidad y vincula a los menores a su cargo. | "Qué rápido es validar mi identidad con el DNI sin hacer trámites presenciales ni llenar formularios largos." | Tranquilidad y confianza |
+| **1. Registro y Autenticación**      | Inicia sesión o se registra ingresando su DNI para validación automática de identidad y vincula a los menores a su cargo. | "Qué rápido es validar mi identidad con el DNI sin hacer trámites presenciales ni llenar formularios largos." | Tranquilidad y confianza |
 | **2. Búsqueda y Reserva de Citas**  | Selecciona la especialidad médica, explora el calendario de disponibilidad por bloques e ingresa la reserva propia o de su menor. | "Puedo ver todos los turnos disponibles en tiempo real y elegir la franja horaria que mejor me convenga." | Comodidad y control        |
-| **3. Lista de Espera Dinámica*      | Recibe una notificación de propuesta para adelantar su cita por un cupo liberado; acepta o rechaza la reasignación en su teléfono. | "Excelente que el sistema me avise para atenderme más temprano si alguien canceló su turno." | Sorpresa y satisfacción    |
+| **3. Reasignación de Citas**      | Recibe una notificación de propuesta para adelantar su cita por un cupo liberado; acepta o rechaza la reasignación en su teléfono. | "Excelente que el sistema me avise para atenderme más temprano si alguien canceló su turno." | Sorpresa y satisfacción    |
 | **4. Check-in Presencial por QR**   | Llega al hospital dentro del margen de tolerancia, escanea el código QR y obtiene su ticket digital con el consultorio asignado. | "Evité la cola de admisión; solo escaneo el QR, confirmo mi presencia y voy directo a la sala." | Agilidad y alivio          |
 | **5. Atención y Control Operativo** | Espera el llamado al consultorio según su ticket digital mientras el sistema audita tiempos de tolerancia y confirma la atención. | "El proceso es transparente, sé exactamente a dónde ir y se respetan los horarios de atención." | Seguridad y complacencia   |
 ---
 
-### 2.4.2. User Stories
+### 2.4.1. User Stories
 
 #### Epics
 
 | ID | Título de la Épica | Descripción Breve |
 | :--- | :--- | :--- |
+| **EP0** | Plataforma de Presentación y Captación | Sitio web estático (Landing Page) orientado a la captación de pacientes potenciales, la explicación de la propuesta de valor y la redirección de descarga de las aplicaciones móviles. |
 | **EP1** | Authentication & Identity Management | Registro y autenticación de usuarios con verificación oficial por DNI, vinculación de menores de edad y recuperación de contraseñas. |
 | **EP2** | Appointments & Booking Engine | Consulta de disponibilidad en calendario, reserva de citas médicas para titulares o menores, y gestión de cancelaciones. |
-| **EP3** | Dynamic Waitlist & Reassignment Protocol | Gestión automatizada de la lista de espera y reasignación de turnos liberados mediante propuestas de adelanto. |
-| **EP4** | Arrival & QR Check-in System | Confirmación presencial de llegada mediante escaneo de código QR y emisión del ticket digital de atención. |
-| **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo y parametrización de reglas globales e intervalos del hospital. |
+| **EP3** | Reassignment Protocol | Gestión automatizada de la reasignación de cupos liberados por cancelaciones o ausencias, ofreciendo propuestas de adelanto a los pacientes de la cola de reserva en orden de `bookingOrder`. |
+| **EP4** | Arrival & QR Check-in System | Confirmación presencial de llegada mediante escaneo de código QR, gestión de la cola de asistencia y emisión del ticket digital de atención. |
+| **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo, parametrización de reglas globales e intervalos del hospital, y visualización del dashboard operativo. |
 
 #### User stories
+<!-- US-00: Visualización de Propuesta de Valor en Landing Page -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-00</td>
+      <td>Paciente Potencial</td>
+      <td>High</td>
+      <td>EP0: Plataforma de Presentación y Captación</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Visualización de Propuesta de Valor en Landing Page</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente potencial,<br>
+        <b>Quiero</b> visualizar la propuesta de valor y los beneficios de SaludYa en el sitio web público,<br>
+        <b>Para</b> comprender cómo la plataforma optimiza la gestión de mis citas médicas y decidir descargar la aplicación móvil.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Visualización de la Propuesta de Valor y Modelo de Negocio</b><br>
+        • <b>Given</b> que un Paciente Potencial accede a la dirección web pública de la plataforma,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> navega por la página principal,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra la información estructurada sobre los beneficios de SaludYa y habilita los enlaces de descarga hacia las tiendas de aplicaciones móviles.<br><br>
+        <b>Scenario 2: Reproducción de material audiovisual institucional</b><br>
+        • <b>Given</b> que el Paciente Potencial se encuentra explorando la Landing Page,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> accede a las secciones de presentación audiovisual,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema reproduce de forma integrada los videos explicativos del producto (About-the-Product) y del equipo creador (About-the-Team).<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- US-01: Registro Paciente Adulto (API DNI) -->
 <table>
   <thead>
@@ -329,9 +385,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-01</td>
-      <td>New Patient</td>
+      <td>Patient</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -344,7 +400,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Como</b> Paciente nuevo,<br>
         <b>Quiero</b> registrarme ingresando mi número de DNI, nombres, apellidos, fecha de nacimiento, teléfono, correo y contraseña,<br>
-        <b>Para</b> que el sistema alide la concordancia de mis datos con mi identidad oficial y disponga de una cuenta verficada.
+        <b>Para</b> que el sistema valide la concordancia de mis datos con mi identidad oficial y disponga de una cuenta verificada.
       </td>
     </tr>
     <tr>
@@ -354,16 +410,16 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Validación exitosa vía DNI</b><br>
         • <b>Given</b> que el paciente ingresa un número de DNI válido y datos de contacto,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida el DNI y confirma que la información personal ingresada coincida con el registro oficial,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida el DNI y confirma que la información personal ingresada coincide con el registro oficial,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de paciente verificada y envía un correo de bienvenida.<br><br>
         <b>Scenario 2: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que un usuario ingresa un DNI inexistente o los nombres y/o apellidos no coinciden con los datos del DNI,<br>
+        • <b>Given</b> que un paciente ingresa un DNI inexistente o los nombres y/o apellidos no coinciden con los datos del DNI,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> intenta completar el registro,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el proceso y muestra un mensaje indicando que los datos no coinciden con la identidad del titular del DNI.<br><br>
         <b>Scenario 3: Restricción por correo duplicado</b><br>
-        • <b>Given</b> que el correo personal ingresado ya pertenecen a una cuenta activa en el sistema,,<br>
+        • <b>Given</b> que el correo personal ingresado ya pertenece a una cuenta activa en el sistema,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el alta y muestra un error indicando que el correo ya se encuentra registrado en otra cuenta.<br><br>
       </td>
     </tr>
   </tbody>
@@ -384,7 +440,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>US-02</td>
       <td>Super Admin</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -395,9 +451,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Administrador del Sistema,<br>
-        <b>Quiero</b> registrar al personal administrativo ingresando su DNI, nombres, apellidos, fecha de nacimiento, teléfono,<br>
-        <b>Para</b> otorgarle una cuenta administrativa verificada al personal administrativo
+        <b>Como</b> Super Admin,<br>
+        <b>Quiero</b> registrar al personal administrativo ingresando su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br>
+        <b>Para</b> otorgarle una cuenta administrativa verificada al personal administrativo.
       </td>
     </tr>
     <tr>
@@ -406,23 +462,23 @@ En esta sección definimos la especificación formal de requisitos para la plata
     <tr>
       <td colspan="4">
         <b>Scenario 1: Alta exitosa de usuario administrativo</b><br>
-        • <b>Given</b> que un Administrador autenticado accede al módulo de gestión de personal e ingresa los datos del personal administrativo (nombres, apellidos, fecha de nacimiento, número de DNI, correo corporativo, teléfono),<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida la concordancia de los datos con el DNI<br>
+        • <b>Given</b> que un Super Admin autenticado accede al módulo de gestión de personal e ingresa los datos del personal administrativo (nombres, apellidos, fecha de nacimiento, número de DNI, correo corporativo, teléfono),<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida la concordancia de los datos con el DNI,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> genera la cuenta administrativa y envía un correo electrónico con las credenciales de acceso.<br><br>
         <b>Scenario 2: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que el administrador ingresa un DNI pero un solo dato no coincide con los registros oficiales,<br>
+        • <b>Given</b> que el Super Admin ingresa un DNI pero un solo dato no coincide con los registros oficiales,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.<br><br>
         <b>Scenario 3: Restricción por correo duplicado</b><br>
-        • <b>Given</b> que el correo institucional ingresado ya pertenecen a una cuenta activa en el sistema,,<br>
+        • <b>Given</b> que el correo institucional ingresado ya pertenece a una cuenta activa en el sistema,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el alta y muestra un error indicando que el correo ya se encuentra registrado en otra cuenta.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-03: Registro Paciente Menor / Niño -->
+<!-- US-03: Registro y Vinculación de Pacientes Menores de Edad -->
 <table>
   <thead>
     <tr>
@@ -437,20 +493,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>US-03</td>
       <td>Patient</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Registro de Pacientes Menores de Edad (Niños)</td>
+      <td colspan="3">Registro y Vinculación de Pacientes Menores de Edad (Niños)</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> registrar y vincular a un menor de edad a mi cuenta principal ingresando su DNI,<br>
-        <b>Para</b> gestionar las citas médicas del niño desde mi usuario.
+        <b>Como</b> Paciente titular,<br>
+        <b>Quiero</b> registrar y vincular a un menor de edad a mi cuenta principal ingresando su DNI y, de ser necesario, desvincularlo,<br>
+        <b>Para</b> gestionar las citas médicas del menor desde mi propio usuario.
       </td>
     </tr>
     <tr>
@@ -459,17 +515,21 @@ En esta sección definimos la especificación formal de requisitos para la plata
     <tr>
       <td colspan="4">
         <b>Scenario 1: Vinculación exitosa de menor</b><br>
-        • <b>Given</b> que el paciente está autenticado en su cuenta,<br>
+        • <b>Given</b> que el paciente titular está autenticado en su cuenta,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el DNI del menor y confirma la filiación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos del niño por su DNI y lo asocia al perfil del adulto responsable.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos del menor por su DNI y lo asocia al perfil del adulto responsable.<br><br>
         <b>Scenario 2: Menor previamente vinculado</b><br>
         • <b>Given</b> que el DNI del menor ya está asociado a otra cuenta,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> se intenta la vinculación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> muestra una alerta para validar la tutela legal con el personal de admisión.
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra una alerta para validar la tutela legal con el personal de admisión.<br><br>
         <b>Scenario 3: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que el apoderado del paciente ingresa un DNI pero un solo dato no coincide con los registros oficiales,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.<br><br>
+        • <b>Given</b> que el paciente titular ingresa un DNI de menor cuyos datos no coinciden con los registros oficiales,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar la vinculación,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular del DNI.<br><br>
+        <b>Scenario 4: Desvinculación de menor</b><br>
+        • <b>Given</b> que el paciente titular posee un menor vinculado a su cuenta,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> solicita la desvinculación del menor,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema elimina el vínculo y el menor deja de estar disponible para agendar citas.<br><br>
       </td>
     </tr>
   </tbody>
@@ -488,20 +548,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-04</td>
-      <td>Patient / Admin staff / Super Admin</td>
+      <td>Patient / Admission Staff / Super Admin</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Recuperación de Contraseña para Usuarios</td>
+      <td colspan="3">Recuperación de Contraseña</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente, personal administrativo o administrador,<br>
+        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
         <b>Quiero</b> solicitar la restauración de mi contraseña mediante un enlace seguro enviado a mi correo registrado,<br>
         <b>Para</b> recuperar el acceso a mi cuenta en caso de olvido.
       </td>
@@ -511,10 +571,18 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Envíos de correo de restablecimiento</b><br>
+        <b>Scenario 1: Envío de correo de restablecimiento</b><br>
         • <b>Given</b> un correo registrado en el sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario solicita recuperar contraseña,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> envía un token temporal con vigencia de 15 minutos para definir una nueva clave.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario solicita recuperar su contraseña,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un token temporal con vigencia de 15 minutos para definir una nueva clave.<br><br>
+        <b>Scenario 2: Rechazo por correo no registrado</b><br>
+        • <b>Given</b> un correo que no pertenece a ninguna cuenta del sistema,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se solicita la recuperación de contraseña,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no genera token y responde con un mensaje genérico de confirmación sin revelar la existencia de la cuenta.<br><br>
+        <b>Scenario 3: Expiración del token de restablecimiento</b><br>
+        • <b>Given</b> un token de restablecimiento emitido previamente,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta definir una nueva contraseña después de la vigencia de 15 minutos,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e indica que el enlace expiró, solicitando una nueva solicitud.<br><br>
       </td>
     </tr>
   </tbody>
@@ -533,9 +601,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-05</td>
-      <td>Patient / Admin staff / Super Admin</td>
+      <td>Patient / Admission Staff / Super Admin</td>
       <td>Medium</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -546,7 +614,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente, personal administrativo o administrador,<br>
+        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
         <b>Quiero</b> actualizar mis datos de contacto (teléfono, correo),<br>
         <b>Para</b> mantener mi información de perfil al día.
       </td>
@@ -559,7 +627,11 @@ En esta sección definimos la especificación formal de requisitos para la plata
         <b>Scenario 1: Modificación de contacto</b><br>
         • <b>Given</b> el usuario dentro de su sección de perfil,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> edita su número telefónico o correo y guarda los cambios,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la base de datos y envía una notificación de confirmación de seguridad.
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la base de datos y envía una notificación de confirmación de seguridad.<br><br>
+        <b>Scenario 2: Restricción por correo duplicado</b><br>
+        • <b>Given</b> un usuario que intenta actualizar su correo a uno ya registrado por otra cuenta,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la actualización e indica que el correo ya se encuentra en uso.<br><br>
       </td>
     </tr>
   </tbody>
@@ -578,9 +650,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-06</td>
-      <td>Patient / Admin staff / Super Admin</td>
+      <td>Patient / Admission Staff / Super Admin</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -591,9 +663,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente, personal administrativo o Super Admin, <br>
+        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
         <b>Quiero</b> autenticarme con mi correo, contraseña y selección de rol,<br>
-        <b>Para</b> acceder al panel de usuario correspondiente.
+        <b>Para</b> acceder al panel correspondiente a mi rol.
       </td>
     </tr>
     <tr>
@@ -602,13 +674,13 @@ En esta sección definimos la especificación formal de requisitos para la plata
     <tr>
       <td colspan="4">
         <b>Scenario 1: Login exitoso</b><br>
-        • <b>Given</b> credenciales válidas,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se presiona "Iniciar Sesión",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> otorga acceso redirigiendo al dashboard de Paciente o de Admisión.<br> <br>
-        <b>Scenario 2: Rechazo por credenciales inválidas o usuarios inexistentes</b><br>
+        • <b>Given</b> credenciales válidas y el rol correspondiente al usuario,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario envía sus credenciales de acceso,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga acceso y redirige al panel del rol autenticado (Paciente, Personal de Admisión o Super Admin).<br><br>
+        <b>Scenario 2: Rechazo por credenciales inválidas o usuario inexistente</b><br>
         • <b>Given</b> que un usuario ingresa un correo no registrado, una contraseña incorrecta o un rol no correspondiente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se presiona "Iniciar Sesión",<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el aceso y notifica de credenciales inválidas.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario envía sus credenciales de acceso,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso y notifica credenciales inválidas.<br><br>
       </td>
     </tr>
   </tbody>
@@ -627,9 +699,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-07</td>
-      <td>Patient / Admission Staff</td>
+      <td>Patient</td>
       <td>High</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP2: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -642,7 +714,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Como</b> Paciente,<br>
         <b>Quiero</b> seleccionar una especialidad médica y explorar el calendario de atención,<br>
-        <b>Para</b> visualizar directamente los horarios y turnos disponibles configurados según los intervalos del hospital.
+        <b>Para</b> visualizar los horarios y turnos disponibles configurados según los intervalos del hospital.
       </td>
     </tr>
     <tr>
@@ -652,16 +724,16 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Despliegue del calendario con horarios disponibles</b><br>
         • <b>Given</b> una especialidad médica seleccionada que cuenta con agenda activa,<br>
-        <b>When</b> el paciente consulta una fecha del calendario,<br>
-        <b>Then</b> el paciente encuentra bloques de horarios libres.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta una fecha del calendario,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema despliega los bloques de horarios libres para la fecha consultada.<br><br>
         <b>Scenario 2: Calendario sin horarios o agenda completa</b><br>
         • <b>Given</b> una especialidad médica seleccionada,<br>
-        <b>When</b> el paciente explora una fecha sin médicos programados o con cupos agotados,<br>
-        <b>Then</b> la ausencia de turnos para dicho día y destaca en el calendario las fechas más próximas con horarios libres.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente explora una fecha sin médicos programados o con cupos agotados,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica la ausencia de turnos para dicho día y resalta en el calendario las fechas más próximas con horarios libres.<br><br>
         <b>Scenario 3: Restricción por especialidad no seleccionada</b><br>
         • <b>Given</b> que no se ha seleccionado ninguna especialidad médica,<br>
-        <b>When</b> el paciente intenta explorar los días del calendario,<br>
-        <b>Then</b> se deshabilita la navegación de fechas indicando la requerida selección de la especialidad.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta explorar los días del calendario,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deshabilita la navegación de fechas indicando que se requiere seleccionar una especialidad.<br><br>
       </td>
     </tr>
   </tbody>
@@ -680,9 +752,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-08</td>
-      <td>Patient / Admission Staff</td>
+      <td>Patient</td>
       <td>High</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP2: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -693,7 +765,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente titular o Personal Administrativo,<br>
+        <b>Como</b> Paciente titular,<br>
         <b>Quiero</b> seleccionar un turno disponible del calendario e indicar si la atención es para el titular o para un menor registrado,<br>
         <b>Para</b> bloquear el bloque horario y agendar la cita médica.
       </td>
@@ -705,16 +777,16 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Reserva exitosa para el paciente titular</b><br>
         • <b>Given</b> un horario libre seleccionado del calendario y la indicación de que la cita corresponde al paciente titular,<br>
-        <b>When</b> se confirma la reserva del turno,<br>
-        <b>Then</b> el sistema asocia el bloque horario a la cuenta del titular, actualiza el turno a estado reservado y envía la notificación de confirmación.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la reserva del turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asocia el bloque horario a la cuenta del titular, actualiza el turno a estado reservado y envía la notificación de confirmación.<br><br>
         <b>Scenario 2: Reserva exitosa para un menor de edad vinculado (US-03)</b><br>
         • <b>Given</b> un horario libre seleccionado del calendario y la elección de un menor previamente vinculado a la cuenta del titular,<br>
-        ;<b>When</b> se confirma la reserva del turno,<br>
-        <b>Then</b> el sistema asigna la cita al perfil del menor, registra al titular como adulto responsable y emite el comprobante de la reserva.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la reserva del turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asigna la cita al perfil del menor, registra al titular como adulto responsable y emite el comprobante de la reserva.<br><br>
         <b>Scenario 3: Denegación por solapamiento de horario</b><br>
         • <b>Given</b> que el paciente (titular o menor seleccionado) ya cuenta con una cita activa registrada en el mismo bloque horario,<br>
-        <b>When</b> se intenta confirmar la nueva reserva,<br>
-        <b>Then</b> el sistema rechaza la operación e informa la incompatibilidad por cruce de horarios.
+        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta confirmar la nueva reserva,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa la incompatibilidad por cruce de horarios.<br><br>
       </td>
     </tr>
   </tbody>
@@ -735,7 +807,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>US-09</td>
       <td>Patient</td>
       <td>Medium</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP2: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -758,18 +830,18 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Envío exitoso de confirmación de cita</b><br>
         • <b>Given</b> una cita médica reservada o reasignada exitosamente para el titular o un menor vinculado,<br>
-        <b>When</b> concluye el proceso de agendamiento,<br>
-        <b>Then</b> el sistema envía una notificación al correo del titular conteniendo el código de reserva, nombre del paciente beneficiario, especialidad, médico, fecha y hora del turno.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de agendamiento,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía una notificación al correo del titular conteniendo el código de reserva, nombre del paciente beneficiario, especialidad, médico, fecha y hora del turno.<br><br>
         <b>Scenario 2: Contingencia por fallo en el servicio de notificación</b><br>
         • <b>Given</b> una cita médica reservada exitosamente,<br>
-        <b>When</b> el servicio externo de correo o SMS presenta indisponibilidad,<br>
-        <b>Then</b> el sistema registra la cita correctamente y encola la notificación para reintentar su envío automáticamente sin interrumpir la confirmación del turno.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el servicio externo de correo o SMS presenta indisponibilidad,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la cita correctamente y encola la notificación para reintentar su envío automáticamente sin interrumpir la confirmación del turno.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-10: Respuesta a Notificación de Adelanto de Cita -->
+<!-- US-10: Consulta y Cancelación de Citas por el Paciente -->
 <table>
   <thead>
     <tr>
@@ -784,20 +856,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>US-10</td>
       <td>Patient</td>
       <td>High</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
+      <td>EP2: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola</td>
+      <td colspan="3">Consulta de Citas Agendadas y Cancelación Voluntaria</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente citado en un intervalo posterior,<br>
-        <b>Quiero</b> responder a la notificación de propuesta de adelanto (aceptando o negando el cambio),<br>
-        <b>Para</b> ocupar el intervalo anterior que quedó libre o mantener mi turno programado originalmente.
+        <b>Como</b> Paciente titular,<br>
+        <b>Quiero</b> consultar el historial y estado de mis citas (propias o de menores a mi cargo - US-03) y cancelar un turno dentro de la anticipación mínima parametrizada por el hospital (US-17),<br>
+        <b>Para</b> liberar formalmente el espacio en la agenda médica cuando no sea posible asistir y posibilitar la reasignación del turno.
       </td>
     </tr>
     <tr>
@@ -805,28 +877,24 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Aceptación exitosa del cambio de intervalo</b><br>
-        • <b>Given</b> que un paciente recibe la notificación con la propuesta de adelantar su cita a un intervalo anterior disponible,<br>
-        <b>When</b> el paciente selecciona aceptar el cambio de horario,<br>
-        <b>Then</b> el sistema le asigna el nuevo intervalo de atención, libera su horario original para otros usuarios y confirma la reasignación.<br><br>
-        <b>Scenario 2: Rechazo/Negación del cambio de intervalo</b><br>
-        • <b>Given</b> que un paciente recibe la notificación con la propuesta de adelantar su cita,<br>
-        <b>When</b> el paciente selecciona denegar o rechazar el cambio,<br>
-        <b>Then</b> el sistema mantiene su cita intacta en el intervalo original y notifica la disponibilidad al siguiente paciente en cola.<br><br>
-        <b>Scenario 3: Expiración por falta de respuesta (Rechazo implícito)</b><br>
-        • <b>Given</b> la notificación de propuesta enviada con un tiempo límite de respuesta,<br>
-        <b>When</b> el paciente no responde dentro del lapso establecido,<br>
-        <b>Then</b> el sistema asume la negación del cambio, conserva la cita en su hora inicial y transmite la propuesta al posterior en cola.<br><br>
-        <b>Scenario 4: Intento de aceptación sobre un cupo ya asignado</b><br>
-        • <b>Given</b> que la propuesta de cambio fue enviada a más de un paciente,<br>
-        <b>When</b> el usuario intenta aceptar la propuesta pero el intervalo ya fue tomado por otro paciente,<br>
-        <b>Then</b> el sistema notifica que el horario libre ya no se encuentra disponible y mantiene su cita sin modificaciones.
+        <b>Scenario 1: Cancelación exitosa dentro del plazo límite permitido</b><br>
+        • <b>Given</b> una cita médica activa (del titular o de un menor vinculado) cuyo tiempo restante cumple con la regla de anticipación mínima configurada por la institución,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente efectúa la solicitud de cancelación,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a "Cancelado por el Paciente", libera la franja horaria en la agenda médica y emite el comprobante de cancelación al correo registrado.<br><br>
+        <b>Scenario 2: Denegación de cancelación por superación del límite temporal</b><br>
+        • <b>Given</b> una cita médica agendada cuyo margen de tiempo para cancelaciones ya ha expirado según la regla operativa del hospital,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta procesar la cancelación del turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e indica que la gestión debe realizarse de manera presencial o directa con el personal de admisión.<br><br>
+        <b>Scenario 3: Consulta de citas activas e históricas (Titular y Menores a cargo)</b><br>
+        • <b>Given</b> un paciente titular autenticado en el sistema,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> consulta el registro de turnos,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el desglose de citas programadas, finalizadas y canceladas, discriminando si corresponden al titular o a sus menores vinculados.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-11: Check-in Presencial mediante Código QR -->
+<!-- US-11: Respuesta a Propuesta de Adelanto de Cita -->
 <table>
   <thead>
     <tr>
@@ -839,9 +907,66 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-11</td>
-      <td>Patient / Admission Staff</td>
+      <td>Patient</td>
       <td>High</td>
-      <td>EP-04: Arrival & QR Check-in System</td>
+      <td>EP3: Reassignment Protocol</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Aceptación o Rechazo de Adelanto de Intervalo por Cupo Liberado</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Paciente con una cita reservada en un intervalo posterior,<br>
+        <b>Quiero</b> responder a la propuesta de adelanto (aceptando o rechazando el cambio),<br>
+        <b>Para</b> ocupar el intervalo anterior que quedó libre o mantener mi turno programado originalmente.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Aceptación exitosa del cambio de intervalo</b><br>
+        • <b>Given</b> que un paciente recibe la propuesta de adelantar su cita a un intervalo anterior disponible,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona aceptar el cambio de horario,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema le asigna el nuevo intervalo de atención, libera su horario original para otros usuarios y confirma la reasignación.<br><br>
+        <b>Scenario 2: Rechazo del cambio de intervalo</b><br>
+        • <b>Given</b> que un paciente recibe la propuesta de adelantar su cita,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona rechazar el cambio,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene su cita intacta en el intervalo original y notifica la disponibilidad al siguiente paciente de la cola de reserva.<br><br>
+        <b>Scenario 3: Expiración por falta de respuesta (Rechazo implícito)</b><br>
+        • <b>Given</b> la propuesta enviada con un tiempo límite de respuesta,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente no responde dentro del lapso establecido,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asume la negación del cambio, conserva la cita en su hora inicial y transmite la propuesta al siguiente paciente de la cola de reserva.<br><br>
+        <b>Scenario 4: Intento de aceptación sobre un cupo ya asignado</b><br>
+        • <b>Given</b> que la propuesta de cambio fue enviada a más de un paciente,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta aceptar la propuesta pero el intervalo ya fue tomado por otro paciente,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema notifica que el horario libre ya no se encuentra disponible y mantiene su cita sin modificaciones.<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-12: Check-in Presencial mediante Código QR -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-12</td>
+      <td>Patient</td>
+      <td>High</td>
+      <td>EP4: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -864,26 +989,26 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Check-in exitoso dentro de la ventana de tolerancia del hospital</b><br>
         • <b>Given</b> que un paciente con cita agendada se presenta en el establecimiento dentro del intervalo de tolerancia parametrizado por el hospital,<br>
-        <b>When</b> procesa la validación del código QR presencial,<br>
-        <b>Then</b> el sistema valida la cita, cambia el estado del turno a "Presente" y lo ingresa formalmente en la cola de atención del médico.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> procesa la validación del código QR presencial,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida la cita, cambia el estado del turno a "Presente" y lo ingresa formalmente en la cola de atención del médico.<br><br>
         <b>Scenario 2: Check-in exitoso para un menor de edad a cargo (US-03)</b><br>
         • <b>Given</b> un paciente titular autenticado que acompaña a su menor registrado con cita en el intervalo activo,<br>
-        <b>When</b> procesa el código QR seleccionando la cita del menor,<br>
-        <b>Then</b> el sistema confirma la presencia del menor y actualiza el estado de su turno a "Presente".<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> procesa el código QR seleccionando la cita del menor,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema confirma la presencia del menor y actualiza el estado de su turno a "Presente".<br><br>
         <b>Scenario 3: Denegación por tolerancia vencida (Llegada tardía)</b><br>
         • <b>Given</b> que el tiempo de llegada supera el margen de tolerancia máximo permitido por la configuración del hospital,<br>
-        <b>When</b> el paciente intenta registrar la llegada mediante el código QR,<br>
-        <b>Then</b> el sistema deniega el check-in, marca la cita como "Inasistencia por Tolerancia Vencida" e inicia el protocolo de liberación de cupo (US-10).<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta registrar la llegada mediante el código QR,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el check-in, marca la cita como "Inasistencia por Tolerancia Vencida" e inicia el protocolo de liberación de cupo (US-16).<br><br>
         <b>Scenario 4: Intento de Check-in fuera de la ventana horaria (Llegada muy anticipada o fecha incorrecta)</b><br>
         • <b>Given</b> una cita médica programada para un horario o fecha posterior fuera del margen de anticipación permitido,<br>
-        <b>When</b> el usuario intenta procesar el código QR,<br>
-        <b>Then</b> el sistema rechaza la confirmación notificando que aún no se habilita la ventana de registro para dicho turno.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta procesar el código QR,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la confirmación notificando que aún no se habilita la ventana de registro para dicho turno.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-12: Emisión de Ticket Digital de Atención -->
+<!-- US-13: Emisión de Ticket Digital de Atención -->
 <table>
   <thead>
     <tr>
@@ -895,10 +1020,10 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </thead>
   <tbody>
     <tr>
-      <td>US-12</td>
+      <td>US-13</td>
       <td>Patient</td>
       <td>Medium</td>
-      <td>EP-04: Arrival & QR Check-in System</td>
+      <td>EP4: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -921,75 +1046,22 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Generación exitosa de ticket digital para el titular</b><br>
         • <b>Given</b> que un paciente realiza la confirmación de llegada (check-in) exitosamente,<br>
-        • <b>When</b> el sistema procesa el registro de presencia,<br>
-        • <b>Then</b> emite el ticket digital con un código único de llamado, indicando la especialidad, el médico asignado, la sala de espera y el consultorio correspondiente.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa el registro de presencia,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema emite el ticket digital con un código único de llamado, indicando la especialidad, el médico asignado, la sala de espera y el consultorio correspondiente.<br><br>
         <b>Scenario 2: Generación de ticket digital para un menor de edad (US-03)</b><br>
-        • <b>Given</b> que el apoderado confirma el check-in para la cita de un menor a su cargo,<br>
-        • <b>When</b> el sistema valida la llegada,<br>
-        • <b>Then</b> genera el ticket digital vinculando el identificador de llamado a la historia del menor y mostrando al titular como adulto responsable.<br><br>
+        • <b>Given</b> que el paciente titular confirma el check-in para la cita de un menor a su cargo,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida la llegada,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera el ticket digital vinculando el identificador de llamado a la historia del menor y mostrando al titular como adulto responsable.<br><br>
         <b>Scenario 3: Denegación de emisión por check-in no confirmado</b><br>
         • <b>Given</b> una cita que no ha registrado el check-in o se encuentra fuera de la ventana de tolerancia,<br>
-        • <b>When</b> se intenta generar el ticket de atención,<br>
-        • <b>Then</b> el sistema bloquea la emisión e informa que se requiere confirmar la presencia presencial previamente.
+        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta generar el ticket de atención,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la emisión e informa que se requiere confirmar la presencia presencial previamente.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-12: Ejecución del Protocolo de Ausencia y Liberación de Cupo -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-13</td>
-      <td>Admission Staff</td>
-      <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Personal Administrativo,<br>
-        <b>Quiero</b> que el sistema declare la inasistencia de un paciente cuando este no acude al ser llamado tras exceder el tiempo de espera configurado por el hospital,<br>
-        <b>Para</b> dar por perdido su turno y abrir inmediatamente el cupo en el intervalo para los pacientes de los siguientes horarios.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Pérdida de turno y liberación de cupo por inasistencia al llamado</b><br>
-        • <b>Given</b> que un paciente con cita (titular o menor a cargo) es llamado a consultorio y transcurre el tiempo límite de tolerancia determinado por el hospital sin que se ingrese a la atención,<br>
-        • <b>When</b> se registra o procesa la inasistencia en el turno,<br>
-        • <b>Then</b> el sistema cambia el estado de la cita a "Ausente / Turno Perdido", libera definitivamente el cupo del intervalo y dispara la notificación de propuesta de adelanto a los pacientes de los intervalos posteriores (US-10).<br><br>
-        <b>Scenario 2: Intento de atención sobre un turno ya declarado como ausente</b><br>
-        • <b>Given</b> un paciente cuyo turno fue marcado como "Ausente / Turno Perdido" por exceder el tiempo hospitalario,<br>
-        • <b>When</b> se intenta iniciar la consulta médica para dicha cita,<br>
-        • <b>Then</b> el sistema rechaza la operación informando la pérdida del turno y sugiriendo la reprogramación del paciente.<br><br>
-        <b>Scenario 3: Cancelación del llamado por presencia a tiempo dentro del margen hospitalario</b><br>
-        • <b>Given</b> un paciente llamado que ingresa al consultorio dentro del tiempo determinado por el hospital,<br>
-        • <b>When</b> se valida su ingreso a la atención médica,<br>
-        • <b>Then</b> el sistema cambia el estado a "En Atención" y detiene el conteo del protocolo de ausencia.
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- US-13: Configuración de Parámetros Operativos del Hospital -->
+<!-- US-14: Consulta de Posición en la Cola de Asistencia -->
 <table>
   <thead>
     <tr>
@@ -1002,22 +1074,22 @@ En esta sección definimos la especificación formal de requisitos para la plata
   <tbody>
     <tr>
       <td>US-14</td>
-      <td>Super Admin</td>
+      <td>Patient</td>
       <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
+      <td>EP4: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital</td>
+      <td colspan="3">Consulta de Posición en la Cola de Asistencia</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Administrador,<br>
-        <b>Quiero</b> parametrizar los intervalos de atención (fraccionamiento 1 a 1), el máximo de pacientes por bloque, la ventana de tolerancia para check-in (hora límite de llegada), el margen máximo para la recepción de cupos adelantados, la hora límite para reservar citas y la anticipación máxima requerida para cancelaciones,<br>
-        <b>Para</b> adaptar el comportamiento dinámico del sistema a la capacidad operativa y políticas de la institución.
+        <b>Como</b> Paciente presente en el establecimiento,<br>
+        <b>Quiero</b> consultar mi posición actual en la cola de asistencia en tiempo real,<br>
+        <b>Para</b> estimar el momento aproximado en que seré llamado a consultorio.
       </td>
     </tr>
     <tr>
@@ -1025,24 +1097,24 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Actualización exitosa de la configuración operativa global</b><br>
-        • <b>Given</b> un usuario autenticado con rol de Administrador,<br>
-        • <b>When</b> actualiza y guarda los valores de intervalos de tiempo, límite de tolerancia de llegada, horario de corte para reservas y plazo de cancelación,<br>
-        • <b>Then</b> el sistema persiste la nueva parametrización y la aplica de forma inmediata a la generación de agendas, cálculo de disponibilidad y validaciones de check-in.<br><br>
-        <b>Scenario 2: Rechazo por valores de configuración inválidos o inconsistentes</b><br>
-        • <b>Given</b> un Administrador modificando las reglas operativas,<br>
-        • <b>When</b> ingresa parámetros incoherentes (como una tolerancia de llegada superior a la duración del intervalo o una hora límite de cancelación posterior a la hora de la cita),<br>
-        • <b>Then</b> el sistema bloquea el registro de la configuración e informa sobre los campos en conflicto.<br><br>
-        <b>Scenario 3: Preservación de citas agendadas ante cambios de configuración</b><br>
-        • <b>Given</b> la modificación de los intervalos u horarios operativos del hospital,<br>
-        • <b>When</b> se aplican los nuevos parámetros globales,<br>
-        • <b>Then</b> el sistema mantiene intactas las citas confirmadas con anterioridad y aplica las nuevas reglas únicamente a los nuevos bloques y turnos generados.
+        <b>Scenario 1: Consulta exitosa de la posición en cola</b><br>
+        • <b>Given</b> un paciente con check-in confirmado e ingreso a la cola de asistencia,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket o el estado de la cola,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su posición actual y el total de pacientes en la cola de asistencia, ordenados por su `checkInTimestamp`.<br><br>
+        <b>Scenario 2: Consulta sin check-in confirmado</b><br>
+        • <b>Given</b> un paciente que no ha confirmado su presencia en el establecimiento,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> intenta consultar su posición en la cola,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega la consulta indicando que no registra presencia en la cola de asistencia.<br><br>
+        <b>Scenario 3: Consulta de un turno ya finalizado</b><br>
+        • <b>Given</b> un paciente cuyo turno ya fue atendido o declarado ausente,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> consulta el estado de la cola,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que el paciente ya no se encuentra en la cola de asistencia.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 
-<!-- US-14: Consulta y Cancelación de Citas por el Paciente -->
+<!-- US-15: Notificación de Llamado a Consultorio -->
 <table>
   <thead>
     <tr>
@@ -1057,20 +1129,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>US-15</td>
       <td>Patient</td>
       <td>High</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP4: Arrival & QR Check-in System</td>
     </tr>
     <tr>
       <th>Title</th>
-      <td colspan="3">Consulta de Citas Agendadas y Cancelación Voluntaria</td>
+      <td colspan="3">Notificación de Llamado a Consultorio</td>
     </tr>
     <tr>
       <th colspan="4">Description</th>
     </tr>
     <tr>
       <td colspan="4">
-        <b>Como</b> Paciente titular,<br>
-        <b>Quiero</b> consultar el historial y estado de mis citas (propias o de menores a mi cargo - US-03) y cancelar un turno dentro de la anticipación mínima parametrizada por el hospital (US-13),<br>
-        <b>Para</b> liberar formalmente el espacio en la agenda médica cuando no sea posible asistir y posibilitar la reasignación del turno.
+        <b>Como</b> Paciente en la cola de asistencia,<br>
+        <b>Quiero</b> recibir una notificación automática cuando llegue mi turno,<br>
+        <b>Para</b> dirigirme al consultorio sin depender de un aviso manual del personal.
       </td>
     </tr>
     <tr>
@@ -1078,18 +1150,173 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
     <tr>
       <td colspan="4">
-        <b>Scenario 1: Cancelación exitosa dentro del plazo límite permitido</b><br>
-        • <b>Given</b> una cita médica activa (del titular o de un menor vinculado) cuyo tiempo restante cumple con la regla de anticipación mínima configurada por la institución,<br>
-        • <b>When</b> el paciente efectúa la solicitud de cancelación,<br>
-        • <b>Then</b> el sistema cambia el estado del turno a "Cancelado por el Paciente", libera la franja horaria en la agenda médica y emite el comprobante de cancelación al correo registrado.<br><br>
-        <b>Scenario 2: Denegación de cancelación por superación del límite temporal</b><br>
-        • <b>Given</b> una cita médica agendada cuyo margen de tiempo para cancelaciones ya ha expirado según la regla operativa del hospital,<br>
-        • <b>When</b> el paciente intenta procesar la cancelación del turno,<br>
-        • <b>Then</b> el sistema rechaza la solicitud e indica que la gestión debe realizarse de manera presencial o directa con el personal de admisión.<br><br>
-        <b>Scenario 3: Consulta de citas activas e históricas (Titular y Menores a cargo)</b><br>
-        • <b>Given</b> un paciente titular autenticado en el sistema,<br>
-        • <b>When</b> consulta el registro de turnos,<br>
-        • <b>Then</b> el sistema retorna el desglose de citas programadas, finalizadas y canceladas, discriminando si corresponden al titular o a sus menores vinculados.
+        <b>Scenario 1: Envío automático de la notificación de llamado</b><br>
+        • <b>Given</b> un paciente en la cola de asistencia en estado de espera y su posición es la siguiente a ser llamada,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema habilita su turno según el orden de `checkInTimestamp`,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía automáticamente una notificación (push/SMS) indicando el llamado y la sala o consultorio asignado.<br><br>
+        <b>Scenario 2: Reordenamiento de la cola por ausencia</b><br>
+        • <b>Given</b> un paciente ausente que es retirado de la cola de asistencia,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema reordena la cola de espera,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema recalcula la posición del siguiente paciente y le envía la notificación de llamado que le corresponde.<br><br>
+        <b>Scenario 3: Contingencia ante indisponibilidad del canal de notificación</b><br>
+        • <b>Given</b> un paciente cuyo turno fue habilitado para llamado,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el canal de notificación (push o SMS) se encuentra indisponible,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra el intento y reintenta el envío automáticamente sin interrumpir el avance de la cola de asistencia.<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-16: Ejecución del Protocolo de Ausencia y Liberación de Cupo -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-16</td>
+      <td>Admission Staff</td>
+      <td>High</td>
+      <td>EP5: Hospital Operations & System Configuration</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal de Admisión,<br>
+        <b>Quiero</b> que el sistema declare la inasistencia de un paciente cuando este no acude al ser llamado tras exceder el tiempo de espera configurado por el hospital,<br>
+        <b>Para</b> dar por perdido su turno y abrir inmediatamente el cupo en el intervalo para los pacientes de los siguientes horarios.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Pérdida de turno y liberación de cupo por inasistencia al llamado</b><br>
+        • <b>Given</b> que un paciente con cita (titular o menor a cargo) es llamado a consultorio y transcurre el tiempo límite de tolerancia determinado por el hospital sin que se ingrese a la atención,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se registra o procesa la inasistencia en el turno,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado de la cita a "Ausente / Turno Perdido", libera definitivamente el cupo del intervalo y dispara la propuesta de adelanto a los pacientes de la cola de reserva (US-11).<br><br>
+        <b>Scenario 2: Intento de atención sobre un turno ya declarado como ausente</b><br>
+        • <b>Given</b> un paciente cuyo turno fue marcado como "Ausente / Turno Perdido" por exceder el tiempo hospitalario,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta iniciar la consulta médica para dicha cita,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación informando la pérdida del turno y sugiriendo la reprogramación del paciente.<br><br>
+        <b>Scenario 3: Cancelación del llamado por presencia a tiempo dentro del margen hospitalario</b><br>
+        • <b>Given</b> un paciente llamado que ingresa al consultorio dentro del tiempo determinado por el hospital,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se valida su ingreso a la atención médica,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a "En Atención" y detiene el conteo del protocolo de ausencia.<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-17: Configuración de Parámetros Operativos del Hospital -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-17</td>
+      <td>Super Admin</td>
+      <td>High</td>
+      <td>EP5: Hospital Operations & System Configuration</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Super Admin,<br>
+        <b>Quiero</b> parametrizar los intervalos de atención (fraccionamiento 1 a 1), el máximo de pacientes por bloque, la ventana de tolerancia para check-in (hora límite de llegada), el margen máximo para la recepción de cupos adelantados, la hora límite para reservar citas y la anticipación máxima requerida para cancelaciones,<br>
+        <b>Para</b> adaptar el comportamiento dinámico del sistema a la capacidad operativa y políticas de la institución.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Actualización exitosa de la configuración operativa global</b><br>
+        • <b>Given</b> un Super Admin autenticado,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> actualiza y guarda los valores de intervalos de tiempo, límite de tolerancia de llegada, horario de corte para reservas y plazo de cancelación,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste la nueva parametrización y la aplica de forma inmediata a la generación de agendas, cálculo de disponibilidad y validaciones de check-in.<br><br>
+        <b>Scenario 2: Rechazo por valores de configuración inválidos o inconsistentes</b><br>
+        • <b>Given</b> un Super Admin modificando las reglas operativas,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> ingresa parámetros incoherentes (como una tolerancia de llegada superior a la duración del intervalo o una hora límite de cancelación posterior a la hora de la cita),<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el registro de la configuración e informa sobre los campos en conflicto.<br><br>
+        <b>Scenario 3: Preservación de citas agendadas ante cambios de configuración</b><br>
+        • <b>Given</b> la modificación de los intervalos u horarios operativos del hospital,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se aplican los nuevos parámetros globales,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene intactas las citas confirmadas con anterioridad y aplica las nuevas reglas únicamente a los nuevos bloques y turnos generados.<br><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- US-18: Visualización de Dashboard Operativo -->
+<table>
+  <thead>
+    <tr>
+      <th>Story ID</th>
+      <th>User</th>
+      <th>Priority</th>
+      <th>Epic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US-18</td>
+      <td>Admission Staff</td>
+      <td>High</td>
+      <td>EP5: Hospital Operations & System Configuration</td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td colspan="3">Visualización de Dashboard Operativo del Día</td>
+    </tr>
+    <tr>
+      <th colspan="4">Description</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Como</b> Personal de Admisión,<br>
+        <b>Quiero</b> visualizar un panel con las métricas operativas del día,<br>
+        <b>Para</b> monitorear el flujo de citas y las incidencias del establecimiento en tiempo real.
+      </td>
+    </tr>
+    <tr>
+      <th colspan="4">Acceptance Criteria</th>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <b>Scenario 1: Visualización de indicadores operativos del día</b><br>
+        • <b>Given</b> un Personal de Admisión autenticado,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> accede al dashboard operativo,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra las citas programadas del día, las citas pendientes de atención, las citas canceladas del día y las inasistencias registradas del día.<br><br>
+        <b>Scenario 2: Día sin actividad registrada</b><br>
+        • <b>Given</b> una fecha sin citas ni incidencias registradas,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el Personal de Admisión consulta el dashboard,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra todos los indicadores en cero.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1111,7 +1338,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>TECH-01</td>
       <td>Developer</td>
       <td>High</td>
-      <td>EP-01 / EP-02 / EP-03</td>
+      <td>EP1 / EP2 / EP3</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -1134,12 +1361,12 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Envío de correo electrónico transaccional via SMTP</b><br>
         • <b>Given</b> una solicitud de envío con la plantilla HTML y los datos dinámicos requeridos,<br>
-        • <b>When</b> el servicio invoca la interfaz de transporte SMTP,<br>
-        • <b>Then</b> la pasarela entrega el correo al destinatario y retorna una respuesta con estado `200 OK` y el ID del mensaje enviado.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el servicio invoca la interfaz de transporte SMTP,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> la pasarela entrega el correo al destinatario y retorna una respuesta con estado `200 OK` y el ID del mensaje enviado.<br><br>
         <b>Scenario 2: Envío de alerta push a dispositivo móvil vía FCM API</b><br>
         • <b>Given</b> un payload de notificación Push conteniendo el token del dispositivo destino,<br>
-        • <b>When</b> el servicio ejecuta la petición HTTP POST hacia la API de Firebase Cloud Messaging,<br>
-        • <b>Then</b> FCM responde con código `200 OK` confirmando la entrega del mensaje al dispositivo.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el servicio ejecuta la petición HTTP POST hacia la API de Firebase Cloud Messaging,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> FCM responde con código `200 OK` confirmando la entrega del mensaje al dispositivo.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1147,9 +1374,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 <br>
 
-<br>
-
-<!-- TECH-03: Endpoints API REST y OpenAPI -->
+<!-- TECH-02: Endpoints API REST y OpenAPI -->
 <table>
   <thead>
     <tr>
@@ -1164,7 +1389,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>TECH-02</td>
       <td>Developer</td>
       <td>High</td>
-      <td>EP-05: Hospital Operations & System Configuration</td>
+      <td>EP5: Hospital Operations & System Configuration</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -1186,17 +1411,17 @@ En esta sección definimos la especificación formal de requisitos para la plata
     <tr>
       <td colspan="4">
         <b>Scenario 1: Petición HTTP autenticada con rol autorizado (Request/Response Exitoso)</b><br>
-        • <b>Given</b> una solicitud HTTP `GET /api/v1/appointments` con un encabezado `Authorization: Bearer <JWT_VALIDO> </JWT_VALIDO>` que contiene el rol autorizado,<br>
-        • <b>When</b> el controlador procesa la petición,<br>
-        • <b>Then</b> retorna un código de estado `200 OK` junto con el payload JSON estandarizado y documentado en Swagger UI.<br><br>
+        • <b>Given</b> una solicitud HTTP `GET /api/v1/appointments` con un encabezado `Authorization: Bearer <JWT_VALIDO>` que contiene el rol autorizado,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el controlador procesa la petición,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> retorna un código de estado `200 OK` junto con el payload JSON estandarizado y documentado en Swagger UI.<br><br>
         <b>Scenario 2: Denegación de acceso por rol insuficiente o token inválido</b><br>
-        • <b>Given</b> una solicitud a un endpoint protegida enviada con un token caducado o sin el rol requerido,<br>
-        • <b>When</b> el middleware RBAC valida el token JWT,<br>
-        • <b>Then</b> interrumpe la petición y responde con código HTTP `401 Unauthorized` o `403 Forbidden` según la falla.<br><br>
+        • <b>Given</b> una solicitud a un endpoint protegido enviada con un token caducado o sin el rol requerido,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el middleware RBAC valida el token JWT,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema interrumpe la petición y responde con código HTTP `401 Unauthorized` o `403 Forbidden` según la falla.<br><br>
         <b>Scenario 3: Manejo estandarizado de errores de request (HTTP Status Codes)</b><br>
         • <b>Given</b> una petición HTTP POST con un cuerpo JSON malformado o faltante de campos obligatorios,<br>
-        • <b>When</b> el middleware de validación procesa el request,<br>
-        • <b>Then</b> la API responde con un código `400 Bad Request` indicando la lista detallada de errores de validación por campo.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el middleware de validación procesa el request,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> la API responde con un código `400 Bad Request` indicando la lista detallada de errores de validación por campo.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1204,7 +1429,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 <br>
 
-<!-- TECH-04: Cron Jobs para Control de Tolerancia -->
+<!-- TECH-03: Cron Jobs para Control de Tolerancia -->
 <table>
   <thead>
     <tr>
@@ -1219,7 +1444,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>TECH-03</td>
       <td>Developer</td>
       <td>Medium</td>
-      <td>EP-03: Dynamic Waitlist & Reassignment Protocol</td>
+      <td>EP3: Reassignment Protocol</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -1242,16 +1467,16 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Procesamiento y actualización masiva de citas expiradas</b><br>
         • <b>Given</b> la ejecución periódica programada de la tarea en segundo plano,<br>
-        • <b>When</b> el worker audita las citas del intervalo actual cuyo margen de tolerancia expiró sin confirmación de check-in,<br>
-        • <b>Then</b> actualiza el estado de la entidad a "Ausente" en la base de datos registrando el timestamp de la acción.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el worker audita las citas del intervalo actual cuyo margen de tolerancia expiró sin confirmación de check-in,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza el estado de la entidad a "Ausente" en la base de datos registrando el timestamp de la acción.<br><br>
         <b>Scenario 2: Disparo de eventos de reasignación tras detección de ausencia</b><br>
         • <b>Given</b> una cita médica marcada como "Ausente" por el worker,<br>
-        • <b>When</b> se confirma la persistencia del nuevo estado,<br>
-        • <b>Then</b> el worker publica el evento `AppointmentExpiredEvent` en la cola de mensajes para iniciar el protocolo de invitación a la lista de espera.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la persistencia del nuevo estado,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el worker publica el evento `AppointmentExpiredEvent` en la cola de mensajes para iniciar el protocolo de reasignación de cupos.<br><br>
         <b>Scenario 3: Bloqueo distribuido para evitar duplicidad de ejecución</b><br>
         • <b>Given</b> múltiples réplicas del servicio ejecutándose de manera concurrente,<br>
-        • <b>When</b> la tarea Cron se dispara simultáneamente en varios nodos,<br>
-        • <b>Then</b> el primer worker adquiere un bloqueo distribuido (Redis/Database Lock), evitando ejecuciones duplicadas sobre los mismos registros.
+        &nbsp;&nbsp;&nbsp;<b>When</b> la tarea Cron se dispara simultáneamente en varios nodos,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el primer worker adquiere un bloqueo distribuido (Redis/Database Lock), evitando ejecuciones duplicadas sobre los mismos registros.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1259,7 +1484,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 <br>
 
-<!-- TECH-05: Consumidor Asíncrono de Notificaciones -->
+<!-- TECH-04: Consumidor Asíncrono de Notificaciones -->
 <table>
   <thead>
     <tr>
@@ -1274,7 +1499,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>TECH-04</td>
       <td>Developer</td>
       <td>Medium</td>
-      <td>EP-02: Appointments & Booking Engine</td>
+      <td>EP2: Appointments & Booking Engine</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -1297,12 +1522,12 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Consumo y despacho exitoso del evento de reserva (Request/Response Event)</b><br>
         • <b>Given</b> el evento `AppointmentBookedEvent` publicado en la cola de notificaciones,<br>
-        • <b>When</b> el consumidor recupera el mensaje y genera la plantilla correspondiente,<br>
-        • <b>Then</b> efectúa el dispatch hacia el proveedor externo obteniendo un código de entrega exitoso y marcando el mensaje de la cola como procesado (`ACK`).<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el consumidor recupera el mensaje y genera la plantilla correspondiente,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema efectúa el dispatch hacia el proveedor externo obteniendo un código de entrega exitoso y marcando el mensaje de la cola como procesado (`ACK`).<br><br>
         <b>Scenario 2: Manejo de fallas temporales mediante Dead Letter Queue (DLQ)</b><br>
         • <b>Given</b> un fallo de conexión (5xx / Timeout) con la pasarela de notificaciones,<br>
-        • <b>When</b> el consumidor detecta la excepción durante el procesamiento,<br>
-        • <b>Then</b> aplica un reintento con *Exponential Backoff* y, si se supera el límite máximo de reintentos, transfiere el mensaje a la Dead Letter Queue (DLQ) registrando el log de auditoría.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el consumidor detecta la excepción durante el procesamiento,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica un reintento con *Exponential Backoff* y, si se supera el límite máximo de reintentos, transfiere el mensaje a la Dead Letter Queue (DLQ) registrando el log de auditoría.<br><br>
       </td>
     </tr>
   </tbody>
@@ -1310,7 +1535,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 <br>
 
-<!-- TECH-06: Endpoint de Integración API DNI -->
+<!-- TECH-05: Endpoint de Integración API DNI -->
 <table>
   <thead>
     <tr>
@@ -1325,7 +1550,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td>TECH-05</td>
       <td>Developer</td>
       <td>High</td>
-      <td>EP-01: Authentication & Identity Management</td>
+      <td>EP1: Authentication & Identity Management</td>
     </tr>
     <tr>
       <th>Title</th>
@@ -1348,62 +1573,66 @@ En esta sección definimos la especificación formal de requisitos para la plata
       <td colspan="4">
         <b>Scenario 1: Respuesta exitosa de validación de DNI (HTTP 200 OK)</b><br>
         • <b>Given</b> una solicitud `POST /api/v1/identity/verify-dni` conteniendo un DNI de 8 dígitos válido en el cuerpo JSON,<br>
-        • <b>When</b> la API consulta el servicio (o la capa de cache en memoria),<br>
-        • <b>Then</b> retorna un código de estado `200 OK` con los nombres y apellidos validados en el payload JSON.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> la API consulta el servicio (o la capa de cache en memoria),<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna un código de estado `200 OK` con los nombres y apellidos validados en el payload JSON.<br><br>
         <b>Scenario 2: Validación de formato de entrada (HTTP 400 Bad Request)</b><br>
         • <b>Given</b> una petición HTTP enviada con un DNI con formato incorrecto (menos de 8 dígitos o caracteres alfanuméricos),<br>
-        • <b>When</b> el middleware de validación procesa el request,<br>
-        • <b>Then</b> rechaza la petición respondiendo con un código `400 Bad Request` y el detalle del error de formato.<br><br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el middleware de validación procesa el request,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la petición respondiendo con un código `400 Bad Request` y el detalle del error de formato.<br><br>
         <b>Scenario 3: Respuesta ante caída o degradación del proveedor externo (HTTP 503 Service Unavailable)</b><br>
         • <b>Given</b> la API externa inactiva o con el patrón Circuit Breaker en estado abierto (`Open`),<br>
-        • <b>When</b> el frontend realiza la consulta de un DNI,<br>
-        • <b>Then</b> el endpoint responde con un código `503 Service Unavailable` adjuntando la bandera para permitir el registro condicional en el cliente.
+        &nbsp;&nbsp;&nbsp;<b>When</b> el frontend realiza la consulta de un DNI,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el endpoint responde con un código `503 Service Unavailable` adjuntando la bandera para permitir el registro condicional en el cliente.<br><br>
       </td>
     </tr>
   </tbody>
 </table>
 ---
 
-### 2.4.3. Impact Mapping
+### 2.4.2. Impact Mapping
 
 El mapa de impacto para nuestra plataforma de **gestión de citas médicas y control de sala de espera**, define una meta SMART: *«Optimizar la atención médica y reducir el tiempo de espera operativo; al primer año de despliegue contar con 15 clínicas afiliadas, 25 000 reservas procesadas y un 75% de confirmación de presencia vía QR»*. A partir de esta meta se explicitan los cambios de comportamiento esperados en los actores clave del sistema.
 
 Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisión** (gestión operativa y flujo en sala) y **Paciente** (reserva autónoma y confirmación de llegada). Para el primero, el mapa recoge necesidades relativas a visibilidad en tiempo real de pacientes confirmados, claridad en el llamado a consultorio, flexibilidad para aplicar prioridades o reasignaciones por imprevistos, y generación de métricas de ausentismo; para el segundo, autonomía para seleccionar especialidad y horario, confianza mediante el registro rápido por código QR sin filas presenciales, y claridad sobre su estado dentro de la cola de espera.
 
-A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, módulo de inscripción a lista de espera dinámica, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, controles manuales de reasignación y priorización preferencial, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional.
+A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de `bookingOrder`, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional.
 
 <p align="center"> <img src="https://i.imgur.com/0D0vHje.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
 
 ---
 
-### 2.4.4. Product Backlog
+### 2.4.3. Product Backlog
 
-El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints. La priorización sigue el principio de **valor de negocio primero**: las historias relacionadas con la propuesta de valor visible para el paciente (Landing Page, reserva de citas, check-in QR) y la operación crítica del establecimiento (gestión de cupos, lista de espera dinámica) se ubican en los primeros lugares, mientras que las historias de soporte técnico y configuración avanzada se postergan a Sprints posteriores.
+El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints. La priorización sigue el principio de **valor de negocio primero**: las historias relacionadas con la propuesta de valor visible para el paciente (Landing Page, reserva de citas, check-in QR) y la operación crítica del establecimiento (gestión de cupos, reasignación de turnos liberados y dashboard operativo) se ubican en los primeros lugares, mientras que las historias de soporte técnico y configuración avanzada se postergan a Sprints posteriores.
 
 #### Tabla del Product Backlog
 
 | # Orden | User Story Id | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | US-07 | Visualización de Calendario y Horarios Disponibles | 5 | Sprint 1 |
-| 2 | US-08 | Reserva de Cita Médica para Titular o Menor de Edad | 8 | Sprint 1 |
-| 3 | US-01 | Creación de Cuenta de Paciente con Verificación de Identidad por DNI | 5 | Sprint 1 |
-| 4 | US-06 | Inicio de Sesión por Rol | 3 | Sprint 1 |
-| 5 | US-09 | Notificación de Cita Confirmada o Reasignada | 3 | Sprint 1 |
-| 6 | US-11 | Registro de Llegada (Check-in) mediante Código QR | 8 | Sprint 2 |
-| 7 | US-12 | Emisión de Ticket Digital de Atención | 3 | Sprint 2 |
-| 8 | US-14 | Consulta de Citas Agendadas y Cancelación Voluntaria | 5 | Sprint 2 |
-| 9 | US-10 | Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola | 8 | Sprint 2 |
-| 10 | US-03 | Registro de Pacientes Menores de Edad (Niños) | 3 | Sprint 2 |
-| 11 | US-12 (TECH) | Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo | 5 | Sprint 3 |
-| 12 | US-13 | Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital | 8 | Sprint 3 |
-| 13 | US-02 | Creación de Cuenta de Personal Administrativo | 3 | Sprint 3 |
-| 14 | US-04 | Recuperación de Contraseña para Usuarios | 2 | Sprint 3 |
-| 15 | US-05 | Edición de Información Personal | 2 | Sprint 3 |
-| 16 | TECH-01 | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5 | Sprint 3 |
-| 17 | TECH-02 | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC | 8 | Sprint 3 |
-| 18 | TECH-03 | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias | 5 | Sprint 4 |
-| 19 | TECH-04 | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas | 5 | Sprint 4 |
-| 20 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
+| 1 | US-00 | Visualización de Propuesta de Valor en Landing Page | 2 | Sprint 1 |
+| 2 | US-07 | Visualización de Calendario y Horarios Disponibles | 5 | Sprint 1 |
+| 3 | US-08 | Reserva de Cita Médica para Titular o Menor de Edad | 8 | Sprint 1 |
+| 4 | US-01 | Creación de Cuenta de Paciente con Verificación de Identidad por DNI | 5 | Sprint 1 |
+| 5 | US-06 | Inicio de Sesión por Rol | 3 | Sprint 1 |
+| 6 | US-09 | Notificación de Cita Confirmada o Reasignada | 3 | Sprint 1 |
+| 7 | US-12 | Registro de Llegada (Check-in) mediante Código QR | 8 | Sprint 2 |
+| 8 | US-13 | Emisión de Ticket Digital de Atención | 3 | Sprint 2 |
+| 9 | US-14 | Consulta de Posición en la Cola de Asistencia | 3 | Sprint 2 |
+| 10 | US-10 | Consulta de Citas Agendadas y Cancelación Voluntaria | 5 | Sprint 2 |
+| 11 | US-11 | Aceptación o Rechazo de Adelanto de Intervalo por Cupo Liberado | 8 | Sprint 2 |
+| 12 | US-03 | Registro y Vinculación de Pacientes Menores de Edad | 3 | Sprint 2 |
+| 13 | US-15 | Notificación de Llamado a Consultorio | 3 | Sprint 2 |
+| 14 | US-16 | Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo | 5 | Sprint 3 |
+| 15 | US-17 | Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital | 8 | Sprint 3 |
+| 16 | US-02 | Creación de Cuenta de Personal Administrativo | 3 | Sprint 3 |
+| 17 | US-04 | Recuperación de Contraseña | 2 | Sprint 3 |
+| 18 | US-05 | Edición de Información Personal | 2 | Sprint 3 |
+| 19 | US-18 | Visualización de Dashboard Operativo del Día | 5 | Sprint 3 |
+| 20 | TECH-01 | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5 | Sprint 3 |
+| 21 | TECH-02 | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC | 8 | Sprint 3 |
+| 22 | TECH-03 | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias | 5 | Sprint 4 |
+| 23 | TECH-04 | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas | 5 | Sprint 4 |
+| 24 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
 
 
 ## 2.5. Strategic-Level Domain-Driven Design
@@ -1428,13 +1657,13 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
   <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%"/>
 </p>
 
-**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `bookingOrder`** (que determina la prioridad en la lista de espera) y el **timeout de la waitlist** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **cola de asistencia** y la **lista de espera**.
+**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `bookingOrder`** (que determina la prioridad en la cola de reserva) y el **timeout de la propuesta de reasignación** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **cola de asistencia** y la **cola de reserva**.
 
 <p align="center">
   <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
 </p>
 
-**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Asignar bookingOrder`, `Agregar a cola de asistencia` y `Llamar siguiente paciente`; las policies `Cuando se libera un cupo, notificar al paciente con menor bookingOrder` y `Cuando expira el timeout, pasar al siguiente paciente de la lista`; y los read models `Cola de asistencia` y `Lista de espera`.
+**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Asignar bookingOrder`, `Agregar a cola de asistencia` y `Llamar siguiente paciente`; las policies `Cuando se libera un cupo, notificar al paciente con menor bookingOrder` y `Cuando expira el timeout, pasar al siguiente paciente de la lista`; y los read models `Cola de asistencia` y `Cola de reserva`.
 
 <p align="center">
   <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
@@ -1447,7 +1676,7 @@ A partir del modelado realizado en el EventStorming, se llevó a cabo una sesió
 
 Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
 
-Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
+Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la cola de reserva. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
 
 Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
 
@@ -1455,16 +1684,16 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 | :--- | :--- | :--- | :--- |
 | 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Cuenta creada, Sesión iniciada, Menor vinculado |
 | 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada. | Cita solicitada, Cupo verificado, Cita reservada, Booking Order asignado, Cita cancelada |
-| 3 | **Dynamic Waitlist & Reassignment** | Gestionar la lista de espera dinámica y la reasignación de cupos liberados, ofreciendo las propuestas en orden de `bookingOrder`. | Cupo liberado, Cita reasignada, Reasignación expirada |
+| 3 | **Reassignment** | Gestionar la cola de reserva y la reasignación de cupos liberados, ofreciendo las propuestas en orden de `bookingOrder`. | Cupo liberado, Cita reasignada, Reasignación expirada |
 | 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente, emitir el ticket digital de atención y gestionar la `Attendance Queue`. | Check-in realizado, Paciente en cola de asistencia, Paciente llamado, Ticket emitido, Paciente ausente |
 | 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Reglas actualizadas, Reporte generado |
 
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery:
 
 - **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento"*.
-- **`Dynamic Waitlist & Reassignment`:** se incorporan los conceptos `Waitlist Entry` (entrada ordenada por `bookingOrder`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Waitlist Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
+- **`Reassignment`:** se incorporan los conceptos `Reassignment Offer` (entrada ordenada por `bookingOrder`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Reassignment Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
 - **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Cola de asistencia ordenada por `checkInTimestamp`"*.
-- **`Hospital Operations & Configuration`:** se incorpora el parámetro `waitlistResponseTimeout` (y opcionalmente `cascadeWaitlistEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
+- **`Hospital Operations & Configuration`:** se incorpora el parámetro `reassignmentResponseTimeoutMin` (y opcionalmente `cascadeReassignmentEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
@@ -1491,7 +1720,7 @@ El paciente solicita crear una nueva cuenta en el sistema ingresando su DNI y da
 
 **Flow 2: Reserva de cita médica para el titular**
 
-El paciente inicia sesión en la aplicación y selecciona una especialidad médica. El **Appointments & Booking** consulta el `Calendario de cupos` y verifica la disponibilidad de horarios. El paciente selecciona un `Time Slot` disponible y confirma la reserva. El **Appointments & Booking** registra la cita, asigna un `bookingOrder` único por especialidad, fecha y establecimiento, emite el evento `Cita reservada` y envía una notificación de confirmación al paciente. Si no hay cupo disponible, el sistema registra al paciente en la lista de espera con su respectivo `bookingOrder`.
+El paciente inicia sesión en la aplicación y selecciona una especialidad médica. El **Appointments & Booking** consulta el `Calendario de cupos` y verifica la disponibilidad de horarios. El paciente selecciona un `Time Slot` disponible y confirma la reserva. El **Appointments & Booking** registra la cita, asigna un `bookingOrder` único por especialidad, fecha y establecimiento, emite el evento `Cita reservada` y envía una notificación de confirmación al paciente.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1503,7 +1732,6 @@ El paciente inicia sesión en la aplicación y selecciona una especialidad médi
 | 6 | Appointments & Booking | Registra cita | Cita reservada | Appointments & Booking |
 | 7 | Appointments & Booking | Asigna bookingOrder | Booking Order asignado | Appointments & Booking |
 | 8 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
-| 9 | Appointments & Booking | Registra en lista de espera (si no hay cupo) | Waitlist Entry | Dynamic Waitlist & Reassignment |
 
 **Flow 3: Reserva de cita médica para un menor a cargo**
 
@@ -1537,47 +1765,47 @@ El paciente llega al establecimiento de salud con su cita programada. El **Arriv
 
 **Flow 5: Cancelación de cita y liberación de cupo**
 
-El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y transfiere el cupo al **Dynamic Waitlist & Reassignment**. Este emite el evento `Cupo liberado` y notifica al paciente con el **menor `bookingOrder`** de la `Lista de espera` correspondiente. Si el paciente acepta la propuesta dentro del `waitlistResponseTimeout`, se registra el evento `Cita reasignada`. Si rechaza o no responde, se notifica al siguiente paciente con menor `bookingOrder`. Si nadie acepta y `cascadeWaitlistEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
+El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y transfiere el cupo al **Reassignment**. Este emite el evento `Cupo liberado` y notifica al paciente con el **menor `bookingOrder`** de la `Cola de reserva` correspondiente. Si el paciente acepta la propuesta dentro del `reassignmentResponseTimeoutMin`, se registra el evento `Cita reasignada`. Si rechaza o no responde, se notifica al siguiente paciente con menor `bookingOrder`. Si nadie acepta y `cascadeReassignmentEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Patient | Cancela cita | Cita activa | Appointments & Booking |
 | 2 | Appointments & Booking | Verifica plazo | Reglas de cancelación | Appointments & Booking |
 | 3 | Appointments & Booking | Registra cancelación | Cita cancelada | Appointments & Booking |
-| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Dynamic Waitlist & Reassignment |
-| 5 | Dynamic Waitlist & Reassignment | Notifica al menor bookingOrder | Waitlist Offer Sent | Dynamic Waitlist & Reassignment |
-| 6 | Patient | Acepta propuesta | Waitlist Offer Accepted | Dynamic Waitlist & Reassignment |
-| 7 | Dynamic Waitlist & Reassignment | Registra reasignación | Cita reasignada | Dynamic Waitlist & Reassignment |
-| 8 | Dynamic Waitlist & Reassignment | Expira propuesta (si no responde) | Waitlist Offer Expired | Dynamic Waitlist & Reassignment |
-| 9 | Dynamic Waitlist & Reassignment | Activa cascada (si nadie acepta) | Cascade Reassignment | Dynamic Waitlist & Reassignment |
+| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Reassignment |
+| 5 | Reassignment | Notifica al menor bookingOrder | ReassignmentOfferSent | Reassignment |
+| 6 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
+| 7 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
+| 8 | Reassignment | Expira propuesta (si no responde) | ReassignmentOfferExpired | Reassignment |
+| 9 | Reassignment | Activa cascada (si nadie acepta) | Cascade Reassignment | Reassignment |
 
 **Flow 6: Declaración de ausencia por vencimiento de tolerancia**
 
-El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso. El sistema emite el evento `Paciente ausente` y registra el turno como perdido. El **Dynamic Waitlist & Reassignment** libera el cupo y notifica al paciente con el **menor `bookingOrder`** de la lista de espera, iniciando el protocolo de reasignación. Si nadie acepta dentro del `waitlistResponseTimeout`, se activa la cascada si corresponde.
+El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso. El sistema emite el evento `Paciente ausente` y registra el turno como perdido. El **Reassignment** libera el cupo y notifica al paciente con el **menor `bookingOrder`** de la cola de reserva, iniciando el protocolo de reasignación. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, se activa la cascada si corresponde.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Admission Staff | Llama al paciente | — | Arrival & QR Check-in |
 | 2 | Arrival & QR Check-in | Verifica tolerancia | Tiempo de tolerancia | Arrival & QR Check-in |
 | 3 | Arrival & QR Check-in | Declara ausencia | Paciente ausente | Arrival & QR Check-in |
-| 4 | Arrival & QR Check-in | Libera cupo | Cupo liberado | Dynamic Waitlist & Reassignment |
-| 5 | Dynamic Waitlist & Reassignment | Notifica al menor bookingOrder | Waitlist Offer Sent | Dynamic Waitlist & Reassignment |
-| 6 | Patient | Acepta propuesta | Waitlist Offer Accepted | Dynamic Waitlist & Reassignment |
-| 7 | Dynamic Waitlist & Reassignment | Registra reasignación | Cita reasignada | Dynamic Waitlist & Reassignment |
+| 4 | Arrival & QR Check-in | Libera cupo | Cupo liberado | Reassignment |
+| 5 | Reassignment | Notifica al menor bookingOrder | ReassignmentOfferSent | Reassignment |
+| 6 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
+| 7 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
 
 **Flow 7: Configuración operativa del establecimiento**
 
-El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `waitlistResponseTimeout`, el `cascadeWaitlistEnabled` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
+El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `reassignmentResponseTimeoutMin`, el `cascadeReassignmentEnabled` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Super Admin | Accede a configuración | Panel de administración | Hospital Operations & Configuration |
-| 2 | Super Admin | Parametriza reglas | Intervalos, tolerancias, waitlistResponseTimeout, cascadeWaitlistEnabled | Hospital Operations & Configuration |
+| 2 | Super Admin | Parametriza reglas | Intervalos, tolerancias, reassignmentResponseTimeoutMin, cascadeReassignmentEnabled | Hospital Operations & Configuration |
 | 3 | Hospital Operations & Configuration | Actualiza parámetros | Reglas actualizadas | Hospital Operations & Configuration |
 | 4 | Hospital Operations & Configuration | Aplica cambios | Nuevos bloques y turnos | Hospital Operations & Configuration |
 | 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
 
-Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa. En particular, se evidencia que la **cola por pedido de cita** se gestiona como atributo dentro de `Appointments & Booking` y se consume desde `Dynamic Waitlist & Reassignment` para determinar la prioridad de reasignación, mientras que la **cola de asistencia** se gestiona como agregado dentro de `Arrival & QR Check-in` para ordenar el llamado a consultorio el día de la cita.
+Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa. En particular, se evidencia que la **cola por pedido de cita** se gestiona como atributo dentro de `Appointments & Booking` y se consume desde `Reassignment` para determinar la prioridad de reasignación, mientras que la **cola de asistencia** se gestiona como agregado dentro de `Arrival & QR Check-in` para ordenar el llamado a consultorio el día de la cita.
 
 
 #### 2.5.1.3. Bounded Context Canvases
@@ -1632,7 +1860,7 @@ El contexto está bien delimitado y desacoplado del resto de bounded contexts. S
 
 **Context Overview Definition**
 
-Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la lista de espera dinámica.
+Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva.
 
 **Capability Analysis**
 
@@ -1655,7 +1883,7 @@ Depende de Identity & Access Management para validar la sesión del usuario, de 
 
 **Design Critique**
 
-El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. La incorporación del `bookingOrder` como atributo le permite alimentar al contexto `Dynamic Waitlist & Reassignment` con un criterio de prioridad objetivo y trazable. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
+El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. La incorporación del `bookingOrder` como atributo le permite alimentar al contexto `Reassignment` con un criterio de prioridad objetivo y trazable. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
@@ -1664,22 +1892,22 @@ El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de 
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Patient · **Messages:** Búsqueda de disponibilidad y reserva <br> **Collaborator:** Hospital Operations & Configuration · **Messages:** Parámetros operativos |
-| **Outbound Communication** | **Messages:** Cita reservada (con `bookingOrder`) · **Collaborator:** Patient, Dynamic Waitlist & Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
-| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Booking Order:** Número secuencial que representa el orden en que se solicitó una cita. Determina la prioridad en la lista de espera. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
+| **Outbound Communication** | **Messages:** Cita reservada (con `bookingOrder`) · **Collaborator:** Patient, Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
+| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Booking Order:** Número secuencial que representa el orden en que se solicitó una cita. Determina la prioridad en la cola de reserva. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
 | **Business Decisions** | Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento. <br> No se permite reservar dos citas en el mismo intervalo de tiempo para el mismo paciente. <br> Las cancelaciones solo se permiten dentro del plazo configurado por el hospital. <br> Un menor solo puede tener una cita activa en el mismo intervalo. <br> La confirmación de reserva se envía al correo del titular, incluso si la cita es para un menor. |
 | **Assumptions** | Los establecimientos publican su catálogo de especialidades y cupos en el sistema. <br> El paciente cuenta con un dispositivo con acceso a internet para reservar. |
 | **Verification Metrics** | Número de citas reservadas por día. <br> Tasa de cancelación dentro del plazo permitido. <br> Porcentaje de reservas realizadas sin asistencia técnica. |
 | **Open Questions** | ¿Se permitirá reprogramación automática de citas en futuras versiones? <br> ¿Cómo se gestionará la sobreventa de cupos en caso de error del sistema? |
 
-## Bounded Context Canvas – Dynamic Waitlist & Reassignment
+## Bounded Context Canvas – Reassignment
 
 **Context Overview Definition**
 
-Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. Si nadie acepta dentro del `waitlistResponseTimeout`, y `cascadeWaitlistEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
+Gestiona la cola de reserva del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, y `cascadeReassignmentEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
 
 **Capability Analysis**
 
-- Registro de pacientes en lista de espera por especialidad.
+- Registro de pacientes en cola de reserva por especialidad.
 - Detección de cupos liberados por cancelación o ausencia.
 - Envío de propuestas de adelanto al paciente con menor `bookingOrder`.
 - Reasignación automática de cupos aceptados.
@@ -1694,7 +1922,7 @@ Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados 
 
 **Dependencies Capture**
 
-Depende de Appointments & Booking para recibir los eventos de cancelación, de Arrival & QR Check-in para recibir los eventos de ausencia, y del sistema de notificaciones para enviar las propuestas a los pacientes en espera.
+Depende de Appointments & Booking para recibir los eventos de cancelación, de Arrival & QR Check-in para recibir los eventos de ausencia, y del sistema de notificaciones para enviar las propuestas a los pacientes de la cola de reserva.
 
 **Design Critique**
 
@@ -1702,15 +1930,15 @@ El contexto está bien delimitado y su lógica de reasignación es altamente aut
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
-| **Name** | Dynamic Waitlist & Reassignment |
-| **Purpose** | Gestiona la lista de espera dinámica del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes en espera. La reasignación se ofrece por orden de `bookingOrder`. Si nadie acepta dentro del `waitlistResponseTimeout`, y `cascadeWaitlistEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. |
+| **Name** | Reassignment |
+| **Purpose** | Gestiona la cola de reserva del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, y `cascadeReassignmentEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. |
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Appointments & Booking · **Messages:** Cita cancelada <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Paciente ausente <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
-| **Outbound Communication** | **Messages:** Waitlist Offer Sent · **Collaborator:** Patient en lista de espera <br> **Messages:** Waitlist Offer Accepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Waitlist Offer Expired · **Collaborator:** Patient <br> **Messages:** Cascade Reassignment · **Collaborator:** Appointments & Booking |
-| **Ubiquitous Language** | **Dynamic Waitlist:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Waitlist Entry:** Entrada en la lista de espera dinámica, ordenada por `bookingOrder`. <br> **Cascade Reassignment:** Reasignación en cascada: si nadie en la lista de espera acepta, el cupo pasa al siguiente `Time Slot` de la misma especialidad y fecha. <br> **Waitlist Response Timeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente en espera. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
-| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> Toda propuesta de adelanto expira automáticamente tras el `waitlistResponseTimeout` configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si nadie en la lista de espera acepta y `cascadeWaitlistEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. <br> La cascada solo aplica dentro del mismo día y especialidad. |
-| **Assumptions** | Los pacientes en lista de espera tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
+| **Outbound Communication** | **Messages:** ReassignmentOfferSent · **Collaborator:** Patient en cola de reserva <br> **Messages:** ReassignmentOfferAccepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** ReassignmentOfferExpired · **Collaborator:** Patient <br> **Messages:** Cascade Reassignment · **Collaborator:** Appointments & Booking |
+| **Ubiquitous Language** | **Reassignment:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Reassignment Offer:** Entrada en la cola de reserva, ordenada por `bookingOrder`. <br> **Cascade Reassignment:** Reasignación en cascada: si nadie en la cola de reserva acepta, el cupo pasa al siguiente `Time Slot` de la misma especialidad y fecha. <br> **Reassignment Response Timeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente de la cola de reserva. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
+| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> Toda propuesta de adelanto expira automáticamente tras el `reassignmentResponseTimeoutMin` configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si nadie en la cola de reserva acepta y `cascadeReassignmentEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. <br> La cascada solo aplica dentro del mismo día y especialidad. |
+| **Assumptions** | Los pacientes en cola de reserva tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
 | **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Porcentaje de cascadas activadas exitosamente. |
 | **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
 
@@ -1751,7 +1979,7 @@ El contexto tiene un alcance claro y su flujo principal (validar → crear Queue
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Appointments & Booking · **Messages:** Cita reservada <br> **Collaborator:** Patient · **Messages:** Escaneo de código QR <br> **Collaborator:** Admission Staff · **Messages:** Llamado a consultorio |
-| **Outbound Communication** | **Messages:** CheckInCompleted (incluye `attendanceQueueId` y `position`) · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Dynamic Waitlist & Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
+| **Outbound Communication** | **Messages:** CheckInCompleted (incluye `attendanceQueueId` y `position`) · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
 | **Ubiquitous Language** | **Check-in:** Validación de asistencia presencial mediante código QR. <br> **Ventana de tolerancia:** Intervalo de tiempo configurado para permitir el check-in. <br> **Attendance Queue:** Cola virtual dentro de un `Time Slot` que ordena a los pacientes según su timestamp de check-in. <br> **Queue Entry:** Entrada individual en la cola de asistencia. Contiene `appointmentId`, `checkInTimestamp`, `position`, `status`. <br> **Ticket digital:** Comprobante con identificador de llamado, posición en la cola y datos de atención. <br> **Cola de atención:** Lista ordenada de pacientes presentes en el establecimiento. <br> **Ausencia:** Estado del paciente que no se presentó dentro de la tolerancia. |
 | **Business Decisions** | El check-in solo es válido dentro de la ventana de tolerancia configurada por el hospital. <br> La cola de asistencia se ordena por `checkInTimestamp`. <br> Un paciente no puede tener dos `QueueEntry` activas en la misma `AttendanceQueue`. <br> Si un paciente es marcado como `Absent`, su posición se elimina y los demás se reordenan. <br> Un paciente que excede la tolerancia es declarado ausente automáticamente. <br> El ticket digital solo se emite si el check-in fue confirmado y muestra la posición en la cola de asistencia. |
 | **Assumptions** | El establecimiento cuenta con códigos QR visibles en la recepción. <br> El paciente porta un dispositivo móvil con la aplicación instalada. |
@@ -1762,14 +1990,14 @@ El contexto tiene un alcance claro y su flujo principal (validar → crear Queue
 
 **Context Overview Definition**
 
-Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
+Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
 
 **Capability Analysis**
 
 - Configuración de intervalos y fraccionamientos de atención.
 - Definición de ventanas de tolerancia para check-in.
 - Configuración de plazos y márgenes operativos (cancelación, reserva, adelanto).
-- Configuración de `waitlistResponseTimeout` y `cascadeWaitlistEnabled`.
+- Configuración de `reassignmentResponseTimeoutMin` y `cascadeReassignmentEnabled`.
 - Configuración de `maxCapacityPerSlot`.
 - Generación de reportes operativos.
 - Visualización de dashboards de ocupación y ausentismo.
@@ -1787,17 +2015,17 @@ Depende de Identity & Access Management para autorizar al Super Admin, y recibe 
 
 **Design Critique**
 
-El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `waitlistResponseTimeout` y `cascadeWaitlistEnabled` le permite controlar el comportamiento de la lista de espera dinámica sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
+El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `reassignmentResponseTimeoutMin` y `cascadeReassignmentEnabled` le permite controlar el comportamiento de la cola de reserva sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Hospital Operations & Configuration |
-| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
+| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
 | **Strategic Classification** | **Domain:** Supporting · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado (Super Admin) <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Datos de atención y ausencias <br> **Collaborator:** Appointments & Booking · **Messages:** Datos de reservas y cancelaciones |
-| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `waitlistResponseTimeout`, `cascadeWaitlistEnabled`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Dynamic Waitlist & Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
-| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **waitlistResponseTimeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **cascadeWaitlistEnabled:** Parámetro que habilita la reasignación en cascada si nadie acepta. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
+| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
+| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **reassignmentResponseTimeoutMin:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **cascadeReassignmentEnabled:** Parámetro que habilita la reasignación en cascada si nadie acepta. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
 | **Business Decisions** | Los cambios de configuración solo aplican a los nuevos bloques, no afectan citas ya confirmadas. <br> Los parámetros inválidos o inconsistentes son rechazados por el sistema. <br> Solo el Super Admin puede modificar las reglas operativas del establecimiento. <br> Los reportes se generan con datos anonimizados. |
 | **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
 | **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
@@ -1828,7 +2056,7 @@ Durante la elaboración de los context maps, el equipo se planteó las siguiente
 
 - **¿Qué pasaría si creamos un servicio compartido para la gestión de notificaciones?**
 
-  Se decidió implementar una comunicación **event-driven** con un **Shared Kernel** (plantillas, canales y prioridades compartidas), dado que varios contextos requieren enviar mensajes al usuario final: Identity & Access Management (confirmaciones de cuenta), Appointments & Booking (confirmación de reservas), Dynamic Waitlist (propuestas de adelanto) y Arrival & QR Check-in (ticket emitido).
+  Se decidió implementar una comunicación **event-driven** con un **Shared Kernel** (plantillas, canales y prioridades compartidas), dado que varios contextos requieren enviar mensajes al usuario final: Identity & Access Management (confirmaciones de cuenta), Appointments & Booking (confirmación de reservas), Reassignment (propuestas de adelanto) y Arrival & QR Check-in (ticket emitido).
 
 - **¿Qué pasaría si aislamos el core de reservas y movemos la configuración a un contexto aparte?**
 
@@ -1844,9 +2072,9 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 | Identity & Access Management | Appointments & Booking | **Shared Kernel** | Comparten el modelo de identidad y sesión activa del paciente. |
 | Identity & Access Management | Arrival & QR Check-in | **Shared Kernel** | Comparten la validación de sesión para el check-in. |
 | Identity & Access Management | Hospital Operations & Configuration | **Shared Kernel** | Comparten el modelo de roles para autorizar al Super Admin. |
-| Appointments & Booking | Dynamic Waitlist & Reassignment | **Customer/Supplier** | Booking publica eventos que Waitlist consume. |
+| Appointments & Booking | Reassignment | **Customer/Supplier** | Booking publica eventos que Reassignment consume. |
 | Appointments & Booking | Arrival & QR Check-in | **Customer/Supplier** | Booking publica eventos que Check-in consume. |
-| Arrival & QR Check-in | Dynamic Waitlist & Reassignment | **Customer/Supplier** | Check-in publica el evento de ausencia que Waitlist consume. |
+| Arrival & QR Check-in | Reassignment | **Customer/Supplier** | Check-in publica el evento de ausencia que Reassignment consume. |
 | Hospital Operations & Configuration | Appointments & Booking | **Conformist** | Booking adopta el modelo de parámetros operativos sin traducirlo. |
 | Hospital Operations & Configuration | Arrival & QR Check-in | **Conformist** | Check-in adopta el modelo de tolerancias sin traducirlo. |
 
@@ -1856,12 +2084,12 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 | Mensaje | Bounded Context origen | Bounded Context destino | Contenido |
 | :--- | :--- | :--- | :--- |
-| `AppointmentBooked` | Appointments & Booking | Dynamic Waitlist & Reassignment, Arrival & QR Check-in | Incluye `bookingOrder` de la cita reservada. |
+| `AppointmentBooked` | Appointments & Booking | Reassignment, Arrival & QR Check-in | Incluye `bookingOrder` de la cita reservada. |
 | `CheckInCompleted` | Arrival & QR Check-in | Appointments & Booking, Patient | Incluye `attendanceQueueId` y `position` del paciente en la cola de asistencia. |
-| `WaitlistOfferSent` | Dynamic Waitlist & Reassignment | Patient | Propuesta de cupo liberado enviada al paciente con menor `bookingOrder`. |
-| `WaitlistOfferAccepted` | Dynamic Waitlist & Reassignment | Appointments & Booking, Patient | Confirmación de aceptación del cupo liberado. |
-| `WaitlistOfferExpired` | Dynamic Waitlist & Reassignment | Patient | Expiración del `waitlistResponseTimeout` sin respuesta del paciente. |
-| `CascadeReassignment` | Dynamic Waitlist & Reassignment | Appointments & Booking | Activación de la cascada si nadie en la lista de espera acepta el cupo. |
+| `ReassignmentOfferSent` | Reassignment | Patient | Propuesta de cupo liberado enviada al paciente con menor `bookingOrder`. |
+| `ReassignmentOfferAccepted` | Reassignment | Appointments & Booking, Patient | Confirmación de aceptación del cupo liberado. |
+| `ReassignmentOfferExpired` | Reassignment | Patient | Expiración del `reassignmentResponseTimeoutMin` sin respuesta del paciente. |
+| `CascadeReassignment` | Reassignment | Appointments & Booking | Activación de la cascada si nadie en la cola de reserva acepta el cupo. |
 
 **Leyenda de patrones:**
 
@@ -1875,7 +2103,7 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 ### 2.5.3. Software Architecture
 
-#### 2.5.3.1. Context Level Diagram
+#### 2.5.3.1. Software Architecture Context Level Diagrams
 
 En el Software Architecture Context Diagram se pueden apreciar los componentes más importantes que interactúan con el sistema SaludYa, así como los usuarios principales y las funciones que desempeñan dentro del ecosistema de gestión de citas médicas en establecimientos públicos de salud.
 
@@ -1883,20 +2111,20 @@ El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pac
 
 ![ContextSys](assets/ContextDiagram.png)
 
-#### 2.5.3.2. Container Level Diagram
+#### 2.5.3.2. Software Architecture Container Level Diagrams
 
 En el Software Architecture Container Diagram se detalla la estructura interna del sistema SaludYa, mostrando los contenedores principales que lo componen y cómo se comunican entre sí. Este nivel de abstracción permite visualizar las decisiones tecnológicas y la distribución de responsabilidades dentro del sistema.
 
-El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias, la reasignación de cupos y la expiración de propuestas de la lista de espera.
+El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias, la reasignación de cupos y la expiración de propuestas de la cola de reserva.
 
-El Backend API orquesta internamente la lógica de los cinco bounded contexts del sistema, incluyendo la gestión de la cola de asistencia ordenada por `checkInTimestamp` y la lista de espera dinámica ordenada por `bookingOrder`. La base de datos PostgreSQL incorpora las tablas `attendance_queue_entries` y `waitlist_entries`, y la tabla `appointments` incluye el campo `booking_order` que determina la prioridad de reasignación.
+El Backend API orquesta internamente la lógica de los cinco bounded contexts del sistema, incluyendo la gestión de la cola de asistencia ordenada por `checkInTimestamp` y la cola de reserva ordenada por `bookingOrder`. La base de datos PostgreSQL incorpora las tablas `attendance_queue_entries` y `reassignment_offers`, y la tabla `appointments` incluye el campo `booking_order` que determina la prioridad de reasignación.
 
 El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone.
 
 ![ContainerSys](assets/ContainerDiagram.png)
 
 
-#### 2.5.3.3. Deployment Diagram
+#### 2.5.3.3. Software Architecture Deployment Diagrams
 
 En el Software Architecture Deployment Diagram se muestra la distribución física de los contenedores del sistema SaludYa sobre la infraestructura tecnológica que los aloja. Este diagrama permite visualizar cómo se despliegan las aplicaciones móviles, los servicios del backend y los componentes de infraestructura en los diferentes nodos del sistema.
 

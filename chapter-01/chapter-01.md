@@ -1,10 +1,10 @@
-# Capítulo 1: Presentación #
+# Capítulo I: Presentación
 
-## _1.1. Startup Profile_ ##
+## 1.1. Startup Profile
 
 En esta sección, se presenta una descripción general de RuwaLabs, startup orientada al desarrollo de soluciones digitales que buscan atender problemáticas reales mediante el uso de la tecnología, considerando las necesidades de los usuarios y las características del contexto en el que se desenvuelven.
 
-### 1.1.1. Descripción de la Startup ###
+### 1.1.1. Descripción de la Startup
 
 En el contexto actual, donde el acceso oportuno a los servicios de salud representa un desafío para diversos sectores de la población, especialmente en establecimientos públicos de salud con una alta demanda de pacientes, RuwaLabs propone desarrollar soluciones tecnológicas orientadas a mejorar la experiencia de atención y optimizar los procesos relacionados con la gestión de citas médicas.
 
@@ -27,7 +27,7 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
     </tr>
 </table>
 
-### 1.1.2. Perfiles de los integrantes del equipo ###
+### 1.1.2. Perfiles de integrantes del equipo
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
 
@@ -197,7 +197,7 @@ El impacto de esta problemática es significativo, ya que genera costos de tiemp
 
 Además, las iniciativas implementadas por el MINSA para digitalizar las citas y reducir los tiempos de espera evidencian la importancia de optimizar estos procesos mediante herramientas tecnológicas.
 
-### Diagrama de Ishikawa - Análisis de Causas
+#### Diagrama de Ishikawa - Análisis de Causas
 
 El **diagrama de Ishikawa**, también conocido como diagrama de espina de pescado o diagrama de causa-efecto, permite identificar y visualizar de manera sistemática las múltiples causas que contribuyen al problema central:
 
@@ -227,16 +227,16 @@ El diagrama identifica **seis categorías principales de causas** que contribuye
 
 - **Medición:** Falta de indicadores relacionados con el ausentismo, tiempos de espera y satisfacción de los pacientes, así como disponibilidad limitada de reportes para apoyar la mejora continua.
 
-### 1.2.2. Lean UX Process ###
+### 1.2.2. Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statement ####
+#### 1.2.2.1. Lean UX Problem Statements
 
 Actualmente, tanto los pacientes como el personal asistencial y administrativo de los establecimientos públicos de salud enfrentan dificultades por la dependencia de procesos presenciales y telefónicos que no permiten conocer en tiempo real la disponibilidad de citas, gestionar cancelaciones o listas de espera, ni dar seguimiento eficiente a la atención. Esto genera problemas como colas prolongadas, cupos desaprovechados, desinformación sobre la disponibilidad de citas y una carga operativa elevada para el personal. Además, muchos pacientes no cuentan con mecanismos accesibles que les permitan orientar el tipo de atención que podrían requerir antes de acudir al establecimiento.
 
 ¿Cómo podríamos diseñar una solución digital integral que permita a los pacientes reservar y gestionar sus citas médicas en tiempo real, acceder a listas de espera dinámicas y recibir orientación inicial sobre sus síntomas, mientras se brinda al personal asistencial y administrativo herramientas para gestionar el flujo de atención y aprovechar mejor los cupos disponibles?
 
-#### 1.2.2.2. Lean UX Assumptions ####
-##### 1.2.2.2.1 Business Assumptions #####
+#### 1.2.2.2. Lean UX Assumptions
+##### 1.2.2.2.1 Business Assumptions
 
 - Existe una demanda no atendida de pacientes en establecimientos públicos de salud que requieren mecanismos digitales para acceder a citas médicas de forma oportuna.
 - Las dificultades de acceso a citas están vinculadas a la dependencia de procesos presenciales y telefónicos, generando una necesidad urgente de digitalización.
@@ -244,14 +244,14 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - Los establecimientos públicos de salud buscan reducir tiempos de espera y mejorar el aprovechamiento de sus cupos disponibles.
 - Existen iniciativas del MINSA orientadas a la digitalización de citas, lo que evidencia una tendencia favorable para la adopción de SaludYa.
   
-##### 1.2.2.2.2 Business Outcomes #####
+##### 1.2.2.2.2 Business Outcomes
 
 - Queremos que los establecimientos de salud reduzcan en un 30% las colas presenciales durante los primeros 6 meses de implementación.
 - Buscamos aumentar en un 25% el aprovechamiento de los cupos disponibles mediante la gestión de listas de espera y cancelaciones.
 - Queremos reducir en un 35% el tiempo promedio que el personal dedica a la gestión manual de citas, en un plazo de 3 meses.
 - Esperamos que el 50% de los establecimientos piloto recomienden la herramienta a otras sedes dentro de los primeros 3 meses de uso.
 
-##### 1.2.2.2.3 User Assumptions #####
+##### 1.2.2.2.3 User Assumptions
 
 - Los pacientes no cuentan actualmente con mecanismos digitales integrados, sino con canales presenciales o telefónicos fragmentados.
 - Tienen interés en acceder a información oportuna sobre la disponibilidad de citas, pero no siempre cuentan con los medios para hacerlo.
@@ -259,7 +259,7 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - Les preocupa perder su turno o no ser informados sobre cambios en su cita.
 - Valoran contar con recordatorios y una orientación inicial sobre el tipo de atención que podrían requerir.
 
-##### 1.2.2.2.4 User Outcomes #####
+##### 1.2.2.2.4 User Outcomes
 
 - El 80% de los pacientes reportan una reducción en el tiempo dedicado a gestionar sus citas después de 3 meses de uso.
 - El 70% de los pacientes disminuyen sus desplazamientos innecesarios al establecimiento gracias a la reserva y el seguimiento digital.
@@ -267,13 +267,13 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - El 65% del personal administrativo reporta una mejora en el control del flujo de pacientes y el aprovechamiento de cupos.
 - El 70% de los usuarios completan el proceso de reserva de una cita sin asistencia técnica en menos de 5 minutos.
 
-##### 1.2.2.2.5 Features #####
+##### 1.2.2.2.5 Features
 
 - Si implementamos una funcionalidad que permita a los pacientes consultar disponibilidad y reservar citas médicas en tiempo real, entonces se reducirán los desplazamientos innecesarios y las colas presenciales.
 - Si los pacientes cuentan con una lista de espera dinámica y reciben notificaciones ante cupos liberados por cancelaciones, entonces se aprovechará mejor la disponibilidad existente y se reducirán los tiempos de espera.
 - Si el personal asistencial y administrativo dispone de una aplicación que les permita visualizar el flujo de pacientes y gestionar cambios o cancelaciones, entonces podrán optimizar la atención y reducir la carga operativa asociada a la gestión manual de citas.
 
-#### 1.2.2.3. Lean UX Hypothesis Statements ####
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 - **Hypothesis Statement 1**
 **Creemos que** lograremos una reducción en las colas presenciales y un mejor aprovechamiento de los cupos disponibles.
@@ -293,7 +293,7 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 **Obtiene** la capacidad de gestionar cambios, cancelaciones y el estado de las atenciones en tiempo real
 **Cuando veamos** con una aplicación que centralice la información de pacientes y citas programadas.
 
-#### 1.2.2.4. Lean UX Canvas ####
+#### 1.2.2.4. Lean UX Canvas
 
 El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visualizar de manera estructurada los elementos clave del proyecto SaludYa. Este canvas facilita la comprensión integral del problema de negocio, las soluciones propuestas, los usuarios objetivo y los resultados esperados, proporcionando una base sólida para el desarrollo ágil del producto.
 
@@ -304,7 +304,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles.
 
-## _1.3. Segmentos objetivos_ ##
+## 1.3. Segmentos objetivo
 
 A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución **SaludYa** para la gestión de citas médicas en establecimientos públicos de salud.
 
