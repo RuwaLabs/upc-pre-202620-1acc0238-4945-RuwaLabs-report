@@ -1735,7 +1735,7 @@ El paciente inicia sesión en la aplicación y selecciona una especialidad médi
 
 **Flow 3: Reserva de cita médica para un menor a cargo**
 
-El paciente titular inicia sesión y selecciona a un menor previamente vinculado a su cuenta. El **Appointments & Booking** consulta el `Calendario de cupos` para la especialidad pediátrica. El paciente confirma la reserva del `Time Slot` seleccionado. El **Appointments & Booking** registra la cita vinculando al menor como beneficiario y al titular como adulto responsable, asigna el `bookingOrder` correspondiente, emite el evento `Cita reservada` y notifica al titular.
+El paciente titular inicia sesión y selecciona a un menor previamente vinculado a su cuenta. El **Appointments & Booking** consulta el `Calendario de cupos` para la especialidad pediátrica. El paciente confirma la reserva del `Time Slot` seleccionado. El **Appointments & Booking** registra la cita con el `patientId` del menor como beneficiario (el vínculo tutor-menor lo gestiona el `Identity & Access Management`), asigna el `bookingOrder` correspondiente, emite el evento `Cita reservada` y notifica al titular.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2542,19 +2542,23 @@ El **bounded context de Appointments & Booking** gestiona el ciclo de vida de un
 
 #### 2.6.2.1. Domain Layer
 
-La capa de **Domain** representa el núcleo del negocio de reserva de citas. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services, domain events e interfaces que encapsulan las reglas de negocio.
+La capa de **Domain** representa el núcleo del negocio de reserva de citas. Aquí se definen las entidades, value objects, enums, aggregates, domain events e interfaces que encapsulan las reglas de negocio.
 
 ##### Appointment (Aggregate Root)
 
 **Atributos:**
-`id`, `idTimeSlot`, `idPatient`, `bookingOrder: BookingOrder`, `status: AppointmentStatus`, `createdAt`, `updatedAt`
+`id`, `timeSlotId`, `patientId`, `bookingOrder: BookingOrder`, `status: AppointmentStatus`, `createdAt`, `updatedAt`
 
 **Métodos:**
-- `cancel()` → cambia el estado a `CANCELLED` si está dentro del plazo permitido.
-- `markAsAbsent()` → cambia el estado a `ABSENT`.
+- `create(timeSlotId, patientId, bookingOrder)` → crea una nueva cita en estado `RESERVED` (factory method estático).
+- `rehydrate(id, timeSlotId, patientId, bookingOrder, status, createdAt, updatedAt)` → reconstruye la cita desde su estado persistido.
+- `cancel()` → cambia el estado a `CANCELLED` y registra el evento `AppointmentCancelledEvent`.
+- `markAsAbsent()` → cambia el estado a `ABSENT` y registra el evento `AppointmentAbsentEvent`.
 - `markAsAttended()` → cambia el estado a `ATTENDED`.
+- `confirm()` → cambia el estado de `RESERVED` a `CONFIRMED`.
+- `expire()` → cambia el estado a `EXPIRED`.
 - `isActive()` → retorna `true` si el estado es `RESERVED` o `CONFIRMED`.
-- `canBeCancelled(deadlineHours)` → valida si aún está dentro del plazo de cancelación.
+- `canBeCancelled(scheduledAt, deadlineHours)` → valida si aún está dentro del plazo de cancelación.
 
 **Propósito:**
 Representa una cita médica reservada. Es aggregate root porque agrupa el `bookingOrder` y controla el ciclo de vida de la cita.
@@ -2564,34 +2568,46 @@ Representa una cita médica reservada. Es aggregate root porque agrupa el `booki
 ##### TimeSlot (Aggregate Root)
 
 **Atributos:**
-`id`, `idDoctor`, `date`, `startHour`, `endHour`, `maxCapacity`, `currentBookings`, `status: TimeSlotStatus`
+`id`, `doctorId`, `date`, `startHour`, `endHour`, `maxCapacity`, `currentBookings`, `status: TimeSlotStatus`
 
 **Métodos:**
+- `create(doctorId, date, startHour, endHour, maxCapacity)` → crea un bloque horario en estado `AVAILABLE` (factory method estático).
+- `rehydrate(id, doctorId, date, startHour, endHour, maxCapacity, currentBookings, status)` → reconstruye el bloque desde su estado persistido.
 - `hasAvailableCapacity()` → retorna `true` si `currentBookings < maxCapacity`.
 - `incrementBookings()` → aumenta `currentBookings` en 1.
 - `decrementBookings()` → disminuye `currentBookings` en 1.
+- `updateMaxCapacity(newMaxCapacity)` → actualiza la capacidad máxima, validando que no sea menor que `currentBookings`.
 - `isFull()` → retorna `true` si `currentBookings >= maxCapacity`.
 - `isExpired()` → retorna `true` si la fecha y hora ya pasaron.
+- `cancel()` → cambia el estado a `CANCELLED`.
 
 **Propósito:**
 Representa un bloque horario concreto de un médico en una fecha. Es aggregate root porque controla la capacidad y el estado del bloque.
 
 ---
 
-##### Doctor (Entity)
+##### Doctor (Aggregate)
 
 **Atributos:**
-`id`, `idSpecialty`, `name`, `lastname`
+`id`, `specialtyId`, `name`, `lastname`
+
+**Métodos:**
+- `create(specialtyId, name, lastname)` → crea un médico (factory method estático).
+- `rehydrate(id, specialtyId, name, lastname)` → reconstruye el médico desde su estado persistido.
 
 **Propósito:**
 Representa a un médico dentro del catálogo.
 
 ---
 
-##### Specialty (Entity)
+##### Specialty (Aggregate)
 
 **Atributos:**
 `id`, `name`, `description`
+
+**Métodos:**
+- `create(name, description)` → crea una especialidad (factory method estático).
+- `rehydrate(id, name, description)` → reconstruye la especialidad desde su estado persistido.
 
 **Propósito:**
 Representa una especialidad médica dentro del catálogo.
@@ -2601,10 +2617,10 @@ Representa una especialidad médica dentro del catálogo.
 ##### BookingOrder (Value Object)
 
 **Atributos:**
-`value`, `idSpecialty`
+`value`
 
 **Propósito:**
-Encapsula el número secuencial de reserva por especialidad. Es inmutable una vez asignado.
+Encapsula el número secuencial de reserva. Es inmutable una vez asignado. El alcance "por especialidad" se resuelve al calcular el siguiente valor mediante `getNextBookingOrderBySpecialty`.
 
 ---
 
@@ -2614,7 +2630,7 @@ Encapsula el número secuencial de reserva por especialidad. Es inmutable una ve
 `RESERVED`, `CONFIRMED`, `CANCELLED`, `ABSENT`, `ATTENDED`, `EXPIRED`
 
 **Propósito:**
-Define los estados del ciclo de vida de una cita.
+Define los estados del ciclo de vida de una cita. Las transiciones hacia `ATTENDED` y `ABSENT` son disparadas por el bounded context `Arrival & QR Check-in`, y `EXPIRED` por un job programado.
 
 ---
 
@@ -2628,39 +2644,19 @@ Define el estado de disponibilidad de un bloque horario.
 
 ---
 
-##### AppointmentFactory (Factory)
-
-**Métodos:**
-- `createAppointment(timeSlot, patient, bookingOrder): Appointment`
-
-**Propósito:**
-Encapsula la creación de citas, validando que el `time_slot` tenga capacidad.
-
----
-
-##### BookingDomainService (Domain Service)
-
-**Métodos:**
-- `calculateNextBookingOrder(specialtyId): Int`
-- `validateNoOverlap(patientId, timeSlot): Boolean`
-
-**Propósito:**
-Encapsula la lógica de negocio que no pertenece a una sola entidad:
-- `calculateNextBookingOrder`: calcula el siguiente número secuencial por especialidad.
-- `validateNoOverlap`: valida que el paciente no tenga otra cita activa en el mismo bloque horario.
-
----
-
 ##### AppointmentRepository (Interface)
 
 **Métodos:**
 - `save(appointment: Appointment): Appointment`
-- `findById(id: Int): Appointment?`
-- `findByPatient(patientId: Int): List<Appointment>`
-- `findByTimeSlot(timeSlotId: Int): List<Appointment>`
-- `findActiveBySpecialty(specialtyId: Int): List<Appointment>`
-- `getNextBookingOrderBySpecialty(specialtyId: Int): Int`
-- `updateStatus(id: Int, status: AppointmentStatus)`
+- `findById(id: Long): Appointment?`
+- `findByPatientId(patientId: Long): List<Appointment>`
+- `findByTimeSlotId(timeSlotId: Long): List<Appointment>`
+- `findActiveBySpecialtyId(specialtyId: Long): List<Appointment>`
+- `getNextBookingOrderBySpecialty(specialtyId: Long): int`
+- `existsActiveByPatientAndTimeSlot(patientId: Long, timeSlotId: Long): Boolean`
+- `updateStatus(id: Long, status: AppointmentStatus)`
+- `existsById(id: Long): Boolean`
+- `deleteById(id: Long)`
 
 **Propósito:**
 Define las operaciones de persistencia para citas.
@@ -2671,24 +2667,44 @@ Define las operaciones de persistencia para citas.
 
 **Métodos:**
 - `save(timeSlot: TimeSlot): TimeSlot`
-- `findById(id: Int): TimeSlot?`
-- `findAvailableBySpecialty(specialtyId: Int, date: Date): List<TimeSlot>`
-- `findByDoctorAndDate(doctorId: Int, date: Date): List<TimeSlot>`
-- `incrementBookings(id: Int)`
-- `decrementBookings(id: Int)`
+- `findById(id: Long): TimeSlot?`
+- `findAvailableBySpecialty(specialtyId: Long, date: LocalDate): List<TimeSlot>`
+- `findByDoctorAndDate(doctorId: Long, date: LocalDate): List<TimeSlot>`
+- `existsById(id: Long): Boolean`
 
 **Propósito:**
 Define las operaciones de persistencia para bloques horarios.
 
 ---
 
-##### EventPublisher (Interface)
+##### SpecialtyRepository (Interface)
 
 **Métodos:**
-- `publish(event: DomainEvent)`
+- `save(specialty: Specialty): Specialty`
+- `findById(id: Long): Specialty?`
+- `findAll(): List<Specialty>`
+- `existsById(id: Long): Boolean`
 
 **Propósito:**
-Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+Define las operaciones de persistencia para el catálogo de especialidades.
+
+---
+
+##### DoctorRepository (Interface)
+
+**Métodos:**
+- `save(doctor: Doctor): Doctor`
+- `findById(id: Long): Doctor?`
+- `findBySpecialtyId(specialtyId: Long): List<Doctor>`
+- `findAll(): List<Doctor>`
+- `existsById(id: Long): Boolean`
+
+**Propósito:**
+Define las operaciones de persistencia para el catálogo de médicos.
+
+---
+
+> **Nota sobre eventos de dominio:** `AppointmentBookedEvent`, `AppointmentCancelledEvent` y `AppointmentAbsentEvent` son registrados por el aggregate `Appointment` mediante `registerDomainEvent(...)` y publicados por el persistence adapter al guardar, usando `ApplicationEventPublisher` de Spring.
 
 ---
 
@@ -2732,7 +2748,7 @@ La **Interface Layer** expone las funcionalidades del bounded context mediante e
 - `POST /api/v1/appointments` → Reserva una nueva cita.
 - `GET /api/v1/appointments/{id}` → Obtiene el detalle de una cita.
 - `GET /api/v1/appointments/patient/{patientId}` → Lista citas de un paciente.
-- `DELETE /api/v1/appointments/{id}` → Cancela una cita dentro del plazo permitido.
+- `DELETE /api/v1/appointments/{id}` → Cancela una cita.
 
 **Explicación:**
 Este controlador gestiona las operaciones sobre el aggregate `Appointment`.
@@ -2742,8 +2758,11 @@ Este controlador gestiona las operaciones sobre el aggregate `Appointment`.
 ##### TimeSlotsController (REST API Controller)
 
 **Endpoints:**
-- `GET /api/v1/time-slots?doctorId={id}&date={date}` → Lista bloques horarios disponibles.
+- `GET /api/v1/time-slots/available?specialtyId={id}&date={date}` → Lista bloques horarios disponibles de una especialidad.
+- `GET /api/v1/time-slots?doctorId={id}&date={date}` → Lista bloques horarios de un médico en una fecha.
 - `GET /api/v1/time-slots/{id}` → Obtiene el detalle de un bloque horario.
+- `POST /api/v1/time-slots` → Crea un bloque horario.
+- `PUT /api/v1/time-slots/{id}/capacity` → Actualiza la capacidad de un bloque horario.
 
 **Explicación:**
 Este controlador gestiona las operaciones sobre el aggregate `TimeSlot`.
@@ -2757,7 +2776,7 @@ Este controlador gestiona las operaciones sobre el aggregate `TimeSlot`.
 - `GET /api/v1/specialties/{id}` → Obtiene el detalle de una especialidad.
 
 **Explicación:**
-Este controlador gestiona las operaciones sobre la entity `Specialty`.
+Este controlador gestiona las operaciones sobre el aggregate `Specialty`.
 
 ---
 
@@ -2768,20 +2787,19 @@ Este controlador gestiona las operaciones sobre la entity `Specialty`.
 - `GET /api/v1/doctors/{id}` → Obtiene el detalle de un médico.
 
 **Explicación:**
-Este controlador gestiona las operaciones sobre la entity `Doctor`.
+Este controlador gestiona las operaciones sobre el aggregate `Doctor`.
 
 ---
 
 #### 2.6.2.3. Application Layer
 
-La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los command services retornan `Result<T, ApplicationError>` (patrón Result del módulo `shared`).
 
 ##### AppointmentCommandService (Interface)
 
 **Métodos (Command Handlers):**
-- `bookAppointment(command: BookAppointmentCommand): Appointment`
-- `cancelAppointment(command: CancelAppointmentCommand): Appointment`
-- `liberateSlot(command: LiberateSlotCommand): void`
+- `book(command: BookAppointmentCommand): Result<Appointment, ApplicationError>`
+- `cancel(command: CancelAppointmentCommand): Result<Appointment, ApplicationError>`
 
 **Propósito:**
 Define los comandos relacionados con la cita.
@@ -2791,8 +2809,8 @@ Define los comandos relacionados con la cita.
 ##### TimeSlotCommandService (Interface)
 
 **Métodos (Command Handlers):**
-- `createTimeSlot(command: CreateTimeSlotCommand): TimeSlot`
-- `updateCapacity(command: UpdateCapacityCommand): TimeSlot`
+- `create(command: CreateTimeSlotCommand): Result<TimeSlot, ApplicationError>`
+- `updateCapacity(command: UpdateTimeSlotCapacityCommand): Result<TimeSlot, ApplicationError>`
 
 **Propósito:**
 Define los comandos relacionados con el bloque horario.
@@ -2802,9 +2820,9 @@ Define los comandos relacionados con el bloque horario.
 ##### AppointmentQueryService (Interface)
 
 **Métodos (Query Handlers):**
-- `getById(id: Int): Appointment?`
-- `getByPatient(patientId: Int): List<Appointment>`
-- `getByTimeSlot(timeSlotId: Int): List<Appointment>`
+- `getById(id: Long): Appointment?`
+- `getByPatient(patientId: Long): List<Appointment>`
+- `getByTimeSlot(timeSlotId: Long): List<Appointment>`
 
 **Propósito:**
 Define las consultas relacionadas con la cita.
@@ -2814,11 +2832,34 @@ Define las consultas relacionadas con la cita.
 ##### TimeSlotQueryService (Interface)
 
 **Métodos (Query Handlers):**
-- `getAvailableBySpecialty(specialtyId: Int, date: Date): List<TimeSlot>`
-- `getByDoctorAndDate(doctorId: Int, date: Date): List<TimeSlot>`
+- `getById(id: Long): TimeSlot?`
+- `getAvailableBySpecialty(specialtyId: Long, date: LocalDate): List<TimeSlot>`
+- `getByDoctorAndDate(doctorId: Long, date: LocalDate): List<TimeSlot>`
 
 **Propósito:**
 Define las consultas relacionadas con el bloque horario.
+
+---
+
+##### SpecialtyQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getAll(): List<Specialty>`
+- `getById(id: Long): Specialty?`
+
+**Propósito:**
+Define las consultas relacionadas con el catálogo de especialidades.
+
+---
+
+##### DoctorQueryService (Interface)
+
+**Métodos (Query Handlers):**
+- `getBySpecialty(specialtyId: Long): List<Doctor>`
+- `getById(id: Long): Doctor?`
+
+**Propósito:**
+Define las consultas relacionadas con el catálogo de médicos.
 
 ---
 
@@ -2826,47 +2867,46 @@ Define las consultas relacionadas con el bloque horario.
 
 **Responsabilidad:** Implementar los comandos de cita.
 
-**Flujo de `bookAppointment`:**
+**Flujo de `book`:**
 1. Recibe `patientId` y `timeSlotId`.
-2. Lee la configuración del hospital.
-3. Valida que el `time_slot` tenga capacidad disponible.
-4. Valida que la hora actual esté antes del `bookingCutoffTime`.
-5. Calcula el `bookingOrder` con `BookingDomainService.calculateNextBookingOrder`.
-6. Valida que no haya solapamiento con `BookingDomainService.validateNoOverlap`.
-7. Crea el `Appointment` con estado `RESERVED` usando `AppointmentFactory`.
-8. Incrementa `current_bookings`.
-9. Publica el evento `AppointmentBookedEvent`.
-10. Notifica al paciente.
+2. Carga el `TimeSlot` y valida que tenga capacidad disponible (`hasAvailableCapacity`).
+3. Valida que no haya solapamiento (`existsActiveByPatientAndTimeSlot`).
+4. Carga el `Doctor` del slot para obtener la `specialtyId`.
+5. Calcula el siguiente `bookingOrder` con `getNextBookingOrderBySpecialty`.
+6. Crea el `Appointment` en estado `RESERVED` con `Appointment.create(...)`.
+7. Incrementa `current_bookings` y guarda el `TimeSlot`.
+8. Guarda el `Appointment`; el adapter publica el evento `AppointmentBookedEvent`.
 
-**Flujo de `cancelAppointment`:**
+**Flujo de `cancel`:**
 1. Recibe `appointmentId`.
 2. Busca la cita.
-3. Lee `cancellationDeadlineHours`.
-4. Valida que la cancelación esté dentro del plazo.
-5. Cambia el estado a `CANCELLED`.
-6. Decrementa `current_bookings`.
-7. Publica el evento `AppointmentCancelledEvent`.
-8. Notifica al paciente.
+3. Valida que esté activa (`isActive`).
+4. Cambia el estado a `CANCELLED` con `cancel()`, que registra el evento `AppointmentCancelledEvent`.
+5. Decrementa `current_bookings`.
+6. Guarda el `Appointment`; el adapter publica el evento `AppointmentCancelledEvent`.
+
+> **Nota:** la validación del plazo (`cancellationDeadlineHours`) proviene del bounded context `Hospital Operations & Configuration` y se integra mediante un ACL (pendiente).
 
 ---
 
-##### AppointmentCancelledEventHandler (Event Handler)
-
-**Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
-**Flujo:**
-1. Escucha el evento.
-2. Dispara el protocolo de reasignación en el bounded context `Reassignment`.
-3. Registra la acción en el log de auditoría.
+> **Nota:** la reasignación de cupos liberados (por cancelación o ausencia) es responsabilidad del bounded context `Reassignment`, que escucha `AppointmentCancelledEvent` y `AppointmentAbsentEvent` con sus propios `@EventListener`. Este contexto no implementa handlers propios para reasignación.
 
 ---
 
-##### AppointmentAbsentEventHandler (Event Handler)
+##### TimeSlotCommandServiceImpl (Implementation)
 
-**Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
-**Flujo:**
-1. Escucha el evento.
-2. Dispara el protocolo de reasignación en el bounded context `Reassignment`.
-3. Registra la acción en el log de auditoría.
+**Responsabilidad:** Implementar los comandos de bloque horario.
+
+**Flujo de `create`:**
+1. Recibe `doctorId`, `date`, `startHour`, `endHour` y `maxCapacity`.
+2. Crea el `TimeSlot` en estado `AVAILABLE` con `TimeSlot.create(...)`.
+3. Guarda el `TimeSlot`.
+
+**Flujo de `updateCapacity`:**
+1. Recibe `timeSlotId` y `maxCapacity`.
+2. Busca el `TimeSlot`.
+3. Actualiza la capacidad con `updateMaxCapacity(...)`, validando que no sea menor que `currentBookings`.
+4. Guarda el `TimeSlot`.
 
 ---
 
@@ -2874,15 +2914,15 @@ Define las consultas relacionadas con el bloque horario.
 
 La capa de **Infrastructure** contiene las implementaciones concretas.
 
-##### AppointmentRepositoryImpl
+##### AppointmentPersistenceAdapter
 **Implementa:** `AppointmentRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
-Ejecuta operaciones sobre la tabla `appointments`. Implementa el cálculo de `booking_order` secuencial por especialidad.
+Ejecuta operaciones sobre la tabla `appointments`, implementa el cálculo de `booking_order` secuencial por especialidad y publica los domain events del aggregate (`AppointmentBookedEvent`, `AppointmentCancelledEvent`, `AppointmentAbsentEvent`) vía `ApplicationEventPublisher` de Spring tras persistir.
 
 ---
 
-##### TimeSlotRepositoryImpl
+##### TimeSlotPersistenceAdapter
 **Implementa:** `TimeSlotRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
@@ -2890,26 +2930,28 @@ Ejecuta operaciones sobre la tabla `time_slots`.
 
 ---
 
-##### HospitalConfigurationRepositoryImpl
-**Implementa:** `HospitalConfigurationRepository`
+##### SpecialtyPersistenceAdapter
+**Implementa:** `SpecialtyRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
-Lee la configuración del hospital (`maxCapacityPerSlot`, `bookingOrderScope`, `bookingCutoffTime`, `cancellationDeadlineHours`).
+Ejecuta operaciones sobre la tabla `specialties`.
+
+---
+
+##### DoctorPersistenceAdapter
+**Implementa:** `DoctorRepository`
+**Tecnología:** Spring Data JPA + PostgreSQL
+**Explicación:**
+Ejecuta operaciones sobre la tabla `doctors`.
 
 ---
 
 ##### NotificationAdapter
 **Función:**
-Envía notificaciones de confirmación, cancelación o reasignación.
-**Tecnología:** SMTP + Firebase Cloud Messaging
-
----
-
-##### SpringEventPublisherImpl
-**Implementa:** `EventPublisher`
-**Función:**
-Publica eventos de dominio usando Spring Events.
-**Tecnología:** `ApplicationEventPublisher` de Spring
+Envía notificaciones de confirmación y cancelación al paciente.
+**Tecnología:** SMTP
+**Explicación:**
+Requiere un ACL hacia el bounded context `Identity & Access Management` para obtener el correo del paciente. Su implementación está pendiente.
 
 ---
 
@@ -2918,7 +2960,7 @@ Publica eventos de dominio usando Spring Events.
 <img src="assets/appointment_component_diagram.png" alt="Appointment component diagram" width="85%"/>
 
 ---
-El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a eventos de cancelación y ausencia. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con el BookingDomainService. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA, la publicación de eventos con Spring Events y el envío de notificaciones.
+El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con `ApplicationEventPublisher` de Spring.
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2927,7 +2969,7 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 <img src="assets/appointment_class_diagram.png" alt="Appointment class diagram" width="85%"/>
 
 ---
-El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, entities, value objects, enums, domain service e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, y el BookingDomainService.
+El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios.
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 

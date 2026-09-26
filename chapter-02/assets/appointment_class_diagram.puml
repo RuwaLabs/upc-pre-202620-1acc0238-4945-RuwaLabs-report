@@ -1,0 +1,151 @@
+@startuml
+!theme plain
+
+title Domain Layer Class Diagram - Appointments & Booking
+
+class Appointment {
+    - id : Long
+    - timeSlotId : Long
+    - patientId : Long
+    - bookingOrder : BookingOrder
+    - status : AppointmentStatus
+    - createdAt : Instant
+    - updatedAt : Instant
+    + create(timeSlotId : Long, patientId : Long, bookingOrder : BookingOrder) : Appointment
+    + rehydrate(...) : Appointment
+    + confirm() : void
+    + cancel() : void
+    + markAsAbsent() : void
+    + markAsAttended() : void
+    + expire() : void
+    + isActive() : boolean
+    + canBeCancelled(scheduledAt : Instant, deadlineHours : int) : boolean
+}
+
+class TimeSlot {
+    - id : Long
+    - doctorId : Long
+    - date : LocalDate
+    - startHour : LocalTime
+    - endHour : LocalTime
+    - maxCapacity : int
+    - currentBookings : int
+    - status : TimeSlotStatus
+    + create(doctorId : Long, date : LocalDate, startHour : LocalTime, endHour : LocalTime, maxCapacity : int) : TimeSlot
+    + rehydrate(...) : TimeSlot
+    + hasAvailableCapacity() : boolean
+    + incrementBookings() : void
+    + decrementBookings() : void
+    + updateMaxCapacity(newMaxCapacity : int) : void
+    + isFull() : boolean
+    + isExpired() : boolean
+    + cancel() : void
+}
+
+class Doctor {
+    - id : Long
+    - specialtyId : Long
+    - name : String
+    - lastname : String
+    + create(specialtyId : Long, name : String, lastname : String) : Doctor
+    + rehydrate(...) : Doctor
+}
+
+class Specialty {
+    - id : Long
+    - name : String
+    - description : String
+    + create(name : String, description : String) : Specialty
+    + rehydrate(...) : Specialty
+}
+
+class BookingOrder {
+    - value : int
+}
+
+class AppointmentBookedEvent {
+    - appointmentId : Long
+    - timeSlotId : Long
+    - patientId : Long
+    - bookingOrder : int
+    - bookedAt : Instant
+}
+
+class AppointmentCancelledEvent {
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - cancelledAt : Instant
+}
+
+class AppointmentAbsentEvent {
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - absentAt : Instant
+}
+
+enum AppointmentStatus {
+    RESERVED
+    CONFIRMED
+    CANCELLED
+    ABSENT
+    ATTENDED
+    EXPIRED
+}
+
+enum TimeSlotStatus {
+    AVAILABLE
+    FULL
+    CANCELLED
+}
+
+interface AppointmentRepository {
+    + save(appointment : Appointment) : Appointment
+    + findById(id : Long) : Optional<Appointment>
+    + findByPatientId(patientId : Long) : List<Appointment>
+    + findByTimeSlotId(timeSlotId : Long) : List<Appointment>
+    + findActiveBySpecialtyId(specialtyId : Long) : List<Appointment>
+    + getNextBookingOrderBySpecialty(specialtyId : Long) : int
+    + existsActiveByPatientAndTimeSlot(patientId : Long, timeSlotId : Long) : boolean
+    + updateStatus(id : Long, status : AppointmentStatus) : void
+    + existsById(id : Long) : boolean
+    + deleteById(id : Long) : void
+}
+
+interface TimeSlotRepository {
+    + save(timeSlot : TimeSlot) : TimeSlot
+    + findById(id : Long) : Optional<TimeSlot>
+    + findAvailableBySpecialty(specialtyId : Long, date : LocalDate) : List<TimeSlot>
+    + findByDoctorAndDate(doctorId : Long, date : LocalDate) : List<TimeSlot>
+    + existsById(id : Long) : boolean
+}
+
+interface SpecialtyRepository {
+    + save(specialty : Specialty) : Specialty
+    + findById(id : Long) : Optional<Specialty>
+    + findAll() : List<Specialty>
+    + existsById(id : Long) : boolean
+}
+
+interface DoctorRepository {
+    + save(doctor : Doctor) : Doctor
+    + findById(id : Long) : Optional<Doctor>
+    + findBySpecialtyId(specialtyId : Long) : List<Doctor>
+    + findAll() : List<Doctor>
+    + existsById(id : Long) : boolean
+}
+
+Appointment "1" --> "1" AppointmentStatus : has
+Appointment "1" --> "1" BookingOrder : has
+Appointment ..> AppointmentBookedEvent : registers
+Appointment ..> AppointmentCancelledEvent : registers
+Appointment ..> AppointmentAbsentEvent : registers
+TimeSlot "1" --> "1" TimeSlotStatus : has
+TimeSlot "1" --> "0..*" Appointment : contains
+TimeSlot "1" --> "1" Doctor : belongs to
+Doctor "1" --> "1" Specialty : belongs to
+AppointmentRepository ..> Appointment
+TimeSlotRepository ..> TimeSlot
+SpecialtyRepository ..> Specialty
+DoctorRepository ..> Doctor
+
+@enduml
