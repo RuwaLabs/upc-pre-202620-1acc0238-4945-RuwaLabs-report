@@ -1,0 +1,84 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+title Component Diagram for Appointments & Booking Bounded Context
+
+Container(client, "Mobile Apps", "Software System", "Aplicaciones de pacientes y personal administrativo")
+ContainerDb(db, "PostgreSQL Database", "Relational Database", "Tablas appointments, time_slots, specialties, doctors")
+System_Ext(springEvents, "Spring Events", "Event Bus en memoria")
+System_Ext(mailServer, "SMTP Mail Server", "External System", "Servidor de correo (Gmail) para confirmaciones")
+
+Container_Boundary(api, "Backend API - Appointments & Booking") {
+
+    Boundary(interface, "1. Interface Layer") {
+        Component(appCtrl, "AppointmentsController", "Spring REST Controller", "Reserva, cancelación e historial de citas")
+        Component(slotCtrl, "TimeSlotsController", "Spring REST Controller", "Disponibilidad y gestión de bloques horarios")
+        Component(specCtrl, "SpecialtiesController", "Spring REST Controller", "Catálogo de especialidades")
+        Component(docCtrl, "DoctorsController", "Spring REST Controller", "Catálogo de médicos")
+    }
+
+    Boundary(application, "2. Application Layer") {
+        Component(appCmdSvc, "AppointmentCommandService", "Application Service", "Orquesta reserva y cancelación")
+        Component(slotCmdSvc, "TimeSlotCommandService", "Application Service", "Orquesta creación y actualización de slots")
+        Component(appQrySvc, "AppointmentQueryService", "Application Service", "Consultas de citas")
+        Component(slotQrySvc, "TimeSlotQueryService", "Application Service", "Consultas de disponibilidad")
+        Component(specQrySvc, "SpecialtyQueryService", "Application Service", "Consultas de especialidades")
+        Component(docQrySvc, "DoctorQueryService", "Application Service", "Consultas de médicos")
+    }
+
+    Boundary(domain, "3. Domain Layer") {
+        Component(appointmentAgg, "Appointment", "Aggregate Root", "Estado de la cita y bookingOrder")
+        Component(timeSlotAgg, "TimeSlot", "Aggregate Root", "Bloque de tiempo y su capacidad")
+        Component(doctorAgg, "Doctor", "Aggregate", "Catálogo de médicos")
+        Component(specialtyAgg, "Specialty", "Aggregate", "Catálogo de especialidades")
+        Component(appRepo, "AppointmentRepository", "Interface", "Contrato de persistencia de citas")
+        Component(slotRepo, "TimeSlotRepository", "Interface", "Contrato de persistencia de slots")
+        Component(specRepo, "SpecialtyRepository", "Interface", "Contrato de persistencia de especialidades")
+        Component(docRepo, "DoctorRepository", "Interface", "Contrato de persistencia de médicos")
+    }
+
+    Boundary(infrastructure, "4. Infrastructure Layer") {
+        Component(appAdapter, "AppointmentPersistenceAdapter", "Persistence Adapter", "Implementa AppointmentRepository y publica domain events")
+        Component(slotAdapter, "TimeSlotPersistenceAdapter", "Persistence Adapter", "Implementa TimeSlotRepository")
+        Component(specAdapter, "SpecialtyPersistenceAdapter", "Persistence Adapter", "Implementa SpecialtyRepository")
+        Component(docAdapter, "DoctorPersistenceAdapter", "Persistence Adapter", "Implementa DoctorRepository")
+        Component(notifAdapter, "NotificationAdapter", "Outbound Service", "Envía confirmaciones por correo (SMTP)")
+    }
+}
+
+Rel(client, appCtrl, "Realiza peticiones HTTP a", "JSON/HTTPS")
+Rel(client, slotCtrl, "Realiza peticiones HTTP a", "JSON/HTTPS")
+Rel(client, specCtrl, "Realiza peticiones HTTP a", "JSON/HTTPS")
+Rel(client, docCtrl, "Realiza peticiones HTTP a", "JSON/HTTPS")
+
+Rel(appCtrl, appCmdSvc, "Delega comandos a")
+Rel(appCtrl, appQrySvc, "Delega consultas a")
+Rel(slotCtrl, slotCmdSvc, "Delega comandos a")
+Rel(slotCtrl, slotQrySvc, "Delega consultas a")
+Rel(specCtrl, specQrySvc, "Delega consultas a")
+Rel(docCtrl, docQrySvc, "Delega consultas a")
+
+Rel(appCmdSvc, appointmentAgg, "Crea y cancela")
+Rel(appCmdSvc, timeSlotAgg, "Verifica capacidad de")
+Rel(appCmdSvc, appRepo, "Usa interfaz")
+Rel(appCmdSvc, slotRepo, "Usa interfaz")
+Rel(appQrySvc, appRepo, "Usa interfaz")
+Rel(slotQrySvc, slotRepo, "Usa interfaz")
+Rel(specQrySvc, specRepo, "Usa interfaz")
+Rel(docQrySvc, docRepo, "Usa interfaz")
+
+Rel_U(appAdapter, appRepo, "Implementa", "Java")
+Rel_U(slotAdapter, slotRepo, "Implementa", "Java")
+Rel_U(specAdapter, specRepo, "Implementa", "Java")
+Rel_U(docAdapter, docRepo, "Implementa", "Java")
+
+Rel(appCmdSvc, notifAdapter, "Usa para notificar")
+Rel(appAdapter, springEvents, "Publica domain events hacia", "In-memory")
+Rel(notifAdapter, mailServer, "Envía correo vía", "SMTP")
+Rel(appAdapter, db, "Lee y escribe datos en", "JDBC/JPA")
+Rel_D(slotAdapter, db, "Lee y escribe datos en", "JDBC/JPA")
+Rel_D(specAdapter, db, "Lee y escribe datos en", "JDBC/JPA")
+Rel_D(docAdapter, db, "Lee y escribe datos en", "JDBC/JPA")
+
+@enduml
