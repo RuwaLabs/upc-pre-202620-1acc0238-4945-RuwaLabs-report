@@ -2536,7 +2536,7 @@ El diagrama de base de datos del bounded context Identity & Access Management mu
 
 ---
 
-### 2.6.2. Bounded Context: Appointments & Booking
+### 
 
 El **bounded context de Appointments & Booking** gestiona el ciclo de vida de una cita médica: consulta de disponibilidad, reserva, confirmación y cancelación. Es el responsable de la **cola de pedido de cita** (`booking_order`), que define la prioridad del paciente para asumir cupos liberados.
 
@@ -2957,7 +2957,7 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/appointment_component_diagram.png" alt="Appointment component diagram" width="85%"/>
+<img src="assets/appointment_component_diagram_v2.png" alt="Appointment component diagram" width="85%"/>
 
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con `ApplicationEventPublisher` de Spring.
@@ -2966,7 +2966,7 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/appointment_class_diagram.png" alt="Appointment class diagram" width="85%"/>
+<img src="assets/appointment_class_diagram_v2.png" alt="Appointment class diagram" width="85%"/>
 
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios.
