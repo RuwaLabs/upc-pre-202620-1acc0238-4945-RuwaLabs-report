@@ -286,7 +286,7 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 | `Time Slot` | Intervalo de tiempo asignado a una especialidad médica para la atención de un único paciente en una fecha y horario determinado. |
 | `Booking` / `Appointment` | Proceso mediante el cual un paciente asegura un cupo médico a través de la aplicación móvil antes de acudir presencialmente. |
 | `Check-in` | Validación de asistencia presencial realizada por el paciente mediante el escaneo de un código QR al llegar al centro de salud. |
-| `Reassignment` | Mecanismo automatizado que reasigna los cupos liberados por cancelaciones o inasistencias a los pacientes de la cola de reserva, en orden de `bookingOrder`. |
+| `Reassignment` | Mecanismo automatizado que reasigna los cupos liberados por inasistencias a los pacientes de la cola de reserva, en orden de `bookingOrder`, formando una cadena de reasignación. |
 | `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
 | `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
 
@@ -318,7 +318,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 | **EP0** | Plataforma de Presentación y Captación | Sitio web estático (Landing Page) orientado a la captación de pacientes potenciales, la explicación de la propuesta de valor y la redirección de descarga de las aplicaciones móviles. |
 | **EP1** | Authentication & Identity Management | Registro y autenticación de usuarios con verificación oficial por DNI, vinculación de menores de edad y recuperación de contraseñas. |
 | **EP2** | Appointments & Booking Engine | Consulta de disponibilidad en calendario, reserva de citas médicas para titulares o menores, y gestión de cancelaciones. |
-| **EP3** | Reassignment Protocol | Gestión automatizada de la reasignación de cupos liberados por cancelaciones o ausencias, ofreciendo propuestas de adelanto a los pacientes de la cola de reserva en orden de `bookingOrder`. |
+| **EP3** | Reassignment Protocol | Gestión automatizada de la reasignación de cupos liberados por ausencias, ofreciendo propuestas de adelanto a los pacientes de la cola de reserva en orden de `bookingOrder`. |
 | **EP4** | Arrival & QR Check-in System | Confirmación presencial de llegada mediante escaneo de código QR, gestión de la cola de asistencia y emisión del ticket digital de atención. |
 | **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo, parametrización de reglas globales e intervalos del hospital, y visualización del dashboard operativo. |
 
@@ -1691,9 +1691,9 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery:
 
 - **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento"*.
-- **`Reassignment`:** se incorporan los conceptos `Reassignment Offer` (entrada ordenada por `bookingOrder`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Reassignment Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
+- **`Reassignment`:** se incorporan los conceptos `Reassignment Offer` (entrada ordenada por `bookingOrder`), `Reassignment Chain` (cadena de reasignación: al aceptar, se libera el slot original del candidato y se vuelve a ofrecer) y `Reassignment Response Timeout` (ventana única para aceptar y presentarse). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
 - **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Cola de asistencia ordenada por `checkInTimestamp`"*.
-- **`Hospital Operations & Configuration`:** se incorpora el parámetro `reassignmentResponseTimeoutMin` (y opcionalmente `cascadeReassignmentEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
+- **`Hospital Operations & Configuration`:** se incorpora el parámetro `reassignmentResponseTimeoutMin` (y opcionalmente `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
@@ -1765,42 +1765,37 @@ El paciente llega al establecimiento de salud con su cita programada. El **Arriv
 
 **Flow 5: Cancelación de cita y liberación de cupo**
 
-El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y transfiere el cupo al **Reassignment**. Este emite el evento `Cupo liberado` y notifica al paciente con el **menor `bookingOrder`** de la `Cola de reserva` correspondiente. Si el paciente acepta la propuesta dentro del `reassignmentResponseTimeoutMin`, se registra el evento `Cita reasignada`. Si rechaza o no responde, se notifica al siguiente paciente con menor `bookingOrder`. Si nadie acepta y `cascadeReassignmentEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
+El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y libera el cupo de la agenda médica, dejándolo disponible para una reserva externa. **La cancelación no dispara el protocolo de reasignación**: este se activa únicamente ante la ausencia presencial de un paciente (ver Flow 6).
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Patient | Cancela cita | Cita activa | Appointments & Booking |
 | 2 | Appointments & Booking | Verifica plazo | Reglas de cancelación | Appointments & Booking |
 | 3 | Appointments & Booking | Registra cancelación | Cita cancelada | Appointments & Booking |
-| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Reassignment |
-| 5 | Reassignment | Notifica al menor bookingOrder | ReassignmentOfferSent | Reassignment |
-| 6 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
-| 7 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
-| 8 | Reassignment | Expira propuesta (si no responde) | ReassignmentOfferExpired | Reassignment |
-| 9 | Reassignment | Activa cascada (si nadie acepta) | Cascade Reassignment | Reassignment |
+| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Appointments & Booking |
 
-**Flow 6: Declaración de ausencia por vencimiento de tolerancia**
+**Flow 6: Declaración de ausencia y reasignación en cadena**
 
-El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso. El sistema emite el evento `Paciente ausente` y registra el turno como perdido. El **Reassignment** libera el cupo y notifica al paciente con el **menor `bookingOrder`** de la cola de reserva, iniciando el protocolo de reasignación. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, se activa la cascada si corresponde.
+El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso y publica el evento `PatientAbsentEvent`. El **Reassignment** toma al paciente con el **menor `bookingOrder`** de la cola de reserva de la misma especialidad y le ofrece el cupo liberado (`ReassignmentOfferSent`). El candidato dispone de una **ventana única** (`reassignmentResponseTimeoutMin`) para aceptar **y** presentarse. Si acepta y llega, se registra `Cita reasignada` y —como el candidato abandonó su slot original— ese slot se libera y se vuelve a ofrecer al siguiente de la cola, formando una **cadena de reasignación**. Si rechaza o no responde, se pasa al siguiente candidato. Si acepta pero no llega, se declara ausente (`ReassignmentOfferNoShow`). Si nadie en la cola acepta, el cupo se cierra.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Admission Staff | Llama al paciente | — | Arrival & QR Check-in |
 | 2 | Arrival & QR Check-in | Verifica tolerancia | Tiempo de tolerancia | Arrival & QR Check-in |
-| 3 | Arrival & QR Check-in | Declara ausencia | Paciente ausente | Arrival & QR Check-in |
-| 4 | Arrival & QR Check-in | Libera cupo | Cupo liberado | Reassignment |
-| 5 | Reassignment | Notifica al menor bookingOrder | ReassignmentOfferSent | Reassignment |
-| 6 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
-| 7 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
+| 3 | Arrival & QR Check-in | Declara ausencia | PatientAbsentEvent | Arrival & QR Check-in |
+| 4 | Reassignment | Ofrece cupo al menor bookingOrder | ReassignmentOfferSent | Reassignment |
+| 5 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
+| 6 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
+| 7 | Reassignment | Libera slot original del candidato | Reassignment Chain | Reassignment |
 
 **Flow 7: Configuración operativa del establecimiento**
 
-El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `reassignmentResponseTimeoutMin`, el `cascadeReassignmentEnabled` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
+El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `reassignmentResponseTimeoutMin` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | Super Admin | Accede a configuración | Panel de administración | Hospital Operations & Configuration |
-| 2 | Super Admin | Parametriza reglas | Intervalos, tolerancias, reassignmentResponseTimeoutMin, cascadeReassignmentEnabled | Hospital Operations & Configuration |
+| 2 | Super Admin | Parametriza reglas | Intervalos, tolerancias, reassignmentResponseTimeoutMin | Hospital Operations & Configuration |
 | 3 | Hospital Operations & Configuration | Actualiza parámetros | Reglas actualizadas | Hospital Operations & Configuration |
 | 4 | Hospital Operations & Configuration | Aplica cambios | Nuevos bloques y turnos | Hospital Operations & Configuration |
 | 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
@@ -1903,16 +1898,16 @@ El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de 
 
 **Context Overview Definition**
 
-Gestiona la cola de reserva del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, y `cascadeReassignmentEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
+Gestiona la cola de reserva del sistema y reasigna los cupos liberados por **ausencias**, notificando oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. El candidato dispone de una **ventana única** (`reassignmentResponseTimeoutMin`) para aceptar y presentarse. Si acepta, su slot original se libera y se re-ofrece al siguiente de la cola, formando una **cadena de reasignación**. Si nadie acepta, el cupo se cierra.
 
 **Capability Analysis**
 
 - Registro de pacientes en cola de reserva por especialidad.
-- Detección de cupos liberados por cancelación o ausencia.
+- Detección de cupos liberados por ausencia.
 - Envío de propuestas de adelanto al paciente con menor `bookingOrder`.
 - Reasignación automática de cupos aceptados.
 - Gestión de expiración de propuestas no respondidas.
-- Activación de la cascada de reasignación si nadie acepta.
+- Avance de la cadena de reasignación al liberar el slot original del candidato que acepta.
 
 **Capability Layering**
 
@@ -1922,24 +1917,24 @@ Gestiona la cola de reserva del sistema, reasigna los cupos liberados por cancel
 
 **Dependencies Capture**
 
-Depende de Appointments & Booking para recibir los eventos de cancelación, de Arrival & QR Check-in para recibir los eventos de ausencia, y del sistema de notificaciones para enviar las propuestas a los pacientes de la cola de reserva.
+Depende de Arrival & QR Check-in para recibir el evento de ausencia, de Appointments & Booking (vía ACL) para consultar la cola de reserva por `bookingOrder` y mover las citas reasignadas, de Hospital Operations & Configuration (vía ACL) para la ventana única, y del sistema de notificaciones para enviar las propuestas a los pacientes.
 
 **Design Critique**
 
-El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. El uso del `bookingOrder` como criterio de prioridad le otorga objetividad y trazabilidad al proceso. La gestión de expiración por tiempo, el control de respuestas concurrentes y la activación de la cascada son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
+El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. El uso del `bookingOrder` como criterio de prioridad le otorga objetividad y trazabilidad al proceso. La gestión de la ventana única por tiempo, el control de respuestas concurrentes y el avance de la cadena de reasignación son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Reassignment |
-| **Purpose** | Gestiona la cola de reserva del sistema, reasigna los cupos liberados por cancelaciones o ausencias, y notifica oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`. Si nadie acepta dentro del `reassignmentResponseTimeoutMin`, y `cascadeReassignmentEnabled` está activo, el cupo pasa a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. |
+| **Purpose** | Gestiona la cola de reserva del sistema y reasigna los cupos liberados por ausencias, notificando oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`. El candidato dispone de una ventana única (`reassignmentResponseTimeoutMin`) para aceptar y presentarse. Al aceptar, su slot original se libera y se re-ofrece al siguiente, formando una cadena de reasignación. Si nadie acepta, el cupo se cierra. |
 | **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** Appointments & Booking · **Messages:** Cita cancelada <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Paciente ausente <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
-| **Outbound Communication** | **Messages:** ReassignmentOfferSent · **Collaborator:** Patient en cola de reserva <br> **Messages:** ReassignmentOfferAccepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** ReassignmentOfferExpired · **Collaborator:** Patient <br> **Messages:** Cascade Reassignment · **Collaborator:** Appointments & Booking |
-| **Ubiquitous Language** | **Reassignment:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Reassignment Offer:** Entrada en la cola de reserva, ordenada por `bookingOrder`. <br> **Cascade Reassignment:** Reasignación en cascada: si nadie en la cola de reserva acepta, el cupo pasa al siguiente `Time Slot` de la misma especialidad y fecha. <br> **Reassignment Response Timeout:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente de la cola de reserva. <br> **Cupo liberado:** Turno disponible tras una cancelación o ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
-| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> Toda propuesta de adelanto expira automáticamente tras el `reassignmentResponseTimeoutMin` configurado. <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si nadie en la cola de reserva acepta y `cascadeReassignmentEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha. <br> La cascada solo aplica dentro del mismo día y especialidad. |
+| **Inbound Communication** | **Collaborator:** Arrival & QR Check-in · **Messages:** PatientAbsentEvent <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
+| **Outbound Communication** | **Messages:** ReassignmentOfferSent · **Collaborator:** Patient en cola de reserva <br> **Messages:** ReassignmentOfferAccepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** ReassignmentOfferRejected · **Collaborator:** Patient <br> **Messages:** ReassignmentOfferExpired · **Collaborator:** Patient <br> **Messages:** ReassignmentOfferAttended · **Collaborator:** Appointments & Booking <br> **Messages:** ReassignmentOfferNoShow · **Collaborator:** Appointments & Booking |
+| **Ubiquitous Language** | **Reassignment:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Reassignment Offer:** Entrada en la cola de reserva, ordenada por `bookingOrder`. <br> **Reassignment Chain:** Cadena de reasignación: al aceptar, se libera el slot original del candidato y se re-ofrece al siguiente. <br> **Reassignment Response Timeout:** Ventana única para aceptar y presentarse en el cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente de la cola de reserva. <br> **Cupo liberado:** Turno disponible tras una ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
+| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> La reasignación solo se dispara por ausencia presencial, no por cancelación. <br> Toda propuesta expira automáticamente tras la ventana única `reassignmentResponseTimeoutMin` (aceptar y presentarse). <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si el candidato acepta, su slot original se libera y se re-ofrece al siguiente (cadena). <br> Si el candidato acepta y no llega dentro de la ventana, se declara ausente y pierde su cita del día en esa especialidad. <br> Si nadie en la cola de reserva acepta, el cupo se cierra. |
 | **Assumptions** | Los pacientes en cola de reserva tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
-| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Porcentaje de cascadas activadas exitosamente. |
+| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Tasa de no-shows de candidatos que aceptaron y no llegaron. |
 | **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
 
 ## Bounded Context Canvas – Arrival & QR Check-in
@@ -1990,14 +1985,14 @@ El contexto tiene un alcance claro y su flujo principal (validar → crear Queue
 
 **Context Overview Definition**
 
-Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
+Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
 
 **Capability Analysis**
 
 - Configuración de intervalos y fraccionamientos de atención.
 - Definición de ventanas de tolerancia para check-in.
 - Configuración de plazos y márgenes operativos (cancelación, reserva, adelanto).
-- Configuración de `reassignmentResponseTimeoutMin` y `cascadeReassignmentEnabled`.
+- Configuración de `reassignmentResponseTimeoutMin`.
 - Configuración de `maxCapacityPerSlot`.
 - Generación de reportes operativos.
 - Visualización de dashboards de ocupación y ausentismo.
@@ -2015,17 +2010,17 @@ Depende de Identity & Access Management para autorizar al Super Admin, y recibe 
 
 **Design Critique**
 
-El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `reassignmentResponseTimeoutMin` y `cascadeReassignmentEnabled` le permite controlar el comportamiento de la cola de reserva sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
+El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `reassignmentResponseTimeoutMin` le permite controlar el comportamiento de la cola de reserva sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
 
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Hospital Operations & Configuration |
-| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
+| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
 | **Strategic Classification** | **Domain:** Supporting · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
 | **Domain Roles** | Execution Context |
 | **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado (Super Admin) <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Datos de atención y ausencias <br> **Collaborator:** Appointments & Booking · **Messages:** Datos de reservas y cancelaciones |
-| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `reassignmentResponseTimeoutMin`, `cascadeReassignmentEnabled`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
-| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **reassignmentResponseTimeoutMin:** Tiempo máximo para aceptar o rechazar una propuesta de cupo liberado. <br> **cascadeReassignmentEnabled:** Parámetro que habilita la reasignación en cascada si nadie acepta. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
+| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
+| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **reassignmentResponseTimeoutMin:** Ventana única para que el candidato acepte y se presente en el cupo liberado. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
 | **Business Decisions** | Los cambios de configuración solo aplican a los nuevos bloques, no afectan citas ya confirmadas. <br> Los parámetros inválidos o inconsistentes son rechazados por el sistema. <br> Solo el Super Admin puede modificar las reglas operativas del establecimiento. <br> Los reportes se generan con datos anonimizados. |
 | **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
 | **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
@@ -2072,9 +2067,7 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 | Identity & Access Management | Appointments & Booking | **Shared Kernel** | Comparten el modelo de identidad y sesión activa del paciente. |
 | Identity & Access Management | Arrival & QR Check-in | **Shared Kernel** | Comparten la validación de sesión para el check-in. |
 | Identity & Access Management | Hospital Operations & Configuration | **Shared Kernel** | Comparten el modelo de roles para autorizar al Super Admin. |
-| Appointments & Booking | Reassignment | **Customer/Supplier** | Booking publica eventos que Reassignment consume. |
-| Appointments & Booking | Arrival & QR Check-in | **Customer/Supplier** | Booking publica eventos que Check-in consume. |
-| Arrival & QR Check-in | Reassignment | **Customer/Supplier** | Check-in publica el evento de ausencia que Reassignment consume. |
+| Arrival & QR Check-in | Reassignment | **Customer/Supplier** | Check-in publica el evento de ausencia (`PatientAbsentEvent`) que Reassignment consume. |
 | Hospital Operations & Configuration | Appointments & Booking | **Conformist** | Booking adopta el modelo de parámetros operativos sin traducirlo. |
 | Hospital Operations & Configuration | Arrival & QR Check-in | **Conformist** | Check-in adopta el modelo de tolerancias sin traducirlo. |
 
@@ -2084,12 +2077,15 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 | Mensaje | Bounded Context origen | Bounded Context destino | Contenido |
 | :--- | :--- | :--- | :--- |
-| `AppointmentBooked` | Appointments & Booking | Reassignment, Arrival & QR Check-in | Incluye `bookingOrder` de la cita reservada. |
+| `AppointmentBooked` | Appointments & Booking | Arrival & QR Check-in | Incluye `bookingOrder` de la cita reservada. |
+| `PatientAbsentEvent` | Arrival & QR Check-in | Reassignment | Evento de ausencia presencial que dispara la reasignación. |
 | `CheckInCompleted` | Arrival & QR Check-in | Appointments & Booking, Patient | Incluye `attendanceQueueId` y `position` del paciente en la cola de asistencia. |
 | `ReassignmentOfferSent` | Reassignment | Patient | Propuesta de cupo liberado enviada al paciente con menor `bookingOrder`. |
-| `ReassignmentOfferAccepted` | Reassignment | Appointments & Booking, Patient | Confirmación de aceptación del cupo liberado. |
-| `ReassignmentOfferExpired` | Reassignment | Patient | Expiración del `reassignmentResponseTimeoutMin` sin respuesta del paciente. |
-| `CascadeReassignment` | Reassignment | Appointments & Booking | Activación de la cascada si nadie en la cola de reserva acepta el cupo. |
+| `ReassignmentOfferAccepted` | Reassignment | Appointments & Booking, Patient | Confirmación de aceptación del cupo liberado (mueve la cita y libera el slot original). |
+| `ReassignmentOfferRejected` | Reassignment | Patient | Rechazo del cupo liberado; se ofrece al siguiente candidato. |
+| `ReassignmentOfferExpired` | Reassignment | Patient | Expiración de la ventana única sin respuesta del paciente. |
+| `ReassignmentOfferAttended` | Reassignment | Appointments & Booking | El candidato aceptó y llegó; cierra la oferta. |
+| `ReassignmentOfferNoShow` | Reassignment | Appointments & Booking | El candidato aceptó y no llegó; marca su cita como ausente. |
 
 **Leyenda de patrones:**
 
@@ -2889,7 +2885,7 @@ Define las consultas relacionadas con el catálogo de médicos.
 
 ---
 
-> **Nota:** la reasignación de cupos liberados (por cancelación o ausencia) es responsabilidad del bounded context `Reassignment`, que escucha `AppointmentCancelledEvent` y `AppointmentAbsentEvent` con sus propios `@EventListener`. Este contexto no implementa handlers propios para reasignación.
+> **Nota:** la reasignación de cupos liberados **por ausencia** es responsabilidad del bounded context `Reassignment`, que escucha `PatientAbsentEvent` publicado por `Arrival & QR Check-in`. La cancelación de una cita **no** dispara reasignación (solo libera el cupo para reserva externa). Este contexto no implementa handlers propios para reasignación.
 
 ---
 
@@ -2982,46 +2978,39 @@ El diagrama de base de datos del bounded context Appointments & Booking muestra 
 
 ### 2.6.3. Bounded Context: Reassignment
 
-El **bounded context de Reassignment** gestiona la reasignación de cupos liberados por cancelaciones o ausencias. La reasignación opera sobre la **cola de pedido** (`appointments` ordenadas por `booking_order`). No existe lista de espera externa. Cuando se libera un cupo en un `Time Slot X`, el sistema busca en todos los `appointments` de la misma especialidad que no estén en el `Time Slot X`, ordenados por `booking_order`, y notifica al primero. Si rechaza o no responde, pasa al siguiente. Si nadie acepta, el cupo se pierde.
+El **bounded context de Reassignment** gestiona la reasignación de cupos liberados por **ausencias** presenciales. La reasignación opera sobre la **cola de reserva** (`appointments` ordenadas por `booking_order`); no existe lista de espera externa ni cascada hacia otros `Time Slot`. Cuando un paciente no se presenta y es declarado ausente, el sistema toma al siguiente paciente de la misma especialidad (por `booking_order`) y le ofrece el cupo liberado. El candidato dispone de una **ventana única** (`expiresAt`) para aceptar **y** presentarse. Si acepta y llega, se reasigna; al abandonar su slot original, este se libera y se re-ofrece al siguiente, formando una **cadena de reasignación**. Si rechaza o no responde, se pasa al siguiente candidato. Si acepta pero no llega, se declara ausente. Si nadie en la cola acepta, el cupo se cierra. La cancelación de citas **no** dispara este flujo.
 
 #### 2.6.3.1. Domain Layer
 
-La capa de **Domain** representa el núcleo del negocio de reasignación de cupos liberados. Aquí se definen las entidades, value objects, enums, aggregates, domain services, domain events e interfaces que encapsulan las reglas de negocio.
+La capa de **Domain** representa el núcleo del negocio de reasignación. Aquí se definen el aggregate root, el enum y los domain events (records inmutables) que encapsulan las reglas de negocio.
 
 ##### ReassignmentOffer (Aggregate Root)
 
 **Atributos:**
-`id`, `idAppointment`, `idFreedTimeSlot`, `idOriginalAppointment`, `status: ReassignmentStatus`, `offeredAt`, `respondedAt`, `expiresAt`
+`id`, `appointmentId`, `originalAppointmentId`, `freedTimeSlotId`, `candidateTimeSlotId`, `status: ReassignmentStatus`, `offeredAt`, `respondedAt`, `expiresAt`
 
 **Métodos:**
-- `accept()` → cambia el estado a `ACCEPTED` y registra `respondedAt`.
-- `reject()` → cambia el estado a `REJECTED` y registra `respondedAt`.
-- `expire()` → cambia el estado a `EXPIRED` si pasó `expiresAt`.
-- `isPending()` → retorna `true` si el estado es `PENDING`.
-- `isExpired()` → valida si `expiresAt < now()`.
+- `offer(appointmentId, originalAppointmentId, freedTimeSlotId, candidateTimeSlotId, expiresAt)` → factory que crea una oferta `PENDING`.
+- `onOffered()` → registra `ReassignmentOfferSentEvent` (tras persistir, cuando ya existe el `id`).
+- `accept()` → valida `PENDING` y no expirada; cambia a `ACCEPTED` y registra `respondedAt` y `ReassignmentOfferAcceptedEvent`.
+- `reject()` → valida `PENDING`; cambia a `REJECTED` y registra `ReassignmentOfferRejectedEvent`.
+- `expire()` → valida `PENDING` y `expiresAt < now`; cambia a `EXPIRED` y registra `ReassignmentOfferExpiredEvent`.
+- `markArrived()` → valida `ACCEPTED`; cambia a `ATTENDED` y registra `ReassignmentOfferAttendedEvent`.
+- `markNoShow()` → valida `ACCEPTED` y `expiresAt < now`; cambia a `ABSENT` y registra `ReassignmentOfferNoShowEvent`.
+- `isPending()`, `isAccepted()`, `isExpired()` → predicados de estado.
 
 **Propósito:**
-Representa una oferta de reasignación enviada a un paciente de la cola de pedido. Es aggregate root porque controla el ciclo de vida de la oferta.
+Representa una oferta de reasignación enviada a un candidato de la cola de reserva. Es aggregate root porque controla el ciclo de vida completo de la oferta. Los identificadores de `Appointment` y `TimeSlot` se modelan como `Long` planos para no acoplar la persistencia entre bounded contexts.
 
 ---
 
 ##### ReassignmentStatus (Enum)
 
 **Valores posibles:**
-`PENDING`, `ACCEPTED`, `REJECTED`, `EXPIRED`
+`PENDING`, `ACCEPTED`, `REJECTED`, `EXPIRED`, `ATTENDED`, `ABSENT`
 
 **Propósito:**
-Define el estado de una oferta de reasignación.
-
----
-
-##### ReassignmentDomainService (Domain Service)
-
-**Métodos:**
-- `findNextCandidate(specialtyId, freedTimeSlotId): Appointment?`
-
-**Propósito:**
-Encapsula la lógica de búsqueda del siguiente candidato en la cola de pedido. Internamente consulta todos los `appointments` de la especialidad con estado `RESERVED` o `CONFIRMED`, excluye los que están en el `Time Slot X`, y los ordena por `booking_order` ascendente para retornar el primero.
+Define los estados del ciclo de vida de una oferta de reasignación.
 
 ---
 
@@ -3029,74 +3018,39 @@ Encapsula la lógica de búsqueda del siguiente candidato en la cola de pedido. 
 
 **Métodos:**
 - `save(offer: ReassignmentOffer): ReassignmentOffer`
-- `findById(id: Int): ReassignmentOffer?`
-- `findPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
+- `findById(id: Long): Optional<ReassignmentOffer>`
+- `findPendingByAppointment(appointmentId: Long): List<ReassignmentOffer>`
 - `findExpiredOffers(): List<ReassignmentOffer>`
-- `updateStatus(id: Int, status: ReassignmentStatus)`
+- `findAcceptedOverdue(): List<ReassignmentOffer>`
 
 **Propósito:**
 Define las operaciones de persistencia para ofertas de reasignación.
 
 ---
 
-##### EventPublisher (Interface)
+##### Domain Events (records)
 
-**Métodos:**
-- `publish(event: DomainEvent)`
+Los domain events son **records inmutables** publicados por el persistence adapter vía `ApplicationEventPublisher` de Spring. El agregado los registra con `registerDomainEvent(...)` (heredado de `AbstractDomainAggregateRoot`).
 
-**Propósito:**
-Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
+- **ReassignmentOfferSentEvent:** `offerId`, `appointmentId`, `freedTimeSlotId`, `offeredAt` — se envió una oferta.
+- **ReassignmentOfferAcceptedEvent:** `offerId`, `appointmentId`, `freedTimeSlotId`, `originalAppointmentId`, `candidateTimeSlotId`, `acceptedAt` — el candidato aceptó (lleva el snapshot para que Booking mueva la cita y libere el slot original).
+- **ReassignmentOfferRejectedEvent:** `offerId`, `appointmentId`, `freedTimeSlotId`, `originalAppointmentId`, `rejectedAt` — el candidato rechazó.
+- **ReassignmentOfferExpiredEvent:** `offerId`, `appointmentId`, `freedTimeSlotId`, `originalAppointmentId`, `expiredAt` — la oferta expiró sin respuesta.
+- **ReassignmentOfferAttendedEvent:** `offerId`, `appointmentId`, `attendedAt` — el candidato aceptó y llegó.
+- **ReassignmentOfferNoShowEvent:** `offerId`, `appointmentId`, `freedTimeSlotId`, `noShowAt` — el candidato aceptó y no llegó.
 
----
-
-##### ReassignmentOfferSentEvent (Domain Event)
-
-**Atributos:**
-`offerId`, `appointmentId`, `freedTimeSlotId`, `offeredAt`
-
-**Propósito:**
-Representa el hecho de negocio de que se envió una oferta de reasignación a un paciente de la cola de pedido.
-
----
-
-##### ReassignmentOfferAcceptedEvent (Domain Event)
-
-**Atributos:**
-`offerId`, `appointmentId`, `acceptedAt`
-
-**Propósito:**
-Representa el hecho de negocio de que un paciente aceptó una oferta de reasignación.
-
----
-
-##### ReassignmentOfferRejectedEvent (Domain Event)
-
-**Atributos:**
-`offerId`, `appointmentId`, `rejectedAt`
-
-**Propósito:**
-Representa el hecho de negocio de que un paciente rechazó una oferta de reasignación.
-
----
-
-##### ReassignmentOfferExpiredEvent (Domain Event)
-
-**Atributos:**
-`offerId`, `appointmentId`, `expiredAt`
-
-**Propósito:**
-Representa el hecho de negocio de que una oferta de reasignación expiró sin respuesta.
+> **Nota:** la búsqueda del siguiente candidato (`findNextCandidate`) no es un domain service: se resuelve mediante un ACL hacia `Appointments & Booking`, porque consulta datos de otro bounded context.
 
 ---
 
 #### 2.6.3.2. Interface Layer
 
-La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST y consumers de eventos.
+La **Interface Layer** expone las funcionalidades del bounded context mediante endpoints REST y un consumer de eventos.
 
 ##### ReassignmentOffersController (REST API Controller)
 
 **Endpoints:**
-- `GET /api/v1/reassignment-offers/pending` → Lista ofertas pendientes del paciente autenticado.
+- `GET /api/v1/reassignment-offers/pending?appointmentId={id}` → Lista ofertas pendientes de un candidato.
 - `POST /api/v1/reassignment-offers/{id}/accept` → Acepta una oferta.
 - `POST /api/v1/reassignment-offers/{id}/reject` → Rechaza una oferta.
 
@@ -3105,33 +3059,24 @@ Este controlador gestiona las operaciones sobre el aggregate `ReassignmentOffer`
 
 ---
 
-##### AppointmentCancelledEventConsumer (Event Consumer)
+##### PatientAbsentEventConsumer (Event Consumer)
 
 **Función:**
-Escucha el evento `AppointmentCancelledEvent` publicado por `Appointments & Booking`.
-**Tecnología:** `@EventListener` de Spring
-
----
-
-##### AppointmentAbsentEventConsumer (Event Consumer)
-
-**Función:**
-Escucha el evento `AppointmentAbsentEvent` publicado por `Arrival & QR Check-in`.
+Escucha el evento `PatientAbsentEvent` publicado por `Arrival & QR Check-in` y dispara el protocolo de reasignación.
 **Tecnología:** `@EventListener` de Spring
 
 ---
 
 #### 2.6.3.3. Application Layer
 
-La **Application Layer** orquesta los casos de uso del dominio mediante **Command Services** y **Query Services**. Los **Command Handlers** viven dentro de los Command Services, y los **Event Handlers** en `application/internal/eventhandlers/`.
+La **Application Layer** orquesta los casos de uso mediante **Command Services** y **Query Services**. Los command services retornan `Result<T, ApplicationError>` (patrón Result del módulo `shared`), y los **Event Handlers** viven en `application/internal/eventhandlers/`.
 
 ##### ReassignmentCommandService (Interface)
 
 **Métodos (Command Handlers):**
-- `sendReassignmentOffer(command: SendReassignmentOfferCommand): ReassignmentOffer`
-- `acceptReassignment(command: AcceptReassignmentCommand): void`
-- `rejectReassignment(command: RejectReassignmentCommand): void`
-- `expireReassignment(command: ExpireReassignmentCommand): void`
+- `sendReassignmentOffer(command: SendReassignmentOfferCommand): Optional<Long>` — dispara la reasignación y devuelve el id de la oferta creada (vacío si no hay candidato).
+- `acceptReassignment(command: AcceptReassignmentCommand): Result<ReassignmentOffer, ApplicationError>`
+- `rejectReassignment(command: RejectReassignmentCommand): Result<ReassignmentOffer, ApplicationError>`
 
 **Propósito:**
 Define los comandos relacionados con la reasignación.
@@ -3141,11 +3086,32 @@ Define los comandos relacionados con la reasignación.
 ##### ReassignmentQueryService (Interface)
 
 **Métodos (Query Handlers):**
-- `getPendingByAppointment(appointmentId: Int): List<ReassignmentOffer>`
-- `getById(id: Int): ReassignmentOffer?`
+- `getPendingByAppointment(appointmentId: Long): List<ReassignmentOffer>`
+- `getById(id: Long): Optional<ReassignmentOffer>`
 
 **Propósito:**
 Define las consultas relacionadas con la reasignación.
+
+---
+
+##### AppointmentLookupService (ACL / Outbound)
+
+**Métodos:**
+- `findNextCandidateByBookingOrder(freedTimeSlotId): Optional<Long>` — devuelve el `appointmentId` del siguiente candidato por `bookingOrder`.
+- `timeSlotOfAppointment(appointmentId): Long` — devuelve el slot actual del candidato.
+
+**Propósito:**
+Puerto de acceso a `Appointments & Booking`. Implementación en memoria (pendiente de conectar a la facade real).
+
+---
+
+##### HospitalConfigurationService (ACL / Outbound)
+
+**Métodos:**
+- `reassignmentResponseTimeoutMinutes(): int`
+
+**Propósito:**
+Puerto de acceso a `Hospital Operations & Configuration` para la ventana única. Implementación en memoria (pendiente).
 
 ---
 
@@ -3154,52 +3120,31 @@ Define las consultas relacionadas con la reasignación.
 **Responsabilidad:** Implementar los comandos de reasignación.
 
 **Flujo de `sendReassignmentOffer`:**
-1. Recibe `idFreedTimeSlot` e `idOriginalAppointment`.
-2. Lee `reassignmentResponseTimeoutMin` de la configuración.
-3. Busca el siguiente candidato con `ReassignmentDomainService.findNextCandidate`.
-4. Crea un `ReassignmentOffer` con `expiresAt = now + timeout`.
-5. Publica el evento `ReassignmentOfferSentEvent`.
-6. Envía notificación al paciente.
+1. Recibe `originalAppointmentId` y `freedTimeSlotId`.
+2. Busca el siguiente candidato con `AppointmentLookupService.findNextCandidateByBookingOrder`.
+3. Si no hay candidato, no hace nada (el cupo se cierra).
+4. Lee la ventana única con `HospitalConfigurationService.reassignmentResponseTimeoutMinutes`.
+5. Calcula `expiresAt = now + ventana` y obtiene `candidateTimeSlotId`.
+6. Crea la oferta `PENDING` con `ReassignmentOffer.offer(...)` y la guarda (publica `ReassignmentOfferSentEvent`).
 
 **Flujo de `acceptReassignment`:**
-1. Recibe `offerId`.
-2. Valida que esté `PENDING` y no expirada.
-3. Cambia el estado a `ACCEPTED`.
-4. Actualiza el `appointment` del paciente con el nuevo `time_slot`.
-5. Publica el evento `ReassignmentOfferAcceptedEvent`.
-6. Notifica al paciente.
+1. Busca la oferta; valida que esté `PENDING` y no expirada.
+2. Llama `accept()` (cambia a `ACCEPTED`) y guarda (publica `ReassignmentOfferAcceptedEvent`).
+3. El handler de `AcceptedEvent` libera el slot original del candidato y reinicia la cadena.
 
 **Flujo de `rejectReassignment`:**
-1. Recibe `offerId`.
-2. Cambia el estado a `REJECTED`.
-3. Publica el evento `ReassignmentOfferRejectedEvent`.
-4. Dispara `sendReassignmentOffer` para el siguiente candidato.
-
-**Flujo de `expireReassignment`:**
-1. Busca ofertas `PENDING` con `expiresAt < now()`.
-2. Cambia el estado a `EXPIRED`.
-3. Publica el evento `ReassignmentOfferExpiredEvent`.
-4. Dispara `sendReassignmentOffer` para el siguiente candidato.
+1. Busca la oferta; valida que esté `PENDING`.
+2. Llama `reject()` y guarda (publica `ReassignmentOfferRejectedEvent`).
 
 ---
 
-##### AppointmentCancelledEventHandler (Event Handler)
+##### Event Handlers
 
-**Responsabilidad:** Reaccionar al evento `AppointmentCancelledEvent`.
-**Flujo:**
-1. Escucha el evento.
-2. Dispara `sendReassignmentOffer`.
-3. Registra la acción en el log de auditoría.
-
----
-
-##### AppointmentAbsentEventHandler (Event Handler)
-
-**Responsabilidad:** Reaccionar al evento `AppointmentAbsentEvent`.
-**Flujo:**
-1. Escucha el evento.
-2. Dispara `sendReassignmentOffer`.
-3. Registra la acción en el log de auditoría.
+- **PatientAbsentEventHandler** — escucha `PatientAbsentEvent` y dispara `sendReassignmentOffer`.
+- **ReassignmentOfferAcceptedEventHandler** — escucha `AcceptedEvent` y re-ofrece el slot original del candidato (cadena).
+- **ReassignmentOfferRejectedEventHandler** — escucha `RejectedEvent` y ofrece el mismo slot al siguiente candidato.
+- **ReassignmentOfferExpiredEventHandler** — escucha `ExpiredEvent` y ofrece el mismo slot al siguiente candidato.
+- **ReassignmentOfferNoShowEventHandler** — escucha `NoShowEvent` y cierra el cupo (Booking marcará la cita como ausente).
 
 ---
 
@@ -3211,37 +3156,21 @@ La capa de **Infrastructure** contiene las implementaciones concretas.
 **Implementa:** `ReassignmentOfferRepository`
 **Tecnología:** Spring Data JPA + PostgreSQL
 **Explicación:**
-Ejecuta operaciones sobre la tabla `reassignment_offers`.
-
----
-
-##### HospitalConfigurationRepositoryImpl
-**Implementa:** `HospitalConfigurationRepository`
-**Tecnología:** Spring Data JPA + PostgreSQL
-**Explicación:**
-Lee `reassignmentResponseTimeoutMin` de la configuración del hospital.
-
----
-
-##### NotificationAdapter
-**Función:**
-Envía notificaciones de ofertas de reasignación al paciente.
-**Tecnología:** SMTP + Firebase Cloud Messaging
-
----
-
-##### SpringEventPublisherImpl
-**Implementa:** `EventPublisher`
-**Función:**
-Publica eventos de dominio usando Spring Events.
-**Tecnología:** `ApplicationEventPublisher` de Spring
+Ejecuta operaciones sobre la tabla `reassignment_offers` y publica los domain events del aggregate vía `ApplicationEventPublisher` de Spring tras persistir.
 
 ---
 
 ##### ReassignmentExpirationScheduler
 **Función:**
-Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas.
+Ejecuta periódicamente dos tareas: (1) expira las ofertas `PENDING` cuya ventana venció, y (2) marca como `ABSENT` las ofertas `ACCEPTED` cuya ventana venció sin llegada.
 **Tecnología:** `@Scheduled` de Spring
+
+---
+
+##### NotificationAdapter
+**Función:**
+Envía notificaciones de ofertas de reasignación al paciente (pendiente de implementación; se integrará consumiendo los domain events).
+**Tecnología:** SMTP + Firebase Cloud Messaging
 
 ---
 
@@ -3250,7 +3179,7 @@ Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas
 <img src="assets/reassignment_component_diagram.png" alt="Reassignment component diagram" width="85%"/>
 
 ---
-El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
+El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas, y el PatientAbsentEventConsumer escucha el evento de ausencia de Arrival. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que hacen avanzar la cadena de reasignación y los ACLs (AppointmentLookupService y HospitalConfigurationService). En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el enum ReassignmentStatus, los domain events y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -3259,14 +3188,14 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 <img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
 
 ---
-El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta y la prioridad por bookingOrder, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED). Se muestran los cuatro Domain Events que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent), el ReassignmentDomainService que encapsula la lógica de búsqueda del siguiente candidato, y las interfaces ReassignmentOfferRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos.
+El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED, ATTENDED, ABSENT). Se muestran los seis Domain Events (records) que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent, ReassignmentOfferAttendedEvent, ReassignmentOfferNoShowEvent) y la interfaz ReassignmentOfferRepository.
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
 <img src="assets/reassignment_database_diagram.png" alt="Reassignment database diagram" width="85%"/>
 
 ---
-El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
+El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de reserva. La tabla incluye dos foreign keys hacia appointments (el paciente candidato y la cita original liberada) y dos foreign keys hacia time_slots (el cupo liberado y el slot actual del candidato), junto con el estado de la oferta y los timestamps de envío, respuesta y expiración.
 
 ---
 

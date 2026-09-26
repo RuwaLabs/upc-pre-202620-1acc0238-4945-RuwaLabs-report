@@ -1,0 +1,33 @@
+@startuml
+!theme plain
+title Database Design Diagram - Reassignment
+
+entity reassignment_offers {
+    * id : Long <<PK>>
+    --
+    * appointment_id : Long <<FK>>
+    * original_appointment_id : Long <<FK>>
+    * freed_time_slot_id : Long <<FK>>
+    * candidate_time_slot_id : Long <<FK>>
+    * status : ReassignmentStatus
+    * offered_at : Instant
+    responded_at : Instant
+    * expires_at : Instant
+    * created_at : Instant
+    * updated_at : Instant
+}
+
+entity appointments {
+    * id : Long <<PK>>
+}
+
+entity time_slots {
+    * id : Long <<PK>>
+}
+
+reassignment_offers }o--|| appointments : appointment_id
+reassignment_offers }o--|| appointments : original_appointment_id
+reassignment_offers }o--|| time_slots : freed_time_slot_id
+reassignment_offers }o--|| time_slots : candidate_time_slot_id
+
+@enduml

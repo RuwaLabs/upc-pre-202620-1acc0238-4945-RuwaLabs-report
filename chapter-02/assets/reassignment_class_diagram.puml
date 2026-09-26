@@ -1,0 +1,98 @@
+@startuml
+!theme plain
+title Domain Layer Class Diagram - Reassignment
+
+class ReassignmentOffer {
+    - id : Long
+    - appointmentId : Long
+    - originalAppointmentId : Long
+    - freedTimeSlotId : Long
+    - candidateTimeSlotId : Long
+    - status : ReassignmentStatus
+    - offeredAt : Instant
+    - respondedAt : Instant
+    - expiresAt : Instant
+    + offer(appointmentId : Long, originalAppointmentId : Long, freedTimeSlotId : Long, candidateTimeSlotId : Long, expiresAt : Instant) : ReassignmentOffer
+    + onOffered() : void
+    + accept() : void
+    + reject() : void
+    + expire() : void
+    + markArrived() : void
+    + markNoShow() : void
+    + isPending() : boolean
+    + isAccepted() : boolean
+    + isExpired() : boolean
+}
+
+enum ReassignmentStatus {
+    PENDING
+    ACCEPTED
+    REJECTED
+    EXPIRED
+    ATTENDED
+    ABSENT
+}
+
+class ReassignmentOfferSentEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - offeredAt : Instant
+}
+
+class ReassignmentOfferAcceptedEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - originalAppointmentId : Long
+    - candidateTimeSlotId : Long
+    - acceptedAt : Instant
+}
+
+class ReassignmentOfferRejectedEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - originalAppointmentId : Long
+    - rejectedAt : Instant
+}
+
+class ReassignmentOfferExpiredEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - originalAppointmentId : Long
+    - expiredAt : Instant
+}
+
+class ReassignmentOfferAttendedEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - attendedAt : Instant
+}
+
+class ReassignmentOfferNoShowEvent {
+    - offerId : Long
+    - appointmentId : Long
+    - freedTimeSlotId : Long
+    - noShowAt : Instant
+}
+
+interface ReassignmentOfferRepository {
+    + save(offer : ReassignmentOffer) : ReassignmentOffer
+    + findById(id : Long) : Optional<ReassignmentOffer>
+    + findPendingByAppointment(appointmentId : Long) : List<ReassignmentOffer>
+    + findExpiredOffers() : List<ReassignmentOffer>
+    + findAcceptedOverdue() : List<ReassignmentOffer>
+}
+
+ReassignmentOffer "1" --> "1" ReassignmentStatus : has
+ReassignmentOffer ..> ReassignmentOfferSentEvent : registers
+ReassignmentOffer ..> ReassignmentOfferAcceptedEvent : registers
+ReassignmentOffer ..> ReassignmentOfferRejectedEvent : registers
+ReassignmentOffer ..> ReassignmentOfferExpiredEvent : registers
+ReassignmentOffer ..> ReassignmentOfferAttendedEvent : registers
+ReassignmentOffer ..> ReassignmentOfferNoShowEvent : registers
+ReassignmentOfferRepository ..> ReassignmentOffer
+
+@enduml

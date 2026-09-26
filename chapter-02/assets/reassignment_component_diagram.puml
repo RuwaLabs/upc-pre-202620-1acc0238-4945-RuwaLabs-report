@@ -1,0 +1,63 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+LAYOUT_WITH_LEGEND()
+title Component Diagram for Reassignment Bounded Context
+
+Container(client, "Mobile App (Paciente)", "Software System", "Responde ofertas de reasignación")
+Container(arrival, "Arrival & QR Check-in BC", "Bounded Context", "Publica PatientAbsentEvent al detectar ausencia")
+Container(booking, "Appointments & Booking BC", "Bounded Context", "Consume Accepted/NoShow y actualiza citas")
+ContainerDb(db, "PostgreSQL Database", "Relational Database", "Tabla reassignment_offers")
+System_Ext(springEvents, "Spring Events", "Event Bus en memoria")
+
+Container_Boundary(api, "Backend API - Reassignment") {
+    Boundary(interface, "1. Interface Layer") {
+        Component(offerCtrl, "ReassignmentOffersController", "Spring REST Controller", "Lista pendientes, acepta y rechaza")
+        Component(absentConsumer, "PatientAbsentEventConsumer", "Event Consumer", "Escucha PatientAbsentEvent de Arrival")
+    }
+    Boundary(application, "2. Application Layer") {
+        Component(cmdSvc, "ReassignmentCommandService", "Application Service", "Envía ofertas y gestiona aceptar/rechazar")
+        Component(qrySvc, "ReassignmentQueryService", "Application Service", "Consultas de ofertas")
+        Component(acceptedH, "AcceptedEventHandler", "Event Handler", "Reinicia la cadena al aceptar")
+        Component(rejectedH, "RejectedEventHandler", "Event Handler", "Siguiente candidato")
+        Component(expiredH, "ExpiredEventHandler", "Event Handler", "Siguiente candidato")
+        Component(noShowH, "NoShowEventHandler", "Event Handler", "Cierra el slot")
+        Component(apptAcl, "AppointmentLookupService", "ACL (Outbound)", "Busca candidato por bookingOrder")
+        Component(hospAcl, "HospitalConfigurationService", "ACL (Outbound)", "Lee la ventana única")
+    }
+    Boundary(domain, "3. Domain Layer") {
+        Component(offerAgg, "ReassignmentOffer", "Aggregate Root", "Ciclo de vida de la oferta")
+        Component(statusEnum, "ReassignmentStatus", "Enum", "PENDING..ABSENT")
+        Component(offerRepo, "ReassignmentOfferRepository", "Interface", "Contrato de persistencia")
+    }
+    Boundary(infrastructure, "4. Infrastructure Layer") {
+        Component(offerAdapter, "ReassignmentOfferRepositoryImpl", "Persistence Adapter", "Implementa el repositorio y publica eventos")
+        Component(scheduler, "ReassignmentExpirationScheduler", "Scheduler", "Expira y marca no-show (@Scheduled)")
+        Component(notifAdapter, "NotificationAdapter", "Outbound Service (pendiente)", "Envía notificaciones de oferta")
+    }
+}
+
+Rel(client, offerCtrl, "Peticiones HTTP", "JSON/HTTPS")
+Rel(arrival, absentConsumer, "Publica", "PatientAbsentEvent")
+Rel(absentConsumer, cmdSvc, "Dispara", "sendReassignmentOffer")
+Rel(offerCtrl, cmdSvc, "Delega", "accept/reject")
+Rel(offerCtrl, qrySvc, "Delega", "getPending")
+Rel(cmdSvc, apptAcl, "Busca candidato vía")
+Rel(cmdSvc, hospAcl, "Lee timeout vía")
+Rel(cmdSvc, offerAgg, "Crea y transiciona")
+Rel(cmdSvc, offerRepo, "Usa")
+Rel(qrySvc, offerRepo, "Usa")
+Rel(acceptedH, cmdSvc, "Reinicia cadena vía")
+Rel(rejectedH, cmdSvc, "Siguiente candidato vía")
+Rel(expiredH, cmdSvc, "Siguiente candidato vía")
+Rel_U(offerAdapter, offerRepo, "Implementa")
+Rel(offerAdapter, springEvents, "Publica domain events", "In-memory")
+Rel(acceptedH, springEvents, "Escucha", "ReassignmentOfferAcceptedEvent")
+Rel(rejectedH, springEvents, "Escucha", "ReassignmentOfferRejectedEvent")
+Rel(expiredH, springEvents, "Escucha", "ReassignmentOfferExpiredEvent")
+Rel(noShowH, springEvents, "Escucha", "ReassignmentOfferNoShowEvent")
+Rel(scheduler, offerRepo, "Usa", "findExpired/findAcceptedOverdue")
+Rel(scheduler, offerAdapter, "Guarda transiciones vía")
+Rel(offerAdapter, db, "Lee y escribe", "JDBC/JPA")
+Rel(booking, springEvents, "Escucha", "AcceptedEvent / NoShowEvent")
+
+@enduml
