@@ -460,7 +460,39 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 | App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
 | App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
 
+### 3.1.2.4. Searching Systems
 
+Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros, resultados consistentes y opciones de acción directa sobre los elementos encontrados.
+
+#### Landing Page
+
+| Acción | Descripción |
+|:---|:---|
+| Navegación por anclas | Enlaces del header que llevan a secciones específicas (Producto, Videos, Testimonios, Sobre nosotros) |
+| Selector de idioma | Búsqueda de contenido en ES o EN |
+| Scroll suave | Desplazamiento con compensación de altura del header |
+
+#### Aplicación móvil para pacientes
+
+| Búsqueda | Filtros disponibles | Resultado |
+|:---|:---|:---|
+| Buscar establecimiento | Distrito, especialidad | Lista de establecimientos con disponibilidad |
+| Buscar especialidad | Establecimiento, disponibilidad | Lista de especialidades y cupos |
+| Buscar cita | Fecha, especialidad, establecimiento | Lista de citas reservadas |
+| Buscar familiar | Nombre | Ficha del familiar a cargo |
+
+#### Aplicación móvil para personal de salud
+
+| Búsqueda | Filtros disponibles | Resultado |
+|:---|:---|:---|
+| Buscar paciente | Apellido, DNI, historia clínica | Ficha del paciente |
+| Buscar cita | Fecha, especialidad, estado | Lista de citas |
+| Buscar cancelación | Fecha, especialidad | Registro de cancelaciones |
+| Buscar cupo liberado | Fecha, especialidad | Lista de cupos disponibles |
+
+#### Visualización de resultados
+
+Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
 
 
 # 3.1.3. Landing Page UI Design
