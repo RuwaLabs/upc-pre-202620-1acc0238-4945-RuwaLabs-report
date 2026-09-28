@@ -428,7 +428,37 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 - **Perfil** se asocia con **Notificaciones** y **Configuración**.
 - **Check-in QR** se asocia con **Mis citas** el día de la atención.
 
+### 3.1.2.3. SEO Tags and Meta Tags
 
+Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú. Asimismo, se definen los elementos de ASO (App Store Optimization) para las aplicaciones móviles publicadas en Google Play y App Store.
+
+#### Landing Page
+
+| Tag | Valor |
+|:---|:---|
+| Title | SaludYa — Citas médicas sin colas |
+| Meta Description | SaludYa — Plataforma digital que conecta pacientes y personal de establecimientos públicos de salud en Perú. Reserva de citas, lista de espera dinámica y check-in por QR. |
+| Meta Keywords | SaludYa, citas médicas, MINSA, SIS, salud pública Perú, reserva de citas, lista de espera, RuwaLabs |
+| Meta Author | RuwaLabs |
+| Meta Robots | index, follow |
+| Open Graph Title | SaludYa — Citas médicas sin colas |
+| Open Graph Description | Reserva tu cita, recibe avisos de cupos liberados y llega justo a tu atención. Para pacientes y personal de establecimientos públicos de salud. |
+| Open Graph Image | `assets/img/icon-saludya.png` |
+| Open Graph Type | website |
+| Open Graph URL | https://saludya.pe/ |
+| Twitter Card | summary_large_image |
+| Twitter Title | SaludYa — Citas médicas sin colas |
+| Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
+| Twitter Image | `assets/img/icon-saludya.png` |
+
+#### ASO (App Store Optimization)
+
+| Elemento | App pacientes | App personal de salud |
+|:---|:---|:---|
+| App Title | SaludYa — Citas médicas | SaludYa Staff — Gestión de citas |
+| App Subtitle | Reserva sin colas | Gestión del flujo de atención |
+| App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
+| App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
 
 
 
