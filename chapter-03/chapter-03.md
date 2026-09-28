@@ -494,6 +494,47 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
 
+### 3.1.2.5. Navigation Systems
+
+Los sistemas de navegación de SaludYa guían al usuario a través del Landing Page y las aplicaciones móviles, permitiéndole cumplir sus metas e interactuar de forma satisfactoria con el producto. Las decisiones de navegación se alinean con la arquitectura de información y los sistemas de búsqueda previamente definidos.
+
+#### Landing Page
+
+| Acción | Descripción |
+|:---|:---|
+| Navegación sticky | El header permanece visible al hacer scroll |
+| Menú de anclas | Enlaces directos a secciones |
+| Botón hamburguesa | En vista móvil, despliega el menú verticalmente |
+| Scroll suave | Desplazamiento con compensación del header |
+| Enlace activo | Resaltado del enlace correspondiente a la sección visible |
+| Selector de idioma | Cambio dinámico ES/EN sin recargar la página |
+
+#### Aplicación móvil para pacientes
+
+| Acción | Descripción |
+|:---|:---|
+| Barra de navegación inferior | Accesos a Inicio, Reservar, Mis citas, Familiares y Perfil |
+| Flujo secuencial | Reserva paso a paso con retroceso y confirmación |
+| Notificaciones push | Avisos de cupos liberados y recordatorios |
+| Check-in por QR | Acceso rápido a la atención el día de la cita |
+
+#### Aplicación móvil para personal de salud
+
+| Acción | Descripción |
+|:---|:---|
+| Barra de navegación inferior | Accesos a Panel, Citas, Lista de espera, Pacientes y Reportes |
+| Filtros por fecha y especialidad | Segmentación del flujo de atención |
+| Actualización en tiempo real | Visualización del estado de cada paciente |
+| Reasignación de cupos | Acción directa sobre cupos liberados |
+
+#### Recorrido del usuario
+
+1. El visitante llega al Landing Page y comprende el problema y la solución.
+2. Revisa los videos y testimonios de validación.
+3. Conoce el equipo y el modelo de negocio.
+4. Descarga la aplicación correspondiente a su perfil.
+5. En la app, navega por las secciones principales mediante la barra inferior.
+6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
 # 3.1.3. Landing Page UI Design
 
