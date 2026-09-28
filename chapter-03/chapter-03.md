@@ -121,6 +121,212 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 
 Las decisiones visuales de SaludYa toman como referencia principios de **Material Design** (jerarquía, elevación, uso del color) y buenas prácticas de Design Systems accesibles, adaptadas al contexto peruano y a las restricciones técnicas del proyecto (rendimiento en redes móviles, compatibilidad con dispositivos de gama media y baja).
 
+## 3.1.2. Information Architecture
+
+La arquitectura de información de **SaludYa** define la manera en que se organiza, etiqueta, navega y busca el contenido en los productos digitales que forman parte de la solución: el Landing Page, la aplicación móvil para pacientes y la aplicación móvil para el personal de salud. Su objetivo es que los visitantes y usuarios encuentren sin esfuerzo la información o funcionalidad que necesitan, reduciendo la carga cognitiva y facilitando la adopción del producto.
+
+Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n), y consideran las características de ambos segmentos objetivo: pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.
+
+### 3.1.2.1. Organization Systems
+
+La organización del contenido en SaludYa combina distintos sistemas según el tipo de información y el objetivo del usuario en cada producto.
+
+#### Landing Page
+
+| Sección | Sistema de organización | Justificación |
+|:---|:---|:---|
+| Header | Jerárquico + matricial | Menú horizontal con enlaces principales y selector de idioma; organización matricial por categorías de contenido |
+| Hero | Jerárquico | Prioriza mensaje principal, subtítulo, CTAs y beneficios en orden de importancia |
+| Problema | Jerárquico | Tres tarjetas con igual jerarquía, organizadas por tema |
+| Solución | Jerárquico | Dos bloques comparativos (paciente vs. personal) con listas de funcionalidades |
+| Videos | Cronológico | Dos bloques secuenciales: About the Product y About the Team |
+| Modelo de negocio | Jerárquico | Tres tarjetas con igual jerarquía |
+| Testimonios | Alfabético | Seis tarjetas organizadas por nombre del entrevistado |
+| Sobre nosotros | Jerárquico | Misión, visión, valores y equipo en orden de relevancia |
+| Descarga | Jerárquico | Botones de tiendas como acción principal |
+| Footer | Jerárquico | Cuatro columnas organizadas por categoría (marca, enlaces, proyecto, contacto) |
+
+#### Aplicación móvil para pacientes
+
+| Sección | Sistema de organización | Justificación |
+|:---|:---|:---|
+| Inicio | Jerárquico | Accesos rápidos a reserva, lista de espera y citas próximas |
+| Reserva de citas | Secuencial (step-by-step) | Flujo paso a paso: especialidad → establecimiento → fecha → confirmación |
+| Lista de espera | Cronológico | Orden por fecha de inscripción y disponibilidad |
+| Mis citas | Cronológico | Orden por fecha de atención |
+| Familiares a cargo | Alfabético | Orden por nombre del familiar |
+| Perfil | Jerárquico | Datos personales, notificaciones y configuración |
+
+#### Aplicación móvil para personal de salud
+
+| Sección | Sistema de organización | Justificación |
+|:---|:---|:---|
+| Panel principal | Jerárquico | Resumen del flujo de atención del día |
+| Gestión de citas | Cronológico | Orden por hora de atención |
+| Lista de espera | Cronológico | Orden por fecha de inscripción |
+| Cancelaciones e inasistencias | Cronológico | Orden por fecha del evento |
+| Pacientes | Alfabético | Orden por apellido |
+| Reportes | Jerárquico | Acceso a métricas y exportación |
+
+#### Esquemas de categorización aplicados
+
+- **Alfabético:** testimonios, pacientes, familiares a cargo.
+- **Cronológico:** citas, lista de espera, cancelaciones, reportes por fecha.
+- **Por tópicos:** secciones del Landing Page (problema, solución, modelo de negocio).
+- **Según audiencia:** separación entre app pacientes y app personal de salud.
+- **Jerárquico:** estructura general de navegación en todos los productos.
+
+### 3.1.2.2. Labelling Systems
+
+Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, empleando el mínimo número de palabras posible y un vocabulario accesible para ambos segmentos objetivo.
+
+#### Landing Page
+
+| Etiqueta | Representa |
+|:---|:---|
+| Producto | Sección con el problema y la solución |
+| Videos | Bloque con los videos About the Product y About the Team |
+| Testimonios | Citas de entrevistados |
+| Sobre nosotros | Información de la startup y el equipo |
+| Descargar app | CTA principal hacia las tiendas |
+| ES / EN | Selector de idioma |
+
+#### Aplicación móvil para pacientes
+
+| Etiqueta | Representa |
+|:---|:---|
+| Inicio | Pantalla principal |
+| Reservar cita | Inicio del flujo de reserva |
+| Lista de espera | Inscripción y seguimiento de cupos |
+| Mis citas | Citas reservadas por el paciente |
+| Familiares | Gestión de dependientes |
+| Perfil | Datos personales y configuración |
+
+#### Aplicación móvil para personal de salud
+
+| Etiqueta | Representa |
+|:---|:---|
+| Panel | Resumen del día |
+| Citas | Gestión de citas del establecimiento |
+| Lista de espera | Pacientes en espera de cupo |
+| Cancelaciones | Registro de cancelaciones e inasistencias |
+| Pacientes | Búsqueda y consulta de pacientes |
+| Reportes | Métricas y exportación |
+
+#### Asociaciones entre etiquetas
+
+- **Reservar cita** se asocia con **Lista de espera** cuando no hay cupos disponibles.
+- **Mis citas** se asocia con **Cancelaciones** en la app del personal.
+- **Familiares** se asocia con **Reservar cita** para agendar a nombre de un dependiente.
+- **Perfil** se asocia con **Notificaciones** y **Configuración**.
+
+### 3.1.2.3. SEO Tags and Meta Tags
+
+Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú.
+
+#### Landing Page
+
+| Tag | Valor |
+|:---|:---|
+| Title | SaludYa — Citas médicas sin colas |
+| Meta Description | SaludYa — Plataforma digital que conecta pacientes y personal de establecimientos públicos de salud en Perú. Reserva de citas, lista de espera dinámica y check-in por QR. |
+| Meta Keywords | SaludYa, citas médicas, MINSA, SIS, salud pública Perú, reserva de citas, lista de espera, RuwaLabs |
+| Meta Author | RuwaLabs |
+| Meta Robots | index, follow |
+| Open Graph Title | SaludYa — Citas médicas sin colas |
+| Open Graph Description | Reserva tu cita, recibe avisos de cupos liberados y llega justo a tu atención. Para pacientes y personal de establecimientos públicos de salud. |
+| Open Graph Image | `assets/img/icon-saludya.png` |
+| Open Graph Type | website |
+| Open Graph URL | https://saludya.pe/ |
+| Twitter Card | summary_large_image |
+| Twitter Title | SaludYa — Citas médicas sin colas |
+| Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
+| Twitter Image | `assets/img/icon-saludya.png` |
+
+#### ASO (App Store Optimization)
+
+| Elemento | App pacientes | App personal de salud |
+|:---|:---|:---|
+| App Title | SaludYa — Citas médicas | SaludYa Staff — Gestión de citas |
+| App Subtitle | Reserva sin colas | Gestión del flujo de atención |
+| App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
+| App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
+
+### 3.1.2.4. Searching Systems
+
+Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros y resultados consistentes.
+
+#### Landing Page
+
+| Acción | Descripción |
+|:---|:---|
+| Navegación por anclas | Enlaces del header que llevan a secciones específicas (Producto, Videos, Testimonios, Sobre nosotros) |
+| Selector de idioma | Búsqueda de contenido en ES o EN |
+| Scroll suave | Desplazamiento con compensación de altura del header |
+
+#### Aplicación móvil para pacientes
+
+| Búsqueda | Filtros disponibles | Resultado |
+|:---|:---|:---|
+| Buscar establecimiento | Distrito, especialidad | Lista de establecimientos con disponibilidad |
+| Buscar especialidad | Establecimiento, disponibilidad | Lista de especialidades y cupos |
+| Buscar cita | Fecha, especialidad, establecimiento | Lista de citas reservadas |
+| Buscar familiar | Nombre | Ficha del familiar a cargo |
+
+#### Aplicación móvil para personal de salud
+
+| Búsqueda | Filtros disponibles | Resultado |
+|:---|:---|:---|
+| Buscar paciente | Apellido, DNI, historia clínica | Ficha del paciente |
+| Buscar cita | Fecha, especialidad, estado | Lista de citas |
+| Buscar cancelación | Fecha, especialidad | Registro de cancelaciones |
+| Buscar cupo liberado | Fecha, especialidad | Lista de cupos disponibles |
+
+#### Visualización de resultados
+
+Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
+
+### 3.1.2.5. Navigation Systems
+
+Los sistemas de navegación de SaludYa guían al usuario a través del Landing Page y las aplicaciones móviles, permitiéndole cumplir sus metas e interactuar de forma satisfactoria con el producto.
+
+#### Landing Page
+
+| Acción | Descripción |
+|:---|:---|
+| Navegación sticky | El header permanece visible al hacer scroll |
+| Menú de anclas | Enlaces directos a secciones |
+| Botón hamburguesa | En vista móvil, despliega el menú verticalmente |
+| Scroll suave | Desplazamiento con compensación del header |
+| Enlace activo | Resaltado del enlace correspondiente a la sección visible |
+| Selector de idioma | Cambio dinámico ES/EN sin recargar la página |
+
+#### Aplicación móvil para pacientes
+
+| Acción | Descripción |
+|:---|:---|
+| Barra de navegación inferior | Accesos a Inicio, Reservar, Mis citas, Familiares y Perfil |
+| Flujo secuencial | Reserva paso a paso con retroceso y confirmación |
+| Notificaciones push | Avisos de cupos liberados y recordatorios |
+| Check-in por QR | Acceso rápido a la atención el día de la cita |
+
+#### Aplicación móvil para personal de salud
+
+| Acción | Descripción |
+|:---|:---|
+| Barra de navegación inferior | Accesos a Panel, Citas, Lista de espera, Pacientes y Reportes |
+| Filtros por fecha y especialidad | Segmentación del flujo de atención |
+| Actualización en tiempo real | Visualización del estado de cada paciente |
+| Reasignación de cupos | Acción directa sobre cupos liberados |
+
+#### Recorrido del usuario
+
+1. El visitante llega al Landing Page y comprende el problema y la solución.
+2. Revisa los videos y testimonios de validación.
+3. Conoce el equipo y el modelo de negocio.
+4. Descarga la aplicación correspondiente a su perfil.
+5. En la app, navega por las secciones principales mediante la barra inferior.
+6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
 # 3.1.3. Landing Page UI Design
 
