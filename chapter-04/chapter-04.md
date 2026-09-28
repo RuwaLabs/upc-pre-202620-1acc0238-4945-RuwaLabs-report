@@ -108,3 +108,76 @@ El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlo
 | `hotfix/<nombre>` | Correcciones urgentes |
 
 Los releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
+
+### 4.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración de despliegue de la solución **SaludYa**, incluyendo los pasos necesarios para publicar cada uno de los productos digitales que la componen: el Landing Page, las aplicaciones móviles (pacientes y personal de salud) y los servicios web. Asimismo, se presenta el **Deployment Diagram** del modelo C4, que ilustra la distribución física de los componentes de software sobre la infraestructura de hardware y servicios en la nube.
+
+#### Landing Page
+
+El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**, aprovechando la integración directa con el repositorio de GitHub del equipo.
+
+| Paso | Acción |
+|:---|:---|
+| 1 | Asegurar que el archivo `index.html` se encuentre en la raíz del repositorio `saludya-landing` |
+| 2 | Acceder a **Settings → Pages** en el repositorio de GitHub |
+| 3 | Seleccionar la rama `main` y la carpeta `/ (root)` como fuente |
+| 4 | Guardar la configuración y esperar la publicación |
+| 5 | Verificar el despliegue en la URL generada: `https://ruwalabs.github.io/saludya-landing/` |
+| 6 | (Opcional) Configurar un dominio personalizado `saludya.pe` mediante registros CNAME |
+
+**Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2.
+
+#### Aplicaciones móviles
+
+Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** para las pruebas con usuarios de validación, y se publican en **Google Play Store** y **App Store** para la versión final.
+
+| Paso | Acción |
+|:---|:---|
+| 1 | Generar el APK/AAB firmado desde Android Studio (Android) o el archivo IPA desde Xcode (iOS) |
+| 2 | Crear un proyecto en **Firebase Console** y habilitar **App Distribution** |
+| 3 | Subir el APK/AAB o IPA a Firebase App Distribution |
+| 4 | Invitar a los testers mediante correo electrónico o enlace público |
+| 5 | Recopilar feedback de los usuarios de validación |
+| 6 | Publicar la versión final en **Google Play Console** y **App Store Connect** |
+
+**Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution.
+
+#### Servicios web
+
+Los servicios web se despliegan en **Railway** (o alternativamente **Render** o **Heroku**), con base de datos **PostgreSQL** gestionada por el mismo proveedor.
+
+| Paso | Acción |
+|:---|:---|
+| 1 | Crear una cuenta en **Railway** y un nuevo proyecto |
+| 2 | Conectar el repositorio de GitHub del backend (`saludya-web-services`) |
+| 3 | Configurar las variables de entorno (credenciales de base de datos, claves JWT, etc.) |
+| 4 | Provisionar una base de datos PostgreSQL desde el panel de Railway |
+| 5 | Configurar el comando de build y el comando de inicio (`./mvnw spring-boot:run` o `java -jar app.jar`) |
+| 6 | Desplegar y verificar la URL pública del servicio |
+| 7 | Acceder a la documentación OpenAPI en `/swagger-ui.html` |
+
+**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, Railway.
+
+#### Deployment Diagram (C4 Model)
+
+El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube:
+
+| Nodo | Tipo | Componentes desplegados |
+|:---|:---|:---|
+| Dispositivo del paciente | Hardware (móvil) | App pacientes (Kotlin/KMP) |
+| Dispositivo del personal de salud | Hardware (móvil) | App personal de salud (Kotlin/KMP) |
+| Navegador del visitante | Hardware (PC/móvil) | Landing Page (HTML/CSS/JS) |
+| GitHub Pages | Cloud (static hosting) | Landing Page |
+| Firebase App Distribution | Cloud (distribución) | APK/AAB/IPA de las apps |
+| Railway / Render | Cloud (PaaS) | Servicios web (Spring Boot) |
+| PostgreSQL (Railway) | Cloud (DBaaS) | Base de datos relacional |
+| Firebase Cloud Messaging | Cloud (push) | Notificaciones push a las apps |
+
+**Relaciones entre nodos:**
+
+- El navegador del visitante accede al Landing Page alojado en GitHub Pages vía HTTPS.
+- Los dispositivos móviles descargan las apps desde Firebase App Distribution (pruebas) o las tiendas oficiales (producción).
+- Las apps se comunican con los servicios web desplegados en Railway mediante HTTPS/REST.
+- Los servicios web acceden a PostgreSQL para la persistencia de datos.
+- Los servicios web envían notificaciones push a las apps a través de Firebase Cloud Messaging.
