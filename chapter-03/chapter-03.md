@@ -58,3 +58,83 @@ El Landing Page se organiza en diez secciones, en el siguiente orden:
 - **Diseño inclusivo:** contraste de colores, fuente legible, área táctil mínima de 40x40 px y foco visible.
 - **Arquitectura de información:** secuencia problema → solución → evidencia → equipo → descarga.
 - **Consistencia:** escala de espaciado uniforme y radios de borde comunes.
+
+## 3.1.3.2. Landing Page Mock-up
+
+Los mock-ups del Landing Page se elaboraron en **Figma** aplicando el **Design System** de SaludYa, el cual define la paleta de colores, tipografía, espaciado, iconografía y componentes reutilizables.
+
+### Design System aplicado
+
+| Elemento | Valor | Uso |
+|:---|:---|:---|
+| Color primario | `#0b8f6b` | Botones, enlaces, iconos |
+| Color primario oscuro | `#076e52` | Hover, títulos de tarjetas |
+| Color primario claro | `#e6f5f0` | Fondos de sección, hover |
+| Color de acento | `#ffb703` | Foco visible, detalles |
+| Texto | `#1c2b2a` | Texto principal |
+| Texto atenuado | `#56706d` | Párrafos secundarios |
+| Fondo / alterno | `#ffffff` / `#f4faf8` | Base y secciones alternas |
+| Borde | `#d8e6e2` | Tarjetas y separadores |
+| Tipografía | Segoe UI / Helvetica Neue / Arial | Base y títulos |
+| Radios | 6px / 12px / 20px | Tarjetas, botones, contenedores |
+| Sombras | sm / md / lg | Profundidad |
+
+
+### Mock-up Desktop Web Browser
+
+| Sección | Descripción visual |
+|:---|:---|
+| Header | Fondo blanco con desenfoque, logotipo a la izquierda, menú con subrayado activo, selector ES/EN y CTA primario |
+| Hero | Gradiente de `#e6f5f0` a `#ffffff`, título 2.75rem, botones primario y ghost, imagen con sombra `--shadow-lg` |
+| Problema | Fondo alterno, tarjetas blancas con hover elevado |
+| Solución | Fondo blanco, dos bloques con listas y viñetas en color primario |
+| Videos | Fondo alterno, iframes 16:9 con border-radius 6px |
+| Modelo de negocio | Fondo primario claro, tres tarjetas con títulos en color oscuro |
+| Testimonios | Fondo blanco, tarjetas con comilla decorativa y cita en cursiva |
+| Sobre nosotros | Fondo alterno, misión/visión con iconos circulares, valores en 4 columnas, equipo con fotos circulares |
+| Descarga | Gradiente verde, texto blanco, botones blancos con sombra |
+| Footer | Fondo `#0d2722`, texto claro, logotipo y enlaces |
+
+
+### Mock-up Mobile Web Browser
+
+| Sección | Descripción visual |
+|:---|:---|
+| Header | Logotipo reducido y botón hamburguesa con animación a X |
+| Hero | Una columna, imagen primero, título 1.75rem, botones al 100% |
+| Secciones | Una columna con padding reducido |
+| Testimonios | Tarjetas apiladas |
+| Equipo | Fotos de 80x80 px |
+| Descarga | Botones apilados |
+| Footer | Una columna, logotipo a 38px |
+
+
+### Aplicación del Design System y diseño inclusivo
+
+| Criterio | Aplicación |
+|:---|:---|
+| Branding | Logotipo y paleta verde/amarillo consistentes en header y footer |
+| Tipografía | Jerarquía clara, texto a la izquierda, interlineado 1.6 |
+| Colores | Contraste WCAG AA, color primario para acciones y acento para foco |
+| Espaciado | Escala consistente en todas las secciones |
+| Diseño inclusivo | `aria-label`, `aria-expanded`, `aria-pressed`, textos alternativos, área táctil adecuada y `prefers-reduced-motion` |
+| Internacionalización | Selector ES/EN con carga dinámica de textos |
+| Arquitectura de información | Navegación sticky y scroll suave compensado por el header |
+
+
+### Componentes reutilizables
+
+| Componente | Descripción | Estados |
+|:---|:---|:---|
+| Botón primario | Fondo `#0b8f6b`, texto blanco, radio 12px | Default, hover, focus |
+| Botón ghost | Fondo transparente, borde `#0b8f6b` | Default, hover, focus |
+| Tarjeta | Fondo blanco, borde `#d8e6e2`, sombra sm | Default, hover con elevación |
+| Testimonio | Tarjeta con comilla y cita en cursiva | Default |
+| Miembro del equipo | Tarjeta con foto circular, nombre y rol | Default, hover |
+| Selector de idioma | Botones ES/EN agrupados | Activo, inactivo |
+| Nav toggle | Botón hamburguesa animado | Cerrado, abierto |
+
+
+### Conclusión de la sección
+
+Los wireframes y mock-ups del Landing Page evidencian la aplicación coherente del Design System, los principios de diseño inclusivo y la arquitectura de información. La propuesta comunica el modelo de negocio de RuwaLabs, el problema que resuelve SaludYa y los beneficios para ambos segmentos objetivo, facilitando la conversión del visitante hacia la descarga de las aplicaciones móviles. La inclusión de internacionalización y accesibilidad garantiza una experiencia inclusiva y consistente.
