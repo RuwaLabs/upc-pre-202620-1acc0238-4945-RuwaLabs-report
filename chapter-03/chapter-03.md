@@ -1,3 +1,126 @@
+## 3.1.1. Style Guidelines
+
+### 3.1.1.1. General Style Guidelines
+
+Las presentes guías de estilo establecen los lineamientos visuales y de comunicación que rigen la identidad de **SaludYa**, producto digital desarrollado por la startup **RuwaLabs**. Su propósito es garantizar consistencia en todos los productos de la solución (Landing Page, aplicaciones móviles para pacientes y personal de salud, y servicios web), facilitando el trabajo colaborativo del equipo y asegurando una experiencia coherente para los usuarios.
+
+Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n) establecidos en el proyecto, y toman como referencia buenas prácticas de Design Systems reconocidos, adaptadas al contexto de los establecimientos públicos de salud del Perú.
+
+#### Branding
+
+La identidad de marca de SaludYa se construye sobre los siguientes elementos:
+
+| Elemento | Descripción |
+|:---|:---|
+| Nombre | SaludYa |
+| Startup | RuwaLabs |
+| Logotipo | Isotipo con icono de salud (cruz/maleta) en color primario, acompañado del nombre "SaludYa" en tipografía sans-serif |
+| Isotipo | Símbolo gráfico que representa el acceso ágil a la salud, usado en favicon, app icon y elementos de navegación |
+| Tagline | "Citas médicas sin colas para el Perú" |
+| Tono de comunicación | Formal pero cercano, empático, claro y directo |
+| Público objetivo | Pacientes de zonas urbanas periféricas y personal asistencial/administrativo de establecimientos públicos de salud |
+| Valores de marca | Accesibilidad, transparencia, colaboración e impacto social |
+
+El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page.
+
+#### Typography
+
+La tipografía seleccionada prioriza la legibilidad en pantallas de distintos tamaños y en contextos de baja iluminación, frecuentes en establecimientos de salud.
+
+| Elemento | Fuente | Tamaño | Peso | Uso |
+|:---|:---|:---|:---|:---|
+| Fuente base | Segoe UI / Helvetica Neue / Arial | 16px | 400 | Texto general, párrafos |
+| Fuente de títulos | Segoe UI / Helvetica Neue / Arial | Variable | 700 | Encabezados h1–h4 |
+| h1 | — | 2.5rem | 700 | Título principal del Hero |
+| h2 | — | 2rem | 700 | Títulos de sección |
+| h3 | — | 1.35rem | 700 | Títulos de tarjetas y subsecciones |
+| h4 | — | 1.1rem | 600 | Subtítulos internos |
+| Interlineado | — | 1.6 | — | Cuerpo de texto |
+| Interlineado títulos | — | 1.25 | — | Encabezados |
+
+La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page.
+
+#### Colors
+
+La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
+
+| Color | Código HEX | Uso principal |
+|:---|:---|:---|
+| Primario | `#0b8f6b` | Botones, enlaces, iconos, acentos |
+| Primario oscuro | `#076e52` | Hover de botones, títulos de tarjetas |
+| Primario claro | `#e6f5f0` | Fondos de sección, hover de navegación |
+| Acento | `#ffb703` | Foco visible, detalles de marca |
+| Texto | `#1c2b2a` | Texto principal |
+| Texto atenuado | `#56706d` | Párrafos secundarios, roles |
+| Fondo | `#ffffff` | Fondo base |
+| Fondo alterno | `#f4faf8` | Secciones alternas |
+| Borde | `#d8e6e2` | Bordes de tarjetas y separadores |
+| Peligro | `#c0392b` | Mensajes de error (formularios) |
+| Blanco | `#ffffff` | Texto sobre fondos oscuros |
+| Footer | `#0d2722` | Fondo del pie de página |
+
+Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo.
+
+#### Spacing
+
+Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en todos los productos.
+
+| Variable | Valor | Uso |
+|:---|:---|:---|
+| `--space-1` | 0.25rem | Separaciones mínimas |
+| `--space-2` | 0.5rem | Padding interno de botones pequeños |
+| `--space-3` | 0.75rem | Separación entre elementos inline |
+| `--space-4` | 1rem | Padding estándar |
+| `--space-5` | 1.5rem | Separación entre bloques |
+| `--space-6` | 2rem | Separación entre secciones |
+
+#### Border Radius
+
+| Variable | Valor | Uso |
+|:---|:---|:---|
+| `--radius-sm` | 6px | Botones pequeños, badges |
+| `--radius-md` | 12px | Botones, tarjetas |
+| `--radius-lg` | 20px | Contenedores destacados, hero |
+
+#### Shadows
+
+| Variable | Valor | Uso |
+|:---|:---|:---|
+| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.08)` | Tarjetas en reposo |
+| `--shadow-md` | `0 6px 18px rgba(11,143,107,0.12)` | Tarjetas en hover, menú móvil |
+| `--shadow-lg` | `0 12px 32px rgba(11,143,107,0.18)` | Hero, elementos destacados |
+
+#### Tone of Voice
+
+El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
+
+| Dimensión | Elección | Justificación |
+|:---|:---|:---|
+| Divertido / Serio | Serio con toques cercanos | El contexto de salud requiere credibilidad, pero se busca cercanía con el paciente |
+| Formal / Casual | Formal | Se comunica con usuarios de diversos niveles educativos y con personal institucional |
+| Respetuoso / Irreverente | Respetuoso | Se aborda un tema sensible como la salud pública |
+| Entusiasta / Sereno | Sereno | Se transmite confianza y estabilidad, evitando promesas exageradas |
+
+El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo.
+
+#### Iconography
+
+Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles:
+
+| Icono | Uso |
+|:---|:---|
+| `fa-circle-check` | Bullets de beneficios en el Hero |
+| `fa-bullseye` | Misión en la sección Sobre nosotros |
+| `fa-eye` | Visión en la sección Sobre nosotros |
+| `fa-universal-access` | Valor de accesibilidad |
+| `fa-shield-halved` | Valor de transparencia |
+| `fa-handshake` | Valor de colaboración |
+| `fa-heart-pulse` | Valor de impacto social |
+
+#### Design System de referencia
+
+Las decisiones visuales de SaludYa toman como referencia principios de **Material Design** (jerarquía, elevación, uso del color) y buenas prácticas de Design Systems accesibles, adaptadas al contexto peruano y a las restricciones técnicas del proyecto (rendimiento en redes móviles, compatibilidad con dispositivos de gama media y baja).
+
 
 # 3.1.3. Landing Page UI Design
 
