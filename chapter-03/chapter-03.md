@@ -379,6 +379,60 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 - **Secuencial:** flujos paso a paso en la reserva de citas y en la inscripción a la lista de espera.
 - **Matricial:** grid de testimonios en el Landing Page, donde el usuario puede explorar varias tarjetas sin un orden estricto.
 
+### 3.1.2.2. Labelling Systems
+
+Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, empleando el mínimo número de palabras posible y un vocabulario accesible para ambos segmentos objetivo. Se prioriza el uso de términos del dominio de la salud y de la gestión de citas, evitando tecnicismos innecesarios y anglicismos.
+
+#### Landing Page
+
+| Etiqueta | Representa |
+|:---|:---|
+| Producto | Sección con el problema y la solución |
+| Videos | Bloque con los videos About the Product y About the Team |
+| Testimonios | Citas de entrevistados |
+| Sobre nosotros | Información de la startup y el equipo |
+| Descargar app | CTA principal hacia las tiendas |
+| ES / EN | Selector de idioma |
+| Google Play | Botón de descarga para Android |
+| App Store | Botón de descarga para iOS |
+
+#### Aplicación móvil para pacientes
+
+| Etiqueta | Representa |
+|:---|:---|
+| Inicio | Pantalla principal con accesos rápidos |
+| Reservar cita | Inicio del flujo de reserva |
+| Lista de espera | Inscripción y seguimiento de cupos |
+| Mis citas | Citas reservadas por el paciente |
+| Familiares | Gestión de dependientes |
+| Perfil | Datos personales y configuración |
+| Check-in QR | Acceso rápido el día de la cita |
+
+#### Aplicación móvil para personal de salud
+
+| Etiqueta | Representa |
+|:---|:---|
+| Panel | Resumen del día |
+| Citas | Gestión de citas del establecimiento |
+| Lista de espera | Pacientes en espera de cupo |
+| Cancelaciones | Registro de cancelaciones e inasistencias |
+| Pacientes | Búsqueda y consulta de pacientes |
+| Reportes | Métricas y exportación |
+| Reasignar cupo | Acción sobre cupos liberados |
+
+#### Asociaciones entre etiquetas
+
+- **Reservar cita** se asocia con **Lista de espera** cuando no hay cupos disponibles.
+- **Mis citas** se asocia con **Cancelaciones** en la app del personal.
+- **Familiares** se asocia con **Reservar cita** para agendar a nombre de un dependiente.
+- **Perfil** se asocia con **Notificaciones** y **Configuración**.
+- **Check-in QR** se asocia con **Mis citas** el día de la atención.
+
+
+
+
+
+
 # 3.1.3. Landing Page UI Design
 
 ## 3.1.3.1. Landing Page Wireframe
