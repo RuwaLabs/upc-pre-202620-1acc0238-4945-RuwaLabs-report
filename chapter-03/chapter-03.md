@@ -328,6 +328,57 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 5. En la app, navega por las secciones principales mediante la barra inferior.
 6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
+### 3.1.2.1. Organization Systems
+
+La organización del contenido en SaludYa combina distintos sistemas según el tipo de información y el objetivo del usuario en cada producto. Se aplican principios de organización visual (jerárquica, secuencial y matricial) y esquemas de categorización (alfabético, cronológico, por tópicos y según audiencia), buscando siempre reducir la carga cognitiva y facilitar el acceso a la información.
+
+#### Landing Page
+
+| Sección | Sistema de organización visual | Esquema de categorización | Justificación |
+|:---|:---|:---|:---|
+| Header | Jerárquico + matricial | Por tópicos | Menú horizontal con enlaces principales y selector de idioma; organización matricial por categorías de contenido |
+| Hero | Jerárquico | Por tópicos | Prioriza mensaje principal, subtítulo, CTAs y beneficios en orden de importancia |
+| Problema | Jerárquico | Por tópicos | Tres tarjetas con igual jerarquía, organizadas por tema |
+| Solución | Jerárquico | Según audiencia | Dos bloques comparativos (paciente vs. personal) con listas de funcionalidades |
+| Videos | Secuencial | Cronológico | Dos bloques secuenciales: About the Product y About the Team |
+| Modelo de negocio | Jerárquico | Por tópicos | Tres tarjetas con igual jerarquía |
+| Testimonios | Matricial | Alfabético | Seis tarjetas organizadas por nombre del entrevistado |
+| Sobre nosotros | Jerárquico | Por tópicos | Misión, visión, valores y equipo en orden de relevancia |
+| Descarga | Jerárquico | Por tópicos | Botones de tiendas como acción principal |
+| Footer | Jerárquico | Por tópicos | Cuatro columnas organizadas por categoría (marca, enlaces, proyecto, contacto) |
+
+#### Aplicación móvil para pacientes
+
+| Sección | Sistema de organización visual | Esquema de categorización | Justificación |
+|:---|:---|:---|:---|
+| Inicio | Jerárquico | Por tópicos | Accesos rápidos a reserva, lista de espera y citas próximas |
+| Reserva de citas | Secuencial (step-by-step) | Cronológico | Flujo paso a paso: especialidad → establecimiento → fecha → confirmación |
+| Lista de espera | Secuencial | Cronológico | Orden por fecha de inscripción y disponibilidad |
+| Mis citas | Jerárquico | Cronológico | Orden por fecha de atención |
+| Familiares a cargo | Jerárquico | Alfabético | Orden por nombre del familiar |
+| Perfil | Jerárquico | Por tópicos | Datos personales, notificaciones y configuración |
+
+#### Aplicación móvil para personal de salud
+
+| Sección | Sistema de organización visual | Esquema de categorización | Justificación |
+|:---|:---|:---|:---|
+| Panel principal | Jerárquico | Por tópicos | Resumen del flujo de atención del día |
+| Gestión de citas | Jerárquico | Cronológico | Orden por hora de atención |
+| Lista de espera | Secuencial | Cronológico | Orden por fecha de inscripción |
+| Cancelaciones e inasistencias | Jerárquico | Cronológico | Orden por fecha del evento |
+| Pacientes | Jerárquico | Alfabético | Orden por apellido |
+| Reportes | Jerárquico | Cronológico | Acceso a métricas y exportación por fecha |
+
+#### Esquemas de categorización aplicados
+
+- **Alfabético:** testimonios en el Landing Page, pacientes y familiares a cargo en las aplicaciones.
+- **Cronológico:** citas, lista de espera, cancelaciones, reportes y videos.
+- **Por tópicos:** secciones del Landing Page (problema, solución, modelo de negocio, equipo) y pantallas principales de las aplicaciones.
+- **Según audiencia:** separación entre la app para pacientes y la app para personal de salud, y bloques diferenciados en la sección Solución del Landing Page.
+- **Jerárquico:** estructura general de navegación en todos los productos, priorizando la información más relevante para el usuario.
+- **Secuencial:** flujos paso a paso en la reserva de citas y en la inscripción a la lista de espera.
+- **Matricial:** grid de testimonios en el Landing Page, donde el usuario puede explorar varias tarjetas sin un orden estricto.
+
 # 3.1.3. Landing Page UI Design
 
 ## 3.1.3.1. Landing Page Wireframe
