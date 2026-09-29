@@ -583,6 +583,10 @@ En esta sección definimos la especificación formal de requisitos para la plata
         • <b>Given</b> un token de restablecimiento emitido previamente,<br>
         &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta definir una nueva contraseña después de la vigencia de 15 minutos,<br>
         &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e indica que el enlace expiró, solicitando una nueva solicitud.<br><br>
+        <b>Scenario 4: Contacto con soporte por pérdida total de la cuenta</b><br>
+        • <b>Given</b> un usuario no tiene acceso a su correo registrado ni a su número de celular asociado a la cuenta,<br>
+        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario solicita la recuperación de su cuenta desde la pantalla de recuperación de contraseña,<br>
+        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el número telefónico y los canales de atención de la mesa de ayuda, y registra la solicitud para que un agente restablezca las credenciales previa verificación de identidad con DNI.<br><br>
       </td>
     </tr>
   </tbody>
