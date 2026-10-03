@@ -27,22 +27,37 @@ El logotipo se utiliza en el header y footer del Landing Page, así como en las 
 
 La tipografía seleccionada prioriza la legibilidad en pantallas de distintos tamaños y en contextos de baja iluminación, frecuentes en establecimientos de salud.
 
+##### Landing Page (web)
+
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
-| Fuente base | Segoe UI / Helvetica Neue / Arial | 16px | 400 | Texto general, párrafos |
+| Fuente base | Segoe UI / Helvetica Neue / Arial | 16px (1rem) | 400 | Texto general, párrafos |
 | Fuente de títulos | Segoe UI / Helvetica Neue / Arial | Variable | 700 | Encabezados h1–h4 |
-| h1 | — | 2.5rem | 700 | Título principal del Hero |
-| h2 | — | 2rem | 700 | Títulos de sección |
-| h3 | — | 1.35rem | 700 | Títulos de tarjetas y subsecciones |
-| h4 | — | 1.1rem | 600 | Subtítulos internos |
+| h1 | — | 2.5rem (40px) | 700 | Título principal del Hero |
+| h2 | — | 2rem (32px) | 700 | Títulos de sección |
+| h3 | — | 1.35rem (21.6px) | 700 | Títulos de tarjetas y subsecciones |
+| h4 | — | 1.1rem (17.6px) | 600 | Subtítulos internos |
 | Interlineado | — | 1.6 | — | Cuerpo de texto |
 | Interlineado títulos | — | 1.25 | — | Encabezados |
 
 La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page.
 
+##### Aplicaciones móviles (Android)
+
+| Elemento | Fuente | Tamaño | Peso | Uso |
+|:---|:---|:---|:---|:---|
+| Fuente base | Inter | Variable | 400 | Texto general |
+| Fuente de títulos | Inter | Variable | 600 | Encabezados y énfasis |
+| Body Bold Large | Inter | 18sp / 150% (27sp) | 600 | Cuerpo destacado, títulos de tarjeta |
+| Body Extra Small | Inter | 12sp / 150% (18sp) | 400 | Texto secundario, captions |
+
+En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android.
+
 #### Colors
 
 La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
+
+##### Landing Page (web)
 
 | Color | Código HEX | Uso principal |
 |:---|:---|:---|
@@ -59,22 +74,55 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 | Blanco | `#ffffff` | Texto sobre fondos oscuros |
 | Footer | `#0d2722` | Fondo del pie de página |
 
+##### Aplicaciones móviles (Android)
+
+| Token | Código HEX | Uso principal |
+|:---|:---|:---|
+| WF White | `#FFFFFF` | Fondo base, superficies |
+| WF 100 | `#F7F9FC` | Fondo alterno muy claro |
+| WF 200 | `#EDF0F7` | Fondos de tarjetas y contenedores |
+| WF 300 | `#E2E7F0` | Separadores suaves |
+| WF 400 | `#CBD2E0` | Bordes suaves, elementos inactivos |
+| WF 600 | `#717D96` | Texto secundario |
+| WF 700 | `#4A5468` | Texto de énfasis medio |
+| WF 800 | `#2D3648` | Texto principal, bordes |
+| WF 900 | `#1A202C` | Texto de máximo contraste |
+| Negro | `#000000` | Texto en superficies claras |
+| Gris claro | `#D9D9D9` | Placeholders, elementos deshabilitados |
+
 Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo.
 
 #### Spacing
 
-Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en todos los productos.
+##### Landing Page (web)
+
+Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page.
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
-| `--space-1` | 0.25rem | Separaciones mínimas |
-| `--space-2` | 0.5rem | Padding interno de botones pequeños |
-| `--space-3` | 0.75rem | Separación entre elementos inline |
-| `--space-4` | 1rem | Padding estándar |
-| `--space-5` | 1.5rem | Separación entre bloques |
-| `--space-6` | 2rem | Separación entre secciones |
+| `--space-1` | 0.25rem (4px) | Separaciones mínimas |
+| `--space-2` | 0.5rem (8px) | Padding interno de botones pequeños |
+| `--space-3` | 0.75rem (12px) | Separación entre elementos inline |
+| `--space-4` | 1rem (16px) | Padding estándar |
+| `--space-5` | 1.5rem (24px) | Separación entre bloques |
+| `--space-6` | 2rem (32px) | Separación entre secciones |
+
+##### Aplicaciones móviles (Android)
+
+| Token | Valor | Uso |
+|:---|:---|:---|
+| `--space-1` | 2dp | Separaciones mínimas, bordes internos |
+| `--space-2` | 8dp | Gap entre íconos y texto, separación inline |
+| `--space-3` | 11dp | Padding vertical de contenedores pequeños |
+| `--space-4` | 12dp | Padding interno de botones y cards |
+| `--space-5` | 28dp | Padding horizontal de secciones |
+| `--space-6` | 45dp | Separación entre bloques principales |
+
+Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles.
 
 #### Border Radius
+
+##### Landing Page (web)
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -82,13 +130,29 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 | `--radius-md` | 12px | Botones, tarjetas |
 | `--radius-lg` | 20px | Contenedores destacados, hero |
 
+##### Aplicaciones móviles (Android)
+
+| Token | Valor | Uso |
+|:---|:---|:---|
+| `--radius-sm` | 12dp | Cards superiores (radio superior únicamente) |
+| `--radius-md` | 12dp | Botones y contenedores estándar |
+
+En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla.
+
 #### Shadows
+
+##### Landing Page (web)
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
-| `--shadow-sm` | `0 1px 3px rgba(0,0,0,0.08)` | Tarjetas en reposo |
-| `--shadow-md` | `0 6px 18px rgba(11,143,107,0.12)` | Tarjetas en hover, menú móvil |
-| `--shadow-lg` | `0 12px 32px rgba(11,143,107,0.18)` | Hero, elementos destacados |
+| `--shadow-sm` | `0 1px 3px rgba(0, 0, 0, 0.08)` | Tarjetas en reposo |
+| `--shadow-md` | `0 6px 18px rgba(11, 143, 107, 0.12)` | Tarjetas en hover, menú móvil |
+| `--shadow-lg` | `0 12px 32px rgba(11, 143, 107, 0.18)` | Hero, elementos destacados |
+
+##### Aplicaciones móviles (Android)
+
+Las aplicaciones móviles **no emplean sombras** en su diseño actual. La jerarquía visual se resuelve mediante contraste de color, bordes y espaciado, siguiendo un enfoque flat consistente con los wireframes de alta fidelidad definidos en Figma.
+
 
 #### Tone of Voice
 
