@@ -675,3 +675,127 @@ Los mock-ups del Landing Page se elaboraron en **Figma** aplicando el **Design S
 ### Conclusión de la sección
 
 Los wireframes y mock-ups del Landing Page evidencian la aplicación coherente del Design System, los principios de diseño inclusivo y la arquitectura de información. La propuesta comunica el modelo de negocio de RuwaLabs, el problema que resuelve SaludYa y los beneficios para ambos segmentos objetivo, facilitando la conversión del visitante hacia la descarga de las aplicaciones móviles. La inclusión de internacionalización y accesibilidad garantiza una experiencia inclusiva y consistente.
+
+#### 3.1.4.3. Mobile Applications Mock-ups
+
+En esta sección se presentan los mock-ups de alta fidelidad de las aplicaciones móviles de SaludYa, desarrolladas para pacientes y personal de establecimientos públicos de salud. Su diseño toma como base los wireframes elaborados previamente y las funcionalidades descritas en las historias de usuario del proyecto.
+
+Los mock-ups incorporan la identidad visual de SaludYa mediante el color verde primario `#0B8F6B`, fondos claros, tipografía Inter y componentes con estilos consistentes. Las pantallas utilizan un tamaño de referencia de 375 × 812 píxeles. Los botones principales tienen una altura de 48 píxeles y esquinas redondeadas de 12 píxeles.
+
+Se incluyen pantallas principales y estados de confirmación, error y ausencia de información. Los datos utilizados son ficticios y permiten representar los escenarios de uso. Estos diseños muestran la apariencia y organización de las interfaces; no constituyen evidencia de funcionalidades implementadas.
+
+**Sección Autenticación y Registro — Identity & Access Management**
+
+<p align="center">
+  <img src="assets/mockups/iam-registro.png" alt="Mock-ups de bienvenida, registro y verificación de identidad de SaludYa" width="100%"/>
+</p>
+
+Presenta las pantallas de bienvenida, selección del tipo de documento, verificación de identidad, registro de datos de contacto y validación del celular. El diseño incorpora el logotipo de SaludYa, formularios con etiquetas claras y botones diferenciados para las acciones principales y secundarias.
+
+<p align="center">
+  <img src="assets/mockups/iam-acceso-recuperacion.png" alt="Mock-ups de inicio de sesión y recuperación de contraseña de SaludYa" width="100%"/>
+</p>
+
+Muestra las interfaces de inicio de sesión y recuperación de contraseña. Se representan los pasos de verificación y los mensajes de éxito o error que orientan al usuario durante el acceso y la recuperación de su cuenta.
+
+**Sección Dashboard del Paciente**
+
+<p align="center">
+  <img src="assets/mockups/dashboard.png" alt="Mock-ups del inicio, citas pendientes e historial del paciente" width="100%"/>
+</p>
+
+Presenta la pantalla de inicio del paciente, sus citas pendientes, el detalle de una reserva y el historial de citas. Las tarjetas muestran el beneficiario, la especialidad, el profesional, la fecha, el horario y el estado de la cita. Se incluye el filtro por fecha y una barra de navegación inferior para acceder a las funciones principales.
+
+**Sección Reserva de Citas**
+
+<p align="center">
+  <img src="assets/mockups/reservas-seleccion.png" alt="Mock-ups de selección de especialidad, beneficiario, fecha, profesional y horario" width="100%"/>
+</p>
+
+Representa el recorrido para reservar una cita médica. El paciente selecciona la especialidad, el beneficiario —titular o menor vinculado—, la fecha, el profesional y un horario disponible. El calendario y las tarjetas permiten distinguir las opciones disponibles de los horarios sin cupos.
+
+<p align="center">
+  <img src="assets/mockups/reservas-confirmacion.png" alt="Mock-ups del resumen, confirmación y estados de una reserva" width="100%"/>
+</p>
+
+Muestra el resumen previo a la confirmación y el resultado de una reserva exitosa, incluyendo su código identificador. También se presentan estados para horarios sin disponibilidad, cupos ocupados y reservas que coinciden con otra cita. Las ventanas de cancelación informan sobre la acción y las restricciones del plazo establecido.
+
+**Sección Check-in y Atención del Paciente**
+
+<p align="center">
+  <img src="assets/mockups/check-in-atencion.png" alt="Mock-ups del registro de llegada, ticket digital, cola y llamado a consultorio" width="100%"/>
+</p>
+
+Presenta las interfaces del registro de llegada mediante QR, la emisión del ticket digital, la consulta de la posición en la cola y el llamado a consultorio. El ticket identifica al beneficiario, la especialidad, el profesional, la sala de espera y el consultorio.
+
+La cola de atención se representa según el orden de llegada presencial, diferenciándola de la prioridad utilizada para la reasignación de cupos. Se incluyen estados de llegada fuera de la ventana permitida, ausencia de check-in y atención finalizada.
+
+**Sección Configuración y Perfil del Paciente**
+
+<p align="center">
+  <img src="assets/mockups/configuracion-perfil.png" alt="Mock-ups de configuración, datos personales y verificación de contacto" width="100%"/>
+</p>
+
+Muestra la configuración de la cuenta y la consulta de datos personales. Las pantallas de cambio de celular y correo incorporan la verificación mediante código antes de confirmar la actualización. Se incluyen mensajes para códigos incorrectos, vencidos y cambios realizados.
+
+**Sección Gestión de Menores Vinculados**
+
+<p align="center">
+  <img src="assets/mockups/configuracion-menores.png" alt="Mock-ups de registro, verificación y gestión de menores vinculados" width="100%"/>
+</p>
+
+Presenta la lista de menores vinculados, el registro de un menor, la verificación de sus datos y la consulta de su información. El paciente titular puede visualizar las citas del menor y acceder a su perfil representado. También se muestran estados de vinculación exitosa, validación no completada y confirmación de desvinculación.
+
+**Sección Notificaciones y Reasignación de Citas**
+
+<p align="center">
+  <img src="assets/mockups/notificaciones.png" alt="Mock-ups de notificaciones y ofertas de reasignación de citas" width="100%"/>
+</p>
+
+Representa las notificaciones de reservas, llamados y ofertas de horarios anticipados. La oferta de reasignación permite comparar el horario actual con el nuevo horario y consultar el plazo para responder.
+
+Se incluyen las opciones de aceptar o rechazar la oferta y los estados de reasignación exitosa, oferta vencida o cupo ocupado. En los escenarios de rechazo o vencimiento se informa que la reserva original se conserva.
+
+**Sección Gestión de Citas del Personal**
+
+<p align="center">
+  <img src="assets/mockups/personal-citas.png" alt="Mock-ups del inicio del personal, calendario y gestión de bloques de atención" width="100%"/>
+</p>
+
+Muestra las interfaces del personal para consultar citas pendientes y canceladas, seleccionar una especialidad y revisar los bloques del calendario. El detalle de cada bloque presenta el horario, el profesional, la capacidad y las reservas asociadas. Se incluyen formularios de edición y mensajes para cambios que entran en conflicto con reservas existentes.
+
+**Sección Gestión de Llegadas y Cola de Atención**
+
+<p align="center">
+  <img src="assets/mockups/personal-atencion.png" alt="Mock-ups del registro de llegada y gestión de la cola por el personal" width="100%"/>
+</p>
+
+Presenta las pantallas del personal para validar una reserva, registrar la llegada del paciente y consultar la cola presencial. Los turnos muestran el identificador, el paciente, la hora de llegada y el estado de atención.
+
+Se representan las acciones de llamado, inicio y finalización de atención, así como la declaración de ausencia una vez cumplido el plazo posterior al llamado. Los estados y mensajes permiten distinguir pacientes en espera, llamados, atendidos y ausentes.
+
+**Sección Configuración Operativa del Establecimiento**
+
+<p align="center">
+  <img src="assets/mockups/administracion-reglas.png" alt="Mock-ups de configuración y edición de reglas operativas del establecimiento" width="100%"/>
+</p>
+
+Muestra las interfaces destinadas al perfil autorizado para configurar la capacidad por bloque, los intervalos de atención, las tolerancias de llegada y llamado, el plazo de respuesta a una reasignación y las restricciones de reserva y cancelación.
+
+También se representa la configuración de la visibilidad de la cola y del alcance de la prioridad de reasignación. Las ventanas de validación informan sobre valores inválidos o inconsistentes y la conservación de las citas previamente confirmadas.
+
+**Sección Indicadores Operativos y Reportes**
+
+<p align="center">
+  <img src="assets/mockups/administracion-indicadores.png" alt="Mock-ups de indicadores diarios, demanda por especialidad y exportación de reportes" width="100%"/>
+</p>
+
+Presenta el dashboard operativo con las citas programadas, pendientes, canceladas y las inasistencias del día. Se incluyen vistas de demanda por especialidad y filtros de periodo para la exportación de reportes en formatos PDF y CSV.
+
+También se muestra el escenario de un día sin actividad, con indicadores en cero, y mensajes de validación para rangos de fechas incorrectos.
+
+**Archivo de diseño**
+
+Los mock-ups completos y sus estados complementarios pueden consultarse en el siguiente archivo de Figma:
+
+[Mobile Application Mockups — SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2)
