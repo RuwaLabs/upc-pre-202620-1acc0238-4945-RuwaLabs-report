@@ -2536,7 +2536,7 @@ El diagrama de base de datos del bounded context Identity & Access Management mu
 
 ---
 
-### 
+### 2.6.2. Bounded Context: Appointments & Booking
 
 El **bounded context de Appointments & Booking** gestiona el ciclo de vida de una cita médica: consulta de disponibilidad, reserva, confirmación y cancelación. Es el responsable de la **cola de pedido de cita** (`booking_order`), que define la prioridad del paciente para asumir cupos liberados.
 
