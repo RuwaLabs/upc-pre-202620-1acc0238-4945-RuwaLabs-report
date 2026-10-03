@@ -31,12 +31,12 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
-| Fuente base | Segoe UI / Helvetica Neue / Arial | 16px (1rem) | 400 | Texto general, párrafos |
+| Fuente base | Segoe UI / Helvetica Neue / Arial | 1rem | 400 | Texto general, párrafos |
 | Fuente de títulos | Segoe UI / Helvetica Neue / Arial | Variable | 700 | Encabezados h1–h4 |
-| h1 | — | 2.5rem (40px) | 700 | Título principal del Hero |
-| h2 | — | 2rem (32px) | 700 | Títulos de sección |
-| h3 | — | 1.35rem (21.6px) | 700 | Títulos de tarjetas y subsecciones |
-| h4 | — | 1.1rem (17.6px) | 600 | Subtítulos internos |
+| h1 | — | 2.5rem | 700 | Título principal del Hero |
+| h2 | — | 2rem | 700 | Títulos de sección |
+| h3 | — | 1.35rem | 700 | Títulos de tarjetas y subsecciones |
+| h4 | — | 1.1rem | 600 | Subtítulos internos |
 | Interlineado | — | 1.6 | — | Cuerpo de texto |
 | Interlineado títulos | — | 1.25 | — | Encabezados |
 
@@ -100,12 +100,12 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
-| `--space-1` | 0.25rem (4px) | Separaciones mínimas |
-| `--space-2` | 0.5rem (8px) | Padding interno de botones pequeños |
-| `--space-3` | 0.75rem (12px) | Separación entre elementos inline |
-| `--space-4` | 1rem (16px) | Padding estándar |
-| `--space-5` | 1.5rem (24px) | Separación entre bloques |
-| `--space-6` | 2rem (32px) | Separación entre secciones |
+| `--space-1` | 0.25rem | Separaciones mínimas |
+| `--space-2` | 0.5rem | Padding interno de botones pequeños |
+| `--space-3` | 0.75rem | Separación entre elementos inline |
+| `--space-4` | 1rem | Padding estándar |
+| `--space-5` | 1.5rem | Separación entre bloques |
+| `--space-6` | 2rem | Separación entre secciones |
 
 ##### Aplicaciones móviles (Android)
 
