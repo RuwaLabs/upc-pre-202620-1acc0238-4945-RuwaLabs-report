@@ -863,3 +863,395 @@ También se muestra el escenario de un día sin actividad, con indicadores en ce
 Los mock-ups completos y sus estados complementarios pueden consultarse en el siguiente archivo de Figma:
 
 [Mobile Application Mockups — SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2)
+
+#### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+Un user flow representa el recorrido que sigue un usuario para alcanzar un objetivo dentro de una aplicación. Los diagramas de SaludYa describen las pantallas, acciones, decisiones y resultados de los recorridos de pacientes, representantes de menores, personal de admisión y Super Admin.
+
+Se elaboraron a partir de los mock-ups y las historias de usuario del reporte. Cada objetivo presenta un **Happy Path**, correspondiente a la ruta esperada, y sus **Unhappy Paths**, que incluyen errores, restricciones y decisiones alternativas. Los diagramas se leen de izquierda a derecha: los extremos redondeados identifican el inicio o resultado, los rectángulos representan pantallas o acciones, los rombos muestran decisiones y las flechas indican las transiciones.
+
+Se presentan 21 objetivos de usuario mediante 42 diagramas, organizados en IAM, perfil y menores, citas y reasignación, llegada y atención, operación del personal, configuración e indicadores, y sesión y permisos. Las imágenes documentan los recorridos propuestos; no constituyen evidencia de implementación funcional ni sustituyen el prototipo interactivo.
+
+- **User Goal 1:** El paciente desea registrarse en SaludYa.
+
+**Happy Path**
+
+El paciente accede a Bienvenida, selecciona Registrarse e ingresa su documento y datos personales. Después de validar su identidad, completa los datos de acceso y verifica su celular. El recorrido finaliza con la cuenta creada y el envío del correo de bienvenida.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-01-happy.png" alt="SaludYa — User Goal 1: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan datos de identidad no coincidentes, correo previamente registrado, código de verificación incorrecto e indisponibilidad del servicio de identidad. Cada ruta indica cómo corregir los datos o reintentar la validación sin crear una cuenta antes de completar las verificaciones.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-01-unhappy.png" alt="SaludYa — User Goal 1: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 2:** El usuario desea iniciar sesión y acceder al panel de su rol.
+
+**Happy Path**
+
+El usuario ingresa su correo y contraseña y selecciona el rol correspondiente. Si las credenciales y el rol son válidos, accede al panel de Paciente, Personal de Admisión o Super Admin. Se incluye la variante de los wireframes basada en documento y verificación por celular.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-02-happy.png" alt="SaludYa — User Goal 2: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Las rutas alternas contemplan credenciales incorrectas, rol no correspondiente, cuenta inactiva y código de acceso inválido en la variante por celular. Se indica el retorno al formulario o la consulta con admisión, manteniendo restringido el acceso.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-02-unhappy.png" alt="SaludYa — User Goal 2: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 3:** El usuario desea recuperar su contraseña.
+
+**Happy Path**
+
+El usuario solicita un enlace seguro mediante su correo registrado. La aplicación muestra una confirmación genérica y, al abrir un enlace vigente, permite definir una nueva contraseña. Se incorpora la alternativa de los wireframes mediante verificación por código de celular o correo.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-03-happy.png" alt="SaludYa — User Goal 3: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran enlaces vencidos o inválidos, contraseñas no coincidentes y pérdida de acceso a los medios de contacto. Para correos no registrados se mantiene una respuesta genérica, sin revelar la existencia de una cuenta ni emitir un token. El enlace de recuperación tiene una vigencia de 15 minutos.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-03-unhappy.png" alt="SaludYa — User Goal 3: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 4:** El Super Admin desea crear una cuenta para el personal.
+
+**Happy Path**
+
+El Super Admin autenticado ingresa los datos de identidad del personal y su contacto corporativo. Tras validar la concordancia con el DNI y la disponibilidad del correo, se crea la cuenta y se envían las instrucciones de acceso.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-04-happy.png" alt="SaludYa — User Goal 4: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan intentos realizados sin el rol autorizado, datos de identidad no coincidentes y correo corporativo duplicado. La cuenta no se crea hasta corregir los datos y cumplir las restricciones de acceso.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-04-unhappy.png" alt="SaludYa — User Goal 4: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 5:** El paciente titular desea vincular o desvincular a un menor.
+
+**Happy Path**
+
+El titular accede a Parientes vinculados, ingresa el documento y los datos del menor y confirma su filiación. Tras completar las validaciones, puede consultar el perfil y gestionar las citas del menor. También se representa la desvinculación mediante una confirmación explícita.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-05-happy.png" alt="SaludYa — User Goal 5: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran menores vinculados previamente, datos de identidad o edad no válidos y cancelación de la desvinculación. Cuando existe un vínculo con otra cuenta, se requiere revisión de la tutela por admisión; no se realiza una transferencia automática.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-05-unhappy.png" alt="SaludYa — User Goal 5: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 6:** El usuario desea actualizar su correo o celular.
+
+**Happy Path**
+
+El usuario consulta su perfil, elige el dato de contacto que desea modificar e ingresa el nuevo valor. Después de validar el dato y verificar el código correspondiente, se guarda el cambio y se representa la notificación de seguridad.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-06-happy.png" alt="SaludYa — User Goal 6: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Las rutas alternas contemplan formatos inválidos, correo registrado por otra cuenta y códigos incorrectos o vencidos. El recorrido permite corregir el contacto o solicitar un nuevo código antes de confirmar la actualización.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-06-unhappy.png" alt="SaludYa — User Goal 6: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 7:** El paciente desea consultar la disponibilidad de citas.
+
+**Happy Path**
+
+El paciente abre Reservar cita, selecciona una especialidad y una fecha y consulta los profesionales y horarios disponibles. El flujo permite elegir un horario para continuar con la reserva, incluyendo las variantes por profesional o por horario.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-07-happy.png" alt="SaludYa — User Goal 7: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan búsquedas de especialidades sin resultados y días sin cupos. El paciente puede modificar la búsqueda o regresar al calendario para elegir otra fecha disponible.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-07-unhappy.png" alt="SaludYa — User Goal 7: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 8:** El paciente desea reservar una cita y recibir su confirmación.
+
+**Happy Path**
+
+El paciente selecciona al beneficiario —titular o menor vinculado—, la fecha, el profesional y el horario. Revisa el resumen y confirma la reserva. Si el cupo permanece disponible y no existe un cruce de horarios, se muestra el código de reserva y se envía el comprobante por correo.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-08-happy.png" alt="SaludYa — User Goal 8: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran cupos tomados por otro paciente, reservas que coinciden con otra cita, cancelación de la confirmación y fallos en el envío del comprobante. La indisponibilidad del correo no cancela una reserva confirmada; su código continúa disponible en Mis citas.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-08-unhappy.png" alt="SaludYa — User Goal 8: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 9:** El paciente desea consultar sus citas, detalles e historial.
+
+**Happy Path**
+
+Desde Inicio, el paciente accede a Citas pendientes o Historial. Puede filtrar por fecha, abrir una cita y consultar el beneficiario, la especialidad, el profesional, el horario y el estado de la reserva.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-09-happy.png" alt="SaludYa — User Goal 9: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan listas sin citas, errores de carga y la necesidad de cambiar al perfil de un menor vinculado para consultar sus citas. El flujo permite reservar una nueva cita, reintentar la consulta o acceder a la información del representado.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-09-unhappy.png" alt="SaludYa — User Goal 9: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 10:** El paciente desea cancelar una reserva dentro del plazo permitido.
+
+**Happy Path**
+
+El paciente abre el detalle de una reserva pendiente y selecciona Cancelar reserva. Si la solicitud cumple el plazo configurado, confirma la acción. La reserva cambia a Cancelada y el cupo se libera.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-10-happy.png" alt="SaludYa — User Goal 10: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Si el plazo de cancelación terminó, el paciente debe consultar con admisión y la reserva permanece activa. Si decide no confirmar la cancelación, regresa al detalle conservando su cita. Cancelar una reserva se distingue de dejar la cola presencial.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-10-unhappy.png" alt="SaludYa — User Goal 10: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 11:** El paciente desea responder a una oferta de adelanto de horario.
+
+**Happy Path**
+
+El paciente recibe una notificación y compara el horario actual con el ofrecido. Si acepta dentro del plazo y el cupo sigue disponible, se asigna el nuevo horario, se libera el anterior y se confirma la reasignación.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-11-happy.png" alt="SaludYa — User Goal 11: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan el rechazo de la oferta, el vencimiento del plazo y la aceptación de un cupo ya ocupado. En estos escenarios se conserva la reserva original. La prioridad de las ofertas corresponde al orden de reserva, no al orden de llegada presencial.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-11-unhappy.png" alt="SaludYa — User Goal 11: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 12:** El paciente desea registrar su llegada presencial mediante QR.
+
+**Happy Path**
+
+Al llegar al establecimiento, el paciente selecciona la reserva del titular o del menor y procesa el QR presencial. Si la cita y la ventana horaria son válidas, se registra la presencia, se ingresa a la cola según la hora de llegada y se habilita el ticket digital.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-12-happy.png" alt="SaludYa — User Goal 12: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran códigos inválidos, reservas inactivas, llegada demasiado anticipada, fecha incorrecta y tolerancia de llegada vencida. En este último caso se representa el registro de inasistencia y la liberación del cupo conforme a las reglas del establecimiento.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-12-unhappy.png" alt="SaludYa — User Goal 12: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 13:** El paciente desea obtener su ticket digital de atención.
+
+**Happy Path**
+
+Una vez confirmado el check-in, se genera el código del turno y se muestran la especialidad, el profesional, la sala de espera y el consultorio. Para un menor, el ticket identifica al beneficiario y a su representante.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-13-happy.png" alt="SaludYa — User Goal 13: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Si la presencia no está confirmada, se solicita completar el registro de llegada. Si el turno ya fue atendido o declarado ausente, se muestra su estado final y se orienta al usuario hacia el historial o admisión.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-13-unhappy.png" alt="SaludYa — User Goal 13: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 14:** El paciente desea consultar su posición o dejar la cola.
+
+**Happy Path**
+
+El paciente con presencia confirmada accede a Asistencia y consulta su posición y el total de pacientes, cuando la configuración permite mostrar la cola. También se representa la salida voluntaria mediante una confirmación antes de registrar que dejó la cola.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-14-happy.png" alt="SaludYa — User Goal 14: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se contemplan ausencia de check-in, posición oculta por el establecimiento, turno finalizado y cancelación de la salida voluntaria. La cola se ordena por la hora del check-in y se actualiza al retirar pacientes atendidos o ausentes.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-14-unhappy.png" alt="SaludYa — User Goal 14: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 15:** El paciente desea recibir el llamado y acudir al consultorio.
+
+**Happy Path**
+
+El paciente espera con presencia registrada y recibe el aviso cuando su turno es habilitado. Acude al consultorio indicado dentro del plazo configurado, inicia su atención y, al finalizar, consulta el estado correspondiente.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-15-happy.png" alt="SaludYa — User Goal 15: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran fallos del canal de notificación y llegada posterior al plazo de llamado. El envío se reintenta sin detener el avance de la cola. Si vence la tolerancia sin ingreso a atención, se procesa la ausencia y se libera el cupo.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-15-unhappy.png" alt="SaludYa — User Goal 15: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 16:** El personal de admisión desea registrar llegadas y atender la cola.
+
+**Happy Path**
+
+El personal valida el QR o código de reserva y confirma la llegada dentro del horario permitido. Después consulta la cola presencial, llama al siguiente paciente y registra el inicio y la finalización de la atención.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-16-happy.png" alt="SaludYa — User Goal 16: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan reservas o horarios no válidos, cola sin pacientes e intentos de iniciar la atención de un turno declarado ausente. Cada ruta permite revisar los datos, esperar nuevas llegadas o gestionar la reprogramación mediante admisión.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-16-unhappy.png" alt="SaludYa — User Goal 16: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 17:** El personal de admisión desea procesar una inasistencia y liberar el cupo.
+
+**Happy Path**
+
+Tras el llamado, se espera el plazo configurado. Si el paciente no ingresa a atención dentro de ese plazo, se confirma o procesa su ausencia, se libera el cupo y se inicia la oferta de adelanto al siguiente paciente de la cola de reserva.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-17-happy.png" alt="SaludYa — User Goal 17: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran plazos aún vigentes, ingreso del paciente a tiempo e intentos de atender un turno ya perdido. Cuando el paciente inicia su atención dentro del margen permitido, se detiene el conteo y su estado cambia a En atención.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-17-unhappy.png" alt="SaludYa — User Goal 17: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 18:** El personal autorizado desea consultar y editar bloques de atención.
+
+**Happy Path**
+
+El personal selecciona la especialidad y la fecha, consulta un bloque y sus reservas y modifica los datos permitidos. Si el cambio es compatible con la agenda del profesional y las reservas existentes, se guarda y se muestra el bloque actualizado.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-18-happy.png" alt="SaludYa — User Goal 18: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Las rutas alternas contemplan conflictos con otros bloques o reservas confirmadas, cancelación de la edición y falta de permisos. Se conservan los datos anteriores hasta completar una actualización válida y autorizada.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-18-unhappy.png" alt="SaludYa — User Goal 18: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 19:** El Super Admin desea configurar las reglas del establecimiento.
+
+**Happy Path**
+
+El Super Admin accede a Configuración general, selecciona una regla o intervalo e ingresa el nuevo valor. Tras validar su coherencia, guarda la configuración, preservando las citas confirmadas y aplicando las reglas conforme a las políticas del establecimiento.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-19-happy.png" alt="SaludYa — User Goal 19: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan valores negativos o inconsistentes, tolerancias incompatibles con los intervalos, falta de autorización y cancelación de la edición. Los cambios no se guardan mientras existan errores o el usuario no tenga el permiso requerido.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-19-unhappy.png" alt="SaludYa — User Goal 19: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 20:** El personal autorizado desea consultar indicadores y exportar reportes.
+
+**Happy Path**
+
+El usuario consulta las citas programadas, pendientes, canceladas y las inasistencias del día. Puede revisar la demanda por especialidad y seleccionar un periodo y formato PDF o CSV para descargar el reporte correspondiente.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-20-happy.png" alt="SaludYa — User Goal 20: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se consideran rangos de fechas inválidos, días sin actividad y errores de consulta. Los días sin registros muestran indicadores en cero; los periodos incorrectos deben corregirse antes de continuar con la exportación.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-20-unhappy.png" alt="SaludYa — User Goal 20: Unhappy Paths" width="100%"/>
+</p>
+
+- **User Goal 21:** El usuario desea cerrar sesión y gestionar la expiración de su acceso.
+
+**Happy Path**
+
+El usuario accede a su perfil, selecciona Cerrar sesión y confirma la acción. La sesión finaliza y se retorna a Bienvenida para permitir un nuevo acceso.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-21-happy.png" alt="SaludYa — User Goal 21: Happy Path" width="100%"/>
+</p>
+
+**Unhappy Paths**
+
+Se representan la cancelación del cierre, la expiración de la sesión y el intento de ejecutar una acción sin autorización. Una sesión expirada requiere autenticarse nuevamente; una restricción de permisos no concede acceso a otro rol.
+
+<p align="center">
+  <img src="assets/userflows/user-goal-21-unhappy.png" alt="SaludYa — User Goal 21: Unhappy Paths" width="100%"/>
+</p>
+
+**Archivo de diseño**
+
+Los diagramas editables y sus referencias a los mock-ups se encuentran en la página User Flow del siguiente archivo de Figma:
+
+[Mobile Applications User Flow Diagrams — SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=52-2)
