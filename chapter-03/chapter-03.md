@@ -722,7 +722,7 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla.
 
-![Landing Page de SaludYa - Implementación](assets/landing-page/landing-page-implementado.png)
+![Landing Page de SaludYa - Implementación](assets/landing-page/landing-page.png)
 
 **Landing Page de SaludYa:**  
 https://ruwalabs.github.io/saludya-landing/
