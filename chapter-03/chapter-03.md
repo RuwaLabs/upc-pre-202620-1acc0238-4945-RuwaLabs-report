@@ -653,78 +653,79 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 ## 3.1.3.2. Landing Page Mock-up
 
-Los mock-ups del Landing Page se elaboraron en **Figma** aplicando el **Design System** de SaludYa, el cual define la paleta de colores, tipografía, espaciado, iconografía y componentes reutilizables.
+Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definida en los wireframes y aplicando el **Design System de SaludYa**. Este sistema establece los criterios visuales utilizados para mantener consistencia en colores, tipografía, espaciado, componentes e interacción.
 
 ### Design System aplicado
 
-| Elemento | Valor | Uso |
+| Elemento | Valor | Aplicación |
 |:---|:---|:---|
-| Color primario | `#0b8f6b` | Botones, enlaces, iconos |
-| Color primario oscuro | `#076e52` | Hover, títulos de tarjetas |
-| Color primario claro | `#e6f5f0` | Fondos de sección, hover |
-| Color de acento | `#ffb703` | Foco visible, detalles |
-| Texto | `#1c2b2a` | Texto principal |
-| Texto atenuado | `#56706d` | Párrafos secundarios |
-| Fondo / alterno | `#ffffff` / `#f4faf8` | Base y secciones alternas |
-| Borde | `#d8e6e2` | Tarjetas y separadores |
-| Tipografía | Segoe UI / Helvetica Neue / Arial | Base y títulos |
-| Radios | 6px / 12px / 20px | Tarjetas, botones, contenedores |
-| Sombras | sm / md / lg | Profundidad |
-
+| Color primario | `#0b8f6b` | Botones, enlaces e iconos |
+| Color primario oscuro | `#076e52` | Estados hover y elementos destacados |
+| Color primario claro | `#e6f5f0` | Fondos de sección y estados hover |
+| Color de acento | `#ffb703` | Indicadores de foco y elementos de énfasis |
+| Texto principal | `#1c2b2a` | Títulos y contenido principal |
+| Texto secundario | `#56706d` | Descripciones y contenido complementario |
+| Fondos | `#ffffff` / `#f4faf8` | Fondo principal y secciones alternas |
+| Borde | `#d8e6e2` | Tarjetas, controles y separadores |
+| Tipografía | Segoe UI / Helvetica Neue / Arial | Títulos y contenido |
+| Radios | 6px / 12px / 20px | Tarjetas, botones y contenedores |
+| Sombras | sm / md / lg | Jerarquía y profundidad visual |
 
 ### Mock-up Desktop Web Browser
 
-| Sección | Descripción visual |
+| Vista | Secciones destacadas |
 |:---|:---|
-| Header | Fondo blanco con desenfoque, logotipo a la izquierda, menú con subrayado activo, selector ES/EN y CTA primario |
-| Hero | Gradiente de `#e6f5f0` a `#ffffff`, título 2.75rem, botones primario y ghost, imagen con sombra `--shadow-lg` |
-| Problema | Fondo alterno, tarjetas blancas con hover elevado |
-| Solución | Fondo blanco, dos bloques con listas y viñetas en color primario |
-| Videos | Fondo alterno, iframes 16:9 con border-radius 6px |
-| Modelo de negocio | Fondo primario claro, tres tarjetas con títulos en color oscuro |
-| Testimonios | Fondo blanco, tarjetas con comilla decorativa y cita en cursiva |
-| Sobre nosotros | Fondo alterno, misión/visión con iconos circulares, valores en 4 columnas, equipo con fotos circulares |
-| Descarga | Gradiente verde, texto blanco, botones blancos con sombra |
-| Footer | Fondo `#0d2722`, texto claro, logotipo y enlaces |
+| Vista superior | Header, Hero, Problema y Solución |
+| Vista inferior | Videos, Modelo de negocio y Testimonios |
 
+![Mock-up Desktop - Vista superior](assets/landing-page/mockups/mockup-desktop-superior.png)
+
+![Mock-up Desktop - Vista inferior](assets/landing-page/mockups/mockup-desktop-inferior.png)
 
 ### Mock-up Mobile Web Browser
 
-| Sección | Descripción visual |
+| Vista | Secciones destacadas |
 |:---|:---|
-| Header | Logotipo reducido y botón hamburguesa con animación a X |
-| Hero | Una columna, imagen primero, título 1.75rem, botones al 100% |
-| Secciones | Una columna con padding reducido |
-| Testimonios | Tarjetas apiladas |
-| Equipo | Fotos de 80x80 px |
-| Descarga | Botones apilados |
-| Footer | Una columna, logotipo a 38px |
+| Vista superior | Header, Hero, Problema y Solución |
+| Vista inferior | Videos, Modelo de negocio y Testimonios |
 
+![Mock-up Mobile - Vista superior](assets/landing-page/mockups/mockup-mobile-superior.png)
+
+![Mock-up Mobile - Vista inferior](assets/landing-page/mockups/mockup-mobile-inferior.png)
 
 ### Aplicación del Design System y diseño inclusivo
 
 | Criterio | Aplicación |
 |:---|:---|
-| Branding | Logotipo y paleta verde/amarillo consistentes en header y footer |
-| Tipografía | Jerarquía clara, texto a la izquierda, interlineado 1.6 |
-| Colores | Contraste WCAG AA, color primario para acciones y acento para foco |
-| Espaciado | Escala consistente en todas las secciones |
-| Diseño inclusivo | `aria-label`, `aria-expanded`, `aria-pressed`, textos alternativos, área táctil adecuada y `prefers-reduced-motion` |
-| Internacionalización | Selector ES/EN con carga dinámica de textos |
-| Arquitectura de información | Navegación sticky y scroll suave compensado por el header |
-
+| Branding | Uso consistente del logotipo y de la paleta cromática de SaludYa |
+| Tipografía | Jerarquía visual clara, tamaño legible e interlineado adecuado |
+| Colores | Contraste adecuado para facilitar la lectura y diferenciación de acciones |
+| Espaciado | Escala uniforme de márgenes, rellenos y separación entre componentes |
+| Diseño inclusivo | Etiquetas accesibles, textos alternativos, áreas de interacción adecuadas y soporte para reducción de movimiento |
+| Internacionalización | Selector ES/EN para adaptar dinámicamente los contenidos |
+| Navegación | Menú sticky y desplazamiento suave entre las diferentes secciones |
+| Responsive | Adaptación de estructura, componentes y contenidos a diferentes tamaños de pantalla |
 
 ### Componentes reutilizables
 
 | Componente | Descripción | Estados |
 |:---|:---|:---|
-| Botón primario | Fondo `#0b8f6b`, texto blanco, radio 12px | Default, hover, focus |
-| Botón ghost | Fondo transparente, borde `#0b8f6b` | Default, hover, focus |
-| Tarjeta | Fondo blanco, borde `#d8e6e2`, sombra sm | Default, hover con elevación |
-| Testimonio | Tarjeta con comilla y cita en cursiva | Default |
-| Miembro del equipo | Tarjeta con foto circular, nombre y rol | Default, hover |
-| Selector de idioma | Botones ES/EN agrupados | Activo, inactivo |
-| Nav toggle | Botón hamburguesa animado | Cerrado, abierto |
+| Botón primario | Botón de acción principal con fondo verde y texto blanco | Default, hover, focus |
+| Botón secundario | Botón con fondo transparente y borde del color primario | Default, hover, focus |
+| Tarjeta | Contenedor para información con borde y sombra | Default, hover |
+| Testimonio | Tarjeta destinada a mostrar opiniones y citas de usuarios | Default |
+| Miembro del equipo | Componente con fotografía, nombre y rol | Default, hover |
+| Selector de idioma | Control para alternar entre español e inglés | Activo, inactivo |
+| Menú de navegación | Control responsive para mostrar u ocultar las opciones de navegación | Cerrado, abierto |
+
+### Landing Page implementado
+
+El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla.
+
+![Landing Page de SaludYa - Implementación](assets/landing-page/landing-page-implementado.png)
+
+**Landing Page de SaludYa:**  
+https://ruwalabs.github.io/saludya-landing/
 
 
 ### Conclusión de la sección
