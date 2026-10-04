@@ -604,61 +604,52 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 ## 3.1.3.1. Landing Page Wireframe
 
-Los wireframes del Landing Page se elaboraron en **Figma** para **Desktop Web Browser** y **Mobile Web Browser**, definiendo la estructura, la jerarquía visual y el flujo de navegación antes de la construcción de los mock-ups.
+Los wireframes del Landing Page fueron elaborados en **Figma** para las versiones **Desktop Web Browser** y **Mobile Web Browser**, con el objetivo de definir previamente la estructura, distribución de contenidos, jerarquía visual y navegación de la interfaz antes de desarrollar los mock-ups de alta fidelidad.
 
 ### Estructura general del wireframe
 
-El Landing Page se organiza en diez secciones, en el siguiente orden:
+La estructura del Landing Page se organizó en diez secciones principales, siguiendo un flujo orientado a presentar el problema, introducir la solución y facilitar el acceso a la aplicación:
 
-1. **Header / Navbar:** barra sticky con logotipo, menú principal, selector de idioma ES/EN y CTA "Descargar app". En móvil se colapsa con botón hamburguesa.
-2. **Hero:** eyebrow, título, subtítulo, dos botones de acción, tres bullets de beneficios e imagen representativa.
-3. **Problema:** tres tarjetas (madrugar sin certeza, cupos que se pierden, gestión en papel).
-4. **Solución:** dos bloques (app pacientes y app personal de salud) con seis funcionalidades cada uno.
-5. **Videos:** dos bloques embebidos (About the Product y About the Team).
-6. **Modelo de negocio:** tres tarjetas (implementación institucional, convenios, soporte y capacitación).
-7. **Testimonios:** seis tarjetas con citas de entrevistados.
-8. **Sobre nosotros:** misión, visión, valores y equipo RuwaLabs.
-9. **Descarga:** botones de Google Play y App Store.
-10. **Footer:** logotipo, enlaces, proyecto, contacto y copyright.
+1. **Header / Navbar:** contiene el logotipo, menú de navegación, selector de idioma ES/EN y botón principal de descarga. En dispositivos móviles, el menú se adapta mediante un botón desplegable.
+2. **Hero:** presenta el mensaje principal de la solución, una descripción breve, botones de acción, beneficios principales e imagen representativa.
+3. **Problema:** presenta tres situaciones identificadas durante la investigación: incertidumbre al solicitar una cita, pérdida de cupos disponibles y procesos administrativos en papel.
+4. **Solución:** presenta las funcionalidades principales de las aplicaciones destinadas a pacientes y personal de salud.
+5. **Videos:** incorpora contenido audiovisual relacionado con el producto y el equipo de desarrollo.
+6. **Modelo de negocio:** presenta las principales modalidades de implementación y servicios asociados a la solución.
+7. **Testimonios:** presenta opiniones y experiencias obtenidas de los entrevistados.
+8. **Sobre nosotros:** presenta la misión, visión, valores y miembros del equipo de RuwaLabs.
+9. **Descarga:** incluye los accesos correspondientes a Google Play y App Store.
+10. **Footer:** contiene el logotipo, enlaces de navegación, información del proyecto, medios de contacto y derechos de autor.
 
 ### Wireframe Desktop Web Browser
 
-| Sección | Layout | Elementos clave | Comportamiento |
-|:---|:---|:---|:---|
-| Header | Flex: logo / menú / idioma / CTA | Logotipo, 4 enlaces, ES/EN, CTA | Sticky, altura 72 px |
-| Hero | Grid 2 columnas (1.1fr / 1fr) | Título, subtítulo, 2 botones, 3 bullets, imagen | Imagen a la derecha |
-| Problema | Grid 3 columnas | 3 tarjetas | Igual altura |
-| Solución | Grid 2 columnas | 2 bloques con listas | — |
-| Videos | Grid 2 columnas | 2 iframes 16:9 | — |
-| Modelo de negocio | Grid 3 columnas | 3 tarjetas | — |
-| Testimonios | Grid 3 columnas | 6 tarjetas (2 filas) | — |
-| Sobre nosotros | Misión/visión 2 col; valores 4 col; equipo auto-fit | Textos, iconos, fotos | — |
-| Descarga | Centrado | 2 botones store | En línea |
-| Footer | Grid 4 columnas | Logo, enlaces, proyecto, contacto | 1.5fr / 1fr / 1fr / 1fr |
+| Vista | Secciones destacadas |
+|:---|:---|
+| Vista superior | Header, Hero, Problema y Solución |
+| Vista inferior | Videos, Modelo de negocio y Testimonios |
 
+![Wireframe Desktop - Vista superior](assets/landing-page/wireframes/wireframe-desktop-superior.png)
+
+![Wireframe Desktop - Vista inferior](assets/landing-page/wireframes/wireframe-desktop-inferior.png)
 
 ### Wireframe Mobile Web Browser
 
-| Sección | Layout | Elementos clave | Comportamiento |
-|:---|:---|:---|:---|
-| Header | Flex: logo + hamburguesa | Logotipo reducido, botón toggle | Menú desplegable vertical |
-| Hero | 1 columna | Imagen primero, título, subtítulo, botones apilados | `order: -1` |
-| Problema | 1 columna | 3 tarjetas apiladas | — |
-| Solución | 1 columna | 2 bloques apilados | — |
-| Videos | 1 columna | 2 iframes apilados | — |
-| Modelo de negocio | 1 columna | 3 tarjetas apiladas | — |
-| Testimonios | 1 columna | 6 tarjetas apiladas | — |
-| Sobre nosotros | 1 columna | Misión, visión, valores y equipo apilados | — |
-| Descarga | 1 columna | Botones apilados al 100% | — |
-| Footer | 1 columna | 4 secciones apiladas | — |
+| Vista | Secciones destacadas |
+|:---|:---|
+| Vista superior | Header, Hero, Problema y Solución |
+| Vista inferior | Videos, Modelo de negocio y Testimonios |
 
+![Wireframe Mobile - Vista superior](assets/landing-page/wireframes/wireframe-mobile-superior.png)
+
+![Wireframe Mobile - Vista inferior](assets/landing-page/wireframes/wireframe-mobile-inferior.png)
 
 ### Principios de diseño aplicados
 
-- **Jerarquía visual:** tamaños tipográficos diferenciados (h1 > h2 > h3) y fondos alternos entre secciones.
-- **Diseño inclusivo:** contraste de colores, fuente legible, área táctil mínima de 40x40 px y foco visible.
-- **Arquitectura de información:** secuencia problema → solución → evidencia → equipo → descarga.
-- **Consistencia:** escala de espaciado uniforme y radios de borde comunes.
+- **Jerarquía visual:** se establecieron diferentes niveles tipográficos y variaciones de fondo para diferenciar títulos, contenidos y secciones.
+- **Diseño inclusivo:** se consideraron contraste adecuado, tipografía legible, áreas de interacción apropiadas y estados de foco visibles.
+- **Arquitectura de información:** la organización sigue una secuencia de problema → solución → evidencia → equipo → descarga, facilitando la comprensión progresiva del producto.
+- **Consistencia visual:** se mantuvieron criterios uniformes de espaciado, tamaños, radios y componentes a lo largo de la interfaz.
+- **Diseño responsive:** la estructura fue adaptada para mantener la legibilidad y funcionalidad tanto en pantallas de escritorio como en dispositivos móviles.
 
 ## 3.1.3.2. Landing Page Mock-up
 
