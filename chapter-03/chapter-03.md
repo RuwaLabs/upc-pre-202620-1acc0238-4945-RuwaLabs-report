@@ -1247,3 +1247,16 @@ Se representan la cancelación del cierre, la expiración de la sesión y el int
 Los diagramas editables y sus referencias a los mock-ups se encuentran en la página User Flow del siguiente archivo de Figma:
 
 [Mobile Applications User Flow Diagrams — SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=52-2)
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+En esta sección se presenta el prótotipo interactivo desarrollado en Figma para la aplicación móvil. El diseño y los flujos de navegación están alineados con la arquitectura de información y los user flow diagrams definidos.
+
+
+A continuación, se adjunta el enlace al video de demostración.
+
+<p align="center">
+  <img src="assets/mobile-application-prototyping.png" alt="SaludYa — Mobile applications prototyping" width="100%"/>
+</p>
+
+[Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
