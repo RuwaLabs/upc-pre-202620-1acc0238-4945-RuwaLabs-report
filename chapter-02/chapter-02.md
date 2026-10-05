@@ -323,1008 +323,115 @@ En esta sección definimos la especificación formal de requisitos para la plata
 | **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo, parametrización de reglas globales e intervalos del hospital, y visualización del dashboard operativo. |
 
 #### User stories
-<!-- US-00: Visualización de Propuesta de Valor en Landing Page -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-00</td>
-      <td>Paciente Potencial</td>
-      <td>High</td>
-      <td>EP0: Plataforma de Presentación y Captación</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Visualización de Propuesta de Valor en Landing Page</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente potencial,<br>
-        <b>Quiero</b> visualizar la propuesta de valor y los beneficios de SaludYa en el sitio web público,<br>
-        <b>Para</b> comprender cómo la plataforma optimiza la gestión de mis citas médicas y decidir descargar la aplicación móvil.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Visualización de la Propuesta de Valor y Modelo de Negocio</b><br>
-        • <b>Given</b> que un Paciente Potencial accede a la dirección web pública de la plataforma,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> navega por la página principal,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra la información estructurada sobre los beneficios de SaludYa y habilita los enlaces de descarga hacia las tiendas de aplicaciones móviles.<br><br>
-        <b>Scenario 2: Reproducción de material audiovisual institucional</b><br>
-        • <b>Given</b> que el Paciente Potencial se encuentra explorando la Landing Page,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> accede a las secciones de presentación audiovisual,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema reproduce de forma integrada los videos explicativos del producto (About-the-Product) y del equipo creador (About-the-Team).<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- ===== LANDING PAGE ===== --> <!-- US-00: Visualización de Propuesta de Valor en Landing Page --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-00</td> <td>Paciente potencial</td> <td>High</td> <td>EP0: Plataforma de Presentación y Captación</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Propuesta de Valor en Landing Page</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente potencial,<br> <b>Quiero</b> visualizar la propuesta de valor y los beneficios de SaludYa en el sitio web público,<br> <b>Para</b> comprender cómo la plataforma optimiza la gestión de mis citas médicas y decidir descargar la aplicación móvil. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Visualización de la propuesta de valor y enlaces de descarga</b><br> • <b>Given</b> que un paciente potencial accede a la dirección web pública de la plataforma,<br> &nbsp;&nbsp;&nbsp;<b>When</b> navega por la página principal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta de forma estructurada los beneficios de SaludYa y habilita los enlaces de descarga hacia las tiendas de aplicaciones móviles.<br><br> <b>Scenario 2: Reproducción de material audiovisual institucional</b><br> • <b>Given</b> que el paciente potencial explora la página principal,<br> &nbsp;&nbsp;&nbsp;<b>When</b> accede a las secciones de presentación audiovisual,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema reproduce los videos explicativos del producto (About-the-Product) y del equipo creador (About-the-Team).<br><br>
 
-<!-- US-01: Registro Paciente Adulto (API DNI) -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-01</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Creación de Cuenta de Paciente con Verificación de Identidad por DNI</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente nuevo,<br>
-        <b>Quiero</b> registrarme ingresando mi número de DNI, nombres, apellidos, fecha de nacimiento, teléfono, correo y contraseña,<br>
-        <b>Para</b> que el sistema valide la concordancia de mis datos con mi identidad oficial y disponga de una cuenta verificada.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Validación exitosa vía DNI</b><br>
-        • <b>Given</b> que el paciente ingresa un número de DNI válido y datos de contacto,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida el DNI y confirma que la información personal ingresada coincide con el registro oficial,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de paciente verificada y envía un correo de bienvenida.<br><br>
-        <b>Scenario 2: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que un paciente ingresa un DNI inexistente o los nombres y/o apellidos no coinciden con los datos del DNI,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> intenta completar el registro,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el proceso y muestra un mensaje indicando que los datos no coinciden con la identidad del titular del DNI.<br><br>
-        <b>Scenario 3: Restricción por correo duplicado</b><br>
-        • <b>Given</b> que el correo personal ingresado ya pertenece a una cuenta activa en el sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el alta y muestra un error indicando que el correo ya se encuentra registrado en otra cuenta.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-01</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Verificación de Identidad por DNI</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> verificar mi identidad ingresando mi DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> que el sistema confirme que mis datos coinciden con mi identidad oficial antes de crear mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Validación exitosa de identidad</b><br> • <b>Given</b> que el paciente aún sin cuenta ingresa un DNI de 8 dígitos y nombres, apellidos y fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial y los datos coinciden,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca la identidad como verificada y habilita la continuación del registro.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que el paciente ingresa un DNI inexistente o datos que no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la verificación, indica que los datos no coinciden con el titular del DNI y permite corregirlos.<br><br> <b>Scenario 3: Formato de DNI inválido</b><br> • <b>Given</b> que el paciente ingresa un número de documento que no tiene 8 dígitos numéricos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema la rechaza sin consultar el registro oficial e indica el formato esperado.<br><br> <b>Scenario 4: Servicio de validación de identidad no disponible</b><br> • <b>Given</b> que el servicio externo de validación de identidad no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no pudo verificar la identidad, no habilita la continuación y permite reintentar más tarde.<br><br>
 
-<!-- US-02: Creación de Cuenta de Administrador -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-02</td>
-      <td>Super Admin</td>
-      <td>High</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Creación de Cuenta de Personal Administrativo</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Super Admin,<br>
-        <b>Quiero</b> registrar al personal administrativo ingresando su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br>
-        <b>Para</b> otorgarle una cuenta administrativa verificada al personal administrativo.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Alta exitosa de usuario administrativo</b><br>
-        • <b>Given</b> que un Super Admin autenticado accede al módulo de gestión de personal e ingresa los datos del personal administrativo (nombres, apellidos, fecha de nacimiento, número de DNI, correo corporativo, teléfono),<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida la concordancia de los datos con el DNI,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> genera la cuenta administrativa y envía un correo electrónico con las credenciales de acceso.<br><br>
-        <b>Scenario 2: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que el Super Admin ingresa un DNI pero un solo dato no coincide con los registros oficiales,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular.<br><br>
-        <b>Scenario 3: Restricción por correo duplicado</b><br>
-        • <b>Given</b> que el correo institucional ingresado ya pertenece a una cuenta activa en el sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar el alta,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el alta y muestra un error indicando que el correo ya se encuentra registrado en otra cuenta.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
-<!-- US-03: Registro y Vinculación de Pacientes Menores de Edad -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-03</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Registro y Vinculación de Pacientes Menores de Edad (Niños)</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente titular,<br>
-        <b>Quiero</b> registrar y vincular a un menor de edad a mi cuenta principal ingresando su DNI y, de ser necesario, desvincularlo,<br>
-        <b>Para</b> gestionar las citas médicas del menor desde mi propio usuario.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Vinculación exitosa de menor</b><br>
-        • <b>Given</b> que el paciente titular está autenticado en su cuenta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el DNI del menor y confirma la filiación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida los datos del menor por su DNI y lo asocia al perfil del adulto responsable.<br><br>
-        <b>Scenario 2: Menor previamente vinculado</b><br>
-        • <b>Given</b> que el DNI del menor ya está asociado a otra cuenta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta la vinculación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra una alerta para validar la tutela legal con el personal de admisión.<br><br>
-        <b>Scenario 3: Incoincidencia de datos de identidad</b><br>
-        • <b>Given</b> que el paciente titular ingresa un DNI de menor cuyos datos no coinciden con los registros oficiales,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta procesar la vinculación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la acción y muestra un error indicando que la identidad no coincide con el titular del DNI.<br><br>
-        <b>Scenario 4: Desvinculación de menor</b><br>
-        • <b>Given</b> que el paciente titular posee un menor vinculado a su cuenta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> solicita la desvinculación del menor,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema elimina el vínculo y el menor deja de estar disponible para agendar citas.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-02: Registro de Credenciales de Acceso --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-02</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Credenciales de Acceso</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> registrar mi correo, contraseña y número de celular una vez verificada mi identidad,<br> <b>Para</b> contar con las credenciales con las que accederé a mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Credenciales válidas</b><br> • <b>Given</b> que el paciente con identidad verificada ingresa un correo disponible, una contraseña con su confirmación idéntica y un celular de 9 dígitos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita continuar con el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código de verificación de 6 dígitos por SMS al celular indicado.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que las contraseñas no coinciden.<br><br> <b>Scenario 4: Formato de correo o celular inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e identifica el dato inválido.<br><br>
 
-<!-- US-04: Recuperación de Contraseña -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-04</td>
-      <td>Patient / Admission Staff / Super Admin</td>
-      <td>High</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Recuperación de Contraseña</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
-        <b>Quiero</b> solicitar la restauración de mi contraseña mediante un enlace seguro enviado a mi correo registrado,<br>
-        <b>Para</b> recuperar el acceso a mi cuenta en caso de olvido.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Envío de correo de restablecimiento</b><br>
-        • <b>Given</b> un correo registrado en el sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario solicita recuperar su contraseña,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un token temporal con vigencia de 15 minutos para definir una nueva clave.<br><br>
-        <b>Scenario 2: Rechazo por correo no registrado</b><br>
-        • <b>Given</b> un correo que no pertenece a ninguna cuenta del sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se solicita la recuperación de contraseña,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no genera token y responde con un mensaje genérico de confirmación sin revelar la existencia de la cuenta.<br><br>
-        <b>Scenario 3: Expiración del token de restablecimiento</b><br>
-        • <b>Given</b> un token de restablecimiento emitido previamente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta definir una nueva contraseña después de la vigencia de 15 minutos,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e indica que el enlace expiró, solicitando una nueva solicitud.<br><br>
-        <b>Scenario 4: Contacto con soporte por pérdida total de la cuenta</b><br>
-        • <b>Given</b> un usuario no tiene acceso a su correo registrado ni a su número de celular asociado a la cuenta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario solicita la recuperación de su cuenta desde la pantalla de recuperación de contraseña,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el número telefónico y los canales de atención de la mesa de ayuda, y registra la solicitud para que un agente restablezca las credenciales previa verificación de identidad con DNI.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-03: Verificación de Celular y Creación de Cuenta --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-03</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Verificación de Celular y Creación de Cuenta</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ingresar el código de 6 dígitos enviado a mi celular,<br> <b>Para</b> confirmar mi número y obtener mi cuenta de paciente verificada. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Código válido</b><br> • <b>Given</b> que el paciente recibió un código de verificación vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el código correcto,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema confirma el celular, crea la cuenta de paciente verificada y envía un correo de bienvenida.<br><br> <b>Scenario 2: Código incorrecto</b><br> • <b>Given</b> que el paciente ingresa un código distinto al enviado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita completar el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no crea la cuenta, indica que el código es incorrecto y permite reintentar.<br><br> <b>Scenario 3: Reenvío de código</b><br> • <b>Given</b> que el paciente no recibió el código,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita un nuevo código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código nuevo al mismo celular e invalida el anterior.<br><br>
 
-<!-- US-05: Edición de Perfil -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-05</td>
-      <td>Patient / Admission Staff / Super Admin</td>
-      <td>Medium</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Edición de Información Personal</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
-        <b>Quiero</b> actualizar mis datos de contacto (teléfono, correo),<br>
-        <b>Para</b> mantener mi información de perfil al día.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Modificación de contacto</b><br>
-        • <b>Given</b> el usuario dentro de su sección de perfil,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> edita su número telefónico o correo y guarda los cambios,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la base de datos y envía una notificación de confirmación de seguridad.<br><br>
-        <b>Scenario 2: Restricción por correo duplicado</b><br>
-        • <b>Given</b> un usuario que intenta actualizar su correo a uno ya registrado por otra cuenta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la actualización e indica que el correo ya se encuentra en uso.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-04: Inicio de Sesión del Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-04</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a mi cuenta de paciente. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso y abre su sesión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que el paciente ingresa un correo no registrado o una contraseña incorrecta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas sin precisar cuál dato falló.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e indica consultar con el personal de admisión.<br><br>
 
-<!-- US-06: Inicio de Sesión -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-06</td>
-      <td>Patient / Admission Staff / Super Admin</td>
-      <td>High</td>
-      <td>EP1: Authentication & Identity Management</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Inicio de Sesión por Rol</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Patient, Admission Staff o Super Admin,<br>
-        <b>Quiero</b> autenticarme con mi correo, contraseña y selección de rol,<br>
-        <b>Para</b> acceder al panel correspondiente a mi rol.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Login exitoso</b><br>
-        • <b>Given</b> credenciales válidas y el rol correspondiente al usuario,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario envía sus credenciales de acceso,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga acceso y redirige al panel del rol autenticado (Paciente, Personal de Admisión o Super Admin).<br><br>
-        <b>Scenario 2: Rechazo por credenciales inválidas o usuario inexistente</b><br>
-        • <b>Given</b> que un usuario ingresa un correo no registrado, una contraseña incorrecta o un rol no correspondiente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario envía sus credenciales de acceso,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso y notifica credenciales inválidas.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-05: Selección de Especialidad Médica --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-05</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Selección de Especialidad Médica</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> buscar y seleccionar una especialidad médica,<br> <b>Para</b> consultar su disponibilidad de atención. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita la consulta de disponibilidad de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad publicada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br> <b>Scenario 3: Consulta sin especialidad seleccionada</b><br> • <b>Given</b> que el paciente no ha seleccionado una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta consultar fechas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema impide la consulta e indica que debe seleccionar una especialidad.<br><br>
 
-<!-- US-07: Visualización de Calendario y Turnos Médicos -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-07</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP2: Appointments & Booking Engine</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Visualización de Calendario y Horarios Disponibles</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> seleccionar una especialidad médica y explorar el calendario de atención,<br>
-        <b>Para</b> visualizar los horarios y turnos disponibles configurados según los intervalos del hospital.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Despliegue del calendario con horarios disponibles</b><br>
-        • <b>Given</b> una especialidad médica seleccionada que cuenta con agenda activa,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta una fecha del calendario,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema despliega los bloques de horarios libres para la fecha consultada.<br><br>
-        <b>Scenario 2: Calendario sin horarios o agenda completa</b><br>
-        • <b>Given</b> una especialidad médica seleccionada,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente explora una fecha sin médicos programados o con cupos agotados,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica la ausencia de turnos para dicho día y resalta en el calendario las fechas más próximas con horarios libres.<br><br>
-        <b>Scenario 3: Restricción por especialidad no seleccionada</b><br>
-        • <b>Given</b> que no se ha seleccionado ninguna especialidad médica,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta explorar los días del calendario,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deshabilita la navegación de fechas indicando que se requiere seleccionar una especialidad.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-06: Consulta de Horarios Disponibles --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-06</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Horarios Disponibles</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar los horarios libres de una fecha para la especialidad elegida,<br> <b>Para</b> elegir el turno que mejor se ajuste a mi tiempo. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Horarios libres de la fecha</b><br> • <b>Given</b> que el paciente seleccionó una especialidad con agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta una fecha,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta los bloques horarios con cupos libres de esa fecha.<br><br> <b>Scenario 2: Fecha sin turnos o con cupos agotados</b><br> • <b>Given</b> que la fecha no tiene bloques programados o sus cupos están agotados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay turnos y resalta las fechas más próximas con horarios libres.<br><br>
 
-<!-- US-08: Reserva de Cita Médica -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-08</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP2: Appointments & Booking Engine</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Reserva de Cita Médica para Titular o Menor de Edad</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente titular,<br>
-        <b>Quiero</b> seleccionar un turno disponible del calendario e indicar si la atención es para el titular o para un menor registrado,<br>
-        <b>Para</b> bloquear el bloque horario y agendar la cita médica.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Reserva exitosa para el paciente titular</b><br>
-        • <b>Given</b> un horario libre seleccionado del calendario y la indicación de que la cita corresponde al paciente titular,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la reserva del turno,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asocia el bloque horario a la cuenta del titular, actualiza el turno a estado reservado y envía la notificación de confirmación.<br><br>
-        <b>Scenario 2: Reserva exitosa para un menor de edad vinculado (US-03)</b><br>
-        • <b>Given</b> un horario libre seleccionado del calendario y la elección de un menor previamente vinculado a la cuenta del titular,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se confirma la reserva del turno,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asigna la cita al perfil del menor, registra al titular como adulto responsable y emite el comprobante de la reserva.<br><br>
-        <b>Scenario 3: Denegación por solapamiento de horario</b><br>
-        • <b>Given</b> que el paciente (titular o menor seleccionado) ya cuenta con una cita activa registrada en el mismo bloque horario,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta confirmar la nueva reserva,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa la incompatibilidad por cruce de horarios.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-07: Reserva de Cita para el Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-07</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Reserva de Cita para el Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para mí,<br> <b>Para</b> asegurar mi atención médica en la fecha y hora elegidas. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reserva exitosa</b><br> • <b>Given</b> que el paciente autenticado selecciona un horario con cupo libre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la cita en estado reservado, descuenta el cupo y asigna un código de reserva único.<br><br> <b>Scenario 2: Horario ocupado por otro paciente</b><br> • <b>Given</b> que el cupo seleccionado fue ocupado por otro paciente antes de confirmar,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva, informa que el horario ya no está disponible y permite elegir otro.<br><br> <b>Scenario 3: Solapamiento de horario</b><br> • <b>Given</b> que el paciente ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta confirmar una nueva reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 4: Reserva fuera de la hora límite</b><br> • <b>Given</b> que se superó la hora límite para reservar configurada por el establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa la hora límite vigente.<br><br>
 
-<!-- US-09: Notificación de Cita Confirmada -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-09</td>
-      <td>Patient</td>
-      <td>Medium</td>
-      <td>EP2: Appointments & Booking Engine</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Notificación de Cita Confirmada o Reasignada</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente titular,<br>
-        <b>Quiero</b> recibir una confirmación por correo electrónico o mensaje al reservar o reasignar una cita (propia o de un menor a cargo),<br>
-        <b>Para</b> contar con el comprobante y los detalles de la atención médica.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Envío exitoso de confirmación de cita</b><br>
-        • <b>Given</b> una cita médica reservada o reasignada exitosamente para el titular o un menor vinculado,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de agendamiento,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía una notificación al correo del titular conteniendo el código de reserva, nombre del paciente beneficiario, especialidad, médico, fecha y hora del turno.<br><br>
-        <b>Scenario 2: Contingencia por fallo en el servicio de notificación</b><br>
-        • <b>Given</b> una cita médica reservada exitosamente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el servicio externo de correo o SMS presenta indisponibilidad,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la cita correctamente y encola la notificación para reintentar su envío automáticamente sin interrumpir la confirmación del turno.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-08: Recepción de Confirmación de Cita por Correo --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-08</td> <td>Paciente</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Recepción de Confirmación de Cita por Correo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir por correo la confirmación de mi cita,<br> <b>Para</b> contar con el comprobante y los detalles de mi atención. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Envío de confirmación</b><br> • <b>Given</b> que una cita fue reservada exitosamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al correo del paciente el código de reserva, el paciente beneficiario, la especialidad, el médico, la fecha y la hora.<br><br> <b>Scenario 2: Servicio de correo no disponible</b><br> • <b>Given</b> que el servicio externo de correo no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la cita confirmada y reintenta el envío automáticamente.<br><br>
 
-<!-- US-10: Consulta y Cancelación de Citas por el Paciente -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-10</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP2: Appointments & Booking Engine</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Consulta de Citas Agendadas y Cancelación Voluntaria</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente titular,<br>
-        <b>Quiero</b> consultar el historial y estado de mis citas (propias o de menores a mi cargo - US-03) y cancelar un turno dentro de la anticipación mínima parametrizada por el hospital (US-17),<br>
-        <b>Para</b> liberar formalmente el espacio en la agenda médica cuando no sea posible asistir y posibilitar la reasignación del turno.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Cancelación exitosa dentro del plazo límite permitido</b><br>
-        • <b>Given</b> una cita médica activa (del titular o de un menor vinculado) cuyo tiempo restante cumple con la regla de anticipación mínima configurada por la institución,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente efectúa la solicitud de cancelación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a "Cancelado por el Paciente", libera la franja horaria en la agenda médica y emite el comprobante de cancelación al correo registrado.<br><br>
-        <b>Scenario 2: Denegación de cancelación por superación del límite temporal</b><br>
-        • <b>Given</b> una cita médica agendada cuyo margen de tiempo para cancelaciones ya ha expirado según la regla operativa del hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta procesar la cancelación del turno,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e indica que la gestión debe realizarse de manera presencial o directa con el personal de admisión.<br><br>
-        <b>Scenario 3: Consulta de citas activas e históricas (Titular y Menores a cargo)</b><br>
-        • <b>Given</b> un paciente titular autenticado en el sistema,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> consulta el registro de turnos,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el desglose de citas programadas, finalizadas y canceladas, discriminando si corresponden al titular o a sus menores vinculados.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-09: Consulta de Citas Agendadas --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-09</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Citas Agendadas</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis citas programadas, finalizadas y canceladas,<br> <b>Para</b> conocer el estado y el detalle de mi atención. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Listado de citas</b><br> • <b>Given</b> que el paciente autenticado tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, finalizadas y canceladas con su estado.<br><br> <b>Scenario 2: Sin citas registradas</b><br> • <b>Given</b> que el paciente no tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas registradas.<br><br> <b>Scenario 3: Error en la consulta</b><br> • <b>Given</b> que la información no puede cargarse por una falla del servicio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa el error y permite reintentar la consulta.<br><br>
 
-<!-- US-11: Respuesta a Propuesta de Adelanto de Cita -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-11</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP3: Reassignment Protocol</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Aceptación o Rechazo de Adelanto de Intervalo por Cupo Liberado</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente con una cita reservada en un intervalo posterior,<br>
-        <b>Quiero</b> responder a la propuesta de adelanto (aceptando o rechazando el cambio),<br>
-        <b>Para</b> ocupar el intervalo anterior que quedó libre o mantener mi turno programado originalmente.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Aceptación exitosa del cambio de intervalo</b><br>
-        • <b>Given</b> que un paciente recibe la propuesta de adelantar su cita a un intervalo anterior disponible,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona aceptar el cambio de horario,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema le asigna el nuevo intervalo de atención, libera su horario original para otros usuarios y confirma la reasignación.<br><br>
-        <b>Scenario 2: Rechazo del cambio de intervalo</b><br>
-        • <b>Given</b> que un paciente recibe la propuesta de adelantar su cita,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona rechazar el cambio,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene su cita intacta en el intervalo original y notifica la disponibilidad al siguiente paciente de la cola de reserva.<br><br>
-        <b>Scenario 3: Expiración por falta de respuesta (Rechazo implícito)</b><br>
-        • <b>Given</b> la propuesta enviada con un tiempo límite de respuesta,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente no responde dentro del lapso establecido,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asume la negación del cambio, conserva la cita en su hora inicial y transmite la propuesta al siguiente paciente de la cola de reserva.<br><br>
-        <b>Scenario 4: Intento de aceptación sobre un cupo ya asignado</b><br>
-        • <b>Given</b> que la propuesta de cambio fue enviada a más de un paciente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta aceptar la propuesta pero el intervalo ya fue tomado por otro paciente,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema notifica que el horario libre ya no se encuentra disponible y mantiene su cita sin modificaciones.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-10: Cancelación de Cita --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-10</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Cancelación de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cancelar una cita agendada,<br> <b>Para</b> liberar el cupo cuando no pueda asistir. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cancelación dentro del plazo</b><br> • <b>Given</b> que la cita está activa y cumple la anticipación mínima de cancelación configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la cancelación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado de la cita a cancelada por el paciente, libera el cupo y envía el comprobante de cancelación al correo registrado.<br><br> <b>Scenario 2: Cancelación fuera del plazo</b><br> • <b>Given</b> que la anticipación mínima de cancelación ya venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la cancelación e indica gestionarla de forma presencial con el personal de admisión.<br><br> <b>Scenario 3: Cita no activa</b><br> • <b>Given</b> que la cita ya fue cancelada, atendida o declarada ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelarla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e informa el estado actual de la cita.<br><br>
 
-<!-- US-12: Check-in Presencial mediante Código QR -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-12</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP4: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Registro de Llegada (Check-in) mediante Código QR</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> registrar mi presencia procesando el código QR del establecimiento al llegar al hospital,<br>
-        <b>Para</b> confirmar mi asistencia dentro de la ventana de tolerancia configurada por la institución y habilitar mi turno en la cola de atención.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Check-in exitoso dentro de la ventana de tolerancia del hospital</b><br>
-        • <b>Given</b> que un paciente con cita agendada se presenta en el establecimiento dentro del intervalo de tolerancia parametrizado por el hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> procesa la validación del código QR presencial,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema valida la cita, cambia el estado del turno a "Presente" y lo ingresa formalmente en la cola de atención del médico.<br><br>
-        <b>Scenario 2: Check-in exitoso para un menor de edad a cargo (US-03)</b><br>
-        • <b>Given</b> un paciente titular autenticado que acompaña a su menor registrado con cita en el intervalo activo,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> procesa el código QR seleccionando la cita del menor,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema confirma la presencia del menor y actualiza el estado de su turno a "Presente".<br><br>
-        <b>Scenario 3: Denegación por tolerancia vencida (Llegada tardía)</b><br>
-        • <b>Given</b> que el tiempo de llegada supera el margen de tolerancia máximo permitido por la configuración del hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta registrar la llegada mediante el código QR,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el check-in, marca la cita como "Inasistencia por Tolerancia Vencida" e inicia el protocolo de liberación de cupo (US-16).<br><br>
-        <b>Scenario 4: Intento de Check-in fuera de la ventana horaria (Llegada muy anticipada o fecha incorrecta)</b><br>
-        • <b>Given</b> una cita médica programada para un horario o fecha posterior fuera del margen de anticipación permitido,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el usuario intenta procesar el código QR,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la confirmación notificando que aún no se habilita la ventana de registro para dicho turno.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-11: Consulta del Código QR de la Reserva --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-11</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Código QR de la Reserva</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el código QR de mi reserva,<br> <b>Para</b> presentarlo al personal de admisión al llegar al establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Código QR disponible</b><br> • <b>Given</b> que el paciente tiene una cita activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema proporciona el código QR asociado a la reserva y su código de reserva.<br><br> <b>Scenario 2: Cita no activa</b><br> • <b>Given</b> que la cita fue cancelada o ya finalizó,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no proporciona el código QR e informa el estado de la cita.<br><br>
 
-<!-- US-13: Emisión de Ticket Digital de Atención -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-13</td>
-      <td>Patient</td>
-      <td>Medium</td>
-      <td>EP4: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Emisión de Ticket Digital de Atención</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente,<br>
-        <b>Quiero</b> obtener un ticket digital de atención tras confirmar el check-in presencial,<br>
-        <b>Para</b> disponer del identificador alfanumérico y los datos de la sala con los que seré llamado a consultorio.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Generación exitosa de ticket digital para el titular</b><br>
-        • <b>Given</b> que un paciente realiza la confirmación de llegada (check-in) exitosamente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa el registro de presencia,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema emite el ticket digital con un código único de llamado, indicando la especialidad, el médico asignado, la sala de espera y el consultorio correspondiente.<br><br>
-        <b>Scenario 2: Generación de ticket digital para un menor de edad (US-03)</b><br>
-        • <b>Given</b> que el paciente titular confirma el check-in para la cita de un menor a su cargo,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema valida la llegada,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera el ticket digital vinculando el identificador de llamado a la historia del menor y mostrando al titular como adulto responsable.<br><br>
-        <b>Scenario 3: Denegación de emisión por check-in no confirmado</b><br>
-        • <b>Given</b> una cita que no ha registrado el check-in o se encuentra fuera de la ventana de tolerancia,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta generar el ticket de atención,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea la emisión e informa que se requiere confirmar la presencia presencial previamente.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-12: Consulta del Ticket Digital de Atención --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-12</td> <td>Paciente</td> <td>Medium</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Ticket Digital de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi ticket digital de atención,<br> <b>Para</b> conocer mi código de turno y el consultorio donde seré atendido. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Ticket disponible</b><br> • <b>Given</b> que la llegada del paciente fue registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el código de turno, la especialidad, el profesional, la sala y el consultorio.<br><br> <b>Scenario 2: Llegada no registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que se requiere registrar la llegada presencial.<br><br> <b>Scenario 3: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el estado final del turno.<br><br>
 
-<!-- US-14: Consulta de Posición en la Cola de Asistencia -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-14</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP4: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Consulta de Posición en la Cola de Asistencia</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente presente en el establecimiento,<br>
-        <b>Quiero</b> consultar mi posición actual en la cola de asistencia en tiempo real,<br>
-        <b>Para</b> estimar el momento aproximado en que seré llamado a consultorio.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Consulta exitosa de la posición en cola</b><br>
-        • <b>Given</b> un paciente con check-in confirmado e ingreso a la cola de asistencia,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket o el estado de la cola,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su posición actual y el total de pacientes en la cola de asistencia, ordenados por su `checkInTimestamp`.<br><br>
-        <b>Scenario 2: Consulta sin check-in confirmado</b><br>
-        • <b>Given</b> un paciente que no ha confirmado su presencia en el establecimiento,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> intenta consultar su posición en la cola,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega la consulta indicando que no registra presencia en la cola de asistencia.<br><br>
-        <b>Scenario 3: Consulta de un turno ya finalizado</b><br>
-        • <b>Given</b> un paciente cuyo turno ya fue atendido o declarado ausente,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> consulta el estado de la cola,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que el paciente ya no se encuentra en la cola de asistencia.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-13: Consulta de Posición en la Cola de Atención --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-13</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Posición en la Cola de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi posición en la cola de atención,<br> <b>Para</b> estimar el momento en que seré llamado. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Posición en la cola</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y la posición de cola es visible según la regla del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su posición y el total de pacientes, ordenados por hora de llegada.<br><br> <b>Scenario 2: Posición de cola no visible</b><br> • <b>Given</b> que el establecimiento configuró la posición de cola como no visible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no revela la posición e informa únicamente el estado del turno.<br><br> <b>Scenario 3: Sin llegada registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra presencia en la cola.<br><br> <b>Scenario 4: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que ya no se encuentra en la cola.<br><br>
 
-<!-- US-15: Notificación de Llamado a Consultorio -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-15</td>
-      <td>Patient</td>
-      <td>High</td>
-      <td>EP4: Arrival & QR Check-in System</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Notificación de Llamado a Consultorio</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Paciente en la cola de asistencia,<br>
-        <b>Quiero</b> recibir una notificación automática cuando llegue mi turno,<br>
-        <b>Para</b> dirigirme al consultorio sin depender de un aviso manual del personal.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Envío automático de la notificación de llamado</b><br>
-        • <b>Given</b> un paciente en la cola de asistencia en estado de espera y su posición es la siguiente a ser llamada,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema habilita su turno según el orden de `checkInTimestamp`,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía automáticamente una notificación (push/SMS) indicando el llamado y la sala o consultorio asignado.<br><br>
-        <b>Scenario 2: Reordenamiento de la cola por ausencia</b><br>
-        • <b>Given</b> un paciente ausente que es retirado de la cola de asistencia,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el sistema reordena la cola de espera,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema recalcula la posición del siguiente paciente y le envía la notificación de llamado que le corresponde.<br><br>
-        <b>Scenario 3: Contingencia ante indisponibilidad del canal de notificación</b><br>
-        • <b>Given</b> un paciente cuyo turno fue habilitado para llamado,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el canal de notificación (push o SMS) se encuentra indisponible,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra el intento y reintenta el envío automáticamente sin interrumpir el avance de la cola de asistencia.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-14: Recepción de Notificación de Llamado a Consultorio --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-14</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Recepción de Notificación de Llamado a Consultorio</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir una notificación cuando me llamen a consultorio,<br> <b>Para</b> dirigirme a atención sin depender de un aviso manual. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Notificación de llamado</b><br> • <b>Given</b> que el personal de admisión registra el llamado del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al paciente una notificación con el consultorio asignado y el plazo para acudir.<br><br> <b>Scenario 2: Canal de notificación no disponible</b><br> • <b>Given</b> que el canal de notificación no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra el intento y reintenta el envío sin detener la cola.<br><br>
 
-<!-- US-16: Ejecución del Protocolo de Ausencia y Liberación de Cupo -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-16</td>
-      <td>Admission Staff</td>
-      <td>High</td>
-      <td>EP5: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Personal de Admisión,<br>
-        <b>Quiero</b> que el sistema declare la inasistencia de un paciente cuando este no acude al ser llamado tras exceder el tiempo de espera configurado por el hospital,<br>
-        <b>Para</b> dar por perdido su turno y abrir inmediatamente el cupo en el intervalo para los pacientes de los siguientes horarios.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Pérdida de turno y liberación de cupo por inasistencia al llamado</b><br>
-        • <b>Given</b> que un paciente con cita (titular o menor a cargo) es llamado a consultorio y transcurre el tiempo límite de tolerancia determinado por el hospital sin que se ingrese a la atención,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se registra o procesa la inasistencia en el turno,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado de la cita a "Ausente / Turno Perdido", libera definitivamente el cupo del intervalo y dispara la propuesta de adelanto a los pacientes de la cola de reserva (US-11).<br><br>
-        <b>Scenario 2: Intento de atención sobre un turno ya declarado como ausente</b><br>
-        • <b>Given</b> un paciente cuyo turno fue marcado como "Ausente / Turno Perdido" por exceder el tiempo hospitalario,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se intenta iniciar la consulta médica para dicha cita,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación informando la pérdida del turno y sugiriendo la reprogramación del paciente.<br><br>
-        <b>Scenario 3: Cancelación del llamado por presencia a tiempo dentro del margen hospitalario</b><br>
-        • <b>Given</b> un paciente llamado que ingresa al consultorio dentro del tiempo determinado por el hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se valida su ingreso a la atención médica,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a "En Atención" y detiene el conteo del protocolo de ausencia.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-15: Vinculación de un Menor de Edad --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-15</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Vinculación de un Menor de Edad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> vincular a un menor a mi cuenta ingresando su DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> gestionar sus citas médicas desde mi propia cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Vinculación exitosa</b><br> • <b>Given</b> que el paciente titular autenticado ingresa datos de un menor de 18 años que coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma ser su adulto responsable,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asocia al menor con la cuenta del titular.<br><br> <b>Scenario 2: Menor ya vinculado a otra cuenta</b><br> • <b>Given</b> que el DNI del menor ya está asociado a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica validar la tutela legal con el personal de admisión.<br><br> <b>Scenario 3: Edad no válida</b><br> • <b>Given</b> que el DNI corresponde a una persona de 18 años o más,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la edad no es válida.<br><br> <b>Scenario 4: Incoincidencia de datos del menor</b><br> • <b>Given</b> que los datos ingresados no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincular al menor,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la identidad no coincide.<br><br>
 
-<!-- US-17: Configuración de Parámetros Operativos del Hospital -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-17</td>
-      <td>Super Admin</td>
-      <td>High</td>
-      <td>EP5: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Super Admin,<br>
-        <b>Quiero</b> parametrizar los intervalos de atención (fraccionamiento 1 a 1), el máximo de pacientes por bloque, la ventana de tolerancia para check-in (hora límite de llegada), el margen máximo para la recepción de cupos adelantados, la hora límite para reservar citas y la anticipación máxima requerida para cancelaciones,<br>
-        <b>Para</b> adaptar el comportamiento dinámico del sistema a la capacidad operativa y políticas de la institución.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Actualización exitosa de la configuración operativa global</b><br>
-        • <b>Given</b> un Super Admin autenticado,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> actualiza y guarda los valores de intervalos de tiempo, límite de tolerancia de llegada, horario de corte para reservas y plazo de cancelación,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste la nueva parametrización y la aplica de forma inmediata a la generación de agendas, cálculo de disponibilidad y validaciones de check-in.<br><br>
-        <b>Scenario 2: Rechazo por valores de configuración inválidos o inconsistentes</b><br>
-        • <b>Given</b> un Super Admin modificando las reglas operativas,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> ingresa parámetros incoherentes (como una tolerancia de llegada superior a la duración del intervalo o una hora límite de cancelación posterior a la hora de la cita),<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema bloquea el registro de la configuración e informa sobre los campos en conflicto.<br><br>
-        <b>Scenario 3: Preservación de citas agendadas ante cambios de configuración</b><br>
-        • <b>Given</b> la modificación de los intervalos u horarios operativos del hospital,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> se aplican los nuevos parámetros globales,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene intactas las citas confirmadas con anterioridad y aplica las nuevas reglas únicamente a los nuevos bloques y turnos generados.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-16: Reserva de Cita para un Menor Vinculado --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-16</td> <td>Paciente</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Reserva de Cita para un Menor Vinculado</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para un menor vinculado a mi cuenta,<br> <b>Para</b> asegurar la atención médica del menor. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reserva exitosa para el menor</b><br> • <b>Given</b> que el paciente titular selecciona un horario con cupo libre y un menor vinculado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asigna la cita al menor, registra al titular como adulto responsable y asigna un código de reserva único.<br><br> <b>Scenario 2: Solapamiento de horario del menor</b><br> • <b>Given</b> que el menor ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 3: Menor no vinculado</b><br> • <b>Given</b> que el menor seleccionado no está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta reservar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e indica que el menor no está vinculado.<br><br>
 
-<!-- US-18: Visualización de Dashboard Operativo -->
-<table>
-  <thead>
-    <tr>
-      <th>Story ID</th>
-      <th>User</th>
-      <th>Priority</th>
-      <th>Epic</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US-18</td>
-      <td>Admission Staff</td>
-      <td>High</td>
-      <td>EP5: Hospital Operations & System Configuration</td>
-    </tr>
-    <tr>
-      <th>Title</th>
-      <td colspan="3">Visualización de Dashboard Operativo del Día</td>
-    </tr>
-    <tr>
-      <th colspan="4">Description</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Como</b> Personal de Admisión,<br>
-        <b>Quiero</b> visualizar un panel con las métricas operativas del día,<br>
-        <b>Para</b> monitorear el flujo de citas y las incidencias del establecimiento en tiempo real.
-      </td>
-    </tr>
-    <tr>
-      <th colspan="4">Acceptance Criteria</th>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Scenario 1: Visualización de indicadores operativos del día</b><br>
-        • <b>Given</b> un Personal de Admisión autenticado,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> accede al dashboard operativo,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra las citas programadas del día, las citas pendientes de atención, las citas canceladas del día y las inasistencias registradas del día.<br><br>
-        <b>Scenario 2: Día sin actividad registrada</b><br>
-        • <b>Given</b> una fecha sin citas ni incidencias registradas,<br>
-        &nbsp;&nbsp;&nbsp;<b>When</b> el Personal de Admisión consulta el dashboard,<br>
-        &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra todos los indicadores en cero.<br><br>
-      </td>
-    </tr>
-  </tbody>
-</table>
+</tbody> </table> <!-- US-17: Consulta de Menores Vinculados --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-17</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Menores Vinculados</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar la lista de menores vinculados a mi cuenta,<br> <b>Para</b> identificar a quiénes puedo gestionar citas. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Lista de menores</b><br> • <b>Given</b> que el paciente titular tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el nombre, la edad y el DNI enmascarado de cada menor.<br><br> <b>Scenario 2: Sin menores vinculados</b><br> • <b>Given</b> que el paciente titular no tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay menores vinculados.<br><br>
+
+</tbody> </table> <!-- US-18: Consulta del Perfil de un Menor --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-18</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Perfil de un Menor</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el perfil de un menor vinculado,<br> <b>Para</b> revisar sus datos y mi condición de adulto responsable. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Perfil del menor</b><br> • <b>Given</b> que el menor está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el nombre, el DNI enmascarado, la fecha de nacimiento y el adulto responsable.<br><br> <b>Scenario 2: Menor no vinculado a la cuenta</b><br> • <b>Given</b> que el menor no está vinculado a la cuenta del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta consultar su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso a los datos del menor.<br><br>
+
+</tbody> </table> <!-- US-19: Desvinculación de un Menor de Edad --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-19</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Desvinculación de un Menor de Edad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> desvincular a un menor de mi cuenta,<br> <b>Para</b> que deje de estar disponible para agendar citas desde mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Desvinculación confirmada</b><br> • <b>Given</b> que el paciente titular tiene un menor vinculado y confirma la desvinculación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema elimina el vínculo y el menor deja de estar disponible para agendar citas.<br><br> <b>Scenario 2: Desvinculación no confirmada</b><br> • <b>Given</b> que el titular solicitó la desvinculación y esta requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva el vínculo sin realizar cambios.<br><br>
+
+</tbody> </table> <!-- US-20: Aceptación de Adelanto de Cita --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-20</td> <td>Paciente</td> <td>High</td> <td>EP3: Reassignment Protocol</td> </tr> <tr> <th>Title</th> <td colspan="3">Aceptación de Adelanto de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> aceptar la propuesta de adelantar mi cita a un intervalo liberado,<br> <b>Para</b> ser atendido más temprano. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Adelanto aceptado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> acepta el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema le asigna el intervalo anterior, libera su horario original y confirma la reasignación.<br><br> <b>Scenario 2: Intervalo ya asignado a otro paciente</b><br> • <b>Given</b> que otro paciente aceptó antes la misma propuesta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta aceptar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que el horario ya no está disponible y mantiene su cita sin cambios.<br><br>
+
+</tbody> </table> <!-- US-21: Rechazo de Adelanto de Cita --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-21</td> <td>Paciente</td> <td>Medium</td> <td>EP3: Reassignment Protocol</td> </tr> <tr> <th>Title</th> <td colspan="3">Rechazo de Adelanto de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> rechazar la propuesta de adelantar mi cita,<br> <b>Para</b> mantener mi turno programado originalmente. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Adelanto rechazado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> rechaza el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene su cita en el intervalo original y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br> <b>Scenario 2: Propuesta sin respuesta</b><br> • <b>Given</b> que venció el plazo de respuesta a la reasignación configurado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente no responde,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asume el rechazo, conserva su cita y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br>
+
+</tbody> </table> <!-- US-22: Salida Voluntaria de la Cola de Atención --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-22</td> <td>Paciente</td> <td>Medium</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Salida Voluntaria de la Cola de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> dejar la cola de atención confirmando mi decisión,<br> <b>Para</b> no ocupar un lugar cuando ya no puedo esperar. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Salida confirmada</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y confirma su salida,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo retira de la cola, recalcula la posición de los demás pacientes y conserva la reserva sin cancelarla.<br><br> <b>Scenario 2: Salida no confirmada</b><br> • <b>Given</b> que el paciente solicitó salir y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo mantiene en la cola con su posición actual.<br><br> <b>Scenario 3: Sin turno activo en la cola</b><br> • <b>Given</b> que el paciente no tiene un turno activo en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta salir de la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra un turno activo.<br><br>
+
+</tbody> </table> <!-- US-23: Solicitud de Enlace de Recuperación de Contraseña --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-23</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Solicitud de Enlace de Recuperación de Contraseña</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar un enlace de recuperación a mi correo registrado,<br> <b>Para</b> poder definir una nueva contraseña de forma segura. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Envío del enlace</b><br> • <b>Given</b> que el correo ingresado pertenece a una cuenta registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un enlace temporal con vigencia de 15 minutos.<br><br> <b>Scenario 2: Correo no registrado</b><br> • <b>Given</b> que el correo ingresado no pertenece a ninguna cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no genera enlace y responde con un mensaje genérico sin revelar la existencia de la cuenta.<br><br> <b>Scenario 3: Solicitud de nuevo enlace</b><br> • <b>Given</b> que el paciente ya solicitó un enlace previamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita uno nuevo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera un enlace nuevo e invalida el anterior.<br><br>
+
+</tbody> </table> <!-- US-24: Restablecimiento de Contraseña --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-24</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Restablecimiento de Contraseña</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> definir una nueva contraseña mediante el enlace recibido,<br> <b>Para</b> recuperar el acceso a mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Contraseña actualizada</b><br> • <b>Given</b> que el enlace de recuperación está vigente y el paciente ingresa una contraseña con su confirmación idéntica,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita guardar la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la contraseña e indica que ya puede iniciar sesión.<br><br> <b>Scenario 2: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que las contraseñas no coinciden.<br><br> <b>Scenario 3: Enlace expirado</b><br> • <b>Given</b> que transcurrieron más de 15 minutos desde la emisión del enlace,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta definir la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación, indica que el enlace expiró y requiere una nueva solicitud.<br><br>
+
+</tbody> </table> <!-- US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-25</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Solicitud de Ayuda por Pérdida de Acceso a la Cuenta</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar ayuda indicando mi DNI y un correo de contacto alternativo,<br> <b>Para</b> recuperar mi cuenta cuando no tengo acceso a mi correo ni a mi celular. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Solicitud registrada</b><br> • <b>Given</b> que el paciente ingresa su DNI y un correo de contacto válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la solicitud para que un agente restablezca las credenciales previa verificación de identidad.<br><br> <b>Scenario 2: Datos incompletos o inválidos</b><br> • <b>Given</b> que el DNI o el correo de contacto falta o tiene formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e identifica el dato a corregir.<br><br>
+
+</tbody> </table> <!-- US-26: Consulta del Perfil del Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-26</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Perfil del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis datos de identidad y de contacto,<br> <b>Para</b> verificar la información registrada en mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Datos del perfil</b><br> • <b>Given</b> que el paciente tiene sesión iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su nombre, el DNI con solo los últimos 4 dígitos visibles, el estado de identidad verificada, su correo y su celular.<br><br>
+
+</tbody> </table> <!-- US-27: Edición de Datos de Contacto --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-27</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de Datos de Contacto</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> actualizar mi correo y mi número de celular,<br> <b>Para</b> mantener mis datos de contacto al día. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Actualización exitosa</b><br> • <b>Given</b> que el paciente ingresa un correo disponible y un celular válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza sus datos de contacto y envía una notificación de seguridad.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Formato de contacto inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e identifica el dato inválido.<br><br> <b>Scenario 4: Intento de modificar datos de identidad</b><br> • <b>Given</b> que el paciente intenta modificar su DNI, nombres, apellidos o fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio, pues los datos de identidad no se modifican.<br><br>
+  
+</tbody> </table> <!-- US-28: Cierre de Sesión del Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-28</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Cierre de Sesión del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cerrar mi sesión,<br> <b>Para</b> proteger el acceso a mi cuenta al terminar de usar la aplicación. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cierre de sesión confirmado</b><br> • <b>Given</b> que el paciente tiene sesión iniciada y confirma el cierre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema finaliza la sesión e invalida el token de acceso.<br><br> <b>Scenario 2: Cierre de sesión no confirmado</b><br> • <b>Given</b> que el paciente solicitó cerrar sesión y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la sesión activa.<br><br>
+
+</tbody> </table> <!-- US-29: Aviso de Sesión Expirada --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-29</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Aviso de Sesión Expirada</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ser informado cuando mi sesión ha expirado,<br> <b>Para</b> volver a iniciar sesión de forma segura. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Sesión expirada</b><br> • <b>Given</b> que el token de acceso del paciente venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta realizar una acción,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la acción, informa que la sesión expiró y requiere un nuevo inicio de sesión.<br><br>
+
+</tbody> </table> <!-- ===== HUs DE ADMINISTRADORES: Super Admin y Personal de Admisión ===== --> <!-- US-30: Inicio de Sesión del Super Admin --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-30</td> <td>Super Admin</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Super Admin</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a la configuración del sistema. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el Super Admin ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Super Admin.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
+
+</tbody> </table> <!-- US-31: Creación de Cuenta de Personal de Admisión --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-31</td> <td>Super Admin</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Creación de Cuenta de Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> registrar al personal de admisión con su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br> <b>Para</b> otorgarle una cuenta verificada para operar el establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Alta exitosa</b><br> • <b>Given</b> que el Super Admin autenticado ingresa datos que coinciden con el registro oficial y un correo corporativo disponible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> registra al personal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de personal de admisión y envía las credenciales de acceso por correo.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que algún dato ingresado no coincide con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que la identidad no coincide con el titular.<br><br> <b>Scenario 3: Correo duplicado</b><br> • <b>Given</b> que el correo ingresado ya pertenece a una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que el correo ya está registrado.<br><br>
+
+</tbody> </table> <!-- US-32: Inicio de Sesión del Personal de Admisión --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-32</td> <td>Personal de Admisión</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a las herramientas de operación del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el personal de admisión ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Personal de Admisión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
+  
+</tbody> </table> <!-- US-33: Configuración de la Duración de los Intervalos de Atención --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-33</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Configuración de la Duración de los Intervalos de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> definir la duración de cada intervalo de atención,<br> <b>Para</b> adaptar la agenda a la operación del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Intervalo actualizado</b><br> • <b>Given</b> que el Super Admin ingresa una duración válida coherente con la tolerancia de llegada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el intervalo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica la duración a los nuevos bloques y conserva las citas confirmadas.<br><br> <b>Scenario 2: Duración incoherente</b><br> • <b>Given</b> que la tolerancia de llegada es mayor que la duración ingresada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el conflicto.<br><br>
+
+</tbody> </table> <!-- US-34: Edición de una Regla Operativa del Establecimiento --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-34</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de una Regla Operativa del Establecimiento</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> modificar el valor de una regla operativa (capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar o anticipación para cancelar),<br> <b>Para</b> adaptar el sistema a la capacidad y a las políticas de la institución. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Regla actualizada</b><br> • <b>Given</b> que el Super Admin ingresa un valor válido para la regla,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste el valor, lo aplica a la operación y conserva las reservas confirmadas.<br><br> <b>Scenario 2: Valor inválido</b><br> • <b>Given</b> que el valor ingresado es cero, no numérico o incoherente con la duración del intervalo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el campo en conflicto.<br><br>
+
+</tbody> </table> <!-- US-35: Consulta de Reglas Operativas Vigentes --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-35</td> <td>Super Admin</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Reglas Operativas Vigentes</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> consultar las reglas operativas vigentes del establecimiento,<br> <b>Para</b> conocer cómo está configurado el sistema. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reglas vigentes</b><br> • <b>Given</b> que el Super Admin está autenticado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta las reglas del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el valor vigente de cada regla: capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar, anticipación para cancelar, prioridad de reasignación y posición de cola visible.<br><br>
+
+</tbody> </table> <!-- US-36: Selección de Especialidad en la Agenda Operativa --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-36</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Selección de Especialidad en la Agenda Operativa</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> buscar y seleccionar una especialidad,<br> <b>Para</b> consultar su calendario operativo. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita el calendario operativo de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br>
+
+</tbody> </table> <!-- US-37: Consulta del Calendario Operativo --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-37</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Calendario Operativo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el calendario mensual de una especialidad,<br> <b>Para</b> identificar las fechas con bloques programados. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Fechas con bloques</b><br> • <b>Given</b> que la especialidad seleccionada tiene agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta un mes,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema identifica las fechas que tienen bloques programados.<br><br> <b>Scenario 2: Fecha sin bloques</b><br> • <b>Given</b> que la fecha consultada no tiene bloques programados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay bloques para esa fecha.<br><br>
+
+</tbody> </table> <!-- US-38: Consulta de Bloques del Día --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-38</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Bloques del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques horarios de un día,<br> <b>Para</b> conocer la ocupación de la agenda. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloques del día</b><br> • <b>Given</b> que existen bloques en la fecha y especialidad seleccionadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta el día,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada bloque con su horario, profesional, consultorio, reservas, capacidad y estado.<br><br>
+
+</tbody> </table> <!-- US-39: Consulta del Detalle de un Bloque --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-39</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Detalle de un Bloque</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el detalle de un bloque horario,<br> <b>Para</b> revisar su capacidad, reservas y estado. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Detalle del bloque</b><br> • <b>Given</b> que el bloque existe en la agenda,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su detalle,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el horario, la especialidad, el profesional, el consultorio, la capacidad, las reservas y el estado.<br><br>
+
+</tbody> </table> <!-- US-40: Consulta de Horario por Profesional --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-40</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Horario por Profesional</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques de un profesional con sus cupos disponibles,<br> <b>Para</b> seleccionar el bloque que corresponde. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloques del profesional</b><br> • <b>Given</b> que el profesional pertenece a la especialidad seleccionada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su horario,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna sus bloques con los cupos disponibles de cada uno.<br><br> <b>Scenario 2: Bloque sin cupos</b><br> • <b>Given</b> que un bloque del profesional no tiene cupos disponibles,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta seleccionarlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo identifica como sin cupos y no permite la selección.<br><br>
+
+</tbody> </table> <!-- US-41: Consulta de Pacientes con Reserva en un Bloque --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-41</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Pacientes con Reserva en un Bloque</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los pacientes que tienen reserva en un bloque,<br> <b>Para</b> saber quiénes deben llegar y en qué estado se encuentran. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Pacientes con reserva</b><br> • <b>Given</b> que el bloque tiene reservas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la lista,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada paciente con su código de reserva, si es titular o menor con su representante, y su estado de llegada o atención.<br><br>
+
+</tbody> </table> <!-- US-42: Edición de un Bloque Horario --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-42</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de un Bloque Horario</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> modificar la hora de inicio, la especialidad, el profesional o el estado de un bloque,<br> <b>Para</b> mantener la agenda alineada con la operación real. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloque actualizado</b><br> • <b>Given</b> que el cambio no entra en conflicto con reservas confirmadas ni con otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema guarda los nuevos datos del bloque.<br><br> <b>Scenario 2: Cambio incompatible</b><br> • <b>Given</b> que el cambio entra en conflicto con reservas confirmadas u otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que debe revisar el bloque.<br><br>
+
+</tbody> </table> <!-- US-43: Registro de Llegada por Escaneo de QR --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-43</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Llegada por Escaneo de QR</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> registrar la llegada de un paciente escaneando el código QR de su reserva,<br> <b>Para</b> confirmar su presencia y generar su ticket de atención. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Llegada confirmada</b><br> • <b>Given</b> que el código QR corresponde a una reserva vigente y el paciente llega dentro de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la llegada, genera el ticket del paciente y lo ingresa en la cola de atención.<br><br> <b>Scenario 2: Reserva no vigente o inexistente</b><br> • <b>Given</b> que el código QR no corresponde a una reserva vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro y no ingresa al paciente en la cola.<br><br> <b>Scenario 3: Llegada fuera de la tolerancia</b><br> • <b>Given</b> que el paciente llega fuera de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e informa que el horario de la reserva no permite la llegada.<br><br>
+
+</tbody> </table> <!-- US-44: Registro de Llegada por Código Manual --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-44</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Llegada por Código Manual</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> registrar la llegada de un paciente ingresando el código de su reserva,<br> <b>Para</b> confirmar su presencia cuando no es posible escanear el QR. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Llegada confirmada por código</b><br> • <b>Given</b> que el código corresponde a una reserva vigente dentro del horario permitido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal ingresa el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la llegada, genera el ticket del paciente y lo ingresa en la cola.<br><br> <b>Scenario 2: Código inválido</b><br> • <b>Given</b> que el código no existe o no corresponde al horario permitido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal ingresa el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica revisar el código.<br><br>
+
+</tbody> </table> <!-- US-45: Consulta de la Cola de Atención Presencial --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-45</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de la Cola de Atención Presencial</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cola de pacientes presentes de un consultorio,<br> <b>Para</b> conocer el orden de atención. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cola con pacientes</b><br> • <b>Given</b> que existen pacientes con llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna los pacientes ordenados por hora de llegada con su número de turno y estado.<br><br> <b>Scenario 2: Cola vacía</b><br> • <b>Given</b> que no hay llegadas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay pacientes en espera.<br><br>
+
+</tbody> </table> <!-- US-46: Llamado del Siguiente Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-46</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Llamado del Siguiente Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> llamar al siguiente paciente de la cola,<br> <b>Para</b> que se dirija al consultorio dentro del plazo establecido. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Llamado registrado</b><br> • <b>Given</b> que existe un paciente en espera en primer lugar de la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal lo llama,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la hora del llamado, cambia el estado del paciente a llamado e inicia el plazo para acudir configurado.<br><br> <b>Scenario 2: Sin pacientes en espera</b><br> • <b>Given</b> que no hay pacientes en espera en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta llamar al siguiente,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no hay pacientes por llamar.<br><br>
+
+</tbody> </table> <!-- US-47: Inicio de Atención de un Paciente Llamado --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-47</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Atención de un Paciente Llamado</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar la atención del paciente que acudió al consultorio,<br> <b>Para</b> registrar que el paciente está siendo atendido. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Atención iniciada</b><br> • <b>Given</b> que el paciente llamado se encuentra en el consultorio dentro del plazo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención y detiene el conteo del plazo.<br><br> <b>Scenario 2: Atención iniciada con plazo vencido</b><br> • <b>Given</b> que el plazo venció pero el paciente aún no fue marcado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención.<br><br> <b>Scenario 3: Turno ya declarado ausente</b><br> • <b>Given</b> que el turno fue declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta iniciar la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa que el turno se perdió.<br><br>
+
+</tbody> </table> <!-- US-48: Finalización de la Atención de un Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-48</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Finalización de la Atención de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> finalizar la atención de un paciente,<br> <b>Para</b> retirarlo de la cola y continuar con el siguiente. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Atención finalizada</b><br> • <b>Given</b> que el turno del paciente está en atención,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal finaliza la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a atendido, retira al paciente de la cola y habilita el llamado del siguiente.<br><br>
+
+</tbody> </table> <!-- US-49: Registro de Ausencia de un Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-49</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Ausencia de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> marcar como ausente a un paciente que no acudió tras ser llamado,<br> <b>Para</b> liberar su cupo según las reglas del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Ausencia confirmada</b><br> • <b>Given</b> que el plazo posterior al llamado se cumplió sin que el paciente ingresara al consultorio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca el turno como ausente, retira al paciente de la cola y libera el cupo.<br><br> <b>Scenario 2: Plazo aún vigente</b><br> • <b>Given</b> que el plazo posterior al llamado no se cumplió,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa el tiempo restante.<br><br> <b>Scenario 3: Atención ya iniciada</b><br> • <b>Given</b> que la atención del paciente ya fue iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación.<br><br>
+  
+</tbody> </table> <!-- US-50: Consulta de Citas Canceladas del Día --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-50</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Citas Canceladas del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas canceladas del día,<br> <b>Para</b> conocer qué cupos fueron liberados. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cancelaciones del día</b><br> • <b>Given</b> que existen cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna la especialidad, el paciente, el horario, el momento de la cancelación y el estado del cupo.<br><br> <b>Scenario 2: Sin cancelaciones</b><br> • <b>Given</b> que no hay cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas canceladas.<br><br>
+  
+</tbody> </table> <!-- US-51: Visualización de Indicadores del Día --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-51</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Indicadores del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas programadas, pendientes, canceladas e inasistencias del día junto con el resumen de atención,<br> <b>Para</b> monitorear el flujo de citas e incidencias del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Indicadores del día</b><br> • <b>Given</b> que existen citas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, pendientes, canceladas, las inasistencias, las citas atendidas y los cupos recuperados, con su hora de actualización.<br><br> <b>Scenario 2: Día sin actividad</b><br> • <b>Given</b> que la fecha consultada no tiene citas ni incidencias,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna todos los indicadores en cero.<br><br>
+
+</tbody> </table> <!-- US-52: Visualización de Demanda por Especialidad --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-52</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Demanda por Especialidad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cantidad de reservas del día por especialidad,<br> <b>Para</b> identificar las especialidades con mayor demanda. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Demanda por especialidad</b><br> • <b>Given</b> que existen reservas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la demanda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el total de reservas y las reservas de cada especialidad.<br><br>
+
+</tbody> </table> <!-- US-53: Exportación de Reporte Operativo --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-53</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Exportación de Reporte Operativo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> exportar un reporte en PDF o CSV indicando el rango de fechas y la especialidad,<br> <b>Para</b> contar con la información del periodo fuera de la aplicación. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reporte generado</b><br> • <b>Given</b> que el personal indica un rango de fechas válido y una especialidad o todas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la exportación en PDF o CSV,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera el archivo con reservas, atenciones, ausencias, demanda y reasignaciones del periodo.<br><br> <b>Scenario 2: Rango de fechas inválido</b><br> • <b>Given</b> que la fecha inicial es posterior a la fecha final,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal solicita la exportación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e indica corregir las fechas.<br><br>
+</tbody> </table>
 
 #### Technical stories
 <!-- TECH-01: Servicio de Notificaciones Transaccionales -->
@@ -1611,32 +718,67 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 
 #### Tabla del Product Backlog
 
-| # Orden | User Story Id | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | US-00 | Visualización de Propuesta de Valor en Landing Page | 2 | Sprint 1 |
-| 2 | US-07 | Visualización de Calendario y Horarios Disponibles | 5 | Sprint 1 |
-| 3 | US-08 | Reserva de Cita Médica para Titular o Menor de Edad | 8 | Sprint 1 |
-| 4 | US-01 | Creación de Cuenta de Paciente con Verificación de Identidad por DNI | 5 | Sprint 1 |
-| 5 | US-06 | Inicio de Sesión por Rol | 3 | Sprint 1 |
-| 6 | US-09 | Notificación de Cita Confirmada o Reasignada | 3 | Sprint 1 |
-| 7 | US-12 | Registro de Llegada (Check-in) mediante Código QR | 8 | Sprint 2 |
-| 8 | US-13 | Emisión de Ticket Digital de Atención | 3 | Sprint 2 |
-| 9 | US-14 | Consulta de Posición en la Cola de Asistencia | 3 | Sprint 2 |
-| 10 | US-10 | Consulta de Citas Agendadas y Cancelación Voluntaria | 5 | Sprint 2 |
-| 11 | US-11 | Aceptación o Rechazo de Adelanto de Intervalo por Cupo Liberado | 8 | Sprint 2 |
-| 12 | US-03 | Registro y Vinculación de Pacientes Menores de Edad | 3 | Sprint 2 |
-| 13 | US-15 | Notificación de Llamado a Consultorio | 3 | Sprint 2 |
-| 14 | US-16 | Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo | 5 | Sprint 3 |
-| 15 | US-17 | Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital | 8 | Sprint 3 |
-| 16 | US-02 | Creación de Cuenta de Personal Administrativo | 3 | Sprint 3 |
-| 17 | US-04 | Recuperación de Contraseña | 2 | Sprint 3 |
-| 18 | US-05 | Edición de Información Personal | 2 | Sprint 3 |
-| 19 | US-18 | Visualización de Dashboard Operativo del Día | 5 | Sprint 3 |
-| 20 | TECH-01 | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5 | Sprint 3 |
-| 21 | TECH-02 | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC | 8 | Sprint 3 |
-| 22 | TECH-03 | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias | 5 | Sprint 4 |
-| 23 | TECH-04 | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas | 5 | Sprint 4 |
-| 24 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
+| # Orden | User Story Id | Rol                  | Título                                                                             | Story Points (1 / 2 / 3 / 5 / 8) | Sprint   |
+| :------ | :------------ | :------------------- | :--------------------------------------------------------------------------------- | :------------------------------- | :------- |
+| 1       | US-00         | Paciente potencial   | Visualización de Propuesta de Valor en Landing Page                                | 2                                | Sprint 1 |
+| 2       | US-01         | Paciente             | Verificación de Identidad por DNI                                                  | 5                                | Sprint 1 |
+| 3       | US-02         | Paciente             | Registro de Credenciales de Acceso                                                 | 3                                | Sprint 1 |
+| 4       | US-03         | Paciente             | Verificación de Celular y Creación de Cuenta                                       | 5                                | Sprint 1 |
+| 5       | US-04         | Paciente             | Inicio de Sesión del Paciente                                                      | 3                                | Sprint 1 |
+| 6       | US-05         | Paciente             | Selección de Especialidad Médica                                                   | 2                                | Sprint 1 |
+| 7       | US-06         | Paciente             | Consulta de Horarios Disponibles                                                   | 5                                | Sprint 1 |
+| 8       | US-07         | Paciente             | Reserva de Cita para el Paciente                                                   | 8                                | Sprint 1 |
+| 9       | US-08         | Paciente             | Recepción de Confirmación de Cita por Correo                                       | 3                                | Sprint 1 |
+| 10      | US-09         | Paciente             | Consulta de Citas Agendadas                                                        | 3                                | Sprint 1 |
+| 11      | US-10         | Paciente             | Cancelación de Cita                                                                | 5                                | Sprint 1 |
+| 12      | US-11         | Paciente             | Consulta del Código QR de la Reserva                                               | 2                                | Sprint 1 |
+| 13      | US-12         | Paciente             | Consulta del Ticket Digital de Atención                                            | 3                                | Sprint 1 |
+| 14      | US-13         | Paciente             | Consulta de Posición en la Cola de Atención                                        | 3                                | Sprint 1 |
+| 15      | US-14         | Paciente             | Recepción de Notificación de Llamado a Consultorio                                 | 3                                | Sprint 1 |
+| 16      | US-15         | Paciente             | Vinculación de un Menor de Edad                                                    | 5                                | Sprint 1 |
+| 17      | US-16         | Paciente             | Reserva de Cita para un Menor Vinculado                                            | 5                                | Sprint 1 |
+| 18      | US-17         | Paciente             | Consulta de Menores Vinculados                                                     | 2                                | Sprint 1 |
+| 19      | US-18         | Paciente             | Consulta del Perfil de un Menor                                                    | 2                                | Sprint 1 |
+| 20      | US-19         | Paciente             | Desvinculación de un Menor de Edad                                                 | 2                                | Sprint 1 |
+| 21      | US-20         | Paciente             | Aceptación de Adelanto de Cita                                                     | 5                                | Sprint 1 |
+| 22      | US-21         | Paciente             | Rechazo de Adelanto de Cita                                                        | 3                                | Sprint 1 |
+| 23      | US-22         | Paciente             | Salida Voluntaria de la Cola de Atención                                           | 3                                | Sprint 1 |
+| 24      | US-23         | Paciente             | Solicitud de Enlace de Recuperación de Contraseña                                  | 3                                | Sprint 1 |
+| 25      | US-24         | Paciente             | Restablecimiento de Contraseña                                                     | 3                                | Sprint 1 |
+| 26      | US-25         | Paciente             | Solicitud de Ayuda por Pérdida de Acceso a la Cuenta                               | 2                                | Sprint 1 |
+| 27      | US-26         | Paciente             | Consulta del Perfil del Paciente                                                   | 2                                | Sprint 1 |
+| 28      | US-27         | Paciente             | Edición de Datos de Contacto                                                       | 3                                | Sprint 1 |
+| 29      | US-28         | Paciente             | Cierre de Sesión del Paciente                                                      | 2                                | Sprint 1 |
+| 30      | US-29         | Paciente             | Aviso de Sesión Expirada                                                           | 2                                | Sprint 1 |
+| 31      | US-30         | Super Admin          | Inicio de Sesión del Super Admin                                                   | 3                                | Sprint 2 |
+| 32      | US-31         | Super Admin          | Creación de Cuenta de Personal de Admisión                                         | 3                                | Sprint 2 |
+| 33      | US-32         | Personal de Admisión | Inicio de Sesión del Personal de Admisión                                          | 3                                | Sprint 2 |
+| 34      | US-33         | Super Admin          | Configuración de la Duración de los Intervalos de Atención                         | 3                                | Sprint 2 |
+| 35      | US-34         | Super Admin          | Edición de una Regla Operativa del Establecimiento                                 | 5                                | Sprint 2 |
+| 36      | US-35         | Super Admin          | Consulta de Reglas Operativas Vigentes                                             | 2                                | Sprint 2 |
+| 37      | US-36         | Personal de Admisión | Selección de Especialidad en la Agenda Operativa                                   | 2                                | Sprint 2 |
+| 38      | US-37         | Personal de Admisión | Consulta del Calendario Operativo                                                  | 3                                | Sprint 2 |
+| 39      | US-38         | Personal de Admisión | Consulta de Bloques del Día                                                        | 3                                | Sprint 2 |
+| 40      | US-39         | Personal de Admisión | Consulta del Detalle de un Bloque                                                  | 2                                | Sprint 2 |
+| 41      | US-40         | Personal de Admisión | Consulta de Horario por Profesional                                                | 3                                | Sprint 2 |
+| 42      | US-41         | Personal de Admisión | Consulta de Pacientes con Reserva en un Bloque                                     | 2                                | Sprint 2 |
+| 43      | US-42         | Personal de Admisión | Edición de un Bloque Horario                                                       | 5                                | Sprint 2 |
+| 44      | US-43         | Personal de Admisión | Registro de Llegada por Escaneo de QR                                              | 8                                | Sprint 2 |
+| 45      | US-44         | Personal de Admisión | Registro de Llegada por Código Manual                                              | 3                                | Sprint 2 |
+| 46      | US-45         | Personal de Admisión | Consulta de la Cola de Atención Presencial                                         | 3                                | Sprint 3 |
+| 47      | US-46         | Personal de Admisión | Llamado del Siguiente Paciente                                                     | 5                                | Sprint 3 |
+| 48      | US-47         | Personal de Admisión | Inicio de Atención de un Paciente Llamado                                          | 3                                | Sprint 3 |
+| 49      | US-48         | Personal de Admisión | Finalización de la Atención de un Paciente                                         | 3                                | Sprint 3 |
+| 50      | US-49         | Personal de Admisión | Registro de Ausencia de un Paciente                                                | 5                                | Sprint 3 |
+| 51      | US-50         | Personal de Admisión | Consulta de Citas Canceladas del Día                                               | 2                                | Sprint 3 |
+| 52      | US-51         | Personal de Admisión | Visualización de Indicadores del Día                                               | 5                                | Sprint 3 |
+| 53      | US-52         | Personal de Admisión | Visualización de Demanda por Especialidad                                          | 3                                | Sprint 3 |
+| 54      | US-53         | Personal de Admisión | Exportación de Reporte Operativo                                                   | 5                                | Sprint 3 |
+| 55      | TECH-01       | Developer            | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5                                | Sprint 4 |
+| 56      | TECH-02       | Developer            | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC    | 8                                | Sprint 4 |
+| 57      | TECH-03       | Developer            | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias     | 5                                | Sprint 4 |
+| 58      | TECH-04       | Developer            | Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas           | 5                                | Sprint 4 |
+| 59      | TECH-05       | Developer            | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa         | 5                                | Sprint 4 |
 
 
 ## 2.5. Strategic-Level Domain-Driven Design
