@@ -744,7 +744,7 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
   <img src="assets/mockups/iam-registro.png" alt="SaludYa — Bienvenida y registro del paciente" width="100%"/>
 </p>
 
-Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La verificación del celular conserva el recorrido propuesto en los wireframes del equipo.
+Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS.
 
 <p align="center">
   <img src="assets/mockups/iam-acceso-recuperacion.png" alt="SaludYa — Acceso y recuperación de la cuenta del paciente" width="100%"/>
@@ -790,7 +790,7 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
   <img src="assets/mockups/configuracion-perfil.png" alt="SaludYa — Configuración, datos personales y actualización del contacto" width="100%"/>
 </p>
 
-El paciente consulta sus datos y actualiza su celular o correo. Las pantallas de verificación de contacto conservan la propuesta de los wireframes y presentan los resultados de actualización y los datos inválidos. La identidad verificada permanece como información de consulta.
+El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta.
 
 **Sección Gestión de Menores Vinculados**
 
@@ -824,7 +824,7 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 
 **Happy Path**
 
-El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su celular. El recorrido finaliza con la cuenta creada.
+El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada.
 
 <p align="center">
   <img src="assets/userflows/user-goal-01-happy.png" alt="SaludYa — User Goal 1: Happy Path" width="100%"/>
@@ -850,7 +850,7 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 
 **Unhappy Paths**
 
-Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. No se incorpora el acceso alternativo por documento o código de celular.
+Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS.
 
 <p align="center">
   <img src="assets/userflows/user-goal-02-unhappy.png" alt="SaludYa — User Goal 2: Unhappy Paths" width="100%"/>
@@ -896,7 +896,7 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 **Happy Path**
 
-El paciente consulta sus datos, modifica su correo o celular y completa la verificación de contacto propuesta en los wireframes. El recorrido finaliza con la actualización y su confirmación.
+El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación.
 
 <p align="center">
   <img src="assets/userflows/user-goal-05-happy.png" alt="SaludYa — User Goal 5: Happy Path" width="100%"/>
@@ -904,7 +904,7 @@ El paciente consulta sus datos, modifica su correo o celular y completa la verif
 
 **Unhappy Paths**
 
-Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código. Los datos de identidad permanecen de consulta.
+Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta.
 
 <p align="center">
   <img src="assets/userflows/user-goal-05-unhappy.png" alt="SaludYa — User Goal 5: Unhappy Paths" width="100%"/>
