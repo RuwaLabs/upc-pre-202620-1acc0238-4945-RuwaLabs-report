@@ -1,0 +1,786 @@
+{
+  "settingsVersion": 3,
+  "activeProfileId": "plan",
+  "profiles": [
+    {
+      "id": "report",
+      "name": "Report",
+      "page": {
+        "pageSize": "A4",
+        "pageWidthMm": 210,
+        "pageHeightMm": 297,
+        "marginTopMm": 28,
+        "marginBottomMm": 24,
+        "marginLeftMm": 24,
+        "marginRightMm": 24,
+        "lineHeight": 165,
+        "useFilenameAsTitle": true,
+        "headerLeft": "",
+        "headerCenter": "",
+        "headerRight": "",
+        "footerLeft": "",
+        "footerCenter": "- {{page}} -",
+        "footerRight": "",
+        "headerLeftStyle": "",
+        "headerCenterStyle": "",
+        "headerRightStyle": "",
+        "footerLeftStyle": "",
+        "footerCenterStyle": "",
+        "footerRightStyle": "",
+        "printBackground": true
+      },
+      "elements": {
+        "h1": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "center",
+          "color": "#111827",
+          "marginTop": 0,
+          "marginBottom": 20,
+          "fontSize": 22,
+          "lineHeight": 130
+        },
+        "h2": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1e3a5f",
+          "marginTop": 22,
+          "marginBottom": 10,
+          "fontSize": 15,
+          "lineHeight": 135
+        },
+        "h3": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1e3a5f",
+          "marginTop": 14,
+          "marginBottom": 8,
+          "fontSize": 12.5,
+          "lineHeight": 135
+        },
+        "h4": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 12,
+          "marginBottom": 6,
+          "fontSize": 13
+        },
+        "h5": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 4,
+          "fontSize": 12
+        },
+        "h6": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#444444",
+          "marginTop": 8,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "body": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1f2937",
+          "marginTop": 0,
+          "marginBottom": 8,
+          "fontSize": 10.5,
+          "lineHeight": 165
+        },
+        "blockquote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#374151",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 11,
+          "paddingLeft": 12,
+          "lineHeight": 160,
+          "backgroundColor": "#eef2f7",
+          "framePreset": "accent-bar"
+        },
+        "list": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 6,
+          "fontSize": 11,
+          "lineHeight": 160,
+          "paddingLeft": 4
+        },
+        "taskList": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 11,
+          "lineHeight": 155
+        },
+        "codeInline": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#9f1239",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 10,
+          "backgroundColor": "#fce7f3"
+        },
+        "codeBlock": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 9.5,
+          "lineHeight": 145,
+          "paddingLeft": 0,
+          "backgroundColor": "#f3f4f6"
+        },
+        "hr": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#cccccc",
+          "marginTop": 16,
+          "marginBottom": 16,
+          "fontSize": 11,
+          "hrPreset": "solid"
+        },
+        "table": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 10,
+          "lineHeight": 140
+        },
+        "tableHeader": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#ffffff",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 10,
+          "backgroundColor": "#1e3a5f"
+        },
+        "callout": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 11,
+          "paddingLeft": 8,
+          "lineHeight": 155,
+          "backgroundColor": "#eef2f7",
+          "framePreset": "accent-bar"
+        },
+        "calloutTitle": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "image": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "center",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 11
+        },
+        "link": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1d4ed8",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 11
+        },
+        "footnote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#555555",
+          "marginTop": 12,
+          "marginBottom": 8,
+          "fontSize": 9,
+          "lineHeight": 140
+        },
+        "embed": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#333333",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 10,
+          "paddingLeft": 8,
+          "lineHeight": 150,
+          "backgroundColor": "#f8fafc",
+          "framePreset": "accent-bar"
+        }
+      },
+      "special": {
+        "styleOrderedListsAsHeadings": false,
+        "orderedListHeadingLevel1": 2,
+        "orderedListHeadingLevel2": 3,
+        "orderedListHeadingLevel3": 4,
+        "enablePageBreaks": true,
+        "enableTableAdjust": true,
+        "enableImageAdjust": true,
+        "enablePlaceholders": true
+      }
+    },
+    {
+      "id": "life",
+      "name": "Everyday",
+      "page": {
+        "pageSize": "A4",
+        "pageWidthMm": 210,
+        "pageHeightMm": 297,
+        "marginTopMm": 14,
+        "marginBottomMm": 14,
+        "marginLeftMm": 14,
+        "marginRightMm": 14,
+        "lineHeight": 200,
+        "useFilenameAsTitle": true,
+        "headerLeft": "",
+        "headerCenter": "",
+        "headerRight": "",
+        "footerLeft": "",
+        "footerCenter": "",
+        "footerRight": "{{page}}",
+        "headerLeftStyle": "",
+        "headerCenterStyle": "",
+        "headerRightStyle": "",
+        "footerLeftStyle": "",
+        "footerCenterStyle": "",
+        "footerRightStyle": "",
+        "printBackground": true
+      },
+      "elements": {
+        "h1": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "700",
+          "align": "left",
+          "color": "#292524",
+          "marginTop": 0,
+          "marginBottom": 10,
+          "fontSize": 26,
+          "lineHeight": 130
+        },
+        "h2": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "600",
+          "align": "left",
+          "color": "#78716c",
+          "marginTop": 14,
+          "marginBottom": 10,
+          "fontSize": 17,
+          "lineHeight": 135
+        },
+        "h3": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#a8a29e",
+          "marginTop": 14,
+          "marginBottom": 8,
+          "fontSize": 14,
+          "lineHeight": 135
+        },
+        "h4": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 12,
+          "marginBottom": 6,
+          "fontSize": 13
+        },
+        "h5": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 4,
+          "fontSize": 12
+        },
+        "h6": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#444444",
+          "marginTop": 8,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "body": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#44403c",
+          "marginTop": 0,
+          "marginBottom": 8,
+          "fontSize": 13,
+          "lineHeight": 200
+        },
+        "blockquote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#78716c",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 11,
+          "paddingLeft": 12,
+          "lineHeight": 160,
+          "backgroundColor": "#faf5f0",
+          "framePreset": "soft-fill"
+        },
+        "list": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 6,
+          "fontSize": 13,
+          "lineHeight": 190,
+          "paddingLeft": 4
+        },
+        "taskList": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 13,
+          "lineHeight": 155
+        },
+        "codeInline": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#b45309",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 10,
+          "backgroundColor": "#fff7ed"
+        },
+        "codeBlock": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 11,
+          "lineHeight": 145,
+          "paddingLeft": 0,
+          "backgroundColor": "#f5f5f4"
+        },
+        "hr": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#e7e5e4",
+          "marginTop": 16,
+          "marginBottom": 16,
+          "fontSize": 11,
+          "hrPreset": "fade"
+        },
+        "table": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 10,
+          "lineHeight": 140
+        },
+        "tableHeader": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1c1917",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 10,
+          "backgroundColor": "#d6d3d1"
+        },
+        "callout": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 11,
+          "paddingLeft": 8,
+          "lineHeight": 155,
+          "backgroundColor": "#fffbeb",
+          "framePreset": "soft-fill"
+        },
+        "calloutTitle": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "image": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "center",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 11
+        },
+        "link": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#c2410c",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 11
+        },
+        "footnote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#555555",
+          "marginTop": 12,
+          "marginBottom": 8,
+          "fontSize": 9,
+          "lineHeight": 140
+        },
+        "embed": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#333333",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 10,
+          "paddingLeft": 8,
+          "lineHeight": 150,
+          "backgroundColor": "#fafaf9",
+          "framePreset": "soft-fill"
+        }
+      },
+      "special": {
+        "styleOrderedListsAsHeadings": false,
+        "orderedListHeadingLevel1": 2,
+        "orderedListHeadingLevel2": 3,
+        "orderedListHeadingLevel3": 4,
+        "enablePageBreaks": true,
+        "enableTableAdjust": true,
+        "enableImageAdjust": true,
+        "enablePlaceholders": true
+      }
+    },
+    {
+      "id": "plan",
+      "name": "Proposal",
+      "page": {
+        "pageSize": "A4",
+        "pageWidthMm": 210,
+        "pageHeightMm": 297,
+        "marginTopMm": 18,
+        "marginBottomMm": 16,
+        "marginLeftMm": 16,
+        "marginRightMm": 16,
+        "lineHeight": 150,
+        "useFilenameAsTitle": true,
+        "headerLeft": "upc-pre-202620-1acc0238-4945-RuwaLabs-report",
+        "headerCenter": "",
+        "headerRight": "Proposal",
+        "footerLeft": "{{page}} / {{pages}}",
+        "footerCenter": "",
+        "footerRight": "",
+        "headerLeftStyle": "",
+        "headerCenterStyle": "",
+        "headerRightStyle": "",
+        "footerLeftStyle": "",
+        "footerCenterStyle": "",
+        "footerRightStyle": "",
+        "printBackground": true
+      },
+      "elements": {
+        "h1": {
+          "fontFamily": "\"KoPubWorldBatang\", \"Apple Myungjo\", \"NanumMyeongjo\", \"Batang\", serif",
+          "fontWeight": "bold",
+          "align": "center",
+          "color": "#0f172a",
+          "marginTop": 0,
+          "marginBottom": 8,
+          "fontSize": 24,
+          "lineHeight": 130
+        },
+        "h2": {
+          "fontFamily": "Bitstream Vera Serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#3f9ed9",
+          "marginTop": 16,
+          "marginBottom": 6,
+          "fontSize": 14,
+          "lineHeight": 135
+        },
+        "h3": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#0284c7",
+          "marginTop": 14,
+          "marginBottom": 8,
+          "fontSize": 11.5,
+          "lineHeight": 135
+        },
+        "h4": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 12,
+          "marginBottom": 6,
+          "fontSize": 13
+        },
+        "h5": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 4,
+          "fontSize": 12
+        },
+        "h6": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#444444",
+          "marginTop": 8,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "body": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#334155",
+          "marginTop": 0,
+          "marginBottom": 8,
+          "fontSize": 9.5,
+          "lineHeight": 150
+        },
+        "blockquote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#0369a1",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 9.5,
+          "paddingLeft": 12,
+          "lineHeight": 160,
+          "backgroundColor": "#e0f2fe",
+          "framePreset": "outline-card"
+        },
+        "list": {
+          "fontFamily": "Cantarell",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 6,
+          "fontSize": 9.5,
+          "lineHeight": 145,
+          "paddingLeft": 4
+        },
+        "taskList": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 11,
+          "lineHeight": 155
+        },
+        "codeInline": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#0e7490",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 10,
+          "backgroundColor": "#ecfeff"
+        },
+        "codeBlock": {
+          "fontFamily": "\"Menlo\", \"Consolas\", \"D2Coding\", monospace",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#e2e8f0",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 8.5,
+          "lineHeight": 145,
+          "paddingLeft": 0,
+          "backgroundColor": "#0f172a"
+        },
+        "hr": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#bae6fd",
+          "marginTop": 16,
+          "marginBottom": 16,
+          "fontSize": 11,
+          "hrPreset": "solid"
+        },
+        "table": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 8,
+          "marginBottom": 10,
+          "fontSize": 9,
+          "lineHeight": 140
+        },
+        "tableHeader": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#ffffff",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 9,
+          "backgroundColor": "#0369a1"
+        },
+        "callout": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 9.5,
+          "paddingLeft": 8,
+          "lineHeight": 155,
+          "backgroundColor": "#f0f9ff",
+          "framePreset": "outline-card"
+        },
+        "calloutTitle": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "bold",
+          "align": "left",
+          "color": "#1a1a1a",
+          "marginTop": 0,
+          "marginBottom": 4,
+          "fontSize": 11
+        },
+        "image": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "center",
+          "color": "#1a1a1a",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "fontSize": 11
+        },
+        "link": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#0284c7",
+          "marginTop": 0,
+          "marginBottom": 0,
+          "fontSize": 11
+        },
+        "footnote": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#555555",
+          "marginTop": 12,
+          "marginBottom": 8,
+          "fontSize": 8,
+          "lineHeight": 140
+        },
+        "embed": {
+          "fontFamily": "\"KoPubWorldDotum\", \"KoPub Dotum\", \"Apple SD Gothic Neo\", \"NanumGothic\", \"Malgun Gothic\", sans-serif",
+          "fontWeight": "normal",
+          "align": "left",
+          "color": "#333333",
+          "marginTop": 8,
+          "marginBottom": 8,
+          "fontSize": 10,
+          "paddingLeft": 8,
+          "lineHeight": 150,
+          "backgroundColor": "#f8fafc",
+          "framePreset": "outline-card"
+        }
+      },
+      "special": {
+        "styleOrderedListsAsHeadings": true,
+        "orderedListHeadingLevel1": 2,
+        "orderedListHeadingLevel2": 3,
+        "orderedListHeadingLevel3": 4,
+        "enablePageBreaks": true,
+        "enableTableAdjust": true,
+        "enableImageAdjust": true,
+        "enablePlaceholders": true
+      }
+    }
+  ],
+  "tableLayouts": {},
+  "imageLayouts": {
+    "README.md": {
+      "images": [
+        {
+          "index": 0,
+          "widthPct": 24.509803921568626,
+          "align": "center"
+        }
+      ]
+    }
+  }
+}
