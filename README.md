@@ -1,34 +1,34 @@
-<div align="center">
+<div style="text-align:center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
 </div>
 
-<p align="center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
-<p align="center"><strong>Carrera de Ingeniería de Software</strong></p>
+<p style="text-align:center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
+<p style="text-align:center"><strong>Carrera de Ingeniería de Software</strong></p>
 
 <br>
 
-<p align="center"><strong>1ACC0238</strong></p>
-<p align="center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
-<p align="center">NRC</p>
-<p align="center"><strong>4945</strong></p>
+<p style="text-align:center"><strong>1ACC0238</strong></p>
+<p style="text-align:center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
+<p style="text-align:center">NRC</p>
+<p style="text-align:center"><strong>4945</strong></p>
 
-<h2 align="center">Informe del Trabajo Final</h2>
+<h2 style="text-align:center">Informe del Trabajo Final</h2>
 
-<p align="center">Docente</p>
-<p align="center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
-
-<br>
-
-<p align="center">Equipo</p>
-<p align="center"><strong>RuwaLabs</strong></p>
-<p align="center">Proyecto</p>
-<p align="center"><strong>SaludYa</strong></p>
+<p style="text-align:center">Docente</p>
+<p style="text-align:center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
 
 <br>
 
-<p align="center"><strong>Integrantes</strong></p>
+<p style="text-align:center">Equipo</p>
+<p style="text-align:center"><strong>RuwaLabs</strong></p>
+<p style="text-align:center">Proyecto</p>
+<p style="text-align:center"><strong>SaludYa</strong></p>
 
-<table align="center">
+<br>
+
+<p style="text-align:center"><strong>Integrantes</strong></p>
+
+<table style="margin-left:auto;margin-right:auto">
   <tr><th>Código</th><th>Apellidos y nombres</th></tr>
   <tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr>
   <tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr>
@@ -37,11 +37,12 @@
   <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
 </table>
 
-<p align="center"><strong>Período 202620</strong></p>
-<p align="center"><strong>Septiembre 2026</strong></p>
+<p style="text-align:center"><strong>Período 202620</strong></p>
+<p style="text-align:center"><strong>Septiembre 2026</strong></p>
 
 
 ---
+%%pdf-pagebreak%%
 # Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
@@ -57,7 +58,7 @@
 | 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 | 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 
-
+%%pdf-pagebreak%%
 # Project Report Collaboration Insights
 
 <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
@@ -71,13 +72,14 @@ URL de la Organización de Github del equipo RuwaLabs: [RuwaLabs](https://github
 URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-report](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report)
 
 ---
-
+%%pdf-pagebreak%%
 # Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
+- [Objetivos SMART](#objetivos-smart)
 - [Capítulo I: Presentación](#capítulo-i-presentación)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -120,41 +122,75 @@ URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-r
       - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
       - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-    - [2.6.x. Bounded Context: <Bounded Context Name>](#26x-bounded-context-bounded-context-name)
-      - [2.6.x.1. Domain Layer](#26x1-domain-layer)
-      - [2.6.x.2. Interface Layer](#26x2-interface-layer)
-      - [2.6.x.3. Application Layer](#26x3-application-layer)
-      - [2.6.x.4 Infrastructure Layer](#26x4-infrastructure-layer)
-      - [2.6.x.5. Bounded Context Software Architecture Component Level Diagrams](#26x5-bounded-context-software-architecture-component-level-diagrams)
-      - [2.6.x.6. Bounded Context Software Architecture Code Level Diagrams](#26x6-bounded-context-software-architecture-code-level-diagrams)
-        - [2.6.x.6.1. Bounded Context Domain Layer Class Diagrams](#26x61-bounded-context-domain-layer-class-diagrams)
-        - [2.6.x.6.2. Bounded Context Database Design Diagram](#26x62-bounded-context-database-design-diagram)
+    - [2.6.1. Bounded Context: Identity & Access Management](#261-bounded-context-identity--access-management)
+      - [2.6.1.1. Domain Layer](#2611-domain-layer)
+      - [2.6.1.2. Interface Layer](#2612-interface-layer)
+      - [2.6.1.3. Application Layer](#2613-application-layer)
+      - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
+    - [2.6.2. Bounded Context: Appointments & Booking](#262-bounded-context-appointments--booking)
+      - [2.6.2.1. Domain Layer](#2621-domain-layer)
+      - [2.6.2.2. Interface Layer](#2622-interface-layer)
+      - [2.6.2.3. Application Layer](#2623-application-layer)
+      - [2.6.2.4. Infrastructure Layer](#2624-infrastructure-layer)
+      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](#2625-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](#2626-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](#26261-bounded-context-domain-layer-class-diagrams)
+        - [2.6.2.6.2. Bounded Context Database Design Diagram](#26262-bounded-context-database-design-diagram)
+    - [2.6.3. Bounded Context: Reassignment](#263-bounded-context-reassignment)
+      - [2.6.3.1. Domain Layer](#2631-domain-layer)
+      - [2.6.3.2. Interface Layer](#2632-interface-layer)
+      - [2.6.3.3. Application Layer](#2633-application-layer)
+      - [2.6.3.4. Infrastructure Layer](#2634-infrastructure-layer)
+      - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](#2635-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](#2636-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](#26361-bounded-context-domain-layer-class-diagrams)
+        - [2.6.3.6.2. Bounded Context Database Design Diagram](#26362-bounded-context-database-design-diagram)
+    - [2.6.4. Bounded Context: Arrival & QR Check-in](#264-bounded-context-arrival--qr-check-in)
+      - [2.6.4.1. Domain Layer](#2641-domain-layer)
+      - [2.6.4.2. Interface Layer](#2642-interface-layer)
+      - [2.6.4.3. Application Layer](#2643-application-layer)
+      - [2.6.4.4. Infrastructure Layer](#2644-infrastructure-layer)
+      - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](#2645-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](#2646-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](#26461-bounded-context-domain-layer-class-diagrams)
+        - [2.6.4.6.2. Bounded Context Database Design Diagram](#26462-bounded-context-database-design-diagram)
+    - [2.6.5. Bounded Context: Hospital Operations & Configuration](#265-bounded-context-hospital-operations--configuration)
+      - [2.6.5.1. Domain Layer](#2651-domain-layer)
+      - [2.6.5.2. Interface Layer](#2652-interface-layer)
+      - [2.6.5.3. Application Layer](#2653-application-layer)
+      - [2.6.5.4. Infrastructure Layer](#2654-infrastructure-layer)
+      - [2.6.5.5. Bounded Context Software Architecture Component Level Diagrams](#2655-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
+        - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
 ---
 
+%%pdf-pagebreak%%
+
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
-
 **ABET - EAC - Student Outcome 7**
-
 **Criterio:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
-
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
-
 <table>
   <thead>
-    <tr>
+    <tr style="break-inside:auto">
       <th>Criterio específico</th>
       <th>Acciones realizadas</th>
       <th>Conclusiones</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr style="break-inside:auto">
       <td width="25%">
         Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.
       </td>
@@ -186,7 +222,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.</p>
       </td>
     </tr>
-    <tr>
+    <tr style="break-inside:auto">
       <td>
         Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
       </td>
@@ -220,6 +256,59 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tbody>
 </table>
 
+%%pdf-pagebreak%%
+
+# Objetivos SMART
+
+En esta sección, cada integrante del equipo formula un plan de desarrollo profesional posterior a su graduación, compuesto por al menos dos objetivos **SMART**. Cada objetivo es **específico** (s), **medible** (m), **alcanzable** (a), **relevante** (r) y cuenta con un **plazo** definido (t), con el fin de evidenciar de manera clara y cuantificable cómo cada miembro planea mantener un crecimiento profesional continuo una vez finalizada su carrera.
+
+## Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio
+
+**Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica.
+
+| N.º | Objetivo SMART | Plazo |
+|:---:|:---|:---|
+| 1 | Obtener la certificación *Google Associate Android Developer* para especializarme en el desarrollo de aplicaciones móviles nativas, completando un plan de estudio de 8 horas semanales y aprobando el examen oficial con una puntuación superior a 80/100. | Diciembre 2027 |
+| 2 | Incorporarme como desarrollador móvil en una empresa de tecnología peruana, postulando a un mínimo de 10 ofertas por mes y participando en al menos 3 procesos de selección por trimestre hasta concretar mi primera contratación. | 12 meses tras la graduación |
+
+## Objetivos SMART – Meza Solórzano, Didier Sebastian
+
+**Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil.
+
+| N.º | Objetivo SMART | Plazo |
+|:---:|:---|:---|
+| 1 | Obtener la certificación oficial de *Flutter Developer* para dominar el desarrollo multiplataforma, desarrollando al menos 3 proyectos publicados en GitHub y aprobando la evaluación con un puntaje mínimo de 75/100. | Diciembre 2027 |
+| 2 | Iniciar un posgrado o especialización en desarrollo de software móvil, aprobando los primeros 4 ciclos con un promedio ponderado no menor a 16/20 y manteniendo una dedicación de 10 horas semanales de estudio. | 2028 |
+
+## Objetivos SMART – Montoya Nina, Paula Fernanda
+
+**Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización.
+
+| N.º | Objetivo SMART | Plazo |
+|:---:|:---|:---|
+| 1 | Obtener la certificación *Google Cloud Professional Data Engineer* para especializarme en la gestión de datos, mediante un plan de estudio de 6 horas semanales y la aprobación del examen oficial con un puntaje mínimo de 70/100. | Diciembre 2027 |
+| 2 | Iniciar una maestría en Arquitectura de Software, culminando los dos primeros semestres con un promedio no menor a 16/20 y publicando un proyecto de arquitectura de datos al finalizar cada semestre. | 2027 |
+%%pdf-pagebreak%%
+## Objetivos SMART – Ramos Mera, Neo Daniel
+
+**Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada.
+
+| N.º | Objetivo SMART | Plazo |
+|:---:|:---|:---|
+| 1 | Obtener la certificación *Cisco Certified Network Associate (CCNA)* para fortalecer mis competencias en redes, completando 120 horas de laboratorio y aprobando el examen oficial 200-301 en el primer intento. | Junio 2027 |
+| 2 | Desempeñarme como desarrollador backend en una empresa tecnológica, consolidando al menos una certificación cloud (AWS o Azure) y participando en un mínimo de 8 procesos de selección anuales. | 18 meses tras la graduación |
+
+## Objetivos SMART – Torres Juárez, Alisee Muriel
+
+**Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización.
+
+| N.º | Objetivo SMART | Plazo |
+|:---:|:---|:---|
+| 1 | Obtener la certificación *Professional Scrum Master I (PSM I)* para fortalecer mis competencias en gestión de proyectos, aprobando el examen oficial con una puntuación mínima de 85% y gestionando al menos un proyecto académico bajo el marco Scrum. | Diciembre 2026 |
+| 2 | Ingresar a un programa de especialización en gestión de proyectos tecnológicos, aprobando los dos primeros ciclos con un promedio no menor a 16/20 y liderando al menos un proyecto real durante el programa. | 2027 |
+
+%%pdf-pagebreak%%
+
 # Capítulo 1: Presentación #
 
 ## 1.1. Startup Profile ##
@@ -238,9 +327,9 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 
 <table>
     <tr>
-        <td> <b>Misión</b> </td>
-        <td> <b>Visión</b> </td>
-        <td> <b>Valores</b> </td>
+        <th>Misión</th>
+        <th>Visión</th>
+        <th>Valores</th>
     </tr>
     <tr>
         <td> Desarrollar soluciones tecnológicas accesibles e innovadoras que permitan mejorar la experiencia de los usuarios y optimizar procesos relacionados con servicios de atención, utilizando la tecnología como herramienta para resolver necesidades reales. </td>
@@ -249,53 +338,57 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
     </tr>
 </table>
 
+%%pdf-pagebreak%%
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
 
 <table>
     <tr>
-        <td> Foto </td>
-        <td> Integrante </td>
-        <td> Código </td>
-        <td> Carrera </td>
-        <td> Habilidades y conocimientos técnicos </td>
+        <th> Foto </th>
+        <th> Integrante </th>
+        <th> Código </th>
+        <th> Carrera </th>
+        <th> Habilidades y conocimientos técnicos </th>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
         <td>u202318309</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en la construcción de soluciones tecnológicas que resuelvan necesidades reales de las personas. Me considero una persona responsable, organizada y con facilidad para trabajar en equipo, además de comprometida con la mejora continua y la aplicación de buenas prácticas de desarrollo. Durante el proyecto busco fortalecer mis conocimientos técnicos y aportar en la implementación de una solución funcional y de calidad.</td>
     </tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Montoya Nina, Paula Fernanda</td>
         <td>u20241d934</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software, interesada en la gestión de datos y en la arquitectura de Software. Tengo un enfoque de trabajo que prioriza la planificación y el orden estructural antes de iniciar cualquier implementación técnica. Mis fortalezas son la organización de flujos de trabajo eficiente y, además, puedo desempeñar múltiples roles dentro de un proyecto, ya sea en frontend o backend, aunque prefiero dedicarme a la gestión de datos. Mi propósito es profundizar mis conocimientos en la arquitectura de Software, además de mejorar mi capacidad de colaboración en equipo para contribuir activamente en la creación de soluciones tecnológicas.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Ramos Mera, Neo Daniel</td>
         <td> u20241e418 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software, interesado en la red y el backend. Me considero una persona responsable, atenta y también bastante cooperativa, ya que la comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mi meta es especializarme en un campo en el que pueda trabajar con estos puntos, por lo que aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Torres Juárez, Alisee Muriel</td>
         <td> U202624323 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software interesada en la creación de soluciones tecnológicas que simplifiquen y agilicen procesos. Destaco por mi resiliencia, perseverancia y alta capacidad de adaptabilidad ante nuevos desafíos. </td>
     </tr>
 </table>
+
+
+%%pdf-pagebreak%%
 
 ## 1.2. Solution Profile
 
@@ -550,49 +643,7 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Problema:** La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - **Necesidad:** Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
 
-
-
-# Conclusiones
-
-## Conclusiones y recomendaciones
-
-A partir del análisis realizado y de la validación de las hipótesis planteadas, se presentan las siguientes conclusiones y recomendaciones:
-
-### Conclusiones
-
-- La problemática planteada sobre la ineficiencia en el acceso a citas en establecimientos públicos de salud se confirmó a través del análisis de contexto y entrevistas, demostrando que la dependencia exclusiva de canales presenciales o telefónicos genera colas prolongadas y desinformación.
-
-- El supuesto de negocio respecto a la demanda no atendida por soluciones digitales fue validado con éxito, dado que todos los pacientes entrevistados consideraron de alta utilidad consultar la disponibilidad de cupos en tiempo real desde sus dispositivos.
-
-- Al contrastar las suposiciones con el comportamiento real del segmento de pacientes, se evidenció que la mayoría no ha utilizado aplicaciones médicas previamente. Sin embargo, se sienten cómodos realizando trámites desde sus celulares, lo que confirma la viabilidad de adopción de la plataforma.
-
-- Las hipótesis operativas orientadas a mejorar el control del flujo de atención fueron validadas por el personal administrativo, quienes confirmaron que la gestión manual actual mediante cuadernos y hojas de cálculo provoca pérdida de información y desorganización operativa.
-
-- Se concluye que la lista de espera dinámica y las notificaciones automatizadas responden directamente a los criterios de éxito del proyecto, asegurando el reaprovechamiento de cupos cancelados y mitigando los viajes innecesarios de los usuarios.
-
-- La hipótesis sobre la reducción del tiempo de espera percibido es respaldada por la estructuración técnica del sistema, el cual incluye un mecanismo de registro de llegada (*check-in*) por código QR diseñado para descongestionar las ventanillas físicas.
-
-### Recomendaciones
-
-- **Despliegue incremental basado en el Product Backlog:** Se recomienda ejecutar la priorización del MVP definida en los Sprints 1 y 2, liberando inicialmente el motor de reservas (*Appointments & Booking*), la validación de identidad y el *check-in* por QR, debido a que estos componentes representan el núcleo de valor para descongestionar el flujo presencial de pacientes.
-
-- **Evolución hacia la Reprogramación Inteligente:** Para futuras versiones, se recomienda integrar un sistema de sugerencias inteligentes de horarios y la posibilidad de reprogramación automática, con el objetivo de resolver de manera proactiva los cruces de agenda y mejorar la experiencia del módulo central de citas.
-
-- **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
-
-# Bibliografía #
-
-Ministerio de Salud (MINSA). (2017, 16 de mayo). _Nuevo sistema “Web colas” reduce el tiempo de espera en hospitales_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales](https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales)
-
-Ministerio de Salud (MINSA). (2023, 19 de septiembre). _Minsa reduce tiempos de espera por atención en establecimientos de salud de Lima Metropolitana_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana](https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana)
-
-Ministerio de Salud (MINSA). (2024, 1 de marzo). _Minsa fortalece sistema de “Citas en Línea”_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea](https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea)
-
-Ministerio de Salud (MINSA). (2025, 2 de agosto). _Hospital San Juan de Lurigancho: más de 93 000 pacientes accedieron a sus citas por teléfono en el primer semestre de 2025_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025](https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025)
-
-Presidencia del Consejo de Ministros (PCM). (2026). _Obtener cita médica en un establecimiento del Minsa_. Plataforma del Estado Peruano. Recuperado de [https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa](https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa)
-
-World Health Organization (WHO). (2025). _Global strategy on digital health 2020–2027_. World Health Organization. Recuperado de [https://www.who.int/publications/i/item/9789240116870](https://www.who.int/publications/i/item/9789240116870)
+%%pdf-pagebreak%%
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -603,20 +654,20 @@ World Health Organization (WHO). (2025). _Global strategy on digital health 2020
 > **¿Por qué llevar a cabo este análisis?**  
 > Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud.
 
-| **Competitive Analysis Landscape** | **SaludYa** | **Doctoralia** | **Cita Médica** | **Citas en Línea (MINSA)** |
-|:---|:---:|:---:|:---:|:---:|
-| **Logo** | ![SaludYa](https://i.imgur.com/o2Yy1QN.png) | ![Doctoralia](https://i.imgur.com/bKfYERK.png) | ![Cita Médica](https://i.imgur.com/Jqy2pqA.png) | ![MINSA](https://i.imgur.com/WIV8zHk.jpeg) |
-| **Perfil / Overview** | Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real. | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
-| **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* | Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas. | Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico. | Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico. | Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado. |
-| **Perfil de Marketing**<br>*Mercado objetivo* | Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud. | Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas. | Pacientes que buscan atención médica privada en consultorios y clínicas de Perú. | Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones. |
-| **Estrategias de marketing** | Alianzas con establecimientos públicos de salud y difusión mediante campañas informativas y redes sociales. | Posicionamiento en redes sociales, SEO y alianzas con seguros médicos privados. | Posicionamiento en tiendas de aplicaciones (App Store, Google Play) y redes sociales. | Difusión institucional a través de comunicados del MINSA y de cada establecimiento de salud. |
-| **Productos & Servicios** | App para pacientes (reserva de citas, recordatorios, lista de espera dinámica, pre-filtro de síntomas, gestión de familiares y check-in por QR) y app para personal (gestión de citas, visualización del flujo de atención y control de cancelaciones e inasistencias). | Búsqueda de especialistas por ciudad o seguro médico, reserva de citas presenciales o virtuales, recordatorios, videoconsultas y mensajería con el especialista. | Búsqueda de médicos y consultorios cercanos, reserva de citas presenciales o por videoconsulta, recordatorios y consulta de precios de medicamentos. | Registro y reserva de citas médicas de forma virtual en hospitales y centros de salud seleccionados. |
-| **Perfil de Producto**<br>*Precios & Costos* | Al estar dirigida a establecimientos públicos de salud, se plantea como un servicio sin costo directo para el paciente, con un modelo de implementación institucional. | Gratuito para pacientes; planes de suscripción mensual para profesionales y clínicas (Plus, VIP, entre otros). | Aplicación gratuita para el paciente. | Gratuito, al ser un servicio público. |
-| **Canales de distribución**<br>*Web y/o Móvil* | Web y Móvil | Web y Móvil | Móvil (iOS y Android) | Móvil (aplicaciones por hospital) y, en algunos casos, Web |
-| **Fortalezas** | Conecta la experiencia del paciente con la operación interna del establecimiento, reduciendo colas y mejorando el aprovechamiento de los cupos disponibles. | Amplia base de especialistas y funcionalidades avanzadas como videoconsultas y lista de espera inteligente. | Integración de información sobre precios de medicamentos y recetas, además de comunicación directa con el médico. | Cobertura directa dentro del sistema público de salud y respaldo institucional del MINSA. |
-| **Análisis SWOT — Debilidades** | Requiere una conexión estable a internet y la adopción digital del personal administrativo del establecimiento. | Enfocado en el sector privado, sin cobertura de establecimientos públicos de salud. | Enfocado únicamente en consultorios y clínicas privadas. | Cobertura limitada a determinados hospitales, sin funcionalidades como lista de espera dinámica, check-in por QR o gestión interna del flujo de atención. |
-| **Análisis SWOT — Oportunidades** | Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud. | Expansión hacia convenios con aseguradoras y nuevas especialidades. | Expansión hacia convenios con establecimientos públicos de salud. | Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades. |
-| **Análisis SWOT — Amenazas** | Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas. | Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos. | Competencia de plataformas más consolidadas como Doctoralia. | Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público. |
+| **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
+| :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| **Logo**                                                       |                                                                                                                          ![[Icon_SaludYa.png]]                                                                                                                          |                                                                                            ![Doctoralia](https://i.imgur.com/bKfYERK.png)                                                                                             |                                                    ![Cita Médica](https://i.imgur.com/Jqy2pqA.png)                                                     |                                                                                              ![MINSA](https://i.imgur.com/WIV8zHk.jpeg)                                                                                               |
+| **Perfil / Overview**                                          |        Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real.         | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
+| **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* |                         Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas.                          |                                                           Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico.                                                            |               Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico.               |                                        Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado.                                         |
+| **Perfil de Marketing**<br>*Mercado objetivo*                  |                                                                          Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.                                                                          |                                                                       Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas.                                                                       |                                    Pacientes que buscan atención médica privada en consultorios y clínicas de Perú.                                    |                                                                Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones.                                                                 |
+| **Estrategias de marketing**                                   |                                                                               Alianzas con establecimientos públicos de salud y difusión mediante campañas informativas y redes sociales.                                                                               |                                                                            Posicionamiento en redes sociales, SEO y alianzas con seguros médicos privados.                                                                            |                                 Posicionamiento en tiendas de aplicaciones (App Store, Google Play) y redes sociales.                                  |                                                                     Difusión institucional a través de comunicados del MINSA y de cada establecimiento de salud.                                                                      |
+| **Productos & Servicios**                                      | App para pacientes (reserva de citas, recordatorios, lista de espera dinámica, pre-filtro de síntomas, gestión de familiares y check-in por QR) y app para personal (gestión de citas, visualización del flujo de atención y control de cancelaciones e inasistencias). |                                   Búsqueda de especialistas por ciudad o seguro médico, reserva de citas presenciales o virtuales, recordatorios, videoconsultas y mensajería con el especialista.                                    |  Búsqueda de médicos y consultorios cercanos, reserva de citas presenciales o por videoconsulta, recordatorios y consulta de precios de medicamentos.  |                                                                 Registro y reserva de citas médicas de forma virtual en hospitales y centros de salud seleccionados.                                                                  |
+| **Perfil de Producto**<br>*Precios & Costos*                   |                                                 Al estar dirigida a establecimientos públicos de salud, se plantea como un servicio sin costo directo para el paciente, con un modelo de implementación institucional.                                                  |                                                            Gratuito para pacientes; planes de suscripción mensual para profesionales y clínicas (Plus, VIP, entre otros).                                                             |                                                         Aplicación gratuita para el paciente.                                                          |                                                                                                 Gratuito, al ser un servicio público.                                                                                                 |
+| **Canales de distribución**<br>*Web y/o Móvil*                 |                                                                                                                               Web y Móvil                                                                                                                               |                                                                                                              Web y Móvil                                                                                                              |                                                                 Móvil (iOS y Android)                                                                  |                                                                                      Móvil (aplicaciones por hospital) y, en algunos casos, Web                                                                                       |
+| **Fortalezas**                                                 |                                                       Conecta la experiencia del paciente con la operación interna del establecimiento, reduciendo colas y mejorando el aprovechamiento de los cupos disponibles.                                                       |                                                              Amplia base de especialistas y funcionalidades avanzadas como videoconsultas y lista de espera inteligente.                                                              |                   Integración de información sobre precios de medicamentos y recetas, además de comunicación directa con el médico.                    |                                                                       Cobertura directa dentro del sistema público de salud y respaldo institucional del MINSA.                                                                       |
+| **Análisis SWOT — Debilidades**                                |                                                                             Requiere una conexión estable a internet y la adopción digital del personal administrativo del establecimiento.                                                                             |                                                                          Enfocado en el sector privado, sin cobertura de establecimientos públicos de salud.                                                                          |                                                Enfocado únicamente en consultorios y clínicas privadas.                                                |                                       Cobertura limitada a determinados hospitales, sin funcionalidades como lista de espera dinámica, check-in por QR o gestión interna del flujo de atención.                                       |
+| **Análisis SWOT — Oportunidades**                              |                                                                            Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud.                                                                             |                                                                                  Expansión hacia convenios con aseguradoras y nuevas especialidades.                                                                                  |                                           Expansión hacia convenios con establecimientos públicos de salud.                                            |                                                                  Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades.                                                                  |
+| **Análisis SWOT — Amenazas**                                   |                                                                                 Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas.                                                                                  |                                                                      Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos.                                                                       |                                              Competencia de plataformas más consolidadas como Doctoralia.                                              |                                                                   Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público.                                                                    |
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -4162,6 +4213,8 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 5. En la app, navega por las secciones principales mediante la barra inferior.
 6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
+%%pdf-pagebreak%%
+
 # 3.1.3. Landing Page UI Design
 
 ## 3.1.3.1. Landing Page Wireframe
@@ -4853,6 +4906,54 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 - Los servicios web acceden a PostgreSQL para la persistencia de datos.
 - Los servicios web envían notificaciones push a las apps a través de Firebase Cloud Messaging.
 
+%%pdf-pagebreak%%
+
+
+# Conclusiones
+
+## Conclusiones y recomendaciones
+
+A partir del análisis realizado y de la validación de las hipótesis planteadas, se presentan las siguientes conclusiones y recomendaciones:
+
+### Conclusiones
+
+- La problemática planteada sobre la ineficiencia en el acceso a citas en establecimientos públicos de salud se confirmó a través del análisis de contexto y entrevistas, demostrando que la dependencia exclusiva de canales presenciales o telefónicos genera colas prolongadas y desinformación.
+
+- El supuesto de negocio respecto a la demanda no atendida por soluciones digitales fue validado con éxito, dado que todos los pacientes entrevistados consideraron de alta utilidad consultar la disponibilidad de cupos en tiempo real desde sus dispositivos.
+
+- Al contrastar las suposiciones con el comportamiento real del segmento de pacientes, se evidenció que la mayoría no ha utilizado aplicaciones médicas previamente. Sin embargo, se sienten cómodos realizando trámites desde sus celulares, lo que confirma la viabilidad de adopción de la plataforma.
+
+- Las hipótesis operativas orientadas a mejorar el control del flujo de atención fueron validadas por el personal administrativo, quienes confirmaron que la gestión manual actual mediante cuadernos y hojas de cálculo provoca pérdida de información y desorganización operativa.
+
+- Se concluye que la lista de espera dinámica y las notificaciones automatizadas responden directamente a los criterios de éxito del proyecto, asegurando el reaprovechamiento de cupos cancelados y mitigando los viajes innecesarios de los usuarios.
+
+- La hipótesis sobre la reducción del tiempo de espera percibido es respaldada por la estructuración técnica del sistema, el cual incluye un mecanismo de registro de llegada (*check-in*) por código QR diseñado para descongestionar las ventanillas físicas.
+
+### Recomendaciones
+
+- **Despliegue incremental basado en el Product Backlog:** Se recomienda ejecutar la priorización del MVP definida en los Sprints 1 y 2, liberando inicialmente el motor de reservas (*Appointments & Booking*), la validación de identidad y el *check-in* por QR, debido a que estos componentes representan el núcleo de valor para descongestionar el flujo presencial de pacientes.
+
+- **Evolución hacia la Reprogramación Inteligente:** Para futuras versiones, se recomienda integrar un sistema de sugerencias inteligentes de horarios y la posibilidad de reprogramación automática, con el objetivo de resolver de manera proactiva los cruces de agenda y mejorar la experiencia del módulo central de citas.
+
+- **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
+
+%%pdf-pagebreak%%
+
+# Bibliografía #
+
+Ministerio de Salud (MINSA). (2017, 16 de mayo). _Nuevo sistema “Web colas” reduce el tiempo de espera en hospitales_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales](https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales)
+
+Ministerio de Salud (MINSA). (2023, 19 de septiembre). _Minsa reduce tiempos de espera por atención en establecimientos de salud de Lima Metropolitana_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana](https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana)
+
+Ministerio de Salud (MINSA). (2024, 1 de marzo). _Minsa fortalece sistema de “Citas en Línea”_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea](https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea)
+
+Ministerio de Salud (MINSA). (2025, 2 de agosto). _Hospital San Juan de Lurigancho: más de 93 000 pacientes accedieron a sus citas por teléfono en el primer semestre de 2025_. Recuperado de [https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025](https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025)
+
+Presidencia del Consejo de Ministros (PCM). (2026). _Obtener cita médica en un establecimiento del Minsa_. Plataforma del Estado Peruano. Recuperado de [https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa](https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa)
+
+World Health Organization (WHO). (2025). _Global strategy on digital health 2020–2027_. World Health Organization. Recuperado de [https://www.who.int/publications/i/item/9789240116870](https://www.who.int/publications/i/item/9789240116870)
+
+%%pdf-pagebreak%%
 # Anexos
 
 ## Anexo A: Vídeos de entrevistas realizadas

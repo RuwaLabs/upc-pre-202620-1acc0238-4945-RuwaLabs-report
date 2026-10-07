@@ -16,9 +16,9 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 
 <table>
     <tr>
-        <td> <b>Misión</b> </td>
-        <td> <b>Visión</b> </td>
-        <td> <b>Valores</b> </td>
+        <th>Misión</th>
+        <th>Visión</th>
+        <th>Valores</th>
     </tr>
     <tr>
         <td> Desarrollar soluciones tecnológicas accesibles e innovadoras que permitan mejorar la experiencia de los usuarios y optimizar procesos relacionados con servicios de atención, utilizando la tecnología como herramienta para resolver necesidades reales. </td>
@@ -33,41 +33,41 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 
 <table>
     <tr>
-        <td> Foto </td>
-        <td> Integrante </td>
-        <td> Código </td>
-        <td> Carrera </td>
-        <td> Habilidades y conocimientos técnicos </td>
+        <th> Foto </th>
+        <th> Integrante </th>
+        <th> Código </th>
+        <th> Carrera </th>
+        <th> Habilidades y conocimientos técnicos </th>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
         <td>u202318309</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en la construcción de soluciones tecnológicas que resuelvan necesidades reales de las personas. Me considero una persona responsable, organizada y con facilidad para trabajar en equipo, además de comprometida con la mejora continua y la aplicación de buenas prácticas de desarrollo. Durante el proyecto busco fortalecer mis conocimientos técnicos y aportar en la implementación de una solución funcional y de calidad.</td>
     </tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Montoya Nina, Paula Fernanda</td>
         <td>u20241d934</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software, tengo 19 años, curso el 6.º ciclo con código u20241D934 e interesada en la gestión de datos y en la arquitectura de Software. Tengo un enfoque de trabajo que prioriza la planificación y el orden estructural antes de iniciar cualquier implementación técnica. Mis fortalezas son la organización de flujos de trabajo eficiente y, además, puedo desempeñar múltiples roles dentro de un proyecto, ya sea en frontend o backend, aunque prefiero dedicarme a la gestión de datos. Mi propósito es profundizar mis conocimientos en la arquitectura de Software, además de mejorar mi capacidad de colaboración en equipo para contribuir activamente en la creación de soluciones tecnológicas.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Ramos Mera, Neo Daniel</td>
         <td> u20241e418 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software del sexto ciclo e interesado en la red y el backend. Me considero una persona responsable, atenta y también bastante cooperativa, ya que la comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mi meta es especializarme en un campo en el que pueda trabajar con estos puntos, por lo que aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="max-height:40px; display:block; margin:6px auto 0;"> </td>
+        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
         <td>Torres Juárez, Alisee Muriel</td>
         <td> U202624323 </td>
         <td> Ingeniería de Software </td>
