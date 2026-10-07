@@ -1387,25 +1387,25 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 **Pasos del proceso:**
 
-**1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Cita reservada", "Cupo liberado", "Check-in realizado"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos `BookingOrder asignado`, `Paciente en cola de asistencia` y `Paciente llamado`, que reflejan la existencia de dos colas complementarias dentro del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
+**1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Appointment booked", "Slot released", "Check-in completed"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos `Booking Order assigned`, `Patient in attendance queue` y `Patient called`, que reflejan la existencia de dos colas complementarias dentro del dominio: la **cola por pedido de cita** (ordenada por `Booking Order`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
 
 <p align="center">
   <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%"/>
 </p>
 
-**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `BookingOrder asignado` ocurre inmediatamente después de `Cita reservada`, mientras que `Paciente en cola de asistencia` y `Paciente llamado` ocurren después de `Check-in realizado`, evidenciando que ambas colas operan en momentos distintos del flujo.
+**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `Booking Order assigned` ocurre inmediatamente después de `Appointment booked`, mientras que `Patient in attendance queue` y `Patient called` ocurren después de `Check-in completed`, evidenciando que ambas colas operan en momentos distintos del flujo.
 
 <p align="center">
   <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%"/>
 </p>
 
-**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `bookingOrder`** (que determina la prioridad en la cola de reserva) y el **timeout de la propuesta de reasignación** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **cola de asistencia** y la **cola de reserva**.
+**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `Booking Order`** (que determina la prioridad en la lista de espera) y el **waitlist timeout** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **attendance queue** y la **waitlist**.
 
 <p align="center">
   <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
 </p>
 
-**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Asignar bookingOrder`, `Agregar a cola de asistencia` y `Llamar siguiente paciente`; las policies `Cuando se libera un cupo, notificar al paciente con menor bookingOrder` y `Cuando expira el timeout, pasar al siguiente paciente de la lista`; y los read models `Cola de asistencia` y `Cola de reserva`.
+**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Assign Booking Order`, `Add to attendance queue` y `Call next patient`; las policies `When a slot is released, notify the patient with the lowest Booking Order`, `When the timeout expires, move to the next patient in the list` y `If cancelled within the allowed time, release the slot`; y los read models `Attendance Queue` y `Waitlist`.
 
 <p align="center">
   <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
@@ -1418,24 +1418,24 @@ A partir del modelado realizado en el EventStorming, se llevó a cabo una sesió
 
 Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
 
-Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la cola de reserva. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
+Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
 
 Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
 
 | # | Bounded Context | Propósito | Eventos clave |
 | :--- | :--- | :--- | :--- |
-| 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Cuenta creada, Sesión iniciada, Menor vinculado |
-| 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada. | Cita solicitada, Cupo verificado, Cita reservada, Booking Order asignado, Cita cancelada |
-| 3 | **Reassignment** | Gestionar la cola de reserva y la reasignación de cupos liberados, ofreciendo las propuestas en orden de `bookingOrder`. | Cupo liberado, Cita reasignada, Reasignación expirada |
-| 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente, emitir el ticket digital de atención y gestionar la `Attendance Queue`. | Check-in realizado, Paciente en cola de asistencia, Paciente llamado, Ticket emitido, Paciente ausente |
-| 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Reglas actualizadas, Reporte generado |
+| 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Account created, Session started, Minor linked |
+| 2 | **Appointments & Booking** | Gestionar la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada. | Appointment requested, Slot verified, Appointment booked, Booking Order assigned, Appointment cancelled |
+| 3 | **Dynamic Waitlist & Reassignment** | Gestionar la lista de espera dinámica y la reasignación de cupos liberados, ofreciendo las propuestas en orden de `Booking Order`. | Slot released, Appointment reassigned, Reassignment expired |
+| 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente, emitir el ticket digital de atención y gestionar la `Attendance Queue`. | Check-in completed, Patient in attendance queue, Patient called, Ticket issued, Patient absent |
+| 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Rules updated, Report generated |
 
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery:
 
-- **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento"*.
-- **`Reassignment`:** se incorporan los conceptos `Reassignment Offer` (entrada ordenada por `bookingOrder`), `Reassignment Chain` (cadena de reasignación: al aceptar, se libera el slot original del candidato y se vuelve a ofrecer) y `Reassignment Response Timeout` (ventana única para aceptar y presentarse). La policy de reasignación se define como *"Reasignación por orden de `bookingOrder`"*.
-- **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Cola de asistencia ordenada por `checkInTimestamp`"*.
-- **`Hospital Operations & Configuration`:** se incorpora el parámetro `reassignmentResponseTimeoutMin` (y opcionalmente `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
+- **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Every booked appointment has a unique Booking Order per specialty, date and facility"*.
+- **`Dynamic Waitlist & Reassignment`:** se incorporan los conceptos `Waitlist Entry` (entrada ordenada por `Booking Order`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Waitlist Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reassignment by Booking Order"*.
+- **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Attendance Queue sorted by checkInTimestamp"*.
+- **`Hospital Operations & Configuration`:** se incorpora el parámetro `waitlistResponseTimeout` (y opcionalmente `cascadeWaitlistEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
