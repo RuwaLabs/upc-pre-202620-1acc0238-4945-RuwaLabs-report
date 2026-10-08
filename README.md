@@ -465,6 +465,16 @@ SaludYa busca reducir las dificultades asociadas a la gestión tradicional de ci
 
 Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles.
 
+
+
+La [Tabla 8](#tabla-8) detalla misión, visión y valores de RuwaLabs.
+
+<a id="tabla-8"></a>
+
+**Tabla 8**
+
+*Misión, visión y valores de RuwaLabs*
+
 <table>
     <tr>
         <th>Misión</th>
@@ -478,10 +488,24 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
     </tr>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
+
+
+
+La [Tabla 9](#tabla-9) detalla perfiles de los integrantes del equipo. Las fotografías incluidas corresponden a [Figura 4](#figura-4), [Figura 5](#figura-5), [Figura 6](#figura-6), [Figura 7](#figura-7), [Figura 8](#figura-8).
+
+<a id="tabla-9"></a>
+
+**Tabla 9**
+
+*Perfiles de los integrantes del equipo*
 
 <table>
     <tr>
@@ -492,40 +516,44 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <th> Habilidades y conocimientos técnicos </th>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
+        <td> <a id="figura-4"></a><strong>Figura 4</strong><br><em>Fotografía de Rodrigo</em><br><img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"><br><small>Nota. Registro de integrantes del equipo RuwaLabs.</small> </td>
         <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
         <td>u202318309</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en la construcción de soluciones tecnológicas que resuelvan necesidades reales de las personas. Me considero una persona responsable, organizada y con facilidad para trabajar en equipo, además de comprometida con la mejora continua y la aplicación de buenas prácticas de desarrollo. Durante el proyecto busco fortalecer mis conocimientos técnicos y aportar en la implementación de una solución funcional y de calidad.</td>
     </tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
+        <td> <a id="figura-5"></a><strong>Figura 5</strong><br><em>Fotografía de Didier</em><br><img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"><br><small>Nota. Registro de integrantes del equipo RuwaLabs.</small> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
+        <td> <a id="figura-6"></a><strong>Figura 6</strong><br><em>Fotografía de Paula</em><br><img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"><br><small>Nota. Registro de integrantes del equipo RuwaLabs.</small> </td>
         <td>Montoya Nina, Paula Fernanda</td>
         <td>u20241d934</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software, interesada en la gestión de datos y en la arquitectura de Software. Tengo un enfoque de trabajo que prioriza la planificación y el orden estructural antes de iniciar cualquier implementación técnica. Mis fortalezas son la organización de flujos de trabajo eficiente y, además, puedo desempeñar múltiples roles dentro de un proyecto, ya sea en frontend o backend, aunque prefiero dedicarme a la gestión de datos. Mi propósito es profundizar mis conocimientos en la arquitectura de Software, además de mejorar mi capacidad de colaboración en equipo para contribuir activamente en la creación de soluciones tecnológicas.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
+        <td> <a id="figura-7"></a><strong>Figura 7</strong><br><em>Fotografía de Neo</em><br><img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"><br><small>Nota. Registro de integrantes del equipo RuwaLabs.</small> </td>
         <td>Ramos Mera, Neo Daniel</td>
         <td> u20241e418 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software, interesado en la red y el backend. Me considero una persona responsable, atenta y también bastante cooperativa, ya que la comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mi meta es especializarme en un campo en el que pueda trabajar con estos puntos, por lo que aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"> </td>
+        <td> <a id="figura-8"></a><strong>Figura 8</strong><br><em>Fotografía de Alisee</em><br><img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" style="width:80px; height:80px; border-radius:50%; object-fit:cover; border:3px solid #0369a1; display:block; margin:6px auto 0;"><br><small>Nota. Registro de integrantes del equipo RuwaLabs.</small> </td>
         <td>Torres Juárez, Alisee Muriel</td>
         <td> U202624323 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software interesada en la creación de soluciones tecnológicas que simplifiquen y agilicen procesos. Destaco por mi resiliencia, perseverancia y alta capacidad de adaptabilidad ante nuevos desafíos. </td>
     </tr>
 </table>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 
 <!-- pdf-pagebreak -->
@@ -538,13 +566,27 @@ La aplicación lleva por nombre **"SaludYa"**. El propósito de la aplicación s
 
 Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud.
 
+
+
+La [Figura 9](#figura-9) muestra identidad visual de SaludYa.
+
+<a id="figura-9"></a>
+
+**Figura 9**
+
+*Identidad visual de SaludYa*
+
 <p align="center">
   <img
     src="https://i.imgur.com/7aTgCkT.jpeg"
-    alt="Icono de SaludYa"
+    alt="Identidad visual de SaludYa"
     width="500"
   />
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -660,13 +702,27 @@ El **diagrama de Ishikawa**, también conocido como diagrama de espina de pescad
 
 Este análisis estructurado facilita la comprensión integral del problema y orienta el desarrollo de soluciones específicas para cada categoría de causas identificadas.
 
+
+
+La [Figura 10](#figura-10) muestra diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas.
+
+<a id="figura-10"></a>
+
+**Figura 10**
+
+*Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas*
+
 <p align="center">
   <img
     src="https://i.imgur.com/V84h3fK.jpeg"
-    alt="Diagrama de Ishikawa"
+    alt="Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas"
     width="700"
   />
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El diagrama identifica **seis categorías principales de causas** que contribuyen al problema:
 
@@ -753,7 +809,21 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visualizar de manera estructurada los elementos clave del proyecto SaludYa. Este canvas facilita la comprensión integral del problema de negocio, las soluciones propuestas, los usuarios objetivo y los resultados esperados, proporcionando una base sólida para el desarrollo ágil del producto.
 
 <p align="center">
-  <img src="https://i.imgur.com/ESmSAsu.jpeg" alt="lean_ux_canvas"/>
+
+
+La [Figura 11](#figura-11) muestra lean UX Canvas de SaludYa.
+
+<a id="figura-11"></a>
+
+**Figura 11**
+
+*Lean UX Canvas de SaludYa*
+
+<img src="https://i.imgur.com/ESmSAsu.jpeg" alt="Lean UX Canvas de SaludYa"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
   <p align="center" style="text-align:center">Lean Ux Canvas</p>
 </p>
 
