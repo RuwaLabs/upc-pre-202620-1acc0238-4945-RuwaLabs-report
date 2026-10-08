@@ -2858,298 +2858,51 @@ En conjunto, los flujos evidencian que la **cola por pedido de cita** se gestion
 
 #### 2.5.1.3. Bounded Context Canvases
 
-Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo versión 5 propuesto por el Domain Driven Design Group.
-En cada uno de los canvases registramos las secciones específicas como el Context Overview Definition, Business Rules Distillation y el Ubiquitous Language, identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos.
+Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo **versión 5** propuesto por el Domain Driven Design Group, que permite documentar cada contexto desde una perspectiva estratégica y táctica, cubriendo el propósito, la clasificación estratégica, las comunicaciones de entrada y salida, el lenguaje ubicuo, las decisiones de negocio, los supuestos, las métricas de verificación y las preguntas abiertas.
 
-## Bounded Context Canvas – Identity & Access Management
+En cada uno de los canvases registramos las secciones específicas como el **Context Overview Definition**, **Business Rules Distillation** y el **Ubiquitous Language**, identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos. El resultado se presenta a continuación para cada uno de los cinco bounded contexts identificados en la sección 2.5.1.1.
 
-**Context Overview Definition**
+**Bounded Context Canvas – Identity & Access Management**
 
-Se encarga del registro, autenticación, vinculación de menores y gestión de roles de los usuarios en la aplicación SaludYa. Permite validar la identidad de los pacientes y el personal administrativo antes de acceder a los módulos principales del sistema.
+El bounded context **Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Se clasifica como *Generic* con rol *Execution Context*, e interactúa principalmente con `Patient`, `Super Admin` y el servicio externo **ApiPeru.dev** (Anticorruption Layer hacia RENIEC) para la validación de identidad.
 
-**Capability Analysis**
-
-- Registro de nuevos pacientes con verificación de DNI.
-- Inicio y cierre de sesión por rol.
-- Recuperación de contraseña.
-- Edición de perfil de usuario.
-- Vinculación de menores de edad a la cuenta del titular.
-- Alta de personal administrativo por parte del Super Admin.
-
-**Capability Layering**
-
-- Capa de presentación: Pantallas móviles de registro, login y perfil.
-- Capa de dominio: Lógica de autenticación, validación de identidad y gestión de roles.
-- Capa de infraestructura: Integración con la API externa de RENIEC y con el servicio de autenticación JWT.
-
-**Dependencies Capture**
-
-Depende del servicio externo de RENIEC para la validación de identidad y del sistema de notificaciones para confirmar el registro, la recuperación de contraseña y la vinculación de menores.
-
-**Design Critique**
-
-El contexto está bien delimitado y desacoplado del resto de bounded contexts. Solo maneja autenticación e identidad, sin interferir en la lógica de reservas o atención. La integración con RENIEC y la gestión de roles por tipo de usuario son sus principales fortalezas, como se detalla en la [Tabla 30](#tabla-30).
-
-
-
-
-
-<a id="tabla-30"></a>
-
-**Tabla 30**
-
-*Bounded Context Canvas – Identity & Access Management*
-
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Name** | Identity & Access Management |
-| **Purpose** | Se encarga del registro, autenticación, vinculación de menores y gestión de roles de los usuarios en la aplicación SaludYa. Permite validar la identidad de los pacientes y el personal administrativo antes de acceder a los módulos principales del sistema. |
-| **Strategic Classification** | **Domain:** Generic · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
-| **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** RENIEC API · **Messages:** Validación de identidad por DNI <br> **Collaborator:** Patient · **Messages:** Solicitud de registro y login <br> **Collaborator:** Super Admin · **Messages:** Alta de personal administrativo |
-| **Outbound Communication** | **Messages:** Usuario autenticado · **Collaborator:** Appointments & Booking, Arrival & QR Check-in <br> **Messages:** Cuenta creada · **Collaborator:** Patient <br> **Messages:** Menor vinculado · **Collaborator:** Appointments & Booking <br> **Messages:** Sesión iniciada · **Collaborator:** Patient |
-| **Ubiquitous Language** | **Cuenta:** Perfil verificado de un usuario en el sistema. <br> **Rol:** Tipo de usuario: Patient, Admission Staff o Super Admin. <br> **Menor vinculado:** Paciente menor de edad asociado a la cuenta de un adulto responsable. <br> **Verificación de identidad:** Validación de los datos del usuario contra el servicio externo de RENIEC. <br> **Sesión:** Periodo de acceso autenticado a la aplicación. |
-| **Business Decisions** | Toda cuenta debe estar verificada con un DNI válido antes de permitir el acceso. <br> Un menor solo puede ser vinculado a un adulto responsable registrado. <br> Las credenciales se manejan con tokens JWT con expiración controlada. <br> El correo registrado debe ser único en el sistema. |
-| **Assumptions** | Los usuarios cuentan con un DNI válido y vigente. <br> El servicio externo de RENIEC está disponible para la validación. |
-| **Verification Metrics** | Tasa de registro exitoso de nuevos pacientes. <br> Porcentaje de cuentas verificadas correctamente por DNI. <br> Tiempo promedio de autenticación. |
-| **Open Questions** | ¿Se implementará autenticación biométrica en futuras versiones? <br> ¿Cómo se gestionará la recuperación de cuenta en caso de pérdida del correo? |
-
+![Bounded Context Canvas – Identity & Access Management](assets/bounded-context-canvas-01-iam.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+**Bounded Context Canvas – Appointments & Booking**
 
-## Bounded Context Canvas – Appointments & Booking
+El bounded context **Appointments & Booking** gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Se clasifica como *Core* con rol *Execution Context*, e incorpora el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva consumida por `Reassignment`.
 
-**Context Overview Definition**
-
-Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva.
-
-**Capability Analysis**
-
-- Consulta de disponibilidad en tiempo real.
-- Reserva de citas para el titular o para un menor vinculado.
-- Asignación de `bookingOrder` a cada cita reservada.
-- Cancelación de citas dentro del plazo permitido.
-- Notificación de confirmación de reserva.
-- Gestión del historial de citas.
-
-**Capability Layering**
-
-- Capa de presentación: Pantallas de búsqueda, reserva e historial de citas.
-- Capa de dominio: Lógica de asignación de cupos, asignación de `bookingOrder`, validación de solapamientos y cancelaciones.
-- Capa de infraestructura: Integración con la base de datos de agendas y con el sistema de notificaciones.
-
-**Dependencies Capture**
-
-Depende de Identity & Access Management para validar la sesión del usuario, de Hospital Operations & Configuration para conocer los parámetros operativos, y del sistema de notificaciones para confirmar reservas y cancelaciones.
-
-**Design Critique**
-
-El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. La incorporación del `bookingOrder` como atributo le permite alimentar al contexto `Reassignment` con un criterio de prioridad objetivo y trazable. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios, como se detalla en la [Tabla 31](#tabla-31).
-
-
-
-
-
-<a id="tabla-31"></a>
-
-**Tabla 31**
-
-*Bounded Context Canvas – Appointments & Booking*
-
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Name** | Appointments & Booking |
-| **Purpose** | Gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas en establecimientos públicos de salud. Permite a los pacientes reservar citas para sí mismos o para menores a cargo, respetando los parámetros operativos configurados por cada establecimiento. Incluye el atributo `Booking Order`. |
-| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
-| **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Patient · **Messages:** Búsqueda de disponibilidad y reserva <br> **Collaborator:** Hospital Operations & Configuration · **Messages:** Parámetros operativos |
-| **Outbound Communication** | **Messages:** Cita reservada (con `bookingOrder`) · **Collaborator:** Patient, Reassignment <br> **Messages:** Cita cancelada · **Collaborator:** Reassignment <br> **Messages:** Notificación enviada · **Collaborator:** Patient <br> **Messages:** Cupo verificado · **Collaborator:** Patient |
-| **Ubiquitous Language** | **Time Slot:** Intervalo de tiempo asignado a una especialidad para la atención de un único paciente. <br> **Booking / Appointment:** Reserva de un cupo médico realizada por el paciente. <br> **Booking Order:** Número secuencial que representa el orden en que se solicitó una cita. Determina la prioridad en la cola de reserva. <br> **Specialty Catalog:** Catálogo de servicios médicos publicados por el establecimiento. <br> **Quota Available:** Cupos disponibles en un intervalo de tiempo. <br> **Tolerancia de cancelación:** Tiempo mínimo antes de la cita en el que se permite cancelar. |
-| **Business Decisions** | Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento. <br> No se permite reservar dos citas en el mismo intervalo de tiempo para el mismo paciente. <br> Las cancelaciones solo se permiten dentro del plazo configurado por el hospital. <br> Un menor solo puede tener una cita activa en el mismo intervalo. <br> La confirmación de reserva se envía al correo del titular, incluso si la cita es para un menor. |
-| **Assumptions** | Los establecimientos publican su catálogo de especialidades y cupos en el sistema. <br> El paciente cuenta con un dispositivo con acceso a internet para reservar. |
-| **Verification Metrics** | Número de citas reservadas por día. <br> Tasa de cancelación dentro del plazo permitido. <br> Porcentaje de reservas realizadas sin asistencia técnica. |
-| **Open Questions** | ¿Se permitirá reprogramación automática de citas en futuras versiones? <br> ¿Cómo se gestionará la sobreventa de cupos en caso de error del sistema? |
-
+![Bounded Context Canvas – Appointments & Booking](assets/bounded-context-canvas-02-appointments.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+**Bounded Context Canvas – Reassignment**
 
-## Bounded Context Canvas – Reassignment
+El bounded context **Reassignment** gestiona la cola de reserva del sistema y reasigna los cupos liberados por **ausencias**, notificando oportunidades de adelanto a los pacientes. Se clasifica como *Core* con rol *Execution Context*, y aplica una **cadena de reasignación** en la que el candidato que acepta libera su slot original, el cual se re-ofrece al siguiente paciente de la cola.
 
-**Context Overview Definition**
-
-Gestiona la cola de reserva del sistema y reasigna los cupos liberados por **ausencias**, notificando oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`, es decir, al paciente que reservó primero. El candidato dispone de una **ventana única** (`reassignmentResponseTimeoutMin`) para aceptar y presentarse. Si acepta, su slot original se libera y se re-ofrece al siguiente de la cola, formando una **cadena de reasignación**. Si nadie acepta, el cupo se cierra.
-
-**Capability Analysis**
-
-- Registro de pacientes en cola de reserva por especialidad.
-- Detección de cupos liberados por ausencia.
-- Envío de propuestas de adelanto al paciente con menor `bookingOrder`.
-- Reasignación automática de cupos aceptados.
-- Gestión de expiración de propuestas no respondidas.
-- Avance de la cadena de reasignación al liberar el slot original del candidato que acepta.
-
-**Capability Layering**
-
-- Capa de presentación: Notificaciones push y en pantalla dentro de la app móvil.
-- Capa de dominio: Lógica de priorización por `bookingOrder`, temporización y asignación de cupos.
-- Capa de infraestructura: Integración con el sistema de notificaciones y con la agenda médica.
-
-**Dependencies Capture**
-
-Depende de Arrival & QR Check-in para recibir el evento de ausencia, de Appointments & Booking (vía ACL) para consultar la cola de reserva por `bookingOrder` y mover las citas reasignadas, de Hospital Operations & Configuration (vía ACL) para la ventana única, y del sistema de notificaciones para enviar las propuestas a los pacientes.
-
-**Design Critique**
-
-El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. El uso del `bookingOrder` como criterio de prioridad le otorga objetividad y trazabilidad al proceso. La gestión de la ventana única por tiempo, el control de respuestas concurrentes y el avance de la cadena de reasignación son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones, como se detalla en la [Tabla 32](#tabla-32).
-
-
-
-
-
-<a id="tabla-32"></a>
-
-**Tabla 32**
-
-*Bounded Context Canvas – Reassignment*
-
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Name** | Reassignment |
-| **Purpose** | Gestiona la cola de reserva del sistema y reasigna los cupos liberados por ausencias, notificando oportunidades de adelanto a los pacientes de la cola de reserva. La reasignación se ofrece por orden de `bookingOrder`. El candidato dispone de una ventana única (`reassignmentResponseTimeoutMin`) para aceptar y presentarse. Al aceptar, su slot original se libera y se re-ofrece al siguiente, formando una cadena de reasignación. Si nadie acepta, el cupo se cierra. |
-| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
-| **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** Arrival & QR Check-in · **Messages:** PatientAbsentEvent <br> **Collaborator:** Patient · **Messages:** Aceptación o rechazo de propuesta |
-| **Outbound Communication** | **Messages:** ReassignmentOfferSent · **Collaborator:** Patient en cola de reserva <br> **Messages:** ReassignmentOfferAccepted · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** ReassignmentOfferRejected · **Collaborator:** Patient <br> **Messages:** ReassignmentOfferExpired · **Collaborator:** Patient <br> **Messages:** ReassignmentOfferAttended · **Collaborator:** Appointments & Booking <br> **Messages:** ReassignmentOfferNoShow · **Collaborator:** Appointments & Booking |
-| **Ubiquitous Language** | **Reassignment:** Mecanismo automatizado que gestiona las solicitudes en cola. <br> **Reassignment Offer:** Entrada en la cola de reserva, ordenada por `bookingOrder`. <br> **Reassignment Chain:** Cadena de reasignación: al aceptar, se libera el slot original del candidato y se re-ofrece al siguiente. <br> **Reassignment Response Timeout:** Ventana única para aceptar y presentarse en el cupo liberado. <br> **Propuesta de adelanto:** Oferta de un cupo liberado enviada a un paciente de la cola de reserva. <br> **Cupo liberado:** Turno disponible tras una ausencia. <br> **Reasignación:** Acción de asignar el cupo liberado a otro paciente. |
-| **Business Decisions** | La reasignación se ofrece por orden de `bookingOrder`, no por hora de solicitud. <br> La reasignación solo se dispara por ausencia presencial, no por cancelación. <br> Toda propuesta expira automáticamente tras la ventana única `reassignmentResponseTimeoutMin` (aceptar y presentarse). <br> Si dos pacientes aceptan el mismo cupo, se asigna al primero que respondió. <br> El paciente que rechaza una propuesta conserva su cita original. <br> Si el candidato acepta, su slot original se libera y se re-ofrece al siguiente (cadena). <br> Si el candidato acepta y no llega dentro de la ventana, se declara ausente y pierde su cita del día en esa especialidad. <br> Si nadie en la cola de reserva acepta, el cupo se cierra. |
-| **Assumptions** | Los pacientes en cola de reserva tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
-| **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Tasa de no-shows de candidatos que aceptaron y no llegaron. |
-| **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
-
+![Bounded Context Canvas – Reassignment](assets/bounded-context-canvas-03-reassignment.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+**Bounded Context Canvas – Arrival & QR Check-in**
 
-## Bounded Context Canvas – Arrival & QR Check-in
+El bounded context **Arrival & QR Check-in** valida la presencia presencial del paciente mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital y declara la ausencia del paciente cuando excede la tolerancia configurada. Se clasifica como *Core* con rol *Execution Context*.
 
-**Context Overview Definition**
-
-Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. La `Attendance Queue` es un agregado interno de este contexto, no un bounded context independiente.
-
-**Capability Analysis**
-
-- Validación del código QR al llegar al establecimiento.
-- Verificación de la ventana de tolerancia.
-- Creación de un `Queue Entry` en la `Attendance Queue` del `Time Slot`.
-- Cálculo de la posición del paciente según su `checkInTimestamp`.
-- Emisión del ticket digital con posición en la cola.
-- Actualización de la cola de atención.
-- Declaración de ausencia por vencimiento de tolerancia.
-
-**Capability Layering**
-
-- Capa de presentación: Pantalla de check-in, visualización del ticket digital y consulta de posición en la cola.
-- Capa de dominio: Lógica de validación temporal, cálculo de posición, declaración de ausencia y control de tolerancia.
-- Capa de infraestructura: Integración con el lector de códigos QR y con el servicio de generación de tickets.
-
-**Dependencies Capture**
-
-Depende de Identity & Access Management para validar la sesión del paciente, de Appointments & Booking para verificar la existencia de la cita, y del sistema de notificaciones para informar al paciente sobre el estado de su atención.
-
-**Design Critique**
-
-El contexto tiene un alcance claro y su flujo principal (validar → crear Queue Entry → calcular posición → emitir ticket → actualizar cola) es sencillo y bien delimitado. La `Attendance Queue` se modela como agregado interno, evitando la creación innecesaria de un bounded context. Su principal desafío es la precisión del control de tolerancia y la integración con dispositivos sin smartphone. El diseño permite agregar mecanismos alternativos de check-in (reconocimiento facial, código de barras) en el futuro, como se detalla en la [Tabla 33](#tabla-33).
-
-
-
-
-
-<a id="tabla-33"></a>
-
-**Tabla 33**
-
-*Bounded Context Canvas – Arrival & QR Check-in*
-
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Name** | Arrival & QR Check-in |
-| **Purpose** | Valida la presencia presencial del paciente en el establecimiento de salud mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital de atención y declara la ausencia del paciente cuando excede el tiempo de tolerancia configurado. |
-| **Strategic Classification** | **Domain:** Core · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
-| **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado <br> **Collaborator:** Appointments & Booking · **Messages:** Cita reservada <br> **Collaborator:** Patient · **Messages:** Escaneo de código QR <br> **Collaborator:** Admission Staff · **Messages:** Llamado a consultorio |
-| **Outbound Communication** | **Messages:** CheckInCompleted (incluye `attendanceQueueId` y `position`) · **Collaborator:** Appointments & Booking, Patient <br> **Messages:** Ticket emitido · **Collaborator:** Patient <br> **Messages:** Paciente ausente · **Collaborator:** Reassignment <br> **Messages:** Cola de atención · **Collaborator:** Admission Staff |
-| **Ubiquitous Language** | **Check-in:** Validación de asistencia presencial mediante código QR. <br> **Ventana de tolerancia:** Intervalo de tiempo configurado para permitir el check-in. <br> **Attendance Queue:** Cola virtual dentro de un `Time Slot` que ordena a los pacientes según su timestamp de check-in. <br> **Queue Entry:** Entrada individual en la cola de asistencia. Contiene `appointmentId`, `checkInTimestamp`, `position`, `status`. <br> **Ticket digital:** Comprobante con identificador de llamado, posición en la cola y datos de atención. <br> **Cola de atención:** Lista ordenada de pacientes presentes en el establecimiento. <br> **Ausencia:** Estado del paciente que no se presentó dentro de la tolerancia. |
-| **Business Decisions** | El check-in solo es válido dentro de la ventana de tolerancia configurada por el hospital. <br> La cola de asistencia se ordena por `checkInTimestamp`. <br> Un paciente no puede tener dos `QueueEntry` activas en la misma `AttendanceQueue`. <br> Si un paciente es marcado como `Absent`, su posición se elimina y los demás se reordenan. <br> Un paciente que excede la tolerancia es declarado ausente automáticamente. <br> El ticket digital solo se emite si el check-in fue confirmado y muestra la posición en la cola de asistencia. |
-| **Assumptions** | El establecimiento cuenta con códigos QR visibles en la recepción. <br> El paciente porta un dispositivo móvil con la aplicación instalada. |
-| **Verification Metrics** | Porcentaje de check-ins exitosos dentro de la tolerancia. <br> Tasa de ausencias registradas por día. <br> Tiempo promedio entre check-in y llamado a consultorio. |
-| **Open Questions** | ¿Se implementará check-in mediante reconocimiento facial? <br> ¿Cómo se gestionará el check-in de pacientes sin smartphone? |
-
+![Bounded Context Canvas – Arrival & QR Check-in](assets/bounded-context-canvas-04-arrival.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+**Bounded Context Canvas – Hospital Operations & Configuration**
 
-## Bounded Context Canvas – Hospital Operations & Configuration
+El bounded context **Hospital Operations & Configuration** configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda. Se clasifica como *Supporting* con rol *Execution Context*.
 
-**Context Overview Definition**
-
-Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios.
-
-**Capability Analysis**
-
-- Configuración de intervalos y fraccionamientos de atención.
-- Definición de ventanas de tolerancia para check-in.
-- Configuración de plazos y márgenes operativos (cancelación, reserva, adelanto).
-- Configuración de `reassignmentResponseTimeoutMin`.
-- Configuración de `maxCapacityPerSlot`.
-- Generación de reportes operativos.
-- Visualización de dashboards de ocupación y ausentismo.
-- Aplicación de nuevas reglas a bloques y turnos futuros.
-
-**Capability Layering**
-
-- Capa de presentación: Panel de configuración y dashboard operativo.
-- Capa de dominio: Lógica de validación de parámetros y aplicación de reglas operativas.
-- Capa de infraestructura: Integración con la base de datos de configuración y con el motor de reportes.
-
-**Dependencies Capture**
-
-Depende de Identity & Access Management para autorizar al Super Admin, y recibe datos desde Appointments & Booking y Arrival & QR Check-in para alimentar los dashboards y reportes.
-
-**Design Critique**
-
-El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `reassignmentResponseTimeoutMin` le permite controlar el comportamiento de la cola de reserva sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
-
-
-
-
-
-<a id="tabla-34"></a>
-
-**Tabla 34**
-
-*Bounded Context Canvas – Hospital Operations & Configuration*
-
-| **Sección** | **Contenido** |
-| :--- | :--- |
-| **Name** | Hospital Operations & Configuration |
-| **Purpose** | Configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. |
-| **Strategic Classification** | **Domain:** Supporting · **Business Model:** Engagement Creator · **Evolution:** Product · **Role Type:** Execution Context |
-| **Domain Roles** | Execution Context |
-| **Inbound Communication** | **Collaborator:** Identity & Access Management · **Messages:** Usuario autenticado (Super Admin) <br> **Collaborator:** Arrival & QR Check-in · **Messages:** Datos de atención y ausencias <br> **Collaborator:** Appointments & Booking · **Messages:** Datos de reservas y cancelaciones |
-| **Outbound Communication** | **Messages:** Reglas actualizadas (incluye `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) · **Collaborator:** Appointments & Booking, Arrival & QR Check-in, Reassignment <br> **Messages:** Reporte generado · **Collaborator:** Super Admin <br> **Messages:** Dashboard operativo · **Collaborator:** Super Admin |
-| **Ubiquitous Language** | **Intervalo de atención:** Bloque de tiempo asignado a cada paciente en la agenda médica. <br> **Ventana de tolerancia:** Tiempo máximo permitido para que un paciente realice check-in. <br> **Regla operativa:** Parámetro configurable del establecimiento (horarios, cupos, plazos). <br> **reassignmentResponseTimeoutMin:** Ventana única para que el candidato acepte y se presente en el cupo liberado. <br> **maxCapacityPerSlot:** Número máximo de pacientes por `Time Slot`. <br> **Dashboard operativo:** Panel con indicadores clave de la operación diaria. <br> **Reporte:** Documento exportable con métricas de atención, ausentismo y demanda. |
-| **Business Decisions** | Los cambios de configuración solo aplican a los nuevos bloques, no afectan citas ya confirmadas. <br> Los parámetros inválidos o inconsistentes son rechazados por el sistema. <br> Solo el Super Admin puede modificar las reglas operativas del establecimiento. <br> Los reportes se generan con datos anonimizados. |
-| **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
-| **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
-| **Open Questions** | ¿Se implementará un módulo de analítica predictiva en futuras versiones? <br> ¿Cómo se integrará el dashboard con los sistemas HIS existentes? |
-
+![Bounded Context Canvas – Hospital Operations & Configuration](assets/bounded-context-canvas-05-hospital-ops.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
-Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la cola por pedido de cita como atributo (`Booking Order`) dentro de `Appointments & Booking`, y la cola de asistencia como agregado (`Attendance Queue`) dentro de `Arrival & QR Check-in`, como se detalla en la [Tabla 34](#tabla-34).
+Los canvases presentados permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la **cola por pedido de cita** como atributo (`Booking Order`) dentro de `Appointments & Booking`, y la **cola de asistencia** como agregado (`Attendance Queue`) dentro de `Arrival & QR Check-in`. Esta separación permite que cada contexto mantenga su propio lenguaje ubicuo y sus reglas de negocio sin acoplarse innecesariamente al resto del sistema.
 
 
 ### 2.5.2. Context Mapping
