@@ -5613,6 +5613,16 @@ Las decisiones aquí documentadas se sustentan en los principios de diseño incl
 
 La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
+
+
+La [Tabla 96](#tabla-96) detalla branding.
+
+<a id="tabla-96"></a>
+
+**Tabla 96**
+
+*Branding*
+
 | Elemento | Descripción |
 |:---|:---|
 | Nombre | SaludYa |
@@ -5624,6 +5634,10 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 | Público objetivo | Pacientes de zonas urbanas periféricas y personal asistencial/administrativo de establecimientos públicos de salud |
 | Valores de marca | Accesibilidad, transparencia, colaboración e impacto social |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page.
 
 #### Typography
@@ -5631,6 +5645,16 @@ El logotipo se utiliza en el header y footer del Landing Page, así como en las 
 La tipografía seleccionada prioriza la legibilidad en pantallas de distintos tamaños y en contextos de baja iluminación, frecuentes en establecimientos de salud.
 
 ##### Landing Page (web)
+
+
+
+La [Tabla 97](#tabla-97) detalla typography — Landing Page (web).
+
+<a id="tabla-97"></a>
+
+**Tabla 97**
+
+*Typography — Landing Page (web)*
 
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
@@ -5643,9 +5667,23 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 | Interlineado | — | 1.6 | — | Cuerpo de texto |
 | Interlineado títulos | — | 1.25 | — | Encabezados |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page.
 
 ##### Aplicaciones móviles (Android)
+
+
+
+La [Tabla 98](#tabla-98) detalla typography — Aplicaciones móviles (Android).
+
+<a id="tabla-98"></a>
+
+**Tabla 98**
+
+*Typography — Aplicaciones móviles (Android)*
 
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
@@ -5654,6 +5692,10 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 | Body Bold Large | Inter | 18sp / 150% (27sp) | 600 | Cuerpo destacado, títulos de tarjeta |
 | Body Extra Small | Inter | 12sp / 150% (18sp) | 400 | Texto secundario, captions |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android.
 
 #### Colors
@@ -5661,6 +5703,16 @@ En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing
 La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
 
 ##### Landing Page (web)
+
+
+
+La [Tabla 99](#tabla-99) detalla colors — Landing Page (web).
+
+<a id="tabla-99"></a>
+
+**Tabla 99**
+
+*Colors — Landing Page (web)*
 
 | Color | Código HEX | Uso principal |
 |:---|:---|:---|
@@ -5677,7 +5729,21 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 | Blanco | `#ffffff` | Texto sobre fondos oscuros |
 | Footer | `#0d2722` | Fondo del pie de página |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ##### Aplicaciones móviles (Android)
+
+
+
+La [Tabla 100](#tabla-100) detalla colors — Aplicaciones móviles (Android).
+
+<a id="tabla-100"></a>
+
+**Tabla 100**
+
+*Colors — Aplicaciones móviles (Android)*
 
 | Token | Código HEX | Uso principal |
 |:---|:---|:---|
@@ -5693,6 +5759,10 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 | Negro | `#000000` | Texto en superficies claras |
 | Gris claro | `#D9D9D9` | Placeholders, elementos deshabilitados |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo.
 
 #### Spacing
@@ -5700,6 +5770,16 @@ Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG A
 ##### Landing Page (web)
 
 Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page.
+
+
+
+La [Tabla 101](#tabla-101) detalla spacing — Landing Page (web).
+
+<a id="tabla-101"></a>
+
+**Tabla 101**
+
+*Spacing — Landing Page (web)*
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -5710,7 +5790,21 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 | `--space-5` | 1.5rem | Separación entre bloques |
 | `--space-6` | 2rem | Separación entre secciones |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ##### Aplicaciones móviles (Android)
+
+
+
+La [Tabla 102](#tabla-102) detalla spacing — Aplicaciones móviles (Android).
+
+<a id="tabla-102"></a>
+
+**Tabla 102**
+
+*Spacing — Aplicaciones móviles (Android)*
 
 | Token | Valor | Uso |
 |:---|:---|:---|
@@ -5721,11 +5815,25 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 | `--space-5` | 28dp | Padding horizontal de secciones |
 | `--space-6` | 45dp | Separación entre bloques principales |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles.
 
 #### Border Radius
 
 ##### Landing Page (web)
+
+
+
+La [Tabla 103](#tabla-103) detalla border Radius — Landing Page (web).
+
+<a id="tabla-103"></a>
+
+**Tabla 103**
+
+*Border Radius — Landing Page (web)*
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -5733,12 +5841,30 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 | `--radius-md` | 12px | Botones, tarjetas |
 | `--radius-lg` | 20px | Contenedores destacados, hero |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ##### Aplicaciones móviles (Android)
+
+
+
+La [Tabla 104](#tabla-104) detalla border Radius — Aplicaciones móviles (Android).
+
+<a id="tabla-104"></a>
+
+**Tabla 104**
+
+*Border Radius — Aplicaciones móviles (Android)*
 
 | Token | Valor | Uso |
 |:---|:---|:---|
 | `--radius-sm` | 12dp | Cards superiores (radio superior únicamente) |
 | `--radius-md` | 12dp | Botones y contenedores estándar |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla.
 
@@ -5746,11 +5872,25 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 
 ##### Landing Page (web)
 
+
+
+La [Tabla 105](#tabla-105) detalla shadows — Landing Page (web).
+
+<a id="tabla-105"></a>
+
+**Tabla 105**
+
+*Shadows — Landing Page (web)*
+
 | Variable | Valor | Uso |
 |:---|:---|:---|
 | `--shadow-sm` | `0 1px 3px rgba(0, 0, 0, 0.08)` | Tarjetas en reposo |
 | `--shadow-md` | `0 6px 18px rgba(11, 143, 107, 0.12)` | Tarjetas en hover, menú móvil |
 | `--shadow-lg` | `0 12px 32px rgba(11, 143, 107, 0.18)` | Hero, elementos destacados |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ##### Aplicaciones móviles (Android)
 
@@ -5761,6 +5901,16 @@ Las aplicaciones móviles **no emplean sombras** en su diseño actual. La jerarq
 
 El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
+
+
+La [Tabla 106](#tabla-106) detalla tone of Voice.
+
+<a id="tabla-106"></a>
+
+**Tabla 106**
+
+*Tone of Voice*
+
 | Dimensión | Elección | Justificación |
 |:---|:---|:---|
 | Divertido / Serio | Serio con toques cercanos | El contexto de salud requiere credibilidad, pero se busca cercanía con el paciente |
@@ -5768,11 +5918,25 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 | Respetuoso / Irreverente | Respetuoso | Se aborda un tema sensible como la salud pública |
 | Entusiasta / Sereno | Sereno | Se transmite confianza y estabilidad, evitando promesas exageradas |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo.
 
 #### Iconography
 
 Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles:
+
+
+
+La [Tabla 107](#tabla-107) detalla iconography.
+
+<a id="tabla-107"></a>
+
+**Tabla 107**
+
+*Iconography*
 
 | Icono | Uso |
 |:---|:---|
@@ -5783,6 +5947,10 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 | `fa-shield-halved` | Valor de transparencia |
 | `fa-handshake` | Valor de colaboración |
 | `fa-heart-pulse` | Valor de impacto social |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Design System de referencia
 
@@ -5800,6 +5968,16 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 #### Landing Page
 
+
+
+La [Tabla 108](#tabla-108) detalla organization Systems — Landing Page.
+
+<a id="tabla-108"></a>
+
+**Tabla 108**
+
+*Organization Systems — Landing Page*
+
 | Sección | Sistema de organización | Justificación |
 |:---|:---|:---|
 | Header | Jerárquico + matricial | Menú horizontal con enlaces principales y selector de idioma; organización matricial por categorías de contenido |
@@ -5813,7 +5991,21 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Descarga | Jerárquico | Botones de tiendas como acción principal |
 | Footer | Jerárquico | Cuatro columnas organizadas por categoría (marca, enlaces, proyecto, contacto) |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 109](#tabla-109) detalla organization Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-109"></a>
+
+**Tabla 109**
+
+*Organization Systems — Aplicación móvil para pacientes*
 
 | Sección | Sistema de organización | Justificación |
 |:---|:---|:---|
@@ -5824,7 +6016,21 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Familiares a cargo | Alfabético | Orden por nombre del familiar |
 | Perfil | Jerárquico | Datos personales, notificaciones y configuración |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 110](#tabla-110) detalla organization Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-110"></a>
+
+**Tabla 110**
+
+*Organization Systems — Aplicación móvil para personal de salud*
 
 | Sección | Sistema de organización | Justificación |
 |:---|:---|:---|
@@ -5834,6 +6040,10 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Cancelaciones e inasistencias | Cronológico | Orden por fecha del evento |
 | Pacientes | Alfabético | Orden por apellido |
 | Reportes | Jerárquico | Acceso a métricas y exportación |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Esquemas de categorización aplicados
 
@@ -5849,6 +6059,16 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 #### Landing Page
 
+
+
+La [Tabla 111](#tabla-111) detalla labelling Systems — Landing Page.
+
+<a id="tabla-111"></a>
+
+**Tabla 111**
+
+*Labelling Systems — Landing Page*
+
 | Etiqueta | Representa |
 |:---|:---|
 | Producto | Sección con el problema y la solución |
@@ -5858,7 +6078,21 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Descargar app | CTA principal hacia las tiendas |
 | ES / EN | Selector de idioma |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 112](#tabla-112) detalla labelling Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-112"></a>
+
+**Tabla 112**
+
+*Labelling Systems — Aplicación móvil para pacientes*
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -5869,7 +6103,21 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Familiares | Gestión de dependientes |
 | Perfil | Datos personales y configuración |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 113](#tabla-113) detalla labelling Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-113"></a>
+
+**Tabla 113**
+
+*Labelling Systems — Aplicación móvil para personal de salud*
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -5879,6 +6127,10 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Cancelaciones | Registro de cancelaciones e inasistencias |
 | Pacientes | Búsqueda y consulta de pacientes |
 | Reportes | Métricas y exportación |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Asociaciones entre etiquetas
 
@@ -5892,6 +6144,16 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú.
 
 #### Landing Page
+
+
+
+La [Tabla 114](#tabla-114) detalla sEO Tags and Meta Tags — Landing Page.
+
+<a id="tabla-114"></a>
+
+**Tabla 114**
+
+*SEO Tags and Meta Tags — Landing Page*
 
 | Tag | Valor |
 |:---|:---|
@@ -5910,7 +6172,21 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 | Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
 | Twitter Image | `assets/img/icon-saludya.png` |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### ASO (App Store Optimization)
+
+
+
+La [Tabla 115](#tabla-115) detalla sEO Tags and Meta Tags — ASO (App Store Optimization).
+
+<a id="tabla-115"></a>
+
+**Tabla 115**
+
+*SEO Tags and Meta Tags — ASO (App Store Optimization)*
 
 | Elemento | App pacientes | App personal de salud |
 |:---|:---|:---|
@@ -5919,11 +6195,25 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 | App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
 | App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ### 3.1.2.4. Searching Systems
 
 Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros y resultados consistentes.
 
 #### Landing Page
+
+
+
+La [Tabla 116](#tabla-116) detalla searching Systems — Landing Page.
+
+<a id="tabla-116"></a>
+
+**Tabla 116**
+
+*Searching Systems — Landing Page*
 
 | Acción | Descripción |
 |:---|:---|
@@ -5931,7 +6221,21 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Selector de idioma | Búsqueda de contenido en ES o EN |
 | Scroll suave | Desplazamiento con compensación de altura del header |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 117](#tabla-117) detalla searching Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-117"></a>
+
+**Tabla 117**
+
+*Searching Systems — Aplicación móvil para pacientes*
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -5940,7 +6244,21 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Buscar cita | Fecha, especialidad, establecimiento | Lista de citas reservadas |
 | Buscar familiar | Nombre | Ficha del familiar a cargo |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 118](#tabla-118) detalla searching Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-118"></a>
+
+**Tabla 118**
+
+*Searching Systems — Aplicación móvil para personal de salud*
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -5948,6 +6266,10 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Buscar cita | Fecha, especialidad, estado | Lista de citas |
 | Buscar cancelación | Fecha, especialidad | Registro de cancelaciones |
 | Buscar cupo liberado | Fecha, especialidad | Lista de cupos disponibles |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Visualización de resultados
 
@@ -5959,6 +6281,16 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 #### Landing Page
 
+
+
+La [Tabla 119](#tabla-119) detalla navigation Systems — Landing Page.
+
+<a id="tabla-119"></a>
+
+**Tabla 119**
+
+*Navigation Systems — Landing Page*
+
 | Acción | Descripción |
 |:---|:---|
 | Navegación sticky | El header permanece visible al hacer scroll |
@@ -5968,7 +6300,21 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Enlace activo | Resaltado del enlace correspondiente a la sección visible |
 | Selector de idioma | Cambio dinámico ES/EN sin recargar la página |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 120](#tabla-120) detalla navigation Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-120"></a>
+
+**Tabla 120**
+
+*Navigation Systems — Aplicación móvil para pacientes*
 
 | Acción | Descripción |
 |:---|:---|
@@ -5977,7 +6323,21 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Notificaciones push | Avisos de cupos liberados y recordatorios |
 | Check-in por QR | Acceso rápido a la atención el día de la cita |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 121](#tabla-121) detalla navigation Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-121"></a>
+
+**Tabla 121**
+
+*Navigation Systems — Aplicación móvil para personal de salud*
 
 | Acción | Descripción |
 |:---|:---|
@@ -5985,6 +6345,10 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Filtros por fecha y especialidad | Segmentación del flujo de atención |
 | Actualización en tiempo real | Visualización del estado de cada paciente |
 | Reasignación de cupos | Acción directa sobre cupos liberados |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Recorrido del usuario
 
@@ -6001,6 +6365,16 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 #### Landing Page
 
+
+
+La [Tabla 122](#tabla-122) detalla organization Systems — Landing Page.
+
+<a id="tabla-122"></a>
+
+**Tabla 122**
+
+*Organization Systems — Landing Page*
+
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
 | Header | Jerárquico + matricial | Por tópicos | Menú horizontal con enlaces principales y selector de idioma; organización matricial por categorías de contenido |
@@ -6014,7 +6388,21 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Descarga | Jerárquico | Por tópicos | Botones de tiendas como acción principal |
 | Footer | Jerárquico | Por tópicos | Cuatro columnas organizadas por categoría (marca, enlaces, proyecto, contacto) |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 123](#tabla-123) detalla organization Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-123"></a>
+
+**Tabla 123**
+
+*Organization Systems — Aplicación móvil para pacientes*
 
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
@@ -6025,7 +6413,21 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Familiares a cargo | Jerárquico | Alfabético | Orden por nombre del familiar |
 | Perfil | Jerárquico | Por tópicos | Datos personales, notificaciones y configuración |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 124](#tabla-124) detalla organization Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-124"></a>
+
+**Tabla 124**
+
+*Organization Systems — Aplicación móvil para personal de salud*
 
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
@@ -6035,6 +6437,10 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 | Cancelaciones e inasistencias | Jerárquico | Cronológico | Orden por fecha del evento |
 | Pacientes | Jerárquico | Alfabético | Orden por apellido |
 | Reportes | Jerárquico | Cronológico | Acceso a métricas y exportación por fecha |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Esquemas de categorización aplicados
 
@@ -6052,6 +6458,16 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 #### Landing Page
 
+
+
+La [Tabla 125](#tabla-125) detalla labelling Systems — Landing Page.
+
+<a id="tabla-125"></a>
+
+**Tabla 125**
+
+*Labelling Systems — Landing Page*
+
 | Etiqueta | Representa |
 |:---|:---|
 | Producto | Sección con el problema y la solución |
@@ -6063,7 +6479,21 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Google Play | Botón de descarga para Android |
 | App Store | Botón de descarga para iOS |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 126](#tabla-126) detalla labelling Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-126"></a>
+
+**Tabla 126**
+
+*Labelling Systems — Aplicación móvil para pacientes*
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -6075,7 +6505,21 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Perfil | Datos personales y configuración |
 | Check-in QR | Acceso rápido el día de la cita |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 127](#tabla-127) detalla labelling Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-127"></a>
+
+**Tabla 127**
+
+*Labelling Systems — Aplicación móvil para personal de salud*
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -6086,6 +6530,10 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 | Pacientes | Búsqueda y consulta de pacientes |
 | Reportes | Métricas y exportación |
 | Reasignar cupo | Acción sobre cupos liberados |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Asociaciones entre etiquetas
 
@@ -6100,6 +6548,16 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú. Asimismo, se definen los elementos de ASO (App Store Optimization) para las aplicaciones móviles publicadas en Google Play y App Store.
 
 #### Landing Page
+
+
+
+La [Tabla 128](#tabla-128) detalla sEO Tags and Meta Tags — Landing Page.
+
+<a id="tabla-128"></a>
+
+**Tabla 128**
+
+*SEO Tags and Meta Tags — Landing Page*
 
 | Tag | Valor |
 |:---|:---|
@@ -6118,7 +6576,21 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 | Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
 | Twitter Image | `assets/img/icon-saludya.png` |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### ASO (App Store Optimization)
+
+
+
+La [Tabla 129](#tabla-129) detalla sEO Tags and Meta Tags — ASO (App Store Optimization).
+
+<a id="tabla-129"></a>
+
+**Tabla 129**
+
+*SEO Tags and Meta Tags — ASO (App Store Optimization)*
 
 | Elemento | App pacientes | App personal de salud |
 |:---|:---|:---|
@@ -6127,11 +6599,25 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 | App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
 | App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ### 3.1.2.4. Searching Systems
 
 Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros, resultados consistentes y opciones de acción directa sobre los elementos encontrados.
 
 #### Landing Page
+
+
+
+La [Tabla 130](#tabla-130) detalla searching Systems — Landing Page.
+
+<a id="tabla-130"></a>
+
+**Tabla 130**
+
+*Searching Systems — Landing Page*
 
 | Acción | Descripción |
 |:---|:---|
@@ -6139,7 +6625,21 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Selector de idioma | Búsqueda de contenido en ES o EN |
 | Scroll suave | Desplazamiento con compensación de altura del header |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 131](#tabla-131) detalla searching Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-131"></a>
+
+**Tabla 131**
+
+*Searching Systems — Aplicación móvil para pacientes*
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -6148,7 +6648,21 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Buscar cita | Fecha, especialidad, establecimiento | Lista de citas reservadas |
 | Buscar familiar | Nombre | Ficha del familiar a cargo |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 132](#tabla-132) detalla searching Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-132"></a>
+
+**Tabla 132**
+
+*Searching Systems — Aplicación móvil para personal de salud*
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -6156,6 +6670,10 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 | Buscar cita | Fecha, especialidad, estado | Lista de citas |
 | Buscar cancelación | Fecha, especialidad | Registro de cancelaciones |
 | Buscar cupo liberado | Fecha, especialidad | Lista de cupos disponibles |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Visualización de resultados
 
@@ -6167,6 +6685,16 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 #### Landing Page
 
+
+
+La [Tabla 133](#tabla-133) detalla navigation Systems — Landing Page.
+
+<a id="tabla-133"></a>
+
+**Tabla 133**
+
+*Navigation Systems — Landing Page*
+
 | Acción | Descripción |
 |:---|:---|
 | Navegación sticky | El header permanece visible al hacer scroll |
@@ -6176,7 +6704,21 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Enlace activo | Resaltado del enlace correspondiente a la sección visible |
 | Selector de idioma | Cambio dinámico ES/EN sin recargar la página |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para pacientes
+
+
+
+La [Tabla 134](#tabla-134) detalla navigation Systems — Aplicación móvil para pacientes.
+
+<a id="tabla-134"></a>
+
+**Tabla 134**
+
+*Navigation Systems — Aplicación móvil para pacientes*
 
 | Acción | Descripción |
 |:---|:---|
@@ -6185,7 +6727,21 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Notificaciones push | Avisos de cupos liberados y recordatorios |
 | Check-in por QR | Acceso rápido a la atención el día de la cita |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### Aplicación móvil para personal de salud
+
+
+
+La [Tabla 135](#tabla-135) detalla navigation Systems — Aplicación móvil para personal de salud.
+
+<a id="tabla-135"></a>
+
+**Tabla 135**
+
+*Navigation Systems — Aplicación móvil para personal de salud*
 
 | Acción | Descripción |
 |:---|:---|
@@ -6193,6 +6749,10 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 | Filtros por fecha y especialidad | Segmentación del flujo de atención |
 | Actualización en tiempo real | Visualización del estado de cada paciente |
 | Reasignación de cupos | Acción directa sobre cupos liberados |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Recorrido del usuario
 
@@ -6228,25 +6788,109 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 ### Wireframe Desktop Web Browser
 
+
+
+La [Tabla 136](#tabla-136) detalla wireframe Desktop Web Browser.
+
+<a id="tabla-136"></a>
+
+**Tabla 136**
+
+*Wireframe Desktop Web Browser*
+
 | Vista | Secciones destacadas |
 |:---|:---|
 | Vista superior | Header, Hero, Problema y Solución |
 | Vista inferior | Videos, Modelo de negocio y Testimonios |
 
-![Wireframe Desktop - Vista superior](assets/landing-page/wireframes/wireframe-desktop-superior.png)
 
-![Wireframe Desktop - Vista inferior](assets/landing-page/wireframes/wireframe-desktop-inferior.png)
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+La [Figura 62](#figura-62) muestra wireframe Desktop - Vista superior.
+
+<a id="figura-62"></a>
+
+**Figura 62**
+
+*Wireframe Desktop - Vista superior*
+
+![Wireframe Desktop - Vista superior](chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+
+La [Figura 63](#figura-63) muestra wireframe Desktop - Vista inferior.
+
+<a id="figura-63"></a>
+
+**Figura 63**
+
+*Wireframe Desktop - Vista inferior*
+
+![Wireframe Desktop - Vista inferior](chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ### Wireframe Mobile Web Browser
 
+
+
+La [Tabla 137](#tabla-137) detalla wireframe Mobile Web Browser.
+
+<a id="tabla-137"></a>
+
+**Tabla 137**
+
+*Wireframe Mobile Web Browser*
+
 | Vista | Secciones destacadas |
 |:---|:---|
 | Vista superior | Header, Hero, Problema y Solución |
 | Vista inferior | Videos, Modelo de negocio y Testimonios |
 
-![Wireframe Mobile - Vista superior](assets/landing-page/wireframes/wireframe-mobile-superior.png)
 
-![Wireframe Mobile - Vista inferior](assets/landing-page/wireframes/wireframe-mobile-inferior.png)
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+La [Figura 64](#figura-64) muestra wireframe Mobile - Vista superior.
+
+<a id="figura-64"></a>
+
+**Figura 64**
+
+*Wireframe Mobile - Vista superior*
+
+![Wireframe Mobile - Vista superior](chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+
+La [Figura 65](#figura-65) muestra wireframe Mobile - Vista inferior.
+
+<a id="figura-65"></a>
+
+**Figura 65**
+
+*Wireframe Mobile - Vista inferior*
+
+![Wireframe Mobile - Vista inferior](chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ### Principios de diseño aplicados
 
@@ -6262,6 +6906,16 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 ### Design System aplicado
 
+
+
+La [Tabla 138](#tabla-138) detalla design System aplicado.
+
+<a id="tabla-138"></a>
+
+**Tabla 138**
+
+*Design System aplicado*
+
 | Elemento | Valor | Aplicación |
 |:---|:---|:---|
 | Color primario | `#0b8f6b` | Botones, enlaces e iconos |
@@ -6276,29 +6930,127 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 | Radios | 6px / 12px / 20px | Tarjetas, botones y contenedores |
 | Sombras | sm / md / lg | Jerarquía y profundidad visual |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ### Mock-up Desktop Web Browser
+
+
+
+La [Tabla 139](#tabla-139) detalla mock-up Desktop Web Browser.
+
+<a id="tabla-139"></a>
+
+**Tabla 139**
+
+*Mock-up Desktop Web Browser*
 
 | Vista | Secciones destacadas |
 |:---|:---|
 | Vista superior | Header, Hero, Problema y Solución |
 | Vista inferior | Videos, Modelo de negocio y Testimonios |
 
-![Mock-up Desktop - Vista superior](assets/landing-page/mockups/mockup-desktop-superior.png)
 
-![Mock-up Desktop - Vista inferior](assets/landing-page/mockups/mockup-desktop-inferior.png)
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+La [Figura 66](#figura-66) muestra mock-up Desktop - Vista superior.
+
+<a id="figura-66"></a>
+
+**Figura 66**
+
+*Mock-up Desktop - Vista superior*
+
+![Mock-up Desktop - Vista superior](chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+
+La [Figura 67](#figura-67) muestra mock-up Desktop - Vista inferior.
+
+<a id="figura-67"></a>
+
+**Figura 67**
+
+*Mock-up Desktop - Vista inferior*
+
+![Mock-up Desktop - Vista inferior](chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ### Mock-up Mobile Web Browser
 
+
+
+La [Tabla 140](#tabla-140) detalla mock-up Mobile Web Browser.
+
+<a id="tabla-140"></a>
+
+**Tabla 140**
+
+*Mock-up Mobile Web Browser*
+
 | Vista | Secciones destacadas |
 |:---|:---|
 | Vista superior | Header, Hero, Problema y Solución |
 | Vista inferior | Videos, Modelo de negocio y Testimonios |
 
-![Mock-up Mobile - Vista superior](assets/landing-page/mockups/mockup-mobile-superior.png)
 
-![Mock-up Mobile - Vista inferior](assets/landing-page/mockups/mockup-mobile-inferior.png)
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+La [Figura 68](#figura-68) muestra mock-up Mobile - Vista superior.
+
+<a id="figura-68"></a>
+
+**Figura 68**
+
+*Mock-up Mobile - Vista superior*
+
+![Mock-up Mobile - Vista superior](chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+
+La [Figura 69](#figura-69) muestra mock-up Mobile - Vista inferior.
+
+<a id="figura-69"></a>
+
+**Figura 69**
+
+*Mock-up Mobile - Vista inferior*
+
+![Mock-up Mobile - Vista inferior](chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ### Aplicación del Design System y diseño inclusivo
+
+
+
+La [Tabla 141](#tabla-141) detalla aplicación del Design System y diseño inclusivo.
+
+<a id="tabla-141"></a>
+
+**Tabla 141**
+
+*Aplicación del Design System y diseño inclusivo*
 
 | Criterio | Aplicación |
 |:---|:---|
@@ -6311,7 +7063,21 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 | Navegación | Menú sticky y desplazamiento suave entre las diferentes secciones |
 | Responsive | Adaptación de estructura, componentes y contenidos a diferentes tamaños de pantalla |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ### Componentes reutilizables
+
+
+
+La [Tabla 142](#tabla-142) detalla componentes reutilizables.
+
+<a id="tabla-142"></a>
+
+**Tabla 142**
+
+*Componentes reutilizables*
 
 | Componente | Descripción | Estados |
 |:---|:---|:---|
@@ -6323,11 +7089,29 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 | Selector de idioma | Control para alternar entre español e inglés | Activo, inactivo |
 | Menú de navegación | Control responsive para mostrar u ocultar las opciones de navegación | Cerrado, abierto |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ### Landing Page implementado
 
 El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla.
 
-![Landing Page de SaludYa - Implementación](assets/landing-page/landing-page.png)
+
+
+La [Figura 70](#figura-70) muestra landing Page de SaludYa - Implementación.
+
+<a id="figura-70"></a>
+
+**Figura 70**
+
+*Landing Page de SaludYa - Implementación*
+
+![Landing Page de SaludYa - Implementación](chapter-03/assets/landing-page/landing-page.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Landing Page de SaludYa:**
 
@@ -6346,45 +7130,129 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 **Sección Autenticación y Registro — Identity & Access Management**
 
+
+
+La [Figura 71](#figura-71) muestra bienvenida y registro del paciente.
+
+<a id="figura-71"></a>
+
+**Figura 71**
+
+*Bienvenida y registro del paciente*
+
 <p align="center">
-  <img src="assets/mockups/iam-registro.png" alt="SaludYa — Bienvenida y registro del paciente" width="100%"/>
+  <img src="chapter-03/assets/mockups/iam-registro.png" alt="Bienvenida y registro del paciente" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS.
 
+
+
+La [Figura 72](#figura-72) muestra acceso y recuperación de la cuenta del paciente.
+
+<a id="figura-72"></a>
+
+**Figura 72**
+
+*Acceso y recuperación de la cuenta del paciente*
+
 <p align="center">
-  <img src="assets/mockups/iam-acceso-recuperacion.png" alt="SaludYa — Acceso y recuperación de la cuenta del paciente" width="100%"/>
+  <img src="chapter-03/assets/mockups/iam-acceso-recuperacion.png" alt="Acceso y recuperación de la cuenta del paciente" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso.
 
 **Sección Dashboard del Paciente**
 
+
+
+La [Figura 73](#figura-73) muestra inicio, citas pendientes e historial del paciente.
+
+<a id="figura-73"></a>
+
+**Figura 73**
+
+*Inicio, citas pendientes e historial del paciente*
+
 <p align="center">
-  <img src="assets/mockups/dashboard.png" alt="SaludYa — Inicio, citas pendientes e historial del paciente" width="100%"/>
+  <img src="chapter-03/assets/mockups/dashboard.png" alt="Inicio, citas pendientes e historial del paciente" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga.
 
 **Sección Reserva de Citas**
 
+
+
+La [Figura 74](#figura-74) muestra selección de especialidad, beneficiario, fecha, profesional y horario.
+
+<a id="figura-74"></a>
+
+**Figura 74**
+
+*Selección de especialidad, beneficiario, fecha, profesional y horario*
+
 <p align="center">
-  <img src="assets/mockups/reservas-seleccion.png" alt="SaludYa — Selección de especialidad, beneficiario, fecha, profesional y horario" width="100%"/>
+  <img src="chapter-03/assets/mockups/reservas-seleccion.png" alt="Selección de especialidad, beneficiario, fecha, profesional y horario" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección.
 
+
+
+La [Figura 75](#figura-75) muestra resumen, confirmación y estados de la reserva.
+
+<a id="figura-75"></a>
+
+**Figura 75**
+
+*Resumen, confirmación y estados de la reserva*
+
 <p align="center">
-  <img src="assets/mockups/reservas-confirmacion.png" alt="SaludYa — Resumen, confirmación y estados de la reserva" width="100%"/>
+  <img src="chapter-03/assets/mockups/reservas-confirmacion.png" alt="Resumen, confirmación y estados de la reserva" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva.
 
 **Sección Check-in y Atención del Paciente**
 
+
+
+La [Figura 76](#figura-76) muestra registro de llegada, escaneo del QR del establecimiento, ticket y cola.
+
+<a id="figura-76"></a>
+
+**Figura 76**
+
+*Registro de llegada, escaneo del QR del establecimiento, ticket y cola*
+
 <p align="center">
-  <img src="assets/mockups/check-in-atencion.png" alt="SaludYa — Registro de llegada, escaneo del QR del establecimiento, ticket y cola" width="100%"/>
+  <img src="chapter-03/assets/mockups/check-in-atencion.png" alt="Registro de llegada, escaneo del QR del establecimiento, ticket y cola" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar.
 
@@ -6392,25 +7260,67 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 **Sección Configuración y Perfil del Paciente**
 
+
+
+La [Figura 77](#figura-77) muestra configuración, datos personales y actualización del contacto.
+
+<a id="figura-77"></a>
+
+**Figura 77**
+
+*Configuración, datos personales y actualización del contacto*
+
 <p align="center">
-  <img src="assets/mockups/configuracion-perfil.png" alt="SaludYa — Configuración, datos personales y actualización del contacto" width="100%"/>
+  <img src="chapter-03/assets/mockups/configuracion-perfil.png" alt="Configuración, datos personales y actualización del contacto" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta.
 
 **Sección Gestión de Menores Vinculados**
 
+
+
+La [Figura 78](#figura-78) muestra vinculación, verificación y gestión de menores a cargo.
+
+<a id="figura-78"></a>
+
+**Figura 78**
+
+*Vinculación, verificación y gestión de menores a cargo*
+
 <p align="center">
-  <img src="assets/mockups/configuracion-menores.png" alt="SaludYa — Vinculación, verificación y gestión de menores a cargo" width="100%"/>
+  <img src="chapter-03/assets/mockups/configuracion-menores.png" alt="Vinculación, verificación y gestión de menores a cargo" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación.
 
 **Sección Notificaciones y Reasignación de Citas**
 
+
+
+La [Figura 79](#figura-79) muestra notificaciones y ofertas de reasignación de citas.
+
+<a id="figura-79"></a>
+
+**Figura 79**
+
+*Notificaciones y ofertas de reasignación de citas*
+
 <p align="center">
-  <img src="assets/mockups/notificaciones.png" alt="SaludYa — Notificaciones y ofertas de reasignación de citas" width="100%"/>
+  <img src="chapter-03/assets/mockups/notificaciones.png" alt="Notificaciones y ofertas de reasignación de citas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original.
 
@@ -6432,17 +7342,45 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 
 El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada.
 
+
+
+La [Figura 80](#figura-80) muestra registrarse como paciente — recorrido esperado.
+
+<a id="figura-80"></a>
+
+**Figura 80**
+
+*Registrarse como paciente — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-01-happy.png" alt="SaludYa — User Goal 1: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-01-happy.png" alt="Registrarse como paciente — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta.
 
+
+
+La [Figura 81](#figura-81) muestra registrarse como paciente — errores y alternativas.
+
+<a id="figura-81"></a>
+
+**Figura 81**
+
+*Registrarse como paciente — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-01-unhappy.png" alt="SaludYa — User Goal 1: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-01-unhappy.png" alt="Registrarse como paciente — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 2:** Iniciar sesión como paciente.
 
@@ -6450,17 +7388,45 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 
 El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos.
 
+
+
+La [Figura 82](#figura-82) muestra iniciar sesión como paciente — recorrido esperado.
+
+<a id="figura-82"></a>
+
+**Figura 82**
+
+*Iniciar sesión como paciente — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-02-happy.png" alt="SaludYa — User Goal 2: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-02-happy.png" alt="Iniciar sesión como paciente — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS.
 
+
+
+La [Figura 83](#figura-83) muestra iniciar sesión como paciente — errores y alternativas.
+
+<a id="figura-83"></a>
+
+**Figura 83**
+
+*Iniciar sesión como paciente — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-02-unhappy.png" alt="SaludYa — User Goal 2: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-02-unhappy.png" alt="Iniciar sesión como paciente — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 3:** Recuperar la contraseña.
 
@@ -6468,17 +7434,45 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 
 El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia.
 
+
+
+La [Figura 84](#figura-84) muestra recuperar la contraseña — recorrido esperado.
+
+<a id="figura-84"></a>
+
+**Figura 84**
+
+*Recuperar la contraseña — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-03-happy.png" alt="SaludYa — User Goal 3: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-03-happy.png" alt="Recuperar la contraseña — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente.
 
+
+
+La [Figura 85](#figura-85) muestra recuperar la contraseña — errores y alternativas.
+
+<a id="figura-85"></a>
+
+**Figura 85**
+
+*Recuperar la contraseña — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-03-unhappy.png" alt="SaludYa — User Goal 3: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-03-unhappy.png" alt="Recuperar la contraseña — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 4:** Vincular o desvincular a un menor.
 
@@ -6486,17 +7480,45 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación.
 
+
+
+La [Figura 86](#figura-86) muestra vincular o desvincular a un menor — recorrido esperado.
+
+<a id="figura-86"></a>
+
+**Figura 86**
+
+*Vincular o desvincular a un menor — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-04-happy.png" alt="SaludYa — User Goal 4: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-04-happy.png" alt="Vincular o desvincular a un menor — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión.
 
+
+
+La [Figura 87](#figura-87) muestra vincular o desvincular a un menor — errores y alternativas.
+
+<a id="figura-87"></a>
+
+**Figura 87**
+
+*Vincular o desvincular a un menor — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-04-unhappy.png" alt="SaludYa — User Goal 4: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-04-unhappy.png" alt="Vincular o desvincular a un menor — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 5:** Actualizar el correo o celular del perfil.
 
@@ -6504,17 +7526,45 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación.
 
+
+
+La [Figura 88](#figura-88) muestra actualizar el correo o celular del perfil — recorrido esperado.
+
+<a id="figura-88"></a>
+
+**Figura 88**
+
+*Actualizar el correo o celular del perfil — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-05-happy.png" alt="SaludYa — User Goal 5: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-05-happy.png" alt="Actualizar el correo o celular del perfil — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta.
 
+
+
+La [Figura 89](#figura-89) muestra actualizar el correo o celular del perfil — errores y alternativas.
+
+<a id="figura-89"></a>
+
+**Figura 89**
+
+*Actualizar el correo o celular del perfil — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-05-unhappy.png" alt="SaludYa — User Goal 5: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-05-unhappy.png" alt="Actualizar el correo o celular del perfil — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 6:** Consultar disponibilidad de citas.
 
@@ -6522,17 +7572,45 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 
 El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales.
 
+
+
+La [Figura 90](#figura-90) muestra consultar disponibilidad de citas — recorrido esperado.
+
+<a id="figura-90"></a>
+
+**Figura 90**
+
+*Consultar disponibilidad de citas — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-06-happy.png" alt="SaludYa — User Goal 6: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-06-happy.png" alt="Consultar disponibilidad de citas — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan.
 
+
+
+La [Figura 91](#figura-91) muestra consultar disponibilidad de citas — errores y alternativas.
+
+<a id="figura-91"></a>
+
+**Figura 91**
+
+*Consultar disponibilidad de citas — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-06-unhappy.png" alt="SaludYa — User Goal 6: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-06-unhappy.png" alt="Consultar disponibilidad de citas — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 7:** Reservar una cita y recibir confirmación.
 
@@ -6540,17 +7618,45 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 
 El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita.
 
+
+
+La [Figura 92](#figura-92) muestra reservar una cita y recibir confirmación — recorrido esperado.
+
+<a id="figura-92"></a>
+
+**Figura 92**
+
+*Reservar una cita y recibir confirmación — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-07-happy.png" alt="SaludYa — User Goal 7: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-07-happy.png" alt="Reservar una cita y recibir confirmación — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada.
 
+
+
+La [Figura 93](#figura-93) muestra reservar una cita y recibir confirmación — errores y alternativas.
+
+<a id="figura-93"></a>
+
+**Figura 93**
+
+*Reservar una cita y recibir confirmación — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-07-unhappy.png" alt="SaludYa — User Goal 7: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-07-unhappy.png" alt="Reservar una cita y recibir confirmación — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 8:** Consultar citas, detalles e historial.
 
@@ -6558,17 +7664,45 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 
 Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor.
 
+
+
+La [Figura 94](#figura-94) muestra consultar citas, detalles e historial — recorrido esperado.
+
+<a id="figura-94"></a>
+
+**Figura 94**
+
+*Consultar citas, detalles e historial — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-08-happy.png" alt="SaludYa — User Goal 8: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-08-happy.png" alt="Consultar citas, detalles e historial — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario.
 
+
+
+La [Figura 95](#figura-95) muestra consultar citas, detalles e historial — errores y alternativas.
+
+<a id="figura-95"></a>
+
+**Figura 95**
+
+*Consultar citas, detalles e historial — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-08-unhappy.png" alt="SaludYa — User Goal 8: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-08-unhappy.png" alt="Consultar citas, detalles e historial — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 9:** Cancelar una reserva dentro del plazo.
 
@@ -6576,17 +7710,45 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 
 El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada.
 
+
+
+La [Figura 96](#figura-96) muestra cancelar una reserva dentro del plazo — recorrido esperado.
+
+<a id="figura-96"></a>
+
+**Figura 96**
+
+*Cancelar una reserva dentro del plazo — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-09-happy.png" alt="SaludYa — User Goal 9: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-09-happy.png" alt="Cancelar una reserva dentro del plazo — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial.
 
+
+
+La [Figura 97](#figura-97) muestra cancelar una reserva dentro del plazo — errores y alternativas.
+
+<a id="figura-97"></a>
+
+**Figura 97**
+
+*Cancelar una reserva dentro del plazo — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-09-unhappy.png" alt="SaludYa — User Goal 9: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-09-unhappy.png" alt="Cancelar una reserva dentro del plazo — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 10:** Responder a una oferta de adelanto.
 
@@ -6594,17 +7756,45 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 
 El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior.
 
+
+
+La [Figura 98](#figura-98) muestra responder a una oferta de adelanto — recorrido esperado.
+
+<a id="figura-98"></a>
+
+**Figura 98**
+
+*Responder a una oferta de adelanto — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-10-happy.png" alt="SaludYa — User Goal 10: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-10-happy.png" alt="Responder a una oferta de adelanto — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual.
 
+
+
+La [Figura 99](#figura-99) muestra responder a una oferta de adelanto — errores y alternativas.
+
+<a id="figura-99"></a>
+
+**Figura 99**
+
+*Responder a una oferta de adelanto — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-10-unhappy.png" alt="SaludYa — User Goal 10: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-10-unhappy.png" alt="Responder a una oferta de adelanto — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 11:** Registrar llegada presencial mediante QR.
 
@@ -6612,17 +7802,45 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 
 Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket.
 
+
+
+La [Figura 100](#figura-100) muestra registrar llegada presencial mediante QR — recorrido esperado.
+
+<a id="figura-100"></a>
+
+**Figura 100**
+
+*Registrar llegada presencial mediante QR — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-11-happy.png" alt="SaludYa — User Goal 11: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-11-happy.png" alt="Registrar llegada presencial mediante QR — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo.
 
+
+
+La [Figura 101](#figura-101) muestra registrar llegada presencial mediante QR — errores y alternativas.
+
+<a id="figura-101"></a>
+
+**Figura 101**
+
+*Registrar llegada presencial mediante QR — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-11-unhappy.png" alt="SaludYa — User Goal 11: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-11-unhappy.png" alt="Registrar llegada presencial mediante QR — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 12:** Obtener el ticket digital de atención.
 
@@ -6630,17 +7848,45 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 
 Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio.
 
+
+
+La [Figura 102](#figura-102) muestra obtener el ticket digital de atención — recorrido esperado.
+
+<a id="figura-102"></a>
+
+**Figura 102**
+
+*Obtener el ticket digital de atención — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-12-happy.png" alt="SaludYa — User Goal 12: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-12-happy.png" alt="Obtener el ticket digital de atención — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente.
 
+
+
+La [Figura 103](#figura-103) muestra obtener el ticket digital de atención — errores y alternativas.
+
+<a id="figura-103"></a>
+
+**Figura 103**
+
+*Obtener el ticket digital de atención — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-12-unhappy.png" alt="SaludYa — User Goal 12: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-12-unhappy.png" alt="Obtener el ticket digital de atención — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 13:** Consultar posición o dejar la cola.
 
@@ -6648,17 +7894,45 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 
 El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola.
 
+
+
+La [Figura 104](#figura-104) muestra consultar posición o dejar la cola — recorrido esperado.
+
+<a id="figura-104"></a>
+
+**Figura 104**
+
+*Consultar posición o dejar la cola — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-13-happy.png" alt="SaludYa — User Goal 13: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-13-happy.png" alt="Consultar posición o dejar la cola — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta.
 
+
+
+La [Figura 105](#figura-105) muestra consultar posición o dejar la cola — errores y alternativas.
+
+<a id="figura-105"></a>
+
+**Figura 105**
+
+*Consultar posición o dejar la cola — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-13-unhappy.png" alt="SaludYa — User Goal 13: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-13-unhappy.png" alt="Consultar posición o dejar la cola — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 14:** Recibir el llamado y acudir al consultorio.
 
@@ -6666,17 +7940,45 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 
 El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención.
 
+
+
+La [Figura 106](#figura-106) muestra recibir el llamado y acudir al consultorio — recorrido esperado.
+
+<a id="figura-106"></a>
+
+**Figura 106**
+
+*Recibir el llamado y acudir al consultorio — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-14-happy.png" alt="SaludYa — User Goal 14: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-14-happy.png" alt="Recibir el llamado y acudir al consultorio — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso.
 
+
+
+La [Figura 107](#figura-107) muestra recibir el llamado y acudir al consultorio — errores y alternativas.
+
+<a id="figura-107"></a>
+
+**Figura 107**
+
+*Recibir el llamado y acudir al consultorio — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-14-unhappy.png" alt="SaludYa — User Goal 14: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-14-unhappy.png" alt="Recibir el llamado y acudir al consultorio — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 - **User Goal 15:** Cerrar sesión o recuperar acceso a una sesión.
 
@@ -6684,17 +7986,45 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 
 El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida.
 
+
+
+La [Figura 108](#figura-108) muestra cerrar sesión o recuperar acceso a una sesión — recorrido esperado.
+
+<a id="figura-108"></a>
+
+**Figura 108**
+
+*Cerrar sesión o recuperar acceso a una sesión — recorrido esperado*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-15-happy.png" alt="SaludYa — User Goal 15: Happy Path" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-15-happy.png" alt="Cerrar sesión o recuperar acceso a una sesión — recorrido esperado" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Unhappy Paths**
 
 Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente.
 
+
+
+La [Figura 109](#figura-109) muestra cerrar sesión o recuperar acceso a una sesión — errores y alternativas.
+
+<a id="figura-109"></a>
+
+**Figura 109**
+
+*Cerrar sesión o recuperar acceso a una sesión — errores y alternativas*
+
 <p align="center">
-  <img src="assets/userflows/user-goal-15-unhappy.png" alt="SaludYa — User Goal 15: Unhappy Paths" width="100%"/>
+  <img src="chapter-03/assets/userflows/user-goal-15-unhappy.png" alt="Cerrar sesión o recuperar acceso a una sesión — errores y alternativas" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 **Archivo de diagramas**
 
@@ -6707,9 +8037,23 @@ En esta sección se presenta el prótotipo interactivo desarrollado en Figma par
 
 A continuación, se adjunta el enlace al video de demostración.
 
+
+
+La [Figura 110](#figura-110) muestra mobile applications prototyping.
+
+<a id="figura-110"></a>
+
+**Figura 110**
+
+*Mobile applications prototyping*
+
 <p align="center">
-  <img src="assets/mobile-application-prototyping.png" alt="SaludYa — Mobile applications prototyping" width="100%"/>
+  <img src="chapter-03/assets/mobile-application-prototyping.png" alt="Mobile applications prototyping" width="100%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 [Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
 
@@ -6722,6 +8066,16 @@ Todas las convenciones se aplican en **inglés** para nombres de archivos, varia
 #### Landing Page
 
 El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando las siguientes convenciones:
+
+
+
+La [Tabla 143](#tabla-143) detalla source Code Style Guide & Conventions — Landing Page.
+
+<a id="tabla-143"></a>
+
+**Tabla 143**
+
+*Source Code Style Guide & Conventions — Landing Page*
 
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
@@ -6736,6 +8090,10 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 | Constantes JS | UPPER_SNAKE_CASE | `DEFAULT_LANG`, `STORAGE_KEY` |
 | Funciones JS | camelCase | `detectInitialLang()`, `applyTranslations()` |
 | Atributos `data-*` | kebab-case | `data-i18n`, `data-i18n-attr`, `data-lang` |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales:
 
@@ -6752,6 +8110,16 @@ Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and C
 
 Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kotlin Multiplatform (KMP)** para la lógica compartida con iOS, siguiendo las convenciones oficiales del lenguaje:
 
+
+
+La [Tabla 144](#tabla-144) detalla source Code Style Guide & Conventions — Aplicaciones móviles.
+
+<a id="tabla-144"></a>
+
+**Tabla 144**
+
+*Source Code Style Guide & Conventions — Aplicaciones móviles*
+
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
 | Clases | PascalCase | `AppointmentRepository`, `PatientViewModel` |
@@ -6763,6 +8131,10 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 | Archivos Kotlin | PascalCase | `AppointmentViewModel.kt` |
 | Recursos XML | snake_case | `activity_main.xml`, `ic_check_in.xml` |
 | Strings | snake_case | `app_name`, `btn_reserve` |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales:
 
@@ -6779,6 +8151,16 @@ Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventio
 
 Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specification** para la documentación, siguiendo las convenciones oficiales:
 
+
+
+La [Tabla 145](#tabla-145) detalla source Code Style Guide & Conventions — Servicios web.
+
+<a id="tabla-145"></a>
+
+**Tabla 145**
+
+*Source Code Style Guide & Conventions — Servicios web*
+
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
 | Clases | PascalCase | `AppointmentController`, `PatientService` |
@@ -6790,6 +8172,10 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 | Archivos `.feature` (Gherkin) | kebab-case | `reserve-appointment.feature` |
 | Tablas de base de datos | snake_case en plural | `appointments`, `patients` |
 | Columnas de base de datos | snake_case | `created_at`, `patient_id` |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, con las siguientes reglas adicionales:
 
@@ -6804,6 +8190,16 @@ Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, co
 
 El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlow** para la gestión de ramas:
 
+
+
+La [Tabla 146](#tabla-146) detalla convenciones de commits.
+
+<a id="tabla-146"></a>
+
+**Tabla 146**
+
+*Convenciones de commits*
+
 | Tipo | Uso |
 |:---|:---|
 | `feat` | Nueva funcionalidad |
@@ -6814,6 +8210,20 @@ El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlo
 | `test` | Añadir o modificar pruebas |
 | `chore` | Tareas de mantenimiento |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
+
+La [Tabla 147](#tabla-147) detalla convenciones de ramas.
+
+<a id="tabla-147"></a>
+
+**Tabla 147**
+
+*Convenciones de ramas*
+
 | Rama | Uso |
 |:---|:---|
 | `main` | Versión estable en producción |
@@ -6821,6 +8231,10 @@ El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlo
 | `feature/<nombre>` | Nuevas funcionalidades |
 | `release/<versión>` | Preparación de release |
 | `hotfix/<nombre>` | Correcciones urgentes |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Los releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
 
@@ -6832,6 +8246,16 @@ En esta sección se describe la configuración de despliegue de la solución **S
 
 El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**, aprovechando la integración directa con el repositorio de GitHub del equipo.
 
+
+
+La [Tabla 148](#tabla-148) detalla software Deployment Configuration — Landing Page.
+
+<a id="tabla-148"></a>
+
+**Tabla 148**
+
+*Software Deployment Configuration — Landing Page*
+
 | Paso | Acción |
 |:---|:---|
 | 1 | Asegurar que el archivo `index.html` se encuentre en la raíz del repositorio `saludya-landing` |
@@ -6841,11 +8265,25 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 | 5 | Verificar el despliegue en la URL generada: `https://ruwalabs.github.io/saludya-landing/` |
 | 6 | (Opcional) Configurar un dominio personalizado `saludya.pe` mediante registros CNAME |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2.
 
 #### Aplicaciones móviles
 
 Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** para las pruebas con usuarios de validación, y se publican en **Google Play Store** y **App Store** para la versión final.
+
+
+
+La [Tabla 149](#tabla-149) detalla software Deployment Configuration — Aplicaciones móviles.
+
+<a id="tabla-149"></a>
+
+**Tabla 149**
+
+*Software Deployment Configuration — Aplicaciones móviles*
 
 | Paso | Acción |
 |:---|:---|
@@ -6856,11 +8294,25 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 | 5 | Recopilar feedback de los usuarios de validación |
 | 6 | Publicar la versión final en **Google Play Console** y **App Store Connect** |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution.
 
 #### Servicios web
 
 Los servicios web se despliegan en **Railway** (o alternativamente **Render** o **Heroku**), con base de datos **PostgreSQL** gestionada por el mismo proveedor.
+
+
+
+La [Tabla 150](#tabla-150) detalla software Deployment Configuration — Servicios web.
+
+<a id="tabla-150"></a>
+
+**Tabla 150**
+
+*Software Deployment Configuration — Servicios web*
 
 | Paso | Acción |
 |:---|:---|
@@ -6872,11 +8324,25 @@ Los servicios web se despliegan en **Railway** (o alternativamente **Render** o 
 | 6 | Desplegar y verificar la URL pública del servicio |
 | 7 | Acceder a la documentación OpenAPI en `/swagger-ui.html` |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, Railway.
 
 #### Deployment Diagram (C4 Model)
 
 El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube:
+
+
+
+La [Tabla 151](#tabla-151) detalla deployment Diagram (C4 Model).
+
+<a id="tabla-151"></a>
+
+**Tabla 151**
+
+*Deployment Diagram (C4 Model)*
 
 | Nodo | Tipo | Componentes desplegados |
 |:---|:---|:---|
@@ -6888,6 +8354,10 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 | Railway / Render | Cloud (PaaS) | Servicios web (Spring Boot) |
 | PostgreSQL (Railway) | Cloud (DBaaS) | Base de datos relacional |
 | Firebase Cloud Messaging | Cloud (push) | Notificaciones push a las apps |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 **Relaciones entre nodos:**
 
