@@ -2783,203 +2783,61 @@ La identificación de bounded contexts delimita las responsabilidades de identid
 
 #### 2.5.1.2. Domain Message Flows Modeling
 
-En esta sección se presentan los principales flujos de colaboración entre los bounded contexts identificados. Para ello, se utilizó la técnica de visualización **Domain Storytelling**, la cual permite describir de forma narrativa cómo los diferentes sistemas del dominio interactúan para atender los casos de uso clave del negocio. Los flujos reflejan la existencia de las dos colas complementarias del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
+En esta sección se presentan los principales flujos de colaboración entre los bounded contexts, modelados con la técnica de **Domain Message Flow Modelling** propuesta por ddd-crew. Cada diagrama muestra los comandos, eventos y queries que fluyen entre actores, bounded contexts y sistemas para un escenario específico, incluyendo el nombre del mensaje, su orden y los datos que transporta.
+
+Los flujos reflejan las dos colas complementarias del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
 
 **Flow 1: Registro y autenticación de paciente**
 
-El paciente solicita crear una nueva cuenta en el sistema ingresando su DNI y datos de contacto. El **Identity & Access Management** valida la información contra el servicio externo de RENIEC y registra el nuevo perfil verificado. Una vez completado el registro, el sistema emite el evento `Cuenta creada`. Posteriormente, cuando el paciente inicia sesión, el sistema valida sus credenciales y emite el evento `Sesión iniciada`. Finalmente, el paciente puede vincular a un menor de edad ingresando el DNI del niño, lo que genera el evento `Menor vinculado`, como se detalla en la [Tabla 23](#tabla-23).
+![Flow 1](assets/flow-01-registration.png)
 
-
-
-
-
-<a id="tabla-23"></a>
-
-**Tabla 23**
-
-*Flow 1: Registro y autenticación de paciente*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Patient | Solicita registro | DNI y datos de contacto | Identity & Access Management |
-| 2 | Identity & Access Management | Valida identidad | RENIEC API | Identity & Access Management |
-| 3 | Identity & Access Management | Crea cuenta | Cuenta creada | Identity & Access Management |
-| 4 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
-| 5 | Identity & Access Management | Valida sesión | Sesión iniciada | Identity & Access Management |
-| 6 | Patient | Vincula menor | DNI del menor | Identity & Access Management |
-| 7 | Identity & Access Management | Registra vínculo | Menor vinculado | Identity & Access Management |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+El paciente ejecuta `RegisterPatient`; **Identity & Access Management** valida la identidad con `ValidateIdentity` contra **ApiPeru.dev** (ACL hacia RENIEC) y responde con `IdentityVerified` → `AccountCreated`. Luego `Login` → `SessionStarted`, y `LinkMinor` → `MinorLinked`.
 
 **Flow 2: Reserva de cita médica para el titular**
 
-El paciente inicia sesión en la aplicación y selecciona una especialidad médica. El **Appointments & Booking** consulta el `Calendario de cupos` y verifica la disponibilidad de horarios. El paciente selecciona un `Time Slot` disponible y confirma la reserva. El **Appointments & Booking** registra la cita, asigna un `bookingOrder` único por especialidad, fecha y establecimiento, emite el evento `Cita reservada` y envía una notificación de confirmación al paciente, como se detalla en la [Tabla 24](#tabla-24).
+![Flow 2](assets/flow-02-booking-titular.png)
 
-
-
-
-
-<a id="tabla-24"></a>
-
-**Tabla 24**
-
-*Flow 2: Reserva de cita médica para el titular*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
-| 2 | Patient | Selecciona especialidad | Especialidad médica | Appointments & Booking |
-| 3 | Appointments & Booking | Consulta disponibilidad | Calendario de cupos | Appointments & Booking |
-| 4 | Appointments & Booking | Verifica cupo | Cupo verificado | Appointments & Booking |
-| 5 | Patient | Confirma reserva | Time Slot | Appointments & Booking |
-| 6 | Appointments & Booking | Registra cita | Cita reservada | Appointments & Booking |
-| 7 | Appointments & Booking | Asigna bookingOrder | Booking Order asignado | Appointments & Booking |
-| 8 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+El paciente ejecuta `BookAppointment`; **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `AssignBookingOrder` y emite `AppointmentBooked`. Finalmente notifica al paciente vía `SendConfirmationEmail` → `EmailSent`.
 
 **Flow 3: Reserva de cita médica para un menor a cargo**
 
-El paciente titular inicia sesión y selecciona a un menor previamente vinculado a su cuenta. El **Appointments & Booking** consulta el `Calendario de cupos` para la especialidad pediátrica. El paciente confirma la reserva del `Time Slot` seleccionado. El **Appointments & Booking** registra la cita con el `patientId` del menor como beneficiario (el vínculo tutor-menor lo gestiona el `Identity & Access Management`), asigna el `bookingOrder` correspondiente, emite el evento `Cita reservada` y notifica al titular, como se detalla en la [Tabla 25](#tabla-25).
+![Flow 3](assets/flow-03-booking-menor.png)
 
-
-
-
-
-<a id="tabla-25"></a>
-
-**Tabla 25**
-
-*Flow 3: Reserva de cita médica para un menor a cargo*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Patient | Inicia sesión | Credenciales | Identity & Access Management |
-| 2 | Patient | Selecciona menor | Menor vinculado | Identity & Access Management |
-| 3 | Patient | Selecciona especialidad | Especialidad pediátrica | Appointments & Booking |
-| 4 | Appointments & Booking | Consulta disponibilidad | Calendario de cupos | Appointments & Booking |
-| 5 | Patient | Confirma reserva | Time Slot para menor | Appointments & Booking |
-| 6 | Appointments & Booking | Registra cita | Cita reservada (menor) | Appointments & Booking |
-| 7 | Appointments & Booking | Asigna bookingOrder | Booking Order asignado | Appointments & Booking |
-| 8 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+El titular ejecuta `GetLinkedMinors` (IAM) → `MinorRetrieved`, y luego `BookAppointmentForMinor` con el `minorId`. **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `bookingOrder` y emite `AppointmentBooked`, notificando al tutor.
 
 **Flow 4: Check-in presencial mediante código QR**
 
-El paciente llega al establecimiento de salud con su cita programada. El **Arrival & QR Check-in** valida el código QR escaneado, verificando que la cita se encuentre dentro de la ventana de tolerancia configurada. Si la validación es exitosa, el sistema emite el evento `Check-in realizado`, crea un `Queue Entry` en la `Attendance Queue` del `Time Slot` correspondiente, y calcula la posición del paciente en función de su `checkInTimestamp`. Finalmente, se emite el ticket digital con el identificador de llamado, la posición en la cola de asistencia y el tiempo estimado de espera, y se notifica al paciente que ha sido ingresado a la cola, como se detalla en la [Tabla 26](#tabla-26).
+![Flow 4](assets/flow-04-checkin-qr.png)
 
-
-
-
-
-<a id="tabla-26"></a>
-
-**Tabla 26**
-
-*Flow 4: Check-in presencial mediante código QR*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Patient | Llega al establecimiento | — | — |
-| 2 | Patient | Escanea código QR | Código QR | Arrival & QR Check-in |
-| 3 | Arrival & QR Check-in | Valida tolerancia | Cita y tiempo | Arrival & QR Check-in |
-| 4 | Arrival & QR Check-in | Registra presencia | Check-in realizado | Arrival & QR Check-in |
-| 5 | Arrival & QR Check-in | Crea entrada en cola | Queue Entry | Arrival & QR Check-in |
-| 6 | Arrival & QR Check-in | Calcula posición | Posición en Attendance Queue | Arrival & QR Check-in |
-| 7 | Arrival & QR Check-in | Emite ticket | Ticket emitido | Arrival & QR Check-in |
-| 8 | Arrival & QR Check-in | Notifica posición | Notificación enviada | Arrival & QR Check-in |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+El paciente ejecuta `ScanQRCode`; **Arrival & QR Check-in** valida con `ValidateQRTolerance` → `ToleranceValid`, crea la entrada con `CreateQueueEntry`, calcula la posición (`PositionCalculated`) y emite `CheckInCompleted` y `TicketIssued`.
 
 **Flow 5: Cancelación de cita y liberación de cupo**
 
-El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y libera el cupo de la agenda médica, dejándolo disponible para una reserva externa. **La cancelación no dispara el protocolo de reasignación**: este se activa únicamente ante la ausencia presencial de un paciente (ver Flow 6), como se detalla en la [Tabla 27](#tabla-27).
+![Flow 5](assets/flow-05-cancelacion.png)
 
+El paciente ejecuta `CancelAppointment`; **Appointments & Booking** valida con `VerifyCancellationDeadline` → `DeadlineValid`, ejecuta `ReleaseSlot` y emite `AppointmentCancelled`.
 
+> **Nota:** la cancelación **no dispara reasignación**. Solo la ausencia presencial lo hace (ver Flow 6).
 
+**Flow 6a: Declaración de ausencia**
 
+![Flow 6a](assets/flow-06a-ausencia.png)
 
-<a id="tabla-27"></a>
+El personal de admisión ejecuta `CallPatient`; **Arrival & QR Check-in** valida con `VerifyPostCallTolerance` → `ToleranceExpired`, y emite `PatientAbsentEvent` hacia **Reassignment**.
 
-**Tabla 27**
+**Flow 6b: Reasignación en cadena**
 
-*Flow 5: Cancelación de cita y liberación de cupo*
+![Flow 6b](assets/flow-06b-reasignacion.png)
 
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Patient | Cancela cita | Cita activa | Appointments & Booking |
-| 2 | Appointments & Booking | Verifica plazo | Reglas de cancelación | Appointments & Booking |
-| 3 | Appointments & Booking | Registra cancelación | Cita cancelada | Appointments & Booking |
-| 4 | Appointments & Booking | Libera cupo | Cupo liberado | Appointments & Booking |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-**Flow 6: Declaración de ausencia y reasignación en cadena**
-
-El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso y publica el evento `PatientAbsentEvent`. El **Reassignment** toma al paciente con el **menor `bookingOrder`** de la cola de reserva de la misma especialidad y le ofrece el cupo liberado (`ReassignmentOfferSent`). El candidato dispone de una **ventana única** (`reassignmentResponseTimeoutMin`) para aceptar **y** presentarse. Si acepta y llega, se registra `Cita reasignada` y —como el candidato abandonó su slot original— ese slot se libera y se vuelve a ofrecer al siguiente de la cola, formando una **cadena de reasignación**. Si rechaza o no responde, se pasa al siguiente candidato. Si acepta pero no llega, se declara ausente (`ReassignmentOfferNoShow`). Si nadie en la cola acepta, el cupo se cierra, como se detalla en la [Tabla 28](#tabla-28).
-
-
-
-
-
-<a id="tabla-28"></a>
-
-**Tabla 28**
-
-*Flow 6: Declaración de ausencia y reasignación en cadena*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Admission Staff | Llama al paciente | — | Arrival & QR Check-in |
-| 2 | Arrival & QR Check-in | Verifica tolerancia | Tiempo de tolerancia | Arrival & QR Check-in |
-| 3 | Arrival & QR Check-in | Declara ausencia | PatientAbsentEvent | Arrival & QR Check-in |
-| 4 | Reassignment | Ofrece cupo al menor bookingOrder | ReassignmentOfferSent | Reassignment |
-| 5 | Patient | Acepta propuesta | ReassignmentOfferAccepted | Reassignment |
-| 6 | Reassignment | Registra reasignación | Cita reasignada | Reassignment |
-| 7 | Reassignment | Libera slot original del candidato | Reassignment Chain | Reassignment |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+**Reassignment** ejecuta `FindNextCandidate` en **Appointments & Booking** → `CandidateFound`, envía `ReassignmentOfferSent` al paciente, quien responde con `ReassignmentOfferAccepted`. **Reassignment** ejecuta `ReassignAppointment` y `ReleaseOriginalSlot` para liberar el slot del candidato y re-ofrecerlo al siguiente (cadena). Si el candidato acepta y no llega, se emite `ReassignmentOfferNoShow`.
 
 **Flow 7: Configuración operativa del establecimiento**
 
-El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `reassignmentResponseTimeoutMin` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
+![Flow 7](assets/flow-07-configuracion.png)
 
+El Super Admin ejecuta `UpdateConfiguration`; **Hospital Operations & Configuration** valida con `ValidateParameters` → `ParametersValid`, aplica con `ApplyConfiguration` y emite `ConfigurationUpdated`. Finalmente, `GetDashboard` → `DashboardRetrieved`.
 
-
-
-
-<a id="tabla-29"></a>
-
-**Tabla 29**
-
-*Flow 7: Configuración operativa del establecimiento*
-
-| Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Super Admin | Accede a configuración | Panel de administración | Hospital Operations & Configuration |
-| 2 | Super Admin | Parametriza reglas | Intervalos, tolerancias, reassignmentResponseTimeoutMin | Hospital Operations & Configuration |
-| 3 | Hospital Operations & Configuration | Actualiza parámetros | Reglas actualizadas | Hospital Operations & Configuration |
-| 4 | Hospital Operations & Configuration | Aplica cambios | Nuevos bloques y turnos | Hospital Operations & Configuration |
-| 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa. En particular, se evidencia que la **cola por pedido de cita** se gestiona como atributo dentro de `Appointments & Booking` y se consume desde `Reassignment` para determinar la prioridad de reasignación, mientras que la **cola de asistencia** se gestiona como agregado dentro de `Arrival & QR Check-in` para ordenar el llamado a consultorio el día de la cita, como se detalla en la [Tabla 29](#tabla-29).
+En conjunto, los flujos evidencian que la **cola por pedido de cita** se gestiona como atributo dentro de `Appointments & Booking` y se consume desde `Reassignment` para priorizar la reasignación, mientras que la **cola de asistencia** se gestiona como agregado dentro de `Arrival & QR Check-in` para ordenar el llamado a consultorio.
 
 
 #### 2.5.1.3. Bounded Context Canvases
