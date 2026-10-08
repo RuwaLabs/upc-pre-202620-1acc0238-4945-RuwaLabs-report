@@ -5615,7 +5615,7 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 
 
-La [Tabla 96](#tabla-96) detalla branding.
+
 
 <a id="tabla-96"></a>
 
@@ -5638,7 +5638,7 @@ La [Tabla 96](#tabla-96) detalla branding.
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page.
+El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page ([Tabla 96](#tabla-96)).
 
 #### Typography
 
@@ -5648,7 +5648,7 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 
 
-La [Tabla 97](#tabla-97) detalla typography — Landing Page (web).
+
 
 <a id="tabla-97"></a>
 
@@ -5671,13 +5671,13 @@ La [Tabla 97](#tabla-97) detalla typography — Landing Page (web).
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page.
+La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page ([Tabla 97](#tabla-97)).
 
 ##### Aplicaciones móviles (Android)
 
 
 
-La [Tabla 98](#tabla-98) detalla typography — Aplicaciones móviles (Android).
+
 
 <a id="tabla-98"></a>
 
@@ -5696,7 +5696,7 @@ La [Tabla 98](#tabla-98) detalla typography — Aplicaciones móviles (Android).
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android.
+En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android ([Tabla 98](#tabla-98)).
 
 #### Colors
 
@@ -5706,7 +5706,7 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 
 
 
-La [Tabla 99](#tabla-99) detalla colors — Landing Page (web).
+La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web) ([Tabla 99](#tabla-99)).
 
 <a id="tabla-99"></a>
 
@@ -5737,7 +5737,7 @@ La [Tabla 99](#tabla-99) detalla colors — Landing Page (web).
 
 
 
-La [Tabla 100](#tabla-100) detalla colors — Aplicaciones móviles (Android).
+
 
 <a id="tabla-100"></a>
 
@@ -5763,17 +5763,17 @@ La [Tabla 100](#tabla-100) detalla colors — Aplicaciones móviles (Android).
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo.
+Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo ([Tabla 100](#tabla-100)).
 
 #### Spacing
 
 ##### Landing Page (web)
 
-Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page.
+Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page ([Tabla 101](#tabla-101)).
 
 
 
-La [Tabla 101](#tabla-101) detalla spacing — Landing Page (web).
+
 
 <a id="tabla-101"></a>
 
@@ -5798,7 +5798,7 @@ La [Tabla 101](#tabla-101) detalla spacing — Landing Page (web).
 
 
 
-La [Tabla 102](#tabla-102) detalla spacing — Aplicaciones móviles (Android).
+
 
 <a id="tabla-102"></a>
 
@@ -5819,7 +5819,7 @@ La [Tabla 102](#tabla-102) detalla spacing — Aplicaciones móviles (Android).
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles.
+Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles ([Tabla 102](#tabla-102)).
 
 #### Border Radius
 
@@ -5827,7 +5827,7 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 
 
 
-La [Tabla 103](#tabla-103) detalla border Radius — Landing Page (web).
+Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web) ([Tabla 103](#tabla-103)).
 
 <a id="tabla-103"></a>
 
@@ -5849,7 +5849,7 @@ La [Tabla 103](#tabla-103) detalla border Radius — Landing Page (web).
 
 
 
-La [Tabla 104](#tabla-104) detalla border Radius — Aplicaciones móviles (Android).
+
 
 <a id="tabla-104"></a>
 
@@ -5866,7 +5866,7 @@ La [Tabla 104](#tabla-104) detalla border Radius — Aplicaciones móviles (Andr
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla.
+En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla ([Tabla 104](#tabla-104)).
 
 #### Shadows
 
@@ -5874,7 +5874,7 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 
 
 
-La [Tabla 105](#tabla-105) detalla shadows — Landing Page (web).
+Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web) ([Tabla 105](#tabla-105)).
 
 <a id="tabla-105"></a>
 
@@ -5903,7 +5903,7 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
 
-La [Tabla 106](#tabla-106) detalla tone of Voice.
+
 
 <a id="tabla-106"></a>
 
@@ -5922,15 +5922,15 @@ La [Tabla 106](#tabla-106) detalla tone of Voice.
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo.
+El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo ([Tabla 106](#tabla-106)).
 
 #### Iconography
 
-Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles:
+Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles ([Tabla 107](#tabla-107)):
 
 
 
-La [Tabla 107](#tabla-107) detalla iconography.
+
 
 <a id="tabla-107"></a>
 
@@ -5970,7 +5970,7 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 
 
-La [Tabla 108](#tabla-108) detalla organization Systems — Landing Page.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page ([Tabla 108](#tabla-108)).
 
 <a id="tabla-108"></a>
 
@@ -5999,7 +5999,7 @@ La [Tabla 108](#tabla-108) detalla organization Systems — Landing Page.
 
 
 
-La [Tabla 109](#tabla-109) detalla organization Systems — Aplicación móvil para pacientes.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 109](#tabla-109)).
 
 <a id="tabla-109"></a>
 
@@ -6024,7 +6024,7 @@ La [Tabla 109](#tabla-109) detalla organization Systems — Aplicación móvil p
 
 
 
-La [Tabla 110](#tabla-110) detalla organization Systems — Aplicación móvil para personal de salud.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 110](#tabla-110)).
 
 <a id="tabla-110"></a>
 
@@ -6061,7 +6061,7 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 
 
-La [Tabla 111](#tabla-111) detalla labelling Systems — Landing Page.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page ([Tabla 111](#tabla-111)).
 
 <a id="tabla-111"></a>
 
@@ -6086,7 +6086,7 @@ La [Tabla 111](#tabla-111) detalla labelling Systems — Landing Page.
 
 
 
-La [Tabla 112](#tabla-112) detalla labelling Systems — Aplicación móvil para pacientes.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 112](#tabla-112)).
 
 <a id="tabla-112"></a>
 
@@ -6111,7 +6111,7 @@ La [Tabla 112](#tabla-112) detalla labelling Systems — Aplicación móvil para
 
 
 
-La [Tabla 113](#tabla-113) detalla labelling Systems — Aplicación móvil para personal de salud.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 113](#tabla-113)).
 
 <a id="tabla-113"></a>
 
@@ -6147,7 +6147,7 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 
 
 
-La [Tabla 114](#tabla-114) detalla sEO Tags and Meta Tags — Landing Page.
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page ([Tabla 114](#tabla-114)).
 
 <a id="tabla-114"></a>
 
@@ -6180,7 +6180,7 @@ La [Tabla 114](#tabla-114) detalla sEO Tags and Meta Tags — Landing Page.
 
 
 
-La [Tabla 115](#tabla-115) detalla sEO Tags and Meta Tags — ASO (App Store Optimization).
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization) ([Tabla 115](#tabla-115)).
 
 <a id="tabla-115"></a>
 
@@ -6207,7 +6207,7 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 
 
-La [Tabla 116](#tabla-116) detalla searching Systems — Landing Page.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page ([Tabla 116](#tabla-116)).
 
 <a id="tabla-116"></a>
 
@@ -6229,7 +6229,7 @@ La [Tabla 116](#tabla-116) detalla searching Systems — Landing Page.
 
 
 
-La [Tabla 117](#tabla-117) detalla searching Systems — Aplicación móvil para pacientes.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 117](#tabla-117)).
 
 <a id="tabla-117"></a>
 
@@ -6252,7 +6252,7 @@ La [Tabla 117](#tabla-117) detalla searching Systems — Aplicación móvil para
 
 
 
-La [Tabla 118](#tabla-118) detalla searching Systems — Aplicación móvil para personal de salud.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 118](#tabla-118)).
 
 <a id="tabla-118"></a>
 
@@ -6283,7 +6283,7 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 
 
-La [Tabla 119](#tabla-119) detalla navigation Systems — Landing Page.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page ([Tabla 119](#tabla-119)).
 
 <a id="tabla-119"></a>
 
@@ -6308,7 +6308,7 @@ La [Tabla 119](#tabla-119) detalla navigation Systems — Landing Page.
 
 
 
-La [Tabla 120](#tabla-120) detalla navigation Systems — Aplicación móvil para pacientes.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 120](#tabla-120)).
 
 <a id="tabla-120"></a>
 
@@ -6331,7 +6331,7 @@ La [Tabla 120](#tabla-120) detalla navigation Systems — Aplicación móvil par
 
 
 
-La [Tabla 121](#tabla-121) detalla navigation Systems — Aplicación móvil para personal de salud.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 121](#tabla-121)).
 
 <a id="tabla-121"></a>
 
@@ -6367,7 +6367,7 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 
 
-La [Tabla 122](#tabla-122) detalla organization Systems — Landing Page.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page ([Tabla 122](#tabla-122)).
 
 <a id="tabla-122"></a>
 
@@ -6396,7 +6396,7 @@ La [Tabla 122](#tabla-122) detalla organization Systems — Landing Page.
 
 
 
-La [Tabla 123](#tabla-123) detalla organization Systems — Aplicación móvil para pacientes.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 123](#tabla-123)).
 
 <a id="tabla-123"></a>
 
@@ -6421,7 +6421,7 @@ La [Tabla 123](#tabla-123) detalla organization Systems — Aplicación móvil p
 
 
 
-La [Tabla 124](#tabla-124) detalla organization Systems — Aplicación móvil para personal de salud.
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 124](#tabla-124)).
 
 <a id="tabla-124"></a>
 
@@ -6460,7 +6460,7 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 
 
-La [Tabla 125](#tabla-125) detalla labelling Systems — Landing Page.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page ([Tabla 125](#tabla-125)).
 
 <a id="tabla-125"></a>
 
@@ -6487,7 +6487,7 @@ La [Tabla 125](#tabla-125) detalla labelling Systems — Landing Page.
 
 
 
-La [Tabla 126](#tabla-126) detalla labelling Systems — Aplicación móvil para pacientes.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 126](#tabla-126)).
 
 <a id="tabla-126"></a>
 
@@ -6513,7 +6513,7 @@ La [Tabla 126](#tabla-126) detalla labelling Systems — Aplicación móvil para
 
 
 
-La [Tabla 127](#tabla-127) detalla labelling Systems — Aplicación móvil para personal de salud.
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 127](#tabla-127)).
 
 <a id="tabla-127"></a>
 
@@ -6551,7 +6551,7 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 
 
 
-La [Tabla 128](#tabla-128) detalla sEO Tags and Meta Tags — Landing Page.
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page ([Tabla 128](#tabla-128)).
 
 <a id="tabla-128"></a>
 
@@ -6584,7 +6584,7 @@ La [Tabla 128](#tabla-128) detalla sEO Tags and Meta Tags — Landing Page.
 
 
 
-La [Tabla 129](#tabla-129) detalla sEO Tags and Meta Tags — ASO (App Store Optimization).
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization) ([Tabla 129](#tabla-129)).
 
 <a id="tabla-129"></a>
 
@@ -6611,7 +6611,7 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 
 
-La [Tabla 130](#tabla-130) detalla searching Systems — Landing Page.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page ([Tabla 130](#tabla-130)).
 
 <a id="tabla-130"></a>
 
@@ -6633,7 +6633,7 @@ La [Tabla 130](#tabla-130) detalla searching Systems — Landing Page.
 
 
 
-La [Tabla 131](#tabla-131) detalla searching Systems — Aplicación móvil para pacientes.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 131](#tabla-131)).
 
 <a id="tabla-131"></a>
 
@@ -6656,7 +6656,7 @@ La [Tabla 131](#tabla-131) detalla searching Systems — Aplicación móvil para
 
 
 
-La [Tabla 132](#tabla-132) detalla searching Systems — Aplicación móvil para personal de salud.
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 132](#tabla-132)).
 
 <a id="tabla-132"></a>
 
@@ -6687,7 +6687,7 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 
 
-La [Tabla 133](#tabla-133) detalla navigation Systems — Landing Page.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page ([Tabla 133](#tabla-133)).
 
 <a id="tabla-133"></a>
 
@@ -6712,7 +6712,7 @@ La [Tabla 133](#tabla-133) detalla navigation Systems — Landing Page.
 
 
 
-La [Tabla 134](#tabla-134) detalla navigation Systems — Aplicación móvil para pacientes.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes ([Tabla 134](#tabla-134)).
 
 <a id="tabla-134"></a>
 
@@ -6735,7 +6735,7 @@ La [Tabla 134](#tabla-134) detalla navigation Systems — Aplicación móvil par
 
 
 
-La [Tabla 135](#tabla-135) detalla navigation Systems — Aplicación móvil para personal de salud.
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud ([Tabla 135](#tabla-135)).
 
 <a id="tabla-135"></a>
 
@@ -6790,7 +6790,7 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 
 
-La [Tabla 136](#tabla-136) detalla wireframe Desktop Web Browser.
+Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio ([Tabla 136](#tabla-136)).
 
 <a id="tabla-136"></a>
 
@@ -6809,7 +6809,7 @@ La [Tabla 136](#tabla-136) detalla wireframe Desktop Web Browser.
 
 
 
-La [Figura 63](#figura-63) muestra wireframe Desktop - Vista superior.
+
 
 <a id="figura-63"></a>
 
@@ -6825,7 +6825,7 @@ La [Figura 63](#figura-63) muestra wireframe Desktop - Vista superior.
 
 
 
-La [Figura 64](#figura-64) muestra wireframe Desktop - Vista inferior.
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio ([Figura 63](#figura-63), [Figura 64](#figura-64)).
 
 <a id="figura-64"></a>
 
@@ -6843,7 +6843,7 @@ La [Figura 64](#figura-64) muestra wireframe Desktop - Vista inferior.
 
 
 
-La [Tabla 137](#tabla-137) detalla wireframe Mobile Web Browser.
+Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil ([Tabla 137](#tabla-137)).
 
 <a id="tabla-137"></a>
 
@@ -6862,7 +6862,7 @@ La [Tabla 137](#tabla-137) detalla wireframe Mobile Web Browser.
 
 
 
-La [Figura 65](#figura-65) muestra wireframe Mobile - Vista superior.
+
 
 <a id="figura-65"></a>
 
@@ -6878,7 +6878,7 @@ La [Figura 65](#figura-65) muestra wireframe Mobile - Vista superior.
 
 
 
-La [Figura 66](#figura-66) muestra wireframe Mobile - Vista inferior.
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil ([Figura 65](#figura-65), [Figura 66](#figura-66)).
 
 <a id="figura-66"></a>
 
@@ -6908,7 +6908,7 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 
 
-La [Tabla 138](#tabla-138) detalla design System aplicado.
+El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page ([Tabla 138](#tabla-138)).
 
 <a id="tabla-138"></a>
 
@@ -6938,7 +6938,7 @@ La [Tabla 138](#tabla-138) detalla design System aplicado.
 
 
 
-La [Tabla 139](#tabla-139) detalla mock-up Desktop Web Browser.
+Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio ([Tabla 139](#tabla-139)).
 
 <a id="tabla-139"></a>
 
@@ -6957,7 +6957,7 @@ La [Tabla 139](#tabla-139) detalla mock-up Desktop Web Browser.
 
 
 
-La [Figura 67](#figura-67) muestra mock-up Desktop - Vista superior.
+
 
 <a id="figura-67"></a>
 
@@ -6973,7 +6973,7 @@ La [Figura 67](#figura-67) muestra mock-up Desktop - Vista superior.
 
 
 
-La [Figura 68](#figura-68) muestra mock-up Desktop - Vista inferior.
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio ([Figura 67](#figura-67), [Figura 68](#figura-68)).
 
 <a id="figura-68"></a>
 
@@ -6991,7 +6991,7 @@ La [Figura 68](#figura-68) muestra mock-up Desktop - Vista inferior.
 
 
 
-La [Tabla 140](#tabla-140) detalla mock-up Mobile Web Browser.
+Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil ([Tabla 140](#tabla-140)).
 
 <a id="tabla-140"></a>
 
@@ -7010,7 +7010,7 @@ La [Tabla 140](#tabla-140) detalla mock-up Mobile Web Browser.
 
 
 
-La [Figura 69](#figura-69) muestra mock-up Mobile - Vista superior.
+
 
 <a id="figura-69"></a>
 
@@ -7026,7 +7026,7 @@ La [Figura 69](#figura-69) muestra mock-up Mobile - Vista superior.
 
 
 
-La [Figura 70](#figura-70) muestra mock-up Mobile - Vista inferior.
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil ([Figura 69](#figura-69), [Figura 70](#figura-70)).
 
 <a id="figura-70"></a>
 
@@ -7044,7 +7044,7 @@ La [Figura 70](#figura-70) muestra mock-up Mobile - Vista inferior.
 
 
 
-La [Tabla 141](#tabla-141) detalla aplicación del Design System y diseño inclusivo.
+Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz ([Tabla 141](#tabla-141)).
 
 <a id="tabla-141"></a>
 
@@ -7071,7 +7071,7 @@ La [Tabla 141](#tabla-141) detalla aplicación del Design System y diseño inclu
 
 
 
-La [Tabla 142](#tabla-142) detalla componentes reutilizables.
+Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas ([Tabla 142](#tabla-142)).
 
 <a id="tabla-142"></a>
 
@@ -7095,11 +7095,11 @@ La [Tabla 142](#tabla-142) detalla componentes reutilizables.
 
 ### Landing Page implementado
 
-El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla.
+El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla ([Figura 71](#figura-71)).
 
 
 
-La [Figura 71](#figura-71) muestra landing Page de SaludYa - Implementación.
+
 
 <a id="figura-71"></a>
 
@@ -7132,7 +7132,7 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-La [Figura 72](#figura-72) muestra bienvenida y registro del paciente.
+
 
 <a id="figura-72"></a>
 
@@ -7148,11 +7148,11 @@ La [Figura 72](#figura-72) muestra bienvenida y registro del paciente.
 
 
 
-Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS.
+Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS ([Figura 72](#figura-72)).
 
 
 
-La [Figura 73](#figura-73) muestra acceso y recuperación de la cuenta del paciente.
+
 
 <a id="figura-73"></a>
 
@@ -7168,13 +7168,13 @@ La [Figura 73](#figura-73) muestra acceso y recuperación de la cuenta del pacie
 
 
 
-El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso.
+El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso ([Figura 73](#figura-73)).
 
 **Sección Dashboard del Paciente**
 
 
 
-La [Figura 74](#figura-74) muestra inicio, citas pendientes e historial del paciente.
+
 
 <a id="figura-74"></a>
 
@@ -7190,13 +7190,13 @@ La [Figura 74](#figura-74) muestra inicio, citas pendientes e historial del paci
 
 
 
-El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga.
+El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga ([Figura 74](#figura-74)).
 
 **Sección Reserva de Citas**
 
 
 
-La [Figura 75](#figura-75) muestra selección de especialidad, beneficiario, fecha, profesional y horario.
+
 
 <a id="figura-75"></a>
 
@@ -7212,11 +7212,11 @@ La [Figura 75](#figura-75) muestra selección de especialidad, beneficiario, fec
 
 
 
-El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección.
+El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección ([Figura 75](#figura-75)).
 
 
 
-La [Figura 76](#figura-76) muestra resumen, confirmación y estados de la reserva.
+
 
 <a id="figura-76"></a>
 
@@ -7232,13 +7232,13 @@ La [Figura 76](#figura-76) muestra resumen, confirmación y estados de la reserv
 
 
 
-El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva.
+El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva ([Figura 76](#figura-76)).
 
 **Sección Check-in y Atención del Paciente**
 
 
 
-La [Figura 77](#figura-77) muestra registro de llegada, escaneo del QR del establecimiento, ticket y cola.
+
 
 <a id="figura-77"></a>
 
@@ -7254,7 +7254,7 @@ La [Figura 77](#figura-77) muestra registro de llegada, escaneo del QR del estab
 
 
 
-Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar.
+Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar ([Figura 77](#figura-77)).
 
 Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
 
@@ -7262,7 +7262,7 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-La [Figura 78](#figura-78) muestra configuración, datos personales y actualización del contacto.
+
 
 <a id="figura-78"></a>
 
@@ -7278,13 +7278,13 @@ La [Figura 78](#figura-78) muestra configuración, datos personales y actualizac
 
 
 
-El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta.
+El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta ([Figura 78](#figura-78)).
 
 **Sección Gestión de Menores Vinculados**
 
 
 
-La [Figura 79](#figura-79) muestra vinculación, verificación y gestión de menores a cargo.
+
 
 <a id="figura-79"></a>
 
@@ -7300,13 +7300,13 @@ La [Figura 79](#figura-79) muestra vinculación, verificación y gestión de men
 
 
 
-El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación.
+El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación ([Figura 79](#figura-79)).
 
 **Sección Notificaciones y Reasignación de Citas**
 
 
 
-La [Figura 80](#figura-80) muestra notificaciones y ofertas de reasignación de citas.
+
 
 <a id="figura-80"></a>
 
@@ -7322,7 +7322,7 @@ La [Figura 80](#figura-80) muestra notificaciones y ofertas de reasignación de 
 
 
 
-Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original.
+Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original ([Figura 80](#figura-80)).
 
 **Archivo de diseño**
 
@@ -7340,11 +7340,11 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 
 **Happy Path**
 
-El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada.
+El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada ([Figura 81](#figura-81)).
 
 
 
-La [Figura 81](#figura-81) muestra registrarse como paciente — recorrido esperado.
+
 
 <a id="figura-81"></a>
 
@@ -7362,11 +7362,11 @@ La [Figura 81](#figura-81) muestra registrarse como paciente — recorrido esper
 
 **Unhappy Paths**
 
-Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta.
+Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta ([Figura 82](#figura-82)).
 
 
 
-La [Figura 82](#figura-82) muestra registrarse como paciente — errores y alternativas.
+
 
 <a id="figura-82"></a>
 
@@ -7386,11 +7386,11 @@ La [Figura 82](#figura-82) muestra registrarse como paciente — errores y alter
 
 **Happy Path**
 
-El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos.
+El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos ([Figura 83](#figura-83)).
 
 
 
-La [Figura 83](#figura-83) muestra iniciar sesión como paciente — recorrido esperado.
+
 
 <a id="figura-83"></a>
 
@@ -7408,11 +7408,11 @@ La [Figura 83](#figura-83) muestra iniciar sesión como paciente — recorrido e
 
 **Unhappy Paths**
 
-Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS.
+Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS ([Figura 84](#figura-84)).
 
 
 
-La [Figura 84](#figura-84) muestra iniciar sesión como paciente — errores y alternativas.
+
 
 <a id="figura-84"></a>
 
@@ -7432,11 +7432,11 @@ La [Figura 84](#figura-84) muestra iniciar sesión como paciente — errores y a
 
 **Happy Path**
 
-El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia.
+El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia ([Figura 85](#figura-85)).
 
 
 
-La [Figura 85](#figura-85) muestra recuperar la contraseña — recorrido esperado.
+
 
 <a id="figura-85"></a>
 
@@ -7454,11 +7454,11 @@ La [Figura 85](#figura-85) muestra recuperar la contraseña — recorrido espera
 
 **Unhappy Paths**
 
-Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente.
+Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente ([Figura 86](#figura-86)).
 
 
 
-La [Figura 86](#figura-86) muestra recuperar la contraseña — errores y alternativas.
+
 
 <a id="figura-86"></a>
 
@@ -7478,11 +7478,11 @@ La [Figura 86](#figura-86) muestra recuperar la contraseña — errores y altern
 
 **Happy Path**
 
-El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación.
+El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación ([Figura 87](#figura-87)).
 
 
 
-La [Figura 87](#figura-87) muestra vincular o desvincular a un menor — recorrido esperado.
+
 
 <a id="figura-87"></a>
 
@@ -7500,11 +7500,11 @@ La [Figura 87](#figura-87) muestra vincular o desvincular a un menor — recorri
 
 **Unhappy Paths**
 
-Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión.
+Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión ([Figura 88](#figura-88)).
 
 
 
-La [Figura 88](#figura-88) muestra vincular o desvincular a un menor — errores y alternativas.
+
 
 <a id="figura-88"></a>
 
@@ -7524,11 +7524,11 @@ La [Figura 88](#figura-88) muestra vincular o desvincular a un menor — errores
 
 **Happy Path**
 
-El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación.
+El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación ([Figura 89](#figura-89)).
 
 
 
-La [Figura 89](#figura-89) muestra actualizar el correo o celular del perfil — recorrido esperado.
+
 
 <a id="figura-89"></a>
 
@@ -7546,11 +7546,11 @@ La [Figura 89](#figura-89) muestra actualizar el correo o celular del perfil —
 
 **Unhappy Paths**
 
-Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta.
+Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta ([Figura 90](#figura-90)).
 
 
 
-La [Figura 90](#figura-90) muestra actualizar el correo o celular del perfil — errores y alternativas.
+
 
 <a id="figura-90"></a>
 
@@ -7570,11 +7570,11 @@ La [Figura 90](#figura-90) muestra actualizar el correo o celular del perfil —
 
 **Happy Path**
 
-El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales.
+El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales ([Figura 91](#figura-91)).
 
 
 
-La [Figura 91](#figura-91) muestra consultar disponibilidad de citas — recorrido esperado.
+
 
 <a id="figura-91"></a>
 
@@ -7592,11 +7592,11 @@ La [Figura 91](#figura-91) muestra consultar disponibilidad de citas — recorri
 
 **Unhappy Paths**
 
-Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan.
+Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan ([Figura 92](#figura-92)).
 
 
 
-La [Figura 92](#figura-92) muestra consultar disponibilidad de citas — errores y alternativas.
+
 
 <a id="figura-92"></a>
 
@@ -7616,11 +7616,11 @@ La [Figura 92](#figura-92) muestra consultar disponibilidad de citas — errores
 
 **Happy Path**
 
-El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita.
+El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita ([Figura 93](#figura-93)).
 
 
 
-La [Figura 93](#figura-93) muestra reservar una cita y recibir confirmación — recorrido esperado.
+
 
 <a id="figura-93"></a>
 
@@ -7638,11 +7638,11 @@ La [Figura 93](#figura-93) muestra reservar una cita y recibir confirmación —
 
 **Unhappy Paths**
 
-Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada.
+Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada ([Figura 94](#figura-94)).
 
 
 
-La [Figura 94](#figura-94) muestra reservar una cita y recibir confirmación — errores y alternativas.
+
 
 <a id="figura-94"></a>
 
@@ -7662,11 +7662,11 @@ La [Figura 94](#figura-94) muestra reservar una cita y recibir confirmación —
 
 **Happy Path**
 
-Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor.
+Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor ([Figura 95](#figura-95)).
 
 
 
-La [Figura 95](#figura-95) muestra consultar citas, detalles e historial — recorrido esperado.
+
 
 <a id="figura-95"></a>
 
@@ -7684,11 +7684,11 @@ La [Figura 95](#figura-95) muestra consultar citas, detalles e historial — rec
 
 **Unhappy Paths**
 
-Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario.
+Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario ([Figura 96](#figura-96)).
 
 
 
-La [Figura 96](#figura-96) muestra consultar citas, detalles e historial — errores y alternativas.
+
 
 <a id="figura-96"></a>
 
@@ -7708,11 +7708,11 @@ La [Figura 96](#figura-96) muestra consultar citas, detalles e historial — err
 
 **Happy Path**
 
-El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada.
+El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada ([Figura 97](#figura-97)).
 
 
 
-La [Figura 97](#figura-97) muestra cancelar una reserva dentro del plazo — recorrido esperado.
+
 
 <a id="figura-97"></a>
 
@@ -7730,11 +7730,11 @@ La [Figura 97](#figura-97) muestra cancelar una reserva dentro del plazo — rec
 
 **Unhappy Paths**
 
-Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial.
+Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial ([Figura 98](#figura-98)).
 
 
 
-La [Figura 98](#figura-98) muestra cancelar una reserva dentro del plazo — errores y alternativas.
+
 
 <a id="figura-98"></a>
 
@@ -7754,11 +7754,11 @@ La [Figura 98](#figura-98) muestra cancelar una reserva dentro del plazo — err
 
 **Happy Path**
 
-El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior.
+El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior ([Figura 99](#figura-99)).
 
 
 
-La [Figura 99](#figura-99) muestra responder a una oferta de adelanto — recorrido esperado.
+
 
 <a id="figura-99"></a>
 
@@ -7776,11 +7776,11 @@ La [Figura 99](#figura-99) muestra responder a una oferta de adelanto — recorr
 
 **Unhappy Paths**
 
-El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual.
+El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual ([Figura 100](#figura-100)).
 
 
 
-La [Figura 100](#figura-100) muestra responder a una oferta de adelanto — errores y alternativas.
+
 
 <a id="figura-100"></a>
 
@@ -7800,11 +7800,11 @@ La [Figura 100](#figura-100) muestra responder a una oferta de adelanto — erro
 
 **Happy Path**
 
-Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket.
+Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket ([Figura 101](#figura-101)).
 
 
 
-La [Figura 101](#figura-101) muestra registrar llegada presencial mediante QR — recorrido esperado.
+
 
 <a id="figura-101"></a>
 
@@ -7822,11 +7822,11 @@ La [Figura 101](#figura-101) muestra registrar llegada presencial mediante QR �
 
 **Unhappy Paths**
 
-Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo.
+Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo ([Figura 102](#figura-102)).
 
 
 
-La [Figura 102](#figura-102) muestra registrar llegada presencial mediante QR — errores y alternativas.
+
 
 <a id="figura-102"></a>
 
@@ -7846,11 +7846,11 @@ La [Figura 102](#figura-102) muestra registrar llegada presencial mediante QR �
 
 **Happy Path**
 
-Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio.
+Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio ([Figura 103](#figura-103)).
 
 
 
-La [Figura 103](#figura-103) muestra obtener el ticket digital de atención — recorrido esperado.
+
 
 <a id="figura-103"></a>
 
@@ -7868,11 +7868,11 @@ La [Figura 103](#figura-103) muestra obtener el ticket digital de atención — 
 
 **Unhappy Paths**
 
-Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente.
+Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente ([Figura 104](#figura-104)).
 
 
 
-La [Figura 104](#figura-104) muestra obtener el ticket digital de atención — errores y alternativas.
+
 
 <a id="figura-104"></a>
 
@@ -7892,11 +7892,11 @@ La [Figura 104](#figura-104) muestra obtener el ticket digital de atención — 
 
 **Happy Path**
 
-El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola.
+El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola ([Figura 105](#figura-105)).
 
 
 
-La [Figura 105](#figura-105) muestra consultar posición o dejar la cola — recorrido esperado.
+
 
 <a id="figura-105"></a>
 
@@ -7914,11 +7914,11 @@ La [Figura 105](#figura-105) muestra consultar posición o dejar la cola — rec
 
 **Unhappy Paths**
 
-Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta.
+Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta ([Figura 106](#figura-106)).
 
 
 
-La [Figura 106](#figura-106) muestra consultar posición o dejar la cola — errores y alternativas.
+
 
 <a id="figura-106"></a>
 
@@ -7938,11 +7938,11 @@ La [Figura 106](#figura-106) muestra consultar posición o dejar la cola — err
 
 **Happy Path**
 
-El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención.
+El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención ([Figura 107](#figura-107)).
 
 
 
-La [Figura 107](#figura-107) muestra recibir el llamado y acudir al consultorio — recorrido esperado.
+
 
 <a id="figura-107"></a>
 
@@ -7960,11 +7960,11 @@ La [Figura 107](#figura-107) muestra recibir el llamado y acudir al consultorio 
 
 **Unhappy Paths**
 
-Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso.
+Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso ([Figura 108](#figura-108)).
 
 
 
-La [Figura 108](#figura-108) muestra recibir el llamado y acudir al consultorio — errores y alternativas.
+
 
 <a id="figura-108"></a>
 
@@ -7984,11 +7984,11 @@ La [Figura 108](#figura-108) muestra recibir el llamado y acudir al consultorio 
 
 **Happy Path**
 
-El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida.
+El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida ([Figura 109](#figura-109)).
 
 
 
-La [Figura 109](#figura-109) muestra cerrar sesión o recuperar acceso a una sesión — recorrido esperado.
+
 
 <a id="figura-109"></a>
 
@@ -8006,11 +8006,11 @@ La [Figura 109](#figura-109) muestra cerrar sesión o recuperar acceso a una ses
 
 **Unhappy Paths**
 
-Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente.
+Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente ([Figura 110](#figura-110)).
 
 
 
-La [Figura 110](#figura-110) muestra cerrar sesión o recuperar acceso a una sesión — errores y alternativas.
+
 
 <a id="figura-110"></a>
 
@@ -8035,11 +8035,11 @@ La [Figura 110](#figura-110) muestra cerrar sesión o recuperar acceso a una ses
 En esta sección se presenta el prótotipo interactivo desarrollado en Figma para la aplicación móvil. El diseño y los flujos de navegación están alineados con la arquitectura de información y los user flow diagrams definidos.
 
 
-A continuación, se adjunta el enlace al video de demostración.
+A continuación, se adjunta el enlace al video de demostración ([Figura 111](#figura-111)).
 
 
 
-La [Figura 111](#figura-111) muestra mobile applications prototyping.
+
 
 <a id="figura-111"></a>
 
@@ -8069,7 +8069,7 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 
 
 
-La [Tabla 143](#tabla-143) detalla source Code Style Guide & Conventions — Landing Page.
+
 
 <a id="tabla-143"></a>
 
@@ -8095,7 +8095,7 @@ La [Tabla 143](#tabla-143) detalla source Code Style Guide & Conventions — Lan
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales:
+Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales ([Tabla 143](#tabla-143)):
 
 - Indentación de 2 espacios.
 - Uso de comillas dobles en HTML y comillas simples en JavaScript.
@@ -8112,7 +8112,7 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 
 
 
-La [Tabla 144](#tabla-144) detalla source Code Style Guide & Conventions — Aplicaciones móviles.
+
 
 <a id="tabla-144"></a>
 
@@ -8136,7 +8136,7 @@ La [Tabla 144](#tabla-144) detalla source Code Style Guide & Conventions — Apl
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales:
+Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales ([Tabla 144](#tabla-144)):
 
 - Indentación de 4 espacios.
 - Longitud máxima de línea: 100 caracteres.
@@ -8153,7 +8153,7 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 
 
 
-La [Tabla 145](#tabla-145) detalla source Code Style Guide & Conventions — Servicios web.
+
 
 <a id="tabla-145"></a>
 
@@ -8177,7 +8177,7 @@ La [Tabla 145](#tabla-145) detalla source Code Style Guide & Conventions — Ser
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, con las siguientes reglas adicionales:
+Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, con las siguientes reglas adicionales ([Tabla 145](#tabla-145)):
 
 - Indentación de 4 espacios.
 - Uso de anotaciones de Spring (`@RestController`, `@Service`, `@Repository`).
@@ -8188,11 +8188,11 @@ Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, co
 
 #### Convenciones de commits y ramas
 
-El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlow** para la gestión de ramas:
+El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlow** para la gestión de ramas ([Tabla 146](#tabla-146)):
 
 
 
-La [Tabla 146](#tabla-146) detalla convenciones de commits.
+
 
 <a id="tabla-146"></a>
 
@@ -8216,7 +8216,7 @@ La [Tabla 146](#tabla-146) detalla convenciones de commits.
 
 
 
-La [Tabla 147](#tabla-147) detalla convenciones de ramas.
+
 
 <a id="tabla-147"></a>
 
@@ -8236,7 +8236,7 @@ La [Tabla 147](#tabla-147) detalla convenciones de ramas.
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
+Los releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`) ([Tabla 147](#tabla-147)).
 
 ### 4.1.4. Software Deployment Configuration
 
@@ -8248,7 +8248,7 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 
 
 
-La [Tabla 148](#tabla-148) detalla software Deployment Configuration — Landing Page.
+
 
 <a id="tabla-148"></a>
 
@@ -8269,7 +8269,7 @@ La [Tabla 148](#tabla-148) detalla software Deployment Configuration — Landing
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2.
+**Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2 ([Tabla 148](#tabla-148)).
 
 #### Aplicaciones móviles
 
@@ -8277,7 +8277,7 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 
 
-La [Tabla 149](#tabla-149) detalla software Deployment Configuration — Aplicaciones móviles.
+
 
 <a id="tabla-149"></a>
 
@@ -8298,7 +8298,7 @@ La [Tabla 149](#tabla-149) detalla software Deployment Configuration — Aplicac
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution.
+**Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution ([Tabla 149](#tabla-149)).
 
 #### Servicios web
 
@@ -8306,7 +8306,7 @@ Los servicios web se despliegan en **Railway** (o alternativamente **Render** o 
 
 
 
-La [Tabla 150](#tabla-150) detalla software Deployment Configuration — Servicios web.
+
 
 <a id="tabla-150"></a>
 
@@ -8328,15 +8328,15 @@ La [Tabla 150](#tabla-150) detalla software Deployment Configuration — Servici
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, Railway.
+**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, Railway ([Tabla 150](#tabla-150)).
 
 #### Deployment Diagram (C4 Model)
 
-El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube:
+El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube ([Tabla 151](#tabla-151)):
 
 
 
-La [Tabla 151](#tabla-151) detalla deployment Diagram (C4 Model).
+
 
 <a id="tabla-151"></a>
 
