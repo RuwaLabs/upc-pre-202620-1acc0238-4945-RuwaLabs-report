@@ -1,34 +1,34 @@
-<div style="text-align:center">
+<div align="center" style="text-align:center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150">
 </div>
 
-<p style="text-align:center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
-<p style="text-align:center"><strong>Carrera de Ingeniería de Software</strong></p>
+<p align="center" style="text-align:center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
+<p align="center" style="text-align:center"><strong>Carrera de Ingeniería de Software</strong></p>
 
 <br>
 
-<p style="text-align:center"><strong>1ACC0238</strong></p>
-<p style="text-align:center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
-<p style="text-align:center">NRC</p>
-<p style="text-align:center"><strong>4945</strong></p>
+<p align="center" style="text-align:center"><strong>1ACC0238</strong></p>
+<p align="center" style="text-align:center"><strong>Aplicaciones para Dispositivos Móviles</strong></p>
+<p align="center" style="text-align:center">NRC</p>
+<p align="center" style="text-align:center"><strong>4945</strong></p>
 
-<h2 style="text-align:center">Informe del Trabajo Final</h2>
+<h2 align="center" style="text-align:center">Informe del Trabajo Final</h2>
 
-<p style="text-align:center">Docente</p>
-<p style="text-align:center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
-
-<br>
-
-<p style="text-align:center">Equipo</p>
-<p style="text-align:center"><strong>RuwaLabs</strong></p>
-<p style="text-align:center">Proyecto</p>
-<p style="text-align:center"><strong>SaludYa</strong></p>
+<p align="center" style="text-align:center">Docente</p>
+<p align="center" style="text-align:center"><strong>Mayta Guillermo, Jorge Luis</strong></p>
 
 <br>
 
-<p style="text-align:center"><strong>Integrantes</strong></p>
+<p align="center" style="text-align:center">Equipo</p>
+<p align="center" style="text-align:center"><strong>RuwaLabs</strong></p>
+<p align="center" style="text-align:center">Proyecto</p>
+<p align="center" style="text-align:center"><strong>SaludYa</strong></p>
 
-<table style="margin-left:auto;margin-right:auto">
+<br>
+
+<p align="center" style="text-align:center"><strong>Integrantes</strong></p>
+
+<table align="center" style="margin-left:auto;margin-right:auto">
   <tr><th>Código</th><th>Apellidos y nombres</th></tr>
   <tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr>
   <tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr>
@@ -37,12 +37,12 @@
   <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
 </table>
 
-<p style="text-align:center"><strong>Período 202620</strong></p>
-<p style="text-align:center"><strong>Septiembre 2026</strong></p>
+<p align="center" style="text-align:center"><strong>Período 202620</strong></p>
+<p align="center" style="text-align:center"><strong>Septiembre 2026</strong></p>
 
 
 ---
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 # Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
@@ -58,7 +58,7 @@
 | 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 | 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 # Project Report Collaboration Insights
 
 <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
@@ -72,7 +72,7 @@ URL de la Organización de Github del equipo RuwaLabs: [RuwaLabs](https://github
 URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-report](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report)
 
 ---
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 # Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -173,7 +173,7 @@ URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-r
 
 ---
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # Student Outcome
 
@@ -256,7 +256,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tbody>
 </table>
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # Objetivos SMART
 
@@ -288,7 +288,7 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 |:---:|:---|:---|
 | 1 | Obtener la certificación *Google Cloud Professional Data Engineer* para especializarme en la gestión de datos, mediante un plan de estudio de 6 horas semanales y la aprobación del examen oficial con un puntaje mínimo de 70/100. | Diciembre 2027 |
 | 2 | Iniciar una maestría en Arquitectura de Software, culminando los dos primeros semestres con un promedio no menor a 16/20 y publicando un proyecto de arquitectura de datos al finalizar cada semestre. | 2027 |
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 ## Objetivos SMART – Ramos Mera, Neo Daniel
 
 **Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada.
@@ -307,7 +307,7 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 | 1 | Obtener la certificación *Professional Scrum Master I (PSM I)* para fortalecer mis competencias en gestión de proyectos, aprobando el examen oficial con una puntuación mínima de 85% y gestionando al menos un proyecto académico bajo el marco Scrum. | Diciembre 2026 |
 | 2 | Ingresar a un programa de especialización en gestión de proyectos tecnológicos, aprobando los dos primeros ciclos con un promedio no menor a 16/20 y liderando al menos un proyecto real durante el programa. | 2027 |
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # Capítulo 1: Presentación #
 
@@ -338,7 +338,7 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
     </tr>
 </table>
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
@@ -388,7 +388,7 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 </table>
 
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 ## 1.2. Solution Profile
 
@@ -614,7 +614,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 <p align="center">
   <img src="https://i.imgur.com/ESmSAsu.jpeg" alt="lean_ux_canvas"/>
-  <p align="center">Lean Ux Canvas</p>
+  <p align="center" style="text-align:center">Lean Ux Canvas</p>
 </p>
 
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles.
@@ -643,7 +643,7 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Problema:** La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - **Necesidad:** Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -4213,7 +4213,7 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 5. En la app, navega por las secciones principales mediante la barra inferior.
 6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # 3.1.3. Landing Page UI Design
 
@@ -4906,7 +4906,7 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 - Los servicios web acceden a PostgreSQL para la persistencia de datos.
 - Los servicios web envían notificaciones push a las apps a través de Firebase Cloud Messaging.
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 
 # Conclusiones
@@ -4937,7 +4937,7 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 
 - **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 
 # Bibliografía #
 
@@ -4953,7 +4953,7 @@ Presidencia del Consejo de Ministros (PCM). (2026). _Obtener cita médica en un 
 
 World Health Organization (WHO). (2025). _Global strategy on digital health 2020–2027_. World Health Organization. Recuperado de [https://www.who.int/publications/i/item/9789240116870](https://www.who.int/publications/i/item/9789240116870)
 
-%%pdf-pagebreak%%
+<!-- pdf-pagebreak -->
 # Anexos
 
 ## Anexo A: Vídeos de entrevistas realizadas
