@@ -866,7 +866,7 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 
 
 
-La [Tabla 10](#tabla-10) detalla análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA. Las imágenes incluidas corresponden a [Figura 12](#figura-12), [Figura 13](#figura-13), [Figura 14](#figura-14).
+La [Tabla 10](#tabla-10) detalla análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA. Las imágenes incluidas corresponden a [Figura 12](#figura-12), [Figura 13](#figura-13), [Figura 14](#figura-14), [Figura 15](#figura-15).
 
 <a id="tabla-10"></a>
 
@@ -876,7 +876,7 @@ La [Tabla 10](#tabla-10) detalla análisis competitivo de SaludYa, Doctoralia, C
 
 | **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
 | :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Logo**                                                       |                                                                                                                          ![[Icon_SaludYa.png]]                                                                                                                          |                                                                                            <a id="figura-12"></a><strong>Figura 12</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia"><br><small>Nota. Identificador visual de Doctoralia. Fuente de la imagen: archivo enlazado.</small>                                                                                             |                                                    <a id="figura-13"></a><strong>Figura 13</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica"><br><small>Nota. Identificador visual de Cita Médica. Fuente de la imagen: archivo enlazado.</small>                                                     |                                                                                              <a id="figura-14"></a><strong>Figura 14</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA"><br><small>Nota. Identificador visual de Logotipo del MINSA. Fuente de la imagen: archivo enlazado.</small>                                                                                               |
+| **Logo**                                                       |                                                                                                                          <a id="figura-12"></a><strong>Figura 12</strong><br><em>Logotipo de SaludYa</em><br><img src="assets/Icon_SaludYa.png" alt="Logotipo de SaludYa" width="190">                                                                                                                          |                                                                                            <a id="figura-13"></a><strong>Figura 13</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia">                                                                                             |                                                    <a id="figura-14"></a><strong>Figura 14</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica">                                                     |                                                                                              <a id="figura-15"></a><strong>Figura 15</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA">                                                                                               |
 | **Perfil / Overview**                                          |        Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real.         | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
 | **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* |                         Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas.                          |                                                           Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico.                                                            |               Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico.               |                                        Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado.                                         |
 | **Perfil de Marketing**<br>*Mercado objetivo*                  |                                                                          Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.                                                                          |                                                                       Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas.                                                                       |                                    Pacientes que buscan atención médica privada en consultorios y clínicas de Perú.                                    |                                                                Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones.                                                                 |
@@ -925,7 +925,7 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 
 
 
-La [Tabla 11](#tabla-11) detalla ficha de entrevista — Registro de la entrevista a Braulio Núñez. Las imágenes incluidas corresponden a [Figura 15](#figura-15).
+La [Tabla 11](#tabla-11) detalla ficha de entrevista — Registro de la entrevista a Braulio Núñez. Las imágenes incluidas corresponden a [Figura 16](#figura-16).
 
 <a id="tabla-11"></a>
 
@@ -935,7 +935,7 @@ La [Tabla 11](#tabla-11) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <a id="figura-15"></a><strong>Figura 15</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez |
+| <a id="figura-16"></a><strong>Figura 16</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:22 | **Resumen:** Braulio Núñez, de 24 años, es técnico de mantenimiento y acude con frecuencia al Centro de Salud Comas para llevar a su sobrino a sus controles y vacunas. Relata que, para conseguir una cita, suele madrugar desde las cuatro y media de la mañana, ya que si llega más tarde ya no encuentra cupos disponibles en pediatría, y en alguna ocasión tuvo que regresar al día siguiente por no lograr atención. Menciona que casi nunca puede resolver esto por teléfono, pues las líneas del establecimiento no responden, por lo que siempre debe acudir de forma presencial. También comenta que una vez perdió una cita ya conseguida porque no contaba con ningún recordatorio. En cuanto a tecnología, utiliza un celular Android en el que emplea con frecuencia WhatsApp, Facebook y aplicaciones de delivery, y se muestra cómodo realizando trámites desde el celular. Considera que una aplicación que le muestre la disponibilidad de citas en tiempo real, le envíe notificaciones cuando se libere un cupo y respete el horario reservado, le ahorraría mucho tiempo y evitaría que tenga que madrugar sin certeza de conseguir atención. |
 
@@ -947,7 +947,7 @@ La [Tabla 11](#tabla-11) detalla ficha de entrevista — Registro de la entrevis
 
 
 
-La [Tabla 12](#tabla-12) detalla ficha de entrevista — Registro de la entrevista a Yordi Salazar. Las imágenes incluidas corresponden a [Figura 16](#figura-16).
+La [Tabla 12](#tabla-12) detalla ficha de entrevista — Registro de la entrevista a Yordi Salazar. Las imágenes incluidas corresponden a [Figura 17](#figura-17).
 
 <a id="tabla-12"></a>
 
@@ -957,7 +957,7 @@ La [Tabla 12](#tabla-12) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-16"></a><strong>Figura 16</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
+| <p align="center"><a id="figura-17"></a><strong>Figura 17</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCq6uLH5lxNSpoxEAN9q1qfAVF0qgEoHWEvug_aNrID100?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sXQwSj) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:06 | **Resumen:** Yordi Salazar, de 27 años, es dueño de una tienda de abarrotes y acude junto con su madre a la posta de salud de su zona de forma mensual. Cuenta que en su última experiencia tuvo que ir hasta tres veces distintas antes de conseguir cupo, ya que las dos primeras veces ya no había disponibilidad al momento de llegar. Señala que la parte más complicada es no saber cuánta gente hay antes en la fila, y que en una ocasión perdió una cita porque solo le avisaron la fecha de forma verbal, sin ningún respaldo escrito. Cuando no logra conseguir cupo, opta por acudir a una clínica particular, aunque esto le representa un gasto adicional. En cuanto a tecnología, utiliza un celular sencillo y no se siente del todo cómodo con trámites digitales, por lo que suele apoyarse en su hijo para este tipo de gestiones. Considera que una aplicación sencilla, con letras grandes y pocos pasos, que le permita conocer la disponibilidad de citas y avisarle mediante llamada o mensaje de texto cuando se libere un cupo, sería de gran ayuda para evitar las largas colas que actualmente enfrenta. |
 
@@ -969,7 +969,7 @@ Entrevista 3:
 
 
 
-La [Tabla 13](#tabla-13) detalla ficha de entrevista — Registro de la entrevista a Kevin Huamán. Las imágenes incluidas corresponden a [Figura 17](#figura-17).
+La [Tabla 13](#tabla-13) detalla ficha de entrevista — Registro de la entrevista a Kevin Huamán. Las imágenes incluidas corresponden a [Figura 18](#figura-18).
 
 <a id="tabla-13"></a>
 
@@ -979,7 +979,7 @@ La [Tabla 13](#tabla-13) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-17"></a><strong>Figura 17</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
+| <p align="center"><a id="figura-18"></a><strong>Figura 18</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAAwi-Crd0UR6aM_vPtIyU8AY5rcOh7FEgLdmqvsNkC1bU?e=JGBM7r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-05:35 | **Resumen:** Kevin Huamán, de 22 años, se dedica al reparto mediante aplicaciones de delivery y acude ocasionalmente al centro materno infantil de su zona. Relata que la última vez que necesitó una cita tuvo que pedir el día libre en su trabajo, ya que ni siquiera sabía que existía otra forma de agendar una atención que no fuera de manera presencial. Señala que en una oportunidad llegó al establecimiento y ya no había citas disponibles para medicina general, lo que le hizo perder tiempo de trabajo sin obtener ningún resultado. A diferencia de otros pacientes, se siente muy cómodo utilizando aplicaciones móviles, pues las emplea constantemente para su trabajo de reparto, mapas y redes sociales. Considera que una aplicación confiable, que no se cuelgue y tenga buenas reseñas, que le permita reservar su cita al toque y recibir notificaciones push cuando se libere un cupo, le permitiría organizar mejor su tiempo de trabajo y evitar viajes innecesarios solo para consultar disponibilidad. |
 
@@ -993,7 +993,7 @@ Entrevista 4:
 
 
 
-La [Tabla 14](#tabla-14) detalla ficha de entrevista — Registro de la entrevista a Franco Alanoca. Las imágenes incluidas corresponden a [Figura 18](#figura-18).
+La [Tabla 14](#tabla-14) detalla ficha de entrevista — Registro de la entrevista a Franco Alanoca. Las imágenes incluidas corresponden a [Figura 19](#figura-19).
 
 <a id="tabla-14"></a>
 
@@ -1003,7 +1003,7 @@ La [Tabla 14](#tabla-14) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-18"></a><strong>Figura 18</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
+| <p align="center"><a id="figura-19"></a><strong>Figura 19</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQDwPo3p7nHzTo_3Q8Hdq5zRASpKzhsImRgOPsWf4awAsOU?e=pY3MtU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-06:00 | **Resumen:** Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, cargo que desempeña desde hace dos años. Su labor consiste en registrar a los pacientes conforme llegan y asignar los cupos del día según el orden de llegada, sin que exista un sistema de reserva previa. Explica que cuando los cupos se agotan simplemente se informa a los pacientes que regresen al día siguiente, y que no cuentan con un mecanismo formal para gestionar cancelaciones o inasistencias, por lo que esos cupos terminan perdiéndose. Señala que el principal problema es la desorganización que se genera cuando hay mucha demanda, especialmente en las mañanas, lo que ocasiona reclamos y un ambiente tenso. Actualmente, la gestión se apoya en cuadernos físicos y hojas de Excel, lo que en ocasiones provoca pérdida de información. Considera que contar con un sistema que muestre en tiempo real la disponibilidad de cupos y el estado de cada paciente eliminaría gran parte del registro manual repetitivo y ayudaría a evitar confusiones en la atención diaria. |
 
@@ -1015,7 +1015,7 @@ La [Tabla 14](#tabla-14) detalla ficha de entrevista — Registro de la entrevis
 
 
 
-La [Tabla 15](#tabla-15) detalla ficha de entrevista — Registro de la entrevista a Wilmer Contreras. Las imágenes incluidas corresponden a [Figura 19](#figura-19).
+La [Tabla 15](#tabla-15) detalla ficha de entrevista — Registro de la entrevista a Wilmer Contreras. Las imágenes incluidas corresponden a [Figura 20](#figura-20).
 
 <a id="tabla-15"></a>
 
@@ -1025,7 +1025,7 @@ La [Tabla 15](#tabla-15) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-19"></a><strong>Figura 19</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
+| <p align="center"><a id="figura-20"></a><strong>Figura 20</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 0:00-04:25 | **Resumen:** Wilmer Contreras, de 29 años, se desempeña como jefe de admisión en una posta de salud de Comas desde hace cinco años. Entre sus funciones se encuentra supervisar al personal de admisión, coordinar la distribución de cupos entre especialidades y atender los reclamos de los pacientes. Explica que el proceso actual depende de un cuaderno físico donde se revisa la disponibilidad y se asignan horarios aproximados que no siempre se cumplen, y que cuando los cupos se agotan se deriva a los pacientes a otros establecimientos o se les pide regresar otro día. Menciona que no existe un registro formal de cancelaciones ni de inasistencias, lo que dificulta reasignar los cupos liberados de manera oportuna. Identifica como principal problema la falta de un sistema centralizado que muestre la disponibilidad real de citas, lo que genera colas largas y personal saturado, especialmente los lunes y a inicios de mes. Considera que automatizar la asignación de cupos y las notificaciones a los pacientes sería clave para mejorar la atención y reducir la carga operativa del personal. |
 
@@ -1037,7 +1037,7 @@ La [Tabla 15](#tabla-15) detalla ficha de entrevista — Registro de la entrevis
 
 
 
-La [Tabla 16](#tabla-16) detalla ficha de entrevista — Registro de la entrevista a Deyvis Ochante. Las imágenes incluidas corresponden a [Figura 20](#figura-20).
+La [Tabla 16](#tabla-16) detalla ficha de entrevista — Registro de la entrevista a Deyvis Ochante. Las imágenes incluidas corresponden a [Figura 21](#figura-21).
 
 <a id="tabla-16"></a>
 
@@ -1047,7 +1047,7 @@ La [Tabla 16](#tabla-16) detalla ficha de entrevista — Registro de la entrevis
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <a id="figura-20"></a><strong>Figura 20</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
+| <a id="figura-21"></a><strong>Figura 21</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
 | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | **Timing:** 00:00-04:10 | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda. |
 
@@ -1073,11 +1073,11 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-La [Figura 21](#figura-21) muestra uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados.
+La [Figura 22](#figura-22) muestra uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados.
 
-<a id="figura-21"></a>
+<a id="figura-22"></a>
 
-**Figura 21**
+**Figura 22**
 
 *Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados*
 
@@ -1093,11 +1093,11 @@ La [Figura 21](#figura-21) muestra uso de aplicaciones móviles para reservar ci
 
 
 
-La [Figura 22](#figura-22) muestra comodidad de los pacientes entrevistados al utilizar el celular.
+La [Figura 23](#figura-23) muestra comodidad de los pacientes entrevistados al utilizar el celular.
 
-<a id="figura-22"></a>
+<a id="figura-23"></a>
 
-**Figura 22**
+**Figura 23**
 
 *Comodidad de los pacientes entrevistados al utilizar el celular*
 
@@ -1113,11 +1113,11 @@ La [Figura 22](#figura-22) muestra comodidad de los pacientes entrevistados al u
 
 
 
-La [Figura 23](#figura-23) muestra utilidad percibida de consultar la disponibilidad de citas.
+La [Figura 24](#figura-24) muestra utilidad percibida de consultar la disponibilidad de citas.
 
-<a id="figura-23"></a>
+<a id="figura-24"></a>
 
-**Figura 23**
+**Figura 24**
 
 *Utilidad percibida de consultar la disponibilidad de citas*
 
@@ -1143,11 +1143,11 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-La [Figura 24](#figura-24) muestra sistema actual de gestión de citas del personal entrevistado.
+La [Figura 25](#figura-25) muestra sistema actual de gestión de citas del personal entrevistado.
 
-<a id="figura-24"></a>
+<a id="figura-25"></a>
 
-**Figura 24**
+**Figura 25**
 
 *Sistema actual de gestión de citas del personal entrevistado*
 
@@ -1163,11 +1163,11 @@ La [Figura 24](#figura-24) muestra sistema actual de gestión de citas del perso
 
 
 
-La [Figura 25](#figura-25) muestra necesidad de un sistema digital según el personal entrevistado.
+La [Figura 26](#figura-26) muestra necesidad de un sistema digital según el personal entrevistado.
 
-<a id="figura-25"></a>
+<a id="figura-26"></a>
 
-**Figura 25**
+**Figura 26**
 
 *Necesidad de un sistema digital según el personal entrevistado*
 
@@ -1183,11 +1183,11 @@ La [Figura 25](#figura-25) muestra necesidad de un sistema digital según el per
 
 
 
-La [Figura 26](#figura-26) muestra especialidades de mayor demanda según las entrevistas al personal.
+La [Figura 27](#figura-27) muestra especialidades de mayor demanda según las entrevistas al personal.
 
-<a id="figura-26"></a>
+<a id="figura-27"></a>
 
-**Figura 26**
+**Figura 27**
 
 *Especialidades de mayor demanda según las entrevistas al personal*
 
@@ -1219,11 +1219,11 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 
 
-La [Figura 27](#figura-27) muestra user persona del paciente.
+La [Figura 28](#figura-28) muestra user persona del paciente.
 
-<a id="figura-27"></a>
+<a id="figura-28"></a>
 
-**Figura 27**
+**Figura 28**
 
 *User persona del paciente*
 
@@ -1239,11 +1239,11 @@ Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bie
 
 
 
-La [Figura 28](#figura-28) muestra user persona del personal asistencial y administrativo.
+La [Figura 29](#figura-29) muestra user persona del personal asistencial y administrativo.
 
-<a id="figura-28"></a>
+<a id="figura-29"></a>
 
-**Figura 28**
+**Figura 29**
 
 *User persona del personal asistencial y administrativo*
 
@@ -1301,11 +1301,11 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 
 
-La [Figura 29](#figura-29) muestra user journey del paciente.
+La [Figura 30](#figura-30) muestra user journey del paciente.
 
-<a id="figura-29"></a>
+<a id="figura-30"></a>
 
-**Figura 29**
+**Figura 30**
 
 *User journey del paciente*
 
@@ -1321,11 +1321,11 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 
 
 
-La [Figura 30](#figura-30) muestra user journey del personal asistencial y administrativo.
+La [Figura 31](#figura-31) muestra user journey del personal asistencial y administrativo.
 
-<a id="figura-30"></a>
+<a id="figura-31"></a>
 
-**Figura 30**
+**Figura 31**
 
 *User journey del personal asistencial y administrativo*
 
@@ -1347,11 +1347,11 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 
 
-La [Figura 31](#figura-31) muestra empathy Map - Paciente de Zonas Periféricas.
+La [Figura 32](#figura-32) muestra empathy Map - Paciente de Zonas Periféricas.
 
-<a id="figura-31"></a>
+<a id="figura-32"></a>
 
-**Figura 31**
+**Figura 32**
 
 *Empathy Map - Paciente de Zonas Periféricas*
 
@@ -1367,11 +1367,11 @@ Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha con
 
 
 
-La [Figura 32](#figura-32) muestra empathy Map - Personal Asistencial y Administrativo.
+La [Figura 33](#figura-33) muestra empathy Map - Personal Asistencial y Administrativo.
 
-<a id="figura-32"></a>
+<a id="figura-33"></a>
 
-**Figura 32**
+**Figura 33**
 
 *Empathy Map - Personal Asistencial y Administrativo*
 
@@ -1394,11 +1394,11 @@ En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolu
 
 
 
-La [Figura 33](#figura-33) muestra big Picture EventStorming - Step 1 Free Exploration.
+La [Figura 34](#figura-34) muestra big Picture EventStorming - Step 1 Free Exploration.
 
-<a id="figura-33"></a>
+<a id="figura-34"></a>
 
-**Figura 33**
+**Figura 34**
 
 *Big Picture EventStorming - Step 1 Free Exploration*
 
@@ -1414,11 +1414,11 @@ En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derec
 
 
 
-La [Figura 34](#figura-34) muestra big Picture EventStorming: organización de la línea temporal.
+La [Figura 35](#figura-35) muestra big Picture EventStorming: organización de la línea temporal.
 
-<a id="figura-34"></a>
+<a id="figura-35"></a>
 
-**Figura 34**
+**Figura 35**
 
 *Big Picture EventStorming: organización de la línea temporal*
 
@@ -1434,11 +1434,11 @@ En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e 
 
 
 
-La [Figura 35](#figura-35) muestra step 3 - People and Systems.
+La [Figura 36](#figura-36) muestra step 3 - People and Systems.
 
-<a id="figura-35"></a>
+<a id="figura-36"></a>
 
-**Figura 35**
+**Figura 36**
 
 *Step 3 - People and Systems*
 
@@ -1454,11 +1454,11 @@ En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del n
 
 
 
-La [Figura 36](#figura-36) muestra step 4 - Hotspots and Exceptions.
+La [Figura 37](#figura-37) muestra step 4 - Hotspots and Exceptions.
 
-<a id="figura-36"></a>
+<a id="figura-37"></a>
 
-**Figura 36**
+**Figura 37**
 
 *Step 4 - Hotspots and Exceptions*
 
@@ -2773,11 +2773,11 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 
 
 
-La [Figura 37](#figura-37) muestra impact Mapping de SaludYa.
+La [Figura 38](#figura-38) muestra impact Mapping de SaludYa.
 
-<a id="figura-37"></a>
+<a id="figura-38"></a>
 
-**Figura 37**
+**Figura 38**
 
 *Impact Mapping de SaludYa*
 
@@ -2886,11 +2886,11 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 
 
-La [Figura 38](#figura-38) muestra eventStorming - Domain Events.
+La [Figura 39](#figura-39) muestra eventStorming - Domain Events.
 
-<a id="figura-38"></a>
+<a id="figura-39"></a>
 
-**Figura 38**
+**Figura 39**
 
 *EventStorming - Domain Events*
 
@@ -2906,11 +2906,11 @@ La [Figura 38](#figura-38) muestra eventStorming - Domain Events.
 
 
 
-La [Figura 39](#figura-39) muestra eventStorming - Timeline.
+La [Figura 40](#figura-40) muestra eventStorming - Timeline.
 
-<a id="figura-39"></a>
+<a id="figura-40"></a>
 
-**Figura 39**
+**Figura 40**
 
 *EventStorming - Timeline*
 
@@ -2926,11 +2926,11 @@ La [Figura 39](#figura-39) muestra eventStorming - Timeline.
 
 
 
-La [Figura 40](#figura-40) muestra eventStorming - Pain Points y Pivotal Points.
+La [Figura 41](#figura-41) muestra eventStorming - Pain Points y Pivotal Points.
 
-<a id="figura-40"></a>
+<a id="figura-41"></a>
 
-**Figura 40**
+**Figura 41**
 
 *EventStorming - Pain Points y Pivotal Points*
 
@@ -2946,11 +2946,11 @@ La [Figura 40](#figura-40) muestra eventStorming - Pain Points y Pivotal Points.
 
 
 
-La [Figura 41](#figura-41) muestra eventStorming - Commands, Policies y Read Models.
+La [Figura 42](#figura-42) muestra eventStorming - Commands, Policies y Read Models.
 
-<a id="figura-41"></a>
+<a id="figura-42"></a>
 
-**Figura 41**
+**Figura 42**
 
 *EventStorming - Commands, Policies y Read Models*
 
@@ -3004,11 +3004,11 @@ A continuación se detalla, para cada bounded context, los elementos incorporado
 
 
 
-La [Figura 42](#figura-42) muestra candidate Context Discovery - Bounded Contexts identificados.
+La [Figura 43](#figura-43) muestra candidate Context Discovery - Bounded Contexts identificados.
 
-<a id="figura-42"></a>
+<a id="figura-43"></a>
 
-**Figura 42**
+**Figura 43**
 
 *Candidate Context Discovery - Bounded Contexts identificados*
 
@@ -3613,11 +3613,11 @@ La [Tabla 95](#tabla-95) detalla context Mapping: mensajes entre contextos.
 
 
 
-La [Figura 43](#figura-43) muestra mapa de relaciones entre bounded contexts de SaludYa.
+La [Figura 44](#figura-44) muestra mapa de relaciones entre bounded contexts de SaludYa.
 
-<a id="figura-43"></a>
+<a id="figura-44"></a>
 
-**Figura 43**
+**Figura 44**
 
 *Mapa de relaciones entre bounded contexts de SaludYa*
 
@@ -3638,11 +3638,11 @@ El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pac
 
 
 
-La [Figura 44](#figura-44) muestra diagrama C4 de contexto de SaludYa.
+La [Figura 45](#figura-45) muestra diagrama C4 de contexto de SaludYa.
 
-<a id="figura-44"></a>
+<a id="figura-45"></a>
 
-**Figura 44**
+**Figura 45**
 
 *Diagrama C4 de contexto de SaludYa*
 
@@ -3664,11 +3664,11 @@ El Backend API se integra con cuatro servicios externos: **RENIEC API** para la 
 
 
 
-La [Figura 45](#figura-45) muestra diagrama C4 de contenedores de SaludYa.
+La [Figura 46](#figura-46) muestra diagrama C4 de contenedores de SaludYa.
 
-<a id="figura-45"></a>
+<a id="figura-46"></a>
 
-**Figura 45**
+**Figura 46**
 
 *Diagrama C4 de contenedores de SaludYa*
 
@@ -3689,11 +3689,11 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 
 
 
-La [Figura 46](#figura-46) muestra diagrama C4 de despliegue de SaludYa.
+La [Figura 47](#figura-47) muestra diagrama C4 de despliegue de SaludYa.
 
-<a id="figura-46"></a>
+<a id="figura-47"></a>
 
-**Figura 46**
+**Figura 47**
 
 *Diagrama C4 de despliegue de SaludYa*
 
@@ -4084,11 +4084,11 @@ Publica eventos de dominio usando Spring Events.
 
 
 
-La [Figura 47](#figura-47) muestra diagrama de componentes — IAM.
+La [Figura 48](#figura-48) muestra diagrama de componentes — IAM.
 
-<a id="figura-47"></a>
+<a id="figura-48"></a>
 
-**Figura 47**
+**Figura 48**
 
 *Diagrama de componentes — IAM*
 
@@ -4107,11 +4107,11 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 
 
 
-La [Figura 48](#figura-48) muestra diagrama de clases — IAM.
+La [Figura 49](#figura-49) muestra diagrama de clases — IAM.
 
-<a id="figura-48"></a>
+<a id="figura-49"></a>
 
-**Figura 48**
+**Figura 49**
 
 *Diagrama de clases — IAM*
 
@@ -4128,11 +4128,11 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 
 
 
-La [Figura 49](#figura-49) muestra diagrama de base de datos — IAM.
+La [Figura 50](#figura-50) muestra diagrama de base de datos — IAM.
 
-<a id="figura-49"></a>
+<a id="figura-50"></a>
 
-**Figura 49**
+**Figura 50**
 
 *Diagrama de base de datos — IAM*
 
@@ -4570,11 +4570,11 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 
 
 
-La [Figura 50](#figura-50) muestra diagrama de componentes — Appointment.
+La [Figura 51](#figura-51) muestra diagrama de componentes — Appointment.
 
-<a id="figura-50"></a>
+<a id="figura-51"></a>
 
-**Figura 50**
+**Figura 51**
 
 *Diagrama de componentes — Appointment*
 
@@ -4593,11 +4593,11 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 
 
-La [Figura 51](#figura-51) muestra diagrama de clases — Appointment.
+La [Figura 52](#figura-52) muestra diagrama de clases — Appointment.
 
-<a id="figura-51"></a>
+<a id="figura-52"></a>
 
-**Figura 51**
+**Figura 52**
 
 *Diagrama de clases — Appointment*
 
@@ -4614,11 +4614,11 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 
 
 
-La [Figura 52](#figura-52) muestra diagrama de base de datos — Appointment.
+La [Figura 53](#figura-53) muestra diagrama de base de datos — Appointment.
 
-<a id="figura-52"></a>
+<a id="figura-53"></a>
 
-**Figura 52**
+**Figura 53**
 
 *Diagrama de base de datos — Appointment*
 
@@ -4835,11 +4835,11 @@ Envía notificaciones de ofertas de reasignación al paciente (pendiente de impl
 
 
 
-La [Figura 53](#figura-53) muestra diagrama de componentes — Reassignment.
+La [Figura 54](#figura-54) muestra diagrama de componentes — Reassignment.
 
-<a id="figura-53"></a>
+<a id="figura-54"></a>
 
-**Figura 53**
+**Figura 54**
 
 *Diagrama de componentes — Reassignment*
 
@@ -4858,11 +4858,11 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 
 
 
-La [Figura 54](#figura-54) muestra diagrama de clases — Reassignment.
+La [Figura 55](#figura-55) muestra diagrama de clases — Reassignment.
 
-<a id="figura-54"></a>
+<a id="figura-55"></a>
 
-**Figura 54**
+**Figura 55**
 
 *Diagrama de clases — Reassignment*
 
@@ -4879,11 +4879,11 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 
 
 
-La [Figura 55](#figura-55) muestra diagrama de base de datos — Reassignment.
+La [Figura 56](#figura-56) muestra diagrama de base de datos — Reassignment.
 
-<a id="figura-55"></a>
+<a id="figura-56"></a>
 
-**Figura 55**
+**Figura 56**
 
 *Diagrama de base de datos — Reassignment*
 
@@ -5325,11 +5325,11 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 
 
-La [Figura 56](#figura-56) muestra diagrama de componentes — Arrival.
+La [Figura 57](#figura-57) muestra diagrama de componentes — Arrival.
 
-<a id="figura-56"></a>
+<a id="figura-57"></a>
 
-**Figura 56**
+**Figura 57**
 
 *Diagrama de componentes — Arrival*
 
@@ -5348,11 +5348,11 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 
 
-La [Figura 57](#figura-57) muestra diagrama de clases — Arrival.
+La [Figura 58](#figura-58) muestra diagrama de clases — Arrival.
 
-<a id="figura-57"></a>
+<a id="figura-58"></a>
 
-**Figura 57**
+**Figura 58**
 
 *Diagrama de clases — Arrival*
 
@@ -5369,11 +5369,11 @@ El diagrama de clases del dominio del bounded context Arrival & QR Check-in repr
 
 
 
-La [Figura 58](#figura-58) muestra diagrama de base de datos — Arrival.
+La [Figura 59](#figura-59) muestra diagrama de base de datos — Arrival.
 
-<a id="figura-58"></a>
+<a id="figura-59"></a>
 
-**Figura 58**
+**Figura 59**
 
 *Diagrama de base de datos — Arrival*
 
@@ -5543,11 +5543,11 @@ Publica eventos de dominio usando Spring Events.
 
 
 
-La [Figura 59](#figura-59) muestra diagrama de componentes — Hospital Operations & Configuration.
+La [Figura 60](#figura-60) muestra diagrama de componentes — Hospital Operations & Configuration.
 
-<a id="figura-59"></a>
+<a id="figura-60"></a>
 
-**Figura 59**
+**Figura 60**
 
 *Diagrama de componentes — Hospital Operations & Configuration*
 
@@ -5565,11 +5565,11 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 
 
 
-La [Figura 60](#figura-60) muestra diagrama de clases — Hospital Operations & Configuration.
+La [Figura 61](#figura-61) muestra diagrama de clases — Hospital Operations & Configuration.
 
-<a id="figura-60"></a>
+<a id="figura-61"></a>
 
-**Figura 60**
+**Figura 61**
 
 *Diagrama de clases — Hospital Operations & Configuration*
 
@@ -5585,11 +5585,11 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 
 
-La [Figura 61](#figura-61) muestra diagrama de base de datos — Hospital Operations & Configuration.
+La [Figura 62](#figura-62) muestra diagrama de base de datos — Hospital Operations & Configuration.
 
-<a id="figura-61"></a>
+<a id="figura-62"></a>
 
-**Figura 61**
+**Figura 62**
 
 *Diagrama de base de datos — Hospital Operations & Configuration*
 
@@ -6809,11 +6809,11 @@ La [Tabla 136](#tabla-136) detalla wireframe Desktop Web Browser.
 
 
 
-La [Figura 62](#figura-62) muestra wireframe Desktop - Vista superior.
+La [Figura 63](#figura-63) muestra wireframe Desktop - Vista superior.
 
-<a id="figura-62"></a>
+<a id="figura-63"></a>
 
-**Figura 62**
+**Figura 63**
 
 *Wireframe Desktop - Vista superior*
 
@@ -6825,11 +6825,11 @@ La [Figura 62](#figura-62) muestra wireframe Desktop - Vista superior.
 
 
 
-La [Figura 63](#figura-63) muestra wireframe Desktop - Vista inferior.
+La [Figura 64](#figura-64) muestra wireframe Desktop - Vista inferior.
 
-<a id="figura-63"></a>
+<a id="figura-64"></a>
 
-**Figura 63**
+**Figura 64**
 
 *Wireframe Desktop - Vista inferior*
 
@@ -6862,11 +6862,11 @@ La [Tabla 137](#tabla-137) detalla wireframe Mobile Web Browser.
 
 
 
-La [Figura 64](#figura-64) muestra wireframe Mobile - Vista superior.
+La [Figura 65](#figura-65) muestra wireframe Mobile - Vista superior.
 
-<a id="figura-64"></a>
+<a id="figura-65"></a>
 
-**Figura 64**
+**Figura 65**
 
 *Wireframe Mobile - Vista superior*
 
@@ -6878,11 +6878,11 @@ La [Figura 64](#figura-64) muestra wireframe Mobile - Vista superior.
 
 
 
-La [Figura 65](#figura-65) muestra wireframe Mobile - Vista inferior.
+La [Figura 66](#figura-66) muestra wireframe Mobile - Vista inferior.
 
-<a id="figura-65"></a>
+<a id="figura-66"></a>
 
-**Figura 65**
+**Figura 66**
 
 *Wireframe Mobile - Vista inferior*
 
@@ -6957,11 +6957,11 @@ La [Tabla 139](#tabla-139) detalla mock-up Desktop Web Browser.
 
 
 
-La [Figura 66](#figura-66) muestra mock-up Desktop - Vista superior.
+La [Figura 67](#figura-67) muestra mock-up Desktop - Vista superior.
 
-<a id="figura-66"></a>
+<a id="figura-67"></a>
 
-**Figura 66**
+**Figura 67**
 
 *Mock-up Desktop - Vista superior*
 
@@ -6973,11 +6973,11 @@ La [Figura 66](#figura-66) muestra mock-up Desktop - Vista superior.
 
 
 
-La [Figura 67](#figura-67) muestra mock-up Desktop - Vista inferior.
+La [Figura 68](#figura-68) muestra mock-up Desktop - Vista inferior.
 
-<a id="figura-67"></a>
+<a id="figura-68"></a>
 
-**Figura 67**
+**Figura 68**
 
 *Mock-up Desktop - Vista inferior*
 
@@ -7010,11 +7010,11 @@ La [Tabla 140](#tabla-140) detalla mock-up Mobile Web Browser.
 
 
 
-La [Figura 68](#figura-68) muestra mock-up Mobile - Vista superior.
+La [Figura 69](#figura-69) muestra mock-up Mobile - Vista superior.
 
-<a id="figura-68"></a>
+<a id="figura-69"></a>
 
-**Figura 68**
+**Figura 69**
 
 *Mock-up Mobile - Vista superior*
 
@@ -7026,11 +7026,11 @@ La [Figura 68](#figura-68) muestra mock-up Mobile - Vista superior.
 
 
 
-La [Figura 69](#figura-69) muestra mock-up Mobile - Vista inferior.
+La [Figura 70](#figura-70) muestra mock-up Mobile - Vista inferior.
 
-<a id="figura-69"></a>
+<a id="figura-70"></a>
 
-**Figura 69**
+**Figura 70**
 
 *Mock-up Mobile - Vista inferior*
 
@@ -7099,11 +7099,11 @@ El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a
 
 
 
-La [Figura 70](#figura-70) muestra landing Page de SaludYa - Implementación.
+La [Figura 71](#figura-71) muestra landing Page de SaludYa - Implementación.
 
-<a id="figura-70"></a>
+<a id="figura-71"></a>
 
-**Figura 70**
+**Figura 71**
 
 *Landing Page de SaludYa - Implementación*
 
@@ -7132,11 +7132,11 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-La [Figura 71](#figura-71) muestra bienvenida y registro del paciente.
+La [Figura 72](#figura-72) muestra bienvenida y registro del paciente.
 
-<a id="figura-71"></a>
+<a id="figura-72"></a>
 
-**Figura 71**
+**Figura 72**
 
 *Bienvenida y registro del paciente*
 
@@ -7152,11 +7152,11 @@ Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales
 
 
 
-La [Figura 72](#figura-72) muestra acceso y recuperación de la cuenta del paciente.
+La [Figura 73](#figura-73) muestra acceso y recuperación de la cuenta del paciente.
 
-<a id="figura-72"></a>
+<a id="figura-73"></a>
 
-**Figura 72**
+**Figura 73**
 
 *Acceso y recuperación de la cuenta del paciente*
 
@@ -7174,11 +7174,11 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 
 
-La [Figura 73](#figura-73) muestra inicio, citas pendientes e historial del paciente.
+La [Figura 74](#figura-74) muestra inicio, citas pendientes e historial del paciente.
 
-<a id="figura-73"></a>
+<a id="figura-74"></a>
 
-**Figura 73**
+**Figura 74**
 
 *Inicio, citas pendientes e historial del paciente*
 
@@ -7196,11 +7196,11 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 
 
-La [Figura 74](#figura-74) muestra selección de especialidad, beneficiario, fecha, profesional y horario.
+La [Figura 75](#figura-75) muestra selección de especialidad, beneficiario, fecha, profesional y horario.
 
-<a id="figura-74"></a>
+<a id="figura-75"></a>
 
-**Figura 74**
+**Figura 75**
 
 *Selección de especialidad, beneficiario, fecha, profesional y horario*
 
@@ -7216,11 +7216,11 @@ El paciente selecciona la especialidad, al titular o menor vinculado y una fecha
 
 
 
-La [Figura 75](#figura-75) muestra resumen, confirmación y estados de la reserva.
+La [Figura 76](#figura-76) muestra resumen, confirmación y estados de la reserva.
 
-<a id="figura-75"></a>
+<a id="figura-76"></a>
 
-**Figura 75**
+**Figura 76**
 
 *Resumen, confirmación y estados de la reserva*
 
@@ -7238,11 +7238,11 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 
 
-La [Figura 76](#figura-76) muestra registro de llegada, escaneo del QR del establecimiento, ticket y cola.
+La [Figura 77](#figura-77) muestra registro de llegada, escaneo del QR del establecimiento, ticket y cola.
 
-<a id="figura-76"></a>
+<a id="figura-77"></a>
 
-**Figura 76**
+**Figura 77**
 
 *Registro de llegada, escaneo del QR del establecimiento, ticket y cola*
 
@@ -7262,11 +7262,11 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-La [Figura 77](#figura-77) muestra configuración, datos personales y actualización del contacto.
+La [Figura 78](#figura-78) muestra configuración, datos personales y actualización del contacto.
 
-<a id="figura-77"></a>
+<a id="figura-78"></a>
 
-**Figura 77**
+**Figura 78**
 
 *Configuración, datos personales y actualización del contacto*
 
@@ -7284,11 +7284,11 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 
 
-La [Figura 78](#figura-78) muestra vinculación, verificación y gestión de menores a cargo.
+La [Figura 79](#figura-79) muestra vinculación, verificación y gestión de menores a cargo.
 
-<a id="figura-78"></a>
+<a id="figura-79"></a>
 
-**Figura 78**
+**Figura 79**
 
 *Vinculación, verificación y gestión de menores a cargo*
 
@@ -7306,11 +7306,11 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 
 
-La [Figura 79](#figura-79) muestra notificaciones y ofertas de reasignación de citas.
+La [Figura 80](#figura-80) muestra notificaciones y ofertas de reasignación de citas.
 
-<a id="figura-79"></a>
+<a id="figura-80"></a>
 
-**Figura 79**
+**Figura 80**
 
 *Notificaciones y ofertas de reasignación de citas*
 
@@ -7344,11 +7344,11 @@ El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos
 
 
 
-La [Figura 80](#figura-80) muestra registrarse como paciente — recorrido esperado.
+La [Figura 81](#figura-81) muestra registrarse como paciente — recorrido esperado.
 
-<a id="figura-80"></a>
+<a id="figura-81"></a>
 
-**Figura 80**
+**Figura 81**
 
 *Registrarse como paciente — recorrido esperado*
 
@@ -7366,11 +7366,11 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 
 
 
-La [Figura 81](#figura-81) muestra registrarse como paciente — errores y alternativas.
+La [Figura 82](#figura-82) muestra registrarse como paciente — errores y alternativas.
 
-<a id="figura-81"></a>
+<a id="figura-82"></a>
 
-**Figura 81**
+**Figura 82**
 
 *Registrarse como paciente — errores y alternativas*
 
@@ -7390,11 +7390,11 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 
 
 
-La [Figura 82](#figura-82) muestra iniciar sesión como paciente — recorrido esperado.
+La [Figura 83](#figura-83) muestra iniciar sesión como paciente — recorrido esperado.
 
-<a id="figura-82"></a>
+<a id="figura-83"></a>
 
-**Figura 82**
+**Figura 83**
 
 *Iniciar sesión como paciente — recorrido esperado*
 
@@ -7412,11 +7412,11 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 
 
 
-La [Figura 83](#figura-83) muestra iniciar sesión como paciente — errores y alternativas.
+La [Figura 84](#figura-84) muestra iniciar sesión como paciente — errores y alternativas.
 
-<a id="figura-83"></a>
+<a id="figura-84"></a>
 
-**Figura 83**
+**Figura 84**
 
 *Iniciar sesión como paciente — errores y alternativas*
 
@@ -7436,11 +7436,11 @@ El paciente solicita la recuperación con su correo registrado. La aplicación m
 
 
 
-La [Figura 84](#figura-84) muestra recuperar la contraseña — recorrido esperado.
+La [Figura 85](#figura-85) muestra recuperar la contraseña — recorrido esperado.
 
-<a id="figura-84"></a>
+<a id="figura-85"></a>
 
-**Figura 84**
+**Figura 85**
 
 *Recuperar la contraseña — recorrido esperado*
 
@@ -7458,11 +7458,11 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 
 
-La [Figura 85](#figura-85) muestra recuperar la contraseña — errores y alternativas.
+La [Figura 86](#figura-86) muestra recuperar la contraseña — errores y alternativas.
 
-<a id="figura-85"></a>
+<a id="figura-86"></a>
 
-**Figura 85**
+**Figura 86**
 
 *Recuperar la contraseña — errores y alternativas*
 
@@ -7482,11 +7482,11 @@ El titular ingresa los datos del menor y confirma su vinculación después de ve
 
 
 
-La [Figura 86](#figura-86) muestra vincular o desvincular a un menor — recorrido esperado.
+La [Figura 87](#figura-87) muestra vincular o desvincular a un menor — recorrido esperado.
 
-<a id="figura-86"></a>
+<a id="figura-87"></a>
 
-**Figura 86**
+**Figura 87**
 
 *Vincular o desvincular a un menor — recorrido esperado*
 
@@ -7504,11 +7504,11 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 
 
-La [Figura 87](#figura-87) muestra vincular o desvincular a un menor — errores y alternativas.
+La [Figura 88](#figura-88) muestra vincular o desvincular a un menor — errores y alternativas.
 
-<a id="figura-87"></a>
+<a id="figura-88"></a>
 
-**Figura 87**
+**Figura 88**
 
 *Vincular o desvincular a un menor — errores y alternativas*
 
@@ -7528,11 +7528,11 @@ El paciente consulta sus datos y modifica su correo o celular. Si cambia el corr
 
 
 
-La [Figura 88](#figura-88) muestra actualizar el correo o celular del perfil — recorrido esperado.
+La [Figura 89](#figura-89) muestra actualizar el correo o celular del perfil — recorrido esperado.
 
-<a id="figura-88"></a>
+<a id="figura-89"></a>
 
-**Figura 88**
+**Figura 89**
 
 *Actualizar el correo o celular del perfil — recorrido esperado*
 
@@ -7550,11 +7550,11 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 
 
 
-La [Figura 89](#figura-89) muestra actualizar el correo o celular del perfil — errores y alternativas.
+La [Figura 90](#figura-90) muestra actualizar el correo o celular del perfil — errores y alternativas.
 
-<a id="figura-89"></a>
+<a id="figura-90"></a>
 
-**Figura 89**
+**Figura 90**
 
 *Actualizar el correo o celular del perfil — errores y alternativas*
 
@@ -7574,11 +7574,11 @@ El paciente selecciona una especialidad y una fecha. Consulta profesionales y ho
 
 
 
-La [Figura 90](#figura-90) muestra consultar disponibilidad de citas — recorrido esperado.
+La [Figura 91](#figura-91) muestra consultar disponibilidad de citas — recorrido esperado.
 
-<a id="figura-90"></a>
+<a id="figura-91"></a>
 
-**Figura 90**
+**Figura 91**
 
 *Consultar disponibilidad de citas — recorrido esperado*
 
@@ -7596,11 +7596,11 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 
 
 
-La [Figura 91](#figura-91) muestra consultar disponibilidad de citas — errores y alternativas.
+La [Figura 92](#figura-92) muestra consultar disponibilidad de citas — errores y alternativas.
 
-<a id="figura-91"></a>
+<a id="figura-92"></a>
 
-**Figura 91**
+**Figura 92**
 
 *Consultar disponibilidad de citas — errores y alternativas*
 
@@ -7620,11 +7620,11 @@ El titular indica el beneficiario, elige fecha, profesional y horario y revisa e
 
 
 
-La [Figura 92](#figura-92) muestra reservar una cita y recibir confirmación — recorrido esperado.
+La [Figura 93](#figura-93) muestra reservar una cita y recibir confirmación — recorrido esperado.
 
-<a id="figura-92"></a>
+<a id="figura-93"></a>
 
-**Figura 92**
+**Figura 93**
 
 *Reservar una cita y recibir confirmación — recorrido esperado*
 
@@ -7642,11 +7642,11 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 
 
 
-La [Figura 93](#figura-93) muestra reservar una cita y recibir confirmación — errores y alternativas.
+La [Figura 94](#figura-94) muestra reservar una cita y recibir confirmación — errores y alternativas.
 
-<a id="figura-93"></a>
+<a id="figura-94"></a>
 
-**Figura 93**
+**Figura 94**
 
 *Reservar una cita y recibir confirmación — errores y alternativas*
 
@@ -7666,11 +7666,11 @@ Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtr
 
 
 
-La [Figura 94](#figura-94) muestra consultar citas, detalles e historial — recorrido esperado.
+La [Figura 95](#figura-95) muestra consultar citas, detalles e historial — recorrido esperado.
 
-<a id="figura-94"></a>
+<a id="figura-95"></a>
 
-**Figura 94**
+**Figura 95**
 
 *Consultar citas, detalles e historial — recorrido esperado*
 
@@ -7688,11 +7688,11 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 
 
 
-La [Figura 95](#figura-95) muestra consultar citas, detalles e historial — errores y alternativas.
+La [Figura 96](#figura-96) muestra consultar citas, detalles e historial — errores y alternativas.
 
-<a id="figura-95"></a>
+<a id="figura-96"></a>
 
-**Figura 95**
+**Figura 96**
 
 *Consultar citas, detalles e historial — errores y alternativas*
 
@@ -7712,11 +7712,11 @@ El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del pla
 
 
 
-La [Figura 96](#figura-96) muestra cancelar una reserva dentro del plazo — recorrido esperado.
+La [Figura 97](#figura-97) muestra cancelar una reserva dentro del plazo — recorrido esperado.
 
-<a id="figura-96"></a>
+<a id="figura-97"></a>
 
-**Figura 96**
+**Figura 97**
 
 *Cancelar una reserva dentro del plazo — recorrido esperado*
 
@@ -7734,11 +7734,11 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 
 
 
-La [Figura 97](#figura-97) muestra cancelar una reserva dentro del plazo — errores y alternativas.
+La [Figura 98](#figura-98) muestra cancelar una reserva dentro del plazo — errores y alternativas.
 
-<a id="figura-97"></a>
+<a id="figura-98"></a>
 
-**Figura 97**
+**Figura 98**
 
 *Cancelar una reserva dentro del plazo — errores y alternativas*
 
@@ -7758,11 +7758,11 @@ El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mient
 
 
 
-La [Figura 98](#figura-98) muestra responder a una oferta de adelanto — recorrido esperado.
+La [Figura 99](#figura-99) muestra responder a una oferta de adelanto — recorrido esperado.
 
-<a id="figura-98"></a>
+<a id="figura-99"></a>
 
-**Figura 98**
+**Figura 99**
 
 *Responder a una oferta de adelanto — recorrido esperado*
 
@@ -7780,11 +7780,11 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 
 
 
-La [Figura 99](#figura-99) muestra responder a una oferta de adelanto — errores y alternativas.
+La [Figura 100](#figura-100) muestra responder a una oferta de adelanto — errores y alternativas.
 
-<a id="figura-99"></a>
+<a id="figura-100"></a>
 
-**Figura 99**
+**Figura 100**
 
 *Responder a una oferta de adelanto — errores y alternativas*
 
@@ -7804,11 +7804,11 @@ Al llegar al establecimiento, el titular selecciona su reserva o la del menor y 
 
 
 
-La [Figura 100](#figura-100) muestra registrar llegada presencial mediante QR — recorrido esperado.
+La [Figura 101](#figura-101) muestra registrar llegada presencial mediante QR — recorrido esperado.
 
-<a id="figura-100"></a>
+<a id="figura-101"></a>
 
-**Figura 100**
+**Figura 101**
 
 *Registrar llegada presencial mediante QR — recorrido esperado*
 
@@ -7826,11 +7826,11 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 
 
 
-La [Figura 101](#figura-101) muestra registrar llegada presencial mediante QR — errores y alternativas.
+La [Figura 102](#figura-102) muestra registrar llegada presencial mediante QR — errores y alternativas.
 
-<a id="figura-101"></a>
+<a id="figura-102"></a>
 
-**Figura 101**
+**Figura 102**
 
 *Registrar llegada presencial mediante QR — errores y alternativas*
 
@@ -7850,11 +7850,11 @@ Después del check-in, el paciente obtiene su código de turno y consulta el tic
 
 
 
-La [Figura 102](#figura-102) muestra obtener el ticket digital de atención — recorrido esperado.
+La [Figura 103](#figura-103) muestra obtener el ticket digital de atención — recorrido esperado.
 
-<a id="figura-102"></a>
+<a id="figura-103"></a>
 
-**Figura 102**
+**Figura 103**
 
 *Obtener el ticket digital de atención — recorrido esperado*
 
@@ -7872,11 +7872,11 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 
 
 
-La [Figura 103](#figura-103) muestra obtener el ticket digital de atención — errores y alternativas.
+La [Figura 104](#figura-104) muestra obtener el ticket digital de atención — errores y alternativas.
 
-<a id="figura-103"></a>
+<a id="figura-104"></a>
 
-**Figura 103**
+**Figura 104**
 
 *Obtener el ticket digital de atención — errores y alternativas*
 
@@ -7896,11 +7896,11 @@ El paciente con check-in confirmado y turno activo consulta su posición y el to
 
 
 
-La [Figura 104](#figura-104) muestra consultar posición o dejar la cola — recorrido esperado.
+La [Figura 105](#figura-105) muestra consultar posición o dejar la cola — recorrido esperado.
 
-<a id="figura-104"></a>
+<a id="figura-105"></a>
 
-**Figura 104**
+**Figura 105**
 
 *Consultar posición o dejar la cola — recorrido esperado*
 
@@ -7918,11 +7918,11 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 
 
 
-La [Figura 105](#figura-105) muestra consultar posición o dejar la cola — errores y alternativas.
+La [Figura 106](#figura-106) muestra consultar posición o dejar la cola — errores y alternativas.
 
-<a id="figura-105"></a>
+<a id="figura-106"></a>
 
-**Figura 105**
+**Figura 106**
 
 *Consultar posición o dejar la cola — errores y alternativas*
 
@@ -7942,11 +7942,11 @@ El paciente recibe el llamado, consulta el ticket y se dirige al consultorio den
 
 
 
-La [Figura 106](#figura-106) muestra recibir el llamado y acudir al consultorio — recorrido esperado.
+La [Figura 107](#figura-107) muestra recibir el llamado y acudir al consultorio — recorrido esperado.
 
-<a id="figura-106"></a>
+<a id="figura-107"></a>
 
-**Figura 106**
+**Figura 107**
 
 *Recibir el llamado y acudir al consultorio — recorrido esperado*
 
@@ -7964,11 +7964,11 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 
 
 
-La [Figura 107](#figura-107) muestra recibir el llamado y acudir al consultorio — errores y alternativas.
+La [Figura 108](#figura-108) muestra recibir el llamado y acudir al consultorio — errores y alternativas.
 
-<a id="figura-107"></a>
+<a id="figura-108"></a>
 
-**Figura 107**
+**Figura 108**
 
 *Recibir el llamado y acudir al consultorio — errores y alternativas*
 
@@ -7988,11 +7988,11 @@ El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación f
 
 
 
-La [Figura 108](#figura-108) muestra cerrar sesión o recuperar acceso a una sesión — recorrido esperado.
+La [Figura 109](#figura-109) muestra cerrar sesión o recuperar acceso a una sesión — recorrido esperado.
 
-<a id="figura-108"></a>
+<a id="figura-109"></a>
 
-**Figura 108**
+**Figura 109**
 
 *Cerrar sesión o recuperar acceso a una sesión — recorrido esperado*
 
@@ -8010,11 +8010,11 @@ Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere vol
 
 
 
-La [Figura 109](#figura-109) muestra cerrar sesión o recuperar acceso a una sesión — errores y alternativas.
+La [Figura 110](#figura-110) muestra cerrar sesión o recuperar acceso a una sesión — errores y alternativas.
 
-<a id="figura-109"></a>
+<a id="figura-110"></a>
 
-**Figura 109**
+**Figura 110**
 
 *Cerrar sesión o recuperar acceso a una sesión — errores y alternativas*
 
@@ -8039,11 +8039,11 @@ A continuación, se adjunta el enlace al video de demostración.
 
 
 
-La [Figura 110](#figura-110) muestra mobile applications prototyping.
+La [Figura 111](#figura-111) muestra mobile applications prototyping.
 
-<a id="figura-110"></a>
+<a id="figura-111"></a>
 
-**Figura 110**
+**Figura 111**
 
 *Mobile applications prototyping*
 
