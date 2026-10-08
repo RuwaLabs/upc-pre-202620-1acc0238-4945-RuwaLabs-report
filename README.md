@@ -804,6 +804,7 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 **Obtiene** la capacidad de gestionar cambios, cancelaciones y el estado de las atenciones en tiempo real
 **Cuando veamos** con una aplicación que centralice la información de pacientes y citas programadas.
 
+<!-- pdf-pagebreak -->
 #### 1.2.2.4. Lean UX Canvas ####
 
 El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visualizar de manera estructurada los elementos clave del proyecto SaludYa. Este canvas facilita la comprensión integral del problema de negocio, las soluciones propuestas, los usuarios objetivo y los resultados esperados, proporcionando una base sólida para el desarrollo ágil del producto.
@@ -829,7 +830,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles, como se observa en la [Figura 6](#figura-6).
 
-## _1.3. Segmentos objetivos_ ##
+## 1.3. Segmentos objetivos ##
 
 A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución **SaludYa** para la gestión de citas médicas en establecimientos públicos de salud.
 
