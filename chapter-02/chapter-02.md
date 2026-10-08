@@ -7,9 +7,19 @@
 > **¿Por qué llevar a cabo este análisis?**  
 > Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud.
 
+
+
+La [Tabla 6](#tabla-6) detalla análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA. Las imágenes incluidas corresponden a [Figura 13](#figura-13), [Figura 14](#figura-14), [Figura 15](#figura-15), [Figura 16](#figura-16).
+
+<a id="tabla-6"></a>
+
+**Tabla 6**
+
+*Análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA*
+
 | **Competitive Analysis Landscape** | **SaludYa** | **Doctoralia** | **Cita Médica** | **Citas en Línea (MINSA)** |
 |:---|:---:|:---:|:---:|:---:|
-| **Logo** | ![SaludYa](https://i.imgur.com/o2Yy1QN.png) | ![Doctoralia](https://i.imgur.com/bKfYERK.png) | ![Cita Médica](https://i.imgur.com/Jqy2pqA.png) | ![MINSA](https://i.imgur.com/WIV8zHk.jpeg) |
+| **Logo** | <a id="figura-13"></a><strong>Figura 13</strong><br><em>Logotipo de SaludYa</em><br><img src="https://i.imgur.com/o2Yy1QN.png" alt="Logotipo de SaludYa"><br><small>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</small> | <a id="figura-14"></a><strong>Figura 14</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia"><br><small>Nota. Identificador visual de Doctoralia. Fuente de la imagen: archivo enlazado.</small> | <a id="figura-15"></a><strong>Figura 15</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica"><br><small>Nota. Identificador visual de Cita Médica. Fuente de la imagen: archivo enlazado.</small> | <a id="figura-16"></a><strong>Figura 16</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA"><br><small>Nota. Identificador visual de Logotipo del MINSA. Fuente de la imagen: archivo enlazado.</small> |
 | **Perfil / Overview** | Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real. | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
 | **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* | Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas. | Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico. | Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico. | Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado. |
 | **Perfil de Marketing**<br>*Mercado objetivo* | Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud. | Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas. | Pacientes que buscan atención médica privada en consultorios y clínicas de Perú. | Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones. |
@@ -21,6 +31,10 @@
 | **Análisis SWOT — Debilidades** | Requiere una conexión estable a internet y la adopción digital del personal administrativo del establecimiento. | Enfocado en el sector privado, sin cobertura de establecimientos públicos de salud. | Enfocado únicamente en consultorios y clínicas privadas. | Cobertura limitada a determinados hospitales, sin funcionalidades como lista de espera dinámica, check-in por QR o gestión interna del flujo de atención. |
 | **Análisis SWOT — Oportunidades** | Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud. | Expansión hacia convenios con aseguradoras y nuevas especialidades. | Expansión hacia convenios con establecimientos públicos de salud. | Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades. |
 | **Análisis SWOT — Amenazas** | Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas. | Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos. | Competencia de plataformas más consolidadas como Doctoralia. | Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público. |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ### 2.1.2. Estrategias y tácticas frente a competidores ###
 
@@ -46,53 +60,139 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 
 ## Entrevista 1
 
+
+
+La [Tabla 7](#tabla-7) detalla ficha de entrevista — Registro de la entrevista a Braulio Núñez. Las imágenes incluidas corresponden a [Figura 17](#figura-17).
+
+<a id="tabla-7"></a>
+
+**Tabla 7**
+
+*Ficha de entrevista — Registro de la entrevista a Braulio Núñez*
+
 | Entrevista | Registro |
 | ----- | ----- |
-| ![Entrevista 1](https://i.imgur.com/y3RQhO6.jpeg) | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez |
+| <a id="figura-17"></a><strong>Figura 17</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:22 | **Resumen:** Braulio Núñez, de 24 años, es técnico de mantenimiento y acude con frecuencia al Centro de Salud Comas para llevar a su sobrino a sus controles y vacunas. Relata que, para conseguir una cita, suele madrugar desde las cuatro y media de la mañana, ya que si llega más tarde ya no encuentra cupos disponibles en pediatría, y en alguna ocasión tuvo que regresar al día siguiente por no lograr atención. Menciona que casi nunca puede resolver esto por teléfono, pues las líneas del establecimiento no responden, por lo que siempre debe acudir de forma presencial. También comenta que una vez perdió una cita ya conseguida porque no contaba con ningún recordatorio. En cuanto a tecnología, utiliza un celular Android en el que emplea con frecuencia WhatsApp, Facebook y aplicaciones de delivery, y se muestra cómodo realizando trámites desde el celular. Considera que una aplicación que le muestre la disponibilidad de citas en tiempo real, le envíe notificaciones cuando se libere un cupo y respete el horario reservado, le ahorraría mucho tiempo y evitaría que tenga que madrugar sin certeza de conseguir atención. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Entrevista 2**
+
+
+
+La [Tabla 8](#tabla-8) detalla ficha de entrevista — Registro de la entrevista a Yordi Salazar. Las imágenes incluidas corresponden a [Figura 18](#figura-18).
+
+<a id="tabla-8"></a>
+
+**Tabla 8**
+
+*Ficha de entrevista — Registro de la entrevista a Yordi Salazar*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center">![evidencia-entrevista](https://i.imgur.com/rxN31fl.jpeg)</p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
+| <p align="center"><a id="figura-18"></a><strong>Figura 18</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCq6uLH5lxNSpoxEAN9q1qfAVF0qgEoHWEvug_aNrID100?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sXQwSj) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:06 | **Resumen:** Yordi Salazar, de 27 años, es dueño de una tienda de abarrotes y acude junto con su madre a la posta de salud de su zona de forma mensual. Cuenta que en su última experiencia tuvo que ir hasta tres veces distintas antes de conseguir cupo, ya que las dos primeras veces ya no había disponibilidad al momento de llegar. Señala que la parte más complicada es no saber cuánta gente hay antes en la fila, y que en una ocasión perdió una cita porque solo le avisaron la fecha de forma verbal, sin ningún respaldo escrito. Cuando no logra conseguir cupo, opta por acudir a una clínica particular, aunque esto le representa un gasto adicional. En cuanto a tecnología, utiliza un celular sencillo y no se siente del todo cómodo con trámites digitales, por lo que suele apoyarse en su hijo para este tipo de gestiones. Considera que una aplicación sencilla, con letras grandes y pocos pasos, que le permita conocer la disponibilidad de citas y avisarle mediante llamada o mensaje de texto cuando se libere un cupo, sería de gran ayuda para evitar las largas colas que actualmente enfrenta. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 Entrevista 3:
+
+
+
+La [Tabla 9](#tabla-9) detalla ficha de entrevista — Registro de la entrevista a Kevin Huamán. Las imágenes incluidas corresponden a [Figura 19](#figura-19).
+
+<a id="tabla-9"></a>
+
+**Tabla 9**
+
+*Ficha de entrevista — Registro de la entrevista a Kevin Huamán*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><img src="https://i.imgur.com/mxB4a3G.jpeg"/></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
+| <p align="center"><a id="figura-19"></a><strong>Figura 19</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAAwi-Crd0UR6aM_vPtIyU8AY5rcOh7FEgLdmqvsNkC1bU?e=JGBM7r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-05:35 | **Resumen:** Kevin Huamán, de 22 años, se dedica al reparto mediante aplicaciones de delivery y acude ocasionalmente al centro materno infantil de su zona. Relata que la última vez que necesitó una cita tuvo que pedir el día libre en su trabajo, ya que ni siquiera sabía que existía otra forma de agendar una atención que no fuera de manera presencial. Señala que en una oportunidad llegó al establecimiento y ya no había citas disponibles para medicina general, lo que le hizo perder tiempo de trabajo sin obtener ningún resultado. A diferencia de otros pacientes, se siente muy cómodo utilizando aplicaciones móviles, pues las emplea constantemente para su trabajo de reparto, mapas y redes sociales. Considera que una aplicación confiable, que no se cuelgue y tenga buenas reseñas, que le permita reservar su cita al toque y recibir notificaciones push cuando se libere un cupo, le permitiría organizar mejor su tiempo de trabajo y evitar viajes innecesarios solo para consultar disponibilidad. |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 **Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
 
 Entrevista 4:
 
+
+
+La [Tabla 10](#tabla-10) detalla ficha de entrevista — Registro de la entrevista a Franco Alanoca. Las imágenes incluidas corresponden a [Figura 20](#figura-20).
+
+<a id="tabla-10"></a>
+
+**Tabla 10**
+
+*Ficha de entrevista — Registro de la entrevista a Franco Alanoca*
+
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><img src="https://i.imgur.com/jkrjMWB.jpeg"/></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
+| <p align="center"><a id="figura-20"></a><strong>Figura 20</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQDwPo3p7nHzTo_3Q8Hdq5zRASpKzhsImRgOPsWf4awAsOU?e=pY3MtU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-06:00 | **Resumen:** Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, cargo que desempeña desde hace dos años. Su labor consiste en registrar a los pacientes conforme llegan y asignar los cupos del día según el orden de llegada, sin que exista un sistema de reserva previa. Explica que cuando los cupos se agotan simplemente se informa a los pacientes que regresen al día siguiente, y que no cuentan con un mecanismo formal para gestionar cancelaciones o inasistencias, por lo que esos cupos terminan perdiéndose. Señala que el principal problema es la desorganización que se genera cuando hay mucha demanda, especialmente en las mañanas, lo que ocasiona reclamos y un ambiente tenso. Actualmente, la gestión se apoya en cuadernos físicos y hojas de Excel, lo que en ocasiones provoca pérdida de información. Considera que contar con un sistema que muestre en tiempo real la disponibilidad de cupos y el estado de cada paciente eliminaría gran parte del registro manual repetitivo y ayudaría a evitar confusiones en la atención diaria. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Entrevista 5**
+
+
+
+La [Tabla 11](#tabla-11) detalla ficha de entrevista — Registro de la entrevista a Wilmer Contreras. Las imágenes incluidas corresponden a [Figura 21](#figura-21).
+
+<a id="tabla-11"></a>
+
+**Tabla 11**
+
+*Ficha de entrevista — Registro de la entrevista a Wilmer Contreras*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center">![evidencia-entrevista](https://i.imgur.com/I17V5E5.jpeg)</p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
+| <p align="center"><a id="figura-21"></a><strong>Figura 21</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 0:00-04:25 | **Resumen:** Wilmer Contreras, de 29 años, se desempeña como jefe de admisión en una posta de salud de Comas desde hace cinco años. Entre sus funciones se encuentra supervisar al personal de admisión, coordinar la distribución de cupos entre especialidades y atender los reclamos de los pacientes. Explica que el proceso actual depende de un cuaderno físico donde se revisa la disponibilidad y se asignan horarios aproximados que no siempre se cumplen, y que cuando los cupos se agotan se deriva a los pacientes a otros establecimientos o se les pide regresar otro día. Menciona que no existe un registro formal de cancelaciones ni de inasistencias, lo que dificulta reasignar los cupos liberados de manera oportuna. Identifica como principal problema la falta de un sistema centralizado que muestre la disponibilidad real de citas, lo que genera colas largas y personal saturado, especialmente los lunes y a inicios de mes. Considera que automatizar la asignación de cupos y las notificaciones a los pacientes sería clave para mejorar la atención y reducir la carga operativa del personal. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Entrevista 6**
+
+
+
+La [Tabla 12](#tabla-12) detalla ficha de entrevista — Registro de la entrevista a Deyvis Ochante. Las imágenes incluidas corresponden a [Figura 22](#figura-22).
+
+<a id="tabla-12"></a>
+
+**Tabla 12**
+
+*Ficha de entrevista — Registro de la entrevista a Deyvis Ochante*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| ![evidencia-entrevista](https://i.imgur.com/HHqkl6t.jpeg) | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
+| <a id="figura-22"></a><strong>Figura 22</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
 | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | **Timing:** 00:00-04:10 | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda. |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+Los vídeos que respaldan las entrevistas se reúnen en el [Anexo A](../bibliography/anexxes.md#anexo-a-vídeos-de-entrevistas-realizadas).
 
 ### 2.2.3. Análisis de entrevistas ###
 
@@ -108,19 +208,61 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 * Uso previo de aplicaciones para reservar citas o turnos:
 
-  <p align="center"><img src="https://i.imgur.com/jQEpbDj.png" alt="uso_apps_pacientes"/></p>
+
+
+La [Figura 23](#figura-23) muestra uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados.
+
+<a id="figura-23"></a>
+
+**Figura 23**
+
+*Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados*
+
+<p align="center"><img src="https://i.imgur.com/jQEpbDj.png" alt="Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos.
 
 * Comodidad realizando trámites desde el celular:
 
-  <p align="center"><img src="https://i.imgur.com/nSAfgXx.png" alt="comodidad_celular_pacientes"/></p>
+
+
+La [Figura 24](#figura-24) muestra comodidad de los pacientes entrevistados al utilizar el celular.
+
+<a id="figura-24"></a>
+
+**Figura 24**
+
+*Comodidad de los pacientes entrevistados al utilizar el celular*
+
+<p align="center"><img src="https://i.imgur.com/nSAfgXx.png" alt="Comodidad de los pacientes entrevistados al utilizar el celular"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones.
 
 * Utilidad de ver la disponibilidad de citas en tiempo real:
 
-  <p align="center"><img src="https://i.imgur.com/KN9jH35.png" alt="utilidad_disponibilidad_pacientes"/></p>
+
+
+La [Figura 25](#figura-25) muestra utilidad percibida de consultar la disponibilidad de citas.
+
+<a id="figura-25"></a>
+
+**Figura 25**
+
+*Utilidad percibida de consultar la disponibilidad de citas*
+
+<p align="center"><img src="https://i.imgur.com/KN9jH35.png" alt="Utilidad percibida de consultar la disponibilidad de citas"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento.
 
@@ -136,19 +278,61 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 * Sistema de gestión utilizado actualmente:
 
-  <p align="center"><img src="https://i.imgur.com/2xmnVjy.png" alt="sistema_actual_personal"/></p>
+
+
+La [Figura 26](#figura-26) muestra sistema actual de gestión de citas del personal entrevistado.
+
+<a id="figura-26"></a>
+
+**Figura 26**
+
+*Sistema actual de gestión de citas del personal entrevistado*
+
+<p align="center"><img src="https://i.imgur.com/2xmnVjy.png" alt="Sistema actual de gestión de citas del personal entrevistado"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel.
 
 * Necesidad de un sistema con información en tiempo real:
 
-  <p align="center"><img src="https://i.imgur.com/2I5aa41.png" alt="necesidad_sistema_personal"/></p>
+
+
+La [Figura 27](#figura-27) muestra necesidad de un sistema digital según el personal entrevistado.
+
+<a id="figura-27"></a>
+
+**Figura 27**
+
+*Necesidad de un sistema digital según el personal entrevistado*
+
+<p align="center"><img src="https://i.imgur.com/2I5aa41.png" alt="Necesidad de un sistema digital según el personal entrevistado"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes.
 
 * Momento del día con mayor cantidad de pacientes:
 
-  <p align="center"><img src="https://i.imgur.com/sEnlY8C.png" alt="mayor_demanda_personal"/></p>
+
+
+La [Figura 28](#figura-28) muestra especialidades de mayor demanda según las entrevistas al personal.
+
+<a id="figura-28"></a>
+
+**Figura 28**
+
+*Especialidades de mayor demanda según las entrevistas al personal*
+
+<p align="center"><img src="https://i.imgur.com/sEnlY8C.png" alt="Especialidades de mayor demanda según las entrevistas al personal"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
+
+
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes.
 
@@ -170,19 +354,57 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 #### Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud
 
-<p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="user_persona_paciente"/></p>
+
+
+La [Figura 29](#figura-29) muestra user persona del paciente.
+
+<a id="figura-29"></a>
+
+**Figura 29**
+
+*User persona del paciente*
+
+<p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="User persona del paciente"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención.
 
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
-<p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="user_persona_paciente"/></p>
+
+
+La [Figura 30](#figura-30) muestra user persona del personal asistencial y administrativo.
+
+<a id="figura-30"></a>
+
+**Figura 30**
+
+*User persona del personal asistencial y administrativo*
+
+<p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="User persona del personal asistencial y administrativo"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados.
 
 ### 2.3.2. User Task Matrix
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica.
+
+
+
+La [Tabla 13](#tabla-13) detalla user Task Matrix.
+
+<a id="tabla-13"></a>
+
+**Tabla 13**
+
+*User Task Matrix*
 
 | Tarea | Paciente (Zonas Periféricas) | Personal Asistencial / Administrativo | Frecuencia (Paciente) | Importancia (Paciente) | Frecuencia (Personal) | Importancia (Personal) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -194,6 +416,10 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
 | Gestionar la lista de espera y reasignación de cupos liberados | X | X | Low | High | High | High |
 | Controlar el flujo y estado de la atención en sala de espera | | X | Low | Low | High | High |
 | Registrar admisión y actualizar datos en registros/sistemas | | X | Low | Low | High | High |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 #### Análisis del Task Matrix
 
@@ -210,13 +436,41 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
-<p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="user_journey_paciente"/></p>
+
+
+La [Figura 31](#figura-31) muestra user journey del paciente.
+
+<a id="figura-31"></a>
+
+**Figura 31**
+
+*User journey del paciente*
+
+<p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="User journey del paciente"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera.
 
 #### Segmento 2: Personal asistencial y administrativo
 
-<p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="user_journey_personal"/></p>
+
+
+La [Figura 32](#figura-32) muestra user journey del personal asistencial y administrativo.
+
+<a id="figura-32"></a>
+
+**Figura 32**
+
+*User journey del personal asistencial y administrativo*
+
+<p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="User journey del personal asistencial y administrativo"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro.
 
@@ -228,13 +482,41 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
+
+
+La [Figura 33](#figura-33) muestra empathy Map - Paciente de Zonas Periféricas.
+
+<a id="figura-33"></a>
+
+**Figura 33**
+
+*Empathy Map - Paciente de Zonas Periféricas*
+
 <p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales.
 
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
+
+
+La [Figura 34](#figura-34) muestra empathy Map - Personal Asistencial y Administrativo.
+
+<a id="figura-34"></a>
+
+**Figura 34**
+
+*Empathy Map - Personal Asistencial y Administrativo*
+
 <p align="center"><img src="https://i.imgur.com/5z2pe4Y.png" alt="Empathy Map - Personal Asistencial y Administrativo" width="80%"/></p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos.
 
@@ -247,31 +529,97 @@ Para armar un sistema que funcione bien, primero hay que entender cómo trabaja 
 
 En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: *Cita reservada* o *Check-in realizado*), sin preocuparnos por la parte técnica ni por el diseño del software.
 
+
+
+La [Figura 35](#figura-35) muestra big Picture EventStorming - Step 1 Free Exploration.
+
+<a id="figura-35"></a>
+
+**Figura 35**
+
+*Big Picture EventStorming - Step 1 Free Exploration*
+
 <p align="center"> <img src="https://i.imgur.com/JwMsEx4.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 #### Step 2 – Enforcing Timelines
 
 En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud.
 
-<p align="center"> <img src="https://i.imgur.com/rkI5utV.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+
+La [Figura 36](#figura-36) muestra big Picture EventStorming: organización de la línea temporal.
+
+<a id="figura-36"></a>
+
+**Figura 36**
+
+*Big Picture EventStorming: organización de la línea temporal*
+
+<p align="center"> <img src="https://i.imgur.com/rkI5utV.png" alt="Big Picture EventStorming: organización de la línea temporal" width="85%"/> </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 #### Step 3 – People and Systems (Actors & Read Models)
 
 En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e identificamos a los **Actores** (tarjetas amarillas) que desencadenan cada acción (*Patient* y *Admission Staff*). También mapeamos la información visible o **Read Models** (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera.
 
+
+
+La [Figura 37](#figura-37) muestra step 3 - People and Systems.
+
+<a id="figura-37"></a>
+
+**Figura 37**
+
+*Step 3 - People and Systems*
+
 <p align="center"> <img src="https://i.imgur.com/qX7SP87.png" alt="Step 3 - People and Systems" width="85%"/> </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 #### Step 4 – Explicit Hotspots & Exceptions
 
 En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica.
 
+
+
+La [Figura 38](#figura-38) muestra step 4 - Hotspots and Exceptions.
+
+<a id="figura-38"></a>
+
+**Figura 38**
+
+*Step 4 - Hotspots and Exceptions*
+
 <p align="center"> <img src="https://i.imgur.com/QDRTLVm.png" alt="Step 4 - Hotspots and Exceptions" width="85%"/> </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 
 ### 2.3.6. Ubiquitous Language
 
 Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el **Lenguaje Ubicuo**. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema.
+
+
+
+La [Tabla 14](#tabla-14) detalla ubiquitous Language.
+
+<a id="tabla-14"></a>
+
+**Tabla 14**
+
+*Ubiquitous Language*
 
 | Ubiquitous Language (Inglés / Código) | Definición en el Dominio de SaludYa |
 | :--- | :--- |
@@ -284,6 +632,10 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 | `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
 | `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ---
 
 ## 2.4. Requirements Specification
@@ -294,6 +646,16 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 ### 2.4.1. To-Be Scenario Mapping
 
+
+
+La [Tabla 15](#tabla-15) detalla to-Be Scenario Mapping.
+
+<a id="tabla-15"></a>
+
+**Tabla 15**
+
+*To-Be Scenario Mapping*
+
 | Fase                                | Haciendo (Acción) | Pensando (Pensamiento) | Sintiendo (Emoción)        |
 |:------------------------------------| :--- | :--- |:---------------------------|
 | **1. Registro y Autenticació**      | Inicia sesión o se registra ingresando su DNI para validación automática de identidad y vincula a los menores a su cargo. | "Qué rápido es validar mi identidad con el DNI sin hacer trámites presenciales ni llenar formularios largos." | Tranquilidad y confianza |
@@ -301,11 +663,25 @@ En esta sección definimos la especificación formal de requisitos para la plata
 | **3. Lista de Espera Dinámica*      | Recibe una notificación de propuesta para adelantar su cita por un cupo liberado; acepta o rechaza la reasignación en su teléfono. | "Excelente que el sistema me avise para atenderme más temprano si alguien canceló su turno." | Sorpresa y satisfacción    |
 | **4. Check-in Presencial por QR**   | Llega al hospital dentro del margen de tolerancia, escanea el código QR y obtiene su ticket digital con el consultorio asignado. | "Evité la cola de admisión; solo escaneo el QR, confirmo mi presencia y voy directo a la sala." | Agilidad y alivio          |
 | **5. Atención y Control Operativo** | Espera el llamado al consultorio según su ticket digital mientras el sistema audita tiempos de tolerancia y confirma la atención. | "El proceso es transparente, sé exactamente a dónde ir y se respetan los horarios de atención." | Seguridad y complacencia   |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 ---
 
 ### 2.4.2. User Stories
 
 #### Epics
+
+
+
+La [Tabla 16](#tabla-16) detalla epics.
+
+<a id="tabla-16"></a>
+
+**Tabla 16**
+
+*Epics*
 
 | ID | Título de la Épica | Descripción Breve |
 | :--- | :--- | :--- |
@@ -315,8 +691,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
 | **EP4** | Arrival & QR Check-in System | Confirmación presencial de llegada mediante escaneo de código QR y emisión del ticket digital de atención. |
 | **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo y parametrización de reglas globales e intervalos del hospital. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 #### User stories
 <!-- US-01: Registro Paciente Adulto (API DNI) -->
+La [Tabla 18](#tabla-18) detalla la historia US-01: Creación de Cuenta de Paciente con Verificación de Identidad por DNI.
+
+<a id="tabla-18"></a>
+
+**Tabla 18**
+
+*US-01: Creación de Cuenta de Paciente con Verificación de Identidad por DNI*
+
 <table>
   <thead>
     <tr>
@@ -369,7 +757,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-02: Creación de Cuenta de Administrador -->
+La [Tabla 19](#tabla-19) detalla la historia US-02: Creación de Cuenta de Personal Administrativo.
+
+<a id="tabla-19"></a>
+
+**Tabla 19**
+
+*US-02: Creación de Cuenta de Personal Administrativo*
+
 <table>
   <thead>
     <tr>
@@ -422,7 +822,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-03: Registro Paciente Menor / Niño -->
+La [Tabla 20](#tabla-20) detalla la historia US-03: Registro de Pacientes Menores de Edad (Niños).
+
+<a id="tabla-20"></a>
+
+**Tabla 20**
+
+*US-03: Registro de Pacientes Menores de Edad (Niños)*
+
 <table>
   <thead>
     <tr>
@@ -475,7 +887,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-04: Recuperación de Contraseña -->
+La [Tabla 21](#tabla-21) detalla la historia US-04: Recuperación de Contraseña para Usuarios.
+
+<a id="tabla-21"></a>
+
+**Tabla 21**
+
+*US-04: Recuperación de Contraseña para Usuarios*
+
 <table>
   <thead>
     <tr>
@@ -520,7 +944,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-05: Edición de Perfil -->
+La [Tabla 22](#tabla-22) detalla la historia US-05: Edición de Información Personal.
+
+<a id="tabla-22"></a>
+
+**Tabla 22**
+
+*US-05: Edición de Información Personal*
+
 <table>
   <thead>
     <tr>
@@ -565,7 +1001,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-06: Inicio de Sesión -->
+La [Tabla 23](#tabla-23) detalla la historia US-06: Inicio de Sesión por Rol.
+
+<a id="tabla-23"></a>
+
+**Tabla 23**
+
+*US-06: Inicio de Sesión por Rol*
+
 <table>
   <thead>
     <tr>
@@ -614,7 +1062,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-07: Visualización de Calendario y Turnos Médicos -->
+La [Tabla 24](#tabla-24) detalla la historia US-07: Visualización de Calendario y Horarios Disponibles.
+
+<a id="tabla-24"></a>
+
+**Tabla 24**
+
+*US-07: Visualización de Calendario y Horarios Disponibles*
+
 <table>
   <thead>
     <tr>
@@ -667,7 +1127,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-08: Reserva de Cita Médica -->
+La [Tabla 25](#tabla-25) detalla la historia US-08: Reserva de Cita Médica para Titular o Menor de Edad.
+
+<a id="tabla-25"></a>
+
+**Tabla 25**
+
+*US-08: Reserva de Cita Médica para Titular o Menor de Edad*
+
 <table>
   <thead>
     <tr>
@@ -720,7 +1192,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-09: Notificación de Cita Confirmada -->
+La [Tabla 26](#tabla-26) detalla la historia US-09: Notificación de Cita Confirmada o Reasignada.
+
+<a id="tabla-26"></a>
+
+**Tabla 26**
+
+*US-09: Notificación de Cita Confirmada o Reasignada*
+
 <table>
   <thead>
     <tr>
@@ -769,7 +1253,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-10: Respuesta a Notificación de Adelanto de Cita -->
+La [Tabla 27](#tabla-27) detalla la historia US-10: Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola.
+
+<a id="tabla-27"></a>
+
+**Tabla 27**
+
+*US-10: Aceptación o Rechazo de Adelanto de Intervalo por Hueco en Cola*
+
 <table>
   <thead>
     <tr>
@@ -826,7 +1322,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-11: Check-in Presencial mediante Código QR -->
+La [Tabla 28](#tabla-28) detalla la historia US-11: Registro de Llegada (Check-in) mediante Código QR.
+
+<a id="tabla-28"></a>
+
+**Tabla 28**
+
+*US-11: Registro de Llegada (Check-in) mediante Código QR*
+
 <table>
   <thead>
     <tr>
@@ -883,7 +1391,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-12: Emisión de Ticket Digital de Atención -->
+La [Tabla 29](#tabla-29) detalla la historia US-12: Emisión de Ticket Digital de Atención.
+
+<a id="tabla-29"></a>
+
+**Tabla 29**
+
+*US-12: Emisión de Ticket Digital de Atención*
+
 <table>
   <thead>
     <tr>
@@ -936,7 +1456,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-12: Ejecución del Protocolo de Ausencia y Liberación de Cupo -->
+La [Tabla 30](#tabla-30) detalla la historia US-13: Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo.
+
+<a id="tabla-30"></a>
+
+**Tabla 30**
+
+*US-13: Ejecución del Protocolo de Ausencia por Vencimiento de Tiempo*
+
 <table>
   <thead>
     <tr>
@@ -989,7 +1521,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-13: Configuración de Parámetros Operativos del Hospital -->
+La [Tabla 31](#tabla-31) detalla la historia US-14: Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital.
+
+<a id="tabla-31"></a>
+
+**Tabla 31**
+
+*US-14: Configuración de Reglas Operativas, Intervalos y Tiempos Límite del Hospital*
+
 <table>
   <thead>
     <tr>
@@ -1042,7 +1586,19 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- US-14: Consulta y Cancelación de Citas por el Paciente -->
+La [Tabla 32](#tabla-32) detalla la historia US-15: Consulta de Citas Agendadas y Cancelación Voluntaria.
+
+<a id="tabla-32"></a>
+
+**Tabla 32**
+
+*US-15: Consulta de Citas Agendadas y Cancelación Voluntaria*
+
 <table>
   <thead>
     <tr>
@@ -1095,8 +1651,20 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 #### Technical stories
 <!-- TECH-01: Servicio de Notificaciones Transaccionales -->
+La [Tabla 71](#tabla-71) detalla la historia TECH-01: Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM).
+
+<a id="tabla-71"></a>
+
+**Tabla 71**
+
+*TECH-01: Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM)*
+
 <table>
   <thead>
     <tr>
@@ -1145,11 +1713,23 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <br>
 
 <br>
 
 <!-- TECH-03: Endpoints API REST y OpenAPI -->
+La [Tabla 72](#tabla-72) detalla la historia TECH-02: Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC.
+
+<a id="tabla-72"></a>
+
+**Tabla 72**
+
+*TECH-02: Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC*
+
 <table>
   <thead>
     <tr>
@@ -1202,9 +1782,21 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <br>
 
 <!-- TECH-04: Cron Jobs para Control de Tolerancia -->
+La [Tabla 73](#tabla-73) detalla la historia TECH-03: Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias.
+
+<a id="tabla-73"></a>
+
+**Tabla 73**
+
+*TECH-03: Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias*
+
 <table>
   <thead>
     <tr>
@@ -1257,9 +1849,21 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <br>
 
 <!-- TECH-05: Consumidor Asíncrono de Notificaciones -->
+La [Tabla 74](#tabla-74) detalla la historia TECH-04: Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas.
+
+<a id="tabla-74"></a>
+
+**Tabla 74**
+
+*TECH-04: Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas*
+
 <table>
   <thead>
     <tr>
@@ -1308,9 +1912,21 @@ En esta sección definimos la especificación formal de requisitos para la plata
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <br>
 
 <!-- TECH-06: Endpoint de Integración API DNI -->
+La [Tabla 75](#tabla-75) detalla la historia TECH-05: Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa.
+
+<a id="tabla-75"></a>
+
+**Tabla 75**
+
+*TECH-05: Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa*
+
 <table>
   <thead>
     <tr>
@@ -1362,6 +1978,10 @@ En esta sección definimos la especificación formal de requisitos para la plata
     </tr>
   </tbody>
 </table>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ---
 
 ### 2.4.3. Impact Mapping
@@ -1372,7 +1992,21 @@ Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisi
 
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, módulo de inscripción a lista de espera dinámica, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, controles manuales de reasignación y priorización preferencial, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional.
 
-<p align="center"> <img src="https://i.imgur.com/0D0vHje.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+
+
+La [Figura 39](#figura-39) muestra impact Mapping de SaludYa.
+
+<a id="figura-39"></a>
+
+**Figura 39**
+
+*Impact Mapping de SaludYa*
+
+<p align="center"> <img src="https://i.imgur.com/0D0vHje.png" alt="Impact Mapping de SaludYa" width="85%"/> </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 
@@ -1381,6 +2015,16 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 El Product Backlog ha sido priorizado en función del **valor directo entregado al negocio y a los usuarios**, asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints. La priorización sigue el principio de **valor de negocio primero**: las historias relacionadas con la propuesta de valor visible para el paciente (Landing Page, reserva de citas, check-in QR) y la operación crítica del establecimiento (gestión de cupos, lista de espera dinámica) se ubican en los primeros lugares, mientras que las historias de soporte técnico y configuración avanzada se postergan a Sprints posteriores.
 
 #### Tabla del Product Backlog
+
+
+
+La [Tabla 76](#tabla-76) detalla product Backlog de SaludYa.
+
+<a id="tabla-76"></a>
+
+**Tabla 76**
+
+*Product Backlog de SaludYa*
 
 | # Orden | User Story Id | Título | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1406,6 +2050,10 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 | 20 | TECH-05 | Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa | 5 | Sprint 4 |
 
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 ## 2.5. Strategic-Level Domain-Driven Design
 
 ### 2.5.1. EventStorming
@@ -1418,27 +2066,83 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 **1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Cita reservada", "Cupo liberado", "Check-in realizado"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos `BookingOrder asignado`, `Paciente en cola de asistencia` y `Paciente llamado`, que reflejan la existencia de dos colas complementarias dentro del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
 
+
+
+La [Figura 40](#figura-40) muestra eventStorming - Domain Events.
+
+<a id="figura-40"></a>
+
+**Figura 40**
+
+*EventStorming - Domain Events*
+
 <p align="center">
   <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%"/>
 </p>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 **2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `BookingOrder asignado` ocurre inmediatamente después de `Cita reservada`, mientras que `Paciente en cola de asistencia` y `Paciente llamado` ocurren después de `Check-in realizado`, evidenciando que ambas colas operan en momentos distintos del flujo.
+
+
+
+La [Figura 41](#figura-41) muestra eventStorming - Timeline.
+
+<a id="figura-41"></a>
+
+**Figura 41**
+
+*EventStorming - Timeline*
 
 <p align="center">
   <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%"/>
 </p>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 **3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `bookingOrder`** (que determina la prioridad en la lista de espera) y el **timeout de la waitlist** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **cola de asistencia** y la **lista de espera**.
+
+
+
+La [Figura 42](#figura-42) muestra eventStorming - Pain Points y Pivotal Points.
+
+<a id="figura-42"></a>
+
+**Figura 42**
+
+*EventStorming - Pain Points y Pivotal Points*
 
 <p align="center">
   <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
 </p>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 **4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Asignar bookingOrder`, `Agregar a cola de asistencia` y `Llamar siguiente paciente`; las policies `Cuando se libera un cupo, notificar al paciente con menor bookingOrder` y `Cuando expira el timeout, pasar al siguiente paciente de la lista`; y los read models `Cola de asistencia` y `Lista de espera`.
+
+
+
+La [Figura 43](#figura-43) muestra eventStorming - Commands, Policies y Read Models.
+
+<a id="figura-43"></a>
+
+**Figura 43**
+
+*EventStorming - Commands, Policies y Read Models*
 
 <p align="center">
   <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 
 #### 2.5.1.1. Candidate Context Discovery
@@ -1451,6 +2155,16 @@ Es importante precisar que **`Attendance Queue` no constituye un bounded context
 
 Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
 
+
+
+La [Tabla 77](#tabla-77) detalla candidate Context Discovery.
+
+<a id="tabla-77"></a>
+
+**Tabla 77**
+
+*Candidate Context Discovery*
+
 | # | Bounded Context | Propósito | Eventos clave |
 | :--- | :--- | :--- | :--- |
 | 1 | **Identity & Access Management** | Gestionar el registro, autenticación y roles de pacientes y personal administrativo. | Cuenta creada, Sesión iniciada, Menor vinculado |
@@ -1459,6 +2173,10 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 | 4 | **Arrival & QR Check-in** | Validar la presencia presencial del paciente, emitir el ticket digital de atención y gestionar la `Attendance Queue`. | Check-in realizado, Paciente en cola de asistencia, Paciente llamado, Ticket emitido, Paciente ausente |
 | 5 | **Hospital Operations & Configuration** | Configurar parámetros operativos del establecimiento y monitorear la operación diaria. | Reglas actualizadas, Reporte generado |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery:
 
 - **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Toda cita reservada tiene un `bookingOrder` único por especialidad, fecha y establecimiento"*.
@@ -1466,9 +2184,23 @@ A continuación se detalla, para cada bounded context, los elementos incorporado
 - **`Arrival & QR Check-in`:** se incorporan los conceptos `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`) y `Queue Entry` (entrada individual en la cola de asistencia). La policy asociada se define como *"Cola de asistencia ordenada por `checkInTimestamp`"*.
 - **`Hospital Operations & Configuration`:** se incorpora el parámetro `waitlistResponseTimeout` (y opcionalmente `cascadeWaitlistEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
+
+
+La [Figura 44](#figura-44) muestra candidate Context Discovery - Bounded Contexts identificados.
+
+<a id="figura-44"></a>
+
+**Figura 44**
+
+*Candidate Context Discovery - Bounded Contexts identificados*
+
 <p align="center">
   <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%"/>
 </p>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 
 #### 2.5.1.2. Domain Message Flows Modeling
@@ -1478,6 +2210,16 @@ En esta sección se presentan los principales flujos de colaboración entre los 
 **Flow 1: Registro y autenticación de paciente**
 
 El paciente solicita crear una nueva cuenta en el sistema ingresando su DNI y datos de contacto. El **Identity & Access Management** valida la información contra el servicio externo de RENIEC y registra el nuevo perfil verificado. Una vez completado el registro, el sistema emite el evento `Cuenta creada`. Posteriormente, cuando el paciente inicia sesión, el sistema valida sus credenciales y emite el evento `Sesión iniciada`. Finalmente, el paciente puede vincular a un menor de edad ingresando el DNI del niño, lo que genera el evento `Menor vinculado`.
+
+
+
+La [Tabla 78](#tabla-78) detalla flow 1: Registro y autenticación de paciente.
+
+<a id="tabla-78"></a>
+
+**Tabla 78**
+
+*Flow 1: Registro y autenticación de paciente*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1489,9 +2231,23 @@ El paciente solicita crear una nueva cuenta en el sistema ingresando su DNI y da
 | 6 | Patient | Vincula menor | DNI del menor | Identity & Access Management |
 | 7 | Identity & Access Management | Registra vínculo | Menor vinculado | Identity & Access Management |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 2: Reserva de cita médica para el titular**
 
 El paciente inicia sesión en la aplicación y selecciona una especialidad médica. El **Appointments & Booking** consulta el `Calendario de cupos` y verifica la disponibilidad de horarios. El paciente selecciona un `Time Slot` disponible y confirma la reserva. El **Appointments & Booking** registra la cita, asigna un `bookingOrder` único por especialidad, fecha y establecimiento, emite el evento `Cita reservada` y envía una notificación de confirmación al paciente. Si no hay cupo disponible, el sistema registra al paciente en la lista de espera con su respectivo `bookingOrder`.
+
+
+
+La [Tabla 79](#tabla-79) detalla flow 2: Reserva de cita médica para el titular.
+
+<a id="tabla-79"></a>
+
+**Tabla 79**
+
+*Flow 2: Reserva de cita médica para el titular*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1505,9 +2261,23 @@ El paciente inicia sesión en la aplicación y selecciona una especialidad médi
 | 8 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
 | 9 | Appointments & Booking | Registra en lista de espera (si no hay cupo) | Waitlist Entry | Dynamic Waitlist & Reassignment |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 3: Reserva de cita médica para un menor a cargo**
 
 El paciente titular inicia sesión y selecciona a un menor previamente vinculado a su cuenta. El **Appointments & Booking** consulta el `Calendario de cupos` para la especialidad pediátrica. El paciente confirma la reserva del `Time Slot` seleccionado. El **Appointments & Booking** registra la cita vinculando al menor como beneficiario y al titular como adulto responsable, asigna el `bookingOrder` correspondiente, emite el evento `Cita reservada` y notifica al titular.
+
+
+
+La [Tabla 80](#tabla-80) detalla flow 3: Reserva de cita médica para un menor a cargo.
+
+<a id="tabla-80"></a>
+
+**Tabla 80**
+
+*Flow 3: Reserva de cita médica para un menor a cargo*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1520,9 +2290,23 @@ El paciente titular inicia sesión y selecciona a un menor previamente vinculado
 | 7 | Appointments & Booking | Asigna bookingOrder | Booking Order asignado | Appointments & Booking |
 | 8 | Appointments & Booking | Notifica confirmación | Notificación enviada | Appointments & Booking |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 4: Check-in presencial mediante código QR**
 
 El paciente llega al establecimiento de salud con su cita programada. El **Arrival & QR Check-in** valida el código QR escaneado, verificando que la cita se encuentre dentro de la ventana de tolerancia configurada. Si la validación es exitosa, el sistema emite el evento `Check-in realizado`, crea un `Queue Entry` en la `Attendance Queue` del `Time Slot` correspondiente, y calcula la posición del paciente en función de su `checkInTimestamp`. Finalmente, se emite el ticket digital con el identificador de llamado, la posición en la cola de asistencia y el tiempo estimado de espera, y se notifica al paciente que ha sido ingresado a la cola.
+
+
+
+La [Tabla 81](#tabla-81) detalla flow 4: Check-in presencial mediante código QR.
+
+<a id="tabla-81"></a>
+
+**Tabla 81**
+
+*Flow 4: Check-in presencial mediante código QR*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1535,9 +2319,23 @@ El paciente llega al establecimiento de salud con su cita programada. El **Arriv
 | 7 | Arrival & QR Check-in | Emite ticket | Ticket emitido | Arrival & QR Check-in |
 | 8 | Arrival & QR Check-in | Notifica posición | Notificación enviada | Arrival & QR Check-in |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 5: Cancelación de cita y liberación de cupo**
 
 El paciente accede al historial de sus citas y cancela una cita activa. El **Appointments & Booking** verifica que la cancelación se realice dentro del plazo mínimo configurado. El sistema registra el evento `Cita cancelada` y transfiere el cupo al **Dynamic Waitlist & Reassignment**. Este emite el evento `Cupo liberado` y notifica al paciente con el **menor `bookingOrder`** de la `Lista de espera` correspondiente. Si el paciente acepta la propuesta dentro del `waitlistResponseTimeout`, se registra el evento `Cita reasignada`. Si rechaza o no responde, se notifica al siguiente paciente con menor `bookingOrder`. Si nadie acepta y `cascadeWaitlistEnabled` está activo, el cupo se ofrece a los pacientes del siguiente `Time Slot` de la misma especialidad y fecha.
+
+
+
+La [Tabla 82](#tabla-82) detalla flow 5: Cancelación de cita y liberación de cupo.
+
+<a id="tabla-82"></a>
+
+**Tabla 82**
+
+*Flow 5: Cancelación de cita y liberación de cupo*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1551,9 +2349,23 @@ El paciente accede al historial de sus citas y cancela una cita activa. El **App
 | 8 | Dynamic Waitlist & Reassignment | Expira propuesta (si no responde) | Waitlist Offer Expired | Dynamic Waitlist & Reassignment |
 | 9 | Dynamic Waitlist & Reassignment | Activa cascada (si nadie acepta) | Cascade Reassignment | Dynamic Waitlist & Reassignment |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 6: Declaración de ausencia por vencimiento de tolerancia**
 
 El personal de admisión llama al paciente a consultorio, pero este no se presenta. El **Arrival & QR Check-in** verifica que el tiempo de tolerancia ha expirado sin registrar el ingreso. El sistema emite el evento `Paciente ausente` y registra el turno como perdido. El **Dynamic Waitlist & Reassignment** libera el cupo y notifica al paciente con el **menor `bookingOrder`** de la lista de espera, iniciando el protocolo de reasignación. Si nadie acepta dentro del `waitlistResponseTimeout`, se activa la cascada si corresponde.
+
+
+
+La [Tabla 148](#tabla-148) detalla flow 6: Declaración de ausencia por vencimiento de tolerancia.
+
+<a id="tabla-148"></a>
+
+**Tabla 148**
+
+*Flow 6: Declaración de ausencia por vencimiento de tolerancia*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1565,9 +2377,23 @@ El personal de admisión llama al paciente a consultorio, pero este no se presen
 | 6 | Patient | Acepta propuesta | Waitlist Offer Accepted | Dynamic Waitlist & Reassignment |
 | 7 | Dynamic Waitlist & Reassignment | Registra reasignación | Cita reasignada | Dynamic Waitlist & Reassignment |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Flow 7: Configuración operativa del establecimiento**
 
 El administrador accede al panel de configuración de la aplicación. El **Hospital Operations & Configuration** permite parametrizar los intervalos de atención, la ventana de tolerancia para check-in, el margen de cancelación, los horarios de corte, el `waitlistResponseTimeout`, el `cascadeWaitlistEnabled` y la `maxCapacityPerSlot`. El sistema emite el evento `Reglas actualizadas` y aplica los nuevos parámetros a los bloques y turnos generados a partir de ese momento. Finalmente, el administrador puede consultar el `Dashboard operativo` con indicadores de ocupación, ausentismo y demanda.
+
+
+
+La [Tabla 84](#tabla-84) detalla flow 7: Configuración operativa del establecimiento.
+
+<a id="tabla-84"></a>
+
+**Tabla 84**
+
+*Flow 7: Configuración operativa del establecimiento*
 
 | Paso | Actor | Acción | Objeto de trabajo | Bounded Context |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1576,6 +2402,10 @@ El administrador accede al panel de configuración de la aplicación. El **Hospi
 | 3 | Hospital Operations & Configuration | Actualiza parámetros | Reglas actualizadas | Hospital Operations & Configuration |
 | 4 | Hospital Operations & Configuration | Aplica cambios | Nuevos bloques y turnos | Hospital Operations & Configuration |
 | 5 | Super Admin | Consulta métricas | Dashboard operativo | Hospital Operations & Configuration |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Estos flujos permiten visualizar la colaboración entre los bounded contexts, asegurando una comunicación clara entre sistemas y un entendimiento compartido de los procesos del dominio de SaludYa. En particular, se evidencia que la **cola por pedido de cita** se gestiona como atributo dentro de `Appointments & Booking` y se consume desde `Dynamic Waitlist & Reassignment` para determinar la prioridad de reasignación, mientras que la **cola de asistencia** se gestiona como agregado dentro de `Arrival & QR Check-in` para ordenar el llamado a consultorio el día de la cita.
 
@@ -1614,6 +2444,16 @@ Depende del servicio externo de RENIEC para la validación de identidad y del si
 
 El contexto está bien delimitado y desacoplado del resto de bounded contexts. Solo maneja autenticación e identidad, sin interferir en la lógica de reservas o atención. La integración con RENIEC y la gestión de roles por tipo de usuario son sus principales fortalezas.
 
+
+
+La [Tabla 85](#tabla-85) detalla bounded Context Canvas – Identity & Access Management.
+
+<a id="tabla-85"></a>
+
+**Tabla 85**
+
+*Bounded Context Canvas – Identity & Access Management*
+
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Identity & Access Management |
@@ -1627,6 +2467,10 @@ El contexto está bien delimitado y desacoplado del resto de bounded contexts. S
 | **Assumptions** | Los usuarios cuentan con un DNI válido y vigente. <br> El servicio externo de RENIEC está disponible para la validación. |
 | **Verification Metrics** | Tasa de registro exitoso de nuevos pacientes. <br> Porcentaje de cuentas verificadas correctamente por DNI. <br> Tiempo promedio de autenticación. |
 | **Open Questions** | ¿Se implementará autenticación biométrica en futuras versiones? <br> ¿Cómo se gestionará la recuperación de cuenta en caso de pérdida del correo? |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ## Bounded Context Canvas – Appointments & Booking
 
@@ -1657,6 +2501,16 @@ Depende de Identity & Access Management para validar la sesión del usuario, de 
 
 El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de vida bien definido. Su principal desafío es la gestión concurrente de cupos y la prevención de solapamientos de horario. La incorporación del `bookingOrder` como atributo le permite alimentar al contexto `Dynamic Waitlist & Reassignment` con un criterio de prioridad objetivo y trazable. Está preparado para escalar hacia reprogramación automática y sugerencias inteligentes de horarios.
 
+
+
+La [Tabla 86](#tabla-86) detalla bounded Context Canvas – Appointments & Booking.
+
+<a id="tabla-86"></a>
+
+**Tabla 86**
+
+*Bounded Context Canvas – Appointments & Booking*
+
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Appointments & Booking |
@@ -1670,6 +2524,10 @@ El contexto concentra el mayor valor de negocio del sistema y tiene un ciclo de 
 | **Assumptions** | Los establecimientos publican su catálogo de especialidades y cupos en el sistema. <br> El paciente cuenta con un dispositivo con acceso a internet para reservar. |
 | **Verification Metrics** | Número de citas reservadas por día. <br> Tasa de cancelación dentro del plazo permitido. <br> Porcentaje de reservas realizadas sin asistencia técnica. |
 | **Open Questions** | ¿Se permitirá reprogramación automática de citas en futuras versiones? <br> ¿Cómo se gestionará la sobreventa de cupos en caso de error del sistema? |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ## Bounded Context Canvas – Dynamic Waitlist & Reassignment
 
@@ -1700,6 +2558,16 @@ Depende de Appointments & Booking para recibir los eventos de cancelación, de A
 
 El contexto está bien delimitado y su lógica de reasignación es altamente automatizable. El uso del `bookingOrder` como criterio de prioridad le otorga objetividad y trazabilidad al proceso. La gestión de expiración por tiempo, el control de respuestas concurrentes y la activación de la cascada son sus principales desafíos técnicos. Su diseño desacoplado permite agregar políticas de priorización (por gravedad, antigüedad o vulnerabilidad) en futuras versiones.
 
+
+
+La [Tabla 149](#tabla-149) detalla bounded Context Canvas – Dynamic Waitlist & Reassignment.
+
+<a id="tabla-149"></a>
+
+**Tabla 149**
+
+*Bounded Context Canvas – Dynamic Waitlist & Reassignment*
+
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Dynamic Waitlist & Reassignment |
@@ -1713,6 +2581,10 @@ El contexto está bien delimitado y su lógica de reasignación es altamente aut
 | **Assumptions** | Los pacientes en lista de espera tienen configurado al menos un canal de notificación activo. <br> El sistema puede procesar múltiples respuestas concurrentes. |
 | **Verification Metrics** | Porcentaje de cupos liberados reasignados exitosamente. <br> Tiempo promedio de respuesta de los pacientes ante una propuesta. <br> Tasa de aceptación de propuestas de adelanto. <br> Porcentaje de cascadas activadas exitosamente. |
 | **Open Questions** | ¿Se implementará un sistema de priorización por gravedad del caso? <br> ¿Cómo se gestionará la reasignación en caso de fallo del servicio de notificaciones? |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ## Bounded Context Canvas – Arrival & QR Check-in
 
@@ -1744,6 +2616,16 @@ Depende de Identity & Access Management para validar la sesión del paciente, de
 
 El contexto tiene un alcance claro y su flujo principal (validar → crear Queue Entry → calcular posición → emitir ticket → actualizar cola) es sencillo y bien delimitado. La `Attendance Queue` se modela como agregado interno, evitando la creación innecesaria de un bounded context. Su principal desafío es la precisión del control de tolerancia y la integración con dispositivos sin smartphone. El diseño permite agregar mecanismos alternativos de check-in (reconocimiento facial, código de barras) en el futuro.
 
+
+
+La [Tabla 88](#tabla-88) detalla bounded Context Canvas – Arrival & QR Check-in.
+
+<a id="tabla-88"></a>
+
+**Tabla 88**
+
+*Bounded Context Canvas – Arrival & QR Check-in*
+
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Arrival & QR Check-in |
@@ -1757,6 +2639,10 @@ El contexto tiene un alcance claro y su flujo principal (validar → crear Queue
 | **Assumptions** | El establecimiento cuenta con códigos QR visibles en la recepción. <br> El paciente porta un dispositivo móvil con la aplicación instalada. |
 | **Verification Metrics** | Porcentaje de check-ins exitosos dentro de la tolerancia. <br> Tasa de ausencias registradas por día. <br> Tiempo promedio entre check-in y llamado a consultorio. |
 | **Open Questions** | ¿Se implementará check-in mediante reconocimiento facial? <br> ¿Cómo se gestionará el check-in de pacientes sin smartphone? |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ## Bounded Context Canvas – Hospital Operations & Configuration
 
@@ -1789,6 +2675,16 @@ Depende de Identity & Access Management para autorizar al Super Admin, y recibe 
 
 El contexto cumple un rol de soporte esencial para el resto del sistema. Su diseño desacoplado permite que cada establecimiento configure sus propias reglas sin afectar a los demás. La incorporación de parámetros como `waitlistResponseTimeout` y `cascadeWaitlistEnabled` le permite controlar el comportamiento de la lista de espera dinámica sin acoplarse a su lógica interna. Su principal desafío es la preservación de citas ya confirmadas cuando se modifica la configuración operativa. Su evolución natural apunta hacia analítica predictiva y reportes comparativos entre establecimientos.
 
+
+
+La [Tabla 89](#tabla-89) detalla bounded Context Canvas – Hospital Operations & Configuration.
+
+<a id="tabla-89"></a>
+
+**Tabla 89**
+
+*Bounded Context Canvas – Hospital Operations & Configuration*
+
 | **Sección** | **Contenido** |
 | :--- | :--- |
 | **Name** | Hospital Operations & Configuration |
@@ -1802,6 +2698,10 @@ El contexto cumple un rol de soporte esencial para el resto del sistema. Su dise
 | **Assumptions** | El establecimiento cuenta con un responsable administrativo capacitado en el uso del panel. <br> Los datos de atención se registran correctamente en el sistema. |
 | **Verification Metrics** | Número de configuraciones actualizadas por mes. <br> Frecuencia de uso del dashboard operativo. <br> Porcentaje de reportes exportados por el personal administrativo. |
 | **Open Questions** | ¿Se implementará un módulo de analítica predictiva en futuras versiones? <br> ¿Cómo se integrará el dashboard con los sistemas HIS existentes? |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 Estos canvases permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la cola por pedido de cita como atributo (`Booking Order`) dentro de `Appointments & Booking`, y la cola de asistencia como agregado (`Attendance Queue`) dentro de `Arrival & QR Check-in`.
 
@@ -1838,6 +2738,16 @@ Durante la elaboración de los context maps, el equipo se planteó las siguiente
 
 A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa:
 
+
+
+La [Tabla 90](#tabla-90) detalla context Mapping: patrones y relaciones entre contextos.
+
+<a id="tabla-90"></a>
+
+**Tabla 90**
+
+*Context Mapping: patrones y relaciones entre contextos*
+
 | Bounded Context origen | Bounded Context destino | Patrón | Justificación |
 | :--- | :--- | :--- | :--- |
 | Identity & Access Management | RENIEC API (externo) | **ACL** | Se traduce el modelo externo de RENIEC al modelo interno de identidad. |
@@ -1850,9 +2760,23 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 | Hospital Operations & Configuration | Appointments & Booking | **Conformist** | Booking adopta el modelo de parámetros operativos sin traducirlo. |
 | Hospital Operations & Configuration | Arrival & QR Check-in | **Conformist** | Check-in adopta el modelo de tolerancias sin traducirlo. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Mensajes intercambiados entre bounded contexts**
 
 A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio:
+
+
+
+La [Tabla 91](#tabla-91) detalla context Mapping: mensajes entre contextos.
+
+<a id="tabla-91"></a>
+
+**Tabla 91**
+
+*Context Mapping: mensajes entre contextos*
 
 | Mensaje | Bounded Context origen | Bounded Context destino | Contenido |
 | :--- | :--- | :--- | :--- |
@@ -1863,6 +2787,10 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 | `WaitlistOfferExpired` | Dynamic Waitlist & Reassignment | Patient | Expiración del `waitlistResponseTimeout` sin respuesta del paciente. |
 | `CascadeReassignment` | Dynamic Waitlist & Reassignment | Appointments & Booking | Activación de la cascada si nadie en la lista de espera acepta el cupo. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 **Leyenda de patrones:**
 
 - **ACL (Anticorruption Layer):** Capa de traducción entre el modelo externo y el modelo interno.
@@ -1870,7 +2798,21 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 - **CF (Conformist):** Un contexto adopta el modelo de otro sin traducirlo.
 - **C/S (Customer/Supplier):** Relación donde el supplier publica y el customer consume.
 
+
+
+La [Figura 45](#figura-45) muestra mapa de relaciones entre bounded contexts de SaludYa.
+
+<a id="figura-45"></a>
+
+**Figura 45**
+
+*Mapa de relaciones entre bounded contexts de SaludYa*
+
 ![Context Map](assets/ContextMapping.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 
 ### 2.5.3. Software Architecture
@@ -1881,7 +2823,21 @@ En el Software Architecture Context Diagram se pueden apreciar los componentes m
 
 El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pacientes** que reservan y gestionan citas médicas, el **personal de admisión** que controla el flujo de atención en el establecimiento, y el **Super Admin** que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto.
 
+
+
+La [Figura 46](#figura-46) muestra diagrama C4 de contexto de SaludYa.
+
+<a id="figura-46"></a>
+
+**Figura 46**
+
+*Diagrama C4 de contexto de SaludYa*
+
 ![ContextSys](assets/ContextDiagram.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 #### 2.5.3.2. Container Level Diagram
 
@@ -1893,7 +2849,21 @@ El Backend API orquesta internamente la lógica de los cinco bounded contexts de
 
 El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone.
 
+
+
+La [Figura 47](#figura-47) muestra diagrama C4 de contenedores de SaludYa.
+
+<a id="figura-47"></a>
+
+**Figura 47**
+
+*Diagrama C4 de contenedores de SaludYa*
+
 ![ContainerSys](assets/ContainerDiagram.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 
 #### 2.5.3.3. Deployment Diagram
@@ -1904,7 +2874,21 @@ El despliegue de SaludYa se distribuye en tres entornos principales. En primer l
 
 Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud.
 
+
+
+La [Figura 48](#figura-48) muestra diagrama C4 de despliegue de SaludYa.
+
+<a id="figura-48"></a>
+
+**Figura 48**
+
+*Diagrama C4 de despliegue de SaludYa*
+
 ![DeploymentSys](assets/DeploymentDiagram.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ## 2.6. Tactical-Level Domain-Driven Design
 
@@ -2285,7 +3269,21 @@ Publica eventos de dominio usando Spring Events.
 
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/iam_component_diagram.png" alt="IAM component diagram" width="85%"/>
+
+
+La [Figura 49](#figura-49) muestra diagrama de componentes — IAM.
+
+<a id="figura-49"></a>
+
+**Figura 49**
+
+*Diagrama de componentes — IAM*
+
+<img src="assets/iam_component_diagram.png" alt="Diagrama de componentes — IAM" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos.
@@ -2294,14 +3292,42 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/iam_uml_diagram.png" alt="IAM class diagram" width="85%"/>
+
+
+La [Figura 50](#figura-50) muestra diagrama de clases — IAM.
+
+<a id="figura-50"></a>
+
+**Figura 50**
+
+*Diagrama de clases — IAM*
+
+<img src="assets/iam_uml_diagram.png" alt="Diagrama de clases — IAM" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory.
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/iam_database_diagram.png" alt="IAM database diagram" width="85%"/>
+
+
+La [Figura 51](#figura-51) muestra diagrama de base de datos — IAM.
+
+<a id="figura-51"></a>
+
+**Figura 51**
+
+*Diagrama de base de datos — IAM*
+
+<img src="assets/iam_database_diagram.png" alt="Diagrama de base de datos — IAM" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores.
@@ -2687,7 +3713,21 @@ Publica eventos de dominio usando Spring Events.
 
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/appointment_component_diagram.png" alt="Appointment component diagram" width="85%"/>
+
+
+La [Figura 113](#figura-113) muestra diagrama de componentes — Appointment.
+
+<a id="figura-113"></a>
+
+**Figura 113**
+
+*Diagrama de componentes — Appointment*
+
+<img src="assets/appointment_component_diagram.png" alt="Diagrama de componentes — Appointment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a eventos de cancelación y ausencia. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con el BookingDomainService. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA, la publicación de eventos con Spring Events y el envío de notificaciones.
@@ -2696,14 +3736,42 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/appointment_class_diagram.png" alt="Appointment class diagram" width="85%"/>
+
+
+La [Figura 114](#figura-114) muestra diagrama de clases — Appointment.
+
+<a id="figura-114"></a>
+
+**Figura 114**
+
+*Diagrama de clases — Appointment*
+
+<img src="assets/appointment_class_diagram.png" alt="Diagrama de clases — Appointment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, entities, value objects, enums, domain service e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, y el BookingDomainService.
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/appointment_database_diagram.png" alt="Appointment database diagram" width="85%"/>
+
+
+La [Figura 54](#figura-54) muestra diagrama de base de datos — Appointment.
+
+<a id="figura-54"></a>
+
+**Figura 54**
+
+*Diagrama de base de datos — Appointment*
+
+<img src="assets/appointment_database_diagram.png" alt="Diagrama de base de datos — Appointment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas.
@@ -2977,7 +4045,21 @@ Ejecuta periódicamente `expireReassignment` para expirar ofertas no respondidas
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/reassignment_component_diagram.png" alt="Reassignment component diagram" width="85%"/>
+
+
+La [Figura 55](#figura-55) muestra diagrama de componentes — Reassignment.
+
+<a id="figura-55"></a>
+
+**Figura 55**
+
+*Diagrama de componentes — Reassignment*
+
+<img src="assets/reassignment_component_diagram.png" alt="Diagrama de componentes — Reassignment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas de reasignación, mientras que los Event Consumers escuchan los eventos AppointmentCancelled y AppointmentAbsent publicados por otros bounded contexts. En la Application Layer, el ReassignmentCommandService orquesta la reasignación, junto con los Event Handlers que reaccionan a los eventos de cancelación y ausencia. En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el ReassignmentDomainService (que busca el siguiente candidato por bookingOrder) y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl, HospitalConfigurationRepositoryImpl), la publicación de eventos con Spring Events (SpringEventPublisherImpl), el envío de notificaciones (NotificationAdapter) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
@@ -2986,14 +4068,42 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/reassignment_class_diagram.png" alt="Reassignment class diagram" width="85%"/>
+
+
+La [Figura 56](#figura-56) muestra diagrama de clases — Reassignment.
+
+<a id="figura-56"></a>
+
+**Figura 56**
+
+*Diagrama de clases — Reassignment*
+
+<img src="assets/reassignment_class_diagram.png" alt="Diagrama de clases — Reassignment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta y la prioridad por bookingOrder, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED). Se muestran los cuatro Domain Events que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent), el ReassignmentDomainService que encapsula la lógica de búsqueda del siguiente candidato, y las interfaces ReassignmentOfferRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos.
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/reassignment_database_diagram.png" alt="Reassignment database diagram" width="85%"/>
+
+
+La [Figura 57](#figura-57) muestra diagrama de base de datos — Reassignment.
+
+<a id="figura-57"></a>
+
+**Figura 57**
+
+*Diagrama de base de datos — Reassignment*
+
+<img src="assets/reassignment_database_diagram.png" alt="Diagrama de base de datos — Reassignment" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de pedido. La tabla incluye tres foreign keys hacia appointments (el paciente que recibe la oferta y la cita original que se liberó) y una foreign key hacia time_slots (el cupo liberado), junto con el estado de la oferta, los timestamps de envío, respuesta y expiración.
@@ -3425,7 +4535,21 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/arrival_component_diagram.png" alt="Arrival component diagram" width="85%"/>
+
+
+La [Figura 58](#figura-58) muestra diagrama de componentes — Arrival.
+
+<a id="figura-58"></a>
+
+**Figura 58**
+
+*Diagrama de componentes — Arrival*
+
+<img src="assets/arrival_component_diagram.png" alt="Diagrama de componentes — Arrival" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
@@ -3434,14 +4558,42 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/arrival_class_diagram.png" alt="Arrival class diagram" width="85%"/>
+
+
+La [Figura 59](#figura-59) muestra diagrama de clases — Arrival.
+
+<a id="figura-59"></a>
+
+**Figura 59**
+
+*Diagrama de clases — Arrival*
+
+<img src="assets/arrival_class_diagram.png" alt="Diagrama de clases — Arrival" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent.
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/arrival_database_diagram.png" alt="Arrival database diagram" width="85%"/>
+
+
+La [Figura 60](#figura-60) muestra diagrama de base de datos — Arrival.
+
+<a id="figura-60"></a>
+
+**Figura 60**
+
+*Diagrama de base de datos — Arrival*
+
+<img src="assets/arrival_database_diagram.png" alt="Diagrama de base de datos — Arrival" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 ---
 El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in.
@@ -3601,7 +4753,21 @@ Publica eventos de dominio usando Spring Events.
 
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="assets/HospitalOperations_Configuration_component_diagram.png" alt="Hospital Operations & Configuration component diagram" width="85%"/>
+
+
+La [Figura 61](#figura-61) muestra diagrama de componentes — Hospital Operations & Configuration.
+
+<a id="figura-61"></a>
+
+**Figura 61**
+
+*Diagrama de componentes — Hospital Operations & Configuration*
+
+<img src="assets/HospitalOperations_Configuration_component_diagram.png" alt="Diagrama de componentes — Hospital Operations &amp; Configuration" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA.
 
@@ -3609,12 +4775,40 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="assets/HospitalOperations_Configuration_class_diagram.png" alt="Hospital Operations & Configuration class diagram" width="85%"/>
+
+
+La [Figura 62](#figura-62) muestra diagrama de clases — Hospital Operations & Configuration.
+
+<a id="figura-62"></a>
+
+**Figura 62**
+
+*Diagrama de clases — Hospital Operations & Configuration*
+
+<img src="assets/HospitalOperations_Configuration_class_diagram.png" alt="Diagrama de clases — Hospital Operations &amp; Configuration" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio.
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
-<img src="assets/HospitalOperations_Configuration_database_diagram.png" alt="Hospital Operations & Configuration database diagram" width="85%"/>
+
+
+La [Figura 63](#figura-63) muestra diagrama de base de datos — Hospital Operations & Configuration.
+
+<a id="figura-63"></a>
+
+**Figura 63**
+
+*Diagrama de base de datos — Hospital Operations & Configuration*
+
+<img src="assets/HospitalOperations_Configuration_database_diagram.png" alt="Diagrama de base de datos — Hospital Operations &amp; Configuration" width="85%"/>
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia.
