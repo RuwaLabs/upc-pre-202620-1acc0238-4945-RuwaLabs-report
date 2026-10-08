@@ -1041,6 +1041,7 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 <!-- pdf-pagebreak -->
+
 Figura 20
 **Entrevista 6**
 
@@ -1592,7 +1593,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
  <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI -->
 
-
+<!-- pdf-pagebreak -->
 <a id="tabla-22"></a>
 
 **Tabla 22**
@@ -1684,7 +1685,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
  <!-- US-07: Reserva de Cita para el Paciente -->
 
 
-
+<!-- pdf-pagebreak -->
 <a id="tabla-28"></a>
 
 **Tabla 28**
@@ -1731,7 +1732,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
  <!-- US-10: Cancelación de Cita -->
 
-
+<!-- pdf-pagebreak -->
 
 <a id="tabla-31"></a>
 
@@ -1780,7 +1781,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
  <!-- US-13: Consulta de Posición en la Cola de Atención -->
 
 
-
+<!-- pdf-pagebreak -->
 <a id="tabla-34"></a>
 
 **Tabla 34**
@@ -1830,6 +1831,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 
 <a id="tabla-37"></a>
+<!-- pdf-pagebreak -->
 
 **Tabla 37**
 
