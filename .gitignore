@@ -1,2 +1,4 @@
-# Configuración local de Obsidian (ajustes del vault, plugins y temas)
-.obsidian/
+# Obsidian: versionamos la configuración y los plugins, excepto lo volátil
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
