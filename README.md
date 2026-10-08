@@ -45,6 +45,16 @@
 <!-- pdf-pagebreak -->
 # Registro de Versiones del Informe
 
+
+
+La [Tabla 1](#tabla-1) detalla historial de versiones del reporte.
+
+<a id="tabla-1"></a>
+
+**Tabla 1**
+
+*Historial de versiones del reporte*
+
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
 | 1.0.0 | 08-28-26 | Montoya Nina, Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
@@ -58,14 +68,60 @@
 | 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 | 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 <!-- pdf-pagebreak -->
 # Project Report Collaboration Insights
 
-<img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
 
-<img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_2.jpg?raw=true">
 
-<img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_3.jpg?raw=true">
+La [Figura 1](#figura-1) muestra colaboración en GitHub: evidencia 1.
+
+<a id="figura-1"></a>
+
+**Figura 1**
+
+*Colaboración en GitHub: evidencia 1*
+
+<img alt="Colaboración en GitHub: evidencia 1" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
+
+*Nota. Captura del registro de colaboración del repositorio en GitHub.*
+
+
+
+
+
+La [Figura 2](#figura-2) muestra colaboración en GitHub: evidencia 2.
+
+<a id="figura-2"></a>
+
+**Figura 2**
+
+*Colaboración en GitHub: evidencia 2*
+
+<img alt="Colaboración en GitHub: evidencia 2" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_2.jpg?raw=true">
+
+*Nota. Captura del registro de colaboración del repositorio en GitHub.*
+
+
+
+
+
+La [Figura 3](#figura-3) muestra colaboración en GitHub: evidencia 3.
+
+<a id="figura-3"></a>
+
+**Figura 3**
+
+*Colaboración en GitHub: evidencia 3*
+
+<img alt="Colaboración en GitHub: evidencia 3" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_3.jpg?raw=true">
+
+*Nota. Captura del registro de colaboración del repositorio en GitHub.*
+
+
 
 URL de la Organización de Github del equipo RuwaLabs: [RuwaLabs](https://github.com/RuwaLabs)
 
@@ -181,6 +237,16 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 7**
 **Criterio:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
+
+
+La [Tabla 2](#tabla-2) detalla acciones y conclusiones para el Student Outcome 7.
+
+<a id="tabla-2"></a>
+
+**Tabla 2**
+
+*Acciones y conclusiones para el Student Outcome 7*
+
 <table>
   <thead>
     <tr style="break-inside:auto">
@@ -256,6 +322,10 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   </tbody>
 </table>
 
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
+
 <!-- pdf-pagebreak -->
 
 # Objetivos SMART
@@ -266,46 +336,116 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 **Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica.
 
+
+
+La [Tabla 3](#tabla-3) detalla objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio.
+
+<a id="tabla-3"></a>
+
+**Tabla 3**
+
+*Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio*
+
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
 | 1 | Obtener la certificación *Google Associate Android Developer* para especializarme en el desarrollo de aplicaciones móviles nativas, completando un plan de estudio de 8 horas semanales y aprobando el examen oficial con una puntuación superior a 80/100. | Diciembre 2027 |
 | 2 | Incorporarme como desarrollador móvil en una empresa de tecnología peruana, postulando a un mínimo de 10 ofertas por mes y participando en al menos 3 procesos de selección por trimestre hasta concretar mi primera contratación. | 12 meses tras la graduación |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ## Objetivos SMART – Meza Solórzano, Didier Sebastian
 
 **Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil.
+
+
+
+La [Tabla 4](#tabla-4) detalla objetivos SMART – Meza Solórzano, Didier Sebastian.
+
+<a id="tabla-4"></a>
+
+**Tabla 4**
+
+*Objetivos SMART – Meza Solórzano, Didier Sebastian*
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
 | 1 | Obtener la certificación oficial de *Flutter Developer* para dominar el desarrollo multiplataforma, desarrollando al menos 3 proyectos publicados en GitHub y aprobando la evaluación con un puntaje mínimo de 75/100. | Diciembre 2027 |
 | 2 | Iniciar un posgrado o especialización en desarrollo de software móvil, aprobando los primeros 4 ciclos con un promedio ponderado no menor a 16/20 y manteniendo una dedicación de 10 horas semanales de estudio. | 2028 |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ## Objetivos SMART – Montoya Nina, Paula Fernanda
 
 **Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización.
+
+
+
+La [Tabla 5](#tabla-5) detalla objetivos SMART – Montoya Nina, Paula Fernanda.
+
+<a id="tabla-5"></a>
+
+**Tabla 5**
+
+*Objetivos SMART – Montoya Nina, Paula Fernanda*
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
 | 1 | Obtener la certificación *Google Cloud Professional Data Engineer* para especializarme en la gestión de datos, mediante un plan de estudio de 6 horas semanales y la aprobación del examen oficial con un puntaje mínimo de 70/100. | Diciembre 2027 |
 | 2 | Iniciar una maestría en Arquitectura de Software, culminando los dos primeros semestres con un promedio no menor a 16/20 y publicando un proyecto de arquitectura de datos al finalizar cada semestre. | 2027 |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 <!-- pdf-pagebreak -->
 ## Objetivos SMART – Ramos Mera, Neo Daniel
 
 **Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada.
+
+
+
+La [Tabla 6](#tabla-6) detalla objetivos SMART – Ramos Mera, Neo Daniel.
+
+<a id="tabla-6"></a>
+
+**Tabla 6**
+
+*Objetivos SMART – Ramos Mera, Neo Daniel*
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
 | 1 | Obtener la certificación *Cisco Certified Network Associate (CCNA)* para fortalecer mis competencias en redes, completando 120 horas de laboratorio y aprobando el examen oficial 200-301 en el primer intento. | Junio 2027 |
 | 2 | Desempeñarme como desarrollador backend en una empresa tecnológica, consolidando al menos una certificación cloud (AWS o Azure) y participando en un mínimo de 8 procesos de selección anuales. | 18 meses tras la graduación |
 
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+
 ## Objetivos SMART – Torres Juárez, Alisee Muriel
 
 **Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización.
+
+
+
+La [Tabla 7](#tabla-7) detalla objetivos SMART – Torres Juárez, Alisee Muriel.
+
+<a id="tabla-7"></a>
+
+**Tabla 7**
+
+*Objetivos SMART – Torres Juárez, Alisee Muriel*
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
 | 1 | Obtener la certificación *Professional Scrum Master I (PSM I)* para fortalecer mis competencias en gestión de proyectos, aprobando el examen oficial con una puntuación mínima de 85% y gestionando al menos un proyecto académico bajo el marco Scrum. | Diciembre 2026 |
 | 2 | Ingresar a un programa de especialización en gestión de proyectos tecnológicos, aprobando los dos primeros ciclos con un promedio no menor a 16/20 y liderando al menos un proyecto real durante el programa. | 2027 |
+
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 <!-- pdf-pagebreak -->
 
@@ -558,7 +698,7 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - El personal asistencial y administrativo de los establecimientos está interesado en herramientas que faciliten la gestión de citas y el flujo de pacientes.
 - Los establecimientos públicos de salud buscan reducir tiempos de espera y mejorar el aprovechamiento de sus cupos disponibles.
 - Existen iniciativas del MINSA orientadas a la digitalización de citas, lo que evidencia una tendencia favorable para la adopción de SaludYa.
-  
+
 ##### 1.2.2.2.2 Business Outcomes #####
 
 - Queremos que los establecimientos de salud reduzcan en un 30% las colas presenciales durante los primeros 6 meses de implementación.
@@ -1026,7 +1166,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 </tbody> </table> <!-- US-26: Consulta del Perfil del Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-26</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Perfil del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis datos de identidad y de contacto,<br> <b>Para</b> verificar la información registrada en mi cuenta. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Datos del perfil</b><br> • <b>Given</b> que el paciente tiene sesión iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su nombre, el DNI con solo los últimos 4 dígitos visibles, el estado de identidad verificada, su correo y su celular.<br><br>
 
 </tbody> </table> <!-- US-27: Edición de Datos de Contacto --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-27</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de Datos de Contacto</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> actualizar mi correo y mi número de celular,<br> <b>Para</b> mantener mis datos de contacto al día. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Actualización exitosa</b><br> • <b>Given</b> que el paciente ingresa un correo disponible y un celular válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza sus datos de contacto y envía una notificación de seguridad.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Formato de contacto inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e identifica el dato inválido.<br><br> <b>Scenario 4: Intento de modificar datos de identidad</b><br> • <b>Given</b> que el paciente intenta modificar su DNI, nombres, apellidos o fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio, pues los datos de identidad no se modifican.<br><br>
-  
+
 </tbody> </table> <!-- US-28: Cierre de Sesión del Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-28</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Cierre de Sesión del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cerrar mi sesión,<br> <b>Para</b> proteger el acceso a mi cuenta al terminar de usar la aplicación. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cierre de sesión confirmado</b><br> • <b>Given</b> que el paciente tiene sesión iniciada y confirma el cierre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema finaliza la sesión e invalida el token de acceso.<br><br> <b>Scenario 2: Cierre de sesión no confirmado</b><br> • <b>Given</b> que el paciente solicitó cerrar sesión y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la sesión activa.<br><br>
 
 </tbody> </table> <!-- US-29: Aviso de Sesión Expirada --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-29</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Aviso de Sesión Expirada</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ser informado cuando mi sesión ha expirado,<br> <b>Para</b> volver a iniciar sesión de forma segura. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Sesión expirada</b><br> • <b>Given</b> que el token de acceso del paciente venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta realizar una acción,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la acción, informa que la sesión expiró y requiere un nuevo inicio de sesión.<br><br>
@@ -1036,7 +1176,7 @@ En esta sección definimos la especificación formal de requisitos para la plata
 </tbody> </table> <!-- US-31: Creación de Cuenta de Personal de Admisión --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-31</td> <td>Super Admin</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Creación de Cuenta de Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> registrar al personal de admisión con su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br> <b>Para</b> otorgarle una cuenta verificada para operar el establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Alta exitosa</b><br> • <b>Given</b> que el Super Admin autenticado ingresa datos que coinciden con el registro oficial y un correo corporativo disponible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> registra al personal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de personal de admisión y envía las credenciales de acceso por correo.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que algún dato ingresado no coincide con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que la identidad no coincide con el titular.<br><br> <b>Scenario 3: Correo duplicado</b><br> • <b>Given</b> que el correo ingresado ya pertenece a una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que el correo ya está registrado.<br><br>
 
 </tbody> </table> <!-- US-32: Inicio de Sesión del Personal de Admisión --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-32</td> <td>Personal de Admisión</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a las herramientas de operación del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el personal de admisión ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Personal de Admisión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
-  
+
 </tbody> </table> <!-- US-33: Configuración de la Duración de los Intervalos de Atención --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-33</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Configuración de la Duración de los Intervalos de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> definir la duración de cada intervalo de atención,<br> <b>Para</b> adaptar la agenda a la operación del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Intervalo actualizado</b><br> • <b>Given</b> que el Super Admin ingresa una duración válida coherente con la tolerancia de llegada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el intervalo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica la duración a los nuevos bloques y conserva las citas confirmadas.<br><br> <b>Scenario 2: Duración incoherente</b><br> • <b>Given</b> que la tolerancia de llegada es mayor que la duración ingresada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el conflicto.<br><br>
 
 </tbody> </table> <!-- US-34: Edición de una Regla Operativa del Establecimiento --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-34</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de una Regla Operativa del Establecimiento</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> modificar el valor de una regla operativa (capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar o anticipación para cancelar),<br> <b>Para</b> adaptar el sistema a la capacidad y a las políticas de la institución. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Regla actualizada</b><br> • <b>Given</b> que el Super Admin ingresa un valor válido para la regla,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste el valor, lo aplica a la operación y conserva las reservas confirmadas.<br><br> <b>Scenario 2: Valor inválido</b><br> • <b>Given</b> que el valor ingresado es cero, no numérico o incoherente con la duración del intervalo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el campo en conflicto.<br><br>
@@ -1070,9 +1210,9 @@ En esta sección definimos la especificación formal de requisitos para la plata
 </tbody> </table> <!-- US-48: Finalización de la Atención de un Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-48</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Finalización de la Atención de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> finalizar la atención de un paciente,<br> <b>Para</b> retirarlo de la cola y continuar con el siguiente. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Atención finalizada</b><br> • <b>Given</b> que el turno del paciente está en atención,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal finaliza la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a atendido, retira al paciente de la cola y habilita el llamado del siguiente.<br><br>
 
 </tbody> </table> <!-- US-49: Registro de Ausencia de un Paciente --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-49</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Ausencia de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> marcar como ausente a un paciente que no acudió tras ser llamado,<br> <b>Para</b> liberar su cupo según las reglas del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Ausencia confirmada</b><br> • <b>Given</b> que el plazo posterior al llamado se cumplió sin que el paciente ingresara al consultorio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca el turno como ausente, retira al paciente de la cola y libera el cupo.<br><br> <b>Scenario 2: Plazo aún vigente</b><br> • <b>Given</b> que el plazo posterior al llamado no se cumplió,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa el tiempo restante.<br><br> <b>Scenario 3: Atención ya iniciada</b><br> • <b>Given</b> que la atención del paciente ya fue iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación.<br><br>
-  
+
 </tbody> </table> <!-- US-50: Consulta de Citas Canceladas del Día --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-50</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Citas Canceladas del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas canceladas del día,<br> <b>Para</b> conocer qué cupos fueron liberados. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cancelaciones del día</b><br> • <b>Given</b> que existen cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna la especialidad, el paciente, el horario, el momento de la cancelación y el estado del cupo.<br><br> <b>Scenario 2: Sin cancelaciones</b><br> • <b>Given</b> que no hay cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas canceladas.<br><br>
-  
+
 </tbody> </table> <!-- US-51: Visualización de Indicadores del Día --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-51</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Indicadores del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas programadas, pendientes, canceladas e inasistencias del día junto con el resumen de atención,<br> <b>Para</b> monitorear el flujo de citas e incidencias del establecimiento. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Indicadores del día</b><br> • <b>Given</b> que existen citas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, pendientes, canceladas, las inasistencias, las citas atendidas y los cupos recuperados, con su hora de actualización.<br><br> <b>Scenario 2: Día sin actividad</b><br> • <b>Given</b> que la fecha consultada no tiene citas ni incidencias,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna todos los indicadores en cero.<br><br>
 
 </tbody> </table> <!-- US-52: Visualización de Demanda por Especialidad --> <table> <thead> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-52</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Demanda por Especialidad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cantidad de reservas del día por especialidad,<br> <b>Para</b> identificar las especialidades con mayor demanda. </td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Demanda por especialidad</b><br> • <b>Given</b> que existen reservas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la demanda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el total de reservas y las reservas de cada especialidad.<br><br>
@@ -4339,7 +4479,8 @@ El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a
 
 ![Landing Page de SaludYa - Implementación](assets/landing-page/landing-page.png)
 
-**Landing Page de SaludYa:**  
+**Landing Page de SaludYa:**
+
 https://ruwalabs.github.io/saludya-landing/
 
 
