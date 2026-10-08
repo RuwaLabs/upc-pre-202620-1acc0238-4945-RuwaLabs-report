@@ -47,7 +47,7 @@
 
 
 
-La [Tabla 1](#tabla-1) detalla historial de versiones del reporte.
+El registro de versiones permite seguir las fechas, los responsables y las modificaciones realizadas durante la elaboración del informe ([Tabla 1](#tabla-1)).
 
 <a id="tabla-1"></a>
 
@@ -77,7 +77,7 @@ La [Tabla 1](#tabla-1) detalla historial de versiones del reporte.
 
 
 
-La [Figura 1](#figura-1) muestra colaboración en GitHub: evidencia 1.
+
 
 <a id="figura-1"></a>
 
@@ -93,7 +93,7 @@ La [Figura 1](#figura-1) muestra colaboración en GitHub: evidencia 1.
 
 
 
-La [Figura 2](#figura-2) muestra colaboración en GitHub: evidencia 2.
+Las capturas del repositorio documentan la participación del equipo y permiten revisar el registro de contribuciones al informe ([Figura 1](#figura-1), [Figura 2](#figura-2)).
 
 <a id="figura-2"></a>
 
@@ -109,7 +109,7 @@ La [Figura 2](#figura-2) muestra colaboración en GitHub: evidencia 2.
 
 
 
-La [Figura 3](#figura-3) muestra colaboración en GitHub: evidencia 3.
+
 
 <a id="figura-3"></a>
 
@@ -123,7 +123,7 @@ La [Figura 3](#figura-3) muestra colaboración en GitHub: evidencia 3.
 
 
 
-URL de la Organización de Github del equipo RuwaLabs: [RuwaLabs](https://github.com/RuwaLabs)
+URL de la Organización de Github del equipo RuwaLabs: [RuwaLabs](https://github.com/RuwaLabs) ([Figura 3](#figura-3)).
 
 URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-report](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report)
 
@@ -236,10 +236,10 @@ URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-r
 El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 7**
 **Criterio:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7 ([Tabla 2](#tabla-2)).
 
 
-La [Tabla 2](#tabla-2) detalla acciones y conclusiones para el Student Outcome 7.
+
 
 <a id="tabla-2"></a>
 
@@ -334,11 +334,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 ## Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio
 
-**Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica.
+**Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica ([Tabla 3](#tabla-3)).
 
 
 
-La [Tabla 3](#tabla-3) detalla objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio.
+
 
 <a id="tabla-3"></a>
 
@@ -357,11 +357,11 @@ La [Tabla 3](#tabla-3) detalla objetivos SMART – Aguilar Untiveros, Rodrigo Fa
 
 ## Objetivos SMART – Meza Solórzano, Didier Sebastian
 
-**Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil.
+**Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil ([Tabla 4](#tabla-4)).
 
 
 
-La [Tabla 4](#tabla-4) detalla objetivos SMART – Meza Solórzano, Didier Sebastian.
+
 
 <a id="tabla-4"></a>
 
@@ -380,11 +380,11 @@ La [Tabla 4](#tabla-4) detalla objetivos SMART – Meza Solórzano, Didier Sebas
 
 ## Objetivos SMART – Montoya Nina, Paula Fernanda
 
-**Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización.
+**Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización ([Tabla 5](#tabla-5)).
 
 
 
-La [Tabla 5](#tabla-5) detalla objetivos SMART – Montoya Nina, Paula Fernanda.
+
 
 <a id="tabla-5"></a>
 
@@ -403,11 +403,11 @@ La [Tabla 5](#tabla-5) detalla objetivos SMART – Montoya Nina, Paula Fernanda.
 <!-- pdf-pagebreak -->
 ## Objetivos SMART – Ramos Mera, Neo Daniel
 
-**Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada.
+**Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada ([Tabla 6](#tabla-6)).
 
 
 
-La [Tabla 6](#tabla-6) detalla objetivos SMART – Ramos Mera, Neo Daniel.
+
 
 <a id="tabla-6"></a>
 
@@ -426,11 +426,11 @@ La [Tabla 6](#tabla-6) detalla objetivos SMART – Ramos Mera, Neo Daniel.
 
 ## Objetivos SMART – Torres Juárez, Alisee Muriel
 
-**Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización.
+**Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización ([Tabla 7](#tabla-7)).
 
 
 
-La [Tabla 7](#tabla-7) detalla objetivos SMART – Torres Juárez, Alisee Muriel.
+
 
 <a id="tabla-7"></a>
 
@@ -463,11 +463,11 @@ RuwaLabs es una startup comprometida con el desarrollo de soluciones digitales i
 
 SaludYa busca reducir las dificultades asociadas a la gestión tradicional de citas médicas, como las largas colas presenciales, la alta demanda de cupos y la falta de información sobre la disponibilidad de atención. Para ello, la solución contempla funcionalidades como la reserva digital de citas, lista de espera dinámica, recordatorios de atención, gestión de citas de familiares y check-in mediante código QR.
 
-Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles.
+Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles ([Tabla 8](#tabla-8)).
 
 
 
-La [Tabla 8](#tabla-8) detalla misión, visión y valores de RuwaLabs.
+
 
 <a id="tabla-8"></a>
 
@@ -495,11 +495,11 @@ La [Tabla 8](#tabla-8) detalla misión, visión y valores de RuwaLabs.
 <!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
-En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**.
+En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa** ([Tabla 9](#tabla-9), [Figura 4](#figura-4), [Figura 5](#figura-5), [Figura 6](#figura-6), [Figura 7](#figura-7), [Figura 8](#figura-8)).
 
 
 
-La [Tabla 9](#tabla-9) detalla perfiles de los integrantes del equipo. Las fotografías incluidas corresponden a [Figura 4](#figura-4), [Figura 5](#figura-5), [Figura 6](#figura-6), [Figura 7](#figura-7), [Figura 8](#figura-8).
+
 
 <a id="tabla-9"></a>
 
@@ -564,11 +564,11 @@ En esta sección se describe el perfil de la solución propuesta por RuwaLabs, i
 
 La aplicación lleva por nombre **"SaludYa"**. El propósito de la aplicación se centra en la gestión eficiente de citas médicas en establecimientos públicos de salud, permitiendo a los pacientes acceder de forma oportuna a la reserva, seguimiento y *check-in* de sus atenciones. Al mismo tiempo, brinda al personal asistencial y administrativo herramientas para gestionar citas, pacientes y el flujo de atención.
 
-Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud.
+Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud ([Figura 9](#figura-9)).
 
 
 
-La [Figura 9](#figura-9) muestra identidad visual de SaludYa.
+
 
 <a id="figura-9"></a>
 
@@ -704,7 +704,7 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 
 
-La [Figura 10](#figura-10) muestra diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas.
+
 
 <a id="figura-10"></a>
 
@@ -724,7 +724,7 @@ La [Figura 10](#figura-10) muestra diagrama de Ishikawa: causas de las dificulta
 
 
 
-El diagrama identifica **seis categorías principales de causas** que contribuyen al problema:
+El diagrama identifica **seis categorías principales de causas** que contribuyen al problema ([Figura 10](#figura-10)):
 
 - **Tecnología:** Sistemas de citas obsoletos o inexistentes, plataformas que pueden presentar dificultades ante una alta demanda, falta de integración entre módulos y problemas de conectividad en determinados establecimientos.
 
@@ -811,7 +811,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 <p align="center">
 
 
-La [Figura 11](#figura-11) muestra lean UX Canvas de SaludYa.
+
 
 <a id="figura-11"></a>
 
@@ -827,7 +827,7 @@ La [Figura 11](#figura-11) muestra lean UX Canvas de SaludYa.
   <p align="center" style="text-align:center">Lean Ux Canvas</p>
 </p>
 
-La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles.
+La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles ([Figura 11](#figura-11)).
 
 ## _1.3. Segmentos objetivos_ ##
 
