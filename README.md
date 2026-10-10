@@ -7803,6 +7803,51 @@ La landing page reúne la presentación del producto y recibió ajustes en la im
 
 *Nota. Elaboración del equipo RuwaLabs a partir del historial de Git de los repositorios de SaludYa, consultado el 9 de octubre de 2026. Los mensajes se conservan tal como fueron registrados y las fechas corresponden a la fecha de commit. La columna Branch identifica una rama que contiene el commit; no atribuye su creación original a esa rama. Se presentan commits representativos de implementación, sin incluir los commits de edición del reporte.*
 
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+Las pruebas del Sprint 1 verifican las reglas de identidad y acceso, los servicios REST y la protección de los recursos del paciente. En el backend de SaludYa se utiliza JUnit Jupiter con AssertJ para comprobar los componentes de seguridad y validación. Las pruebas de integración emplean Spring Boot Test y MockMvc para ejecutar solicitudes a los endpoints, revisar sus respuestas y comprobar los cambios en la persistencia con el perfil `test`.
+
+La suite de IAM cubre el registro, la verificación por correo, el inicio de sesión, la recuperación de contraseña, el cierre y la expiración de sesión, y la vinculación de menores. Incluye casos de datos inválidos, correos duplicados, credenciales incorrectas, enlaces vencidos y acceso a información de otro paciente. La protección de recursos también se verifica para reservas, check-in y propuestas de reasignación.
+
+El archivo `iam.feature` expresa escenarios de aceptación en Gherkin. Su cobertura automatizada se implementa en las clases JUnit de integración y seguridad; el archivo funciona como especificación de aceptación y no cuenta con un ejecutor Cucumber configurado en el proyecto. Algunos de sus escenarios contemplan roles internos, mientras que el alcance móvil de este entregable corresponde al paciente.
+
+En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los archivos y su relación con los recorridos del sprint se organizan como se detalla en la [Tabla 94](#tabla-94).
+
+Repositorio de pruebas del backend y especificación BDD: [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya/tree/develop/saludya/src/test).
+
+Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src).
+
+<a id="tabla-94"></a>
+
+**Tabla 94**
+
+*Suite de pruebas y escenarios de aceptación de SaludYa para el Sprint 1*
+
+| Componente | Tipo de prueba | Archivos | Alcance relacionado |
+|:---|:---|:---|:---|
+| Backend IAM | Unitarias y de componentes | [IamSecurityTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/iam/IamSecurityTests.java) | DNI e identidad, indisponibilidad del proveedor, normalización de nombres, BCrypt, cifrado de notificaciones y límites de solicitudes. |
+| Backend IAM | Integración REST y persistencia | [IamIntegrationTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/iam/IamIntegrationTests.java) | Registro y acceso (US-01 a US-04), menores (US-15 y US-17 a US-19), contacto (US-27), recuperación (US-23 a US-25) y sesión (US-28 y US-29). |
+| Backend, recursos del paciente | Integración y autorización | [ResourceOwnershipSecurityTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/security/ResourceOwnershipSecurityTests.java) | Impedir consultas o acciones sobre reservas, check-in y ofertas de reasignación de otro paciente; rechazo de QR sin reserva válida. |
+| Backend IAM | Especificación de aceptación en Gherkin | [iam.feature](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/resources/features/iam.feature) | Escenarios Given/When/Then de registro, menores, recuperación y permisos; cobertura ejecutable en JUnit. |
+
+*Nota. Elaboración del equipo RuwaLabs a partir de los archivos de prueba del backend y la aplicación Android. La verificación de registro y acceso se realiza por correo, de acuerdo con el cambio implementado en IAM.*
+
+La evolución de esta suite queda registrada en los commits que incorporan o modifican pruebas, como se detalla en la [Tabla 95](#tabla-95). Se incluyen mensajes de implementación cuando el mismo commit contiene cambios en los archivos de testing.
+
+<a id="tabla-95"></a>
+
+**Tabla 95**
+
+*Commits relacionados con la suite de pruebas del Sprint 1*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|:---|:---|:---|:---|:---|
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `iam` | [38265f3ed2efd7b08c5dd8e28bfcd47b458a85e2](https://github.com/RuwaLabs/backend-saludya/commit/38265f3ed2efd7b08c5dd8e28bfcd47b458a85e2) | test(iam): cover report scenarios on H2 and PostgreSQL | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [4fb041aac3b5912de3a32eac353fedc3b9947efe](https://github.com/RuwaLabs/backend-saludya/commit/4fb041aac3b5912de3a32eac353fedc3b9947efe) | feat: integrate IAM and Arrival with cross-context ACLs; complete patient/admin flows | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [8965e195d438b3c658b2ededa38bb76021b3e8ed](https://github.com/RuwaLabs/backend-saludya/commit/8965e195d438b3c658b2ededa38bb76021b3e8ed) | fix: auth smtp done, sms removed, flow reworked | 06/10/2026 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; los resultados de ejecución corresponden al apartado 4.2.1.6.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
