@@ -9484,6 +9484,139 @@ La interpretación de los analíticos muestra que la actividad del Sprint se con
 
 ### 4.3.3. Evaluaciones según heurísticas
 
+En esta sección se presenta la evaluación de la aplicación **SaludYa** basada en principios heurísticos de **usabilidad**, **arquitectura de la información** e **inclusive design**. El objetivo de esta evaluación es identificar posibles problemas de interacción, diseño visual o accesibilidad que puedan afectar la experiencia del usuario durante el uso de las diferentes vistas de la aplicación: **Inicio de sesión**, **Inicio**, **Reserva de cita**, **Mis citas** y **Perfil**.
+
+Las observaciones se sustentan en las entrevistas de validación realizadas a los usuarios, quienes probaron las funciones principales de la aplicación y brindaron retroalimentación sobre su facilidad de uso, claridad visual y eficiencia en las tareas. A partir de estos hallazgos, se determinan los principales problemas detectados, su nivel de severidad y las heurísticas afectadas, junto con recomendaciones para optimizar la experiencia general.
+
+> UX Heuristics & Principles Evaluation  
+> Usability – Inclusive Design – Information Architecture  
+
+- **Carrera:** Ingeniería de Software  
+- **Curso:** Aplicaciones para Dispositivos Móviles  
+- **Sección:** 4945  
+- **Profesor:** Mayta Guillermo, Jorge Luis  
+- **Auditor:** Equipo de desarrollo RuwaLabs  
+- **Cliente(s):** RuwaLabs  
+
+**Sitio o app a evaluar:** SaludYa — Aplicación móvil de gestión de citas médicas en establecimientos públicos de salud  
+
+**Tareas a evaluar:**  
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:  
+- Inicio de sesión  
+- Visualización del inicio del paciente  
+- Reserva de una cita médica  
+- Consulta de citas agendadas  
+- Visualización del perfil del paciente  
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:  
+- Registro de llegada mediante código QR  
+- Gestión de la cola de atención  
+- Reasignación de cupos liberados  
+- Módulo de notificaciones push  
+
+---
+
+### Escala de severidad
+
+Los errores fueron evaluados según la siguiente escala:
+
+<table border="1">
+	<tbody>
+        <tr>
+            <td style="text-align:center;"><strong>Nivel</strong></td>
+            <td style="text-align:center;"><strong>Descripción</strong></td>
+        </tr>
+		<tr>
+			<td>1</td>
+            <td>Problema superficial: puede ser fácilmente superado por el usuario o ocurre con poca frecuencia. No requiere corrección inmediata.</td>
+		</tr>
+        <tr>
+            <td>2</td>
+            <td>Problema menor: ocurre ocasionalmente o genera leve confusión. Puede corregirse en futuras versiones.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Problema mayor: ocurre con frecuencia o afecta la eficiencia de uso. Se recomienda corregir antes del lanzamiento.</td>
+        </tr>
+	    <tr>
+            <td>4</td>
+            <td>Problema crítico: impide la continuidad de las tareas principales. Requiere corrección inmediata.</td>
+        </tr>	
+	</tbody>
+</table>
+
+---
+
+### Tabla de resumen
+
+<table border="1">
+	<tbody>
+        <tr>
+            <td style="text-align:center;"><strong>#</strong></td>
+            <td style="text-align:center;"><strong>Problema</strong></td>
+            <td style="text-align:center;"><strong>Escala de severidad</strong></td>
+            <td style="text-align:center;"><strong>Heurística/Principio violado</strong></td>
+        </tr>
+		<tr>
+			<td>1</td>
+            <td>Los textos secundarios en las tarjetas de citas son pequeños, dificultando la lectura.</td>
+            <td>2</td>
+            <td>Usabilidad – Visibilidad y legibilidad del sistema</td>
+		</tr>
+        <tr>
+            <td>2</td>
+            <td>No existen recordatorios visibles de las citas próximas dentro de la pantalla de inicio.</td>
+            <td>3</td>
+            <td>Information Architecture – Feedback del sistema</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>El inicio de sesión carece de opciones rápidas como “recordar usuario” o “inicio con Google”.</td>
+            <td>2</td>
+            <td>Usabilidad – Flexibilidad y eficiencia de uso</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Falta un apartado de historial de atenciones en el perfil para consultar citas anteriores.</td>
+            <td>3</td>
+            <td>Information Architecture – Visibilidad del estado del sistema</td>
+		</tr>
+	</tbody>
+</table>
+
+---
+
+### Descripción de problemas
+
+**Problema #1:** Los textos secundarios en las tarjetas de citas son pequeños, dificultando la lectura.  
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – Visibilidad y legibilidad del sistema  
+**Problema:** Durante las entrevistas, algunos usuarios (como Yordi) mencionaron que ciertos textos dentro de las tarjetas de citas —como la especialidad, el profesional y el estado— eran demasiado pequeños, dificultando la identificación rápida del detalle de su atención.  
+**Recomendación:** Aumentar el tamaño tipográfico y el contraste de color en las etiquetas de estado (“Reservada”, “Confirmada”, “Atendida”, “Cancelada”) y en el detalle secundario de cada tarjeta.  
+<br>
+
+**Problema #2:** No existen recordatorios visibles de las citas próximas dentro de la pantalla de inicio.  
+**Severidad:** 3  
+**Heurística violada:** Information Architecture – Feedback del sistema  
+**Problema:** Los usuarios (Braulio y Kevin) destacaron la necesidad de recibir recordatorios sobre citas próximas a realizarse, ya que la ausencia de avisos podría generar olvidos o inasistencias.  
+**Recomendación:** Incorporar un bloque de recordatorios y notificaciones en la pantalla de inicio, mostrando las citas más próximas y su tiempo restante.  
+<br>
+
+**Problema #3:** El inicio de sesión carece de opciones rápidas como “recordar usuario” o “inicio con Google”.  
+**Severidad:** 2  
+**Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso  
+**Problema:** Los entrevistados expresaron que ingresar el correo y la contraseña cada vez resulta tedioso, y preferirían alternativas rápidas de acceso para agilizar el inicio de sesión.  
+**Recomendación:** Agregar las opciones de “Recordar usuario” e “Inicio con Google” para optimizar el proceso de autenticación y reducir la fricción en el acceso.  
+<br>
+
+**Problema #4:** Falta un apartado de historial de atenciones en el perfil para consultar citas anteriores.  
+**Severidad:** 3  
+**Heurística violada:** Information Architecture – Visibilidad del estado del sistema  
+**Problema:** Los usuarios (Franco y Deyvis) consideraron importante disponer de un historial dentro del perfil que muestre las atenciones previas del paciente, para poder consultar tratamientos, especialidades y fechas de manera centralizada.  
+**Recomendación:** Incluir una sección de historial de atenciones dentro del perfil del paciente, con filtros por fecha y especialidad, y acceso al detalle de cada cita atendida.  
+<br>
+
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
