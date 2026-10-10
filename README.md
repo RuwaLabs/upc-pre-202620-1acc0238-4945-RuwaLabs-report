@@ -108,7 +108,7 @@ Las capturas del repositorio documentan la participación del equipo y permiten 
 
 
 
-
+q
 
 
 <a id="figura-3"></a>
