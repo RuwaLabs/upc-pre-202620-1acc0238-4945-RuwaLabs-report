@@ -7757,6 +7757,578 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 <!-- pdf-pagebreak -->
 
 
+#### 4.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1 se avanzó en la implementación del backend, la aplicación móvil para pacientes y la landing page de SaludYa. El trabajo se distribuyó en ramas por funcionalidad, con commits que registran la construcción de los módulos y sus ajustes de integración.
+
+En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama `develop` incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en Render.
+
+En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
+
+La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 93](#tabla-93).
+
+<a id="tabla-93"></a>
+
+**Tabla 93**
+
+*Commits de implementación de SaludYa para la revisión del Sprint 1*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|:---|:---|:---|:---|:---|
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `iam` | [d6101f67c169deea633099c9c4995b2396e156aa](https://github.com/RuwaLabs/backend-saludya/commit/d6101f67c169deea633099c9c4995b2396e156aa) | feat(iam): expose authorized REST APIs and context facade | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `booking` | [f5823addf79daa1c7bbd51820a0052df428a21ed](https://github.com/RuwaLabs/backend-saludya/commit/f5823addf79daa1c7bbd51820a0052df428a21ed) | feat: Booking DDD Complete | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `reassignment` | [d4daffc364ace3799c677c91c16b51b61f29e8e4](https://github.com/RuwaLabs/backend-saludya/commit/d4daffc364ace3799c677c91c16b51b61f29e8e4) | feat: ddd without acl impl | 26/09/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `hospitalconfig` | [89934b6cd4f503e9b406cfc58ce2762f17f63d19](https://github.com/RuwaLabs/backend-saludya/commit/89934b6cd4f503e9b406cfc58ce2762f17f63d19) | feat(config): add configuration rest controller | 26/09/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [4fb041aac3b5912de3a32eac353fedc3b9947efe](https://github.com/RuwaLabs/backend-saludya/commit/4fb041aac3b5912de3a32eac353fedc3b9947efe) | feat: integrate IAM and Arrival with cross-context ACLs; complete patient/admin flows | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [89c4529678231739c7ec2f1e5199a7fc3c7d54ab](https://github.com/RuwaLabs/backend-saludya/commit/89c4529678231739c7ec2f1e5199a7fc3c7d54ab) | feat: reassignment arrival by slot check-in tolerance and fix chain candidate selection | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [8965e195d438b3c658b2ededa38bb76021b3e8ed](https://github.com/RuwaLabs/backend-saludya/commit/8965e195d438b3c658b2ededa38bb76021b3e8ed) | fix: auth smtp done, sms removed, flow reworked | 06/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [50e5453fe97c7f48229455812255f9ffed194bd4](https://github.com/RuwaLabs/backend-saludya/commit/50e5453fe97c7f48229455812255f9ffed194bd4) | feat: recovery account audition | 06/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [6a747f8b711abe3e697877f6ef362725e13de83f](https://github.com/RuwaLabs/backend-saludya/commit/6a747f8b711abe3e697877f6ef362725e13de83f) | chore: add Render deployment | 06/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [ca1cb00eceb91035cf759530d02c4d30b6ad8398](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/ca1cb00eceb91035cf759530d02c4d30b6ad8398) | feat(iam): add recovery screens and session confirmation flows | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [9c5a3199d760155e0f2bbb52588253cf49c38ae6](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/9c5a3199d760155e0f2bbb52588253cf49c38ae6) | feat(iam): validate recovery links and reset patient passwords | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [71074b8f6a4328ec18753c76f97beb2c2b1ec7ca](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/71074b8f6a4328ec18753c76f97beb2c2b1ec7ca) | feat(iam): register assisted account recovery requests | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-reservations` | [a91f61d5996836674e200ea6d181233f87bbd1de](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/a91f61d5996836674e200ea6d181233f87bbd1de) | feat(patient-reservations): add domain, use cases and REST infrastructure | 06/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-reservations` | [10161af7987f2c04f8879d5c9577e667575f4991](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/10161af7987f2c04f8879d5c9577e667575f4991) | feat(patient-reservations): alinear presentacion con patrones del proyecto | 09/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-check-in` | [a07e6693820126151bc35a96a0109aaecbbfb036](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/a07e6693820126151bc35a96a0109aaecbbfb036) | feat(CheckIn): add Reservation QR code Lookup, Digital Service Ticket Inquiry, Service Queue, Call to the Consulting Room | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-check-in` | [93f0b140cf2af30ef0257d7f58ba89620494a8e5](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/93f0b140cf2af30ef0257d7f58ba89620494a8e5) | fix(checkin): update us qr code, ticket, attention queue | 09/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [c52be13f80184c69761f8471499056cedd29997a](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/c52be13f80184c69761f8471499056cedd29997a) | feat(configuration): validate minor identity against admission records | 06/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [8cd77e9d6a86af270b1cf71945069eb2819ca412](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/8cd77e9d6a86af270b1cf71945069eb2819ca412) | feat(configuration): add confirm dialog and unlink flow to linked minor | 06/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-dashboard` | [b0a5ab82c4aae6a7ba8ce5a5e6730db90c72fd11](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/b0a5ab82c4aae6a7ba8ce5a5e6730db90c72fd11) | feat(designsystem): add BottomNavigationBar and bottom nav icons | 04/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `notifications-reassignment` | [e4edf27e77712c18bb9a2c521764654ac9a172a4](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/e4edf27e77712c18bb9a2c521764654ac9a172a4) | feat: ui composables done, presentation almost done. Dashboard needs other bounded contexts | 09/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `develop` | [8b721c467ba0c0e0c854bf45210a16e465c93488](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/8b721c467ba0c0e0c854bf45210a16e465c93488) | feat(main): custom tab indicator covering icon and label | 09/10/2026 |
+| [RuwaLabs/saludya-landing](https://github.com/RuwaLabs/saludya-landing) | `main` | [28d248984503e0e8f18fa50ea1d00ea1bc05959b](https://github.com/RuwaLabs/saludya-landing/commit/28d248984503e0e8f18fa50ea1d00ea1bc05959b) | chore: initial commit - SaludYa landing page | 28/09/2026 |
+| [RuwaLabs/saludya-landing](https://github.com/RuwaLabs/saludya-landing) | `main` | [4c1a8378572855facb6d824d2755e21adceaa909](https://github.com/RuwaLabs/saludya-landing/commit/4c1a8378572855facb6d824d2755e21adceaa909) | feat(hero): update hero img with best practices | 28/09/2026 |
+| [RuwaLabs/saludya-landing](https://github.com/RuwaLabs/saludya-landing) | `main` | [e722cfdec71da9c8db4bee9d561988928ba72cce](https://github.com/RuwaLabs/saludya-landing/commit/e722cfdec71da9c8db4bee9d561988928ba72cce) | ci: add GitHub Pages deployment workflow | 03/10/2026 |
+| [RuwaLabs/saludya-landing](https://github.com/RuwaLabs/saludya-landing) | `main` | [d90b6f674b999ef94eba3b2b920cb9cf59622049](https://github.com/RuwaLabs/saludya-landing/commit/d90b6f674b999ef94eba3b2b920cb9cf59622049) | feat: default videos updated | 09/10/2026 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git de los repositorios de SaludYa, consultado el 9 de octubre de 2026. Los mensajes se conservan tal como fueron registrados y las fechas corresponden a la fecha de commit. La columna Branch identifica una rama que contiene el commit; no atribuye su creación original a esa rama. Se presentan commits representativos de implementación, sin incluir los commits de edición del reporte.*
+
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+Las pruebas del Sprint 1 verifican las reglas de identidad y acceso, los servicios REST y la protección de los recursos del paciente. En el backend de SaludYa se utiliza JUnit Jupiter con AssertJ para comprobar los componentes de seguridad y validación. Las pruebas de integración emplean Spring Boot Test y MockMvc para ejecutar solicitudes a los endpoints, revisar sus respuestas y comprobar los cambios en la persistencia con el perfil `test`.
+
+La suite de IAM cubre el registro, la verificación por correo, el inicio de sesión, la recuperación de contraseña, el cierre y la expiración de sesión, y la vinculación de menores. Incluye casos de datos inválidos, correos duplicados, credenciales incorrectas, enlaces vencidos y acceso a información de otro paciente. La protección de recursos también se verifica para reservas, check-in y propuestas de reasignación.
+
+El archivo `iam.feature` expresa escenarios de aceptación en Gherkin. Su cobertura automatizada se implementa en las clases JUnit de integración y seguridad; el archivo funciona como especificación de aceptación y no cuenta con un ejecutor Cucumber configurado en el proyecto. Algunos de sus escenarios contemplan roles internos, mientras que el alcance móvil de este entregable corresponde al paciente.
+
+En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los commits que incorporan o modifican estas pruebas se presentan con su repositorio, rama, identificador, mensaje original y fecha, como se detalla en la [Tabla 94](#tabla-94).
+
+Repositorio de pruebas del backend y especificación BDD: [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya/tree/develop/saludya/src/test).
+
+Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src).
+
+<a id="tabla-94"></a>
+
+**Tabla 94**
+
+*Commits relacionados con la suite de pruebas del Sprint 1*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|:---|:---|:---|:---|:---|
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `iam` | [38265f3ed2efd7b08c5dd8e28bfcd47b458a85e2](https://github.com/RuwaLabs/backend-saludya/commit/38265f3ed2efd7b08c5dd8e28bfcd47b458a85e2) | test(iam): cover report scenarios on H2 and PostgreSQL | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [4fb041aac3b5912de3a32eac353fedc3b9947efe](https://github.com/RuwaLabs/backend-saludya/commit/4fb041aac3b5912de3a32eac353fedc3b9947efe) | feat: integrate IAM and Arrival with cross-context ACLs; complete patient/admin flows | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [8965e195d438b3c658b2ededa38bb76021b3e8ed](https://github.com/RuwaLabs/backend-saludya/commit/8965e195d438b3c658b2ededa38bb76021b3e8ed) | fix: auth smtp done, sms removed, flow reworked | 06/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [0c6ffdd50e27eafe346187c75956185f9f49766d](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/0c6ffdd50e27eafe346187c75956185f9f49766d) | feat(iam): validate patient registration credentials | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [9c5a3199d760155e0f2bbb52588253cf49c38ae6](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/9c5a3199d760155e0f2bbb52588253cf49c38ae6) | feat(iam): validate recovery links and reset patient passwords | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [71074b8f6a4328ec18753c76f97beb2c2b1ec7ca](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/71074b8f6a4328ec18753c76f97beb2c2b1ec7ca) | feat(iam): register assisted account recovery requests | 07/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [ca1cb00eceb91035cf759530d02c4d30b6ad8398](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/ca1cb00eceb91035cf759530d02c4d30b6ad8398) | feat(iam): add recovery screens and session confirmation flows | 07/10/2026 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; las capturas de los componentes publicados y las referencias visuales de la aplicación se presentan en el apartado 4.2.1.6.*
+
+Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 95](#tabla-95).
+
+<a id="tabla-95"></a>
+
+**Tabla 95**
+
+*Suite de pruebas y escenarios de aceptación de SaludYa para el Sprint 1*
+
+| Componente | Tipo de prueba | Archivos | Alcance relacionado |
+|:---|:---|:---|:---|
+| Backend IAM | Unitarias y de componentes | [IamSecurityTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/iam/IamSecurityTests.java) | DNI e identidad, indisponibilidad del proveedor, normalización de nombres, BCrypt, cifrado de notificaciones y límites de solicitudes. |
+| Backend IAM | Integración REST y persistencia | [IamIntegrationTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/iam/IamIntegrationTests.java) | Registro y acceso (US-01 a US-04), menores (US-15 y US-17 a US-19), contacto (US-27), recuperación (US-23 a US-25) y sesión (US-28 y US-29). |
+| Backend, recursos del paciente | Integración y autorización | [ResourceOwnershipSecurityTests.java](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/java/com/ruwalabs/saludya/security/ResourceOwnershipSecurityTests.java) | Impedir consultas o acciones sobre reservas, check-in y ofertas de reasignación de otro paciente; rechazo de QR sin reserva válida. |
+| Backend IAM | Especificación de aceptación en Gherkin | [iam.feature](https://github.com/RuwaLabs/backend-saludya/blob/develop/saludya/src/test/resources/features/iam.feature) | Escenarios Given/When/Then de registro, menores, recuperación y permisos; cobertura ejecutable en JUnit. |
+| Android IAM | Unitarias de validación y estado | [Pruebas JVM de IAM](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src/test/java/pe/edu/upc/saludya/iam) | `IdentityValidatorTest`, `CredentialsValidatorTest`, `IdentityViewModelTest` y `RegistrationViewModelTest`: datos de identidad y credenciales (US-01 y US-02). |
+| Android IAM | Repositorios HTTP, acceso y recuperación | [Pruebas JVM de IAM](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src/test/java/pe/edu/upc/saludya/iam) | Repositorios remotos, `AccessViewModelsTest`, `PasswordResetLinkTest`, `RecoveryActionsRepositoryTest` y `RecoveryAndSessionViewModelsTest`: verificación por correo, acceso, recuperación y sesión. |
+| Android IAM | Interfaz instrumentada | [Pruebas de pantallas IAM](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src/androidTest/java/pe/edu/upc/saludya/iam) | `IdentityScreenTest`, `RegistrationScreenTest`, `AccessScreensTest` y `RecoveryAndSessionScreensTest`: formularios, mensajes y navegación de los recorridos de IAM. |
+
+*Nota. Elaboración del equipo RuwaLabs a partir de los archivos de prueba del backend y la aplicación Android. La verificación de registro y acceso se realiza por correo, de acuerdo con el cambio implementado en IAM.*
+
+#### 4.2.1.6. Execution Evidence for Sprint Review
+
+En esta sección se presentan las vistas publicadas de la Landing Page y la documentación del backend de SaludYa, junto con las pantallas del paciente diseñadas para la aplicación Android. Las capturas permiten revisar la presentación de la solución, los contratos disponibles en Swagger y los recorridos previstos para el paciente durante el Sprint 1.
+
+##### Landing Page
+
+La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador de escritorio.
+
+Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/saludya-landing/).
+
+###### Inicio de la Landing Page
+
+La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 107](#figura-107).
+
+<a id="figura-107"></a>
+
+**Figura 107**
+
+*Inicio de la Landing Page — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Problema identificado
+
+La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 108](#figura-108).
+
+<a id="figura-108"></a>
+
+**Figura 108**
+
+*Problema identificado — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Propuesta de solución
+
+La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 109](#figura-109).
+
+<a id="figura-109"></a>
+
+**Figura 109**
+
+*Propuesta de solución — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Modelo de negocio
+
+La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 110](#figura-110).
+
+<a id="figura-110"></a>
+
+**Figura 110**
+
+*Modelo de negocio — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Testimonios
+
+Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 111](#figura-111).
+
+<a id="figura-111"></a>
+
+**Figura 111**
+
+*Testimonios — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Presentación de RuwaLabs
+
+La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 112](#figura-112).
+
+<a id="figura-112"></a>
+
+**Figura 112**
+
+*Presentación de RuwaLabs — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Disponibilidad de la aplicación
+
+La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 113](#figura-113).
+
+<a id="figura-113"></a>
+
+**Figura 113**
+
+*Disponibilidad de la aplicación — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="1000">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+##### Aplicación Android
+
+La aplicación Android de SaludYa se distribuye mediante un APK de prueba generado a partir de la rama `develop` del repositorio Kotlin, commit `74a4b7f`. La compilación finalizó correctamente y se verificó la firma del paquete. Esta versión requiere Android 7.0 o superior y utiliza el backend publicado en `http://3.129.217.49:8080/`.
+
+Enlace de despliegue: [Descargar APK de SaludYa para Android](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/raw/refs/heads/develop/assets/downloads/SaludYa-develop-debug.apk).
+
+Las imágenes siguientes presentan las pantallas del paciente. Las notas de cada figura identifican su origen.
+
+Archivo de interfaz: [SaludYa en Figma](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2).
+
+###### Bienvenida
+
+La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 114](#figura-114).
+
+<a id="figura-114"></a>
+
+**Figura 114**
+
+*Bienvenida — SaludYa*
+
+<img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Verificación de identidad
+
+El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 115](#figura-115).
+
+<a id="figura-115"></a>
+
+**Figura 115**
+
+*Verificación de identidad — SaludYa*
+
+<img src="assets/execution/sprint-1/android-identidad.png" alt="Verificación de identidad de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Registro de credenciales
+
+El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 116](#figura-116).
+
+<a id="figura-116"></a>
+
+**Figura 116**
+
+*Registro de credenciales — SaludYa*
+
+<img src="assets/execution/sprint-1/android-credenciales.png" alt="Registro de credenciales de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Verificación por correo
+
+La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 117](#figura-117).
+
+<a id="figura-117"></a>
+
+**Figura 117**
+
+*Verificación por correo — SaludYa*
+
+<img src="assets/execution/sprint-1/android-verificar-correo.png" alt="Verificación por correo de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Inicio de sesión
+
+El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 118](#figura-118).
+
+<a id="figura-118"></a>
+
+**Figura 118**
+
+*Inicio de sesión — SaludYa*
+
+<img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Recuperación de acceso
+
+El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 119](#figura-119).
+
+<a id="figura-119"></a>
+
+**Figura 119**
+
+*Recuperación de acceso — SaludYa*
+
+<img src="assets/execution/sprint-1/android-recuperacion.png" alt="Recuperación de acceso de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Restablecimiento de contraseña
+
+El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 120](#figura-120).
+
+<a id="figura-120"></a>
+
+**Figura 120**
+
+*Restablecimiento de contraseña — SaludYa*
+
+<img src="assets/execution/sprint-1/android-nueva-contrasena.png" alt="Restablecimiento de contraseña de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Inicio del paciente
+
+La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 121](#figura-121).
+
+<a id="figura-121"></a>
+
+**Figura 121**
+
+*Inicio del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-inicio.png" alt="Inicio del paciente de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Reserva de cita
+
+El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 122](#figura-122).
+
+<a id="figura-122"></a>
+
+**Figura 122**
+
+*Reserva de cita — SaludYa*
+
+<img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Confirmación de reserva
+
+La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 123](#figura-123).
+
+<a id="figura-123"></a>
+
+**Figura 123**
+
+*Confirmación de reserva — SaludYa*
+
+<img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Registro de llegada
+
+La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 124](#figura-124).
+
+<a id="figura-124"></a>
+
+**Figura 124**
+
+*Registro de llegada — SaludYa*
+
+<img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Ticket de atención
+
+La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 125](#figura-125).
+
+<a id="figura-125"></a>
+
+**Figura 125**
+
+*Ticket de atención — SaludYa*
+
+<img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Perfil del paciente
+
+El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 126](#figura-126).
+
+<a id="figura-126"></a>
+
+**Figura 126**
+
+*Perfil del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-perfil.png" alt="Perfil del paciente de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Menores vinculados
+
+La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 127](#figura-127).
+
+<a id="figura-127"></a>
+
+**Figura 127**
+
+*Menores vinculados — SaludYa*
+
+<img src="assets/execution/sprint-1/android-menores.png" alt="Menores vinculados de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+###### Notificaciones del paciente
+
+La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 128](#figura-128).
+
+<a id="figura-128"></a>
+
+**Figura 128**
+
+*Notificaciones del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320">
+
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+##### Backend: documentación publicada en Swagger
+
+El backend dispone de una interfaz Swagger UI que presenta los endpoints y sus contratos HTTP. Las capturas muestran la documentación accesible del servicio desplegado; no constituyen resultados de pruebas ni acreditan por sí solas la ejecución exitosa de las operaciones de negocio.
+
+Enlace de despliegue: [Swagger UI de SaludYa](http://3.129.217.49:8080/swagger-ui/index.html#/).
+
+###### Vista general de Swagger
+
+La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 129](#figura-129).
+
+<a id="figura-129"></a>
+
+**Figura 129**
+
+*Vista general de Swagger — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-overview.jpg" alt="Vista general de Swagger de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Verificación de identidad en el backend
+
+El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 130](#figura-130).
+
+<a id="figura-130"></a>
+
+**Figura 130**
+
+*Verificación de identidad en el backend — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Verificación de identidad en el backend de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Cuentas y credenciales
+
+El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 131](#figura-131).
+
+<a id="figura-131"></a>
+
+**Figura 131**
+
+*Cuentas y credenciales — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Cuentas y credenciales de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Perfil del paciente
+
+El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 132](#figura-132).
+
+<a id="figura-132"></a>
+
+**Figura 132**
+
+*Perfil del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-patients.jpg" alt="Perfil del paciente de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Vinculación de menores
+
+El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 133](#figura-133).
+
+<a id="figura-133"></a>
+
+**Figura 133**
+
+*Vinculación de menores — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-minors.jpg" alt="Vinculación de menores de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Reservas de citas
+
+El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 134](#figura-134).
+
+<a id="figura-134"></a>
+
+**Figura 134**
+
+*Reservas de citas — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Reservas de citas de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Disponibilidad de horarios
+
+El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 135](#figura-135).
+
+<a id="figura-135"></a>
+
+**Figura 135**
+
+*Disponibilidad de horarios — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Disponibilidad de horarios de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Registro de asistencia
+
+El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 136](#figura-136).
+
+<a id="figura-136"></a>
+
+**Figura 136**
+
+*Registro de asistencia — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Registro de asistencia de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Cola de atención
+
+El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 137](#figura-137).
+
+<a id="figura-137"></a>
+
+**Figura 137**
+
+*Cola de atención — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-queue.jpg" alt="Cola de atención de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Ofertas de reasignación
+
+El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 138](#figura-138).
+
+<a id="figura-138"></a>
+
+**Figura 138**
+
+*Ofertas de reasignación — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Ofertas de reasignación de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
