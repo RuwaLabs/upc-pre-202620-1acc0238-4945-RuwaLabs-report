@@ -7855,6 +7855,114 @@ Los archivos de prueba y su alcance se organizan por componente y tipo de testin
 
 *Nota. Elaboración del equipo RuwaLabs a partir de los archivos de prueba del backend y la aplicación Android. La verificación de registro y acceso se realiza por correo, de acuerdo con el cambio implementado en IAM.*
 
+#### 4.2.1.6. Execution Evidence for Sprint Review
+
+En esta sección se presentan las vistas publicadas de la Landing Page y la documentación del backend de SaludYa, junto con las pantallas del paciente diseñadas para la aplicación Android. Las capturas permiten revisar la presentación de la solución, los contratos disponibles en Swagger y los recorridos previstos para el paciente durante el Sprint 1.
+
+##### Landing Page
+
+La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador con ancho de pantalla móvil.
+
+Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/saludya-landing/).
+
+###### Inicio de la Landing Page
+
+La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 107](#figura-107).
+
+<a id="figura-107"></a>
+
+**Figura 107**
+
+*Inicio de la Landing Page — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Problema identificado
+
+La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 108](#figura-108).
+
+<a id="figura-108"></a>
+
+**Figura 108**
+
+*Problema identificado — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Propuesta de solución
+
+La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 109](#figura-109).
+
+<a id="figura-109"></a>
+
+**Figura 109**
+
+*Propuesta de solución — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Modelo de negocio
+
+La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 110](#figura-110).
+
+<a id="figura-110"></a>
+
+**Figura 110**
+
+*Modelo de negocio — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Testimonios
+
+Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 111](#figura-111).
+
+<a id="figura-111"></a>
+
+**Figura 111**
+
+*Testimonios — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Presentación de RuwaLabs
+
+La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 112](#figura-112).
+
+<a id="figura-112"></a>
+
+**Figura 112**
+
+*Presentación de RuwaLabs — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Disponibilidad de la aplicación
+
+La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 113](#figura-113).
+
+<a id="figura-113"></a>
+
+**Figura 113**
+
+*Disponibilidad de la aplicación — SaludYa*
+
+<img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="360">
+
+*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
