@@ -9376,6 +9376,62 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
 
 *Figura. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
 
+
+##### Landing Page
+
+El Landing Page de SaludYa se desplegó como un sitio estático utilizando **GitHub Pages**, aprovechando la integración nativa con el repositorio del proyecto y la ausencia de costos asociados para proyectos académicos. El despliegue se realizó sobre la rama `main` del repositorio [`RuwaLabs/saludya-landing`](https://github.com/RuwaLabs/saludya-landing), y el sitio quedó publicado de forma automática en la URL:
+
+**URL de despliegue:** https://ruwalabs.github.io/saludya-landing/
+
+Las actividades realizadas durante el Sprint para el despliegue del Landing Page fueron:
+
+- **Creación del repositorio en GitHub:** se creó el repositorio `saludya-landing` dentro de la organización RuwaLabs, con la estructura de carpetas `assets/css`, `assets/js`, `assets/img`, `assets/locales` y el archivo `index.html` en la raíz.
+- **Configuración de GitHub Pages:** se habilitó la publicación del sitio desde la rama `main` y la carpeta `/ (root)` del repositorio.
+- **Automatización del despliegue:** se incorporó un flujo de trabajo de GitHub Actions (`.github/workflows/deploy.yml`) que publica automáticamente el sitio cada vez que se hace `push` a la rama `main`.
+- **Verificación del despliegue:** se comprobó el acceso público al sitio mediante la URL generada por GitHub Pages y se validó la carga de estilos, scripts e imágenes.
+
+A continuación se presentan las capturas de las actividades realizadas.
+
+###### Configuración de GitHub Pages
+
+En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama `main` y la carpeta `/ (root)`. La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
+
+<a id="figura-190"></a>
+
+<p align="center">
+  <img src="assets\Landing-page Deployment Evidence\landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
+</p>
+
+*Figura 190. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
+
+###### Flujo de trabajo de GitHub Actions
+
+Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (`.github/workflows/deploy.yml`) que se ejecuta en cada `push` a la rama `main`. El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
+
+<a id="figura-191"></a>
+
+<p align="center">
+  <img src="assets\Landing-page Deployment Evidence\landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
+</p>
+
+*Figura 191. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+
+###### Verificación del despliegue
+
+Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
+
+<a id="figura-192"></a>
+
+<p align="center">
+  <img src="assets\Landing-page Deployment Evidence\landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
+</p>
+
+*Figura 192. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
+
+Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
+
+
+
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
 Durante el Sprint 1, el equipo **RuwaLabs** implementó el **Landing Page**, los **Web Services** (backend) y la **aplicación móvil para pacientes** (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
