@@ -5217,6 +5217,16 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+<a id="figura-193"></a>
+
+**Figura 193**
+
+*Paleta de colores del Landing Page de SaludYa*
+
+![Paleta de colores del Landing Page de SaludYa](assets/paleta-colores-landing.png)
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 
 ###### Aplicaciones móviles (Android)
 
