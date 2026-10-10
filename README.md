@@ -9062,7 +9062,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
 </p>
 
-*Figura. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
+*Figura 182. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
 
 ###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
 
@@ -9075,7 +9075,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications_exists.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
 </p>
 
-*Figura. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
+*Figura 183. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
 
 ###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
 
@@ -9088,7 +9088,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
 </p>
 
-*Figura. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
+*Figura 184. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
 
 ###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
 
@@ -9101,7 +9101,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_recoverpassword.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
 </p>
 
-*Figura. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
+*Figura 185. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
@@ -9352,7 +9352,7 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/key%20pari%20%28login%29.jpeg?raw=true" alt="Creación del key pair en AWS" width="100%"/>
 </p>
 
-*Figura. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+*Figura 186. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
 
 ###### Instancia EC2 (resumen)
 
@@ -9360,7 +9360,7 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg?raw=true" alt="Resumen de la instancia EC2" width="100%"/>
 </p>
 
-*Figura. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+*Figura 187. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
 
 ###### Configuración de red (security group)
 
@@ -9368,7 +9368,7 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/network%20settings.jpeg?raw=true" alt="Configuración de red de la instancia" width="100%"/>
 </p>
 
-*Figura. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+*Figura 188. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
 
 ###### Acceso SSH a la instancia
 
@@ -9376,7 +9376,7 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg?raw=true" alt="Acceso SSH a la instancia EC2" width="100%"/>
 </p>
 
-*Figura. Acceso por SSH a la instancia EC2 del backend.*
+*Figura 189. Acceso por SSH a la instancia EC2 del backend.*
 
 ###### Scripts de despliegue en el servidor
 
@@ -9384,7 +9384,7 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg?raw=true" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
 </p>
 
-*Figura. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
+*Figura 190. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
 
 
 ##### Landing Page
@@ -9406,37 +9406,37 @@ A continuación se presentan las capturas de las actividades realizadas.
 
 En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama `main` y la carpeta `/ (root)`. La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
 
-<a id="figura-190"></a>
+<a id="figura-191"></a>
 
 <p align="center">
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png?raw=true" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
 </p>
 
-*Figura 190. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
+*Figura 191. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
 
 ###### Flujo de trabajo de GitHub Actions
 
 Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (`.github/workflows/deploy.yml`) que se ejecuta en cada `push` a la rama `main`. El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
 
-<a id="figura-191"></a>
+<a id="figura-192"></a>
 
 <p align="center">
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png?raw=true" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
 </p>
 
-*Figura 191. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+*Figura 192. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
 
 ###### Verificación del despliegue
 
 Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
 
-<a id="figura-192"></a>
+<a id="figura-193"></a>
 
 <p align="center">
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-deployed.png?raw=true" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
 </p>
 
-*Figura 192. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
+*Figura 193. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
 
 Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
 
@@ -9446,11 +9446,11 @@ Con estas actividades, el Landing Page quedó publicado, disponible para su cons
 
 Durante el Sprint 1, el equipo **RuwaLabs** implementó el **Landing Page**, los **Web Services** (backend) y la **aplicación móvil para pacientes** (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
 
-La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 188](#figura-188) y la [Figura 189](#figura-189).
+La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 194](#figura-194) y la [Figura 195](#figura-195).
 
-<a id="figura-188"></a>
+<a id="figura-194"></a>
 
-**Figura 188**
+**Figura 194**
 
 *Actividad del equipo durante el Sprint 1*
 
@@ -9458,9 +9458,9 @@ La colaboración se registra en GitHub a través de los commits y *pull requests
 
 *Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.*
 
-<a id="figura-189"></a>
+<a id="figura-195"></a>
 
-**Figura 189**
+**Figura 195**
 
 *Contribuciones por integrante durante el Sprint 1*
 
@@ -9543,7 +9543,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Alisee.jpeg?raw=true" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 196. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -9647,7 +9647,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Neo.jpeg?raw=true" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 197. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
