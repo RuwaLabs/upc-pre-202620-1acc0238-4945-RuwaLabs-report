@@ -150,8 +150,6 @@ A continuación se incluyen capturas de la interacción con la documentación de
 
 ##### Commits de documentación
 
-- **Commits relacionados con la documentación para este Sprint:**
-
 | Commit | Mensaje | Relación |
 |:--|:--|:--|
 | [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
