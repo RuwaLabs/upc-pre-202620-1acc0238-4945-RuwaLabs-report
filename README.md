@@ -8099,9 +8099,165 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 #### 4.2.1.1. Sprint Planning 1
 
+A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de **SaludYa**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la [Tabla 96](#tabla-96).
+
+<a id="tabla-96"></a>
+
+**Tabla 96**
+
+*Sprint Planning 1 — resumen de la reunión*
+
+| Campo | Valor |
+| :--- | :--- |
+| Sprint # | Sprint 1 |
+| **Sprint Planning Background** | |
+| Date | 2026-09-26 |
+| Time | 7:00 PM |
+| Location | Reunión virtual mediante Jitsi Meet |
+| Prepared By | Montoya Nina, Paula Fernanda |
+| Attendees (to planning meeting) | Aguilar Untiveros, Rodrigo Fabrizio / Meza Solórzano, Didier Sebastian / Montoya Nina, Paula Fernanda / Ramos Mera, Neo Daniel / Torres Juárez, Alisee Muriel |
+| Sprint 1 – 1 Review Summary | No aplica (primer sprint del proyecto). |
+| Sprint 1 – 1 Retrospective Summary | No aplica (primer sprint del proyecto). |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Habilitar el registro y la reserva de citas médicas del paciente en la aplicación móvil y publicar el Landing Page con la propuesta de valor de SaludYa. |
+| Sprint 1 Velocity | 99 story points |
+| Sum of Story Points | 99 |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+El **Sprint Goal** se redactó siguiendo el enfoque propuesto por Scrum.org, priorizando el resultado (Outcome), el impacto (Impact) y la validación (Event):
+
+> **Sprint 1 Goal:** *Nuestro **focus** está en habilitar el registro y la reserva de citas médicas del paciente desde la aplicación móvil y en presentar la propuesta de valor de SaludYa en el Landing Page.*
+>
+> *Creemos que esto **delivers** un acceso rápido, sin colas e informado a los pacientes de establecimientos públicos de salud.*
+>
+> *Esto se confirmará (**confirmed**) cuando un paciente pueda verificar su identidad, registrar su cuenta, iniciar sesión, reservar, consultar y cancelar una cita desde la aplicación, y cuando un visitante pueda comprender la propuesta de valor y acceder a la descarga desde el Landing Page publicado.*
+
+La **velocity** del Sprint 1 se estableció en **99 story points**, equivalente a la suma de la estimación de las 30 user stories comprometidas (US-00 a US-29) del Product Backlog ([Tabla 21](#tabla-21)). Al tratarse del primer sprint del proyecto, el equipo no cuenta con una velocity histórica, por lo que se toma como referencia el total comprometido; este valor se ajustará en los siguientes sprints en función de la velocidad real observada.
+
+El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la [Tabla 97](#tabla-97).
+
+<a id="tabla-97"></a>
+
+**Tabla 97**
+
+*Alcance del Sprint 1 por épica*
+
+| Épica | User Stories | Story Points |
+| :--- | :--- | :--- |
+| EP0: Plataforma de Presentación y Captación | US-00 | 2 |
+| EP1: Authentication & Identity Management | US-01, US-02, US-03, US-04, US-15, US-17, US-18, US-19, US-23, US-24, US-25, US-26, US-27, US-28, US-29 | 49 |
+| EP2: Appointments & Booking Engine | US-05, US-06, US-07, US-08, US-09, US-10, US-16 | 34 |
+| EP3: Reassignment Protocol | US-20, US-21 | 8 |
+| EP4: Arrival & QR Check-in System | US-11, US-12, US-13, US-14, US-22 | 14 |
+| **Total** | **30 user stories** | **99** |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
+En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el **Landing Page** y la aplicación móvil del paciente, compuesta por **Identity & Access Management (IAM)**, **Appointments & Booking**, **Dynamic Waitlist & Reassignment**, **Arrival & QR Check-in** y **Hospital Operations & Configuration**, junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 98](#tabla-98). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
+
+<a id="tabla-98"></a>
+
+**Tabla 98**
+
+*Leadership-and-Collaboration Matrix (LACX) — Sprint 1*
+
+| Team Member (Last Name, First Name) | GitHub Username | Landing Page | IAM | Appointments & Booking | Dynamic Waitlist & Reassignment | Arrival & QR Check-in | Hospital Operations & Configuration |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aguilar Untiveros, Rodrigo Fabrizio | Rodri2712 | L | C | C | C | C | L |
+| Meza Solórzano, Didier Sebastian | DidierSebas | C | L | C | C | C | C |
+| Montoya Nina, Paula Fernanda | SeviNyO | C | C | L | C | C | C |
+| Ramos Mera, Neo Daniel | norahccccc | C | C | C | L | C | C |
+| Torres Juárez, Alisee Muriel | lLisee1 | C | C | C | C | L | C |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. L = Leader, C = Collaborator.*
+
 #### 4.2.1.3. Sprint Backlog 1
+
+El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimiento de las citas del paciente en la aplicación móvil, así como publicar el Landing Page con la propuesta de valor de SaludYa. Para su gestión, el equipo utilizó **Jira** como herramienta de control; el tablero del backlog del proyecto se puede revisar en el siguiente enlace y en la [Figura 107](#figura-107).
+
+- Link Jira: https://ruwalabs-salud-ya.atlassian.net/
+
+<a id="figura-107"></a>
+
+**Figura 107**
+
+*Backlog del proyecto SaludYa en Jira*
+
+<img src="assets/execution/sprint-1/jira-backlog.png" alt="Backlog del proyecto SaludYa en Jira" width="100%"/>
+
+*Nota. Captura del tablero Backlog del proyecto SaludYa en Jira.*
+
+A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 99](#tabla-99).
+
+<a id="tabla-99"></a>
+
+**Tabla 99**
+
+*Sprint Backlog 1*
+
+| # | User Story | Work-Item / Task | Estimation (Hours) | Assigned To | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | US-00 · Visualización de Propuesta de Valor en Landing Page | T-01 · Diseño del Landing Page (Figma) | 6 | Rodrigo | Done |
+| 2 | US-00 · Visualización de Propuesta de Valor en Landing Page | T-02 · Desarrollo frontend del Landing Page | 12 | Rodrigo | Done |
+| 3 | US-00 · Visualización de Propuesta de Valor en Landing Page | T-03 · Despliegue del Landing Page (GitHub Pages) | 4 | Rodrigo | Done |
+| 4 | US-01 · Verificación de Identidad por DNI | T-04 · Backend: validación de identidad por DNI | 8 | Didier | Done |
+| 5 | US-01 · Verificación de Identidad por DNI | T-05 · Frontend: pantalla de verificación de identidad | 6 | Didier | Done |
+| 6 | US-02 · Registro de Credenciales de Acceso | T-06 · Backend: registro de credenciales y verificación por correo | 8 | Didier | Done |
+| 7 | US-02 · Registro de Credenciales de Acceso | T-07 · Frontend: formulario de credenciales de acceso | 6 | Didier | Done |
+| 8 | US-03 · Verificación de Celular y Creación de Cuenta | T-08 · Backend: verificación de contacto y creación de cuenta | 6 | Didier | Done |
+| 9 | US-03 · Verificación de Celular y Creación de Cuenta | T-09 · Frontend: pantalla de verificación por correo | 6 | Didier | Done |
+| 10 | US-04 · Inicio de Sesión del Paciente | T-10 · Backend: autenticación y emisión de sesión | 6 | Didier | Done |
+| 11 | US-04 · Inicio de Sesión del Paciente | T-11 · Frontend: pantalla de inicio de sesión | 5 | Didier | Done |
+| 12 | US-05 · Selección de Especialidad Médica | T-12 · Frontend: pantalla de selección de especialidad | 5 | Paula | Done |
+| 13 | US-06 · Consulta de Horarios Disponibles | T-13 · Backend: consulta de horarios disponibles | 8 | Paula | Done |
+| 14 | US-06 · Consulta de Horarios Disponibles | T-14 · Frontend: pantalla de calendario y horarios | 6 | Paula | Done |
+| 15 | US-07 · Reserva de Cita para el Paciente | T-15 · Backend: registro de reserva de cita | 10 | Paula | Done |
+| 16 | US-07 · Reserva de Cita para el Paciente | T-16 · Frontend: flujo de reserva (fecha, hora y confirmación) | 10 | Paula | Done |
+| 17 | US-08 · Recepción de Confirmación de Cita por Correo | T-17 · Backend: envío de confirmación de cita por correo | 6 | Paula | Done |
+| 18 | US-09 · Consulta de Citas Agendadas | T-18 · Backend: consulta de citas agendadas | 6 | Paula | Done |
+| 19 | US-09 · Consulta de Citas Agendadas | T-19 · Frontend: pantalla de citas pendientes | 6 | Neo | Done |
+| 20 | US-10 · Cancelación de Cita | T-20 · Backend: cancelación de cita | 6 | Paula | Done |
+| 21 | US-10 · Cancelación de Cita | T-21 · Frontend: acción de cancelación de cita | 5 | Paula | Done |
+| 22 | US-11 · Consulta del Código QR de la Reserva | T-22 · Backend: generación del código QR de la reserva | 6 | Alise | Done |
+| 23 | US-11 · Consulta del Código QR de la Reserva | T-23 · Frontend: pantalla del código QR de la reserva | 5 | Alise | Done |
+| 24 | US-12 · Consulta del Ticket Digital de Atención | T-24 · Backend: consulta del ticket digital de atención | 6 | Alise | Done |
+| 25 | US-12 · Consulta del Ticket Digital de Atención | T-25 · Frontend: pantalla del ticket de atención | 5 | Alise | Done |
+| 26 | US-13 · Consulta de Posición en la Cola de Atención | T-26 · Backend: consulta de posición en la cola de atención | 6 | Alise | Done |
+| 27 | US-13 · Consulta de Posición en la Cola de Atención | T-27 · Frontend: pantalla de posición en la cola | 5 | Alise | Done |
+| 28 | US-14 · Recepción de Notificación de Llamado a Consultorio | T-28 · Backend: notificación de llamado a consultorio | 6 | Alise | Done |
+| 29 | US-14 · Recepción de Notificación de Llamado a Consultorio | T-29 · Frontend: aviso de llamado en la aplicación | 5 | Neo | Done |
+| 30 | US-15 · Vinculación de un Menor de Edad | T-30 · Backend: vinculación de un menor de edad | 8 | Didier | Done |
+| 31 | US-15 · Vinculación de un Menor de Edad | T-31 · Frontend: pantalla de registro de menor | 6 | Rodrigo | Done |
+| 32 | US-16 · Reserva de Cita para un Menor Vinculado | T-32 · Backend: reserva de cita para un menor vinculado | 8 | Paula | Done |
+| 33 | US-16 · Reserva de Cita para un Menor Vinculado | T-33 · Frontend: selección de menor en el flujo de reserva | 6 | Paula | Done |
+| 34 | US-17 · Consulta de Menores Vinculados | T-34 · Frontend: pantalla de menores vinculados | 5 | Rodrigo | Done |
+| 35 | US-18 · Consulta del Perfil de un Menor | T-35 · Frontend: pantalla del perfil de un menor | 5 | Rodrigo | Done |
+| 36 | US-19 · Desvinculación de un Menor de Edad | T-36 · Backend: desvinculación de un menor de edad | 5 | Didier | Done |
+| 37 | US-19 · Desvinculación de un Menor de Edad | T-37 · Frontend: acción de desvinculación de menor | 5 | Rodrigo | Done |
+| 38 | US-20 · Aceptación de Adelanto de Cita | T-38 · Backend: reasignación de cupos y oferta de adelanto | 10 | Neo | Done |
+| 39 | US-20 · Aceptación de Adelanto de Cita | T-39 · Frontend: pantalla de aceptación de reasignación | 6 | Neo | Done |
+| 40 | US-21 · Rechazo de Adelanto de Cita | T-40 · Frontend: acción de rechazo de reasignación | 5 | Neo | Done |
+| 41 | US-22 · Salida Voluntaria de la Cola de Atención | T-41 · Backend: salida voluntaria de la cola de atención | 5 | Alise | Done |
+| 42 | US-22 · Salida Voluntaria de la Cola de Atención | T-42 · Frontend: acción de dejar la cola | 5 | Alise | Done |
+| 43 | US-23 · Solicitud de Enlace de Recuperación de Contraseña | T-43 · Backend: generación del enlace de recuperación | 6 | Didier | Done |
+| 44 | US-23 · Solicitud de Enlace de Recuperación de Contraseña | T-44 · Frontend: pantalla de solicitud de recuperación | 5 | Didier | Done |
+| 45 | US-24 · Restablecimiento de Contraseña | T-45 · Backend: restablecimiento de contraseña | 6 | Didier | Done |
+| 46 | US-24 · Restablecimiento de Contraseña | T-46 · Frontend: pantalla de nueva contraseña | 5 | Didier | Done |
+| 47 | US-25 · Solicitud de Ayuda por Pérdida de Acceso a la Cuenta | T-47 · Backend: registro de solicitud de ayuda de acceso | 5 | Didier | Done |
+| 48 | US-25 · Solicitud de Ayuda por Pérdida de Acceso a la Cuenta | T-48 · Frontend: pantalla de solicitud de ayuda | 5 | Didier | Done |
+| 49 | US-26 · Consulta del Perfil del Paciente | T-49 · Backend: consulta del perfil del paciente | 5 | Didier | Done |
+| 50 | US-26 · Consulta del Perfil del Paciente | T-50 · Frontend: pantalla del perfil del paciente | 5 | Rodrigo | Done |
+| 51 | US-27 · Edición de Datos de Contacto | T-51 · Backend: actualización de datos de contacto | 6 | Didier | Done |
+| 52 | US-27 · Edición de Datos de Contacto | T-52 · Frontend: pantalla de edición de datos de contacto | 5 | Rodrigo | Done |
+| 53 | US-28 · Cierre de Sesión del Paciente | T-53 · Backend: cierre de sesión | 4 | Didier | Done |
+| 54 | US-28 · Cierre de Sesión del Paciente | T-54 · Frontend: acción de cierre de sesión | 4 | Didier | Done |
+| 55 | US-29 · Aviso de Sesión Expirada | T-55 · Frontend: aviso de sesión expirada | 4 | Didier | Done |
+| 56 | — (Task transversal) | T-56 · Backend: despliegue de los servicios web | 8 | Neo | Done |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. El estado de las tasks corresponde al avance real del Sprint 1.*
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
