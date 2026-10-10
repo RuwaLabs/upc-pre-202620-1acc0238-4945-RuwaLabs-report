@@ -75,59 +75,91 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
 <!-- pdf-pagebreak -->
 # Project Report Collaboration Insights
 
+En esta sección se presenta la evidencia de la colaboración del equipo **RuwaLabs** en la elaboración del **Project Report** de SaludYa. Para cada entrega se describe cómo se desarrollaron las actividades del informe y se incluyen capturas de los analíticos de colaboración y de commits registrados en GitHub. Esta evidencia se amplía en cada entrega y mantiene coherencia con el Registro de Versiones del Informe.
 
+URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-report](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report)
 
+## Primera entrega (AV1)
 
+En la primera entrega, el equipo elaboró la estructura base del informe, la carátula, el registro de versiones y el formato del Student Outcome, así como los capítulos I y II (Presentación y Requirements Development and Software Solution Design). La redacción se distribuyó entre los cinco integrantes y se evidencia en el historial de colaboración y de commits del repositorio del informe, como se observa en la [Figura 1](#figura-1), la [Figura 2](#figura-2) y la [Figura 3](#figura-3).
 
 <a id="figura-1"></a>
 
 **Figura 1**
 
-*Colaboración en GitHub: evidencia 1*
+*Colaboración en GitHub: evidencia 1 (AV1)*
 
 <img alt="Colaboración en GitHub: evidencia 1" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
 
-*Nota. Captura del registro de colaboración del repositorio en GitHub.*
-
-
-
-
-
-Las capturas del repositorio documentan la participación del equipo y permiten revisar el registro de contribuciones al informe, como se observa en la [Figura 1](#figura-1) y la [Figura 2](#figura-2).
+*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
 <a id="figura-2"></a>
 
 **Figura 2**
 
-*Colaboración en GitHub: evidencia 2*
+*Colaboración en GitHub: evidencia 2 (AV1)*
 
 <img alt="Colaboración en GitHub: evidencia 2" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_2.jpg?raw=true">
 
-*Nota. Captura del registro de colaboración del repositorio en GitHub.*
-
-
-
-
-q
-
+*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
 <a id="figura-3"></a>
 
-<!-- pdf-pagebreak -->
-
 **Figura 3**
 
-*Colaboración en GitHub: evidencia 3*
+*Colaboración en GitHub: evidencia 3 (AV1)*
 
 <img alt="Colaboración en GitHub: evidencia 3" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_3.jpg?raw=true">
 
-*Nota. Captura del registro de colaboración del repositorio en GitHub.*
+*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
+La actividad del equipo en GitHub queda registrada en la organización [RuwaLabs](https://github.com/RuwaLabs).
 
+## Segunda entrega (TB1)
 
-La actividad del equipo en GitHub queda registrada en la organización [RuwaLabs](https://github.com/RuwaLabs), como se observa en la [Figura 3](#figura-3).
+En la segunda entrega, el equipo actualizó el informe incorporando el **Capítulo III: Solution UI/UX Design** y el **Capítulo IV: Product Implementation & Validation**, junto con la documentación del **Sprint 1** (Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y las evidencias de desarrollo, pruebas, ejecución y documentación de servicios). Asimismo, se corrigieron y mejoraron artefactos presentados en la entrega anterior. La elaboración se distribuyó entre los cinco integrantes, como se evidencia en los analíticos del repositorio del informe, que registran la actividad del periodo **Oct 3 – Oct 10, 2026** con **11 pull requests** integrados y **50 commits** en `develop` realizados por 5 autores, como se observa en la [Figura 4](#figura-4) y la [Figura 5](#figura-5).
 
-URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-report](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report)
+<a id="figura-4"></a>
+
+**Figura 4**
+
+*Resumen de actividad del repositorio del informe (TB1)*
+
+<img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="100%"/>
+
+*Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).*
+
+<a id="figura-5"></a>
+
+**Figura 5**
+
+*Contribuciones por integrante (TB1)*
+
+<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="100%"/>
+
+*Nota. Captura del panel Contributors del repositorio del informe en GitHub.*
+
+La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 104](#tabla-104).
+
+<a id="tabla-104"></a>
+
+**Tabla 104**
+
+*Participación del equipo en la elaboración del informe (TB1)*
+
+| Integrante | GitHub Username | Commits | Adiciones | Eliminaciones |
+| :--- | :--- | :--- | :--- | :--- |
+| Aguilar Untiveros, Rodrigo Fabrizio | Rodri2712 | 45 | +668 | −523 |
+| Meza Solórzano, Didier Sebastian | DidierSebas | 43 | +7,315 | −2,287 |
+| Montoya Nina, Paula Fernanda | SeviNyO | 33 | +54,768 | −10,023 |
+| Ramos Mera, Neo Daniel | norahccccc | 29 | +2,588 | −466 |
+| Torres Juárez, Alisee Muriel | lLisee1 | 24 | +2,329 | −1,095 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del panel Contributors del repositorio del informe en GitHub.*
+
+## Participación del equipo
+
+Todos los integrantes de **RuwaLabs** participaron en la elaboración del informe en cada entrega. La actividad registrada en GitHub es coherente con el [Registro de Versiones del Informe](#registro-de-versiones-del-informe), donde se detallan los responsables y las modificaciones realizadas.
 
 ---
 <!-- pdf-pagebreak -->
@@ -9069,6 +9101,38 @@ A continuación se incluyen capturas de la interacción con la documentación de
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, el equipo **RuwaLabs** implementó el **Landing Page**, los **Web Services** (backend) y la **aplicación móvil para pacientes** (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
+
+La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 188](#figura-188) y la [Figura 189](#figura-189).
+
+<a id="figura-188"></a>
+
+**Figura 188**
+
+*Actividad del equipo durante el Sprint 1*
+
+<img src="assets/insight_tb1_overview.png" alt="Actividad del equipo durante el Sprint 1 de SaludYa" width="100%"/>
+
+*Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.*
+
+<a id="figura-189"></a>
+
+**Figura 189**
+
+*Contribuciones por integrante durante el Sprint 1*
+
+<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante durante el Sprint 1 de SaludYa" width="100%"/>
+
+*Nota. Captura del panel Contributors de GitHub correspondiente al periodo del Sprint 1.*
+
+La implementación se distribuyó de la siguiente manera:
+
+- **Web Services (backend):** Didier (Identity & Access Management), Paula (Appointments & Booking), Neo (Dynamic Waitlist & Reassignment) y Alise (Arrival & QR Check-in), con Rodrigo a cargo de Hospital Operations & Configuration.
+- **Mobile Applications (frontend):** Didier (IAM), Paula (reservas), Alise (check-in), Rodrigo (configuración) y Neo (dashboard y notificaciones/reasignación).
+- **Landing Page:** Rodrigo.
+
+La interpretación de los analíticos muestra que la actividad del Sprint se concentró en la integración de los bounded contexts y en la construcción de los recorridos del paciente, con una participación equilibrada de los cinco integrantes del equipo.
 
 ## 4.3. Validation Interviews
 
