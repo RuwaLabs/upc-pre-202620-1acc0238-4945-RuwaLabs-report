@@ -96,7 +96,7 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 1 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 1" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_1.jpg?raw=true">
+<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg">
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -106,7 +106,7 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 2 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 2" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_2.jpg?raw=true">
+<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg">
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -116,7 +116,7 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 3 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 3" src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/432e94f6b93c83a2322a5b4c06819037c6236dbc/assets/insight_av1_3.jpg?raw=true">
+<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg">
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -146,11 +146,11 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 *Nota. Captura del panel Contributors del repositorio del informe en GitHub.*
 
-La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 104](#tabla-104).
+La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 2](#tabla-2).
 
-<a id="tabla-104"></a>
+<a id="tabla-2"></a>
 
-**Tabla 104**
+**Tabla 2**
 
 *Participación del equipo en la elaboración del informe (TB1)*
 
@@ -318,14 +318,14 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
 El curso contribuye al cumplimiento del Student Outcome ABET:
 **ABET - EAC - Student Outcome 7**
 **Criterio:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
-En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7, como se detalla en la [Tabla 2](#tabla-2).
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7, como se detalla en la [Tabla 3](#tabla-3).
 
 
 
 
-<a id="tabla-2"></a>
+<a id="tabla-3"></a>
 
-**Tabla 2**
+**Tabla 3**
 
 *Acciones y conclusiones para el Student Outcome 7*
 
@@ -430,15 +430,15 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 ## Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio
 
-**Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica, como se detalla en la [Tabla 3](#tabla-3).
+**Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica, como se detalla en la [Tabla 4](#tabla-4).
 
 
 
 
 
-<a id="tabla-3"></a>
+<a id="tabla-4"></a>
 
-**Tabla 3**
+**Tabla 4**
 
 *Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio*
 
@@ -453,15 +453,15 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 ## Objetivos SMART – Meza Solórzano, Didier Sebastian
 
-**Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil, como se detalla en la [Tabla 4](#tabla-4).
+**Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil, como se detalla en la [Tabla 5](#tabla-5).
 
 
 
 
 
-<a id="tabla-4"></a>
+<a id="tabla-5"></a>
 
-**Tabla 4**
+**Tabla 5**
 
 *Objetivos SMART – Meza Solórzano, Didier Sebastian*
 
@@ -476,13 +476,13 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 <!-- pdf-pagebreak -->
 ## Objetivos SMART – Montoya Nina, Paula Fernanda
 
-**Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización, como se detalla en la [Tabla 5](#tabla-5).
+**Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización, como se detalla en la [Tabla 6](#tabla-6).
 
 
 
-<a id="tabla-5"></a>
+<a id="tabla-6"></a>
 
-**Tabla 5**
+**Tabla 6**
 
 *Objetivos SMART – Montoya Nina, Paula Fernanda*
 
@@ -497,15 +497,15 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 ## Objetivos SMART – Ramos Mera, Neo Daniel
 
-**Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada, como se detalla en la [Tabla 6](#tabla-6).
+**Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada, como se detalla en la [Tabla 7](#tabla-7).
 
 
 
 
 
-<a id="tabla-6"></a>
+<a id="tabla-7"></a>
 
-**Tabla 6**
+**Tabla 7**
 
 *Objetivos SMART – Ramos Mera, Neo Daniel*
 
@@ -520,15 +520,15 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 ## Objetivos SMART – Torres Juárez, Alisee Muriel
 
-**Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización, como se detalla en la [Tabla 7](#tabla-7).
+**Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización, como se detalla en la [Tabla 8](#tabla-8).
 
 
 
 
 
-<a id="tabla-7"></a>
+<a id="tabla-8"></a>
 
-**Tabla 7**
+**Tabla 8**
 
 *Objetivos SMART – Torres Juárez, Alisee Muriel*
 
@@ -557,15 +557,15 @@ RuwaLabs es una startup comprometida con el desarrollo de soluciones digitales i
 
 SaludYa busca reducir las dificultades asociadas a la gestión tradicional de citas médicas, como las largas colas presenciales, la alta demanda de cupos y la falta de información sobre la disponibilidad de atención. Para ello, la solución contempla funcionalidades como la reserva digital de citas, lista de espera dinámica, recordatorios de atención, gestión de citas de familiares y check-in mediante código QR.
 
-Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles, como se detalla en la [Tabla 8](#tabla-8).
+Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles, como se detalla en la [Tabla 9](#tabla-9).
 
 
 
 
 
-<a id="tabla-8"></a>
+<a id="tabla-9"></a>
 
-**Tabla 8**
+**Tabla 9**
 
 *Misión, visión y valores de RuwaLabs*
 
@@ -589,15 +589,15 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 <!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
-En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**, como se detalla en la [Tabla 9](#tabla-9).
+En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**, como se detalla en la [Tabla 10](#tabla-10).
 
 
 
 
 
-<a id="tabla-9"></a>
+<a id="tabla-10"></a>
 
-**Tabla 9**
+**Tabla 10**
 
 *Perfiles de los integrantes del equipo*
 
@@ -610,34 +610,34 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
         <th> Habilidades y conocimientos técnicos </th>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_rodrigo.jpg?raw=true" alt="Foto de Rodrigo" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
+        <td> <img src="chapter-01/assets/foto_rodrigo.jpg" alt="Foto de Rodrigo" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
         <td>Aguilar Untiveros, Rodrigo Fabrizio</td>
         <td>u202318309</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en la construcción de soluciones tecnológicas que resuelvan necesidades reales de las personas. Me considero una persona responsable, organizada y con facilidad para trabajar en equipo, además de comprometida con la mejora continua y la aplicación de buenas prácticas de desarrollo. Durante el proyecto busco fortalecer mis conocimientos técnicos y aportar en la implementación de una solución funcional y de calidad.</td>
     </tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_didier.jpg?raw=true" alt="Foto de Didier" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
+        <td> <img src="chapter-01/assets/foto_didier.jpg" alt="Foto de Didier" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
         <td>Meza Solórzano, Didier Sebastian</td>
         <td>u202319950</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software interesado en el desarrollo de aplicaciones móviles y en soluciones tecnológicas orientadas a resolver problemas reales. Me considero una persona responsable, comprometida y con disposición para trabajar en equipo. Asimismo, busco aplicar buenas prácticas de desarrollo y mejorar continuamente mis conocimientos técnicos durante el desarrollo de proyectos.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_paula.jpg?raw=true" alt="Foto de Paula" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
+        <td> <img src="chapter-01/assets/foto_paula.jpg" alt="Foto de Paula" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
         <td>Montoya Nina, Paula Fernanda</td>
         <td>u20241d934</td>
         <td> Ingeniería de Software </td>
         <td>Soy estudiante de Ingeniería de Software, interesada en la gestión de datos y en la arquitectura de Software. Tengo un enfoque de trabajo que prioriza la planificación y el orden estructural antes de iniciar cualquier implementación técnica. Mis fortalezas son la organización de flujos de trabajo eficiente y, además, puedo desempeñar múltiples roles dentro de un proyecto, ya sea en frontend o backend, aunque prefiero dedicarme a la gestión de datos. Mi propósito es profundizar mis conocimientos en la arquitectura de Software, además de mejorar mi capacidad de colaboración en equipo para contribuir activamente en la creación de soluciones tecnológicas.</td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_neo.jpeg?raw=true" alt="Foto de Neo" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
+        <td> <img src="chapter-01/assets/foto_neo.jpeg" alt="Foto de Neo" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
         <td>Ramos Mera, Neo Daniel</td>
         <td> u20241e418 </td>
         <td> Ingeniería de Software </td>
         <td> Soy estudiante de Ingeniería de Software, interesado en la red y el backend. Me considero una persona responsable, atenta y también bastante cooperativa, ya que la comunicación y el trabajo en equipo son fundamentales para alcanzar el éxito en cualquier proyecto. Mi meta es especializarme en un campo en el que pueda trabajar con estos puntos, por lo que aspiro a participar en proyectos desafiantes que reten mis habilidades y conocimientos. </td>
     </tr>
     <tr>
-        <td> <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/chapter-01/chapter-01/assets/foto_alisee.jpg?raw=true" alt="Foto de Alisee" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
+        <td> <img src="chapter-01/assets/foto_alisee.jpg" alt="Foto de Alisee" width="100" style="width:100px; height:auto; display:block; margin:6px auto;"> </td>
         <td>Torres Juárez, Alisee Muriel</td>
         <td> U202624323 </td>
         <td> Ingeniería de Software </td>
@@ -658,15 +658,15 @@ En esta sección se describe el perfil de la solución propuesta por RuwaLabs, i
 
 La aplicación lleva por nombre **"SaludYa"**. El propósito de la aplicación se centra en la gestión eficiente de citas médicas en establecimientos públicos de salud, permitiendo a los pacientes acceder de forma oportuna a la reserva, seguimiento y *check-in* de sus atenciones. Al mismo tiempo, brinda al personal asistencial y administrativo herramientas para gestionar citas, pacientes y el flujo de atención.
 
-Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud, como se observa en la [Figura 4](#figura-4).
+Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud, como se observa en la [Figura 6](#figura-6).
 
 
 
 
 
-<a id="figura-4"></a>
+<a id="figura-6"></a>
 
-**Figura 4**
+**Figura 6**
 
 *Identidad visual de SaludYa*
 
@@ -801,9 +801,9 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 
 
-<a id="figura-5"></a>
+<a id="figura-7"></a>
 
-**Figura 5**
+**Figura 7**
 
 *Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas*
 
@@ -819,7 +819,7 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 
 
-El diagrama identifica **seis categorías principales de causas** que contribuyen al problema, como se observa en la [Figura 5](#figura-5):
+El diagrama identifica **seis categorías principales de causas** que contribuyen al problema, como se observa en la [Figura 7](#figura-7):
 
 - **Tecnología:** Sistemas de citas obsoletos o inexistentes, plataformas que pueden presentar dificultades ante una alta demanda, falta de integración entre módulos y problemas de conectividad en determinados establecimientos.
 
@@ -910,9 +910,9 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 
 
-<a id="figura-6"></a>
+<a id="figura-8"></a>
 
-**Figura 6**
+**Figura 8**
 
 *Lean UX Canvas de SaludYa*
 
@@ -924,7 +924,7 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
   <p align="center" style="text-align:center">Lean Ux Canvas</p>
 </p>
 
-La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles, como se observa en la [Figura 6](#figura-6).
+La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles, como se observa en la [Figura 8](#figura-8).
 
 ## 1.3. Segmentos objetivos ##
 
@@ -959,21 +959,21 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 ### 2.1.1. Análisis competitivo
 
 > **¿Por qué llevar a cabo este análisis?**  
-> Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud, como se detalla en la [Tabla 10](#tabla-10) y la [Figura 7](#figura-7), la [Figura 8](#figura-8), la [Figura 9](#figura-9) y la [Figura 10](#figura-10).
+> Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud, como se detalla en la [Tabla 11](#tabla-11) y la [Figura 9](#figura-9), la [Figura 10](#figura-10), la [Figura 11](#figura-11) y la [Figura 12](#figura-12).
 
 
 
 
 
-<a id="tabla-10"></a>
+<a id="tabla-11"></a>
 
-**Tabla 10**
+**Tabla 11**
 
 *Análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA*
 
 | **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
 | :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Logo**                                                       |                                                                                                                          <a id="figura-7"></a><strong>Figura 7</strong><br><em>Logotipo de SaludYa</em><br><img src="assets/Icon_SaludYa.png" alt="Logotipo de SaludYa" width="190">                                                                                                                          |                                                                                            <a id="figura-8"></a><strong>Figura 8</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia">                                                                                             |                                                    <a id="figura-9"></a><strong>Figura 9</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica">                                                     |                                                                                              <a id="figura-10"></a><strong>Figura 10</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA">                                                                                               |
+| **Logo**                                                       |                                                                                                                          <a id="figura-9"></a><strong>Figura 9</strong><br><em>Logotipo de SaludYa</em><br><img src="assets/Icon_SaludYa.png" alt="Logotipo de SaludYa" width="190">                                                                                                                          |                                                                                            <a id="figura-10"></a><strong>Figura 10</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia">                                                                                             |                                                    <a id="figura-11"></a><strong>Figura 11</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica">                                                     |                                                                                              <a id="figura-12"></a><strong>Figura 12</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA">                                                                                               |
 | **Perfil / Overview**                                          |        Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real.         | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
 | **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* |                         Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas.                          |                                                           Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico.                                                            |               Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico.               |                                        Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado.                                         |
 | **Perfil de Marketing**<br>*Mercado objetivo*                  |                                                                          Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.                                                                          |                                                                       Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas.                                                                       |                                    Pacientes que buscan atención médica privada en consultorios y clínicas de Perú.                                    |                                                                Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones.                                                                 |
@@ -1022,17 +1022,17 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 
 ** Entrevista 1 ** 
 
-La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 11](#tabla-11) y la [Figura 11](#figura-11).
+La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 13](#figura-13).
 
-<a id="tabla-11"></a>
+<a id="tabla-12"></a>
 
-**Tabla 11**
+**Tabla 12**
 
 *Ficha de entrevista — Registro de la entrevista a Braulio Núñez*
 
 | Entrevista                                                                                                                                                                                                                                                                                                                      | Registro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a id="figura-11"></a><strong>Figura 11</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small>            | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| <a id="figura-13"></a><strong>Figura 13</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small>            | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW) | **Entrevistador:** Didier Sebastián Meza Solórzano                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Timing: Minuto 00:00-04:22                                                                                                                                                                                                                                                                                                      | **Resumen:** Braulio Núñez, de 24 años, es técnico de mantenimiento y acude con frecuencia al Centro de Salud Comas para llevar a su sobrino a sus controles y vacunas. Relata que, para conseguir una cita, suele madrugar desde las cuatro y media de la mañana, ya que si llega más tarde ya no encuentra cupos disponibles en pediatría, y en alguna ocasión tuvo que regresar al día siguiente por no lograr atención. Menciona que casi nunca puede resolver esto por teléfono, pues las líneas del establecimiento no responden, por lo que siempre debe acudir de forma presencial. También comenta que una vez perdió una cita ya conseguida porque no contaba con ningún recordatorio. En cuanto a tecnología, utiliza un celular Android en el que emplea con frecuencia WhatsApp, Facebook y aplicaciones de delivery, y se muestra cómodo realizando trámites desde el celular. Considera que una aplicación que le muestre la disponibilidad de citas en tiempo real, le envíe notificaciones cuando se libere un cupo y respete el horario reservado, le ahorraría mucho tiempo y evitaría que tenga que madrugar sin certeza de conseguir atención. |
 
@@ -1045,17 +1045,17 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 
 
 
-La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 12](#figura-12).
+La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 14](#figura-14).
 
-<a id="tabla-12"></a>
+<a id="tabla-13"></a>
 
-**Tabla 12**
+**Tabla 13**
 
 *Ficha de entrevista — Registro de la entrevista a Yordi Salazar*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-12"></a><strong>Figura 12</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
+| <p align="center"><a id="figura-14"></a><strong>Figura 14</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCq6uLH5lxNSpoxEAN9q1qfAVF0qgEoHWEvug_aNrID100?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sXQwSj) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:06 | **Resumen:** Yordi Salazar, de 27 años, es dueño de una tienda de abarrotes y acude junto con su madre a la posta de salud de su zona de forma mensual. Cuenta que en su última experiencia tuvo que ir hasta tres veces distintas antes de conseguir cupo, ya que las dos primeras veces ya no había disponibilidad al momento de llegar. Señala que la parte más complicada es no saber cuánta gente hay antes en la fila, y que en una ocasión perdió una cita porque solo le avisaron la fecha de forma verbal, sin ningún respaldo escrito. Cuando no logra conseguir cupo, opta por acudir a una clínica particular, aunque esto le representa un gasto adicional. En cuanto a tecnología, utiliza un celular sencillo y no se siente del todo cómodo con trámites digitales, por lo que suele apoyarse en su hijo para este tipo de gestiones. Considera que una aplicación sencilla, con letras grandes y pocos pasos, que le permita conocer la disponibilidad de citas y avisarle mediante llamada o mensaje de texto cuando se libere un cupo, sería de gran ayuda para evitar las largas colas que actualmente enfrenta. |
 
@@ -1068,17 +1068,17 @@ Entrevista 3:
 
 
 
-La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 13](#figura-13).
+La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 15](#figura-15).
 
-<a id="tabla-13"></a>
+<a id="tabla-14"></a>
 
-**Tabla 13**
+**Tabla 14**
 
 *Ficha de entrevista — Registro de la entrevista a Kevin Huamán*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-13"></a><strong>Figura 13</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
+| <p align="center"><a id="figura-15"></a><strong>Figura 15</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAAwi-Crd0UR6aM_vPtIyU8AY5rcOh7FEgLdmqvsNkC1bU?e=JGBM7r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-05:35 | **Resumen:** Kevin Huamán, de 22 años, se dedica al reparto mediante aplicaciones de delivery y acude ocasionalmente al centro materno infantil de su zona. Relata que la última vez que necesitó una cita tuvo que pedir el día libre en su trabajo, ya que ni siquiera sabía que existía otra forma de agendar una atención que no fuera de manera presencial. Señala que en una oportunidad llegó al establecimiento y ya no había citas disponibles para medicina general, lo que le hizo perder tiempo de trabajo sin obtener ningún resultado. A diferencia de otros pacientes, se siente muy cómodo utilizando aplicaciones móviles, pues las emplea constantemente para su trabajo de reparto, mapas y redes sociales. Considera que una aplicación confiable, que no se cuelgue y tenga buenas reseñas, que le permita reservar su cita al toque y recibir notificaciones push cuando se libere un cupo, le permitiría organizar mejor su tiempo de trabajo y evitar viajes innecesarios solo para consultar disponibilidad. |
 
@@ -1094,17 +1094,17 @@ Entrevista 4:
 
 
 
-La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 14](#figura-14).
+La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 16](#figura-16).
 
-<a id="tabla-14"></a>
+<a id="tabla-15"></a>
 
-**Tabla 14**
+**Tabla 15**
 
 *Ficha de entrevista — Registro de la entrevista a Franco Alanoca*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-14"></a><strong>Figura 14</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
+| <p align="center"><a id="figura-16"></a><strong>Figura 16</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQDwPo3p7nHzTo_3Q8Hdq5zRASpKzhsImRgOPsWf4awAsOU?e=pY3MtU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-06:00 | **Resumen:** Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, cargo que desempeña desde hace dos años. Su labor consiste en registrar a los pacientes conforme llegan y asignar los cupos del día según el orden de llegada, sin que exista un sistema de reserva previa. Explica que cuando los cupos se agotan simplemente se informa a los pacientes que regresen al día siguiente, y que no cuentan con un mecanismo formal para gestionar cancelaciones o inasistencias, por lo que esos cupos terminan perdiéndose. Señala que el principal problema es la desorganización que se genera cuando hay mucha demanda, especialmente en las mañanas, lo que ocasiona reclamos y un ambiente tenso. Actualmente, la gestión se apoya en cuadernos físicos y hojas de Excel, lo que en ocasiones provoca pérdida de información. Considera que contar con un sistema que muestre en tiempo real la disponibilidad de cupos y el estado de cada paciente eliminaría gran parte del registro manual repetitivo y ayudaría a evitar confusiones en la atención diaria. |
 
@@ -1117,17 +1117,17 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 
 
 
-La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 15](#figura-15).
+La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 16](#tabla-16) y la [Figura 17](#figura-17).
 
-<a id="tabla-15"></a>
+<a id="tabla-16"></a>
 
-**Tabla 15**
+**Tabla 16**
 
 *Ficha de entrevista — Registro de la entrevista a Wilmer Contreras*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <p align="center"><a id="figura-15"></a><strong>Figura 15</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
+| <p align="center"><a id="figura-17"></a><strong>Figura 17</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 0:00-04:25 | **Resumen:** Wilmer Contreras, de 29 años, se desempeña como jefe de admisión en una posta de salud de Comas desde hace cinco años. Entre sus funciones se encuentra supervisar al personal de admisión, coordinar la distribución de cupos entre especialidades y atender los reclamos de los pacientes. Explica que el proceso actual depende de un cuaderno físico donde se revisa la disponibilidad y se asignan horarios aproximados que no siempre se cumplen, y que cuando los cupos se agotan se deriva a los pacientes a otros establecimientos o se les pide regresar otro día. Menciona que no existe un registro formal de cancelaciones ni de inasistencias, lo que dificulta reasignar los cupos liberados de manera oportuna. Identifica como principal problema la falta de un sistema centralizado que muestre la disponibilidad real de citas, lo que genera colas largas y personal saturado, especialmente los lunes y a inicios de mes. Considera que automatizar la asignación de cupos y las notificaciones a los pacientes sería clave para mejorar la atención y reducir la carga operativa del personal. |
 
@@ -1136,22 +1136,21 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 <!-- pdf-pagebreak -->
 
-Figura 20
 **Entrevista 6**
 
 
 
 
 
-<a id="tabla-16"></a>
+<a id="tabla-17"></a>
 
-**Tabla 16**
+**Tabla 17**
 
 *Ficha de entrevista — Registro de la entrevista a Deyvis Ochante*
 
 | Entrevista | Registro |
 | ----- | ----- |
-| <a id="figura-16"></a><strong>Figura 16</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
+| <a id="figura-18"></a><strong>Figura 18</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
 | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | **Timing:** 00:00-04:10 | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda. |
 
@@ -1159,7 +1158,7 @@ Figura 20
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los vídeos que respaldan las entrevistas se reúnen en el [Anexo A](#anexo-a-vídeos-de-entrevistas-realizadas), como se detalla en la [Tabla 16](#tabla-16) y la [Figura 16](#figura-16).
+Los vídeos que respaldan las entrevistas se reúnen en el [Anexo A](#anexo-a-vídeos-de-entrevistas-realizadas), como se detalla en la [Tabla 17](#tabla-17) y la [Figura 18](#figura-18).
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -1179,9 +1178,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-<a id="figura-17"></a>
+<a id="figura-19"></a>
 
-**Figura 17**
+**Figura 19**
 
 *Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados*
 
@@ -1191,7 +1190,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos, como se observa en la [Figura 17](#figura-17).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos, como se observa en la [Figura 19](#figura-19).
 
 * Comodidad realizando trámites desde el celular:
 
@@ -1199,9 +1198,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-<a id="figura-18"></a>
+<a id="figura-20"></a>
 
-**Figura 18**
+**Figura 20**
 
 *Comodidad de los pacientes entrevistados al utilizar el celular*
 
@@ -1211,7 +1210,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones, como se observa en la [Figura 18](#figura-18).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones, como se observa en la [Figura 20](#figura-20).
 
 * Utilidad de ver la disponibilidad de citas en tiempo real:
 
@@ -1219,9 +1218,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-<a id="figura-19"></a>
+<a id="figura-21"></a>
 
-**Figura 19**
+**Figura 21**
 
 *Utilidad percibida de consultar la disponibilidad de citas*
 
@@ -1231,7 +1230,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento, como se observa en la [Figura 19](#figura-19).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento, como se observa en la [Figura 21](#figura-21).
 
 Segundo, con base en las tres entrevistas realizadas al segundo segmento objetivo, conformado por el personal asistencial y administrativo, se puede concluir lo siguiente:
 
@@ -1249,10 +1248,10 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-<a id="figura-20"></a>
+<a id="figura-22"></a>
 <!-- pdf-pagebreak -->
 
-**Figura 20**
+**Figura 22**
 
 *Sistema actual de gestión de citas del personal entrevistado*
 
@@ -1262,7 +1261,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel, como se observa en la [Figura 20](#figura-20).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel, como se observa en la [Figura 22](#figura-22).
 
 * Necesidad de un sistema con información en tiempo real:
 
@@ -1270,9 +1269,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-<a id="figura-21"></a>
+<a id="figura-23"></a>
 
-**Figura 21**
+**Figura 23**
 
 *Necesidad de un sistema digital según el personal entrevistado*
 
@@ -1282,7 +1281,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes, como se observa en la [Figura 21](#figura-21).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes, como se observa en la [Figura 23](#figura-23).
 
 * Momento del día con mayor cantidad de pacientes:
 
@@ -1290,9 +1289,9 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 <!-- pdf-pagebreak -->
-<a id="figura-22"></a>
+<a id="figura-24"></a>
 
-**Figura 22**
+**Figura 24**
 
 *Especialidades de mayor demanda según las entrevistas al personal*
 
@@ -1302,7 +1301,7 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 
 
-  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes, como se observa en la [Figura 22](#figura-22).
+  En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes, como se observa en la [Figura 24](#figura-24).
 
 ---
 
@@ -1326,9 +1325,9 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 
 
-<a id="figura-23"></a>
+<a id="figura-25"></a>
 
-**Figura 23**
+**Figura 25**
 
 *User persona del paciente*
 
@@ -1338,7 +1337,7 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 
 
 
-Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención, como se observa en la [Figura 23](#figura-23).
+Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención, como se observa en la [Figura 25](#figura-25).
 
 <!-- pdf-pagebreak -->
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
@@ -1347,9 +1346,9 @@ Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bie
 
 
 
-<a id="figura-24"></a>
+<a id="figura-26"></a>
 
-**Figura 24**
+**Figura 26**
 
 *User persona del personal asistencial y administrativo*
 
@@ -1359,19 +1358,19 @@ Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bie
 
 
 
-Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados, como se observa en la [Figura 24](#figura-24).
+Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados, como se observa en la [Figura 26](#figura-26).
 
 ### 2.3.2. User Task Matrix
 
-Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 17](#tabla-17).
+Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
 
 
 
 <!-- pdf-pagebreak -->
 
-<a id="tabla-17"></a>
+<a id="tabla-18"></a>
 
-**Tabla 17**
+**Tabla 18**
 
 *User Task Matrix*
 
@@ -1409,9 +1408,9 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 
 
-<a id="figura-25"></a>
+<a id="figura-27"></a>
 
-**Figura 25**
+**Figura 27**
 
 *User journey del paciente*
 
@@ -1421,7 +1420,7 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 
 
-El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la [Figura 25](#figura-25).
+El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la [Figura 27](#figura-27).
 
 <!-- pdf-pagebreak -->
 #### Segmento 2: Personal asistencial y administrativo
@@ -1430,9 +1429,9 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 
 
 
-<a id="figura-26"></a>
+<a id="figura-28"></a>
 
-**Figura 26**
+**Figura 28**
 
 *User journey del personal asistencial y administrativo*
 
@@ -1442,7 +1441,7 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 
 
 
-El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la [Figura 26](#figura-26).
+El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la [Figura 28](#figura-28).
 
 <!-- pdf-pagebreak -->
 
@@ -1457,9 +1456,9 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 
 
-<a id="figura-27"></a>
+<a id="figura-29"></a>
 
-**Figura 27**
+**Figura 29**
 
 *Empathy Map - Paciente de Zonas Periféricas*
 
@@ -1469,7 +1468,7 @@ El diseño de una solución de software orientada a la salud pública requiere c
 
 
 
-Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales, como se observa en la [Figura 27](#figura-27).
+Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales, como se observa en la [Figura 29](#figura-29).
 
 <!-- pdf-pagebreak -->
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
@@ -1478,9 +1477,9 @@ Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha con
 
 
 
-<a id="figura-28"></a>
+<a id="figura-30"></a>
 
-**Figura 28**
+**Figura 30**
 
 *Empathy Map - Personal Asistencial y Administrativo*
 
@@ -1490,7 +1489,7 @@ Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha con
 
 
 
-Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la [Figura 28](#figura-28).
+Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la [Figura 30](#figura-30).
 
 ---
 ### 2.3.5. Big Picture EventStorming
@@ -1500,15 +1499,15 @@ Para armar un sistema que funcione bien, primero hay que entender cómo trabaja 
 
 #### Step 1 – Free Exploration
 
-En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: *Cita reservada* o *Check-in realizado*), sin preocuparnos por la parte técnica ni por el diseño del software, como se observa en la [Figura 29](#figura-29).
+En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: *Cita reservada* o *Check-in realizado*), sin preocuparnos por la parte técnica ni por el diseño del software, como se observa en la [Figura 31](#figura-31).
 
 
 
 
 
-<a id="figura-29"></a>
+<a id="figura-31"></a>
 
-**Figura 29**
+**Figura 31**
 
 *Big Picture EventStorming - Step 1 Free Exploration*
 
@@ -1520,15 +1519,15 @@ En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolu
 <!-- pdf-pagebreak -->
 #### Step 2 – Enforcing Timelines
 
-En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud, como se observa en la [Figura 30](#figura-30).
+En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud, como se observa en la [Figura 32](#figura-32).
 
 
 
 
 
-<a id="figura-30"></a>
+<a id="figura-32"></a>
 
-**Figura 30**
+**Figura 32**
 
 *Big Picture EventStorming: organización de la línea temporal*
 
@@ -1540,15 +1539,15 @@ En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derec
 
 #### Step 3 – People and Systems (Actors & Read Models)
 
-En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e identificamos a los **Actores** (tarjetas amarillas) que desencadenan cada acción (*Patient* y *Admission Staff*). También mapeamos la información visible o **Read Models** (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera, como se observa en la [Figura 31](#figura-31).
+En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e identificamos a los **Actores** (tarjetas amarillas) que desencadenan cada acción (*Patient* y *Admission Staff*). También mapeamos la información visible o **Read Models** (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera, como se observa en la [Figura 33](#figura-33).
 
 
 
 
 
-<a id="figura-31"></a>
+<a id="figura-33"></a>
 
-**Figura 31**
+**Figura 33**
 
 *Step 3 - People and Systems*
 
@@ -1560,16 +1559,16 @@ En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e 
 
 #### Step 4 – Explicit Hotspots & Exceptions
 
-En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica, como se observa en la [Figura 32](#figura-32).
+En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica, como se observa en la [Figura 34](#figura-34).
 
 
 
 
 
-<a id="figura-32"></a>
+<a id="figura-34"></a>
 <!-- pdf-pagebreak -->
 
-**Figura 32**
+**Figura 34**
 
 *Step 4 - Hotspots and Exceptions*
 
@@ -1583,15 +1582,15 @@ En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del n
 
 ### 2.3.6. Ubiquitous Language
 
-Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el **Lenguaje Ubicuo**. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema, como se detalla en la [Tabla 18](#tabla-18).
+Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el **Lenguaje Ubicuo**. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema, como se detalla en la [Tabla 19](#tabla-19).
 
 
 
 
 
-<a id="tabla-18"></a>
+<a id="tabla-19"></a>
 
-**Tabla 18**
+**Tabla 19**
 
 *Ubiquitous Language*
 
@@ -1622,11 +1621,11 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 
 
-El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la [Tabla 19](#tabla-19).
+El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la [Tabla 20](#tabla-20).
 
-<a id="tabla-19"></a>
+<a id="tabla-20"></a>
 
-**Tabla 19**
+**Tabla 20**
 
 *To-Be Scenario Mapping*
 
@@ -1649,11 +1648,11 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 
 
 
-Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la [Tabla 20](#tabla-20).
+Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la [Tabla 21](#tabla-21).
 
-<a id="tabla-20"></a>
+<a id="tabla-21"></a>
 
-**Tabla 20**
+**Tabla 21**
 
 *Epics*
 
@@ -2639,15 +2638,15 @@ El mapa de impacto para nuestra plataforma de **gestión de citas médicas y con
 
 Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisión** (gestión operativa y flujo en sala) y **Paciente** (reserva autónoma y confirmación de llegada). Para el primero, el mapa recoge necesidades relativas a visibilidad en tiempo real de pacientes confirmados, claridad en el llamado a consultorio, flexibilidad para aplicar prioridades o reasignaciones por imprevistos, y generación de métricas de ausentismo; para el segundo, autonomía para seleccionar especialidad y horario, confianza mediante el registro rápido por código QR sin filas presenciales, y claridad sobre su estado dentro de la cola de espera.
 
-A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de `bookingOrder`, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional, como se observa en la [Figura 33](#figura-33).
+A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de `bookingOrder`, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional, como se observa en la [Figura 35](#figura-35).
 
 
 
 
 
-<a id="figura-33"></a>
+<a id="figura-35"></a>
 
-**Figura 33**
+**Figura 35**
 
 *Impact Mapping de SaludYa*
 
@@ -2667,11 +2666,11 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 
 
 
-El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 21](#tabla-21).
+El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 22](#tabla-22).
 
-<a id="tabla-21"></a>
+<a id="tabla-22"></a>
 
-**Tabla 21**
+**Tabla 22**
 
 *Product Backlog de SaludYa*
 
@@ -2758,9 +2757,9 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 
 
-<a id="figura-34"></a>
+<a id="figura-36"></a>
 
-**Figura 34**
+**Figura 36**
 
 *EventStorming - Domain Events*
 
@@ -2772,15 +2771,15 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 
 
-**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `Booking Order assigned` ocurre inmediatamente después de `Appointment booked`, mientras que `Patient in attendance queue` y `Patient called` ocurren después de `Check-in completed`, evidenciando que ambas colas operan en momentos distintos del flujo, como se observa en la [Figura 34](#figura-34).
+**2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `Booking Order assigned` ocurre inmediatamente después de `Appointment booked`, mientras que `Patient in attendance queue` y `Patient called` ocurren después de `Check-in completed`, evidenciando que ambas colas operan en momentos distintos del flujo, como se observa en la [Figura 36](#figura-36).
 
 
 
 
 
-<a id="figura-35"></a>
+<a id="figura-37"></a>
 
-**Figura 35**
+**Figura 37**
 
 *EventStorming - Timeline*
 
@@ -2792,15 +2791,15 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 
 
-**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `Booking Order`** (que determina la prioridad en la lista de espera) y el **waitlist timeout** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **attendance queue** y la **waitlist**, como se observa en la [Figura 35](#figura-35).
+**3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `Booking Order`** (que determina la prioridad en la lista de espera) y el **waitlist timeout** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **attendance queue** y la **waitlist**, como se observa en la [Figura 37](#figura-37).
 
 
 
 
 
-<a id="figura-36"></a>
+<a id="figura-38"></a>
 
-**Figura 36**
+**Figura 38**
 
 *EventStorming - Pain Points y Pivotal Points*
 
@@ -2812,15 +2811,15 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 
 
-**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Assign Booking Order`, `Add to attendance queue` y `Call next patient`; las policies `When a slot is released, notify the patient with the lowest Booking Order`, `When the timeout expires, move to the next patient in the list` y `If cancelled within the allowed time, release the slot`; y los read models `Attendance Queue` y `Waitlist`, como se observa en la [Figura 36](#figura-36) y la [Figura 37](#figura-37).
+**4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Assign Booking Order`, `Add to attendance queue` y `Call next patient`; las policies `When a slot is released, notify the patient with the lowest Booking Order`, `When the timeout expires, move to the next patient in the list` y `If cancelled within the allowed time, release the slot`; y los read models `Attendance Queue` y `Waitlist`, como se observa en la [Figura 38](#figura-38) y la [Figura 39](#figura-39).
 
 
 
 
 
-<a id="figura-37"></a>
+<a id="figura-39"></a>
 
-**Figura 37**
+**Figura 39**
 
 *EventStorming - Commands, Policies y Read Models*
 
@@ -2847,9 +2846,9 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 
 
 
-<a id="tabla-22"></a>
+<a id="tabla-23"></a>
 
-**Tabla 22**
+**Tabla 23**
 
 *Candidate Context Discovery*
 
@@ -2865,7 +2864,7 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery, como se detalla en la [Tabla 22](#tabla-22):
+A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery, como se detalla en la [Tabla 23](#tabla-23):
 
 - **`Appointments & Booking`:** se incorpora el atributo `Booking Order` y la regla de negocio *"Every booked appointment has a unique Booking Order per specialty, date and facility"*.
 - **`Dynamic Waitlist & Reassignment`:** se incorporan los conceptos `Waitlist Entry` (entrada ordenada por `Booking Order`), `Cascade Reassignment` (reasignación en cascada si nadie acepta) y `Waitlist Response Timeout` (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como *"Reassignment by Booking Order"*.
@@ -2874,11 +2873,11 @@ A continuación se detalla, para cada bounded context, los elementos incorporado
 
 
 
-La identificación de bounded contexts delimita las responsabilidades de identidad, reservas, reasignación, llegada y configuración operativa dentro del dominio de SaludYa, como se observa en la [Figura 38](#figura-38).
+La identificación de bounded contexts delimita las responsabilidades de identidad, reservas, reasignación, llegada y configuración operativa dentro del dominio de SaludYa, como se observa en la [Figura 40](#figura-40).
 
-<a id="figura-38"></a>
+<a id="figura-40"></a>
 
-**Figura 38**
+**Figura 40**
 
 *Candidate Context Discovery - Bounded Contexts identificados*
 
@@ -3029,15 +3028,15 @@ Durante la elaboración de los context maps, el equipo se planteó las siguiente
 
 **Patrones de integración aplicados**
 
-A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa, como se detalla en la [Tabla 35](#tabla-35):
+A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa, como se detalla en la [Tabla 24](#tabla-24):
 
 
 
 
 
-<a id="tabla-35"></a>
+<a id="tabla-24"></a>
 
-**Tabla 35**
+**Tabla 24**
 
 *Context Mapping: patrones y relaciones entre contextos*
 
@@ -3057,15 +3056,15 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 
 **Mensajes intercambiados entre bounded contexts**
 
-A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio, como se detalla en la [Tabla 36](#tabla-36):
+A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio, como se detalla en la [Tabla 25](#tabla-25):
 
 
 
 
 
-<a id="tabla-36"></a>
+<a id="tabla-25"></a>
 
-**Tabla 36**
+**Tabla 25**
 
 *Context Mapping: mensajes entre contextos*
 
@@ -3094,11 +3093,11 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 
 
-El mapa de contextos relaciona las áreas del dominio y sus dependencias para explicar cómo colaboran los componentes de SaludYa, como se observa en la [Figura 39](#figura-39).
+El mapa de contextos relaciona las áreas del dominio y sus dependencias para explicar cómo colaboran los componentes de SaludYa, como se observa en la [Figura 41](#figura-41).
 
-<a id="figura-39"></a>
+<a id="figura-41"></a>
 
-**Figura 39**
+**Figura 41**
 
 *Mapa de relaciones entre bounded contexts de SaludYa*
 
@@ -3115,15 +3114,15 @@ El mapa de contextos relaciona las áreas del dominio y sus dependencias para ex
 
 En el Software Architecture Context Diagram se pueden apreciar los componentes más importantes que interactúan con el sistema SaludYa, así como los usuarios principales y las funciones que desempeñan dentro del ecosistema de gestión de citas médicas en establecimientos públicos de salud.
 
-El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pacientes** que reservan y gestionan citas médicas, el **personal de admisión** que controla el flujo de atención en el establecimiento, y el **Super Admin** que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto, como se observa en la [Figura 40](#figura-40).
+El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pacientes** que reservan y gestionan citas médicas, el **personal de admisión** que controla el flujo de atención en el establecimiento, y el **Super Admin** que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto, como se observa en la [Figura 42](#figura-42).
 
 
 
 
 
-<a id="figura-40"></a>
+<a id="figura-42"></a>
 
-**Figura 40**
+**Figura 42**
 
 *Diagrama C4 de contexto de SaludYa*
 
@@ -3141,15 +3140,15 @@ El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacie
 
 El Backend API orquesta internamente la lógica de los cinco bounded contexts del sistema, incluyendo la gestión de la cola de asistencia ordenada por `checkInTimestamp` y la cola de reserva ordenada por `bookingOrder`. La base de datos PostgreSQL incorpora las tablas `attendance_queue_entries` y `reassignment_offers`, y la tabla `appointments` incluye el campo `booking_order` que determina la prioridad de reasignación.
 
-El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone, como se observa en la [Figura 41](#figura-41).
+El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone, como se observa en la [Figura 43](#figura-43).
 
 
 
 
 
-<a id="figura-41"></a>
+<a id="figura-43"></a>
 
-**Figura 41**
+**Figura 43**
 
 *Diagrama C4 de contenedores de SaludYa*
 
@@ -3166,15 +3165,15 @@ En el Software Architecture Deployment Diagram se muestra la distribución físi
 
 El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las **aplicaciones móviles** se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el **backend del sistema** se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs y un servidor de base de datos PostgreSQL. Finalmente, el sistema se integra con **servicios externos** como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
 
-Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud, como se observa en la [Figura 42](#figura-42).
+Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud, como se observa en la [Figura 44](#figura-44).
 
 
 
 
 
-<a id="figura-42"></a>
+<a id="figura-44"></a>
 
-**Figura 42**
+**Figura 44**
 
 *Diagrama C4 de despliegue de SaludYa*
 
@@ -3567,9 +3566,9 @@ Publica eventos de dominio usando Spring Events.
 
 
 
-<a id="figura-43"></a>
+<a id="figura-45"></a>
 
-**Figura 43**
+**Figura 45**
 
 *Diagrama de componentes — IAM*
 
@@ -3580,7 +3579,7 @@ Publica eventos de dominio usando Spring Events.
 
 
 ---
-El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos, como se observa en la [Figura 43](#figura-43).
+El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos, como se observa en la [Figura 45](#figura-45).
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -3590,9 +3589,9 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 
 
 
-<a id="figura-44"></a>
+<a id="figura-46"></a>
 
-**Figura 44**
+**Figura 46**
 
 *Diagrama de clases — IAM*
 
@@ -3603,7 +3602,7 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 
 
 ---
-El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory, como se observa en la [Figura 44](#figura-44).
+El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory, como se observa en la [Figura 46](#figura-46).
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 
@@ -3611,9 +3610,9 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 
 
 
-<a id="figura-45"></a>
+<a id="figura-47"></a>
 
-**Figura 45**
+**Figura 47**
 
 *Diagrama de base de datos — IAM*
 
@@ -3624,7 +3623,7 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 
 
 ---
-El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores, como se observa en la [Figura 45](#figura-45).
+El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores, como se observa en la [Figura 47](#figura-47).
 
 ---
 
@@ -4053,9 +4052,9 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 
 
 
-<a id="figura-46"></a>
+<a id="figura-48"></a>
 
-**Figura 46**
+**Figura 48**
 
 *Diagrama de componentes — Appointment*
 
@@ -4066,7 +4065,7 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 
 
 ---
-El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con `ApplicationEventPublisher` de Spring, como se observa en la [Figura 46](#figura-46).
+El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con `ApplicationEventPublisher` de Spring, como se observa en la [Figura 48](#figura-48).
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4076,9 +4075,9 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 
 
-<a id="figura-47"></a>
+<a id="figura-49"></a>
 
-**Figura 47**
+**Figura 49**
 
 *Diagrama de clases — Appointment*
 
@@ -4089,7 +4088,7 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 
 ---
-El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios, como se observa en la [Figura 47](#figura-47).
+El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios, como se observa en la [Figura 49](#figura-49).
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
@@ -4097,9 +4096,9 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 
 
 
-<a id="figura-48"></a>
+<a id="figura-50"></a>
 
-**Figura 48**
+**Figura 50**
 
 *Diagrama de base de datos — Appointment*
 
@@ -4110,7 +4109,7 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 
 
 ---
-El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas, como se observa en la [Figura 48](#figura-48).
+El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas, como se observa en la [Figura 50](#figura-50).
 
 ---
 
@@ -4318,9 +4317,9 @@ Envía notificaciones de ofertas de reasignación al paciente (pendiente de impl
 
 
 
-<a id="figura-49"></a>
+<a id="figura-51"></a>
 
-**Figura 49**
+**Figura 51**
 
 *Diagrama de componentes — Reassignment*
 
@@ -4331,7 +4330,7 @@ Envía notificaciones de ofertas de reasignación al paciente (pendiente de impl
 
 
 ---
-El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas, y el PatientAbsentEventConsumer escucha el evento de ausencia de Arrival. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que hacen avanzar la cadena de reasignación y los ACLs (AppointmentLookupService y HospitalConfigurationService). En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el enum ReassignmentStatus, los domain events y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 49](#figura-49).
+El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas, y el PatientAbsentEventConsumer escucha el evento de ausencia de Arrival. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que hacen avanzar la cadena de reasignación y los ACLs (AppointmentLookupService y HospitalConfigurationService). En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el enum ReassignmentStatus, los domain events y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 51](#figura-51).
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4341,9 +4340,9 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 
 
 
-<a id="figura-50"></a>
+<a id="figura-52"></a>
 
-**Figura 50**
+**Figura 52**
 
 *Diagrama de clases — Reassignment*
 
@@ -4354,7 +4353,7 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 
 
 ---
-El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED, ATTENDED, ABSENT). Se muestran los seis Domain Events (records) que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent, ReassignmentOfferAttendedEvent, ReassignmentOfferNoShowEvent) y la interfaz ReassignmentOfferRepository, como se observa en la [Figura 50](#figura-50).
+El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED, ATTENDED, ABSENT). Se muestran los seis Domain Events (records) que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent, ReassignmentOfferAttendedEvent, ReassignmentOfferNoShowEvent) y la interfaz ReassignmentOfferRepository, como se observa en la [Figura 52](#figura-52).
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 
@@ -4362,9 +4361,9 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 
 
 
-<a id="figura-51"></a>
+<a id="figura-53"></a>
 
-**Figura 51**
+**Figura 53**
 
 *Diagrama de base de datos — Reassignment*
 
@@ -4375,7 +4374,7 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 
 
 ---
-El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de reserva. La tabla incluye dos foreign keys hacia appointments (el paciente candidato y la cita original liberada) y dos foreign keys hacia time_slots (el cupo liberado y el slot actual del candidato), junto con el estado de la oferta y los timestamps de envío, respuesta y expiración, como se observa en la [Figura 51](#figura-51).
+El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de reserva. La tabla incluye dos foreign keys hacia appointments (el paciente candidato y la cita original liberada) y dos foreign keys hacia time_slots (el cupo liberado y el slot actual del candidato), junto con el estado de la oferta y los timestamps de envío, respuesta y expiración, como se observa en la [Figura 53](#figura-53).
 
 ---
 
@@ -4808,9 +4807,9 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 
 
-<a id="figura-52"></a>
+<a id="figura-54"></a>
 
-**Figura 52**
+**Figura 54**
 
 *Diagrama de componentes — Arrival*
 
@@ -4821,7 +4820,7 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 
 ---
-El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 52](#figura-52).
+El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 54](#figura-54).
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4831,9 +4830,9 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 
 
-<a id="figura-53"></a>
+<a id="figura-55"></a>
 
-**Figura 53**
+**Figura 55**
 
 *Diagrama de clases — Arrival*
 
@@ -4844,7 +4843,7 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 
 ---
-El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent, como se observa en la [Figura 53](#figura-53).
+El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent, como se observa en la [Figura 55](#figura-55).
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
@@ -4852,9 +4851,9 @@ El diagrama de clases del dominio del bounded context Arrival & QR Check-in repr
 
 
 
-<a id="figura-54"></a>
+<a id="figura-56"></a>
 
-**Figura 54**
+**Figura 56**
 
 *Diagrama de base de datos — Arrival*
 
@@ -4865,7 +4864,7 @@ El diagrama de clases del dominio del bounded context Arrival & QR Check-in repr
 
 
 ---
-El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in, como se observa en la [Figura 54](#figura-54).
+El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check_ins, attendance_queues y queue_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance_queues representa la fila de asistencia por time_slot y fecha, con una foreign key hacia time_slots. La tabla queue_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance_queues y check_ins, y un campo position que determina el orden de atención por timestamp de check-in, como se observa en la [Figura 56](#figura-56).
 
 ---
 
@@ -5026,9 +5025,9 @@ Publica eventos de dominio usando Spring Events.
 
 
 
-<a id="figura-55"></a>
+<a id="figura-57"></a>
 
-**Figura 55**
+**Figura 57**
 
 *Diagrama de componentes — Hospital Operations & Configuration*
 
@@ -5038,7 +5037,7 @@ Publica eventos de dominio usando Spring Events.
 
 
 
-El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 55](#figura-55).
+El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 57](#figura-57).
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -5048,9 +5047,9 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 
 
 
-<a id="figura-56"></a>
+<a id="figura-58"></a>
 
-**Figura 56**
+**Figura 58**
 
 *Diagrama de clases — Hospital Operations & Configuration*
 
@@ -5060,7 +5059,7 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 
 
 
-El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio, como se observa en la [Figura 56](#figura-56).
+El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio, como se observa en la [Figura 58](#figura-58).
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
 
@@ -5068,9 +5067,9 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 
 
-<a id="figura-57"></a>
+<a id="figura-59"></a>
 
-**Figura 57**
+**Figura 59**
 
 *Diagrama de base de datos — Hospital Operations & Configuration*
 
@@ -5080,7 +5079,7 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 
 
-El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 57](#figura-57).
+El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 59](#figura-59).
 
 # Capítulo III: Solution UI/UX Design
 
@@ -5102,9 +5101,9 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 
 
-<a id="tabla-37"></a>
+<a id="tabla-26"></a>
 
-**Tabla 37**
+**Tabla 26**
 
 *Branding*
 
@@ -5123,7 +5122,7 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page, como se detalla en la [Tabla 37](#tabla-37).
+El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page, como se detalla en la [Tabla 26](#tabla-26).
 
 ##### Typography
 
@@ -5135,9 +5134,9 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 
 
-<a id="tabla-38"></a>
+<a id="tabla-27"></a>
 
-**Tabla 38**
+**Tabla 27**
 
 *Typography — Landing Page (web)*
 
@@ -5156,7 +5155,7 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page, como se detalla en la [Tabla 38](#tabla-38).
+La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page, como se detalla en la [Tabla 27](#tabla-27).
 
 ###### Aplicaciones móviles (Android)
 
@@ -5164,9 +5163,9 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 
 
 
-<a id="tabla-39"></a>
+<a id="tabla-28"></a>
 
-**Tabla 39**
+**Tabla 28**
 
 *Typography — Aplicaciones móviles (Android)*
 
@@ -5181,7 +5180,7 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android, como se detalla en la [Tabla 39](#tabla-39).
+En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android, como se detalla en la [Tabla 28](#tabla-28).
 
 ##### Colors
 
@@ -5191,11 +5190,11 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 
 
 
-La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 40](#tabla-40).
+La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 29](#tabla-29).
 
-<a id="tabla-40"></a>
+<a id="tabla-29"></a>
 
-**Tabla 40**
+**Tabla 29**
 
 *Colors — Landing Page (web)*
 
@@ -5217,9 +5216,9 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-<a id="figura-193"></a>
+<a id="figura-60"></a>
 
-**Figura 193**
+**Figura 60**
 
 *Paleta de colores del Landing Page de SaludYa*
 
@@ -5234,9 +5233,9 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 
 
-<a id="tabla-41"></a>
+<a id="tabla-30"></a>
 
-**Tabla 41**
+**Tabla 30**
 
 *Colors — Aplicaciones móviles (Android)*
 
@@ -5258,21 +5257,21 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo, como se detalla en la [Tabla 41](#tabla-41).
+Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo, como se detalla en la [Tabla 30](#tabla-30).
 
 ##### Spacing
 
 ###### Landing Page (web)
 
-Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page, como se detalla en la [Tabla 42](#tabla-42).
+Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page, como se detalla en la [Tabla 31](#tabla-31).
 
 
 
 
 
-<a id="tabla-42"></a>
+<a id="tabla-31"></a>
 
-**Tabla 42**
+**Tabla 31**
 
 *Spacing — Landing Page (web)*
 
@@ -5295,9 +5294,9 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 
-<a id="tabla-43"></a>
+<a id="tabla-32"></a>
 
-**Tabla 43**
+**Tabla 32**
 
 *Spacing — Aplicaciones móviles (Android)*
 
@@ -5314,7 +5313,7 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles, como se detalla en la [Tabla 43](#tabla-43).
+Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles, como se detalla en la [Tabla 32](#tabla-32).
 
 ##### Border Radius
 
@@ -5322,11 +5321,11 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 
 
 
-Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 44](#tabla-44).
+Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 33](#tabla-33).
 
-<a id="tabla-44"></a>
+<a id="tabla-33"></a>
 
-**Tabla 44**
+**Tabla 33**
 
 *Border Radius — Landing Page (web)*
 
@@ -5346,9 +5345,9 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 
-<a id="tabla-45"></a>
+<a id="tabla-34"></a>
 
-**Tabla 45**
+**Tabla 34**
 
 *Border Radius — Aplicaciones móviles (Android)*
 
@@ -5361,7 +5360,7 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla, como se detalla en la [Tabla 45](#tabla-45).
+En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla, como se detalla en la [Tabla 34](#tabla-34).
 
 ##### Shadows
 
@@ -5369,11 +5368,11 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 
 
 
-Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 46](#tabla-46).
+Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 35](#tabla-35).
 
-<a id="tabla-46"></a>
+<a id="tabla-35"></a>
 
-**Tabla 46**
+**Tabla 35**
 
 *Shadows — Landing Page (web)*
 
@@ -5400,9 +5399,9 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
 
-<a id="tabla-47"></a>
+<a id="tabla-36"></a>
 
-**Tabla 47**
+**Tabla 36**
 
 *Tone of Voice*
 
@@ -5417,19 +5416,19 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo, como se detalla en la [Tabla 47](#tabla-47).
+El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo, como se detalla en la [Tabla 36](#tabla-36).
 
 ##### Iconography
 
-Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles, como se detalla en la [Tabla 48](#tabla-48):
+Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles, como se detalla en la [Tabla 37](#tabla-37):
 
 
 
 
 
-<a id="tabla-48"></a>
+<a id="tabla-37"></a>
 
-**Tabla 48**
+**Tabla 37**
 
 *Iconography*
 
@@ -5465,11 +5464,11 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 
 
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 63](#tabla-63).
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 38](#tabla-38).
 
-<a id="tabla-63"></a>
+<a id="tabla-38"></a>
 
-**Tabla 63**
+**Tabla 38**
 
 *Organization Systems — Landing Page*
 
@@ -5494,11 +5493,11 @@ La organización de las secciones agrupa la información según las tareas del u
 
 
 
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 64](#tabla-64).
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 39](#tabla-39).
 
-<a id="tabla-64"></a>
+<a id="tabla-39"></a>
 
-**Tabla 64**
+**Tabla 39**
 
 *Organization Systems — Aplicación móvil para pacientes*
 
@@ -5519,11 +5518,11 @@ La organización de las secciones agrupa la información según las tareas del u
 
 
 
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 65](#tabla-65).
+La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 40](#tabla-40).
 
-<a id="tabla-65"></a>
+<a id="tabla-40"></a>
 
-**Tabla 65**
+**Tabla 40**
 
 *Organization Systems — Aplicación móvil para personal de salud*
 
@@ -5558,11 +5557,11 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 
 
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 66](#tabla-66).
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 41](#tabla-41).
 
-<a id="tabla-66"></a>
+<a id="tabla-41"></a>
 
-**Tabla 66**
+**Tabla 41**
 
 *Labelling Systems — Landing Page*
 
@@ -5585,11 +5584,11 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 67](#tabla-67).
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 42](#tabla-42).
 
-<a id="tabla-67"></a>
+<a id="tabla-42"></a>
 
-**Tabla 67**
+**Tabla 42**
 
 *Labelling Systems — Aplicación móvil para pacientes*
 
@@ -5611,11 +5610,11 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 68](#tabla-68).
+Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 43](#tabla-43).
 
-<a id="tabla-68"></a>
+<a id="tabla-43"></a>
 
-**Tabla 68**
+**Tabla 43**
 
 *Labelling Systems — Aplicación móvil para personal de salud*
 
@@ -5649,11 +5648,11 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 
 
 
-Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 69](#tabla-69).
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 44](#tabla-44).
 
-<a id="tabla-69"></a>
+<a id="tabla-44"></a>
 
-**Tabla 69**
+**Tabla 44**
 
 *SEO Tags and Meta Tags — Landing Page*
 
@@ -5682,11 +5681,11 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 
 
 
-Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 70](#tabla-70).
+Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 45](#tabla-45).
 
-<a id="tabla-70"></a>
+<a id="tabla-45"></a>
 
-**Tabla 70**
+**Tabla 45**
 
 *SEO Tags and Meta Tags — ASO (App Store Optimization)*
 
@@ -5709,11 +5708,11 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 
 
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 71](#tabla-71).
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 46](#tabla-46).
 
-<a id="tabla-71"></a>
+<a id="tabla-46"></a>
 
-**Tabla 71**
+**Tabla 46**
 
 *Searching Systems — Landing Page*
 
@@ -5731,11 +5730,11 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 72](#tabla-72).
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 47](#tabla-47).
 
-<a id="tabla-72"></a>
+<a id="tabla-47"></a>
 
-**Tabla 72**
+**Tabla 47**
 
 *Searching Systems — Aplicación móvil para pacientes*
 
@@ -5754,11 +5753,11 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 73](#tabla-73).
+Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 48](#tabla-48).
 
-<a id="tabla-73"></a>
+<a id="tabla-48"></a>
 
-**Tabla 73**
+**Tabla 48**
 
 *Searching Systems — Aplicación móvil para personal de salud*
 
@@ -5785,11 +5784,11 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 
 
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 74](#tabla-74).
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 49](#tabla-49).
 
-<a id="tabla-74"></a>
+<a id="tabla-49"></a>
 
-**Tabla 74**
+**Tabla 49**
 
 *Navigation Systems — Landing Page*
 
@@ -5810,11 +5809,11 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 75](#tabla-75).
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 50](#tabla-50).
 
-<a id="tabla-75"></a>
+<a id="tabla-50"></a>
 
-**Tabla 75**
+**Tabla 50**
 
 *Navigation Systems — Aplicación móvil para pacientes*
 
@@ -5833,11 +5832,11 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 76](#tabla-76).
+La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 51](#tabla-51).
 
-<a id="tabla-76"></a>
+<a id="tabla-51"></a>
 
-**Tabla 76**
+**Tabla 51**
 
 *Navigation Systems — Aplicación móvil para personal de salud*
 
@@ -5888,11 +5887,11 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 
 
-Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 77](#tabla-77).
+Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 52](#tabla-52).
 
-<a id="tabla-77"></a>
+<a id="tabla-52"></a>
 
-**Tabla 77**
+**Tabla 52**
 
 *Wireframe Desktop Web Browser*
 
@@ -5909,9 +5908,9 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 
-<a id="figura-58"></a>
+<a id="figura-61"></a>
 
-**Figura 58**
+**Figura 61**
 
 *Wireframe Desktop - Vista superior*
 
@@ -5923,11 +5922,11 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 
-La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 58](#figura-58) y la [Figura 59](#figura-59).
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 61](#figura-61) y la [Figura 62](#figura-62).
 
-<a id="figura-59"></a>
+<a id="figura-62"></a>
 
-**Figura 59**
+**Figura 62**
 
 *Wireframe Desktop - Vista inferior*
 
@@ -5941,11 +5940,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 78](#tabla-78).
+Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 53](#tabla-53).
 
-<a id="tabla-78"></a>
+<a id="tabla-53"></a>
 
-**Tabla 78**
+**Tabla 53**
 
 *Wireframe Mobile Web Browser*
 
@@ -5962,9 +5961,9 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 
-<a id="figura-60"></a>
+<a id="figura-63"></a>
 
-**Figura 60**
+**Figura 63**
 
 *Wireframe Mobile - Vista superior*
 
@@ -5976,11 +5975,11 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 
-La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 60](#figura-60) y la [Figura 61](#figura-61).
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 63](#figura-63) y la [Figura 64](#figura-64).
 
-<a id="figura-61"></a>
+<a id="figura-64"></a>
 
-**Figura 61**
+**Figura 64**
 
 *Wireframe Mobile - Vista inferior*
 
@@ -6006,11 +6005,11 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 
 
-El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la [Tabla 79](#tabla-79).
+El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la [Tabla 54](#tabla-54).
 
-<a id="tabla-79"></a>
+<a id="tabla-54"></a>
 
-**Tabla 79**
+**Tabla 54**
 
 *Design System aplicado*
 
@@ -6036,11 +6035,11 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 
 
 
-Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 80](#tabla-80).
+Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 55](#tabla-55).
 
-<a id="tabla-80"></a>
+<a id="tabla-55"></a>
 
-**Tabla 80**
+**Tabla 55**
 
 *Mock-up Desktop Web Browser*
 
@@ -6057,9 +6056,9 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 
-<a id="figura-62"></a>
+<a id="figura-65"></a>
 
-**Figura 62**
+**Figura 65**
 
 *Mock-up Desktop - Vista superior*
 
@@ -6071,11 +6070,11 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 
-La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 62](#figura-62) y la [Figura 63](#figura-63).
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 65](#figura-65) y la [Figura 66](#figura-66).
 
-<a id="figura-63"></a>
+<a id="figura-66"></a>
 
-**Figura 63**
+**Figura 66**
 
 *Mock-up Desktop - Vista inferior*
 
@@ -6089,11 +6088,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 81](#tabla-81).
+Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 56](#tabla-56).
 
-<a id="tabla-81"></a>
+<a id="tabla-56"></a>
 
-**Tabla 81**
+**Tabla 56**
 
 *Mock-up Mobile Web Browser*
 
@@ -6110,9 +6109,9 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 
-<a id="figura-64"></a>
+<a id="figura-67"></a>
 
-**Figura 64**
+**Figura 67**
 
 *Mock-up Mobile - Vista superior*
 
@@ -6124,11 +6123,11 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 
-La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 64](#figura-64) y la [Figura 65](#figura-65).
+La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 67](#figura-67) y la [Figura 68](#figura-68).
 
-<a id="figura-65"></a>
+<a id="figura-68"></a>
 
-**Figura 65**
+**Figura 68**
 
 *Mock-up Mobile - Vista inferior*
 
@@ -6142,11 +6141,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la [Tabla 82](#tabla-82).
+Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la [Tabla 57](#tabla-57).
 
-<a id="tabla-82"></a>
+<a id="tabla-57"></a>
 
-**Tabla 82**
+**Tabla 57**
 
 *Aplicación del Design System y diseño inclusivo*
 
@@ -6169,11 +6168,11 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 
 
 
-Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la [Tabla 83](#tabla-83).
+Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la [Tabla 58](#tabla-58).
 
-<a id="tabla-83"></a>
+<a id="tabla-58"></a>
 
-**Tabla 83**
+**Tabla 58**
 
 *Componentes reutilizables*
 
@@ -6193,15 +6192,15 @@ Los componentes reutilizables definen la apariencia y los estados de botones, ta
 
 ##### Landing Page implementado
 
-El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla, como se observa en la [Figura 66](#figura-66).
+El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla, como se observa en la [Figura 69](#figura-69).
 
 
 
 
 
-<a id="figura-66"></a>
+<a id="figura-69"></a>
 
-**Figura 66**
+**Figura 69**
 
 *Landing Page de SaludYa - Implementación*
 
@@ -6230,11 +6229,11 @@ La propuesta traduce las decisiones de arquitectura de información definidas en
 
 ##### Estilo de los wireframes
 
-Los wireframes emplean una escala de grises de baja fidelidad que permite distinguir jerarquías, superficies y estados sin depender del color, manteniendo el foco en la estructura y en la organización del contenido. La escala abarca desde el tono más oscuro (WF 900) hasta el blanco (WF White), como se observa en la [Figura 67](#figura-67).
+Los wireframes emplean una escala de grises de baja fidelidad que permite distinguir jerarquías, superficies y estados sin depender del color, manteniendo el foco en la estructura y en la organización del contenido. La escala abarca desde el tono más oscuro (WF 900) hasta el blanco (WF White), como se observa en la [Figura 70](#figura-70).
 
-<a id="figura-67"></a>
+<a id="figura-70"></a>
 
-**Figura 67**
+**Figura 70**
 
 *Escala de grises para wireframes*
 
@@ -6246,11 +6245,11 @@ Los wireframes emplean una escala de grises de baja fidelidad que permite distin
 
 La aplicación para pacientes se organiza en torno a la barra de navegación inferior (**Inicio, Reservar cita, Asistencia y Configuración**), en línea con el sistema de navegación descrito en el apartado 3.1.2.5. Las vistas siguientes cubren el acceso, el inicio, la gestión de citas, la reserva, la asistencia, las notificaciones y la configuración.
 
-El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **Iniciar Sesión** y **Registrarse**, y el formulario de **Inicio de Sesión** con tipo y número de documento y contraseña, como se observa en la [Figura 68](#figura-68).
+El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **Iniciar Sesión** y **Registrarse**, y el formulario de **Inicio de Sesión** con tipo y número de documento y contraseña, como se observa en la [Figura 71](#figura-71).
 
-<a id="figura-68"></a>
+<a id="figura-71"></a>
 
-**Figura 68**
+**Figura 71**
 
 *Bienvenida e inicio de sesión*
 
@@ -6258,11 +6257,11 @@ El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **
 
 *Nota. Elaboración propia.*
 
-El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la [Figura 69](#figura-69).
+El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la [Figura 72](#figura-72).
 
-<a id="figura-69"></a>
+<a id="figura-72"></a>
 
-**Figura 69**
+**Figura 72**
 
 *Registro y verificación de identidad*
 
@@ -6270,11 +6269,11 @@ El registro se compone de la verificación de identidad por documento, el alta d
 
 *Nota. Elaboración propia.*
 
-La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la [Figura 70](#figura-70).
+La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la [Figura 73](#figura-73).
 
-<a id="figura-70"></a>
+<a id="figura-73"></a>
 
-**Figura 70**
+**Figura 73**
 
 *Recuperación y cambio de contraseña*
 
@@ -6282,11 +6281,11 @@ La recuperación de acceso permite elegir el restablecimiento por correo, ingres
 
 *Nota. Elaboración propia.*
 
-El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la [Figura 71](#figura-71).
+El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la [Figura 74](#figura-74).
 
-<a id="figura-71"></a>
+<a id="figura-74"></a>
 
-**Figura 71**
+**Figura 74**
 
 *Inicio del paciente*
 
@@ -6294,11 +6293,11 @@ El inicio del paciente saluda al usuario, presenta las citas pendientes y el his
 
 *Nota. Elaboración propia.*
 
-La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la [Figura 72](#figura-72).
+La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la [Figura 75](#figura-75).
 
-<a id="figura-72"></a>
+<a id="figura-75"></a>
 
-**Figura 72**
+**Figura 75**
 
 *Citas pendientes*
 
@@ -6306,11 +6305,11 @@ La vista de citas pendientes lista las reservas activas del paciente en tarjetas
 
 *Nota. Elaboración propia.*
 
-El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la [Figura 73](#figura-73).
+El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la [Figura 76](#figura-76).
 
-<a id="figura-73"></a>
+<a id="figura-76"></a>
 
-**Figura 73**
+**Figura 76**
 
 *Historial y filtro por fecha*
 
@@ -6318,11 +6317,11 @@ El historial presenta las atenciones pasadas y permite filtrarlas por fecha medi
 
 *Nota. Elaboración propia.*
 
-La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la [Figura 74](#figura-74).
+La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la [Figura 77](#figura-77).
 
-<a id="figura-74"></a>
+<a id="figura-77"></a>
 
-**Figura 74**
+**Figura 77**
 
 *Reserva de cita*
 
@@ -6330,11 +6329,11 @@ La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha
 
 *Nota. Elaboración propia.*
 
-Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la [Figura 75](#figura-75).
+Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la [Figura 78](#figura-78).
 
-<a id="figura-75"></a>
+<a id="figura-78"></a>
 
-**Figura 75**
+**Figura 78**
 
 *Reserva por doctor*
 
@@ -6342,11 +6341,11 @@ Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir 
 
 *Nota. Elaboración propia.*
 
-La asistencia reúne el registro de llegada mediante **código QR** y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la [Figura 76](#figura-76).
+La asistencia reúne el registro de llegada mediante **código QR** y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la [Figura 79](#figura-79).
 
-<a id="figura-76"></a>
+<a id="figura-79"></a>
 
-**Figura 76**
+**Figura 79**
 
 *Asistencia: check-in y cola*
 
@@ -6354,11 +6353,11 @@ La asistencia reúne el registro de llegada mediante **código QR** y la consult
 
 *Nota. Elaboración propia.*
 
-Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones **Rechazar** y **Aceptar**, como se observa en la [Figura 77](#figura-77).
+Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones **Rechazar** y **Aceptar**, como se observa en la [Figura 80](#figura-80).
 
-<a id="figura-77"></a>
+<a id="figura-80"></a>
 
-**Figura 77**
+**Figura 80**
 
 *Notificaciones y reasignación*
 
@@ -6366,11 +6365,11 @@ Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad
 
 *Nota. Elaboración propia.*
 
-La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la [Figura 78](#figura-78).
+La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la [Figura 81](#figura-81).
 
-<a id="figura-78"></a>
+<a id="figura-81"></a>
 
-**Figura 78**
+**Figura 81**
 
 *Configuración y cambio de correo*
 
@@ -6378,11 +6377,11 @@ La configuración permite acceder a los datos personales y a los pacientes vincu
 
 *Nota. Elaboración propia.*
 
-La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la [Figura 79](#figura-79).
+La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la [Figura 82](#figura-82).
 
-<a id="figura-79"></a>
+<a id="figura-82"></a>
 
-**Figura 79**
+**Figura 82**
 
 *Pacientes vinculados y registro de menor*
 
@@ -6390,11 +6389,11 @@ La gestión de pacientes vinculados permite agregar y sincronizar menores, regis
 
 *Nota. Elaboración propia.*
 
-El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la [Figura 80](#figura-80).
+El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la [Figura 83](#figura-83).
 
-<a id="figura-80"></a>
+<a id="figura-83"></a>
 
-**Figura 80**
+**Figura 83**
 
 *Perfil del menor vinculado*
 
@@ -6406,11 +6405,11 @@ El acceso al perfil de un menor incluye la verificación del vínculo, su propia
 
 La aplicación para el personal de salud se organiza en la barra inferior **Inicio, Calendario, Cita y Configuración**, y prioriza la gestión operativa del establecimiento.
 
-El inicio del personal presenta el resumen del día con las citas canceladas y pendientes, junto con el acceso a la edición del perfil, como se observa en la [Figura 81](#figura-81).
+El inicio del personal presenta el resumen del día con las citas canceladas y pendientes, junto con el acceso a la edición del perfil, como se observa en la [Figura 84](#figura-84).
 
-<a id="figura-81"></a>
+<a id="figura-84"></a>
 
-**Figura 81**
+**Figura 84**
 
 *Inicio del personal de salud*
 
@@ -6418,11 +6417,11 @@ El inicio del personal presenta el resumen del día con las citas canceladas y p
 
 *Nota. Elaboración propia.*
 
-El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la [Figura 82](#figura-82).
+El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la [Figura 85](#figura-85).
 
-<a id="figura-82"></a>
+<a id="figura-85"></a>
 
-**Figura 82**
+**Figura 85**
 
 *Calendario: especialidad, fecha y hora*
 
@@ -6430,11 +6429,11 @@ El calendario permite elegir la especialidad, la fecha y la hora para gestionar 
 
 *Nota. Elaboración propia.*
 
-La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la [Figura 83](#figura-83).
+La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la [Figura 86](#figura-86).
 
-<a id="figura-83"></a>
+<a id="figura-86"></a>
 
-**Figura 83**
+**Figura 86**
 
 *Calendario por doctor*
 
@@ -6442,11 +6441,11 @@ La vista por profesional permite buscar y seleccionar al doctor y luego elegir l
 
 *Nota. Elaboración propia.*
 
-La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la [Figura 84](#figura-84).
+La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la [Figura 87](#figura-87).
 
-<a id="figura-84"></a>
+<a id="figura-87"></a>
 
-**Figura 84**
+**Figura 87**
 
 *Edición de bloque horario*
 
@@ -6454,11 +6453,11 @@ La edición de un bloque horario reúne el estado, la hora de inicio, la especia
 
 *Nota. Elaboración propia.*
 
-La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la [Figura 85](#figura-85).
+La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la [Figura 88](#figura-88).
 
-<a id="figura-85"></a>
+<a id="figura-88"></a>
 
-**Figura 85**
+**Figura 88**
 
 *Configuración general*
 
@@ -6470,11 +6469,11 @@ La configuración general permite revisar y actualizar los parámetros operativo
 
 Los componentes transversales normalizan la confirmación de acciones y la comunicación de estados del sistema en ambas aplicaciones.
 
-El diálogo de confirmación de cita solicita validar la reserva antes de registrarla y comunica el resultado exitoso, como se observa en la [Figura 86](#figura-86).
+El diálogo de confirmación de cita solicita validar la reserva antes de registrarla y comunica el resultado exitoso, como se observa en la [Figura 89](#figura-89).
 
-<a id="figura-86"></a>
+<a id="figura-89"></a>
 
-**Figura 86**
+**Figura 89**
 
 *Diálogos de confirmación de cita*
 
@@ -6482,11 +6481,11 @@ El diálogo de confirmación de cita solicita validar la reserva antes de regist
 
 *Nota. Elaboración propia.*
 
-Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la [Figura 87](#figura-87).
+Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la [Figura 90](#figura-90).
 
-<a id="figura-87"></a>
+<a id="figura-90"></a>
 
-**Figura 87**
+**Figura 90**
 
 *Diálogos de estado y validación*
 
@@ -6504,217 +6503,217 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 **User Goal:** Como paciente, quiero crear mi cuenta para reservar y gestionar mis citas desde el celular.
 
-<a id="figura-88"></a>
+<a id="figura-91"></a>
 
-**Figura 88**
+**Figura 91**
 
 *Wireflow de registro en la aplicación (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png?raw=true" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 88](#figura-88) se observa que el recorrido va de Bienvenida a Registro (tipo y número de documento) y luego a Verificar DNI, con diálogos de datos incorrectos o validación exitosa. Después sigue Registro de credenciales, Verificación de celular con código (incorrecto o exitoso) y, al final, Inicio de sesión.
+**Explicación del flujo:** En la [Figura 91](#figura-91) se observa que el recorrido va de Bienvenida a Registro (tipo y número de documento) y luego a Verificar DNI, con diálogos de datos incorrectos o validación exitosa. Después sigue Registro de credenciales, Verificación de celular con código (incorrecto o exitoso) y, al final, Inicio de sesión.
 
 ###### WF-02 · Iniciar sesión
 
 **User Goal:** Como paciente, quiero iniciar sesión para acceder a mi información y a mis citas.
 
-<a id="figura-89"></a>
+<a id="figura-92"></a>
 
-**Figura 89**
+**Figura 92**
 
 *Wireflow de inicio de sesión (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-02-iniciar-sesion.png?raw=true" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 89](#figura-89) se aprecia que, desde Inicio de sesión, si las credenciales son inválidas aparece un diálogo de error. Si son correctas, pasa a la verificación con código (segundo factor), con diálogo de código incorrecto o exitoso, y entra al Home.
+**Explicación del flujo:** En la [Figura 92](#figura-92) se aprecia que, desde Inicio de sesión, si las credenciales son inválidas aparece un diálogo de error. Si son correctas, pasa a la verificación con código (segundo factor), con diálogo de código incorrecto o exitoso, y entra al Home.
 
 ###### WF-03 · Recuperar mi contraseña
 
 **User Goal:** Como paciente, quiero recuperar el acceso cuando olvido mi contraseña.
 
-<a id="figura-90"></a>
+<a id="figura-93"></a>
 
-**Figura 90**
+**Figura 93**
 
 *Wireflow de recuperación de contraseña (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png?raw=true" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 90](#figura-90) se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
+**Explicación del flujo:** En la [Figura 93](#figura-93) se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
 
 ###### WF-05 · Cerrar sesión
 
 **User Goal:** Como paciente, quiero cerrar sesión de forma segura.
 
-<a id="figura-91"></a>
+<a id="figura-94"></a>
 
-**Figura 91**
+**Figura 94**
 
 *Wireflow de cierre de sesión (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-05-cerrar-sesion.png?raw=true" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 91](#figura-91) se aprecia que, desde Configuración, se confirma el cierre y se vuelve al Inicio de sesión. El diálogo de confirmación aún no tiene wireframe, por eso aparece como recuadro pendiente.
+**Explicación del flujo:** En la [Figura 94](#figura-94) se aprecia que, desde Configuración, se confirma el cierre y se vuelve al Inicio de sesión. El diálogo de confirmación aún no tiene wireframe, por eso aparece como recuadro pendiente.
 
 ###### WF-07 · Reservar una cita médica
 
 **User Goal:** Como paciente, quiero reservar una cita eligiendo especialidad, fecha y horario.
 
-<a id="figura-92"></a>
+<a id="figura-95"></a>
 
-**Figura 92**
+**Figura 95**
 
 *Wireflow de reserva de una cita médica (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png?raw=true" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 92](#figura-92) se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
+**Explicación del flujo:** En la [Figura 95](#figura-95) se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
 
 ###### WF-08 · Consultar mis citas y su detalle
 
 **User Goal:** Como paciente, quiero ver mis próximas citas y su detalle.
 
-<a id="figura-93"></a>
+<a id="figura-96"></a>
 
-**Figura 93**
+**Figura 96**
 
 *Wireflow de consulta de citas y detalle (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png?raw=true" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 93](#figura-93) se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
+**Explicación del flujo:** En la [Figura 96](#figura-96) se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
 
 ###### WF-09 · Revisar el historial de citas
 
 **User Goal:** Como paciente, quiero revisar mis atenciones anteriores.
 
-<a id="figura-94"></a>
+<a id="figura-97"></a>
 
-**Figura 94**
+**Figura 97**
 
 *Wireflow del historial de citas (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png?raw=true" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 94](#figura-94) se observa que, desde Home, se abre Historial, se despliega el calendario de filtro por fecha y se muestra el historial acotado a la fecha elegida.
+**Explicación del flujo:** En la [Figura 97](#figura-97) se observa que, desde Home, se abre Historial, se despliega el calendario de filtro por fecha y se muestra el historial acotado a la fecha elegida.
 
 ###### WF-10 · Gestionar las citas de un familiar a mi cargo
 
 **User Goal:** Como paciente, quiero vincular a un familiar dependiente y gestionar sus citas desde mi cuenta.
 
-<a id="figura-95"></a>
+<a id="figura-98"></a>
 
-**Figura 95**
+**Figura 98**
 
 *Wireflow de gestión de citas de un familiar a cargo (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png?raw=true" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 95](#figura-95) se observa que, desde Configuración, se abre Parientes vinculados y se agrega un menor (Registro de menor). Luego viene Verificar DNI, con diálogos de «No eres pariente», datos incorrectos o validación exitosa, y se abre el Home del menor, desde donde se puede volver a la cuenta principal. Como camino alterno, se abre un pariente ya vinculado para desvincularlo.
+**Explicación del flujo:** En la [Figura 98](#figura-98) se observa que, desde Configuración, se abre Parientes vinculados y se agrega un menor (Registro de menor). Luego viene Verificar DNI, con diálogos de «No eres pariente», datos incorrectos o validación exitosa, y se abre el Home del menor, desde donde se puede volver a la cuenta principal. Como camino alterno, se abre un pariente ya vinculado para desvincularlo.
 
 ###### WF-11 · Revisar mis notificaciones
 
 **User Goal:** Como paciente, quiero revisar mis avisos para no perder citas ni cupos liberados.
 
-<a id="figura-96"></a>
+<a id="figura-99"></a>
 
-**Figura 96**
+**Figura 99**
 
 *Wireflow de revisión de notificaciones (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png?raw=true" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 96](#figura-96) se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
+**Explicación del flujo:** En la [Figura 99](#figura-99) se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
 
 ###### WF-12 · Registrar mi llegada y seguir mi turno
 
 **User Goal:** Como paciente, quiero registrar mi llegada y saber cuándo me atenderán sin hacer cola.
 
-<a id="figura-97"></a>
+<a id="figura-100"></a>
 
-**Figura 97**
+**Figura 100**
 
 *Wireflow de registro de llegada y seguimiento del turno (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png?raw=true" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 97](#figura-97) se observa que, desde Asistencia, se elige la reserva y se registra con el código QR. Luego se muestra la Posición en la cola y se llega al aviso «Has sido atendido». Como camino alterno, se puede dejar la cola con un diálogo de confirmación.
+**Explicación del flujo:** En la [Figura 100](#figura-100) se observa que, desde Asistencia, se elige la reserva y se registra con el código QR. Luego se muestra la Posición en la cola y se llega al aviso «Has sido atendido». Como camino alterno, se puede dejar la cola con un diálogo de confirmación.
 
 ###### WF-13 · Aceptar o rechazar un cupo liberado
 
 **User Goal:** Como paciente, quiero aprovechar un cupo liberado por una cancelación.
 
-<a id="figura-98"></a>
+<a id="figura-101"></a>
 
-**Figura 98**
+**Figura 101**
 
 *Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png?raw=true" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 98](#figura-98) se observa que, desde la notificación, se abre el detalle de la oferta. Si acepta, aparece «Reasignación exitosa». Si rechaza, aparece un diálogo de confirmación del rechazo.
+**Explicación del flujo:** En la [Figura 101](#figura-101) se observa que, desde la notificación, se abre el detalle de la oferta. Si acepta, aparece «Reasignación exitosa». Si rechaza, aparece un diálogo de confirmación del rechazo.
 
 ###### WF-14 · Actualizar mis datos de contacto
 
 **User Goal:** Como paciente, quiero mantener actualizados mi celular y mi correo.
 
-<a id="figura-99"></a>
+<a id="figura-102"></a>
 
-**Figura 99**
+**Figura 102**
 
 *Wireflow de actualización de datos de contacto (paciente)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png?raw=true" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 99](#figura-99) se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
+**Explicación del flujo:** En la [Figura 102](#figura-102) se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
 
 ##### Wireflows de Healthcare Administrators
 
@@ -6722,181 +6721,181 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 **User Goal:** Como personal de admisión, quiero que se habilite mi cuenta con el correo corporativo y definir mi contraseña.
 
-<a id="figura-100"></a>
+<a id="figura-103"></a>
 
-**Figura 100**
+**Figura 103**
 
 *Wireflow de registro del personal de admisión*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png?raw=true" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 100](#figura-100) se observa que el administrador crea la cuenta y envía una invitación (paso pendiente de wireframe). El personal abre el enlace, define su contraseña (diálogo si no coincide o si fue exitoso) y pasa al Inicio de sesión.
+**Explicación del flujo:** En la [Figura 103](#figura-103) se observa que el administrador crea la cuenta y envía una invitación (paso pendiente de wireframe). El personal abre el enlace, define su contraseña (diálogo si no coincide o si fue exitoso) y pasa al Inicio de sesión.
 
 ###### S02 · Iniciar sesión como personal
 
 **User Goal:** Como personal de admisión, quiero iniciar sesión para acceder a la gestión de citas y a la sala de espera.
 
-<a id="figura-101"></a>
+<a id="figura-104"></a>
 
-**Figura 101**
+**Figura 104**
 
 *Wireflow de inicio de sesión del personal de admisión*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png?raw=true" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 101](#figura-101) se observa que va de Inicio de sesión (diálogo único si las credenciales son inválidas) a la verificación con código (diálogo de código incorrecto o exitoso) y entra al Home del administrador.
+**Explicación del flujo:** En la [Figura 104](#figura-104) se observa que va de Inicio de sesión (diálogo único si las credenciales son inválidas) a la verificación con código (diálogo de código incorrecto o exitoso) y entra al Home del administrador.
 
 ###### S03 · Registrar un bloque de cita
 
 **User Goal:** Como personal de admisión, quiero registrar bloques de cita con doctor, fecha, horario y capacidad.
 
-<a id="figura-102"></a>
+<a id="figura-105"></a>
 
-**Figura 102**
+**Figura 105**
 
 *Wireflow de registro de un bloque de cita*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png?raw=true" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 102](#figura-102) se observa que, desde el Home, se elige la especialidad, la fecha, la hora y el doctor, y se termina en el diálogo «Confirmar bloque de cita».
+**Explicación del flujo:** En la [Figura 105](#figura-105) se observa que, desde el Home, se elige la especialidad, la fecha, la hora y el doctor, y se termina en el diálogo «Confirmar bloque de cita».
 
 ###### S04 · Editar un bloque de cita
 
 **User Goal:** Como personal de admisión, quiero ajustar bloques existentes para corregir la programación.
 
-<a id="figura-103"></a>
+<a id="figura-106"></a>
 
-**Figura 103**
+**Figura 106**
 
 *Wireflow de edición de un bloque de cita*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png?raw=true" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 103](#figura-103) se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
+**Explicación del flujo:** En la [Figura 106](#figura-106) se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
 
 ###### S05 · Consultar la disponibilidad de cupos
 
 **User Goal:** Como personal de admisión, quiero consultar los cupos por especialidad, doctor y fecha.
 
-<a id="figura-104"></a>
+<a id="figura-107"></a>
 
-**Figura 104**
+**Figura 107**
 
 *Wireflow de consulta de disponibilidad de cupos*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png?raw=true" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 104](#figura-104) se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
+**Explicación del flujo:** En la [Figura 107](#figura-107) se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
 
 ###### S06 · Consultar las citas pendientes
 
 **User Goal:** Como personal de admisión, quiero ver las citas pendientes para organizar la agenda del día.
 
-<a id="figura-105"></a>
+<a id="figura-108"></a>
 
-**Figura 105**
+**Figura 108**
 
 *Wireflow de consulta de citas pendientes*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png?raw=true" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 105](#figura-105) se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
+**Explicación del flujo:** En la [Figura 108](#figura-108) se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
 
 ###### S07 · Consultar las citas atendidas
 
 **User Goal:** Como personal de admisión, quiero consultar las citas ya atendidas y generar reportes por rango de fechas.
 
-<a id="figura-106"></a>
+<a id="figura-109"></a>
 
-**Figura 106**
+**Figura 109**
 
 *Wireflow de consulta de citas atendidas*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png?raw=true" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 106](#figura-106) se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
+**Explicación del flujo:** En la [Figura 109](#figura-109) se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
 
 ###### S08 · Registrar la llegada del paciente (check-in)
 
 **User Goal:** Como personal de admisión, quiero registrar la llegada escaneando el QR o ingresando el código de reserva.
 
-<a id="figura-107"></a>
+<a id="figura-110"></a>
 
-**Figura 107**
+**Figura 110**
 
 *Wireflow de registro de llegada del paciente (check-in)*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png?raw=true" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 107](#figura-107) se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
+**Explicación del flujo:** En la [Figura 110](#figura-110) se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
 
 ###### S09 · Gestionar la cola de asistencia
 
 **User Goal:** Como personal de admisión, quiero manejar la cola de la sala de espera.
 
-<a id="figura-108"></a>
+<a id="figura-111"></a>
 
-**Figura 108**
+**Figura 111**
 
 *Wireflow de gestión de la cola de asistencia*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png?raw=true" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 108](#figura-108) se observa que, desde el Home, se elige la especialidad y se abre la lista «Hoy», donde se atiende y se finaliza cada cita en orden.
+**Explicación del flujo:** En la [Figura 111](#figura-111) se observa que, desde el Home, se elige la especialidad y se abre la lista «Hoy», donde se atiende y se finaliza cada cita en orden.
 
 ###### S10 · Configurar los parámetros del establecimiento
 
 **User Goal:** Como personal de admisión, quiero configurar los parámetros operativos del centro.
 
-<a id="figura-109"></a>
+<a id="figura-112"></a>
 
-**Figura 109**
+**Figura 112**
 
 *Wireflow de configuración de los parámetros del establecimiento*
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png?raw=true" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
+  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
 
-**Explicación del flujo:** En la [Figura 109](#figura-109) se observa que, desde Configuración general, se edita un parámetro, que se actualiza con el diálogo «Ingrese el nuevo valor».
+**Explicación del flujo:** En la [Figura 112](#figura-112) se observa que, desde Configuración general, se edita un parámetro, que se actualiza con el diálogo «Ingrese el nuevo valor».
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -6910,9 +6909,9 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-<a id="figura-110"></a>
+<a id="figura-113"></a>
 
-**Figura 110**
+**Figura 113**
 
 *Bienvenida y registro del paciente*
 
@@ -6924,15 +6923,15 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la [Figura 110](#figura-110).
+Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la [Figura 113](#figura-113).
 
 
 
 
 
-<a id="figura-111"></a>
+<a id="figura-114"></a>
 
-**Figura 111**
+**Figura 114**
 
 *Acceso y recuperación de la cuenta del paciente*
 
@@ -6944,7 +6943,7 @@ Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales
 
 
 
-El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la [Figura 111](#figura-111).
+El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la [Figura 114](#figura-114).
 
 **Sección Dashboard del Paciente**
 
@@ -6952,9 +6951,9 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 
 
-<a id="figura-112"></a>
+<a id="figura-115"></a>
 
-**Figura 112**
+**Figura 115**
 
 *Inicio, citas pendientes e historial del paciente*
 
@@ -6966,7 +6965,7 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 
 
-El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la [Figura 112](#figura-112).
+El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la [Figura 115](#figura-115).
 
 **Sección Reserva de Citas**
 
@@ -6974,9 +6973,9 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 
 
-<a id="figura-113"></a>
+<a id="figura-116"></a>
 
-**Figura 113**
+**Figura 116**
 
 *Selección de especialidad, beneficiario, fecha, profesional y horario*
 
@@ -6988,15 +6987,15 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 
 
-El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la [Figura 113](#figura-113).
+El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la [Figura 116](#figura-116).
 
 
 
 
 
-<a id="figura-114"></a>
+<a id="figura-117"></a>
 
-**Figura 114**
+**Figura 117**
 
 *Resumen, confirmación y estados de la reserva*
 
@@ -7008,7 +7007,7 @@ El paciente selecciona la especialidad, al titular o menor vinculado y una fecha
 
 
 
-El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la [Figura 114](#figura-114).
+El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la [Figura 117](#figura-117).
 
 **Sección Check-in y Atención del Paciente**
 
@@ -7016,9 +7015,9 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 
 
-<a id="figura-115"></a>
+<a id="figura-118"></a>
 
-**Figura 115**
+**Figura 118**
 
 *Registro de llegada, escaneo del QR del establecimiento, ticket y cola*
 
@@ -7030,7 +7029,7 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 
 
-Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la [Figura 115](#figura-115).
+Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la [Figura 118](#figura-118).
 
 Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
 
@@ -7040,9 +7039,9 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-<a id="figura-116"></a>
+<a id="figura-119"></a>
 
-**Figura 116**
+**Figura 119**
 
 *Configuración, datos personales y actualización del contacto*
 
@@ -7054,7 +7053,7 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la [Figura 116](#figura-116).
+El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la [Figura 119](#figura-119).
 
 **Sección Gestión de Menores Vinculados**
 
@@ -7062,9 +7061,9 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 
 
-<a id="figura-117"></a>
+<a id="figura-120"></a>
 
-**Figura 117**
+**Figura 120**
 
 *Vinculación, verificación y gestión de menores a cargo*
 
@@ -7076,7 +7075,7 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 
 
-El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la [Figura 117](#figura-117).
+El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la [Figura 120](#figura-120).
 
 **Sección Notificaciones y Reasignación de Citas**
 
@@ -7084,9 +7083,9 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 
 
-<a id="figura-118"></a>
+<a id="figura-121"></a>
 
-**Figura 118**
+**Figura 121**
 
 *Notificaciones y ofertas de reasignación de citas*
 
@@ -7098,7 +7097,7 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 
 
-Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la [Figura 118](#figura-118).
+Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la [Figura 121](#figura-121).
 
 **Archivo de diseño**
 
@@ -7116,15 +7115,15 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 
 **Happy Path**
 
-El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la [Figura 119](#figura-119).
+El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la [Figura 122](#figura-122).
 
 
 
 
 
-<a id="figura-119"></a>
+<a id="figura-122"></a>
 
-**Figura 119**
+**Figura 122**
 
 *Registrarse como paciente — recorrido esperado*
 
@@ -7138,15 +7137,15 @@ El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos
 
 **Unhappy Paths**
 
-Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la [Figura 120](#figura-120).
+Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la [Figura 123](#figura-123).
 
 
 
 
 
-<a id="figura-120"></a>
+<a id="figura-123"></a>
 
-**Figura 120**
+**Figura 123**
 
 *Registrarse como paciente — errores y alternativas*
 
@@ -7162,15 +7161,15 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 
 **Happy Path**
 
-El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la [Figura 121](#figura-121).
+El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la [Figura 124](#figura-124).
 
 
 
 
 
-<a id="figura-121"></a>
+<a id="figura-124"></a>
 
-**Figura 121**
+**Figura 124**
 
 *Iniciar sesión como paciente — recorrido esperado*
 
@@ -7184,15 +7183,15 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 
 **Unhappy Paths**
 
-Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la [Figura 122](#figura-122).
+Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la [Figura 125](#figura-125).
 
 
 
 
 
-<a id="figura-122"></a>
+<a id="figura-125"></a>
 
-**Figura 122**
+**Figura 125**
 
 *Iniciar sesión como paciente — errores y alternativas*
 
@@ -7208,15 +7207,15 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 
 **Happy Path**
 
-El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la [Figura 123](#figura-123).
+El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la [Figura 126](#figura-126).
 
 
 
 
 
-<a id="figura-123"></a>
+<a id="figura-126"></a>
 
-**Figura 123**
+**Figura 126**
 
 *Recuperar la contraseña — recorrido esperado*
 
@@ -7230,15 +7229,15 @@ El paciente solicita la recuperación con su correo registrado. La aplicación m
 
 **Unhappy Paths**
 
-Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la [Figura 124](#figura-124).
+Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la [Figura 127](#figura-127).
 
 
 
 
 
-<a id="figura-124"></a>
+<a id="figura-127"></a>
 
-**Figura 124**
+**Figura 127**
 
 *Recuperar la contraseña — errores y alternativas*
 
@@ -7254,15 +7253,15 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 **Happy Path**
 
-El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la [Figura 125](#figura-125).
+El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la [Figura 128](#figura-128).
 
 
 
 
 
-<a id="figura-125"></a>
+<a id="figura-128"></a>
 
-**Figura 125**
+**Figura 128**
 
 *Vincular o desvincular a un menor — recorrido esperado*
 
@@ -7276,15 +7275,15 @@ El titular ingresa los datos del menor y confirma su vinculación después de ve
 
 **Unhappy Paths**
 
-Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la [Figura 126](#figura-126).
+Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la [Figura 129](#figura-129).
 
 
 
 
 
-<a id="figura-126"></a>
+<a id="figura-129"></a>
 
-**Figura 126**
+**Figura 129**
 
 *Vincular o desvincular a un menor — errores y alternativas*
 
@@ -7300,15 +7299,15 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 **Happy Path**
 
-El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la [Figura 127](#figura-127).
+El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la [Figura 130](#figura-130).
 
 
 
 
 
-<a id="figura-127"></a>
+<a id="figura-130"></a>
 
-**Figura 127**
+**Figura 130**
 
 *Actualizar el correo o celular del perfil — recorrido esperado*
 
@@ -7322,15 +7321,15 @@ El paciente consulta sus datos y modifica su correo o celular. Si cambia el corr
 
 **Unhappy Paths**
 
-Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la [Figura 128](#figura-128).
+Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la [Figura 131](#figura-131).
 
 
 
 
 
-<a id="figura-128"></a>
+<a id="figura-131"></a>
 
-**Figura 128**
+**Figura 131**
 
 *Actualizar el correo o celular del perfil — errores y alternativas*
 
@@ -7346,15 +7345,15 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 
 **Happy Path**
 
-El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la [Figura 129](#figura-129).
+El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la [Figura 132](#figura-132).
 
 
 
 
 
-<a id="figura-129"></a>
+<a id="figura-132"></a>
 
-**Figura 129**
+**Figura 132**
 
 *Consultar disponibilidad de citas — recorrido esperado*
 
@@ -7368,15 +7367,15 @@ El paciente selecciona una especialidad y una fecha. Consulta profesionales y ho
 
 **Unhappy Paths**
 
-Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la [Figura 130](#figura-130).
+Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la [Figura 133](#figura-133).
 
 
 
 
 
-<a id="figura-130"></a>
+<a id="figura-133"></a>
 
-**Figura 130**
+**Figura 133**
 
 *Consultar disponibilidad de citas — errores y alternativas*
 
@@ -7392,15 +7391,15 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 
 **Happy Path**
 
-El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la [Figura 131](#figura-131).
+El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la [Figura 134](#figura-134).
 
 
 
 
 
-<a id="figura-131"></a>
+<a id="figura-134"></a>
 
-**Figura 131**
+**Figura 134**
 
 *Reservar una cita y recibir confirmación — recorrido esperado*
 
@@ -7414,15 +7413,15 @@ El titular indica el beneficiario, elige fecha, profesional y horario y revisa e
 
 **Unhappy Paths**
 
-Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la [Figura 132](#figura-132).
+Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la [Figura 135](#figura-135).
 
 
 
 
 
-<a id="figura-132"></a>
+<a id="figura-135"></a>
 
-**Figura 132**
+**Figura 135**
 
 *Reservar una cita y recibir confirmación — errores y alternativas*
 
@@ -7438,15 +7437,15 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 
 **Happy Path**
 
-Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la [Figura 133](#figura-133).
+Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la [Figura 136](#figura-136).
 
 
 
 
 
-<a id="figura-133"></a>
+<a id="figura-136"></a>
 
-**Figura 133**
+**Figura 136**
 
 *Consultar citas, detalles e historial — recorrido esperado*
 
@@ -7460,15 +7459,15 @@ Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtr
 
 **Unhappy Paths**
 
-Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la [Figura 134](#figura-134).
+Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la [Figura 137](#figura-137).
 
 
 
 
 
-<a id="figura-134"></a>
+<a id="figura-137"></a>
 
-**Figura 134**
+**Figura 137**
 
 *Consultar citas, detalles e historial — errores y alternativas*
 
@@ -7484,15 +7483,15 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 
 **Happy Path**
 
-El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la [Figura 135](#figura-135).
+El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la [Figura 138](#figura-138).
 
 
 
 
 
-<a id="figura-135"></a>
+<a id="figura-138"></a>
 
-**Figura 135**
+**Figura 138**
 
 *Cancelar una reserva dentro del plazo — recorrido esperado*
 
@@ -7506,15 +7505,15 @@ El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del pla
 
 **Unhappy Paths**
 
-Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la [Figura 136](#figura-136).
+Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la [Figura 139](#figura-139).
 
 
 
 
 
-<a id="figura-136"></a>
+<a id="figura-139"></a>
 
-**Figura 136**
+**Figura 139**
 
 *Cancelar una reserva dentro del plazo — errores y alternativas*
 
@@ -7530,15 +7529,15 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 
 **Happy Path**
 
-El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la [Figura 137](#figura-137).
+El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la [Figura 140](#figura-140).
 
 
 
 
 
-<a id="figura-137"></a>
+<a id="figura-140"></a>
 
-**Figura 137**
+**Figura 140**
 
 *Responder a una oferta de adelanto — recorrido esperado*
 
@@ -7552,15 +7551,15 @@ El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mient
 
 **Unhappy Paths**
 
-El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la [Figura 138](#figura-138).
+El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la [Figura 141](#figura-141).
 
 
 
 
 
-<a id="figura-138"></a>
+<a id="figura-141"></a>
 
-**Figura 138**
+**Figura 141**
 
 *Responder a una oferta de adelanto — errores y alternativas*
 
@@ -7576,15 +7575,15 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 
 **Happy Path**
 
-Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la [Figura 139](#figura-139).
+Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la [Figura 142](#figura-142).
 
 
 
 
 
-<a id="figura-139"></a>
+<a id="figura-142"></a>
 
-**Figura 139**
+**Figura 142**
 
 *Registrar llegada presencial mediante QR — recorrido esperado*
 
@@ -7598,15 +7597,15 @@ Al llegar al establecimiento, el titular selecciona su reserva o la del menor y 
 
 **Unhappy Paths**
 
-Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la [Figura 140](#figura-140).
+Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la [Figura 143](#figura-143).
 
 
 
 
 
-<a id="figura-140"></a>
+<a id="figura-143"></a>
 
-**Figura 140**
+**Figura 143**
 
 *Registrar llegada presencial mediante QR — errores y alternativas*
 
@@ -7622,15 +7621,15 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 
 **Happy Path**
 
-Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la [Figura 141](#figura-141).
+Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la [Figura 144](#figura-144).
 
 
 
 
 
-<a id="figura-141"></a>
+<a id="figura-144"></a>
 
-**Figura 141**
+**Figura 144**
 
 *Obtener el ticket digital de atención — recorrido esperado*
 
@@ -7644,15 +7643,15 @@ Después del check-in, el paciente obtiene su código de turno y consulta el tic
 
 **Unhappy Paths**
 
-Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la [Figura 142](#figura-142).
+Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la [Figura 145](#figura-145).
 
 
 
 
 
-<a id="figura-142"></a>
+<a id="figura-145"></a>
 
-**Figura 142**
+**Figura 145**
 
 *Obtener el ticket digital de atención — errores y alternativas*
 
@@ -7668,15 +7667,15 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 
 **Happy Path**
 
-El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la [Figura 143](#figura-143).
+El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la [Figura 146](#figura-146).
 
 
 
 
 
-<a id="figura-143"></a>
+<a id="figura-146"></a>
 
-**Figura 143**
+**Figura 146**
 
 *Consultar posición o dejar la cola — recorrido esperado*
 
@@ -7690,15 +7689,15 @@ El paciente con check-in confirmado y turno activo consulta su posición y el to
 
 **Unhappy Paths**
 
-Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la [Figura 144](#figura-144).
+Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la [Figura 147](#figura-147).
 
 
 
 
 
-<a id="figura-144"></a>
+<a id="figura-147"></a>
 
-**Figura 144**
+**Figura 147**
 
 *Consultar posición o dejar la cola — errores y alternativas*
 
@@ -7714,15 +7713,15 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 
 **Happy Path**
 
-El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la [Figura 145](#figura-145).
+El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la [Figura 148](#figura-148).
 
 
 
 
 
-<a id="figura-145"></a>
+<a id="figura-148"></a>
 
-**Figura 145**
+**Figura 148**
 
 *Recibir el llamado y acudir al consultorio — recorrido esperado*
 
@@ -7736,15 +7735,15 @@ El paciente recibe el llamado, consulta el ticket y se dirige al consultorio den
 
 **Unhappy Paths**
 
-Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la [Figura 146](#figura-146).
+Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la [Figura 149](#figura-149).
 
 
 
 
 
-<a id="figura-146"></a>
+<a id="figura-149"></a>
 
-**Figura 146**
+**Figura 149**
 
 *Recibir el llamado y acudir al consultorio — errores y alternativas*
 
@@ -7760,15 +7759,15 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 
 **Happy Path**
 
-El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la [Figura 147](#figura-147).
+El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la [Figura 150](#figura-150).
 
 
 
 
 
-<a id="figura-147"></a>
+<a id="figura-150"></a>
 
-**Figura 147**
+**Figura 150**
 
 *Cerrar sesión o recuperar acceso a una sesión — recorrido esperado*
 
@@ -7782,15 +7781,15 @@ El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación f
 
 **Unhappy Paths**
 
-Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la [Figura 148](#figura-148).
+Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la [Figura 151](#figura-151).
 
 
 
 
 
-<a id="figura-148"></a>
+<a id="figura-151"></a>
 
-**Figura 148**
+**Figura 151**
 
 *Cerrar sesión o recuperar acceso a una sesión — errores y alternativas*
 
@@ -7811,15 +7810,15 @@ Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere vol
 En esta sección se presenta el prótotipo interactivo desarrollado en Figma para la aplicación móvil. El diseño y los flujos de navegación están alineados con la arquitectura de información y los user flow diagrams definidos.
 
 
-A continuación, se adjunta el enlace al video de demostración, como se observa en la [Figura 149](#figura-149).
+A continuación, se adjunta el enlace al video de demostración, como se observa en la [Figura 152](#figura-152).
 
 
 
 
 
-<a id="figura-149"></a>
+<a id="figura-152"></a>
 
-**Figura 149**
+**Figura 152**
 
 *Mobile applications prototyping*
 
@@ -7841,11 +7840,11 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 ### 4.1.1. Software Development Environment Configuration
 
-En esta sección se especifican los productos de software que el equipo **RuwaLabs** utilizó para colaborar en el ciclo de vida de **SaludYa**, abarcando las actividades de **gestión del proyecto**, **gestión de requisitos**, **diseño UX/UI**, **desarrollo**, **despliegue** y **documentación**. Para cada producto se indica su **propósito de uso en el proyecto** y su **ruta de referencia** (cuando es software basado en modelos SaaS) o **ruta de descarga** (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la [Tabla 100](#tabla-100).
+En esta sección se especifican los productos de software que el equipo **RuwaLabs** utilizó para colaborar en el ciclo de vida de **SaludYa**, abarcando las actividades de **gestión del proyecto**, **gestión de requisitos**, **diseño UX/UI**, **desarrollo**, **despliegue** y **documentación**. Para cada producto se indica su **propósito de uso en el proyecto** y su **ruta de referencia** (cuando es software basado en modelos SaaS) o **ruta de descarga** (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la [Tabla 59](#tabla-59).
 
-<a id="tabla-100"></a>
+<a id="tabla-59"></a>
 
-**Tabla 100**
+**Tabla 59**
 
 *Software Development Environment Configuration*
 
@@ -7880,11 +7879,11 @@ En esta sección se especifican los productos de software que el equipo **RuwaLa
 
 En esta sección se establecen los medios y el esquema de organización que el equipo **RuwaLabs** aplica para el seguimiento de modificaciones a lo largo del ciclo de vida de **SaludYa**. Como plataforma y sistema de control de versiones se utiliza **GitHub**, sobre el cual se aplica **GitFlow** como modelo de ramificación, **Conventional Commits** para los mensajes de commit y **Semantic Versioning** para nombrar las releases.
 
-Cada producto de la solución cuenta con su propio repositorio, como se detalla en la [Tabla 101](#tabla-101).
+Cada producto de la solución cuenta con su propio repositorio, como se detalla en la [Tabla 60](#tabla-60).
 
-<a id="tabla-101"></a>
+<a id="tabla-60"></a>
 
-**Tabla 101**
+**Tabla 60**
 
 *Repositorios de GitHub por producto*
 
@@ -7897,11 +7896,11 @@ Cada producto de la solución cuenta con su propio repositorio, como se detalla 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `main` se crea la rama de integración `develop`; cada funcionalidad o bounded context se desarrolla en su propia rama (*feature branch*), que se integra a `develop` mediante *pull requests*. Al cierre de un sprint, `develop` se integra a `main` mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la [Tabla 102](#tabla-102).
+Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `main` se crea la rama de integración `develop`; cada funcionalidad o bounded context se desarrolla en su propia rama (*feature branch*), que se integra a `develop` mediante *pull requests*. Al cierre de un sprint, `develop` se integra a `main` mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la [Tabla 61](#tabla-61).
 
-<a id="tabla-102"></a>
+<a id="tabla-61"></a>
 
-**Tabla 102**
+**Tabla 61**
 
 *Convenciones de ramas (GitFlow)*
 
@@ -7917,11 +7916,11 @@ Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `mai
 
 Las releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`), por ejemplo `v1.0.0`.
 
-Finalmente, los mensajes de commit siguen **Conventional Commits**, como se detalla en la [Tabla 103](#tabla-103).
+Finalmente, los mensajes de commit siguen **Conventional Commits**, como se detalla en la [Tabla 62](#tabla-62).
 
-<a id="tabla-103"></a>
+<a id="tabla-62"></a>
 
-**Tabla 103**
+**Tabla 62**
 
 *Convenciones de commits (Conventional Commits)*
 
@@ -7951,9 +7950,9 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 
 
 
-<a id="tabla-84"></a>
+<a id="tabla-63"></a>
 
-**Tabla 84**
+**Tabla 63**
 
 *Source Code Style Guide & Conventions — Landing Page*
 
@@ -7975,7 +7974,7 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales, como se detalla en la [Tabla 84](#tabla-84):
+Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales, como se detalla en la [Tabla 63](#tabla-63):
 
 - Indentación de 2 espacios.
 - Uso de comillas dobles en HTML y comillas simples en JavaScript.
@@ -7994,9 +7993,9 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 
 
 
-<a id="tabla-85"></a>
+<a id="tabla-64"></a>
 
-**Tabla 85**
+**Tabla 64**
 
 *Source Code Style Guide & Conventions — Aplicaciones móviles*
 
@@ -8016,7 +8015,7 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales, como se detalla en la [Tabla 85](#tabla-85):
+Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales, como se detalla en la [Tabla 64](#tabla-64):
 
 - Indentación de 4 espacios.
 - Longitud máxima de línea: 100 caracteres.
@@ -8035,9 +8034,9 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 
 
 
-<a id="tabla-86"></a>
+<a id="tabla-65"></a>
 
-**Tabla 86**
+**Tabla 65**
 
 *Source Code Style Guide & Conventions — Servicios web*
 
@@ -8057,7 +8056,7 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Google Java Style Guide**, **Spring Boot Features** y **Gherkin Conventions for Readable Specifications** (para los archivos `.feature`), con las siguientes reglas adicionales, como se detalla en la [Tabla 86](#tabla-86):
+Se adoptan las guías **Google Java Style Guide**, **Spring Boot Features** y **Gherkin Conventions for Readable Specifications** (para los archivos `.feature`), con las siguientes reglas adicionales, como se detalla en la [Tabla 65](#tabla-65):
 
 - Indentación de 4 espacios.
 - Uso de anotaciones de Spring (`@RestController`, `@Service`, `@Repository`).
@@ -8078,9 +8077,9 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 
 
 
-<a id="tabla-89"></a>
+<a id="tabla-66"></a>
 
-**Tabla 89**
+**Tabla 66**
 
 *Software Deployment Configuration — Landing Page*
 
@@ -8097,7 +8096,7 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2, como se detalla en la [Tabla 89](#tabla-89).
+**Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2, como se detalla en la [Tabla 66](#tabla-66).
 
 #### Aplicaciones móviles
 
@@ -8107,9 +8106,9 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 
 
-<a id="tabla-90"></a>
+<a id="tabla-67"></a>
 
-**Tabla 90**
+**Tabla 67**
 
 *Software Deployment Configuration — Aplicaciones móviles*
 
@@ -8126,7 +8125,7 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution, como se detalla en la [Tabla 90](#tabla-90).
+**Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution, como se detalla en la [Tabla 67](#tabla-67).
 
 #### Servicios web
 
@@ -8136,9 +8135,9 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 
 
 
-<a id="tabla-91"></a>
+<a id="tabla-68"></a>
 
-**Tabla 91**
+**Tabla 68**
 
 *Software Deployment Configuration — Servicios web*
 
@@ -8156,19 +8155,19 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, AWS EC2, como se detalla en la [Tabla 91](#tabla-91).
+**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, AWS EC2, como se detalla en la [Tabla 68](#tabla-68).
 
 #### Deployment Diagram (C4 Model)
 
-El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube, como se detalla en la [Tabla 92](#tabla-92):
+El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube, como se detalla en la [Tabla 69](#tabla-69):
 
 
 
 
 
-<a id="tabla-92"></a>
+<a id="tabla-69"></a>
 
-**Tabla 92**
+**Tabla 69**
 
 *Deployment Diagram (C4 Model)*
 
@@ -8204,11 +8203,11 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 #### 4.2.1.1. Sprint Planning 1
 
-A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de **SaludYa**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la [Tabla 96](#tabla-96).
+A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de **SaludYa**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la [Tabla 70](#tabla-70).
 
-<a id="tabla-96"></a>
+<a id="tabla-70"></a>
 
-**Tabla 96**
+**Tabla 70**
 
 *Sprint Planning 1 — resumen de la reunión*
 
@@ -8238,13 +8237,13 @@ El **Sprint Goal** se redactó siguiendo el enfoque propuesto por Scrum.org, pri
 >
 > *Esto se confirmará (**confirmed**) cuando un paciente pueda verificar su identidad, registrar su cuenta, iniciar sesión, reservar, consultar y cancelar una cita desde la aplicación, y cuando un visitante pueda comprender la propuesta de valor y acceder a la descarga desde el Landing Page publicado.*
 
-La **velocity** del Sprint 1 se estableció en **99 story points**, equivalente a la suma de la estimación de las 30 user stories comprometidas (US-00 a US-29) del Product Backlog ([Tabla 21](#tabla-21)). Al tratarse del primer sprint del proyecto, el equipo no cuenta con una velocity histórica, por lo que se toma como referencia el total comprometido; este valor se ajustará en los siguientes sprints en función de la velocidad real observada.
+La **velocity** del Sprint 1 se estableció en **99 story points**, equivalente a la suma de la estimación de las 30 user stories comprometidas (US-00 a US-29) del Product Backlog ([Tabla 22](#tabla-22)). Al tratarse del primer sprint del proyecto, el equipo no cuenta con una velocity histórica, por lo que se toma como referencia el total comprometido; este valor se ajustará en los siguientes sprints en función de la velocidad real observada.
 
-El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la [Tabla 97](#tabla-97).
+El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la [Tabla 71](#tabla-71).
 
-<a id="tabla-97"></a>
+<a id="tabla-71"></a>
 
-**Tabla 97**
+**Tabla 71**
 
 *Alcance del Sprint 1 por épica*
 
@@ -8261,11 +8260,11 @@ El alcance del Sprint 1 se compone de las user stories orientadas al paciente y 
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
-En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el **Landing Page** y la aplicación móvil del paciente, compuesta por **Identity & Access Management (IAM)**, **Appointments & Booking**, **Dynamic Waitlist & Reassignment**, **Arrival & QR Check-in** y **Hospital Operations & Configuration**, junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 98](#tabla-98). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
+En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el **Landing Page** y la aplicación móvil del paciente, compuesta por **Identity & Access Management (IAM)**, **Appointments & Booking**, **Dynamic Waitlist & Reassignment**, **Arrival & QR Check-in** y **Hospital Operations & Configuration**, junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 72](#tabla-72). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
 
-<a id="tabla-98"></a>
+<a id="tabla-72"></a>
 
-**Tabla 98**
+**Tabla 72**
 
 *Leadership-and-Collaboration Matrix (LACX) — Sprint 1*
 
@@ -8281,13 +8280,13 @@ En el Sprint 1 el equipo organizó el trabajo en función de los productos y bou
 
 #### 4.2.1.3. Sprint Backlog 1
 
-El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimiento de las citas del paciente en la aplicación móvil, así como publicar el Landing Page con la propuesta de valor de SaludYa. Para su gestión, el equipo utilizó **Jira** como herramienta de control; el tablero del backlog del proyecto se puede revisar en el siguiente enlace y en la [Figura 107](#figura-107).
+El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimiento de las citas del paciente en la aplicación móvil, así como publicar el Landing Page con la propuesta de valor de SaludYa. Para su gestión, el equipo utilizó **Jira** como herramienta de control; el tablero del backlog del proyecto se puede revisar en el siguiente enlace y en la [Figura 153](#figura-153).
 
 - Link Jira: https://ruwalabs-salud-ya.atlassian.net/
 
-<a id="figura-107"></a>
+<a id="figura-153"></a>
 
-**Figura 107**
+**Figura 153**
 
 *Backlog del proyecto SaludYa en Jira*
 
@@ -8295,11 +8294,11 @@ El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimien
 
 *Nota. Captura del tablero Backlog del proyecto SaludYa en Jira.*
 
-A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 99](#tabla-99).
+A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 73](#tabla-73).
 
-<a id="tabla-99"></a>
+<a id="tabla-73"></a>
 
-**Tabla 99**
+**Tabla 73**
 
 *Sprint Backlog 1*
 
@@ -8372,11 +8371,11 @@ En el backend, desarrollado con Java y Spring Boot, se implementaron las API de 
 
 En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
 
-La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 93](#tabla-93).
+La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 74](#tabla-74).
 
-<a id="tabla-93"></a>
+<a id="tabla-74"></a>
 
-**Tabla 93**
+**Tabla 74**
 
 *Commits de implementación de SaludYa para la revisión del Sprint 1*
 
@@ -8418,15 +8417,15 @@ La suite de IAM cubre el registro, la verificación por correo, el inicio de ses
 
 El archivo `iam.feature` expresa escenarios de aceptación en Gherkin. Su cobertura automatizada se implementa en las clases JUnit de integración y seguridad; el archivo funciona como especificación de aceptación y no cuenta con un ejecutor Cucumber configurado en el proyecto. Algunos de sus escenarios contemplan roles internos, mientras que el alcance móvil de este entregable corresponde al paciente.
 
-En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los commits que incorporan o modifican estas pruebas se presentan con su repositorio, rama, identificador, mensaje original y fecha, como se detalla en la [Tabla 94](#tabla-94).
+En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los commits que incorporan o modifican estas pruebas se presentan con su repositorio, rama, identificador, mensaje original y fecha, como se detalla en la [Tabla 75](#tabla-75).
 
 Repositorio de pruebas del backend y especificación BDD: [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya/tree/develop/saludya/src/test).
 
 Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src).
 
-<a id="tabla-94"></a>
+<a id="tabla-75"></a>
 
-**Tabla 94**
+**Tabla 75**
 
 *Commits relacionados con la suite de pruebas del Sprint 1*
 
@@ -8442,11 +8441,11 @@ Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://githu
 
 *Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; las capturas de los componentes publicados y las referencias visuales de la aplicación se presentan en el apartado 4.2.1.6.*
 
-Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 95](#tabla-95).
+Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 76](#tabla-76).
 
-<a id="tabla-95"></a>
+<a id="tabla-76"></a>
 
-**Tabla 95**
+**Tabla 76**
 
 *Suite de pruebas y escenarios de aceptación de SaludYa para el Sprint 1*
 
@@ -8474,11 +8473,11 @@ Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/salud
 
 ###### Inicio de la Landing Page
 
-La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 150](#figura-150).
+La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 154](#figura-154).
 
-<a id="figura-150"></a>
+<a id="figura-154"></a>
 
-**Figura 150**
+**Figura 154**
 
 *Inicio de la Landing Page — SaludYa*
 
@@ -8488,11 +8487,11 @@ La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, s
 
 ###### Problema identificado
 
-La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 151](#figura-151).
+La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 155](#figura-155).
 
-<a id="figura-151"></a>
+<a id="figura-155"></a>
 
-**Figura 151**
+**Figura 155**
 
 *Problema identificado — SaludYa*
 
@@ -8502,11 +8501,11 @@ La sección describe la incertidumbre al buscar una cita y la pérdida de cupos 
 
 ###### Propuesta de solución
 
-La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 152](#figura-152).
+La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 156](#figura-156).
 
-<a id="figura-152"></a>
+<a id="figura-156"></a>
 
-**Figura 152**
+**Figura 156**
 
 *Propuesta de solución — SaludYa*
 
@@ -8516,11 +8515,11 @@ La sección reúne las funciones propuestas para el paciente, entre ellas la res
 
 ###### Modelo de negocio
 
-La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 153](#figura-153).
+La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 157](#figura-157).
 
-<a id="figura-153"></a>
+<a id="figura-157"></a>
 
-**Figura 153**
+**Figura 157**
 
 *Modelo de negocio — SaludYa*
 
@@ -8530,11 +8529,11 @@ La página presenta el modelo propuesto de implementación institucional, conven
 
 ###### Testimonios
 
-Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 154](#figura-154).
+Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 158](#figura-158).
 
-<a id="figura-154"></a>
+<a id="figura-158"></a>
 
-**Figura 154**
+**Figura 158**
 
 *Testimonios — SaludYa*
 
@@ -8544,11 +8543,11 @@ Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y 
 
 ###### Presentación de RuwaLabs
 
-La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 155](#figura-155).
+La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 159](#figura-159).
 
-<a id="figura-155"></a>
+<a id="figura-159"></a>
 
-**Figura 155**
+**Figura 159**
 
 *Presentación de RuwaLabs — SaludYa*
 
@@ -8558,11 +8557,11 @@ La sección explica el propósito del equipo y presenta la misión y visión de 
 
 ###### Disponibilidad de la aplicación
 
-La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 156](#figura-156).
+La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 160](#figura-160).
 
-<a id="figura-156"></a>
+<a id="figura-160"></a>
 
-**Figura 156**
+**Figura 160**
 
 *Disponibilidad de la aplicación — SaludYa*
 
@@ -8582,11 +8581,11 @@ Archivo de interfaz: [SaludYa en Figma](https://www.figma.com/design/9Or15PiTxTl
 
 ###### Bienvenida
 
-La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 157](#figura-157).
+La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 161](#figura-161).
 
-<a id="figura-157"></a>
+<a id="figura-161"></a>
 
-**Figura 157**
+**Figura 161**
 
 *Bienvenida — SaludYa*
 
@@ -8596,11 +8595,11 @@ La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar s
 
 ###### Verificación de identidad
 
-El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 158](#figura-158).
+El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 162](#figura-162).
 
-<a id="figura-158"></a>
+<a id="figura-162"></a>
 
-**Figura 158**
+**Figura 162**
 
 *Verificación de identidad — SaludYa*
 
@@ -8610,11 +8609,11 @@ El formulario solicita los datos de identidad del paciente antes de continuar co
 
 ###### Registro de credenciales
 
-El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 159](#figura-159).
+El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 163](#figura-163).
 
-<a id="figura-159"></a>
+<a id="figura-163"></a>
 
-**Figura 159**
+**Figura 163**
 
 *Registro de credenciales — SaludYa*
 
@@ -8624,11 +8623,11 @@ El paciente registra su correo, contraseña y datos de contacto después de veri
 
 ###### Verificación por correo
 
-La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 160](#figura-160).
+La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 164](#figura-164).
 
-<a id="figura-160"></a>
+<a id="figura-164"></a>
 
-**Figura 160**
+**Figura 164**
 
 *Verificación por correo — SaludYa*
 
@@ -8638,11 +8637,11 @@ La pantalla solicita el código de verificación enviado al correo del paciente 
 
 ###### Inicio de sesión
 
-El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 161](#figura-161).
+El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 165](#figura-165).
 
-<a id="figura-161"></a>
+<a id="figura-165"></a>
 
-**Figura 161**
+**Figura 165**
 
 *Inicio de sesión — SaludYa*
 
@@ -8652,11 +8651,11 @@ El paciente ingresa su correo y contraseña para acceder a su cuenta, como se ob
 
 ###### Recuperación de acceso
 
-El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 162](#figura-162).
+El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 166](#figura-166).
 
-<a id="figura-162"></a>
+<a id="figura-166"></a>
 
-**Figura 162**
+**Figura 166**
 
 *Recuperación de acceso — SaludYa*
 
@@ -8666,11 +8665,11 @@ El formulario permite solicitar un enlace de recuperación al correo registrado,
 
 ###### Restablecimiento de contraseña
 
-El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 163](#figura-163).
+El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 167](#figura-167).
 
-<a id="figura-163"></a>
+<a id="figura-167"></a>
 
-**Figura 163**
+**Figura 167**
 
 *Restablecimiento de contraseña — SaludYa*
 
@@ -8680,11 +8679,11 @@ El paciente define y confirma una nueva contraseña mediante el recorrido de rec
 
 ###### Inicio del paciente
 
-La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 164](#figura-164).
+La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 168](#figura-168).
 
-<a id="figura-164"></a>
+<a id="figura-168"></a>
 
-**Figura 164**
+**Figura 168**
 
 *Inicio del paciente — SaludYa*
 
@@ -8694,11 +8693,11 @@ La vista principal reúne las citas pendientes y los accesos al historial y a la
 
 ###### Reserva de cita
 
-El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 165](#figura-165).
+El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 169](#figura-169).
 
-<a id="figura-165"></a>
+<a id="figura-169"></a>
 
-**Figura 165**
+**Figura 169**
 
 *Reserva de cita — SaludYa*
 
@@ -8708,11 +8707,11 @@ El recorrido de reserva presenta las opciones necesarias para elegir una cita se
 
 ###### Confirmación de reserva
 
-La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 166](#figura-166).
+La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 170](#figura-170).
 
-<a id="figura-166"></a>
+<a id="figura-170"></a>
 
-**Figura 166**
+**Figura 170**
 
 *Confirmación de reserva — SaludYa*
 
@@ -8722,11 +8721,11 @@ La pantalla presenta la confirmación y los datos de la cita seleccionada, como 
 
 ###### Registro de llegada
 
-La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 167](#figura-167).
+La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 171](#figura-171).
 
-<a id="figura-167"></a>
+<a id="figura-171"></a>
 
-**Figura 167**
+**Figura 171**
 
 *Registro de llegada — SaludYa*
 
@@ -8736,11 +8735,11 @@ La interfaz indica al paciente que debe escanear el QR del establecimiento para 
 
 ###### Ticket de atención
 
-La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 168](#figura-168).
+La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 172](#figura-172).
 
-<a id="figura-168"></a>
+<a id="figura-172"></a>
 
-**Figura 168**
+**Figura 172**
 
 *Ticket de atención — SaludYa*
 
@@ -8750,11 +8749,11 @@ La pantalla presenta el ticket del paciente como parte del seguimiento de su tur
 
 ###### Perfil del paciente
 
-El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 169](#figura-169).
+El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 173](#figura-173).
 
-<a id="figura-169"></a>
+<a id="figura-173"></a>
 
-**Figura 169**
+**Figura 173**
 
 *Perfil del paciente — SaludYa*
 
@@ -8764,11 +8763,11 @@ El perfil reúne los datos personales y de contacto, junto con las acciones disp
 
 ###### Menores vinculados
 
-La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 170](#figura-170).
+La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 174](#figura-174).
 
-<a id="figura-170"></a>
+<a id="figura-174"></a>
 
-**Figura 170**
+**Figura 174**
 
 *Menores vinculados — SaludYa*
 
@@ -8778,11 +8777,11 @@ La vista permite consultar los menores vinculados al paciente y acceder a las ac
 
 ###### Notificaciones del paciente
 
-La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 171](#figura-171).
+La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 175](#figura-175).
 
-<a id="figura-171"></a>
+<a id="figura-175"></a>
 
-**Figura 171**
+**Figura 175**
 
 *Notificaciones del paciente — SaludYa*
 
@@ -8798,11 +8797,11 @@ Enlace de despliegue: [Swagger UI de SaludYa](http://3.129.217.49:8080/swagger-u
 
 ###### Vista general de Swagger
 
-La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 172](#figura-172).
+La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 176](#figura-176).
 
-<a id="figura-172"></a>
+<a id="figura-176"></a>
 
-**Figura 172**
+**Figura 176**
 
 *Vista general de Swagger — SaludYa*
 
@@ -8812,11 +8811,11 @@ La interfaz identifica el servicio como SaludYa API y presenta el servidor y los
 
 ###### Verificación de identidad en el backend
 
-El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 173](#figura-173).
+El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 177](#figura-177).
 
-<a id="figura-173"></a>
+<a id="figura-177"></a>
 
-**Figura 173**
+**Figura 177**
 
 *Verificación de identidad en el backend — SaludYa*
 
@@ -8826,11 +8825,11 @@ El grupo IAM - Identity verification documenta las operaciones para verificar la
 
 ###### Cuentas y credenciales
 
-El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 174](#figura-174).
+El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 178](#figura-178).
 
-<a id="figura-174"></a>
+<a id="figura-178"></a>
 
-**Figura 174**
+**Figura 178**
 
 *Cuentas y credenciales — SaludYa*
 
@@ -8840,11 +8839,11 @@ El grupo IAM - User accounts presenta los contratos de cuentas, registro y recup
 
 ###### Perfil del paciente
 
-El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 175](#figura-175).
+El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 179](#figura-179).
 
-<a id="figura-175"></a>
+<a id="figura-179"></a>
 
-**Figura 175**
+**Figura 179**
 
 *Perfil del paciente — SaludYa*
 
@@ -8854,11 +8853,11 @@ El grupo IAM - Patients documenta la consulta y actualización del perfil y la c
 
 ###### Vinculación de menores
 
-El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 176](#figura-176).
+El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 180](#figura-180).
 
-<a id="figura-176"></a>
+<a id="figura-180"></a>
 
-**Figura 176**
+**Figura 180**
 
 *Vinculación de menores — SaludYa*
 
@@ -8868,11 +8867,11 @@ El grupo IAM - Linked minors presenta los contratos para crear, consultar y elim
 
 ###### Reservas de citas
 
-El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 177](#figura-177).
+El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 181](#figura-181).
 
-<a id="figura-177"></a>
+<a id="figura-181"></a>
 
-**Figura 177**
+**Figura 181**
 
 *Reservas de citas — SaludYa*
 
@@ -8882,11 +8881,11 @@ El grupo Appointments presenta las operaciones para registrar y consultar reserv
 
 ###### Disponibilidad de horarios
 
-El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 178](#figura-178).
+El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 182](#figura-182).
 
-<a id="figura-178"></a>
+<a id="figura-182"></a>
 
-**Figura 178**
+**Figura 182**
 
 *Disponibilidad de horarios — SaludYa*
 
@@ -8896,11 +8895,11 @@ El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la
 
 ###### Registro de asistencia
 
-El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 179](#figura-179).
+El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 183](#figura-183).
 
-<a id="figura-179"></a>
+<a id="figura-183"></a>
 
-**Figura 179**
+**Figura 183**
 
 *Registro de asistencia — SaludYa*
 
@@ -8910,11 +8909,11 @@ El grupo Check-ins presenta los contratos de registro de llegada por QR o códig
 
 ###### Cola de atención
 
-El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 180](#figura-180).
+El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 184](#figura-184).
 
-<a id="figura-180"></a>
+<a id="figura-184"></a>
 
-**Figura 180**
+**Figura 184**
 
 *Cola de atención — SaludYa*
 
@@ -8924,11 +8923,11 @@ El grupo Attendance Queues documenta las consultas de cola, posición y paciente
 
 ###### Ofertas de reasignación
 
-El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 181](#figura-181).
+El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 185](#figura-185).
 
-<a id="figura-181"></a>
+<a id="figura-185"></a>
 
-**Figura 181**
+**Figura 185**
 
 *Ofertas de reasignación — SaludYa*
 
@@ -9059,10 +9058,10 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 ```
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
+  <img src="assets/Services%20Deployment/identity_verifications.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
 </p>
 
-*Figura 182. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
+*Figura 186. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
 
 ###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
 
@@ -9072,10 +9071,10 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 ```
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications_exists.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
+  <img src="assets/Services%20Deployment/identity_verifications_exists.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
 </p>
 
-*Figura 183. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
+*Figura 187. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
 
 ###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
 
@@ -9085,10 +9084,10 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 ```
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
+  <img src="assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
 </p>
 
-*Figura 184. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
+*Figura 188. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
 
 ###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
 
@@ -9098,10 +9097,10 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 ```
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_recoverpassword.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
+  <img src="assets/Services%20Deployment/useraccounts_recoverpassword.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
 </p>
 
-*Figura 185. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
+*Figura 189. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
@@ -9349,42 +9348,42 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
 ###### Creación del key pair (acceso SSH)
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/key%20pari%20%28login%29.jpeg?raw=true" alt="Creación del key pair en AWS" width="100%"/>
+  <img src="assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg" alt="Creación del key pair en AWS" width="100%"/>
 </p>
 
-*Figura 186. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+*Figura 190. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
 
 ###### Instancia EC2 (resumen)
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg?raw=true" alt="Resumen de la instancia EC2" width="100%"/>
+  <img src="assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg" alt="Resumen de la instancia EC2" width="100%"/>
 </p>
 
-*Figura 187. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+*Figura 191. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
 
 ###### Configuración de red (security group)
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/network%20settings.jpeg?raw=true" alt="Configuración de red de la instancia" width="100%"/>
+  <img src="assets/Backend%20Deployment%20Evidence/network%20settings.jpeg" alt="Configuración de red de la instancia" width="100%"/>
 </p>
 
-*Figura 188. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+*Figura 192. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
 
 ###### Acceso SSH a la instancia
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg?raw=true" alt="Acceso SSH a la instancia EC2" width="100%"/>
+  <img src="assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg" alt="Acceso SSH a la instancia EC2" width="100%"/>
 </p>
 
-*Figura 189. Acceso por SSH a la instancia EC2 del backend.*
+*Figura 193. Acceso por SSH a la instancia EC2 del backend.*
 
 ###### Scripts de despliegue en el servidor
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg?raw=true" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
+  <img src="assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
 </p>
 
-*Figura 190. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
+*Figura 194. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
 
 
 ##### Landing Page
@@ -9406,37 +9405,37 @@ A continuación se presentan las capturas de las actividades realizadas.
 
 En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama `main` y la carpeta `/ (root)`. La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
 
-<a id="figura-191"></a>
+<a id="figura-195"></a>
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png?raw=true" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
 </p>
 
-*Figura 191. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
+*Figura 195. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
 
 ###### Flujo de trabajo de GitHub Actions
 
 Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (`.github/workflows/deploy.yml`) que se ejecuta en cada `push` a la rama `main`. El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
 
-<a id="figura-192"></a>
+<a id="figura-196"></a>
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png?raw=true" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
 </p>
 
-*Figura 192. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+*Figura 196. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
 
 ###### Verificación del despliegue
 
 Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
 
-<a id="figura-193"></a>
+<a id="figura-197"></a>
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-deployed.png?raw=true" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
 </p>
 
-*Figura 193. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
+*Figura 197. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
 
 Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
 
@@ -9446,11 +9445,11 @@ Con estas actividades, el Landing Page quedó publicado, disponible para su cons
 
 Durante el Sprint 1, el equipo **RuwaLabs** implementó el **Landing Page**, los **Web Services** (backend) y la **aplicación móvil para pacientes** (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
 
-La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 194](#figura-194) y la [Figura 195](#figura-195).
+La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 198](#figura-198) y la [Figura 199](#figura-199).
 
-<a id="figura-194"></a>
+<a id="figura-198"></a>
 
-**Figura 194**
+**Figura 198**
 
 *Actividad del equipo durante el Sprint 1*
 
@@ -9458,9 +9457,9 @@ La colaboración se registra en GitHub a través de los commits y *pull requests
 
 *Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.*
 
-<a id="figura-195"></a>
+<a id="figura-199"></a>
 
-**Figura 195**
+**Figura 199**
 
 *Contribuciones por integrante durante el Sprint 1*
 
@@ -9540,10 +9539,10 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 | Inicio de la entrevista | 00:01 |
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Alisee.jpeg?raw=true" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
+  <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 196. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 200. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -9644,10 +9643,10 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 | Inicio de la entrevista | 00:00 |
 
 <p align="center">
-  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Neo.jpeg?raw=true" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
+  <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 197. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 201. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -9751,9 +9750,9 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<a id="tabla-105"></a>
+<a id="tabla-77"></a>
 
-**Tabla 105**
+**Tabla 77**
 
 *Datos de la evaluación*
 
@@ -9809,9 +9808,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<a id="tabla-106"></a>
+<a id="tabla-78"></a>
 
-**Tabla 106**
+**Tabla 78**
 
 *TABLA RESUMEN de la evaluación heurística*
 
@@ -9853,9 +9852,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-<a id="figura-190"></a>
+<a id="figura-202"></a>
 
-**Figura 190**
+**Figura 202**
 
 *Registro - Datos de acceso*
 
@@ -9863,9 +9862,9 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-191"></a>
+<a id="figura-203"></a>
 
-**Figura 191**
+**Figura 203**
 
 *Registro - Verificar correo*
 
@@ -9884,9 +9883,9 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-<a id="figura-192"></a>
+<a id="figura-204"></a>
 
-**Figura 192**
+**Figura 204**
 
 *Diálogo correo verificado*
 
@@ -9905,9 +9904,9 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-<a id="figura-193"></a>
+<a id="figura-205"></a>
 
-**Figura 193**
+**Figura 205**
 
 *Login paciente*
 
@@ -9915,9 +9914,9 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-194"></a>
+<a id="figura-206"></a>
 
-**Figura 194**
+**Figura 206**
 
 *Diálogo credenciales incorrectas*
 
@@ -9936,9 +9935,9 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-<a id="figura-195"></a>
+<a id="figura-207"></a>
 
-**Figura 195**
+**Figura 207**
 
 *Registro - Datos de acceso*
 
@@ -9946,9 +9945,9 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-196"></a>
+<a id="figura-208"></a>
 
-**Figura 196**
+**Figura 208**
 
 *Recuperación - Nueva contraseña*
 
@@ -9967,9 +9966,9 @@ Mostrar bajo el campo los requisitos de la contraseña y un indicador de segurid
 **Problema:**
 El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y notificaciones miden 24 x 24 px, y las celdas de día del calendario miden 40 x 32 px. Para usuarios con poca precisión motriz, manos grandes o uso en movimiento, estos elementos son difíciles de tocar. "Cerrar sesión" también es un texto de una sola línea (18 px de alto).
 
-<a id="figura-197"></a>
+<a id="figura-209"></a>
 
-**Figura 197**
+**Figura 209**
 
 *Login paciente*
 
@@ -9977,9 +9976,9 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-198"></a>
+<a id="figura-210"></a>
 
-**Figura 198**
+**Figura 210**
 
 *Dashboard inicio*
 
@@ -9987,9 +9986,9 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-199"></a>
+<a id="figura-211"></a>
 
-**Figura 199**
+**Figura 211**
 
 *Reserva - Elegir fecha*
 
@@ -10008,9 +10007,9 @@ Garantizar áreas táctiles de al menos 44 x 44 px (o 48 x 48 dp en Android) amp
 **Problema:**
 Las etiquetas de la navegación inferior (15 px de alto de línea), los indicadores "PASO X DE Y" (16 px), la leyenda del calendario y las notas bajo los botones (16–17 px) corresponden a fuentes de aproximadamente 11–12 px. Para usuarios con baja visión o adultos mayores, que son parte del público de una app de salud, es difícil de leer.
 
-<a id="figura-200"></a>
+<a id="figura-212"></a>
 
-**Figura 200**
+**Figura 212**
 
 *Dashboard inicio*
 
@@ -10018,9 +10017,9 @@ Las etiquetas de la navegación inferior (15 px de alto de línea), los indicado
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-201"></a>
+<a id="figura-213"></a>
 
-**Figura 201**
+**Figura 213**
 
 *Registro - Datos de acceso*
 
@@ -10039,9 +10038,9 @@ Usar un tamaño mínimo de 12–14 sp en textos auxiliares y verificar que la in
 **Problema:**
 Los errores de código incorrecto, identidad no coincidente o contraseñas diferentes se presentan como diálogos que cubren la pantalla. El usuario no ve el campo con el error mientras lee el mensaje, y debe recordar cuál era. Los mensajes tampoco señalan qué dato exacto corregir (por ejemplo, "Revisa el DNI, nombres, apellidos y fecha de nacimiento").
 
-<a id="figura-202"></a>
+<a id="figura-214"></a>
 
-**Figura 202**
+**Figura 214**
 
 *Verificar correo*
 
@@ -10060,9 +10059,9 @@ Mostrar errores en línea junto al campo afectado, con color, ícono y texto, y 
 **Problema:**
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
 
-<a id="figura-203"></a>
+<a id="figura-215"></a>
 
-**Figura 203**
+**Figura 215**
 
 *Registro - Verificar correo*
 
@@ -10081,9 +10080,9 @@ Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y pr
 **Problema:**
 En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fecha de nacimiento es un campo de texto con el formato DD/MM/AAAA. Esto facilita errores de formato, y como la fecha se compara con el DNI, un error genera el diálogo "Datos no coincidentes".
 
-<a id="figura-204"></a>
+<a id="figura-216"></a>
 
-**Figura 204**
+**Figura 216**
 
 *Registro - Verificar identidad*
 
@@ -10091,9 +10090,9 @@ En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fech
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-205"></a>
+<a id="figura-217"></a>
 
-**Figura 205**
+**Figura 217**
 
 *Menores - Vincular*
 
@@ -10112,9 +10111,9 @@ Usar un selector de fecha nativo o un campo con máscara automática que inserte
 **Problema:**
 El diálogo indica "Este correo pertenece a otra cuenta. Usa otro o inicia sesión", pero su único botón es "Volver". Si el usuario ya tenía cuenta, debe retroceder y buscar el enlace de inicio de sesión por su cuenta.
 
-<a id="figura-206"></a>
+<a id="figura-218"></a>
 
-**Figura 206**
+**Figura 218**
 
 *Diálogo correo duplicado*
 
@@ -10133,9 +10132,9 @@ Agregar un botón secundario "Iniciar sesión" y mantener "Usar otro correo" com
 **Problema:**
 La pantalla "15 · Recuperación · Ayuda" informa que "los canales de la mesa de ayuda se mostrarán cuando el establecimiento los configure". Un usuario que perdió acceso a su correo solo puede enviar una solicitud de revisión, sin saber cuánto tarda ni cómo hacer seguimiento, y no tiene teléfono, correo ni dirección de contacto.
 
-<a id="figura-207"></a>
+<a id="figura-219"></a>
 
-**Figura 207**
+**Figura 219**
 
 *Recuperación - Ayuda*
 
@@ -10154,9 +10153,9 @@ Mostrar siempre un canal alternativo (teléfono o dirección del establecimiento
 **Problema:**
 Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen la navegación inferior que sí existe en el dashboard, y "18 · Menores · Lista" no tiene un botón "Volver". Además, usan la cabecera grande con logo (190 px de alto) en lugar de la cabecera con flecha de retorno del dashboard. El usuario queda sin una salida clara y la experiencia cambia respecto del resto de la app.
 
-<a id="figura-208"></a>
+<a id="figura-220"></a>
 
-**Figura 208**
+**Figura 220**
 
 *Perfil paciente*
 
@@ -10164,9 +10163,9 @@ Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-209"></a>
+<a id="figura-221"></a>
 
-**Figura 209**
+**Figura 221**
 
 *Menores - Lista*
 
@@ -10185,9 +10184,9 @@ Usar la misma cabecera con flecha de retorno y la navegación inferior en todas 
 **Problema:**
 En "19 · Menores · Vincular", el texto "Confirmas que eres su adulto responsable." aparece sobre el botón "Verificar y vincular" sin un checkbox ni acción de aceptación. El usuario puede vincular a un menor sin haber leído ni aceptado explícitamente esta declaración, lo que es delicado por tratarse de datos de salud de un menor.
 
-<a id="figura-210"></a>
+<a id="figura-222"></a>
 
-**Figura 210**
+**Figura 222**
 
 *Menores - Vincular*
 
@@ -10206,9 +10205,9 @@ Agregar un checkbox obligatorio con el texto de la declaración y mantener desha
 **Problema:**
 En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5678", mientras que en "R02 · Beneficiario" el mismo menor aparece con "••••2716". Lo mismo ocurre con la titular: en "16 · Perfil · Paciente" Lucía Torres tiene DNI "••••1234", pero en "R02 · Beneficiario" aparece con "••••4821". En un contexto de salud, esta diferencia puede hacer dudar al usuario de si los datos son correctos o de si está seleccionando a la persona correcta.
 
-<a id="figura-211"></a>
+<a id="figura-223"></a>
 
-**Figura 211**
+**Figura 223**
 
 *Perfil paciente*
 
@@ -10216,9 +10215,9 @@ En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-212"></a>
+<a id="figura-224"></a>
 
-**Figura 212**
+**Figura 224**
 
 *Menores - Lista*
 
@@ -10226,9 +10225,9 @@ En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-213"></a>
+<a id="figura-225"></a>
 
-**Figura 213**
+**Figura 225**
 
 *Reserva - Beneficiario*
 
@@ -10247,9 +10246,9 @@ Usar los mismos datos de ejemplo en todas las pantallas y verificar la coherenci
 **Problema:**
 La navegación inferior tiene "Inicio", "Reservar cita", "Asistencia" y "Configuración". "Asistencia" puede interpretarse como ayuda, como registro de llegada (existe "Registrar mi llegada" en el detalle de cita) o como historial de asistencias, y su ícono es un código QR que no aclara ninguna de esas lecturas. El ícono de "Configuración" se parece más a un símbolo de brillo (un sol) que al engranaje habitual de ajustes. Además, el perfil y los menores vinculados no tienen una opción visible en la navegación, por lo que el usuario no sabe dónde encontrarlos.
 
-<a id="figura-214"></a>
+<a id="figura-226"></a>
 
-**Figura 214**
+**Figura 226**
 
 *Dashboard inicio*
 
@@ -10268,9 +10267,9 @@ Renombrar la opción según su función ("Ayuda" o "Mi llegada"), incluir "Perfi
 **Problema:**
 En "D04 · Historial · Calendario" la leyenda indica "● Disponible" y "Fecha seleccionada". "Disponible" no corresponde a un historial de citas pasadas (debería indicar días con atenciones), y la diferencia entre ambos estados se comunica solo con color. Los usuarios con daltonismo o baja visión no podrán distinguir qué días tienen citas.
 
-<a id="figura-215"></a>
+<a id="figura-227"></a>
 
-**Figura 215**
+**Figura 227**
 
 *Historial - Calendario*
 
@@ -10289,9 +10288,9 @@ Cambiar la leyenda a "Día con atención", usar además una forma o un ícono di
 **Problema:**
 En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D05 · Historial filtrado" solo aparece "Cambiar fecha". Para volver a ver todo el historial, el usuario debe abrir de nuevo el calendario o retroceder con la flecha.
 
-<a id="figura-216"></a>
+<a id="figura-228"></a>
 
-**Figura 216**
+**Figura 228**
 
 *Historial filtrado*
 
@@ -10299,9 +10298,9 @@ En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-217"></a>
+<a id="figura-229"></a>
 
-**Figura 217**
+**Figura 229**
 
 *Historial - Calendario*
 
@@ -10320,9 +10319,9 @@ Mostrar en la pantalla filtrada un chip con la fecha aplicada y una "x" o un bot
 **Problema:**
 En "D06 · Detalle de cita" el texto "La cancelación está sujeta al plazo del establecimiento" no indica cuál es el plazo, y está al final (17 px de alto, letra pequeña). Además, "Registrar mi llegada" y "Cancelar reserva" son botones consecutivos separados por solo 14 px, con riesgo de toque equivocado.
 
-<a id="figura-218"></a>
+<a id="figura-230"></a>
 
-**Figura 218**
+**Figura 230**
 
 *Detalle de cita*
 
@@ -10341,9 +10340,9 @@ Mostrar el plazo concreto (por ejemplo, "Puedes cancelar hasta 24 horas antes"),
 **Problema:**
 En "R01 · Reserva tu cita" la etiqueta del campo es "Buscar especialidad", pero el placeholder indica "Buscar por nombre…". El usuario no sabe si puede escribir el nombre de un médico o solo una especialidad. Además, cada tarjeta repite "Ver disponibilidad", lo que añade ruido visual.
 
-<a id="figura-219"></a>
+<a id="figura-231"></a>
 
-**Figura 219**
+**Figura 231**
 
 *Reserva - Especialidades*
 
@@ -10362,9 +10361,9 @@ Alinear etiqueta y placeholder ("Ej. Pediatría") y quitar el texto repetido de 
 **Problema:**
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
-<a id="figura-220"></a>
+<a id="figura-232"></a>
 
-**Figura 220**
+**Figura 232**
 
 *Dashboard inicio*
 
@@ -10383,9 +10382,9 @@ Incluir en "Configuración" un selector de idioma (English / Español), definir 
 **Problema:**
 El diálogo "Las claves no coinciden" usa "claves", mientras que el resto de la app usa "contraseña". Es un problema menor, pero el usuario puede pensar que se trata de otro dato.
 
-<a id="figura-221"></a>
+<a id="figura-233"></a>
 
-**Figura 221**
+**Figura 233**
 
 *Diálogo contraseñas diferentes*
 
@@ -10404,9 +10403,9 @@ Usar siempre "contraseña" y definir una guía de términos para la app.
 **Problema:**
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
-<a id="figura-222"></a>
+<a id="figura-234"></a>
 
-**Figura 222**
+**Figura 234**
 
 *Dashboard inicio*
 
@@ -10414,9 +10413,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-223"></a>
+<a id="figura-235"></a>
 
-**Figura 223**
+**Figura 235**
 
 *Error de carga*
 
@@ -10424,9 +10423,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-224"></a>
+<a id="figura-236"></a>
 
-**Figura 224**
+**Figura 236**
 
 *Reserva - Especialidades*
 
