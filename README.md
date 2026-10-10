@@ -7778,7 +7778,101 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 ### 4.1.1. Software Development Environment Configuration
 
+En esta sección se especifican los productos de software que el equipo **RuwaLabs** utilizó para colaborar en el ciclo de vida de **SaludYa**, abarcando las actividades de **gestión del proyecto**, **gestión de requisitos**, **diseño UX/UI**, **desarrollo**, **despliegue** y **documentación**. Para cada producto se indica su **propósito de uso en el proyecto** y su **ruta de referencia** (cuando es software basado en modelos SaaS) o **ruta de descarga** (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la [Tabla 100](#tabla-100).
+
+<a id="tabla-100"></a>
+
+**Tabla 100**
+
+*Software Development Environment Configuration*
+
+| Actividad | Producto | Propósito de uso en el proyecto | Ruta de referencia / descarga |
+| :--- | :--- | :--- | :--- |
+| Project Management | Jira | Planificación y seguimiento del proyecto, organización del backlog y de los sprints | https://ruwalabs-salud-ya.atlassian.net/ |
+| Project Management | Jitsi Meet | Reuniones de coordinación del equipo (sprint planning, dailies y revisiones) | https://meet.jit.si/ |
+| Project Management | Discord | Comunicación diaria y coordinación del equipo | https://discord.com/download |
+| Requirements Management | Jira | Registro, priorización y seguimiento de épicas, user stories y product backlog | https://ruwalabs-salud-ya.atlassian.net/ |
+| Requirements Management | Miro | EventStorming y modelado colaborativo del dominio | https://miro.com/ |
+| Product UX/UI Design | Figma | Diseño de wireframes, mock-ups, user flows y prototipado | https://www.figma.com/ |
+| Software Development | Android Studio | IDE para el desarrollo de la aplicación Android (Kotlin y Jetpack Compose) | https://developer.android.com/studio |
+| Software Development | IntelliJ IDEA | IDE para el desarrollo del backend (Spring Boot) | https://www.jetbrains.com/idea/download/ |
+| Software Development | Kotlin | Lenguaje de programación de las aplicaciones móviles | https://kotlinlang.org/ |
+| Software Development | Java (JDK) | Lenguaje de programación del backend | https://adoptium.net/ |
+| Software Development | Spring Boot | Framework para la construcción de los servicios web REST | https://spring.io/projects/spring-boot |
+| Software Development | Maven | Gestión de dependencias y construcción del backend | https://maven.apache.org/download.cgi |
+| Software Development | Gradle | Construcción de la aplicación Android | https://gradle.org/ |
+| Software Development | PostgreSQL | Base de datos relacional del sistema | https://www.postgresql.org/download/ |
+| Software Development | Git / GitHub | Control de versiones y hospedaje de los repositorios del proyecto | https://git-scm.com/downloads · https://github.com/RuwaLabs |
+| Software Development | Postman | Pruebas manuales de los endpoints de los servicios web | https://www.postman.com/downloads/ |
+| Software Development | springdoc-openapi (Swagger UI) | Generación de la documentación de la API (OpenAPI) | https://springdoc.org/ |
+| Software Deployment | GitHub Pages | Publicación del Landing Page | https://pages.github.com/ |
+| Software Deployment | AWS (EC2) | Despliegue de los servicios web (Spring Boot) y de la base de datos PostgreSQL | https://aws.amazon.com/ec2/ |
+| Software Documentation | Obsidian | Redacción y edición del informe en formato Markdown | https://obsidian.md/download |
+| Software Documentation | GitHub (Markdown) | Versionado y publicación de la documentación del proyecto | https://github.com/RuwaLabs |
+| Software Documentation | PlantUML / diagrams.net | Elaboración de diagramas UML y del modelo C4 | https://plantuml.com/ · https://app.diagrams.net/ |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
 ### 4.1.2. Source Code Management
+
+En esta sección se establecen los medios y el esquema de organización que el equipo **RuwaLabs** aplica para el seguimiento de modificaciones a lo largo del ciclo de vida de **SaludYa**. Como plataforma y sistema de control de versiones se utiliza **GitHub**, sobre el cual se aplica **GitFlow** como modelo de ramificación, **Conventional Commits** para los mensajes de commit y **Semantic Versioning** para nombrar las releases.
+
+Cada producto de la solución cuenta con su propio repositorio, como se detalla en la [Tabla 101](#tabla-101).
+
+<a id="tabla-101"></a>
+
+**Tabla 101**
+
+*Repositorios de GitHub por producto*
+
+| Producto | Repositorio de GitHub |
+| :--- | :--- |
+| Landing Page | https://github.com/RuwaLabs/saludya-landing |
+| Web Services | https://github.com/RuwaLabs/backend-saludya |
+| Mobile Applications | https://github.com/RuwaLabs/frontend-kotlin-saludya |
+| Project Report | https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `main` se crea la rama de integración `develop`; cada funcionalidad o bounded context se desarrolla en su propia rama (*feature branch*), que se integra a `develop` mediante *pull requests*. Al cierre de un sprint, `develop` se integra a `main` mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la [Tabla 102](#tabla-102).
+
+<a id="tabla-102"></a>
+
+**Tabla 102**
+
+*Convenciones de ramas (GitFlow)*
+
+| Rama | Propósito | Convención / ramas utilizadas en el proyecto |
+| :--- | :--- | :--- |
+| `main` | Versión estable en producción | `main` |
+| `develop` | Rama de integración del equipo | `develop` |
+| Feature | Desarrollo de una funcionalidad o bounded context | Nombre del aspecto en kebab-case: `iam`, `booking`, `reassignment`, `arrival`, `hospitalconfig` (Web Services); `iam`, `patient-reservations`, `patient-check-in`, `patient-configuration`, `patient-dashboard`, `notifications-reassignment` (Mobile Applications) |
+| Release | Preparación de una versión estable | `release/<MAJOR.MINOR.PATCH>` |
+| Hotfix | Corrección urgente sobre producción | `hotfix/<aspecto>` |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+Las releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`), por ejemplo `v1.0.0`.
+
+Finalmente, los mensajes de commit siguen **Conventional Commits**, como se detalla en la [Tabla 103](#tabla-103).
+
+<a id="tabla-103"></a>
+
+**Tabla 103**
+
+*Convenciones de commits (Conventional Commits)*
+
+| Tipo | Uso |
+| :--- | :--- |
+| `feat` | Nueva funcionalidad |
+| `fix` | Corrección de error |
+| `docs` | Cambios en documentación |
+| `style` | Formato sin cambios de lógica |
+| `refactor` | Reestructuración sin cambiar comportamiento |
+| `test` | Añadir o modificar pruebas |
+| `chore` | Tareas de mantenimiento |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 ### 4.1.3. Source Code Style Guide & Conventions
 
@@ -7900,7 +7994,7 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, con las siguientes reglas adicionales, como se detalla en la [Tabla 86](#tabla-86):
+Se adoptan las guías **Google Java Style Guide**, **Spring Boot Features** y **Gherkin Conventions for Readable Specifications** (para los archivos `.feature`), con las siguientes reglas adicionales, como se detalla en la [Tabla 86](#tabla-86):
 
 - Indentación de 4 espacios.
 - Uso de anotaciones de Spring (`@RestController`, `@Service`, `@Repository`).
@@ -7908,58 +8002,6 @@ Se adoptan las guías **Google Java Style Guide** y **Spring Boot Features**, co
 - Uso de `Optional` para valores que pueden ser nulos.
 - Documentación de endpoints con **OpenAPI** y **Swagger UI**.
 - Criterios de aceptación en **Gherkin** con estructura Given-When-Then.
-
-#### Convenciones de commits y ramas
-
-El equipo aplica **Conventional Commits** para los mensajes de commit y **GitFlow** para la gestión de ramas, como se detalla en la [Tabla 87](#tabla-87):
-
-
-
-
-
-<a id="tabla-87"></a>
-
-**Tabla 87**
-
-*Convenciones de commits*
-
-| Tipo | Uso |
-|:---|:---|
-| `feat` | Nueva funcionalidad |
-| `fix` | Corrección de error |
-| `docs` | Cambios en documentación |
-| `style` | Formato sin cambios de lógica |
-| `refactor` | Reestructuración sin cambiar comportamiento |
-| `test` | Añadir o modificar pruebas |
-| `chore` | Tareas de mantenimiento |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-
-
-
-
-<a id="tabla-88"></a>
-
-**Tabla 88**
-
-*Convenciones de ramas*
-
-| Rama | Uso |
-|:---|:---|
-| `main` | Versión estable en producción |
-| `develop` | Rama de integración |
-| `feature/<nombre>` | Nuevas funcionalidades |
-| `release/<versión>` | Preparación de release |
-| `hotfix/<nombre>` | Correcciones urgentes |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-Los releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`), como se detalla en la [Tabla 88](#tabla-88).
 
 ### 4.1.4. Software Deployment Configuration
 
@@ -8025,7 +8067,7 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 #### Servicios web
 
-Los servicios web se despliegan en **Railway** (o alternativamente **Render** o **Heroku**), con base de datos **PostgreSQL** gestionada por el mismo proveedor.
+Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL** desplegada en la misma infraestructura.
 
 
 
@@ -8039,10 +8081,10 @@ Los servicios web se despliegan en **Railway** (o alternativamente **Render** o 
 
 | Paso | Acción |
 |:---|:---|
-| 1 | Crear una cuenta en **Railway** y un nuevo proyecto |
+| 1 | Crear una cuenta en **AWS** y aprovisionar una instancia **EC2** |
 | 2 | Conectar el repositorio de GitHub del backend (`saludya-web-services`) |
 | 3 | Configurar las variables de entorno (credenciales de base de datos, claves JWT, etc.) |
-| 4 | Provisionar una base de datos PostgreSQL desde el panel de Railway |
+| 4 | Instalar y configurar la base de datos PostgreSQL en la instancia EC2 |
 | 5 | Configurar el comando de build y el comando de inicio (`./mvnw spring-boot:run` o `java -jar app.jar`) |
 | 6 | Desplegar y verificar la URL pública del servicio |
 | 7 | Acceder a la documentación OpenAPI en `/swagger-ui.html` |
@@ -8051,7 +8093,7 @@ Los servicios web se despliegan en **Railway** (o alternativamente **Render** o 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, Railway, como se detalla en la [Tabla 91](#tabla-91).
+**Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, AWS EC2, como se detalla en la [Tabla 91](#tabla-91).
 
 #### Deployment Diagram (C4 Model)
 
@@ -8074,8 +8116,8 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 | Navegador del visitante | Hardware (PC/móvil) | Landing Page (HTML/CSS/JS) |
 | GitHub Pages | Cloud (static hosting) | Landing Page |
 | Firebase App Distribution | Cloud (distribución) | APK/AAB/IPA de las apps |
-| Railway / Render | Cloud (PaaS) | Servicios web (Spring Boot) |
-| PostgreSQL (Railway) | Cloud (DBaaS) | Base de datos relacional |
+| AWS EC2 | Cloud (IaaS) | Servicios web (Spring Boot) |
+| PostgreSQL (AWS EC2) | Cloud (IaaS) | Base de datos relacional |
 | Firebase Cloud Messaging | Cloud (push) | Notificaciones push a las apps |
 
 
@@ -8086,7 +8128,7 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 - El navegador del visitante accede al Landing Page alojado en GitHub Pages vía HTTPS.
 - Los dispositivos móviles descargan las apps desde Firebase App Distribution (pruebas) o las tiendas oficiales (producción).
-- Las apps se comunican con los servicios web desplegados en Railway mediante HTTPS/REST.
+- Las apps se comunican con los servicios web desplegados en AWS EC2 mediante HTTPS/REST.
 - Los servicios web acceden a PostgreSQL para la persistencia de datos.
 - Los servicios web envían notificaciones push a las apps a través de Firebase Cloud Messaging.
 
@@ -8263,7 +8305,7 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 
 Durante el Sprint 1 se avanzó en la implementación del backend, la aplicación móvil para pacientes y la landing page de SaludYa. El trabajo se distribuyó en ramas por funcionalidad, con commits que registran la construcción de los módulos y sus ajustes de integración.
 
-En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama `develop` incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en Render.
+En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama `develop` incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en AWS EC2.
 
 En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
 
