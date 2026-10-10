@@ -57,16 +57,23 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| 1.0.0 | 08-28-26 | Montoya Nina, Paula Fernanda | Se agregó la estructura base del documento, la Carátula, registro de versiones y el formato inicial del Student Outcome. |
-| 1.1.0 | 09-02-26 | Meza Solórzano, Didier Sebastian | Se creó la estructura de carpetas y archivos base del informe (chapter-01 a chapter-06, conclusions, bibliography y glossary). |
-| 1.2.0 | 09-13-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se agregó la sección de Software Architecture del Capítulo II: Context Level Diagrams, Container Level Diagrams, Deployment Diagrams, Context Mapping, Bounded Context Canvases, Domain Message Flows Modeling y Candidate Context Discovery. |
-| 1.3.0 | 09-16-26 | Meza Solórzano, Didier Sebastian | Se agregó la evidencia de la entrevista 6 y las evidencias de entrevistas del Capítulo II. |
-| 1.4.0 | 09-17-26 | Meza Solórzano, Didier Sebastian | Se agregó la evidencia de las entrevistas 5 y 2 del Capítulo II. |
-| 1.5.0 | 09-17-26 | Aguilar Untiveros, Rodrigo Fabrizio | Se actualizó el Capítulo II incorporando las dos colas complementarias (Booking Order y Attendance Queue): EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases, Context Mapping, Container Level Diagram y sus diagramas asociados. |
-| 1.6.0 | 09-18-26 | Torres Juárez, Alisee Muriel | Se documentó el bounded context de Identity & Access Management (capas Domain, Interface, Application e Infrastructure), se refactorizaron encabezados de sección, se revisó la numeración y se mejoraron las descripciones de los diagramas del Capítulo II. |
-| 1.7.0 | 09-18-26 | Meza Solórzano, Didier Sebastian | Se agregó información adicional del Capítulo II y se actualizó el nombre del capítulo. |
-| 1.8.0 | 09-18-26 | Ramos Mera, Neo Daniel | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
-| 1.9.0 | 09-18-26 | Montoya Nina, Paula Fernanda | Se agregó información al apartado Tactical-Level Domain-Driven Design. |
+| 1.0.0 | 08-28-26 | Montoya Nina, Paula Fernanda | Estructura base del informe: carátula, registro de versiones y formato del Student Outcome. |
+| 1.1.0 | 02-09-26 | Meza Solórzano, Didier Sebastian | Cap. I — Startup Profile, Solution Profile y Segmentos objetivo; estructura de carpetas del informe. |
+| 1.2.0 | 13-09-26 | Aguilar Untiveros, Rodrigo Fabrizio | Cap. II — Software Architecture (Context, Container y Deployment Diagrams, Context Mapping, Bounded Context Canvases, Domain Message Flows y Candidate Context Discovery). |
+| 1.2.1 | 16-09-26 | Meza Solórzano, Didier Sebastian | Cap. II — Entrevistas y evidencias de los segmentos objetivo. |
+| 1.2.2 | 18-09-26 | Torres Juárez, Alisee Muriel | Cap. II — Bounded Context Identity & Access Management (Domain, Interface, Application e Infrastructure). |
+| 1.2.3 | 18-09-26 | Ramos Mera, Neo Daniel | Cap. II — Tactical-Level Domain-Driven Design. |
+| 1.2.4 | 18-09-26 | Montoya Nina, Paula Fernanda | Cap. II — Tactical-Level DDD: diagramas de clases y de base de datos. |
+| 2.3.0 | 24-09-26 | Aguilar Untiveros, Rodrigo Fabrizio | Cap. III — 3.1.1 Style Guidelines, 3.1.2 Information Architecture y 3.1.3 Landing Page UI Design. |
+| 2.3.1 | 06-10-26 | Meza Solórzano, Didier Sebastian | Cap. III — 3.1.4.3 Mobile Applications Mock-ups. |
+| 2.3.2 | 07-10-26 | Torres Juárez, Alisee Muriel | Cap. III — 3.1.4.4 User Flow Diagrams y 3.1.4.5 Prototyping. |
+| 2.3.3 | 07-10-26 | Montoya Nina, Paula Fernanda / Ramos Mera, Neo Daniel | Cap. III — 3.1.4.1 Wireframes y 3.1.4.2 Wireflow Diagrams. |
+| 2.4.0 | 08-10-26 | Torres Juárez, Alisee Muriel | Cap. IV — 4.1.1 Software Development Environment Configuration y 4.1.2 Source Code Management. |
+| 2.4.1 | 09-10-26 | Aguilar Untiveros, Rodrigo Fabrizio | Cap. IV — 4.1.3 Source Code Style Guide y 4.1.4 Software Deployment Configuration. |
+| 2.4.2 | 09-10-26 | Montoya Nina, Paula Fernanda | Cap. IV — 4.2.1.1 Sprint Planning 1 y 4.2.1.3 Sprint Backlog 1. |
+| 2.4.3 | 09-10-26 | Meza Solórzano, Didier Sebastian | Cap. IV — 4.2.1.4 Development Evidence, 4.2.1.5 Testing Suite y 4.2.1.6 Execution Evidence. |
+| 2.4.4 | 10-10-26 | Ramos Mera, Neo Daniel | Cap. IV — 4.2.1.7 Services Documentation, 4.2.1.8 Software Deployment Evidence y 4.2.1.9 Team Collaboration Insights. |
+| 2.4.5 | 10-10-26 | Montoya Nina, Paula Fernanda | Cap. IV — 4.2.1.2 Aspect Leaders and Collaborators; Project Report Collaboration Insights (TB1) y correcciones de la entrega. |
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
@@ -339,28 +346,35 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases, Context Mapping y el modelo C4 para documentar la arquitectura de SaludYa. Asimismo, incorporé los conceptos de las dos colas complementarias del dominio (Booking Order y Attendance Queue), refinando los bounded contexts existentes y actualizando los diagramas de EventStorming, Context Mapping y Container Level Diagram.</li>
+          <li><strong>AV2:</strong> Apliqué buenas prácticas de diseño de interfaces y de documentación para elaborar las guías de estilo, la arquitectura de información y la propuesta visual del Landing Page, así como las convenciones de código y la configuración de despliegue de la solución.</li>
         </ul>
        <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
   <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre la técnica 5W2H, el diagrama de Ishikawa, la metodología Lean UX, el análisis competitivo y el diseño de entrevistas para desarrollar de principio a fin la problemática, la solución y la validación con usuarios de SaludYa.</li>
+  <li><strong>AV2:</strong> Apliqué nuevos conocimientos de diseño de experiencia de usuario y de aseguramiento de calidad para elaborar los mock-ups y los user flows de las aplicaciones, y para documentar las evidencias de desarrollo, pruebas y ejecución del Sprint 1.</li>
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> Investigué y apliqué conceptos avanzados de arquitectura de software para documentar el diseño a nivel de código de los Bounded Contexts. Esto incluyó la definición técnica de controladores, servicios y repositorios, plasmando esta lógica de negocio en diagramas relacionales de base de datos y diagramas de clases precisos para el proyecto.</li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de diseño de wireframes y de gestión ágil de proyectos para elaborar los wireframes y wireflow diagrams de la aplicación, así como el Sprint Planning y el Sprint Backlog del primer sprint.</li>
         </ul> 
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre el modelado táctico de Domain-Driven Design (DDD), estructurando correctamente las capas de Dominio, Aplicación, Interfaz e Infraestructura. Asimismo, aprendí y utilicé estándares de modelado C4 y UML para elaborar los diagramas de componentes, clases y base de datos de los Bounded Contexts asignados.
 </li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de diseño de wireframes y de documentación de servicios para elaborar los wireframes y wireflow diagrams, y para evidenciar la documentación de los servicios web, el despliegue y la colaboración del equipo durante el Sprint 1.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, diagramas de usuario y la redacción de User Stories para desarrollar de principio a fin la problemática, la solución y la validación de SaludYa </li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de prototipado, de entornos de desarrollo y de control de versiones para elaborar los mock-ups, los user flows, el prototipo de la aplicación y las secciones de entorno de desarrollo y gestión del código.</li>
         </ul>
       </td>
       <td width="25%">
         <p><strong>AV1:</strong><br>
         Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.</p>
+        <p><strong>AV2:</strong><br>
+        Como equipo, aplicamos nuevos conocimientos de diseño UX/UI, documentación de servicios, configuración de software y análisis de nuestra colaboración en GitHub para construir los capítulos III y IV del informe y evidenciar el Sprint 1, demostrando que la actualización de conceptos nos permitió entregar artefactos de mayor calidad.</p>
       </td>
     </tr>
     <tr style="break-inside:auto">
@@ -371,27 +385,34 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la necesidad de investigar de forma autónoma técnicas de modelado estratégico y táctico que no había aplicado antes, como EventStorming y Domain-Driven Design, para sustentar con criterios arquitectónicos sólidos el diseño de SaludYa. La correcta delimitación de los bounded contexts y la identificación de las dos colas del dominio me exigieron un análisis profundo para alinear el lenguaje ubicuo con la arquitectura del sistema.</li>
+          <li><strong>AV2:</strong> Reconocí la importancia de investigar sobre diseño inclusivo, accesibilidad y arquitectura de la información para sustentar la propuesta visual del producto, así como de conocer las prácticas de despliegue y publicación de la solución.</li>
         </ul>
         <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
   <li><strong>AV1:</strong> Reconocí la necesidad de seguir aprendiendo de forma autónoma metodologías que no había aplicado antes, como Lean UX y el diseño de entrevistas cualitativas, para poder sustentar con información real el desarrollo de SaludYa.</li>
+  <li><strong>AV2:</strong> Reconocí la necesidad de aprender sobre patrones de diseño de interfaces y de pruebas de software para sustentar los mock-ups y las evidencias de testing del sprint con criterios de calidad.</li>
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> Comprendí que diseñar soluciones de software requiere una constante actualización en metodologías como DDD. Buscar y estudiar información sobre patrones de integración y persistencia por mi cuenta me permitió resolver problemas técnicos complejos al definir las capas de infraestructura y dominio de SaludYa.
 </li>
+          <li><strong>AV2:</strong> Reconocí el valor de la planificación y priorización ágil para organizar el trabajo del equipo y de representar los flujos de usuario para sustentar el diseño del producto.</li>
         </ul>
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la importancia de investigar de manera autónoma sobre arquitectura hexagonal y patrones de diseño. Entendí que este aprendizaje continuo es indispensable para definir correctamente entidades, agregados y repositorios, garantizando que el diseño del software sea escalable y mantenible en el entorno profesional.</li>
+          <li><strong>AV2:</strong> Reconocí la importancia de aprender sobre documentación de API y de analizar la colaboración del equipo en GitHub para evidenciar el avance del sprint.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la importancia de poner en práctica herramientas y metodologías que no había aplicado antes —como el EventStorming, los diagramas de usuario y la estructuración de User Stories para sustentar y modelar con precisión el desarrollo de SaludYa. La correcta definición de las User Stories técnicas, me exigió un análisis mucho más profundo para alinear los eventos del sistema con la arquitectura tecnológica</li>
+          <li><strong>AV2:</strong> Reconocí la importancia de documentar el entorno de desarrollo y aplicar buenas prácticas de control de versiones, así como del prototipado para validar la experiencia antes del desarrollo.</li>
         </ul>
       </td>
       <td>
         <p><strong>AV1:</strong><br> El equipo reconoció que el aprendizaje autónomo es un pilar fundamental en el desarrollo del proyecto. La exigencia de investigar y dominar nuevas herramientas tecnológicas, técnicas de entrevistas y patrones arquitectónicos nos demostró que la actualización constante es la única vía para proponer soluciones de software de calidad.</p>
+        <p><strong>AV2:</strong><br>
+        El equipo reconoció que el aprendizaje permanente también se reflejó en esta entrega, al investigar de forma autónoma sobre diseño de interfaces, documentación de API, entornos de despliegue y análisis de colaboración, competencias necesarias para documentar y sustentar el trabajo del sprint.</p>
       </td>
     </tr>
   </tbody>
