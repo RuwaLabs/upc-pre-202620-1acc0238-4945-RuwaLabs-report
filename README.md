@@ -6448,7 +6448,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro en la aplicación (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png?raw=true" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6466,7 +6466,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de inicio de sesión (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-02-iniciar-sesion.png?raw=true" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6484,7 +6484,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de recuperación de contraseña (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png?raw=true" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6502,7 +6502,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de cierre de sesión (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-05-cerrar-sesion.png?raw=true" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6520,7 +6520,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de reserva de una cita médica (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png?raw=true" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6538,7 +6538,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas y detalle (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png?raw=true" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6556,7 +6556,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow del historial de citas (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png?raw=true" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6574,7 +6574,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de gestión de citas de un familiar a cargo (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png?raw=true" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6592,7 +6592,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de revisión de notificaciones (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png?raw=true" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6610,7 +6610,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de llegada y seguimiento del turno (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png?raw=true" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6628,7 +6628,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png?raw=true" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6646,7 +6646,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de actualización de datos de contacto (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png?raw=true" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6666,7 +6666,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro del personal de admisión*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png?raw=true" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6684,7 +6684,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de inicio de sesión del personal de admisión*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png?raw=true" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6702,7 +6702,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de un bloque de cita*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png?raw=true" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6720,7 +6720,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de edición de un bloque de cita*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png?raw=true" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6738,7 +6738,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de disponibilidad de cupos*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png?raw=true" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6756,7 +6756,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas pendientes*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png?raw=true" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6774,7 +6774,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas atendidas*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png?raw=true" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6792,7 +6792,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de llegada del paciente (check-in)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png?raw=true" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6810,7 +6810,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de gestión de la cola de asistencia*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png?raw=true" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6828,7 +6828,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de configuración de los parámetros del establecimiento*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png?raw=true" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -8984,19 +8984,19 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 | 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
 | 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
 
-##### Evidencias de interacción (capturas con datos de muestra)
+##### Evidencias de interacción
 
-A continuación se presenta el **modelo de evidencia** de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el **JSON de envío**, la **captura** y una **descripción**. Los endpoints elegidos son públicos (se prueban sin token). Para usar tus capturas, reemplaza el valor de `src` (`URL_DE_LA_CAPTURA_N`) por la URL de cada imagen.
+A continuación se presenta una muestra del **modelo de evidencia** de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el **JSON de envío**, la **captura** y una **descripción**. Los endpoints elegidos son públicos.
 
 ###### 1. `POST /api/v1/identity-verifications` — Verificar identidad por DNI
 
 **JSON de envío:**
 ```json
-{ "dni": "74218365", "name": "Kevin", "lastname": "Huamán" }
+{ "dni": "74500834", "name": "Neo Daniel", "lastname": "Ramos Mera" }
 ```
 
 <p align="center">
-  <img src="URL_DE_LA_CAPTURA_1" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
 </p>
 
 *Figura. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
@@ -9005,11 +9005,11 @@ A continuación se presenta el **modelo de evidencia** de la interacción con la
 
 **JSON de envío:**
 ```json
-{ "dni": "74218365" }
+{ "dni": "74500834" }
 ```
 
 <p align="center">
-  <img src="URL_DE_LA_CAPTURA_2" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications_exists.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
 </p>
 
 *Figura. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
@@ -9018,11 +9018,11 @@ A continuación se presenta el **modelo de evidencia** de la interacción con la
 
 **JSON de envío:**
 ```json
-{ "email": "kevin.huaman@gmail.com" }
+{ "email": "doriangray292929@gmail.com" }
 ```
 
 <p align="center">
-  <img src="URL_DE_LA_CAPTURA_3" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
 </p>
 
 *Figura. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
@@ -9031,11 +9031,11 @@ A continuación se presenta el **modelo de evidencia** de la interacción con la
 
 **JSON de envío:**
 ```json
-{ "email": "kevin.huaman@gmail.com" }
+{ "email": "doriangray292929@gmail.com" }
 ```
 
 <p align="center">
-  <img src="URL_DE_LA_CAPTURA_4" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_recoverpassword.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
 </p>
 
 *Figura. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
