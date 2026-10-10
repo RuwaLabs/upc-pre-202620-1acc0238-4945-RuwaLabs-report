@@ -8883,11 +8883,7 @@ La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al reposit
 - **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
 - **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
 
-
-##### Repositorio y commits de documentación
-
-- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
-- **Commits relacionados con la documentación para este Sprint:**
+##### Commits relacionados con la documentación para este Sprint
 
 | Commit | Mensaje | Relación |
 |:--|:--|:--|
@@ -8900,7 +8896,6 @@ La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al reposit
 ##### Tabla de endpoints documentados
 
 A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
-
 
 ###### IAM — Identity & Access Management
 
@@ -8991,80 +8986,59 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 
 ##### Evidencias de interacción (capturas con datos de muestra)
 
-A continuación se incluyen capturas de la interacción con la documentación desplegada (Swagger UI), ejecutando las operaciones con **datos de muestra**. En cada caso se presenta la captura del request/response obtenido; el **dato de muestra** utilizado para cada operación se detalla en la columna *Petición (ejemplo)* de la tabla anterior.
+A continuación se presenta el **modelo de evidencia** de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el **JSON de envío**, la **captura** y una **descripción**. Los endpoints elegidos son públicos (se prueban sin token). Para usar tus capturas, reemplaza el valor de `src` (`URL_DE_LA_CAPTURA_N`) por la URL de cada imagen.
 
-<a id="figura-182"></a>
+###### 1. `POST /api/v1/identity-verifications` — Verificar identidad por DNI
 
-**Figura 182**
-
-*Documentación de IAM — verificación de identidad*
-
-<p align="center">
-  <img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Swagger UI de SaludYa - verificación de identidad" width="100%"/>
-</p>
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
-<a id="figura-183"></a>
-
-**Figura 183**
-
-*Documentación de IAM — cuentas de usuario (registro e inicio de sesión)*
+**JSON de envío:**
+```json
+{ "dni": "74218365", "name": "Kevin", "lastname": "Huamán" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Swagger UI de SaludYa - cuentas de usuario" width="100%"/>
+  <img src="URL_DE_LA_CAPTURA_1" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
 
-<a id="figura-184"></a>
+###### 2. `POST /api/v1/identity-verifications/exists` — Comprobar si un DNI es conocido
 
-**Figura 184**
-
-*Documentación de Appointments & Booking — citas*
+**JSON de envío:**
+```json
+{ "dni": "74218365" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Swagger UI de SaludYa - citas" width="100%"/>
+  <img src="URL_DE_LA_CAPTURA_2" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
 
-<a id="figura-185"></a>
+###### 3. `POST /api/v1/user-accounts/send-verification-code` — Enviar código de verificación
 
-**Figura 185**
-
-*Documentación de Appointments & Booking — bloques de horario*
+**JSON de envío:**
+```json
+{ "email": "kevin.huaman@gmail.com" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Swagger UI de SaludYa - bloques de horario" width="100%"/>
+  <img src="URL_DE_LA_CAPTURA_3" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
 
-<a id="figura-186"></a>
+###### 4. `POST /api/v1/user-accounts/recover-password` — Solicitar recuperación de contraseña
 
-**Figura 186**
-
-*Documentación de Arrival & QR Check-in*
+**JSON de envío:**
+```json
+{ "email": "kevin.huaman@gmail.com" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Swagger UI de SaludYa - check-in por QR" width="100%"/>
+  <img src="URL_DE_LA_CAPTURA_4" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
-<a id="figura-187"></a>
-
-**Figura 187**
-
-*Documentación de Reassignment*
-
-<p align="center">
-  <img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Swagger UI de SaludYa - reasignación" width="100%"/>
-</p>
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
+*Figura. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
