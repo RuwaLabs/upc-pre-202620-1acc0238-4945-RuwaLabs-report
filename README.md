@@ -7833,7 +7833,7 @@ Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://githu
 | [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [71074b8f6a4328ec18753c76f97beb2c2b1ec7ca](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/71074b8f6a4328ec18753c76f97beb2c2b1ec7ca) | feat(iam): register assisted account recovery requests | 07/10/2026 |
 | [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [ca1cb00eceb91035cf759530d02c4d30b6ad8398](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/ca1cb00eceb91035cf759530d02c4d30b6ad8398) | feat(iam): add recovery screens and session confirmation flows | 07/10/2026 |
 
-*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; los resultados de ejecución corresponden al apartado 4.2.1.6.*
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; las capturas de los componentes publicados y las referencias visuales de la aplicación se presentan en el apartado 4.2.1.6.*
 
 Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 95](#tabla-95).
 
