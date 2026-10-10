@@ -9042,6 +9042,287 @@ A continuación se presenta una muestra del **modelo de evidencia** de la intera
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
+En esta sección se presenta la evidencia de las actividades de **despliegue (Deployment)** realizadas durante este Sprint. El despliegue se enfocó en los **Web Services** de SaludYa: el backend (Spring Boot) se desplegó en una instancia **AWS EC2** con **Ubuntu**, **Java 25 (Temurin)** y **PostgreSQL**, publicándose el servicio mediante un **systemd unit** y automatizando el proceso con scripts de Bash. Los productos digitales del alcance —**Landing Page**, **Web Services** y **aplicaciones móviles**— cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
+
+Las actividades realizadas durante el Sprint fueron:
+
+- **Creación de la cuenta y de los recursos en el proveedor cloud (AWS):** alta de la cuenta, creación del *key pair* para el acceso SSH, lanzamiento de la instancia EC2 y configuración de la red (security group con los puertos necesarios).
+- **Configuración del servidor:** instalación de Java 25 (Temurin), PostgreSQL y Git, y creación del usuario y la base de datos del backend.
+- **Externalización de secretos:** las variables sensibles (JWT, QR, clave de cifrado de notificaciones, SMTP, ApiPeru y bootstrap) se almacenan en `/etc/saludya/saludya.env`, **fuera del repositorio**, y systemd las carga mediante `EnvironmentFile`, de modo que sobreviven a cada despliegue.
+- **Automatización del despliegue:** tres scripts de Bash (`setup-server.sh`, `setup-env.sh` y `deploy.sh`) y un servicio `systemd` (`saludya.service`) que recompila el JAR y reinicia el backend.
+- **Verificación:** el backend queda disponible y se comprueba consultando el endpoint `/v3/api-docs`.
+
+##### Scripts de despliegue
+
+Para automatizar el aprovisionamiento y el despliegue del backend se utilizaron tres scripts de Bash.
+
+###### `setup-server.sh`
+
+Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:-postgre}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/3] Instalando Java 25 (Temurin) ..."
+apt-get update
+apt-get install -y wget apt-transport-https gpg
+mkdir -p /etc/apt/keyrings
+wget -qO- https://packages.adoptium.net/artifactory/api/gpg/key/public \
+  | gpg --dearmor > /etc/apt/keyrings/adoptium.gpg
+. /etc/os-release
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb ${VERSION_CODENAME} main" \
+> /etc/apt/sources.list.d/adoptium.list
+apt-get update
+apt-get install -y temurin-25-jdk
+
+echo "==> [2/3] Instalando PostgreSQL y git ..."
+apt-get install -y postgresql git
+systemctl enable --now postgresql
+
+echo "==> [3/3] Creando usuario y base de datos ..."
+# Crea el rol si no existe, o actualiza su password si ya existe.
+sudo -u postgres psql -v ON_ERROR_STOP=1 <<SQL
+DO \$\$
+BEGIN
+   IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = '${DB_USER}') THEN
+      CREATE ROLE ${DB_USER} LOGIN PASSWORD '${DB_PASSWORD}';
+   ELSE
+      ALTER ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASSWORD}';
+   END IF;
+END
+\$\$;
+SQL
+
+# Crea la base de datos si no existe, con el usuario como owner.
+if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
+  sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
+fi
+
+sudo -u postgres psql -v ON_ERROR_STOP=1 -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_USER};"
+sudo -u postgres psql -v ON_ERROR_STOP=1 -d "${DB_NAME}" -c "GRANT ALL ON SCHEMA public TO ${DB_USER};"
+
+echo
+echo "================ RESUMEN ================"
+java -version 2>&1 | head -1
+sudo -u postgres psql -tAc "SELECT version();"
+echo "Base de datos : ${DB_NAME}"
+echo "Usuario       : ${DB_USER}"
+echo "Password      : ${DB_PASSWORD}"
+echo "========================================="
+echo "Siguiente paso ->  sudo bash setup-env.sh"
+```
+
+###### `setup-env.sh`
+
+Genera el archivo `/etc/saludya/saludya.env` con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos `600` para mantener los secretos protegidos.
+
+```bash
+#!/usr/bin/env bash
+#
+# setup-env.sh - Crea /etc/saludya/saludya.env con TODAS las variables del backend.
+#
+#   Las variables viven FUERA del repositorio, y systemd las carga con
+#   EnvironmentFile. Por eso sobreviven a cada "git pull" / despliegue.
+#
+# Uso:
+#   sudo bash setup-env.sh
+#
+# Personaliza con variables de entorno:
+#   DB_PASSWORD=MiClave BOOTSTRAP_PASSWORD=Admin2026 sudo -E bash setup-env.sh
+#
+set -euo pipefail
+
+DB_HOST="${DB_HOST:-localhost}"
+DB_PORT="${DB_PORT:-5432}"
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:-postgre}"
+BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:-SaludYa2026}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+mkdir -p /etc/saludya
+cat > /etc/saludya/saludya.env <<EOF
+SPRING_PROFILES_ACTIVE=prod
+
+# --- Base de datos (PostgreSQL local) ---
+DB_HOST=${DB_HOST}
+DB_PORT=${DB_PORT}
+DB_NAME=${DB_NAME}
+DB_USER=${DB_USER}
+DB_PASSWORD=${DB_PASSWORD}
+
+# --- Secretos JWT / QR / cifrado de notificaciones ---
+APPLICATION_JWT_SECRET=dr6lu4fCylnYjpuy54LiH9YyJIIX+2mBaMlBFZJMbw49aJTGGJOVk6W9AE1CKsaa
+APPLICATION_QR_SECRET=OSRngazE7OBydWv5sAVcrqlTBTu0uePY8X673ylZiotieKo5cB8ubrYzwjLwuEGZ
+IAM_NOTIFICATIONS_ENCRYPTION_KEY=52Ziy3zob1MIKiCm6mxuQ1E+pjvV6/uh0mcctrbEmys=
+
+# --- Verificacion de identidad (ApiPeru) ---
+IAM_IDENTITY_MODE=apiperu
+IAM_IDENTITY_URL=https://api.apiperu.dev/dni
+IAM_IDENTITY_API_KEY=28605|74UTT7gMm04Af243nXEUIRKuL25HJgo7kMw5xUzi8ca579b0
+
+# --- Administrador inicial (bootstrap) ---
+IAM_BOOTSTRAP_ENABLED=true
+IAM_BOOTSTRAP_EMAIL=admin@saludya.local
+IAM_BOOTSTRAP_PASSWORD=${BOOTSTRAP_PASSWORD}
+
+# --- Correo (Gmail SMTP) ---
+MAIL_ENABLED=true
+MAIL_USERNAME=soporte.saludya.pe@gmail.com
+MAIL_FROM=soporte.saludya.pe@gmail.com
+MAIL_APP_PASSWORD=bhggslpxbaeiszkj
+IAM_NOTIFICATIONS_LOG_CODES=true
+EOF
+
+chmod 600 /etc/saludya/saludya.env
+chown root:root /etc/saludya/saludya.env
+
+echo "OK -> /etc/saludya/saludya.env creado (permisos 600)."
+echo "Editar   ->  sudo nano /etc/saludya/saludya.env"
+echo "Aplicar  ->  sudo systemctl restart saludya"
+```
+
+###### `deploy.sh`
+
+Despliega o actualiza el backend en la EC2: obtiene el código (`git clone` la primera vez o `git pull` después), compila el JAR con Maven (`./mvnw`), (re)genera el servicio `systemd`, lo reinicia y verifica que el backend responda.
+
+```bash
+#!/usr/bin/env bash
+#
+# deploy.sh - Despliega o ACTUALIZA el backend SaludYa en la EC2.
+#
+#   * Clona el repo la primera vez, o hace "git pull" en las siguientes
+#   * Compila el JAR con Maven (./mvnw)
+#   * (Re)genera el servicio systemd y lo reinicia
+#   * Verifica que responda
+#
+# Uso:
+#   bash deploy.sh
+#
+# Requisitos: haber corrido antes setup-server.sh y setup-env.sh
+#
+set -euo pipefail
+
+REPO_URL="${REPO_URL:-https://github.com/RuwaLabs/backend-saludya.git}"
+BRANCH="${BRANCH:-develop}"
+APP_DIR="${APP_DIR:-$HOME/backend-saludya}"
+ENV_FILE="${ENV_FILE:-/etc/saludya/saludya.env}"
+SERVICE="saludya"
+JAR="$APP_DIR/saludya/target/saludya-0.0.1-SNAPSHOT.jar"
+
+if [ ! -f "$ENV_FILE" ]; then
+  echo "ERROR: falta $ENV_FILE. Corre primero ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/4] Obteniendo codigo ..."
+if [ -d "$APP_DIR/.git" ]; then
+  git -C "$APP_DIR" fetch origin "$BRANCH"
+  git -C "$APP_DIR" reset --hard "origin/$BRANCH"
+else
+  git clone --branch "$BRANCH" "$REPO_URL" "$APP_DIR"
+fi
+
+echo "==> [2/4] Compilando (Maven) ..."
+cd "$APP_DIR/saludya"
+./mvnw -q clean package -DskipTests
+
+echo "==> [3/4] Configurando servicio systemd ..."
+sudo tee /etc/systemd/system/saludya.service >/dev/null <<EOF
+[Unit]
+Description=SaludYa backend
+After=network.target postgresql.service
+
+[Service]
+User=$USER
+WorkingDirectory=$APP_DIR
+EnvironmentFile=$ENV_FILE
+ExecStart=/usr/bin/java -Xmx384m -XX:+UseSerialGC -jar $JAR
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable "$SERVICE" >/dev/null 2>&1 || true
+sudo systemctl restart "$SERVICE"
+
+echo "==> [4/4] Verificando ..."
+for _ in $(seq 1 60); do
+  code="$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/v3/api-docs || true)"
+  if [ "$code" = "200" ]; then
+    echo "OK: backend arriba -> http://localhost:8080/v3/api-docs (200)"
+    break
+  fi
+  sleep 2
+done
+
+sudo systemctl status "$SERVICE" --no-pager | head -15
+echo
+echo "Logs en vivo ->  journalctl -u $SERVICE -f"
+```
+
+##### Evidencias de despliegue
+
+A continuación se presentan las capturas del proceso de despliegue en AWS.
+
+###### Creación del key pair (acceso SSH)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/key%20pari%20%28login%29.jpeg?raw=true" alt="Creación del key pair en AWS" width="100%"/>
+</p>
+
+*Figura. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+
+###### Instancia EC2 (resumen)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg?raw=true" alt="Resumen de la instancia EC2" width="100%"/>
+</p>
+
+*Figura. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+
+###### Configuración de red (security group)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/network%20settings.jpeg?raw=true" alt="Configuración de red de la instancia" width="100%"/>
+</p>
+
+*Figura. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+
+###### Acceso SSH a la instancia
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg?raw=true" alt="Acceso SSH a la instancia EC2" width="100%"/>
+</p>
+
+*Figura. Acceso por SSH a la instancia EC2 del backend.*
+
+###### Scripts de despliegue en el servidor
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg?raw=true" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
+</p>
+
+*Figura. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
+
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
 ## 4.3. Validation Interviews
