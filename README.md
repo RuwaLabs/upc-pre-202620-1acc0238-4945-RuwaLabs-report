@@ -9409,7 +9409,7 @@ En la configuración del repositorio se habilitó GitHub Pages como fuente de pu
 <a id="figura-190"></a>
 
 <p align="center">
-  <img src="assets\Landing-page Deployment Evidence\landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png?raw=true" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
 </p>
 
 *Figura 190. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
@@ -9421,7 +9421,7 @@ Para automatizar la publicación del Landing Page, se incorporó un workflow de 
 <a id="figura-191"></a>
 
 <p align="center">
-  <img src="assets\Landing-page Deployment Evidence\landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png?raw=true" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
 </p>
 
 *Figura 191. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
@@ -9433,7 +9433,7 @@ Finalmente, se verificó el acceso público al Landing Page mediante la URL gene
 <a id="figura-192"></a>
 
 <p align="center">
-  <img src="assets\Landing-page Deployment Evidence\landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Landing-page%20Deployment%20Evidence/landing-deployed.png?raw=true" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
 </p>
 
 *Figura 192. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
