@@ -1,7 +1,8 @@
 <div align="center" style="text-align:center">
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
+<p align="center">  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" alt="Logo UPC" width="150" style="max-width:100%;max-height:150mm;height:auto;"></p>
 </div>
+
 </div>
 
 <p align="center" style="text-align:center"><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
@@ -51,13 +52,11 @@
 
 El registro de versiones permite seguir las fechas, los responsables y las modificaciones realizadas durante la elaboración del informe, como se detalla en la [Tabla 1](#tabla-1).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-1"></a>
 
 **Tabla 1**
 
 *Historial de versiones del reporte*
-</div>
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
@@ -94,38 +93,26 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-1"></a>
-
-**Figura 1**
-
-*Colaboración en GitHub: evidencia 1 (AV1)*
-
-<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
+<p><strong>Figura 1</strong></p>
+<p><em>Colaboración en GitHub: evidencia 1 (AV1)</em></p>
+<p align="center"><img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura del registro de colaboración del repositorio del informe en GitHub.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-2"></a>
-
-**Figura 2**
-
-*Colaboración en GitHub: evidencia 2 (AV1)*
-
-<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
+<p><strong>Figura 2</strong></p>
+<p><em>Colaboración en GitHub: evidencia 2 (AV1)</em></p>
+<p align="center"><img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura del registro de colaboración del repositorio del informe en GitHub.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-3"></a>
-
-**Figura 3**
-
-*Colaboración en GitHub: evidencia 3 (AV1)*
-
-<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
+<p><strong>Figura 3</strong></p>
+<p><em>Colaboración en GitHub: evidencia 3 (AV1)</em></p>
+<p align="center"><img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura del registro de colaboración del repositorio del informe en GitHub.</em></p>
 </div>
 
 La actividad del equipo en GitHub queda registrada en la organización [RuwaLabs](https://github.com/RuwaLabs).
@@ -136,37 +123,27 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-4"></a>
-
-**Figura 4**
-
-*Resumen de actividad del repositorio del informe (TB1)*
-
-<img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).*
+<p><strong>Figura 4</strong></p>
+<p><em>Resumen de actividad del repositorio del informe (TB1)</em></p>
+<p align="center"><img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-5"></a>
-
-**Figura 5**
-
-*Contribuciones por integrante (TB1)*
-
-<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del panel Contributors del repositorio del informe en GitHub.*
+<p><strong>Figura 5</strong></p>
+<p><em>Contribuciones por integrante (TB1)</em></p>
+<p align="center"><img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del panel Contributors del repositorio del informe en GitHub.</em></p>
 </div>
 
 La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 2](#tabla-2).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-2"></a>
 
 **Tabla 2**
 
 *Participación del equipo en la elaboración del informe (TB1)*
-</div>
 
 | Integrante | GitHub Username | Commits | Adiciones | Eliminaciones |
 | :--- | :--- | :--- | :--- | :--- |
@@ -335,13 +312,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-3"></a>
 
 **Tabla 3**
 
 *Acciones y conclusiones para el Student Outcome 7*
-</div>
 
 <table>
   <thead>
@@ -446,13 +421,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-4"></a>
 
 **Tabla 4**
 
 *Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio*
-</div>
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -471,13 +444,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-5"></a>
 
 **Tabla 5**
 
 *Objetivos SMART – Meza Solórzano, Didier Sebastian*
-</div>
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -493,13 +464,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-6"></a>
 
 **Tabla 6**
 
 *Objetivos SMART – Montoya Nina, Paula Fernanda*
-</div>
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -518,13 +487,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-7"></a>
 
 **Tabla 7**
 
 *Objetivos SMART – Ramos Mera, Neo Daniel*
-</div>
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -543,13 +510,11 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-8"></a>
 
 **Tabla 8**
 
 *Objetivos SMART – Torres Juárez, Alisee Muriel*
-</div>
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -579,13 +544,11 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-9"></a>
 
 **Tabla 9**
 
 *Misión, visión y valores de RuwaLabs*
-</div>
 
 <table>
     <tr>
@@ -610,13 +573,11 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-10"></a>
 
 **Tabla 10**
 
 *Perfiles de los integrantes del equipo*
-</div>
 
 <table>
     <tr>
@@ -678,13 +639,9 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-6"></a>
-
-**Figura 6**
-
-*Identidad visual de SaludYa*
-
-<p align="center">
-  <img
+<p><strong>Figura 6</strong></p>
+<p><em>Identidad visual de SaludYa</em></p>
+<p align="center">  <img</p>
 </div>
 
     src="https://i.imgur.com/7aTgCkT.jpeg"
@@ -817,13 +774,9 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-7"></a>
-
-**Figura 7**
-
-*Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas*
-
-<p align="center">
-  <img
+<p><strong>Figura 7</strong></p>
+<p><em>Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas</em></p>
+<p align="center">  <img</p>
 </div>
 
     src="https://i.imgur.com/V84h3fK.jpeg"
@@ -927,14 +880,10 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-8"></a>
-
-**Figura 8**
-
-*Lean UX Canvas de SaludYa*
-
-<img src="https://i.imgur.com/ESmSAsu.jpeg" alt="Lean UX Canvas de SaludYa" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 8</strong></p>
+<p><em>Lean UX Canvas de SaludYa</em></p>
+<p align="center"><img src="https://i.imgur.com/ESmSAsu.jpeg" alt="Lean UX Canvas de SaludYa" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -980,13 +929,11 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-11"></a>
 
 **Tabla 11**
 
 *Análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA*
-</div>
 
 | **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
 | :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -1038,13 +985,11 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 
 La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 13](#figura-13).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-12"></a>
 
 **Tabla 12**
 
 *Ficha de entrevista — Registro de la entrevista a Braulio Núñez*
-</div>
 
 | Entrevista                                                                                                                                                                                                                                                                                                                      | Registro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1061,13 +1006,11 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 
 La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 14](#figura-14).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-13"></a>
 
 **Tabla 13**
 
 *Ficha de entrevista — Registro de la entrevista a Yordi Salazar*
-</div>
 
 | Entrevista | Registro |
 | ----- | ----- |
@@ -1084,13 +1027,11 @@ Entrevista 3:
 
 La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 15](#figura-15).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-14"></a>
 
 **Tabla 14**
 
 *Ficha de entrevista — Registro de la entrevista a Kevin Huamán*
-</div>
 
 | Entrevista | Registro |
 | ----- | ----- |
@@ -1110,13 +1051,11 @@ Entrevista 4:
 
 La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 16](#figura-16).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-15"></a>
 
 **Tabla 15**
 
 *Ficha de entrevista — Registro de la entrevista a Franco Alanoca*
-</div>
 
 | Entrevista | Registro |
 | ----- | ----- |
@@ -1133,13 +1072,11 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 
 La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 16](#tabla-16) y la [Figura 17](#figura-17).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-16"></a>
 
 **Tabla 16**
 
 *Ficha de entrevista — Registro de la entrevista a Wilmer Contreras*
-</div>
 
 | Entrevista | Registro |
 | ----- | ----- |
@@ -1156,13 +1093,11 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-17"></a>
 
 **Tabla 17**
 
 *Ficha de entrevista — Registro de la entrevista a Deyvis Ochante*
-</div>
 
 | Entrevista | Registro |
 | ----- | ----- |
@@ -1372,13 +1307,11 @@ Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de S
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
 <!-- pdf-pagebreak -->
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-18"></a>
 
 **Tabla 18**
 
 *User Task Matrix*
-</div>
 
 | Tarea | Paciente (Zonas Periféricas) | Personal Asistencial / Administrativo | Frecuencia (Paciente) | Importancia (Paciente) | Frecuencia (Personal) | Importancia (Personal) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -1587,13 +1520,11 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-19"></a>
 
 **Tabla 19**
 
 *Ubiquitous Language*
-</div>
 
 | Ubiquitous Language (Inglés / Código) | Definición en el Dominio de SaludYa |
 | :--- | :--- |
@@ -1624,13 +1555,11 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la [Tabla 20](#tabla-20).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-20"></a>
 
 **Tabla 20**
 
 *To-Be Scenario Mapping*
-</div>
 
 | Fase                                | Haciendo (Acción) | Pensando (Pensamiento) | Sintiendo (Emoción)        |
 |:------------------------------------| :--- | :--- |:---------------------------|
@@ -1653,13 +1582,11 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 
 Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la [Tabla 21](#tabla-21).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-21"></a>
 
 **Tabla 21**
 
 *Epics*
-</div>
 
 | ID | Título de la Épica | Descripción Breve |
 | :--- | :--- | :--- |
@@ -2673,13 +2600,11 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 
 El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 22](#tabla-22).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-22"></a>
 
 **Tabla 22**
 
 *Product Backlog de SaludYa*
-</div>
 
 | # Orden | User Story Id | Rol                  | Título                                                                             | Story Points (1 / 2 / 3 / 5 / 8) | Sprint   |
 | :------ | :------------ | :------------------- | :--------------------------------------------------------------------------------- | :------------------------------- | :------- |
@@ -2766,16 +2691,10 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-36"></a>
-
-**Figura 36**
-
-*EventStorming - Domain Events*
-
-<p align="center">
-  <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 36</strong></p>
+<p><em>EventStorming - Domain Events</em></p>
+<p align="center">  <img src="assets/DomainEvents.png" alt="EventStorming - Domain Events" width="90%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -2788,16 +2707,10 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-37"></a>
-
-**Figura 37**
-
-*EventStorming - Timeline*
-
-<p align="center">
-  <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 37</strong></p>
+<p><em>EventStorming - Timeline</em></p>
+<p align="center">  <img src="assets/Timeline.png" alt="EventStorming - Timeline" width="90%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -2810,16 +2723,10 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-38"></a>
-
-**Figura 38**
-
-*EventStorming - Pain Points y Pivotal Points*
-
-<p align="center">
-  <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 38</strong></p>
+<p><em>EventStorming - Pain Points y Pivotal Points</em></p>
+<p align="center">  <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -2832,16 +2739,10 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-39"></a>
-
-**Figura 39**
-
-*EventStorming - Commands, Policies y Read Models*
-
-<p align="center">
-  <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 39</strong></p>
+<p><em>EventStorming - Commands, Policies y Read Models</em></p>
+<p align="center">  <img src="assets/Commands.png" alt="EventStorming - Commands, Policies y Read Models" width="90%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -2861,13 +2762,11 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-23"></a>
 
 **Tabla 23**
 
 *Candidate Context Discovery*
-</div>
 
 | # | Bounded Context | Propósito | Eventos clave |
 | :--- | :--- | :--- | :--- |
@@ -2894,16 +2793,10 @@ La identificación de bounded contexts delimita las responsabilidades de identid
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-40"></a>
-
-**Figura 40**
-
-*Candidate Context Discovery - Bounded Contexts identificados*
-
-<p align="center">
-  <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 40</strong></p>
+<p><em>Candidate Context Discovery - Bounded Contexts identificados</em></p>
+<p align="center">  <img src="assets/CandidateContextDiscovery.png" alt="Candidate Context Discovery - Bounded Contexts identificados" width="95%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -2917,45 +2810,35 @@ Los flujos reflejan las dos colas complementarias del dominio: la **cola por ped
 
 **Flow 1: Registro y autenticación de paciente**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 1](assets/flow-01-registration.png)
+<p align="center"><img src="assets/flow-01-registration.png" alt="Flow 1" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El paciente ejecuta `RegisterPatient`; **Identity & Access Management** valida la identidad con `ValidateIdentity` contra **ApiPeru.dev** (ACL hacia RENIEC) y responde con `IdentityVerified` → `AccountCreated`. Luego `Login` → `SessionStarted`, y `LinkMinor` → `MinorLinked`.
 
 **Flow 2: Reserva de cita médica para el titular**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 2](assets/flow-02-booking-titular.png)
+<p align="center"><img src="assets/flow-02-booking-titular.png" alt="Flow 2" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El paciente ejecuta `BookAppointment`; **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `AssignBookingOrder` y emite `AppointmentBooked`. Finalmente notifica al paciente vía `SendConfirmationEmail` → `EmailSent`.
 
 **Flow 3: Reserva de cita médica para un menor a cargo**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 3](assets/flow-03-booking-menor.png)
+<p align="center"><img src="assets/flow-03-booking-menor.png" alt="Flow 3" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El titular ejecuta `GetLinkedMinors` (IAM) → `MinorRetrieved`, y luego `BookAppointmentForMinor` con el `minorId`. **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `bookingOrder` y emite `AppointmentBooked`, notificando al tutor.
 
 **Flow 4: Check-in presencial mediante código QR**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 4](assets/flow-04-checkin-qr.png)
+<p align="center"><img src="assets/flow-04-checkin-qr.png" alt="Flow 4" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El paciente ejecuta `ScanQRCode`; **Arrival & QR Check-in** valida con `ValidateQRTolerance` → `ToleranceValid`, crea la entrada con `CreateQueueEntry`, calcula la posición (`PositionCalculated`) y emite `CheckInCompleted` y `TicketIssued`.
 
 **Flow 5: Cancelación de cita y liberación de cupo**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 5](assets/flow-05-cancelacion.png)
+<p align="center"><img src="assets/flow-05-cancelacion.png" alt="Flow 5" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El paciente ejecuta `CancelAppointment`; **Appointments & Booking** valida con `VerifyCancellationDeadline` → `DeadlineValid`, ejecuta `ReleaseSlot` y emite `AppointmentCancelled`.
@@ -2964,27 +2847,21 @@ El paciente ejecuta `CancelAppointment`; **Appointments & Booking** valida con `
 
 **Flow 6a: Declaración de ausencia**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 6a](assets/flow-06a-ausencia.png)
+<p align="center"><img src="assets/flow-06a-ausencia.png" alt="Flow 6a" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El personal de admisión ejecuta `CallPatient`; **Arrival & QR Check-in** valida con `VerifyPostCallTolerance` → `ToleranceExpired`, y emite `PatientAbsentEvent` hacia **Reassignment**.
 
 **Flow 6b: Reasignación en cadena**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 6b](assets/flow-06b-reasignacion.png)
+<p align="center"><img src="assets/flow-06b-reasignacion.png" alt="Flow 6b" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 **Reassignment** ejecuta `FindNextCandidate` en **Appointments & Booking** → `CandidateFound`, envía `ReassignmentOfferSent` al paciente, quien responde con `ReassignmentOfferAccepted`. **Reassignment** ejecuta `ReassignAppointment` y `ReleaseOriginalSlot` para liberar el slot del candidato y re-ofrecerlo al siguiente (cadena). Si el candidato acepta y no llega, se emite `ReassignmentOfferNoShow`.
 
 **Flow 7: Configuración operativa del establecimiento**
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Flow 7](assets/flow-07-configuracion.png)
+<p align="center"><img src="assets/flow-07-configuracion.png" alt="Flow 7" style="max-width:100%;max-height:150mm;height:auto;"/></p>
 </div>
 
 El Super Admin ejecuta `UpdateConfiguration`; **Hospital Operations & Configuration** valida con `ValidateParameters` → `ParametersValid`, aplica con `ApplyConfiguration` y emite `ConfigurationUpdated`. Finalmente, `GetDashboard` → `DashboardRetrieved`.
@@ -3002,55 +2879,40 @@ En cada uno de los canvases registramos las secciones específicas como el **Con
 
 El bounded context **Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Se clasifica como *Generic* con rol *Execution Context*, e interactúa principalmente con `Patient`, `Super Admin` y el servicio externo **ApiPeru.dev** (Anticorruption Layer hacia RENIEC) para la validación de identidad.
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Bounded Context Canvas – Identity & Access Management](assets/bounded-context-canvas-01-iam.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p align="center"><img src="assets/bounded-context-canvas-01-iam.png" alt="Bounded Context Canvas – Identity & Access Management" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 **Bounded Context Canvas – Appointments & Booking**
 
 El bounded context **Appointments & Booking** gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Se clasifica como *Core* con rol *Execution Context*, e incorpora el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva consumida por `Reassignment`.
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Bounded Context Canvas – Appointments & Booking](assets/bounded-context-canvas-02-appointments.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p align="center"><img src="assets/bounded-context-canvas-02-appointments.png" alt="Bounded Context Canvas – Appointments & Booking" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 **Bounded Context Canvas – Reassignment**
 
 El bounded context **Reassignment** gestiona la cola de reserva del sistema y reasigna los cupos liberados por **ausencias**, notificando oportunidades de adelanto a los pacientes. Se clasifica como *Core* con rol *Execution Context*, y aplica una **cadena de reasignación** en la que el candidato que acepta libera su slot original, el cual se re-ofrece al siguiente paciente de la cola.
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Bounded Context Canvas – Reassignment](assets/bounded-context-canvas-03-reassignment.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p align="center"><img src="assets/bounded-context-canvas-03-reassignment.png" alt="Bounded Context Canvas – Reassignment" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 **Bounded Context Canvas – Arrival & QR Check-in**
 
 El bounded context **Arrival & QR Check-in** valida la presencia presencial del paciente mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital y declara la ausencia del paciente cuando excede la tolerancia configurada. Se clasifica como *Core* con rol *Execution Context*.
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Bounded Context Canvas – Arrival & QR Check-in](assets/bounded-context-canvas-04-arrival.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p align="center"><img src="assets/bounded-context-canvas-04-arrival.png" alt="Bounded Context Canvas – Arrival & QR Check-in" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 **Bounded Context Canvas – Hospital Operations & Configuration**
 
 El bounded context **Hospital Operations & Configuration** configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda. Se clasifica como *Supporting* con rol *Execution Context*.
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-![Bounded Context Canvas – Hospital Operations & Configuration](assets/bounded-context-canvas-05-hospital-ops.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p align="center"><img src="assets/bounded-context-canvas-05-hospital-ops.png" alt="Bounded Context Canvas – Hospital Operations & Configuration" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 Los canvases presentados permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la **cola por pedido de cita** como atributo (`Booking Order`) dentro de `Appointments & Booking`, y la **cola de asistencia** como agregado (`Attendance Queue`) dentro de `Arrival & QR Check-in`. Esta separación permite que cada contexto mantenga su propio lenguaje ubicuo y sus reglas de negocio sin acoplarse innecesariamente al resto del sistema.
@@ -3092,13 +2954,11 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-24"></a>
 
 **Tabla 24**
 
 *Context Mapping: patrones y relaciones entre contextos*
-</div>
 
 | Bounded Context origen | Bounded Context destino | Patrón | Justificación |
 | :--- | :--- | :--- | :--- |
@@ -3122,13 +2982,11 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-25"></a>
 
 **Tabla 25**
 
 *Context Mapping: mensajes entre contextos*
-</div>
 
 | Mensaje | Bounded Context origen | Bounded Context destino | Contenido |
 | :--- | :--- | :--- | :--- |
@@ -3159,14 +3017,10 @@ El mapa de contextos relaciona las áreas del dominio y sus dependencias para ex
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-41"></a>
-
-**Figura 41**
-
-*Mapa de relaciones entre bounded contexts de SaludYa*
-
-![Context Map](assets/ContextMapping.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 41</strong></p>
+<p><em>Mapa de relaciones entre bounded contexts de SaludYa</em></p>
+<p align="center"><img src="assets/ContextMapping.png" alt="Context Map" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3186,14 +3040,10 @@ El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pac
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-42"></a>
-
-**Figura 42**
-
-*Diagrama C4 de contexto de SaludYa*
-
-![ContextSys](assets/ContextDiagram.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 42</strong></p>
+<p><em>Diagrama C4 de contexto de SaludYa</em></p>
+<p align="center"><img src="assets/ContextDiagram.png" alt="ContextSys" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3214,14 +3064,10 @@ El Backend API se integra con cuatro servicios externos: **RENIEC API** para la 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-43"></a>
-
-**Figura 43**
-
-*Diagrama C4 de contenedores de SaludYa*
-
-![ContainerSys](assets/ContainerDiagram.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 43</strong></p>
+<p><em>Diagrama C4 de contenedores de SaludYa</em></p>
+<p align="center"><img src="assets/ContainerDiagram.png" alt="ContainerSys" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3241,14 +3087,10 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-44"></a>
-
-**Figura 44**
-
-*Diagrama C4 de despliegue de SaludYa*
-
-![DeploymentSys](assets/DeploymentDiagram.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 44</strong></p>
+<p><em>Diagrama C4 de despliegue de SaludYa</em></p>
+<p align="center"><img src="assets/DeploymentDiagram.png" alt="DeploymentSys" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3638,14 +3480,10 @@ Publica eventos de dominio usando Spring Events.
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-45"></a>
-
-**Figura 45**
-
-*Diagrama de componentes — IAM*
-
-<img src="assets/iam_component_diagram.png" alt="Diagrama de componentes — IAM" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 45</strong></p>
+<p><em>Diagrama de componentes — IAM</em></p>
+<p align="center"><img src="assets/iam_component_diagram.png" alt="Diagrama de componentes — IAM" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3663,14 +3501,10 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-46"></a>
-
-**Figura 46**
-
-*Diagrama de clases — IAM*
-
-<img src="assets/iam_uml_diagram.png" alt="Diagrama de clases — IAM" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 46</strong></p>
+<p><em>Diagrama de clases — IAM</em></p>
+<p align="center"><img src="assets/iam_uml_diagram.png" alt="Diagrama de clases — IAM" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -3686,14 +3520,10 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-47"></a>
-
-**Figura 47**
-
-*Diagrama de base de datos — IAM*
-
-<img src="assets/iam_database_diagram.png" alt="Diagrama de base de datos — IAM" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 47</strong></p>
+<p><em>Diagrama de base de datos — IAM</em></p>
+<p align="center"><img src="assets/iam_database_diagram.png" alt="Diagrama de base de datos — IAM" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4130,14 +3960,10 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-48"></a>
-
-**Figura 48**
-
-*Diagrama de componentes — Appointment*
-
-<img src="chapter-02/assets/appointment_component_diagram_v2.png" alt="Diagrama de componentes — Appointment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 48</strong></p>
+<p><em>Diagrama de componentes — Appointment</em></p>
+<p align="center"><img src="chapter-02/assets/appointment_component_diagram_v2.png" alt="Diagrama de componentes — Appointment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4155,14 +3981,10 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-49"></a>
-
-**Figura 49**
-
-*Diagrama de clases — Appointment*
-
-<img src="chapter-02/assets/appointment_class_diagram_v2.png" alt="Diagrama de clases — Appointment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 49</strong></p>
+<p><em>Diagrama de clases — Appointment</em></p>
+<p align="center"><img src="chapter-02/assets/appointment_class_diagram_v2.png" alt="Diagrama de clases — Appointment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4178,14 +4000,10 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-50"></a>
-
-**Figura 50**
-
-*Diagrama de base de datos — Appointment*
-
-<img src="assets/appointment_database_diagram.png" alt="Diagrama de base de datos — Appointment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 50</strong></p>
+<p><em>Diagrama de base de datos — Appointment</em></p>
+<p align="center"><img src="assets/appointment_database_diagram.png" alt="Diagrama de base de datos — Appointment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4401,14 +4219,10 @@ Envía notificaciones de ofertas de reasignación al paciente (pendiente de impl
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-51"></a>
-
-**Figura 51**
-
-*Diagrama de componentes — Reassignment*
-
-<img src="assets/reassignment_component_diagram.png" alt="Diagrama de componentes — Reassignment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 51</strong></p>
+<p><em>Diagrama de componentes — Reassignment</em></p>
+<p align="center"><img src="assets/reassignment_component_diagram.png" alt="Diagrama de componentes — Reassignment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4426,14 +4240,10 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-52"></a>
-
-**Figura 52**
-
-*Diagrama de clases — Reassignment*
-
-<img src="assets/reassignment_class_diagram.png" alt="Diagrama de clases — Reassignment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 52</strong></p>
+<p><em>Diagrama de clases — Reassignment</em></p>
+<p align="center"><img src="assets/reassignment_class_diagram.png" alt="Diagrama de clases — Reassignment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4449,14 +4259,10 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-53"></a>
-
-**Figura 53**
-
-*Diagrama de base de datos — Reassignment*
-
-<img src="assets/reassignment_database_diagram.png" alt="Diagrama de base de datos — Reassignment" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 53</strong></p>
+<p><em>Diagrama de base de datos — Reassignment</em></p>
+<p align="center"><img src="assets/reassignment_database_diagram.png" alt="Diagrama de base de datos — Reassignment" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4897,14 +4703,10 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-54"></a>
-
-**Figura 54**
-
-*Diagrama de componentes — Arrival*
-
-<img src="assets/arrival_component_diagram.png" alt="Diagrama de componentes — Arrival" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 54</strong></p>
+<p><em>Diagrama de componentes — Arrival</em></p>
+<p align="center"><img src="assets/arrival_component_diagram.png" alt="Diagrama de componentes — Arrival" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4922,14 +4724,10 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-55"></a>
-
-**Figura 55**
-
-*Diagrama de clases — Arrival*
-
-<img src="assets/arrival_class_diagram.png" alt="Diagrama de clases — Arrival" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 55</strong></p>
+<p><em>Diagrama de clases — Arrival</em></p>
+<p align="center"><img src="assets/arrival_class_diagram.png" alt="Diagrama de clases — Arrival" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -4945,14 +4743,10 @@ El diagrama de clases del dominio del bounded context Arrival & QR Check-in repr
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-56"></a>
-
-**Figura 56**
-
-*Diagrama de base de datos — Arrival*
-
-<img src="assets/arrival_database_diagram.png" alt="Diagrama de base de datos — Arrival" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 56</strong></p>
+<p><em>Diagrama de base de datos — Arrival</em></p>
+<p align="center"><img src="assets/arrival_database_diagram.png" alt="Diagrama de base de datos — Arrival" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -5121,14 +4915,10 @@ Publica eventos de dominio usando Spring Events.
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-57"></a>
-
-**Figura 57**
-
-*Diagrama de componentes — Hospital Operations & Configuration*
-
-<img src="assets/HospitalOperations_Configuration_component_diagram.png" alt="Diagrama de componentes — Hospital Operations &amp; Configuration" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 57</strong></p>
+<p><em>Diagrama de componentes — Hospital Operations & Configuration</em></p>
+<p align="center"><img src="assets/HospitalOperations_Configuration_component_diagram.png" alt="Diagrama de componentes — Hospital Operations &amp; Configuration" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -5145,14 +4935,10 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-58"></a>
-
-**Figura 58**
-
-*Diagrama de clases — Hospital Operations & Configuration*
-
-<img src="assets/HospitalOperations_Configuration_class_diagram.png" alt="Diagrama de clases — Hospital Operations &amp; Configuration" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 58</strong></p>
+<p><em>Diagrama de clases — Hospital Operations & Configuration</em></p>
+<p align="center"><img src="assets/HospitalOperations_Configuration_class_diagram.png" alt="Diagrama de clases — Hospital Operations &amp; Configuration" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -5167,14 +4953,10 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-59"></a>
-
-**Figura 59**
-
-*Diagrama de base de datos — Hospital Operations & Configuration*
-
-<img src="assets/HospitalOperations_Configuration_database_diagram.png" alt="Diagrama de base de datos — Hospital Operations &amp; Configuration" width="85%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 59</strong></p>
+<p><em>Diagrama de base de datos — Hospital Operations & Configuration</em></p>
+<p align="center"><img src="assets/HospitalOperations_Configuration_database_diagram.png" alt="Diagrama de base de datos — Hospital Operations &amp; Configuration" width="85%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -5201,13 +4983,11 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-26"></a>
 
 **Tabla 26**
 
 *Branding*
-</div>
 
 | Elemento | Descripción |
 |:---|:---|
@@ -5236,13 +5016,11 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-27"></a>
 
 **Tabla 27**
 
 *Typography — Landing Page (web)*
-</div>
 
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
@@ -5267,13 +5045,11 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-28"></a>
 
 **Tabla 28**
 
 *Typography — Aplicaciones móviles (Android)*
-</div>
 
 | Elemento | Fuente | Tamaño | Peso | Uso |
 |:---|:---|:---|:---|:---|
@@ -5298,13 +5074,11 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 
 La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 29](#tabla-29).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-29"></a>
 
 **Tabla 29**
 
 *Colors — Landing Page (web)*
-</div>
 
 | Color | Código HEX | Uso principal |
 |:---|:---|:---|
@@ -5326,14 +5100,10 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-60"></a>
-
-**Figura 60**
-
-*Paleta de colores del Landing Page de SaludYa*
-
-![Paleta de colores del Landing Page de SaludYa](assets/paleta-colores-landing.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 60</strong></p>
+<p><em>Paleta de colores del Landing Page de SaludYa</em></p>
+<p align="center"><img src="assets/paleta-colores-landing.png" alt="Paleta de colores del Landing Page de SaludYa" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -5343,13 +5113,11 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-30"></a>
 
 **Tabla 30**
 
 *Colors — Aplicaciones móviles (Android)*
-</div>
 
 | Token | Código HEX | Uso principal |
 |:---|:---|:---|
@@ -5381,13 +5149,11 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-31"></a>
 
 **Tabla 31**
 
 *Spacing — Landing Page (web)*
-</div>
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -5408,13 +5174,11 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-32"></a>
 
 **Tabla 32**
 
 *Spacing — Aplicaciones móviles (Android)*
-</div>
 
 | Token | Valor | Uso |
 |:---|:---|:---|
@@ -5439,13 +5203,11 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 
 Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 33](#tabla-33).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-33"></a>
 
 **Tabla 33**
 
 *Border Radius — Landing Page (web)*
-</div>
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -5463,13 +5225,11 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-34"></a>
 
 **Tabla 34**
 
 *Border Radius — Aplicaciones móviles (Android)*
-</div>
 
 | Token | Valor | Uso |
 |:---|:---|:---|
@@ -5490,13 +5250,11 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 
 Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 35](#tabla-35).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-35"></a>
 
 **Tabla 35**
 
 *Shadows — Landing Page (web)*
-</div>
 
 | Variable | Valor | Uso |
 |:---|:---|:---|
@@ -5521,13 +5279,11 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-36"></a>
 
 **Tabla 36**
 
 *Tone of Voice*
-</div>
 
 | Dimensión | Elección | Justificación |
 |:---|:---|:---|
@@ -5550,13 +5306,11 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-37"></a>
 
 **Tabla 37**
 
 *Iconography*
-</div>
 
 | Icono | Uso |
 |:---|:---|
@@ -5592,13 +5346,11 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 38](#tabla-38).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-38"></a>
 
 **Tabla 38**
 
 *Organization Systems — Landing Page*
-</div>
 
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
@@ -5623,13 +5375,11 @@ La organización de las secciones agrupa la información según las tareas del u
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 39](#tabla-39).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-39"></a>
 
 **Tabla 39**
 
 *Organization Systems — Aplicación móvil para pacientes*
-</div>
 
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
@@ -5650,13 +5400,11 @@ La organización de las secciones agrupa la información según las tareas del u
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 40](#tabla-40).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-40"></a>
 
 **Tabla 40**
 
 *Organization Systems — Aplicación móvil para personal de salud*
-</div>
 
 | Sección | Sistema de organización visual | Esquema de categorización | Justificación |
 |:---|:---|:---|:---|
@@ -5691,13 +5439,11 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 41](#tabla-41).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-41"></a>
 
 **Tabla 41**
 
 *Labelling Systems — Landing Page*
-</div>
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -5720,13 +5466,11 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 42](#tabla-42).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-42"></a>
 
 **Tabla 42**
 
 *Labelling Systems — Aplicación móvil para pacientes*
-</div>
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -5748,13 +5492,11 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 43](#tabla-43).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-43"></a>
 
 **Tabla 43**
 
 *Labelling Systems — Aplicación móvil para personal de salud*
-</div>
 
 | Etiqueta | Representa |
 |:---|:---|
@@ -5788,13 +5530,11 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 44](#tabla-44).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-44"></a>
 
 **Tabla 44**
 
 *SEO Tags and Meta Tags — Landing Page*
-</div>
 
 | Tag | Valor |
 |:---|:---|
@@ -5823,13 +5563,11 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 45](#tabla-45).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-45"></a>
 
 **Tabla 45**
 
 *SEO Tags and Meta Tags — ASO (App Store Optimization)*
-</div>
 
 | Elemento | App pacientes | App personal de salud |
 |:---|:---|:---|
@@ -5852,13 +5590,11 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 46](#tabla-46).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-46"></a>
 
 **Tabla 46**
 
 *Searching Systems — Landing Page*
-</div>
 
 | Acción | Descripción |
 |:---|:---|
@@ -5876,13 +5612,11 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 47](#tabla-47).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-47"></a>
 
 **Tabla 47**
 
 *Searching Systems — Aplicación móvil para pacientes*
-</div>
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -5901,13 +5635,11 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 48](#tabla-48).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-48"></a>
 
 **Tabla 48**
 
 *Searching Systems — Aplicación móvil para personal de salud*
-</div>
 
 | Búsqueda | Filtros disponibles | Resultado |
 |:---|:---|:---|
@@ -5934,13 +5666,11 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 49](#tabla-49).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-49"></a>
 
 **Tabla 49**
 
 *Navigation Systems — Landing Page*
-</div>
 
 | Acción | Descripción |
 |:---|:---|
@@ -5961,13 +5691,11 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 50](#tabla-50).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-50"></a>
 
 **Tabla 50**
 
 *Navigation Systems — Aplicación móvil para pacientes*
-</div>
 
 | Acción | Descripción |
 |:---|:---|
@@ -5986,13 +5714,11 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 51](#tabla-51).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-51"></a>
 
 **Tabla 51**
 
 *Navigation Systems — Aplicación móvil para personal de salud*
-</div>
 
 | Acción | Descripción |
 |:---|:---|
@@ -6041,13 +5767,11 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 52](#tabla-52).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-52"></a>
 
 **Tabla 52**
 
 *Wireframe Desktop Web Browser*
-</div>
 
 | Vista | Secciones destacadas |
 |:---|:---|
@@ -6064,14 +5788,10 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-61"></a>
-
-**Figura 61**
-
-*Wireframe Desktop - Vista superior*
-
-![Wireframe Desktop - Vista superior](chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 61</strong></p>
+<p><em>Wireframe Desktop - Vista superior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png" alt="Wireframe Desktop - Vista superior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6082,14 +5802,10 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-62"></a>
-
-**Figura 62**
-
-*Wireframe Desktop - Vista inferior*
-
-![Wireframe Desktop - Vista inferior](chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 62</strong></p>
+<p><em>Wireframe Desktop - Vista inferior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png" alt="Wireframe Desktop - Vista inferior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6100,13 +5816,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 53](#tabla-53).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-53"></a>
 
 **Tabla 53**
 
 *Wireframe Mobile Web Browser*
-</div>
 
 | Vista | Secciones destacadas |
 |:---|:---|
@@ -6123,14 +5837,10 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-63"></a>
-
-**Figura 63**
-
-*Wireframe Mobile - Vista superior*
-
-![Wireframe Mobile - Vista superior](chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 63</strong></p>
+<p><em>Wireframe Mobile - Vista superior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png" alt="Wireframe Mobile - Vista superior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6141,14 +5851,10 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-64"></a>
-
-**Figura 64**
-
-*Wireframe Mobile - Vista inferior*
-
-![Wireframe Mobile - Vista inferior](chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 64</strong></p>
+<p><em>Wireframe Mobile - Vista inferior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png" alt="Wireframe Mobile - Vista inferior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6171,13 +5877,11 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la [Tabla 54](#tabla-54).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-54"></a>
 
 **Tabla 54**
 
 *Design System aplicado*
-</div>
 
 | Elemento | Valor | Aplicación |
 |:---|:---|:---|
@@ -6203,13 +5907,11 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 55](#tabla-55).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-55"></a>
 
 **Tabla 55**
 
 *Mock-up Desktop Web Browser*
-</div>
 
 | Vista | Secciones destacadas |
 |:---|:---|
@@ -6226,14 +5928,10 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-65"></a>
-
-**Figura 65**
-
-*Mock-up Desktop - Vista superior*
-
-![Mock-up Desktop - Vista superior](chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 65</strong></p>
+<p><em>Mock-up Desktop - Vista superior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png" alt="Mock-up Desktop - Vista superior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6244,14 +5942,10 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-66"></a>
-
-**Figura 66**
-
-*Mock-up Desktop - Vista inferior*
-
-![Mock-up Desktop - Vista inferior](chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 66</strong></p>
+<p><em>Mock-up Desktop - Vista inferior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png" alt="Mock-up Desktop - Vista inferior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6262,13 +5956,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 56](#tabla-56).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-56"></a>
 
 **Tabla 56**
 
 *Mock-up Mobile Web Browser*
-</div>
 
 | Vista | Secciones destacadas |
 |:---|:---|
@@ -6285,14 +5977,10 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-67"></a>
-
-**Figura 67**
-
-*Mock-up Mobile - Vista superior*
-
-![Mock-up Mobile - Vista superior](chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 67</strong></p>
+<p><em>Mock-up Mobile - Vista superior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png" alt="Mock-up Mobile - Vista superior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6303,14 +5991,10 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-68"></a>
-
-**Figura 68**
-
-*Mock-up Mobile - Vista inferior*
-
-![Mock-up Mobile - Vista inferior](chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 68</strong></p>
+<p><em>Mock-up Mobile - Vista inferior</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png" alt="Mock-up Mobile - Vista inferior" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6321,13 +6005,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la [Tabla 57](#tabla-57).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-57"></a>
 
 **Tabla 57**
 
 *Aplicación del Design System y diseño inclusivo*
-</div>
 
 | Criterio | Aplicación |
 |:---|:---|
@@ -6350,13 +6032,11 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 
 Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la [Tabla 58](#tabla-58).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-58"></a>
 
 **Tabla 58**
 
 *Componentes reutilizables*
-</div>
 
 | Componente | Descripción | Estados |
 |:---|:---|:---|
@@ -6382,14 +6062,10 @@ El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-69"></a>
-
-**Figura 69**
-
-*Landing Page de SaludYa - Implementación*
-
-![Landing Page de SaludYa - Implementación](chapter-03/assets/landing-page/landing-page.png)
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 69</strong></p>
+<p><em>Landing Page de SaludYa - Implementación</em></p>
+<p align="center"><img src="chapter-03/assets/landing-page/landing-page.png" alt="Landing Page de SaludYa - Implementación" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -6417,14 +6093,10 @@ Los wireframes emplean una escala de grises de baja fidelidad que permite distin
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-70"></a>
-
-**Figura 70**
-
-*Escala de grises para wireframes*
-
-<img src="chapter-03/assets/wireframes/color-wireframes.png" alt="Escala de grises para wireframes de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 70</strong></p>
+<p><em>Escala de grises para wireframes</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/color-wireframes.png" alt="Escala de grises para wireframes de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 ##### Aplicación móvil para pacientes
@@ -6435,182 +6107,130 @@ El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-71"></a>
-
-**Figura 71**
-
-*Bienvenida e inicio de sesión*
-
-<img src="chapter-03/assets/wireframes/iam-bienvenida-login.png" alt="Wireframe de bienvenida e inicio de sesión de SaludYa" width="80%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 71</strong></p>
+<p><em>Bienvenida e inicio de sesión</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/iam-bienvenida-login.png" alt="Wireframe de bienvenida e inicio de sesión de SaludYa" width="80%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la [Figura 72](#figura-72).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-72"></a>
-
-**Figura 72**
-
-*Registro y verificación de identidad*
-
-<img src="chapter-03/assets/wireframes/iam-registro.png" alt="Wireframe de registro y verificación de identidad de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 72</strong></p>
+<p><em>Registro y verificación de identidad</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/iam-registro.png" alt="Wireframe de registro y verificación de identidad de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la [Figura 73](#figura-73).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-73"></a>
-
-**Figura 73**
-
-*Recuperación y cambio de contraseña*
-
-<img src="chapter-03/assets/wireframes/iam-recuperacion.png" alt="Wireframe de recuperación y cambio de contraseña de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 73</strong></p>
+<p><em>Recuperación y cambio de contraseña</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/iam-recuperacion.png" alt="Wireframe de recuperación y cambio de contraseña de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la [Figura 74](#figura-74).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-74"></a>
-
-**Figura 74**
-
-*Inicio del paciente*
-
-<img src="chapter-03/assets/wireframes/paciente-home.png" alt="Wireframe de inicio del paciente de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 74</strong></p>
+<p><em>Inicio del paciente</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-home.png" alt="Wireframe de inicio del paciente de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la [Figura 75](#figura-75).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-75"></a>
-
-**Figura 75**
-
-*Citas pendientes*
-
-<img src="chapter-03/assets/wireframes/paciente-citas-pendientes.png" alt="Wireframe de citas pendientes de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 75</strong></p>
+<p><em>Citas pendientes</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-citas-pendientes.png" alt="Wireframe de citas pendientes de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la [Figura 76](#figura-76).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-76"></a>
-
-**Figura 76**
-
-*Historial y filtro por fecha*
-
-<img src="chapter-03/assets/wireframes/paciente-historial.png" alt="Wireframe de historial y filtro por fecha de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 76</strong></p>
+<p><em>Historial y filtro por fecha</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-historial.png" alt="Wireframe de historial y filtro por fecha de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la [Figura 77](#figura-77).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-77"></a>
-
-**Figura 77**
-
-*Reserva de cita*
-
-<img src="chapter-03/assets/wireframes/paciente-reserva.png" alt="Wireframe de reserva de cita de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 77</strong></p>
+<p><em>Reserva de cita</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-reserva.png" alt="Wireframe de reserva de cita de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la [Figura 78](#figura-78).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-78"></a>
-
-**Figura 78**
-
-*Reserva por doctor*
-
-<img src="chapter-03/assets/wireframes/paciente-reserva-por-doctor.png" alt="Wireframe de reserva por doctor de SaludYa" width="80%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 78</strong></p>
+<p><em>Reserva por doctor</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-reserva-por-doctor.png" alt="Wireframe de reserva por doctor de SaludYa" width="80%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La asistencia reúne el registro de llegada mediante **código QR** y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la [Figura 79](#figura-79).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-79"></a>
-
-**Figura 79**
-
-*Asistencia: check-in y cola*
-
-<img src="chapter-03/assets/wireframes/paciente-checkin.png" alt="Wireframe de asistencia con check-in y cola de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 79</strong></p>
+<p><em>Asistencia: check-in y cola</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-checkin.png" alt="Wireframe de asistencia con check-in y cola de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones **Rechazar** y **Aceptar**, como se observa en la [Figura 80](#figura-80).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-80"></a>
-
-**Figura 80**
-
-*Notificaciones y reasignación*
-
-<img src="chapter-03/assets/wireframes/paciente-notificaciones.png" alt="Wireframe de notificaciones y reasignación de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 80</strong></p>
+<p><em>Notificaciones y reasignación</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-notificaciones.png" alt="Wireframe de notificaciones y reasignación de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la [Figura 81](#figura-81).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-81"></a>
-
-**Figura 81**
-
-*Configuración y cambio de correo*
-
-<img src="chapter-03/assets/wireframes/paciente-cambio-correo.png" alt="Wireframe de configuración y cambio de correo de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 81</strong></p>
+<p><em>Configuración y cambio de correo</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-cambio-correo.png" alt="Wireframe de configuración y cambio de correo de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la [Figura 82](#figura-82).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-82"></a>
-
-**Figura 82**
-
-*Pacientes vinculados y registro de menor*
-
-<img src="chapter-03/assets/wireframes/paciente-menores-1.png" alt="Wireframe de pacientes vinculados y registro de menor de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 82</strong></p>
+<p><em>Pacientes vinculados y registro de menor</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-menores-1.png" alt="Wireframe de pacientes vinculados y registro de menor de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la [Figura 83](#figura-83).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-83"></a>
-
-**Figura 83**
-
-*Perfil del menor vinculado*
-
-<img src="chapter-03/assets/wireframes/paciente-menores-2.png" alt="Wireframe del perfil del menor vinculado de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 83</strong></p>
+<p><em>Perfil del menor vinculado</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/paciente-menores-2.png" alt="Wireframe del perfil del menor vinculado de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 ##### Aplicación móvil del personal de salud
@@ -6621,70 +6241,50 @@ El inicio del personal presenta el resumen del día con las citas canceladas y p
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-84"></a>
-
-**Figura 84**
-
-*Inicio del personal de salud*
-
-<img src="chapter-03/assets/wireframes/admin-home.png" alt="Wireframe de inicio del personal de salud de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 84</strong></p>
+<p><em>Inicio del personal de salud</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/admin-home.png" alt="Wireframe de inicio del personal de salud de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la [Figura 85](#figura-85).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-85"></a>
-
-**Figura 85**
-
-*Calendario: especialidad, fecha y hora*
-
-<img src="chapter-03/assets/wireframes/admin-calendario.png" alt="Wireframe del calendario del personal de salud de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 85</strong></p>
+<p><em>Calendario: especialidad, fecha y hora</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/admin-calendario.png" alt="Wireframe del calendario del personal de salud de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la [Figura 86](#figura-86).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-86"></a>
-
-**Figura 86**
-
-*Calendario por doctor*
-
-<img src="chapter-03/assets/wireframes/admin-calendario-doctor.png" alt="Wireframe del calendario por doctor de SaludYa" width="80%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 86</strong></p>
+<p><em>Calendario por doctor</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/admin-calendario-doctor.png" alt="Wireframe del calendario por doctor de SaludYa" width="80%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la [Figura 87](#figura-87).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-87"></a>
-
-**Figura 87**
-
-*Edición de bloque horario*
-
-<img src="chapter-03/assets/wireframes/admin-edicion-bloque.png" alt="Wireframe de edición de bloque horario de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 87</strong></p>
+<p><em>Edición de bloque horario</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/admin-edicion-bloque.png" alt="Wireframe de edición de bloque horario de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la [Figura 88](#figura-88).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-88"></a>
-
-**Figura 88**
-
-*Configuración general*
-
-<img src="chapter-03/assets/wireframes/admin-configuracion.png" alt="Wireframe de configuración general de SaludYa" width="70%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 88</strong></p>
+<p><em>Configuración general</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/admin-configuracion.png" alt="Wireframe de configuración general de SaludYa" width="70%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 ##### Diálogos y componentes
@@ -6695,28 +6295,20 @@ El diálogo de confirmación de cita solicita validar la reserva antes de regist
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-89"></a>
-
-**Figura 89**
-
-*Diálogos de confirmación de cita*
-
-<img src="chapter-03/assets/wireframes/dialogs-cita-confirmada.png" alt="Wireframe de diálogos de confirmación de cita de SaludYa" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 89</strong></p>
+<p><em>Diálogos de confirmación de cita</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/dialogs-cita-confirmada.png" alt="Wireframe de diálogos de confirmación de cita de SaludYa" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la [Figura 90](#figura-90).
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-90"></a>
-
-**Figura 90**
-
-*Diálogos de estado y validación*
-
-<img src="chapter-03/assets/wireframes/dialogs-configuracion.png" alt="Wireframe de diálogos de estado y validación de SaludYa" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 90</strong></p>
+<p><em>Diálogos de estado y validación</em></p>
+<p align="center"><img src="chapter-03/assets/wireframes/dialogs-configuracion.png" alt="Wireframe de diálogos de estado y validación de SaludYa" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
@@ -6731,16 +6323,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-91"></a>
-
-**Figura 91**
-
-*Wireflow de registro en la aplicación (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 91</strong></p>
+<p><em>Wireflow de registro en la aplicación (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 91](#figura-91) se observa que el recorrido va de Bienvenida a Registro (tipo y número de documento) y luego a Verificar DNI, con diálogos de datos incorrectos o validación exitosa. Después sigue Registro de credenciales, Verificación de celular con código (incorrecto o exitoso) y, al final, Inicio de sesión.
@@ -6751,16 +6337,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-92"></a>
-
-**Figura 92**
-
-*Wireflow de inicio de sesión (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 92</strong></p>
+<p><em>Wireflow de inicio de sesión (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 92](#figura-92) se aprecia que, desde Inicio de sesión, si las credenciales son inválidas aparece un diálogo de error. Si son correctas, pasa a la verificación con código (segundo factor), con diálogo de código incorrecto o exitoso, y entra al Home.
@@ -6771,16 +6351,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-93"></a>
-
-**Figura 93**
-
-*Wireflow de recuperación de contraseña (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 93</strong></p>
+<p><em>Wireflow de recuperación de contraseña (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 93](#figura-93) se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
@@ -6791,16 +6365,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-94"></a>
-
-**Figura 94**
-
-*Wireflow de cierre de sesión (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 94</strong></p>
+<p><em>Wireflow de cierre de sesión (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 94](#figura-94) se aprecia que, desde Configuración, se confirma el cierre y se vuelve al Inicio de sesión. El diálogo de confirmación aún no tiene wireframe, por eso aparece como recuadro pendiente.
@@ -6811,16 +6379,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-95"></a>
-
-**Figura 95**
-
-*Wireflow de reserva de una cita médica (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 95</strong></p>
+<p><em>Wireflow de reserva de una cita médica (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 95](#figura-95) se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
@@ -6831,16 +6393,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-96"></a>
-
-**Figura 96**
-
-*Wireflow de consulta de citas y detalle (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 96</strong></p>
+<p><em>Wireflow de consulta de citas y detalle (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 96](#figura-96) se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
@@ -6851,16 +6407,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-97"></a>
-
-**Figura 97**
-
-*Wireflow del historial de citas (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 97</strong></p>
+<p><em>Wireflow del historial de citas (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 97](#figura-97) se observa que, desde Home, se abre Historial, se despliega el calendario de filtro por fecha y se muestra el historial acotado a la fecha elegida.
@@ -6871,16 +6421,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-98"></a>
-
-**Figura 98**
-
-*Wireflow de gestión de citas de un familiar a cargo (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 98</strong></p>
+<p><em>Wireflow de gestión de citas de un familiar a cargo (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 98](#figura-98) se observa que, desde Configuración, se abre Parientes vinculados y se agrega un menor (Registro de menor). Luego viene Verificar DNI, con diálogos de «No eres pariente», datos incorrectos o validación exitosa, y se abre el Home del menor, desde donde se puede volver a la cuenta principal. Como camino alterno, se abre un pariente ya vinculado para desvincularlo.
@@ -6891,16 +6435,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-99"></a>
-
-**Figura 99**
-
-*Wireflow de revisión de notificaciones (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 99</strong></p>
+<p><em>Wireflow de revisión de notificaciones (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 99](#figura-99) se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
@@ -6911,16 +6449,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-100"></a>
-
-**Figura 100**
-
-*Wireflow de registro de llegada y seguimiento del turno (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 100</strong></p>
+<p><em>Wireflow de registro de llegada y seguimiento del turno (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 100](#figura-100) se observa que, desde Asistencia, se elige la reserva y se registra con el código QR. Luego se muestra la Posición en la cola y se llega al aviso «Has sido atendido». Como camino alterno, se puede dejar la cola con un diálogo de confirmación.
@@ -6931,16 +6463,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-101"></a>
-
-**Figura 101**
-
-*Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 101</strong></p>
+<p><em>Wireflow de aceptación o rechazo de un cupo liberado (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 101](#figura-101) se observa que, desde la notificación, se abre el detalle de la oferta. Si acepta, aparece «Reasignación exitosa». Si rechaza, aparece un diálogo de confirmación del rechazo.
@@ -6951,16 +6477,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-102"></a>
-
-**Figura 102**
-
-*Wireflow de actualización de datos de contacto (paciente)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 102</strong></p>
+<p><em>Wireflow de actualización de datos de contacto (paciente)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 102](#figura-102) se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
@@ -6973,16 +6493,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-103"></a>
-
-**Figura 103**
-
-*Wireflow de registro del personal de admisión*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 103</strong></p>
+<p><em>Wireflow de registro del personal de admisión</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 103](#figura-103) se observa que el administrador crea la cuenta y envía una invitación (paso pendiente de wireframe). El personal abre el enlace, define su contraseña (diálogo si no coincide o si fue exitoso) y pasa al Inicio de sesión.
@@ -6993,16 +6507,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-104"></a>
-
-**Figura 104**
-
-*Wireflow de inicio de sesión del personal de admisión*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 104</strong></p>
+<p><em>Wireflow de inicio de sesión del personal de admisión</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 104](#figura-104) se observa que va de Inicio de sesión (diálogo único si las credenciales son inválidas) a la verificación con código (diálogo de código incorrecto o exitoso) y entra al Home del administrador.
@@ -7013,16 +6521,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-105"></a>
-
-**Figura 105**
-
-*Wireflow de registro de un bloque de cita*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 105</strong></p>
+<p><em>Wireflow de registro de un bloque de cita</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 105](#figura-105) se observa que, desde el Home, se elige la especialidad, la fecha, la hora y el doctor, y se termina en el diálogo «Confirmar bloque de cita».
@@ -7033,16 +6535,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-106"></a>
-
-**Figura 106**
-
-*Wireflow de edición de un bloque de cita*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 106</strong></p>
+<p><em>Wireflow de edición de un bloque de cita</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 106](#figura-106) se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
@@ -7053,16 +6549,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-107"></a>
-
-**Figura 107**
-
-*Wireflow de consulta de disponibilidad de cupos*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 107</strong></p>
+<p><em>Wireflow de consulta de disponibilidad de cupos</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 107](#figura-107) se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
@@ -7073,16 +6563,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-108"></a>
-
-**Figura 108**
-
-*Wireflow de consulta de citas pendientes*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 108</strong></p>
+<p><em>Wireflow de consulta de citas pendientes</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 108](#figura-108) se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
@@ -7093,16 +6577,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-109"></a>
-
-**Figura 109**
-
-*Wireflow de consulta de citas atendidas*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 109</strong></p>
+<p><em>Wireflow de consulta de citas atendidas</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 109](#figura-109) se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
@@ -7113,16 +6591,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-110"></a>
-
-**Figura 110**
-
-*Wireflow de registro de llegada del paciente (check-in)*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 110</strong></p>
+<p><em>Wireflow de registro de llegada del paciente (check-in)</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 110](#figura-110) se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
@@ -7133,16 +6605,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-111"></a>
-
-**Figura 111**
-
-*Wireflow de gestión de la cola de asistencia*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 111</strong></p>
+<p><em>Wireflow de gestión de la cola de asistencia</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 111](#figura-111) se observa que, desde el Home, se elige la especialidad y se abre la lista «Hoy», donde se atiende y se finaliza cada cita en orden.
@@ -7153,16 +6619,10 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-112"></a>
-
-**Figura 112**
-
-*Wireflow de configuración de los parámetros del establecimiento*
-
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración propia.*
+<p><strong>Figura 112</strong></p>
+<p><em>Wireflow de configuración de los parámetros del establecimiento</em></p>
+<p align="center">  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración propia.</em></p>
 </div>
 
 **Explicación del flujo:** En la [Figura 112](#figura-112) se observa que, desde Configuración general, se edita un parámetro, que se actualiza con el diálogo «Ingrese el nuevo valor».
@@ -7181,16 +6641,10 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-113"></a>
-
-**Figura 113**
-
-*Bienvenida y registro del paciente*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/iam-registro.png" alt="Bienvenida y registro del paciente" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 113</strong></p>
+<p><em>Bienvenida y registro del paciente</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/iam-registro.png" alt="Bienvenida y registro del paciente" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7203,16 +6657,10 @@ Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-114"></a>
-
-**Figura 114**
-
-*Acceso y recuperación de la cuenta del paciente*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/iam-acceso-recuperacion.png" alt="Acceso y recuperación de la cuenta del paciente" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 114</strong></p>
+<p><em>Acceso y recuperación de la cuenta del paciente</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/iam-acceso-recuperacion.png" alt="Acceso y recuperación de la cuenta del paciente" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7227,16 +6675,10 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-115"></a>
-
-**Figura 115**
-
-*Inicio, citas pendientes e historial del paciente*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/dashboard.png" alt="Inicio, citas pendientes e historial del paciente" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 115</strong></p>
+<p><em>Inicio, citas pendientes e historial del paciente</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/dashboard.png" alt="Inicio, citas pendientes e historial del paciente" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7251,16 +6693,10 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-116"></a>
-
-**Figura 116**
-
-*Selección de especialidad, beneficiario, fecha, profesional y horario*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/reservas-seleccion.png" alt="Selección de especialidad, beneficiario, fecha, profesional y horario" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 116</strong></p>
+<p><em>Selección de especialidad, beneficiario, fecha, profesional y horario</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/reservas-seleccion.png" alt="Selección de especialidad, beneficiario, fecha, profesional y horario" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7273,16 +6709,10 @@ El paciente selecciona la especialidad, al titular o menor vinculado y una fecha
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-117"></a>
-
-**Figura 117**
-
-*Resumen, confirmación y estados de la reserva*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/reservas-confirmacion.png" alt="Resumen, confirmación y estados de la reserva" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 117</strong></p>
+<p><em>Resumen, confirmación y estados de la reserva</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/reservas-confirmacion.png" alt="Resumen, confirmación y estados de la reserva" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7297,16 +6727,10 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-118"></a>
-
-**Figura 118**
-
-*Registro de llegada, escaneo del QR del establecimiento, ticket y cola*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/check-in-atencion.png" alt="Registro de llegada, escaneo del QR del establecimiento, ticket y cola" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 118</strong></p>
+<p><em>Registro de llegada, escaneo del QR del establecimiento, ticket y cola</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/check-in-atencion.png" alt="Registro de llegada, escaneo del QR del establecimiento, ticket y cola" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7323,16 +6747,10 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-119"></a>
-
-**Figura 119**
-
-*Configuración, datos personales y actualización del contacto*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/configuracion-perfil.png" alt="Configuración, datos personales y actualización del contacto" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 119</strong></p>
+<p><em>Configuración, datos personales y actualización del contacto</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/configuracion-perfil.png" alt="Configuración, datos personales y actualización del contacto" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7347,16 +6765,10 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-120"></a>
-
-**Figura 120**
-
-*Vinculación, verificación y gestión de menores a cargo*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/configuracion-menores.png" alt="Vinculación, verificación y gestión de menores a cargo" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 120</strong></p>
+<p><em>Vinculación, verificación y gestión de menores a cargo</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/configuracion-menores.png" alt="Vinculación, verificación y gestión de menores a cargo" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7371,16 +6783,10 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-121"></a>
-
-**Figura 121**
-
-*Notificaciones y ofertas de reasignación de citas*
-
-<p align="center">
-  <img src="chapter-03/assets/mockups/notificaciones.png" alt="Notificaciones y ofertas de reasignación de citas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 121</strong></p>
+<p><em>Notificaciones y ofertas de reasignación de citas</em></p>
+<p align="center">  <img src="chapter-03/assets/mockups/notificaciones.png" alt="Notificaciones y ofertas de reasignación de citas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7411,16 +6817,10 @@ El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-122"></a>
-
-**Figura 122**
-
-*Registrarse como paciente — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-01-happy.png" alt="Registrarse como paciente — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 122</strong></p>
+<p><em>Registrarse como paciente — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-01-happy.png" alt="Registrarse como paciente — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7435,16 +6835,10 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-123"></a>
-
-**Figura 123**
-
-*Registrarse como paciente — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-01-unhappy.png" alt="Registrarse como paciente — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 123</strong></p>
+<p><em>Registrarse como paciente — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-01-unhappy.png" alt="Registrarse como paciente — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7461,16 +6855,10 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-124"></a>
-
-**Figura 124**
-
-*Iniciar sesión como paciente — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-02-happy.png" alt="Iniciar sesión como paciente — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 124</strong></p>
+<p><em>Iniciar sesión como paciente — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-02-happy.png" alt="Iniciar sesión como paciente — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7485,16 +6873,10 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-125"></a>
-
-**Figura 125**
-
-*Iniciar sesión como paciente — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-02-unhappy.png" alt="Iniciar sesión como paciente — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 125</strong></p>
+<p><em>Iniciar sesión como paciente — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-02-unhappy.png" alt="Iniciar sesión como paciente — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7511,16 +6893,10 @@ El paciente solicita la recuperación con su correo registrado. La aplicación m
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-126"></a>
-
-**Figura 126**
-
-*Recuperar la contraseña — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-03-happy.png" alt="Recuperar la contraseña — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 126</strong></p>
+<p><em>Recuperar la contraseña — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-03-happy.png" alt="Recuperar la contraseña — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7535,16 +6911,10 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-127"></a>
-
-**Figura 127**
-
-*Recuperar la contraseña — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-03-unhappy.png" alt="Recuperar la contraseña — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 127</strong></p>
+<p><em>Recuperar la contraseña — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-03-unhappy.png" alt="Recuperar la contraseña — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7561,16 +6931,10 @@ El titular ingresa los datos del menor y confirma su vinculación después de ve
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-128"></a>
-
-**Figura 128**
-
-*Vincular o desvincular a un menor — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-04-happy.png" alt="Vincular o desvincular a un menor — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 128</strong></p>
+<p><em>Vincular o desvincular a un menor — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-04-happy.png" alt="Vincular o desvincular a un menor — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7585,16 +6949,10 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-129"></a>
-
-**Figura 129**
-
-*Vincular o desvincular a un menor — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-04-unhappy.png" alt="Vincular o desvincular a un menor — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 129</strong></p>
+<p><em>Vincular o desvincular a un menor — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-04-unhappy.png" alt="Vincular o desvincular a un menor — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7611,16 +6969,10 @@ El paciente consulta sus datos y modifica su correo o celular. Si cambia el corr
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-130"></a>
-
-**Figura 130**
-
-*Actualizar el correo o celular del perfil — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-05-happy.png" alt="Actualizar el correo o celular del perfil — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 130</strong></p>
+<p><em>Actualizar el correo o celular del perfil — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-05-happy.png" alt="Actualizar el correo o celular del perfil — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7635,16 +6987,10 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-131"></a>
-
-**Figura 131**
-
-*Actualizar el correo o celular del perfil — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-05-unhappy.png" alt="Actualizar el correo o celular del perfil — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 131</strong></p>
+<p><em>Actualizar el correo o celular del perfil — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-05-unhappy.png" alt="Actualizar el correo o celular del perfil — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7661,16 +7007,10 @@ El paciente selecciona una especialidad y una fecha. Consulta profesionales y ho
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-132"></a>
-
-**Figura 132**
-
-*Consultar disponibilidad de citas — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-06-happy.png" alt="Consultar disponibilidad de citas — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 132</strong></p>
+<p><em>Consultar disponibilidad de citas — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-06-happy.png" alt="Consultar disponibilidad de citas — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7685,16 +7025,10 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-133"></a>
-
-**Figura 133**
-
-*Consultar disponibilidad de citas — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-06-unhappy.png" alt="Consultar disponibilidad de citas — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 133</strong></p>
+<p><em>Consultar disponibilidad de citas — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-06-unhappy.png" alt="Consultar disponibilidad de citas — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7711,16 +7045,10 @@ El titular indica el beneficiario, elige fecha, profesional y horario y revisa e
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-134"></a>
-
-**Figura 134**
-
-*Reservar una cita y recibir confirmación — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-07-happy.png" alt="Reservar una cita y recibir confirmación — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 134</strong></p>
+<p><em>Reservar una cita y recibir confirmación — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-07-happy.png" alt="Reservar una cita y recibir confirmación — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7735,16 +7063,10 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-135"></a>
-
-**Figura 135**
-
-*Reservar una cita y recibir confirmación — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-07-unhappy.png" alt="Reservar una cita y recibir confirmación — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 135</strong></p>
+<p><em>Reservar una cita y recibir confirmación — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-07-unhappy.png" alt="Reservar una cita y recibir confirmación — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7761,16 +7083,10 @@ Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtr
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-136"></a>
-
-**Figura 136**
-
-*Consultar citas, detalles e historial — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-08-happy.png" alt="Consultar citas, detalles e historial — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 136</strong></p>
+<p><em>Consultar citas, detalles e historial — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-08-happy.png" alt="Consultar citas, detalles e historial — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7785,16 +7101,10 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-137"></a>
-
-**Figura 137**
-
-*Consultar citas, detalles e historial — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-08-unhappy.png" alt="Consultar citas, detalles e historial — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 137</strong></p>
+<p><em>Consultar citas, detalles e historial — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-08-unhappy.png" alt="Consultar citas, detalles e historial — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7811,16 +7121,10 @@ El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del pla
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-138"></a>
-
-**Figura 138**
-
-*Cancelar una reserva dentro del plazo — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-09-happy.png" alt="Cancelar una reserva dentro del plazo — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 138</strong></p>
+<p><em>Cancelar una reserva dentro del plazo — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-09-happy.png" alt="Cancelar una reserva dentro del plazo — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7835,16 +7139,10 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-139"></a>
-
-**Figura 139**
-
-*Cancelar una reserva dentro del plazo — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-09-unhappy.png" alt="Cancelar una reserva dentro del plazo — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 139</strong></p>
+<p><em>Cancelar una reserva dentro del plazo — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-09-unhappy.png" alt="Cancelar una reserva dentro del plazo — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7861,16 +7159,10 @@ El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mient
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-140"></a>
-
-**Figura 140**
-
-*Responder a una oferta de adelanto — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-10-happy.png" alt="Responder a una oferta de adelanto — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 140</strong></p>
+<p><em>Responder a una oferta de adelanto — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-10-happy.png" alt="Responder a una oferta de adelanto — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7885,16 +7177,10 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-141"></a>
-
-**Figura 141**
-
-*Responder a una oferta de adelanto — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-10-unhappy.png" alt="Responder a una oferta de adelanto — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 141</strong></p>
+<p><em>Responder a una oferta de adelanto — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-10-unhappy.png" alt="Responder a una oferta de adelanto — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7911,16 +7197,10 @@ Al llegar al establecimiento, el titular selecciona su reserva o la del menor y 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-142"></a>
-
-**Figura 142**
-
-*Registrar llegada presencial mediante QR — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-11-happy.png" alt="Registrar llegada presencial mediante QR — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 142</strong></p>
+<p><em>Registrar llegada presencial mediante QR — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-11-happy.png" alt="Registrar llegada presencial mediante QR — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7935,16 +7215,10 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-143"></a>
-
-**Figura 143**
-
-*Registrar llegada presencial mediante QR — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-11-unhappy.png" alt="Registrar llegada presencial mediante QR — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 143</strong></p>
+<p><em>Registrar llegada presencial mediante QR — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-11-unhappy.png" alt="Registrar llegada presencial mediante QR — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7961,16 +7235,10 @@ Después del check-in, el paciente obtiene su código de turno y consulta el tic
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-144"></a>
-
-**Figura 144**
-
-*Obtener el ticket digital de atención — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-12-happy.png" alt="Obtener el ticket digital de atención — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 144</strong></p>
+<p><em>Obtener el ticket digital de atención — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-12-happy.png" alt="Obtener el ticket digital de atención — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -7985,16 +7253,10 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-145"></a>
-
-**Figura 145**
-
-*Obtener el ticket digital de atención — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-12-unhappy.png" alt="Obtener el ticket digital de atención — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 145</strong></p>
+<p><em>Obtener el ticket digital de atención — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-12-unhappy.png" alt="Obtener el ticket digital de atención — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8011,16 +7273,10 @@ El paciente con check-in confirmado y turno activo consulta su posición y el to
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-146"></a>
-
-**Figura 146**
-
-*Consultar posición o dejar la cola — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-13-happy.png" alt="Consultar posición o dejar la cola — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 146</strong></p>
+<p><em>Consultar posición o dejar la cola — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-13-happy.png" alt="Consultar posición o dejar la cola — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8035,16 +7291,10 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-147"></a>
-
-**Figura 147**
-
-*Consultar posición o dejar la cola — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-13-unhappy.png" alt="Consultar posición o dejar la cola — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 147</strong></p>
+<p><em>Consultar posición o dejar la cola — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-13-unhappy.png" alt="Consultar posición o dejar la cola — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8061,16 +7311,10 @@ El paciente recibe el llamado, consulta el ticket y se dirige al consultorio den
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-148"></a>
-
-**Figura 148**
-
-*Recibir el llamado y acudir al consultorio — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-14-happy.png" alt="Recibir el llamado y acudir al consultorio — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 148</strong></p>
+<p><em>Recibir el llamado y acudir al consultorio — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-14-happy.png" alt="Recibir el llamado y acudir al consultorio — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8085,16 +7329,10 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-149"></a>
-
-**Figura 149**
-
-*Recibir el llamado y acudir al consultorio — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-14-unhappy.png" alt="Recibir el llamado y acudir al consultorio — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 149</strong></p>
+<p><em>Recibir el llamado y acudir al consultorio — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-14-unhappy.png" alt="Recibir el llamado y acudir al consultorio — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8111,16 +7349,10 @@ El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación f
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-150"></a>
-
-**Figura 150**
-
-*Cerrar sesión o recuperar acceso a una sesión — recorrido esperado*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-15-happy.png" alt="Cerrar sesión o recuperar acceso a una sesión — recorrido esperado" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 150</strong></p>
+<p><em>Cerrar sesión o recuperar acceso a una sesión — recorrido esperado</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-15-happy.png" alt="Cerrar sesión o recuperar acceso a una sesión — recorrido esperado" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8135,16 +7367,10 @@ Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere vol
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-151"></a>
-
-**Figura 151**
-
-*Cerrar sesión o recuperar acceso a una sesión — errores y alternativas*
-
-<p align="center">
-  <img src="chapter-03/assets/userflows/user-goal-15-unhappy.png" alt="Cerrar sesión o recuperar acceso a una sesión — errores y alternativas" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 151</strong></p>
+<p><em>Cerrar sesión o recuperar acceso a una sesión — errores y alternativas</em></p>
+<p align="center">  <img src="chapter-03/assets/userflows/user-goal-15-unhappy.png" alt="Cerrar sesión o recuperar acceso a una sesión — errores y alternativas" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8166,16 +7392,10 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-152"></a>
-
-**Figura 152**
-
-*Mobile applications prototyping*
-
-<p align="center">
-  <img src="chapter-03/assets/mobile-application-prototyping.png" alt="Mobile applications prototyping" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<p><strong>Figura 152</strong></p>
+<p><em>Mobile applications prototyping</em></p>
+<p align="center">  <img src="chapter-03/assets/mobile-application-prototyping.png" alt="Mobile applications prototyping" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
 
@@ -8192,13 +7412,11 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 En esta sección se especifican los productos de software que el equipo **RuwaLabs** utilizó para colaborar en el ciclo de vida de **SaludYa**, abarcando las actividades de **gestión del proyecto**, **gestión de requisitos**, **diseño UX/UI**, **desarrollo**, **despliegue** y **documentación**. Para cada producto se indica su **propósito de uso en el proyecto** y su **ruta de referencia** (cuando es software basado en modelos SaaS) o **ruta de descarga** (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la [Tabla 59](#tabla-59).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-59"></a>
 
 **Tabla 59**
 
 *Software Development Environment Configuration*
-</div>
 
 | Actividad | Producto | Propósito de uso en el proyecto | Ruta de referencia / descarga |
 | :--- | :--- | :--- | :--- |
@@ -8233,13 +7451,11 @@ En esta sección se establecen los medios y el esquema de organización que el e
 
 Cada producto de la solución cuenta con su propio repositorio, como se detalla en la [Tabla 60](#tabla-60).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-60"></a>
 
 **Tabla 60**
 
 *Repositorios de GitHub por producto*
-</div>
 
 | Producto | Repositorio de GitHub |
 | :--- | :--- |
@@ -8252,13 +7468,11 @@ Cada producto de la solución cuenta con su propio repositorio, como se detalla 
 
 Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `main` se crea la rama de integración `develop`; cada funcionalidad o bounded context se desarrolla en su propia rama (*feature branch*), que se integra a `develop` mediante *pull requests*. Al cierre de un sprint, `develop` se integra a `main` mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la [Tabla 61](#tabla-61).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-61"></a>
 
 **Tabla 61**
 
 *Convenciones de ramas (GitFlow)*
-</div>
 
 | Rama | Propósito | Convención / ramas utilizadas en el proyecto |
 | :--- | :--- | :--- |
@@ -8274,13 +7488,11 @@ Las releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`),
 
 Finalmente, los mensajes de commit siguen **Conventional Commits**, como se detalla en la [Tabla 62](#tabla-62).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-62"></a>
 
 **Tabla 62**
 
 *Convenciones de commits (Conventional Commits)*
-</div>
 
 | Tipo | Uso |
 | :--- | :--- |
@@ -8308,13 +7520,11 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-63"></a>
 
 **Tabla 63**
 
 *Source Code Style Guide & Conventions — Landing Page*
-</div>
 
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
@@ -8353,13 +7563,11 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-64"></a>
 
 **Tabla 64**
 
 *Source Code Style Guide & Conventions — Aplicaciones móviles*
-</div>
 
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
@@ -8396,13 +7604,11 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-65"></a>
 
 **Tabla 65**
 
 *Source Code Style Guide & Conventions — Servicios web*
-</div>
 
 | Elemento | Convención | Ejemplo |
 |:---|:---|:---|
@@ -8441,13 +7647,11 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-66"></a>
 
 **Tabla 66**
 
 *Software Deployment Configuration — Landing Page*
-</div>
 
 | Paso | Acción |
 |:---|:---|
@@ -8472,13 +7676,11 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-67"></a>
 
 **Tabla 67**
 
 *Software Deployment Configuration — Aplicaciones móviles*
-</div>
 
 | Paso | Acción |
 |:---|:---|
@@ -8503,13 +7705,11 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-68"></a>
 
 **Tabla 68**
 
 *Software Deployment Configuration — Servicios web*
-</div>
 
 | Paso | Acción |
 |:---|:---|
@@ -8535,13 +7735,11 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-69"></a>
 
 **Tabla 69**
 
 *Deployment Diagram (C4 Model)*
-</div>
 
 | Nodo | Tipo | Componentes desplegados |
 |:---|:---|:---|
@@ -8574,13 +7772,11 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de **SaludYa**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la [Tabla 70](#tabla-70).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-70"></a>
 
 **Tabla 70**
 
 *Sprint Planning 1 — resumen de la reunión*
-</div>
 
 | Campo | Valor |
 | :--- | :--- |
@@ -8612,13 +7808,11 @@ La **velocity** del Sprint 1 se estableció en **99 story points**, equivalente 
 
 El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la [Tabla 71](#tabla-71).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-71"></a>
 
 **Tabla 71**
 
 *Alcance del Sprint 1 por épica*
-</div>
 
 | Épica | User Stories | Story Points |
 | :--- | :--- | :--- |
@@ -8635,13 +7829,11 @@ El alcance del Sprint 1 se compone de las user stories orientadas al paciente y 
 
 En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el **Landing Page** y la aplicación móvil del paciente, compuesta por **Identity & Access Management (IAM)**, **Appointments & Booking**, **Dynamic Waitlist & Reassignment**, **Arrival & QR Check-in** y **Hospital Operations & Configuration**, junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 72](#tabla-72). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-72"></a>
 
 **Tabla 72**
 
 *Leadership-and-Collaboration Matrix (LACX) — Sprint 1*
-</div>
 
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page | IAM | Appointments & Booking | Dynamic Waitlist & Reassignment | Arrival & QR Check-in | Hospital Operations & Configuration |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -8661,25 +7853,19 @@ El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimien
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-153"></a>
-
-**Figura 153**
-
-*Backlog del proyecto SaludYa en Jira*
-
-<img src="assets/execution/sprint-1/jira-backlog.png" alt="Backlog del proyecto SaludYa en Jira" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del tablero Backlog del proyecto SaludYa en Jira.*
+<p><strong>Figura 153</strong></p>
+<p><em>Backlog del proyecto SaludYa en Jira</em></p>
+<p align="center"><img src="assets/execution/sprint-1/jira-backlog.png" alt="Backlog del proyecto SaludYa en Jira" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del tablero Backlog del proyecto SaludYa en Jira.</em></p>
 </div>
 
 A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 73](#tabla-73).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-73"></a>
 
 **Tabla 73**
 
 *Sprint Backlog 1*
-</div>
 
 | # | User Story | Work-Item / Task | Estimation (Hours) | Assigned To | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -8752,13 +7938,11 @@ En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se impleme
 
 La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 74](#tabla-74).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-74"></a>
 
 **Tabla 74**
 
 *Commits de implementación de SaludYa para la revisión del Sprint 1*
-</div>
 
 | Repository | Branch | Commit Id | Commit Message | Committed On |
 |:---|:---|:---|:---|:---|
@@ -8804,13 +7988,11 @@ Repositorio de pruebas del backend y especificación BDD: [RuwaLabs/backend-salu
 
 Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-75"></a>
 
 **Tabla 75**
 
 *Commits relacionados con la suite de pruebas del Sprint 1*
-</div>
 
 | Repository | Branch | Commit Id | Commit Message | Committed On |
 |:---|:---|:---|:---|:---|
@@ -8826,13 +8008,11 @@ Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://githu
 
 Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 76](#tabla-76).
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-76"></a>
 
 **Tabla 76**
 
 *Suite de pruebas y escenarios de aceptación de SaludYa para el Sprint 1*
-</div>
 
 | Componente | Tipo de prueba | Archivos | Alcance relacionado |
 |:---|:---|:---|:---|
@@ -8862,14 +8042,10 @@ La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, s
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-154"></a>
-
-**Figura 154**
-
-*Inicio de la Landing Page — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 154</strong></p>
+<p><em>Inicio de la Landing Page — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Problema identificado
@@ -8878,14 +8054,10 @@ La sección describe la incertidumbre al buscar una cita y la pérdida de cupos 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-155"></a>
-
-**Figura 155**
-
-*Problema identificado — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 155</strong></p>
+<p><em>Problema identificado — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Propuesta de solución
@@ -8894,14 +8066,10 @@ La sección reúne las funciones propuestas para el paciente, entre ellas la res
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-156"></a>
-
-**Figura 156**
-
-*Propuesta de solución — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 156</strong></p>
+<p><em>Propuesta de solución — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Modelo de negocio
@@ -8910,14 +8078,10 @@ La página presenta el modelo propuesto de implementación institucional, conven
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-157"></a>
-
-**Figura 157**
-
-*Modelo de negocio — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 157</strong></p>
+<p><em>Modelo de negocio — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Testimonios
@@ -8926,14 +8090,10 @@ Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-158"></a>
-
-**Figura 158**
-
-*Testimonios — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 158</strong></p>
+<p><em>Testimonios — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Presentación de RuwaLabs
@@ -8942,14 +8102,10 @@ La sección explica el propósito del equipo y presenta la misión y visión de 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-159"></a>
-
-**Figura 159**
-
-*Presentación de RuwaLabs — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 159</strong></p>
+<p><em>Presentación de RuwaLabs — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Disponibilidad de la aplicación
@@ -8958,14 +8114,10 @@ La sección anuncia la próxima disponibilidad para Android e iOS y muestra los 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-160"></a>
-
-**Figura 160**
-
-*Disponibilidad de la aplicación — SaludYa*
-
-<img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 160</strong></p>
+<p><em>Disponibilidad de la aplicación — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ##### Aplicación Android
@@ -8984,14 +8136,10 @@ La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar s
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-161"></a>
-
-**Figura 161**
-
-*Bienvenida — SaludYa*
-
-<img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 161</strong></p>
+<p><em>Bienvenida — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Verificación de identidad
@@ -9000,14 +8148,10 @@ El formulario solicita los datos de identidad del paciente antes de continuar co
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-162"></a>
-
-**Figura 162**
-
-*Verificación de identidad — SaludYa*
-
-<img src="assets/execution/sprint-1/android-identidad.png" alt="Verificación de identidad de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 162</strong></p>
+<p><em>Verificación de identidad — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-identidad.png" alt="Verificación de identidad de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Registro de credenciales
@@ -9016,14 +8160,10 @@ El paciente registra su correo, contraseña y datos de contacto después de veri
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-163"></a>
-
-**Figura 163**
-
-*Registro de credenciales — SaludYa*
-
-<img src="assets/execution/sprint-1/android-credenciales.png" alt="Registro de credenciales de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 163</strong></p>
+<p><em>Registro de credenciales — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-credenciales.png" alt="Registro de credenciales de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Verificación por correo
@@ -9032,14 +8172,10 @@ La pantalla solicita el código de verificación enviado al correo del paciente 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-164"></a>
-
-**Figura 164**
-
-*Verificación por correo — SaludYa*
-
-<img src="assets/execution/sprint-1/android-verificar-correo.png" alt="Verificación por correo de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 164</strong></p>
+<p><em>Verificación por correo — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-verificar-correo.png" alt="Verificación por correo de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Inicio de sesión
@@ -9048,14 +8184,10 @@ El paciente ingresa su correo y contraseña para acceder a su cuenta, como se ob
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-165"></a>
-
-**Figura 165**
-
-*Inicio de sesión — SaludYa*
-
-<img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 165</strong></p>
+<p><em>Inicio de sesión — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Recuperación de acceso
@@ -9064,14 +8196,10 @@ El formulario permite solicitar un enlace de recuperación al correo registrado,
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-166"></a>
-
-**Figura 166**
-
-*Recuperación de acceso — SaludYa*
-
-<img src="assets/execution/sprint-1/android-recuperacion.png" alt="Recuperación de acceso de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 166</strong></p>
+<p><em>Recuperación de acceso — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-recuperacion.png" alt="Recuperación de acceso de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Restablecimiento de contraseña
@@ -9080,14 +8208,10 @@ El paciente define y confirma una nueva contraseña mediante el recorrido de rec
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-167"></a>
-
-**Figura 167**
-
-*Restablecimiento de contraseña — SaludYa*
-
-<img src="assets/execution/sprint-1/android-nueva-contrasena.png" alt="Restablecimiento de contraseña de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 167</strong></p>
+<p><em>Restablecimiento de contraseña — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-nueva-contrasena.png" alt="Restablecimiento de contraseña de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Inicio del paciente
@@ -9096,14 +8220,10 @@ La vista principal reúne las citas pendientes y los accesos al historial y a la
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-168"></a>
-
-**Figura 168**
-
-*Inicio del paciente — SaludYa*
-
-<img src="assets/execution/sprint-1/android-inicio.png" alt="Inicio del paciente de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 168</strong></p>
+<p><em>Inicio del paciente — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-inicio.png" alt="Inicio del paciente de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Reserva de cita
@@ -9112,14 +8232,10 @@ El recorrido de reserva presenta las opciones necesarias para elegir una cita se
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-169"></a>
-
-**Figura 169**
-
-*Reserva de cita — SaludYa*
-
-<img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 169</strong></p>
+<p><em>Reserva de cita — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Confirmación de reserva
@@ -9128,14 +8244,10 @@ La pantalla presenta la confirmación y los datos de la cita seleccionada, como 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-170"></a>
-
-**Figura 170**
-
-*Confirmación de reserva — SaludYa*
-
-<img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 170</strong></p>
+<p><em>Confirmación de reserva — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Registro de llegada
@@ -9144,14 +8256,10 @@ La interfaz indica al paciente que debe escanear el QR del establecimiento para 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-171"></a>
-
-**Figura 171**
-
-*Registro de llegada — SaludYa*
-
-<img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 171</strong></p>
+<p><em>Registro de llegada — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Ticket de atención
@@ -9160,14 +8268,10 @@ La pantalla presenta el ticket del paciente como parte del seguimiento de su tur
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-172"></a>
-
-**Figura 172**
-
-*Ticket de atención — SaludYa*
-
-<img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 172</strong></p>
+<p><em>Ticket de atención — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Perfil del paciente
@@ -9176,14 +8280,10 @@ El perfil reúne los datos personales y de contacto, junto con las acciones disp
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-173"></a>
-
-**Figura 173**
-
-*Perfil del paciente — SaludYa*
-
-<img src="assets/execution/sprint-1/android-perfil.png" alt="Perfil del paciente de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 173</strong></p>
+<p><em>Perfil del paciente — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-perfil.png" alt="Perfil del paciente de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Menores vinculados
@@ -9192,14 +8292,10 @@ La vista permite consultar los menores vinculados al paciente y acceder a las ac
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-174"></a>
-
-**Figura 174**
-
-*Menores vinculados — SaludYa*
-
-<img src="assets/execution/sprint-1/android-menores.png" alt="Menores vinculados de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 174</strong></p>
+<p><em>Menores vinculados — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-menores.png" alt="Menores vinculados de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ###### Notificaciones del paciente
@@ -9208,14 +8304,10 @@ La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-175"></a>
-
-**Figura 175**
-
-*Notificaciones del paciente — SaludYa*
-
-<img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+<p><strong>Figura 175</strong></p>
+<p><em>Notificaciones del paciente — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.</em></p>
 </div>
 
 ##### Backend: documentación publicada en Swagger
@@ -9230,14 +8322,10 @@ La interfaz identifica el servicio como SaludYa API y presenta el servidor y los
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-176"></a>
-
-**Figura 176**
-
-*Vista general de Swagger — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-overview.jpg" alt="Vista general de Swagger de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 176</strong></p>
+<p><em>Vista general de Swagger — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-overview.jpg" alt="Vista general de Swagger de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Verificación de identidad en el backend
@@ -9246,14 +8334,10 @@ El grupo IAM - Identity verification documenta las operaciones para verificar la
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-177"></a>
-
-**Figura 177**
-
-*Verificación de identidad en el backend — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Verificación de identidad en el backend de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 177</strong></p>
+<p><em>Verificación de identidad en el backend — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Verificación de identidad en el backend de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Cuentas y credenciales
@@ -9262,14 +8346,10 @@ El grupo IAM - User accounts presenta los contratos de cuentas, registro y recup
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-178"></a>
-
-**Figura 178**
-
-*Cuentas y credenciales — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Cuentas y credenciales de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 178</strong></p>
+<p><em>Cuentas y credenciales — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Cuentas y credenciales de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Perfil del paciente
@@ -9278,14 +8358,10 @@ El grupo IAM - Patients documenta la consulta y actualización del perfil y la c
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-179"></a>
-
-**Figura 179**
-
-*Perfil del paciente — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-patients.jpg" alt="Perfil del paciente de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 179</strong></p>
+<p><em>Perfil del paciente — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-patients.jpg" alt="Perfil del paciente de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Vinculación de menores
@@ -9294,14 +8370,10 @@ El grupo IAM - Linked minors presenta los contratos para crear, consultar y elim
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-180"></a>
-
-**Figura 180**
-
-*Vinculación de menores — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-minors.jpg" alt="Vinculación de menores de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 180</strong></p>
+<p><em>Vinculación de menores — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-minors.jpg" alt="Vinculación de menores de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Reservas de citas
@@ -9310,14 +8382,10 @@ El grupo Appointments presenta las operaciones para registrar y consultar reserv
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-181"></a>
-
-**Figura 181**
-
-*Reservas de citas — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Reservas de citas de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 181</strong></p>
+<p><em>Reservas de citas — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Reservas de citas de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Disponibilidad de horarios
@@ -9326,14 +8394,10 @@ El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-182"></a>
-
-**Figura 182**
-
-*Disponibilidad de horarios — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Disponibilidad de horarios de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 182</strong></p>
+<p><em>Disponibilidad de horarios — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Disponibilidad de horarios de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Registro de asistencia
@@ -9342,14 +8406,10 @@ El grupo Check-ins presenta los contratos de registro de llegada por QR o códig
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-183"></a>
-
-**Figura 183**
-
-*Registro de asistencia — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Registro de asistencia de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 183</strong></p>
+<p><em>Registro de asistencia — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Registro de asistencia de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Cola de atención
@@ -9358,14 +8418,10 @@ El grupo Attendance Queues documenta las consultas de cola, posición y paciente
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-184"></a>
-
-**Figura 184**
-
-*Cola de atención — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-queue.jpg" alt="Cola de atención de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 184</strong></p>
+<p><em>Cola de atención — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-queue.jpg" alt="Cola de atención de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 ###### Ofertas de reasignación
@@ -9374,14 +8430,10 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-185"></a>
-
-**Figura 185**
-
-*Ofertas de reasignación — SaludYa*
-
-<img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Ofertas de reasignación de SaludYa" width="1000" style="width:auto;max-width:100%;height:auto;max-height:200mm;">
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+<p><strong>Figura 185</strong></p>
+<p><em>Ofertas de reasignación — SaludYa</em></p>
+<p align="center"><img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Ofertas de reasignación de SaludYa" width="1000" style="max-width:100%;max-height:150mm;height:auto;"></p>
+<p><em>Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.</em></p>
 </div>
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
@@ -9506,13 +8558,8 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 { "dni": "74500834", "name": "Neo Daniel", "lastname": "Ramos Mera" }
 ```
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Services%20Deployment/identity_verifications.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 186. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
+<p align="center">  <img src="assets/Services%20Deployment/identity_verifications.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 186. Ejecución de <code>POST /api/v1/identity-verifications</code> en Swagger UI con datos de muestra; respuesta <code>200</code> con <code>{"verified": true}</code>.</em></p>
 </div>
 
 ###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
@@ -9522,13 +8569,8 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 { "dni": "74500834" }
 ```
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Services%20Deployment/identity_verifications_exists.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 187. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
+<p align="center">  <img src="assets/Services%20Deployment/identity_verifications_exists.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 187. Ejecución de <code>POST /api/v1/identity-verifications/exists</code>; respuesta <code>200</code> con <code>{"exists": true}</code>.</em></p>
 </div>
 
 ###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
@@ -9538,13 +8580,8 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 { "email": "doriangray292929@gmail.com" }
 ```
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 188. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
+<p align="center">  <img src="assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 188. Ejecución de <code>POST /api/v1/user-accounts/send-verification-code</code>; respuesta <code>202</code> (sin cuerpo).</em></p>
 </div>
 
 ###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
@@ -9554,13 +8591,8 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 { "email": "doriangray292929@gmail.com" }
 ```
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Services%20Deployment/useraccounts_recoverpassword.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 189. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
+<p align="center">  <img src="assets/Services%20Deployment/useraccounts_recoverpassword.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 189. Ejecución de <code>POST /api/v1/user-accounts/recover-password</code>; respuesta <code>202</code> con un mensaje genérico.</em></p>
 </div>
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
@@ -9808,57 +8840,32 @@ A continuación se presentan las capturas del proceso de despliegue en AWS.
 
 ###### Creación del key pair (acceso SSH)
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg" alt="Creación del key pair en AWS" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 190. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+<p align="center">  <img src="assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg" alt="Creación del key pair en AWS" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 190. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.</em></p>
 </div>
 
 ###### Instancia EC2 (resumen)
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg" alt="Resumen de la instancia EC2" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 191. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+<p align="center">  <img src="assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg" alt="Resumen de la instancia EC2" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 191. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).</em></p>
 </div>
 
 ###### Configuración de red (security group)
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/network%20settings.jpeg" alt="Configuración de red de la instancia" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 192. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+<p align="center">  <img src="assets/Backend%20Deployment%20Evidence/network%20settings.jpeg" alt="Configuración de red de la instancia" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 192. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.</em></p>
 </div>
 
 ###### Acceso SSH a la instancia
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg" alt="Acceso SSH a la instancia EC2" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 193. Acceso por SSH a la instancia EC2 del backend.*
+<p align="center">  <img src="assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg" alt="Acceso SSH a la instancia EC2" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 193. Acceso por SSH a la instancia EC2 del backend.</em></p>
 </div>
 
 ###### Scripts de despliegue en el servidor
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg" alt="Listado de los scripts de despliegue en el servidor" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 194. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
+<p align="center">  <img src="assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg" alt="Listado de los scripts de despliegue en el servidor" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 194. Listado del directorio del servidor donde se observan los scripts de despliegue (<code>setup-server.sh</code>, <code>setup-env.sh</code> y <code>deploy.sh</code>).</em></p>
 </div>
 
 
@@ -9883,12 +8890,8 @@ En la configuración del repositorio se habilitó GitHub Pages como fuente de pu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-195"></a>
-
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 195. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
+<p align="center">  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 195. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio <code>saludya-landing</code> en GitHub.</em></p>
 </div>
 
 ###### Flujo de trabajo de GitHub Actions
@@ -9897,12 +8900,8 @@ Para automatizar la publicación del Landing Page, se incorporó un workflow de 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-196"></a>
-
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 196. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+<p align="center">  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 196. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio <code>saludya-landing</code>, donde se observa la ejecución exitosa del workflow <code>Deploy to GitHub Pages</code>.</em></p>
 </div>
 
 ###### Verificación del despliegue
@@ -9911,12 +8910,8 @@ Finalmente, se verificó el acceso público al Landing Page mediante la URL gene
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-197"></a>
-
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 197. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
+<p align="center">  <img src="assets/Landing-page%20Deployment%20Evidence/landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 197. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en <code>https://ruwalabs.github.io/saludya-landing/</code>.</em></p>
 </div>
 
 Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
@@ -9931,26 +8926,18 @@ La colaboración se registra en GitHub a través de los commits y *pull requests
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-198"></a>
-
-**Figura 198**
-
-*Actividad del equipo durante el Sprint 1*
-
-<img src="assets/insight_tb1_overview.png" alt="Actividad del equipo durante el Sprint 1 de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.*
+<p><strong>Figura 198</strong></p>
+<p><em>Actividad del equipo durante el Sprint 1</em></p>
+<p align="center"><img src="assets/insight_tb1_overview.png" alt="Actividad del equipo durante el Sprint 1 de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-199"></a>
-
-**Figura 199**
-
-*Contribuciones por integrante durante el Sprint 1*
-
-<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante durante el Sprint 1 de SaludYa" width="100%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del panel Contributors de GitHub correspondiente al periodo del Sprint 1.*
+<p><strong>Figura 199</strong></p>
+<p><em>Contribuciones por integrante durante el Sprint 1</em></p>
+<p align="center"><img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante durante el Sprint 1 de SaludYa" width="100%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del panel Contributors de GitHub correspondiente al periodo del Sprint 1.</em></p>
 </div>
 
 La implementación se distribuyó de la siguiente manera:
@@ -10024,13 +9011,8 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 | Enlace del video | https://youtu.be/OYaoAsbkC0s |
 | Inicio de la entrevista | 00:01 |
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 200. Cuadro de video de la entrevista 1 — personal administrativo.*
+<p align="center">  <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 200. Cuadro de video de la entrevista 1 — personal administrativo.</em></p>
 </div>
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
@@ -10131,13 +9113,8 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 | Enlace del video | https://drive.google.com/file/d/19-pnt9joLZRH_xgGoZjRtWLqU26qJOTC/view?usp=sharing |
 | Inicio de la entrevista | 00:00 |
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
-
-
-<p align="center">
-  <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-</p>
-
-*Figura 201. Cuadro de video de la entrevista 2 — paciente.*
+<p align="center">  <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Figura 201. Cuadro de video de la entrevista 2 — paciente.</em></p>
 </div>
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
@@ -10242,13 +9219,11 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-77"></a>
 
 **Tabla 77**
 
 *Datos de la evaluación*
-</div>
 
 | Campo | Valor |
 | :--- | :--- |
@@ -10302,13 +9277,11 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<div class="tabla-titulo" style="break-after: avoid; page-break-after: avoid;">
 <a id="tabla-78"></a>
 
 **Tabla 78**
 
 *TABLA RESUMEN de la evaluación heurística*
-</div>
 
 | # | Problema | Escala de severidad | Heurística / Principio violado(a) |
 | :---: | :--- | :---: | :--- |
@@ -10350,26 +9323,18 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-202"></a>
-
-**Figura 202**
-
-*Registro - Datos de acceso*
-
-<img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 202</strong></p>
+<p><em>Registro - Datos de acceso</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-203"></a>
-
-**Figura 203**
-
-*Registro - Verificar correo*
-
-<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 203</strong></p>
+<p><em>Registro - Verificar correo</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10385,14 +9350,10 @@ El diálogo "Registro · Correo validado" tiene el título "Correo verificado", 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-204"></a>
-
-**Figura 204**
-
-*Diálogo correo verificado*
-
-<img src="chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png" alt="Diálogo correo verificado" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 204</strong></p>
+<p><em>Diálogo correo verificado</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png" alt="Diálogo correo verificado" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10408,26 +9369,18 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-205"></a>
-
-**Figura 205**
-
-*Login paciente*
-
-<img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 205</strong></p>
+<p><em>Login paciente</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-206"></a>
-
-**Figura 206**
-
-*Diálogo credenciales incorrectas*
-
-<img src="chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png" alt="Diálogo credenciales incorrectas" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 206</strong></p>
+<p><em>Diálogo credenciales incorrectas</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png" alt="Diálogo credenciales incorrectas" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10443,26 +9396,18 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-207"></a>
-
-**Figura 207**
-
-*Registro - Datos de acceso*
-
-<img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 207</strong></p>
+<p><em>Registro - Datos de acceso</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-208"></a>
-
-**Figura 208**
-
-*Recuperación - Nueva contraseña*
-
-<img src="chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png" alt="Recuperación - Nueva contraseña" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 208</strong></p>
+<p><em>Recuperación - Nueva contraseña</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png" alt="Recuperación - Nueva contraseña" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10478,38 +9423,26 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-209"></a>
-
-**Figura 209**
-
-*Login paciente*
-
-<img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 209</strong></p>
+<p><em>Login paciente</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-210"></a>
-
-**Figura 210**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 210</strong></p>
+<p><em>Dashboard inicio</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-211"></a>
-
-**Figura 211**
-
-*Reserva - Elegir fecha*
-
-<img src="chapter-04/assets/heuristicas/19-reserva-fecha.png" alt="Reserva - Elegir fecha" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 211</strong></p>
+<p><em>Reserva - Elegir fecha</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/19-reserva-fecha.png" alt="Reserva - Elegir fecha" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10525,26 +9458,18 @@ Las etiquetas de la navegación inferior (15 px de alto de línea), los indicado
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-212"></a>
-
-**Figura 212**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 212</strong></p>
+<p><em>Dashboard inicio</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-213"></a>
-
-**Figura 213**
-
-*Registro - Datos de acceso*
-
-<img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 213</strong></p>
+<p><em>Registro - Datos de acceso</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10560,14 +9485,10 @@ Los errores de código incorrecto, identidad no coincidente o contraseñas difer
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-214"></a>
-
-**Figura 214**
-
-*Verificar correo*
-
-<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Verificar correo" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 214</strong></p>
+<p><em>Verificar correo</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Verificar correo" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10583,14 +9504,10 @@ En "04 · Registro · Verificar correo" la acción "Reenviar código" es un text
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-215"></a>
-
-**Figura 215**
-
-*Registro - Verificar correo*
-
-<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 215</strong></p>
+<p><em>Registro - Verificar correo</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10606,26 +9523,18 @@ En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fech
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-216"></a>
-
-**Figura 216**
-
-*Registro - Verificar identidad*
-
-<img src="chapter-04/assets/heuristicas/08-registro-verificar-identidad.png" alt="Registro - Verificar identidad" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 216</strong></p>
+<p><em>Registro - Verificar identidad</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/08-registro-verificar-identidad.png" alt="Registro - Verificar identidad" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-217"></a>
-
-**Figura 217**
-
-*Menores - Vincular*
-
-<img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 217</strong></p>
+<p><em>Menores - Vincular</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10641,14 +9550,10 @@ El diálogo indica "Este correo pertenece a otra cuenta. Usa otro o inicia sesi�
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-218"></a>
-
-**Figura 218**
-
-*Diálogo correo duplicado*
-
-<img src="chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png" alt="Diálogo correo duplicado" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 218</strong></p>
+<p><em>Diálogo correo duplicado</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png" alt="Diálogo correo duplicado" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10664,14 +9569,10 @@ La pantalla "15 · Recuperación · Ayuda" informa que "los canales de la mesa d
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-219"></a>
-
-**Figura 219**
-
-*Recuperación - Ayuda*
-
-<img src="chapter-04/assets/heuristicas/10-recuperacion-ayuda.png" alt="Recuperación - Ayuda" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 219</strong></p>
+<p><em>Recuperación - Ayuda</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/10-recuperacion-ayuda.png" alt="Recuperación - Ayuda" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10687,26 +9588,18 @@ Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-220"></a>
-
-**Figura 220**
-
-*Perfil paciente*
-
-<img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 220</strong></p>
+<p><em>Perfil paciente</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-221"></a>
-
-**Figura 221**
-
-*Menores - Lista*
-
-<img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 221</strong></p>
+<p><em>Menores - Lista</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10722,14 +9615,10 @@ En "19 · Menores · Vincular", el texto "Confirmas que eres su adulto responsab
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-222"></a>
-
-**Figura 222**
-
-*Menores - Vincular*
-
-<img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 222</strong></p>
+<p><em>Menores - Vincular</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10745,38 +9634,26 @@ En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-223"></a>
-
-**Figura 223**
-
-*Perfil paciente*
-
-<img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 223</strong></p>
+<p><em>Perfil paciente</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-224"></a>
-
-**Figura 224**
-
-*Menores - Lista*
-
-<img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 224</strong></p>
+<p><em>Menores - Lista</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-225"></a>
-
-**Figura 225**
-
-*Reserva - Beneficiario*
-
-<img src="chapter-04/assets/heuristicas/14-reserva-beneficiario.png" alt="Reserva - Beneficiario" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 225</strong></p>
+<p><em>Reserva - Beneficiario</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/14-reserva-beneficiario.png" alt="Reserva - Beneficiario" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10792,14 +9669,10 @@ La navegación inferior tiene "Inicio", "Reservar cita", "Asistencia" y "Configu
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-226"></a>
-
-**Figura 226**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 226</strong></p>
+<p><em>Dashboard inicio</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10815,14 +9688,10 @@ En "D04 · Historial · Calendario" la leyenda indica "● Disponible" y "Fecha 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-227"></a>
-
-**Figura 227**
-
-*Historial - Calendario*
-
-<img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 227</strong></p>
+<p><em>Historial - Calendario</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10838,26 +9707,18 @@ En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-228"></a>
-
-**Figura 228**
-
-*Historial filtrado*
-
-<img src="chapter-04/assets/heuristicas/16-historial-filtrado.png" alt="Historial filtrado" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 228</strong></p>
+<p><em>Historial filtrado</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/16-historial-filtrado.png" alt="Historial filtrado" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-229"></a>
-
-**Figura 229**
-
-*Historial - Calendario*
-
-<img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 229</strong></p>
+<p><em>Historial - Calendario</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10873,14 +9734,10 @@ En "D06 · Detalle de cita" el texto "La cancelación está sujeta al plazo del 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-230"></a>
-
-**Figura 230**
-
-*Detalle de cita*
-
-<img src="chapter-04/assets/heuristicas/17-detalle-cita.png" alt="Detalle de cita" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 230</strong></p>
+<p><em>Detalle de cita</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/17-detalle-cita.png" alt="Detalle de cita" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10896,14 +9753,10 @@ En "R01 · Reserva tu cita" la etiqueta del campo es "Buscar especialidad", pero
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-231"></a>
-
-**Figura 231**
-
-*Reserva - Especialidades*
-
-<img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 231</strong></p>
+<p><em>Reserva - Especialidades</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10919,14 +9772,10 @@ En las pantallas revisadas todos los textos están en español y no hay una opci
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-232"></a>
-
-**Figura 232**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 232</strong></p>
+<p><em>Dashboard inicio</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10942,14 +9791,10 @@ El diálogo "Las claves no coinciden" usa "claves", mientras que el resto de la 
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-233"></a>
-
-**Figura 233**
-
-*Diálogo contraseñas diferentes*
-
-<img src="chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png" alt="Diálogo contraseñas diferentes" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 233</strong></p>
+<p><em>Diálogo contraseñas diferentes</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png" alt="Diálogo contraseñas diferentes" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**
@@ -10965,38 +9810,26 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-234"></a>
-
-**Figura 234**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 234</strong></p>
+<p><em>Dashboard inicio</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-235"></a>
-
-**Figura 235**
-
-*Error de carga*
-
-<img src="chapter-04/assets/heuristicas/21-error-carga.png" alt="Error de carga" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 235</strong></p>
+<p><em>Error de carga</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/21-error-carga.png" alt="Error de carga" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-236"></a>
-
-**Figura 236**
-
-*Reserva - Especialidades*
-
-<img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%" style="width:auto;max-width:100%;height:auto;max-height:200mm;"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+<p><strong>Figura 236</strong></p>
+<p><em>Reserva - Especialidades</em></p>
+<p align="center"><img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%" style="max-width:100%;max-height:150mm;height:auto;"/></p>
+<p><em>Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.</em></p>
 </div>
 
 **Recomendación:**

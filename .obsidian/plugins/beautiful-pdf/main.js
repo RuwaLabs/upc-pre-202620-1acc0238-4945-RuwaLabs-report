@@ -633,6 +633,12 @@ span.image-embed img {
   display: block;
 }
 `);
+  parts.push(`
+.figura {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+`);
   return parts.join("\n");
 }
 function inline(style) {
