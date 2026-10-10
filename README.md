@@ -108,7 +108,7 @@ Las capturas del repositorio documentan la participación del equipo y permiten 
 
 
 
-
+q
 
 
 <a id="figura-3"></a>
@@ -225,6 +225,47 @@ URL del Repositorio del Project Report: [upc-pre-202620-1acc0238-4945-RuwaLabs-r
       - [2.6.5.6. Bounded Context Software Architecture Code Level Diagrams](#2656-bounded-context-software-architecture-code-level-diagrams)
         - [2.6.5.6.1. Bounded Context Domain Layer Class Diagrams](#26561-bounded-context-domain-layer-class-diagrams)
         - [2.6.5.6.2. Bounded Context Database Design Diagram](#26562-bounded-context-database-design-diagram)
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+  - [3.1. Product design](#31-product-design)
+    - [3.1.1. Style Guidelines](#311-style-guidelines)
+      - [3.1.1.1. General Style Guidelines](#3111-general-style-guidelines)
+    - [3.1.2. Information Architecture](#312-information-architecture)
+      - [3.1.2.1. Organization Systems](#3121-organization-systems)
+      - [3.1.2.2. Labelling Systems](#3122-labelling-systems)
+      - [3.1.2.3. SEO Tags and Meta Tags](#3123-seo-tags-and-meta-tags)
+      - [3.1.2.4. Searching Systems](#3124-searching-systems)
+      - [3.1.2.5. Navigation Systems](#3125-navigation-systems)
+    - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+      - [3.1.3.1. Landing Page Wireframe](#3131-landing-page-wireframe)
+      - [3.1.3.2. Landing Page Mock-up](#3132-landing-page-mock-up)
+    - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+      - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+      - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+      - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+      - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+      - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
+- [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
+  - [4. Product Implementation & Validation](#4-product-implementation--validation)
+  - [4.1. Software Configuration Management](#41-software-configuration-management)
+    - [4.1.1. Software Development Environment Configuration](#411-software-development-environment-configuration)
+    - [4.1.2. Source Code Management](#412-source-code-management)
+    - [4.1.3. Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
+    - [4.1.4. Software Deployment Configuration](#414-software-deployment-configuration)
+  - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+    - [4.2.1. Sprint 1](#421-sprint-1)
+      - [4.2.1.1. Sprint Planning 1](#4211-sprint-planning-1)
+      - [4.2.1.2. Aspect Leaders and Collaborators](#4212-aspect-leaders-and-collaborators)
+      - [4.2.1.3. Sprint Backlog 1](#4213-sprint-backlog-1)
+      - [4.2.1.4. Development Evidence for Sprint Review](#4214-development-evidence-for-sprint-review)
+      - [4.2.1.5. Testing Suite Evidence for Sprint Review](#4215-testing-suite-evidence-for-sprint-review)
+      - [4.2.1.6. Execution Evidence for Sprint Review](#4216-execution-evidence-for-sprint-review)
+      - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
+      - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
+      - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
+  - [4.3. Validation Interviews](#43-validation-interviews)
+    - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+    - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+    - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -4988,15 +5029,19 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 57](#figura-57).
 
-## 3.1.1. Style Guidelines
+# Capítulo III: Solution UI/UX Design
 
-### 3.1.1.1. General Style Guidelines
+## 3.1. Product design
+
+### 3.1.1. Style Guidelines
+
+#### 3.1.1.1. General Style Guidelines
 
 Las presentes guías de estilo establecen los lineamientos visuales y de comunicación que rigen la identidad de **SaludYa**, producto digital desarrollado por la startup **RuwaLabs**. Su propósito es garantizar consistencia en todos los productos de la solución (Landing Page, aplicaciones móviles para pacientes y personal de salud, y servicios web), facilitando el trabajo colaborativo del equipo y asegurando una experiencia coherente para los usuarios.
 
 Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n) establecidos en el proyecto, y toman como referencia buenas prácticas de Design Systems reconocidos, adaptadas al contexto de los establecimientos públicos de salud del Perú.
 
-#### Branding
+##### Branding
 
 La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
@@ -5027,11 +5072,11 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page, como se detalla en la [Tabla 37](#tabla-37).
 
-#### Typography
+##### Typography
 
 La tipografía seleccionada prioriza la legibilidad en pantallas de distintos tamaños y en contextos de baja iluminación, frecuentes en establecimientos de salud.
 
-##### Landing Page (web)
+###### Landing Page (web)
 
 
 
@@ -5060,7 +5105,7 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page, como se detalla en la [Tabla 38](#tabla-38).
 
-##### Aplicaciones móviles (Android)
+###### Aplicaciones móviles (Android)
 
 
 
@@ -5085,11 +5130,11 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 
 En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android, como se detalla en la [Tabla 39](#tabla-39).
 
-#### Colors
+##### Colors
 
 La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
 
-##### Landing Page (web)
+###### Landing Page (web)
 
 
 
@@ -5120,7 +5165,7 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-##### Aplicaciones móviles (Android)
+###### Aplicaciones móviles (Android)
 
 
 
@@ -5152,9 +5197,9 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo, como se detalla en la [Tabla 41](#tabla-41).
 
-#### Spacing
+##### Spacing
 
-##### Landing Page (web)
+###### Landing Page (web)
 
 Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page, como se detalla en la [Tabla 42](#tabla-42).
 
@@ -5181,7 +5226,7 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-##### Aplicaciones móviles (Android)
+###### Aplicaciones móviles (Android)
 
 
 
@@ -5208,9 +5253,9 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles, como se detalla en la [Tabla 43](#tabla-43).
 
-#### Border Radius
+##### Border Radius
 
-##### Landing Page (web)
+###### Landing Page (web)
 
 
 
@@ -5232,7 +5277,7 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-##### Aplicaciones móviles (Android)
+###### Aplicaciones móviles (Android)
 
 
 
@@ -5255,9 +5300,9 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla, como se detalla en la [Tabla 45](#tabla-45).
 
-#### Shadows
+##### Shadows
 
-##### Landing Page (web)
+###### Landing Page (web)
 
 
 
@@ -5279,12 +5324,12 @@ Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarje
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-##### Aplicaciones móviles (Android)
+###### Aplicaciones móviles (Android)
 
 Las aplicaciones móviles **no emplean sombras** en su diseño actual. La jerarquía visual se resuelve mediante contraste de color, bordes y espaciado, siguiendo un enfoque flat consistente con los wireframes de alta fidelidad definidos en Figma.
 
 
-#### Tone of Voice
+##### Tone of Voice
 
 El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
@@ -5311,7 +5356,7 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo, como se detalla en la [Tabla 47](#tabla-47).
 
-#### Iconography
+##### Iconography
 
 Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles, como se detalla en la [Tabla 48](#tabla-48):
 
@@ -5339,418 +5384,21 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Design System de referencia
+##### Design System de referencia
 
 Las decisiones visuales de SaludYa toman como referencia principios de **Material Design** (jerarquía, elevación, uso del color) y buenas prácticas de Design Systems accesibles, adaptadas al contexto peruano y a las restricciones técnicas del proyecto (rendimiento en redes móviles, compatibilidad con dispositivos de gama media y baja).
 
-## 3.1.2. Information Architecture
+### 3.1.2. Information Architecture
 
 La arquitectura de información de **SaludYa** define la manera en que se organiza, etiqueta, navega y busca el contenido en los productos digitales que forman parte de la solución: el Landing Page, la aplicación móvil para pacientes y la aplicación móvil para el personal de salud. Su objetivo es que los visitantes y usuarios encuentren sin esfuerzo la información o funcionalidad que necesitan, reduciendo la carga cognitiva y facilitando la adopción del producto.
 
 Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n), y consideran las características de ambos segmentos objetivo: pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.
 
-### 3.1.2.1. Organization Systems
-
-La organización del contenido en SaludYa combina distintos sistemas según el tipo de información y el objetivo del usuario en cada producto.
-
-#### Landing Page
-
-
-
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 49](#tabla-49).
-
-<a id="tabla-49"></a>
-
-**Tabla 49**
-
-*Organization Systems — Landing Page*
-
-| Sección | Sistema de organización | Justificación |
-|:---|:---|:---|
-| Header | Jerárquico + matricial | Menú horizontal con enlaces principales y selector de idioma; organización matricial por categorías de contenido |
-| Hero | Jerárquico | Prioriza mensaje principal, subtítulo, CTAs y beneficios en orden de importancia |
-| Problema | Jerárquico | Tres tarjetas con igual jerarquía, organizadas por tema |
-| Solución | Jerárquico | Dos bloques comparativos (paciente vs. personal) con listas de funcionalidades |
-| Videos | Cronológico | Dos bloques secuenciales: About the Product y About the Team |
-| Modelo de negocio | Jerárquico | Tres tarjetas con igual jerarquía |
-| Testimonios | Alfabético | Seis tarjetas organizadas por nombre del entrevistado |
-| Sobre nosotros | Jerárquico | Misión, visión, valores y equipo en orden de relevancia |
-| Descarga | Jerárquico | Botones de tiendas como acción principal |
-| Footer | Jerárquico | Cuatro columnas organizadas por categoría (marca, enlaces, proyecto, contacto) |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para pacientes
-
-
-
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 50](#tabla-50).
-
-<a id="tabla-50"></a>
-
-**Tabla 50**
-
-*Organization Systems — Aplicación móvil para pacientes*
-
-| Sección | Sistema de organización | Justificación |
-|:---|:---|:---|
-| Inicio | Jerárquico | Accesos rápidos a reserva, lista de espera y citas próximas |
-| Reserva de citas | Secuencial (step-by-step) | Flujo paso a paso: especialidad → establecimiento → fecha → confirmación |
-| Lista de espera | Cronológico | Orden por fecha de inscripción y disponibilidad |
-| Mis citas | Cronológico | Orden por fecha de atención |
-| Familiares a cargo | Alfabético | Orden por nombre del familiar |
-| Perfil | Jerárquico | Datos personales, notificaciones y configuración |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para personal de salud
-
-
-
-La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 51](#tabla-51).
-
-<a id="tabla-51"></a>
-
-**Tabla 51**
-
-*Organization Systems — Aplicación móvil para personal de salud*
-
-| Sección | Sistema de organización | Justificación |
-|:---|:---|:---|
-| Panel principal | Jerárquico | Resumen del flujo de atención del día |
-| Gestión de citas | Cronológico | Orden por hora de atención |
-| Lista de espera | Cronológico | Orden por fecha de inscripción |
-| Cancelaciones e inasistencias | Cronológico | Orden por fecha del evento |
-| Pacientes | Alfabético | Orden por apellido |
-| Reportes | Jerárquico | Acceso a métricas y exportación |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Esquemas de categorización aplicados
-
-- **Alfabético:** testimonios, pacientes, familiares a cargo.
-- **Cronológico:** citas, lista de espera, cancelaciones, reportes por fecha.
-- **Por tópicos:** secciones del Landing Page (problema, solución, modelo de negocio).
-- **Según audiencia:** separación entre app pacientes y app personal de salud.
-- **Jerárquico:** estructura general de navegación en todos los productos.
-
-### 3.1.2.2. Labelling Systems
-
-Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, empleando el mínimo número de palabras posible y un vocabulario accesible para ambos segmentos objetivo.
-
-#### Landing Page
-
-
-
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 52](#tabla-52).
-
-<a id="tabla-52"></a>
-
-**Tabla 52**
-
-*Labelling Systems — Landing Page*
-
-| Etiqueta | Representa |
-|:---|:---|
-| Producto | Sección con el problema y la solución |
-| Videos | Bloque con los videos About the Product y About the Team |
-| Testimonios | Citas de entrevistados |
-| Sobre nosotros | Información de la startup y el equipo |
-| Descargar app | CTA principal hacia las tiendas |
-| ES / EN | Selector de idioma |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para pacientes
-
-
-
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 53](#tabla-53).
-
-<a id="tabla-53"></a>
-
-**Tabla 53**
-
-*Labelling Systems — Aplicación móvil para pacientes*
-
-| Etiqueta | Representa |
-|:---|:---|
-| Inicio | Pantalla principal |
-| Reservar cita | Inicio del flujo de reserva |
-| Lista de espera | Inscripción y seguimiento de cupos |
-| Mis citas | Citas reservadas por el paciente |
-| Familiares | Gestión de dependientes |
-| Perfil | Datos personales y configuración |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para personal de salud
-
-
-
-Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 54](#tabla-54).
-
-<a id="tabla-54"></a>
-
-**Tabla 54**
-
-*Labelling Systems — Aplicación móvil para personal de salud*
-
-| Etiqueta | Representa |
-|:---|:---|
-| Panel | Resumen del día |
-| Citas | Gestión de citas del establecimiento |
-| Lista de espera | Pacientes en espera de cupo |
-| Cancelaciones | Registro de cancelaciones e inasistencias |
-| Pacientes | Búsqueda y consulta de pacientes |
-| Reportes | Métricas y exportación |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Asociaciones entre etiquetas
-
-- **Reservar cita** se asocia con **Lista de espera** cuando no hay cupos disponibles.
-- **Mis citas** se asocia con **Cancelaciones** en la app del personal.
-- **Familiares** se asocia con **Reservar cita** para agendar a nombre de un dependiente.
-- **Perfil** se asocia con **Notificaciones** y **Configuración**.
-
-### 3.1.2.3. SEO Tags and Meta Tags
-
-Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú.
-
-#### Landing Page
-
-
-
-Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 55](#tabla-55).
-
-<a id="tabla-55"></a>
-
-**Tabla 55**
-
-*SEO Tags and Meta Tags — Landing Page*
-
-| Tag | Valor |
-|:---|:---|
-| Title | SaludYa — Citas médicas sin colas |
-| Meta Description | SaludYa — Plataforma digital que conecta pacientes y personal de establecimientos públicos de salud en Perú. Reserva de citas, lista de espera dinámica y check-in por QR. |
-| Meta Keywords | SaludYa, citas médicas, MINSA, SIS, salud pública Perú, reserva de citas, lista de espera, RuwaLabs |
-| Meta Author | RuwaLabs |
-| Meta Robots | index, follow |
-| Open Graph Title | SaludYa — Citas médicas sin colas |
-| Open Graph Description | Reserva tu cita, recibe avisos de cupos liberados y llega justo a tu atención. Para pacientes y personal de establecimientos públicos de salud. |
-| Open Graph Image | `assets/img/icon-saludya.png` |
-| Open Graph Type | website |
-| Open Graph URL | https://saludya.pe/ |
-| Twitter Card | summary_large_image |
-| Twitter Title | SaludYa — Citas médicas sin colas |
-| Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
-| Twitter Image | `assets/img/icon-saludya.png` |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### ASO (App Store Optimization)
-
-
-
-Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 56](#tabla-56).
-
-<a id="tabla-56"></a>
-
-**Tabla 56**
-
-*SEO Tags and Meta Tags — ASO (App Store Optimization)*
-
-| Elemento | App pacientes | App personal de salud |
-|:---|:---|:---|
-| App Title | SaludYa — Citas médicas | SaludYa Staff — Gestión de citas |
-| App Subtitle | Reserva sin colas | Gestión del flujo de atención |
-| App Keywords | citas médicas, MINSA, SIS, salud pública, reserva, lista de espera | gestión de citas, personal de salud, MINSA, SIS, flujo de atención |
-| App Description | Reserva tu cita en establecimientos públicos de salud, recibe avisos de cupos liberados y gestiona a tus familiares a cargo. | Administra las citas, la lista de espera y el flujo de atención de tu establecimiento de salud en tiempo real. |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-### 3.1.2.4. Searching Systems
-
-Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros y resultados consistentes.
-
-#### Landing Page
-
-
-
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 57](#tabla-57).
-
-<a id="tabla-57"></a>
-
-**Tabla 57**
-
-*Searching Systems — Landing Page*
-
-| Acción | Descripción |
-|:---|:---|
-| Navegación por anclas | Enlaces del header que llevan a secciones específicas (Producto, Videos, Testimonios, Sobre nosotros) |
-| Selector de idioma | Búsqueda de contenido en ES o EN |
-| Scroll suave | Desplazamiento con compensación de altura del header |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para pacientes
-
-
-
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 58](#tabla-58).
-
-<a id="tabla-58"></a>
-
-**Tabla 58**
-
-*Searching Systems — Aplicación móvil para pacientes*
-
-| Búsqueda | Filtros disponibles | Resultado |
-|:---|:---|:---|
-| Buscar establecimiento | Distrito, especialidad | Lista de establecimientos con disponibilidad |
-| Buscar especialidad | Establecimiento, disponibilidad | Lista de especialidades y cupos |
-| Buscar cita | Fecha, especialidad, establecimiento | Lista de citas reservadas |
-| Buscar familiar | Nombre | Ficha del familiar a cargo |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para personal de salud
-
-
-
-Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 59](#tabla-59).
-
-<a id="tabla-59"></a>
-
-**Tabla 59**
-
-*Searching Systems — Aplicación móvil para personal de salud*
-
-| Búsqueda | Filtros disponibles | Resultado |
-|:---|:---|:---|
-| Buscar paciente | Apellido, DNI, historia clínica | Ficha del paciente |
-| Buscar cita | Fecha, especialidad, estado | Lista de citas |
-| Buscar cancelación | Fecha, especialidad | Registro de cancelaciones |
-| Buscar cupo liberado | Fecha, especialidad | Lista de cupos disponibles |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Visualización de resultados
-
-Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
-
-### 3.1.2.5. Navigation Systems
-
-Los sistemas de navegación de SaludYa guían al usuario a través del Landing Page y las aplicaciones móviles, permitiéndole cumplir sus metas e interactuar de forma satisfactoria con el producto.
-
-#### Landing Page
-
-
-
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 60](#tabla-60).
-
-<a id="tabla-60"></a>
-
-**Tabla 60**
-
-*Navigation Systems — Landing Page*
-
-| Acción | Descripción |
-|:---|:---|
-| Navegación sticky | El header permanece visible al hacer scroll |
-| Menú de anclas | Enlaces directos a secciones |
-| Botón hamburguesa | En vista móvil, despliega el menú verticalmente |
-| Scroll suave | Desplazamiento con compensación del header |
-| Enlace activo | Resaltado del enlace correspondiente a la sección visible |
-| Selector de idioma | Cambio dinámico ES/EN sin recargar la página |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para pacientes
-
-
-
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 61](#tabla-61).
-
-<a id="tabla-61"></a>
-
-**Tabla 61**
-
-*Navigation Systems — Aplicación móvil para pacientes*
-
-| Acción | Descripción |
-|:---|:---|
-| Barra de navegación inferior | Accesos a Inicio, Reservar, Mis citas, Familiares y Perfil |
-| Flujo secuencial | Reserva paso a paso con retroceso y confirmación |
-| Notificaciones push | Avisos de cupos liberados y recordatorios |
-| Check-in por QR | Acceso rápido a la atención el día de la cita |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Aplicación móvil para personal de salud
-
-
-
-La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 62](#tabla-62).
-
-<a id="tabla-62"></a>
-
-**Tabla 62**
-
-*Navigation Systems — Aplicación móvil para personal de salud*
-
-| Acción | Descripción |
-|:---|:---|
-| Barra de navegación inferior | Accesos a Panel, Citas, Lista de espera, Pacientes y Reportes |
-| Filtros por fecha y especialidad | Segmentación del flujo de atención |
-| Actualización en tiempo real | Visualización del estado de cada paciente |
-| Reasignación de cupos | Acción directa sobre cupos liberados |
-
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-#### Recorrido del usuario
-
-1. El visitante llega al Landing Page y comprende el problema y la solución.
-2. Revisa los videos y testimonios de validación.
-3. Conoce el equipo y el modelo de negocio.
-4. Descarga la aplicación correspondiente a su perfil.
-5. En la app, navega por las secciones principales mediante la barra inferior.
-6. Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
-
-### 3.1.2.1. Organization Systems
+#### 3.1.2.1. Organization Systems
 
 La organización del contenido en SaludYa combina distintos sistemas según el tipo de información y el objetivo del usuario en cada producto. Se aplican principios de organización visual (jerárquica, secuencial y matricial) y esquemas de categorización (alfabético, cronológico, por tópicos y según audiencia), buscando siempre reducir la carga cognitiva y facilitar el acceso a la información.
 
-#### Landing Page
+##### Landing Page
 
 
 
@@ -5779,7 +5427,7 @@ La organización de las secciones agrupa la información según las tareas del u
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para pacientes
+##### Aplicación móvil para pacientes
 
 
 
@@ -5804,7 +5452,7 @@ La organización de las secciones agrupa la información según las tareas del u
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para personal de salud
+##### Aplicación móvil para personal de salud
 
 
 
@@ -5829,7 +5477,7 @@ La organización de las secciones agrupa la información según las tareas del u
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Esquemas de categorización aplicados
+##### Esquemas de categorización aplicados
 
 - **Alfabético:** testimonios en el Landing Page, pacientes y familiares a cargo en las aplicaciones.
 - **Cronológico:** citas, lista de espera, cancelaciones, reportes y videos.
@@ -5839,11 +5487,11 @@ La organización de las secciones agrupa la información según las tareas del u
 - **Secuencial:** flujos paso a paso en la reserva de citas y en la inscripción a la lista de espera.
 - **Matricial:** grid de testimonios en el Landing Page, donde el usuario puede explorar varias tarjetas sin un orden estricto.
 
-### 3.1.2.2. Labelling Systems
+#### 3.1.2.2. Labelling Systems
 
 Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, empleando el mínimo número de palabras posible y un vocabulario accesible para ambos segmentos objetivo. Se prioriza el uso de términos del dominio de la salud y de la gestión de citas, evitando tecnicismos innecesarios y anglicismos.
 
-#### Landing Page
+##### Landing Page
 
 
 
@@ -5870,7 +5518,7 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para pacientes
+##### Aplicación móvil para pacientes
 
 
 
@@ -5896,7 +5544,7 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para personal de salud
+##### Aplicación móvil para personal de salud
 
 
 
@@ -5922,7 +5570,7 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Asociaciones entre etiquetas
+##### Asociaciones entre etiquetas
 
 - **Reservar cita** se asocia con **Lista de espera** cuando no hay cupos disponibles.
 - **Mis citas** se asocia con **Cancelaciones** en la app del personal.
@@ -5930,11 +5578,11 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 - **Perfil** se asocia con **Notificaciones** y **Configuración**.
 - **Check-in QR** se asocia con **Mis citas** el día de la atención.
 
-### 3.1.2.3. SEO Tags and Meta Tags
+#### 3.1.2.3. SEO Tags and Meta Tags
 
 Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú. Asimismo, se definen los elementos de ASO (App Store Optimization) para las aplicaciones móviles publicadas en Google Play y App Store.
 
-#### Landing Page
+##### Landing Page
 
 
 
@@ -5957,7 +5605,7 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 | Open Graph Description | Reserva tu cita, recibe avisos de cupos liberados y llega justo a tu atención. Para pacientes y personal de establecimientos públicos de salud. |
 | Open Graph Image | `assets/img/icon-saludya.png` |
 | Open Graph Type | website |
-| Open Graph URL | https://saludya.pe/ |
+| Open Graph URL | https://ruwalabs.github.io/saludya-landing/ |
 | Twitter Card | summary_large_image |
 | Twitter Title | SaludYa — Citas médicas sin colas |
 | Twitter Description | Reserva de citas, lista de espera dinámica y check-in por QR para establecimientos públicos de salud. |
@@ -5967,7 +5615,7 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### ASO (App Store Optimization)
+##### ASO (App Store Optimization)
 
 
 
@@ -5990,11 +5638,11 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-### 3.1.2.4. Searching Systems
+#### 3.1.2.4. Searching Systems
 
 Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros, resultados consistentes y opciones de acción directa sobre los elementos encontrados.
 
-#### Landing Page
+##### Landing Page
 
 
 
@@ -6016,7 +5664,7 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para pacientes
+##### Aplicación móvil para pacientes
 
 
 
@@ -6039,7 +5687,7 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para personal de salud
+##### Aplicación móvil para personal de salud
 
 
 
@@ -6062,15 +5710,15 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Visualización de resultados
+##### Visualización de resultados
 
 Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
 
-### 3.1.2.5. Navigation Systems
+#### 3.1.2.5. Navigation Systems
 
 Los sistemas de navegación de SaludYa guían al usuario a través del Landing Page y las aplicaciones móviles, permitiéndole cumplir sus metas e interactuar de forma satisfactoria con el producto. Las decisiones de navegación se alinean con la arquitectura de información y los sistemas de búsqueda previamente definidos.
 
-#### Landing Page
+##### Landing Page
 
 
 
@@ -6095,7 +5743,7 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para pacientes
+##### Aplicación móvil para pacientes
 
 
 
@@ -6118,7 +5766,7 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Aplicación móvil para personal de salud
+##### Aplicación móvil para personal de salud
 
 
 
@@ -6141,7 +5789,7 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-#### Recorrido del usuario
+##### Recorrido del usuario
 
 1. El visitante llega al Landing Page y comprende el problema y la solución.
 2. Revisa los videos y testimonios de validación.
@@ -6152,13 +5800,13 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 <!-- pdf-pagebreak -->
 
-# 3.1.3. Landing Page UI Design
+### 3.1.3. Landing Page UI Design
 
-## 3.1.3.1. Landing Page Wireframe
+#### 3.1.3.1. Landing Page Wireframe
 
 Los wireframes del Landing Page fueron elaborados en **Figma** para las versiones **Desktop Web Browser** y **Mobile Web Browser**, con el objetivo de definir previamente la estructura, distribución de contenidos, jerarquía visual y navegación de la interfaz antes de desarrollar los mock-ups de alta fidelidad.
 
-### Estructura general del wireframe
+##### Estructura general del wireframe
 
 La estructura del Landing Page se organizó en diez secciones principales, siguiendo un flujo orientado a presentar el problema, introducir la solución y facilitar el acceso a la aplicación:
 
@@ -6173,7 +5821,7 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 9. **Descarga:** incluye los accesos correspondientes a Google Play y App Store.
 10. **Footer:** contiene el logotipo, enlaces de navegación, información del proyecto, medios de contacto y derechos de autor.
 
-### Wireframe Desktop Web Browser
+##### Wireframe Desktop Web Browser
 
 
 
@@ -6226,7 +5874,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-### Wireframe Mobile Web Browser
+##### Wireframe Mobile Web Browser
 
 
 
@@ -6279,7 +5927,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-### Principios de diseño aplicados
+##### Principios de diseño aplicados
 
 - **Jerarquía visual:** se establecieron diferentes niveles tipográficos y variaciones de fondo para diferenciar títulos, contenidos y secciones.
 - **Diseño inclusivo:** se consideraron contraste adecuado, tipografía legible, áreas de interacción apropiadas y estados de foco visibles.
@@ -6287,11 +5935,11 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 - **Consistencia visual:** se mantuvieron criterios uniformes de espaciado, tamaños, radios y componentes a lo largo de la interfaz.
 - **Diseño responsive:** la estructura fue adaptada para mantener la legibilidad y funcionalidad tanto en pantallas de escritorio como en dispositivos móviles.
 
-## 3.1.3.2. Landing Page Mock-up
+#### 3.1.3.2. Landing Page Mock-up
 
 Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definida en los wireframes y aplicando el **Design System de SaludYa**. Este sistema establece los criterios visuales utilizados para mantener consistencia en colores, tipografía, espaciado, componentes e interacción.
 
-### Design System aplicado
+##### Design System aplicado
 
 
 
@@ -6321,7 +5969,7 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-### Mock-up Desktop Web Browser
+##### Mock-up Desktop Web Browser
 
 
 
@@ -6374,7 +6022,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-### Mock-up Mobile Web Browser
+##### Mock-up Mobile Web Browser
 
 
 
@@ -6427,7 +6075,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 
 
-### Aplicación del Design System y diseño inclusivo
+##### Aplicación del Design System y diseño inclusivo
 
 
 
@@ -6454,7 +6102,7 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-### Componentes reutilizables
+##### Componentes reutilizables
 
 
 
@@ -6480,7 +6128,7 @@ Los componentes reutilizables definen la apariencia y los estados de botones, ta
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-### Landing Page implementado
+##### Landing Page implementado
 
 El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla, como se observa en la [Figura 66](#figura-66).
 
@@ -6505,9 +6153,285 @@ El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a
 https://ruwalabs.github.io/saludya-landing/
 
 
-### Conclusión de la sección
+##### Conclusión de la sección
 
 Los wireframes y mock-ups del Landing Page evidencian la aplicación coherente del Design System, los principios de diseño inclusivo y la arquitectura de información. La propuesta comunica el modelo de negocio de RuwaLabs, el problema que resuelve SaludYa y los beneficios para ambos segmentos objetivo, facilitando la conversión del visitante hacia la descarga de las aplicaciones móviles. La inclusión de internacionalización y accesibilidad garantiza una experiencia inclusiva y consistente.
+
+### 3.1.4. Mobile Applications UX/UI Design
+
+#### 3.1.4.1. Mobile Applications Wireframes
+
+En esta sección se presenta la propuesta de wireframes de las aplicaciones móviles de **SaludYa**, elaborada en **Figma**. Los wireframes son de **baja fidelidad** y se construyeron con la escala de grises definida para esta etapa (de **WF 900** a **WF White**), de modo que la atención se concentre en la estructura, la jerarquía visual y la disposición de los elementos de cada pantalla, y no en el color ni en el acabado final. Esta decisión permite validar la organización del contenido antes de elaborar los mock-ups de alta fidelidad del apartado 3.1.4.3.
+
+La propuesta traduce las decisiones de arquitectura de información definidas en el apartado 3.1.2 (sistemas de organización, etiquetado, búsqueda y navegación) y evidencia la aplicación de principios y elementos de diseño, así como de criterios de **diseño inclusivo**: contraste suficiente entre el contenido y las superficies, jerarquía tipográfica clara, áreas táctiles amplias y etiquetas simples y libres de ambigüedad. Los wireframes cubren las **dos aplicaciones del alcance** (pacientes y personal de salud) y los diálogos transversales. El archivo de trabajo se encuentra disponible en [Mobile Application Wireframes](https://www.figma.com/design/WzyAnfvTsb6ZUsl9tUxLfd/Mobile-Application-Wireframes?node-id=0-1&p=f&t=EMPaZzmhHw9hIRHl-0).
+
+##### Estilo de los wireframes
+
+Los wireframes emplean una escala de grises de baja fidelidad que permite distinguir jerarquías, superficies y estados sin depender del color, manteniendo el foco en la estructura y en la organización del contenido. La escala abarca desde el tono más oscuro (WF 900) hasta el blanco (WF White), como se observa en la [Figura 67](#figura-67).
+
+<a id="figura-67"></a>
+
+**Figura 67**
+
+*Escala de grises para wireframes*
+
+<img src="chapter-03/assets/wireframes/color-wireframes.png" alt="Escala de grises para wireframes de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+##### Aplicación móvil para pacientes
+
+La aplicación para pacientes se organiza en torno a la barra de navegación inferior (**Inicio, Reservar cita, Asistencia y Configuración**), en línea con el sistema de navegación descrito en el apartado 3.1.2.5. Las vistas siguientes cubren el acceso, el inicio, la gestión de citas, la reserva, la asistencia, las notificaciones y la configuración.
+
+El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **Iniciar Sesión** y **Registrarse**, y el formulario de **Inicio de Sesión** con tipo y número de documento y contraseña, como se observa en la [Figura 68](#figura-68).
+
+<a id="figura-68"></a>
+
+**Figura 68**
+
+*Bienvenida e inicio de sesión*
+
+<img src="chapter-03/assets/wireframes/iam-bienvenida-login.png" alt="Wireframe de bienvenida e inicio de sesión de SaludYa" width="80%"/>
+
+*Nota. Elaboración propia.*
+
+El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la [Figura 69](#figura-69).
+
+<a id="figura-69"></a>
+
+**Figura 69**
+
+*Registro y verificación de identidad*
+
+<img src="chapter-03/assets/wireframes/iam-registro.png" alt="Wireframe de registro y verificación de identidad de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la [Figura 70](#figura-70).
+
+<a id="figura-70"></a>
+
+**Figura 70**
+
+*Recuperación y cambio de contraseña*
+
+<img src="chapter-03/assets/wireframes/iam-recuperacion.png" alt="Wireframe de recuperación y cambio de contraseña de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la [Figura 71](#figura-71).
+
+<a id="figura-71"></a>
+
+**Figura 71**
+
+*Inicio del paciente*
+
+<img src="chapter-03/assets/wireframes/paciente-home.png" alt="Wireframe de inicio del paciente de SaludYa" width="320"/>
+
+*Nota. Elaboración propia.*
+
+La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la [Figura 72](#figura-72).
+
+<a id="figura-72"></a>
+
+**Figura 72**
+
+*Citas pendientes*
+
+<img src="chapter-03/assets/wireframes/paciente-citas-pendientes.png" alt="Wireframe de citas pendientes de SaludYa" width="320"/>
+
+*Nota. Elaboración propia.*
+
+El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la [Figura 73](#figura-73).
+
+<a id="figura-73"></a>
+
+**Figura 73**
+
+*Historial y filtro por fecha*
+
+<img src="chapter-03/assets/wireframes/paciente-historial.png" alt="Wireframe de historial y filtro por fecha de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la [Figura 74](#figura-74).
+
+<a id="figura-74"></a>
+
+**Figura 74**
+
+*Reserva de cita*
+
+<img src="chapter-03/assets/wireframes/paciente-reserva.png" alt="Wireframe de reserva de cita de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la [Figura 75](#figura-75).
+
+<a id="figura-75"></a>
+
+**Figura 75**
+
+*Reserva por doctor*
+
+<img src="chapter-03/assets/wireframes/paciente-reserva-por-doctor.png" alt="Wireframe de reserva por doctor de SaludYa" width="80%"/>
+
+*Nota. Elaboración propia.*
+
+La asistencia reúne el registro de llegada mediante **código QR** y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la [Figura 76](#figura-76).
+
+<a id="figura-76"></a>
+
+**Figura 76**
+
+*Asistencia: check-in y cola*
+
+<img src="chapter-03/assets/wireframes/paciente-checkin.png" alt="Wireframe de asistencia con check-in y cola de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones **Rechazar** y **Aceptar**, como se observa en la [Figura 77](#figura-77).
+
+<a id="figura-77"></a>
+
+**Figura 77**
+
+*Notificaciones y reasignación*
+
+<img src="chapter-03/assets/wireframes/paciente-notificaciones.png" alt="Wireframe de notificaciones y reasignación de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la [Figura 78](#figura-78).
+
+<a id="figura-78"></a>
+
+**Figura 78**
+
+*Configuración y cambio de correo*
+
+<img src="chapter-03/assets/wireframes/paciente-cambio-correo.png" alt="Wireframe de configuración y cambio de correo de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la [Figura 79](#figura-79).
+
+<a id="figura-79"></a>
+
+**Figura 79**
+
+*Pacientes vinculados y registro de menor*
+
+<img src="chapter-03/assets/wireframes/paciente-menores-1.png" alt="Wireframe de pacientes vinculados y registro de menor de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la [Figura 80](#figura-80).
+
+<a id="figura-80"></a>
+
+**Figura 80**
+
+*Perfil del menor vinculado*
+
+<img src="chapter-03/assets/wireframes/paciente-menores-2.png" alt="Wireframe del perfil del menor vinculado de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+##### Aplicación móvil del personal de salud
+
+La aplicación para el personal de salud se organiza en la barra inferior **Inicio, Calendario, Cita y Configuración**, y prioriza la gestión operativa del establecimiento.
+
+El inicio del personal presenta el resumen del día con las citas canceladas y pendientes, junto con el acceso a la edición del perfil, como se observa en la [Figura 81](#figura-81).
+
+<a id="figura-81"></a>
+
+**Figura 81**
+
+*Inicio del personal de salud*
+
+<img src="chapter-03/assets/wireframes/admin-home.png" alt="Wireframe de inicio del personal de salud de SaludYa" width="320"/>
+
+*Nota. Elaboración propia.*
+
+El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la [Figura 82](#figura-82).
+
+<a id="figura-82"></a>
+
+**Figura 82**
+
+*Calendario: especialidad, fecha y hora*
+
+<img src="chapter-03/assets/wireframes/admin-calendario.png" alt="Wireframe del calendario del personal de salud de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la [Figura 83](#figura-83).
+
+<a id="figura-83"></a>
+
+**Figura 83**
+
+*Calendario por doctor*
+
+<img src="chapter-03/assets/wireframes/admin-calendario-doctor.png" alt="Wireframe del calendario por doctor de SaludYa" width="80%"/>
+
+*Nota. Elaboración propia.*
+
+La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la [Figura 84](#figura-84).
+
+<a id="figura-84"></a>
+
+**Figura 84**
+
+*Edición de bloque horario*
+
+<img src="chapter-03/assets/wireframes/admin-edicion-bloque.png" alt="Wireframe de edición de bloque horario de SaludYa" width="100%"/>
+
+*Nota. Elaboración propia.*
+
+La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la [Figura 85](#figura-85).
+
+<a id="figura-85"></a>
+
+**Figura 85**
+
+*Configuración general*
+
+<img src="chapter-03/assets/wireframes/admin-configuracion.png" alt="Wireframe de configuración general de SaludYa" width="70%"/>
+
+*Nota. Elaboración propia.*
+
+##### Diálogos y componentes
+
+Los componentes transversales normalizan la confirmación de acciones y la comunicación de estados del sistema en ambas aplicaciones.
+
+El diálogo de confirmación de cita solicita validar la reserva antes de registrarla y comunica el resultado exitoso, como se observa en la [Figura 86](#figura-86).
+
+<a id="figura-86"></a>
+
+**Figura 86**
+
+*Diálogos de confirmación de cita*
+
+<img src="chapter-03/assets/wireframes/dialogs-cita-confirmada.png" alt="Wireframe de diálogos de confirmación de cita de SaludYa" width="60%"/>
+
+*Nota. Elaboración propia.*
+
+Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la [Figura 87](#figura-87).
+
+<a id="figura-87"></a>
+
+**Figura 87**
+
+*Diálogos de estado y validación*
+
+<img src="chapter-03/assets/wireframes/dialogs-configuracion.png" alt="Wireframe de diálogos de estado y validación de SaludYa" width="60%"/>
+
+*Nota. Elaboración propia.*
+
+#### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
@@ -7444,6 +7368,16 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 [Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
 
+# Capítulo IV: Product Implementation & Validation
+
+## 4. Product Implementation & Validation
+
+## 4.1. Software Configuration Management
+
+### 4.1.1. Software Development Environment Configuration
+
+### 4.1.2. Source Code Management
+
 ### 4.1.3. Source Code Style Guide & Conventions
 
 En esta sección se establecen las convenciones de estilo y nomenclatura que el equipo **RuwaLabs** adopta para el desarrollo de la solución **SaludYa**, compuesta por el Landing Page, las aplicaciones móviles (pacientes y personal de salud) y los servicios web. El objetivo es garantizar la legibilidad, mantenibilidad y consistencia del código a lo largo del ciclo de vida del proyecto, así como facilitar la colaboración entre los miembros del equipo.
@@ -7756,6 +7690,16 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 <!-- pdf-pagebreak -->
 
+
+## 4.2. Landing Page & Mobile Application Implementation
+
+### 4.2.1. Sprint 1
+
+#### 4.2.1.1. Sprint Planning 1
+
+#### 4.2.1.2. Aspect Leaders and Collaborators
+
+#### 4.2.1.3. Sprint Backlog 1
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
@@ -8328,6 +8272,20 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 <img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Ofertas de reasignación de SaludYa" width="1000">
 
 *Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+#### 4.2.1.9. Team Collaboration Insights during Sprint
+
+## 4.3. Validation Interviews
+
+### 4.3.1. Diseño de Entrevistas
+
+### 4.3.2. Registro de Entrevistas
+
+### 4.3.3. Evaluaciones según heurísticas
 
 # Conclusiones
 
