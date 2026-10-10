@@ -148,9 +148,8 @@ A continuación se incluyen capturas de la interacción con la documentación de
 ![Evidencia configuración](chapter-04/assets/4-2-1-7-config.png)
 *Figura. Lectura de la configuración del establecimiento; respuesta `200`.*
 
-##### Repositorio y commits de documentación
+##### Commits de documentación
 
-- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
 - **Commits relacionados con la documentación para este Sprint:**
 
 | Commit | Mensaje | Relación |
