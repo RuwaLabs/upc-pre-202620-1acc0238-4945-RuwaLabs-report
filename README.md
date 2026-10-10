@@ -7963,6 +7963,222 @@ La sección anuncia la próxima disponibilidad para Android e iOS y muestra los 
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
+##### Aplicación Android: pantallas del paciente
+
+Las siguientes imágenes corresponden a los mockups del paciente en Figma y documentan la interfaz prevista para la aplicación Android. Se incluyen como referencia visual del trabajo del sprint; la ejecución en un dispositivo y el enlace de distribución Android se incorporarán cuando estén disponibles.
+
+Diseño de referencia: [Mobile Application Mockups de SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2).
+
+###### Bienvenida
+
+La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 114](#figura-114).
+
+<a id="figura-114"></a>
+
+**Figura 114**
+
+*Bienvenida — SaludYa*
+
+<img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Verificación de identidad
+
+El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 115](#figura-115).
+
+<a id="figura-115"></a>
+
+**Figura 115**
+
+*Verificación de identidad — SaludYa*
+
+<img src="assets/execution/sprint-1/android-identidad.png" alt="Verificación de identidad de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Registro de credenciales
+
+El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 116](#figura-116).
+
+<a id="figura-116"></a>
+
+**Figura 116**
+
+*Registro de credenciales — SaludYa*
+
+<img src="assets/execution/sprint-1/android-credenciales.png" alt="Registro de credenciales de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Verificación por correo
+
+La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 117](#figura-117).
+
+<a id="figura-117"></a>
+
+**Figura 117**
+
+*Verificación por correo — SaludYa*
+
+<img src="assets/execution/sprint-1/android-verificar-correo.png" alt="Verificación por correo de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Inicio de sesión
+
+El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 118](#figura-118).
+
+<a id="figura-118"></a>
+
+**Figura 118**
+
+*Inicio de sesión — SaludYa*
+
+<img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Recuperación de acceso
+
+El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 119](#figura-119).
+
+<a id="figura-119"></a>
+
+**Figura 119**
+
+*Recuperación de acceso — SaludYa*
+
+<img src="assets/execution/sprint-1/android-recuperacion.png" alt="Recuperación de acceso de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Restablecimiento de contraseña
+
+El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 120](#figura-120).
+
+<a id="figura-120"></a>
+
+**Figura 120**
+
+*Restablecimiento de contraseña — SaludYa*
+
+<img src="assets/execution/sprint-1/android-nueva-contrasena.png" alt="Restablecimiento de contraseña de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Inicio del paciente
+
+La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 121](#figura-121).
+
+<a id="figura-121"></a>
+
+**Figura 121**
+
+*Inicio del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-inicio.png" alt="Inicio del paciente de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Reserva de cita
+
+El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 122](#figura-122).
+
+<a id="figura-122"></a>
+
+**Figura 122**
+
+*Reserva de cita — SaludYa*
+
+<img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Confirmación de reserva
+
+La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 123](#figura-123).
+
+<a id="figura-123"></a>
+
+**Figura 123**
+
+*Confirmación de reserva — SaludYa*
+
+<img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Registro de llegada
+
+La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 124](#figura-124).
+
+<a id="figura-124"></a>
+
+**Figura 124**
+
+*Registro de llegada — SaludYa*
+
+<img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Ticket de atención
+
+La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 125](#figura-125).
+
+<a id="figura-125"></a>
+
+**Figura 125**
+
+*Ticket de atención — SaludYa*
+
+<img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Perfil del paciente
+
+El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 126](#figura-126).
+
+<a id="figura-126"></a>
+
+**Figura 126**
+
+*Perfil del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-perfil.png" alt="Perfil del paciente de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Menores vinculados
+
+La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 127](#figura-127).
+
+<a id="figura-127"></a>
+
+**Figura 127**
+
+*Menores vinculados — SaludYa*
+
+<img src="assets/execution/sprint-1/android-menores.png" alt="Menores vinculados de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
+###### Notificaciones del paciente
+
+La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 128](#figura-128).
+
+<a id="figura-128"></a>
+
+**Figura 128**
+
+*Notificaciones del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320">
+
+*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
