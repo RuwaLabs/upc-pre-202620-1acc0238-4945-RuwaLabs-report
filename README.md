@@ -6486,7 +6486,7 @@ Los diálogos de configuración comunican errores de validación (código incorr
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplicaciones móviles de **SaludYa**, elaborada a partir de los **Task Flows** consensuados por el equipo. Cada Wireflow combina la secuencia de pasos de un **User Goal** con los wireframes de las pantallas que intervienen en el flujo; toda interacción que modifica el estado de una pantalla se representa agregando un **paso con un wireframe del nuevo estado** (validaciones, errores, estados vacíos y diálogos de confirmación). Se consideran las **dos aplicaciones del alcance**: la aplicación para **pacientes** (*User Persona*: Kevin Huamán) y la aplicación para el **personal de admisión** (*User Persona*: Franco Alanoca). Los wireflows se elaboraron en **Figma** y su orden responde a los User Goals priorizados para cada aplicación.
+En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicaciones móviles de SaludYa, elaborada a partir de los Task Flows consensuados por el equipo. Cada Wireflow combina la secuencia de pasos de un User Goal con los wireframes de las pantallas que intervienen en el flujo; toda interacción que modifica el estado de una pantalla se representa agregando un paso con un wireframe del nuevo estado (validaciones, errores, estados vacíos y diálogos de confirmación). Se consideran las dos aplicaciones del alcance: la aplicación para pacientes (*User Persona*: Kevin Huamán) y la aplicación para el personal de admisión (*User Persona*: Franco Alanoca). Los wireflows se elaboraron en Figma y su orden responde a los User Goals priorizados para cada aplicación.
 
 ##### Wireflows de Pacientes
 
@@ -6501,7 +6501,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro en la aplicación (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png?raw=true" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6519,7 +6519,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de inicio de sesión (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-02-iniciar-sesion.png?raw=true" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6537,7 +6537,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de recuperación de contraseña (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png?raw=true" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6555,7 +6555,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de cierre de sesión (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-05-cerrar-sesion.png?raw=true" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6573,7 +6573,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de reserva de una cita médica (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png?raw=true" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6591,7 +6591,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas y detalle (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png?raw=true" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6609,7 +6609,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow del historial de citas (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png?raw=true" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6627,7 +6627,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de gestión de citas de un familiar a cargo (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png?raw=true" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6645,7 +6645,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de revisión de notificaciones (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png?raw=true" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6663,7 +6663,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de llegada y seguimiento del turno (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png?raw=true" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6681,7 +6681,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png?raw=true" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6699,7 +6699,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de actualización de datos de contacto (paciente)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png?raw=true" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6719,7 +6719,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro del personal de admisión*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png?raw=true" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6737,7 +6737,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de inicio de sesión del personal de admisión*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png?raw=true" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6755,7 +6755,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de un bloque de cita*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png?raw=true" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6773,7 +6773,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de edición de un bloque de cita*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png?raw=true" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6791,7 +6791,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de disponibilidad de cupos*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png?raw=true" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6809,7 +6809,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas pendientes*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png?raw=true" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6827,7 +6827,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de consulta de citas atendidas*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png?raw=true" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6845,7 +6845,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de registro de llegada del paciente (check-in)*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png?raw=true" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6863,7 +6863,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de gestión de la cola de asistencia*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png?raw=true" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -6881,7 +6881,7 @@ En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplica
 *Wireflow de configuración de los parámetros del establecimiento*
 
 <p align="center">
-  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png?raw=true" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
 </p>
 
 *Nota. Elaboración propia.*
@@ -8928,19 +8928,15 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-En esta sección se presenta la evidencia de la **documentación de los Web Services** del backend de **SaludYa** correspondiente a este Sprint. La documentación se generó con **springdoc-openapi (OpenAPI 3)** a partir de las anotaciones del código y se encuentra **desplegada y navegable** en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema —**Identity & Access Management**, **Appointments & Booking**, **Arrival & QR Check-in**, **Reassignment** y **Hospital Operations & Configuration**—, alcanzando **62 operaciones** distribuidas en **53 rutas**.
+En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
 
-La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza **autenticación HTTP Bearer con JWT** (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
 
 - **Swagger UI (documentación desplegada):** http://3.129.217.49:8080/swagger-ui/index.html
 - **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
 - **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
 
-
-##### Repositorio y commits de documentación
-
-- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
-- **Commits relacionados con la documentación para este Sprint:**
+##### Commits relacionados con la documentación para este Sprint
 
 | Commit | Mensaje | Relación |
 |:--|:--|:--|
@@ -8954,36 +8950,35 @@ La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al reposit
 
 A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
 
-
 ###### IAM — Identity & Access Management
 
-| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
-|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 1 | Enviar código de verificación antes de registrar la cuenta | POST | `/api/v1/user-accounts/send-verification-code` | body: `email` | `{"email":"kevin.huaman@gmail.com"}` | `202` · *sin cuerpo* | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
-| 2 | Registrar al paciente verificado | POST | `/api/v1/user-accounts` | body: `dni, name, lastname, birthDate, phone, email, password, code` | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register) |
-| 3 | Iniciar sesión (valida credenciales y envía código) | POST | `/api/v1/user-accounts/login` | body: `email, password` | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}` | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}` | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login) |
-| 4 | Completar inicio de sesión con el código | POST | `/api/v1/user-accounts/login/verify` | body: `challengeId, code` | `{"challengeId":"8f2c1d40-...","code":"721305"}` | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}` | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin) |
-| 5 | Reenviar el código del desafío de login | POST | `/api/v1/user-accounts/login/resend` | body: `challengeId` | `{"challengeId":"8f2c1d40-..."}` | `202` · *sin cuerpo* | Genera y reenvía un nuevo código para el mismo desafío | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode) |
-| 6 | Cerrar sesión (revoca el token actual) | POST | `/api/v1/user-accounts/logout` | header: `Authorization: Bearer <token>` | *(sin cuerpo)* | `204` · *sin cuerpo* | Revoca la sesión Bearer vigente; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout) |
-| 7 | Solicitar enlace de recuperación de contraseña | POST | `/api/v1/user-accounts/recover-password` | body: `email` | `{"email":"kevin.huaman@gmail.com"}` | `202` `{"message":"If an active account exists, a recovery email will be sent."}` | Confirma la recepción de forma genérica, sin revelar si el correo está registrado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover) |
-| 8 | Restablecer contraseña con el enlace de recuperación | POST | `/api/v1/user-accounts/reset-password` | body: `token, password, confirmPassword` | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}` | `204` · *sin cuerpo* | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset) |
-| 9 | Cambiar la contraseña usando la actual | POST | `/api/v1/user-accounts/change-password` | header: `Authorization` · body: `currentPassword, password, confirmPassword` | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}` | `204` · *sin cuerpo* | Actualiza la contraseña del usuario autenticado; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change) |
-| 10 | Leer la cuenta y el perfil propios | GET | `/api/v1/user-accounts/me` | header: `Authorization` | *(sin cuerpo)* | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me) |
-| 11 | Leer un perfil por id | GET | `/api/v1/user-accounts/{id}` | path: `id` · header: `Authorization` | `/api/v1/user-accounts/10` | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}` | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get) |
-| 12 | Actualizar correo y celular | PUT | `/api/v1/user-accounts/{id}` | path: `id` · body: `email, phone` | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}` | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}` | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update) |
-| 13 | Crear cuenta de personal de admisión | POST | `/api/v1/user-accounts/staff` | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}` | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}` | Crea la cuenta del personal y envía una invitación para definir contraseña | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff) |
-| 14 | Verificar identidad por DNI y nombre | POST | `/api/v1/identity-verifications` | body: `dni, name, lastname` | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}` | `200` `{"verified":true}` | Indica si el DNI existe y el nombre completo coincide con el registro oficial | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify) |
-| 15 | Comprobar si un DNI es conocido | POST | `/api/v1/identity-verifications/exists` | body: `dni` | `{"dni":"74218365"}` | `200` `{"exists":true}` | Indica si el DNI es conocido por el proveedor de identidad | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists) |
-| 16 | Leer el perfil de paciente | GET | `/api/v1/patients/{id}` | path: `id` · header: `Authorization` | `/api/v1/patients/1` | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el paciente propio o un menor vinculado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1) |
-| 17 | Actualizar datos de contacto del paciente | PUT | `/api/v1/patients/{id}` | path: `id` · body: `email, phone` | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}` | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}` | Actualiza el contacto del paciente propio y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1) |
-| 18 | Listar menores vinculados | GET | `/api/v1/patients/{id}/minors` | path: `id` · header: `Authorization` | `/api/v1/patients/1/minors` | `200` `[{"id":5,"patientId":88,"tutorId":1}]` | Lista los vínculos de tutoría del paciente autenticado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors) |
-| 19 | Vincular a un menor verificado | POST | `/api/v1/patient-minors` | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation` | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}` | `201` `{"id":5,"patientId":88,"tutorId":1}` | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link) |
-| 20 | Leer un vínculo de tutoría | GET | `/api/v1/patient-minors/{id}` | path: `id` · header: `Authorization` | `/api/v1/patient-minors/5` | `200` `{"id":5,"patientId":88,"tutorId":1}` | Devuelve el vínculo de tutoría solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2) |
-| 21 | Desvincular a un menor | DELETE | `/api/v1/patient-minors/{id}` | path: `id` · header: `Authorization` | `/api/v1/patient-minors/5` | `204` · *sin cuerpo* | Elimina el vínculo de tutoría conservando la historia clínica del menor | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink) |
-| 22 | Obtener instrucciones de soporte | GET | `/api/v1/account-recovery-requests/support` | — | *(sin cuerpo)* | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}` | Devuelve las instrucciones y el teléfono de soporte (público) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support) |
-| 23 | Solicitar recuperación asistida | POST | `/api/v1/account-recovery-requests` | body: `dni, contactEmail` | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}` | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}` | Registra la solicitud; no otorga acceso ni revela cuentas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request) |
-| 24 | Listar solicitudes de recuperación abiertas | GET | `/api/v1/account-recovery-requests` | header: `Authorization (SUPER_ADMIN)` | *(sin cuerpo)* | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]` | Lista las 100 solicitudes abiertas más antiguas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open) |
-| 25 | Resolver solicitud de recuperación asistida | POST | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson` | `{"identityCheckedInPerson":true}` | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}` | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve) |
+|  #  | Acción implementada                                        | Método | Sintaxis de llamada (endpoint)                   | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                                                              | Respuesta (ejemplo)                                                                                                                                                                              | Explicación del response                                                                                               | Documentación                                                                                             |
+| :-: | :--------------------------------------------------------- | :----: | :----------------------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+|  1  | Enviar código de verificación antes de registrar la cuenta |  POST  | `/api/v1/user-accounts/send-verification-code`   | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` · *sin cuerpo*                                                                                                                                                                             | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
+|  2  | Registrar al paciente verificado                           |  POST  | `/api/v1/user-accounts`                          | body: `dni, name, lastname, birthDate, phone, email, password, code`                         | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register)             |
+|  3  | Iniciar sesión (valida credenciales y envía código)        |  POST  | `/api/v1/user-accounts/login`                    | body: `email, password`                                                                      | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}`                                                                                                                  | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}`                                                                                         | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)                |
+|  4  | Completar inicio de sesión con el código                   |  POST  | `/api/v1/user-accounts/login/verify`             | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                                                                | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}`                                             | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)          |
+|  5  | Reenviar el código del desafío de login                    |  POST  | `/api/v1/user-accounts/login/resend`             | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                                                                | `202` · *sin cuerpo*                                                                                                                                                                             | Genera y reenvía un nuevo código para el mismo desafío                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode)      |
+|  6  | Cerrar sesión (revoca el token actual)                     |  POST  | `/api/v1/user-accounts/logout`                   | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                                                                  | `204` · *sin cuerpo*                                                                                                                                                                             | Revoca la sesión Bearer vigente; responde sin contenido                                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)               |
+|  7  | Solicitar enlace de recuperación de contraseña             |  POST  | `/api/v1/user-accounts/recover-password`         | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` `{"message":"If an active account exists, a recovery email will be sent."}`                                                                                                                | Confirma la recepción de forma genérica, sin revelar si el correo está registrado                                      | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover)              |
+|  8  | Restablecer contraseña con el enlace de recuperación       |  POST  | `/api/v1/user-accounts/reset-password`           | body: `token, password, confirmPassword`                                                     | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                            | `204` · *sin cuerpo*                                                                                                                                                                             | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset)                |
+|  9  | Cambiar la contraseña usando la actual                     |  POST  | `/api/v1/user-accounts/change-password`          | header: `Authorization` · body: `currentPassword, password, confirmPassword`                 | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                     | `204` · *sin cuerpo*                                                                                                                                                                             | Actualiza la contraseña del usuario autenticado; responde sin contenido                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change)               |
+| 10  | Leer la cuenta y el perfil propios                         |  GET   | `/api/v1/user-accounts/me`                       | header: `Authorization`                                                                      | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada                                                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me)                   |
+| 11  | Leer un perfil por id                                      |  GET   | `/api/v1/user-accounts/{id}`                     | path: `id` · header: `Authorization`                                                         | `/api/v1/user-accounts/10`                                                                                                                                                      | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}`                                                                                              | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta                                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get)                  |
+| 12  | Actualizar correo y celular                                |  PUT   | `/api/v1/user-accounts/{id}`                     | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}`                                                                                                                        | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables                                           | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update)               |
+| 13  | Crear cuenta de personal de admisión                       |  POST  | `/api/v1/user-accounts/staff`                    | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}`                                           | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}`                                                                                     | Crea la cuenta del personal y envía una invitación para definir contraseña                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)                |
+| 14  | Verificar identidad por DNI y nombre                       |  POST  | `/api/v1/identity-verifications`                 | body: `dni, name, lastname`                                                                  | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}`                                                                                                                         | `200` `{"verified":true}`                                                                                                                                                                        | Indica si el DNI existe y el nombre completo coincide con el registro oficial                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify)       |
+| 15  | Comprobar si un DNI es conocido                            |  POST  | `/api/v1/identity-verifications/exists`          | body: `dni`                                                                                  | `{"dni":"74218365"}`                                                                                                                                                            | `200` `{"exists":true}`                                                                                                                                                                          | Indica si el DNI es conocido por el proveedor de identidad                                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists)       |
+| 16  | Leer el perfil de paciente                                 |  GET   | `/api/v1/patients/{id}`                          | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1`                                                                                                                                                            | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Devuelve el paciente propio o un menor vinculado                                                                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1)                       |
+| 17  | Actualizar datos de contacto del paciente                  |  PUT   | `/api/v1/patients/{id}`                          | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}`                                                                                                                                 | Actualiza el contacto del paciente propio y devuelve el recurso actualizado                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1)                    |
+| 18  | Listar menores vinculados                                  |  GET   | `/api/v1/patients/{id}/minors`                   | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1/minors`                                                                                                                                                     | `200` `[{"id":5,"patientId":88,"tutorId":1}]`                                                                                                                                                    | Lista los vínculos de tutoría del paciente autenticado                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors)                      |
+| 19  | Vincular a un menor verificado                             |  POST  | `/api/v1/patient-minors`                         | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation`           | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}`                                                                          | `201` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso                                   | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link)                 |
+| 20  | Leer un vínculo de tutoría                                 |  GET   | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `200` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Devuelve el vínculo de tutoría solicitado                                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2)                |
+| 21  | Desvincular a un menor                                     | DELETE | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `204` · *sin cuerpo*                                                                                                                                                                             | Elimina el vínculo de tutoría conservando la historia clínica del menor                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink)               |
+| 22  | Obtener instrucciones de soporte                           |  GET   | `/api/v1/account-recovery-requests/support`      | —                                                                                            | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}`                                                                                                  | Devuelve las instrucciones y el teléfono de soporte (público)                                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support)          |
+| 23  | Solicitar recuperación asistida                            |  POST  | `/api/v1/account-recovery-requests`              | body: `dni, contactEmail`                                                                    | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}`                                                                                                                        | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}`                                                                                                               | Registra la solicitud; no otorga acceso ni revela cuentas                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request)          |
+| 24  | Listar solicitudes de recuperación abiertas                |  GET   | `/api/v1/account-recovery-requests`              | header: `Authorization (SUPER_ADMIN)`                                                        | *(sin cuerpo)*                                                                                                                                                                  | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]`                                                           | Lista las 100 solicitudes abiertas más antiguas                                                                        | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open)             |
+| 25  | Resolver solicitud de recuperación asistida                |  POST  | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson`         | `{"identityCheckedInPerson":true}`                                                                                                                                              | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}`                                                                                                              | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN)                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve)          |
 
 ###### Appointments & Booking
 
@@ -9042,84 +9037,344 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 | 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
 | 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
 
-##### Evidencias de interacción (capturas con datos de muestra)
+##### Evidencias de interacción
 
-A continuación se incluyen capturas de la interacción con la documentación desplegada (Swagger UI), ejecutando las operaciones con **datos de muestra**. En cada caso se presenta la captura del request/response obtenido; el **dato de muestra** utilizado para cada operación se detalla en la columna *Petición (ejemplo)* de la tabla anterior.
+A continuación se presenta una muestra del modelo de evidencia de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el JSON de envío, la captura y una descripción. Los endpoints elegidos son públicos.
 
-<a id="figura-182"></a>
+###### 1. `POST /api/v1/identity-verifications` -  Verificar identidad por DNI
 
-**Figura 182**
-
-*Documentación de IAM — verificación de identidad*
-
-<p align="center">
-  <img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Swagger UI de SaludYa - verificación de identidad" width="100%"/>
-</p>
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
-<a id="figura-183"></a>
-
-**Figura 183**
-
-*Documentación de IAM — cuentas de usuario (registro e inicio de sesión)*
+**JSON de envío:**
+```json
+{ "dni": "74500834", "name": "Neo Daniel", "lastname": "Ramos Mera" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Swagger UI de SaludYa - cuentas de usuario" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
 
-<a id="figura-184"></a>
+###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
 
-**Figura 184**
-
-*Documentación de Appointments & Booking — citas*
+**JSON de envío:**
+```json
+{ "dni": "74500834" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Swagger UI de SaludYa - citas" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/identity_verifications_exists.jpeg?raw=true" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
 
-<a id="figura-185"></a>
+###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
 
-**Figura 185**
-
-*Documentación de Appointments & Booking — bloques de horario*
+**JSON de envío:**
+```json
+{ "email": "doriangray292929@gmail.com" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Swagger UI de SaludYa - bloques de horario" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+*Figura. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
 
-<a id="figura-186"></a>
+###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
 
-**Figura 186**
-
-*Documentación de Arrival & QR Check-in*
+**JSON de envío:**
+```json
+{ "email": "doriangray292929@gmail.com" }
+```
 
 <p align="center">
-  <img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Swagger UI de SaludYa - check-in por QR" width="100%"/>
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/1c59f81386ce5bce3be15f14db66cb0f103a8961/assets/Services%20Deployment/useraccounts_recoverpassword.jpeg?raw=true" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
 </p>
 
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
-<a id="figura-187"></a>
-
-**Figura 187**
-
-*Documentación de Reassignment*
-
-<p align="center">
-  <img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Swagger UI de SaludYa - reasignación" width="100%"/>
-</p>
-
-*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
-
+*Figura. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
+
+Las actividades realizadas durante el Sprint fueron:
+
+- **Creación de la cuenta y de los recursos en el proveedor cloud (AWS):** alta de la cuenta, creación del *key pair* para el acceso SSH, lanzamiento de la instancia EC2 y configuración de la red (security group con los puertos necesarios).
+- **Configuración del servidor:** instalación de Java 25 (Temurin), PostgreSQL y Git, y creación del usuario y la base de datos del backend.
+- **Externalización de secretos:** las variables sensibles (JWT, QR, clave de cifrado de notificaciones, SMTP, ApiPeru y bootstrap) se almacenan en `/etc/saludya/saludya.env`, fuera del repositorio, y systemd las carga mediante `EnvironmentFile`, de modo que sobreviven a cada despliegue.
+- **Automatización del despliegue:** tres scripts de Bash (`setup-server.sh`, `setup-env.sh` y `deploy.sh`) y un servicio `systemd` (`saludya.service`) que recompila el JAR y reinicia el backend.
+- **Verificación:** el backend queda disponible y se comprueba consultando el endpoint `/v3/api-docs`.
+
+##### Scripts de despliegue
+
+Para automatizar el aprovisionamiento y el despliegue del backend se utilizaron tres scripts de Bash.
+
+###### `setup-server.sh`
+
+Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:-postgre}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/3] Instalando Java 25 (Temurin) ..."
+apt-get update
+apt-get install -y wget apt-transport-https gpg
+mkdir -p /etc/apt/keyrings
+wget -qO- https://packages.adoptium.net/artifactory/api/gpg/key/public \
+  | gpg --dearmor > /etc/apt/keyrings/adoptium.gpg
+. /etc/os-release
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb ${VERSION_CODENAME} main" \
+> /etc/apt/sources.list.d/adoptium.list
+apt-get update
+apt-get install -y temurin-25-jdk
+
+echo "==> [2/3] Instalando PostgreSQL y git ..."
+apt-get install -y postgresql git
+systemctl enable --now postgresql
+
+echo "==> [3/3] Creando usuario y base de datos ..."
+# Crea el rol si no existe, o actualiza su password si ya existe.
+sudo -u postgres psql -v ON_ERROR_STOP=1 <<SQL
+DO \$\$
+BEGIN
+   IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = '${DB_USER}') THEN
+      CREATE ROLE ${DB_USER} LOGIN PASSWORD '${DB_PASSWORD}';
+   ELSE
+      ALTER ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASSWORD}';
+   END IF;
+END
+\$\$;
+SQL
+
+# Crea la base de datos si no existe, con el usuario como owner.
+if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
+  sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
+fi
+
+sudo -u postgres psql -v ON_ERROR_STOP=1 -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_USER};"
+sudo -u postgres psql -v ON_ERROR_STOP=1 -d "${DB_NAME}" -c "GRANT ALL ON SCHEMA public TO ${DB_USER};"
+
+echo
+echo "================ RESUMEN ================"
+java -version 2>&1 | head -1
+sudo -u postgres psql -tAc "SELECT version();"
+echo "Base de datos : ${DB_NAME}"
+echo "Usuario       : ${DB_USER}"
+echo "Password      : ${DB_PASSWORD}"
+echo "========================================="
+echo "Siguiente paso ->  sudo bash setup-env.sh"
+```
+
+###### `setup-env.sh`
+
+Genera el archivo `/etc/saludya/saludya.env` con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos `600` para mantener los secretos protegidos.
+
+```bash
+#!/usr/bin/env bash
+#
+# setup-env.sh - Crea /etc/saludya/saludya.env con TODAS las variables del backend.
+#
+#   Las variables viven FUERA del repositorio, y systemd las carga con
+#   EnvironmentFile. Por eso sobreviven a cada "git pull" / despliegue.
+#
+# Uso:
+#   sudo bash setup-env.sh
+#
+# Personaliza con variables de entorno:
+#   DB_PASSWORD=MiClave BOOTSTRAP_PASSWORD=Admin2026 sudo -E bash setup-env.sh
+#
+set -euo pipefail
+
+DB_HOST="${DB_HOST:-localhost}"
+DB_PORT="${DB_PORT:-5432}"
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:-postgre}"
+BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:-SaludYa2026}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+mkdir -p /etc/saludya
+cat > /etc/saludya/saludya.env <<EOF
+SPRING_PROFILES_ACTIVE=prod
+
+# --- Base de datos (PostgreSQL local) ---
+DB_HOST=${DB_HOST}
+DB_PORT=${DB_PORT}
+DB_NAME=${DB_NAME}
+DB_USER=${DB_USER}
+DB_PASSWORD=${DB_PASSWORD}
+
+# --- Secretos JWT / QR / cifrado de notificaciones ---
+APPLICATION_JWT_SECRET=dr6lu4fCylnYjpuy54LiH9YyJIIX+2mBaMlBFZJMbw49aJTGGJOVk6W9AE1CKsaa
+APPLICATION_QR_SECRET=OSRngazE7OBydWv5sAVcrqlTBTu0uePY8X673ylZiotieKo5cB8ubrYzwjLwuEGZ
+IAM_NOTIFICATIONS_ENCRYPTION_KEY=52Ziy3zob1MIKiCm6mxuQ1E+pjvV6/uh0mcctrbEmys=
+
+# --- Verificacion de identidad (ApiPeru) ---
+IAM_IDENTITY_MODE=apiperu
+IAM_IDENTITY_URL=https://api.apiperu.dev/dni
+IAM_IDENTITY_API_KEY=28605|74UTT7gMm04Af243nXEUIRKuL25HJgo7kMw5xUzi8ca579b0
+
+# --- Administrador inicial (bootstrap) ---
+IAM_BOOTSTRAP_ENABLED=true
+IAM_BOOTSTRAP_EMAIL=admin@saludya.local
+IAM_BOOTSTRAP_PASSWORD=${BOOTSTRAP_PASSWORD}
+
+# --- Correo (Gmail SMTP) ---
+MAIL_ENABLED=true
+MAIL_USERNAME=soporte.saludya.pe@gmail.com
+MAIL_FROM=soporte.saludya.pe@gmail.com
+MAIL_APP_PASSWORD=bhggslpxbaeiszkj
+IAM_NOTIFICATIONS_LOG_CODES=true
+EOF
+
+chmod 600 /etc/saludya/saludya.env
+chown root:root /etc/saludya/saludya.env
+
+echo "OK -> /etc/saludya/saludya.env creado (permisos 600)."
+echo "Editar   ->  sudo nano /etc/saludya/saludya.env"
+echo "Aplicar  ->  sudo systemctl restart saludya"
+```
+
+###### `deploy.sh`
+
+Despliega o actualiza el backend en la EC2: obtiene el código (`git clone` la primera vez o `git pull` después), compila el JAR con Maven (`./mvnw`), (re)genera el servicio `systemd`, lo reinicia y verifica que el backend responda.
+
+```bash
+#!/usr/bin/env bash
+#
+# deploy.sh - Despliega o ACTUALIZA el backend SaludYa en la EC2.
+#
+#   * Clona el repo la primera vez, o hace "git pull" en las siguientes
+#   * Compila el JAR con Maven (./mvnw)
+#   * (Re)genera el servicio systemd y lo reinicia
+#   * Verifica que responda
+#
+# Uso:
+#   bash deploy.sh
+#
+# Requisitos: haber corrido antes setup-server.sh y setup-env.sh
+#
+set -euo pipefail
+
+REPO_URL="${REPO_URL:-https://github.com/RuwaLabs/backend-saludya.git}"
+BRANCH="${BRANCH:-develop}"
+APP_DIR="${APP_DIR:-$HOME/backend-saludya}"
+ENV_FILE="${ENV_FILE:-/etc/saludya/saludya.env}"
+SERVICE="saludya"
+JAR="$APP_DIR/saludya/target/saludya-0.0.1-SNAPSHOT.jar"
+
+if [ ! -f "$ENV_FILE" ]; then
+  echo "ERROR: falta $ENV_FILE. Corre primero ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/4] Obteniendo codigo ..."
+if [ -d "$APP_DIR/.git" ]; then
+  git -C "$APP_DIR" fetch origin "$BRANCH"
+  git -C "$APP_DIR" reset --hard "origin/$BRANCH"
+else
+  git clone --branch "$BRANCH" "$REPO_URL" "$APP_DIR"
+fi
+
+echo "==> [2/4] Compilando (Maven) ..."
+cd "$APP_DIR/saludya"
+./mvnw -q clean package -DskipTests
+
+echo "==> [3/4] Configurando servicio systemd ..."
+sudo tee /etc/systemd/system/saludya.service >/dev/null <<EOF
+[Unit]
+Description=SaludYa backend
+After=network.target postgresql.service
+
+[Service]
+User=$USER
+WorkingDirectory=$APP_DIR
+EnvironmentFile=$ENV_FILE
+ExecStart=/usr/bin/java -Xmx384m -XX:+UseSerialGC -jar $JAR
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable "$SERVICE" >/dev/null 2>&1 || true
+sudo systemctl restart "$SERVICE"
+
+echo "==> [4/4] Verificando ..."
+for _ in $(seq 1 60); do
+  code="$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/v3/api-docs || true)"
+  if [ "$code" = "200" ]; then
+    echo "OK: backend arriba -> http://localhost:8080/v3/api-docs (200)"
+    break
+  fi
+  sleep 2
+done
+
+sudo systemctl status "$SERVICE" --no-pager | head -15
+echo
+echo "Logs en vivo ->  journalctl -u $SERVICE -f"
+```
+
+##### Evidencias de despliegue
+
+A continuación se presentan las capturas del proceso de despliegue en AWS.
+
+###### Creación del key pair (acceso SSH)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/key%20pari%20%28login%29.jpeg?raw=true" alt="Creación del key pair en AWS" width="100%"/>
+</p>
+
+*Figura. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+
+###### Instancia EC2 (resumen)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg?raw=true" alt="Resumen de la instancia EC2" width="100%"/>
+</p>
+
+*Figura. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+
+###### Configuración de red (security group)
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/network%20settings.jpeg?raw=true" alt="Configuración de red de la instancia" width="100%"/>
+</p>
+
+*Figura. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+
+###### Acceso SSH a la instancia
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg?raw=true" alt="Acceso SSH a la instancia EC2" width="100%"/>
+</p>
+
+*Figura. Acceso por SSH a la instancia EC2 del backend.*
+
+###### Scripts de despliegue en el servidor
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/d1d2306591cbf6b8c9da47b2ceb50e7f1ea72285/assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg?raw=true" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
+</p>
+
+*Figura. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
