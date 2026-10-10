@@ -6433,6 +6433,408 @@ Los diálogos de configuración comunican errores de validación (código incorr
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
+En esta sección se presenta la propuesta de **Wireflow Diagrams** de las aplicaciones móviles de **SaludYa**, elaborada a partir de los **Task Flows** consensuados por el equipo. Cada Wireflow combina la secuencia de pasos de un **User Goal** con los wireframes de las pantallas que intervienen en el flujo; toda interacción que modifica el estado de una pantalla se representa agregando un **paso con un wireframe del nuevo estado** (validaciones, errores, estados vacíos y diálogos de confirmación). Se consideran las **dos aplicaciones del alcance**: la aplicación para **pacientes** (*User Persona*: Kevin Huamán) y la aplicación para el **personal de admisión** (*User Persona*: Franco Alanoca). Los wireflows se elaboraron en **Figma** y su orden responde a los User Goals priorizados para cada aplicación.
+
+##### Wireflows de Pacientes
+
+###### WF-01 · Registrarme en la aplicación
+
+**User Goal:** Como paciente, quiero crear mi cuenta para reservar y gestionar mis citas desde el celular.
+
+<a id="figura-88"></a>
+
+**Figura 88**
+
+*Wireflow de registro en la aplicación (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png" alt="Wireflow de registro en la aplicación de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 88](#figura-88) se observa que el recorrido va de Bienvenida a Registro (tipo y número de documento) y luego a Verificar DNI, con diálogos de datos incorrectos o validación exitosa. Después sigue Registro de credenciales, Verificación de celular con código (incorrecto o exitoso) y, al final, Inicio de sesión.
+
+###### WF-02 · Iniciar sesión
+
+**User Goal:** Como paciente, quiero iniciar sesión para acceder a mi información y a mis citas.
+
+<a id="figura-89"></a>
+
+**Figura 89**
+
+*Wireflow de inicio de sesión (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 89](#figura-89) se aprecia que, desde Inicio de sesión, si las credenciales son inválidas aparece un diálogo de error. Si son correctas, pasa a la verificación con código (segundo factor), con diálogo de código incorrecto o exitoso, y entra al Home.
+
+###### WF-03 · Recuperar mi contraseña
+
+**User Goal:** Como paciente, quiero recuperar el acceso cuando olvido mi contraseña.
+
+<a id="figura-90"></a>
+
+**Figura 90**
+
+*Wireflow de recuperación de contraseña (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png" alt="Wireflow de recuperación de contraseña de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 90](#figura-90) se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
+
+###### WF-05 · Cerrar sesión
+
+**User Goal:** Como paciente, quiero cerrar sesión de forma segura.
+
+<a id="figura-91"></a>
+
+**Figura 91**
+
+*Wireflow de cierre de sesión (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 91](#figura-91) se aprecia que, desde Configuración, se confirma el cierre y se vuelve al Inicio de sesión. El diálogo de confirmación aún no tiene wireframe, por eso aparece como recuadro pendiente.
+
+###### WF-07 · Reservar una cita médica
+
+**User Goal:** Como paciente, quiero reservar una cita eligiendo especialidad, fecha y horario.
+
+<a id="figura-92"></a>
+
+**Figura 92**
+
+*Wireflow de reserva de una cita médica (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png" alt="Wireflow de reserva de una cita médica de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 92](#figura-92) se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
+
+###### WF-08 · Consultar mis citas y su detalle
+
+**User Goal:** Como paciente, quiero ver mis próximas citas y su detalle.
+
+<a id="figura-93"></a>
+
+**Figura 93**
+
+*Wireflow de consulta de citas y detalle (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png" alt="Wireflow de consulta de citas y su detalle de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 93](#figura-93) se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
+
+###### WF-09 · Revisar el historial de citas
+
+**User Goal:** Como paciente, quiero revisar mis atenciones anteriores.
+
+<a id="figura-94"></a>
+
+**Figura 94**
+
+*Wireflow del historial de citas (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png" alt="Wireflow del historial de citas de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 94](#figura-94) se observa que, desde Home, se abre Historial, se despliega el calendario de filtro por fecha y se muestra el historial acotado a la fecha elegida.
+
+###### WF-10 · Gestionar las citas de un familiar a mi cargo
+
+**User Goal:** Como paciente, quiero vincular a un familiar dependiente y gestionar sus citas desde mi cuenta.
+
+<a id="figura-95"></a>
+
+**Figura 95**
+
+*Wireflow de gestión de citas de un familiar a cargo (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 95](#figura-95) se observa que, desde Configuración, se abre Parientes vinculados y se agrega un menor (Registro de menor). Luego viene Verificar DNI, con diálogos de «No eres pariente», datos incorrectos o validación exitosa, y se abre el Home del menor, desde donde se puede volver a la cuenta principal. Como camino alterno, se abre un pariente ya vinculado para desvincularlo.
+
+###### WF-11 · Revisar mis notificaciones
+
+**User Goal:** Como paciente, quiero revisar mis avisos para no perder citas ni cupos liberados.
+
+<a id="figura-96"></a>
+
+**Figura 96**
+
+*Wireflow de revisión de notificaciones (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png" alt="Wireflow de revisión de notificaciones de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 96](#figura-96) se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
+
+###### WF-12 · Registrar mi llegada y seguir mi turno
+
+**User Goal:** Como paciente, quiero registrar mi llegada y saber cuándo me atenderán sin hacer cola.
+
+<a id="figura-97"></a>
+
+**Figura 97**
+
+*Wireflow de registro de llegada y seguimiento del turno (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 97](#figura-97) se observa que, desde Asistencia, se elige la reserva y se registra con el código QR. Luego se muestra la Posición en la cola y se llega al aviso «Has sido atendido». Como camino alterno, se puede dejar la cola con un diálogo de confirmación.
+
+###### WF-13 · Aceptar o rechazar un cupo liberado
+
+**User Goal:** Como paciente, quiero aprovechar un cupo liberado por una cancelación.
+
+<a id="figura-98"></a>
+
+**Figura 98**
+
+*Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 98](#figura-98) se observa que, desde la notificación, se abre el detalle de la oferta. Si acepta, aparece «Reasignación exitosa». Si rechaza, aparece un diálogo de confirmación del rechazo.
+
+###### WF-14 · Actualizar mis datos de contacto
+
+**User Goal:** Como paciente, quiero mantener actualizados mi celular y mi correo.
+
+<a id="figura-99"></a>
+
+**Figura 99**
+
+*Wireflow de actualización de datos de contacto (paciente)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 99](#figura-99) se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
+
+##### Wireflows de Healthcare Administrators
+
+###### S01 · Registrarme como personal de admisión
+
+**User Goal:** Como personal de admisión, quiero que se habilite mi cuenta con el correo corporativo y definir mi contraseña.
+
+<a id="figura-100"></a>
+
+**Figura 100**
+
+*Wireflow de registro del personal de admisión*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 100](#figura-100) se observa que el administrador crea la cuenta y envía una invitación (paso pendiente de wireframe). El personal abre el enlace, define su contraseña (diálogo si no coincide o si fue exitoso) y pasa al Inicio de sesión.
+
+###### S02 · Iniciar sesión como personal
+
+**User Goal:** Como personal de admisión, quiero iniciar sesión para acceder a la gestión de citas y a la sala de espera.
+
+<a id="figura-101"></a>
+
+**Figura 101**
+
+*Wireflow de inicio de sesión del personal de admisión*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png" alt="Wireflow de inicio de sesión del personal de admisión de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 101](#figura-101) se observa que va de Inicio de sesión (diálogo único si las credenciales son inválidas) a la verificación con código (diálogo de código incorrecto o exitoso) y entra al Home del administrador.
+
+###### S03 · Registrar un bloque de cita
+
+**User Goal:** Como personal de admisión, quiero registrar bloques de cita con doctor, fecha, horario y capacidad.
+
+<a id="figura-102"></a>
+
+**Figura 102**
+
+*Wireflow de registro de un bloque de cita*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png" alt="Wireflow de registro de un bloque de cita de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 102](#figura-102) se observa que, desde el Home, se elige la especialidad, la fecha, la hora y el doctor, y se termina en el diálogo «Confirmar bloque de cita».
+
+###### S04 · Editar un bloque de cita
+
+**User Goal:** Como personal de admisión, quiero ajustar bloques existentes para corregir la programación.
+
+<a id="figura-103"></a>
+
+**Figura 103**
+
+*Wireflow de edición de un bloque de cita*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png" alt="Wireflow de edición de un bloque de cita de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 103](#figura-103) se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
+
+###### S05 · Consultar la disponibilidad de cupos
+
+**User Goal:** Como personal de admisión, quiero consultar los cupos por especialidad, doctor y fecha.
+
+<a id="figura-104"></a>
+
+**Figura 104**
+
+*Wireflow de consulta de disponibilidad de cupos*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png" alt="Wireflow de consulta de disponibilidad de cupos de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 104](#figura-104) se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
+
+###### S06 · Consultar las citas pendientes
+
+**User Goal:** Como personal de admisión, quiero ver las citas pendientes para organizar la agenda del día.
+
+<a id="figura-105"></a>
+
+**Figura 105**
+
+*Wireflow de consulta de citas pendientes*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png" alt="Wireflow de consulta de citas pendientes de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 105](#figura-105) se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
+
+###### S07 · Consultar las citas atendidas
+
+**User Goal:** Como personal de admisión, quiero consultar las citas ya atendidas y generar reportes por rango de fechas.
+
+<a id="figura-106"></a>
+
+**Figura 106**
+
+*Wireflow de consulta de citas atendidas*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png" alt="Wireflow de consulta de citas atendidas de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 106](#figura-106) se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
+
+###### S08 · Registrar la llegada del paciente (check-in)
+
+**User Goal:** Como personal de admisión, quiero registrar la llegada escaneando el QR o ingresando el código de reserva.
+
+<a id="figura-107"></a>
+
+**Figura 107**
+
+*Wireflow de registro de llegada del paciente (check-in)*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png" alt="Wireflow de registro de llegada del paciente de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 107](#figura-107) se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
+
+###### S09 · Gestionar la cola de asistencia
+
+**User Goal:** Como personal de admisión, quiero manejar la cola de la sala de espera.
+
+<a id="figura-108"></a>
+
+**Figura 108**
+
+*Wireflow de gestión de la cola de asistencia*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png" alt="Wireflow de gestión de la cola de asistencia de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 108](#figura-108) se observa que, desde el Home, se elige la especialidad y se abre la lista «Hoy», donde se atiende y se finaliza cada cita en orden.
+
+###### S10 · Configurar los parámetros del establecimiento
+
+**User Goal:** Como personal de admisión, quiero configurar los parámetros operativos del centro.
+
+<a id="figura-109"></a>
+
+**Figura 109**
+
+*Wireflow de configuración de los parámetros del establecimiento*
+
+<p align="center">
+  <img src="chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png" alt="Wireflow de configuración de los parámetros del establecimiento de SaludYa" width="100%"/>
+</p>
+
+*Nota. Elaboración propia.*
+
+**Explicación del flujo:** En la [Figura 109](#figura-109) se observa que, desde Configuración general, se edita un parámetro, que se actualiza con el diálogo «Ingrese el nuevo valor».
+
 #### 3.1.4.3. Mobile Applications Mock-ups
 
 En este entregable se presentan los mock-ups de alta fidelidad de la aplicación móvil de SaludYa para el paciente, incluyendo la gestión de citas de menores a su cargo. El diseño parte de los wireframes del equipo y las historias de usuario del reporte. Los recorridos del personal de admisión, Super Admin, configuración operativa y exportación de reportes quedan pendientes para una entrega posterior.
@@ -6445,9 +6847,9 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-<a id="figura-67"></a>
+<a id="figura-110"></a>
 
-**Figura 67**
+**Figura 110**
 
 *Bienvenida y registro del paciente*
 
@@ -6459,15 +6861,15 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 
 
 
-Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la [Figura 67](#figura-67).
+Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la [Figura 110](#figura-110).
 
 
 
 
 
-<a id="figura-68"></a>
+<a id="figura-111"></a>
 
-**Figura 68**
+**Figura 111**
 
 *Acceso y recuperación de la cuenta del paciente*
 
@@ -6479,7 +6881,7 @@ Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales
 
 
 
-El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la [Figura 68](#figura-68).
+El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la [Figura 111](#figura-111).
 
 **Sección Dashboard del Paciente**
 
@@ -6487,9 +6889,9 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 
 
-<a id="figura-69"></a>
+<a id="figura-112"></a>
 
-**Figura 69**
+**Figura 112**
 
 *Inicio, citas pendientes e historial del paciente*
 
@@ -6501,7 +6903,7 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 
 
 
-El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la [Figura 69](#figura-69).
+El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la [Figura 112](#figura-112).
 
 **Sección Reserva de Citas**
 
@@ -6509,9 +6911,9 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 
 
-<a id="figura-70"></a>
+<a id="figura-113"></a>
 
-**Figura 70**
+**Figura 113**
 
 *Selección de especialidad, beneficiario, fecha, profesional y horario*
 
@@ -6523,15 +6925,15 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 
 
 
-El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la [Figura 70](#figura-70).
+El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la [Figura 113](#figura-113).
 
 
 
 
 
-<a id="figura-71"></a>
+<a id="figura-114"></a>
 
-**Figura 71**
+**Figura 114**
 
 *Resumen, confirmación y estados de la reserva*
 
@@ -6543,7 +6945,7 @@ El paciente selecciona la especialidad, al titular o menor vinculado y una fecha
 
 
 
-El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la [Figura 71](#figura-71).
+El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la [Figura 114](#figura-114).
 
 **Sección Check-in y Atención del Paciente**
 
@@ -6551,9 +6953,9 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 
 
-<a id="figura-72"></a>
+<a id="figura-115"></a>
 
-**Figura 72**
+**Figura 115**
 
 *Registro de llegada, escaneo del QR del establecimiento, ticket y cola*
 
@@ -6565,7 +6967,7 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 
 
 
-Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la [Figura 72](#figura-72).
+Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la [Figura 115](#figura-115).
 
 Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
 
@@ -6575,9 +6977,9 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-<a id="figura-73"></a>
+<a id="figura-116"></a>
 
-**Figura 73**
+**Figura 116**
 
 *Configuración, datos personales y actualización del contacto*
 
@@ -6589,7 +6991,7 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 
 
 
-El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la [Figura 73](#figura-73).
+El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la [Figura 116](#figura-116).
 
 **Sección Gestión de Menores Vinculados**
 
@@ -6597,9 +6999,9 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 
 
-<a id="figura-74"></a>
+<a id="figura-117"></a>
 
-**Figura 74**
+**Figura 117**
 
 *Vinculación, verificación y gestión de menores a cargo*
 
@@ -6611,7 +7013,7 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 
 
 
-El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la [Figura 74](#figura-74).
+El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la [Figura 117](#figura-117).
 
 **Sección Notificaciones y Reasignación de Citas**
 
@@ -6619,9 +7021,9 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 
 
-<a id="figura-75"></a>
+<a id="figura-118"></a>
 
-**Figura 75**
+**Figura 118**
 
 *Notificaciones y ofertas de reasignación de citas*
 
@@ -6633,7 +7035,7 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 
 
 
-Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la [Figura 75](#figura-75).
+Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la [Figura 118](#figura-118).
 
 **Archivo de diseño**
 
@@ -6651,15 +7053,15 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 
 **Happy Path**
 
-El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la [Figura 76](#figura-76).
+El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la [Figura 119](#figura-119).
 
 
 
 
 
-<a id="figura-76"></a>
+<a id="figura-119"></a>
 
-**Figura 76**
+**Figura 119**
 
 *Registrarse como paciente — recorrido esperado*
 
@@ -6673,15 +7075,15 @@ El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos
 
 **Unhappy Paths**
 
-Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la [Figura 77](#figura-77).
+Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la [Figura 120](#figura-120).
 
 
 
 
 
-<a id="figura-77"></a>
+<a id="figura-120"></a>
 
-**Figura 77**
+**Figura 120**
 
 *Registrarse como paciente — errores y alternativas*
 
@@ -6697,15 +7099,15 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 
 **Happy Path**
 
-El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la [Figura 78](#figura-78).
+El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la [Figura 121](#figura-121).
 
 
 
 
 
-<a id="figura-78"></a>
+<a id="figura-121"></a>
 
-**Figura 78**
+**Figura 121**
 
 *Iniciar sesión como paciente — recorrido esperado*
 
@@ -6719,15 +7121,15 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 
 **Unhappy Paths**
 
-Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la [Figura 79](#figura-79).
+Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la [Figura 122](#figura-122).
 
 
 
 
 
-<a id="figura-79"></a>
+<a id="figura-122"></a>
 
-**Figura 79**
+**Figura 122**
 
 *Iniciar sesión como paciente — errores y alternativas*
 
@@ -6743,15 +7145,15 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 
 **Happy Path**
 
-El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la [Figura 80](#figura-80).
+El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la [Figura 123](#figura-123).
 
 
 
 
 
-<a id="figura-80"></a>
+<a id="figura-123"></a>
 
-**Figura 80**
+**Figura 123**
 
 *Recuperar la contraseña — recorrido esperado*
 
@@ -6765,15 +7167,15 @@ El paciente solicita la recuperación con su correo registrado. La aplicación m
 
 **Unhappy Paths**
 
-Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la [Figura 81](#figura-81).
+Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la [Figura 124](#figura-124).
 
 
 
 
 
-<a id="figura-81"></a>
+<a id="figura-124"></a>
 
-**Figura 81**
+**Figura 124**
 
 *Recuperar la contraseña — errores y alternativas*
 
@@ -6789,15 +7191,15 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 **Happy Path**
 
-El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la [Figura 82](#figura-82).
+El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la [Figura 125](#figura-125).
 
 
 
 
 
-<a id="figura-82"></a>
+<a id="figura-125"></a>
 
-**Figura 82**
+**Figura 125**
 
 *Vincular o desvincular a un menor — recorrido esperado*
 
@@ -6811,15 +7213,15 @@ El titular ingresa los datos del menor y confirma su vinculación después de ve
 
 **Unhappy Paths**
 
-Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la [Figura 83](#figura-83).
+Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la [Figura 126](#figura-126).
 
 
 
 
 
-<a id="figura-83"></a>
+<a id="figura-126"></a>
 
-**Figura 83**
+**Figura 126**
 
 *Vincular o desvincular a un menor — errores y alternativas*
 
@@ -6835,15 +7237,15 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 
 **Happy Path**
 
-El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la [Figura 84](#figura-84).
+El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la [Figura 127](#figura-127).
 
 
 
 
 
-<a id="figura-84"></a>
+<a id="figura-127"></a>
 
-**Figura 84**
+**Figura 127**
 
 *Actualizar el correo o celular del perfil — recorrido esperado*
 
@@ -6857,15 +7259,15 @@ El paciente consulta sus datos y modifica su correo o celular. Si cambia el corr
 
 **Unhappy Paths**
 
-Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la [Figura 85](#figura-85).
+Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la [Figura 128](#figura-128).
 
 
 
 
 
-<a id="figura-85"></a>
+<a id="figura-128"></a>
 
-**Figura 85**
+**Figura 128**
 
 *Actualizar el correo o celular del perfil — errores y alternativas*
 
@@ -6881,15 +7283,15 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 
 **Happy Path**
 
-El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la [Figura 86](#figura-86).
+El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la [Figura 129](#figura-129).
 
 
 
 
 
-<a id="figura-86"></a>
+<a id="figura-129"></a>
 
-**Figura 86**
+**Figura 129**
 
 *Consultar disponibilidad de citas — recorrido esperado*
 
@@ -6903,15 +7305,15 @@ El paciente selecciona una especialidad y una fecha. Consulta profesionales y ho
 
 **Unhappy Paths**
 
-Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la [Figura 87](#figura-87).
+Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la [Figura 130](#figura-130).
 
 
 
 
 
-<a id="figura-87"></a>
+<a id="figura-130"></a>
 
-**Figura 87**
+**Figura 130**
 
 *Consultar disponibilidad de citas — errores y alternativas*
 
@@ -6927,15 +7329,15 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 
 **Happy Path**
 
-El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la [Figura 88](#figura-88).
+El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la [Figura 131](#figura-131).
 
 
 
 
 
-<a id="figura-88"></a>
+<a id="figura-131"></a>
 
-**Figura 88**
+**Figura 131**
 
 *Reservar una cita y recibir confirmación — recorrido esperado*
 
@@ -6949,15 +7351,15 @@ El titular indica el beneficiario, elige fecha, profesional y horario y revisa e
 
 **Unhappy Paths**
 
-Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la [Figura 89](#figura-89).
+Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la [Figura 132](#figura-132).
 
 
 
 
 
-<a id="figura-89"></a>
+<a id="figura-132"></a>
 
-**Figura 89**
+**Figura 132**
 
 *Reservar una cita y recibir confirmación — errores y alternativas*
 
@@ -6973,15 +7375,15 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 
 **Happy Path**
 
-Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la [Figura 90](#figura-90).
+Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la [Figura 133](#figura-133).
 
 
 
 
 
-<a id="figura-90"></a>
+<a id="figura-133"></a>
 
-**Figura 90**
+**Figura 133**
 
 *Consultar citas, detalles e historial — recorrido esperado*
 
@@ -6995,15 +7397,15 @@ Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtr
 
 **Unhappy Paths**
 
-Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la [Figura 91](#figura-91).
+Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la [Figura 134](#figura-134).
 
 
 
 
 
-<a id="figura-91"></a>
+<a id="figura-134"></a>
 
-**Figura 91**
+**Figura 134**
 
 *Consultar citas, detalles e historial — errores y alternativas*
 
@@ -7019,15 +7421,15 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 
 **Happy Path**
 
-El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la [Figura 92](#figura-92).
+El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la [Figura 135](#figura-135).
 
 
 
 
 
-<a id="figura-92"></a>
+<a id="figura-135"></a>
 
-**Figura 92**
+**Figura 135**
 
 *Cancelar una reserva dentro del plazo — recorrido esperado*
 
@@ -7041,15 +7443,15 @@ El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del pla
 
 **Unhappy Paths**
 
-Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la [Figura 93](#figura-93).
+Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la [Figura 136](#figura-136).
 
 
 
 
 
-<a id="figura-93"></a>
+<a id="figura-136"></a>
 
-**Figura 93**
+**Figura 136**
 
 *Cancelar una reserva dentro del plazo — errores y alternativas*
 
@@ -7065,15 +7467,15 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 
 **Happy Path**
 
-El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la [Figura 94](#figura-94).
+El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la [Figura 137](#figura-137).
 
 
 
 
 
-<a id="figura-94"></a>
+<a id="figura-137"></a>
 
-**Figura 94**
+**Figura 137**
 
 *Responder a una oferta de adelanto — recorrido esperado*
 
@@ -7087,15 +7489,15 @@ El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mient
 
 **Unhappy Paths**
 
-El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la [Figura 95](#figura-95).
+El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la [Figura 138](#figura-138).
 
 
 
 
 
-<a id="figura-95"></a>
+<a id="figura-138"></a>
 
-**Figura 95**
+**Figura 138**
 
 *Responder a una oferta de adelanto — errores y alternativas*
 
@@ -7111,15 +7513,15 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 
 **Happy Path**
 
-Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la [Figura 96](#figura-96).
+Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la [Figura 139](#figura-139).
 
 
 
 
 
-<a id="figura-96"></a>
+<a id="figura-139"></a>
 
-**Figura 96**
+**Figura 139**
 
 *Registrar llegada presencial mediante QR — recorrido esperado*
 
@@ -7133,15 +7535,15 @@ Al llegar al establecimiento, el titular selecciona su reserva o la del menor y 
 
 **Unhappy Paths**
 
-Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la [Figura 97](#figura-97).
+Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la [Figura 140](#figura-140).
 
 
 
 
 
-<a id="figura-97"></a>
+<a id="figura-140"></a>
 
-**Figura 97**
+**Figura 140**
 
 *Registrar llegada presencial mediante QR — errores y alternativas*
 
@@ -7157,15 +7559,15 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 
 **Happy Path**
 
-Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la [Figura 98](#figura-98).
+Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la [Figura 141](#figura-141).
 
 
 
 
 
-<a id="figura-98"></a>
+<a id="figura-141"></a>
 
-**Figura 98**
+**Figura 141**
 
 *Obtener el ticket digital de atención — recorrido esperado*
 
@@ -7179,15 +7581,15 @@ Después del check-in, el paciente obtiene su código de turno y consulta el tic
 
 **Unhappy Paths**
 
-Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la [Figura 99](#figura-99).
+Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la [Figura 142](#figura-142).
 
 
 
 
 
-<a id="figura-99"></a>
+<a id="figura-142"></a>
 
-**Figura 99**
+**Figura 142**
 
 *Obtener el ticket digital de atención — errores y alternativas*
 
@@ -7203,15 +7605,15 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 
 **Happy Path**
 
-El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la [Figura 100](#figura-100).
+El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la [Figura 143](#figura-143).
 
 
 
 
 
-<a id="figura-100"></a>
+<a id="figura-143"></a>
 
-**Figura 100**
+**Figura 143**
 
 *Consultar posición o dejar la cola — recorrido esperado*
 
@@ -7225,15 +7627,15 @@ El paciente con check-in confirmado y turno activo consulta su posición y el to
 
 **Unhappy Paths**
 
-Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la [Figura 101](#figura-101).
+Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la [Figura 144](#figura-144).
 
 
 
 
 
-<a id="figura-101"></a>
+<a id="figura-144"></a>
 
-**Figura 101**
+**Figura 144**
 
 *Consultar posición o dejar la cola — errores y alternativas*
 
@@ -7249,15 +7651,15 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 
 **Happy Path**
 
-El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la [Figura 102](#figura-102).
+El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la [Figura 145](#figura-145).
 
 
 
 
 
-<a id="figura-102"></a>
+<a id="figura-145"></a>
 
-**Figura 102**
+**Figura 145**
 
 *Recibir el llamado y acudir al consultorio — recorrido esperado*
 
@@ -7271,15 +7673,15 @@ El paciente recibe el llamado, consulta el ticket y se dirige al consultorio den
 
 **Unhappy Paths**
 
-Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la [Figura 103](#figura-103).
+Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la [Figura 146](#figura-146).
 
 
 
 
 
-<a id="figura-103"></a>
+<a id="figura-146"></a>
 
-**Figura 103**
+**Figura 146**
 
 *Recibir el llamado y acudir al consultorio — errores y alternativas*
 
@@ -7295,15 +7697,15 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 
 **Happy Path**
 
-El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la [Figura 104](#figura-104).
+El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la [Figura 147](#figura-147).
 
 
 
 
 
-<a id="figura-104"></a>
+<a id="figura-147"></a>
 
-**Figura 104**
+**Figura 147**
 
 *Cerrar sesión o recuperar acceso a una sesión — recorrido esperado*
 
@@ -7317,15 +7719,15 @@ El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación f
 
 **Unhappy Paths**
 
-Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la [Figura 105](#figura-105).
+Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la [Figura 148](#figura-148).
 
 
 
 
 
-<a id="figura-105"></a>
+<a id="figura-148"></a>
 
-**Figura 105**
+**Figura 148**
 
 *Cerrar sesión o recuperar acceso a una sesión — errores y alternativas*
 
@@ -7346,15 +7748,15 @@ Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere vol
 En esta sección se presenta el prótotipo interactivo desarrollado en Figma para la aplicación móvil. El diseño y los flujos de navegación están alineados con la arquitectura de información y los user flow diagrams definidos.
 
 
-A continuación, se adjunta el enlace al video de demostración, como se observa en la [Figura 106](#figura-106).
+A continuación, se adjunta el enlace al video de demostración, como se observa en la [Figura 149](#figura-149).
 
 
 
 
 
-<a id="figura-106"></a>
+<a id="figura-149"></a>
 
-**Figura 106**
+**Figura 149**
 
 *Mobile applications prototyping*
 
@@ -7967,11 +8369,11 @@ Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/salud
 
 ###### Inicio de la Landing Page
 
-La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 107](#figura-107).
+La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 150](#figura-150).
 
-<a id="figura-107"></a>
+<a id="figura-150"></a>
 
-**Figura 107**
+**Figura 150**
 
 *Inicio de la Landing Page — SaludYa*
 
@@ -7981,11 +8383,11 @@ La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, s
 
 ###### Problema identificado
 
-La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 108](#figura-108).
+La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 151](#figura-151).
 
-<a id="figura-108"></a>
+<a id="figura-151"></a>
 
-**Figura 108**
+**Figura 151**
 
 *Problema identificado — SaludYa*
 
@@ -7995,11 +8397,11 @@ La sección describe la incertidumbre al buscar una cita y la pérdida de cupos 
 
 ###### Propuesta de solución
 
-La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 109](#figura-109).
+La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 152](#figura-152).
 
-<a id="figura-109"></a>
+<a id="figura-152"></a>
 
-**Figura 109**
+**Figura 152**
 
 *Propuesta de solución — SaludYa*
 
@@ -8009,11 +8411,11 @@ La sección reúne las funciones propuestas para el paciente, entre ellas la res
 
 ###### Modelo de negocio
 
-La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 110](#figura-110).
+La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 153](#figura-153).
 
-<a id="figura-110"></a>
+<a id="figura-153"></a>
 
-**Figura 110**
+**Figura 153**
 
 *Modelo de negocio — SaludYa*
 
@@ -8023,11 +8425,11 @@ La página presenta el modelo propuesto de implementación institucional, conven
 
 ###### Testimonios
 
-Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 111](#figura-111).
+Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 154](#figura-154).
 
-<a id="figura-111"></a>
+<a id="figura-154"></a>
 
-**Figura 111**
+**Figura 154**
 
 *Testimonios — SaludYa*
 
@@ -8037,11 +8439,11 @@ Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y 
 
 ###### Presentación de RuwaLabs
 
-La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 112](#figura-112).
+La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 155](#figura-155).
 
-<a id="figura-112"></a>
+<a id="figura-155"></a>
 
-**Figura 112**
+**Figura 155**
 
 *Presentación de RuwaLabs — SaludYa*
 
@@ -8051,11 +8453,11 @@ La sección explica el propósito del equipo y presenta la misión y visión de 
 
 ###### Disponibilidad de la aplicación
 
-La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 113](#figura-113).
+La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 156](#figura-156).
 
-<a id="figura-113"></a>
+<a id="figura-156"></a>
 
-**Figura 113**
+**Figura 156**
 
 *Disponibilidad de la aplicación — SaludYa*
 
@@ -8075,11 +8477,11 @@ Archivo de interfaz: [SaludYa en Figma](https://www.figma.com/design/9Or15PiTxTl
 
 ###### Bienvenida
 
-La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 114](#figura-114).
+La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 157](#figura-157).
 
-<a id="figura-114"></a>
+<a id="figura-157"></a>
 
-**Figura 114**
+**Figura 157**
 
 *Bienvenida — SaludYa*
 
@@ -8089,11 +8491,11 @@ La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar s
 
 ###### Verificación de identidad
 
-El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 115](#figura-115).
+El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 158](#figura-158).
 
-<a id="figura-115"></a>
+<a id="figura-158"></a>
 
-**Figura 115**
+**Figura 158**
 
 *Verificación de identidad — SaludYa*
 
@@ -8103,11 +8505,11 @@ El formulario solicita los datos de identidad del paciente antes de continuar co
 
 ###### Registro de credenciales
 
-El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 116](#figura-116).
+El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 159](#figura-159).
 
-<a id="figura-116"></a>
+<a id="figura-159"></a>
 
-**Figura 116**
+**Figura 159**
 
 *Registro de credenciales — SaludYa*
 
@@ -8117,11 +8519,11 @@ El paciente registra su correo, contraseña y datos de contacto después de veri
 
 ###### Verificación por correo
 
-La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 117](#figura-117).
+La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 160](#figura-160).
 
-<a id="figura-117"></a>
+<a id="figura-160"></a>
 
-**Figura 117**
+**Figura 160**
 
 *Verificación por correo — SaludYa*
 
@@ -8131,11 +8533,11 @@ La pantalla solicita el código de verificación enviado al correo del paciente 
 
 ###### Inicio de sesión
 
-El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 118](#figura-118).
+El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 161](#figura-161).
 
-<a id="figura-118"></a>
+<a id="figura-161"></a>
 
-**Figura 118**
+**Figura 161**
 
 *Inicio de sesión — SaludYa*
 
@@ -8145,11 +8547,11 @@ El paciente ingresa su correo y contraseña para acceder a su cuenta, como se ob
 
 ###### Recuperación de acceso
 
-El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 119](#figura-119).
+El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 162](#figura-162).
 
-<a id="figura-119"></a>
+<a id="figura-162"></a>
 
-**Figura 119**
+**Figura 162**
 
 *Recuperación de acceso — SaludYa*
 
@@ -8159,11 +8561,11 @@ El formulario permite solicitar un enlace de recuperación al correo registrado,
 
 ###### Restablecimiento de contraseña
 
-El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 120](#figura-120).
+El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 163](#figura-163).
 
-<a id="figura-120"></a>
+<a id="figura-163"></a>
 
-**Figura 120**
+**Figura 163**
 
 *Restablecimiento de contraseña — SaludYa*
 
@@ -8173,11 +8575,11 @@ El paciente define y confirma una nueva contraseña mediante el recorrido de rec
 
 ###### Inicio del paciente
 
-La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 121](#figura-121).
+La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 164](#figura-164).
 
-<a id="figura-121"></a>
+<a id="figura-164"></a>
 
-**Figura 121**
+**Figura 164**
 
 *Inicio del paciente — SaludYa*
 
@@ -8187,11 +8589,11 @@ La vista principal reúne las citas pendientes y los accesos al historial y a la
 
 ###### Reserva de cita
 
-El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 122](#figura-122).
+El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 165](#figura-165).
 
-<a id="figura-122"></a>
+<a id="figura-165"></a>
 
-**Figura 122**
+**Figura 165**
 
 *Reserva de cita — SaludYa*
 
@@ -8201,11 +8603,11 @@ El recorrido de reserva presenta las opciones necesarias para elegir una cita se
 
 ###### Confirmación de reserva
 
-La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 123](#figura-123).
+La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 166](#figura-166).
 
-<a id="figura-123"></a>
+<a id="figura-166"></a>
 
-**Figura 123**
+**Figura 166**
 
 *Confirmación de reserva — SaludYa*
 
@@ -8215,11 +8617,11 @@ La pantalla presenta la confirmación y los datos de la cita seleccionada, como 
 
 ###### Registro de llegada
 
-La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 124](#figura-124).
+La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 167](#figura-167).
 
-<a id="figura-124"></a>
+<a id="figura-167"></a>
 
-**Figura 124**
+**Figura 167**
 
 *Registro de llegada — SaludYa*
 
@@ -8229,11 +8631,11 @@ La interfaz indica al paciente que debe escanear el QR del establecimiento para 
 
 ###### Ticket de atención
 
-La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 125](#figura-125).
+La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 168](#figura-168).
 
-<a id="figura-125"></a>
+<a id="figura-168"></a>
 
-**Figura 125**
+**Figura 168**
 
 *Ticket de atención — SaludYa*
 
@@ -8243,11 +8645,11 @@ La pantalla presenta el ticket del paciente como parte del seguimiento de su tur
 
 ###### Perfil del paciente
 
-El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 126](#figura-126).
+El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 169](#figura-169).
 
-<a id="figura-126"></a>
+<a id="figura-169"></a>
 
-**Figura 126**
+**Figura 169**
 
 *Perfil del paciente — SaludYa*
 
@@ -8257,11 +8659,11 @@ El perfil reúne los datos personales y de contacto, junto con las acciones disp
 
 ###### Menores vinculados
 
-La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 127](#figura-127).
+La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 170](#figura-170).
 
-<a id="figura-127"></a>
+<a id="figura-170"></a>
 
-**Figura 127**
+**Figura 170**
 
 *Menores vinculados — SaludYa*
 
@@ -8271,11 +8673,11 @@ La vista permite consultar los menores vinculados al paciente y acceder a las ac
 
 ###### Notificaciones del paciente
 
-La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 128](#figura-128).
+La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 171](#figura-171).
 
-<a id="figura-128"></a>
+<a id="figura-171"></a>
 
-**Figura 128**
+**Figura 171**
 
 *Notificaciones del paciente — SaludYa*
 
@@ -8291,11 +8693,11 @@ Enlace de despliegue: [Swagger UI de SaludYa](http://3.129.217.49:8080/swagger-u
 
 ###### Vista general de Swagger
 
-La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 129](#figura-129).
+La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 172](#figura-172).
 
-<a id="figura-129"></a>
+<a id="figura-172"></a>
 
-**Figura 129**
+**Figura 172**
 
 *Vista general de Swagger — SaludYa*
 
@@ -8305,11 +8707,11 @@ La interfaz identifica el servicio como SaludYa API y presenta el servidor y los
 
 ###### Verificación de identidad en el backend
 
-El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 130](#figura-130).
+El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 173](#figura-173).
 
-<a id="figura-130"></a>
+<a id="figura-173"></a>
 
-**Figura 130**
+**Figura 173**
 
 *Verificación de identidad en el backend — SaludYa*
 
@@ -8319,11 +8721,11 @@ El grupo IAM - Identity verification documenta las operaciones para verificar la
 
 ###### Cuentas y credenciales
 
-El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 131](#figura-131).
+El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 174](#figura-174).
 
-<a id="figura-131"></a>
+<a id="figura-174"></a>
 
-**Figura 131**
+**Figura 174**
 
 *Cuentas y credenciales — SaludYa*
 
@@ -8333,11 +8735,11 @@ El grupo IAM - User accounts presenta los contratos de cuentas, registro y recup
 
 ###### Perfil del paciente
 
-El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 132](#figura-132).
+El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 175](#figura-175).
 
-<a id="figura-132"></a>
+<a id="figura-175"></a>
 
-**Figura 132**
+**Figura 175**
 
 *Perfil del paciente — SaludYa*
 
@@ -8347,11 +8749,11 @@ El grupo IAM - Patients documenta la consulta y actualización del perfil y la c
 
 ###### Vinculación de menores
 
-El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 133](#figura-133).
+El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 176](#figura-176).
 
-<a id="figura-133"></a>
+<a id="figura-176"></a>
 
-**Figura 133**
+**Figura 176**
 
 *Vinculación de menores — SaludYa*
 
@@ -8361,11 +8763,11 @@ El grupo IAM - Linked minors presenta los contratos para crear, consultar y elim
 
 ###### Reservas de citas
 
-El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 134](#figura-134).
+El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 177](#figura-177).
 
-<a id="figura-134"></a>
+<a id="figura-177"></a>
 
-**Figura 134**
+**Figura 177**
 
 *Reservas de citas — SaludYa*
 
@@ -8375,11 +8777,11 @@ El grupo Appointments presenta las operaciones para registrar y consultar reserv
 
 ###### Disponibilidad de horarios
 
-El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 135](#figura-135).
+El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 178](#figura-178).
 
-<a id="figura-135"></a>
+<a id="figura-178"></a>
 
-**Figura 135**
+**Figura 178**
 
 *Disponibilidad de horarios — SaludYa*
 
@@ -8389,11 +8791,11 @@ El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la
 
 ###### Registro de asistencia
 
-El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 136](#figura-136).
+El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 179](#figura-179).
 
-<a id="figura-136"></a>
+<a id="figura-179"></a>
 
-**Figura 136**
+**Figura 179**
 
 *Registro de asistencia — SaludYa*
 
@@ -8403,11 +8805,11 @@ El grupo Check-ins presenta los contratos de registro de llegada por QR o códig
 
 ###### Cola de atención
 
-El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 137](#figura-137).
+El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 180](#figura-180).
 
-<a id="figura-137"></a>
+<a id="figura-180"></a>
 
-**Figura 137**
+**Figura 180**
 
 *Cola de atención — SaludYa*
 
@@ -8417,11 +8819,11 @@ El grupo Attendance Queues documenta las consultas de cola, posición y paciente
 
 ###### Ofertas de reasignación
 
-El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 138](#figura-138).
+El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 181](#figura-181).
 
-<a id="figura-138"></a>
+<a id="figura-181"></a>
 
-**Figura 138**
+**Figura 181**
 
 *Ofertas de reasignación — SaludYa*
 
@@ -8430,6 +8832,172 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 *Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+En esta sección se presenta la evidencia de la **documentación de los Web Services** del backend de **SaludYa** correspondiente a este Sprint. La documentación se generó con **springdoc-openapi (OpenAPI 3)** a partir de las anotaciones del código y se encuentra **desplegada y navegable** en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema —**Identity & Access Management**, **Appointments & Booking**, **Arrival & QR Check-in**, **Reassignment** y **Hospital Operations & Configuration**—, alcanzando **62 operaciones** distribuidas en **53 rutas**.
+
+La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza **autenticación HTTP Bearer con JWT** (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+
+- **Swagger UI (documentación desplegada):** http://3.129.217.49:8080/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
+- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
+
+##### Tabla de endpoints documentados
+
+A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
+| 1 | Enviar código de verificación antes de registrar la cuenta | POST | `/api/v1/user-accounts/send-verification-code` | body: `email` | `{"email":"kevin.huaman@gmail.com"}` | `202` · *sin cuerpo* | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
+| 2 | Registrar al paciente verificado | POST | `/api/v1/user-accounts` | body: `dni, name, lastname, birthDate, phone, email, password, code` | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register) |
+| 3 | Iniciar sesión (valida credenciales y envía código) | POST | `/api/v1/user-accounts/login` | body: `email, password` | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}` | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}` | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login) |
+| 4 | Completar inicio de sesión con el código | POST | `/api/v1/user-accounts/login/verify` | body: `challengeId, code` | `{"challengeId":"8f2c1d40-...","code":"721305"}` | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}` | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin) |
+| 5 | Reenviar el código del desafío de login | POST | `/api/v1/user-accounts/login/resend` | body: `challengeId` | `{"challengeId":"8f2c1d40-..."}` | `202` · *sin cuerpo* | Genera y reenvía un nuevo código para el mismo desafío | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode) |
+| 6 | Cerrar sesión (revoca el token actual) | POST | `/api/v1/user-accounts/logout` | header: `Authorization: Bearer <token>` | *(sin cuerpo)* | `204` · *sin cuerpo* | Revoca la sesión Bearer vigente; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout) |
+| 7 | Solicitar enlace de recuperación de contraseña | POST | `/api/v1/user-accounts/recover-password` | body: `email` | `{"email":"kevin.huaman@gmail.com"}` | `202` `{"message":"If an active account exists, a recovery email will be sent."}` | Confirma la recepción de forma genérica, sin revelar si el correo está registrado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover) |
+| 8 | Restablecer contraseña con el enlace de recuperación | POST | `/api/v1/user-accounts/reset-password` | body: `token, password, confirmPassword` | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}` | `204` · *sin cuerpo* | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset) |
+| 9 | Cambiar la contraseña usando la actual | POST | `/api/v1/user-accounts/change-password` | header: `Authorization` · body: `currentPassword, password, confirmPassword` | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}` | `204` · *sin cuerpo* | Actualiza la contraseña del usuario autenticado; responde sin contenido | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change) |
+| 10 | Leer la cuenta y el perfil propios | GET | `/api/v1/user-accounts/me` | header: `Authorization` | *(sin cuerpo)* | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me) |
+| 11 | Leer un perfil por id | GET | `/api/v1/user-accounts/{id}` | path: `id` · header: `Authorization` | `/api/v1/user-accounts/10` | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}` | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get) |
+| 12 | Actualizar correo y celular | PUT | `/api/v1/user-accounts/{id}` | path: `id` · body: `email, phone` | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}` | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}` | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update) |
+| 13 | Crear cuenta de personal de admisión | POST | `/api/v1/user-accounts/staff` | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}` | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}` | Crea la cuenta del personal y envía una invitación para definir contraseña | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff) |
+| 14 | Verificar identidad por DNI y nombre | POST | `/api/v1/identity-verifications` | body: `dni, name, lastname` | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}` | `200` `{"verified":true}` | Indica si el DNI existe y el nombre completo coincide con el registro oficial | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify) |
+| 15 | Comprobar si un DNI es conocido | POST | `/api/v1/identity-verifications/exists` | body: `dni` | `{"dni":"74218365"}` | `200` `{"exists":true}` | Indica si el DNI es conocido por el proveedor de identidad | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists) |
+| 16 | Leer el perfil de paciente | GET | `/api/v1/patients/{id}` | path: `id` · header: `Authorization` | `/api/v1/patients/1` | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el paciente propio o un menor vinculado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1) |
+| 17 | Actualizar datos de contacto del paciente | PUT | `/api/v1/patients/{id}` | path: `id` · body: `email, phone` | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}` | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}` | Actualiza el contacto del paciente propio y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1) |
+| 18 | Listar menores vinculados | GET | `/api/v1/patients/{id}/minors` | path: `id` · header: `Authorization` | `/api/v1/patients/1/minors` | `200` `[{"id":5,"patientId":88,"tutorId":1}]` | Lista los vínculos de tutoría del paciente autenticado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors) |
+| 19 | Vincular a un menor verificado | POST | `/api/v1/patient-minors` | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation` | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}` | `201` `{"id":5,"patientId":88,"tutorId":1}` | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link) |
+| 20 | Leer un vínculo de tutoría | GET | `/api/v1/patient-minors/{id}` | path: `id` · header: `Authorization` | `/api/v1/patient-minors/5` | `200` `{"id":5,"patientId":88,"tutorId":1}` | Devuelve el vínculo de tutoría solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2) |
+| 21 | Desvincular a un menor | DELETE | `/api/v1/patient-minors/{id}` | path: `id` · header: `Authorization` | `/api/v1/patient-minors/5` | `204` · *sin cuerpo* | Elimina el vínculo de tutoría conservando la historia clínica del menor | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink) |
+| 22 | Obtener instrucciones de soporte | GET | `/api/v1/account-recovery-requests/support` | — | *(sin cuerpo)* | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}` | Devuelve las instrucciones y el teléfono de soporte (público) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support) |
+| 23 | Solicitar recuperación asistida | POST | `/api/v1/account-recovery-requests` | body: `dni, contactEmail` | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}` | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}` | Registra la solicitud; no otorga acceso ni revela cuentas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request) |
+| 24 | Listar solicitudes de recuperación abiertas | GET | `/api/v1/account-recovery-requests` | header: `Authorization (SUPER_ADMIN)` | *(sin cuerpo)* | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]` | Lista las 100 solicitudes abiertas más antiguas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open) |
+| 25 | Resolver solicitud de recuperación asistida | POST | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson` | `{"identityCheckedInPerson":true}` | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}` | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve) |
+| 26 | Reservar una cita | POST | `/api/v1/appointments` | body: `patientId, timeSlotId` | `{"patientId":1,"timeSlotId":31}` | `201` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null}` | Crea la cita y devuelve el recurso; `Location` apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
+| 27 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?patientId=1&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}]` | Devuelve las citas filtradas; si el actor es paciente, `patientId` es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 28 | Obtener una cita por id | GET | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...}` | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
+| 29 | Listar citas de un paciente | GET | `/api/v1/appointments/patient/{patientId}` | path: `patientId` · query: `status` | `/api/v1/appointments/patient/1?status=CONFIRMED` | `200` `[{"id":142,"patientId":1,"status":"CONFIRMED",...}]` | Lista las citas del paciente indicado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentsByPatient) |
+| 30 | Cancelar una cita | DELETE | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"status":"CANCELLED",...}` | Cancela la cita y devuelve el recurso con estado `CANCELLED` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/cancelAppointment) |
+| 31 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
+| 32 | Obtener un doctor por id | GET | `/api/v1/doctors/{id}` | path: `id` | `/api/v1/doctors/7` | `200` `{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}` | Devuelve el doctor solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorById) |
+| 33 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
+| 34 | Obtener una especialidad por id | GET | `/api/v1/specialties/{id}` | path: `id` | `/api/v1/specialties/1` | `200` `{"id":1,"name":"Medicina general","description":"Atención médica primaria"}` | Devuelve la especialidad solicitada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getSpecialtyById) |
+| 35 | Slots disponibles por especialidad y fecha | GET | `/api/v1/time-slots/available` | query: `specialtyId, date` (obligatorios) | `/api/v1/time-slots/available?specialtyId=1&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots con cupo disponible para la especialidad y fecha | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getAvailableTimeSlots) |
+| 36 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","status":"AVAILABLE",...}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
+| 37 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","status":"AVAILABLE",...}` | Devuelve el slot solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
+| 38 | Crear un slot de atención | POST | `/api/v1/time-slots` | body: `doctorId, date, startHour, endHour, room, maxCapacity` | `{"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5}` | `201` `{"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...}` | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
+| 39 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
+| 40 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+| 41 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
+| 42 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
+| 43 | Obtener el ticket digital de un check-in | GET | `/api/v1/check-ins/{id}` | path: `id` | `/api/v1/check-ins/15` | `200` `{"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...}` | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
+| 44 | Obtener el ticket digital de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}` | path: `appointmentId` | `/api/v1/check-ins/appointment/142` | `200` `{"id":15,"appointmentId":142,"turnCode":"A-003","status":"VALID",...}` | Devuelve el ticket digital asociado a la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getByAppointment) |
+| 45 | Generar el token QR firmado de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/qr-token` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/qr-token` | `200` `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | Genera el token QR firmado y temporal de la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/generateQrToken) |
+| 46 | Posición del paciente en la cola por cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/position` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición actual del paciente y el total en cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getPosition) |
+| 47 | Obtener una entrada de cola | GET | `/api/v1/queue-entries/{id}` | path: `id` | `/api/v1/queue-entries/9` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}` | Devuelve la entrada de cola (el paciente puede leer la suya) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/getById) |
+| 48 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/9/absent` | `204` · *sin cuerpo* | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
+| 49 | Salir voluntariamente de la cola | POST | `/api/v1/queue-entries/{id}/leave` | path: `id` | `/api/v1/queue-entries/9/leave` | `204` · *sin cuerpo* | El paciente abandona la cola; la cita se marca como ausente | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/leaveQueue) |
+| 50 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"status":"IN_ATTENTION",...}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
+| 51 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"status":"ATTENDED","attendedAt":"2026-10-15T09:25:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
+| 52 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-10-15` | `200` `{"id":4,"timeSlotId":31,"date":"2026-10-15","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
+| 53 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"position":3,"status":"WAITING",...}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
+| 54 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
+| 55 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+| 56 | Listar ofertas de cupo pendientes | GET | `/api/v1/reassignment-offers/pending` | header: `Authorization` · query: `appointmentId` (opcional) | `/api/v1/reassignment-offers/pending` | `200` `[{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}]` | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
+| 57 | Aceptar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/accept` | path: `id` | `/api/v1/reassignment-offers/21/accept` | `200` `{"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
+| 58 | Rechazar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/reject` | path: `id` | `/api/v1/reassignment-offers/21/reject` | `200` `{"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
+| 59 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
+| 60 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
+| 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
+| 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
+
+##### Evidencias de interacción (capturas con datos de muestra)
+
+A continuación se incluyen capturas de la interacción con la documentación desplegada (Swagger UI), ejecutando las operaciones con **datos de muestra**. En cada caso se presenta la captura del request/response obtenido; el **dato de muestra** utilizado para cada operación se detalla en la columna *Petición (ejemplo)* de la tabla anterior.
+
+<a id="figura-182"></a>
+
+**Figura 182**
+
+*Documentación de IAM — verificación de identidad*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Swagger UI de SaludYa - verificación de identidad" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+<a id="figura-183"></a>
+
+**Figura 183**
+
+*Documentación de IAM — cuentas de usuario (registro e inicio de sesión)*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Swagger UI de SaludYa - cuentas de usuario" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+<a id="figura-184"></a>
+
+**Figura 184**
+
+*Documentación de Appointments & Booking — citas*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Swagger UI de SaludYa - citas" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+<a id="figura-185"></a>
+
+**Figura 185**
+
+*Documentación de Appointments & Booking — bloques de horario*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Swagger UI de SaludYa - bloques de horario" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+<a id="figura-186"></a>
+
+**Figura 186**
+
+*Documentación de Arrival & QR Check-in*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Swagger UI de SaludYa - check-in por QR" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+<a id="figura-187"></a>
+
+**Figura 187**
+
+*Documentación de Reassignment*
+
+<p align="center">
+  <img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Swagger UI de SaludYa - reasignación" width="100%"/>
+</p>
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
+
+##### Repositorio y commits de documentación
+
+- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
+- **Commits relacionados con la documentación para este Sprint:**
+
+| Commit | Mensaje | Relación |
+|:--|:--|:--|
+| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
+| [`fdf27c4`](https://github.com/RuwaLabs/backend-saludya/commit/fdf27c4) | `chore: drop hardcoded OpenAPI server so Swagger targets the current host` | Ajuste para que Swagger UI resuelva las peticiones contra el host desplegado |
+| [`a870d04`](https://github.com/RuwaLabs/backend-saludya/commit/a870d04) | `docs(iam): add setup guide and API request examples` | Guía de configuración y ejemplos de peticiones de IAM |
+| [`acb79f5`](https://github.com/RuwaLabs/backend-saludya/commit/acb79f5) | `fix(openapi): remove legacy ACME configuration` | Corrección de la configuración OpenAPI |
+| [`955abb6`](https://github.com/RuwaLabs/backend-saludya/commit/955abb6) | `feat: initializing project` | Configuración base de la documentación OpenAPI del proyecto |
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
