@@ -51,7 +51,6 @@
 
 El registro de versiones permite seguir las fechas, los responsables y las modificaciones realizadas durante la elaboración del informe, como se detalla en la [Tabla 1](#tabla-1).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-1"></a>
 
 **Tabla 1**
@@ -80,7 +79,6 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 # Project Report Collaboration Insights
 
@@ -160,7 +158,6 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 2](#tabla-2).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-2"></a>
 
 **Tabla 2**
@@ -176,7 +173,6 @@ La participación de los integrantes del equipo en la elaboración del informe d
 | Torres Juárez, Alisee Muriel | lLisee1 | 24 | +2,329 | −1,095 |
 
 *Nota. Elaboración del equipo RuwaLabs a partir del panel Contributors del repositorio del informe en GitHub.*
-</div>
 
 ## Participación del equipo
 
@@ -335,7 +331,6 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-3"></a>
 
 **Tabla 3**
@@ -432,7 +427,6 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 </table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 # Objetivos SMART
 
@@ -446,7 +440,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-4"></a>
 
 **Tabla 4**
@@ -460,7 +453,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ## Objetivos SMART – Meza Solórzano, Didier Sebastian
@@ -471,7 +463,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-5"></a>
 
 **Tabla 5**
@@ -485,7 +476,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 ## Objetivos SMART – Montoya Nina, Paula Fernanda
 
@@ -493,7 +483,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-6"></a>
 
 **Tabla 6**
@@ -507,7 +496,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ## Objetivos SMART – Ramos Mera, Neo Daniel
@@ -518,7 +506,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-7"></a>
 
 **Tabla 7**
@@ -532,7 +519,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ## Objetivos SMART – Torres Juárez, Alisee Muriel
@@ -543,7 +529,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-8"></a>
 
 **Tabla 8**
@@ -557,7 +542,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 # Capítulo 1: Presentación #
 
@@ -579,7 +563,6 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-9"></a>
 
 **Tabla 9**
@@ -600,7 +583,6 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 </table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
@@ -610,7 +592,6 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-10"></a>
 
 **Tabla 10**
@@ -662,7 +643,6 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 </table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 ## 1.2. Solution Profile
 
@@ -980,7 +960,6 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-11"></a>
 
 **Tabla 11**
@@ -1004,7 +983,6 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -1038,7 +1016,6 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 
 La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 13](#figura-13).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-12"></a>
 
 **Tabla 12**
@@ -1053,7 +1030,6 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 **Entrevista 2**
 
@@ -1061,7 +1037,6 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 
 La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 14](#figura-14).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-13"></a>
 
 **Tabla 13**
@@ -1076,7 +1051,6 @@ La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas mé
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 Entrevista 3:
 
@@ -1084,7 +1058,6 @@ Entrevista 3:
 
 La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 15](#figura-15).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-14"></a>
 
 **Tabla 14**
@@ -1099,7 +1072,6 @@ La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas mé
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
@@ -1110,7 +1082,6 @@ Entrevista 4:
 
 La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 16](#figura-16).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-15"></a>
 
 **Tabla 15**
@@ -1125,7 +1096,6 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 **Entrevista 5**
 
@@ -1133,7 +1103,6 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 
 La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 16](#tabla-16) y la [Figura 17](#figura-17).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-16"></a>
 
 **Tabla 16**
@@ -1148,7 +1117,6 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 <!-- pdf-pagebreak -->
 **Entrevista 6**
 
@@ -1156,7 +1124,6 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-17"></a>
 
 **Tabla 17**
@@ -1171,7 +1138,6 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Los vídeos que respaldan las entrevistas se reúnen en el [Anexo A](#anexo-a-vídeos-de-entrevistas-realizadas), como se detalla en la [Tabla 17](#tabla-17) y la [Figura 18](#figura-18).
@@ -1372,7 +1338,6 @@ Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de S
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
 <!-- pdf-pagebreak -->
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-18"></a>
 
 **Tabla 18**
@@ -1392,7 +1357,6 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 #### Análisis del Task Matrix
@@ -1587,7 +1551,6 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-19"></a>
 
 **Tabla 19**
@@ -1607,7 +1570,6 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ---
@@ -1624,7 +1586,6 @@ En esta sección definimos la especificación formal de requisitos para la plata
 
 El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la [Tabla 20](#tabla-20).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-20"></a>
 
 **Tabla 20**
@@ -1641,7 +1602,6 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 ---
 
@@ -1653,7 +1613,6 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 
 Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la [Tabla 21](#tabla-21).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-21"></a>
 
 **Tabla 21**
@@ -1671,7 +1630,6 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 #### User stories
@@ -2673,7 +2631,6 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 
 El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 22](#tabla-22).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-22"></a>
 
 **Tabla 22**
@@ -2744,7 +2701,6 @@ El backlog ordena las historias de usuario por prioridad e identifica su rol, al
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 
@@ -2861,7 +2817,6 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-23"></a>
 
 **Tabla 23**
@@ -2878,7 +2833,6 @@ Como resultado del proceso, se identificaron **cinco bounded contexts candidatos
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery, como se detalla en la [Tabla 23](#tabla-23):
@@ -3092,7 +3046,6 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-24"></a>
 
 **Tabla 24**
@@ -3111,7 +3064,6 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Mensajes intercambiados entre bounded contexts**
@@ -3122,7 +3074,6 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-25"></a>
 
 **Tabla 25**
@@ -3143,7 +3094,6 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Leyenda de patrones:**
@@ -5201,7 +5151,6 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-26"></a>
 
 **Tabla 26**
@@ -5221,7 +5170,6 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (`--logo-height-sm`) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page, como se detalla en la [Tabla 26](#tabla-26).
@@ -5236,7 +5184,6 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-27"></a>
 
 **Tabla 27**
@@ -5256,7 +5203,6 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page, como se detalla en la [Tabla 27](#tabla-27).
@@ -5267,7 +5213,6 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-28"></a>
 
 **Tabla 28**
@@ -5283,7 +5228,6 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing` negativo en textos destacados (`-0.18px` en Body Bold Large) y `font-feature-settings: 'calt' off` para desactivar ligaduras contextuales. Los tamaños se expresan en **sp** (scale-independent pixels), conforme a las guías de Material Design para Android, como se detalla en la [Tabla 28](#tabla-28).
@@ -5298,7 +5242,6 @@ La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos 
 
 La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 29](#tabla-29).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-29"></a>
 
 **Tabla 29**
@@ -5322,7 +5265,6 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="figura-60"></a>
@@ -5343,7 +5285,6 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-30"></a>
 
 **Tabla 30**
@@ -5366,7 +5307,6 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG AA**, garantizando legibilidad para personas con baja visión o daltonismo, como se detalla en la [Tabla 30](#tabla-30).
@@ -5381,7 +5321,6 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-31"></a>
 
 **Tabla 31**
@@ -5399,7 +5338,6 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ###### Aplicaciones móviles (Android)
@@ -5408,7 +5346,6 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-32"></a>
 
 **Tabla 32**
@@ -5426,7 +5363,6 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Los valores en **dp** (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles, como se detalla en la [Tabla 32](#tabla-32).
@@ -5439,7 +5375,6 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 
 Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 33](#tabla-33).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-33"></a>
 
 **Tabla 33**
@@ -5454,7 +5389,6 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ###### Aplicaciones móviles (Android)
@@ -5463,7 +5397,6 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-34"></a>
 
 **Tabla 34**
@@ -5477,7 +5410,6 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 En las aplicaciones móviles los contenedores principales utilizan un radio superior de **12dp** (`border-radius: 12dp 12dp 0 0`), reservado para cards ancladas a la parte inferior de la pantalla, como se detalla en la [Tabla 34](#tabla-34).
@@ -5490,7 +5422,6 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 
 Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 35](#tabla-35).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-35"></a>
 
 **Tabla 35**
@@ -5505,7 +5436,6 @@ Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarje
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ###### Aplicaciones móviles (Android)
@@ -5521,7 +5451,6 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-36"></a>
 
 **Tabla 36**
@@ -5537,7 +5466,6 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo, como se detalla en la [Tabla 36](#tabla-36).
@@ -5550,7 +5478,6 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-37"></a>
 
 **Tabla 37**
@@ -5569,7 +5496,6 @@ Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Design System de referencia
@@ -5592,7 +5518,6 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 38](#tabla-38).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-38"></a>
 
 **Tabla 38**
@@ -5614,7 +5539,6 @@ La organización de las secciones agrupa la información según las tareas del u
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para pacientes
@@ -5623,7 +5547,6 @@ La organización de las secciones agrupa la información según las tareas del u
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 39](#tabla-39).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-39"></a>
 
 **Tabla 39**
@@ -5641,7 +5564,6 @@ La organización de las secciones agrupa la información según las tareas del u
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para personal de salud
@@ -5650,7 +5572,6 @@ La organización de las secciones agrupa la información según las tareas del u
 
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 40](#tabla-40).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-40"></a>
 
 **Tabla 40**
@@ -5668,7 +5589,6 @@ La organización de las secciones agrupa la información según las tareas del u
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Esquemas de categorización aplicados
@@ -5691,7 +5611,6 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 41](#tabla-41).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-41"></a>
 
 **Tabla 41**
@@ -5711,7 +5630,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para pacientes
@@ -5720,7 +5638,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 42](#tabla-42).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-42"></a>
 
 **Tabla 42**
@@ -5739,7 +5656,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para personal de salud
@@ -5748,7 +5664,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 43](#tabla-43).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-43"></a>
 
 **Tabla 43**
@@ -5767,7 +5682,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Asociaciones entre etiquetas
@@ -5788,7 +5702,6 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 44](#tabla-44).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-44"></a>
 
 **Tabla 44**
@@ -5814,7 +5727,6 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### ASO (App Store Optimization)
@@ -5823,7 +5735,6 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 45](#tabla-45).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-45"></a>
 
 **Tabla 45**
@@ -5839,7 +5750,6 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 #### 3.1.2.4. Searching Systems
@@ -5852,7 +5762,6 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 46](#tabla-46).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-46"></a>
 
 **Tabla 46**
@@ -5867,7 +5776,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para pacientes
@@ -5876,7 +5784,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 47](#tabla-47).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-47"></a>
 
 **Tabla 47**
@@ -5892,7 +5799,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para personal de salud
@@ -5901,7 +5807,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 48](#tabla-48).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-48"></a>
 
 **Tabla 48**
@@ -5917,7 +5822,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Visualización de resultados
@@ -5934,7 +5838,6 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 49](#tabla-49).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-49"></a>
 
 **Tabla 49**
@@ -5952,7 +5855,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para pacientes
@@ -5961,7 +5863,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 50](#tabla-50).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-50"></a>
 
 **Tabla 50**
@@ -5977,7 +5878,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Aplicación móvil para personal de salud
@@ -5986,7 +5886,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 51](#tabla-51).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-51"></a>
 
 **Tabla 51**
@@ -6002,7 +5901,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Recorrido del usuario
@@ -6041,7 +5939,6 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 52](#tabla-52).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-52"></a>
 
 **Tabla 52**
@@ -6055,7 +5952,6 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 
@@ -6100,7 +5996,6 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 53](#tabla-53).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-53"></a>
 
 **Tabla 53**
@@ -6114,7 +6009,6 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 
@@ -6171,7 +6065,6 @@ Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definid
 
 El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la [Tabla 54](#tabla-54).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-54"></a>
 
 **Tabla 54**
@@ -6194,7 +6087,6 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Mock-up Desktop Web Browser
@@ -6203,7 +6095,6 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 55](#tabla-55).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-55"></a>
 
 **Tabla 55**
@@ -6217,7 +6108,6 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 
@@ -6262,7 +6152,6 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 56](#tabla-56).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-56"></a>
 
 **Tabla 56**
@@ -6276,7 +6165,6 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 
@@ -6321,7 +6209,6 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 
 Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la [Tabla 57](#tabla-57).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-57"></a>
 
 **Tabla 57**
@@ -6341,7 +6228,6 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Componentes reutilizables
@@ -6350,7 +6236,6 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 
 Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la [Tabla 58](#tabla-58).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-58"></a>
 
 **Tabla 58**
@@ -6369,7 +6254,6 @@ Los componentes reutilizables definen la apariencia y los estados de botones, ta
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 ##### Landing Page implementado
@@ -8192,7 +8076,6 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 En esta sección se especifican los productos de software que el equipo **RuwaLabs** utilizó para colaborar en el ciclo de vida de **SaludYa**, abarcando las actividades de **gestión del proyecto**, **gestión de requisitos**, **diseño UX/UI**, **desarrollo**, **despliegue** y **documentación**. Para cada producto se indica su **propósito de uso en el proyecto** y su **ruta de referencia** (cuando es software basado en modelos SaaS) o **ruta de descarga** (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la [Tabla 59](#tabla-59).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-59"></a>
 
 **Tabla 59**
@@ -8225,7 +8108,6 @@ En esta sección se especifican los productos de software que el equipo **RuwaLa
 | Software Documentation | PlantUML / diagrams.net | Elaboración de diagramas UML y del modelo C4 | https://plantuml.com/ · https://app.diagrams.net/ |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 ### 4.1.2. Source Code Management
 
@@ -8233,7 +8115,6 @@ En esta sección se establecen los medios y el esquema de organización que el e
 
 Cada producto de la solución cuenta con su propio repositorio, como se detalla en la [Tabla 60](#tabla-60).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-60"></a>
 
 **Tabla 60**
@@ -8248,11 +8129,9 @@ Cada producto de la solución cuenta con su propio repositorio, como se detalla 
 | Project Report | https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `main` se crea la rama de integración `develop`; cada funcionalidad o bounded context se desarrolla en su propia rama (*feature branch*), que se integra a `develop` mediante *pull requests*. Al cierre de un sprint, `develop` se integra a `main` mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la [Tabla 61](#tabla-61).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-61"></a>
 
 **Tabla 61**
@@ -8268,13 +8147,11 @@ Para el control de versiones se adopta **GitFlow**. Sobre la rama principal `mai
 | Hotfix | Corrección urgente sobre producción | `hotfix/<aspecto>` |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 Las releases se nombran aplicando **Semantic Versioning** (`MAJOR.MINOR.PATCH`), por ejemplo `v1.0.0`.
 
 Finalmente, los mensajes de commit siguen **Conventional Commits**, como se detalla en la [Tabla 62](#tabla-62).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-62"></a>
 
 **Tabla 62**
@@ -8292,7 +8169,6 @@ Finalmente, los mensajes de commit siguen **Conventional Commits**, como se deta
 | `chore` | Tareas de mantenimiento |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 ### 4.1.3. Source Code Style Guide & Conventions
 
@@ -8308,7 +8184,6 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-63"></a>
 
 **Tabla 63**
@@ -8331,7 +8206,6 @@ El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and Coding Conventions** (W3Schools), con las siguientes reglas adicionales, como se detalla en la [Tabla 63](#tabla-63):
@@ -8353,7 +8227,6 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-64"></a>
 
 **Tabla 64**
@@ -8374,7 +8247,6 @@ Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kot
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventions**, con las siguientes reglas adicionales, como se detalla en la [Tabla 64](#tabla-64):
@@ -8396,7 +8268,6 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-65"></a>
 
 **Tabla 65**
@@ -8417,7 +8288,6 @@ Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specific
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 Se adoptan las guías **Google Java Style Guide**, **Spring Boot Features** y **Gherkin Conventions for Readable Specifications** (para los archivos `.feature`), con las siguientes reglas adicionales, como se detalla en la [Tabla 65](#tabla-65):
@@ -8441,7 +8311,6 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-66"></a>
 
 **Tabla 66**
@@ -8459,7 +8328,6 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Tecnologías involucradas:** HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2, como se detalla en la [Tabla 66](#tabla-66).
@@ -8472,7 +8340,6 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-67"></a>
 
 **Tabla 67**
@@ -8490,7 +8357,6 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Tecnologías involucradas:** Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution, como se detalla en la [Tabla 67](#tabla-67).
@@ -8503,7 +8369,6 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-68"></a>
 
 **Tabla 68**
@@ -8522,7 +8387,6 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Tecnologías involucradas:** Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, AWS EC2, como se detalla en la [Tabla 68](#tabla-68).
@@ -8535,7 +8399,6 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-69"></a>
 
 **Tabla 69**
@@ -8555,7 +8418,6 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 
 **Relaciones entre nodos:**
@@ -8574,7 +8436,6 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 
 A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de **SaludYa**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la [Tabla 70](#tabla-70).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-70"></a>
 
 **Tabla 70**
@@ -8598,7 +8459,6 @@ A continuación se presentan los aspectos principales de la reunión de planific
 | Sum of Story Points | 99 |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 El **Sprint Goal** se redactó siguiendo el enfoque propuesto por Scrum.org, priorizando el resultado (Outcome), el impacto (Impact) y la validación (Event):
 
@@ -8612,7 +8472,6 @@ La **velocity** del Sprint 1 se estableció en **99 story points**, equivalente 
 
 El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la [Tabla 71](#tabla-71).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-71"></a>
 
 **Tabla 71**
@@ -8629,13 +8488,11 @@ El alcance del Sprint 1 se compone de las user stories orientadas al paciente y 
 | **Total** | **30 user stories** | **99** |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-</div>
 
 #### 4.2.1.2. Aspect Leaders and Collaborators
 
 En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el **Landing Page** y la aplicación móvil del paciente, compuesta por **Identity & Access Management (IAM)**, **Appointments & Booking**, **Dynamic Waitlist & Reassignment**, **Arrival & QR Check-in** y **Hospital Operations & Configuration**, junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 72](#tabla-72). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-72"></a>
 
 **Tabla 72**
@@ -8651,7 +8508,6 @@ En el Sprint 1 el equipo organizó el trabajo en función de los productos y bou
 | Torres Juárez, Alisee Muriel | lLisee1 | C | C | C | C | L | C |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. L = Leader, C = Collaborator.*
-</div>
 
 #### 4.2.1.3. Sprint Backlog 1
 
@@ -8673,7 +8529,6 @@ El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimien
 
 A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 73](#tabla-73).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-73"></a>
 
 **Tabla 73**
@@ -8740,7 +8595,6 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 | 56 | — (Task transversal) | T-56 · Backend: despliegue de los servicios web | 8 | Neo | Done |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. El estado de las tasks corresponde al avance real del Sprint 1.*
-</div>
 
 #### 4.2.1.4. Development Evidence for Sprint Review
 
@@ -8752,7 +8606,6 @@ En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se impleme
 
 La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 74](#tabla-74).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-74"></a>
 
 **Tabla 74**
@@ -8788,7 +8641,6 @@ La landing page reúne la presentación del producto y recibió ajustes en la im
 | [RuwaLabs/saludya-landing](https://github.com/RuwaLabs/saludya-landing) | `main` | [d90b6f674b999ef94eba3b2b920cb9cf59622049](https://github.com/RuwaLabs/saludya-landing/commit/d90b6f674b999ef94eba3b2b920cb9cf59622049) | feat: default videos updated | 09/10/2026 |
 
 *Nota. Elaboración del equipo RuwaLabs a partir del historial de Git de los repositorios de SaludYa, consultado el 9 de octubre de 2026. Los mensajes se conservan tal como fueron registrados y las fechas corresponden a la fecha de commit. La columna Branch identifica una rama que contiene el commit; no atribuye su creación original a esa rama. Se presentan commits representativos de implementación, sin incluir los commits de edición del reporte.*
-</div>
 
 #### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
@@ -8804,7 +8656,6 @@ Repositorio de pruebas del backend y especificación BDD: [RuwaLabs/backend-salu
 
 Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-75"></a>
 
 **Tabla 75**
@@ -8822,11 +8673,9 @@ Repositorio de pruebas Android: [RuwaLabs/frontend-kotlin-saludya](https://githu
 | [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `iam` | [ca1cb00eceb91035cf759530d02c4d30b6ad8398](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/ca1cb00eceb91035cf759530d02c4d30b6ad8398) | feat(iam): add recovery screens and session confirmation flows | 07/10/2026 |
 
 *Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; las capturas de los componentes publicados y las referencias visuales de la aplicación se presentan en el apartado 4.2.1.6.*
-</div>
 
 Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la [Tabla 76](#tabla-76).
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-76"></a>
 
 **Tabla 76**
@@ -8844,7 +8693,6 @@ Los archivos de prueba y su alcance se organizan por componente y tipo de testin
 | Android IAM | Interfaz instrumentada | [Pruebas de pantallas IAM](https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src/androidTest/java/pe/edu/upc/saludya/iam) | `IdentityScreenTest`, `RegistrationScreenTest`, `AccessScreensTest` y `RecoveryAndSessionScreensTest`: formularios, mensajes y navegación de los recorridos de IAM. |
 
 *Nota. Elaboración del equipo RuwaLabs a partir de los archivos de prueba del backend y la aplicación Android. La verificación de registro y acceso se realiza por correo, de acuerdo con el cambio implementado en IAM.*
-</div>
 
 #### 4.2.1.6. Execution Evidence for Sprint Review
 
@@ -10242,7 +10090,6 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-77"></a>
 
 **Tabla 77**
@@ -10259,7 +10106,6 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 | CLIENTE(S) | Paula Montoya y Neo Ramos (grupo auditado: RuwaLabs) |
 
 *Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre los mock-ups de SaludYa.*
-</div>
 
 **SITE o APP A EVALUAR**
 
@@ -10302,7 +10148,6 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<div class="tabla" style="break-inside: avoid; page-break-inside: avoid;">
 <a id="tabla-78"></a>
 
 **Tabla 78**
@@ -10336,7 +10181,6 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 22 | Nombres distintos para la misma acción o pantalla ("Reservar una cita", "Reservar cita", "Reserva tu cita", "Mis citas") | 1 | Information Architecture: Is it usable? |
 
 *Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.*
-</div>
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
