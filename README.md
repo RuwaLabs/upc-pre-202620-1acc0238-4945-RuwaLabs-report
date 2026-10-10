@@ -5081,6 +5081,8 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 59](#figura-59).
 
+<!-- pdf-pagebreak -->
+
 # Capítulo III: Solution UI/UX Design
 
 ## 3.1. Product design
@@ -7832,6 +7834,8 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 [Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
 
+<!-- pdf-pagebreak -->
+
 # Capítulo IV: Product Implementation & Validation
 
 ## 4. Product Implementation & Validation
@@ -10437,6 +10441,8 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegación y títulos.
 
 ---
+
+<!-- pdf-pagebreak -->
 
 # Conclusiones
 
