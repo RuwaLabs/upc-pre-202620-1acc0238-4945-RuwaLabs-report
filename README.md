@@ -8179,6 +8179,152 @@ La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y
 
 *Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
 
+##### Backend: documentación publicada en Swagger
+
+El backend dispone de una interfaz Swagger UI que presenta los endpoints y sus contratos HTTP. Las capturas muestran la documentación accesible del servicio desplegado; no constituyen resultados de pruebas ni acreditan por sí solas la ejecución exitosa de las operaciones de negocio.
+
+Enlace de despliegue: [Swagger UI de SaludYa](http://3.129.217.49:8080/swagger-ui/index.html#/).
+
+###### Vista general de Swagger
+
+La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 129](#figura-129).
+
+<a id="figura-129"></a>
+
+**Figura 129**
+
+*Vista general de Swagger — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-overview.jpg" alt="Vista general de Swagger de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Verificación de identidad en el backend
+
+El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 130](#figura-130).
+
+<a id="figura-130"></a>
+
+**Figura 130**
+
+*Verificación de identidad en el backend — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-identity.jpg" alt="Verificación de identidad en el backend de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Cuentas y credenciales
+
+El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 131](#figura-131).
+
+<a id="figura-131"></a>
+
+**Figura 131**
+
+*Cuentas y credenciales — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-accounts.jpg" alt="Cuentas y credenciales de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Perfil del paciente
+
+El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 132](#figura-132).
+
+<a id="figura-132"></a>
+
+**Figura 132**
+
+*Perfil del paciente — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-patients.jpg" alt="Perfil del paciente de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Vinculación de menores
+
+El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 133](#figura-133).
+
+<a id="figura-133"></a>
+
+**Figura 133**
+
+*Vinculación de menores — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-minors.jpg" alt="Vinculación de menores de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Reservas de citas
+
+El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 134](#figura-134).
+
+<a id="figura-134"></a>
+
+**Figura 134**
+
+*Reservas de citas — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-appointments.jpg" alt="Reservas de citas de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Disponibilidad de horarios
+
+El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 135](#figura-135).
+
+<a id="figura-135"></a>
+
+**Figura 135**
+
+*Disponibilidad de horarios — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-time-slots.jpg" alt="Disponibilidad de horarios de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Registro de asistencia
+
+El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 136](#figura-136).
+
+<a id="figura-136"></a>
+
+**Figura 136**
+
+*Registro de asistencia — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-check-in.jpg" alt="Registro de asistencia de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Cola de atención
+
+El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 137](#figura-137).
+
+<a id="figura-137"></a>
+
+**Figura 137**
+
+*Cola de atención — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-queue.jpg" alt="Cola de atención de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
+###### Ofertas de reasignación
+
+El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 138](#figura-138).
+
+<a id="figura-138"></a>
+
+**Figura 138**
+
+*Ofertas de reasignación — SaludYa*
+
+<img src="assets/execution/sprint-1/swagger-reassignment.jpg" alt="Ofertas de reasignación de SaludYa" width="1000">
+
+*Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
