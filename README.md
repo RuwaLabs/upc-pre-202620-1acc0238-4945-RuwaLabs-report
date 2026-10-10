@@ -9480,7 +9480,270 @@ La interpretación de los analíticos muestra que la actividad del Sprint se con
 
 ### 4.3.1. Diseño de Entrevistas
 
+En esta sección se presenta el diseño de las entrevistas de validación aplicadas a los segmentos objetivo de **SaludYa**. Se elaboraron preguntas principales y complementarias orientadas a evaluar la comprensión de la propuesta de valor, la navegación, el diseño visual y la intención de uso de la **Landing Page**, considerando buenas prácticas de diseño de entrevistas. La información recolectada —características demográficas (edad, distrito de residencia, ocupación), habilidades, afinidad tecnológica, dispositivos preferidos, canales de interacción, objetivos y frustraciones— sirve como insumo para construir y sustentar los arquetipos (User Personas).
+
+Las entrevistas se dirigieron a los dos segmentos identificados: **Segmento 1 — Pacientes de zonas urbanas periféricas** y **Segmento 2 — Personal asistencial y administrativo de establecimientos públicos de salud**. Los bloques de preguntas fueron los siguientes.
+
+#### Perfil del participante
+
+- ¿Cuál es su edad y distrito de residencia?
+- ¿Con qué frecuencia usa el celular para trámites y qué tan cómodo se siente, en una escala del 1 al 10?
+- ¿Cuál es su rol en el establecimiento de salud? (segmento personal)
+
+#### Comprensión de la propuesta de valor
+
+- Al abrir la página, ¿qué cree que ofrece SaludYa? Explíquelo con sus palabras.
+- ¿Entendió para quién está dirigida la solución, es decir, pacientes y personal de salud?
+- ¿El mensaje principal, “Citas médicas sin colas…”, le resulta claro?
+- ¿Identificó qué problema resuelve la solución y cómo lo resuelve?
+
+#### Navegación y arquitectura de la información
+
+- ¿Encontró fácilmente las secciones: Producto, Videos, Testimonios, Sobre nosotros y Descarga?
+- ¿La organización de la información le pareció lógica y ordenada?
+- ¿Usó el selector de idioma (español o inglés)? ¿Le resultó útil?
+- ¿Faltó alguna sección que esperaba encontrar?
+
+#### Diseño visual, usabilidad y diseño inclusivo
+
+- ¿El diseño le pareció claro y agradable a la vista?
+- ¿El contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad?
+- ¿Los botones de acción, como descargar y conocer más, son visibles y fáciles de ubicar?
+- ¿La página funcionó bien en su celular, en la versión móvil?
+
+#### Contenido
+
+- ¿Los testimonios influyeron en su confianza hacia SaludYa?
+- ¿La sección de modelo de negocio o “sobre nosotros” aportó algo a su decisión?
+
+#### Conversión e intención
+
+- ¿Descargaría la aplicación? ¿Por qué sí o por qué no?
+- ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
+- Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
+- ¿Hay algo más que quiera comentar?
+
 ### 4.3.2. Registro de Entrevistas
+
+Para cada segmento se realizaron entrevistas de validación de la **Landing Page**, registradas en video como evidencia. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
+
+#### Entrevista 1 — Segmento: Personal administrativo
+
+| Campo | Detalle |
+|:--|:--|
+| Nombre(s) y apellidos | — *(no registrado en el video)* |
+| Edad | 46 años |
+| Distrito | Santa |
+| Ocupación / rol | Personal administrativo del establecimiento de salud |
+| Entrevistador(a) | Alisee |
+| Enlace del video | https://youtu.be/OYaoAsbkC0s |
+| Inicio de la entrevista | 00:01 |
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Alisee.jpeg?raw=true" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
+</p>
+
+*Figura. Cuadro de video de la entrevista 1 — personal administrativo.*
+
+**Resumen.** El entrevistado es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
+
+**Transcripción.**
+
+**Entrevistador:** Ah, buenas tardes. Bueno, vamos a empezar con la entrevista para la validación de la landing page. Bueno, eh, vamos a empezar con la presentación, así.
+
+**Entrevistador:** Que le preguntaría, ¿cuál es su edad y subdistrito de residencia?
+
+**Entrevistado:** Buenas tardes, joven. Mi edad es 46 años y mi distrito es Santa.
+
+**Entrevistador:** Okay. ¿Con qué frecuencia usa el celular para trámites y qué tan cómodo se siente?
+
+**Entrevistado:** Uso mi celular a diario para trámites y en una escala del 1 al 10 me sentiría en un siete de comodidad.
+
+**Entrevistador:** Okay. ¿Y cuál es su rol en el establecimiento de salud? Eh, me encargo de la administración.
+
+**Entrevistador:** Okay. Eh, al abrir la página, ¿qué cree que ofrece Salud?
+
+**Entrevistado:** Por lo que he podido contemplar, están ofreciendo soluciones al aglomeramiento del público y a disipar, ¿no?, este tema de las citas, que es lo más tedioso que puede tener una persona cuando tiene alguna emergencia médica.
+
+**Entrevistado:** Y por el lado del personal, o sea, por el lado de la institución de salud, eh, también brinda una agilidad para la atención de los pacientes.
+
+**Entrevistador:** Okay. Y entonces, el mensaje principal, "citas médicas sin colas", ¿le resulta claro?
+
+**Entrevistado:** Claro, este, clarísimo. Se refiere a, por lo que yo puedo entender y por lo que me parece que cualquier persona podría entender, es dejar de lado las colas y empezar a ir de una forma más práctica, ¿no?, para así conseguir el resultado de una buena atención.
+
+**Entrevistador:** ¿Encontró fácilmente las secciones, como por ejemplo los productos, el testimonio, sobre nosotros, los videos?
+
+**Entrevistado:** Sí, este, me parece una forma ordenada y con una facilidad para poder encontrar lo que uno necesita.
+
+**Entrevistador:** ¿Usó quizás el selector de idioma para español o inglés, o lo habrá notado en la aplicación, eh, perdón, en la page?
+
+**Entrevistado:** Hm, mira, este, yo lo abrí y salió en español de frente.
+
+**Entrevistador:** Okay. Okay. Eh, ¿quizás faltó alguna sección que esperaba encontrar?
+
+**Entrevistado:** Mira, la verdad es la primera vez que veo una app de este tipo y no, para mí está todo correcto.
+
+**Entrevistador:** Okay. ¿El diseño le pareció claro y agradable a la vista?
+
+**Entrevistado:** [Resoplido]
+
+**Entrevistado:** Personalmente sí, porque he visto otras páginas que tienen diseños como que un poco más subidos de colores, más saturados, ¿no? Y eso como que me madrea un poco y me distrae, pero en el caso de tu página sí está todo bien.
+
+**Entrevistador:** Okay. Y por ejemplo, el contraste, el tamaño de las letras y los botones, ¿le permitieron leer y utilizar la página con facilidad?
+
+**Entrevistado:** Sí, estuvieron bien porque yo últimamente tengo ya poco de fallas en la visión, no creo que ya necesito anteojos, pero sí está bien.
+
+**Entrevistador:** Okay. Y por ejemplo, los botones de acción, eh, como descargar y conocer más, eh, ¿fueron visibles y fáciles de ubicar?
+
+**Entrevistado:** Sí, claro. Están a la vista. Se ven en la pantalla del celular.
+
+**Entrevistador:** Okay. Entonces, la página le funcionó bien en su celular. Para hacer un resumen.
+
+**Entrevistado:** Sí, este, a pesar que ahorita estoy con un Android que no es de muy alta gama, sí resultó todo veloz y correcto.
+
+**Entrevistador:** Okay. ¿Quizás haya visto una parte acerca de los testimonios? Esos testimonios, ¿influyeron en su confianza hacia la aplicación Salud Jack?
+
+**Entrevistado:** La verdad sí, porque uno siempre se tiene que basar también no solo en lo que uno ve, ¿no?, sino también en las pruebas de cada caso, de cada seguimiento que uno hace.
+
+**Entrevistado:** Y al haber estos testimonios de personas reales que ya aprobaron, eh, sí, sí, sí, sí influyó.
+
+**Entrevistador:** Okay. Y la sección de modelo de negocio o "sobre nosotros", ¿aportó algo a su decisión, por ejemplo, elegir nuestra aplicación?
+
+**Entrevistado:** Claro, este, como te digo, no todo tiene un complemento, todo tiene que ser algo ya general y sí, sí, en medida. Sí.
+
+**Entrevistador:** Okay. Y entonces, eh, para preguntar acerca de la aplicación directamente, ¿usted la descargaría?
+
+**Entrevistado:** Sí, joven. Sí, sí. Me parece que es una aplicación muy práctica y sí la descargaría. Sí, la utilizaría y la recomendaría también.
+
+**Entrevistador:** Claro, claro. Y del uno al cinco, ¿qué tan probable es que recomiende la página?
+
+**Entrevistado:** Cinco. Cinco.
+
+**Entrevistador:** Un cinco. Okay. Eh, ¿quizás usted cambiaría algo, agregaría algo para convencerlo de utilizar Salud Ya, o ya se siente realmente convencido?
+
+**Entrevistado:** Yo no cambiaría nada. Para mí está bien tal y como está.
+
+**Entrevistador:** Okay. Bueno, para terminar, ¿hay algo más que quiera comentar quizá de la landing page o de la aplicación?
+
+**Entrevistado:** Este, sí, que de verdad cumpla, ¿no?, con las expectativas que yo tengo, sobre todo, ¿no? Y que sea este, ¿cómo te digo?, que no se vuelva lento, que sea práctico, que mantenga una velocidad adecuada para los equipos celulares.
+
+**Entrevistador:** Bueno, eso sería todo por la entrevista de hoy. De todas formas, gracias por las respuestas y bueno, eso sería todo.
+
+**Entrevistado:** Ya, joven, ya gracias por la entrevista. Estamos en contacto.
+
+#### Entrevista 2 — Segmento: Paciente
+
+| Campo | Detalle |
+|:--|:--|
+| Nombre(s) y apellidos | Michelle |
+| Edad | 20 años |
+| Distrito | Punta Hermosa |
+| Ocupación / rol | Paciente |
+| Entrevistador(a) | Neo |
+| Enlace del video | https://drive.google.com/file/d/19-pnt9joLZRH_xgGoZjRtWLqU26qJOTC/view?usp=sharing |
+| Inicio de la entrevista | 00:00 |
+
+<p align="center">
+  <img src="https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/blob/develop/assets/Entrevistas%20landing%20page/Neo.jpeg?raw=true" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
+</p>
+
+*Figura. Cuadro de video de la entrevista 2 — paciente.*
+
+**Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
+
+**Transcripción.**
+
+**Entrevistador:** Buenos días. Hoy estamos con Michelle para la entrevista de validación de la Landing Page. Muy buenos días, Michelle. Gracias por participar.
+
+**Michelle:** Buenos días, con gusto.
+
+**Entrevistador:** Bueno, vamos a empezar con el perfil del participante. ¿Cuál es su edad y su distrito de residencia?
+
+**Michelle:** Tengo 20 años y vivo en Punta Hermosa.
+
+**Entrevistador:** ¿Con qué frecuencia usa el celular para trámites? ¿Qué tan cómodo se siente?
+
+**Michelle:** Lo ocupo frecuentemente, pero no es tan común.
+
+**Entrevistador:** ¿Y cuál es su rol en el establecimiento de salud?
+
+**Michelle:** Eh… no, no pertenezco al establecimiento de salud. Soy paciente.
+
+**Entrevistador:** Perfecto, gracias por la aclaración. Ahora, comprensión de la propuesta de valor. Al abrir la página, ¿qué cree que ofrece SaludYa? Explíquelo con sus palabras.
+
+**Michelle:** Agilizar las citas y ahorrar tiempo.
+
+**Entrevistador:** ¿Entendió para quién está dirigida la solución, es decir, pacientes y personal de salud?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿El mensaje principal, "Citas médicas sin colas…", le resulta claro?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿Identificó qué problema resuelve y cómo lo resuelve?
+
+**Michelle:** Sí, para agilizar el tiempo.
+
+**Entrevistador:** Muy bien. Pasamos a navegación y arquitectura de la información. ¿Encontró fácilmente las secciones: Producto, Videos, Testimonios, Sobre nosotros, Descarga?
+
+**Michelle:** Sí, es intuitiva.
+
+**Entrevistador:** ¿La organización de la información le pareció lógica y ordenada?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿Usó el selector de idioma, español o inglés? ¿Le resultó útil?
+
+**Michelle:** Idioma español.
+
+**Entrevistador:** ¿Faltó alguna sección que esperaba encontrar?
+
+**Michelle:** No.
+
+**Entrevistador:** Muy bien. Ahora, diseño visual, usabilidad y diseño inclusivo. ¿El diseño le pareció claro y agradable?
+
+**Michelle:** Sí, es intuitivo.
+
+**Entrevistador:** ¿El contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿Los botones de acción, como descargar y conocer más, son visibles y fáciles de ubicar?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿La página funcionó bien en su celular, en la versión móvil?
+
+**Michelle:** Sí, no he tenido ningún problema.
+
+**Entrevistador:** Perfecto. Ahora, contenido. ¿Los testimonios influyeron en su confianza hacia SaludYa?
+
+**Michelle:** Sí.
+
+**Entrevistador:** ¿La sección de modelo de negocio o "sobre nosotros" aportó algo a su decisión?
+
+**Michelle:** Sí, me da confianza.
+
+**Entrevistador:** Muy bien. Conversión e intención. ¿Descargaría la aplicación? ¿Por qué sí o por qué no?
+
+**Michelle:** Sí, porque me genera confianza y por los testimonios que había escuchado.
+
+**Entrevistador:** ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
+
+**Michelle:** Pues creo que está muy completa.
+
+**Entrevistador:** Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
+
+**Michelle:** 4, quizá 5.
+
+**Entrevistador:** Muy bien. Para cerrar, ¿hay algo más que quiera comentar?
+
+**Michelle:** No.
+
+**Entrevistador:** Bueno, eso sería todo por la entrevista de hoy. Muchas gracias por las respuestas, Michelle. Eso sería todo.
+
+**Michelle:** Gracias a ustedes. Estamos en contacto.
 
 ### 4.3.3. Evaluaciones según heurísticas
 
