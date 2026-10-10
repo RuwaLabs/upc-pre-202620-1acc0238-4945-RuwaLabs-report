@@ -7861,7 +7861,7 @@ En esta sección se presentan las vistas publicadas de la Landing Page y la docu
 
 ##### Landing Page
 
-La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador con ancho de pantalla móvil.
+La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador de escritorio.
 
 Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/saludya-landing/).
 
@@ -7875,7 +7875,7 @@ La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, s
 
 *Inicio de la Landing Page — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-home.jpg" alt="Inicio de la Landing Page de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7889,7 +7889,7 @@ La sección describe la incertidumbre al buscar una cita y la pérdida de cupos 
 
 *Problema identificado — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-problem.jpg" alt="Problema identificado de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7903,7 +7903,7 @@ La sección reúne las funciones propuestas para el paciente, entre ellas la res
 
 *Propuesta de solución — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-solution.jpg" alt="Propuesta de solución de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7917,7 +7917,7 @@ La página presenta el modelo propuesto de implementación institucional, conven
 
 *Modelo de negocio — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-business.jpg" alt="Modelo de negocio de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7931,7 +7931,7 @@ Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y 
 
 *Testimonios — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-testimonials.jpg" alt="Testimonios de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7945,7 +7945,7 @@ La sección explica el propósito del equipo y presenta la misión y visión de 
 
 *Presentación de RuwaLabs — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-about.jpg" alt="Presentación de RuwaLabs de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
@@ -7959,15 +7959,19 @@ La sección anuncia la próxima disponibilidad para Android e iOS y muestra los 
 
 *Disponibilidad de la aplicación — SaludYa*
 
-<img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="360">
+<img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
 
-##### Aplicación Android: pantallas del paciente
+##### Aplicación Android
 
-Las siguientes imágenes corresponden a los mockups del paciente en Figma y documentan la interfaz prevista para la aplicación Android. Se incluyen como referencia visual del trabajo del sprint; la ejecución en un dispositivo y el enlace de distribución Android se incorporarán cuando estén disponibles.
+La aplicación Android de SaludYa se distribuye mediante un APK de prueba generado a partir de la rama `develop` del repositorio Kotlin, commit `74a4b7f`. La compilación finalizó correctamente y se verificó la firma del paquete. Esta versión requiere Android 7.0 o superior y utiliza el backend publicado en `http://3.129.217.49:8080/`.
 
-Diseño de referencia: [Mobile Application Mockups de SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2).
+Enlace de despliegue: [Descargar APK de SaludYa para Android](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/raw/refs/heads/develop/assets/downloads/SaludYa-develop-debug.apk).
+
+Las imágenes siguientes presentan las pantallas del paciente. Las notas de cada figura identifican su origen.
+
+Archivo de interfaz: [SaludYa en Figma](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2).
 
 ###### Bienvenida
 
@@ -7981,7 +7985,7 @@ La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar s
 
 <img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Verificación de identidad
 
@@ -7995,7 +7999,7 @@ El formulario solicita los datos de identidad del paciente antes de continuar co
 
 <img src="assets/execution/sprint-1/android-identidad.png" alt="Verificación de identidad de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Registro de credenciales
 
@@ -8009,7 +8013,7 @@ El paciente registra su correo, contraseña y datos de contacto después de veri
 
 <img src="assets/execution/sprint-1/android-credenciales.png" alt="Registro de credenciales de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Verificación por correo
 
@@ -8023,7 +8027,7 @@ La pantalla solicita el código de verificación enviado al correo del paciente 
 
 <img src="assets/execution/sprint-1/android-verificar-correo.png" alt="Verificación por correo de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Inicio de sesión
 
@@ -8037,7 +8041,7 @@ El paciente ingresa su correo y contraseña para acceder a su cuenta, como se ob
 
 <img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Recuperación de acceso
 
@@ -8051,7 +8055,7 @@ El formulario permite solicitar un enlace de recuperación al correo registrado,
 
 <img src="assets/execution/sprint-1/android-recuperacion.png" alt="Recuperación de acceso de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Restablecimiento de contraseña
 
@@ -8065,7 +8069,7 @@ El paciente define y confirma una nueva contraseña mediante el recorrido de rec
 
 <img src="assets/execution/sprint-1/android-nueva-contrasena.png" alt="Restablecimiento de contraseña de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Inicio del paciente
 
@@ -8079,7 +8083,7 @@ La vista principal reúne las citas pendientes y los accesos al historial y a la
 
 <img src="assets/execution/sprint-1/android-inicio.png" alt="Inicio del paciente de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Reserva de cita
 
@@ -8093,7 +8097,7 @@ El recorrido de reserva presenta las opciones necesarias para elegir una cita se
 
 <img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Confirmación de reserva
 
@@ -8107,7 +8111,7 @@ La pantalla presenta la confirmación y los datos de la cita seleccionada, como 
 
 <img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Registro de llegada
 
@@ -8121,7 +8125,7 @@ La interfaz indica al paciente que debe escanear el QR del establecimiento para 
 
 <img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Ticket de atención
 
@@ -8135,7 +8139,7 @@ La pantalla presenta el ticket del paciente como parte del seguimiento de su tur
 
 <img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Perfil del paciente
 
@@ -8149,7 +8153,7 @@ El perfil reúne los datos personales y de contacto, junto con las acciones disp
 
 <img src="assets/execution/sprint-1/android-perfil.png" alt="Perfil del paciente de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Menores vinculados
 
@@ -8163,7 +8167,7 @@ La vista permite consultar los menores vinculados al paciente y acceder a las ac
 
 <img src="assets/execution/sprint-1/android-menores.png" alt="Menores vinculados de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ###### Notificaciones del paciente
 
@@ -8177,7 +8181,7 @@ La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y
 
 <img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320">
 
-*Nota. Mockup del paciente exportado del archivo de Figma de SaludYa. Esta imagen corresponde al diseño de la interfaz.*
+*Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
 ##### Backend: documentación publicada en Swagger
 
