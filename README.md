@@ -8883,9 +8883,26 @@ La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al reposit
 - **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
 - **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
 
+
+##### Repositorio y commits de documentación
+
+- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
+- **Commits relacionados con la documentación para este Sprint:**
+
+| Commit | Mensaje | Relación |
+|:--|:--|:--|
+| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
+| [`fdf27c4`](https://github.com/RuwaLabs/backend-saludya/commit/fdf27c4) | `chore: drop hardcoded OpenAPI server so Swagger targets the current host` | Ajuste para que Swagger UI resuelva las peticiones contra el host desplegado |
+| [`a870d04`](https://github.com/RuwaLabs/backend-saludya/commit/a870d04) | `docs(iam): add setup guide and API request examples` | Guía de configuración y ejemplos de peticiones de IAM |
+| [`acb79f5`](https://github.com/RuwaLabs/backend-saludya/commit/acb79f5) | `fix(openapi): remove legacy ACME configuration` | Corrección de la configuración OpenAPI |
+| [`955abb6`](https://github.com/RuwaLabs/backend-saludya/commit/955abb6) | `feat: initializing project` | Configuración base de la documentación OpenAPI del proyecto |
+
 ##### Tabla de endpoints documentados
 
 A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
+
+
+###### IAM — Identity & Access Management
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
@@ -8914,6 +8931,11 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 | 23 | Solicitar recuperación asistida | POST | `/api/v1/account-recovery-requests` | body: `dni, contactEmail` | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}` | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}` | Registra la solicitud; no otorga acceso ni revela cuentas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request) |
 | 24 | Listar solicitudes de recuperación abiertas | GET | `/api/v1/account-recovery-requests` | header: `Authorization (SUPER_ADMIN)` | *(sin cuerpo)* | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]` | Lista las 100 solicitudes abiertas más antiguas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open) |
 | 25 | Resolver solicitud de recuperación asistida | POST | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson` | `{"identityCheckedInPerson":true}` | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}` | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve) |
+
+###### Appointments & Booking
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
 | 26 | Reservar una cita | POST | `/api/v1/appointments` | body: `patientId, timeSlotId` | `{"patientId":1,"timeSlotId":31}` | `201` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null}` | Crea la cita y devuelve el recurso; `Location` apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
 | 27 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?patientId=1&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}]` | Devuelve las citas filtradas; si el actor es paciente, `patientId` es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
 | 28 | Obtener una cita por id | GET | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...}` | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
@@ -8929,6 +8951,11 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 | 38 | Crear un slot de atención | POST | `/api/v1/time-slots` | body: `doctorId, date, startHour, endHour, room, maxCapacity` | `{"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5}` | `201` `{"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...}` | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
 | 39 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
 | 40 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+
+###### Arrival & QR Check-in
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
 | 41 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
 | 42 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
 | 43 | Obtener el ticket digital de un check-in | GET | `/api/v1/check-ins/{id}` | path: `id` | `/api/v1/check-ins/15` | `200` `{"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...}` | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
@@ -8944,9 +8971,19 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 | 53 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"position":3,"status":"WAITING",...}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
 | 54 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
 | 55 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+
+###### Reassignment
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
 | 56 | Listar ofertas de cupo pendientes | GET | `/api/v1/reassignment-offers/pending` | header: `Authorization` · query: `appointmentId` (opcional) | `/api/v1/reassignment-offers/pending` | `200` `[{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}]` | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
 | 57 | Aceptar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/accept` | path: `id` | `/api/v1/reassignment-offers/21/accept` | `200` `{"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
 | 58 | Rechazar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/reject` | path: `id` | `/api/v1/reassignment-offers/21/reject` | `200` `{"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
+
+###### Hospital Operations & Configuration
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
 | 59 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
 | 60 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
 | 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
@@ -9028,18 +9065,6 @@ A continuación se incluyen capturas de la interacción con la documentación de
 
 *Nota. Captura de Swagger UI del backend desplegado de SaludYa.*
 
-##### Repositorio y commits de documentación
-
-- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
-- **Commits relacionados con la documentación para este Sprint:**
-
-| Commit | Mensaje | Relación |
-|:--|:--|:--|
-| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
-| [`fdf27c4`](https://github.com/RuwaLabs/backend-saludya/commit/fdf27c4) | `chore: drop hardcoded OpenAPI server so Swagger targets the current host` | Ajuste para que Swagger UI resuelva las peticiones contra el host desplegado |
-| [`a870d04`](https://github.com/RuwaLabs/backend-saludya/commit/a870d04) | `docs(iam): add setup guide and API request examples` | Guía de configuración y ejemplos de peticiones de IAM |
-| [`acb79f5`](https://github.com/RuwaLabs/backend-saludya/commit/acb79f5) | `fix(openapi): remove legacy ACME configuration` | Corrección de la configuración OpenAPI |
-| [`955abb6`](https://github.com/RuwaLabs/backend-saludya/commit/955abb6) | `feat: initializing project` | Configuración base de la documentación OpenAPI del proyecto |
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
