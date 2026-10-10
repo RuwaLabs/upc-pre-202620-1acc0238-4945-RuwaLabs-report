@@ -7757,6 +7757,36 @@ El **Deployment Diagram** ilustra la distribución física de los componentes de
 <!-- pdf-pagebreak -->
 
 
+#### 4.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1 se avanzó en la implementación del backend, la aplicación móvil para pacientes y la landing page de SaludYa. El trabajo se distribuyó en ramas por funcionalidad, con commits que registran la construcción de los módulos y sus ajustes de integración.
+
+En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama `develop` incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en Render.
+
+En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
+
+La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la [Tabla 93](#tabla-93).
+
+<a id="tabla-93"></a>
+
+**Tabla 93**
+
+*Commits de implementación de SaludYa para la revisión del Sprint 1*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+|:---|:---|:---|:---|:---|
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `iam` | [d6101f67c169deea633099c9c4995b2396e156aa](https://github.com/RuwaLabs/backend-saludya/commit/d6101f67c169deea633099c9c4995b2396e156aa) | feat(iam): expose authorized REST APIs and context facade | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `booking` | [f5823addf79daa1c7bbd51820a0052df428a21ed](https://github.com/RuwaLabs/backend-saludya/commit/f5823addf79daa1c7bbd51820a0052df428a21ed) | feat: Booking DDD Complete | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `reassignment` | [d4daffc364ace3799c677c91c16b51b61f29e8e4](https://github.com/RuwaLabs/backend-saludya/commit/d4daffc364ace3799c677c91c16b51b61f29e8e4) | feat: ddd without acl impl | 26/09/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `hospitalconfig` | [89934b6cd4f503e9b406cfc58ce2762f17f63d19](https://github.com/RuwaLabs/backend-saludya/commit/89934b6cd4f503e9b406cfc58ce2762f17f63d19) | feat(config): add configuration rest controller | 26/09/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [4fb041aac3b5912de3a32eac353fedc3b9947efe](https://github.com/RuwaLabs/backend-saludya/commit/4fb041aac3b5912de3a32eac353fedc3b9947efe) | feat: integrate IAM and Arrival with cross-context ACLs; complete patient/admin flows | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [89c4529678231739c7ec2f1e5199a7fc3c7d54ab](https://github.com/RuwaLabs/backend-saludya/commit/89c4529678231739c7ec2f1e5199a7fc3c7d54ab) | feat: reassignment arrival by slot check-in tolerance and fix chain candidate selection | 03/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [8965e195d438b3c658b2ededa38bb76021b3e8ed](https://github.com/RuwaLabs/backend-saludya/commit/8965e195d438b3c658b2ededa38bb76021b3e8ed) | fix: auth smtp done, sms removed, flow reworked | 06/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [50e5453fe97c7f48229455812255f9ffed194bd4](https://github.com/RuwaLabs/backend-saludya/commit/50e5453fe97c7f48229455812255f9ffed194bd4) | feat: recovery account audition | 06/10/2026 |
+| [RuwaLabs/backend-saludya](https://github.com/RuwaLabs/backend-saludya) | `develop` | [6a747f8b711abe3e697877f6ef362725e13de83f](https://github.com/RuwaLabs/backend-saludya/commit/6a747f8b711abe3e697877f6ef362725e13de83f) | chore: add Render deployment | 06/10/2026 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git de los repositorios de SaludYa, consultado el 9 de octubre de 2026. Los mensajes se conservan tal como fueron registrados y las fechas corresponden a la fecha de commit. La columna Branch identifica una rama que contiene el commit; no atribuye su creación original a esa rama. Se presentan commits representativos de implementación, sin incluir los commits de edición del reporte.*
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones
