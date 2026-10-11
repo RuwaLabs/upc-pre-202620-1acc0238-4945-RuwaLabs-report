@@ -527,7 +527,7 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 </table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+<!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**, como se detalla en la [Tabla 10](#tabla-10).
@@ -755,7 +755,7 @@ El diagrama identifica **seis categorías principales de causas** que contribuye
 Actualmente, tanto los pacientes como el personal asistencial y administrativo de los establecimientos públicos de salud enfrentan dificultades por la dependencia de procesos presenciales y telefónicos que no permiten conocer en tiempo real la disponibilidad de citas, gestionar cancelaciones o listas de espera, ni dar seguimiento eficiente a la atención. Esto genera problemas como colas prolongadas, cupos desaprovechados, desinformación sobre la disponibilidad de citas y una carga operativa elevada para el personal. Además, muchos pacientes no cuentan con mecanismos accesibles que les permitan orientar el tipo de atención que podrían requerir antes de acudir al establecimiento.
 
 ¿Cómo podríamos diseñar una solución digital integral que permita a los pacientes reservar y gestionar sus citas médicas en tiempo real, acceder a listas de espera dinámicas y recibir orientación inicial sobre sus síntomas, mientras se brinda al personal asistencial y administrativo herramientas para gestionar el flujo de atención y aprovechar mejor los cupos disponibles?
-
+<!-- pdf-pagebreak -->
 #### 1.2.2.2. Lean UX Assumptions ####
 ##### 1.2.2.2.1 Business Assumptions #####
 
@@ -920,7 +920,7 @@ En esta sección, se registra cada entrevista realizada. En total, se realizaron
 ** Entrevista 1 ** 
 
 La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 13](#figura-13).
-
+<!-- pdf-pagebreak -->
 <a id="tabla-12"></a>
 
 **Tabla 12**
@@ -938,7 +938,7 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 **Entrevista 2**
 
 La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 14](#figura-14).
-
+<!-- pdf-pagebreak -->
 <a id="tabla-13"></a>
 
 **Tabla 13**
@@ -956,7 +956,7 @@ La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas mé
 Entrevista 3:
 
 La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 15](#figura-15).
-
+<!-- pdf-pagebreak -->
 <a id="tabla-14"></a>
 
 **Tabla 14**
@@ -976,7 +976,7 @@ La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas mé
 Entrevista 4:
 
 La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 16](#figura-16).
-
+<!-- pdf-pagebreak -->
 <a id="tabla-15"></a>
 
 **Tabla 15**
@@ -994,7 +994,7 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 **Entrevista 5**
 
 La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 16](#tabla-16) y la [Figura 17](#figura-17).
-
+<!-- pdf-pagebreak -->
 <a id="tabla-16"></a>
 
 **Tabla 16**
@@ -1010,7 +1010,7 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 **Entrevista 6**
-
+<!-- pdf-pagebreak -->
 <a id="tabla-17"></a>
 
 **Tabla 17**
@@ -1147,7 +1147,7 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 </div>
 
 Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención, como se observa en la [Figura 25](#figura-25).
-
+<!-- pdf-pagebreak -->
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
@@ -1165,7 +1165,7 @@ Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de S
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
 
 <a id="tabla-18"></a>
-
+<!-- pdf-pagebreak -->
 **Tabla 18**
 
 *User Task Matrix*
@@ -1182,7 +1182,7 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
 | Registrar admisión y actualizar datos en registros/sistemas | | X | Low | Low | High | High |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+<!-- pdf-pagebreak -->
 #### Análisis del Task Matrix
 
 A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos:
@@ -1195,7 +1195,7 @@ A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos
 ### 2.3.3. User Journey Mapping
 
 A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal de salud, se elaboraron los User Journey Maps utilizando la herramienta UXPressia. Estos esquemas analizan la experiencia de cada segmento a lo largo del proceso de atención, contrastando las fricciones de la gestión presencial/manual actual contra las oportunidades de optimización que introduce la plataforma **SaludYa**.
-
+<!-- pdf-pagebreak -->
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
@@ -1207,7 +1207,7 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 </div>
 
 El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la [Figura 27](#figura-27).
-
+<!-- pdf-pagebreak -->
 #### Segmento 2: Personal asistencial y administrativo
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
@@ -1219,11 +1219,10 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 </div>
 
 El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la [Figura 28](#figura-28).
-
+<!-- pdf-pagebreak -->
 ### 2.3.4. Empathy Mapping
 
 El diseño de una solución de software orientada a la salud pública requiere comprender no solo las acciones operativas de los usuarios, sino también sus vivencias emocionales y percepciones del servicio. En este sentido, el Empathy Mapping nos permite trascender el perfil demográfico tradicional para examinar las dinámicas internas de nuestros segmentos objetivo. Al sistematizar lo que el paciente y el personal de salud oyen, ven, dicen, piensan y hacen, se identifican las barreras críticas y las expectativas del dominio. Este análisis asegura que SaludYa no solo sea una plataforma funcionalmente robusta, sino también una herramienta que genere confianza, previsibilidad y bienestar en la atención diaria.
-
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
@@ -1235,7 +1234,7 @@ El diseño de una solución de software orientada a la salud pública requiere c
 </div>
 
 Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales, como se observa en la [Figura 29](#figura-29).
-
+<!-- pdf-pagebreak -->
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 <div class="figura" style="break-inside: avoid; page-break-inside: avoid;">
@@ -1246,7 +1245,7 @@ Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha con
 <p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
 
-Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la [Figura 30](#figura-30).
+Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la [Figura 30](#figura-30). <!-- pdf-pagebreak -->
 
 ---
 ### 2.3.5. Big Picture EventStorming
@@ -1264,7 +1263,7 @@ En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolu
 <p align="center"><img src="https://i.imgur.com/JwMsEx4.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%" style="max-width:100%;max-height:120mm;height:auto;"/></p>
 <p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
-
+<!-- pdf-pagebreak -->
 #### Step 2 – Enforcing Timelines
 
 En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud, como se observa en la [Figura 32](#figura-32).
@@ -1288,7 +1287,7 @@ En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e 
 <p align="center"><img src="https://i.imgur.com/qX7SP87.png" alt="Step 3 - People and Systems" width="85%" style="max-width:100%;max-height:120mm;height:auto;"/></p>
 <p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
-
+<!-- pdf-pagebreak -->
 #### Step 4 – Explicit Hotspots & Exceptions
 
 En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica, como se observa en la [Figura 34](#figura-34).
@@ -1301,6 +1300,7 @@ En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del n
 <p align="center"><img src="https://i.imgur.com/QDRTLVm.png" alt="Step 4 - Hotspots and Exceptions" width="85%" style="max-width:100%;max-height:120mm;height:auto;"/></p>
 <p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
+<!-- pdf-pagebreak -->
 
 ---
 
@@ -1314,18 +1314,20 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
 
 *Ubiquitous Language*
 
-| Ubiquitous Language (Inglés / Código) | Definición en el Dominio de SaludYa |
-| :--- | :--- |
-| `Patient` | Usuario final que solicita, reserva o gestiona atenciones médicas para sí mismo o para sus familiares dependientes en un centro de salud público. |
-| `Admission Staff` | Usuario operativo encargado de aperturar agendas, gestionar la atención en ventanilla y monitorear el flujo de la sala de espera. |
-| `Time Slot` | Intervalo de tiempo asignado a una especialidad médica para la atención de un único paciente en una fecha y horario determinado. |
-| `Booking` / `Appointment` | Proceso mediante el cual un paciente asegura un cupo médico a través de la aplicación móvil antes de acudir presencialmente. |
-| `Check-in` | Validación de asistencia presencial realizada por el paciente mediante el escaneo de un código QR al llegar al centro de salud. |
-| `Reassignment` | Mecanismo automatizado que reasigna los cupos liberados por inasistencias a los pacientes de la cola de reserva, en orden de `bookingOrder`, formando una cadena de reasignación. |
-| `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado. |
-| `Specialty Catalog` / `Quota Available` | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud. |
+| Ubiquitous Language (Inglés / Código)    | Definición en el Dominio de SaludYa                                                                                                                                               |
+| :--------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Patient`                                | Usuario final que solicita, reserva o gestiona atenciones médicas para sí mismo o para sus familiares dependientes en un centro de salud público.                                 |
+| `Admission Staff`                        | Usuario operativo encargado de aperturar agendas, gestionar la atención en ventanilla y monitorear el flujo de la sala de espera.                                                 |
+| `Time Slot`                              | Intervalo de tiempo asignado a una especialidad médica para la atención de un único paciente en una fecha y horario determinado.                                                  |
+| `Booking` / `Appointment`                | Proceso mediante el cual un paciente asegura un cupo médico a través de la aplicación móvil antes de acudir presencialmente.                                                      |
+| `Check-in`                               | Validación de asistencia presencial realizada por el paciente mediante el escaneo de un código QR al llegar al centro de salud.                                                   |
+| `Reassignment`                           | Mecanismo automatizado que reasigna los cupos liberados por inasistencias a los pacientes de la cola de reserva, en orden de `bookingOrder`, formando una cadena de reasignación. |
+| `Virtual Waiting Room` / `Queue Display` | Vista en tiempo real dentro de la app que informa al paciente su posición exacta en la cola y el tiempo aproximado para su llamado.                                               |
+| `Specialty Catalog` / `Quota Available`  | Catálogo estructurado de servicios médicos y horarios configurados y publicados por el centro público de salud.                                                                   |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+<!-- pdf-pagebreak -->
 
 ---
 
@@ -1355,6 +1357,8 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+<!-- pdf-pagebreak -->
+
 ---
 
 ### 2.4.1. User Stories
@@ -1379,9 +1383,9 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 | **EP5** | Hospital Operations & System Configuration | Control operativo de ausencias por vencimiento de tiempo, parametrización de reglas globales e intervalos del hospital, y visualización del dashboard operativo. |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
+<!-- pdf-pagebreak -->
 #### User stories
-<!-- ===== LANDING PAGE ===== --> <!-- US-00: Visualización de Propuesta de Valor en Landing Page -->
+<!-- ===== LANDING PAGE ===== --> <!-- US-00: Visualización de Propuesta de Valor en Landing Page --> <!-- pdf-pagebreak -->
 
 **US-00: Visualización de Propuesta de Valor en Landing Page**
 
@@ -1391,7 +1395,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI -->
+ <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI --> <!-- pdf-pagebreak -->
 
 **US-01: Verificación de Identidad por DNI**
 
@@ -1401,7 +1405,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-02: Registro de Credenciales de Acceso -->
+ <!-- US-02: Registro de Credenciales de Acceso --> <!-- pdf-pagebreak -->
 
 **US-02: Registro de Credenciales de Acceso**
 
@@ -1411,7 +1415,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-03: Verificación de Celular y Creación de Cuenta -->
+ <!-- US-03: Verificación de Celular y Creación de Cuenta --> <!-- pdf-pagebreak -->
 
 **US-03: Verificación de Celular y Creación de Cuenta**
 
@@ -1421,7 +1425,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-04: Inicio de Sesión del Paciente -->
+ <!-- US-04: Inicio de Sesión del Paciente --> <!-- pdf-pagebreak -->
 
 **US-04: Inicio de Sesión del Paciente**
 
@@ -1431,7 +1435,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-05: Selección de Especialidad Médica -->
+ <!-- US-05: Selección de Especialidad Médica --> <!-- pdf-pagebreak -->
 
 **US-05: Selección de Especialidad Médica**
 
@@ -1441,7 +1445,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-06: Consulta de Horarios Disponibles -->
+ <!-- US-06: Consulta de Horarios Disponibles --> <!-- pdf-pagebreak -->
 
 **US-06: Consulta de Horarios Disponibles**
 
@@ -1451,7 +1455,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-07: Reserva de Cita para el Paciente -->
+ <!-- US-07: Reserva de Cita para el Paciente --> <!-- pdf-pagebreak -->
 
 **US-07: Reserva de Cita para el Paciente**
 
@@ -1461,7 +1465,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-08: Recepción de Confirmación de Cita por Correo -->
+ <!-- US-08: Recepción de Confirmación de Cita por Correo --> <!-- pdf-pagebreak -->
 
 **US-08: Recepción de Confirmación de Cita por Correo**
 
@@ -1471,7 +1475,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-09: Consulta de Citas Agendadas -->
+ <!-- US-09: Consulta de Citas Agendadas --> <!-- pdf-pagebreak -->
 
 **US-09: Consulta de Citas Agendadas**
 
@@ -1481,7 +1485,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-10: Cancelación de Cita -->
+ <!-- US-10: Cancelación de Cita --> <!-- pdf-pagebreak -->
 
 **US-10: Cancelación de Cita**
 
@@ -1491,7 +1495,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-11: Consulta del Código QR de la Reserva -->
+ <!-- US-11: Consulta del Código QR de la Reserva --> <!-- pdf-pagebreak -->
 
 **US-11: Consulta del Código QR de la Reserva**
 
@@ -1501,7 +1505,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-12: Consulta del Ticket Digital de Atención -->
+ <!-- US-12: Consulta del Ticket Digital de Atención --> <!-- pdf-pagebreak -->
 
 **US-12: Consulta del Ticket Digital de Atención**
 
@@ -1511,7 +1515,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-13: Consulta de Posición en la Cola de Atención -->
+ <!-- US-13: Consulta de Posición en la Cola de Atención --> <!-- pdf-pagebreak -->
 
 **US-13: Consulta de Posición en la Cola de Atención**
 
@@ -1521,7 +1525,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-14: Recepción de Notificación de Llamado a Consultorio -->
+ <!-- US-14: Recepción de Notificación de Llamado a Consultorio --> <!-- pdf-pagebreak -->
 
 **US-14: Recepción de Notificación de Llamado a Consultorio**
 
@@ -1531,7 +1535,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-15: Vinculación de un Menor de Edad -->
+ <!-- US-15: Vinculación de un Menor de Edad --> <!-- pdf-pagebreak -->
 
 **US-15: Vinculación de un Menor de Edad**
 
@@ -1541,7 +1545,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-16: Reserva de Cita para un Menor Vinculado -->
+ <!-- US-16: Reserva de Cita para un Menor Vinculado --> <!-- pdf-pagebreak -->
 
 **US-16: Reserva de Cita para un Menor Vinculado**
 
@@ -1551,7 +1555,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-17: Consulta de Menores Vinculados -->
+ <!-- US-17: Consulta de Menores Vinculados --> <!-- pdf-pagebreak -->
 
 **US-17: Consulta de Menores Vinculados**
 
@@ -1561,7 +1565,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-18: Consulta del Perfil de un Menor -->
+ <!-- US-18: Consulta del Perfil de un Menor --> <!-- pdf-pagebreak -->
 
 **US-18: Consulta del Perfil de un Menor**
 
@@ -1571,7 +1575,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-19: Desvinculación de un Menor de Edad -->
+ <!-- US-19: Desvinculación de un Menor de Edad --> <!-- pdf-pagebreak -->
 
 **US-19: Desvinculación de un Menor de Edad**
 
@@ -1581,7 +1585,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-20: Aceptación de Adelanto de Cita -->
+ <!-- US-20: Aceptación de Adelanto de Cita --><!-- pdf-pagebreak -->
 
 **US-20: Aceptación de Adelanto de Cita**
 
@@ -1591,7 +1595,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-21: Rechazo de Adelanto de Cita -->
+ <!-- US-21: Rechazo de Adelanto de Cita --> <!-- pdf-pagebreak -->
 
 **US-21: Rechazo de Adelanto de Cita**
 
@@ -1601,7 +1605,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-22: Salida Voluntaria de la Cola de Atención -->
+ <!-- US-22: Salida Voluntaria de la Cola de Atención --> <!-- pdf-pagebreak -->
 
 **US-22: Salida Voluntaria de la Cola de Atención**
 
@@ -1611,7 +1615,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-23: Solicitud de Enlace de Recuperación de Contraseña -->
+ <!-- US-23: Solicitud de Enlace de Recuperación de Contraseña --> <!-- pdf-pagebreak -->
 
 **US-23: Solicitud de Enlace de Recuperación de Contraseña**
 
@@ -1621,7 +1625,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-24: Restablecimiento de Contraseña -->
+ <!-- US-24: Restablecimiento de Contraseña --> <!-- pdf-pagebreak -->
 
 **US-24: Restablecimiento de Contraseña**
 
@@ -1631,7 +1635,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta -->
+ <!-- US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta --> <!-- pdf-pagebreak -->
 
 **US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta**
 
@@ -1641,7 +1645,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-26: Consulta del Perfil del Paciente -->
+ <!-- US-26: Consulta del Perfil del Paciente --> <!-- pdf-pagebreak -->
 
 **US-26: Consulta del Perfil del Paciente**
 
@@ -1651,7 +1655,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-27: Edición de Datos de Contacto -->
+ <!-- US-27: Edición de Datos de Contacto --> <!-- pdf-pagebreak -->
 
 **US-27: Edición de Datos de Contacto**
 
@@ -1661,7 +1665,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-28: Cierre de Sesión del Paciente -->
+ <!-- US-28: Cierre de Sesión del Paciente --> <!-- pdf-pagebreak -->
 
 **US-28: Cierre de Sesión del Paciente**
 
@@ -1671,7 +1675,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-29: Aviso de Sesión Expirada -->
+ <!-- US-29: Aviso de Sesión Expirada --> <!-- pdf-pagebreak -->
 
 **US-29: Aviso de Sesión Expirada**
 
@@ -1681,7 +1685,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- ===== HUs DE ADMINISTRADORES: Super Admin y Personal de Admisión ===== --> <!-- US-30: Inicio de Sesión del Super Admin -->
+ <!-- ===== HUs DE ADMINISTRADORES: Super Admin y Personal de Admisión ===== --> <!-- US-30: Inicio de Sesión del Super Admin --> <!-- pdf-pagebreak -->
 
 **US-30: Inicio de Sesión del Super Admin**
 
@@ -1691,7 +1695,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-31: Creación de Cuenta de Personal de Admisión -->
+ <!-- US-31: Creación de Cuenta de Personal de Admisión --> <!-- pdf-pagebreak -->
 
 **US-31: Creación de Cuenta de Personal de Admisión**
 
@@ -1701,7 +1705,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-32: Inicio de Sesión del Personal de Admisión -->
+ <!-- US-32: Inicio de Sesión del Personal de Admisión --> <!-- pdf-pagebreak -->
 
 **US-32: Inicio de Sesión del Personal de Admisión**
 
@@ -1711,7 +1715,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-33: Configuración de la Duración de los Intervalos de Atención -->
+ <!-- US-33: Configuración de la Duración de los Intervalos de Atención --> <!-- pdf-pagebreak -->
 
 **US-33: Configuración de la Duración de los Intervalos de Atención**
 
@@ -1721,7 +1725,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-34: Edición de una Regla Operativa del Establecimiento -->
+ <!-- US-34: Edición de una Regla Operativa del Establecimiento --> <!-- pdf-pagebreak -->
 
 **US-34: Edición de una Regla Operativa del Establecimiento**
 
@@ -1731,7 +1735,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-35: Consulta de Reglas Operativas Vigentes -->
+ <!-- US-35: Consulta de Reglas Operativas Vigentes --> <!-- pdf-pagebreak -->
 
 **US-35: Consulta de Reglas Operativas Vigentes**
 
@@ -1741,7 +1745,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-36: Selección de Especialidad en la Agenda Operativa -->
+ <!-- US-36: Selección de Especialidad en la Agenda Operativa --> <!-- pdf-pagebreak -->
 
 **US-36: Selección de Especialidad en la Agenda Operativa**
 
@@ -1751,7 +1755,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-37: Consulta del Calendario Operativo -->
+ <!-- US-37: Consulta del Calendario Operativo --> <!-- pdf-pagebreak -->
 
 **US-37: Consulta del Calendario Operativo**
 
@@ -1761,7 +1765,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-38: Consulta de Bloques del Día -->
+ <!-- US-38: Consulta de Bloques del Día --> <!-- pdf-pagebreak -->
 
 **US-38: Consulta de Bloques del Día**
 
@@ -1771,7 +1775,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-39: Consulta del Detalle de un Bloque -->
+ <!-- US-39: Consulta del Detalle de un Bloque --> <!-- pdf-pagebreak -->
 
 **US-39: Consulta del Detalle de un Bloque**
 
@@ -1781,7 +1785,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-40: Consulta de Horario por Profesional -->
+ <!-- US-40: Consulta de Horario por Profesional --> <!-- pdf-pagebreak -->
 
 **US-40: Consulta de Horario por Profesional**
 
@@ -1791,7 +1795,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-41: Consulta de Pacientes con Reserva en un Bloque -->
+ <!-- US-41: Consulta de Pacientes con Reserva en un Bloque --> <!-- pdf-pagebreak -->
 
 **US-41: Consulta de Pacientes con Reserva en un Bloque**
 
@@ -1801,7 +1805,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-42: Edición de un Bloque Horario -->
+ <!-- US-42: Edición de un Bloque Horario --> <!-- pdf-pagebreak -->
 
 **US-42: Edición de un Bloque Horario**
 
@@ -1811,7 +1815,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-43: Registro de Llegada por Escaneo de QR -->
+ <!-- US-43: Registro de Llegada por Escaneo de QR --> <!-- pdf-pagebreak -->
 
 **US-43: Registro de Llegada por Escaneo de QR**
 
@@ -1821,7 +1825,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-44: Registro de Llegada por Código Manual -->
+ <!-- US-44: Registro de Llegada por Código Manual --> <!-- pdf-pagebreak -->
 
 **US-44: Registro de Llegada por Código Manual**
 
@@ -1831,7 +1835,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-45: Consulta de la Cola de Atención Presencial -->
+ <!-- US-45: Consulta de la Cola de Atención Presencial --> <!-- pdf-pagebreak -->
 
 **US-45: Consulta de la Cola de Atención Presencial**
 
@@ -1841,7 +1845,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-46: Llamado del Siguiente Paciente -->
+ <!-- US-46: Llamado del Siguiente Paciente --> <!-- pdf-pagebreak -->
 
 **US-46: Llamado del Siguiente Paciente**
 
@@ -1851,7 +1855,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-47: Inicio de Atención de un Paciente Llamado -->
+ <!-- US-47: Inicio de Atención de un Paciente Llamado --> <!-- pdf-pagebreak -->
 
 **US-47: Inicio de Atención de un Paciente Llamado**
 
@@ -1861,7 +1865,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-48: Finalización de la Atención de un Paciente -->
+ <!-- US-48: Finalización de la Atención de un Paciente --> <!-- pdf-pagebreak -->
 
 **US-48: Finalización de la Atención de un Paciente**
 
@@ -1871,7 +1875,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-49: Registro de Ausencia de un Paciente -->
+ <!-- US-49: Registro de Ausencia de un Paciente --> <!-- pdf-pagebreak -->
 
 **US-49: Registro de Ausencia de un Paciente**
 
@@ -1881,7 +1885,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-50: Consulta de Citas Canceladas del Día -->
+ <!-- US-50: Consulta de Citas Canceladas del Día --> <!-- pdf-pagebreak -->
 
 **US-50: Consulta de Citas Canceladas del Día**
 
@@ -1891,7 +1895,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-51: Visualización de Indicadores del Día -->
+ <!-- US-51: Visualización de Indicadores del Día --> <!-- pdf-pagebreak -->
 
 **US-51: Visualización de Indicadores del Día**
 
@@ -1901,7 +1905,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-52: Visualización de Demanda por Especialidad -->
+ <!-- US-52: Visualización de Demanda por Especialidad --> <!-- pdf-pagebreak -->
 
 **US-52: Visualización de Demanda por Especialidad**
 
@@ -1911,7 +1915,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
- <!-- US-53: Exportación de Reporte Operativo -->
+ <!-- US-53: Exportación de Reporte Operativo --> <!-- pdf-pagebreak -->
 
 **US-53: Exportación de Reporte Operativo**
 
@@ -1921,7 +1925,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 #### Technical stories
-<!-- TECH-01: Servicio de Notificaciones Transaccionales -->
+<!-- TECH-01: Servicio de Notificaciones Transaccionales --> <!-- pdf-pagebreak -->
 
 **TECH-01: Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM)**
 
@@ -1976,7 +1980,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 <br>
 
-<!-- TECH-02: Endpoints API REST y OpenAPI -->
+<!-- TECH-02: Endpoints API REST y OpenAPI --> <!-- pdf-pagebreak -->
 
 **TECH-02: Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC**
 
@@ -2035,7 +2039,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 <br>
 
-<!-- TECH-03: Cron Jobs para Control de Tolerancia -->
+<!-- TECH-03: Cron Jobs para Control de Tolerancia --> <!-- pdf-pagebreak -->
 
 **TECH-03: Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias**
 
@@ -2094,7 +2098,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 <br>
 
-<!-- TECH-04: Consumidor Asíncrono de Notificaciones -->
+<!-- TECH-04: Consumidor Asíncrono de Notificaciones --> <!-- pdf-pagebreak -->
 
 **TECH-04: Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas**
 
@@ -2149,7 +2153,7 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 <br>
 
-<!-- TECH-05: Endpoint de Integración API DNI -->
+<!-- TECH-05: Endpoint de Integración API DNI --> <!-- pdf-pagebreak -->
 
 **TECH-05: Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa**
 
