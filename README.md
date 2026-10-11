@@ -596,15 +596,9 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
 <a id="figura-6"></a>
 <p><strong>Figura 6</strong></p>
 <p><em>Identidad visual de SaludYa</em></p>
+<p align="center"><img src="https://i.imgur.com/7aTgCkT.jpeg" alt="Identidad visual de SaludYa" width="500" style="max-width:100%;max-height:120mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
-
-    src="https://i.imgur.com/7aTgCkT.jpeg"
-    alt="Identidad visual de SaludYa"
-    width="500"
-  />
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 ### 1.2.1. Antecedentes y problemática
 
@@ -724,15 +718,9 @@ Este análisis estructurado facilita la comprensión integral del problema y ori
 <a id="figura-7"></a>
 <p><strong>Figura 7</strong></p>
 <p><em>Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas</em></p>
+<p align="center"><img src="https://i.imgur.com/V84h3fK.jpeg" alt="Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas" width="700" style="max-width:100%;max-height:120mm;height:auto;"/></p>
+<p><em>Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.</em></p>
 </div>
-
-    src="https://i.imgur.com/V84h3fK.jpeg"
-    alt="Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas"
-    width="700"
-  />
-</p>
-
-*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 El diagrama identifica **seis categorías principales de causas** que contribuyen al problema, como se observa en la [Figura 7](#figura-7):
 
