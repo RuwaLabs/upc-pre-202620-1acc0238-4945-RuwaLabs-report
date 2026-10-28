@@ -28,14 +28,7 @@
 
 <p align="center" style="text-align:center"><strong>Integrantes</strong></p>
 
-<table align="center" style="margin-left:auto;margin-right:auto">
-  <tr><th>Código</th><th>Apellidos y nombres</th></tr>
-  <tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr>
-  <tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr>
-  <tr><td>u20241d934</td><td>Montoya Nina, Paula Fernanda</td></tr>
-  <tr><td>u20241e418</td><td>Ramos Mera, Neo Daniel</td></tr>
-  <tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr>
-</table>
+<table style="margin-left:auto;margin-right:auto" align="center"><colgroup><col style="width: 15.8%;"><col style="width: 84.2%;"></colgroup><tbody><tr><th>Código</th><th>Apellidos y nombres</th></tr><tr><td>u202318309</td><td>Aguilar Untiveros, Rodrigo Fabrizio</td></tr><tr><td>u202319950</td><td>Meza Solórzano, Didier Sebastian</td></tr><tr><td>u20241d934</td><td>Montoya Nina, Paula Fernanda</td></tr><tr><td>u20241e418</td><td>Ramos Mera, Neo Daniel</td></tr><tr><td>u202624323</td><td>Torres Juárez, Alisee Muriel</td></tr></tbody></table>
 
 <p align="center" style="text-align:center"><strong>Período 202620</strong></p>
 <p align="center" style="text-align:center"><strong>Septiembre 2026</strong></p>
@@ -43,6 +36,17 @@
 
 ---
 <!-- pdf-pagebreak -->
+Esto es una prueba
+![monokuma danganronpa v3](assets/monokuma-danganronpa-v3.jpg)
+
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2233%2033%2033%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
+| Columna 1 | Columna 2 | Columna 3 |
+|:---|:---|:---|
+| prueba 33% todos |  |  |
+
+<!-- pdf-pagebreak -->
+
 # Registro de Versiones del Informe
 
 
@@ -96,17 +100,24 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 1 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg" width="75%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
 <a id="figura-2"></a>
 
+<!-- pdf-pagebreak -->
+
+
 **Figura 2**
 
 *Colaboración en GitHub: evidencia 2 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg" width="75%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -116,7 +127,9 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 3 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg" width="75%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -132,7 +145,9 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 *Resumen de actividad del repositorio del informe (TB1)*
 
-<img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="100%"/>
+<div align="left">
+<img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="75%"/>
+</div>
 
 *Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).*
 
@@ -142,7 +157,9 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 *Contribuciones por integrante (TB1)*
 
-<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="100%"/>
+<div align="left">
+<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="50%"/>
+</div>
 
 *Nota. Captura del panel Contributors del repositorio del informe en GitHub.*
 
