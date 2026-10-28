@@ -37,13 +37,15 @@
 ---
 <!-- pdf-pagebreak -->
 Esto es una prueba
-![monokuma danganronpa v3](assets/monokuma-danganronpa-v3.jpg)
+<div align="left">
+<img alt="monokuma danganronpa v3" src="assets/monokuma-danganronpa-v3-2.jpg" width="25%">
+</div>
 
-<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2233%2033%2033%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2212%2055%2033%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
 
 | Columna 1 | Columna 2 | Columna 3 |
-|:---|:---|:---|
-| prueba 33% todos |  |  |
+|:---|:---:|:---|
+| 12 | 55 | 33 |
 
 <!-- pdf-pagebreak -->
 

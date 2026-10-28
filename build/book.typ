@@ -92,36 +92,38 @@
 #metadata((src: "README.md", line: 38))
 #pagebreak()
 
-#metadata((src: "README.md", line: 39, kind: "figure", img: "assets/monokuma-danganronpa-v3.jpg"))
+#metadata((src: "README.md", line: 39))
 Esto es una prueba
-#fit-image("/assets/monokuma-danganronpa-v3.jpg", alt: "monokuma danganronpa v3", width: 100%)
 
-#metadata((src: "README.md", line: 44, kind: "table"))
+#metadata((src: "README.md", line: 40, kind: "figure", img: "assets/monokuma-danganronpa-v3-2.jpg"))
+#align(left)[#block(breakable: false)[#fit-image("/assets/monokuma-danganronpa-v3-2.jpg", alt: "monokuma danganronpa v3", width: 25%)]]
+
+#metadata((src: "README.md", line: 46, kind: "table"))
 #table(
-  columns: (33%, 33%, 33%),
-  align: (left, left, left),
-  table.header([Columna 1], [Columna 2], [Columna 3]),
+  columns: (12%, 55%, 33%),
+  align: (left, center, left),
+  table.header([Columna 1], table.cell(align: center)[Columna 2], [Columna 3]),
   tline,
-  [prueba 33% todos], [], [],
+  [12], table.cell(align: center)[55], [33],
   tline,
 )
 
-#metadata((src: "README.md", line: 48))
+#metadata((src: "README.md", line: 50))
 #pagebreak()
 
 #heading(level: 1)[Registro de Versiones del Informe] <sec:registro-de-versiones-del-informe>
-#metadata((src: "README.md", line: 50, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 52, kind: "heading", level: 1))
 
-#metadata((src: "README.md", line: 54))
+#metadata((src: "README.md", line: 56))
 El registro de versiones permite seguir las fechas, los responsables y las modificaciones realizadas durante la elaboración del informe, como se detalla en la #link("#tabla-1")[Tabla 1].
 
-#metadata((src: "README.md", line: 58))
+#metadata((src: "README.md", line: 60))
 #strong[Tabla 1]
 
-#metadata((src: "README.md", line: 60))
+#metadata((src: "README.md", line: 62))
 #emph[Historial de versiones del reporte]
 
-#metadata((src: "README.md", line: 62, kind: "table"))
+#metadata((src: "README.md", line: 64, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -147,109 +149,109 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
   tline,
 )
 
-#metadata((src: "README.md", line: 83))
+#metadata((src: "README.md", line: 85))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 86))
+#metadata((src: "README.md", line: 88))
 #pagebreak()
 
 #heading(level: 1)[Project Report Collaboration Insights] <sec:project-report-collaboration-insights>
-#metadata((src: "README.md", line: 87, kind: "heading", level: 1))
-
-#metadata((src: "README.md", line: 89))
-En esta sección se presenta la evidencia de la colaboración del equipo #strong[RuwaLabs] en la elaboración del #strong[Project Report] de SaludYa. Para cada entrega se describe cómo se desarrollaron las actividades del informe y se incluyen capturas de los analíticos de colaboración y de commits registrados en GitHub. Esta evidencia se amplía en cada entrega y mantiene coherencia con el Registro de Versiones del Informe.
+#metadata((src: "README.md", line: 89, kind: "heading", level: 1))
 
 #metadata((src: "README.md", line: 91))
+En esta sección se presenta la evidencia de la colaboración del equipo #strong[RuwaLabs] en la elaboración del #strong[Project Report] de SaludYa. Para cada entrega se describe cómo se desarrollaron las actividades del informe y se incluyen capturas de los analíticos de colaboración y de commits registrados en GitHub. Esta evidencia se amplía en cada entrega y mantiene coherencia con el Registro de Versiones del Informe.
+
+#metadata((src: "README.md", line: 93))
 URL del Repositorio del Project Report: #link("https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report")[upc-pre-202620-1acc0238-4945-RuwaLabs-report]
 
 #heading(level: 2)[Primera entrega (AV1)] <sec:primera-entrega-av1>
-#metadata((src: "README.md", line: 93, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 95, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 95))
+#metadata((src: "README.md", line: 97))
 En la primera entrega, el equipo elaboró la estructura base del informe, la carátula, el registro de versiones y el formato del Student Outcome, así como los capítulos I y II (Presentación y Requirements Development and Software Solution Design). La redacción se distribuyó entre los cinco integrantes y se evidencia en el historial de colaboración y de commits del repositorio del informe, como se observa en la #link("#figura-1")[Figura 1], la #link("#figura-2")[Figura 2] y la #link("#figura-3")[Figura 3].
 
-#metadata((src: "README.md", line: 99))
+#metadata((src: "README.md", line: 101))
 #strong[Figura 1]
 
-#metadata((src: "README.md", line: 101))
+#metadata((src: "README.md", line: 103))
 #emph[Colaboración en GitHub: evidencia 1 (AV1)]
 
-#metadata((src: "README.md", line: 103, kind: "figure", img: "assets/insight_av1_1.jpg"))
+#metadata((src: "README.md", line: 105, kind: "figure", img: "assets/insight_av1_1.jpg"))
 #align(left)[#block(breakable: false)[#fit-image("/assets/insight_av1_1.jpg", alt: "Colaboración en GitHub: evidencia 1", width: 75%)]]
 
-#metadata((src: "README.md", line: 107))
+#metadata((src: "README.md", line: 109))
 #emph[Nota. Captura del registro de colaboración del repositorio del informe en GitHub.]
 
-#metadata((src: "README.md", line: 111))
+#metadata((src: "README.md", line: 113))
 #pagebreak()
 
-#metadata((src: "README.md", line: 114))
+#metadata((src: "README.md", line: 116))
 #strong[Figura 2]
 
-#metadata((src: "README.md", line: 116))
+#metadata((src: "README.md", line: 118))
 #emph[Colaboración en GitHub: evidencia 2 (AV1)]
 
-#metadata((src: "README.md", line: 118, kind: "figure", img: "assets/insight_av1_2.jpg"))
+#metadata((src: "README.md", line: 120, kind: "figure", img: "assets/insight_av1_2.jpg"))
 #align(left)[#block(breakable: false)[#fit-image("/assets/insight_av1_2.jpg", alt: "Colaboración en GitHub: evidencia 2", width: 75%)]]
 
-#metadata((src: "README.md", line: 122))
+#metadata((src: "README.md", line: 124))
 #emph[Nota. Captura del registro de colaboración del repositorio del informe en GitHub.]
-
-#metadata((src: "README.md", line: 126))
-#strong[Figura 3]
 
 #metadata((src: "README.md", line: 128))
+#strong[Figura 3]
+
+#metadata((src: "README.md", line: 130))
 #emph[Colaboración en GitHub: evidencia 3 (AV1)]
 
-#metadata((src: "README.md", line: 130, kind: "figure", img: "assets/insight_av1_3.jpg"))
+#metadata((src: "README.md", line: 132, kind: "figure", img: "assets/insight_av1_3.jpg"))
 #align(left)[#block(breakable: false)[#fit-image("/assets/insight_av1_3.jpg", alt: "Colaboración en GitHub: evidencia 3", width: 75%)]]
 
-#metadata((src: "README.md", line: 134))
+#metadata((src: "README.md", line: 136))
 #emph[Nota. Captura del registro de colaboración del repositorio del informe en GitHub.]
 
-#metadata((src: "README.md", line: 136))
+#metadata((src: "README.md", line: 138))
 La actividad del equipo en GitHub queda registrada en la organización #link("https://github.com/RuwaLabs")[RuwaLabs].
 
 #heading(level: 2)[Segunda entrega (TB1)] <sec:segunda-entrega-tb1>
-#metadata((src: "README.md", line: 138, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 140, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 140))
+#metadata((src: "README.md", line: 142))
 En la segunda entrega, el equipo actualizó el informe incorporando el #strong[Capítulo III: Solution UI/UX Design] y el #strong[Capítulo IV: Product Implementation & Validation], junto con la documentación del #strong[Sprint 1] (Sprint Planning, Aspect Leaders and Collaborators, Sprint Backlog y las evidencias de desarrollo, pruebas, ejecución y documentación de servicios). Asimismo, se corrigieron y mejoraron artefactos presentados en la entrega anterior. La elaboración se distribuyó entre los cinco integrantes, como se evidencia en los analíticos del repositorio del informe, que registran la actividad del periodo #strong[Oct 3 – Oct 10, 2026] con #strong[11 pull requests] integrados y #strong[50 commits] en #raw("develop") realizados por 5 autores, como se observa en la #link("#figura-4")[Figura 4] y la #link("#figura-5")[Figura 5].
 
-#metadata((src: "README.md", line: 144))
+#metadata((src: "README.md", line: 146))
 #strong[Figura 4]
 
-#metadata((src: "README.md", line: 146))
+#metadata((src: "README.md", line: 148))
 #emph[Resumen de actividad del repositorio del informe (TB1)]
 
-#metadata((src: "README.md", line: 148, kind: "figure", img: "assets/insight_tb1_overview.png"))
+#metadata((src: "README.md", line: 150, kind: "figure", img: "assets/insight_tb1_overview.png"))
 #align(left)[#block(breakable: false)[#fit-image("/assets/insight_tb1_overview.png", alt: "Resumen de actividad del repositorio del informe de SaludYa", width: 75%)]]
 
-#metadata((src: "README.md", line: 152))
+#metadata((src: "README.md", line: 154))
 #emph[Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).]
 
-#metadata((src: "README.md", line: 156))
+#metadata((src: "README.md", line: 158))
 #strong[Figura 5]
 
-#metadata((src: "README.md", line: 158))
+#metadata((src: "README.md", line: 160))
 #emph[Contribuciones por integrante (TB1)]
 
-#metadata((src: "README.md", line: 160, kind: "figure", img: "assets/insight_tb1_contributors.png"))
+#metadata((src: "README.md", line: 162, kind: "figure", img: "assets/insight_tb1_contributors.png"))
 #align(left)[#block(breakable: false)[#fit-image("/assets/insight_tb1_contributors.png", alt: "Contribuciones por integrante del repositorio del informe de SaludYa", width: 50%)]]
 
-#metadata((src: "README.md", line: 164))
+#metadata((src: "README.md", line: 166))
 #emph[Nota. Captura del panel Contributors del repositorio del informe en GitHub.]
 
-#metadata((src: "README.md", line: 166))
+#metadata((src: "README.md", line: 168))
 La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la #link("#tabla-2")[Tabla 2].
 
-#metadata((src: "README.md", line: 170))
+#metadata((src: "README.md", line: 172))
 #strong[Tabla 2]
 
-#metadata((src: "README.md", line: 172))
+#metadata((src: "README.md", line: 174))
 #emph[Participación del equipo en la elaboración del informe (TB1)]
 
-#metadata((src: "README.md", line: 174, kind: "table"))
+#metadata((src: "README.md", line: 176, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -263,27 +265,27 @@ La participación de los integrantes del equipo en la elaboración del informe d
   tline,
 )
 
-#metadata((src: "README.md", line: 182))
+#metadata((src: "README.md", line: 184))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir del panel Contributors del repositorio del informe en GitHub.]
 
 #heading(level: 2)[Participación del equipo] <sec:participacion-del-equipo>
-#metadata((src: "README.md", line: 184, kind: "heading", level: 2))
-
-#metadata((src: "README.md", line: 186))
-Todos los integrantes de #strong[RuwaLabs] participaron en la elaboración del informe en cada entrega. La actividad registrada en GitHub es coherente con el #link("#registro-de-versiones-del-informe")[Registro de Versiones del Informe], donde se detallan los responsables y las modificaciones realizadas.
+#metadata((src: "README.md", line: 186, kind: "heading", level: 2))
 
 #metadata((src: "README.md", line: 188))
+Todos los integrantes de #strong[RuwaLabs] participaron en la elaboración del informe en cada entrega. La actividad registrada en GitHub es coherente con el #link("#registro-de-versiones-del-informe")[Registro de Versiones del Informe], donde se detallan los responsables y las modificaciones realizadas.
+
+#metadata((src: "README.md", line: 190))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 189))
+#metadata((src: "README.md", line: 191))
 #pagebreak()
 
 #heading(level: 1)[Contenido] <sec:contenido>
-#metadata((src: "README.md", line: 190, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 192, kind: "heading", level: 1))
 
-#metadata((src: "README.md", line: 192))
+#metadata((src: "README.md", line: 194))
 - #link("#registro-de-versiones-del-informe")[Registro de Versiones del Informe]
 - #link("#project-report-collaboration-insights")[Project Report Collaboration Insights]
 - #link("#contenido")[Contenido]
@@ -421,30 +423,30 @@ Todos los integrantes de #strong[RuwaLabs] participaron en la elaboración del i
 - #link("#bibliografía")[Bibliografía]
 - #link("#anexos")[Anexos]
 
-#metadata((src: "README.md", line: 329))
+#metadata((src: "README.md", line: 331))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 331))
+#metadata((src: "README.md", line: 333))
 #pagebreak()
 
 #heading(level: 1)[Student Outcome] <sec:student-outcome>
-#metadata((src: "README.md", line: 333, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 335, kind: "heading", level: 1))
 
-#metadata((src: "README.md", line: 335))
+#metadata((src: "README.md", line: 337))
 El curso contribuye al cumplimiento del Student Outcome ABET:
 #strong[ABET - EAC - Student Outcome 7]
 #strong[Criterio:] #emph[La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.]
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7, como se detalla en la #link("#tabla-3")[Tabla 3].
 
-#metadata((src: "README.md", line: 345))
+#metadata((src: "README.md", line: 347))
 #strong[Tabla 3]
 
-#metadata((src: "README.md", line: 347))
+#metadata((src: "README.md", line: 349))
 #emph[Acciones y conclusiones para el Student Outcome 7]
 
-#metadata((src: "README.md", line: 349, kind: "table"))
+#metadata((src: "README.md", line: 351, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -454,31 +456,31 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
   [#linebreak()         Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. #linebreak()], [#linebreak()         *Aguilar Untiveros, Rodrigo Fabrizio* #linebreak()          #linebreak()           *AV1:* Reconocí la necesidad de investigar de forma autónoma técnicas de modelado estratégico y táctico que no había aplicado antes, como EventStorming y Domain-Driven Design, para sustentar con criterios arquitectónicos sólidos el diseño de SaludYa. La correcta delimitación de los bounded contexts y la identificación de las dos colas del dominio me exigieron un análisis profundo para alinear el lenguaje ubicuo con la arquitectura del sistema. #linebreak()           *AV2:* Reconocí la importancia de investigar sobre diseño inclusivo, accesibilidad y arquitectura de la información para sustentar la propuesta visual del producto, así como de conocer las prácticas de despliegue y publicación de la solución. #linebreak()          #linebreak()         *Meza Solórzano, Didier Sebastian* #linebreak()  #linebreak()   *AV1:* Reconocí la necesidad de seguir aprendiendo de forma autónoma metodologías que no había aplicado antes, como Lean UX y el diseño de entrevistas cualitativas, para poder sustentar con información real el desarrollo de SaludYa. #linebreak()   *AV2:* Reconocí la necesidad de aprender sobre patrones de diseño de interfaces y de pruebas de software para sustentar los mock-ups y las evidencias de testing del sprint con criterios de calidad. #linebreak()  #linebreak()         *Montoya Nina, Paula Fernanda* #linebreak()          #linebreak()           *AV1:* Comprendí que diseñar soluciones de software requiere una constante actualización en metodologías como DDD. Buscar y estudiar información sobre patrones de integración y persistencia por mi cuenta me permitió resolver problemas técnicos complejos al definir las capas de infraestructura y dominio de SaludYa. #linebreak()  #linebreak()           *AV2:* Reconocí el valor de la planificación y priorización ágil para organizar el trabajo del equipo y de representar los flujos de usuario para sustentar el diseño del producto. #linebreak()          #linebreak()         *Ramos Mera, Neo Daniel* #linebreak()          #linebreak()           *AV1:* Reconocí la importancia de investigar de manera autónoma sobre arquitectura hexagonal y patrones de diseño. Entendí que este aprendizaje continuo es indispensable para definir correctamente entidades, agregados y repositorios, garantizando que el diseño del software sea escalable y mantenible en el entorno profesional. #linebreak()           *AV2:* Reconocí la importancia de aprender sobre documentación de API y de analizar la colaboración del equipo en GitHub para evidenciar el avance del sprint. #linebreak()          #linebreak()         *Torres Juárez, Alisee Muriel* #linebreak()          #linebreak()           *AV1:* Reconocí la importancia de poner en práctica herramientas y metodologías que no había aplicado antes —como el EventStorming, los diagramas de usuario y la estructuración de User Stories para sustentar y modelar con precisión el desarrollo de SaludYa. La correcta definición de las User Stories técnicas, me exigió un análisis mucho más profundo para alinear los eventos del sistema con la arquitectura tecnológica #linebreak()           *AV2:* Reconocí la importancia de documentar el entorno de desarrollo y aplicar buenas prácticas de control de versiones, así como del prototipado para validar la experiencia antes del desarrollo. #linebreak()          #linebreak()], [#linebreak()         *AV1:* #linebreak()  El equipo reconoció que el aprendizaje autónomo es un pilar fundamental en el desarrollo del proyecto. La exigencia de investigar y dominar nuevas herramientas tecnológicas, técnicas de entrevistas y patrones arquitectónicos nos demostró que la actualización constante es la única vía para proponer soluciones de software de calidad. #linebreak()         *AV2:* #linebreak()  #linebreak()         El equipo reconoció que el aprendizaje permanente también se reflejó en esta entrega, al investigar de forma autónoma sobre diseño de interfaces, documentación de API, entornos de despliegue y análisis de colaboración, competencias necesarias para documentar y sustentar el trabajo del sprint. #linebreak()],
 )
 
-#metadata((src: "README.md", line: 438))
+#metadata((src: "README.md", line: 440))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 442))
+#metadata((src: "README.md", line: 444))
 #pagebreak()
 
 #heading(level: 1)[Objetivos SMART] <sec:objetivos-smart>
-#metadata((src: "README.md", line: 444, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 446, kind: "heading", level: 1))
 
-#metadata((src: "README.md", line: 446))
+#metadata((src: "README.md", line: 448))
 En esta sección, cada integrante del equipo formula un plan de desarrollo profesional posterior a su graduación, compuesto por al menos dos objetivos #strong[SMART]. Cada objetivo es #strong[específico] (s), #strong[medible] (m), #strong[alcanzable] (a), #strong[relevante] (r) y cuenta con un #strong[plazo] definido (t), con el fin de evidenciar de manera clara y cuantificable cómo cada miembro planea mantener un crecimiento profesional continuo una vez finalizada su carrera.
 
 #heading(level: 2)[Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio] <sec:objetivos-smart-aguilar-untiveros-rodrigo-fabrizio>
-#metadata((src: "README.md", line: 448, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 450, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 450))
+#metadata((src: "README.md", line: 452))
 #strong[Plan de desarrollo profesional:] Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica, como se detalla en la #link("#tabla-4")[Tabla 4].
 
-#metadata((src: "README.md", line: 458))
+#metadata((src: "README.md", line: 460))
 #strong[Tabla 4]
 
-#metadata((src: "README.md", line: 460))
+#metadata((src: "README.md", line: 462))
 #emph[Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio]
 
-#metadata((src: "README.md", line: 462, kind: "table"))
+#metadata((src: "README.md", line: 464, kind: "table"))
 #table(
   columns: 3,
   align: (center, left, left),
@@ -489,22 +491,22 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
   tline,
 )
 
-#metadata((src: "README.md", line: 468))
+#metadata((src: "README.md", line: 470))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 2)[Objetivos SMART – Meza Solórzano, Didier Sebastian] <sec:objetivos-smart-meza-solorzano-didier-sebastian>
-#metadata((src: "README.md", line: 471, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 473, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 473))
+#metadata((src: "README.md", line: 475))
 #strong[Plan de desarrollo profesional:] Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil, como se detalla en la #link("#tabla-5")[Tabla 5].
 
-#metadata((src: "README.md", line: 481))
+#metadata((src: "README.md", line: 483))
 #strong[Tabla 5]
 
-#metadata((src: "README.md", line: 483))
+#metadata((src: "README.md", line: 485))
 #emph[Objetivos SMART – Meza Solórzano, Didier Sebastian]
 
-#metadata((src: "README.md", line: 485, kind: "table"))
+#metadata((src: "README.md", line: 487, kind: "table"))
 #table(
   columns: 3,
   align: (center, left, left),
@@ -515,25 +517,25 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
   tline,
 )
 
-#metadata((src: "README.md", line: 491))
+#metadata((src: "README.md", line: 493))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 493))
+#metadata((src: "README.md", line: 495))
 #pagebreak()
 
 #heading(level: 2)[Objetivos SMART – Montoya Nina, Paula Fernanda] <sec:objetivos-smart-montoya-nina-paula-fernanda>
-#metadata((src: "README.md", line: 494, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 496, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 496))
+#metadata((src: "README.md", line: 498))
 #strong[Plan de desarrollo profesional:] Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización, como se detalla en la #link("#tabla-6")[Tabla 6].
 
-#metadata((src: "README.md", line: 502))
+#metadata((src: "README.md", line: 504))
 #strong[Tabla 6]
 
-#metadata((src: "README.md", line: 504))
+#metadata((src: "README.md", line: 506))
 #emph[Objetivos SMART – Montoya Nina, Paula Fernanda]
 
-#metadata((src: "README.md", line: 506, kind: "table"))
+#metadata((src: "README.md", line: 508, kind: "table"))
 #table(
   columns: 3,
   align: (center, left, left),
@@ -544,22 +546,22 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
   tline,
 )
 
-#metadata((src: "README.md", line: 512))
+#metadata((src: "README.md", line: 514))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 2)[Objetivos SMART – Ramos Mera, Neo Daniel] <sec:objetivos-smart-ramos-mera-neo-daniel>
-#metadata((src: "README.md", line: 515, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 517, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 517))
+#metadata((src: "README.md", line: 519))
 #strong[Plan de desarrollo profesional:] Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada, como se detalla en la #link("#tabla-7")[Tabla 7].
 
-#metadata((src: "README.md", line: 525))
+#metadata((src: "README.md", line: 527))
 #strong[Tabla 7]
 
-#metadata((src: "README.md", line: 527))
+#metadata((src: "README.md", line: 529))
 #emph[Objetivos SMART – Ramos Mera, Neo Daniel]
 
-#metadata((src: "README.md", line: 529, kind: "table"))
+#metadata((src: "README.md", line: 531, kind: "table"))
 #table(
   columns: 3,
   align: (center, left, left),
@@ -570,22 +572,22 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
   tline,
 )
 
-#metadata((src: "README.md", line: 535))
+#metadata((src: "README.md", line: 537))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 2)[Objetivos SMART – Torres Juárez, Alisee Muriel] <sec:objetivos-smart-torres-juarez-alisee-muriel>
-#metadata((src: "README.md", line: 538, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 540, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 540))
+#metadata((src: "README.md", line: 542))
 #strong[Plan de desarrollo profesional:] Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización, como se detalla en la #link("#tabla-8")[Tabla 8].
 
-#metadata((src: "README.md", line: 548))
+#metadata((src: "README.md", line: 550))
 #strong[Tabla 8]
 
-#metadata((src: "README.md", line: 550))
+#metadata((src: "README.md", line: 552))
 #emph[Objetivos SMART – Torres Juárez, Alisee Muriel]
 
-#metadata((src: "README.md", line: 552, kind: "table"))
+#metadata((src: "README.md", line: 554, kind: "table"))
 #table(
   columns: 3,
   align: (center, left, left),
@@ -596,43 +598,43 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
   tline,
 )
 
-#metadata((src: "README.md", line: 558))
+#metadata((src: "README.md", line: 560))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 561))
+#metadata((src: "README.md", line: 563))
 #pagebreak()
 
 #heading(level: 1)[Capítulo 1: Presentación] <sec:capitulo-1-presentacion>
-#metadata((src: "README.md", line: 563, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 565, kind: "heading", level: 1))
 
 #heading(level: 2)[1.1. Startup Profile] <sec:1-1-startup-profile>
-#metadata((src: "README.md", line: 565, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 567, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 567))
+#metadata((src: "README.md", line: 569))
 En esta sección, se presenta una descripción general de RuwaLabs, startup orientada al desarrollo de soluciones digitales que buscan atender problemáticas reales mediante el uso de la tecnología, considerando las necesidades de los usuarios y las características del contexto en el que se desenvuelven.
 
 #heading(level: 3)[1.1.1. Descripción de la Startup] <sec:1-1-1-descripcion-de-la-startup>
-#metadata((src: "README.md", line: 569, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 571))
-En el contexto actual, donde el acceso oportuno a los servicios de salud representa un desafío para diversos sectores de la población, especialmente en establecimientos públicos de salud con una alta demanda de pacientes, RuwaLabs propone desarrollar soluciones tecnológicas orientadas a mejorar la experiencia de atención y optimizar los procesos relacionados con la gestión de citas médicas.
+#metadata((src: "README.md", line: 571, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 573))
-RuwaLabs es una startup comprometida con el desarrollo de soluciones digitales innovadoras, enfocadas en facilitar el acceso a servicios y mejorar procesos mediante el uso de tecnologías móviles. Como parte de esta iniciativa, se desarrolla #strong[SaludYa], una solución compuesta por aplicaciones móviles dirigidas tanto a pacientes como al personal asistencial y administrativo de establecimientos públicos de salud.
+En el contexto actual, donde el acceso oportuno a los servicios de salud representa un desafío para diversos sectores de la población, especialmente en establecimientos públicos de salud con una alta demanda de pacientes, RuwaLabs propone desarrollar soluciones tecnológicas orientadas a mejorar la experiencia de atención y optimizar los procesos relacionados con la gestión de citas médicas.
 
 #metadata((src: "README.md", line: 575))
-SaludYa busca reducir las dificultades asociadas a la gestión tradicional de citas médicas, como las largas colas presenciales, la alta demanda de cupos y la falta de información sobre la disponibilidad de atención. Para ello, la solución contempla funcionalidades como la reserva digital de citas, lista de espera dinámica, recordatorios de atención, gestión de citas de familiares y check-in mediante código QR.
+RuwaLabs es una startup comprometida con el desarrollo de soluciones digitales innovadoras, enfocadas en facilitar el acceso a servicios y mejorar procesos mediante el uso de tecnologías móviles. Como parte de esta iniciativa, se desarrolla #strong[SaludYa], una solución compuesta por aplicaciones móviles dirigidas tanto a pacientes como al personal asistencial y administrativo de establecimientos públicos de salud.
 
 #metadata((src: "README.md", line: 577))
+SaludYa busca reducir las dificultades asociadas a la gestión tradicional de citas médicas, como las largas colas presenciales, la alta demanda de cupos y la falta de información sobre la disponibilidad de atención. Para ello, la solución contempla funcionalidades como la reserva digital de citas, lista de espera dinámica, recordatorios de atención, gestión de citas de familiares y check-in mediante código QR.
+
+#metadata((src: "README.md", line: 579))
 Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles, como se detalla en la #link("#tabla-9")[Tabla 9].
 
-#metadata((src: "README.md", line: 585))
+#metadata((src: "README.md", line: 587))
 #strong[Tabla 9]
 
-#metadata((src: "README.md", line: 587))
+#metadata((src: "README.md", line: 589))
 #emph[Misión, visión y valores de RuwaLabs]
 
-#metadata((src: "README.md", line: 589, kind: "table"))
+#metadata((src: "README.md", line: 591, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -641,25 +643,25 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
   [Desarrollar soluciones tecnológicas accesibles e innovadoras que permitan mejorar la experiencia de los usuarios y optimizar procesos relacionados con servicios de atención, utilizando la tecnología como herramienta para resolver necesidades reales.], [Ser una startup reconocida por desarrollar soluciones digitales innovadoras que contribuyan a mejorar el acceso a servicios esenciales y la eficiencia de los procesos mediante el uso de tecnologías móviles.], [Innovación, accesibilidad, compromiso, responsabilidad y orientación al usuario.],
 )
 
-#metadata((src: "README.md", line: 602))
+#metadata((src: "README.md", line: 604))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 606))
+#metadata((src: "README.md", line: 608))
 #pagebreak()
 
 #heading(level: 3)[1.1.2. Perfiles de los integrantes del equipo] <sec:1-1-2-perfiles-de-los-integrantes-del-equipo>
-#metadata((src: "README.md", line: 607, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 609, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 609))
+#metadata((src: "README.md", line: 611))
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de #strong[SaludYa], como se detalla en la #link("#tabla-10")[Tabla 10].
 
-#metadata((src: "README.md", line: 617))
+#metadata((src: "README.md", line: 619))
 #strong[Tabla 10]
 
-#metadata((src: "README.md", line: 619))
+#metadata((src: "README.md", line: 621))
 #emph[Perfiles de los integrantes del equipo]
 
-#metadata((src: "README.md", line: 621, kind: "table"))
+#metadata((src: "README.md", line: 623, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -672,133 +674,133 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
   [#box(width: 100%)[#fit-image("/chapter-01/assets/foto_alisee.jpg", alt: "Foto de Alisee", width: 100%, fit: "contain")]], [Torres Juárez, Alisee Muriel], [U202624323], [Ingeniería de Software], [Soy estudiante de Ingeniería de Software interesada en la creación de soluciones tecnológicas que simplifiquen y agilicen procesos. Destaco por mi resiliencia, perseverancia y alta capacidad de adaptabilidad ante nuevos desafíos.],
 )
 
-#metadata((src: "README.md", line: 665))
+#metadata((src: "README.md", line: 667))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 670))
+#metadata((src: "README.md", line: 672))
 #pagebreak()
 
 #heading(level: 2)[1.2. Solution Profile] <sec:1-2-solution-profile>
-#metadata((src: "README.md", line: 672, kind: "heading", level: 2))
-
-#metadata((src: "README.md", line: 674))
-En esta sección se describe el perfil de la solución propuesta por RuwaLabs, incluyendo los antecedentes y la problemática que aborda. Asimismo, se utiliza la técnica de las #strong[5W's y 2H's] para comprender mejor el contexto, las necesidades de los usuarios y las condiciones en las que se presenta el problema.
+#metadata((src: "README.md", line: 674, kind: "heading", level: 2))
 
 #metadata((src: "README.md", line: 676))
-La aplicación lleva por nombre #strong["SaludYa"]. El propósito de la aplicación se centra en la gestión eficiente de citas médicas en establecimientos públicos de salud, permitiendo a los pacientes acceder de forma oportuna a la reserva, seguimiento y #emph[check-in] de sus atenciones. Al mismo tiempo, brinda al personal asistencial y administrativo herramientas para gestionar citas, pacientes y el flujo de atención.
+En esta sección se describe el perfil de la solución propuesta por RuwaLabs, incluyendo los antecedentes y la problemática que aborda. Asimismo, se utiliza la técnica de las #strong[5W's y 2H's] para comprender mejor el contexto, las necesidades de los usuarios y las condiciones en las que se presenta el problema.
 
 #metadata((src: "README.md", line: 678))
+La aplicación lleva por nombre #strong["SaludYa"]. El propósito de la aplicación se centra en la gestión eficiente de citas médicas en establecimientos públicos de salud, permitiendo a los pacientes acceder de forma oportuna a la reserva, seguimiento y #emph[check-in] de sus atenciones. Al mismo tiempo, brinda al personal asistencial y administrativo herramientas para gestionar citas, pacientes y el flujo de atención.
+
+#metadata((src: "README.md", line: 680))
 Finalmente, #strong["SaludYa"] busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud, como se observa en la #link("#figura-6")[Figura 6].
 
-#metadata((src: "README.md", line: 686))
+#metadata((src: "README.md", line: 688))
 #strong[Figura 6]
 
-#metadata((src: "README.md", line: 688))
+#metadata((src: "README.md", line: 690))
 #emph[Identidad visual de SaludYa]
 
-#metadata((src: "README.md", line: 690, kind: "figure", img: "https://i.imgur.com/7aTgCkT.jpeg"))
+#metadata((src: "README.md", line: 692, kind: "figure", img: "https://i.imgur.com/7aTgCkT.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-80fc80f1cd7c8b9c.jpeg", alt: "Identidad visual de SaludYa", width: 375pt)]]]
 
-#metadata((src: "README.md", line: 698))
+#metadata((src: "README.md", line: 700))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 3)[1.2.1. Antecedentes y problemática] <sec:1-2-1-antecedentes-y-problematica>
-#metadata((src: "README.md", line: 702, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 704, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 704))
+#metadata((src: "README.md", line: 706))
 En esta sección se presentan los antecedentes y la problemática que la solución propuesta busca abordar. Para ello, se utiliza la técnica de las #strong[5W's y 2H's] para realizar un análisis detallado del problema y el #strong[diagrama de Ishikawa] para identificar sus principales causas raíz.
 
 #heading(level: 4)[Antecedentes] <sec:antecedentes>
-#metadata((src: "README.md", line: 706, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 708))
-En los establecimientos públicos de salud existe una alta demanda de atención médica, lo que puede generar dificultades para acceder oportunamente a una cita. Los pacientes pueden encontrarse con procesos presenciales, disponibilidad limitada de cupos, tiempos de espera elevados y poca información sobre las citas disponibles. Estas dificultades pueden afectar especialmente a las personas que deben trasladarse desde zonas urbanas periféricas hacia establecimientos públicos de salud.
+#metadata((src: "README.md", line: 708, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 710))
-Actualmente, el acceso a una cita médica en establecimientos del #strong[Ministerio de Salud (MINSA)] puede realizarse mediante diferentes canales, como la atención presencial, vía telefónica y determinados servicios digitales. La existencia de estos canales representa un avance en la digitalización del proceso; sin embargo, todavía existen oportunidades para integrar la gestión de citas, la disponibilidad de cupos, las cancelaciones, las listas de espera y el seguimiento de la atención en una experiencia única para el paciente y el personal del establecimiento.
+En los establecimientos públicos de salud existe una alta demanda de atención médica, lo que puede generar dificultades para acceder oportunamente a una cita. Los pacientes pueden encontrarse con procesos presenciales, disponibilidad limitada de cupos, tiempos de espera elevados y poca información sobre las citas disponibles. Estas dificultades pueden afectar especialmente a las personas que deben trasladarse desde zonas urbanas periféricas hacia establecimientos públicos de salud.
 
 #metadata((src: "README.md", line: 712))
-El MINSA ha implementado iniciativas orientadas a reducir los tiempos de espera y facilitar la gestión de citas. Por ejemplo, en 2017 se implementó el sistema #strong["Web Colas"] en el Hospital de Emergencias Villa El Salvador, permitiendo consultar información relacionada con los tiempos de atención y la cantidad de pacientes en espera (MINSA, 2017). Esta iniciativa evidencia la necesidad de utilizar herramientas digitales para mejorar la organización de la atención y disminuir las dificultades asociadas a las colas presenciales.
+Actualmente, el acceso a una cita médica en establecimientos del #strong[Ministerio de Salud (MINSA)] puede realizarse mediante diferentes canales, como la atención presencial, vía telefónica y determinados servicios digitales. La existencia de estos canales representa un avance en la digitalización del proceso; sin embargo, todavía existen oportunidades para integrar la gestión de citas, la disponibilidad de cupos, las cancelaciones, las listas de espera y el seguimiento de la atención en una experiencia única para el paciente y el personal del establecimiento.
 
 #metadata((src: "README.md", line: 714))
-Asimismo, en 2023 el MINSA informó sobre diferentes acciones destinadas a reducir los tiempos de espera en establecimientos de salud de Lima Metropolitana, entre ellas sistemas de gestión de citas, listas de espera y atención mediante plataformas web (MINSA, 2023).
+El MINSA ha implementado iniciativas orientadas a reducir los tiempos de espera y facilitar la gestión de citas. Por ejemplo, en 2017 se implementó el sistema #strong["Web Colas"] en el Hospital de Emergencias Villa El Salvador, permitiendo consultar información relacionada con los tiempos de atención y la cantidad de pacientes en espera (MINSA, 2017). Esta iniciativa evidencia la necesidad de utilizar herramientas digitales para mejorar la organización de la atención y disminuir las dificultades asociadas a las colas presenciales.
 
 #metadata((src: "README.md", line: 716))
-En 2024, el MINSA también informó sobre el fortalecimiento del sistema de #strong["Citas en Línea"], mediante el cual se generaron citas digitales en establecimientos de primer nivel de atención (MINSA, 2024). Este tipo de iniciativas demuestra que existe una tendencia hacia la digitalización del acceso a los servicios de salud.
+Asimismo, en 2023 el MINSA informó sobre diferentes acciones destinadas a reducir los tiempos de espera en establecimientos de salud de Lima Metropolitana, entre ellas sistemas de gestión de citas, listas de espera y atención mediante plataformas web (MINSA, 2023).
 
 #metadata((src: "README.md", line: 718))
-Por otro lado, durante el primer semestre de 2025, el Hospital San Juan de Lurigancho registró más de #strong[93 000 pacientes] que accedieron a sus citas mediante canales telefónicos (MINSA, 2025), evidenciando la demanda por mecanismos alternativos que faciliten el acceso a la atención médica.
+En 2024, el MINSA también informó sobre el fortalecimiento del sistema de #strong["Citas en Línea"], mediante el cual se generaron citas digitales en establecimientos de primer nivel de atención (MINSA, 2024). Este tipo de iniciativas demuestra que existe una tendencia hacia la digitalización del acceso a los servicios de salud.
 
 #metadata((src: "README.md", line: 720))
-A nivel internacional, la #strong[Organización Mundial de la Salud (OMS)] reconoce el potencial de la salud digital para fortalecer los sistemas sanitarios, mejorar su eficiencia y contribuir a un acceso más equitativo a servicios de salud de calidad.
+Por otro lado, durante el primer semestre de 2025, el Hospital San Juan de Lurigancho registró más de #strong[93 000 pacientes] que accedieron a sus citas mediante canales telefónicos (MINSA, 2025), evidenciando la demanda por mecanismos alternativos que faciliten el acceso a la atención médica.
 
 #metadata((src: "README.md", line: 722))
+A nivel internacional, la #strong[Organización Mundial de la Salud (OMS)] reconoce el potencial de la salud digital para fortalecer los sistemas sanitarios, mejorar su eficiencia y contribuir a un acceso más equitativo a servicios de salud de calidad.
+
+#metadata((src: "README.md", line: 724))
 Frente a esta problemática, surge #strong["SaludYa"], una solución tecnológica compuesta por dos aplicaciones móviles: una orientada a pacientes y otra dirigida al personal asistencial y administrativo. La solución está diseñada para reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención en establecimientos públicos de salud.
 
 #heading(level: 4)[Técnica de las 5W's y 2H's] <sec:tecnica-de-las-5w-s-y-2h-s>
-#metadata((src: "README.md", line: 724, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 726, kind: "heading", level: 4))
 
 #heading(level: 5)[What?] <sec:what>
-#metadata((src: "README.md", line: 726, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 728))
-#strong[¿Cuál es el problema?]
+#metadata((src: "README.md", line: 728, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 730))
-Existe dificultad para acceder de manera oportuna y eficiente a citas médicas en establecimientos públicos de salud debido a la disponibilidad limitada de cupos, los procesos presenciales y la falta de información actualizada sobre las citas disponibles.
+#strong[¿Cuál es el problema?]
 
 #metadata((src: "README.md", line: 732))
-#strong[¿Cuál es la relación con la persona en cuestión?]
+Existe dificultad para acceder de manera oportuna y eficiente a citas médicas en establecimientos públicos de salud debido a la disponibilidad limitada de cupos, los procesos presenciales y la falta de información actualizada sobre las citas disponibles.
 
 #metadata((src: "README.md", line: 734))
+#strong[¿Cuál es la relación con la persona en cuestión?]
+
+#metadata((src: "README.md", line: 736))
 Los pacientes, especialmente aquellos que residen en zonas urbanas periféricas, enfrentan directamente esta situación al buscar una atención oportuna. Por otro lado, el personal asistencial y administrativo es responsable de gestionar las citas y el flujo de atención del establecimiento.
 
 #heading(level: 5)[When?] <sec:when>
-#metadata((src: "README.md", line: 736, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 738))
-#strong[¿Cuándo sucede el problema?]
+#metadata((src: "README.md", line: 738, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 740))
-La problemática se presenta principalmente durante la búsqueda y programación de una cita, especialmente en periodos de alta demanda o cuando existe una cantidad limitada de cupos. También puede presentarse el día de la atención debido a la congestión y los tiempos de espera.
+#strong[¿Cuándo sucede el problema?]
 
 #metadata((src: "README.md", line: 742))
-#strong[¿Cuándo utiliza el cliente el producto?]
+La problemática se presenta principalmente durante la búsqueda y programación de una cita, especialmente en periodos de alta demanda o cuando existe una cantidad limitada de cupos. También puede presentarse el día de la atención debido a la congestión y los tiempos de espera.
 
 #metadata((src: "README.md", line: 744))
+#strong[¿Cuándo utiliza el cliente el producto?]
+
+#metadata((src: "README.md", line: 746))
 Los usuarios utilizan #strong[SaludYa] como parte de su proceso habitual de búsqueda de disponibilidad, reserva de citas, seguimiento de su atención y #emph[check-in] al llegar al establecimiento de salud.
 
 #heading(level: 5)[Where?] <sec:where>
-#metadata((src: "README.md", line: 746, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 748))
-#strong[¿Dónde está el cliente cuando usa el producto?]
+#metadata((src: "README.md", line: 748, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 750))
-Los pacientes pueden acceder a la aplicación desde sus hogares, centros de trabajo o estudio, e incluso durante su desplazamiento hacia el establecimiento de salud. Por su parte, el personal asistencial y administrativo utiliza la solución dentro de los establecimientos públicos de salud.
+#strong[¿Dónde está el cliente cuando usa el producto?]
 
 #metadata((src: "README.md", line: 752))
-#strong[¿A dónde se dirige?]
+Los pacientes pueden acceder a la aplicación desde sus hogares, centros de trabajo o estudio, e incluso durante su desplazamiento hacia el establecimiento de salud. Por su parte, el personal asistencial y administrativo utiliza la solución dentro de los establecimientos públicos de salud.
 
 #metadata((src: "README.md", line: 754))
-La problemática afecta principalmente a pacientes que utilizan establecimientos públicos de salud, en especial a quienes residen en zonas urbanas periféricas y buscan un acceso más oportuno a la atención médica.
+#strong[¿A dónde se dirige?]
 
 #metadata((src: "README.md", line: 756))
-#strong[¿Dónde surge el problema?]
+La problemática afecta principalmente a pacientes que utilizan establecimientos públicos de salud, en especial a quienes residen en zonas urbanas periféricas y buscan un acceso más oportuno a la atención médica.
 
 #metadata((src: "README.md", line: 758))
+#strong[¿Dónde surge el problema?]
+
+#metadata((src: "README.md", line: 760))
 El problema surge en establecimientos públicos de salud que aún dependen parcialmente de procesos presenciales o telefónicos, especialmente en las áreas relacionadas con admisión, gestión de citas y atención de pacientes.
 
 #heading(level: 5)[Who?] <sec:who>
-#metadata((src: "README.md", line: 760, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 762))
-#strong[¿Quiénes están involucrados?]
+#metadata((src: "README.md", line: 762, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 764))
-Los principales involucrados son:
+#strong[¿Quiénes están involucrados?]
 
 #metadata((src: "README.md", line: 766))
+Los principales involucrados son:
+
+#metadata((src: "README.md", line: 768))
 - Los pacientes que utilizan los establecimientos públicos de salud.
 - Los pacientes que residen en zonas urbanas periféricas.
 - El personal administrativo encargado de gestionar las citas.
@@ -806,15 +808,15 @@ Los principales involucrados son:
 - Los establecimientos públicos de salud que administran los procesos de atención.
 
 #heading(level: 5)[Why?] <sec:why>
-#metadata((src: "README.md", line: 772, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 774))
-#strong[¿Cuál es la causa del problema?]
+#metadata((src: "README.md", line: 774, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 776))
-Las principales causas están relacionadas con:
+#strong[¿Cuál es la causa del problema?]
 
 #metadata((src: "README.md", line: 778))
+Las principales causas están relacionadas con:
+
+#metadata((src: "README.md", line: 780))
 - La alta demanda de atención médica.
 - La disponibilidad limitada de cupos.
 - La dependencia de procesos presenciales o telefónicos.
@@ -824,72 +826,72 @@ Las principales causas están relacionadas con:
 - La existencia de procesos administrativos fragmentados.
 
 #heading(level: 5)[How?] <sec:how>
-#metadata((src: "README.md", line: 786, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 788))
-#strong[¿En qué condiciones los clientes usan nuestros productos?]
+#metadata((src: "README.md", line: 788, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 790))
-Los pacientes suelen consultar diferentes canales para encontrar una cita disponible, trasladarse al establecimiento de salud o comunicarse telefónicamente. Estas acciones se realizan muchas veces en contextos de alta demanda, tiempos de espera elevados e información limitada sobre la disponibilidad de citas.
+#strong[¿En qué condiciones los clientes usan nuestros productos?]
 
 #metadata((src: "README.md", line: 792))
-#strong[¿Cómo prefieren los clientes acceder a nuestro producto?]
+Los pacientes suelen consultar diferentes canales para encontrar una cita disponible, trasladarse al establecimiento de salud o comunicarse telefónicamente. Estas acciones se realizan muchas veces en contextos de alta demanda, tiempos de espera elevados e información limitada sobre la disponibilidad de citas.
 
 #metadata((src: "README.md", line: 794))
-Los usuarios prefieren una aplicación móvil intuitiva que les permita consultar la disponibilidad de citas, reservar una atención, recibir recordatorios y realizar el seguimiento de su atención sin necesidad de trasladarse previamente al establecimiento o realizar llamadas telefónicas.
+#strong[¿Cómo prefieren los clientes acceder a nuestro producto?]
 
 #metadata((src: "README.md", line: 796))
-#strong[¿Qué llevó al cliente a llegar a esta situación?]
+Los usuarios prefieren una aplicación móvil intuitiva que les permita consultar la disponibilidad de citas, reservar una atención, recibir recordatorios y realizar el seguimiento de su atención sin necesidad de trasladarse previamente al establecimiento o realizar llamadas telefónicas.
 
 #metadata((src: "README.md", line: 798))
-La dependencia de procesos presenciales y telefónicos, la falta de información en tiempo real sobre la disponibilidad de citas y la ausencia de una gestión integrada de cupos, cancelaciones y listas de espera han llevado a los pacientes y al personal de salud a requerir soluciones digitales que permitan optimizar el acceso y la gestión de la atención.
+#strong[¿Qué llevó al cliente a llegar a esta situación?]
 
 #metadata((src: "README.md", line: 800))
+La dependencia de procesos presenciales y telefónicos, la falta de información en tiempo real sobre la disponibilidad de citas y la ausencia de una gestión integrada de cupos, cancelaciones y listas de espera han llevado a los pacientes y al personal de salud a requerir soluciones digitales que permitan optimizar el acceso y la gestión de la atención.
+
+#metadata((src: "README.md", line: 802))
 #pagebreak()
 
 #heading(level: 5)[How much?] <sec:how-much>
-#metadata((src: "README.md", line: 801, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 803))
-#strong[¿Cuánto impacto genera este problema en los establecimientos de salud?]
+#metadata((src: "README.md", line: 803, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 805))
-El impacto de esta problemática es significativo, ya que genera costos de tiempo y desplazamiento para los pacientes y una mayor carga operativa para el personal de los establecimientos de salud.
+#strong[¿Cuánto impacto genera este problema en los establecimientos de salud?]
 
 #metadata((src: "README.md", line: 807))
+El impacto de esta problemática es significativo, ya que genera costos de tiempo y desplazamiento para los pacientes y una mayor carga operativa para el personal de los establecimientos de salud.
+
+#metadata((src: "README.md", line: 809))
 Además, las iniciativas implementadas por el MINSA para digitalizar las citas y reducir los tiempos de espera evidencian la importancia de optimizar estos procesos mediante herramientas tecnológicas.
 
 #heading(level: 3)[Diagrama de Ishikawa - Análisis de Causas] <sec:diagrama-de-ishikawa-analisis-de-causas>
-#metadata((src: "README.md", line: 809, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 811))
-El #strong[diagrama de Ishikawa], también conocido como diagrama de espina de pescado o diagrama de causa-efecto, permite identificar y visualizar de manera sistemática las múltiples causas que contribuyen al problema central:
+#metadata((src: "README.md", line: 811, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 813))
+El #strong[diagrama de Ishikawa], también conocido como diagrama de espina de pescado o diagrama de causa-efecto, permite identificar y visualizar de manera sistemática las múltiples causas que contribuyen al problema central:
+
+#metadata((src: "README.md", line: 815))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 813))
+  #metadata((src: "README.md", line: 815))
   #strong["Dificultad en el acceso oportuno y eficiente a citas médicas en establecimientos públicos de salud".]
 ]
 
-#metadata((src: "README.md", line: 815))
+#metadata((src: "README.md", line: 817))
 Este análisis estructurado facilita la comprensión integral del problema y orienta el desarrollo de soluciones específicas para cada categoría de causas identificadas.
 
-#metadata((src: "README.md", line: 823))
+#metadata((src: "README.md", line: 825))
 #strong[Figura 7]
 
-#metadata((src: "README.md", line: 825))
+#metadata((src: "README.md", line: 827))
 #emph[Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas]
 
-#metadata((src: "README.md", line: 827, kind: "figure", img: "https://i.imgur.com/V84h3fK.jpeg"))
+#metadata((src: "README.md", line: 829, kind: "figure", img: "https://i.imgur.com/V84h3fK.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-82265f5616de3ad0.jpeg", alt: "Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas", width: 525pt)]]]
 
-#metadata((src: "README.md", line: 835))
+#metadata((src: "README.md", line: 837))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 839))
+#metadata((src: "README.md", line: 841))
 El diagrama identifica #strong[seis categorías principales de causas] que contribuyen al problema, como se observa en la #link("#figura-7")[Figura 7]:
 
-#metadata((src: "README.md", line: 841))
+#metadata((src: "README.md", line: 843))
 - #strong[Tecnología:] Sistemas de citas obsoletos o inexistentes, plataformas que pueden presentar dificultades ante una alta demanda, falta de integración entre módulos y problemas de conectividad en determinados establecimientos.
 - #strong[Procesos:] Asignación manual de citas, falta de estandarización en la gestión de turnos, procesos burocráticos que pueden generar colas presenciales y dificultades para gestionar cancelaciones o reprogramaciones.
 - #strong[Personas:] Falta de capacitación del personal administrativo, resistencia al cambio hacia herramientas digitales, diferentes niveles de conocimiento digital de los usuarios y disponibilidad limitada de personal frente a una alta demanda.
@@ -898,46 +900,46 @@ El diagrama identifica #strong[seis categorías principales de causas] que contr
 - #strong[Medición:] Falta de indicadores relacionados con el ausentismo, tiempos de espera y satisfacción de los pacientes, así como disponibilidad limitada de reportes para apoyar la mejora continua.
 
 #heading(level: 3)[1.2.2. Lean UX Process] <sec:1-2-2-lean-ux-process>
-#metadata((src: "README.md", line: 853, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 855, kind: "heading", level: 3))
 
 #heading(level: 4)[1.2.2.1. Lean UX Problem Statement] <sec:1-2-2-1-lean-ux-problem-statement>
-#metadata((src: "README.md", line: 855, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 857))
-Actualmente, tanto los pacientes como el personal asistencial y administrativo de los establecimientos públicos de salud enfrentan dificultades por la dependencia de procesos presenciales y telefónicos que no permiten conocer en tiempo real la disponibilidad de citas, gestionar cancelaciones o listas de espera, ni dar seguimiento eficiente a la atención. Esto genera problemas como colas prolongadas, cupos desaprovechados, desinformación sobre la disponibilidad de citas y una carga operativa elevada para el personal. Además, muchos pacientes no cuentan con mecanismos accesibles que les permitan orientar el tipo de atención que podrían requerir antes de acudir al establecimiento.
+#metadata((src: "README.md", line: 857, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 859))
+Actualmente, tanto los pacientes como el personal asistencial y administrativo de los establecimientos públicos de salud enfrentan dificultades por la dependencia de procesos presenciales y telefónicos que no permiten conocer en tiempo real la disponibilidad de citas, gestionar cancelaciones o listas de espera, ni dar seguimiento eficiente a la atención. Esto genera problemas como colas prolongadas, cupos desaprovechados, desinformación sobre la disponibilidad de citas y una carga operativa elevada para el personal. Además, muchos pacientes no cuentan con mecanismos accesibles que les permitan orientar el tipo de atención que podrían requerir antes de acudir al establecimiento.
+
+#metadata((src: "README.md", line: 861))
 ¿Cómo podríamos diseñar una solución digital integral que permita a los pacientes reservar y gestionar sus citas médicas en tiempo real, acceder a listas de espera dinámicas y recibir orientación inicial sobre sus síntomas, mientras se brinda al personal asistencial y administrativo herramientas para gestionar el flujo de atención y aprovechar mejor los cupos disponibles?
 
 #heading(level: 4)[1.2.2.2. Lean UX Assumptions] <sec:1-2-2-2-lean-ux-assumptions>
-#metadata((src: "README.md", line: 861, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 863, kind: "heading", level: 4))
 
 #heading(level: 5)[1.2.2.2.1 Business Assumptions] <sec:1-2-2-2-1-business-assumptions>
-#metadata((src: "README.md", line: 862, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 864, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 864))
+#metadata((src: "README.md", line: 866))
 - Existe una demanda no atendida de pacientes en establecimientos públicos de salud que requieren mecanismos digitales para acceder a citas médicas de forma oportuna.
 - Las dificultades de acceso a citas están vinculadas a la dependencia de procesos presenciales y telefónicos, generando una necesidad urgente de digitalización.
 - El personal asistencial y administrativo de los establecimientos está interesado en herramientas que faciliten la gestión de citas y el flujo de pacientes.
 - Los establecimientos públicos de salud buscan reducir tiempos de espera y mejorar el aprovechamiento de sus cupos disponibles.
 - Existen iniciativas del MINSA orientadas a la digitalización de citas, lo que evidencia una tendencia favorable para la adopción de SaludYa.
 
-#metadata((src: "README.md", line: 870))
+#metadata((src: "README.md", line: 872))
 #pagebreak()
 
 #heading(level: 5)[1.2.2.2.2 Business Outcomes] <sec:1-2-2-2-2-business-outcomes>
-#metadata((src: "README.md", line: 871, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 873, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 873))
+#metadata((src: "README.md", line: 875))
 - Queremos que los establecimientos de salud reduzcan en un 30% las colas presenciales durante los primeros 6 meses de implementación.
 - Buscamos aumentar en un 25% el aprovechamiento de los cupos disponibles mediante la gestión de listas de espera y cancelaciones.
 - Queremos reducir en un 35% el tiempo promedio que el personal dedica a la gestión manual de citas, en un plazo de 3 meses.
 - Esperamos que el 50% de los establecimientos piloto recomienden la herramienta a otras sedes dentro de los primeros 3 meses de uso.
 
 #heading(level: 5)[1.2.2.2.3 User Assumptions] <sec:1-2-2-2-3-user-assumptions>
-#metadata((src: "README.md", line: 878, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 880, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 880))
+#metadata((src: "README.md", line: 882))
 - Los pacientes no cuentan actualmente con mecanismos digitales integrados, sino con canales presenciales o telefónicos fragmentados.
 - Tienen interés en acceder a información oportuna sobre la disponibilidad de citas, pero no siempre cuentan con los medios para hacerlo.
 - Necesitan una solución simple, rápida y accesible desde su dispositivo móvil que no requiera desplazamientos innecesarios.
@@ -945,9 +947,9 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - Valoran contar con recordatorios y una orientación inicial sobre el tipo de atención que podrían requerir.
 
 #heading(level: 5)[1.2.2.2.4 User Outcomes] <sec:1-2-2-2-4-user-outcomes>
-#metadata((src: "README.md", line: 886, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 888, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 888))
+#metadata((src: "README.md", line: 890))
 - El 80% de los pacientes reportan una reducción en el tiempo dedicado a gestionar sus citas después de 3 meses de uso.
 - El 70% de los pacientes disminuyen sus desplazamientos innecesarios al establecimiento gracias a la reserva y el seguimiento digital.
 - Reducir en un 30% el tiempo de espera percibido por los pacientes en el establecimiento gracias al check-in mediante código QR.
@@ -955,17 +957,17 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 - El 70% de los usuarios completan el proceso de reserva de una cita sin asistencia técnica en menos de 5 minutos.
 
 #heading(level: 5)[1.2.2.2.5 Features] <sec:1-2-2-2-5-features>
-#metadata((src: "README.md", line: 894, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 896, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 896))
+#metadata((src: "README.md", line: 898))
 - Si implementamos una funcionalidad que permita a los pacientes consultar disponibilidad y reservar citas médicas en tiempo real, entonces se reducirán los desplazamientos innecesarios y las colas presenciales.
 - Si los pacientes cuentan con una lista de espera dinámica y reciben notificaciones ante cupos liberados por cancelaciones, entonces se aprovechará mejor la disponibilidad existente y se reducirán los tiempos de espera.
 - Si el personal asistencial y administrativo dispone de una aplicación que les permita visualizar el flujo de pacientes y gestionar cambios o cancelaciones, entonces podrán optimizar la atención y reducir la carga operativa asociada a la gestión manual de citas.
 
 #heading(level: 4)[1.2.2.3. Lean UX Hypothesis Statements] <sec:1-2-2-3-lean-ux-hypothesis-statements>
-#metadata((src: "README.md", line: 900, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 902, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 902))
+#metadata((src: "README.md", line: 904))
 - #strong[Hypothesis Statement 1]
 #strong[Creemos que] lograremos una reducción en las colas presenciales y un mejor aprovechamiento de los cupos disponibles.
 #strong[Sabremos que] si los pacientes
@@ -982,43 +984,43 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 #strong[Obtiene] la capacidad de gestionar cambios, cancelaciones y el estado de las atenciones en tiempo real
 #strong[Cuando veamos] con una aplicación que centralice la información de pacientes y citas programadas.
 
-#metadata((src: "README.md", line: 920))
+#metadata((src: "README.md", line: 922))
 #pagebreak()
 
 #heading(level: 4)[1.2.2.4. Lean UX Canvas] <sec:1-2-2-4-lean-ux-canvas>
-#metadata((src: "README.md", line: 921, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 923, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 923))
+#metadata((src: "README.md", line: 925))
 El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visualizar de manera estructurada los elementos clave del proyecto SaludYa. Este canvas facilita la comprensión integral del problema de negocio, las soluciones propuestas, los usuarios objetivo y los resultados esperados, proporcionando una base sólida para el desarrollo ágil del producto.
 
-#metadata((src: "README.md", line: 932))
+#metadata((src: "README.md", line: 934))
 #strong[Figura 8]
 
-#metadata((src: "README.md", line: 934))
+#metadata((src: "README.md", line: 936))
 #emph[Lean UX Canvas de SaludYa]
 
-#metadata((src: "README.md", line: 936, kind: "figure", img: "https://i.imgur.com/ESmSAsu.jpeg"))
+#metadata((src: "README.md", line: 938, kind: "figure", img: "https://i.imgur.com/ESmSAsu.jpeg"))
 #block(breakable: false)[#fit-image("/build/remote/remote-54a19f3fbe9933e6.jpeg", alt: "Lean UX Canvas de SaludYa", width: auto)]
 
-#metadata((src: "README.md", line: 938))
+#metadata((src: "README.md", line: 940))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 941))
+#metadata((src: "README.md", line: 943))
 #align(center)[Lean Ux Canvas]
 
-#metadata((src: "README.md", line: 944))
+#metadata((src: "README.md", line: 946))
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles, como se observa en la #link("#figura-8")[Figura 8].
 
 #heading(level: 2)[1.3. Segmentos objetivos] <sec:1-3-segmentos-objetivos>
-#metadata((src: "README.md", line: 946, kind: "heading", level: 2))
-
-#metadata((src: "README.md", line: 948))
-A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución #strong[SaludYa] para la gestión de citas médicas en establecimientos públicos de salud.
+#metadata((src: "README.md", line: 948, kind: "heading", level: 2))
 
 #metadata((src: "README.md", line: 950))
-#strong[Segmento objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud]
+A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución #strong[SaludYa] para la gestión de citas médicas en establecimientos públicos de salud.
 
 #metadata((src: "README.md", line: 952))
+#strong[Segmento objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud]
+
+#metadata((src: "README.md", line: 954))
 - #strong[Datos demográficos:]
   - Edad: Entre 18 y 65 años, incluyendo adultos que gestionan sus propias citas y las de familiares o dependientes (hijos, adultos mayores).
   - Ocupación: Diversa, incluyendo personas que trabajan, estudian o se dedican a labores del hogar.
@@ -1027,10 +1029,10 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - #strong[Problema:] La dependencia de procesos presenciales o telefónicos para conseguir una cita genera tiempos de espera elevados, cupos limitados, desinformación sobre la disponibilidad y el riesgo de perder citas ya conseguidas por falta de recordatorios.
 - #strong[Necesidad:] Una solución digital accesible desde el celular que permita reservar citas médicas, conocer la disponibilidad en tiempo real, recibir notificaciones cuando se libere un cupo y gestionar tanto sus propias citas como las de sus familiares o dependientes.
 
-#metadata((src: "README.md", line: 960))
+#metadata((src: "README.md", line: 962))
 #strong[Segmento objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud]
 
-#metadata((src: "README.md", line: 962))
+#metadata((src: "README.md", line: 964))
 - #strong[Datos demográficos:]
   - Edad: Mayores de 18 años.
   - Ocupación: Personal administrativo, de admisión, enfermeros y técnicos de establecimientos públicos de salud.
@@ -1039,31 +1041,31 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - #strong[Problema:] La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - #strong[Necesidad:] Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
 
-#metadata((src: "README.md", line: 970))
+#metadata((src: "README.md", line: 972))
 #pagebreak()
 
 #heading(level: 1)[Capítulo II: Requirements Development and Software Solution Design] <sec:capitulo-ii-requirements-development-and-software-solution-design>
-#metadata((src: "README.md", line: 972, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 974, kind: "heading", level: 1))
 
 #heading(level: 2)[2.1. Competidores] <sec:2-1-competidores>
-#metadata((src: "README.md", line: 974, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 976, kind: "heading", level: 2))
 
 #heading(level: 3)[2.1.1. Análisis competitivo] <sec:2-1-1-analisis-competitivo>
-#metadata((src: "README.md", line: 976, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 978, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 978))
+#metadata((src: "README.md", line: 980))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 978))
+  #metadata((src: "README.md", line: 980))
   #strong[¿Por qué llevar a cabo este análisis?] #linebreak() Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo #strong[SaludYa] puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud, como se detalla en la #link("#tabla-11")[Tabla 11] y la #link("#figura-9")[Figura 9], la #link("#figura-10")[Figura 10], la #link("#figura-11")[Figura 11] y la #link("#figura-12")[Figura 12].
 ]
 
-#metadata((src: "README.md", line: 987))
+#metadata((src: "README.md", line: 989))
 #strong[Tabla 11]
 
-#metadata((src: "README.md", line: 989))
+#metadata((src: "README.md", line: 991))
 #emph[Análisis competitivo de SaludYa, Doctoralia, Cita Médica y MINSA]
 
-#metadata((src: "README.md", line: 991, kind: "table"))
+#metadata((src: "README.md", line: 993, kind: "table"))
 #table(
   columns: 5,
   align: (left, center, center, center, center),
@@ -1084,19 +1086,19 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
   tline,
 )
 
-#metadata((src: "README.md", line: 1007))
+#metadata((src: "README.md", line: 1009))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1009))
+#metadata((src: "README.md", line: 1011))
 #pagebreak()
 
 #heading(level: 3)[2.1.2. Estrategias y tácticas frente a competidores] <sec:2-1-2-estrategias-y-tacticas-frente-a-competidores>
-#metadata((src: "README.md", line: 1010, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 1012))
-Una vez realizado la identificación de fortalezas, oportunidades, debilidades y amenazas con el análisis FODA de nuestros competidores en el sector del mercado, pasaremos a plantear las estrategias y tácticas para hacerle frente a estos mismos.
+#metadata((src: "README.md", line: 1012, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 1014))
+Una vez realizado la identificación de fortalezas, oportunidades, debilidades y amenazas con el análisis FODA de nuestros competidores en el sector del mercado, pasaremos a plantear las estrategias y tácticas para hacerle frente a estos mismos.
+
+#metadata((src: "README.md", line: 1016))
 - Expansión de integraciones: Integrar SaludYa con los sistemas de información del MINSA y del Seguro Integral de Salud (SIS), así como con los sistemas hospitalarios (HIS) de los establecimientos, facilitando la interoperabilidad y el registro unificado de citas.
 - Soporte Postventa: Brindar soporte técnico y asesoría continua al personal asistencial y administrativo, garantizando el máximo aprovechamiento de las funcionalidades y una adopción institucional sostenida en el tiempo.
 - Visibilidad y seguimiento en tiempo real: Incorporar capacidades de seguimiento del flujo de pacientes, cupos y listas de espera mediante herramientas accesibles y de fácil comprensión tanto para el paciente como para el personal.
@@ -1105,39 +1107,39 @@ Una vez realizado la identificación de fortalezas, oportunidades, debilidades y
 - MVP enfocado en lo esencial: Iniciar con un MVP centrado en las funcionalidades esenciales —reserva de citas, lista de espera dinámica y notificaciones— para minimizar riesgos y validar la solución antes de escalar nuevas funciones.
 
 #heading(level: 2)[2.2. Entrevistas] <sec:2-2-entrevistas>
-#metadata((src: "README.md", line: 1026, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 1028, kind: "heading", level: 2))
 
 #heading(level: 3)[2.2.1. Diseño de entrevistas] <sec:2-2-1-diseno-de-entrevistas>
-#metadata((src: "README.md", line: 1028, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1030, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1030))
+#metadata((src: "README.md", line: 1032))
 Las entrevistas fueron diseñadas como guías semiestructuradas, considerando tres entrevistas por cada segmento objetivo: pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.
 
 #heading(level: 3)[2.2.2. Registro de entrevistas] <sec:2-2-2-registro-de-entrevistas>
-#metadata((src: "README.md", line: 1032, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 1034))
-En esta sección, se registra cada entrevista realizada. En total, se realizaron tres entrevistas por cada segmento objetivo. Se detalla el nombre del miembro entrevistador y el del entrevistado. Además, se redacta un resumen general del contenido de la entrevista realizada.
+#metadata((src: "README.md", line: 1034, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 1036))
-#strong[Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud]
+En esta sección, se registra cada entrevista realizada. En total, se realizaron tres entrevistas por cada segmento objetivo. Se detalla el nombre del miembro entrevistador y el del entrevistado. Además, se redacta un resumen general del contenido de la entrevista realizada.
 
 #metadata((src: "README.md", line: 1038))
-#pagebreak()
+#strong[Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud]
 
 #metadata((src: "README.md", line: 1040))
-\*\* Entrevista 1 \*\*
+#pagebreak()
 
 #metadata((src: "README.md", line: 1042))
+\*\* Entrevista 1 \*\*
+
+#metadata((src: "README.md", line: 1044))
 La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la #link("#tabla-12")[Tabla 12] y la #link("#figura-13")[Figura 13].
 
-#metadata((src: "README.md", line: 1046))
+#metadata((src: "README.md", line: 1048))
 #strong[Tabla 12]
 
-#metadata((src: "README.md", line: 1048))
+#metadata((src: "README.md", line: 1050))
 #emph[Ficha de entrevista — Registro de la entrevista a Braulio Núñez]
 
-#metadata((src: "README.md", line: 1050, kind: "table"))
+#metadata((src: "README.md", line: 1052, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1149,25 +1151,25 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
   tline,
 )
 
-#metadata((src: "README.md", line: 1057))
+#metadata((src: "README.md", line: 1059))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1059))
+#metadata((src: "README.md", line: 1061))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1061))
+#metadata((src: "README.md", line: 1063))
 #strong[Entrevista 2]
 
-#metadata((src: "README.md", line: 1065))
+#metadata((src: "README.md", line: 1067))
 La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la #link("#tabla-13")[Tabla 13] y la #link("#figura-14")[Figura 14].
 
-#metadata((src: "README.md", line: 1069))
+#metadata((src: "README.md", line: 1071))
 #strong[Tabla 13]
 
-#metadata((src: "README.md", line: 1071))
+#metadata((src: "README.md", line: 1073))
 #emph[Ficha de entrevista — Registro de la entrevista a Yordi Salazar]
 
-#metadata((src: "README.md", line: 1073, kind: "table"))
+#metadata((src: "README.md", line: 1075, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1179,25 +1181,25 @@ La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas mé
   tline,
 )
 
-#metadata((src: "README.md", line: 1080))
+#metadata((src: "README.md", line: 1082))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1082))
+#metadata((src: "README.md", line: 1084))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1084))
+#metadata((src: "README.md", line: 1086))
 Entrevista 3:
 
-#metadata((src: "README.md", line: 1088))
+#metadata((src: "README.md", line: 1090))
 La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la #link("#tabla-14")[Tabla 14] y la #link("#figura-15")[Figura 15].
 
-#metadata((src: "README.md", line: 1092))
+#metadata((src: "README.md", line: 1094))
 #strong[Tabla 14]
 
-#metadata((src: "README.md", line: 1094))
+#metadata((src: "README.md", line: 1096))
 #emph[Ficha de entrevista — Registro de la entrevista a Kevin Huamán]
 
-#metadata((src: "README.md", line: 1096, kind: "table"))
+#metadata((src: "README.md", line: 1098, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1209,28 +1211,28 @@ La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas mé
   tline,
 )
 
-#metadata((src: "README.md", line: 1103))
+#metadata((src: "README.md", line: 1105))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1106))
+#metadata((src: "README.md", line: 1108))
 #strong[Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud]
 
-#metadata((src: "README.md", line: 1108))
+#metadata((src: "README.md", line: 1110))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1110))
+#metadata((src: "README.md", line: 1112))
 Entrevista 4:
 
-#metadata((src: "README.md", line: 1114))
+#metadata((src: "README.md", line: 1116))
 La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la #link("#tabla-15")[Tabla 15] y la #link("#figura-16")[Figura 16].
 
-#metadata((src: "README.md", line: 1118))
+#metadata((src: "README.md", line: 1120))
 #strong[Tabla 15]
 
-#metadata((src: "README.md", line: 1120))
+#metadata((src: "README.md", line: 1122))
 #emph[Ficha de entrevista — Registro de la entrevista a Franco Alanoca]
 
-#metadata((src: "README.md", line: 1122, kind: "table"))
+#metadata((src: "README.md", line: 1124, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1242,25 +1244,25 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
   tline,
 )
 
-#metadata((src: "README.md", line: 1129))
+#metadata((src: "README.md", line: 1131))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1131))
+#metadata((src: "README.md", line: 1133))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1133))
+#metadata((src: "README.md", line: 1135))
 #strong[Entrevista 5]
 
-#metadata((src: "README.md", line: 1137))
+#metadata((src: "README.md", line: 1139))
 La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la #link("#tabla-16")[Tabla 16] y la #link("#figura-17")[Figura 17].
 
-#metadata((src: "README.md", line: 1141))
+#metadata((src: "README.md", line: 1143))
 #strong[Tabla 16]
 
-#metadata((src: "README.md", line: 1143))
+#metadata((src: "README.md", line: 1145))
 #emph[Ficha de entrevista — Registro de la entrevista a Wilmer Contreras]
 
-#metadata((src: "README.md", line: 1145, kind: "table"))
+#metadata((src: "README.md", line: 1147, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1272,22 +1274,22 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
   tline,
 )
 
-#metadata((src: "README.md", line: 1152))
+#metadata((src: "README.md", line: 1154))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1154))
+#metadata((src: "README.md", line: 1156))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1156))
+#metadata((src: "README.md", line: 1158))
 #strong[Entrevista 6]
 
-#metadata((src: "README.md", line: 1164))
+#metadata((src: "README.md", line: 1166))
 #strong[Tabla 17]
 
-#metadata((src: "README.md", line: 1166))
+#metadata((src: "README.md", line: 1168))
 #emph[Ficha de entrevista — Registro de la entrevista a Deyvis Ochante]
 
-#metadata((src: "README.md", line: 1168, kind: "table"))
+#metadata((src: "README.md", line: 1170, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1299,234 +1301,234 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
   tline,
 )
 
-#metadata((src: "README.md", line: 1175))
+#metadata((src: "README.md", line: 1177))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1178))
+#metadata((src: "README.md", line: 1180))
 Los vídeos que respaldan las entrevistas se reúnen en el #link("#anexo-a-vídeos-de-entrevistas-realizadas")[Anexo A], como se detalla en la #link("#tabla-17")[Tabla 17] y la #link("#figura-18")[Figura 18].
 
 #heading(level: 3)[2.2.3. Análisis de entrevistas] <sec:2-2-3-analisis-de-entrevistas>
-#metadata((src: "README.md", line: 1180, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 1182))
-En primer lugar, con base en las tres entrevistas realizadas al primer segmento objetivo, conformado por los pacientes de zonas urbanas periféricas, se puede concluir lo siguiente:
+#metadata((src: "README.md", line: 1182, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 1184))
+En primer lugar, con base en las tres entrevistas realizadas al primer segmento objetivo, conformado por los pacientes de zonas urbanas periféricas, se puede concluir lo siguiente:
+
+#metadata((src: "README.md", line: 1186))
 - Los usuarios perciben que el proceso actual para conseguir una cita médica presencial no satisface sus necesidades, ya que depende de madrugar y hacer largas colas sin certeza de conseguir cupo, lo cual afecta su tiempo laboral y personal.
 - Aunque algunos usuarios no han utilizado antes una aplicación para reservar citas médicas, sí manifiestan interés en contar con una herramienta digital que les permita conocer la disponibilidad en tiempo real. Consideran que esto les brindaría mayor seguridad, ahorro de tiempo y una mejor planificación de sus actividades diarias.
 - Los usuarios requieren una aplicación que les permita conocer la disponibilidad de citas, recibir notificaciones ante cupos liberados y gestionar sus citas sin necesidad de acudir físicamente al establecimiento. Esta solución debe estar orientada a reducir la incertidumbre del proceso actual y facilitar el acceso oportuno a la atención médica.
 
-#metadata((src: "README.md", line: 1190))
+#metadata((src: "README.md", line: 1192))
 A continuación, se presentan los porcentajes destacados en las respuestas de los entrevistados a las preguntas planteadas:
 
-#metadata((src: "README.md", line: 1192))
+#metadata((src: "README.md", line: 1194))
 - Uso previo de aplicaciones para reservar citas o turnos:
 
-#metadata((src: "README.md", line: 1200))
+#metadata((src: "README.md", line: 1202))
 #strong[Figura 19]
 
-#metadata((src: "README.md", line: 1202))
+#metadata((src: "README.md", line: 1204))
 #emph[Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados]
 
-#metadata((src: "README.md", line: 1204, kind: "figure", img: "https://i.imgur.com/jQEpbDj.png"))
+#metadata((src: "README.md", line: 1206, kind: "figure", img: "https://i.imgur.com/jQEpbDj.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-0d9b1bece4f878fb.png", alt: "Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados", width: auto)]]]
 
-#metadata((src: "README.md", line: 1206))
+#metadata((src: "README.md", line: 1208))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
-
-#metadata((src: "README.md", line: 1210))
-En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos, como se observa en la #link("#figura-19")[Figura 19].
 
 #metadata((src: "README.md", line: 1212))
+En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos, como se observa en la #link("#figura-19")[Figura 19].
+
+#metadata((src: "README.md", line: 1214))
 - Comodidad realizando trámites desde el celular:
 
-#metadata((src: "README.md", line: 1220))
+#metadata((src: "README.md", line: 1222))
 #strong[Figura 20]
 
-#metadata((src: "README.md", line: 1222))
+#metadata((src: "README.md", line: 1224))
 #emph[Comodidad de los pacientes entrevistados al utilizar el celular]
 
-#metadata((src: "README.md", line: 1224, kind: "figure", img: "https://i.imgur.com/nSAfgXx.png"))
+#metadata((src: "README.md", line: 1226, kind: "figure", img: "https://i.imgur.com/nSAfgXx.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-8888ab8169d6de43.png", alt: "Comodidad de los pacientes entrevistados al utilizar el celular", width: auto)]]]
 
-#metadata((src: "README.md", line: 1226))
+#metadata((src: "README.md", line: 1228))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
-
-#metadata((src: "README.md", line: 1230))
-En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones, como se observa en la #link("#figura-20")[Figura 20].
 
 #metadata((src: "README.md", line: 1232))
+En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones, como se observa en la #link("#figura-20")[Figura 20].
+
+#metadata((src: "README.md", line: 1234))
 - Utilidad de ver la disponibilidad de citas en tiempo real:
 
-#metadata((src: "README.md", line: 1240))
+#metadata((src: "README.md", line: 1242))
 #strong[Figura 21]
 
-#metadata((src: "README.md", line: 1242))
+#metadata((src: "README.md", line: 1244))
 #emph[Utilidad percibida de consultar la disponibilidad de citas]
 
-#metadata((src: "README.md", line: 1244, kind: "figure", img: "https://i.imgur.com/KN9jH35.png"))
+#metadata((src: "README.md", line: 1246, kind: "figure", img: "https://i.imgur.com/KN9jH35.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-322a2f59e5fb403c.png", alt: "Utilidad percibida de consultar la disponibilidad de citas", width: auto)]]]
 
-#metadata((src: "README.md", line: 1246))
+#metadata((src: "README.md", line: 1248))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
 
-#metadata((src: "README.md", line: 1250))
+#metadata((src: "README.md", line: 1252))
 En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento, como se observa en la #link("#figura-21")[Figura 21].
 
-#metadata((src: "README.md", line: 1252))
+#metadata((src: "README.md", line: 1254))
 Segundo, con base en las tres entrevistas realizadas al segundo segmento objetivo, conformado por el personal asistencial y administrativo, se puede concluir lo siguiente:
 
-#metadata((src: "README.md", line: 1254))
+#metadata((src: "README.md", line: 1256))
 - El personal reconoce que el proceso actual de gestión de citas depende en gran medida de registros manuales, lo cual puede generar errores, pérdida de información y una atención desorganizada cuando hay mucha demanda.
 - El personal enfrenta dificultades para controlar en tiempo real la disponibilidad de cupos, las cancelaciones y el flujo de pacientes en espera, lo que puede generar malentendidos, reclamos y sobrecarga operativa.
 - El personal considera que contar con un sistema digital que centralice la información de los pacientes y muestre el estado de la atención en tiempo real facilitaría considerablemente su trabajo diario, permitiendo una mejor organización y un servicio más eficiente.
 
-#metadata((src: "README.md", line: 1260))
+#metadata((src: "README.md", line: 1262))
 A continuación, se presentan los porcentajes destacados en las respuestas de los entrevistados a las preguntas planteadas:
 
-#metadata((src: "README.md", line: 1262))
+#metadata((src: "README.md", line: 1264))
 - Sistema de gestión utilizado actualmente:
 
-#metadata((src: "README.md", line: 1269))
-#pagebreak()
-
 #metadata((src: "README.md", line: 1271))
-#strong[Figura 22]
+#pagebreak()
 
 #metadata((src: "README.md", line: 1273))
+#strong[Figura 22]
+
+#metadata((src: "README.md", line: 1275))
 #emph[Sistema actual de gestión de citas del personal entrevistado]
 
-#metadata((src: "README.md", line: 1275, kind: "figure", img: "https://i.imgur.com/2xmnVjy.png"))
+#metadata((src: "README.md", line: 1277, kind: "figure", img: "https://i.imgur.com/2xmnVjy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-303bc867b8d27d8a.png", alt: "Sistema actual de gestión de citas del personal entrevistado", width: auto)]]]
 
-#metadata((src: "README.md", line: 1277))
+#metadata((src: "README.md", line: 1279))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
-
-#metadata((src: "README.md", line: 1281))
-En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel, como se observa en la #link("#figura-22")[Figura 22].
 
 #metadata((src: "README.md", line: 1283))
+En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel, como se observa en la #link("#figura-22")[Figura 22].
+
+#metadata((src: "README.md", line: 1285))
 - Necesidad de un sistema con información en tiempo real:
 
-#metadata((src: "README.md", line: 1291))
+#metadata((src: "README.md", line: 1293))
 #strong[Figura 23]
 
-#metadata((src: "README.md", line: 1293))
+#metadata((src: "README.md", line: 1295))
 #emph[Necesidad de un sistema digital según el personal entrevistado]
 
-#metadata((src: "README.md", line: 1295, kind: "figure", img: "https://i.imgur.com/2I5aa41.png"))
+#metadata((src: "README.md", line: 1297, kind: "figure", img: "https://i.imgur.com/2I5aa41.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-f1f7726f5e9a2b37.png", alt: "Necesidad de un sistema digital según el personal entrevistado", width: auto)]]]
 
-#metadata((src: "README.md", line: 1297))
+#metadata((src: "README.md", line: 1299))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
-
-#metadata((src: "README.md", line: 1301))
-En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes, como se observa en la #link("#figura-23")[Figura 23].
 
 #metadata((src: "README.md", line: 1303))
+En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes, como se observa en la #link("#figura-23")[Figura 23].
+
+#metadata((src: "README.md", line: 1305))
 - Momento del día con mayor cantidad de pacientes:
 
-#metadata((src: "README.md", line: 1308))
+#metadata((src: "README.md", line: 1310))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1311))
+#metadata((src: "README.md", line: 1313))
 #strong[Figura 24]
 
-#metadata((src: "README.md", line: 1313))
+#metadata((src: "README.md", line: 1315))
 #emph[Especialidades de mayor demanda según las entrevistas al personal]
 
-#metadata((src: "README.md", line: 1315, kind: "figure", img: "https://i.imgur.com/sEnlY8C.png"))
+#metadata((src: "README.md", line: 1317, kind: "figure", img: "https://i.imgur.com/sEnlY8C.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-866e3d4583cbd289.png", alt: "Especialidades de mayor demanda según las entrevistas al personal", width: auto)]]]
 
-#metadata((src: "README.md", line: 1317))
+#metadata((src: "README.md", line: 1319))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.]
 
-#metadata((src: "README.md", line: 1321))
+#metadata((src: "README.md", line: 1323))
 En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes, como se observa en la #link("#figura-24")[Figura 24].
 
-#metadata((src: "README.md", line: 1323))
+#metadata((src: "README.md", line: 1325))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 2)[2.3. Needfinding] <sec:2-3-needfinding>
-#metadata((src: "README.md", line: 1325, kind: "heading", level: 2))
-
-#metadata((src: "README.md", line: 1327))
-Con el análisis de datos completado, pasamos a la fase de Needfinding (Búsqueda de Necesidades). El objetivo es empatizar con los usuarios para diseñar una solución técnica y humana que elimine fricciones administrativas y brinde tranquilidad a las familias. Mediante herramientas como User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, definiremos quiénes son nuestros usuarios, sus acciones, emociones y necesidades reales.
+#metadata((src: "README.md", line: 1327, kind: "heading", level: 2))
 
 #metadata((src: "README.md", line: 1329))
+Con el análisis de datos completado, pasamos a la fase de Needfinding (Búsqueda de Necesidades). El objetivo es empatizar con los usuarios para diseñar una solución técnica y humana que elimine fricciones administrativas y brinde tranquilidad a las familias. Mediante herramientas como User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping, definiremos quiénes son nuestros usuarios, sus acciones, emociones y necesidades reales.
+
+#metadata((src: "README.md", line: 1331))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.3.1. User Personas] <sec:2-3-1-user-personas>
-#metadata((src: "README.md", line: 1331, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 1333))
-A partir de la investigación realizada con personas de zonas periféricas y del entorno de la salud pública, se definieron dos perfiles clave de usuario. Estos representan los segmentos principales que interactúan directa e indirectamente con la plataforma: los #strong[pacientes de zonas urbanas periféricas] que buscan un acceso ágil y oportuno a sus citas médicas, y el #strong[personal asistencial y administrativo], encargado de la gestión operativa diaria.
+#metadata((src: "README.md", line: 1333, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 1335))
+A partir de la investigación realizada con personas de zonas periféricas y del entorno de la salud pública, se definieron dos perfiles clave de usuario. Estos representan los segmentos principales que interactúan directa e indirectamente con la plataforma: los #strong[pacientes de zonas urbanas periféricas] que buscan un acceso ágil y oportuno a sus citas médicas, y el #strong[personal asistencial y administrativo], encargado de la gestión operativa diaria.
+
+#metadata((src: "README.md", line: 1337))
 Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar una experiencia accesible, eficiente y adaptada a la realidad de la atención pública.
 
-#metadata((src: "README.md", line: 1338))
+#metadata((src: "README.md", line: 1340))
 #pagebreak()
 
 #heading(level: 4)[Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud] <sec:segmento-objetivo-1-pacientes-de-zonas-urbanas-perifericas-que-acuden-a-establecimientos-publicos-de-salud>
-#metadata((src: "README.md", line: 1339, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1347))
-#strong[Figura 25]
+#metadata((src: "README.md", line: 1341, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1349))
+#strong[Figura 25]
+
+#metadata((src: "README.md", line: 1351))
 #emph[User persona del paciente]
 
-#metadata((src: "README.md", line: 1351, kind: "figure", img: "https://i.imgur.com/HjApNAa.png"))
+#metadata((src: "README.md", line: 1353, kind: "figure", img: "https://i.imgur.com/HjApNAa.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-060c71093f7f33d9.png", alt: "User persona del paciente", width: auto)]]]
 
-#metadata((src: "README.md", line: 1353))
+#metadata((src: "README.md", line: 1355))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1357))
+#metadata((src: "README.md", line: 1359))
 Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención, como se observa en la #link("#figura-25")[Figura 25].
 
-#metadata((src: "README.md", line: 1359))
+#metadata((src: "README.md", line: 1361))
 #pagebreak()
 
 #heading(level: 4)[Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud] <sec:segmento-objetivo-2-personal-asistencial-y-administrativo-de-establecimientos-publicos-de-salud>
-#metadata((src: "README.md", line: 1360, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1368))
-#strong[Figura 26]
+#metadata((src: "README.md", line: 1362, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1370))
+#strong[Figura 26]
+
+#metadata((src: "README.md", line: 1372))
 #emph[User persona del personal asistencial y administrativo]
 
-#metadata((src: "README.md", line: 1372, kind: "figure", img: "https://i.imgur.com/tYgAA19.png"))
+#metadata((src: "README.md", line: 1374, kind: "figure", img: "https://i.imgur.com/tYgAA19.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-61e69f5b29b3086a.png", alt: "User persona del personal asistencial y administrativo", width: auto)]]]
 
-#metadata((src: "README.md", line: 1374))
+#metadata((src: "README.md", line: 1376))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1378))
+#metadata((src: "README.md", line: 1380))
 Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados, como se observa en la #link("#figura-26")[Figura 26].
 
 #heading(level: 3)[2.3.2. User Task Matrix] <sec:2-3-2-user-task-matrix>
-#metadata((src: "README.md", line: 1380, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1382, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1382))
+#metadata((src: "README.md", line: 1384))
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software #strong[SaludYa]: el #strong[Paciente de zonas urbanas periféricas], que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el #strong[Personal asistencial y administrativo], encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la #link("#tabla-18")[Tabla 18].
 
-#metadata((src: "README.md", line: 1386))
+#metadata((src: "README.md", line: 1388))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1390))
+#metadata((src: "README.md", line: 1392))
 #strong[Tabla 18]
 
-#metadata((src: "README.md", line: 1392))
+#metadata((src: "README.md", line: 1394))
 #emph[User Task Matrix]
 
-#metadata((src: "README.md", line: 1394, kind: "table"))
+#metadata((src: "README.md", line: 1396, kind: "table"))
 #table(
   columns: 7,
   align: (left, center, center, center, center, center, center),
@@ -1543,225 +1545,225 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
   tline,
 )
 
-#metadata((src: "README.md", line: 1406))
+#metadata((src: "README.md", line: 1408))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[Análisis del Task Matrix] <sec:analisis-del-task-matrix>
-#metadata((src: "README.md", line: 1409, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1411))
-A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos:
+#metadata((src: "README.md", line: 1411, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1413))
+A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos:
+
+#metadata((src: "README.md", line: 1415))
 - #strong[Tareas con mayor frecuencia e importancia para ambos segmentos:] Consultar la disponibilidad de cupos, solicitar/asignar citas y realizar el registro de llegada (check-in) representan el núcleo del proceso de atención. Ambos segmentos les asignan importancia #strong[High], reflejando que la desinformación en tiempo real y las largas colas presenciales son los cuellos de botella principales que SaludYa busca resolver tanto para el usuario como para el personal.
 - #strong[Principales diferencias entre segmentos:] El personal asistencial y administrativo concentra sus actividades en tareas de gestión operativa interna de frecuencia #strong[High], como controlar el flujo de la sala de espera y registrar admisiones para evitar la pérdida de información en cuadernos o archivos físicos. En cambio, el paciente enfoca su interacción en tareas puntuales de alta importancia (#strong[High]), como la gestión de citas para familiares dependientes y el seguimiento de recordatorios para evitar la pérdida de turnos previamente conseguidos.
 - #strong[Coincidencias relevantes:] La gestión de la lista de espera ante cancelaciones e inasistencias es percibida con importancia #strong[High] por ambas partes. Para el personal, representa una oportunidad crítica para reducir la sobrecarga operativa y optimizar el aprovechamiento de los cupos disponibles; para el paciente, constituye el mecanismo clave para acceder a un cupo liberado de forma oportuna sin necesidad de madrugar o realizar viajes innecesarios.
 
-#metadata((src: "README.md", line: 1417))
+#metadata((src: "README.md", line: 1419))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.3.3. User Journey Mapping] <sec:2-3-3-user-journey-mapping>
-#metadata((src: "README.md", line: 1418, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1420, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1420))
+#metadata((src: "README.md", line: 1422))
 A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal de salud, se elaboraron los User Journey Maps utilizando la herramienta UXPressia. Estos esquemas analizan la experiencia de cada segmento a lo largo del proceso de atención, contrastando las fricciones de la gestión presencial/manual actual contra las oportunidades de optimización que introduce la plataforma #strong[SaludYa].
 
 #heading(level: 4)[Segmento 1: Pacientes de zonas urbanas periféricas] <sec:segmento-1-pacientes-de-zonas-urbanas-perifericas>
-#metadata((src: "README.md", line: 1422, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1430))
-#strong[Figura 27]
+#metadata((src: "README.md", line: 1424, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1432))
+#strong[Figura 27]
+
+#metadata((src: "README.md", line: 1434))
 #emph[User journey del paciente]
 
-#metadata((src: "README.md", line: 1434, kind: "figure", img: "https://i.imgur.com/e3SXLtm.png"))
+#metadata((src: "README.md", line: 1436, kind: "figure", img: "https://i.imgur.com/e3SXLtm.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-6f922e066c68254d.png", alt: "User journey del paciente", width: auto)]]]
 
-#metadata((src: "README.md", line: 1436))
+#metadata((src: "README.md", line: 1438))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1440))
+#metadata((src: "README.md", line: 1442))
 El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la #link("#figura-27")[Figura 27].
 
-#metadata((src: "README.md", line: 1442))
+#metadata((src: "README.md", line: 1444))
 #pagebreak()
 
 #heading(level: 4)[Segmento 2: Personal asistencial y administrativo] <sec:segmento-2-personal-asistencial-y-administrativo>
-#metadata((src: "README.md", line: 1443, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1451))
-#strong[Figura 28]
+#metadata((src: "README.md", line: 1445, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1453))
+#strong[Figura 28]
+
+#metadata((src: "README.md", line: 1455))
 #emph[User journey del personal asistencial y administrativo]
 
-#metadata((src: "README.md", line: 1455, kind: "figure", img: "https://i.imgur.com/V0f8Chz.png"))
+#metadata((src: "README.md", line: 1457, kind: "figure", img: "https://i.imgur.com/V0f8Chz.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-c6d81f2fdc2920c4.png", alt: "User journey del personal asistencial y administrativo", width: auto)]]]
 
-#metadata((src: "README.md", line: 1457))
+#metadata((src: "README.md", line: 1459))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1461))
+#metadata((src: "README.md", line: 1463))
 El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la #link("#figura-28")[Figura 28].
 
-#metadata((src: "README.md", line: 1463))
+#metadata((src: "README.md", line: 1465))
 #pagebreak()
 
 #heading(level: 3)[2.3.4. Empathy Mapping] <sec:2-3-4-empathy-mapping>
-#metadata((src: "README.md", line: 1465, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1467, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1467))
+#metadata((src: "README.md", line: 1469))
 El diseño de una solución de software orientada a la salud pública requiere comprender no solo las acciones operativas de los usuarios, sino también sus vivencias emocionales y percepciones del servicio. En este sentido, el Empathy Mapping nos permite trascender el perfil demográfico tradicional para examinar las dinámicas internas de nuestros segmentos objetivo. Al sistematizar lo que el paciente y el personal de salud oyen, ven, dicen, piensan y hacen, se identifican las barreras críticas y las expectativas del dominio. Este análisis asegura que SaludYa no solo sea una plataforma funcionalmente robusta, sino también una herramienta que genere confianza, previsibilidad y bienestar en la atención diaria.
 
 #heading(level: 4)[Segmento 1: Pacientes de zonas urbanas periféricas] <sec:segmento-1-pacientes-de-zonas-urbanas-perifericas-2>
-#metadata((src: "README.md", line: 1470, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1478))
-#strong[Figura 29]
+#metadata((src: "README.md", line: 1472, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1480))
+#strong[Figura 29]
+
+#metadata((src: "README.md", line: 1482))
 #emph[Empathy Map - Paciente de Zonas Periféricas]
 
-#metadata((src: "README.md", line: 1482, kind: "figure", img: "https://i.imgur.com/dH7lB2i.png"))
+#metadata((src: "README.md", line: 1484, kind: "figure", img: "https://i.imgur.com/dH7lB2i.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-577b790f0fa098dc.png", alt: "Empathy Map - Paciente de Zonas Periféricas", width: 80%)]]]
 
-#metadata((src: "README.md", line: 1484))
+#metadata((src: "README.md", line: 1486))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1488))
+#metadata((src: "README.md", line: 1490))
 Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales, como se observa en la #link("#figura-29")[Figura 29].
 
-#metadata((src: "README.md", line: 1490))
+#metadata((src: "README.md", line: 1492))
 #pagebreak()
 
 #heading(level: 4)[Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud] <sec:segmento-2-personal-asistencial-y-administrativo-de-establecimientos-publicos-de-salud>
-#metadata((src: "README.md", line: 1491, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 1499))
-#strong[Figura 30]
+#metadata((src: "README.md", line: 1493, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 1501))
+#strong[Figura 30]
+
+#metadata((src: "README.md", line: 1503))
 #emph[Empathy Map - Personal Asistencial y Administrativo]
 
-#metadata((src: "README.md", line: 1503, kind: "figure", img: "https://i.imgur.com/5z2pe4Y.png"))
+#metadata((src: "README.md", line: 1505, kind: "figure", img: "https://i.imgur.com/5z2pe4Y.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-f4e454bfa2ae0e82.png", alt: "Empathy Map - Personal Asistencial y Administrativo", width: 80%)]]]
 
-#metadata((src: "README.md", line: 1505))
+#metadata((src: "README.md", line: 1507))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1509))
+#metadata((src: "README.md", line: 1511))
 Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la #link("#figura-30")[Figura 30].
 
-#metadata((src: "README.md", line: 1511))
+#metadata((src: "README.md", line: 1513))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.3.5. Big Picture EventStorming] <sec:2-3-5-big-picture-eventstorming>
-#metadata((src: "README.md", line: 1512, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1514, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1514))
+#metadata((src: "README.md", line: 1516))
 Para armar un sistema que funcione bien, primero hay que entender cómo trabaja el centro de salud en el día a día. El #strong[Big Picture EventStorming] es una dinámica en equipo que nos sirve para ver todos los hechos importantes que pasan en la posta médica. Al organizar estos sucesos paso a paso, podemos descubrir en qué momentos el proceso se vuelve lento, dónde se pierden los datos o dónde se forman las largas filas de pacientes.
 
 #heading(level: 4)[Step 1 – Free Exploration] <sec:step-1-free-exploration>
-#metadata((src: "README.md", line: 1517, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1519, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1519))
+#metadata((src: "README.md", line: 1521))
 En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: #emph[Cita reservada] o #emph[Check-in realizado]), sin preocuparnos por la parte técnica ni por el diseño del software, como se observa en la #link("#figura-31")[Figura 31].
 
-#metadata((src: "README.md", line: 1527))
+#metadata((src: "README.md", line: 1529))
 #strong[Figura 31]
 
-#metadata((src: "README.md", line: 1529))
+#metadata((src: "README.md", line: 1531))
 #emph[Big Picture EventStorming - Step 1 Free Exploration]
 
-#metadata((src: "README.md", line: 1531, kind: "figure", img: "https://i.imgur.com/JwMsEx4.png"))
+#metadata((src: "README.md", line: 1533, kind: "figure", img: "https://i.imgur.com/JwMsEx4.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-451c3473e3c8989b.png", alt: "Big Picture EventStorming - Step 1 Free Exploration", width: 85%)]]]
 
-#metadata((src: "README.md", line: 1533))
+#metadata((src: "README.md", line: 1535))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1536))
+#metadata((src: "README.md", line: 1538))
 #pagebreak()
 
 #heading(level: 4)[Step 2 – Enforcing Timelines] <sec:step-2-enforcing-timelines>
-#metadata((src: "README.md", line: 1537, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1539, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1539))
+#metadata((src: "README.md", line: 1541))
 En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud, como se observa en la #link("#figura-32")[Figura 32].
 
-#metadata((src: "README.md", line: 1547))
+#metadata((src: "README.md", line: 1549))
 #strong[Figura 32]
 
-#metadata((src: "README.md", line: 1549))
+#metadata((src: "README.md", line: 1551))
 #emph[Big Picture EventStorming: organización de la línea temporal]
 
-#metadata((src: "README.md", line: 1551, kind: "figure", img: "https://i.imgur.com/rkI5utV.png"))
+#metadata((src: "README.md", line: 1553, kind: "figure", img: "https://i.imgur.com/rkI5utV.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-b29dfc73617faf9e.png", alt: "Big Picture EventStorming: organización de la línea temporal", width: 85%)]]]
 
-#metadata((src: "README.md", line: 1553))
+#metadata((src: "README.md", line: 1555))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[Step 3 – People and Systems (Actors & Read Models)] <sec:step-3-people-and-systems-actors-read-models>
-#metadata((src: "README.md", line: 1557, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1559, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1559))
+#metadata((src: "README.md", line: 1561))
 En este tercer paso, agrupamos el proceso por flujos de trabajo (#emph[Workflows]) e identificamos a los #strong[Actores] (tarjetas amarillas) que desencadenan cada acción (#emph[Patient] y #emph[Admission Staff]). También mapeamos la información visible o #strong[Read Models] (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera, como se observa en la #link("#figura-33")[Figura 33].
 
-#metadata((src: "README.md", line: 1567))
+#metadata((src: "README.md", line: 1569))
 #strong[Figura 33]
 
-#metadata((src: "README.md", line: 1569))
+#metadata((src: "README.md", line: 1571))
 #emph[Step 3 - People and Systems]
 
-#metadata((src: "README.md", line: 1571, kind: "figure", img: "https://i.imgur.com/qX7SP87.png"))
+#metadata((src: "README.md", line: 1573, kind: "figure", img: "https://i.imgur.com/qX7SP87.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-ef035045efe82475.png", alt: "Step 3 - People and Systems", width: 85%)]]]
 
-#metadata((src: "README.md", line: 1573))
+#metadata((src: "README.md", line: 1575))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[Step 4 – Explicit Hotspots & Exceptions] <sec:step-4-explicit-hotspots-exceptions>
-#metadata((src: "README.md", line: 1577, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1579, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1579))
+#metadata((src: "README.md", line: 1581))
 En el paso final, identificamos los #strong[Hotspots] (puntos críticos o dudas del negocio representados con tarjetas/rombos morados #raw("????")). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica, como se observa en la #link("#figura-34")[Figura 34].
 
-#metadata((src: "README.md", line: 1586))
+#metadata((src: "README.md", line: 1588))
 #pagebreak()
 
-#metadata((src: "README.md", line: 1588))
+#metadata((src: "README.md", line: 1590))
 #strong[Figura 34]
 
-#metadata((src: "README.md", line: 1590))
+#metadata((src: "README.md", line: 1592))
 #emph[Step 4 - Hotspots and Exceptions]
 
-#metadata((src: "README.md", line: 1592, kind: "figure", img: "https://i.imgur.com/QDRTLVm.png"))
+#metadata((src: "README.md", line: 1594, kind: "figure", img: "https://i.imgur.com/QDRTLVm.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-ef522f523ee3b054.png", alt: "Step 4 - Hotspots and Exceptions", width: 85%)]]]
 
-#metadata((src: "README.md", line: 1594))
+#metadata((src: "README.md", line: 1596))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1598))
+#metadata((src: "README.md", line: 1600))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.3.6. Ubiquitous Language] <sec:2-3-6-ubiquitous-language>
-#metadata((src: "README.md", line: 1600, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1602, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 1602))
+#metadata((src: "README.md", line: 1604))
 Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el #strong[Lenguaje Ubicuo]. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema, como se detalla en la #link("#tabla-19")[Tabla 19].
 
-#metadata((src: "README.md", line: 1610))
+#metadata((src: "README.md", line: 1612))
 #strong[Tabla 19]
 
-#metadata((src: "README.md", line: 1612))
+#metadata((src: "README.md", line: 1614))
 #emph[Ubiquitous Language]
 
-#metadata((src: "README.md", line: 1614, kind: "table"))
+#metadata((src: "README.md", line: 1616, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -1778,38 +1780,38 @@ Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de 
   tline,
 )
 
-#metadata((src: "README.md", line: 1626))
+#metadata((src: "README.md", line: 1628))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1629))
+#metadata((src: "README.md", line: 1631))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 2)[2.4. Requirements specification] <sec:2-4-requirements-specification>
-#metadata((src: "README.md", line: 1631, kind: "heading", level: 2))
-
-#metadata((src: "README.md", line: 1633))
-En esta sección definimos la especificación formal de requisitos para la plataforma #strong[SaludYa], tomando como base los hallazgos del #emph[Needfinding] y los flujos identificados en el #emph[EventStorming]. A través de mapeos de escenarios futuros, Historias de Usuario (#emph[User Stories]), #emph[Impact Mapping] y un #emph[Product Backlog] priorizado, transformamos las necesidades del dominio público de salud en entregables técnicos y funcionales ejecutables.
+#metadata((src: "README.md", line: 1633, kind: "heading", level: 2))
 
 #metadata((src: "README.md", line: 1635))
+En esta sección definimos la especificación formal de requisitos para la plataforma #strong[SaludYa], tomando como base los hallazgos del #emph[Needfinding] y los flujos identificados en el #emph[EventStorming]. A través de mapeos de escenarios futuros, Historias de Usuario (#emph[User Stories]), #emph[Impact Mapping] y un #emph[Product Backlog] priorizado, transformamos las necesidades del dominio público de salud en entregables técnicos y funcionales ejecutables.
+
+#metadata((src: "README.md", line: 1637))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[To-Be Scenario Mapping] <sec:to-be-scenario-mapping>
-#metadata((src: "README.md", line: 1637, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1639, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1641))
+#metadata((src: "README.md", line: 1643))
 El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la #link("#tabla-20")[Tabla 20].
 
-#metadata((src: "README.md", line: 1645))
+#metadata((src: "README.md", line: 1647))
 #strong[Tabla 20]
 
-#metadata((src: "README.md", line: 1647))
+#metadata((src: "README.md", line: 1649))
 #emph[To-Be Scenario Mapping]
 
-#metadata((src: "README.md", line: 1649, kind: "table"))
+#metadata((src: "README.md", line: 1651, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1823,30 +1825,30 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
   tline,
 )
 
-#metadata((src: "README.md", line: 1658))
+#metadata((src: "README.md", line: 1660))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1660))
+#metadata((src: "README.md", line: 1662))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.4.1. User Stories] <sec:2-4-1-user-stories>
-#metadata((src: "README.md", line: 1662, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 1664, kind: "heading", level: 3))
 
 #heading(level: 4)[Epics] <sec:epics>
-#metadata((src: "README.md", line: 1664, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1666, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1668))
+#metadata((src: "README.md", line: 1670))
 Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la #link("#tabla-21")[Tabla 21].
 
-#metadata((src: "README.md", line: 1672))
+#metadata((src: "README.md", line: 1674))
 #strong[Tabla 21]
 
-#metadata((src: "README.md", line: 1674))
+#metadata((src: "README.md", line: 1676))
 #emph[Epics]
 
-#metadata((src: "README.md", line: 1676, kind: "table"))
+#metadata((src: "README.md", line: 1678, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -1861,16 +1863,16 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   tline,
 )
 
-#metadata((src: "README.md", line: 1686))
+#metadata((src: "README.md", line: 1688))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[User stories] <sec:user-stories>
-#metadata((src: "README.md", line: 1689, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 1691, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 1694))
+#metadata((src: "README.md", line: 1696))
 #strong[US-00: Visualización de Propuesta de Valor en Landing Page]
 
-#metadata((src: "README.md", line: 1696, kind: "table"))
+#metadata((src: "README.md", line: 1698, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1883,13 +1885,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1700))
+#metadata((src: "README.md", line: 1702))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1706))
+#metadata((src: "README.md", line: 1708))
 #strong[US-01: Verificación de Identidad por DNI]
 
-#metadata((src: "README.md", line: 1708, kind: "table"))
+#metadata((src: "README.md", line: 1710, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1902,13 +1904,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1713))
+#metadata((src: "README.md", line: 1715))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1719))
+#metadata((src: "README.md", line: 1721))
 #strong[US-02: Registro de Credenciales de Acceso]
 
-#metadata((src: "README.md", line: 1721, kind: "table"))
+#metadata((src: "README.md", line: 1723, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1921,13 +1923,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1725))
+#metadata((src: "README.md", line: 1727))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1731))
+#metadata((src: "README.md", line: 1733))
 #strong[US-03: Verificación de Celular y Creación de Cuenta]
 
-#metadata((src: "README.md", line: 1733, kind: "table"))
+#metadata((src: "README.md", line: 1735, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1940,13 +1942,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1737))
+#metadata((src: "README.md", line: 1739))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1743))
+#metadata((src: "README.md", line: 1745))
 #strong[US-04: Inicio de Sesión del Paciente]
 
-#metadata((src: "README.md", line: 1745, kind: "table"))
+#metadata((src: "README.md", line: 1747, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1959,13 +1961,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1749))
+#metadata((src: "README.md", line: 1751))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1755))
+#metadata((src: "README.md", line: 1757))
 #strong[US-05: Selección de Especialidad Médica]
 
-#metadata((src: "README.md", line: 1757, kind: "table"))
+#metadata((src: "README.md", line: 1759, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1978,13 +1980,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1761))
+#metadata((src: "README.md", line: 1763))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1767))
+#metadata((src: "README.md", line: 1769))
 #strong[US-06: Consulta de Horarios Disponibles]
 
-#metadata((src: "README.md", line: 1769, kind: "table"))
+#metadata((src: "README.md", line: 1771, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -1997,13 +1999,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1773))
+#metadata((src: "README.md", line: 1775))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1779))
+#metadata((src: "README.md", line: 1781))
 #strong[US-07: Reserva de Cita para el Paciente]
 
-#metadata((src: "README.md", line: 1781, kind: "table"))
+#metadata((src: "README.md", line: 1783, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2016,13 +2018,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1785))
+#metadata((src: "README.md", line: 1787))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1791))
+#metadata((src: "README.md", line: 1793))
 #strong[US-08: Recepción de Confirmación de Cita por Correo]
 
-#metadata((src: "README.md", line: 1793, kind: "table"))
+#metadata((src: "README.md", line: 1795, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2035,13 +2037,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1797))
+#metadata((src: "README.md", line: 1799))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1803))
+#metadata((src: "README.md", line: 1805))
 #strong[US-09: Consulta de Citas Agendadas]
 
-#metadata((src: "README.md", line: 1805, kind: "table"))
+#metadata((src: "README.md", line: 1807, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2054,13 +2056,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1809))
+#metadata((src: "README.md", line: 1811))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1815))
+#metadata((src: "README.md", line: 1817))
 #strong[US-10: Cancelación de Cita]
 
-#metadata((src: "README.md", line: 1817, kind: "table"))
+#metadata((src: "README.md", line: 1819, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2073,13 +2075,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1821))
+#metadata((src: "README.md", line: 1823))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1827))
+#metadata((src: "README.md", line: 1829))
 #strong[US-11: Consulta del Código QR de la Reserva]
 
-#metadata((src: "README.md", line: 1829, kind: "table"))
+#metadata((src: "README.md", line: 1831, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2092,13 +2094,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1833))
+#metadata((src: "README.md", line: 1835))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1839))
+#metadata((src: "README.md", line: 1841))
 #strong[US-12: Consulta del Ticket Digital de Atención]
 
-#metadata((src: "README.md", line: 1841, kind: "table"))
+#metadata((src: "README.md", line: 1843, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2111,13 +2113,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1845))
+#metadata((src: "README.md", line: 1847))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1851))
+#metadata((src: "README.md", line: 1853))
 #strong[US-13: Consulta de Posición en la Cola de Atención]
 
-#metadata((src: "README.md", line: 1853, kind: "table"))
+#metadata((src: "README.md", line: 1855, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2130,13 +2132,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1857))
+#metadata((src: "README.md", line: 1859))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1863))
+#metadata((src: "README.md", line: 1865))
 #strong[US-14: Recepción de Notificación de Llamado a Consultorio]
 
-#metadata((src: "README.md", line: 1865, kind: "table"))
+#metadata((src: "README.md", line: 1867, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2149,13 +2151,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1869))
+#metadata((src: "README.md", line: 1871))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1875))
+#metadata((src: "README.md", line: 1877))
 #strong[US-15: Vinculación de un Menor de Edad]
 
-#metadata((src: "README.md", line: 1877, kind: "table"))
+#metadata((src: "README.md", line: 1879, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2168,13 +2170,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1881))
+#metadata((src: "README.md", line: 1883))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1887))
+#metadata((src: "README.md", line: 1889))
 #strong[US-16: Reserva de Cita para un Menor Vinculado]
 
-#metadata((src: "README.md", line: 1889, kind: "table"))
+#metadata((src: "README.md", line: 1891, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2187,13 +2189,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1893))
+#metadata((src: "README.md", line: 1895))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1899))
+#metadata((src: "README.md", line: 1901))
 #strong[US-17: Consulta de Menores Vinculados]
 
-#metadata((src: "README.md", line: 1901, kind: "table"))
+#metadata((src: "README.md", line: 1903, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2206,13 +2208,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1905))
+#metadata((src: "README.md", line: 1907))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1911))
+#metadata((src: "README.md", line: 1913))
 #strong[US-18: Consulta del Perfil de un Menor]
 
-#metadata((src: "README.md", line: 1913, kind: "table"))
+#metadata((src: "README.md", line: 1915, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2225,13 +2227,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1917))
+#metadata((src: "README.md", line: 1919))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1923))
+#metadata((src: "README.md", line: 1925))
 #strong[US-19: Desvinculación de un Menor de Edad]
 
-#metadata((src: "README.md", line: 1925, kind: "table"))
+#metadata((src: "README.md", line: 1927, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2244,13 +2246,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1929))
+#metadata((src: "README.md", line: 1931))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1935))
+#metadata((src: "README.md", line: 1937))
 #strong[US-20: Aceptación de Adelanto de Cita]
 
-#metadata((src: "README.md", line: 1937, kind: "table"))
+#metadata((src: "README.md", line: 1939, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2263,13 +2265,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1941))
+#metadata((src: "README.md", line: 1943))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1947))
+#metadata((src: "README.md", line: 1949))
 #strong[US-21: Rechazo de Adelanto de Cita]
 
-#metadata((src: "README.md", line: 1949, kind: "table"))
+#metadata((src: "README.md", line: 1951, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2282,13 +2284,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1953))
+#metadata((src: "README.md", line: 1955))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1959))
+#metadata((src: "README.md", line: 1961))
 #strong[US-22: Salida Voluntaria de la Cola de Atención]
 
-#metadata((src: "README.md", line: 1961, kind: "table"))
+#metadata((src: "README.md", line: 1963, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2301,13 +2303,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1965))
+#metadata((src: "README.md", line: 1967))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1971))
+#metadata((src: "README.md", line: 1973))
 #strong[US-23: Solicitud de Enlace de Recuperación de Contraseña]
 
-#metadata((src: "README.md", line: 1973, kind: "table"))
+#metadata((src: "README.md", line: 1975, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2320,13 +2322,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1977))
+#metadata((src: "README.md", line: 1979))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1983))
+#metadata((src: "README.md", line: 1985))
 #strong[US-24: Restablecimiento de Contraseña]
 
-#metadata((src: "README.md", line: 1985, kind: "table"))
+#metadata((src: "README.md", line: 1987, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2339,13 +2341,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 1989))
+#metadata((src: "README.md", line: 1991))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 1995))
+#metadata((src: "README.md", line: 1997))
 #strong[US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta]
 
-#metadata((src: "README.md", line: 1997, kind: "table"))
+#metadata((src: "README.md", line: 1999, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2358,13 +2360,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2001))
+#metadata((src: "README.md", line: 2003))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2007))
+#metadata((src: "README.md", line: 2009))
 #strong[US-26: Consulta del Perfil del Paciente]
 
-#metadata((src: "README.md", line: 2009, kind: "table"))
+#metadata((src: "README.md", line: 2011, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2377,13 +2379,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2013))
+#metadata((src: "README.md", line: 2015))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2019))
+#metadata((src: "README.md", line: 2021))
 #strong[US-27: Edición de Datos de Contacto]
 
-#metadata((src: "README.md", line: 2021, kind: "table"))
+#metadata((src: "README.md", line: 2023, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2396,13 +2398,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2025))
+#metadata((src: "README.md", line: 2027))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2031))
+#metadata((src: "README.md", line: 2033))
 #strong[US-28: Cierre de Sesión del Paciente]
 
-#metadata((src: "README.md", line: 2033, kind: "table"))
+#metadata((src: "README.md", line: 2035, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2415,13 +2417,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2037))
+#metadata((src: "README.md", line: 2039))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2043))
+#metadata((src: "README.md", line: 2045))
 #strong[US-29: Aviso de Sesión Expirada]
 
-#metadata((src: "README.md", line: 2045, kind: "table"))
+#metadata((src: "README.md", line: 2047, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2434,13 +2436,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2049))
+#metadata((src: "README.md", line: 2051))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2055))
+#metadata((src: "README.md", line: 2057))
 #strong[US-30: Inicio de Sesión del Super Admin]
 
-#metadata((src: "README.md", line: 2057, kind: "table"))
+#metadata((src: "README.md", line: 2059, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2453,13 +2455,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2061))
+#metadata((src: "README.md", line: 2063))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2067))
+#metadata((src: "README.md", line: 2069))
 #strong[US-31: Creación de Cuenta de Personal de Admisión]
 
-#metadata((src: "README.md", line: 2069, kind: "table"))
+#metadata((src: "README.md", line: 2071, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2472,13 +2474,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2073))
+#metadata((src: "README.md", line: 2075))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2079))
+#metadata((src: "README.md", line: 2081))
 #strong[US-32: Inicio de Sesión del Personal de Admisión]
 
-#metadata((src: "README.md", line: 2081, kind: "table"))
+#metadata((src: "README.md", line: 2083, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2491,13 +2493,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2085))
+#metadata((src: "README.md", line: 2087))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2091))
+#metadata((src: "README.md", line: 2093))
 #strong[US-33: Configuración de la Duración de los Intervalos de Atención]
 
-#metadata((src: "README.md", line: 2093, kind: "table"))
+#metadata((src: "README.md", line: 2095, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2510,13 +2512,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2097))
+#metadata((src: "README.md", line: 2099))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2103))
+#metadata((src: "README.md", line: 2105))
 #strong[US-34: Edición de una Regla Operativa del Establecimiento]
 
-#metadata((src: "README.md", line: 2105, kind: "table"))
+#metadata((src: "README.md", line: 2107, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2529,13 +2531,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2109))
+#metadata((src: "README.md", line: 2111))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2115))
+#metadata((src: "README.md", line: 2117))
 #strong[US-35: Consulta de Reglas Operativas Vigentes]
 
-#metadata((src: "README.md", line: 2117, kind: "table"))
+#metadata((src: "README.md", line: 2119, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2548,13 +2550,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2121))
+#metadata((src: "README.md", line: 2123))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2127))
+#metadata((src: "README.md", line: 2129))
 #strong[US-36: Selección de Especialidad en la Agenda Operativa]
 
-#metadata((src: "README.md", line: 2129, kind: "table"))
+#metadata((src: "README.md", line: 2131, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2567,13 +2569,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2133))
+#metadata((src: "README.md", line: 2135))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2139))
+#metadata((src: "README.md", line: 2141))
 #strong[US-37: Consulta del Calendario Operativo]
 
-#metadata((src: "README.md", line: 2141, kind: "table"))
+#metadata((src: "README.md", line: 2143, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2586,13 +2588,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2145))
+#metadata((src: "README.md", line: 2147))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2151))
+#metadata((src: "README.md", line: 2153))
 #strong[US-38: Consulta de Bloques del Día]
 
-#metadata((src: "README.md", line: 2153, kind: "table"))
+#metadata((src: "README.md", line: 2155, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2605,13 +2607,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2157))
+#metadata((src: "README.md", line: 2159))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2163))
+#metadata((src: "README.md", line: 2165))
 #strong[US-39: Consulta del Detalle de un Bloque]
 
-#metadata((src: "README.md", line: 2165, kind: "table"))
+#metadata((src: "README.md", line: 2167, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2624,13 +2626,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2169))
+#metadata((src: "README.md", line: 2171))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2175))
+#metadata((src: "README.md", line: 2177))
 #strong[US-40: Consulta de Horario por Profesional]
 
-#metadata((src: "README.md", line: 2177, kind: "table"))
+#metadata((src: "README.md", line: 2179, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2643,13 +2645,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2181))
+#metadata((src: "README.md", line: 2183))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2187))
+#metadata((src: "README.md", line: 2189))
 #strong[US-41: Consulta de Pacientes con Reserva en un Bloque]
 
-#metadata((src: "README.md", line: 2189, kind: "table"))
+#metadata((src: "README.md", line: 2191, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2662,13 +2664,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2193))
+#metadata((src: "README.md", line: 2195))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2199))
+#metadata((src: "README.md", line: 2201))
 #strong[US-42: Edición de un Bloque Horario]
 
-#metadata((src: "README.md", line: 2201, kind: "table"))
+#metadata((src: "README.md", line: 2203, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2681,13 +2683,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2205))
+#metadata((src: "README.md", line: 2207))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2211))
+#metadata((src: "README.md", line: 2213))
 #strong[US-43: Registro de Llegada por Escaneo de QR]
 
-#metadata((src: "README.md", line: 2213, kind: "table"))
+#metadata((src: "README.md", line: 2215, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2700,13 +2702,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2217))
+#metadata((src: "README.md", line: 2219))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2223))
+#metadata((src: "README.md", line: 2225))
 #strong[US-44: Registro de Llegada por Código Manual]
 
-#metadata((src: "README.md", line: 2225, kind: "table"))
+#metadata((src: "README.md", line: 2227, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2719,13 +2721,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2229))
+#metadata((src: "README.md", line: 2231))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2235))
+#metadata((src: "README.md", line: 2237))
 #strong[US-45: Consulta de la Cola de Atención Presencial]
 
-#metadata((src: "README.md", line: 2237, kind: "table"))
+#metadata((src: "README.md", line: 2239, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2738,13 +2740,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2241))
+#metadata((src: "README.md", line: 2243))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2247))
+#metadata((src: "README.md", line: 2249))
 #strong[US-46: Llamado del Siguiente Paciente]
 
-#metadata((src: "README.md", line: 2249, kind: "table"))
+#metadata((src: "README.md", line: 2251, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2757,13 +2759,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2253))
+#metadata((src: "README.md", line: 2255))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2259))
+#metadata((src: "README.md", line: 2261))
 #strong[US-47: Inicio de Atención de un Paciente Llamado]
 
-#metadata((src: "README.md", line: 2261, kind: "table"))
+#metadata((src: "README.md", line: 2263, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2776,13 +2778,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2265))
+#metadata((src: "README.md", line: 2267))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2271))
+#metadata((src: "README.md", line: 2273))
 #strong[US-48: Finalización de la Atención de un Paciente]
 
-#metadata((src: "README.md", line: 2273, kind: "table"))
+#metadata((src: "README.md", line: 2275, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2795,13 +2797,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2277))
+#metadata((src: "README.md", line: 2279))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2283))
+#metadata((src: "README.md", line: 2285))
 #strong[US-49: Registro de Ausencia de un Paciente]
 
-#metadata((src: "README.md", line: 2285, kind: "table"))
+#metadata((src: "README.md", line: 2287, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2814,13 +2816,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2289))
+#metadata((src: "README.md", line: 2291))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2295))
+#metadata((src: "README.md", line: 2297))
 #strong[US-50: Consulta de Citas Canceladas del Día]
 
-#metadata((src: "README.md", line: 2297, kind: "table"))
+#metadata((src: "README.md", line: 2299, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2833,13 +2835,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2301))
+#metadata((src: "README.md", line: 2303))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2307))
+#metadata((src: "README.md", line: 2309))
 #strong[US-51: Visualización de Indicadores del Día]
 
-#metadata((src: "README.md", line: 2309, kind: "table"))
+#metadata((src: "README.md", line: 2311, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2852,13 +2854,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2313))
+#metadata((src: "README.md", line: 2315))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2319))
+#metadata((src: "README.md", line: 2321))
 #strong[US-52: Visualización de Demanda por Especialidad]
 
-#metadata((src: "README.md", line: 2321, kind: "table"))
+#metadata((src: "README.md", line: 2323, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2871,13 +2873,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2325))
+#metadata((src: "README.md", line: 2327))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2331))
+#metadata((src: "README.md", line: 2333))
 #strong[US-53: Exportación de Reporte Operativo]
 
-#metadata((src: "README.md", line: 2333, kind: "table"))
+#metadata((src: "README.md", line: 2335, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2890,16 +2892,16 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#text(weight: "bold")[Acceptance Criteria]],
 )
 
-#metadata((src: "README.md", line: 2336))
+#metadata((src: "README.md", line: 2338))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[Technical stories] <sec:technical-stories>
-#metadata((src: "README.md", line: 2340, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 2342, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 2346))
+#metadata((src: "README.md", line: 2348))
 #strong[TECH-01: Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM)]
 
-#metadata((src: "README.md", line: 2348, kind: "table"))
+#metadata((src: "README.md", line: 2350, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2913,13 +2915,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#linebreak()         *Scenario 1: Envío de correo electrónico transaccional via SMTP* #linebreak()  #linebreak()         • *Given* una solicitud de envío con la plantilla HTML y los datos dinámicos requeridos, #linebreak()  #linebreak()            *When* el servicio invoca la interfaz de transporte SMTP, #linebreak()  #linebreak()            *Then* la pasarela entrega el correo al destinatario y retorna una respuesta con estado \`200 OK\` y el ID del mensaje enviado. #linebreak()  #linebreak()  #linebreak()         *Scenario 2: Envío de alerta push a dispositivo móvil vía FCM API* #linebreak()  #linebreak()         • *Given* un payload de notificación Push conteniendo el token del dispositivo destino, #linebreak()  #linebreak()            *When* el servicio ejecuta la petición HTTP POST hacia la API de Firebase Cloud Messaging, #linebreak()  #linebreak()            *Then* FCM responde con código \`200 OK\` confirmando la entrega del mensaje al dispositivo. #linebreak()  #linebreak()  #linebreak()],
 )
 
-#metadata((src: "README.md", line: 2395))
+#metadata((src: "README.md", line: 2397))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2406))
+#metadata((src: "README.md", line: 2408))
 #strong[TECH-02: Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC]
 
-#metadata((src: "README.md", line: 2408, kind: "table"))
+#metadata((src: "README.md", line: 2410, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2933,13 +2935,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#linebreak()         *Scenario 1: Petición HTTP autenticada con rol autorizado (Request/Response Exitoso)* #linebreak()  #linebreak()         • *Given* una solicitud HTTP \`GET /api/v1/appointments\` con un encabezado \`Authorization: Bearer \` que contiene el rol autorizado, #linebreak()  #linebreak()            *When* el controlador procesa la petición, #linebreak()  #linebreak()            *Then* retorna un código de estado \`200 OK\` junto con el payload JSON estandarizado y documentado en Swagger UI. #linebreak()  #linebreak()  #linebreak()         *Scenario 2: Denegación de acceso por rol insuficiente o token inválido* #linebreak()  #linebreak()         • *Given* una solicitud a un endpoint protegido enviada con un token caducado o sin el rol requerido, #linebreak()  #linebreak()            *When* el middleware RBAC valida el token JWT, #linebreak()  #linebreak()            *Then* el sistema interrumpe la petición y responde con código HTTP \`401 Unauthorized\` o \`403 Forbidden\` según la falla. #linebreak()  #linebreak()  #linebreak()         *Scenario 3: Manejo estandarizado de errores de request (HTTP Status Codes)* #linebreak()  #linebreak()         • *Given* una petición HTTP POST con un cuerpo JSON malformado o faltante de campos obligatorios, #linebreak()  #linebreak()            *When* el middleware de validación procesa el request, #linebreak()  #linebreak()            *Then* la API responde con un código \`400 Bad Request\` indicando la lista detallada de errores de validación por campo. #linebreak()  #linebreak()  #linebreak()],
 )
 
-#metadata((src: "README.md", line: 2459))
+#metadata((src: "README.md", line: 2461))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2470))
+#metadata((src: "README.md", line: 2472))
 #strong[TECH-03: Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias]
 
-#metadata((src: "README.md", line: 2472, kind: "table"))
+#metadata((src: "README.md", line: 2474, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2953,13 +2955,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#linebreak()         *Scenario 1: Procesamiento y actualización masiva de citas expiradas* #linebreak()  #linebreak()         • *Given* la ejecución periódica programada de la tarea en segundo plano, #linebreak()  #linebreak()            *When* el worker audita las citas del intervalo actual cuyo margen de tolerancia expiró sin confirmación de check-in, #linebreak()  #linebreak()            *Then* el sistema actualiza el estado de la entidad a "Ausente" en la base de datos registrando el timestamp de la acción. #linebreak()  #linebreak()  #linebreak()         *Scenario 2: Disparo de eventos de reasignación tras detección de ausencia* #linebreak()  #linebreak()         • *Given* una cita médica marcada como "Ausente" por el worker, #linebreak()  #linebreak()            *When* se confirma la persistencia del nuevo estado, #linebreak()  #linebreak()            *Then* el worker publica el evento \`AppointmentExpire​dEvent\` en la cola de mensajes para iniciar el protocolo de reasignación de cupos. #linebreak()  #linebreak()  #linebreak()         *Scenario 3: Bloqueo distribuido para evitar duplicidad de ejecución* #linebreak()  #linebreak()         • *Given* múltiples réplicas del servicio ejecutándose de manera concurrente, #linebreak()  #linebreak()            *When* la tarea Cron se dispara simultáneamente en varios nodos, #linebreak()  #linebreak()            *Then* el primer worker adquiere un bloqueo distribuido (Redis/Database Lock), evitando ejecuciones duplicadas sobre los mismos registros. #linebreak()  #linebreak()  #linebreak()],
 )
 
-#metadata((src: "README.md", line: 2523))
+#metadata((src: "README.md", line: 2525))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2534))
+#metadata((src: "README.md", line: 2536))
 #strong[TECH-04: Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas]
 
-#metadata((src: "README.md", line: 2536, kind: "table"))
+#metadata((src: "README.md", line: 2538, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2973,13 +2975,13 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#linebreak()         *Scenario 1: Consumo y despacho exitoso del evento de reserva (Request/Response Event)* #linebreak()  #linebreak()         • *Given* el evento \`AppointmentBooked​Event\` publicado en la cola de notificaciones, #linebreak()  #linebreak()            *When* el consumidor recupera el mensaje y genera la plantilla correspondiente, #linebreak()  #linebreak()            *Then* el sistema efectúa el dispatch hacia el proveedor externo obteniendo un código de entrega exitoso y marcando el mensaje de la cola como procesado (\`ACK\`). #linebreak()  #linebreak()  #linebreak()         *Scenario 2: Manejo de fallas temporales mediante Dead Letter Queue (DLQ)* #linebreak()  #linebreak()         • *Given* un fallo de conexión (5xx / Timeout) con la pasarela de notificaciones, #linebreak()  #linebreak()            *When* el consumidor detecta la excepción durante el procesamiento, #linebreak()  #linebreak()            *Then* el sistema aplica un reintento con \*Exponential Backoff\* y, si se supera el límite máximo de reintentos, transfiere el mensaje a la Dead Letter Queue (DLQ) registrando el log de auditoría. #linebreak()  #linebreak()  #linebreak()],
 )
 
-#metadata((src: "README.md", line: 2583))
+#metadata((src: "README.md", line: 2585))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2594))
+#metadata((src: "README.md", line: 2596))
 #strong[TECH-05: Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa]
 
-#metadata((src: "README.md", line: 2596, kind: "table"))
+#metadata((src: "README.md", line: 2598, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -2993,62 +2995,62 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
   table.cell(colspan: 4)[#linebreak()         *Scenario 1: Respuesta exitosa de validación de DNI (HTTP 200 OK)* #linebreak()  #linebreak()         • *Given* una solicitud \`POST /api/v1/identity/v​erify-dni\` conteniendo un DNI de 8 dígitos válido en el cuerpo JSON, #linebreak()  #linebreak()            *When* la API consulta el servicio (o la capa de cache en memoria), #linebreak()  #linebreak()            *Then* el sistema retorna un código de estado \`200 OK\` con los nombres y apellidos validados en el payload JSON. #linebreak()  #linebreak()  #linebreak()         *Scenario 2: Validación de formato de entrada (HTTP 400 Bad Request)* #linebreak()  #linebreak()         • *Given* una petición HTTP enviada con un DNI con formato incorrecto (menos de 8 dígitos o caracteres alfanuméricos), #linebreak()  #linebreak()            *When* el middleware de validación procesa el request, #linebreak()  #linebreak()            *Then* el sistema rechaza la petición respondiendo con un código \`400 Bad Request\` y el detalle del error de formato. #linebreak()  #linebreak()  #linebreak()         *Scenario 3: Respuesta ante caída o degradación del proveedor externo (HTTP 503 Service Unavailable)* #linebreak()  #linebreak()         • *Given* la API externa inactiva o con el patrón Circuit Breaker en estado abierto (\`Open\`), #linebreak()  #linebreak()            *When* el frontend realiza la consulta de un DNI, #linebreak()  #linebreak()            *Then* el endpoint responde con un código \`503 Service Unavailable\` adjuntando la bandera para permitir el registro condicional en el cliente. #linebreak()  #linebreak()  #linebreak()],
 )
 
-#metadata((src: "README.md", line: 2647))
+#metadata((src: "README.md", line: 2649))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2650))
+#metadata((src: "README.md", line: 2652))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.4.2. Impact Mapping] <sec:2-4-2-impact-mapping>
-#metadata((src: "README.md", line: 2652, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 2654))
-El mapa de impacto para nuestra plataforma de #strong[gestión de citas médicas y control de sala de espera], define una meta SMART: #emph[«Optimizar la atención médica y reducir el tiempo de espera operativo; al primer año de despliegue contar con 15 clínicas afiliadas, 25 000 reservas procesadas y un 75% de confirmación de presencia vía QR»]. A partir de esta meta se explicitan los cambios de comportamiento esperados en los actores clave del sistema.
+#metadata((src: "README.md", line: 2654, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 2656))
-Como referencia cualitativa se emplean dos personas modelo: #strong[Personal de Admisión] (gestión operativa y flujo en sala) y #strong[Paciente] (reserva autónoma y confirmación de llegada). Para el primero, el mapa recoge necesidades relativas a visibilidad en tiempo real de pacientes confirmados, claridad en el llamado a consultorio, flexibilidad para aplicar prioridades o reasignaciones por imprevistos, y generación de métricas de ausentismo; para el segundo, autonomía para seleccionar especialidad y horario, confianza mediante el registro rápido por código QR sin filas presenciales, y claridad sobre su estado dentro de la cola de espera.
+El mapa de impacto para nuestra plataforma de #strong[gestión de citas médicas y control de sala de espera], define una meta SMART: #emph[«Optimizar la atención médica y reducir el tiempo de espera operativo; al primer año de despliegue contar con 15 clínicas afiliadas, 25 000 reservas procesadas y un 75% de confirmación de presencia vía QR»]. A partir de esta meta se explicitan los cambios de comportamiento esperados en los actores clave del sistema.
 
 #metadata((src: "README.md", line: 2658))
+Como referencia cualitativa se emplean dos personas modelo: #strong[Personal de Admisión] (gestión operativa y flujo en sala) y #strong[Paciente] (reserva autónoma y confirmación de llegada). Para el primero, el mapa recoge necesidades relativas a visibilidad en tiempo real de pacientes confirmados, claridad en el llamado a consultorio, flexibilidad para aplicar prioridades o reasignaciones por imprevistos, y generación de métricas de ausentismo; para el segundo, autonomía para seleccionar especialidad y horario, confianza mediante el registro rápido por código QR sin filas presenciales, y claridad sobre su estado dentro de la cola de espera.
+
+#metadata((src: "README.md", line: 2660))
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de #raw("bookingOrder"), validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y #emph[spikes] (SP) en formato #emph[Como… / quiero… / para…] (y su equivalente técnico #emph[Objective / Given / When / Then]), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional, como se observa en la #link("#figura-35")[Figura 35].
 
-#metadata((src: "README.md", line: 2666))
+#metadata((src: "README.md", line: 2668))
 #strong[Figura 35]
 
-#metadata((src: "README.md", line: 2668))
+#metadata((src: "README.md", line: 2670))
 #emph[Impact Mapping de SaludYa]
 
-#metadata((src: "README.md", line: 2670, kind: "figure", img: "https://i.imgur.com/0D0vHje.png"))
+#metadata((src: "README.md", line: 2672, kind: "figure", img: "https://i.imgur.com/0D0vHje.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/build/remote/remote-5725364401efacd3.png", alt: "Impact Mapping de SaludYa", width: 85%)]]]
 
-#metadata((src: "README.md", line: 2672))
+#metadata((src: "README.md", line: 2674))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2676))
+#metadata((src: "README.md", line: 2678))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.4.3. Product Backlog] <sec:2-4-3-product-backlog>
-#metadata((src: "README.md", line: 2678, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 2680, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 2680))
+#metadata((src: "README.md", line: 2682))
 El Product Backlog ha sido priorizado en función del #strong[valor directo entregado al negocio y a los usuarios], asegurando que los entregables visibles y de alto impacto (como la Landing Page y el flujo principal de reservas) se aborden desde los primeros Sprints. La priorización sigue el principio de #strong[valor de negocio primero]: las historias relacionadas con la propuesta de valor visible para el paciente (Landing Page, reserva de citas, check-in QR) y la operación crítica del establecimiento (gestión de cupos, reasignación de turnos liberados y dashboard operativo) se ubican en los primeros lugares, mientras que las historias de soporte técnico y configuración avanzada se postergan a Sprints posteriores.
 
 #heading(level: 4)[Tabla del Product Backlog] <sec:tabla-del-product-backlog>
-#metadata((src: "README.md", line: 2682, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 2684, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 2686))
+#metadata((src: "README.md", line: 2688))
 El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la #link("#tabla-22")[Tabla 22].
 
-#metadata((src: "README.md", line: 2690))
+#metadata((src: "README.md", line: 2692))
 #strong[Tabla 22]
 
-#metadata((src: "README.md", line: 2692))
+#metadata((src: "README.md", line: 2694))
 #emph[Product Backlog de SaludYa]
 
-#metadata((src: "README.md", line: 2694, kind: "table"))
+#metadata((src: "README.md", line: 2696, kind: "table"))
 #table(
   columns: 6,
   align: (left, left, left, left, left, left),
@@ -3116,106 +3118,106 @@ El backlog ordena las historias de usuario por prioridad e identifica su rol, al
   tline,
 )
 
-#metadata((src: "README.md", line: 2757))
+#metadata((src: "README.md", line: 2759))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 2)[2.5. Strategic-Level Domain-Driven Design] <sec:2-5-strategic-level-domain-driven-design>
-#metadata((src: "README.md", line: 2761, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 2763, kind: "heading", level: 2))
 
 #heading(level: 3)[2.5.1. EventStorming] <sec:2-5-1-eventstorming>
-#metadata((src: "README.md", line: 2763, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 2765))
-Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio de la gestión de citas médicas en establecimientos públicos de salud, y definir las interacciones principales entre los actores, comandos y políticas del sistema #strong[SaludYa].
+#metadata((src: "README.md", line: 2765, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 2767))
-La sesión se realizó con una duración aproximada de #strong[2 horas], con la participación de los cinco integrantes del equipo RuwaLabs, utilizando #strong[Miro] como tablero colaborativo.
+Con el fin de plantear una aproximación del modelado de nivel general para el dominio del problema, se aplicó la técnica de EventStorming. Este proceso permitió al equipo comprender el flujo de eventos que ocurren dentro del dominio de la gestión de citas médicas en establecimientos públicos de salud, y definir las interacciones principales entre los actores, comandos y políticas del sistema #strong[SaludYa].
 
 #metadata((src: "README.md", line: 2769))
-#strong[Pasos del proceso:]
+La sesión se realizó con una duración aproximada de #strong[2 horas], con la participación de los cinco integrantes del equipo RuwaLabs, utilizando #strong[Miro] como tablero colaborativo.
 
 #metadata((src: "README.md", line: 2771))
+#strong[Pasos del proceso:]
+
+#metadata((src: "README.md", line: 2773))
 #strong[1. Identificación de los Domain Events:] En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Appointment booked", "Slot released", "Check-in completed"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos #raw("Booking Order assigned"), #raw("Patient in attendance queue") y #raw("Patient called"), que reflejan la existencia de dos colas complementarias dentro del dominio: la #strong[cola por pedido de cita] (ordenada por #raw("Booking Order")) y la #strong[cola de asistencia] (ordenada por #raw("checkInTimestamp")).
 
-#metadata((src: "README.md", line: 2779))
+#metadata((src: "README.md", line: 2781))
 #strong[Figura 36]
 
-#metadata((src: "README.md", line: 2781))
+#metadata((src: "README.md", line: 2783))
 #emph[EventStorming - Domain Events]
 
-#metadata((src: "README.md", line: 2783, kind: "figure", img: "assets/DomainEvents.png"))
+#metadata((src: "README.md", line: 2785, kind: "figure", img: "assets/DomainEvents.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/DomainEvents.png", alt: "EventStorming - Domain Events", width: 90%)]]]
 
-#metadata((src: "README.md", line: 2787))
+#metadata((src: "README.md", line: 2789))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2791))
+#metadata((src: "README.md", line: 2793))
 #strong[2. Organización cronológica de los eventos:] Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento #raw("Booking Order assigned") ocurre inmediatamente después de #raw("Appointment booked"), mientras que #raw("Patient in attendance queue") y #raw("Patient called") ocurren después de #raw("Check-in completed"), evidenciando que ambas colas operan en momentos distintos del flujo, como se observa en la #link("#figura-36")[Figura 36].
 
-#metadata((src: "README.md", line: 2799))
+#metadata((src: "README.md", line: 2801))
 #strong[Figura 37]
 
-#metadata((src: "README.md", line: 2801))
+#metadata((src: "README.md", line: 2803))
 #emph[EventStorming - Timeline]
 
-#metadata((src: "README.md", line: 2803, kind: "figure", img: "assets/Timeline.png"))
+#metadata((src: "README.md", line: 2805, kind: "figure", img: "assets/Timeline.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Timeline.png", alt: "EventStorming - Timeline", width: 90%)]]]
 
-#metadata((src: "README.md", line: 2807))
+#metadata((src: "README.md", line: 2809))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2811))
+#metadata((src: "README.md", line: 2813))
 #strong[3. Identificación de Pain Points y Pivotal Points:] En esta etapa se marcaron los #strong[pain points], es decir, las posibles dificultades o cuellos de botella del proceso actual, y los #strong[pivotal points], que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la #strong[asignación del #raw("Booking Order")] (que determina la prioridad en la lista de espera) y el #strong[waitlist timeout] (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la #strong[attendance queue] y la #strong[waitlist], como se observa en la #link("#figura-37")[Figura 37].
 
-#metadata((src: "README.md", line: 2819))
+#metadata((src: "README.md", line: 2821))
 #strong[Figura 38]
 
-#metadata((src: "README.md", line: 2821))
+#metadata((src: "README.md", line: 2823))
 #emph[EventStorming - Pain Points y Pivotal Points]
 
-#metadata((src: "README.md", line: 2823, kind: "figure", img: "assets/PaintPints-PivotalPoints.png"))
+#metadata((src: "README.md", line: 2825, kind: "figure", img: "assets/PaintPints-PivotalPoints.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/PaintPints-PivotalPoints.png", alt: "EventStorming - Pain Points y Pivotal Points", width: 90%)]]]
 
-#metadata((src: "README.md", line: 2827))
+#metadata((src: "README.md", line: 2829))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2831))
+#metadata((src: "README.md", line: 2833))
 #strong[4. Incorporación de Commands, Policies y Read Models:] Finalmente, se agregaron los #strong[commands] (acciones que disparan eventos), las #strong[policies] (reglas de negocio que responden a eventos) y los #strong[read models] (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands #raw("Assign Booking Order"), #raw("Add to attendance queue") y #raw("Call next patient"); las policies #raw("When a slot is released, notify the patient with the lowest Booking Order"), #raw("When the timeout expires, move to the next patient in the list") y #raw("If cancelled within the allowed time, release the slot"); y los read models #raw("Attendance Queue") y #raw("Waitlist"), como se observa en la #link("#figura-38")[Figura 38] y la #link("#figura-39")[Figura 39].
 
-#metadata((src: "README.md", line: 2839))
+#metadata((src: "README.md", line: 2841))
 #strong[Figura 39]
 
-#metadata((src: "README.md", line: 2841))
+#metadata((src: "README.md", line: 2843))
 #emph[EventStorming - Commands, Policies y Read Models]
 
-#metadata((src: "README.md", line: 2843, kind: "figure", img: "assets/Commands.png"))
+#metadata((src: "README.md", line: 2845, kind: "figure", img: "assets/Commands.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Commands.png", alt: "EventStorming - Commands, Policies y Read Models", width: 90%)]]]
 
-#metadata((src: "README.md", line: 2847))
+#metadata((src: "README.md", line: 2849))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[2.5.1.1. Candidate Context Discovery] <sec:2-5-1-1-candidate-context-discovery>
-#metadata((src: "README.md", line: 2852, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 2854))
-A partir del modelado realizado en el EventStorming, se llevó a cabo una sesión de Candidate Context Discovery con el objetivo de identificar los bounded contexts dentro del dominio de SaludYa. Para ello, se aplicó la técnica #strong["look-for-pivotal-events"], que permitió detectar los eventos clave del negocio que marcan transiciones de estado y delimitan responsabilidades entre diferentes partes del proceso.
+#metadata((src: "README.md", line: 2854, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 2856))
-Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
+A partir del modelado realizado en el EventStorming, se llevó a cabo una sesión de Candidate Context Discovery con el objetivo de identificar los bounded contexts dentro del dominio de SaludYa. Para ello, se aplicó la técnica #strong["look-for-pivotal-events"], que permitió detectar los eventos clave del negocio que marcan transiciones de estado y delimitan responsabilidades entre diferentes partes del proceso.
 
 #metadata((src: "README.md", line: 2858))
-Es importante precisar que #strong[#raw("Attendance Queue") no constituye un bounded context], sino un #strong[agregado dentro del bounded context #raw("Arrival & QR Check-in")]. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, #strong[#raw("Booking Order") no constituye un bounded context], sino un #strong[atributo de #raw("Appointment") dentro del bounded context #raw("Appointments & Booking")], cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
+Durante la sesión, se reorganizó la línea de tiempo del EventStorming para agrupar los elementos relacionados —eventos, comandos, políticas y read models— en torno a sus respectivos aggregates. Esto facilitó distinguir los límites naturales entre los contextos y definir con mayor claridad las interacciones entre ellos.
 
 #metadata((src: "README.md", line: 2860))
+Es importante precisar que #strong[#raw("Attendance Queue") no constituye un bounded context], sino un #strong[agregado dentro del bounded context #raw("Arrival & QR Check-in")]. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, #strong[#raw("Booking Order") no constituye un bounded context], sino un #strong[atributo de #raw("Appointment") dentro del bounded context #raw("Appointments & Booking")], cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
+
+#metadata((src: "README.md", line: 2862))
 Como resultado del proceso, se identificaron #strong[cinco bounded contexts candidatos] para el dominio de SaludYa:
 
-#metadata((src: "README.md", line: 2868))
+#metadata((src: "README.md", line: 2870))
 #strong[Tabla 23]
 
-#metadata((src: "README.md", line: 2870))
+#metadata((src: "README.md", line: 2872))
 #emph[Candidate Context Discovery]
 
-#metadata((src: "README.md", line: 2872, kind: "table"))
+#metadata((src: "README.md", line: 2874, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -3229,235 +3231,235 @@ Como resultado del proceso, se identificaron #strong[cinco bounded contexts cand
   tline,
 )
 
-#metadata((src: "README.md", line: 2881))
+#metadata((src: "README.md", line: 2883))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2884))
+#metadata((src: "README.md", line: 2886))
 A continuación se detalla, para cada bounded context, los elementos incorporados en la sesión de Candidate Context Discovery, como se detalla en la #link("#tabla-23")[Tabla 23]:
 
-#metadata((src: "README.md", line: 2886))
+#metadata((src: "README.md", line: 2888))
 - #strong[#raw("Appointments & Booking"):] se incorpora el atributo #raw("Booking Order") y la regla de negocio #emph["Every booked appointment has a unique Booking Order per specialty, date and facility"].
 - #strong[#raw("Dynamic Waitlist & Reassignment"):] se incorporan los conceptos #raw("Waitlist Entry") (entrada ordenada por #raw("Booking Order")), #raw("Cascade Reassignment") (reasignación en cascada si nadie acepta) y #raw("Waitlist Response Timeout") (tiempo máximo para aceptar o rechazar). La policy de reasignación se define como #emph["Reassignment by Booking Order"].
 - #strong[#raw("Arrival & QR Check-in"):] se incorporan los conceptos #raw("Attendance Queue") (cola virtual ordenada por #raw("checkInTimestamp")) y #raw("Queue Entry") (entrada individual en la cola de asistencia). La policy asociada se define como #emph["Attendance Queue sorted by checkInTimestamp"].
 - #strong[#raw("Hospital Operations & Configuration"):] se incorpora el parámetro #raw("waitlistResponseTimeout") (y opcionalmente #raw("cascadeWaitlistEnabled") y #raw("maxCapacityPerSlot")) como parte de las reglas operativas configurables por el establecimiento.
 
-#metadata((src: "README.md", line: 2893))
+#metadata((src: "README.md", line: 2895))
 La identificación de bounded contexts delimita las responsabilidades de identidad, reservas, reasignación, llegada y configuración operativa dentro del dominio de SaludYa, como se observa en la #link("#figura-40")[Figura 40].
 
-#metadata((src: "README.md", line: 2897))
+#metadata((src: "README.md", line: 2899))
 #strong[Figura 40]
 
-#metadata((src: "README.md", line: 2899))
+#metadata((src: "README.md", line: 2901))
 #emph[Candidate Context Discovery - Bounded Contexts identificados]
 
-#metadata((src: "README.md", line: 2901, kind: "figure", img: "assets/CandidateContextDiscovery.png"))
+#metadata((src: "README.md", line: 2903, kind: "figure", img: "assets/CandidateContextDiscovery.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/CandidateContextDiscovery.png", alt: "Candidate Context Discovery - Bounded Contexts identificados", width: 95%)]]]
 
-#metadata((src: "README.md", line: 2905))
+#metadata((src: "README.md", line: 2907))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[2.5.1.2. Domain Message Flows Modeling] <sec:2-5-1-2-domain-message-flows-modeling>
-#metadata((src: "README.md", line: 2910, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 2912))
-En esta sección se presentan los principales flujos de colaboración entre los bounded contexts, modelados con la técnica de #strong[Domain Message Flow Modelling] propuesta por ddd-crew. Cada diagrama muestra los comandos, eventos y queries que fluyen entre actores, bounded contexts y sistemas para un escenario específico, incluyendo el nombre del mensaje, su orden y los datos que transporta.
+#metadata((src: "README.md", line: 2912, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 2914))
-Los flujos reflejan las dos colas complementarias del dominio: la #strong[cola por pedido de cita] (ordenada por #raw("bookingOrder")) y la #strong[cola de asistencia] (ordenada por #raw("checkInTimestamp")).
+En esta sección se presentan los principales flujos de colaboración entre los bounded contexts, modelados con la técnica de #strong[Domain Message Flow Modelling] propuesta por ddd-crew. Cada diagrama muestra los comandos, eventos y queries que fluyen entre actores, bounded contexts y sistemas para un escenario específico, incluyendo el nombre del mensaje, su orden y los datos que transporta.
 
 #metadata((src: "README.md", line: 2916))
+Los flujos reflejan las dos colas complementarias del dominio: la #strong[cola por pedido de cita] (ordenada por #raw("bookingOrder")) y la #strong[cola de asistencia] (ordenada por #raw("checkInTimestamp")).
+
+#metadata((src: "README.md", line: 2918))
 #strong[Flow 1: Registro y autenticación de paciente]
 
-#metadata((src: "README.md", line: 2918, kind: "figure", img: "assets/flow-01-registration.png"))
+#metadata((src: "README.md", line: 2920, kind: "figure", img: "assets/flow-01-registration.png"))
 #figure(
   fit-image("/assets/flow-01-registration.png", width: 100%),
   caption: [Flow 1],
 )
 
-#metadata((src: "README.md", line: 2920))
+#metadata((src: "README.md", line: 2922))
 El paciente ejecuta #raw("RegisterPatient"); #strong[Identity & Access Management] valida la identidad con #raw("ValidateIdentity") contra #strong[ApiPeru.dev] (ACL hacia RENIEC) y responde con #raw("IdentityVerified") → #raw("AccountCreated"). Luego #raw("Login") → #raw("SessionStarted"), y #raw("LinkMinor") → #raw("MinorLinked").
 
-#metadata((src: "README.md", line: 2922))
+#metadata((src: "README.md", line: 2924))
 #strong[Flow 2: Reserva de cita médica para el titular]
 
-#metadata((src: "README.md", line: 2924, kind: "figure", img: "assets/flow-02-booking-titular.png"))
+#metadata((src: "README.md", line: 2926, kind: "figure", img: "assets/flow-02-booking-titular.png"))
 #figure(
   fit-image("/assets/flow-02-booking-titular.png", width: 100%),
   caption: [Flow 2],
 )
 
-#metadata((src: "README.md", line: 2926))
+#metadata((src: "README.md", line: 2928))
 El paciente ejecuta #raw("BookAppointment"); #strong[Appointments & Booking] valida con #raw("VerifySlotAvailability") → #raw("SlotAvailable"), asigna el #raw("AssignBookingOrder") y emite #raw("AppointmentBooked"). Finalmente notifica al paciente vía #raw("SendConfirmationEmail") → #raw("EmailSent").
 
-#metadata((src: "README.md", line: 2928))
+#metadata((src: "README.md", line: 2930))
 #strong[Flow 3: Reserva de cita médica para un menor a cargo]
 
-#metadata((src: "README.md", line: 2930, kind: "figure", img: "assets/flow-03-booking-menor.png"))
+#metadata((src: "README.md", line: 2932, kind: "figure", img: "assets/flow-03-booking-menor.png"))
 #figure(
   fit-image("/assets/flow-03-booking-menor.png", width: 100%),
   caption: [Flow 3],
 )
 
-#metadata((src: "README.md", line: 2932))
+#metadata((src: "README.md", line: 2934))
 El titular ejecuta #raw("GetLinkedMinors") (IAM) → #raw("MinorRetrieved"), y luego #raw("BookAppointmentForMinor") con el #raw("minorId"). #strong[Appointments & Booking] valida con #raw("VerifySlotAvailability") → #raw("SlotAvailable"), asigna el #raw("bookingOrder") y emite #raw("AppointmentBooked"), notificando al tutor.
 
-#metadata((src: "README.md", line: 2934))
+#metadata((src: "README.md", line: 2936))
 #strong[Flow 4: Check-in presencial mediante código QR]
 
-#metadata((src: "README.md", line: 2936, kind: "figure", img: "assets/flow-04-checkin-qr.png"))
+#metadata((src: "README.md", line: 2938, kind: "figure", img: "assets/flow-04-checkin-qr.png"))
 #figure(
   fit-image("/assets/flow-04-checkin-qr.png", width: 100%),
   caption: [Flow 4],
 )
 
-#metadata((src: "README.md", line: 2938))
+#metadata((src: "README.md", line: 2940))
 El paciente ejecuta #raw("ScanQRCode"); #strong[Arrival & QR Check-in] valida con #raw("ValidateQRTolerance") → #raw("ToleranceValid"), crea la entrada con #raw("CreateQueueEntry"), calcula la posición (#raw("PositionCalculated")) y emite #raw("CheckInCompleted") y #raw("TicketIssued").
 
-#metadata((src: "README.md", line: 2940))
+#metadata((src: "README.md", line: 2942))
 #strong[Flow 5: Cancelación de cita y liberación de cupo]
 
-#metadata((src: "README.md", line: 2942, kind: "figure", img: "assets/flow-05-cancelacion.png"))
+#metadata((src: "README.md", line: 2944, kind: "figure", img: "assets/flow-05-cancelacion.png"))
 #figure(
   fit-image("/assets/flow-05-cancelacion.png", width: 100%),
   caption: [Flow 5],
 )
 
-#metadata((src: "README.md", line: 2944))
+#metadata((src: "README.md", line: 2946))
 El paciente ejecuta #raw("CancelAppointment"); #strong[Appointments & Booking] valida con #raw("VerifyCancellationDeadline") → #raw("DeadlineValid"), ejecuta #raw("ReleaseSlot") y emite #raw("AppointmentCancelled").
 
-#metadata((src: "README.md", line: 2946))
+#metadata((src: "README.md", line: 2948))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 2946))
+  #metadata((src: "README.md", line: 2948))
   #strong[Nota:] la cancelación #strong[no dispara reasignación]. Solo la ausencia presencial lo hace (ver Flow 6).
 ]
 
-#metadata((src: "README.md", line: 2948))
+#metadata((src: "README.md", line: 2950))
 #strong[Flow 6a: Declaración de ausencia]
 
-#metadata((src: "README.md", line: 2952))
+#metadata((src: "README.md", line: 2954))
 El personal de admisión ejecuta #raw("CallPatient"); #strong[Arrival & QR Check-in] valida con #raw("VerifyPostCallTolerance") → #raw("ToleranceExpired"), y emite #raw("PatientAbsentEvent") hacia #strong[Reassignment].
 
-#metadata((src: "README.md", line: 2954))
+#metadata((src: "README.md", line: 2956))
 #strong[Flow 6b: Reasignación en cadena]
 
-#metadata((src: "README.md", line: 2958))
+#metadata((src: "README.md", line: 2960))
 #strong[Reassignment] ejecuta #raw("FindNextCandidate") en #strong[Appointments & Booking] → #raw("CandidateFound"), envía #raw("ReassignmentOfferSent") al paciente, quien responde con #raw("ReassignmentOfferAccepted"). #strong[Reassignment] ejecuta #raw("ReassignAppointment") y #raw("ReleaseOriginalSlot") para liberar el slot del candidato y re-ofrecerlo al siguiente (cadena). Si el candidato acepta y no llega, se emite #raw("ReassignmentOfferNoShow").
 
-#metadata((src: "README.md", line: 2960))
+#metadata((src: "README.md", line: 2962))
 #strong[Flow 7: Configuración operativa del establecimiento]
 
-#metadata((src: "README.md", line: 2962, kind: "figure", img: "assets/flow-07-configuracion.png"))
+#metadata((src: "README.md", line: 2964, kind: "figure", img: "assets/flow-07-configuracion.png"))
 #figure(
   fit-image("/assets/flow-07-configuracion.png", width: 100%),
   caption: [Flow 7],
 )
 
-#metadata((src: "README.md", line: 2964))
+#metadata((src: "README.md", line: 2966))
 El Super Admin ejecuta #raw("UpdateConfiguration"); #strong[Hospital Operations & Configuration] valida con #raw("ValidateParameters") → #raw("ParametersValid"), aplica con #raw("ApplyConfiguration") y emite #raw("ConfigurationUpdated"). Finalmente, #raw("GetDashboard") → #raw("DashboardRetrieved").
 
-#metadata((src: "README.md", line: 2966))
+#metadata((src: "README.md", line: 2968))
 En conjunto, los flujos evidencian que la #strong[cola por pedido de cita] se gestiona como atributo dentro de #raw("Appointments & Booking") y se consume desde #raw("Reassignment") para priorizar la reasignación, mientras que la #strong[cola de asistencia] se gestiona como agregado dentro de #raw("Arrival & QR Check-in") para ordenar el llamado a consultorio.
 
 #heading(level: 4)[2.5.1.3. Bounded Context Canvases] <sec:2-5-1-3-bounded-context-canvases>
-#metadata((src: "README.md", line: 2969, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 2971))
-Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo #strong[versión 5] propuesto por el Domain Driven Design Group, que permite documentar cada contexto desde una perspectiva estratégica y táctica, cubriendo el propósito, la clasificación estratégica, las comunicaciones de entrada y salida, el lenguaje ubicuo, las decisiones de negocio, los supuestos, las métricas de verificación y las preguntas abiertas.
+#metadata((src: "README.md", line: 2971, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 2973))
-En cada uno de los canvases registramos las secciones específicas como el #strong[Context Overview Definition], #strong[Business Rules Distillation] y el #strong[Ubiquitous Language], identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos. El resultado se presenta a continuación para cada uno de los cinco bounded contexts identificados en la sección 2.5.1.1.
+Para la presente sección, elaboramos el Bounded Context Canvas de cada uno de los Bounded Context candidatos que identificamos. Aplicamos el modelo #strong[versión 5] propuesto por el Domain Driven Design Group, que permite documentar cada contexto desde una perspectiva estratégica y táctica, cubriendo el propósito, la clasificación estratégica, las comunicaciones de entrada y salida, el lenguaje ubicuo, las decisiones de negocio, los supuestos, las métricas de verificación y las preguntas abiertas.
 
 #metadata((src: "README.md", line: 2975))
-#strong[Bounded Context Canvas – Identity & Access Management]
+En cada uno de los canvases registramos las secciones específicas como el #strong[Context Overview Definition], #strong[Business Rules Distillation] y el #strong[Ubiquitous Language], identificando claramente el tipo de Bounded Context y sus interacciones de entrada y salida con otros contextos. El resultado se presenta a continuación para cada uno de los cinco bounded contexts identificados en la sección 2.5.1.1.
 
 #metadata((src: "README.md", line: 2977))
+#strong[Bounded Context Canvas – Identity & Access Management]
+
+#metadata((src: "README.md", line: 2979))
 El bounded context #strong[Identity & Access Management] gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Se clasifica como #emph[Generic] con rol #emph[Execution Context], e interactúa principalmente con #raw("Patient"), #raw("Super Admin") y el servicio externo #strong[ApiPeru.dev] (Anticorruption Layer hacia RENIEC) para la validación de identidad.
 
-#metadata((src: "README.md", line: 2979, kind: "figure", img: "assets/bounded-context-canvas-01-iam.png"))
+#metadata((src: "README.md", line: 2981, kind: "figure", img: "assets/bounded-context-canvas-01-iam.png"))
 #figure(
   fit-image("/assets/bounded-context-canvas-01-iam.png", width: 100%),
   caption: [Bounded Context Canvas – Identity & Access Management],
 )
 
-#metadata((src: "README.md", line: 2981))
+#metadata((src: "README.md", line: 2983))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2983))
+#metadata((src: "README.md", line: 2985))
 #strong[Bounded Context Canvas – Appointments & Booking]
 
-#metadata((src: "README.md", line: 2985))
+#metadata((src: "README.md", line: 2987))
 El bounded context #strong[Appointments & Booking] gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Se clasifica como #emph[Core] con rol #emph[Execution Context], e incorpora el atributo #raw("Booking Order"), que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva consumida por #raw("Reassignment").
 
-#metadata((src: "README.md", line: 2987, kind: "figure", img: "assets/bounded-context-canvas-02-appointments.png"))
+#metadata((src: "README.md", line: 2989, kind: "figure", img: "assets/bounded-context-canvas-02-appointments.png"))
 #figure(
   fit-image("/assets/bounded-context-canvas-02-appointments.png", width: 100%),
   caption: [Bounded Context Canvas – Appointments & Booking],
 )
 
-#metadata((src: "README.md", line: 2989))
+#metadata((src: "README.md", line: 2991))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2991))
+#metadata((src: "README.md", line: 2993))
 #strong[Bounded Context Canvas – Reassignment]
 
-#metadata((src: "README.md", line: 2993))
+#metadata((src: "README.md", line: 2995))
 El bounded context #strong[Reassignment] gestiona la cola de reserva del sistema y reasigna los cupos liberados por #strong[ausencias], notificando oportunidades de adelanto a los pacientes. Se clasifica como #emph[Core] con rol #emph[Execution Context], y aplica una #strong[cadena de reasignación] en la que el candidato que acepta libera su slot original, el cual se re-ofrece al siguiente paciente de la cola.
 
-#metadata((src: "README.md", line: 2995, kind: "figure", img: "assets/bounded-context-canvas-03-reassignment.png"))
+#metadata((src: "README.md", line: 2997, kind: "figure", img: "assets/bounded-context-canvas-03-reassignment.png"))
 #figure(
   fit-image("/assets/bounded-context-canvas-03-reassignment.png", width: 100%),
   caption: [Bounded Context Canvas – Reassignment],
 )
 
-#metadata((src: "README.md", line: 2997))
+#metadata((src: "README.md", line: 2999))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 2999))
+#metadata((src: "README.md", line: 3001))
 #strong[Bounded Context Canvas – Arrival & QR Check-in]
 
-#metadata((src: "README.md", line: 3001))
+#metadata((src: "README.md", line: 3003))
 El bounded context #strong[Arrival & QR Check-in] valida la presencia presencial del paciente mediante el escaneo de un código QR, gestiona la #raw("Attendance Queue") (cola virtual ordenada por #raw("checkInTimestamp")), emite el ticket digital y declara la ausencia del paciente cuando excede la tolerancia configurada. Se clasifica como #emph[Core] con rol #emph[Execution Context].
 
-#metadata((src: "README.md", line: 3003, kind: "figure", img: "assets/bounded-context-canvas-04-arrival.png"))
+#metadata((src: "README.md", line: 3005, kind: "figure", img: "assets/bounded-context-canvas-04-arrival.png"))
 #figure(
   fit-image("/assets/bounded-context-canvas-04-arrival.png", width: 100%),
   caption: [Bounded Context Canvas – Arrival & QR Check-in],
 )
 
-#metadata((src: "README.md", line: 3005))
+#metadata((src: "README.md", line: 3007))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3007))
+#metadata((src: "README.md", line: 3009))
 #strong[Bounded Context Canvas – Hospital Operations & Configuration]
 
-#metadata((src: "README.md", line: 3009))
+#metadata((src: "README.md", line: 3011))
 El bounded context #strong[Hospital Operations & Configuration] configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, #raw("reassignmentResponseTimeoutMin"), #raw("maxCapacityPerSlot")) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda. Se clasifica como #emph[Supporting] con rol #emph[Execution Context].
 
-#metadata((src: "README.md", line: 3011, kind: "figure", img: "assets/bounded-context-canvas-05-hospital-ops.png"))
+#metadata((src: "README.md", line: 3013, kind: "figure", img: "assets/bounded-context-canvas-05-hospital-ops.png"))
 #figure(
   fit-image("/assets/bounded-context-canvas-05-hospital-ops.png", width: 100%),
   caption: [Bounded Context Canvas – Hospital Operations & Configuration],
 )
 
-#metadata((src: "README.md", line: 3013))
+#metadata((src: "README.md", line: 3015))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3015))
+#metadata((src: "README.md", line: 3017))
 Los canvases presentados permiten visualizar de forma estructurada las responsabilidades, reglas de negocio, lenguaje común y métricas de verificación de cada bounded context, asegurando un entendimiento compartido entre los miembros del equipo y facilitando la comunicación con los stakeholders del dominio de SaludYa. Asimismo, se evidencia que las dos colas complementarias del dominio quedan correctamente ubicadas: la #strong[cola por pedido de cita] como atributo (#raw("Booking Order")) dentro de #raw("Appointments & Booking"), y la #strong[cola de asistencia] como agregado (#raw("Attendance Queue")) dentro de #raw("Arrival & QR Check-in"). Esta separación permite que cada contexto mantenga su propio lenguaje ubicuo y sus reglas de negocio sin acoplarse innecesariamente al resto del sistema.
 
 #heading(level: 3)[2.5.2. Context Mapping] <sec:2-5-2-context-mapping>
-#metadata((src: "README.md", line: 3018, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 3020))
-El proceso de Context Mapping nos permitió analizar y definir las relaciones estructurales y los patrones de integración entre los bounded contexts del sistema SaludYa. Este análisis fue clave para garantizar una comunicación clara, minimizar dependencias innecesarias y mantener una alta cohesión interna dentro de cada contexto.
+#metadata((src: "README.md", line: 3020, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 3022))
-#strong[Análisis del proceso]
+El proceso de Context Mapping nos permitió analizar y definir las relaciones estructurales y los patrones de integración entre los bounded contexts del sistema SaludYa. Este análisis fue clave para garantizar una comunicación clara, minimizar dependencias innecesarias y mantener una alta cohesión interna dentro de cada contexto.
 
 #metadata((src: "README.md", line: 3024))
-Durante la elaboración de los context maps, el equipo se planteó las siguientes preguntas para refinar los límites y relaciones entre los bounded contexts:
+#strong[Análisis del proceso]
 
 #metadata((src: "README.md", line: 3026))
+Durante la elaboración de los context maps, el equipo se planteó las siguientes preguntas para refinar los límites y relaciones entre los bounded contexts:
+
+#metadata((src: "README.md", line: 3028))
 - #strong[¿Qué pasaría si movemos ciertas capacidades del Identity & Access Management al Appointments & Booking?]
   Se descartó esta opción, ya que se perdería la independencia del módulo de autenticación y se generaría una sobrecarga innecesaria en el proceso de reserva. La autenticación debe ser un servicio transversal consumido por el resto de contextos.
 - #strong[¿Qué pasaría si descomponemos el Appointments & Booking en subcontextos separados para reservas y cancelaciones?]
@@ -3469,19 +3471,19 @@ Durante la elaboración de los context maps, el equipo se planteó las siguiente
 - #strong[¿Qué pasaría si aislamos el core de reservas y movemos la configuración a un contexto aparte?]
   Se confirmó la separación actual: #strong[Hospital Operations & Configuration] funciona como contexto de soporte que parametriza el comportamiento de los contextos core sin acoplarse a su lógica interna.
 
-#metadata((src: "README.md", line: 3046))
+#metadata((src: "README.md", line: 3048))
 #strong[Patrones de integración aplicados]
 
-#metadata((src: "README.md", line: 3048))
+#metadata((src: "README.md", line: 3050))
 A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa, como se detalla en la #link("#tabla-24")[Tabla 24]:
 
-#metadata((src: "README.md", line: 3056))
+#metadata((src: "README.md", line: 3058))
 #strong[Tabla 24]
 
-#metadata((src: "README.md", line: 3058))
+#metadata((src: "README.md", line: 3060))
 #emph[Context Mapping: patrones y relaciones entre contextos]
 
-#metadata((src: "README.md", line: 3060, kind: "table"))
+#metadata((src: "README.md", line: 3062, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -3497,22 +3499,22 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
   tline,
 )
 
-#metadata((src: "README.md", line: 3071))
+#metadata((src: "README.md", line: 3073))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3074))
+#metadata((src: "README.md", line: 3076))
 #strong[Mensajes intercambiados entre bounded contexts]
 
-#metadata((src: "README.md", line: 3076))
+#metadata((src: "README.md", line: 3078))
 A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio, como se detalla en la #link("#tabla-25")[Tabla 25]:
 
-#metadata((src: "README.md", line: 3084))
+#metadata((src: "README.md", line: 3086))
 #strong[Tabla 25]
 
-#metadata((src: "README.md", line: 3086))
+#metadata((src: "README.md", line: 3088))
 #emph[Context Mapping: mensajes entre contextos]
 
-#metadata((src: "README.md", line: 3088, kind: "table"))
+#metadata((src: "README.md", line: 3090, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -3530,327 +3532,327 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
   tline,
 )
 
-#metadata((src: "README.md", line: 3101))
+#metadata((src: "README.md", line: 3103))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3104))
+#metadata((src: "README.md", line: 3106))
 #strong[Leyenda de patrones:]
 
-#metadata((src: "README.md", line: 3106))
+#metadata((src: "README.md", line: 3108))
 - #strong[ACL (Anticorruption Layer):] Capa de traducción entre el modelo externo y el modelo interno.
 - #strong[SK (Shared Kernel):] Modelo compartido entre dos o más contextos.
 - #strong[CF (Conformist):] Un contexto adopta el modelo de otro sin traducirlo.
 - #strong[C/S (Customer/Supplier):] Relación donde el supplier publica y el customer consume.
 
-#metadata((src: "README.md", line: 3113))
+#metadata((src: "README.md", line: 3115))
 El mapa de contextos relaciona las áreas del dominio y sus dependencias para explicar cómo colaboran los componentes de SaludYa, como se observa en la #link("#figura-41")[Figura 41].
 
-#metadata((src: "README.md", line: 3117))
+#metadata((src: "README.md", line: 3119))
 #strong[Figura 41]
 
-#metadata((src: "README.md", line: 3119))
+#metadata((src: "README.md", line: 3121))
 #emph[Mapa de relaciones entre bounded contexts de SaludYa]
 
-#metadata((src: "README.md", line: 3121, kind: "figure", img: "assets/ContextMapping.png"))
+#metadata((src: "README.md", line: 3123, kind: "figure", img: "assets/ContextMapping.png"))
 #figure(
   fit-image("/assets/ContextMapping.png", width: 100%),
   caption: [Context Map],
 )
 
-#metadata((src: "README.md", line: 3123))
+#metadata((src: "README.md", line: 3125))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 3)[2.5.3. Software Architecture] <sec:2-5-3-software-architecture>
-#metadata((src: "README.md", line: 3128, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 3130, kind: "heading", level: 3))
 
 #heading(level: 4)[2.5.3.1. Software Architecture Context Level Diagrams] <sec:2-5-3-1-software-architecture-context-level-diagrams>
-#metadata((src: "README.md", line: 3130, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 3132))
-En el Software Architecture Context Diagram se pueden apreciar los componentes más importantes que interactúan con el sistema SaludYa, así como los usuarios principales y las funciones que desempeñan dentro del ecosistema de gestión de citas médicas en establecimientos públicos de salud.
+#metadata((src: "README.md", line: 3132, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 3134))
+En el Software Architecture Context Diagram se pueden apreciar los componentes más importantes que interactúan con el sistema SaludYa, así como los usuarios principales y las funciones que desempeñan dentro del ecosistema de gestión de citas médicas en establecimientos públicos de salud.
+
+#metadata((src: "README.md", line: 3136))
 El sistema SaludYa interactúa con tres tipos de usuarios principales: los #strong[pacientes] que reservan y gestionan citas médicas, el #strong[personal de admisión] que controla el flujo de atención en el establecimiento, y el #strong[Super Admin] que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: #strong[RENIEC API] para la validación de identidad por DNI, #strong[Firebase Cloud Messaging] para el envío de notificaciones push, un #strong[Servicio de Correo] para notificaciones transaccionales, y una #strong[Pasarela SMS] para el envío de mensajes de texto, como se observa en la #link("#figura-42")[Figura 42].
 
-#metadata((src: "README.md", line: 3142))
+#metadata((src: "README.md", line: 3144))
 #strong[Figura 42]
 
-#metadata((src: "README.md", line: 3144))
+#metadata((src: "README.md", line: 3146))
 #emph[Diagrama C4 de contexto de SaludYa]
 
-#metadata((src: "README.md", line: 3146, kind: "figure", img: "assets/ContextDiagram.png"))
+#metadata((src: "README.md", line: 3148, kind: "figure", img: "assets/ContextDiagram.png"))
 #figure(
   fit-image("/assets/ContextDiagram.png", width: 100%),
   caption: [ContextSys],
 )
 
-#metadata((src: "README.md", line: 3148))
+#metadata((src: "README.md", line: 3150))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[2.5.3.2. Software Architecture Container Level Diagrams] <sec:2-5-3-2-software-architecture-container-level-diagrams>
-#metadata((src: "README.md", line: 3152, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 3154))
-En el Software Architecture Container Diagram se detalla la estructura interna del sistema SaludYa, mostrando los contenedores principales que lo componen y cómo se comunican entre sí. Este nivel de abstracción permite visualizar las decisiones tecnológicas y la distribución de responsabilidades dentro del sistema.
+#metadata((src: "README.md", line: 3154, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 3156))
-El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias, la reasignación de cupos y la expiración de propuestas de la cola de reserva.
+En el Software Architecture Container Diagram se detalla la estructura interna del sistema SaludYa, mostrando los contenedores principales que lo componen y cómo se comunican entre sí. Este nivel de abstracción permite visualizar las decisiones tecnológicas y la distribución de responsabilidades dentro del sistema.
 
 #metadata((src: "README.md", line: 3158))
-El Backend API orquesta internamente la lógica de los cinco bounded contexts del sistema, incluyendo la gestión de la cola de asistencia ordenada por #raw("checkInTimestamp") y la cola de reserva ordenada por #raw("bookingOrder"). La base de datos PostgreSQL incorpora las tablas #raw("attendance_queue_entries") y #raw("reassignment_offers"), y la tabla #raw("appointments") incluye el campo #raw("booking_order") que determina la prioridad de reasignación.
+El sistema SaludYa está compuesto por dos aplicaciones móviles (una para pacientes y otra para el personal de admisión), un API Gateway que centraliza las peticiones, un Backend API que orquesta la lógica de negocio de los bounded contexts, una base de datos PostgreSQL para la persistencia, un Message Broker RabbitMQ para la comunicación asíncrona entre contextos, y un worker de Cron Jobs que ejecuta tareas programadas como la expiración de tolerancias, la reasignación de cupos y la expiración de propuestas de la cola de reserva.
 
 #metadata((src: "README.md", line: 3160))
+El Backend API orquesta internamente la lógica de los cinco bounded contexts del sistema, incluyendo la gestión de la cola de asistencia ordenada por #raw("checkInTimestamp") y la cola de reserva ordenada por #raw("bookingOrder"). La base de datos PostgreSQL incorpora las tablas #raw("attendance_queue_entries") y #raw("reassignment_offers"), y la tabla #raw("appointments") incluye el campo #raw("booking_order") que determina la prioridad de reasignación.
+
+#metadata((src: "README.md", line: 3162))
 El Backend API se integra con cuatro servicios externos: #strong[RENIEC API] para la validación de identidad por DNI, #strong[Firebase Cloud Messaging] para el envío de notificaciones push, un #strong[Servicio de Correo] para notificaciones transaccionales, y una #strong[Pasarela SMS] para el envío de mensajes de texto a los pacientes que no cuentan con smartphone, como se observa en la #link("#figura-43")[Figura 43].
 
-#metadata((src: "README.md", line: 3168))
+#metadata((src: "README.md", line: 3170))
 #strong[Figura 43]
 
-#metadata((src: "README.md", line: 3170))
+#metadata((src: "README.md", line: 3172))
 #emph[Diagrama C4 de contenedores de SaludYa]
 
-#metadata((src: "README.md", line: 3172, kind: "figure", img: "assets/ContainerDiagram.png"))
+#metadata((src: "README.md", line: 3174, kind: "figure", img: "assets/ContainerDiagram.png"))
 #figure(
   fit-image("/assets/ContainerDiagram.png", width: 100%),
   caption: [ContainerSys],
 )
 
-#metadata((src: "README.md", line: 3174))
+#metadata((src: "README.md", line: 3176))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[2.5.3.3. Software Architecture Deployment Diagrams] <sec:2-5-3-3-software-architecture-deployment-diagrams>
-#metadata((src: "README.md", line: 3179, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 3181))
-En el Software Architecture Deployment Diagram se muestra la distribución física de los contenedores del sistema SaludYa sobre la infraestructura tecnológica que los aloja. Este diagrama permite visualizar cómo se despliegan las aplicaciones móviles, los servicios del backend y los componentes de infraestructura en los diferentes nodos del sistema.
+#metadata((src: "README.md", line: 3181, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 3183))
-El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las #strong[aplicaciones móviles] se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el #strong[backend del sistema] se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs y un servidor de base de datos PostgreSQL. Finalmente, el sistema se integra con #strong[servicios externos] como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
+En el Software Architecture Deployment Diagram se muestra la distribución física de los contenedores del sistema SaludYa sobre la infraestructura tecnológica que los aloja. Este diagrama permite visualizar cómo se despliegan las aplicaciones móviles, los servicios del backend y los componentes de infraestructura en los diferentes nodos del sistema.
 
 #metadata((src: "README.md", line: 3185))
+El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las #strong[aplicaciones móviles] se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el #strong[backend del sistema] se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs y un servidor de base de datos PostgreSQL. Finalmente, el sistema se integra con #strong[servicios externos] como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
+
+#metadata((src: "README.md", line: 3187))
 Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud, como se observa en la #link("#figura-44")[Figura 44].
 
-#metadata((src: "README.md", line: 3193))
+#metadata((src: "README.md", line: 3195))
 #strong[Figura 44]
 
-#metadata((src: "README.md", line: 3195))
+#metadata((src: "README.md", line: 3197))
 #emph[Diagrama C4 de despliegue de SaludYa]
 
-#metadata((src: "README.md", line: 3197, kind: "figure", img: "assets/DeploymentDiagram.png"))
+#metadata((src: "README.md", line: 3199, kind: "figure", img: "assets/DeploymentDiagram.png"))
 #figure(
   fit-image("/assets/DeploymentDiagram.png", width: 100%),
   caption: [DeploymentSys],
 )
 
-#metadata((src: "README.md", line: 3199))
+#metadata((src: "README.md", line: 3201))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 2)[2.6. Tactical-Level Domain-Driven Design] <sec:2-6-tactical-level-domain-driven-design>
-#metadata((src: "README.md", line: 3203, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 3205, kind: "heading", level: 2))
 
 #heading(level: 3)[2.6.1. Bounded Context: Identity & Access Management] <sec:2-6-1-bounded-context-identity-access-management>
-#metadata((src: "README.md", line: 3205, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 3207, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 3207))
+#metadata((src: "README.md", line: 3209))
 El #strong[bounded context de Identity & Access Management] gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Permite validar la identidad de los pacientes y del personal administrativo antes de acceder a los módulos principales del sistema.
 
 #heading(level: 4)[2.6.1.1. Domain Layer] <sec:2-6-1-1-domain-layer>
-#metadata((src: "README.md", line: 3209, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3211, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3211))
+#metadata((src: "README.md", line: 3213))
 La capa de #strong[Domain] representa el núcleo del negocio de identidad. Aquí se definen las entidades, value objects, enums, aggregates, factories e interfaces que encapsulan las reglas de negocio.
 
 #heading(level: 5)[UserAccount (Aggregate Root)] <sec:useraccount-aggregate-root>
-#metadata((src: "README.md", line: 3213, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3215, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3215))
+#metadata((src: "README.md", line: 3217))
 #strong[Atributos:]
 #raw("id"), #raw("email: Email"), #raw("password: PasswordHash"), #raw("role: Role"), #raw("isActive"), #raw("createdAt")
 
-#metadata((src: "README.md", line: 3218))
+#metadata((src: "README.md", line: 3220))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3219))
+#metadata((src: "README.md", line: 3221))
 - #raw("validatePassword(password)") → verifica si la contraseña ingresada coincide con la almacenada.
 - #raw("assignRole(role)") → asigna un rol al usuario.
 - #raw("activate()") \/ #raw("deactivate()") → controlan si el usuario puede iniciar sesión.
 
-#metadata((src: "README.md", line: 3223))
+#metadata((src: "README.md", line: 3225))
 #strong[Propósito:]
 Representa la cuenta de acceso al sistema. Es aggregate root porque agrupa la lógica de autenticación y estado del usuario.
 
-#metadata((src: "README.md", line: 3226))
+#metadata((src: "README.md", line: 3228))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Patient (Aggregate Root)] <sec:patient-aggregate-root>
-#metadata((src: "README.md", line: 3228, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3230, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3230))
+#metadata((src: "README.md", line: 3232))
 #strong[Atributos:]
 #raw("id"), #raw("idUser"), #raw("dni: Dni"), #raw("name"), #raw("lastname"), #raw("birthDate"), #raw("phone")
 
-#metadata((src: "README.md", line: 3233))
+#metadata((src: "README.md", line: 3235))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3234))
+#metadata((src: "README.md", line: 3236))
 - #raw("updateContactInfo(phone, email)") → actualiza los datos de contacto.
 - #raw("isMinor()") → retorna #raw("true") si el paciente es menor de edad.
 
-#metadata((src: "README.md", line: 3237))
+#metadata((src: "README.md", line: 3239))
 #strong[Propósito:]
 Representa el perfil del paciente. Es aggregate root porque agrupa la información personal del paciente.
 
-#metadata((src: "README.md", line: 3240))
+#metadata((src: "README.md", line: 3242))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientMinor (Entity)] <sec:patientminor-entity>
-#metadata((src: "README.md", line: 3242, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3244, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3244))
+#metadata((src: "README.md", line: 3246))
 #strong[Atributos:]
 #raw("id"), #raw("idPatient"), #raw("idTutor")
 
-#metadata((src: "README.md", line: 3247))
+#metadata((src: "README.md", line: 3249))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3248))
+#metadata((src: "README.md", line: 3250))
 - #raw("validateTutor(tutorId)") → valida que el tutor sea un adulto responsable registrado.
 
-#metadata((src: "README.md", line: 3250))
+#metadata((src: "README.md", line: 3252))
 #strong[Propósito:]
 Vincula a un menor de edad con un adulto responsable (tutor).
 
-#metadata((src: "README.md", line: 3253))
+#metadata((src: "README.md", line: 3255))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Email (Value Object)] <sec:email-value-object>
-#metadata((src: "README.md", line: 3255, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3257, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3257))
+#metadata((src: "README.md", line: 3259))
 #strong[Atributos:]
 #raw("value")
 
-#metadata((src: "README.md", line: 3260))
+#metadata((src: "README.md", line: 3262))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3261))
+#metadata((src: "README.md", line: 3263))
 - #raw("isValid()") → valida el formato del correo.
 
-#metadata((src: "README.md", line: 3263))
+#metadata((src: "README.md", line: 3265))
 #strong[Propósito:]
 Encapsula el correo electrónico como value object inmutable.
 
-#metadata((src: "README.md", line: 3266))
+#metadata((src: "README.md", line: 3268))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Dni (Value Object)] <sec:dni-value-object>
-#metadata((src: "README.md", line: 3268, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3270, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3270))
+#metadata((src: "README.md", line: 3272))
 #strong[Atributos:]
 #raw("value")
 
-#metadata((src: "README.md", line: 3273))
+#metadata((src: "README.md", line: 3275))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3274))
+#metadata((src: "README.md", line: 3276))
 - #raw("isValid()") → valida que el DNI tenga 8 dígitos.
 
-#metadata((src: "README.md", line: 3276))
+#metadata((src: "README.md", line: 3278))
 #strong[Propósito:]
 Encapsula el DNI como value object inmutable.
 
-#metadata((src: "README.md", line: 3279))
+#metadata((src: "README.md", line: 3281))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PasswordHash (Value Object)] <sec:passwordhash-value-object>
-#metadata((src: "README.md", line: 3281, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3283, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3283))
+#metadata((src: "README.md", line: 3285))
 #strong[Atributos:]
 #raw("value")
 
-#metadata((src: "README.md", line: 3286))
+#metadata((src: "README.md", line: 3288))
 #strong[Propósito:]
 Encapsula el hash de la contraseña como value object inmutable.
 
-#metadata((src: "README.md", line: 3289))
+#metadata((src: "README.md", line: 3291))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Role (Enum)] <sec:role-enum>
-#metadata((src: "README.md", line: 3291, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3293, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3293))
+#metadata((src: "README.md", line: 3295))
 #strong[Valores posibles:]
 #raw("PATIENT"), #raw("ADMISSION_STAFF"), #raw("SUPER_ADMIN")
 
-#metadata((src: "README.md", line: 3296))
+#metadata((src: "README.md", line: 3298))
 #strong[Propósito:]
 Define los tipos de usuario del sistema.
 
-#metadata((src: "README.md", line: 3299))
+#metadata((src: "README.md", line: 3301))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[UserAccountFactory (Factory)] <sec:useraccountfactory-factory>
-#metadata((src: "README.md", line: 3301, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3303, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3303))
+#metadata((src: "README.md", line: 3305))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3304))
+#metadata((src: "README.md", line: 3306))
 - #raw("createPatientAccount(email, password, dni, name, lastname, birthDate, phone): UserAccount")
 - #raw("createStaffAccount(email, password, dni, name, lastname): UserAccount")
 
-#metadata((src: "README.md", line: 3307))
+#metadata((src: "README.md", line: 3309))
 #strong[Propósito:]
 Encapsula la creación de cuentas de usuario, validando los datos y asignando el rol correspondiente.
 
-#metadata((src: "README.md", line: 3310))
+#metadata((src: "README.md", line: 3312))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[UserAccountRepository (Interface)] <sec:useraccountrepository-interface>
-#metadata((src: "README.md", line: 3312, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3314, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3314))
+#metadata((src: "README.md", line: 3316))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3315))
+#metadata((src: "README.md", line: 3317))
 - #raw("save(userAccount: UserAccount): UserAccount")
 - #raw("findById(id: Int): UserAccount?")
 - #raw("findByEmail(email: String): UserAccount?")
 - #raw("updateStatus(id: Int, isActive: Boolean)")
 
-#metadata((src: "README.md", line: 3320))
+#metadata((src: "README.md", line: 3322))
 #strong[Propósito:]
 Define las operaciones de persistencia para cuentas de usuario.
 
-#metadata((src: "README.md", line: 3323))
+#metadata((src: "README.md", line: 3325))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientRepository (Interface)] <sec:patientrepository-interface>
-#metadata((src: "README.md", line: 3325, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3327, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3327))
+#metadata((src: "README.md", line: 3329))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3328))
+#metadata((src: "README.md", line: 3330))
 - #raw("save(patient: Patient): Patient")
 - #raw("findById(id: Int): Patient?")
 - #raw("findByDni(dni: String): Patient?")
@@ -3858,46 +3860,46 @@ Define las operaciones de persistencia para cuentas de usuario.
 - #raw("saveMinor(patientMinor: PatientMinor): PatientMinor")
 - #raw("findMinorsByTutor(tutorId: Int): List<PatientMinor>")
 
-#metadata((src: "README.md", line: 3335))
+#metadata((src: "README.md", line: 3337))
 #strong[Propósito:]
 Define las operaciones de persistencia para pacientes y menores vinculados.
 
-#metadata((src: "README.md", line: 3338))
+#metadata((src: "README.md", line: 3340))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[EventPublisher (Interface)] <sec:eventpublisher-interface>
-#metadata((src: "README.md", line: 3340, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3342, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3342))
+#metadata((src: "README.md", line: 3344))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3343))
+#metadata((src: "README.md", line: 3345))
 - #raw("publish(event: DomainEvent)")
 
-#metadata((src: "README.md", line: 3345))
+#metadata((src: "README.md", line: 3347))
 #strong[Propósito:]
 Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
 
-#metadata((src: "README.md", line: 3348))
+#metadata((src: "README.md", line: 3350))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.1.2. Interface Layer] <sec:2-6-1-2-interface-layer>
-#metadata((src: "README.md", line: 3350, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3352, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3352))
+#metadata((src: "README.md", line: 3354))
 La #strong[Interface Layer] expone las funcionalidades del bounded context mediante endpoints REST.
 
 #heading(level: 5)[UserAccountsController (REST API Controller)] <sec:useraccountscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3354, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3356, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3356))
+#metadata((src: "README.md", line: 3358))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3357))
+#metadata((src: "README.md", line: 3359))
 - #raw("POST /api/v1/user-accounts") → Registra un nuevo paciente con verificación de DNI.
 - #raw("POST /api/v1/user-accounts/login") → Inicia sesión y genera token JWT.
 - #raw("POST /api/v1/user-accounts/logout") → Cierra sesión.
@@ -3906,88 +3908,88 @@ La #strong[Interface Layer] expone las funcionalidades del bounded context media
 - #raw("PUT /api/v1/user-accounts/{id}") → Actualiza datos de contacto.
 - #raw("POST /api/v1/user-accounts/staff") → Crea cuenta de personal administrativo.
 
-#metadata((src: "README.md", line: 3365))
+#metadata((src: "README.md", line: 3367))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("UserAccount").
 
-#metadata((src: "README.md", line: 3368))
+#metadata((src: "README.md", line: 3370))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientsController (REST API Controller)] <sec:patientscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3370, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3372, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3372))
+#metadata((src: "README.md", line: 3374))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3373))
+#metadata((src: "README.md", line: 3375))
 - #raw("GET /api/v1/patients/{id}") → Obtiene el perfil de un paciente.
 - #raw("PUT /api/v1/patients/{id}") → Actualiza datos del paciente.
 - #raw("GET /api/v1/patients/{id}/minors") → Lista los menores vinculados al tutor.
 
-#metadata((src: "README.md", line: 3377))
+#metadata((src: "README.md", line: 3379))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("Patient").
 
-#metadata((src: "README.md", line: 3380))
+#metadata((src: "README.md", line: 3382))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientMinorsController (REST API Controller)] <sec:patientminorscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3382, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3384, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3384))
+#metadata((src: "README.md", line: 3386))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3385))
+#metadata((src: "README.md", line: 3387))
 - #raw("POST /api/v1/patient-minors") → Vincula un menor a la cuenta del titular.
 - #raw("GET /api/v1/patient-minors/{id}") → Obtiene el detalle del vínculo.
 - #raw("DELETE /api/v1/patient-minors/{id}") → Desvincula un menor.
 
-#metadata((src: "README.md", line: 3389))
+#metadata((src: "README.md", line: 3391))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre la entity #raw("PatientMinor").
 
-#metadata((src: "README.md", line: 3392))
+#metadata((src: "README.md", line: 3394))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[IamContextFacade (Facade / ACL)] <sec:iamcontextfacade-facade-acl>
-#metadata((src: "README.md", line: 3394, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3396, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3396))
+#metadata((src: "README.md", line: 3398))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3397))
+#metadata((src: "README.md", line: 3399))
 - #raw("getUserById(id): UserAccount?")
 - #raw("getPatientById(id): Patient?")
 - #raw("getMinorsByTutor(tutorId): List<PatientMinor>")
 
-#metadata((src: "README.md", line: 3401))
+#metadata((src: "README.md", line: 3403))
 #strong[Propósito:]
 Punto de entrada interno para otros bounded contexts. Evita que otros contextos accedan directamente a los repositorios de IAM.
 
-#metadata((src: "README.md", line: 3404))
+#metadata((src: "README.md", line: 3406))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.1.3. Application Layer] <sec:2-6-1-3-application-layer>
-#metadata((src: "README.md", line: 3406, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3408, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3408))
+#metadata((src: "README.md", line: 3410))
 La #strong[Application Layer] orquesta los casos de uso del dominio mediante #strong[Command Services] y #strong[Query Services]. Los #strong[Command Handlers] viven dentro de los Command Services, y los #strong[Event Handlers] en #raw("application/internal/eventhandlers/").
 
 #heading(level: 5)[UserAccountCommandService (Interface)] <sec:useraccountcommandservice-interface>
-#metadata((src: "README.md", line: 3410, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3412, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3412))
+#metadata((src: "README.md", line: 3414))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 3413))
+#metadata((src: "README.md", line: 3415))
 - #raw("registerPatient(command: RegisterPatientCommand): Patient")
 - #raw("login(command: LoginCommand): AuthResult")
 - #raw("logout(command: LogoutCommand): void")
@@ -3995,83 +3997,83 @@ La #strong[Application Layer] orquesta los casos de uso del dominio mediante #st
 - #raw("updateProfile(command: UpdateProfileCommand): Patient")
 - #raw("createStaffAccount(command: CreateStaffAccountCommand): UserAccount")
 
-#metadata((src: "README.md", line: 3420))
+#metadata((src: "README.md", line: 3422))
 #strong[Propósito:]
 Define los comandos relacionados con la cuenta de usuario.
 
-#metadata((src: "README.md", line: 3423))
+#metadata((src: "README.md", line: 3425))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientCommandService (Interface)] <sec:patientcommandservice-interface>
-#metadata((src: "README.md", line: 3425, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3427, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3427))
+#metadata((src: "README.md", line: 3429))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 3428))
+#metadata((src: "README.md", line: 3430))
 - #raw("linkMinor(command: LinkMinorCommand): PatientMinor")
 - #raw("unlinkMinor(command: UnlinkMinorCommand): void")
 
-#metadata((src: "README.md", line: 3431))
+#metadata((src: "README.md", line: 3433))
 #strong[Propósito:]
 Define los comandos relacionados con el paciente y sus menores vinculados.
 
-#metadata((src: "README.md", line: 3434))
+#metadata((src: "README.md", line: 3436))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[UserAccountQueryService (Interface)] <sec:useraccountqueryservice-interface>
-#metadata((src: "README.md", line: 3436, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3438, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3438))
+#metadata((src: "README.md", line: 3440))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3439))
+#metadata((src: "README.md", line: 3441))
 - #raw("getById(id: Int): UserAccount?")
 - #raw("getByEmail(email: String): UserAccount?")
 
-#metadata((src: "README.md", line: 3442))
+#metadata((src: "README.md", line: 3444))
 #strong[Propósito:]
 Define las consultas relacionadas con la cuenta de usuario.
 
-#metadata((src: "README.md", line: 3445))
+#metadata((src: "README.md", line: 3447))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientQueryService (Interface)] <sec:patientqueryservice-interface>
-#metadata((src: "README.md", line: 3447, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3449, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3449))
+#metadata((src: "README.md", line: 3451))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3450))
+#metadata((src: "README.md", line: 3452))
 - #raw("getById(id: Int): Patient?")
 - #raw("getByDni(dni: String): Patient?")
 - #raw("getMinorsByTutor(tutorId: Int): List<PatientMinor>")
 
-#metadata((src: "README.md", line: 3454))
+#metadata((src: "README.md", line: 3456))
 #strong[Propósito:]
 Define las consultas relacionadas con el paciente.
 
-#metadata((src: "README.md", line: 3457))
+#metadata((src: "README.md", line: 3459))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[UserAccountCommandServiceImpl (Implementation)] <sec:useraccountcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 3459, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 3461))
-#strong[Responsabilidad:] Implementar los comandos de cuenta de usuario.
+#metadata((src: "README.md", line: 3461, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 3463))
+#strong[Responsabilidad:] Implementar los comandos de cuenta de usuario.
+
+#metadata((src: "README.md", line: 3465))
 #strong[Flujo de #raw("registerPatient"):]
 
-#metadata((src: "README.md", line: 3464))
+#metadata((src: "README.md", line: 3466))
 + Recibe los datos del paciente.
 + Valida el DNI contra el servicio externo RENIEC mediante #raw("ReniecService") (ACL).
 + Valida que el correo no esté duplicado.
@@ -4080,21 +4082,21 @@ Define las consultas relacionadas con el paciente.
 + Publica el evento #raw("PatientRegisteredEvent").
 + Notifica al paciente vía #raw("NotificationAdapter").
 
-#metadata((src: "README.md", line: 3472))
+#metadata((src: "README.md", line: 3474))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientCommandServiceImpl (Implementation)] <sec:patientcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 3474, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 3476))
-#strong[Responsabilidad:] Implementar los comandos de paciente.
+#metadata((src: "README.md", line: 3476, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 3478))
+#strong[Responsabilidad:] Implementar los comandos de paciente.
+
+#metadata((src: "README.md", line: 3480))
 #strong[Flujo de #raw("linkMinor"):]
 
-#metadata((src: "README.md", line: 3479))
+#metadata((src: "README.md", line: 3481))
 + Recibe el DNI del menor.
 + Valida el DNI contra RENIEC.
 + Valida que el menor no esté vinculado a otra cuenta.
@@ -4102,273 +4104,273 @@ Define las consultas relacionadas con el paciente.
 + Publica el evento #raw("MinorLinkedEvent").
 + Notifica al tutor.
 
-#metadata((src: "README.md", line: 3486))
+#metadata((src: "README.md", line: 3488))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientRegisteredEventHandler (Event Handler)] <sec:patientregisteredeventhandler-event-handler>
-#metadata((src: "README.md", line: 3488, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3490, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3490))
+#metadata((src: "README.md", line: 3492))
 #strong[Responsabilidad:] Reaccionar al evento #raw("PatientRegisteredEvent").
 #strong[Flujo:]
 
-#metadata((src: "README.md", line: 3492))
+#metadata((src: "README.md", line: 3494))
 + Escucha el evento.
 + Envía el correo de bienvenida.
 + Registra la acción en el log de auditoría.
 
-#metadata((src: "README.md", line: 3496))
+#metadata((src: "README.md", line: 3498))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[MinorLinkedEventHandler (Event Handler)] <sec:minorlinkedeventhandler-event-handler>
-#metadata((src: "README.md", line: 3498, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3500, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3500))
+#metadata((src: "README.md", line: 3502))
 #strong[Responsabilidad:] Reaccionar al evento #raw("MinorLinkedEvent").
 #strong[Flujo:]
 
-#metadata((src: "README.md", line: 3502))
+#metadata((src: "README.md", line: 3504))
 + Escucha el evento.
 + Notifica al tutor que la vinculación fue exitosa.
 + Registra la acción en el log de auditoría.
 
-#metadata((src: "README.md", line: 3506))
+#metadata((src: "README.md", line: 3508))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.1.4. Infrastructure Layer] <sec:2-6-1-4-infrastructure-layer>
-#metadata((src: "README.md", line: 3508, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3510, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3510))
+#metadata((src: "README.md", line: 3512))
 La capa de #strong[Infrastructure] contiene las implementaciones concretas.
 
 #heading(level: 5)[UserAccountRepositoryImpl] <sec:useraccountrepositoryimpl>
-#metadata((src: "README.md", line: 3512, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3514, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3513))
+#metadata((src: "README.md", line: 3515))
 #strong[Implementa:] #raw("UserAccountRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("users"). Mapea entidades del dominio a entidades JPA.
 
-#metadata((src: "README.md", line: 3518))
+#metadata((src: "README.md", line: 3520))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientRepositoryImpl] <sec:patientrepositoryimpl>
-#metadata((src: "README.md", line: 3520, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3522, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3521))
+#metadata((src: "README.md", line: 3523))
 #strong[Implementa:] #raw("PatientRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre las tablas #raw("patients") y #raw("patient_minors").
 
-#metadata((src: "README.md", line: 3526))
+#metadata((src: "README.md", line: 3528))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReniecService (ACL)] <sec:reniecservice-acl>
-#metadata((src: "README.md", line: 3528, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3530, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3529))
+#metadata((src: "README.md", line: 3531))
 #strong[Función:]
 Valida la identidad por DNI contra el servicio externo de RENIEC.
 #strong[Tecnología:] REST Client (RestTemplate / WebClient)
 #strong[Explicación:]
 Implementa un Anticorruption Layer (ACL) que traduce el modelo externo de RENIEC al modelo interno de identidad.
 
-#metadata((src: "README.md", line: 3535))
+#metadata((src: "README.md", line: 3537))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[BCryptHashingService] <sec:bcrypthashingservice>
-#metadata((src: "README.md", line: 3537, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3539, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3538))
+#metadata((src: "README.md", line: 3540))
 #strong[Función:]
 Hashea y valida contraseñas con BCrypt.
 #strong[Tecnología:] BCrypt
 
-#metadata((src: "README.md", line: 3542))
+#metadata((src: "README.md", line: 3544))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TokenServiceImpl] <sec:tokenserviceimpl>
-#metadata((src: "README.md", line: 3544, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3546, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3545))
+#metadata((src: "README.md", line: 3547))
 #strong[Función:]
 Genera y valida tokens JWT.
 #strong[Tecnología:] java-jwt / jjwt
 
-#metadata((src: "README.md", line: 3549))
+#metadata((src: "README.md", line: 3551))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[WebSecurityConfiguration] <sec:websecurityconfiguration>
-#metadata((src: "README.md", line: 3551, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3553, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3552))
+#metadata((src: "README.md", line: 3554))
 #strong[Función:]
 Configura Spring Security, filtros de autorización y pipeline de autenticación.
 #strong[Tecnología:] Spring Security
 
-#metadata((src: "README.md", line: 3556))
+#metadata((src: "README.md", line: 3558))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[BearerAuthorizationRequestFilter] <sec:bearerauthorizationrequestfilter>
-#metadata((src: "README.md", line: 3558, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3560, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3559))
+#metadata((src: "README.md", line: 3561))
 #strong[Función:]
 Filtra las peticiones HTTP y valida el token Bearer en cada request.
 #strong[Tecnología:] Spring Security
 
-#metadata((src: "README.md", line: 3563))
+#metadata((src: "README.md", line: 3565))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[NotificationAdapter] <sec:notificationadapter>
-#metadata((src: "README.md", line: 3565, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3567, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3566))
+#metadata((src: "README.md", line: 3568))
 #strong[Función:]
 Envía notificaciones al usuario (correo de bienvenida, recuperación de contraseña).
 #strong[Tecnología:] SMTP + Firebase Cloud Messaging
 
-#metadata((src: "README.md", line: 3570))
+#metadata((src: "README.md", line: 3572))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpringEventPublisherImpl] <sec:springeventpublisherimpl>
-#metadata((src: "README.md", line: 3572, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3574, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3573))
+#metadata((src: "README.md", line: 3575))
 #strong[Implementa:] #raw("EventPublisher")
 #strong[Función:]
 Publica eventos de dominio usando Spring Events.
 #strong[Tecnología:] #raw("ApplicationEventPublisher") de Spring
 
-#metadata((src: "README.md", line: 3578))
+#metadata((src: "README.md", line: 3580))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.1.5. Bounded Context Software Architecture Component Level Diagrams] <sec:2-6-1-5-bounded-context-software-architecture-component-level-diagrams>
-#metadata((src: "README.md", line: 3580, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 3588))
-#strong[Figura 45]
+#metadata((src: "README.md", line: 3582, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 3590))
+#strong[Figura 45]
+
+#metadata((src: "README.md", line: 3592))
 #emph[Diagrama de componentes — IAM]
 
-#metadata((src: "README.md", line: 3592, kind: "figure", img: "assets/iam_component_diagram.png"))
+#metadata((src: "README.md", line: 3594, kind: "figure", img: "assets/iam_component_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/iam_component_diagram.png", alt: "Diagrama de componentes — IAM", width: 85%)]
 
-#metadata((src: "README.md", line: 3594))
+#metadata((src: "README.md", line: 3596))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3598))
+#metadata((src: "README.md", line: 3600))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 3599))
+#metadata((src: "README.md", line: 3601))
 El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos, como se observa en la #link("#figura-45")[Figura 45].
 
 #heading(level: 4)[2.6.1.6. Bounded Context Software Architecture Code Level Diagrams] <sec:2-6-1-6-bounded-context-software-architecture-code-level-diagrams>
-#metadata((src: "README.md", line: 3601, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3603, kind: "heading", level: 4))
 
 #heading(level: 5)[2.6.1.6.1. Bounded Context Domain Layer Class Diagrams] <sec:2-6-1-6-1-bounded-context-domain-layer-class-diagrams>
-#metadata((src: "README.md", line: 3603, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 3611))
-#strong[Figura 46]
+#metadata((src: "README.md", line: 3605, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 3613))
+#strong[Figura 46]
+
+#metadata((src: "README.md", line: 3615))
 #emph[Diagrama de clases — IAM]
 
-#metadata((src: "README.md", line: 3615, kind: "figure", img: "assets/iam_uml_diagram.png"))
+#metadata((src: "README.md", line: 3617, kind: "figure", img: "assets/iam_uml_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/iam_uml_diagram.png", alt: "Diagrama de clases — IAM", width: 85%)]
 
-#metadata((src: "README.md", line: 3617))
+#metadata((src: "README.md", line: 3619))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3621))
+#metadata((src: "README.md", line: 3623))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 3622))
+#metadata((src: "README.md", line: 3624))
 El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory, como se observa en la #link("#figura-46")[Figura 46].
 
 #heading(level: 5)[2.6.1.6.2. Bounded Context Database Design Diagram] <sec:2-6-1-6-2-bounded-context-database-design-diagram>
-#metadata((src: "README.md", line: 3624, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 3632))
-#strong[Figura 47]
+#metadata((src: "README.md", line: 3626, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 3634))
+#strong[Figura 47]
+
+#metadata((src: "README.md", line: 3636))
 #emph[Diagrama de base de datos — IAM]
 
-#metadata((src: "README.md", line: 3636, kind: "figure", img: "assets/iam_database_diagram.png"))
+#metadata((src: "README.md", line: 3638, kind: "figure", img: "assets/iam_database_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/iam_database_diagram.png", alt: "Diagrama de base de datos — IAM", width: 85%)]
 
-#metadata((src: "README.md", line: 3638))
+#metadata((src: "README.md", line: 3640))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 3642))
+#metadata((src: "README.md", line: 3644))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 3643))
+#metadata((src: "README.md", line: 3645))
 El diagrama de base de datos del bounded context Identity & Access Management muestra las tablas roles, users, patients y patient\_minors, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura de identidad: un rol tiene muchos usuarios, un usuario tiene un solo paciente, y un paciente puede ser tutor de muchos menores, como se observa en la #link("#figura-47")[Figura 47].
 
-#metadata((src: "README.md", line: 3645))
+#metadata((src: "README.md", line: 3647))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.6.2. Bounded Context: Appointments & Booking] <sec:2-6-2-bounded-context-appointments-booking>
-#metadata((src: "README.md", line: 3647, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 3649, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 3649))
+#metadata((src: "README.md", line: 3651))
 El #strong[bounded context de Appointments & Booking] gestiona el ciclo de vida de una cita médica: consulta de disponibilidad, reserva, confirmación y cancelación. Es el responsable de la #strong[cola de pedido de cita] (#raw("booking_order")), que define la prioridad del paciente para asumir cupos liberados.
 
 #heading(level: 4)[2.6.2.1. Domain Layer] <sec:2-6-2-1-domain-layer>
-#metadata((src: "README.md", line: 3651, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3653, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3653))
+#metadata((src: "README.md", line: 3655))
 La capa de #strong[Domain] representa el núcleo del negocio de reserva de citas. Aquí se definen las entidades, value objects, enums, aggregates, domain events e interfaces que encapsulan las reglas de negocio.
 
 #heading(level: 5)[Appointment (Aggregate Root)] <sec:appointment-aggregate-root>
-#metadata((src: "README.md", line: 3655, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3657, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3657))
+#metadata((src: "README.md", line: 3659))
 #strong[Atributos:]
 #raw("id"), #raw("timeSlotId"), #raw("patientId"), #raw("bookingOrder: BookingOrder"), #raw("status: AppointmentStatus"), #raw("createdAt"), #raw("updatedAt")
 
-#metadata((src: "README.md", line: 3660))
+#metadata((src: "README.md", line: 3662))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3661))
+#metadata((src: "README.md", line: 3663))
 - #raw("create(timeSlotId, patientId, bookingOrder)") → crea una nueva cita en estado #raw("RESERVED") (factory method estático).
 - #raw("rehydrate(id, timeSlotId, patientId, bookingOrder, status, createdAt, updatedAt)") → reconstruye la cita desde su estado persistido.
 - #raw("cancel()") → cambia el estado a #raw("CANCELLED") y registra el evento #raw("AppointmentCancelledEvent").
@@ -4379,26 +4381,26 @@ La capa de #strong[Domain] representa el núcleo del negocio de reserva de citas
 - #raw("isActive()") → retorna #raw("true") si el estado es #raw("RESERVED") o #raw("CONFIRMED").
 - #raw("canBeCancelled(scheduledAt, deadlineHours)") → valida si aún está dentro del plazo de cancelación.
 
-#metadata((src: "README.md", line: 3671))
+#metadata((src: "README.md", line: 3673))
 #strong[Propósito:]
 Representa una cita médica reservada. Es aggregate root porque agrupa el #raw("bookingOrder") y controla el ciclo de vida de la cita.
 
-#metadata((src: "README.md", line: 3674))
+#metadata((src: "README.md", line: 3676))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlot (Aggregate Root)] <sec:timeslot-aggregate-root>
-#metadata((src: "README.md", line: 3676, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3678, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3678))
+#metadata((src: "README.md", line: 3680))
 #strong[Atributos:]
 #raw("id"), #raw("doctorId"), #raw("date"), #raw("startHour"), #raw("endHour"), #raw("maxCapacity"), #raw("currentBookings"), #raw("status: TimeSlotStatus")
 
-#metadata((src: "README.md", line: 3681))
+#metadata((src: "README.md", line: 3683))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3682))
+#metadata((src: "README.md", line: 3684))
 - #raw("create(doctorId, date, startHour, endHour, maxCapacity)") → crea un bloque horario en estado #raw("AVAILABLE") (factory method estático).
 - #raw("rehydrate(id, doctorId, date, startHour, endHour, maxCapacity, currentBookings, status)") → reconstruye el bloque desde su estado persistido.
 - #raw("hasAvailableCapacity()") → retorna #raw("true") si #raw("currentBookings < maxCapacity").
@@ -4409,116 +4411,116 @@ Representa una cita médica reservada. Es aggregate root porque agrupa el #raw("
 - #raw("isExpired()") → retorna #raw("true") si la fecha y hora ya pasaron.
 - #raw("cancel()") → cambia el estado a #raw("CANCELLED").
 
-#metadata((src: "README.md", line: 3692))
+#metadata((src: "README.md", line: 3694))
 #strong[Propósito:]
 Representa un bloque horario concreto de un médico en una fecha. Es aggregate root porque controla la capacidad y el estado del bloque.
 
-#metadata((src: "README.md", line: 3695))
+#metadata((src: "README.md", line: 3697))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Doctor (Aggregate)] <sec:doctor-aggregate>
-#metadata((src: "README.md", line: 3697, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3699, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3699))
+#metadata((src: "README.md", line: 3701))
 #strong[Atributos:]
 #raw("id"), #raw("specialtyId"), #raw("name"), #raw("lastname")
 
-#metadata((src: "README.md", line: 3702))
+#metadata((src: "README.md", line: 3704))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3703))
+#metadata((src: "README.md", line: 3705))
 - #raw("create(specialtyId, name, lastname)") → crea un médico (factory method estático).
 - #raw("rehydrate(id, specialtyId, name, lastname)") → reconstruye el médico desde su estado persistido.
 
-#metadata((src: "README.md", line: 3706))
+#metadata((src: "README.md", line: 3708))
 #strong[Propósito:]
 Representa a un médico dentro del catálogo.
 
-#metadata((src: "README.md", line: 3709))
+#metadata((src: "README.md", line: 3711))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Specialty (Aggregate)] <sec:specialty-aggregate>
-#metadata((src: "README.md", line: 3711, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3713, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3713))
+#metadata((src: "README.md", line: 3715))
 #strong[Atributos:]
 #raw("id"), #raw("name"), #raw("description")
 
-#metadata((src: "README.md", line: 3716))
+#metadata((src: "README.md", line: 3718))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3717))
+#metadata((src: "README.md", line: 3719))
 - #raw("create(name, description)") → crea una especialidad (factory method estático).
 - #raw("rehydrate(id, name, description)") → reconstruye la especialidad desde su estado persistido.
 
-#metadata((src: "README.md", line: 3720))
+#metadata((src: "README.md", line: 3722))
 #strong[Propósito:]
 Representa una especialidad médica dentro del catálogo.
 
-#metadata((src: "README.md", line: 3723))
+#metadata((src: "README.md", line: 3725))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[BookingOrder (Value Object)] <sec:bookingorder-value-object>
-#metadata((src: "README.md", line: 3725, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3727, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3727))
+#metadata((src: "README.md", line: 3729))
 #strong[Atributos:]
 #raw("value")
 
-#metadata((src: "README.md", line: 3730))
+#metadata((src: "README.md", line: 3732))
 #strong[Propósito:]
 Encapsula el número secuencial de reserva. Es inmutable una vez asignado. El alcance "por especialidad" se resuelve al calcular el siguiente valor mediante #raw("getNextBookingOrderBySpecialty").
 
-#metadata((src: "README.md", line: 3733))
+#metadata((src: "README.md", line: 3735))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentStatus (Enum)] <sec:appointmentstatus-enum>
-#metadata((src: "README.md", line: 3735, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3737, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3737))
+#metadata((src: "README.md", line: 3739))
 #strong[Valores posibles:]
 #raw("RESERVED"), #raw("CONFIRMED"), #raw("CANCELLED"), #raw("ABSENT"), #raw("ATTENDED"), #raw("EXPIRED")
 
-#metadata((src: "README.md", line: 3740))
+#metadata((src: "README.md", line: 3742))
 #strong[Propósito:]
 Define los estados del ciclo de vida de una cita. Las transiciones hacia #raw("ATTENDED") y #raw("ABSENT") son disparadas por el bounded context #raw("Arrival & QR Check-in"), y #raw("EXPIRED") por un job programado.
 
-#metadata((src: "README.md", line: 3743))
+#metadata((src: "README.md", line: 3745))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotStatus (Enum)] <sec:timeslotstatus-enum>
-#metadata((src: "README.md", line: 3745, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3747, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3747))
+#metadata((src: "README.md", line: 3749))
 #strong[Valores posibles:]
 #raw("AVAILABLE"), #raw("FULL"), #raw("CANCELLED")
 
-#metadata((src: "README.md", line: 3750))
+#metadata((src: "README.md", line: 3752))
 #strong[Propósito:]
 Define el estado de disponibilidad de un bloque horario.
 
-#metadata((src: "README.md", line: 3753))
+#metadata((src: "README.md", line: 3755))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentRepository (Interface)] <sec:appointmentrepository-interface>
-#metadata((src: "README.md", line: 3755, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3757, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3757))
+#metadata((src: "README.md", line: 3759))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3758))
+#metadata((src: "README.md", line: 3760))
 - #raw("save(appointment: Appointment): Appointment")
 - #raw("findById(id: Long): Appointment?")
 - #raw("findByPatientId(patientId: Long): List<Appointment>")
@@ -4530,358 +4532,358 @@ Define el estado de disponibilidad de un bloque horario.
 - #raw("existsById(id: Long): Boolean")
 - #raw("deleteById(id: Long)")
 
-#metadata((src: "README.md", line: 3769))
+#metadata((src: "README.md", line: 3771))
 #strong[Propósito:]
 Define las operaciones de persistencia para citas.
 
-#metadata((src: "README.md", line: 3772))
+#metadata((src: "README.md", line: 3774))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotRepository (Interface)] <sec:timeslotrepository-interface>
-#metadata((src: "README.md", line: 3774, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3776, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3776))
+#metadata((src: "README.md", line: 3778))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3777))
+#metadata((src: "README.md", line: 3779))
 - #raw("save(timeSlot: TimeSlot): TimeSlot")
 - #raw("findById(id: Long): TimeSlot?")
 - #raw("findAvailableBySpecialty(specialtyId: Long, date: LocalDate): List<TimeSlot>")
 - #raw("findByDoctorAndDate(doctorId: Long, date: LocalDate): List<TimeSlot>")
 - #raw("existsById(id: Long): Boolean")
 
-#metadata((src: "README.md", line: 3783))
+#metadata((src: "README.md", line: 3785))
 #strong[Propósito:]
 Define las operaciones de persistencia para bloques horarios.
 
-#metadata((src: "README.md", line: 3786))
+#metadata((src: "README.md", line: 3788))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpecialtyRepository (Interface)] <sec:specialtyrepository-interface>
-#metadata((src: "README.md", line: 3788, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3790, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3790))
+#metadata((src: "README.md", line: 3792))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3791))
+#metadata((src: "README.md", line: 3793))
 - #raw("save(specialty: Specialty): Specialty")
 - #raw("findById(id: Long): Specialty?")
 - #raw("findAll(): List<Specialty>")
 - #raw("existsById(id: Long): Boolean")
 
-#metadata((src: "README.md", line: 3796))
+#metadata((src: "README.md", line: 3798))
 #strong[Propósito:]
 Define las operaciones de persistencia para el catálogo de especialidades.
 
-#metadata((src: "README.md", line: 3799))
+#metadata((src: "README.md", line: 3801))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[DoctorRepository (Interface)] <sec:doctorrepository-interface>
-#metadata((src: "README.md", line: 3801, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3803, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3803))
+#metadata((src: "README.md", line: 3805))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 3804))
+#metadata((src: "README.md", line: 3806))
 - #raw("save(doctor: Doctor): Doctor")
 - #raw("findById(id: Long): Doctor?")
 - #raw("findBySpecialtyId(specialtyId: Long): List<Doctor>")
 - #raw("findAll(): List<Doctor>")
 - #raw("existsById(id: Long): Boolean")
 
-#metadata((src: "README.md", line: 3810))
+#metadata((src: "README.md", line: 3812))
 #strong[Propósito:]
 Define las operaciones de persistencia para el catálogo de médicos.
 
-#metadata((src: "README.md", line: 3813))
+#metadata((src: "README.md", line: 3815))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 3815))
+#metadata((src: "README.md", line: 3817))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 3815))
+  #metadata((src: "README.md", line: 3817))
   #strong[Nota sobre eventos de dominio:] #raw("AppointmentBookedEvent"), #raw("AppointmentCancelledEvent") y #raw("AppointmentAbsentEvent") son registrados por el aggregate #raw("Appointment") mediante #raw("registerDomainEvent(...)") y publicados por el persistence adapter al guardar, usando #raw("ApplicationEventPublisher") de Spring.
 ]
 
-#metadata((src: "README.md", line: 3817))
+#metadata((src: "README.md", line: 3819))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentBookedEvent (Domain Event)] <sec:appointmentbookedevent-domain-event>
-#metadata((src: "README.md", line: 3819, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3821, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3821))
+#metadata((src: "README.md", line: 3823))
 #strong[Atributos:]
 #raw("appointmentId"), #raw("timeSlotId"), #raw("patientId"), #raw("bookingOrder"), #raw("bookedAt")
 
-#metadata((src: "README.md", line: 3824))
+#metadata((src: "README.md", line: 3826))
 #strong[Propósito:]
 Representa el hecho de negocio de que se reservó una nueva cita.
 
-#metadata((src: "README.md", line: 3827))
+#metadata((src: "README.md", line: 3829))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentCancelledEvent (Domain Event)] <sec:appointmentcancelledevent-domain-event>
-#metadata((src: "README.md", line: 3829, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3831, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3831))
+#metadata((src: "README.md", line: 3833))
 #strong[Atributos:]
 #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("cancelledAt")
 
-#metadata((src: "README.md", line: 3834))
+#metadata((src: "README.md", line: 3836))
 #strong[Propósito:]
 Representa el hecho de negocio de que una cita fue cancelada y su cupo quedó libre.
 
-#metadata((src: "README.md", line: 3837))
+#metadata((src: "README.md", line: 3839))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentAbsentEvent (Domain Event)] <sec:appointmentabsentevent-domain-event>
-#metadata((src: "README.md", line: 3839, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3841, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3841))
+#metadata((src: "README.md", line: 3843))
 #strong[Atributos:]
 #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("absentAt")
 
-#metadata((src: "README.md", line: 3844))
+#metadata((src: "README.md", line: 3846))
 #strong[Propósito:]
 Representa el hecho de negocio de que un paciente no se presentó a su cita.
 
-#metadata((src: "README.md", line: 3847))
+#metadata((src: "README.md", line: 3849))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.2.2. Interface Layer] <sec:2-6-2-2-interface-layer>
-#metadata((src: "README.md", line: 3849, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3851, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3851))
+#metadata((src: "README.md", line: 3853))
 La #strong[Interface Layer] expone las funcionalidades del bounded context mediante endpoints REST.
 
 #heading(level: 5)[AppointmentsController (REST API Controller)] <sec:appointmentscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3853, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3855, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3855))
+#metadata((src: "README.md", line: 3857))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3856))
+#metadata((src: "README.md", line: 3858))
 - #raw("POST /api/v1/appointments") → Reserva una nueva cita.
 - #raw("GET /api/v1/appointments/{id}") → Obtiene el detalle de una cita.
 - #raw("GET /api/v1/appointments/patient/{patientId}") → Lista citas de un paciente.
 - #raw("DELETE /api/v1/appointments/{id}") → Cancela una cita.
 
-#metadata((src: "README.md", line: 3861))
+#metadata((src: "README.md", line: 3863))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("Appointment").
 
-#metadata((src: "README.md", line: 3864))
+#metadata((src: "README.md", line: 3866))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotsController (REST API Controller)] <sec:timeslotscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3866, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3868, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3868))
+#metadata((src: "README.md", line: 3870))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3869))
+#metadata((src: "README.md", line: 3871))
 - #raw("GET /api/v1/time-slots/available?specialtyId={id}&date={date}") → Lista bloques horarios disponibles de una especialidad.
 - #raw("GET /api/v1/time-slots?doctorId={id}&date={date}") → Lista bloques horarios de un médico en una fecha.
 - #raw("GET /api/v1/time-slots/{id}") → Obtiene el detalle de un bloque horario.
 - #raw("POST /api/v1/time-slots") → Crea un bloque horario.
 - #raw("PUT /api/v1/time-slots/{id}/capacity") → Actualiza la capacidad de un bloque horario.
 
-#metadata((src: "README.md", line: 3875))
+#metadata((src: "README.md", line: 3877))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("TimeSlot").
 
-#metadata((src: "README.md", line: 3878))
+#metadata((src: "README.md", line: 3880))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpecialtiesController (REST API Controller)] <sec:specialtiescontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3880, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3882, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3882))
+#metadata((src: "README.md", line: 3884))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3883))
+#metadata((src: "README.md", line: 3885))
 - #raw("GET /api/v1/specialties") → Lista especialidades disponibles.
 - #raw("GET /api/v1/specialties/{id}") → Obtiene el detalle de una especialidad.
 
-#metadata((src: "README.md", line: 3886))
+#metadata((src: "README.md", line: 3888))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("Specialty").
 
-#metadata((src: "README.md", line: 3889))
+#metadata((src: "README.md", line: 3891))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[DoctorsController (REST API Controller)] <sec:doctorscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 3891, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3893, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3893))
+#metadata((src: "README.md", line: 3895))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 3894))
+#metadata((src: "README.md", line: 3896))
 - #raw("GET /api/v1/doctors?specialtyId={id}") → Lista médicos de una especialidad.
 - #raw("GET /api/v1/doctors/{id}") → Obtiene el detalle de un médico.
 
-#metadata((src: "README.md", line: 3897))
+#metadata((src: "README.md", line: 3899))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("Doctor").
 
-#metadata((src: "README.md", line: 3900))
+#metadata((src: "README.md", line: 3902))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.2.3. Application Layer] <sec:2-6-2-3-application-layer>
-#metadata((src: "README.md", line: 3902, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 3904, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 3904))
+#metadata((src: "README.md", line: 3906))
 La #strong[Application Layer] orquesta los casos de uso del dominio mediante #strong[Command Services] y #strong[Query Services]. Los command services retornan #raw("Result<T, ApplicationError>") (patrón Result del módulo #raw("shared")).
 
 #heading(level: 5)[AppointmentCommandService (Interface)] <sec:appointmentcommandservice-interface>
-#metadata((src: "README.md", line: 3906, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3908, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3908))
+#metadata((src: "README.md", line: 3910))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 3909))
+#metadata((src: "README.md", line: 3911))
 - #raw("book(command: BookAppointmentCommand): Result<Appointment, ApplicationError>")
 - #raw("cancel(command: CancelAppointmentCommand): Result<Appointment, ApplicationError>")
 
-#metadata((src: "README.md", line: 3912))
+#metadata((src: "README.md", line: 3914))
 #strong[Propósito:]
 Define los comandos relacionados con la cita.
 
-#metadata((src: "README.md", line: 3915))
+#metadata((src: "README.md", line: 3917))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotCommandService (Interface)] <sec:timeslotcommandservice-interface>
-#metadata((src: "README.md", line: 3917, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3919, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3919))
+#metadata((src: "README.md", line: 3921))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 3920))
+#metadata((src: "README.md", line: 3922))
 - #raw("create(command: CreateTimeSlotCommand): Result<TimeSlot, ApplicationError>")
 - #raw("updateCapacity(command: UpdateTimeSlotCapacityCommand): Result<TimeSlot, ApplicationError>")
 
-#metadata((src: "README.md", line: 3923))
+#metadata((src: "README.md", line: 3925))
 #strong[Propósito:]
 Define los comandos relacionados con el bloque horario.
 
-#metadata((src: "README.md", line: 3926))
+#metadata((src: "README.md", line: 3928))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentQueryService (Interface)] <sec:appointmentqueryservice-interface>
-#metadata((src: "README.md", line: 3928, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3930, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3930))
+#metadata((src: "README.md", line: 3932))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3931))
+#metadata((src: "README.md", line: 3933))
 - #raw("getById(id: Long): Appointment?")
 - #raw("getByPatient(patientId: Long): List<Appointment>")
 - #raw("getByTimeSlot(timeSlotId: Long): List<Appointment>")
 
-#metadata((src: "README.md", line: 3935))
+#metadata((src: "README.md", line: 3937))
 #strong[Propósito:]
 Define las consultas relacionadas con la cita.
 
-#metadata((src: "README.md", line: 3938))
+#metadata((src: "README.md", line: 3940))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotQueryService (Interface)] <sec:timeslotqueryservice-interface>
-#metadata((src: "README.md", line: 3940, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3942, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3942))
+#metadata((src: "README.md", line: 3944))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3943))
+#metadata((src: "README.md", line: 3945))
 - #raw("getById(id: Long): TimeSlot?")
 - #raw("getAvailableBySpecialty(specialtyId: Long, date: LocalDate): List<TimeSlot>")
 - #raw("getByDoctorAndDate(doctorId: Long, date: LocalDate): List<TimeSlot>")
 
-#metadata((src: "README.md", line: 3947))
+#metadata((src: "README.md", line: 3949))
 #strong[Propósito:]
 Define las consultas relacionadas con el bloque horario.
 
-#metadata((src: "README.md", line: 3950))
+#metadata((src: "README.md", line: 3952))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpecialtyQueryService (Interface)] <sec:specialtyqueryservice-interface>
-#metadata((src: "README.md", line: 3952, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3954, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3954))
+#metadata((src: "README.md", line: 3956))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3955))
+#metadata((src: "README.md", line: 3957))
 - #raw("getAll(): List<Specialty>")
 - #raw("getById(id: Long): Specialty?")
 
-#metadata((src: "README.md", line: 3958))
+#metadata((src: "README.md", line: 3960))
 #strong[Propósito:]
 Define las consultas relacionadas con el catálogo de especialidades.
 
-#metadata((src: "README.md", line: 3961))
+#metadata((src: "README.md", line: 3963))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[DoctorQueryService (Interface)] <sec:doctorqueryservice-interface>
-#metadata((src: "README.md", line: 3963, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 3965, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 3965))
+#metadata((src: "README.md", line: 3967))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 3966))
+#metadata((src: "README.md", line: 3968))
 - #raw("getBySpecialty(specialtyId: Long): List<Doctor>")
 - #raw("getById(id: Long): Doctor?")
 
-#metadata((src: "README.md", line: 3969))
+#metadata((src: "README.md", line: 3971))
 #strong[Propósito:]
 Define las consultas relacionadas con el catálogo de médicos.
 
-#metadata((src: "README.md", line: 3972))
+#metadata((src: "README.md", line: 3974))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentCommandServiceImpl (Implementation)] <sec:appointmentcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 3974, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 3976))
-#strong[Responsabilidad:] Implementar los comandos de cita.
+#metadata((src: "README.md", line: 3976, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 3978))
+#strong[Responsabilidad:] Implementar los comandos de cita.
+
+#metadata((src: "README.md", line: 3980))
 #strong[Flujo de #raw("book"):]
 
-#metadata((src: "README.md", line: 3979))
+#metadata((src: "README.md", line: 3981))
 + Recibe #raw("patientId") y #raw("timeSlotId").
 + Carga el #raw("TimeSlot") y valida que tenga capacidad disponible (#raw("hasAvailableCapacity")).
 + Valida que no haya solapamiento (#raw("existsActiveByPatientAndTimeSlot")).
@@ -4891,10 +4893,10 @@ Define las consultas relacionadas con el catálogo de médicos.
 + Incrementa #raw("current_bookings") y guarda el #raw("TimeSlot").
 + Guarda el #raw("Appointment"); el adapter publica el evento #raw("AppointmentBookedEvent").
 
-#metadata((src: "README.md", line: 3988))
+#metadata((src: "README.md", line: 3990))
 #strong[Flujo de #raw("cancel"):]
 
-#metadata((src: "README.md", line: 3989))
+#metadata((src: "README.md", line: 3991))
 + Recibe #raw("appointmentId").
 + Busca la cita.
 + Valida que esté activa (#raw("isActive")).
@@ -4902,233 +4904,233 @@ Define las consultas relacionadas con el catálogo de médicos.
 + Decrementa #raw("current_bookings").
 + Guarda el #raw("Appointment"); el adapter publica el evento #raw("AppointmentCancelledEvent").
 
-#metadata((src: "README.md", line: 3996))
+#metadata((src: "README.md", line: 3998))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 3996))
+  #metadata((src: "README.md", line: 3998))
   #strong[Nota:] la validación del plazo (#raw("cancellationDeadlineHours")) proviene del bounded context #raw("Hospital Operations & Configuration") y se integra mediante un ACL (pendiente).
 ]
 
-#metadata((src: "README.md", line: 3998))
+#metadata((src: "README.md", line: 4000))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4000))
+#metadata((src: "README.md", line: 4002))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 4000))
+  #metadata((src: "README.md", line: 4002))
   #strong[Nota:] la reasignación de cupos liberados #strong[por ausencia] es responsabilidad del bounded context #raw("Reassignment"), que escucha #raw("PatientAbsentEvent") publicado por #raw("Arrival & QR Check-in"). La cancelación de una cita #strong[no] dispara reasignación (solo libera el cupo para reserva externa). Este contexto no implementa handlers propios para reasignación.
 ]
 
-#metadata((src: "README.md", line: 4002))
+#metadata((src: "README.md", line: 4004))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotCommandServiceImpl (Implementation)] <sec:timeslotcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 4004, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4006))
-#strong[Responsabilidad:] Implementar los comandos de bloque horario.
+#metadata((src: "README.md", line: 4006, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4008))
+#strong[Responsabilidad:] Implementar los comandos de bloque horario.
+
+#metadata((src: "README.md", line: 4010))
 #strong[Flujo de #raw("create"):]
 
-#metadata((src: "README.md", line: 4009))
+#metadata((src: "README.md", line: 4011))
 + Recibe #raw("doctorId"), #raw("date"), #raw("startHour"), #raw("endHour") y #raw("maxCapacity").
 + Crea el #raw("TimeSlot") en estado #raw("AVAILABLE") con #raw("TimeSlot.create(...)").
 + Guarda el #raw("TimeSlot").
 
-#metadata((src: "README.md", line: 4013))
+#metadata((src: "README.md", line: 4015))
 #strong[Flujo de #raw("updateCapacity"):]
 
-#metadata((src: "README.md", line: 4014))
+#metadata((src: "README.md", line: 4016))
 + Recibe #raw("timeSlotId") y #raw("maxCapacity").
 + Busca el #raw("TimeSlot").
 + Actualiza la capacidad con #raw("updateMaxCapacity(...)"), validando que no sea menor que #raw("currentBookings").
 + Guarda el #raw("TimeSlot").
 
-#metadata((src: "README.md", line: 4019))
+#metadata((src: "README.md", line: 4021))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.2.4. Infrastructure Layer] <sec:2-6-2-4-infrastructure-layer>
-#metadata((src: "README.md", line: 4021, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4023, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4023))
+#metadata((src: "README.md", line: 4025))
 La capa de #strong[Infrastructure] contiene las implementaciones concretas.
 
 #heading(level: 5)[AppointmentPersistenceAdapter] <sec:appointmentpersistenceadapter>
-#metadata((src: "README.md", line: 4025, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4027, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4026))
+#metadata((src: "README.md", line: 4028))
 #strong[Implementa:] #raw("AppointmentRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("appointments"), implementa el cálculo de #raw("booking_order") secuencial por especialidad y publica los domain events del aggregate (#raw("AppointmentBookedEvent"), #raw("AppointmentCancelledEvent"), #raw("AppointmentAbsentEvent")) vía #raw("ApplicationEventPublisher") de Spring tras persistir.
 
-#metadata((src: "README.md", line: 4031))
+#metadata((src: "README.md", line: 4033))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TimeSlotPersistenceAdapter] <sec:timeslotpersistenceadapter>
-#metadata((src: "README.md", line: 4033, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4035, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4034))
+#metadata((src: "README.md", line: 4036))
 #strong[Implementa:] #raw("TimeSlotRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("time_slots").
 
-#metadata((src: "README.md", line: 4039))
+#metadata((src: "README.md", line: 4041))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpecialtyPersistenceAdapter] <sec:specialtypersistenceadapter>
-#metadata((src: "README.md", line: 4041, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4043, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4042))
+#metadata((src: "README.md", line: 4044))
 #strong[Implementa:] #raw("SpecialtyRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("specialties").
 
-#metadata((src: "README.md", line: 4047))
+#metadata((src: "README.md", line: 4049))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[DoctorPersistenceAdapter] <sec:doctorpersistenceadapter>
-#metadata((src: "README.md", line: 4049, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4051, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4050))
+#metadata((src: "README.md", line: 4052))
 #strong[Implementa:] #raw("DoctorRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("doctors").
 
-#metadata((src: "README.md", line: 4055))
+#metadata((src: "README.md", line: 4057))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[NotificationAdapter] <sec:notificationadapter-2>
-#metadata((src: "README.md", line: 4057, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4059, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4058))
+#metadata((src: "README.md", line: 4060))
 #strong[Función:]
 Envía notificaciones de confirmación y cancelación al paciente.
 #strong[Tecnología:] SMTP
 #strong[Explicación:]
 Requiere un ACL hacia el bounded context #raw("Identity & Access Management") para obtener el correo del paciente. Su implementación está pendiente.
 
-#metadata((src: "README.md", line: 4064))
+#metadata((src: "README.md", line: 4066))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.2.5. Bounded Context Software Architecture Component Level Diagrams] <sec:2-6-2-5-bounded-context-software-architecture-component-level-diagrams>
-#metadata((src: "README.md", line: 4066, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 4074))
-#strong[Figura 48]
+#metadata((src: "README.md", line: 4068, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 4076))
+#strong[Figura 48]
+
+#metadata((src: "README.md", line: 4078))
 #emph[Diagrama de componentes — Appointment]
 
-#metadata((src: "README.md", line: 4078, kind: "figure", img: "chapter-02/assets/appointment_component_diagram_v2.png"))
+#metadata((src: "README.md", line: 4080, kind: "figure", img: "chapter-02/assets/appointment_component_diagram_v2.png"))
 #block(breakable: false)[#fit-image("/chapter-02/assets/appointment_component_diagram_v2.png", alt: "Diagrama de componentes — Appointment", width: 85%)]
 
-#metadata((src: "README.md", line: 4080))
+#metadata((src: "README.md", line: 4082))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4084))
+#metadata((src: "README.md", line: 4086))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4085))
+#metadata((src: "README.md", line: 4087))
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con #raw("ApplicationEventPublisher") de Spring, como se observa en la #link("#figura-48")[Figura 48].
 
 #heading(level: 4)[2.6.2.6. Bounded Context Software Architecture Code Level Diagrams] <sec:2-6-2-6-bounded-context-software-architecture-code-level-diagrams>
-#metadata((src: "README.md", line: 4087, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4089, kind: "heading", level: 4))
 
 #heading(level: 5)[2.6.2.6.1. Bounded Context Domain Layer Class Diagrams] <sec:2-6-2-6-1-bounded-context-domain-layer-class-diagrams>
-#metadata((src: "README.md", line: 4089, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4097))
-#strong[Figura 49]
+#metadata((src: "README.md", line: 4091, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4099))
+#strong[Figura 49]
+
+#metadata((src: "README.md", line: 4101))
 #emph[Diagrama de clases — Appointment]
 
-#metadata((src: "README.md", line: 4101, kind: "figure", img: "chapter-02/assets/appointment_class_diagram_v2.png"))
+#metadata((src: "README.md", line: 4103, kind: "figure", img: "chapter-02/assets/appointment_class_diagram_v2.png"))
 #block(breakable: false)[#fit-image("/chapter-02/assets/appointment_class_diagram_v2.png", alt: "Diagrama de clases — Appointment", width: 85%)]
 
-#metadata((src: "README.md", line: 4103))
+#metadata((src: "README.md", line: 4105))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4107))
+#metadata((src: "README.md", line: 4109))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4108))
+#metadata((src: "README.md", line: 4110))
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios, como se observa en la #link("#figura-49")[Figura 49].
 
 #heading(level: 5)[2.6.2.6.2. Bounded Context Database Design Diagram] <sec:2-6-2-6-2-bounded-context-database-design-diagram>
-#metadata((src: "README.md", line: 4110, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4118))
-#strong[Figura 50]
+#metadata((src: "README.md", line: 4112, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4120))
+#strong[Figura 50]
+
+#metadata((src: "README.md", line: 4122))
 #emph[Diagrama de base de datos — Appointment]
 
-#metadata((src: "README.md", line: 4122, kind: "figure", img: "assets/appointment_database_diagram.png"))
+#metadata((src: "README.md", line: 4124, kind: "figure", img: "assets/appointment_database_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/appointment_database_diagram.png", alt: "Diagrama de base de datos — Appointment", width: 85%)]
 
-#metadata((src: "README.md", line: 4124))
+#metadata((src: "README.md", line: 4126))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4128))
+#metadata((src: "README.md", line: 4130))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4129))
+#metadata((src: "README.md", line: 4131))
 El diagrama de base de datos del bounded context Appointments & Booking muestra las tablas specialties, doctors, time\_slots y appointments, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. Las relaciones reflejan la estructura del catálogo médico y la reserva de citas: una especialidad tiene muchos doctores, un doctor tiene muchos bloques horarios, y un bloque horario contiene muchas citas, como se observa en la #link("#figura-50")[Figura 50].
 
-#metadata((src: "README.md", line: 4131))
+#metadata((src: "README.md", line: 4133))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.6.3. Bounded Context: Reassignment] <sec:2-6-3-bounded-context-reassignment>
-#metadata((src: "README.md", line: 4133, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 4135, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 4135))
+#metadata((src: "README.md", line: 4137))
 El #strong[bounded context de Reassignment] gestiona la reasignación de cupos liberados por #strong[ausencias] presenciales. La reasignación opera sobre la #strong[cola de reserva] (#raw("appointments") ordenadas por #raw("booking_order")); no existe lista de espera externa ni cascada hacia otros #raw("Time Slot"). Cuando un paciente no se presenta y es declarado ausente, el sistema toma al siguiente paciente de la misma especialidad (por #raw("booking_order")) y le ofrece el cupo liberado. El candidato dispone de una #strong[ventana única] (#raw("expiresAt")) para aceptar #strong[y] presentarse. Si acepta y llega, se reasigna; al abandonar su slot original, este se libera y se re-ofrece al siguiente, formando una #strong[cadena de reasignación]. Si rechaza o no responde, se pasa al siguiente candidato. Si acepta pero no llega, se declara ausente. Si nadie en la cola acepta, el cupo se cierra. La cancelación de citas #strong[no] dispara este flujo.
 
 #heading(level: 4)[2.6.3.1. Domain Layer] <sec:2-6-3-1-domain-layer>
-#metadata((src: "README.md", line: 4137, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4139, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4139))
+#metadata((src: "README.md", line: 4141))
 La capa de #strong[Domain] representa el núcleo del negocio de reasignación. Aquí se definen el aggregate root, el enum y los domain events (records inmutables) que encapsulan las reglas de negocio.
 
 #heading(level: 5)[ReassignmentOffer (Aggregate Root)] <sec:reassignmentoffer-aggregate-root>
-#metadata((src: "README.md", line: 4141, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4143, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4143))
+#metadata((src: "README.md", line: 4145))
 #strong[Atributos:]
 #raw("id"), #raw("appointmentId"), #raw("originalAppointmentId"), #raw("freedTimeSlotId"), #raw("candidateTimeSlotId"), #raw("status: ReassignmentStatus"), #raw("offeredAt"), #raw("respondedAt"), #raw("expiresAt")
 
-#metadata((src: "README.md", line: 4146))
+#metadata((src: "README.md", line: 4148))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4147))
+#metadata((src: "README.md", line: 4149))
 - #raw("offer(appointmentId, originalAppointmentId, freedTimeSlotId, candidateTimeSlotId, expiresAt)") → factory que crea una oferta #raw("PENDING").
 - #raw("onOffered()") → registra #raw("ReassignmentOfferSentEvent") (tras persistir, cuando ya existe el #raw("id")).
 - #raw("accept()") → valida #raw("PENDING") y no expirada; cambia a #raw("ACCEPTED") y registra #raw("respondedAt") y #raw("ReassignmentOfferAcceptedEvent").
@@ -5138,60 +5140,60 @@ La capa de #strong[Domain] representa el núcleo del negocio de reasignación. A
 - #raw("markNoShow()") → valida #raw("ACCEPTED") y #raw("expiresAt < now"); cambia a #raw("ABSENT") y registra #raw("ReassignmentOfferNoShowEvent").
 - #raw("isPending()"), #raw("isAccepted()"), #raw("isExpired()") → predicados de estado.
 
-#metadata((src: "README.md", line: 4156))
+#metadata((src: "README.md", line: 4158))
 #strong[Propósito:]
 Representa una oferta de reasignación enviada a un candidato de la cola de reserva. Es aggregate root porque controla el ciclo de vida completo de la oferta. Los identificadores de #raw("Appointment") y #raw("TimeSlot") se modelan como #raw("Long") planos para no acoplar la persistencia entre bounded contexts.
 
-#metadata((src: "README.md", line: 4159))
+#metadata((src: "README.md", line: 4161))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReassignmentStatus (Enum)] <sec:reassignmentstatus-enum>
-#metadata((src: "README.md", line: 4161, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4163, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4163))
+#metadata((src: "README.md", line: 4165))
 #strong[Valores posibles:]
 #raw("PENDING"), #raw("ACCEPTED"), #raw("REJECTED"), #raw("EXPIRED"), #raw("ATTENDED"), #raw("ABSENT")
 
-#metadata((src: "README.md", line: 4166))
+#metadata((src: "README.md", line: 4168))
 #strong[Propósito:]
 Define los estados del ciclo de vida de una oferta de reasignación.
 
-#metadata((src: "README.md", line: 4169))
+#metadata((src: "README.md", line: 4171))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReassignmentOfferRepository (Interface)] <sec:reassignmentofferrepository-interface>
-#metadata((src: "README.md", line: 4171, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4173, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4173))
+#metadata((src: "README.md", line: 4175))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4174))
+#metadata((src: "README.md", line: 4176))
 - #raw("save(offer: ReassignmentOffer): ReassignmentOffer")
 - #raw("findById(id: Long): Optional<ReassignmentOffer>")
 - #raw("findPendingByAppointment(appointmentId: Long): List<ReassignmentOffer>")
 - #raw("findExpiredOffers(): List<ReassignmentOffer>")
 - #raw("findAcceptedOverdue(): List<ReassignmentOffer>")
 
-#metadata((src: "README.md", line: 4180))
+#metadata((src: "README.md", line: 4182))
 #strong[Propósito:]
 Define las operaciones de persistencia para ofertas de reasignación.
 
-#metadata((src: "README.md", line: 4183))
+#metadata((src: "README.md", line: 4185))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Domain Events (records)] <sec:domain-events-records>
-#metadata((src: "README.md", line: 4185, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4187))
-Los domain events son #strong[records inmutables] publicados por el persistence adapter vía #raw("ApplicationEventPublisher") de Spring. El agregado los registra con #raw("registerDomainEvent(...)") (heredado de #raw("AbstractDomainAggregateRoot")).
+#metadata((src: "README.md", line: 4187, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4189))
+Los domain events son #strong[records inmutables] publicados por el persistence adapter vía #raw("ApplicationEventPublisher") de Spring. El agregado los registra con #raw("registerDomainEvent(...)") (heredado de #raw("AbstractDomainAggregateRoot")).
+
+#metadata((src: "README.md", line: 4191))
 - #strong[ReassignmentOfferSentEvent:] #raw("offerId"), #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("offeredAt") — se envió una oferta.
 - #strong[ReassignmentOfferAcceptedEvent:] #raw("offerId"), #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("originalAppointmentId"), #raw("candidateTimeSlotId"), #raw("acceptedAt") — el candidato aceptó (lleva el snapshot para que Booking mueva la cita y libere el slot original).
 - #strong[ReassignmentOfferRejectedEvent:] #raw("offerId"), #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("originalAppointmentId"), #raw("rejectedAt") — el candidato rechazó.
@@ -5199,148 +5201,148 @@ Los domain events son #strong[records inmutables] publicados por el persistence 
 - #strong[ReassignmentOfferAttendedEvent:] #raw("offerId"), #raw("appointmentId"), #raw("attendedAt") — el candidato aceptó y llegó.
 - #strong[ReassignmentOfferNoShowEvent:] #raw("offerId"), #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("noShowAt") — el candidato aceptó y no llegó.
 
-#metadata((src: "README.md", line: 4196))
+#metadata((src: "README.md", line: 4198))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 4196))
+  #metadata((src: "README.md", line: 4198))
   #strong[Nota:] la búsqueda del siguiente candidato (#raw("findNextCandidate")) no es un domain service: se resuelve mediante un ACL hacia #raw("Appointments & Booking"), porque consulta datos de otro bounded context.
 ]
 
-#metadata((src: "README.md", line: 4198))
+#metadata((src: "README.md", line: 4200))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.3.2. Interface Layer] <sec:2-6-3-2-interface-layer>
-#metadata((src: "README.md", line: 4200, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4202, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4202))
+#metadata((src: "README.md", line: 4204))
 La #strong[Interface Layer] expone las funcionalidades del bounded context mediante endpoints REST y un consumer de eventos.
 
 #heading(level: 5)[ReassignmentOffersController (REST API Controller)] <sec:reassignmentofferscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 4204, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4206, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4206))
+#metadata((src: "README.md", line: 4208))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 4207))
+#metadata((src: "README.md", line: 4209))
 - #raw("GET /api/v1/reassignment-offers/pending?appointmentId={id}") → Lista ofertas pendientes de un candidato.
 - #raw("POST /api/v1/reassignment-offers/{id}/accept") → Acepta una oferta.
 - #raw("POST /api/v1/reassignment-offers/{id}/reject") → Rechaza una oferta.
 
-#metadata((src: "README.md", line: 4211))
+#metadata((src: "README.md", line: 4213))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("ReassignmentOffer").
 
-#metadata((src: "README.md", line: 4214))
+#metadata((src: "README.md", line: 4216))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientAbsentEventConsumer (Event Consumer)] <sec:patientabsenteventconsumer-event-consumer>
-#metadata((src: "README.md", line: 4216, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4218, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4218))
+#metadata((src: "README.md", line: 4220))
 #strong[Función:]
 Escucha el evento #raw("PatientAbsentEvent") publicado por #raw("Arrival & QR Check-in") y dispara el protocolo de reasignación.
 #strong[Tecnología:] #raw("@EventListener") de Spring
 
-#metadata((src: "README.md", line: 4222))
+#metadata((src: "README.md", line: 4224))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.3.3. Application Layer] <sec:2-6-3-3-application-layer>
-#metadata((src: "README.md", line: 4224, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4226, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4226))
+#metadata((src: "README.md", line: 4228))
 La #strong[Application Layer] orquesta los casos de uso mediante #strong[Command Services] y #strong[Query Services]. Los command services retornan #raw("Result<T, ApplicationError>") (patrón Result del módulo #raw("shared")), y los #strong[Event Handlers] viven en #raw("application/internal/eventhandlers/").
 
 #heading(level: 5)[ReassignmentCommandService (Interface)] <sec:reassignmentcommandservice-interface>
-#metadata((src: "README.md", line: 4228, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4230, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4230))
+#metadata((src: "README.md", line: 4232))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 4231))
+#metadata((src: "README.md", line: 4233))
 - #raw("sendReassignmentOffer(command: SendReassignmentOfferCommand): Optional<Long>") — dispara la reasignación y devuelve el id de la oferta creada (vacío si no hay candidato).
 - #raw("acceptReassignment(command: AcceptReassignmentCommand): Result<ReassignmentOffer, ApplicationError>")
 - #raw("rejectReassignment(command: RejectReassignmentCommand): Result<ReassignmentOffer, ApplicationError>")
 
-#metadata((src: "README.md", line: 4235))
+#metadata((src: "README.md", line: 4237))
 #strong[Propósito:]
 Define los comandos relacionados con la reasignación.
 
-#metadata((src: "README.md", line: 4238))
+#metadata((src: "README.md", line: 4240))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReassignmentQueryService (Interface)] <sec:reassignmentqueryservice-interface>
-#metadata((src: "README.md", line: 4240, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4242, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4242))
+#metadata((src: "README.md", line: 4244))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 4243))
+#metadata((src: "README.md", line: 4245))
 - #raw("getPendingByAppointment(appointmentId: Long): List<ReassignmentOffer>")
 - #raw("getById(id: Long): Optional<ReassignmentOffer>")
 
-#metadata((src: "README.md", line: 4246))
+#metadata((src: "README.md", line: 4248))
 #strong[Propósito:]
 Define las consultas relacionadas con la reasignación.
 
-#metadata((src: "README.md", line: 4249))
+#metadata((src: "README.md", line: 4251))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AppointmentLookupService (ACL / Outbound)] <sec:appointmentlookupservice-acl-outbound>
-#metadata((src: "README.md", line: 4251, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4253, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4253))
+#metadata((src: "README.md", line: 4255))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4254))
+#metadata((src: "README.md", line: 4256))
 - #raw("findNextCandidateByBookingOrder(freedTimeSlotId): Optional<Long>") — devuelve el #raw("appointmentId") del siguiente candidato por #raw("bookingOrder").
 - #raw("timeSlotOfAppointment(appointmentId): Long") — devuelve el slot actual del candidato.
 
-#metadata((src: "README.md", line: 4257))
+#metadata((src: "README.md", line: 4259))
 #strong[Propósito:]
 Puerto de acceso a #raw("Appointments & Booking"). Implementación en memoria (pendiente de conectar a la facade real).
 
-#metadata((src: "README.md", line: 4260))
+#metadata((src: "README.md", line: 4262))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[HospitalConfigurationService (ACL / Outbound)] <sec:hospitalconfigurationservice-acl-outbound>
-#metadata((src: "README.md", line: 4262, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4264, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4264))
+#metadata((src: "README.md", line: 4266))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4265))
+#metadata((src: "README.md", line: 4267))
 - #raw("reassignmentResponseTimeoutMinutes(): int")
 
-#metadata((src: "README.md", line: 4267))
+#metadata((src: "README.md", line: 4269))
 #strong[Propósito:]
 Puerto de acceso a #raw("Hospital Operations & Configuration") para la ventana única. Implementación en memoria (pendiente).
 
-#metadata((src: "README.md", line: 4270))
+#metadata((src: "README.md", line: 4272))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReassignmentCommandServiceImpl (Implementation)] <sec:reassignmentcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 4272, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4274))
-#strong[Responsabilidad:] Implementar los comandos de reasignación.
+#metadata((src: "README.md", line: 4274, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4276))
+#strong[Responsabilidad:] Implementar los comandos de reasignación.
+
+#metadata((src: "README.md", line: 4278))
 #strong[Flujo de #raw("sendReassignmentOffer"):]
 
-#metadata((src: "README.md", line: 4277))
+#metadata((src: "README.md", line: 4279))
 + Recibe #raw("originalAppointmentId") y #raw("freedTimeSlotId").
 + Busca el siguiente candidato con #raw("AppointmentLookupService.findNextCandidateByBookingOrder").
 + Si no hay candidato, no hace nada (el cupo se cierra).
@@ -5348,403 +5350,403 @@ Puerto de acceso a #raw("Hospital Operations & Configuration") para la ventana �
 + Calcula #raw("expiresAt = now + ventana") y obtiene #raw("candidateTimeSlotId").
 + Crea la oferta #raw("PENDING") con #raw("ReassignmentOffer.offer(...)") y la guarda (publica #raw("ReassignmentOfferSentEvent")).
 
-#metadata((src: "README.md", line: 4284))
+#metadata((src: "README.md", line: 4286))
 #strong[Flujo de #raw("acceptReassignment"):]
 
-#metadata((src: "README.md", line: 4285))
+#metadata((src: "README.md", line: 4287))
 + Busca la oferta; valida que esté #raw("PENDING") y no expirada.
 + Llama #raw("accept()") (cambia a #raw("ACCEPTED")) y guarda (publica #raw("ReassignmentOfferAcceptedEvent")).
 + El handler de #raw("AcceptedEvent") libera el slot original del candidato y reinicia la cadena.
 
-#metadata((src: "README.md", line: 4289))
+#metadata((src: "README.md", line: 4291))
 #strong[Flujo de #raw("rejectReassignment"):]
 
-#metadata((src: "README.md", line: 4290))
+#metadata((src: "README.md", line: 4292))
 + Busca la oferta; valida que esté #raw("PENDING").
 + Llama #raw("reject()") y guarda (publica #raw("ReassignmentOfferRejectedEvent")).
 
-#metadata((src: "README.md", line: 4293))
+#metadata((src: "README.md", line: 4295))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[Event Handlers] <sec:event-handlers>
-#metadata((src: "README.md", line: 4295, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4297, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4297))
+#metadata((src: "README.md", line: 4299))
 - #strong[PatientAbsentEventHandler] — escucha #raw("PatientAbsentEvent") y dispara #raw("sendReassignmentOffer").
 - #strong[ReassignmentOfferAcceptedEventHandler] — escucha #raw("AcceptedEvent") y re-ofrece el slot original del candidato (cadena).
 - #strong[ReassignmentOfferRejectedEventHandler] — escucha #raw("RejectedEvent") y ofrece el mismo slot al siguiente candidato.
 - #strong[ReassignmentOfferExpiredEventHandler] — escucha #raw("ExpiredEvent") y ofrece el mismo slot al siguiente candidato.
 - #strong[ReassignmentOfferNoShowEventHandler] — escucha #raw("NoShowEvent") y cierra el cupo (Booking marcará la cita como ausente).
 
-#metadata((src: "README.md", line: 4303))
+#metadata((src: "README.md", line: 4305))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.3.4. Infrastructure Layer] <sec:2-6-3-4-infrastructure-layer>
-#metadata((src: "README.md", line: 4305, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4307, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4307))
+#metadata((src: "README.md", line: 4309))
 La capa de #strong[Infrastructure] contiene las implementaciones concretas.
 
 #heading(level: 5)[ReassignmentOfferRepositoryImpl] <sec:reassignmentofferrepositoryimpl>
-#metadata((src: "README.md", line: 4309, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4311, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4310))
+#metadata((src: "README.md", line: 4312))
 #strong[Implementa:] #raw("ReassignmentOfferRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("reassignment_offers") y publica los domain events del aggregate vía #raw("ApplicationEventPublisher") de Spring tras persistir.
 
-#metadata((src: "README.md", line: 4315))
+#metadata((src: "README.md", line: 4317))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReassignmentExpirationScheduler] <sec:reassignmentexpirationscheduler>
-#metadata((src: "README.md", line: 4317, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4319, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4318))
+#metadata((src: "README.md", line: 4320))
 #strong[Función:]
 Ejecuta periódicamente dos tareas: (1) expira las ofertas #raw("PENDING") cuya ventana venció, y (2) marca como #raw("ABSENT") las ofertas #raw("ACCEPTED") cuya ventana venció sin llegada.
 #strong[Tecnología:] #raw("@Scheduled") de Spring
 
-#metadata((src: "README.md", line: 4322))
+#metadata((src: "README.md", line: 4324))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[NotificationAdapter] <sec:notificationadapter-3>
-#metadata((src: "README.md", line: 4324, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4326, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4325))
+#metadata((src: "README.md", line: 4327))
 #strong[Función:]
 Envía notificaciones de ofertas de reasignación al paciente (pendiente de implementación; se integrará consumiendo los domain events).
 #strong[Tecnología:] SMTP + Firebase Cloud Messaging
 
-#metadata((src: "README.md", line: 4329))
+#metadata((src: "README.md", line: 4331))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.3.5. Bounded Context Software Architecture Component Level Diagrams] <sec:2-6-3-5-bounded-context-software-architecture-component-level-diagrams>
-#metadata((src: "README.md", line: 4331, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 4339))
-#strong[Figura 51]
+#metadata((src: "README.md", line: 4333, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 4341))
+#strong[Figura 51]
+
+#metadata((src: "README.md", line: 4343))
 #emph[Diagrama de componentes — Reassignment]
 
-#metadata((src: "README.md", line: 4343, kind: "figure", img: "assets/reassignment_component_diagram.png"))
+#metadata((src: "README.md", line: 4345, kind: "figure", img: "assets/reassignment_component_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/reassignment_component_diagram.png", alt: "Diagrama de componentes — Reassignment", width: 85%)]
 
-#metadata((src: "README.md", line: 4345))
+#metadata((src: "README.md", line: 4347))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4349))
+#metadata((src: "README.md", line: 4351))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4350))
+#metadata((src: "README.md", line: 4352))
 El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas, y el PatientAbsentEventConsumer escucha el evento de ausencia de Arrival. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que hacen avanzar la cadena de reasignación y los ACLs (AppointmentLookupService y HospitalConfigurationService). En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el enum ReassignmentStatus, los domain events y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la #link("#figura-51")[Figura 51].
 
 #heading(level: 4)[2.6.3.6. Bounded Context Software Architecture Code Level Diagrams] <sec:2-6-3-6-bounded-context-software-architecture-code-level-diagrams>
-#metadata((src: "README.md", line: 4352, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4354, kind: "heading", level: 4))
 
 #heading(level: 5)[2.6.3.6.1. Bounded Context Domain Layer Class Diagrams] <sec:2-6-3-6-1-bounded-context-domain-layer-class-diagrams>
-#metadata((src: "README.md", line: 4354, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4362))
-#strong[Figura 52]
+#metadata((src: "README.md", line: 4356, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4364))
+#strong[Figura 52]
+
+#metadata((src: "README.md", line: 4366))
 #emph[Diagrama de clases — Reassignment]
 
-#metadata((src: "README.md", line: 4366, kind: "figure", img: "assets/reassignment_class_diagram.png"))
+#metadata((src: "README.md", line: 4368, kind: "figure", img: "assets/reassignment_class_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/reassignment_class_diagram.png", alt: "Diagrama de clases — Reassignment", width: 85%)]
 
-#metadata((src: "README.md", line: 4368))
+#metadata((src: "README.md", line: 4370))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4372))
+#metadata((src: "README.md", line: 4374))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4373))
+#metadata((src: "README.md", line: 4375))
 El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED, ATTENDED, ABSENT). Se muestran los seis Domain Events (records) que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent, ReassignmentOfferAttendedEvent, ReassignmentOfferNoShowEvent) y la interfaz ReassignmentOfferRepository, como se observa en la #link("#figura-52")[Figura 52].
 
 #heading(level: 5)[2.6.3.6.2. Bounded Context Database Design Diagram] <sec:2-6-3-6-2-bounded-context-database-design-diagram>
-#metadata((src: "README.md", line: 4375, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4383))
-#strong[Figura 53]
+#metadata((src: "README.md", line: 4377, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4385))
+#strong[Figura 53]
+
+#metadata((src: "README.md", line: 4387))
 #emph[Diagrama de base de datos — Reassignment]
 
-#metadata((src: "README.md", line: 4387, kind: "figure", img: "assets/reassignment_database_diagram.png"))
+#metadata((src: "README.md", line: 4389, kind: "figure", img: "assets/reassignment_database_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/reassignment_database_diagram.png", alt: "Diagrama de base de datos — Reassignment", width: 85%)]
 
-#metadata((src: "README.md", line: 4389))
+#metadata((src: "README.md", line: 4391))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4393))
+#metadata((src: "README.md", line: 4395))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4394))
+#metadata((src: "README.md", line: 4396))
 El diagrama de base de datos del bounded context Reassignment muestra la tabla reassignment\_offers, que almacena las ofertas de reasignación enviadas a los pacientes de la cola de reserva. La tabla incluye dos foreign keys hacia appointments (el paciente candidato y la cita original liberada) y dos foreign keys hacia time\_slots (el cupo liberado y el slot actual del candidato), junto con el estado de la oferta y los timestamps de envío, respuesta y expiración, como se observa en la #link("#figura-53")[Figura 53].
 
-#metadata((src: "README.md", line: 4396))
+#metadata((src: "README.md", line: 4398))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.6.4. Bounded Context: Arrival & QR Check-in] <sec:2-6-4-bounded-context-arrival-qr-check-in>
-#metadata((src: "README.md", line: 4398, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 4400, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 4400))
+#metadata((src: "README.md", line: 4402))
 El #strong[bounded context de Arrival & QR Check-in] gestiona la llegada física del paciente al establecimiento de salud, la validación del código QR y la #strong[cola de asistencia] (#raw("attendance_queue")), que ordena a los pacientes por orden de llegada dentro de cada #raw("time_slot"). Cuando el paciente escanea el código QR, el sistema valida el token firmado por el propio backend, registra su presencia, lo ingresa a la cola de asistencia y emite el ticket digital con su posición. Si el paciente no se presenta dentro de la ventana de tolerancia o no responde al llamado, el sistema declara su ausencia y libera el cupo.
 
 #heading(level: 4)[2.6.4.1. Domain Layer] <sec:2-6-4-1-domain-layer>
-#metadata((src: "README.md", line: 4402, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4404, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4404))
+#metadata((src: "README.md", line: 4406))
 La capa de #strong[Domain] representa el núcleo del negocio de llegada y check-in. Aquí se definen las entidades, value objects, enums, aggregates, factories, domain services e interfaces que encapsulan las reglas de la cola de asistencia y la validación de presencia.
 
 #heading(level: 5)[CheckIn (Aggregate Root)] <sec:checkin-aggregate-root>
-#metadata((src: "README.md", line: 4406, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4408, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4408))
+#metadata((src: "README.md", line: 4410))
 #strong[Atributos:]
 #raw("id"), #raw("idAppointment"), #raw("qrToken"), #raw("status: CheckInStatus"), #raw("checkedInAt")
 
-#metadata((src: "README.md", line: 4411))
+#metadata((src: "README.md", line: 4413))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4412))
+#metadata((src: "README.md", line: 4414))
 - #raw("isValid()") → retorna #raw("true") si el estado es #raw("VALID").
 - #raw("expire()") → cambia el estado a #raw("EXPIRED").
 - #raw("invalidate()") → cambia el estado a #raw("INVALID").
 
-#metadata((src: "README.md", line: 4416))
+#metadata((src: "README.md", line: 4418))
 #strong[Propósito:]
 Representa la validación de presencia física del paciente. Es aggregate root porque controla el ciclo de vida del check-in.
 
-#metadata((src: "README.md", line: 4419))
+#metadata((src: "README.md", line: 4421))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AttendanceQueue (Aggregate Root)] <sec:attendancequeue-aggregate-root>
-#metadata((src: "README.md", line: 4421, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4423, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4423))
+#metadata((src: "README.md", line: 4425))
 #strong[Atributos:]
 #raw("id"), #raw("idTimeSlot"), #raw("date"), #raw("status: AttendanceQueueStatus")
 
-#metadata((src: "README.md", line: 4426))
+#metadata((src: "README.md", line: 4428))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4427))
+#metadata((src: "README.md", line: 4429))
 - #raw("open()") → cambia el estado a #raw("OPEN").
 - #raw("close()") → cambia el estado a #raw("CLOSED").
 - #raw("pause()") → cambia el estado a #raw("PAUSED").
 - #raw("getEntriesOrdered()") → retorna las entradas ordenadas por #raw("position").
 
-#metadata((src: "README.md", line: 4432))
+#metadata((src: "README.md", line: 4434))
 #strong[Propósito:]
 Representa la fila de asistencia de un #raw("time_slot") en una fecha. Es aggregate root porque agrupa las #raw("QueueEntry").
 
-#metadata((src: "README.md", line: 4435))
+#metadata((src: "README.md", line: 4437))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueEntry (Entity)] <sec:queueentry-entity>
-#metadata((src: "README.md", line: 4437, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4439, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4439))
+#metadata((src: "README.md", line: 4441))
 #strong[Atributos:]
 #raw("id"), #raw("idAttendanceQueue"), #raw("idCheckIn"), #raw("position"), #raw("status: QueueEntryStatus"), #raw("calledAt"), #raw("attendedAt")
 
-#metadata((src: "README.md", line: 4442))
+#metadata((src: "README.md", line: 4444))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4443))
+#metadata((src: "README.md", line: 4445))
 - #raw("call()") → cambia el estado a #raw("CALLED").
 - #raw("startAttention()") → cambia el estado a #raw("IN_ATTENTION").
 - #raw("markAsAttended()") → cambia el estado a #raw("ATTENDED").
 - #raw("markAsAbsent()") → cambia el estado a #raw("ABSENT").
 - #raw("isWaiting()") → retorna #raw("true") si el estado es #raw("WAITING").
 
-#metadata((src: "README.md", line: 4449))
+#metadata((src: "README.md", line: 4451))
 #strong[Propósito:]
 Representa a cada persona en la fila de asistencia.
 
-#metadata((src: "README.md", line: 4452))
+#metadata((src: "README.md", line: 4454))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueuePosition (Value Object)] <sec:queueposition-value-object>
-#metadata((src: "README.md", line: 4454, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4456, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4456))
+#metadata((src: "README.md", line: 4458))
 #strong[Atributos:]
 #raw("value"), #raw("totalInQueue")
 
-#metadata((src: "README.md", line: 4459))
+#metadata((src: "README.md", line: 4461))
 #strong[Propósito:]
 Encapsula la posición del paciente en la cola de asistencia. Es inmutable y se calcula por timestamp de check-in.
 
-#metadata((src: "README.md", line: 4462))
+#metadata((src: "README.md", line: 4464))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInStatus (Enum)] <sec:checkinstatus-enum>
-#metadata((src: "README.md", line: 4464, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4466, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4466))
+#metadata((src: "README.md", line: 4468))
 #strong[Valores posibles:]
 #raw("VALID"), #raw("EXPIRED"), #raw("INVALID")
 
-#metadata((src: "README.md", line: 4469))
+#metadata((src: "README.md", line: 4471))
 #strong[Propósito:]
 Define el estado de la validación del check-in.
 
-#metadata((src: "README.md", line: 4472))
+#metadata((src: "README.md", line: 4474))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AttendanceQueueStatus (Enum)] <sec:attendancequeuestatus-enum>
-#metadata((src: "README.md", line: 4474, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4476, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4476))
+#metadata((src: "README.md", line: 4478))
 #strong[Valores posibles:]
 #raw("OPEN"), #raw("CLOSED"), #raw("PAUSED")
 
-#metadata((src: "README.md", line: 4479))
+#metadata((src: "README.md", line: 4481))
 #strong[Propósito:]
 Define el estado de la fila de asistencia.
 
-#metadata((src: "README.md", line: 4482))
+#metadata((src: "README.md", line: 4484))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueEntryStatus (Enum)] <sec:queueentrystatus-enum>
-#metadata((src: "README.md", line: 4484, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4486, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4486))
+#metadata((src: "README.md", line: 4488))
 #strong[Valores posibles:]
 #raw("WAITING"), #raw("CALLED"), #raw("IN_ATTENTION"), #raw("ATTENDED"), #raw("ABSENT")
 
-#metadata((src: "README.md", line: 4489))
+#metadata((src: "README.md", line: 4491))
 #strong[Propósito:]
 Define el estado de cada entrada en la cola de asistencia.
 
-#metadata((src: "README.md", line: 4492))
+#metadata((src: "README.md", line: 4494))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInFactory (Factory)] <sec:checkinfactory-factory>
-#metadata((src: "README.md", line: 4494, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4496, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4496))
+#metadata((src: "README.md", line: 4498))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4497))
+#metadata((src: "README.md", line: 4499))
 - #raw("createCheckIn(appointment, qrToken): CheckIn")
 
-#metadata((src: "README.md", line: 4499))
+#metadata((src: "README.md", line: 4501))
 #strong[Propósito:]
 Encapsula la creación de un check-in, validando que la cita exista.
 
-#metadata((src: "README.md", line: 4502))
+#metadata((src: "README.md", line: 4504))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueDomainService (Domain Service)] <sec:queuedomainservice-domain-service>
-#metadata((src: "README.md", line: 4504, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4506, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4506))
+#metadata((src: "README.md", line: 4508))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4507))
+#metadata((src: "README.md", line: 4509))
 - #raw("calculatePosition(attendanceQueueId): Int")
 - #raw("validateToleranceWindow(checkInTime, timeSlot): Boolean")
 
-#metadata((src: "README.md", line: 4510))
+#metadata((src: "README.md", line: 4512))
 #strong[Propósito:]
 Encapsula la lógica de cálculo de posición en la cola y la validación de la ventana de tolerancia.
 
-#metadata((src: "README.md", line: 4513))
+#metadata((src: "README.md", line: 4515))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInRepository (Interface)] <sec:checkinrepository-interface>
-#metadata((src: "README.md", line: 4515, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4517, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4517))
+#metadata((src: "README.md", line: 4519))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4518))
+#metadata((src: "README.md", line: 4520))
 - #raw("save(checkIn: CheckIn): CheckIn")
 - #raw("findById(id: Int): CheckIn?")
 - #raw("findByAppointment(appointmentId: Int): CheckIn?")
 - #raw("findByQRToken(qrToken: String): CheckIn?")
 - #raw("updateStatus(id: Int, status: CheckInStatus)")
 
-#metadata((src: "README.md", line: 4524))
+#metadata((src: "README.md", line: 4526))
 #strong[Propósito:]
 Define las operaciones de persistencia para check-ins.
 
-#metadata((src: "README.md", line: 4527))
+#metadata((src: "README.md", line: 4529))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AttendanceQueueRepository (Interface)] <sec:attendancequeuerepository-interface>
-#metadata((src: "README.md", line: 4529, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4531, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4531))
+#metadata((src: "README.md", line: 4533))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4532))
+#metadata((src: "README.md", line: 4534))
 - #raw("save(queue: AttendanceQueue): AttendanceQueue")
 - #raw("findById(id: Int): AttendanceQueue?")
 - #raw("findByTimeSlotAndDate(timeSlotId: Int, date: Date): AttendanceQueue?")
 - #raw("createIfNotExists(timeSlotId: Int, date: Date): AttendanceQueue")
 - #raw("updateStatus(id: Int, status: AttendanceQueueStatus)")
 
-#metadata((src: "README.md", line: 4538))
+#metadata((src: "README.md", line: 4540))
 #strong[Propósito:]
 Define las operaciones de persistencia para colas de asistencia.
 
-#metadata((src: "README.md", line: 4541))
+#metadata((src: "README.md", line: 4543))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueEntryRepository (Interface)] <sec:queueentryrepository-interface>
-#metadata((src: "README.md", line: 4543, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4545, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4545))
+#metadata((src: "README.md", line: 4547))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4546))
+#metadata((src: "README.md", line: 4548))
 - #raw("save(entry: QueueEntry): QueueEntry")
 - #raw("findById(id: Int): QueueEntry?")
 - #raw("findByAttendanceQueue(queueId: Int): List<QueueEntry>")
@@ -5752,249 +5754,249 @@ Define las operaciones de persistencia para colas de asistencia.
 - #raw("updateStatus(id: Int, status: QueueEntryStatus)")
 - #raw("findExpiredCalledEntries(toleranceMinutes: Int): List<QueueEntry>")
 
-#metadata((src: "README.md", line: 4553))
+#metadata((src: "README.md", line: 4555))
 #strong[Propósito:]
 Define las operaciones de persistencia para entradas de la cola.
 
-#metadata((src: "README.md", line: 4556))
+#metadata((src: "README.md", line: 4558))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[EventPublisher (Interface)] <sec:eventpublisher-interface-2>
-#metadata((src: "README.md", line: 4558, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4560, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4560))
+#metadata((src: "README.md", line: 4562))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4561))
+#metadata((src: "README.md", line: 4563))
 - #raw("publish(event: DomainEvent)")
 
-#metadata((src: "README.md", line: 4563))
+#metadata((src: "README.md", line: 4565))
 #strong[Propósito:]
 Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
 
-#metadata((src: "README.md", line: 4566))
+#metadata((src: "README.md", line: 4568))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInCompletedEvent (Domain Event)] <sec:checkincompletedevent-domain-event>
-#metadata((src: "README.md", line: 4568, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4570, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4570))
+#metadata((src: "README.md", line: 4572))
 #strong[Atributos:]
 #raw("checkInId"), #raw("appointmentId"), #raw("attendanceQueueId"), #raw("position"), #raw("completedAt")
 
-#metadata((src: "README.md", line: 4573))
+#metadata((src: "README.md", line: 4575))
 #strong[Propósito:]
 Representa el hecho de negocio de que un paciente completó su check-in y fue ingresado a la cola de asistencia.
 
-#metadata((src: "README.md", line: 4576))
+#metadata((src: "README.md", line: 4578))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientCalledEvent (Domain Event)] <sec:patientcalledevent-domain-event>
-#metadata((src: "README.md", line: 4578, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4580, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4580))
+#metadata((src: "README.md", line: 4582))
 #strong[Atributos:]
 #raw("queueEntryId"), #raw("attendanceQueueId"), #raw("position"), #raw("calledAt")
 
-#metadata((src: "README.md", line: 4583))
+#metadata((src: "README.md", line: 4585))
 #strong[Propósito:]
 Representa el hecho de negocio de que un paciente fue llamado a consultorio.
 
-#metadata((src: "README.md", line: 4586))
+#metadata((src: "README.md", line: 4588))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientAbsentEvent (Domain Event)] <sec:patientabsentevent-domain-event>
-#metadata((src: "README.md", line: 4588, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4590, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4590))
+#metadata((src: "README.md", line: 4592))
 #strong[Atributos:]
 #raw("queueEntryId"), #raw("appointmentId"), #raw("freedTimeSlotId"), #raw("absentAt")
 
-#metadata((src: "README.md", line: 4593))
+#metadata((src: "README.md", line: 4595))
 #strong[Propósito:]
 Representa el hecho de negocio de que un paciente fue declarado ausente por no presentarse al llamado.
 
-#metadata((src: "README.md", line: 4596))
+#metadata((src: "README.md", line: 4598))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.4.2. Interface Layer] <sec:2-6-4-2-interface-layer>
-#metadata((src: "README.md", line: 4598, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4600, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4600))
+#metadata((src: "README.md", line: 4602))
 La #strong[Interface Layer] expone las funcionalidades del bounded context mediante endpoints REST.
 
 #heading(level: 5)[CheckInsController (REST API Controller)] <sec:checkinscontroller-rest-api-controller>
-#metadata((src: "README.md", line: 4602, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4604, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4604))
+#metadata((src: "README.md", line: 4606))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 4605))
+#metadata((src: "README.md", line: 4607))
 - #raw("POST /api/v1/check-ins/qr") → Valida el QR y registra el check-in.
 - #raw("GET /api/v1/check-ins/{id}") → Obtiene el detalle del check-in.
 - #raw("GET /api/v1/check-ins/appointment/{appointmentId}") → Obtiene el check-in de una cita.
 
-#metadata((src: "README.md", line: 4609))
+#metadata((src: "README.md", line: 4611))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("CheckIn").
 
-#metadata((src: "README.md", line: 4612))
+#metadata((src: "README.md", line: 4614))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AttendanceQueuesController (REST API Controller)] <sec:attendancequeuescontroller-rest-api-controller>
-#metadata((src: "README.md", line: 4614, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4616, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4616))
+#metadata((src: "README.md", line: 4618))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 4617))
+#metadata((src: "README.md", line: 4619))
 - #raw("GET /api/v1/attendance-queues/{id}") → Obtiene el estado de la cola.
 - #raw("GET /api/v1/attendance-queues/{id}/entries") → Lista las entradas de la cola.
 - #raw("POST /api/v1/attendance-queues/{id}/call-next") → Llama al siguiente paciente.
 
-#metadata((src: "README.md", line: 4621))
+#metadata((src: "README.md", line: 4623))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("AttendanceQueue").
 
-#metadata((src: "README.md", line: 4624))
+#metadata((src: "README.md", line: 4626))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueEntriesController (REST API Controller)] <sec:queueentriescontroller-rest-api-controller>
-#metadata((src: "README.md", line: 4626, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4628, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4628))
+#metadata((src: "README.md", line: 4630))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 4629))
+#metadata((src: "README.md", line: 4631))
 - #raw("GET /api/v1/queue-entries/{id}") → Obtiene el detalle de una entrada.
 - #raw("POST /api/v1/queue-entries/{id}/absent") → Marca una entrada como ausente.
 
-#metadata((src: "README.md", line: 4632))
+#metadata((src: "README.md", line: 4634))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre la entity #raw("QueueEntry").
 
-#metadata((src: "README.md", line: 4635))
+#metadata((src: "README.md", line: 4637))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.4.3. Application Layer] <sec:2-6-4-3-application-layer>
-#metadata((src: "README.md", line: 4637, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4639, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4639))
+#metadata((src: "README.md", line: 4641))
 La #strong[Application Layer] orquesta los casos de uso del dominio mediante #strong[Command Services] y #strong[Query Services]. Los #strong[Command Handlers] viven dentro de los Command Services, y los #strong[Event Handlers] en #raw("application/internal/eventhandlers/").
 
 #heading(level: 5)[CheckInCommandService (Interface)] <sec:checkincommandservice-interface>
-#metadata((src: "README.md", line: 4641, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4643, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4643))
+#metadata((src: "README.md", line: 4645))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 4644))
+#metadata((src: "README.md", line: 4646))
 - #raw("validateQR(command: ValidateQRCommand): CheckInResult")
 - #raw("registerCheckIn(command: RegisterCheckInCommand): QueueEntry")
 - #raw("declareAbsence(command: DeclareAbsenceCommand): void")
 - #raw("detectAbsences(): void")
 
-#metadata((src: "README.md", line: 4649))
+#metadata((src: "README.md", line: 4651))
 #strong[Propósito:]
 Define los comandos relacionados con el check-in.
 
-#metadata((src: "README.md", line: 4652))
+#metadata((src: "README.md", line: 4654))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueCommandService (Interface)] <sec:queuecommandservice-interface>
-#metadata((src: "README.md", line: 4654, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4656, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4656))
+#metadata((src: "README.md", line: 4658))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 4657))
+#metadata((src: "README.md", line: 4659))
 - #raw("callNextPatient(command: CallNextPatientCommand): QueueEntry")
 
-#metadata((src: "README.md", line: 4659))
+#metadata((src: "README.md", line: 4661))
 #strong[Propósito:]
 Define los comandos relacionados con la cola de asistencia.
 
-#metadata((src: "README.md", line: 4662))
+#metadata((src: "README.md", line: 4664))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInQueryService (Interface)] <sec:checkinqueryservice-interface>
-#metadata((src: "README.md", line: 4664, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4666, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4666))
+#metadata((src: "README.md", line: 4668))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 4667))
+#metadata((src: "README.md", line: 4669))
 - #raw("getById(id: Int): CheckIn?")
 - #raw("getByAppointment(appointmentId: Int): CheckIn?")
 
-#metadata((src: "README.md", line: 4670))
+#metadata((src: "README.md", line: 4672))
 #strong[Propósito:]
 Define las consultas relacionadas con el check-in.
 
-#metadata((src: "README.md", line: 4673))
+#metadata((src: "README.md", line: 4675))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueQueryService (Interface)] <sec:queuequeryservice-interface>
-#metadata((src: "README.md", line: 4675, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4677, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4677))
+#metadata((src: "README.md", line: 4679))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 4678))
+#metadata((src: "README.md", line: 4680))
 - #raw("getQueuePosition(checkInId: Int): QueuePosition")
 - #raw("getQueueEntries(queueId: Int): List<QueueEntry>")
 
-#metadata((src: "README.md", line: 4681))
+#metadata((src: "README.md", line: 4683))
 #strong[Propósito:]
 Define las consultas relacionadas con la cola.
 
-#metadata((src: "README.md", line: 4684))
+#metadata((src: "README.md", line: 4686))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInCommandServiceImpl (Implementation)] <sec:checkincommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 4686, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4688))
-#strong[Responsabilidad:] Implementar los comandos de check-in.
+#metadata((src: "README.md", line: 4688, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4690))
+#strong[Responsabilidad:] Implementar los comandos de check-in.
+
+#metadata((src: "README.md", line: 4692))
 #strong[Flujo de #raw("validateQR"):]
 
-#metadata((src: "README.md", line: 4691))
+#metadata((src: "README.md", line: 4693))
 + Recibe #raw("qrToken").
 + Lee #raw("checkInToleranceMinutes") de la configuración.
 + Busca la cita asociada al QR.
 + Valida el estado y la ventana de tolerancia con #raw("QueueDomainService.validateToleranceWindow").
 + Retorna el resultado.
 
-#metadata((src: "README.md", line: 4697))
+#metadata((src: "README.md", line: 4699))
 #strong[Flujo de #raw("registerCheckIn"):]
 
-#metadata((src: "README.md", line: 4698))
+#metadata((src: "README.md", line: 4700))
 + Crea el #raw("CheckIn") con estado #raw("VALID") usando #raw("CheckInFactory").
 + Crea o recupera la #raw("AttendanceQueue").
 + Calcula la #raw("position") con #raw("QueueDomainService.calculatePosition").
@@ -6003,305 +6005,305 @@ Define las consultas relacionadas con la cola.
 + Publica el evento #raw("CheckInCompletedEvent").
 + Notifica al paciente con su posición.
 
-#metadata((src: "README.md", line: 4706))
+#metadata((src: "README.md", line: 4708))
 #strong[Flujo de #raw("declareAbsence"):]
 
-#metadata((src: "README.md", line: 4707))
+#metadata((src: "README.md", line: 4709))
 + Lee #raw("postCallToleranceMinutes") de la configuración.
 + Valida que el #raw("QueueEntry") esté #raw("CALLED").
 + Cambia el estado a #raw("ABSENT").
 + Publica el evento #raw("PatientAbsentEvent").
 + Dispara la reasignación.
 
-#metadata((src: "README.md", line: 4713))
+#metadata((src: "README.md", line: 4715))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueCommandServiceImpl (Implementation)] <sec:queuecommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 4715, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4717))
-#strong[Responsabilidad:] Implementar los comandos de cola.
+#metadata((src: "README.md", line: 4717, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4719))
+#strong[Responsabilidad:] Implementar los comandos de cola.
+
+#metadata((src: "README.md", line: 4721))
 #strong[Flujo de #raw("callNextPatient"):]
 
-#metadata((src: "README.md", line: 4720))
+#metadata((src: "README.md", line: 4722))
 + Busca el primer #raw("QueueEntry") con estado #raw("WAITING").
 + Cambia su estado a #raw("CALLED").
 + Publica el evento #raw("PatientCalledEvent").
 + Notifica al paciente.
 
-#metadata((src: "README.md", line: 4725))
+#metadata((src: "README.md", line: 4727))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[CheckInCompletedEventHandler (Event Handler)] <sec:checkincompletedeventhandler-event-handler>
-#metadata((src: "README.md", line: 4727, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4729, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4729))
+#metadata((src: "README.md", line: 4731))
 #strong[Responsabilidad:] Reaccionar al evento #raw("CheckInCompletedEvent").
 #strong[Flujo:]
 
-#metadata((src: "README.md", line: 4731))
+#metadata((src: "README.md", line: 4733))
 + Escucha el evento.
 + Notifica al paciente que ha sido ingresado a la cola.
 + Registra la acción en el log de auditoría.
 
-#metadata((src: "README.md", line: 4735))
+#metadata((src: "README.md", line: 4737))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[PatientCalledEventHandler (Event Handler)] <sec:patientcalledeventhandler-event-handler>
-#metadata((src: "README.md", line: 4737, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4739, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4739))
+#metadata((src: "README.md", line: 4741))
 #strong[Responsabilidad:] Reaccionar al evento #raw("PatientCalledEvent").
 #strong[Flujo:]
 
-#metadata((src: "README.md", line: 4741))
+#metadata((src: "README.md", line: 4743))
 + Escucha el evento.
 + Envía una notificación push al paciente.
 + Registra la acción en el log de auditoría.
 
-#metadata((src: "README.md", line: 4745))
+#metadata((src: "README.md", line: 4747))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.4.4. Infrastructure Layer] <sec:2-6-4-4-infrastructure-layer>
-#metadata((src: "README.md", line: 4747, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4749, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4749))
+#metadata((src: "README.md", line: 4751))
 La capa de #strong[Infrastructure] contiene las implementaciones concretas.
 
 #heading(level: 5)[CheckInRepositoryImpl] <sec:checkinrepositoryimpl>
-#metadata((src: "README.md", line: 4751, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4753, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4752))
+#metadata((src: "README.md", line: 4754))
 #strong[Implementa:] #raw("CheckInRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("check_ins").
 
-#metadata((src: "README.md", line: 4757))
+#metadata((src: "README.md", line: 4759))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AttendanceQueueRepositoryImpl] <sec:attendancequeuerepositoryimpl>
-#metadata((src: "README.md", line: 4759, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4761, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4760))
+#metadata((src: "README.md", line: 4762))
 #strong[Implementa:] #raw("AttendanceQueueRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("attendance_queues").
 
-#metadata((src: "README.md", line: 4765))
+#metadata((src: "README.md", line: 4767))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[QueueEntryRepositoryImpl] <sec:queueentryrepositoryimpl>
-#metadata((src: "README.md", line: 4767, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4769, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4768))
+#metadata((src: "README.md", line: 4770))
 #strong[Implementa:] #raw("QueueEntryRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("queue_entries").
 
-#metadata((src: "README.md", line: 4773))
+#metadata((src: "README.md", line: 4775))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[HospitalConfigurationRepositoryImpl] <sec:hospitalconfigurationrepositoryimpl>
-#metadata((src: "README.md", line: 4775, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4777, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4776))
+#metadata((src: "README.md", line: 4778))
 #strong[Implementa:] #raw("HospitalConfigurationRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Lee #raw("checkInToleranceMinutes"), #raw("postCallToleranceMinutes") y #raw("attendanceQueueVisible") de la configuración del hospital.
 
-#metadata((src: "README.md", line: 4781))
+#metadata((src: "README.md", line: 4783))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[JwtQRValidator (Utility)] <sec:jwtqrvalidator-utility>
-#metadata((src: "README.md", line: 4783, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4785, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4784))
+#metadata((src: "README.md", line: 4786))
 #strong[Función:]
 Valida el token QR firmado por el backend usando JWT.
 #strong[Tecnología:] java-jwt / jjwt
 #strong[Explicación:]
 Verifica la firma y la expiración del #raw("qrToken") generado por el backend al confirmar la reserva. No se comunica con ningún sistema externo.
 
-#metadata((src: "README.md", line: 4790))
+#metadata((src: "README.md", line: 4792))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[TicketGenerationAdapter] <sec:ticketgenerationadapter>
-#metadata((src: "README.md", line: 4792, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4794, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4793))
+#metadata((src: "README.md", line: 4795))
 #strong[Función:]
 Genera el ticket digital con identificador de llamado y posición en la cola.
 #strong[Tecnología:] iText / Kotlin PDF
 
-#metadata((src: "README.md", line: 4797))
+#metadata((src: "README.md", line: 4799))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[NotificationAdapter] <sec:notificationadapter-4>
-#metadata((src: "README.md", line: 4799, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4801, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4800))
+#metadata((src: "README.md", line: 4802))
 #strong[Función:]
 Envía notificaciones al paciente (check-in completado, llamado a consultorio).
 #strong[Tecnología:] SMTP + Firebase Cloud Messaging
 
-#metadata((src: "README.md", line: 4804))
+#metadata((src: "README.md", line: 4806))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpringEventPublisherImpl] <sec:springeventpublisherimpl-2>
-#metadata((src: "README.md", line: 4806, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4808, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4807))
+#metadata((src: "README.md", line: 4809))
 #strong[Implementa:] #raw("EventPublisher")
 #strong[Función:]
 Publica eventos de dominio usando Spring Events.
 #strong[Tecnología:] #raw("ApplicationEventPublisher") de Spring
 
-#metadata((src: "README.md", line: 4812))
+#metadata((src: "README.md", line: 4814))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[AbsenceDetectionScheduler] <sec:absencedetectionscheduler>
-#metadata((src: "README.md", line: 4814, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4816, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4815))
+#metadata((src: "README.md", line: 4817))
 #strong[Función:]
 Ejecuta periódicamente #raw("detectAbsences") para detectar ausencias automáticamente.
 #strong[Tecnología:] #raw("@Scheduled") de Spring
 
-#metadata((src: "README.md", line: 4819))
+#metadata((src: "README.md", line: 4821))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.4.5. Bounded Context Software Architecture Component Level Diagrams] <sec:2-6-4-5-bounded-context-software-architecture-component-level-diagrams>
-#metadata((src: "README.md", line: 4821, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 4829))
-#strong[Figura 54]
+#metadata((src: "README.md", line: 4823, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 4831))
+#strong[Figura 54]
+
+#metadata((src: "README.md", line: 4833))
 #emph[Diagrama de componentes — Arrival]
 
-#metadata((src: "README.md", line: 4833, kind: "figure", img: "assets/arrival_component_diagram.png"))
+#metadata((src: "README.md", line: 4835, kind: "figure", img: "assets/arrival_component_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/arrival_component_diagram.png", alt: "Diagrama de componentes — Arrival", width: 85%)]
 
-#metadata((src: "README.md", line: 4835))
+#metadata((src: "README.md", line: 4837))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4839))
+#metadata((src: "README.md", line: 4841))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4840))
+#metadata((src: "README.md", line: 4842))
 El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la #link("#figura-54")[Figura 54].
 
 #heading(level: 4)[2.6.4.6. Bounded Context Software Architecture Code Level Diagrams] <sec:2-6-4-6-bounded-context-software-architecture-code-level-diagrams>
-#metadata((src: "README.md", line: 4842, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4844, kind: "heading", level: 4))
 
 #heading(level: 5)[2.6.4.6.1. Bounded Context Domain Layer Class Diagrams] <sec:2-6-4-6-1-bounded-context-domain-layer-class-diagrams>
-#metadata((src: "README.md", line: 4844, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4852))
-#strong[Figura 55]
+#metadata((src: "README.md", line: 4846, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4854))
+#strong[Figura 55]
+
+#metadata((src: "README.md", line: 4856))
 #emph[Diagrama de clases — Arrival]
 
-#metadata((src: "README.md", line: 4856, kind: "figure", img: "assets/arrival_class_diagram.png"))
+#metadata((src: "README.md", line: 4858, kind: "figure", img: "assets/arrival_class_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/arrival_class_diagram.png", alt: "Diagrama de clases — Arrival", width: 85%)]
 
-#metadata((src: "README.md", line: 4858))
+#metadata((src: "README.md", line: 4860))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4862))
+#metadata((src: "README.md", line: 4864))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4863))
+#metadata((src: "README.md", line: 4865))
 El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent, como se observa en la #link("#figura-55")[Figura 55].
 
 #heading(level: 5)[2.6.4.6.2. Bounded Context Database Design Diagram] <sec:2-6-4-6-2-bounded-context-database-design-diagram>
-#metadata((src: "README.md", line: 4865, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4873))
-#strong[Figura 56]
+#metadata((src: "README.md", line: 4867, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4875))
+#strong[Figura 56]
+
+#metadata((src: "README.md", line: 4877))
 #emph[Diagrama de base de datos — Arrival]
 
-#metadata((src: "README.md", line: 4877, kind: "figure", img: "assets/arrival_database_diagram.png"))
+#metadata((src: "README.md", line: 4879, kind: "figure", img: "assets/arrival_database_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/arrival_database_diagram.png", alt: "Diagrama de base de datos — Arrival", width: 85%)]
 
-#metadata((src: "README.md", line: 4879))
+#metadata((src: "README.md", line: 4881))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 4883))
+#metadata((src: "README.md", line: 4885))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 4884))
+#metadata((src: "README.md", line: 4886))
 El diagrama de base de datos del bounded context Arrival & QR Check-in muestra las tablas check\_ins, attendance\_queues y queue\_entries, junto con sus columnas, claves primarias, claves foráneas y restricciones de unicidad. La tabla check\_ins almacena la validación de presencia del paciente con una foreign key hacia appointments. La tabla attendance\_queues representa la fila de asistencia por time\_slot y fecha, con una foreign key hacia time\_slots. La tabla queue\_entries almacena las entradas individuales de cada paciente en la cola, con foreign keys hacia attendance\_queues y check\_ins, y un campo position que determina el orden de atención por timestamp de check-in, como se observa en la #link("#figura-56")[Figura 56].
 
-#metadata((src: "README.md", line: 4886))
+#metadata((src: "README.md", line: 4888))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 3)[2.6.5. Bounded Context: Hospital Operations & Configuration] <sec:2-6-5-bounded-context-hospital-operations-configuration>
-#metadata((src: "README.md", line: 4888, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 4890, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 4890))
+#metadata((src: "README.md", line: 4892))
 El #strong[bounded context de Hospital Operations & Configuration] gestiona la configuración operativa del establecimiento de salud y provee dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda de servicios. Parametriza el comportamiento de los demás bounded contexts mediante reglas configurables como la capacidad máxima por bloque horario, las tolerancias de check-in y post-llamado, el tiempo de respuesta para la reasignación y los plazos de reserva y cancelación.
 
 #heading(level: 4)[2.6.5.1. Domain Layer] <sec:2-6-5-1-domain-layer>
-#metadata((src: "README.md", line: 4892, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4894, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4894))
+#metadata((src: "README.md", line: 4896))
 La capa de #strong[Domain] representa el núcleo del negocio de configuración y operación del hospital. Aquí se definen las entidades, value objects, enums e interfaces que encapsulan las reglas operativas.
 
 #heading(level: 5)[HospitalConfiguration (Aggregate Root)] <sec:hospitalconfiguration-aggregate-root>
-#metadata((src: "README.md", line: 4896, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4898, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4898))
+#metadata((src: "README.md", line: 4900))
 #strong[Atributos:]
 #raw("id"), #raw("maxCapacityPerSlot"), #raw("bookingOrderScope: BookingOrderScope"), #raw("checkInToleranceMinutes"), #raw("postCallToleranceMinutes"), #raw("reassignmentResponseTimeoutMin"), #raw("bookingCutoffTime"), #raw("cancellationDeadlineHours"), #raw("attendanceQueueVisible"), #raw("updatedAt")
 
-#metadata((src: "README.md", line: 4901))
+#metadata((src: "README.md", line: 4903))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4902))
+#metadata((src: "README.md", line: 4904))
 - #raw("updateMaxCapacity(value)") → valida que sea mayor a 0 y actualiza la capacidad máxima por bloque.
 - #raw("updateTolerances(checkIn, postCall)") → valida que sean mayores o iguales a 0 y actualiza las tolerancias.
 - #raw("updateReassignmentTimeout(value)") → valida que sea mayor o igual a 0 y actualiza el timeout de reasignación.
@@ -6309,316 +6311,316 @@ La capa de #strong[Domain] representa el núcleo del negocio de configuración y
 - #raw("updateCancellationDeadline(value)") → actualiza el plazo mínimo para cancelar citas.
 - #raw("validate()") → valida que todos los parámetros sean coherentes entre sí.
 
-#metadata((src: "README.md", line: 4909))
+#metadata((src: "README.md", line: 4911))
 #strong[Propósito:]
 Representa la configuración operativa del establecimiento. Es aggregate root porque agrupa todos los parámetros operativos que parametrizan el comportamiento de los demás bounded contexts.
 
-#metadata((src: "README.md", line: 4912))
+#metadata((src: "README.md", line: 4914))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[BookingOrderScope (Enum)] <sec:bookingorderscope-enum>
-#metadata((src: "README.md", line: 4914, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4916, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4916))
+#metadata((src: "README.md", line: 4918))
 #strong[Valores posibles:]
 #raw("GLOBAL"), #raw("PER_SPECIALTY")
 
-#metadata((src: "README.md", line: 4919))
+#metadata((src: "README.md", line: 4921))
 #strong[Propósito:]
 Define si el #raw("bookingOrder") se calcula de forma global al establecimiento o por especialidad.
 
-#metadata((src: "README.md", line: 4922))
+#metadata((src: "README.md", line: 4924))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[HospitalConfigurationRepository (Interface)] <sec:hospitalconfigurationrepository-interface>
-#metadata((src: "README.md", line: 4924, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4926, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4926))
+#metadata((src: "README.md", line: 4928))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4927))
+#metadata((src: "README.md", line: 4929))
 - #raw("save(config: HospitalConfiguration): HospitalConfiguration")
 - #raw("findDefault(): HospitalConfiguration?")
 - #raw("update(config: HospitalConfiguration): HospitalConfiguration")
 
-#metadata((src: "README.md", line: 4931))
+#metadata((src: "README.md", line: 4933))
 #strong[Propósito:]
 Define las operaciones de persistencia para la configuración del hospital.
 
-#metadata((src: "README.md", line: 4934))
+#metadata((src: "README.md", line: 4936))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[EventPublisher (Interface)] <sec:eventpublisher-interface-3>
-#metadata((src: "README.md", line: 4936, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4938, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4938))
+#metadata((src: "README.md", line: 4940))
 #strong[Métodos:]
 
-#metadata((src: "README.md", line: 4939))
+#metadata((src: "README.md", line: 4941))
 - #raw("publish(event: DomainEvent)")
 
-#metadata((src: "README.md", line: 4941))
+#metadata((src: "README.md", line: 4943))
 #strong[Propósito:]
 Define la interfaz para publicar eventos de dominio. La implementación concreta usa Spring Events.
 
-#metadata((src: "README.md", line: 4944))
+#metadata((src: "README.md", line: 4946))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.5.2. Interface Layer] <sec:2-6-5-2-interface-layer>
-#metadata((src: "README.md", line: 4946, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4948, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4948))
+#metadata((src: "README.md", line: 4950))
 La #strong[Interface Layer] expone las funcionalidades del bounded context mediante endpoints REST.
 
 #heading(level: 5)[ConfigurationController (REST API Controller)] <sec:configurationcontroller-rest-api-controller>
-#metadata((src: "README.md", line: 4950, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4952, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4952))
+#metadata((src: "README.md", line: 4954))
 #strong[Endpoints:]
 
-#metadata((src: "README.md", line: 4953))
+#metadata((src: "README.md", line: 4955))
 - #raw("GET /api/v1/config") → Obtiene la configuración actual del hospital.
 - #raw("PUT /api/v1/config") → Actualiza la configuración operativa.
 - #raw("GET /api/v1/config/reports") → Genera un reporte operativo en PDF/CSV.
 - #raw("GET /api/v1/config/dashboard") → Obtiene métricas operativas del hospital.
 
-#metadata((src: "README.md", line: 4958))
+#metadata((src: "README.md", line: 4960))
 #strong[Explicación:]
 Este controlador gestiona las operaciones sobre el aggregate #raw("HospitalConfiguration"), incluyendo la consulta y actualización de parámetros, la generación de reportes y la visualización de métricas en el dashboard.
 
-#metadata((src: "README.md", line: 4961))
+#metadata((src: "README.md", line: 4963))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.5.3. Application Layer] <sec:2-6-5-3-application-layer>
-#metadata((src: "README.md", line: 4963, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 4965, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 4965))
+#metadata((src: "README.md", line: 4967))
 La #strong[Application Layer] orquesta los casos de uso del dominio mediante #strong[Command Services] y #strong[Query Services]. Los #strong[Command Handlers] viven dentro de los Command Services, y los #strong[Event Handlers] en #raw("application/internal/eventhandlers/").
 
 #heading(level: 5)[ConfigurationCommandService (Interface)] <sec:configurationcommandservice-interface>
-#metadata((src: "README.md", line: 4967, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4969, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4969))
+#metadata((src: "README.md", line: 4971))
 #strong[Métodos (Command Handlers):]
 
-#metadata((src: "README.md", line: 4970))
+#metadata((src: "README.md", line: 4972))
 - #raw("updateConfiguration(command: UpdateConfigurationCommand): HospitalConfiguration")
 
-#metadata((src: "README.md", line: 4972))
+#metadata((src: "README.md", line: 4974))
 #strong[Propósito:]
 Define los comandos relacionados con la configuración operativa.
 
-#metadata((src: "README.md", line: 4975))
+#metadata((src: "README.md", line: 4977))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ConfigurationQueryService (Interface)] <sec:configurationqueryservice-interface>
-#metadata((src: "README.md", line: 4977, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 4979, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 4979))
+#metadata((src: "README.md", line: 4981))
 #strong[Métodos (Query Handlers):]
 
-#metadata((src: "README.md", line: 4980))
+#metadata((src: "README.md", line: 4982))
 - #raw("getConfiguration(): HospitalConfiguration?")
 - #raw("generateReport(query: GenerateReportQuery): Report")
 - #raw("getDashboard(query: GetDashboardQuery): Dashboard")
 
-#metadata((src: "README.md", line: 4984))
+#metadata((src: "README.md", line: 4986))
 #strong[Propósito:]
 Define las consultas relacionadas con la configuración, reportes y dashboard.
 
-#metadata((src: "README.md", line: 4987))
+#metadata((src: "README.md", line: 4989))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ConfigurationCommandServiceImpl (Implementation)] <sec:configurationcommandserviceimpl-implementation>
-#metadata((src: "README.md", line: 4989, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 4991))
-#strong[Responsabilidad:] Implementar los comandos de configuración.
+#metadata((src: "README.md", line: 4991, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 4993))
+#strong[Responsabilidad:] Implementar los comandos de configuración.
+
+#metadata((src: "README.md", line: 4995))
 #strong[Flujo de #raw("updateConfiguration"):]
 
-#metadata((src: "README.md", line: 4994))
+#metadata((src: "README.md", line: 4996))
 + Recibe los nuevos parámetros de configuración.
 + Valida que los parámetros sean coherentes usando el método #raw("validate()") del aggregate.
 + Actualiza la configuración en el repositorio.
 + Publica el evento #raw("ConfigurationUpdatedEvent").
 + Retorna la configuración actualizada.
 
-#metadata((src: "README.md", line: 5000))
+#metadata((src: "README.md", line: 5002))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ConfigurationUpdatedEventHandler (Event Handler)] <sec:configurationupdatedeventhandler-event-handler>
-#metadata((src: "README.md", line: 5002, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5004, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5004))
+#metadata((src: "README.md", line: 5006))
 #strong[Responsabilidad:] Reaccionar al evento #raw("ConfigurationUpdatedEvent").
 #strong[Flujo:]
 
-#metadata((src: "README.md", line: 5006))
+#metadata((src: "README.md", line: 5008))
 + Escucha el evento #raw("ConfigurationUpdatedEvent").
 + Actualiza la caché local de los bounded contexts que consumen la configuración.
 + Registra la acción en el log de auditoría.
 
-#metadata((src: "README.md", line: 5010))
+#metadata((src: "README.md", line: 5012))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.5.4. Infrastructure Layer] <sec:2-6-5-4-infrastructure-layer>
-#metadata((src: "README.md", line: 5012, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5014, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5014))
+#metadata((src: "README.md", line: 5016))
 La capa de #strong[Infrastructure] contiene las implementaciones concretas.
 
 #heading(level: 5)[HospitalConfigurationRepositoryImpl] <sec:hospitalconfigurationrepositoryimpl-2>
-#metadata((src: "README.md", line: 5016, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5018, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5017))
+#metadata((src: "README.md", line: 5019))
 #strong[Implementa:] #raw("HospitalConfigurationRepository")
 #strong[Tecnología:] Spring Data JPA + PostgreSQL
 #strong[Explicación:]
 Ejecuta operaciones sobre la tabla #raw("hospital_configurations"). Como es un singleton, siempre retorna el único registro existente.
 
-#metadata((src: "README.md", line: 5022))
+#metadata((src: "README.md", line: 5024))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[ReportGeneratorAdapter] <sec:reportgeneratoradapter>
-#metadata((src: "README.md", line: 5024, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5026, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5025))
+#metadata((src: "README.md", line: 5027))
 #strong[Función:]
 Genera reportes operativos en formato PDF y CSV a partir de los datos de atención, ausentismo y demanda.
 #strong[Tecnología:] iText / Apache POI
 
-#metadata((src: "README.md", line: 5029))
+#metadata((src: "README.md", line: 5031))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 5)[SpringEventPublisherImpl] <sec:springeventpublisherimpl-3>
-#metadata((src: "README.md", line: 5031, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5033, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5032))
+#metadata((src: "README.md", line: 5034))
 #strong[Implementa:] #raw("EventPublisher")
 #strong[Función:]
 Publica eventos de dominio usando Spring Events.
 #strong[Tecnología:] #raw("ApplicationEventPublisher") de Spring
 
-#metadata((src: "README.md", line: 5037))
+#metadata((src: "README.md", line: 5039))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
 #heading(level: 4)[2.6.5.5. Bounded Context Software Architecture Component Level Diagrams] <sec:2-6-5-5-bounded-context-software-architecture-component-level-diagrams>
-#metadata((src: "README.md", line: 5039, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 5047))
-#strong[Figura 57]
+#metadata((src: "README.md", line: 5041, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 5049))
+#strong[Figura 57]
+
+#metadata((src: "README.md", line: 5051))
 #emph[Diagrama de componentes — Hospital Operations & Configuration]
 
-#metadata((src: "README.md", line: 5051, kind: "figure", img: "assets/HospitalOperations_Configuration_component_diagram.png"))
+#metadata((src: "README.md", line: 5053, kind: "figure", img: "assets/HospitalOperations_Configuration_component_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/HospitalOperations_Configuration_component_diagram.png", alt: "Diagrama de componentes — Hospital Operations &amp; Configuration", width: 85%)]
 
-#metadata((src: "README.md", line: 5053))
+#metadata((src: "README.md", line: 5055))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5057))
+#metadata((src: "README.md", line: 5059))
 El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la #link("#figura-57")[Figura 57].
 
 #heading(level: 4)[2.6.5.6. Bounded Context Software Architecture Code Level Diagrams] <sec:2-6-5-6-bounded-context-software-architecture-code-level-diagrams>
-#metadata((src: "README.md", line: 5059, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5061, kind: "heading", level: 4))
 
 #heading(level: 5)[2.6.5.6.1. Bounded Context Domain Layer Class Diagrams] <sec:2-6-5-6-1-bounded-context-domain-layer-class-diagrams>
-#metadata((src: "README.md", line: 5061, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 5069))
-#strong[Figura 58]
+#metadata((src: "README.md", line: 5063, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 5071))
+#strong[Figura 58]
+
+#metadata((src: "README.md", line: 5073))
 #emph[Diagrama de clases — Hospital Operations & Configuration]
 
-#metadata((src: "README.md", line: 5073, kind: "figure", img: "assets/HospitalOperations_Configuration_class_diagram.png"))
+#metadata((src: "README.md", line: 5075, kind: "figure", img: "assets/HospitalOperations_Configuration_class_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/HospitalOperations_Configuration_class_diagram.png", alt: "Diagrama de clases — Hospital Operations &amp; Configuration", width: 85%)]
 
-#metadata((src: "README.md", line: 5075))
+#metadata((src: "README.md", line: 5077))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5079))
+#metadata((src: "README.md", line: 5081))
 El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio, como se observa en la #link("#figura-58")[Figura 58].
 
 #heading(level: 5)[2.6.5.6.2. Bounded Context Database Design Diagram] <sec:2-6-5-6-2-bounded-context-database-design-diagram>
-#metadata((src: "README.md", line: 5081, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 5089))
-#strong[Figura 59]
+#metadata((src: "README.md", line: 5083, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 5091))
+#strong[Figura 59]
+
+#metadata((src: "README.md", line: 5093))
 #emph[Diagrama de base de datos — Hospital Operations & Configuration]
 
-#metadata((src: "README.md", line: 5093, kind: "figure", img: "assets/HospitalOperations_Configuration_database_diagram.png"))
+#metadata((src: "README.md", line: 5095, kind: "figure", img: "assets/HospitalOperations_Configuration_database_diagram.png"))
 #block(breakable: false)[#fit-image("/assets/HospitalOperations_Configuration_database_diagram.png", alt: "Diagrama de base de datos — Hospital Operations &amp; Configuration", width: 85%)]
 
-#metadata((src: "README.md", line: 5095))
+#metadata((src: "README.md", line: 5097))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5099))
+#metadata((src: "README.md", line: 5101))
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital\_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la #link("#figura-59")[Figura 59].
 
-#metadata((src: "README.md", line: 5101))
+#metadata((src: "README.md", line: 5103))
 #pagebreak()
 
 #heading(level: 1)[Capítulo III: Solution UI/UX Design] <sec:capitulo-iii-solution-ui-ux-design>
-#metadata((src: "README.md", line: 5103, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 5105, kind: "heading", level: 1))
 
 #heading(level: 2)[3.1. Product design] <sec:3-1-product-design>
-#metadata((src: "README.md", line: 5105, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 5107, kind: "heading", level: 2))
 
 #heading(level: 3)[3.1.1. Style Guidelines] <sec:3-1-1-style-guidelines>
-#metadata((src: "README.md", line: 5107, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 5109, kind: "heading", level: 3))
 
 #heading(level: 4)[3.1.1.1. General Style Guidelines] <sec:3-1-1-1-general-style-guidelines>
-#metadata((src: "README.md", line: 5109, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 5111))
-Las presentes guías de estilo establecen los lineamientos visuales y de comunicación que rigen la identidad de #strong[SaludYa], producto digital desarrollado por la startup #strong[RuwaLabs]. Su propósito es garantizar consistencia en todos los productos de la solución (Landing Page, aplicaciones móviles para pacientes y personal de salud, y servicios web), facilitando el trabajo colaborativo del equipo y asegurando una experiencia coherente para los usuarios.
+#metadata((src: "README.md", line: 5111, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 5113))
+Las presentes guías de estilo establecen los lineamientos visuales y de comunicación que rigen la identidad de #strong[SaludYa], producto digital desarrollado por la startup #strong[RuwaLabs]. Su propósito es garantizar consistencia en todos los productos de la solución (Landing Page, aplicaciones móviles para pacientes y personal de salud, y servicios web), facilitando el trabajo colaborativo del equipo y asegurando una experiencia coherente para los usuarios.
+
+#metadata((src: "README.md", line: 5115))
 Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n) establecidos en el proyecto, y toman como referencia buenas prácticas de Design Systems reconocidos, adaptadas al contexto de los establecimientos públicos de salud del Perú.
 
 #heading(level: 5)[Branding] <sec:branding>
-#metadata((src: "README.md", line: 5115, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5117, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5117))
+#metadata((src: "README.md", line: 5119))
 La identidad de marca de SaludYa se construye sobre los siguientes elementos:
 
-#metadata((src: "README.md", line: 5125))
+#metadata((src: "README.md", line: 5127))
 #strong[Tabla 26]
 
-#metadata((src: "README.md", line: 5127))
+#metadata((src: "README.md", line: 5129))
 #emph[Branding]
 
-#metadata((src: "README.md", line: 5129, kind: "table"))
+#metadata((src: "README.md", line: 5131, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -6635,28 +6637,28 @@ La identidad de marca de SaludYa se construye sobre los siguientes elementos:
   tline,
 )
 
-#metadata((src: "README.md", line: 5141))
+#metadata((src: "README.md", line: 5143))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5144))
+#metadata((src: "README.md", line: 5146))
 El logotipo se utiliza en el header y footer del Landing Page, así como en las pantallas de inicio de sesión de ambas aplicaciones móviles. Su versión reducida (#raw("--logo-height-sm")) se emplea en contextos donde el espacio es limitado, como la versión móvil del Landing Page, como se detalla en la #link("#tabla-26")[Tabla 26].
 
 #heading(level: 5)[Typography] <sec:typography>
-#metadata((src: "README.md", line: 5146, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5148, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5148))
+#metadata((src: "README.md", line: 5150))
 La tipografía seleccionada prioriza la legibilidad en pantallas de distintos tamaños y en contextos de baja iluminación, frecuentes en establecimientos de salud.
 
 #heading(level: 6)[Landing Page (web)] <sec:landing-page-web>
-#metadata((src: "README.md", line: 5150, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 5158))
-#strong[Tabla 27]
+#metadata((src: "README.md", line: 5152, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 5160))
+#strong[Tabla 27]
+
+#metadata((src: "README.md", line: 5162))
 #emph[Typography — Landing Page (web)]
 
-#metadata((src: "README.md", line: 5162, kind: "table"))
+#metadata((src: "README.md", line: 5164, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -6673,22 +6675,22 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
   tline,
 )
 
-#metadata((src: "README.md", line: 5174))
+#metadata((src: "README.md", line: 5176))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5177))
+#metadata((src: "README.md", line: 5179))
 La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a criterios de rendimiento, disponibilidad multiplataforma y familiaridad para el usuario, evitando dependencias externas que afecten la carga del Landing Page, como se detalla en la #link("#tabla-27")[Tabla 27].
 
 #heading(level: 6)[Aplicaciones móviles (Android)] <sec:aplicaciones-moviles-android>
-#metadata((src: "README.md", line: 5179, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 5187))
-#strong[Tabla 28]
+#metadata((src: "README.md", line: 5181, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 5189))
+#strong[Tabla 28]
+
+#metadata((src: "README.md", line: 5191))
 #emph[Typography — Aplicaciones móviles (Android)]
 
-#metadata((src: "README.md", line: 5191, kind: "table"))
+#metadata((src: "README.md", line: 5193, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -6701,31 +6703,31 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
   tline,
 )
 
-#metadata((src: "README.md", line: 5199))
+#metadata((src: "README.md", line: 5201))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5202))
+#metadata((src: "README.md", line: 5204))
 En las aplicaciones móviles se utiliza la familia #strong[Inter] con #raw("letter-spacing") negativo en textos destacados (#raw("-0.18px") en Body Bold Large) y #raw("font-feature-settings: 'calt' off") para desactivar ligaduras contextuales. Los tamaños se expresan en #strong[sp] (scale-independent pixels), conforme a las guías de Material Design para Android, como se detalla en la #link("#tabla-28")[Tabla 28].
 
 #heading(level: 5)[Colors] <sec:colors>
-#metadata((src: "README.md", line: 5204, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5206, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5206))
+#metadata((src: "README.md", line: 5208))
 La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
 
 #heading(level: 6)[Landing Page (web)] <sec:landing-page-web-2>
-#metadata((src: "README.md", line: 5208, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 5210, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 5212))
+#metadata((src: "README.md", line: 5214))
 La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la #link("#tabla-29")[Tabla 29].
 
-#metadata((src: "README.md", line: 5216))
+#metadata((src: "README.md", line: 5218))
 #strong[Tabla 29]
 
-#metadata((src: "README.md", line: 5218))
+#metadata((src: "README.md", line: 5220))
 #emph[Colors — Landing Page (web)]
 
-#metadata((src: "README.md", line: 5220, kind: "table"))
+#metadata((src: "README.md", line: 5222, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6746,34 +6748,34 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
   tline,
 )
 
-#metadata((src: "README.md", line: 5236))
+#metadata((src: "README.md", line: 5238))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5240))
+#metadata((src: "README.md", line: 5242))
 #strong[Figura 60]
 
-#metadata((src: "README.md", line: 5242))
+#metadata((src: "README.md", line: 5244))
 #emph[Paleta de colores del Landing Page de SaludYa]
 
-#metadata((src: "README.md", line: 5244, kind: "figure", img: "assets/paleta-colores-landing.png"))
+#metadata((src: "README.md", line: 5246, kind: "figure", img: "assets/paleta-colores-landing.png"))
 #figure(
   fit-image("/assets/paleta-colores-landing.png", width: 100%),
   caption: [Paleta de colores del Landing Page de SaludYa],
 )
 
-#metadata((src: "README.md", line: 5246))
+#metadata((src: "README.md", line: 5248))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 6)[Aplicaciones móviles (Android)] <sec:aplicaciones-moviles-android-2>
-#metadata((src: "README.md", line: 5249, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 5257))
-#strong[Tabla 30]
+#metadata((src: "README.md", line: 5251, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 5259))
+#strong[Tabla 30]
+
+#metadata((src: "README.md", line: 5261))
 #emph[Colors — Aplicaciones móviles (Android)]
 
-#metadata((src: "README.md", line: 5261, kind: "table"))
+#metadata((src: "README.md", line: 5263, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6793,28 +6795,28 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
   tline,
 )
 
-#metadata((src: "README.md", line: 5276))
+#metadata((src: "README.md", line: 5278))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5279))
+#metadata((src: "README.md", line: 5281))
 Los colores fueron seleccionados para cumplir con el nivel de contraste #strong[WCAG AA], garantizando legibilidad para personas con baja visión o daltonismo, como se detalla en la #link("#tabla-30")[Tabla 30].
 
 #heading(level: 5)[Spacing] <sec:spacing>
-#metadata((src: "README.md", line: 5281, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5283, kind: "heading", level: 5))
 
 #heading(level: 6)[Landing Page (web)] <sec:landing-page-web-3>
-#metadata((src: "README.md", line: 5283, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 5285, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 5285))
+#metadata((src: "README.md", line: 5287))
 Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page, como se detalla en la #link("#tabla-31")[Tabla 31].
 
-#metadata((src: "README.md", line: 5293))
+#metadata((src: "README.md", line: 5295))
 #strong[Tabla 31]
 
-#metadata((src: "README.md", line: 5295))
+#metadata((src: "README.md", line: 5297))
 #emph[Spacing — Landing Page (web)]
 
-#metadata((src: "README.md", line: 5297, kind: "table"))
+#metadata((src: "README.md", line: 5299, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6829,19 +6831,19 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
   tline,
 )
 
-#metadata((src: "README.md", line: 5307))
+#metadata((src: "README.md", line: 5309))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 6)[Aplicaciones móviles (Android)] <sec:aplicaciones-moviles-android-3>
-#metadata((src: "README.md", line: 5310, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 5318))
-#strong[Tabla 32]
+#metadata((src: "README.md", line: 5312, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 5320))
+#strong[Tabla 32]
+
+#metadata((src: "README.md", line: 5322))
 #emph[Spacing — Aplicaciones móviles (Android)]
 
-#metadata((src: "README.md", line: 5322, kind: "table"))
+#metadata((src: "README.md", line: 5324, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6856,28 +6858,28 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
   tline,
 )
 
-#metadata((src: "README.md", line: 5332))
+#metadata((src: "README.md", line: 5334))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5335))
+#metadata((src: "README.md", line: 5337))
 Los valores en #strong[dp] (density-independent pixels) provienen directamente de los tokens definidos en Figma y se aplican a padding, márgenes y gaps en las aplicaciones móviles, como se detalla en la #link("#tabla-32")[Tabla 32].
 
 #heading(level: 5)[Border Radius] <sec:border-radius>
-#metadata((src: "README.md", line: 5337, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5339, kind: "heading", level: 5))
 
 #heading(level: 6)[Landing Page (web)] <sec:landing-page-web-4>
-#metadata((src: "README.md", line: 5339, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 5341, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 5343))
+#metadata((src: "README.md", line: 5345))
 Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la #link("#tabla-33")[Tabla 33].
 
-#metadata((src: "README.md", line: 5347))
+#metadata((src: "README.md", line: 5349))
 #strong[Tabla 33]
 
-#metadata((src: "README.md", line: 5349))
+#metadata((src: "README.md", line: 5351))
 #emph[Border Radius — Landing Page (web)]
 
-#metadata((src: "README.md", line: 5351, kind: "table"))
+#metadata((src: "README.md", line: 5353, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6889,19 +6891,19 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
   tline,
 )
 
-#metadata((src: "README.md", line: 5358))
+#metadata((src: "README.md", line: 5360))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 6)[Aplicaciones móviles (Android)] <sec:aplicaciones-moviles-android-4>
-#metadata((src: "README.md", line: 5361, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 5369))
-#strong[Tabla 34]
+#metadata((src: "README.md", line: 5363, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 5371))
+#strong[Tabla 34]
+
+#metadata((src: "README.md", line: 5373))
 #emph[Border Radius — Aplicaciones móviles (Android)]
 
-#metadata((src: "README.md", line: 5373, kind: "table"))
+#metadata((src: "README.md", line: 5375, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6912,28 +6914,28 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
   tline,
 )
 
-#metadata((src: "README.md", line: 5379))
+#metadata((src: "README.md", line: 5381))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5382))
+#metadata((src: "README.md", line: 5384))
 En las aplicaciones móviles los contenedores principales utilizan un radio superior de #strong[12dp] (#raw("border-radius: 12dp 12dp 0 0")), reservado para cards ancladas a la parte inferior de la pantalla, como se detalla en la #link("#tabla-34")[Tabla 34].
 
 #heading(level: 5)[Shadows] <sec:shadows>
-#metadata((src: "README.md", line: 5384, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5386, kind: "heading", level: 5))
 
 #heading(level: 6)[Landing Page (web)] <sec:landing-page-web-5>
-#metadata((src: "README.md", line: 5386, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 5388, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 5390))
+#metadata((src: "README.md", line: 5392))
 Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la #link("#tabla-35")[Tabla 35].
 
-#metadata((src: "README.md", line: 5394))
+#metadata((src: "README.md", line: 5396))
 #strong[Tabla 35]
 
-#metadata((src: "README.md", line: 5396))
+#metadata((src: "README.md", line: 5398))
 #emph[Shadows — Landing Page (web)]
 
-#metadata((src: "README.md", line: 5398, kind: "table"))
+#metadata((src: "README.md", line: 5400, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6945,28 +6947,28 @@ Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarje
   tline,
 )
 
-#metadata((src: "README.md", line: 5405))
+#metadata((src: "README.md", line: 5407))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 6)[Aplicaciones móviles (Android)] <sec:aplicaciones-moviles-android-5>
-#metadata((src: "README.md", line: 5408, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 5410, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 5410))
+#metadata((src: "README.md", line: 5412))
 Las aplicaciones móviles #strong[no emplean sombras] en su diseño actual. La jerarquía visual se resuelve mediante contraste de color, bordes y espaciado, siguiendo un enfoque flat consistente con los wireframes de alta fidelidad definidos en Figma.
 
 #heading(level: 5)[Tone of Voice] <sec:tone-of-voice>
-#metadata((src: "README.md", line: 5413, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5415, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5415))
+#metadata((src: "README.md", line: 5417))
 El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
-#metadata((src: "README.md", line: 5423))
+#metadata((src: "README.md", line: 5425))
 #strong[Tabla 36]
 
-#metadata((src: "README.md", line: 5425))
+#metadata((src: "README.md", line: 5427))
 #emph[Tone of Voice]
 
-#metadata((src: "README.md", line: 5427, kind: "table"))
+#metadata((src: "README.md", line: 5429, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -6979,25 +6981,25 @@ El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
   tline,
 )
 
-#metadata((src: "README.md", line: 5435))
+#metadata((src: "README.md", line: 5437))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5438))
+#metadata((src: "README.md", line: 5440))
 El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos innecesarios, prioriza frases cortas y utiliza un vocabulario accesible para ambos segmentos objetivo, como se detalla en la #link("#tabla-36")[Tabla 36].
 
 #heading(level: 5)[Iconography] <sec:iconography>
-#metadata((src: "README.md", line: 5440, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5442, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5442))
+#metadata((src: "README.md", line: 5444))
 Se utiliza la librería #strong[Font Awesome 6.5.2] para la iconografía del Landing Page, seleccionando iconos universales y reconocibles, como se detalla en la #link("#tabla-37")[Tabla 37]:
 
-#metadata((src: "README.md", line: 5450))
+#metadata((src: "README.md", line: 5452))
 #strong[Tabla 37]
 
-#metadata((src: "README.md", line: 5452))
+#metadata((src: "README.md", line: 5454))
 #emph[Iconography]
 
-#metadata((src: "README.md", line: 5454, kind: "table"))
+#metadata((src: "README.md", line: 5456, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7013,43 +7015,43 @@ Se utiliza la librería #strong[Font Awesome 6.5.2] para la iconografía del Lan
   tline,
 )
 
-#metadata((src: "README.md", line: 5465))
+#metadata((src: "README.md", line: 5467))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Design System de referencia] <sec:design-system-de-referencia>
-#metadata((src: "README.md", line: 5468, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5470, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5470))
+#metadata((src: "README.md", line: 5472))
 Las decisiones visuales de SaludYa toman como referencia principios de #strong[Material Design] (jerarquía, elevación, uso del color) y buenas prácticas de Design Systems accesibles, adaptadas al contexto peruano y a las restricciones técnicas del proyecto (rendimiento en redes móviles, compatibilidad con dispositivos de gama media y baja).
 
 #heading(level: 3)[3.1.2. Information Architecture] <sec:3-1-2-information-architecture>
-#metadata((src: "README.md", line: 5472, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 5474))
-La arquitectura de información de #strong[SaludYa] define la manera en que se organiza, etiqueta, navega y busca el contenido en los productos digitales que forman parte de la solución: el Landing Page, la aplicación móvil para pacientes y la aplicación móvil para el personal de salud. Su objetivo es que los visitantes y usuarios encuentren sin esfuerzo la información o funcionalidad que necesitan, reduciendo la carga cognitiva y facilitando la adopción del producto.
+#metadata((src: "README.md", line: 5474, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 5476))
+La arquitectura de información de #strong[SaludYa] define la manera en que se organiza, etiqueta, navega y busca el contenido en los productos digitales que forman parte de la solución: el Landing Page, la aplicación móvil para pacientes y la aplicación móvil para el personal de salud. Su objetivo es que los visitantes y usuarios encuentren sin esfuerzo la información o funcionalidad que necesitan, reduciendo la carga cognitiva y facilitando la adopción del producto.
+
+#metadata((src: "README.md", line: 5478))
 Las decisiones aquí documentadas se sustentan en los principios de diseño inclusivo, accesibilidad (a11y) e internacionalización (i18n), y consideran las características de ambos segmentos objetivo: pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.
 
 #heading(level: 4)[3.1.2.1. Organization Systems] <sec:3-1-2-1-organization-systems>
-#metadata((src: "README.md", line: 5478, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5480, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5480))
+#metadata((src: "README.md", line: 5482))
 La organización del contenido en SaludYa combina distintos sistemas según el tipo de información y el objetivo del usuario en cada producto. Se aplican principios de organización visual (jerárquica, secuencial y matricial) y esquemas de categorización (alfabético, cronológico, por tópicos y según audiencia), buscando siempre reducir la carga cognitiva y facilitar el acceso a la información.
 
 #heading(level: 5)[Landing Page] <sec:landing-page>
-#metadata((src: "README.md", line: 5482, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5484, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5486))
+#metadata((src: "README.md", line: 5488))
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la #link("#tabla-38")[Tabla 38].
 
-#metadata((src: "README.md", line: 5490))
+#metadata((src: "README.md", line: 5492))
 #strong[Tabla 38]
 
-#metadata((src: "README.md", line: 5492))
+#metadata((src: "README.md", line: 5494))
 #emph[Organization Systems — Landing Page]
 
-#metadata((src: "README.md", line: 5494, kind: "table"))
+#metadata((src: "README.md", line: 5496, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -7068,22 +7070,22 @@ La organización de las secciones agrupa la información según las tareas del u
   tline,
 )
 
-#metadata((src: "README.md", line: 5508))
+#metadata((src: "README.md", line: 5510))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para pacientes] <sec:aplicacion-movil-para-pacientes>
-#metadata((src: "README.md", line: 5511, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5513, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5515))
+#metadata((src: "README.md", line: 5517))
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la #link("#tabla-39")[Tabla 39].
 
-#metadata((src: "README.md", line: 5519))
+#metadata((src: "README.md", line: 5521))
 #strong[Tabla 39]
 
-#metadata((src: "README.md", line: 5521))
+#metadata((src: "README.md", line: 5523))
 #emph[Organization Systems — Aplicación móvil para pacientes]
 
-#metadata((src: "README.md", line: 5523, kind: "table"))
+#metadata((src: "README.md", line: 5525, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -7098,22 +7100,22 @@ La organización de las secciones agrupa la información según las tareas del u
   tline,
 )
 
-#metadata((src: "README.md", line: 5533))
+#metadata((src: "README.md", line: 5535))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para personal de salud] <sec:aplicacion-movil-para-personal-de-salud>
-#metadata((src: "README.md", line: 5536, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5538, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5540))
+#metadata((src: "README.md", line: 5542))
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la #link("#tabla-40")[Tabla 40].
 
-#metadata((src: "README.md", line: 5544))
+#metadata((src: "README.md", line: 5546))
 #strong[Tabla 40]
 
-#metadata((src: "README.md", line: 5546))
+#metadata((src: "README.md", line: 5548))
 #emph[Organization Systems — Aplicación móvil para personal de salud]
 
-#metadata((src: "README.md", line: 5548, kind: "table"))
+#metadata((src: "README.md", line: 5550, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -7128,13 +7130,13 @@ La organización de las secciones agrupa la información según las tareas del u
   tline,
 )
 
-#metadata((src: "README.md", line: 5558))
+#metadata((src: "README.md", line: 5560))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Esquemas de categorización aplicados] <sec:esquemas-de-categorizacion-aplicados>
-#metadata((src: "README.md", line: 5561, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5563, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5563))
+#metadata((src: "README.md", line: 5565))
 - #strong[Alfabético:] testimonios en el Landing Page, pacientes y familiares a cargo en las aplicaciones.
 - #strong[Cronológico:] citas, lista de espera, cancelaciones, reportes y videos.
 - #strong[Por tópicos:] secciones del Landing Page (problema, solución, modelo de negocio, equipo) y pantallas principales de las aplicaciones.
@@ -7144,24 +7146,24 @@ La organización de las secciones agrupa la información según las tareas del u
 - #strong[Matricial:] grid de testimonios en el Landing Page, donde el usuario puede explorar varias tarjetas sin un orden estricto.
 
 #heading(level: 4)[3.1.2.2. Labelling Systems] <sec:3-1-2-2-labelling-systems>
-#metadata((src: "README.md", line: 5571, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5573, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5573))
+#metadata((src: "README.md", line: 5575))
 Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, empleando el mínimo número de palabras posible y un vocabulario accesible para ambos segmentos objetivo. Se prioriza el uso de términos del dominio de la salud y de la gestión de citas, evitando tecnicismos innecesarios y anglicismos.
 
 #heading(level: 5)[Landing Page] <sec:landing-page-2>
-#metadata((src: "README.md", line: 5575, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5577, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5579))
+#metadata((src: "README.md", line: 5581))
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la #link("#tabla-41")[Tabla 41].
 
-#metadata((src: "README.md", line: 5583))
+#metadata((src: "README.md", line: 5585))
 #strong[Tabla 41]
 
-#metadata((src: "README.md", line: 5585))
+#metadata((src: "README.md", line: 5587))
 #emph[Labelling Systems — Landing Page]
 
-#metadata((src: "README.md", line: 5587, kind: "table"))
+#metadata((src: "README.md", line: 5589, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7178,22 +7180,22 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
   tline,
 )
 
-#metadata((src: "README.md", line: 5599))
+#metadata((src: "README.md", line: 5601))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para pacientes] <sec:aplicacion-movil-para-pacientes-2>
-#metadata((src: "README.md", line: 5602, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5604, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5606))
+#metadata((src: "README.md", line: 5608))
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la #link("#tabla-42")[Tabla 42].
 
-#metadata((src: "README.md", line: 5610))
+#metadata((src: "README.md", line: 5612))
 #strong[Tabla 42]
 
-#metadata((src: "README.md", line: 5612))
+#metadata((src: "README.md", line: 5614))
 #emph[Labelling Systems — Aplicación móvil para pacientes]
 
-#metadata((src: "README.md", line: 5614, kind: "table"))
+#metadata((src: "README.md", line: 5616, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7209,22 +7211,22 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
   tline,
 )
 
-#metadata((src: "README.md", line: 5625))
+#metadata((src: "README.md", line: 5627))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para personal de salud] <sec:aplicacion-movil-para-personal-de-salud-2>
-#metadata((src: "README.md", line: 5628, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5630, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5632))
+#metadata((src: "README.md", line: 5634))
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la #link("#tabla-43")[Tabla 43].
 
-#metadata((src: "README.md", line: 5636))
+#metadata((src: "README.md", line: 5638))
 #strong[Tabla 43]
 
-#metadata((src: "README.md", line: 5638))
+#metadata((src: "README.md", line: 5640))
 #emph[Labelling Systems — Aplicación móvil para personal de salud]
 
-#metadata((src: "README.md", line: 5640, kind: "table"))
+#metadata((src: "README.md", line: 5642, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7240,13 +7242,13 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
   tline,
 )
 
-#metadata((src: "README.md", line: 5651))
+#metadata((src: "README.md", line: 5653))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Asociaciones entre etiquetas] <sec:asociaciones-entre-etiquetas>
-#metadata((src: "README.md", line: 5654, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5656, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5656))
+#metadata((src: "README.md", line: 5658))
 - #strong[Reservar cita] se asocia con #strong[Lista de espera] cuando no hay cupos disponibles.
 - #strong[Mis citas] se asocia con #strong[Cancelaciones] en la app del personal.
 - #strong[Familiares] se asocia con #strong[Reservar cita] para agendar a nombre de un dependiente.
@@ -7254,24 +7256,24 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 - #strong[Check-in QR] se asocia con #strong[Mis citas] el día de la atención.
 
 #heading(level: 4)[3.1.2.3. SEO Tags and Meta Tags] <sec:3-1-2-3-seo-tags-and-meta-tags>
-#metadata((src: "README.md", line: 5662, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5664, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5664))
+#metadata((src: "README.md", line: 5666))
 Los SEO Tags y Meta Tags del Landing Page se definen en el #raw("<head>") del documento y buscan posicionar el sitio en buscadores para consultas relacionadas con citas médicas en establecimientos públicos de salud del Perú. Asimismo, se definen los elementos de ASO (App Store Optimization) para las aplicaciones móviles publicadas en Google Play y App Store.
 
 #heading(level: 5)[Landing Page] <sec:landing-page-3>
-#metadata((src: "README.md", line: 5666, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5668, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5670))
+#metadata((src: "README.md", line: 5672))
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la #link("#tabla-44")[Tabla 44].
 
-#metadata((src: "README.md", line: 5674))
+#metadata((src: "README.md", line: 5676))
 #strong[Tabla 44]
 
-#metadata((src: "README.md", line: 5676))
+#metadata((src: "README.md", line: 5678))
 #emph[SEO Tags and Meta Tags — Landing Page]
 
-#metadata((src: "README.md", line: 5678, kind: "table"))
+#metadata((src: "README.md", line: 5680, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7294,22 +7296,22 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
   tline,
 )
 
-#metadata((src: "README.md", line: 5696))
+#metadata((src: "README.md", line: 5698))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[ASO (App Store Optimization)] <sec:aso-app-store-optimization>
-#metadata((src: "README.md", line: 5699, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5701, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5703))
+#metadata((src: "README.md", line: 5705))
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la #link("#tabla-45")[Tabla 45].
 
-#metadata((src: "README.md", line: 5707))
+#metadata((src: "README.md", line: 5709))
 #strong[Tabla 45]
 
-#metadata((src: "README.md", line: 5709))
+#metadata((src: "README.md", line: 5711))
 #emph[SEO Tags and Meta Tags — ASO (App Store Optimization)]
 
-#metadata((src: "README.md", line: 5711, kind: "table"))
+#metadata((src: "README.md", line: 5713, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -7322,28 +7324,28 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
   tline,
 )
 
-#metadata((src: "README.md", line: 5719))
+#metadata((src: "README.md", line: 5721))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[3.1.2.4. Searching Systems] <sec:3-1-2-4-searching-systems>
-#metadata((src: "README.md", line: 5722, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5724, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5724))
+#metadata((src: "README.md", line: 5726))
 Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuario se pierda entre el volumen de información, ofreciendo filtros claros, resultados consistentes y opciones de acción directa sobre los elementos encontrados.
 
 #heading(level: 5)[Landing Page] <sec:landing-page-4>
-#metadata((src: "README.md", line: 5726, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5728, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5730))
+#metadata((src: "README.md", line: 5732))
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la #link("#tabla-46")[Tabla 46].
 
-#metadata((src: "README.md", line: 5734))
+#metadata((src: "README.md", line: 5736))
 #strong[Tabla 46]
 
-#metadata((src: "README.md", line: 5736))
+#metadata((src: "README.md", line: 5738))
 #emph[Searching Systems — Landing Page]
 
-#metadata((src: "README.md", line: 5738, kind: "table"))
+#metadata((src: "README.md", line: 5740, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7355,22 +7357,22 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
   tline,
 )
 
-#metadata((src: "README.md", line: 5745))
+#metadata((src: "README.md", line: 5747))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para pacientes] <sec:aplicacion-movil-para-pacientes-3>
-#metadata((src: "README.md", line: 5748, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5750, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5752))
+#metadata((src: "README.md", line: 5754))
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la #link("#tabla-47")[Tabla 47].
 
-#metadata((src: "README.md", line: 5756))
+#metadata((src: "README.md", line: 5758))
 #strong[Tabla 47]
 
-#metadata((src: "README.md", line: 5758))
+#metadata((src: "README.md", line: 5760))
 #emph[Searching Systems — Aplicación móvil para pacientes]
 
-#metadata((src: "README.md", line: 5760, kind: "table"))
+#metadata((src: "README.md", line: 5762, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -7383,22 +7385,22 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
   tline,
 )
 
-#metadata((src: "README.md", line: 5768))
+#metadata((src: "README.md", line: 5770))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para personal de salud] <sec:aplicacion-movil-para-personal-de-salud-3>
-#metadata((src: "README.md", line: 5771, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5773, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5775))
+#metadata((src: "README.md", line: 5777))
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la #link("#tabla-48")[Tabla 48].
 
-#metadata((src: "README.md", line: 5779))
+#metadata((src: "README.md", line: 5781))
 #strong[Tabla 48]
 
-#metadata((src: "README.md", line: 5781))
+#metadata((src: "README.md", line: 5783))
 #emph[Searching Systems — Aplicación móvil para personal de salud]
 
-#metadata((src: "README.md", line: 5783, kind: "table"))
+#metadata((src: "README.md", line: 5785, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -7411,34 +7413,34 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
   tline,
 )
 
-#metadata((src: "README.md", line: 5791))
+#metadata((src: "README.md", line: 5793))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Visualización de resultados] <sec:visualizacion-de-resultados>
-#metadata((src: "README.md", line: 5794, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5796, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5796))
+#metadata((src: "README.md", line: 5798))
 Los resultados se muestran en listas ordenadas cronológica o alfabéticamente, con indicadores visuales de estado (disponible, reservado, cancelado, atendido) y opciones de acción directa (reservar, cancelar, confirmar).
 
 #heading(level: 4)[3.1.2.5. Navigation Systems] <sec:3-1-2-5-navigation-systems>
-#metadata((src: "README.md", line: 5798, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5800, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5800))
+#metadata((src: "README.md", line: 5802))
 Los sistemas de navegación de SaludYa guían al usuario a través del Landing Page y las aplicaciones móviles, permitiéndole cumplir sus metas e interactuar de forma satisfactoria con el producto. Las decisiones de navegación se alinean con la arquitectura de información y los sistemas de búsqueda previamente definidos.
 
 #heading(level: 5)[Landing Page] <sec:landing-page-5>
-#metadata((src: "README.md", line: 5802, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5804, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5806))
+#metadata((src: "README.md", line: 5808))
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la #link("#tabla-49")[Tabla 49].
 
-#metadata((src: "README.md", line: 5810))
+#metadata((src: "README.md", line: 5812))
 #strong[Tabla 49]
 
-#metadata((src: "README.md", line: 5812))
+#metadata((src: "README.md", line: 5814))
 #emph[Navigation Systems — Landing Page]
 
-#metadata((src: "README.md", line: 5814, kind: "table"))
+#metadata((src: "README.md", line: 5816, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7453,22 +7455,22 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
   tline,
 )
 
-#metadata((src: "README.md", line: 5824))
+#metadata((src: "README.md", line: 5826))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para pacientes] <sec:aplicacion-movil-para-pacientes-4>
-#metadata((src: "README.md", line: 5827, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5829, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5831))
+#metadata((src: "README.md", line: 5833))
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la #link("#tabla-50")[Tabla 50].
 
-#metadata((src: "README.md", line: 5835))
+#metadata((src: "README.md", line: 5837))
 #strong[Tabla 50]
 
-#metadata((src: "README.md", line: 5837))
+#metadata((src: "README.md", line: 5839))
 #emph[Navigation Systems — Aplicación móvil para pacientes]
 
-#metadata((src: "README.md", line: 5839, kind: "table"))
+#metadata((src: "README.md", line: 5841, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7481,22 +7483,22 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
   tline,
 )
 
-#metadata((src: "README.md", line: 5847))
+#metadata((src: "README.md", line: 5849))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación móvil para personal de salud] <sec:aplicacion-movil-para-personal-de-salud-4>
-#metadata((src: "README.md", line: 5850, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5852, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5854))
+#metadata((src: "README.md", line: 5856))
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la #link("#tabla-51")[Tabla 51].
 
-#metadata((src: "README.md", line: 5858))
+#metadata((src: "README.md", line: 5860))
 #strong[Tabla 51]
 
-#metadata((src: "README.md", line: 5860))
+#metadata((src: "README.md", line: 5862))
 #emph[Navigation Systems — Aplicación móvil para personal de salud]
 
-#metadata((src: "README.md", line: 5862, kind: "table"))
+#metadata((src: "README.md", line: 5864, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7509,13 +7511,13 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
   tline,
 )
 
-#metadata((src: "README.md", line: 5870))
+#metadata((src: "README.md", line: 5872))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Recorrido del usuario] <sec:recorrido-del-usuario>
-#metadata((src: "README.md", line: 5873, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5875, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5875))
+#metadata((src: "README.md", line: 5877))
 + El visitante llega al Landing Page y comprende el problema y la solución.
 + Revisa los videos y testimonios de validación.
 + Conoce el equipo y el modelo de negocio.
@@ -7523,25 +7525,25 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 + En la app, navega por las secciones principales mediante la barra inferior.
 + Completa sus tareas (reservar, gestionar, consultar) con flujos claros y retroalimentación visual.
 
-#metadata((src: "README.md", line: 5882))
+#metadata((src: "README.md", line: 5884))
 #pagebreak()
 
 #heading(level: 3)[3.1.3. Landing Page UI Design] <sec:3-1-3-landing-page-ui-design>
-#metadata((src: "README.md", line: 5884, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 5886, kind: "heading", level: 3))
 
 #heading(level: 4)[3.1.3.1. Landing Page Wireframe] <sec:3-1-3-1-landing-page-wireframe>
-#metadata((src: "README.md", line: 5886, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 5888, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 5888))
+#metadata((src: "README.md", line: 5890))
 Los wireframes del Landing Page fueron elaborados en #strong[Figma] para las versiones #strong[Desktop Web Browser] y #strong[Mobile Web Browser], con el objetivo de definir previamente la estructura, distribución de contenidos, jerarquía visual y navegación de la interfaz antes de desarrollar los mock-ups de alta fidelidad.
 
 #heading(level: 5)[Estructura general del wireframe] <sec:estructura-general-del-wireframe>
-#metadata((src: "README.md", line: 5890, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 5892))
-La estructura del Landing Page se organizó en diez secciones principales, siguiendo un flujo orientado a presentar el problema, introducir la solución y facilitar el acceso a la aplicación:
+#metadata((src: "README.md", line: 5892, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 5894))
+La estructura del Landing Page se organizó en diez secciones principales, siguiendo un flujo orientado a presentar el problema, introducir la solución y facilitar el acceso a la aplicación:
+
+#metadata((src: "README.md", line: 5896))
 + #strong[Header / Navbar:] contiene el logotipo, menú de navegación, selector de idioma ES/EN y botón principal de descarga. En dispositivos móviles, el menú se adapta mediante un botón desplegable.
 + #strong[Hero:] presenta el mensaje principal de la solución, una descripción breve, botones de acción, beneficios principales e imagen representativa.
 + #strong[Problema:] presenta tres situaciones identificadas durante la investigación: incertidumbre al solicitar una cita, pérdida de cupos disponibles y procesos administrativos en papel.
@@ -7554,18 +7556,18 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 + #strong[Footer:] contiene el logotipo, enlaces de navegación, información del proyecto, medios de contacto y derechos de autor.
 
 #heading(level: 5)[Wireframe Desktop Web Browser] <sec:wireframe-desktop-web-browser>
-#metadata((src: "README.md", line: 5905, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5907, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5909))
+#metadata((src: "README.md", line: 5911))
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la #link("#tabla-52")[Tabla 52].
 
-#metadata((src: "README.md", line: 5913))
+#metadata((src: "README.md", line: 5915))
 #strong[Tabla 52]
 
-#metadata((src: "README.md", line: 5915))
+#metadata((src: "README.md", line: 5917))
 #emph[Wireframe Desktop Web Browser]
 
-#metadata((src: "README.md", line: 5917, kind: "table"))
+#metadata((src: "README.md", line: 5919, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7576,55 +7578,55 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
   tline,
 )
 
-#metadata((src: "README.md", line: 5923))
+#metadata((src: "README.md", line: 5925))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5932))
+#metadata((src: "README.md", line: 5934))
 #strong[Figura 61]
 
-#metadata((src: "README.md", line: 5934))
+#metadata((src: "README.md", line: 5936))
 #emph[Wireframe Desktop - Vista superior]
 
-#metadata((src: "README.md", line: 5936, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png"))
+#metadata((src: "README.md", line: 5938, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/wireframes/wireframe-desktop-superior.png", width: 100%),
   caption: [Wireframe Desktop - Vista superior],
 )
 
-#metadata((src: "README.md", line: 5938))
+#metadata((src: "README.md", line: 5940))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5944))
+#metadata((src: "README.md", line: 5946))
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la #link("#figura-61")[Figura 61] y la #link("#figura-62")[Figura 62].
 
-#metadata((src: "README.md", line: 5948))
+#metadata((src: "README.md", line: 5950))
 #strong[Figura 62]
 
-#metadata((src: "README.md", line: 5950))
+#metadata((src: "README.md", line: 5952))
 #emph[Wireframe Desktop - Vista inferior]
 
-#metadata((src: "README.md", line: 5952, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png"))
+#metadata((src: "README.md", line: 5954, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/wireframes/wireframe-desktop-inferior.png", width: 100%),
   caption: [Wireframe Desktop - Vista inferior],
 )
 
-#metadata((src: "README.md", line: 5954))
+#metadata((src: "README.md", line: 5956))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Wireframe Mobile Web Browser] <sec:wireframe-mobile-web-browser>
-#metadata((src: "README.md", line: 5958, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 5960, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 5962))
+#metadata((src: "README.md", line: 5964))
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la #link("#tabla-53")[Tabla 53].
 
-#metadata((src: "README.md", line: 5966))
+#metadata((src: "README.md", line: 5968))
 #strong[Tabla 53]
 
-#metadata((src: "README.md", line: 5968))
+#metadata((src: "README.md", line: 5970))
 #emph[Wireframe Mobile Web Browser]
 
-#metadata((src: "README.md", line: 5970, kind: "table"))
+#metadata((src: "README.md", line: 5972, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7635,46 +7637,46 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
   tline,
 )
 
-#metadata((src: "README.md", line: 5976))
+#metadata((src: "README.md", line: 5978))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5985))
+#metadata((src: "README.md", line: 5987))
 #strong[Figura 63]
 
-#metadata((src: "README.md", line: 5987))
+#metadata((src: "README.md", line: 5989))
 #emph[Wireframe Mobile - Vista superior]
 
-#metadata((src: "README.md", line: 5989, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png"))
+#metadata((src: "README.md", line: 5991, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/wireframes/wireframe-mobile-superior.png", width: 100%),
   caption: [Wireframe Mobile - Vista superior],
 )
 
-#metadata((src: "README.md", line: 5991))
+#metadata((src: "README.md", line: 5993))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 5997))
+#metadata((src: "README.md", line: 5999))
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la #link("#figura-63")[Figura 63] y la #link("#figura-64")[Figura 64].
 
-#metadata((src: "README.md", line: 6001))
+#metadata((src: "README.md", line: 6003))
 #strong[Figura 64]
 
-#metadata((src: "README.md", line: 6003))
+#metadata((src: "README.md", line: 6005))
 #emph[Wireframe Mobile - Vista inferior]
 
-#metadata((src: "README.md", line: 6005, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png"))
+#metadata((src: "README.md", line: 6007, kind: "figure", img: "chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png", width: 100%),
   caption: [Wireframe Mobile - Vista inferior],
 )
 
-#metadata((src: "README.md", line: 6007))
+#metadata((src: "README.md", line: 6009))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Principios de diseño aplicados] <sec:principios-de-diseno-aplicados>
-#metadata((src: "README.md", line: 6011, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6013, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6013))
+#metadata((src: "README.md", line: 6015))
 - #strong[Jerarquía visual:] se establecieron diferentes niveles tipográficos y variaciones de fondo para diferenciar títulos, contenidos y secciones.
 - #strong[Diseño inclusivo:] se consideraron contraste adecuado, tipografía legible, áreas de interacción apropiadas y estados de foco visibles.
 - #strong[Arquitectura de información:] la organización sigue una secuencia de problema → solución → evidencia → equipo → descarga, facilitando la comprensión progresiva del producto.
@@ -7682,24 +7684,24 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 - #strong[Diseño responsive:] la estructura fue adaptada para mantener la legibilidad y funcionalidad tanto en pantallas de escritorio como en dispositivos móviles.
 
 #heading(level: 4)[3.1.3.2. Landing Page Mock-up] <sec:3-1-3-2-landing-page-mock-up>
-#metadata((src: "README.md", line: 6019, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 6021, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 6021))
+#metadata((src: "README.md", line: 6023))
 Los mock-ups fueron desarrollados en #strong[Figma] a partir de la estructura definida en los wireframes y aplicando el #strong[Design System de SaludYa]. Este sistema establece los criterios visuales utilizados para mantener consistencia en colores, tipografía, espaciado, componentes e interacción.
 
 #heading(level: 5)[Design System aplicado] <sec:design-system-aplicado>
-#metadata((src: "README.md", line: 6023, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6025, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6027))
+#metadata((src: "README.md", line: 6029))
 El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la #link("#tabla-54")[Tabla 54].
 
-#metadata((src: "README.md", line: 6031))
+#metadata((src: "README.md", line: 6033))
 #strong[Tabla 54]
 
-#metadata((src: "README.md", line: 6033))
+#metadata((src: "README.md", line: 6035))
 #emph[Design System aplicado]
 
-#metadata((src: "README.md", line: 6035, kind: "table"))
+#metadata((src: "README.md", line: 6037, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -7719,22 +7721,22 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
   tline,
 )
 
-#metadata((src: "README.md", line: 6050))
+#metadata((src: "README.md", line: 6052))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Mock-up Desktop Web Browser] <sec:mock-up-desktop-web-browser>
-#metadata((src: "README.md", line: 6053, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6055, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6057))
+#metadata((src: "README.md", line: 6059))
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la #link("#tabla-55")[Tabla 55].
 
-#metadata((src: "README.md", line: 6061))
+#metadata((src: "README.md", line: 6063))
 #strong[Tabla 55]
 
-#metadata((src: "README.md", line: 6063))
+#metadata((src: "README.md", line: 6065))
 #emph[Mock-up Desktop Web Browser]
 
-#metadata((src: "README.md", line: 6065, kind: "table"))
+#metadata((src: "README.md", line: 6067, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7745,55 +7747,55 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
   tline,
 )
 
-#metadata((src: "README.md", line: 6071))
+#metadata((src: "README.md", line: 6073))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6080))
+#metadata((src: "README.md", line: 6082))
 #strong[Figura 65]
 
-#metadata((src: "README.md", line: 6082))
+#metadata((src: "README.md", line: 6084))
 #emph[Mock-up Desktop - Vista superior]
 
-#metadata((src: "README.md", line: 6084, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png"))
+#metadata((src: "README.md", line: 6086, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/mockups/mockup-desktop-superior.png", width: 100%),
   caption: [Mock-up Desktop - Vista superior],
 )
 
-#metadata((src: "README.md", line: 6086))
+#metadata((src: "README.md", line: 6088))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6092))
+#metadata((src: "README.md", line: 6094))
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la #link("#figura-65")[Figura 65] y la #link("#figura-66")[Figura 66].
 
-#metadata((src: "README.md", line: 6096))
+#metadata((src: "README.md", line: 6098))
 #strong[Figura 66]
 
-#metadata((src: "README.md", line: 6098))
+#metadata((src: "README.md", line: 6100))
 #emph[Mock-up Desktop - Vista inferior]
 
-#metadata((src: "README.md", line: 6100, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png"))
+#metadata((src: "README.md", line: 6102, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/mockups/mockup-desktop-inferior.png", width: 100%),
   caption: [Mock-up Desktop - Vista inferior],
 )
 
-#metadata((src: "README.md", line: 6102))
+#metadata((src: "README.md", line: 6104))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Mock-up Mobile Web Browser] <sec:mock-up-mobile-web-browser>
-#metadata((src: "README.md", line: 6106, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6108, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6110))
+#metadata((src: "README.md", line: 6112))
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la #link("#tabla-56")[Tabla 56].
 
-#metadata((src: "README.md", line: 6114))
+#metadata((src: "README.md", line: 6116))
 #strong[Tabla 56]
 
-#metadata((src: "README.md", line: 6116))
+#metadata((src: "README.md", line: 6118))
 #emph[Mock-up Mobile Web Browser]
 
-#metadata((src: "README.md", line: 6118, kind: "table"))
+#metadata((src: "README.md", line: 6120, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7804,55 +7806,55 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
   tline,
 )
 
-#metadata((src: "README.md", line: 6124))
+#metadata((src: "README.md", line: 6126))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6133))
+#metadata((src: "README.md", line: 6135))
 #strong[Figura 67]
 
-#metadata((src: "README.md", line: 6135))
+#metadata((src: "README.md", line: 6137))
 #emph[Mock-up Mobile - Vista superior]
 
-#metadata((src: "README.md", line: 6137, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png"))
+#metadata((src: "README.md", line: 6139, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/mockups/mockup-mobile-superior.png", width: 100%),
   caption: [Mock-up Mobile - Vista superior],
 )
 
-#metadata((src: "README.md", line: 6139))
+#metadata((src: "README.md", line: 6141))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6145))
+#metadata((src: "README.md", line: 6147))
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la #link("#figura-67")[Figura 67] y la #link("#figura-68")[Figura 68].
 
-#metadata((src: "README.md", line: 6149))
+#metadata((src: "README.md", line: 6151))
 #strong[Figura 68]
 
-#metadata((src: "README.md", line: 6151))
+#metadata((src: "README.md", line: 6153))
 #emph[Mock-up Mobile - Vista inferior]
 
-#metadata((src: "README.md", line: 6153, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png"))
+#metadata((src: "README.md", line: 6155, kind: "figure", img: "chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/mockups/mockup-mobile-inferior.png", width: 100%),
   caption: [Mock-up Mobile - Vista inferior],
 )
 
-#metadata((src: "README.md", line: 6155))
+#metadata((src: "README.md", line: 6157))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Aplicación del Design System y diseño inclusivo] <sec:aplicacion-del-design-system-y-diseno-inclusivo>
-#metadata((src: "README.md", line: 6159, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6161, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6163))
+#metadata((src: "README.md", line: 6165))
 Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la #link("#tabla-57")[Tabla 57].
 
-#metadata((src: "README.md", line: 6167))
+#metadata((src: "README.md", line: 6169))
 #strong[Tabla 57]
 
-#metadata((src: "README.md", line: 6169))
+#metadata((src: "README.md", line: 6171))
 #emph[Aplicación del Design System y diseño inclusivo]
 
-#metadata((src: "README.md", line: 6171, kind: "table"))
+#metadata((src: "README.md", line: 6173, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -7869,22 +7871,22 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
   tline,
 )
 
-#metadata((src: "README.md", line: 6183))
+#metadata((src: "README.md", line: 6185))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Componentes reutilizables] <sec:componentes-reutilizables>
-#metadata((src: "README.md", line: 6186, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6188, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6190))
+#metadata((src: "README.md", line: 6192))
 Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la #link("#tabla-58")[Tabla 58].
 
-#metadata((src: "README.md", line: 6194))
+#metadata((src: "README.md", line: 6196))
 #strong[Tabla 58]
 
-#metadata((src: "README.md", line: 6196))
+#metadata((src: "README.md", line: 6198))
 #emph[Componentes reutilizables]
 
-#metadata((src: "README.md", line: 6198, kind: "table"))
+#metadata((src: "README.md", line: 6200, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -7900,1690 +7902,1690 @@ Los componentes reutilizables definen la apariencia y los estados de botones, ta
   tline,
 )
 
-#metadata((src: "README.md", line: 6209))
+#metadata((src: "README.md", line: 6211))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 5)[Landing Page implementado] <sec:landing-page-implementado>
-#metadata((src: "README.md", line: 6212, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6214, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6214))
+#metadata((src: "README.md", line: 6216))
 El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla, como se observa en la #link("#figura-69")[Figura 69].
 
-#metadata((src: "README.md", line: 6222))
+#metadata((src: "README.md", line: 6224))
 #strong[Figura 69]
 
-#metadata((src: "README.md", line: 6224))
+#metadata((src: "README.md", line: 6226))
 #emph[Landing Page de SaludYa - Implementación]
 
-#metadata((src: "README.md", line: 6226, kind: "figure", img: "chapter-03/assets/landing-page/landing-page.png"))
+#metadata((src: "README.md", line: 6228, kind: "figure", img: "chapter-03/assets/landing-page/landing-page.png"))
 #figure(
   fit-image("/chapter-03/assets/landing-page/landing-page.png", width: 100%),
   caption: [Landing Page de SaludYa - Implementación],
 )
 
-#metadata((src: "README.md", line: 6228))
+#metadata((src: "README.md", line: 6230))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6232))
+#metadata((src: "README.md", line: 6234))
 #strong[Landing Page de SaludYa:]
 
-#metadata((src: "README.md", line: 6234))
+#metadata((src: "README.md", line: 6236))
 #link("https://ruwalabs.github.io/saludya-landing/")[https://ruwalabs.github.io/saludya-landing/]
 
 #heading(level: 5)[Conclusión de la sección] <sec:conclusion-de-la-seccion>
-#metadata((src: "README.md", line: 6237, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6239, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6239))
+#metadata((src: "README.md", line: 6241))
 Los wireframes y mock-ups del Landing Page evidencian la aplicación coherente del Design System, los principios de diseño inclusivo y la arquitectura de información. La propuesta comunica el modelo de negocio de RuwaLabs, el problema que resuelve SaludYa y los beneficios para ambos segmentos objetivo, facilitando la conversión del visitante hacia la descarga de las aplicaciones móviles. La inclusión de internacionalización y accesibilidad garantiza una experiencia inclusiva y consistente.
 
 #heading(level: 3)[3.1.4. Mobile Applications UX/UI Design] <sec:3-1-4-mobile-applications-ux-ui-design>
-#metadata((src: "README.md", line: 6241, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 6243, kind: "heading", level: 3))
 
 #heading(level: 4)[3.1.4.1. Mobile Applications Wireframes] <sec:3-1-4-1-mobile-applications-wireframes>
-#metadata((src: "README.md", line: 6243, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 6245))
-En esta sección se presenta la propuesta de wireframes de las aplicaciones móviles de #strong[SaludYa], elaborada en #strong[Figma]. Los wireframes son de #strong[baja fidelidad] y se construyeron con la escala de grises definida para esta etapa (de #strong[WF 900] a #strong[WF White]), de modo que la atención se concentre en la estructura, la jerarquía visual y la disposición de los elementos de cada pantalla, y no en el color ni en el acabado final. Esta decisión permite validar la organización del contenido antes de elaborar los mock-ups de alta fidelidad del apartado 3.1.4.3.
+#metadata((src: "README.md", line: 6245, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 6247))
+En esta sección se presenta la propuesta de wireframes de las aplicaciones móviles de #strong[SaludYa], elaborada en #strong[Figma]. Los wireframes son de #strong[baja fidelidad] y se construyeron con la escala de grises definida para esta etapa (de #strong[WF 900] a #strong[WF White]), de modo que la atención se concentre en la estructura, la jerarquía visual y la disposición de los elementos de cada pantalla, y no en el color ni en el acabado final. Esta decisión permite validar la organización del contenido antes de elaborar los mock-ups de alta fidelidad del apartado 3.1.4.3.
+
+#metadata((src: "README.md", line: 6249))
 La propuesta traduce las decisiones de arquitectura de información definidas en el apartado 3.1.2 (sistemas de organización, etiquetado, búsqueda y navegación) y evidencia la aplicación de principios y elementos de diseño, así como de criterios de #strong[diseño inclusivo]: contraste suficiente entre el contenido y las superficies, jerarquía tipográfica clara, áreas táctiles amplias y etiquetas simples y libres de ambigüedad. Los wireframes cubren las #strong[dos aplicaciones del alcance] (pacientes y personal de salud) y los diálogos transversales. El archivo de trabajo se encuentra disponible en #link("https://www.figma.com/design/WzyAnfvTsb6ZUsl9tUxLfd/Mobile-Application-Wireframes?node-id=0-1&p=f&t=EMPaZzmhHw9hIRHl-0")[Mobile Application Wireframes].
 
 #heading(level: 5)[Estilo de los wireframes] <sec:estilo-de-los-wireframes>
-#metadata((src: "README.md", line: 6249, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6251, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 6251))
+#metadata((src: "README.md", line: 6253))
 Los wireframes emplean una escala de grises de baja fidelidad que permite distinguir jerarquías, superficies y estados sin depender del color, manteniendo el foco en la estructura y en la organización del contenido. La escala abarca desde el tono más oscuro (WF 900) hasta el blanco (WF White), como se observa en la #link("#figura-70")[Figura 70].
 
-#metadata((src: "README.md", line: 6255))
+#metadata((src: "README.md", line: 6257))
 #strong[Figura 70]
 
-#metadata((src: "README.md", line: 6257))
+#metadata((src: "README.md", line: 6259))
 #emph[Escala de grises para wireframes]
 
-#metadata((src: "README.md", line: 6259, kind: "figure", img: "chapter-03/assets/wireframes/color-wireframes.png"))
+#metadata((src: "README.md", line: 6261, kind: "figure", img: "chapter-03/assets/wireframes/color-wireframes.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/color-wireframes.png", alt: "Escala de grises para wireframes de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6261))
+#metadata((src: "README.md", line: 6263))
 #emph[Nota. Elaboración propia.]
 
 #heading(level: 5)[Aplicación móvil para pacientes] <sec:aplicacion-movil-para-pacientes-5>
-#metadata((src: "README.md", line: 6263, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 6265))
-La aplicación para pacientes se organiza en torno a la barra de navegación inferior (#strong[Inicio, Reservar cita, Asistencia y Configuración]), en línea con el sistema de navegación descrito en el apartado 3.1.2.5. Las vistas siguientes cubren el acceso, el inicio, la gestión de citas, la reserva, la asistencia, las notificaciones y la configuración.
+#metadata((src: "README.md", line: 6265, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 6267))
+La aplicación para pacientes se organiza en torno a la barra de navegación inferior (#strong[Inicio, Reservar cita, Asistencia y Configuración]), en línea con el sistema de navegación descrito en el apartado 3.1.2.5. Las vistas siguientes cubren el acceso, el inicio, la gestión de citas, la reserva, la asistencia, las notificaciones y la configuración.
+
+#metadata((src: "README.md", line: 6269))
 El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones #strong[Iniciar Sesión] y #strong[Registrarse], y el formulario de #strong[Inicio de Sesión] con tipo y número de documento y contraseña, como se observa en la #link("#figura-71")[Figura 71].
 
-#metadata((src: "README.md", line: 6271))
+#metadata((src: "README.md", line: 6273))
 #strong[Figura 71]
 
-#metadata((src: "README.md", line: 6273))
+#metadata((src: "README.md", line: 6275))
 #emph[Bienvenida e inicio de sesión]
 
-#metadata((src: "README.md", line: 6275, kind: "figure", img: "chapter-03/assets/wireframes/iam-bienvenida-login.png"))
+#metadata((src: "README.md", line: 6277, kind: "figure", img: "chapter-03/assets/wireframes/iam-bienvenida-login.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/iam-bienvenida-login.png", alt: "Wireframe de bienvenida e inicio de sesión de SaludYa", width: 80%)]
 
-#metadata((src: "README.md", line: 6277))
+#metadata((src: "README.md", line: 6279))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6279))
+#metadata((src: "README.md", line: 6281))
 El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la #link("#figura-72")[Figura 72].
 
-#metadata((src: "README.md", line: 6283))
+#metadata((src: "README.md", line: 6285))
 #strong[Figura 72]
 
-#metadata((src: "README.md", line: 6285))
+#metadata((src: "README.md", line: 6287))
 #emph[Registro y verificación de identidad]
 
-#metadata((src: "README.md", line: 6287, kind: "figure", img: "chapter-03/assets/wireframes/iam-registro.png"))
+#metadata((src: "README.md", line: 6289, kind: "figure", img: "chapter-03/assets/wireframes/iam-registro.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/iam-registro.png", alt: "Wireframe de registro y verificación de identidad de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6289))
+#metadata((src: "README.md", line: 6291))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6291))
+#metadata((src: "README.md", line: 6293))
 La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la #link("#figura-73")[Figura 73].
 
-#metadata((src: "README.md", line: 6295))
+#metadata((src: "README.md", line: 6297))
 #strong[Figura 73]
 
-#metadata((src: "README.md", line: 6297))
+#metadata((src: "README.md", line: 6299))
 #emph[Recuperación y cambio de contraseña]
 
-#metadata((src: "README.md", line: 6299, kind: "figure", img: "chapter-03/assets/wireframes/iam-recuperacion.png"))
+#metadata((src: "README.md", line: 6301, kind: "figure", img: "chapter-03/assets/wireframes/iam-recuperacion.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/iam-recuperacion.png", alt: "Wireframe de recuperación y cambio de contraseña de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6301))
+#metadata((src: "README.md", line: 6303))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6303))
+#metadata((src: "README.md", line: 6305))
 El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la #link("#figura-74")[Figura 74].
 
-#metadata((src: "README.md", line: 6307))
+#metadata((src: "README.md", line: 6309))
 #strong[Figura 74]
 
-#metadata((src: "README.md", line: 6309))
+#metadata((src: "README.md", line: 6311))
 #emph[Inicio del paciente]
 
-#metadata((src: "README.md", line: 6311, kind: "figure", img: "chapter-03/assets/wireframes/paciente-home.png"))
+#metadata((src: "README.md", line: 6313, kind: "figure", img: "chapter-03/assets/wireframes/paciente-home.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-home.png", alt: "Wireframe de inicio del paciente de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 6313))
+#metadata((src: "README.md", line: 6315))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6315))
+#metadata((src: "README.md", line: 6317))
 La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la #link("#figura-75")[Figura 75].
 
-#metadata((src: "README.md", line: 6319))
+#metadata((src: "README.md", line: 6321))
 #strong[Figura 75]
 
-#metadata((src: "README.md", line: 6321))
+#metadata((src: "README.md", line: 6323))
 #emph[Citas pendientes]
 
-#metadata((src: "README.md", line: 6323, kind: "figure", img: "chapter-03/assets/wireframes/paciente-citas-pendientes.png"))
+#metadata((src: "README.md", line: 6325, kind: "figure", img: "chapter-03/assets/wireframes/paciente-citas-pendientes.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-citas-pendientes.png", alt: "Wireframe de citas pendientes de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 6325))
+#metadata((src: "README.md", line: 6327))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6327))
+#metadata((src: "README.md", line: 6329))
 El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la #link("#figura-76")[Figura 76].
 
-#metadata((src: "README.md", line: 6331))
+#metadata((src: "README.md", line: 6333))
 #strong[Figura 76]
 
-#metadata((src: "README.md", line: 6333))
+#metadata((src: "README.md", line: 6335))
 #emph[Historial y filtro por fecha]
 
-#metadata((src: "README.md", line: 6335, kind: "figure", img: "chapter-03/assets/wireframes/paciente-historial.png"))
+#metadata((src: "README.md", line: 6337, kind: "figure", img: "chapter-03/assets/wireframes/paciente-historial.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-historial.png", alt: "Wireframe de historial y filtro por fecha de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6337))
+#metadata((src: "README.md", line: 6339))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6339))
+#metadata((src: "README.md", line: 6341))
 La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la #link("#figura-77")[Figura 77].
 
-#metadata((src: "README.md", line: 6343))
+#metadata((src: "README.md", line: 6345))
 #strong[Figura 77]
 
-#metadata((src: "README.md", line: 6345))
+#metadata((src: "README.md", line: 6347))
 #emph[Reserva de cita]
 
-#metadata((src: "README.md", line: 6347, kind: "figure", img: "chapter-03/assets/wireframes/paciente-reserva.png"))
+#metadata((src: "README.md", line: 6349, kind: "figure", img: "chapter-03/assets/wireframes/paciente-reserva.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-reserva.png", alt: "Wireframe de reserva de cita de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6349))
+#metadata((src: "README.md", line: 6351))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6351))
+#metadata((src: "README.md", line: 6353))
 Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la #link("#figura-78")[Figura 78].
 
-#metadata((src: "README.md", line: 6355))
+#metadata((src: "README.md", line: 6357))
 #strong[Figura 78]
 
-#metadata((src: "README.md", line: 6357))
+#metadata((src: "README.md", line: 6359))
 #emph[Reserva por doctor]
 
-#metadata((src: "README.md", line: 6359, kind: "figure", img: "chapter-03/assets/wireframes/paciente-reserva-por-doctor.png"))
+#metadata((src: "README.md", line: 6361, kind: "figure", img: "chapter-03/assets/wireframes/paciente-reserva-por-doctor.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-reserva-por-doctor.png", alt: "Wireframe de reserva por doctor de SaludYa", width: 80%)]
 
-#metadata((src: "README.md", line: 6361))
+#metadata((src: "README.md", line: 6363))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6363))
+#metadata((src: "README.md", line: 6365))
 La asistencia reúne el registro de llegada mediante #strong[código QR] y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la #link("#figura-79")[Figura 79].
 
-#metadata((src: "README.md", line: 6367))
+#metadata((src: "README.md", line: 6369))
 #strong[Figura 79]
 
-#metadata((src: "README.md", line: 6369))
+#metadata((src: "README.md", line: 6371))
 #emph[Asistencia: check-in y cola]
 
-#metadata((src: "README.md", line: 6371, kind: "figure", img: "chapter-03/assets/wireframes/paciente-checkin.png"))
+#metadata((src: "README.md", line: 6373, kind: "figure", img: "chapter-03/assets/wireframes/paciente-checkin.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-checkin.png", alt: "Wireframe de asistencia con check-in y cola de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6373))
+#metadata((src: "README.md", line: 6375))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6375))
+#metadata((src: "README.md", line: 6377))
 Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones #strong[Rechazar] y #strong[Aceptar], como se observa en la #link("#figura-80")[Figura 80].
 
-#metadata((src: "README.md", line: 6379))
+#metadata((src: "README.md", line: 6381))
 #strong[Figura 80]
 
-#metadata((src: "README.md", line: 6381))
+#metadata((src: "README.md", line: 6383))
 #emph[Notificaciones y reasignación]
 
-#metadata((src: "README.md", line: 6383, kind: "figure", img: "chapter-03/assets/wireframes/paciente-notificaciones.png"))
+#metadata((src: "README.md", line: 6385, kind: "figure", img: "chapter-03/assets/wireframes/paciente-notificaciones.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-notificaciones.png", alt: "Wireframe de notificaciones y reasignación de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6385))
+#metadata((src: "README.md", line: 6387))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6387))
+#metadata((src: "README.md", line: 6389))
 La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la #link("#figura-81")[Figura 81].
 
-#metadata((src: "README.md", line: 6391))
+#metadata((src: "README.md", line: 6393))
 #strong[Figura 81]
 
-#metadata((src: "README.md", line: 6393))
+#metadata((src: "README.md", line: 6395))
 #emph[Configuración y cambio de correo]
 
-#metadata((src: "README.md", line: 6395, kind: "figure", img: "chapter-03/assets/wireframes/paciente-cambio-correo.png"))
+#metadata((src: "README.md", line: 6397, kind: "figure", img: "chapter-03/assets/wireframes/paciente-cambio-correo.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-cambio-correo.png", alt: "Wireframe de configuración y cambio de correo de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6397))
+#metadata((src: "README.md", line: 6399))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6399))
+#metadata((src: "README.md", line: 6401))
 La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la #link("#figura-82")[Figura 82].
 
-#metadata((src: "README.md", line: 6403))
+#metadata((src: "README.md", line: 6405))
 #strong[Figura 82]
 
-#metadata((src: "README.md", line: 6405))
+#metadata((src: "README.md", line: 6407))
 #emph[Pacientes vinculados y registro de menor]
 
-#metadata((src: "README.md", line: 6407, kind: "figure", img: "chapter-03/assets/wireframes/paciente-menores-1.png"))
+#metadata((src: "README.md", line: 6409, kind: "figure", img: "chapter-03/assets/wireframes/paciente-menores-1.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-menores-1.png", alt: "Wireframe de pacientes vinculados y registro de menor de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6409))
+#metadata((src: "README.md", line: 6411))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6411))
+#metadata((src: "README.md", line: 6413))
 El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la #link("#figura-83")[Figura 83].
 
-#metadata((src: "README.md", line: 6415))
+#metadata((src: "README.md", line: 6417))
 #strong[Figura 83]
 
-#metadata((src: "README.md", line: 6417))
+#metadata((src: "README.md", line: 6419))
 #emph[Perfil del menor vinculado]
 
-#metadata((src: "README.md", line: 6419, kind: "figure", img: "chapter-03/assets/wireframes/paciente-menores-2.png"))
+#metadata((src: "README.md", line: 6421, kind: "figure", img: "chapter-03/assets/wireframes/paciente-menores-2.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/paciente-menores-2.png", alt: "Wireframe del perfil del menor vinculado de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6421))
+#metadata((src: "README.md", line: 6423))
 #emph[Nota. Elaboración propia.]
 
 #heading(level: 5)[Aplicación móvil del personal de salud] <sec:aplicacion-movil-del-personal-de-salud>
-#metadata((src: "README.md", line: 6423, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 6425))
-La aplicación para el personal de salud se organiza en la barra inferior #strong[Inicio, Calendario, Cita y Configuración], y prioriza la gestión operativa del establecimiento.
+#metadata((src: "README.md", line: 6425, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 6427))
+La aplicación para el personal de salud se organiza en la barra inferior #strong[Inicio, Calendario, Cita y Configuración], y prioriza la gestión operativa del establecimiento.
+
+#metadata((src: "README.md", line: 6429))
 El inicio del personal presenta el resumen del día con las citas canceladas y pendientes, junto con el acceso a la edición del perfil, como se observa en la #link("#figura-84")[Figura 84].
 
-#metadata((src: "README.md", line: 6431))
+#metadata((src: "README.md", line: 6433))
 #strong[Figura 84]
 
-#metadata((src: "README.md", line: 6433))
+#metadata((src: "README.md", line: 6435))
 #emph[Inicio del personal de salud]
 
-#metadata((src: "README.md", line: 6435, kind: "figure", img: "chapter-03/assets/wireframes/admin-home.png"))
+#metadata((src: "README.md", line: 6437, kind: "figure", img: "chapter-03/assets/wireframes/admin-home.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/admin-home.png", alt: "Wireframe de inicio del personal de salud de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 6437))
+#metadata((src: "README.md", line: 6439))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6439))
+#metadata((src: "README.md", line: 6441))
 El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la #link("#figura-85")[Figura 85].
 
-#metadata((src: "README.md", line: 6443))
+#metadata((src: "README.md", line: 6445))
 #strong[Figura 85]
 
-#metadata((src: "README.md", line: 6445))
+#metadata((src: "README.md", line: 6447))
 #emph[Calendario: especialidad, fecha y hora]
 
-#metadata((src: "README.md", line: 6447, kind: "figure", img: "chapter-03/assets/wireframes/admin-calendario.png"))
+#metadata((src: "README.md", line: 6449, kind: "figure", img: "chapter-03/assets/wireframes/admin-calendario.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/admin-calendario.png", alt: "Wireframe del calendario del personal de salud de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6449))
+#metadata((src: "README.md", line: 6451))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6451))
+#metadata((src: "README.md", line: 6453))
 La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la #link("#figura-86")[Figura 86].
 
-#metadata((src: "README.md", line: 6455))
+#metadata((src: "README.md", line: 6457))
 #strong[Figura 86]
 
-#metadata((src: "README.md", line: 6457))
+#metadata((src: "README.md", line: 6459))
 #emph[Calendario por doctor]
 
-#metadata((src: "README.md", line: 6459, kind: "figure", img: "chapter-03/assets/wireframes/admin-calendario-doctor.png"))
+#metadata((src: "README.md", line: 6461, kind: "figure", img: "chapter-03/assets/wireframes/admin-calendario-doctor.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/admin-calendario-doctor.png", alt: "Wireframe del calendario por doctor de SaludYa", width: 80%)]
 
-#metadata((src: "README.md", line: 6461))
+#metadata((src: "README.md", line: 6463))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6463))
+#metadata((src: "README.md", line: 6465))
 La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la #link("#figura-87")[Figura 87].
 
-#metadata((src: "README.md", line: 6467))
+#metadata((src: "README.md", line: 6469))
 #strong[Figura 87]
 
-#metadata((src: "README.md", line: 6469))
+#metadata((src: "README.md", line: 6471))
 #emph[Edición de bloque horario]
 
-#metadata((src: "README.md", line: 6471, kind: "figure", img: "chapter-03/assets/wireframes/admin-edicion-bloque.png"))
+#metadata((src: "README.md", line: 6473, kind: "figure", img: "chapter-03/assets/wireframes/admin-edicion-bloque.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/admin-edicion-bloque.png", alt: "Wireframe de edición de bloque horario de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 6473))
+#metadata((src: "README.md", line: 6475))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6475))
+#metadata((src: "README.md", line: 6477))
 La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la #link("#figura-88")[Figura 88].
 
-#metadata((src: "README.md", line: 6479))
+#metadata((src: "README.md", line: 6481))
 #strong[Figura 88]
 
-#metadata((src: "README.md", line: 6481))
+#metadata((src: "README.md", line: 6483))
 #emph[Configuración general]
 
-#metadata((src: "README.md", line: 6483, kind: "figure", img: "chapter-03/assets/wireframes/admin-configuracion.png"))
+#metadata((src: "README.md", line: 6485, kind: "figure", img: "chapter-03/assets/wireframes/admin-configuracion.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/admin-configuracion.png", alt: "Wireframe de configuración general de SaludYa", width: 70%)]
 
-#metadata((src: "README.md", line: 6485))
+#metadata((src: "README.md", line: 6487))
 #emph[Nota. Elaboración propia.]
 
 #heading(level: 5)[Diálogos y componentes] <sec:dialogos-y-componentes>
-#metadata((src: "README.md", line: 6487, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 6489))
-Los componentes transversales normalizan la confirmación de acciones y la comunicación de estados del sistema en ambas aplicaciones.
+#metadata((src: "README.md", line: 6489, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 6491))
+Los componentes transversales normalizan la confirmación de acciones y la comunicación de estados del sistema en ambas aplicaciones.
+
+#metadata((src: "README.md", line: 6493))
 El diálogo de confirmación de cita solicita validar la reserva antes de registrarla y comunica el resultado exitoso, como se observa en la #link("#figura-89")[Figura 89].
 
-#metadata((src: "README.md", line: 6495))
+#metadata((src: "README.md", line: 6497))
 #strong[Figura 89]
 
-#metadata((src: "README.md", line: 6497))
+#metadata((src: "README.md", line: 6499))
 #emph[Diálogos de confirmación de cita]
 
-#metadata((src: "README.md", line: 6499, kind: "figure", img: "chapter-03/assets/wireframes/dialogs-cita-confirmada.png"))
+#metadata((src: "README.md", line: 6501, kind: "figure", img: "chapter-03/assets/wireframes/dialogs-cita-confirmada.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/dialogs-cita-confirmada.png", alt: "Wireframe de diálogos de confirmación de cita de SaludYa", width: 60%)]
 
-#metadata((src: "README.md", line: 6501))
+#metadata((src: "README.md", line: 6503))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6503))
+#metadata((src: "README.md", line: 6505))
 Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la #link("#figura-90")[Figura 90].
 
-#metadata((src: "README.md", line: 6507))
+#metadata((src: "README.md", line: 6509))
 #strong[Figura 90]
 
-#metadata((src: "README.md", line: 6509))
+#metadata((src: "README.md", line: 6511))
 #emph[Diálogos de estado y validación]
 
-#metadata((src: "README.md", line: 6511, kind: "figure", img: "chapter-03/assets/wireframes/dialogs-configuracion.png"))
+#metadata((src: "README.md", line: 6513, kind: "figure", img: "chapter-03/assets/wireframes/dialogs-configuracion.png"))
 #block(breakable: false)[#fit-image("/chapter-03/assets/wireframes/dialogs-configuracion.png", alt: "Wireframe de diálogos de estado y validación de SaludYa", width: 60%)]
 
-#metadata((src: "README.md", line: 6513))
+#metadata((src: "README.md", line: 6515))
 #emph[Nota. Elaboración propia.]
 
 #heading(level: 4)[3.1.4.2. Mobile Applications Wireflow Diagrams] <sec:3-1-4-2-mobile-applications-wireflow-diagrams>
-#metadata((src: "README.md", line: 6515, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 6517, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 6517))
+#metadata((src: "README.md", line: 6519))
 En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicaciones móviles de SaludYa, elaborada a partir de los Task Flows consensuados por el equipo. Cada Wireflow combina la secuencia de pasos de un User Goal con los wireframes de las pantallas que intervienen en el flujo; toda interacción que modifica el estado de una pantalla se representa agregando un paso con un wireframe del nuevo estado (validaciones, errores, estados vacíos y diálogos de confirmación). Se consideran las dos aplicaciones del alcance: la aplicación para pacientes (#emph[User Persona]: Kevin Huamán) y la aplicación para el personal de admisión (#emph[User Persona]: Franco Alanoca). Los wireflows se elaboraron en Figma y su orden responde a los User Goals priorizados para cada aplicación.
 
 #heading(level: 5)[Wireflows de Pacientes] <sec:wireflows-de-pacientes>
-#metadata((src: "README.md", line: 6519, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6521, kind: "heading", level: 5))
 
 #heading(level: 6)[WF-01 · Registrarme en la aplicación] <sec:wf-01-registrarme-en-la-aplicacion>
-#metadata((src: "README.md", line: 6521, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6523, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6523))
+#metadata((src: "README.md", line: 6525))
 #strong[User Goal:] Como paciente, quiero crear mi cuenta para reservar y gestionar mis citas desde el celular.
 
-#metadata((src: "README.md", line: 6527))
+#metadata((src: "README.md", line: 6529))
 #strong[Figura 91]
 
-#metadata((src: "README.md", line: 6529))
+#metadata((src: "README.md", line: 6531))
 #emph[Wireflow de registro en la aplicación (paciente)]
 
-#metadata((src: "README.md", line: 6531, kind: "figure", img: "chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png"))
+#metadata((src: "README.md", line: 6533, kind: "figure", img: "chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-01-registrarme-en-la-aplicacion.png", alt: "Wireflow de registro en la aplicación de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6535))
+#metadata((src: "README.md", line: 6537))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6537))
+#metadata((src: "README.md", line: 6539))
 #strong[Explicación del flujo:] En la #link("#figura-91")[Figura 91] se observa que el recorrido va de Bienvenida a Registro (tipo y número de documento) y luego a Verificar DNI, con diálogos de datos incorrectos o validación exitosa. Después sigue Registro de credenciales, Verificación de celular con código (incorrecto o exitoso) y, al final, Inicio de sesión.
 
 #heading(level: 6)[WF-02 · Iniciar sesión] <sec:wf-02-iniciar-sesion>
-#metadata((src: "README.md", line: 6539, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6541, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6541))
+#metadata((src: "README.md", line: 6543))
 #strong[User Goal:] Como paciente, quiero iniciar sesión para acceder a mi información y a mis citas.
 
-#metadata((src: "README.md", line: 6545))
+#metadata((src: "README.md", line: 6547))
 #strong[Figura 92]
 
-#metadata((src: "README.md", line: 6547))
+#metadata((src: "README.md", line: 6549))
 #emph[Wireflow de inicio de sesión (paciente)]
 
-#metadata((src: "README.md", line: 6549, kind: "figure", img: "chapter-03/assets/wireflows/wf-02-iniciar-sesion.png"))
+#metadata((src: "README.md", line: 6551, kind: "figure", img: "chapter-03/assets/wireflows/wf-02-iniciar-sesion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-02-iniciar-sesion.png", alt: "Wireflow de inicio de sesión de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6553))
+#metadata((src: "README.md", line: 6555))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6555))
+#metadata((src: "README.md", line: 6557))
 #strong[Explicación del flujo:] En la #link("#figura-92")[Figura 92] se aprecia que, desde Inicio de sesión, si las credenciales son inválidas aparece un diálogo de error. Si son correctas, pasa a la verificación con código (segundo factor), con diálogo de código incorrecto o exitoso, y entra al Home.
 
 #heading(level: 6)[WF-03 · Recuperar mi contraseña] <sec:wf-03-recuperar-mi-contrasena>
-#metadata((src: "README.md", line: 6557, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6559, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6559))
+#metadata((src: "README.md", line: 6561))
 #strong[User Goal:] Como paciente, quiero recuperar el acceso cuando olvido mi contraseña.
 
-#metadata((src: "README.md", line: 6563))
+#metadata((src: "README.md", line: 6565))
 #strong[Figura 93]
 
-#metadata((src: "README.md", line: 6565))
+#metadata((src: "README.md", line: 6567))
 #emph[Wireflow de recuperación de contraseña (paciente)]
 
-#metadata((src: "README.md", line: 6567, kind: "figure", img: "chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png"))
+#metadata((src: "README.md", line: 6569, kind: "figure", img: "chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-03-recuperar-mi-contrasena.png", alt: "Wireflow de recuperación de contraseña de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6571))
+#metadata((src: "README.md", line: 6573))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6573))
+#metadata((src: "README.md", line: 6575))
 #strong[Explicación del flujo:] En la #link("#figura-93")[Figura 93] se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
 
 #heading(level: 6)[WF-05 · Cerrar sesión] <sec:wf-05-cerrar-sesion>
-#metadata((src: "README.md", line: 6575, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6577, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6577))
+#metadata((src: "README.md", line: 6579))
 #strong[User Goal:] Como paciente, quiero cerrar sesión de forma segura.
 
-#metadata((src: "README.md", line: 6581))
+#metadata((src: "README.md", line: 6583))
 #strong[Figura 94]
 
-#metadata((src: "README.md", line: 6583))
+#metadata((src: "README.md", line: 6585))
 #emph[Wireflow de cierre de sesión (paciente)]
 
-#metadata((src: "README.md", line: 6585, kind: "figure", img: "chapter-03/assets/wireflows/wf-05-cerrar-sesion.png"))
+#metadata((src: "README.md", line: 6587, kind: "figure", img: "chapter-03/assets/wireflows/wf-05-cerrar-sesion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-05-cerrar-sesion.png", alt: "Wireflow de cierre de sesión de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6589))
+#metadata((src: "README.md", line: 6591))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6591))
+#metadata((src: "README.md", line: 6593))
 #strong[Explicación del flujo:] En la #link("#figura-94")[Figura 94] se aprecia que, desde Configuración, se confirma el cierre y se vuelve al Inicio de sesión. El diálogo de confirmación aún no tiene wireframe, por eso aparece como recuadro pendiente.
 
 #heading(level: 6)[WF-07 · Reservar una cita médica] <sec:wf-07-reservar-una-cita-medica>
-#metadata((src: "README.md", line: 6593, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6595, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6595))
+#metadata((src: "README.md", line: 6597))
 #strong[User Goal:] Como paciente, quiero reservar una cita eligiendo especialidad, fecha y horario.
 
-#metadata((src: "README.md", line: 6599))
+#metadata((src: "README.md", line: 6601))
 #strong[Figura 95]
 
-#metadata((src: "README.md", line: 6601))
+#metadata((src: "README.md", line: 6603))
 #emph[Wireflow de reserva de una cita médica (paciente)]
 
-#metadata((src: "README.md", line: 6603, kind: "figure", img: "chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png"))
+#metadata((src: "README.md", line: 6605, kind: "figure", img: "chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-07-reservar-una-cita-medica.png", alt: "Wireflow de reserva de una cita médica de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6607))
+#metadata((src: "README.md", line: 6609))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6609))
+#metadata((src: "README.md", line: 6611))
 #strong[Explicación del flujo:] En la #link("#figura-95")[Figura 95] se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
 
 #heading(level: 6)[WF-08 · Consultar mis citas y su detalle] <sec:wf-08-consultar-mis-citas-y-su-detalle>
-#metadata((src: "README.md", line: 6611, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6613, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6613))
+#metadata((src: "README.md", line: 6615))
 #strong[User Goal:] Como paciente, quiero ver mis próximas citas y su detalle.
 
-#metadata((src: "README.md", line: 6617))
+#metadata((src: "README.md", line: 6619))
 #strong[Figura 96]
 
-#metadata((src: "README.md", line: 6619))
+#metadata((src: "README.md", line: 6621))
 #emph[Wireflow de consulta de citas y detalle (paciente)]
 
-#metadata((src: "README.md", line: 6621, kind: "figure", img: "chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png"))
+#metadata((src: "README.md", line: 6623, kind: "figure", img: "chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-08-consultar-mis-citas-y-su-detalle.png", alt: "Wireflow de consulta de citas y su detalle de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6625))
+#metadata((src: "README.md", line: 6627))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6627))
+#metadata((src: "README.md", line: 6629))
 #strong[Explicación del flujo:] En la #link("#figura-96")[Figura 96] se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
 
 #heading(level: 6)[WF-09 · Revisar el historial de citas] <sec:wf-09-revisar-el-historial-de-citas>
-#metadata((src: "README.md", line: 6629, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6631, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6631))
+#metadata((src: "README.md", line: 6633))
 #strong[User Goal:] Como paciente, quiero revisar mis atenciones anteriores.
 
-#metadata((src: "README.md", line: 6635))
+#metadata((src: "README.md", line: 6637))
 #strong[Figura 97]
 
-#metadata((src: "README.md", line: 6637))
+#metadata((src: "README.md", line: 6639))
 #emph[Wireflow del historial de citas (paciente)]
 
-#metadata((src: "README.md", line: 6639, kind: "figure", img: "chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png"))
+#metadata((src: "README.md", line: 6641, kind: "figure", img: "chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-09-revisar-el-historial-de-citas.png", alt: "Wireflow del historial de citas de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6643))
+#metadata((src: "README.md", line: 6645))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6645))
+#metadata((src: "README.md", line: 6647))
 #strong[Explicación del flujo:] En la #link("#figura-97")[Figura 97] se observa que, desde Home, se abre Historial, se despliega el calendario de filtro por fecha y se muestra el historial acotado a la fecha elegida.
 
 #heading(level: 6)[WF-10 · Gestionar las citas de un familiar a mi cargo] <sec:wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo>
-#metadata((src: "README.md", line: 6647, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6649, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6649))
+#metadata((src: "README.md", line: 6651))
 #strong[User Goal:] Como paciente, quiero vincular a un familiar dependiente y gestionar sus citas desde mi cuenta.
 
-#metadata((src: "README.md", line: 6653))
+#metadata((src: "README.md", line: 6655))
 #strong[Figura 98]
 
-#metadata((src: "README.md", line: 6655))
+#metadata((src: "README.md", line: 6657))
 #emph[Wireflow de gestión de citas de un familiar a cargo (paciente)]
 
-#metadata((src: "README.md", line: 6657, kind: "figure", img: "chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png"))
+#metadata((src: "README.md", line: 6659, kind: "figure", img: "chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png", alt: "Wireflow de gestión de citas de un familiar a cargo de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6661))
+#metadata((src: "README.md", line: 6663))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6663))
+#metadata((src: "README.md", line: 6665))
 #strong[Explicación del flujo:] En la #link("#figura-98")[Figura 98] se observa que, desde Configuración, se abre Parientes vinculados y se agrega un menor (Registro de menor). Luego viene Verificar DNI, con diálogos de «No eres pariente», datos incorrectos o validación exitosa, y se abre el Home del menor, desde donde se puede volver a la cuenta principal. Como camino alterno, se abre un pariente ya vinculado para desvincularlo.
 
 #heading(level: 6)[WF-11 · Revisar mis notificaciones] <sec:wf-11-revisar-mis-notificaciones>
-#metadata((src: "README.md", line: 6665, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6667, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6667))
+#metadata((src: "README.md", line: 6669))
 #strong[User Goal:] Como paciente, quiero revisar mis avisos para no perder citas ni cupos liberados.
 
-#metadata((src: "README.md", line: 6671))
+#metadata((src: "README.md", line: 6673))
 #strong[Figura 99]
 
-#metadata((src: "README.md", line: 6673))
+#metadata((src: "README.md", line: 6675))
 #emph[Wireflow de revisión de notificaciones (paciente)]
 
-#metadata((src: "README.md", line: 6675, kind: "figure", img: "chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png"))
+#metadata((src: "README.md", line: 6677, kind: "figure", img: "chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-11-revisar-mis-notificaciones.png", alt: "Wireflow de revisión de notificaciones de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6679))
+#metadata((src: "README.md", line: 6681))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6681))
+#metadata((src: "README.md", line: 6683))
 #strong[Explicación del flujo:] En la #link("#figura-99")[Figura 99] se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
 
 #heading(level: 6)[WF-12 · Registrar mi llegada y seguir mi turno] <sec:wf-12-registrar-mi-llegada-y-seguir-mi-turno>
-#metadata((src: "README.md", line: 6683, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6685, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6685))
+#metadata((src: "README.md", line: 6687))
 #strong[User Goal:] Como paciente, quiero registrar mi llegada y saber cuándo me atenderán sin hacer cola.
 
-#metadata((src: "README.md", line: 6689))
+#metadata((src: "README.md", line: 6691))
 #strong[Figura 100]
 
-#metadata((src: "README.md", line: 6691))
+#metadata((src: "README.md", line: 6693))
 #emph[Wireflow de registro de llegada y seguimiento del turno (paciente)]
 
-#metadata((src: "README.md", line: 6693, kind: "figure", img: "chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png"))
+#metadata((src: "README.md", line: 6695, kind: "figure", img: "chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png", alt: "Wireflow de registro de llegada y seguimiento del turno de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6697))
+#metadata((src: "README.md", line: 6699))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6699))
+#metadata((src: "README.md", line: 6701))
 #strong[Explicación del flujo:] En la #link("#figura-100")[Figura 100] se observa que, desde Asistencia, se elige la reserva y se registra con el código QR. Luego se muestra la Posición en la cola y se llega al aviso «Has sido atendido». Como camino alterno, se puede dejar la cola con un diálogo de confirmación.
 
 #heading(level: 6)[WF-13 · Aceptar o rechazar un cupo liberado] <sec:wf-13-aceptar-o-rechazar-un-cupo-liberado>
-#metadata((src: "README.md", line: 6701, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6703, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6703))
+#metadata((src: "README.md", line: 6705))
 #strong[User Goal:] Como paciente, quiero aprovechar un cupo liberado por una cancelación.
 
-#metadata((src: "README.md", line: 6707))
+#metadata((src: "README.md", line: 6709))
 #strong[Figura 101]
 
-#metadata((src: "README.md", line: 6709))
+#metadata((src: "README.md", line: 6711))
 #emph[Wireflow de aceptación o rechazo de un cupo liberado (paciente)]
 
-#metadata((src: "README.md", line: 6711, kind: "figure", img: "chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png"))
+#metadata((src: "README.md", line: 6713, kind: "figure", img: "chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png", alt: "Wireflow de aceptación o rechazo de un cupo liberado de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6715))
+#metadata((src: "README.md", line: 6717))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6717))
+#metadata((src: "README.md", line: 6719))
 #strong[Explicación del flujo:] En la #link("#figura-101")[Figura 101] se observa que, desde la notificación, se abre el detalle de la oferta. Si acepta, aparece «Reasignación exitosa». Si rechaza, aparece un diálogo de confirmación del rechazo.
 
 #heading(level: 6)[WF-14 · Actualizar mis datos de contacto] <sec:wf-14-actualizar-mis-datos-de-contacto>
-#metadata((src: "README.md", line: 6719, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6721, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6721))
+#metadata((src: "README.md", line: 6723))
 #strong[User Goal:] Como paciente, quiero mantener actualizados mi celular y mi correo.
 
-#metadata((src: "README.md", line: 6725))
+#metadata((src: "README.md", line: 6727))
 #strong[Figura 102]
 
-#metadata((src: "README.md", line: 6727))
+#metadata((src: "README.md", line: 6729))
 #emph[Wireflow de actualización de datos de contacto (paciente)]
 
-#metadata((src: "README.md", line: 6729, kind: "figure", img: "chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png"))
+#metadata((src: "README.md", line: 6731, kind: "figure", img: "chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png", alt: "Wireflow de actualización de datos de contacto de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6733))
+#metadata((src: "README.md", line: 6735))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6735))
+#metadata((src: "README.md", line: 6737))
 #strong[Explicación del flujo:] En la #link("#figura-102")[Figura 102] se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
 
 #heading(level: 5)[Wireflows de Healthcare Administrators] <sec:wireflows-de-healthcare-administrators>
-#metadata((src: "README.md", line: 6737, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 6739, kind: "heading", level: 5))
 
 #heading(level: 6)[S01 · Registrarme como personal de admisión] <sec:s01-registrarme-como-personal-de-admision>
-#metadata((src: "README.md", line: 6739, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6741, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6741))
+#metadata((src: "README.md", line: 6743))
 #strong[User Goal:] Como personal de admisión, quiero que se habilite mi cuenta con el correo corporativo y definir mi contraseña.
 
-#metadata((src: "README.md", line: 6745))
+#metadata((src: "README.md", line: 6747))
 #strong[Figura 103]
 
-#metadata((src: "README.md", line: 6747))
+#metadata((src: "README.md", line: 6749))
 #emph[Wireflow de registro del personal de admisión]
 
-#metadata((src: "README.md", line: 6749, kind: "figure", img: "chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png"))
+#metadata((src: "README.md", line: 6751, kind: "figure", img: "chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png", alt: "Wireflow de registro del personal de admisión de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6753))
+#metadata((src: "README.md", line: 6755))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6755))
+#metadata((src: "README.md", line: 6757))
 #strong[Explicación del flujo:] En la #link("#figura-103")[Figura 103] se observa que el administrador crea la cuenta y envía una invitación (paso pendiente de wireframe). El personal abre el enlace, define su contraseña (diálogo si no coincide o si fue exitoso) y pasa al Inicio de sesión.
 
 #heading(level: 6)[S02 · Iniciar sesión como personal] <sec:s02-iniciar-sesion-como-personal>
-#metadata((src: "README.md", line: 6757, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6759, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6759))
+#metadata((src: "README.md", line: 6761))
 #strong[User Goal:] Como personal de admisión, quiero iniciar sesión para acceder a la gestión de citas y a la sala de espera.
 
-#metadata((src: "README.md", line: 6763))
+#metadata((src: "README.md", line: 6765))
 #strong[Figura 104]
 
-#metadata((src: "README.md", line: 6765))
+#metadata((src: "README.md", line: 6767))
 #emph[Wireflow de inicio de sesión del personal de admisión]
 
-#metadata((src: "README.md", line: 6767, kind: "figure", img: "chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png"))
+#metadata((src: "README.md", line: 6769, kind: "figure", img: "chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s02-iniciar-sesion-como-personal.png", alt: "Wireflow de inicio de sesión del personal de admisión de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6771))
+#metadata((src: "README.md", line: 6773))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6773))
+#metadata((src: "README.md", line: 6775))
 #strong[Explicación del flujo:] En la #link("#figura-104")[Figura 104] se observa que va de Inicio de sesión (diálogo único si las credenciales son inválidas) a la verificación con código (diálogo de código incorrecto o exitoso) y entra al Home del administrador.
 
 #heading(level: 6)[S03 · Registrar un bloque de cita] <sec:s03-registrar-un-bloque-de-cita>
-#metadata((src: "README.md", line: 6775, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6777, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6777))
+#metadata((src: "README.md", line: 6779))
 #strong[User Goal:] Como personal de admisión, quiero registrar bloques de cita con doctor, fecha, horario y capacidad.
 
-#metadata((src: "README.md", line: 6781))
+#metadata((src: "README.md", line: 6783))
 #strong[Figura 105]
 
-#metadata((src: "README.md", line: 6783))
+#metadata((src: "README.md", line: 6785))
 #emph[Wireflow de registro de un bloque de cita]
 
-#metadata((src: "README.md", line: 6785, kind: "figure", img: "chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png"))
+#metadata((src: "README.md", line: 6787, kind: "figure", img: "chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s03-registrar-un-bloque-de-cita.png", alt: "Wireflow de registro de un bloque de cita de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6789))
+#metadata((src: "README.md", line: 6791))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6791))
+#metadata((src: "README.md", line: 6793))
 #strong[Explicación del flujo:] En la #link("#figura-105")[Figura 105] se observa que, desde el Home, se elige la especialidad, la fecha, la hora y el doctor, y se termina en el diálogo «Confirmar bloque de cita».
 
 #heading(level: 6)[S04 · Editar un bloque de cita] <sec:s04-editar-un-bloque-de-cita>
-#metadata((src: "README.md", line: 6793, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6795, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6795))
+#metadata((src: "README.md", line: 6797))
 #strong[User Goal:] Como personal de admisión, quiero ajustar bloques existentes para corregir la programación.
 
-#metadata((src: "README.md", line: 6799))
+#metadata((src: "README.md", line: 6801))
 #strong[Figura 106]
 
-#metadata((src: "README.md", line: 6801))
+#metadata((src: "README.md", line: 6803))
 #emph[Wireflow de edición de un bloque de cita]
 
-#metadata((src: "README.md", line: 6803, kind: "figure", img: "chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png"))
+#metadata((src: "README.md", line: 6805, kind: "figure", img: "chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s04-editar-un-bloque-de-cita.png", alt: "Wireflow de edición de un bloque de cita de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6807))
+#metadata((src: "README.md", line: 6809))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6809))
+#metadata((src: "README.md", line: 6811))
 #strong[Explicación del flujo:] En la #link("#figura-106")[Figura 106] se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
 
 #heading(level: 6)[S05 · Consultar la disponibilidad de cupos] <sec:s05-consultar-la-disponibilidad-de-cupos>
-#metadata((src: "README.md", line: 6811, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6813, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6813))
+#metadata((src: "README.md", line: 6815))
 #strong[User Goal:] Como personal de admisión, quiero consultar los cupos por especialidad, doctor y fecha.
 
-#metadata((src: "README.md", line: 6817))
+#metadata((src: "README.md", line: 6819))
 #strong[Figura 107]
 
-#metadata((src: "README.md", line: 6819))
+#metadata((src: "README.md", line: 6821))
 #emph[Wireflow de consulta de disponibilidad de cupos]
 
-#metadata((src: "README.md", line: 6821, kind: "figure", img: "chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png"))
+#metadata((src: "README.md", line: 6823, kind: "figure", img: "chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s05-consultar-la-disponibilidad-de-cupos.png", alt: "Wireflow de consulta de disponibilidad de cupos de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6825))
+#metadata((src: "README.md", line: 6827))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6827))
+#metadata((src: "README.md", line: 6829))
 #strong[Explicación del flujo:] En la #link("#figura-107")[Figura 107] se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
 
 #heading(level: 6)[S06 · Consultar las citas pendientes] <sec:s06-consultar-las-citas-pendientes>
-#metadata((src: "README.md", line: 6829, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6831, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6831))
+#metadata((src: "README.md", line: 6833))
 #strong[User Goal:] Como personal de admisión, quiero ver las citas pendientes para organizar la agenda del día.
 
-#metadata((src: "README.md", line: 6835))
+#metadata((src: "README.md", line: 6837))
 #strong[Figura 108]
 
-#metadata((src: "README.md", line: 6837))
+#metadata((src: "README.md", line: 6839))
 #emph[Wireflow de consulta de citas pendientes]
 
-#metadata((src: "README.md", line: 6839, kind: "figure", img: "chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png"))
+#metadata((src: "README.md", line: 6841, kind: "figure", img: "chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s06-consultar-las-citas-pendientes.png", alt: "Wireflow de consulta de citas pendientes de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6843))
+#metadata((src: "README.md", line: 6845))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6845))
+#metadata((src: "README.md", line: 6847))
 #strong[Explicación del flujo:] En la #link("#figura-108")[Figura 108] se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
 
 #heading(level: 6)[S07 · Consultar las citas atendidas] <sec:s07-consultar-las-citas-atendidas>
-#metadata((src: "README.md", line: 6847, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6849, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6849))
+#metadata((src: "README.md", line: 6851))
 #strong[User Goal:] Como personal de admisión, quiero consultar las citas ya atendidas y generar reportes por rango de fechas.
 
-#metadata((src: "README.md", line: 6853))
+#metadata((src: "README.md", line: 6855))
 #strong[Figura 109]
 
-#metadata((src: "README.md", line: 6855))
+#metadata((src: "README.md", line: 6857))
 #emph[Wireflow de consulta de citas atendidas]
 
-#metadata((src: "README.md", line: 6857, kind: "figure", img: "chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png"))
+#metadata((src: "README.md", line: 6859, kind: "figure", img: "chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s07-consultar-las-citas-atendidas.png", alt: "Wireflow de consulta de citas atendidas de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6861))
+#metadata((src: "README.md", line: 6863))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6863))
+#metadata((src: "README.md", line: 6865))
 #strong[Explicación del flujo:] En la #link("#figura-109")[Figura 109] se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
 
 #heading(level: 6)[S08 · Registrar la llegada del paciente (check-in)] <sec:s08-registrar-la-llegada-del-paciente-check-in>
-#metadata((src: "README.md", line: 6865, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6867, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6867))
+#metadata((src: "README.md", line: 6869))
 #strong[User Goal:] Como personal de admisión, quiero registrar la llegada escaneando el QR o ingresando el código de reserva.
 
-#metadata((src: "README.md", line: 6871))
+#metadata((src: "README.md", line: 6873))
 #strong[Figura 110]
 
-#metadata((src: "README.md", line: 6873))
+#metadata((src: "README.md", line: 6875))
 #emph[Wireflow de registro de llegada del paciente (check-in)]
 
-#metadata((src: "README.md", line: 6875, kind: "figure", img: "chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png"))
+#metadata((src: "README.md", line: 6877, kind: "figure", img: "chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s08-registrar-la-llegada-del-paciente-check-in.png", alt: "Wireflow de registro de llegada del paciente de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6879))
+#metadata((src: "README.md", line: 6881))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6881))
+#metadata((src: "README.md", line: 6883))
 #strong[Explicación del flujo:] En la #link("#figura-110")[Figura 110] se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
 
 #heading(level: 6)[S09 · Gestionar la cola de asistencia] <sec:s09-gestionar-la-cola-de-asistencia>
-#metadata((src: "README.md", line: 6883, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6885, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6885))
+#metadata((src: "README.md", line: 6887))
 #strong[User Goal:] Como personal de admisión, quiero manejar la cola de la sala de espera.
 
-#metadata((src: "README.md", line: 6889))
+#metadata((src: "README.md", line: 6891))
 #strong[Figura 111]
 
-#metadata((src: "README.md", line: 6891))
+#metadata((src: "README.md", line: 6893))
 #emph[Wireflow de gestión de la cola de asistencia]
 
-#metadata((src: "README.md", line: 6893, kind: "figure", img: "chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png"))
+#metadata((src: "README.md", line: 6895, kind: "figure", img: "chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s09-gestionar-la-cola-de-asistencia.png", alt: "Wireflow de gestión de la cola de asistencia de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6897))
+#metadata((src: "README.md", line: 6899))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6899))
+#metadata((src: "README.md", line: 6901))
 #strong[Explicación del flujo:] En la #link("#figura-111")[Figura 111] se observa que, desde el Home, se elige la especialidad y se abre la lista «Hoy», donde se atiende y se finaliza cada cita en orden.
 
 #heading(level: 6)[S10 · Configurar los parámetros del establecimiento] <sec:s10-configurar-los-parametros-del-establecimiento>
-#metadata((src: "README.md", line: 6901, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 6903, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 6903))
+#metadata((src: "README.md", line: 6905))
 #strong[User Goal:] Como personal de admisión, quiero configurar los parámetros operativos del centro.
 
-#metadata((src: "README.md", line: 6907))
+#metadata((src: "README.md", line: 6909))
 #strong[Figura 112]
 
-#metadata((src: "README.md", line: 6909))
+#metadata((src: "README.md", line: 6911))
 #emph[Wireflow de configuración de los parámetros del establecimiento]
 
-#metadata((src: "README.md", line: 6911, kind: "figure", img: "chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png"))
+#metadata((src: "README.md", line: 6913, kind: "figure", img: "chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/wireflows/s10-configurar-los-parametros-del-establecimiento.png", alt: "Wireflow de configuración de los parámetros del establecimiento de SaludYa", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6915))
+#metadata((src: "README.md", line: 6917))
 #emph[Nota. Elaboración propia.]
 
-#metadata((src: "README.md", line: 6917))
+#metadata((src: "README.md", line: 6919))
 #strong[Explicación del flujo:] En la #link("#figura-112")[Figura 112] se observa que, desde Configuración general, se edita un parámetro, que se actualiza con el diálogo «Ingrese el nuevo valor».
 
 #heading(level: 4)[3.1.4.3. Mobile Applications Mock-ups] <sec:3-1-4-3-mobile-applications-mock-ups>
-#metadata((src: "README.md", line: 6919, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 6921))
-En este entregable se presentan los mock-ups de alta fidelidad de la aplicación móvil de SaludYa para el paciente, incluyendo la gestión de citas de menores a su cargo. El diseño parte de los wireframes del equipo y las historias de usuario del reporte. Los recorridos del personal de admisión, Super Admin, configuración operativa y exportación de reportes quedan pendientes para una entrega posterior.
+#metadata((src: "README.md", line: 6921, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 6923))
-La identidad visual utiliza el verde primario #raw("#0B8F6B"), fondos claros y tipografía Inter. Las pantallas tienen un tamaño de referencia de 375 × 812 píxeles; los botones principales, una altura de 48 píxeles y esquinas de 12 píxeles. Se incluyen estados de confirmación, error y ausencia de información. Los datos son ficticios y las imágenes representan el diseño de la experiencia.
+En este entregable se presentan los mock-ups de alta fidelidad de la aplicación móvil de SaludYa para el paciente, incluyendo la gestión de citas de menores a su cargo. El diseño parte de los wireframes del equipo y las historias de usuario del reporte. Los recorridos del personal de admisión, Super Admin, configuración operativa y exportación de reportes quedan pendientes para una entrega posterior.
 
 #metadata((src: "README.md", line: 6925))
+La identidad visual utiliza el verde primario #raw("#0B8F6B"), fondos claros y tipografía Inter. Las pantallas tienen un tamaño de referencia de 375 × 812 píxeles; los botones principales, una altura de 48 píxeles y esquinas de 12 píxeles. Se incluyen estados de confirmación, error y ausencia de información. Los datos son ficticios y las imágenes representan el diseño de la experiencia.
+
+#metadata((src: "README.md", line: 6927))
 #strong[Sección Autenticación y Registro — Identity & Access Management]
 
-#metadata((src: "README.md", line: 6933))
+#metadata((src: "README.md", line: 6935))
 #strong[Figura 113]
 
-#metadata((src: "README.md", line: 6935))
+#metadata((src: "README.md", line: 6937))
 #emph[Bienvenida y registro del paciente]
 
-#metadata((src: "README.md", line: 6937, kind: "figure", img: "chapter-03/assets/mockups/iam-registro.png"))
+#metadata((src: "README.md", line: 6939, kind: "figure", img: "chapter-03/assets/mockups/iam-registro.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/iam-registro.png", alt: "Bienvenida y registro del paciente", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6941))
+#metadata((src: "README.md", line: 6943))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 6945))
+#metadata((src: "README.md", line: 6947))
 Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la #link("#figura-113")[Figura 113].
 
-#metadata((src: "README.md", line: 6953))
+#metadata((src: "README.md", line: 6955))
 #strong[Figura 114]
 
-#metadata((src: "README.md", line: 6955))
+#metadata((src: "README.md", line: 6957))
 #emph[Acceso y recuperación de la cuenta del paciente]
 
-#metadata((src: "README.md", line: 6957, kind: "figure", img: "chapter-03/assets/mockups/iam-acceso-recuperacion.png"))
+#metadata((src: "README.md", line: 6959, kind: "figure", img: "chapter-03/assets/mockups/iam-acceso-recuperacion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/iam-acceso-recuperacion.png", alt: "Acceso y recuperación de la cuenta del paciente", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6961))
+#metadata((src: "README.md", line: 6963))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 6965))
-El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la #link("#figura-114")[Figura 114].
 
 #metadata((src: "README.md", line: 6967))
+El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la #link("#figura-114")[Figura 114].
+
+#metadata((src: "README.md", line: 6969))
 #strong[Sección Dashboard del Paciente]
 
-#metadata((src: "README.md", line: 6975))
+#metadata((src: "README.md", line: 6977))
 #strong[Figura 115]
 
-#metadata((src: "README.md", line: 6977))
+#metadata((src: "README.md", line: 6979))
 #emph[Inicio, citas pendientes e historial del paciente]
 
-#metadata((src: "README.md", line: 6979, kind: "figure", img: "chapter-03/assets/mockups/dashboard.png"))
+#metadata((src: "README.md", line: 6981, kind: "figure", img: "chapter-03/assets/mockups/dashboard.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/dashboard.png", alt: "Inicio, citas pendientes e historial del paciente", width: 100%)]]]
 
-#metadata((src: "README.md", line: 6983))
+#metadata((src: "README.md", line: 6985))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 6987))
-El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la #link("#figura-115")[Figura 115].
 
 #metadata((src: "README.md", line: 6989))
+El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la #link("#figura-115")[Figura 115].
+
+#metadata((src: "README.md", line: 6991))
 #strong[Sección Reserva de Citas]
 
-#metadata((src: "README.md", line: 6997))
+#metadata((src: "README.md", line: 6999))
 #strong[Figura 116]
 
-#metadata((src: "README.md", line: 6999))
+#metadata((src: "README.md", line: 7001))
 #emph[Selección de especialidad, beneficiario, fecha, profesional y horario]
 
-#metadata((src: "README.md", line: 7001, kind: "figure", img: "chapter-03/assets/mockups/reservas-seleccion.png"))
+#metadata((src: "README.md", line: 7003, kind: "figure", img: "chapter-03/assets/mockups/reservas-seleccion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/reservas-seleccion.png", alt: "Selección de especialidad, beneficiario, fecha, profesional y horario", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7005))
+#metadata((src: "README.md", line: 7007))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7009))
+#metadata((src: "README.md", line: 7011))
 El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la #link("#figura-116")[Figura 116].
 
-#metadata((src: "README.md", line: 7017))
+#metadata((src: "README.md", line: 7019))
 #strong[Figura 117]
 
-#metadata((src: "README.md", line: 7019))
+#metadata((src: "README.md", line: 7021))
 #emph[Resumen, confirmación y estados de la reserva]
 
-#metadata((src: "README.md", line: 7021, kind: "figure", img: "chapter-03/assets/mockups/reservas-confirmacion.png"))
+#metadata((src: "README.md", line: 7023, kind: "figure", img: "chapter-03/assets/mockups/reservas-confirmacion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/reservas-confirmacion.png", alt: "Resumen, confirmación y estados de la reserva", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7025))
+#metadata((src: "README.md", line: 7027))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7029))
-El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la #link("#figura-117")[Figura 117].
 
 #metadata((src: "README.md", line: 7031))
+El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la #link("#figura-117")[Figura 117].
+
+#metadata((src: "README.md", line: 7033))
 #strong[Sección Check-in y Atención del Paciente]
 
-#metadata((src: "README.md", line: 7039))
+#metadata((src: "README.md", line: 7041))
 #strong[Figura 118]
 
-#metadata((src: "README.md", line: 7041))
+#metadata((src: "README.md", line: 7043))
 #emph[Registro de llegada, escaneo del QR del establecimiento, ticket y cola]
 
-#metadata((src: "README.md", line: 7043, kind: "figure", img: "chapter-03/assets/mockups/check-in-atencion.png"))
+#metadata((src: "README.md", line: 7045, kind: "figure", img: "chapter-03/assets/mockups/check-in-atencion.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/check-in-atencion.png", alt: "Registro de llegada, escaneo del QR del establecimiento, ticket y cola", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7047))
+#metadata((src: "README.md", line: 7049))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7051))
-Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la #link("#figura-118")[Figura 118].
 
 #metadata((src: "README.md", line: 7053))
-Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
+Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la #link("#figura-118")[Figura 118].
 
 #metadata((src: "README.md", line: 7055))
+Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
+
+#metadata((src: "README.md", line: 7057))
 #strong[Sección Configuración y Perfil del Paciente]
 
-#metadata((src: "README.md", line: 7063))
+#metadata((src: "README.md", line: 7065))
 #strong[Figura 119]
 
-#metadata((src: "README.md", line: 7065))
+#metadata((src: "README.md", line: 7067))
 #emph[Configuración, datos personales y actualización del contacto]
 
-#metadata((src: "README.md", line: 7067, kind: "figure", img: "chapter-03/assets/mockups/configuracion-perfil.png"))
+#metadata((src: "README.md", line: 7069, kind: "figure", img: "chapter-03/assets/mockups/configuracion-perfil.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/configuracion-perfil.png", alt: "Configuración, datos personales y actualización del contacto", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7071))
+#metadata((src: "README.md", line: 7073))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7075))
-El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la #link("#figura-119")[Figura 119].
 
 #metadata((src: "README.md", line: 7077))
+El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la #link("#figura-119")[Figura 119].
+
+#metadata((src: "README.md", line: 7079))
 #strong[Sección Gestión de Menores Vinculados]
 
-#metadata((src: "README.md", line: 7085))
+#metadata((src: "README.md", line: 7087))
 #strong[Figura 120]
 
-#metadata((src: "README.md", line: 7087))
+#metadata((src: "README.md", line: 7089))
 #emph[Vinculación, verificación y gestión de menores a cargo]
 
-#metadata((src: "README.md", line: 7089, kind: "figure", img: "chapter-03/assets/mockups/configuracion-menores.png"))
+#metadata((src: "README.md", line: 7091, kind: "figure", img: "chapter-03/assets/mockups/configuracion-menores.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/configuracion-menores.png", alt: "Vinculación, verificación y gestión de menores a cargo", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7093))
+#metadata((src: "README.md", line: 7095))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7097))
-El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la #link("#figura-120")[Figura 120].
 
 #metadata((src: "README.md", line: 7099))
+El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la #link("#figura-120")[Figura 120].
+
+#metadata((src: "README.md", line: 7101))
 #strong[Sección Notificaciones y Reasignación de Citas]
 
-#metadata((src: "README.md", line: 7107))
+#metadata((src: "README.md", line: 7109))
 #strong[Figura 121]
 
-#metadata((src: "README.md", line: 7109))
+#metadata((src: "README.md", line: 7111))
 #emph[Notificaciones y ofertas de reasignación de citas]
 
-#metadata((src: "README.md", line: 7111, kind: "figure", img: "chapter-03/assets/mockups/notificaciones.png"))
+#metadata((src: "README.md", line: 7113, kind: "figure", img: "chapter-03/assets/mockups/notificaciones.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mockups/notificaciones.png", alt: "Notificaciones y ofertas de reasignación de citas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7115))
+#metadata((src: "README.md", line: 7117))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7119))
+#metadata((src: "README.md", line: 7121))
 Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la #link("#figura-121")[Figura 121].
 
-#metadata((src: "README.md", line: 7121))
+#metadata((src: "README.md", line: 7123))
 #strong[Archivo de diseño]
 
-#metadata((src: "README.md", line: 7123))
+#metadata((src: "README.md", line: 7125))
 #link("https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2")[Mobile Application Mockups — SaludYa]
 
 #heading(level: 4)[3.1.4.4. Mobile Applications User Flow Diagrams] <sec:3-1-4-4-mobile-applications-user-flow-diagrams>
-#metadata((src: "README.md", line: 7125, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 7127))
-Los user flow diagrams describen los recorridos del paciente y del titular que gestiona citas de menores a su cargo. Se elaboraron a partir de los mock-ups corregidos y las historias de usuario del reporte, manteniendo el alcance de este entregable.
+#metadata((src: "README.md", line: 7127, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 7129))
-Se presentan 15 objetivos mediante 30 diagramas. Cada objetivo incluye un #strong[Happy Path], correspondiente al recorrido esperado, y sus #strong[Unhappy Paths], con errores, restricciones y decisiones alternativas. La lectura es de izquierda a derecha: los extremos redondeados representan inicio o resultado, los rectángulos indican pantallas o acciones, los rombos muestran decisiones y las flechas enlazan los pasos.
+Los user flow diagrams describen los recorridos del paciente y del titular que gestiona citas de menores a su cargo. Se elaboraron a partir de los mock-ups corregidos y las historias de usuario del reporte, manteniendo el alcance de este entregable.
 
 #metadata((src: "README.md", line: 7131))
-Los recorridos comprenden registro, acceso, recuperación, perfil, menores, citas, reasignación, llegada, ticket, cola y sesión. No se incluyen los flujos del personal de admisión ni de administración.
+Se presentan 15 objetivos mediante 30 diagramas. Cada objetivo incluye un #strong[Happy Path], correspondiente al recorrido esperado, y sus #strong[Unhappy Paths], con errores, restricciones y decisiones alternativas. La lectura es de izquierda a derecha: los extremos redondeados representan inicio o resultado, los rectángulos indican pantallas o acciones, los rombos muestran decisiones y las flechas enlazan los pasos.
 
 #metadata((src: "README.md", line: 7133))
-- #strong[User Goal 1:] Registrarse como paciente.
+Los recorridos comprenden registro, acceso, recuperación, perfil, menores, citas, reasignación, llegada, ticket, cola y sesión. No se incluyen los flujos del personal de admisión ni de administración.
 
 #metadata((src: "README.md", line: 7135))
-#strong[Happy Path]
+- #strong[User Goal 1:] Registrarse como paciente.
 
 #metadata((src: "README.md", line: 7137))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7139))
 El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la #link("#figura-122")[Figura 122].
 
-#metadata((src: "README.md", line: 7145))
+#metadata((src: "README.md", line: 7147))
 #strong[Figura 122]
 
-#metadata((src: "README.md", line: 7147))
+#metadata((src: "README.md", line: 7149))
 #emph[Registrarse como paciente — recorrido esperado]
 
-#metadata((src: "README.md", line: 7149, kind: "figure", img: "chapter-03/assets/userflows/user-goal-01-happy.png"))
+#metadata((src: "README.md", line: 7151, kind: "figure", img: "chapter-03/assets/userflows/user-goal-01-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-01-happy.png", alt: "Registrarse como paciente — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7153))
+#metadata((src: "README.md", line: 7155))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7157))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7159))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7161))
 Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la #link("#figura-123")[Figura 123].
 
-#metadata((src: "README.md", line: 7167))
+#metadata((src: "README.md", line: 7169))
 #strong[Figura 123]
 
-#metadata((src: "README.md", line: 7169))
+#metadata((src: "README.md", line: 7171))
 #emph[Registrarse como paciente — errores y alternativas]
 
-#metadata((src: "README.md", line: 7171, kind: "figure", img: "chapter-03/assets/userflows/user-goal-01-unhappy.png"))
+#metadata((src: "README.md", line: 7173, kind: "figure", img: "chapter-03/assets/userflows/user-goal-01-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-01-unhappy.png", alt: "Registrarse como paciente — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7175))
+#metadata((src: "README.md", line: 7177))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7179))
-- #strong[User Goal 2:] Iniciar sesión como paciente.
 
 #metadata((src: "README.md", line: 7181))
-#strong[Happy Path]
+- #strong[User Goal 2:] Iniciar sesión como paciente.
 
 #metadata((src: "README.md", line: 7183))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7185))
 El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la #link("#figura-124")[Figura 124].
 
-#metadata((src: "README.md", line: 7191))
+#metadata((src: "README.md", line: 7193))
 #strong[Figura 124]
 
-#metadata((src: "README.md", line: 7193))
+#metadata((src: "README.md", line: 7195))
 #emph[Iniciar sesión como paciente — recorrido esperado]
 
-#metadata((src: "README.md", line: 7195, kind: "figure", img: "chapter-03/assets/userflows/user-goal-02-happy.png"))
+#metadata((src: "README.md", line: 7197, kind: "figure", img: "chapter-03/assets/userflows/user-goal-02-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-02-happy.png", alt: "Iniciar sesión como paciente — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7199))
+#metadata((src: "README.md", line: 7201))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7203))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7205))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7207))
 Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la #link("#figura-125")[Figura 125].
 
-#metadata((src: "README.md", line: 7213))
+#metadata((src: "README.md", line: 7215))
 #strong[Figura 125]
 
-#metadata((src: "README.md", line: 7215))
+#metadata((src: "README.md", line: 7217))
 #emph[Iniciar sesión como paciente — errores y alternativas]
 
-#metadata((src: "README.md", line: 7217, kind: "figure", img: "chapter-03/assets/userflows/user-goal-02-unhappy.png"))
+#metadata((src: "README.md", line: 7219, kind: "figure", img: "chapter-03/assets/userflows/user-goal-02-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-02-unhappy.png", alt: "Iniciar sesión como paciente — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7221))
+#metadata((src: "README.md", line: 7223))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7225))
-- #strong[User Goal 3:] Recuperar la contraseña.
 
 #metadata((src: "README.md", line: 7227))
-#strong[Happy Path]
+- #strong[User Goal 3:] Recuperar la contraseña.
 
 #metadata((src: "README.md", line: 7229))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7231))
 El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la #link("#figura-126")[Figura 126].
 
-#metadata((src: "README.md", line: 7237))
+#metadata((src: "README.md", line: 7239))
 #strong[Figura 126]
 
-#metadata((src: "README.md", line: 7239))
+#metadata((src: "README.md", line: 7241))
 #emph[Recuperar la contraseña — recorrido esperado]
 
-#metadata((src: "README.md", line: 7241, kind: "figure", img: "chapter-03/assets/userflows/user-goal-03-happy.png"))
+#metadata((src: "README.md", line: 7243, kind: "figure", img: "chapter-03/assets/userflows/user-goal-03-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-03-happy.png", alt: "Recuperar la contraseña — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7245))
+#metadata((src: "README.md", line: 7247))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7249))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7251))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7253))
 Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la #link("#figura-127")[Figura 127].
 
-#metadata((src: "README.md", line: 7259))
+#metadata((src: "README.md", line: 7261))
 #strong[Figura 127]
 
-#metadata((src: "README.md", line: 7261))
+#metadata((src: "README.md", line: 7263))
 #emph[Recuperar la contraseña — errores y alternativas]
 
-#metadata((src: "README.md", line: 7263, kind: "figure", img: "chapter-03/assets/userflows/user-goal-03-unhappy.png"))
+#metadata((src: "README.md", line: 7265, kind: "figure", img: "chapter-03/assets/userflows/user-goal-03-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-03-unhappy.png", alt: "Recuperar la contraseña — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7267))
+#metadata((src: "README.md", line: 7269))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7271))
-- #strong[User Goal 4:] Vincular o desvincular a un menor.
 
 #metadata((src: "README.md", line: 7273))
-#strong[Happy Path]
+- #strong[User Goal 4:] Vincular o desvincular a un menor.
 
 #metadata((src: "README.md", line: 7275))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7277))
 El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la #link("#figura-128")[Figura 128].
 
-#metadata((src: "README.md", line: 7283))
+#metadata((src: "README.md", line: 7285))
 #strong[Figura 128]
 
-#metadata((src: "README.md", line: 7285))
+#metadata((src: "README.md", line: 7287))
 #emph[Vincular o desvincular a un menor — recorrido esperado]
 
-#metadata((src: "README.md", line: 7287, kind: "figure", img: "chapter-03/assets/userflows/user-goal-04-happy.png"))
+#metadata((src: "README.md", line: 7289, kind: "figure", img: "chapter-03/assets/userflows/user-goal-04-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-04-happy.png", alt: "Vincular o desvincular a un menor — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7291))
+#metadata((src: "README.md", line: 7293))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7295))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7297))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7299))
 Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la #link("#figura-129")[Figura 129].
 
-#metadata((src: "README.md", line: 7305))
+#metadata((src: "README.md", line: 7307))
 #strong[Figura 129]
 
-#metadata((src: "README.md", line: 7307))
+#metadata((src: "README.md", line: 7309))
 #emph[Vincular o desvincular a un menor — errores y alternativas]
 
-#metadata((src: "README.md", line: 7309, kind: "figure", img: "chapter-03/assets/userflows/user-goal-04-unhappy.png"))
+#metadata((src: "README.md", line: 7311, kind: "figure", img: "chapter-03/assets/userflows/user-goal-04-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-04-unhappy.png", alt: "Vincular o desvincular a un menor — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7313))
+#metadata((src: "README.md", line: 7315))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7317))
-- #strong[User Goal 5:] Actualizar el correo o celular del perfil.
 
 #metadata((src: "README.md", line: 7319))
-#strong[Happy Path]
+- #strong[User Goal 5:] Actualizar el correo o celular del perfil.
 
 #metadata((src: "README.md", line: 7321))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7323))
 El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la #link("#figura-130")[Figura 130].
 
-#metadata((src: "README.md", line: 7329))
+#metadata((src: "README.md", line: 7331))
 #strong[Figura 130]
 
-#metadata((src: "README.md", line: 7331))
+#metadata((src: "README.md", line: 7333))
 #emph[Actualizar el correo o celular del perfil — recorrido esperado]
 
-#metadata((src: "README.md", line: 7333, kind: "figure", img: "chapter-03/assets/userflows/user-goal-05-happy.png"))
+#metadata((src: "README.md", line: 7335, kind: "figure", img: "chapter-03/assets/userflows/user-goal-05-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-05-happy.png", alt: "Actualizar el correo o celular del perfil — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7337))
+#metadata((src: "README.md", line: 7339))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7341))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7343))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7345))
 Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la #link("#figura-131")[Figura 131].
 
-#metadata((src: "README.md", line: 7351))
+#metadata((src: "README.md", line: 7353))
 #strong[Figura 131]
 
-#metadata((src: "README.md", line: 7353))
+#metadata((src: "README.md", line: 7355))
 #emph[Actualizar el correo o celular del perfil — errores y alternativas]
 
-#metadata((src: "README.md", line: 7355, kind: "figure", img: "chapter-03/assets/userflows/user-goal-05-unhappy.png"))
+#metadata((src: "README.md", line: 7357, kind: "figure", img: "chapter-03/assets/userflows/user-goal-05-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-05-unhappy.png", alt: "Actualizar el correo o celular del perfil — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7359))
+#metadata((src: "README.md", line: 7361))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7363))
-- #strong[User Goal 6:] Consultar disponibilidad de citas.
 
 #metadata((src: "README.md", line: 7365))
-#strong[Happy Path]
+- #strong[User Goal 6:] Consultar disponibilidad de citas.
 
 #metadata((src: "README.md", line: 7367))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7369))
 El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la #link("#figura-132")[Figura 132].
 
-#metadata((src: "README.md", line: 7375))
+#metadata((src: "README.md", line: 7377))
 #strong[Figura 132]
 
-#metadata((src: "README.md", line: 7377))
+#metadata((src: "README.md", line: 7379))
 #emph[Consultar disponibilidad de citas — recorrido esperado]
 
-#metadata((src: "README.md", line: 7379, kind: "figure", img: "chapter-03/assets/userflows/user-goal-06-happy.png"))
+#metadata((src: "README.md", line: 7381, kind: "figure", img: "chapter-03/assets/userflows/user-goal-06-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-06-happy.png", alt: "Consultar disponibilidad de citas — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7383))
+#metadata((src: "README.md", line: 7385))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7387))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7389))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7391))
 Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la #link("#figura-133")[Figura 133].
 
-#metadata((src: "README.md", line: 7397))
+#metadata((src: "README.md", line: 7399))
 #strong[Figura 133]
 
-#metadata((src: "README.md", line: 7399))
+#metadata((src: "README.md", line: 7401))
 #emph[Consultar disponibilidad de citas — errores y alternativas]
 
-#metadata((src: "README.md", line: 7401, kind: "figure", img: "chapter-03/assets/userflows/user-goal-06-unhappy.png"))
+#metadata((src: "README.md", line: 7403, kind: "figure", img: "chapter-03/assets/userflows/user-goal-06-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-06-unhappy.png", alt: "Consultar disponibilidad de citas — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7405))
+#metadata((src: "README.md", line: 7407))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7409))
-- #strong[User Goal 7:] Reservar una cita y recibir confirmación.
 
 #metadata((src: "README.md", line: 7411))
-#strong[Happy Path]
+- #strong[User Goal 7:] Reservar una cita y recibir confirmación.
 
 #metadata((src: "README.md", line: 7413))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7415))
 El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la #link("#figura-134")[Figura 134].
 
-#metadata((src: "README.md", line: 7421))
+#metadata((src: "README.md", line: 7423))
 #strong[Figura 134]
 
-#metadata((src: "README.md", line: 7423))
+#metadata((src: "README.md", line: 7425))
 #emph[Reservar una cita y recibir confirmación — recorrido esperado]
 
-#metadata((src: "README.md", line: 7425, kind: "figure", img: "chapter-03/assets/userflows/user-goal-07-happy.png"))
+#metadata((src: "README.md", line: 7427, kind: "figure", img: "chapter-03/assets/userflows/user-goal-07-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-07-happy.png", alt: "Reservar una cita y recibir confirmación — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7429))
+#metadata((src: "README.md", line: 7431))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7433))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7435))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7437))
 Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la #link("#figura-135")[Figura 135].
 
-#metadata((src: "README.md", line: 7443))
+#metadata((src: "README.md", line: 7445))
 #strong[Figura 135]
 
-#metadata((src: "README.md", line: 7445))
+#metadata((src: "README.md", line: 7447))
 #emph[Reservar una cita y recibir confirmación — errores y alternativas]
 
-#metadata((src: "README.md", line: 7447, kind: "figure", img: "chapter-03/assets/userflows/user-goal-07-unhappy.png"))
+#metadata((src: "README.md", line: 7449, kind: "figure", img: "chapter-03/assets/userflows/user-goal-07-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-07-unhappy.png", alt: "Reservar una cita y recibir confirmación — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7451))
+#metadata((src: "README.md", line: 7453))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7455))
-- #strong[User Goal 8:] Consultar citas, detalles e historial.
 
 #metadata((src: "README.md", line: 7457))
-#strong[Happy Path]
+- #strong[User Goal 8:] Consultar citas, detalles e historial.
 
 #metadata((src: "README.md", line: 7459))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7461))
 Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la #link("#figura-136")[Figura 136].
 
-#metadata((src: "README.md", line: 7467))
+#metadata((src: "README.md", line: 7469))
 #strong[Figura 136]
 
-#metadata((src: "README.md", line: 7469))
+#metadata((src: "README.md", line: 7471))
 #emph[Consultar citas, detalles e historial — recorrido esperado]
 
-#metadata((src: "README.md", line: 7471, kind: "figure", img: "chapter-03/assets/userflows/user-goal-08-happy.png"))
+#metadata((src: "README.md", line: 7473, kind: "figure", img: "chapter-03/assets/userflows/user-goal-08-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-08-happy.png", alt: "Consultar citas, detalles e historial — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7475))
+#metadata((src: "README.md", line: 7477))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7479))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7481))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7483))
 Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la #link("#figura-137")[Figura 137].
 
-#metadata((src: "README.md", line: 7489))
+#metadata((src: "README.md", line: 7491))
 #strong[Figura 137]
 
-#metadata((src: "README.md", line: 7491))
+#metadata((src: "README.md", line: 7493))
 #emph[Consultar citas, detalles e historial — errores y alternativas]
 
-#metadata((src: "README.md", line: 7493, kind: "figure", img: "chapter-03/assets/userflows/user-goal-08-unhappy.png"))
+#metadata((src: "README.md", line: 7495, kind: "figure", img: "chapter-03/assets/userflows/user-goal-08-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-08-unhappy.png", alt: "Consultar citas, detalles e historial — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7497))
+#metadata((src: "README.md", line: 7499))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7501))
-- #strong[User Goal 9:] Cancelar una reserva dentro del plazo.
 
 #metadata((src: "README.md", line: 7503))
-#strong[Happy Path]
+- #strong[User Goal 9:] Cancelar una reserva dentro del plazo.
 
 #metadata((src: "README.md", line: 7505))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7507))
 El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la #link("#figura-138")[Figura 138].
 
-#metadata((src: "README.md", line: 7513))
+#metadata((src: "README.md", line: 7515))
 #strong[Figura 138]
 
-#metadata((src: "README.md", line: 7515))
+#metadata((src: "README.md", line: 7517))
 #emph[Cancelar una reserva dentro del plazo — recorrido esperado]
 
-#metadata((src: "README.md", line: 7517, kind: "figure", img: "chapter-03/assets/userflows/user-goal-09-happy.png"))
+#metadata((src: "README.md", line: 7519, kind: "figure", img: "chapter-03/assets/userflows/user-goal-09-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-09-happy.png", alt: "Cancelar una reserva dentro del plazo — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7521))
+#metadata((src: "README.md", line: 7523))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7525))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7527))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7529))
 Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la #link("#figura-139")[Figura 139].
 
-#metadata((src: "README.md", line: 7535))
+#metadata((src: "README.md", line: 7537))
 #strong[Figura 139]
 
-#metadata((src: "README.md", line: 7537))
+#metadata((src: "README.md", line: 7539))
 #emph[Cancelar una reserva dentro del plazo — errores y alternativas]
 
-#metadata((src: "README.md", line: 7539, kind: "figure", img: "chapter-03/assets/userflows/user-goal-09-unhappy.png"))
+#metadata((src: "README.md", line: 7541, kind: "figure", img: "chapter-03/assets/userflows/user-goal-09-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-09-unhappy.png", alt: "Cancelar una reserva dentro del plazo — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7543))
+#metadata((src: "README.md", line: 7545))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7547))
-- #strong[User Goal 10:] Responder a una oferta de adelanto.
 
 #metadata((src: "README.md", line: 7549))
-#strong[Happy Path]
+- #strong[User Goal 10:] Responder a una oferta de adelanto.
 
 #metadata((src: "README.md", line: 7551))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7553))
 El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la #link("#figura-140")[Figura 140].
 
-#metadata((src: "README.md", line: 7559))
+#metadata((src: "README.md", line: 7561))
 #strong[Figura 140]
 
-#metadata((src: "README.md", line: 7561))
+#metadata((src: "README.md", line: 7563))
 #emph[Responder a una oferta de adelanto — recorrido esperado]
 
-#metadata((src: "README.md", line: 7563, kind: "figure", img: "chapter-03/assets/userflows/user-goal-10-happy.png"))
+#metadata((src: "README.md", line: 7565, kind: "figure", img: "chapter-03/assets/userflows/user-goal-10-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-10-happy.png", alt: "Responder a una oferta de adelanto — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7567))
+#metadata((src: "README.md", line: 7569))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7571))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7573))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7575))
 El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la #link("#figura-141")[Figura 141].
 
-#metadata((src: "README.md", line: 7581))
+#metadata((src: "README.md", line: 7583))
 #strong[Figura 141]
 
-#metadata((src: "README.md", line: 7583))
+#metadata((src: "README.md", line: 7585))
 #emph[Responder a una oferta de adelanto — errores y alternativas]
 
-#metadata((src: "README.md", line: 7585, kind: "figure", img: "chapter-03/assets/userflows/user-goal-10-unhappy.png"))
+#metadata((src: "README.md", line: 7587, kind: "figure", img: "chapter-03/assets/userflows/user-goal-10-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-10-unhappy.png", alt: "Responder a una oferta de adelanto — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7589))
+#metadata((src: "README.md", line: 7591))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7593))
-- #strong[User Goal 11:] Registrar llegada presencial mediante QR.
 
 #metadata((src: "README.md", line: 7595))
-#strong[Happy Path]
+- #strong[User Goal 11:] Registrar llegada presencial mediante QR.
 
 #metadata((src: "README.md", line: 7597))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7599))
 Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la #link("#figura-142")[Figura 142].
 
-#metadata((src: "README.md", line: 7605))
+#metadata((src: "README.md", line: 7607))
 #strong[Figura 142]
 
-#metadata((src: "README.md", line: 7607))
+#metadata((src: "README.md", line: 7609))
 #emph[Registrar llegada presencial mediante QR — recorrido esperado]
 
-#metadata((src: "README.md", line: 7609, kind: "figure", img: "chapter-03/assets/userflows/user-goal-11-happy.png"))
+#metadata((src: "README.md", line: 7611, kind: "figure", img: "chapter-03/assets/userflows/user-goal-11-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-11-happy.png", alt: "Registrar llegada presencial mediante QR — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7613))
+#metadata((src: "README.md", line: 7615))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7617))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7619))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7621))
 Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la #link("#figura-143")[Figura 143].
 
-#metadata((src: "README.md", line: 7627))
+#metadata((src: "README.md", line: 7629))
 #strong[Figura 143]
 
-#metadata((src: "README.md", line: 7629))
+#metadata((src: "README.md", line: 7631))
 #emph[Registrar llegada presencial mediante QR — errores y alternativas]
 
-#metadata((src: "README.md", line: 7631, kind: "figure", img: "chapter-03/assets/userflows/user-goal-11-unhappy.png"))
+#metadata((src: "README.md", line: 7633, kind: "figure", img: "chapter-03/assets/userflows/user-goal-11-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-11-unhappy.png", alt: "Registrar llegada presencial mediante QR — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7635))
+#metadata((src: "README.md", line: 7637))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7639))
-- #strong[User Goal 12:] Obtener el ticket digital de atención.
 
 #metadata((src: "README.md", line: 7641))
-#strong[Happy Path]
+- #strong[User Goal 12:] Obtener el ticket digital de atención.
 
 #metadata((src: "README.md", line: 7643))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7645))
 Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la #link("#figura-144")[Figura 144].
 
-#metadata((src: "README.md", line: 7651))
+#metadata((src: "README.md", line: 7653))
 #strong[Figura 144]
 
-#metadata((src: "README.md", line: 7653))
+#metadata((src: "README.md", line: 7655))
 #emph[Obtener el ticket digital de atención — recorrido esperado]
 
-#metadata((src: "README.md", line: 7655, kind: "figure", img: "chapter-03/assets/userflows/user-goal-12-happy.png"))
+#metadata((src: "README.md", line: 7657, kind: "figure", img: "chapter-03/assets/userflows/user-goal-12-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-12-happy.png", alt: "Obtener el ticket digital de atención — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7659))
+#metadata((src: "README.md", line: 7661))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7663))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7665))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7667))
 Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la #link("#figura-145")[Figura 145].
 
-#metadata((src: "README.md", line: 7673))
+#metadata((src: "README.md", line: 7675))
 #strong[Figura 145]
 
-#metadata((src: "README.md", line: 7675))
+#metadata((src: "README.md", line: 7677))
 #emph[Obtener el ticket digital de atención — errores y alternativas]
 
-#metadata((src: "README.md", line: 7677, kind: "figure", img: "chapter-03/assets/userflows/user-goal-12-unhappy.png"))
+#metadata((src: "README.md", line: 7679, kind: "figure", img: "chapter-03/assets/userflows/user-goal-12-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-12-unhappy.png", alt: "Obtener el ticket digital de atención — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7681))
+#metadata((src: "README.md", line: 7683))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7685))
-- #strong[User Goal 13:] Consultar posición o dejar la cola.
 
 #metadata((src: "README.md", line: 7687))
-#strong[Happy Path]
+- #strong[User Goal 13:] Consultar posición o dejar la cola.
 
 #metadata((src: "README.md", line: 7689))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7691))
 El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la #link("#figura-146")[Figura 146].
 
-#metadata((src: "README.md", line: 7697))
+#metadata((src: "README.md", line: 7699))
 #strong[Figura 146]
 
-#metadata((src: "README.md", line: 7699))
+#metadata((src: "README.md", line: 7701))
 #emph[Consultar posición o dejar la cola — recorrido esperado]
 
-#metadata((src: "README.md", line: 7701, kind: "figure", img: "chapter-03/assets/userflows/user-goal-13-happy.png"))
+#metadata((src: "README.md", line: 7703, kind: "figure", img: "chapter-03/assets/userflows/user-goal-13-happy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-13-happy.png", alt: "Consultar posición o dejar la cola — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7705))
+#metadata((src: "README.md", line: 7707))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7709))
-#strong[Unhappy Paths]
 
 #metadata((src: "README.md", line: 7711))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7713))
 Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la #link("#figura-147")[Figura 147].
 
-#metadata((src: "README.md", line: 7719))
+#metadata((src: "README.md", line: 7721))
 #strong[Figura 147]
 
-#metadata((src: "README.md", line: 7721))
+#metadata((src: "README.md", line: 7723))
 #emph[Consultar posición o dejar la cola — errores y alternativas]
 
-#metadata((src: "README.md", line: 7723, kind: "figure", img: "chapter-03/assets/userflows/user-goal-13-unhappy.png"))
+#metadata((src: "README.md", line: 7725, kind: "figure", img: "chapter-03/assets/userflows/user-goal-13-unhappy.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-13-unhappy.png", alt: "Consultar posición o dejar la cola — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7727))
+#metadata((src: "README.md", line: 7729))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7731))
-- #strong[User Goal 14:] Recibir el llamado y acudir al consultorio.
 
 #metadata((src: "README.md", line: 7733))
-#strong[Happy Path]
+- #strong[User Goal 14:] Recibir el llamado y acudir al consultorio.
 
 #metadata((src: "README.md", line: 7735))
-El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la #link("#figura-148")[Figura 148].
-
-#metadata((src: "README.md", line: 7743))
-#strong[Figura 148]
-
-#metadata((src: "README.md", line: 7745))
-#emph[Recibir el llamado y acudir al consultorio — recorrido esperado]
-
-#metadata((src: "README.md", line: 7747, kind: "figure", img: "chapter-03/assets/userflows/user-goal-14-happy.png"))
-#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-14-happy.png", alt: "Recibir el llamado y acudir al consultorio — recorrido esperado", width: 100%)]]]
-
-#metadata((src: "README.md", line: 7751))
-#emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7755))
-#strong[Unhappy Paths]
-
-#metadata((src: "README.md", line: 7757))
-Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la #link("#figura-149")[Figura 149].
-
-#metadata((src: "README.md", line: 7765))
-#strong[Figura 149]
-
-#metadata((src: "README.md", line: 7767))
-#emph[Recibir el llamado y acudir al consultorio — errores y alternativas]
-
-#metadata((src: "README.md", line: 7769, kind: "figure", img: "chapter-03/assets/userflows/user-goal-14-unhappy.png"))
-#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-14-unhappy.png", alt: "Recibir el llamado y acudir al consultorio — errores y alternativas", width: 100%)]]]
-
-#metadata((src: "README.md", line: 7773))
-#emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
-
-#metadata((src: "README.md", line: 7777))
-- #strong[User Goal 15:] Cerrar sesión o recuperar acceso a una sesión.
-
-#metadata((src: "README.md", line: 7779))
 #strong[Happy Path]
 
-#metadata((src: "README.md", line: 7781))
-El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la #link("#figura-150")[Figura 150].
+#metadata((src: "README.md", line: 7737))
+El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la #link("#figura-148")[Figura 148].
 
-#metadata((src: "README.md", line: 7789))
-#strong[Figura 150]
+#metadata((src: "README.md", line: 7745))
+#strong[Figura 148]
 
-#metadata((src: "README.md", line: 7791))
-#emph[Cerrar sesión o recuperar acceso a una sesión — recorrido esperado]
+#metadata((src: "README.md", line: 7747))
+#emph[Recibir el llamado y acudir al consultorio — recorrido esperado]
 
-#metadata((src: "README.md", line: 7793, kind: "figure", img: "chapter-03/assets/userflows/user-goal-15-happy.png"))
-#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-15-happy.png", alt: "Cerrar sesión o recuperar acceso a una sesión — recorrido esperado", width: 100%)]]]
+#metadata((src: "README.md", line: 7749, kind: "figure", img: "chapter-03/assets/userflows/user-goal-14-happy.png"))
+#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-14-happy.png", alt: "Recibir el llamado y acudir al consultorio — recorrido esperado", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7797))
+#metadata((src: "README.md", line: 7753))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7801))
+#metadata((src: "README.md", line: 7757))
 #strong[Unhappy Paths]
 
-#metadata((src: "README.md", line: 7803))
-Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la #link("#figura-151")[Figura 151].
+#metadata((src: "README.md", line: 7759))
+Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la #link("#figura-149")[Figura 149].
 
-#metadata((src: "README.md", line: 7811))
-#strong[Figura 151]
+#metadata((src: "README.md", line: 7767))
+#strong[Figura 149]
 
-#metadata((src: "README.md", line: 7813))
-#emph[Cerrar sesión o recuperar acceso a una sesión — errores y alternativas]
+#metadata((src: "README.md", line: 7769))
+#emph[Recibir el llamado y acudir al consultorio — errores y alternativas]
 
-#metadata((src: "README.md", line: 7815, kind: "figure", img: "chapter-03/assets/userflows/user-goal-15-unhappy.png"))
-#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-15-unhappy.png", alt: "Cerrar sesión o recuperar acceso a una sesión — errores y alternativas", width: 100%)]]]
+#metadata((src: "README.md", line: 7771, kind: "figure", img: "chapter-03/assets/userflows/user-goal-14-unhappy.png"))
+#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-14-unhappy.png", alt: "Recibir el llamado y acudir al consultorio — errores y alternativas", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7819))
+#metadata((src: "README.md", line: 7775))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7823))
-#strong[Archivo de diagramas]
+#metadata((src: "README.md", line: 7779))
+- #strong[User Goal 15:] Cerrar sesión o recuperar acceso a una sesión.
+
+#metadata((src: "README.md", line: 7781))
+#strong[Happy Path]
+
+#metadata((src: "README.md", line: 7783))
+El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la #link("#figura-150")[Figura 150].
+
+#metadata((src: "README.md", line: 7791))
+#strong[Figura 150]
+
+#metadata((src: "README.md", line: 7793))
+#emph[Cerrar sesión o recuperar acceso a una sesión — recorrido esperado]
+
+#metadata((src: "README.md", line: 7795, kind: "figure", img: "chapter-03/assets/userflows/user-goal-15-happy.png"))
+#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-15-happy.png", alt: "Cerrar sesión o recuperar acceso a una sesión — recorrido esperado", width: 100%)]]]
+
+#metadata((src: "README.md", line: 7799))
+#emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
+
+#metadata((src: "README.md", line: 7803))
+#strong[Unhappy Paths]
+
+#metadata((src: "README.md", line: 7805))
+Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la #link("#figura-151")[Figura 151].
+
+#metadata((src: "README.md", line: 7813))
+#strong[Figura 151]
+
+#metadata((src: "README.md", line: 7815))
+#emph[Cerrar sesión o recuperar acceso a una sesión — errores y alternativas]
+
+#metadata((src: "README.md", line: 7817, kind: "figure", img: "chapter-03/assets/userflows/user-goal-15-unhappy.png"))
+#align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/userflows/user-goal-15-unhappy.png", alt: "Cerrar sesión o recuperar acceso a una sesión — errores y alternativas", width: 100%)]]]
+
+#metadata((src: "README.md", line: 7821))
+#emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #metadata((src: "README.md", line: 7825))
+#strong[Archivo de diagramas]
+
+#metadata((src: "README.md", line: 7827))
 #link("https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=0-1")[Mobile Applications User Flow Diagrams — SaludYa]
 
 #heading(level: 4)[3.1.4.5. Mobile Applications Prototyping] <sec:3-1-4-5-mobile-applications-prototyping>
-#metadata((src: "README.md", line: 7827, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 7829, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 7829))
+#metadata((src: "README.md", line: 7831))
 En esta sección se presenta el prótotipo interactivo desarrollado en Figma para la aplicación móvil. El diseño y los flujos de navegación están alineados con la arquitectura de información y los user flow diagrams definidos.
 
-#metadata((src: "README.md", line: 7832))
+#metadata((src: "README.md", line: 7834))
 A continuación, se adjunta el enlace al video de demostración, como se observa en la #link("#figura-152")[Figura 152].
 
-#metadata((src: "README.md", line: 7840))
+#metadata((src: "README.md", line: 7842))
 #strong[Figura 152]
 
-#metadata((src: "README.md", line: 7842))
+#metadata((src: "README.md", line: 7844))
 #emph[Mobile applications prototyping]
 
-#metadata((src: "README.md", line: 7844, kind: "figure", img: "chapter-03/assets/mobile-application-prototyping.png"))
+#metadata((src: "README.md", line: 7846, kind: "figure", img: "chapter-03/assets/mobile-application-prototyping.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/chapter-03/assets/mobile-application-prototyping.png", alt: "Mobile applications prototyping", width: 100%)]]]
 
-#metadata((src: "README.md", line: 7848))
+#metadata((src: "README.md", line: 7850))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7852))
+#metadata((src: "README.md", line: 7854))
 #link("https://l1nq.com/u85pwhp")[Video Mobile Applications Prototyping]
 
-#metadata((src: "README.md", line: 7854))
+#metadata((src: "README.md", line: 7856))
 #pagebreak()
 
 #heading(level: 1)[Capítulo IV: Product Implementation & Validation] <sec:capitulo-iv-product-implementation-validation>
-#metadata((src: "README.md", line: 7856, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 7858, kind: "heading", level: 1))
 
 #heading(level: 2)[4. Product Implementation & Validation] <sec:4-product-implementation-validation>
-#metadata((src: "README.md", line: 7858, kind: "heading", level: 2))
-
-#heading(level: 2)[4.1. Software Configuration Management] <sec:4-1-software-configuration-management>
 #metadata((src: "README.md", line: 7860, kind: "heading", level: 2))
 
-#heading(level: 3)[4.1.1. Software Development Environment Configuration] <sec:4-1-1-software-development-environment-configuration>
-#metadata((src: "README.md", line: 7862, kind: "heading", level: 3))
+#heading(level: 2)[4.1. Software Configuration Management] <sec:4-1-software-configuration-management>
+#metadata((src: "README.md", line: 7862, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 7864))
+#heading(level: 3)[4.1.1. Software Development Environment Configuration] <sec:4-1-1-software-development-environment-configuration>
+#metadata((src: "README.md", line: 7864, kind: "heading", level: 3))
+
+#metadata((src: "README.md", line: 7866))
 En esta sección se especifican los productos de software que el equipo #strong[RuwaLabs] utilizó para colaborar en el ciclo de vida de #strong[SaludYa], abarcando las actividades de #strong[gestión del proyecto], #strong[gestión de requisitos], #strong[diseño UX/UI], #strong[desarrollo], #strong[despliegue] y #strong[documentación]. Para cada producto se indica su #strong[propósito de uso en el proyecto] y su #strong[ruta de referencia] (cuando es software basado en modelos SaaS) o #strong[ruta de descarga] (cuando es software que se ejecuta en el equipo de los integrantes), como se detalla en la #link("#tabla-59")[Tabla 59].
 
-#metadata((src: "README.md", line: 7868))
+#metadata((src: "README.md", line: 7870))
 #strong[Tabla 59]
 
-#metadata((src: "README.md", line: 7870))
+#metadata((src: "README.md", line: 7872))
 #emph[Software Development Environment Configuration]
 
-#metadata((src: "README.md", line: 7872, kind: "table"))
+#metadata((src: "README.md", line: 7874, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -9614,25 +9616,25 @@ En esta sección se especifican los productos de software que el equipo #strong[
   tline,
 )
 
-#metadata((src: "README.md", line: 7897))
+#metadata((src: "README.md", line: 7899))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 3)[4.1.2. Source Code Management] <sec:4-1-2-source-code-management>
-#metadata((src: "README.md", line: 7899, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 7901))
-En esta sección se establecen los medios y el esquema de organización que el equipo #strong[RuwaLabs] aplica para el seguimiento de modificaciones a lo largo del ciclo de vida de #strong[SaludYa]. Como plataforma y sistema de control de versiones se utiliza #strong[GitHub], sobre el cual se aplica #strong[GitFlow] como modelo de ramificación, #strong[Conventional Commits] para los mensajes de commit y #strong[Semantic Versioning] para nombrar las releases.
+#metadata((src: "README.md", line: 7901, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 7903))
+En esta sección se establecen los medios y el esquema de organización que el equipo #strong[RuwaLabs] aplica para el seguimiento de modificaciones a lo largo del ciclo de vida de #strong[SaludYa]. Como plataforma y sistema de control de versiones se utiliza #strong[GitHub], sobre el cual se aplica #strong[GitFlow] como modelo de ramificación, #strong[Conventional Commits] para los mensajes de commit y #strong[Semantic Versioning] para nombrar las releases.
+
+#metadata((src: "README.md", line: 7905))
 Cada producto de la solución cuenta con su propio repositorio, como se detalla en la #link("#tabla-60")[Tabla 60].
 
-#metadata((src: "README.md", line: 7907))
+#metadata((src: "README.md", line: 7909))
 #strong[Tabla 60]
 
-#metadata((src: "README.md", line: 7909))
+#metadata((src: "README.md", line: 7911))
 #emph[Repositorios de GitHub por producto]
 
-#metadata((src: "README.md", line: 7911, kind: "table"))
+#metadata((src: "README.md", line: 7913, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -9645,19 +9647,19 @@ Cada producto de la solución cuenta con su propio repositorio, como se detalla 
   tline,
 )
 
-#metadata((src: "README.md", line: 7918))
+#metadata((src: "README.md", line: 7920))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7920))
+#metadata((src: "README.md", line: 7922))
 Para el control de versiones se adopta #strong[GitFlow]. Sobre la rama principal #raw("main") se crea la rama de integración #raw("develop"); cada funcionalidad o bounded context se desarrolla en su propia rama (#emph[feature branch]), que se integra a #raw("develop") mediante #emph[pull requests]. Al cierre de un sprint, #raw("develop") se integra a #raw("main") mediante una rama de release, y las correcciones urgentes sobre producción se realizan mediante ramas de hotfix. Las convenciones de ramas se detallan en la #link("#tabla-61")[Tabla 61].
 
-#metadata((src: "README.md", line: 7924))
+#metadata((src: "README.md", line: 7926))
 #strong[Tabla 61]
 
-#metadata((src: "README.md", line: 7926))
+#metadata((src: "README.md", line: 7928))
 #emph[Convenciones de ramas (GitFlow)]
 
-#metadata((src: "README.md", line: 7928, kind: "table"))
+#metadata((src: "README.md", line: 7930, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -9671,22 +9673,22 @@ Para el control de versiones se adopta #strong[GitFlow]. Sobre la rama principal
   tline,
 )
 
-#metadata((src: "README.md", line: 7936))
+#metadata((src: "README.md", line: 7938))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7938))
+#metadata((src: "README.md", line: 7940))
 Las releases se nombran aplicando #strong[Semantic Versioning] (#raw("MAJOR.MINOR.PATCH")), por ejemplo #raw("v1.0.0").
 
-#metadata((src: "README.md", line: 7940))
+#metadata((src: "README.md", line: 7942))
 Finalmente, los mensajes de commit siguen #strong[Conventional Commits], como se detalla en la #link("#tabla-62")[Tabla 62].
 
-#metadata((src: "README.md", line: 7944))
+#metadata((src: "README.md", line: 7946))
 #strong[Tabla 62]
 
-#metadata((src: "README.md", line: 7946))
+#metadata((src: "README.md", line: 7948))
 #emph[Convenciones de commits (Conventional Commits)]
 
-#metadata((src: "README.md", line: 7948, kind: "table"))
+#metadata((src: "README.md", line: 7950, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -9702,31 +9704,31 @@ Finalmente, los mensajes de commit siguen #strong[Conventional Commits], como se
   tline,
 )
 
-#metadata((src: "README.md", line: 7958))
+#metadata((src: "README.md", line: 7960))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 3)[4.1.3. Source Code Style Guide & Conventions] <sec:4-1-3-source-code-style-guide-conventions>
-#metadata((src: "README.md", line: 7960, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 7962))
-En esta sección se establecen las convenciones de estilo y nomenclatura que el equipo #strong[RuwaLabs] adopta para el desarrollo de la solución #strong[SaludYa], compuesta por el Landing Page, las aplicaciones móviles (pacientes y personal de salud) y los servicios web. El objetivo es garantizar la legibilidad, mantenibilidad y consistencia del código a lo largo del ciclo de vida del proyecto, así como facilitar la colaboración entre los miembros del equipo.
+#metadata((src: "README.md", line: 7962, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 7964))
+En esta sección se establecen las convenciones de estilo y nomenclatura que el equipo #strong[RuwaLabs] adopta para el desarrollo de la solución #strong[SaludYa], compuesta por el Landing Page, las aplicaciones móviles (pacientes y personal de salud) y los servicios web. El objetivo es garantizar la legibilidad, mantenibilidad y consistencia del código a lo largo del ciclo de vida del proyecto, así como facilitar la colaboración entre los miembros del equipo.
+
+#metadata((src: "README.md", line: 7966))
 Todas las convenciones se aplican en #strong[inglés] para nombres de archivos, variables, funciones, clases y comentarios, siguiendo las buenas prácticas de la industria y las guías oficiales de cada tecnología.
 
 #heading(level: 4)[Landing Page] <sec:landing-page-6>
-#metadata((src: "README.md", line: 7966, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 7968, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 7968))
+#metadata((src: "README.md", line: 7970))
 El Landing Page se desarrolla con #strong[HTML5, CSS3 y JavaScript (ES6+)], aplicando las siguientes convenciones:
 
-#metadata((src: "README.md", line: 7976))
+#metadata((src: "README.md", line: 7978))
 #strong[Tabla 63]
 
-#metadata((src: "README.md", line: 7978))
+#metadata((src: "README.md", line: 7980))
 #emph[Source Code Style Guide & Conventions — Landing Page]
 
-#metadata((src: "README.md", line: 7980, kind: "table"))
+#metadata((src: "README.md", line: 7982, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -9746,13 +9748,13 @@ El Landing Page se desarrolla con #strong[HTML5, CSS3 y JavaScript (ES6+)], apli
   tline,
 )
 
-#metadata((src: "README.md", line: 7995))
+#metadata((src: "README.md", line: 7997))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 7998))
+#metadata((src: "README.md", line: 8000))
 Se adoptan las guías #strong[Google HTML/CSS Style Guide] y #strong[HTML Style Guide and Coding Conventions] (W3Schools), con las siguientes reglas adicionales, como se detalla en la #link("#tabla-63")[Tabla 63]:
 
-#metadata((src: "README.md", line: 8000))
+#metadata((src: "README.md", line: 8002))
 - Indentación de 2 espacios.
 - Uso de comillas dobles en HTML y comillas simples en JavaScript.
 - Punto y coma obligatorio al final de cada sentencia en JavaScript.
@@ -9763,18 +9765,18 @@ Se adoptan las guías #strong[Google HTML/CSS Style Guide] y #strong[HTML Style 
 - Uso de #raw("aria-*") y roles semánticos para accesibilidad.
 
 #heading(level: 4)[Aplicaciones móviles] <sec:aplicaciones-moviles>
-#metadata((src: "README.md", line: 8009, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8011, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8011))
+#metadata((src: "README.md", line: 8013))
 Las aplicaciones móviles se desarrollan con #strong[Kotlin] (Android nativo) y #strong[Kotlin Multiplatform (KMP)] para la lógica compartida con iOS, siguiendo las convenciones oficiales del lenguaje:
 
-#metadata((src: "README.md", line: 8019))
+#metadata((src: "README.md", line: 8021))
 #strong[Tabla 64]
 
-#metadata((src: "README.md", line: 8021))
+#metadata((src: "README.md", line: 8023))
 #emph[Source Code Style Guide & Conventions — Aplicaciones móviles]
 
-#metadata((src: "README.md", line: 8023, kind: "table"))
+#metadata((src: "README.md", line: 8025, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -9792,13 +9794,13 @@ Las aplicaciones móviles se desarrollan con #strong[Kotlin] (Android nativo) y 
   tline,
 )
 
-#metadata((src: "README.md", line: 8036))
+#metadata((src: "README.md", line: 8038))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8039))
+#metadata((src: "README.md", line: 8041))
 Se adoptan las guías #strong[Android Kotlin Style Guide] y #strong[Kotlin Coding Conventions], con las siguientes reglas adicionales, como se detalla en la #link("#tabla-64")[Tabla 64]:
 
-#metadata((src: "README.md", line: 8041))
+#metadata((src: "README.md", line: 8043))
 - Indentación de 4 espacios.
 - Longitud máxima de línea: 100 caracteres.
 - Uso de #raw("val") por defecto y #raw("var") solo cuando sea necesario.
@@ -9809,18 +9811,18 @@ Se adoptan las guías #strong[Android Kotlin Style Guide] y #strong[Kotlin Codin
 - Comentarios KDoc para clases y funciones públicas.
 
 #heading(level: 4)[Servicios web] <sec:servicios-web>
-#metadata((src: "README.md", line: 8050, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8052, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8052))
+#metadata((src: "README.md", line: 8054))
 Los servicios web se desarrollan con #strong[Spring Boot] (Java) y #strong[OpenAPI Specification] para la documentación, siguiendo las convenciones oficiales:
 
-#metadata((src: "README.md", line: 8060))
+#metadata((src: "README.md", line: 8062))
 #strong[Tabla 65]
 
-#metadata((src: "README.md", line: 8062))
+#metadata((src: "README.md", line: 8064))
 #emph[Source Code Style Guide & Conventions — Servicios web]
 
-#metadata((src: "README.md", line: 8064, kind: "table"))
+#metadata((src: "README.md", line: 8066, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -9838,13 +9840,13 @@ Los servicios web se desarrollan con #strong[Spring Boot] (Java) y #strong[OpenA
   tline,
 )
 
-#metadata((src: "README.md", line: 8077))
+#metadata((src: "README.md", line: 8079))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8080))
+#metadata((src: "README.md", line: 8082))
 Se adoptan las guías #strong[Google Java Style Guide], #strong[Spring Boot Features] y #strong[Gherkin Conventions for Readable Specifications] (para los archivos #raw(".feature")), con las siguientes reglas adicionales, como se detalla en la #link("#tabla-65")[Tabla 65]:
 
-#metadata((src: "README.md", line: 8082))
+#metadata((src: "README.md", line: 8084))
 - Indentación de 4 espacios.
 - Uso de anotaciones de Spring (#raw("@RestController"), #raw("@Service"), #raw("@Repository")).
 - Uso de DTOs para la transferencia de datos entre capas.
@@ -9853,24 +9855,24 @@ Se adoptan las guías #strong[Google Java Style Guide], #strong[Spring Boot Feat
 - Criterios de aceptación en #strong[Gherkin] con estructura Given-When-Then.
 
 #heading(level: 3)[4.1.4. Software Deployment Configuration] <sec:4-1-4-software-deployment-configuration>
-#metadata((src: "README.md", line: 8089, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 8091, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 8091))
+#metadata((src: "README.md", line: 8093))
 En esta sección se describe la configuración de despliegue de la solución #strong[SaludYa], incluyendo los pasos necesarios para publicar cada uno de los productos digitales que la componen: el Landing Page, las aplicaciones móviles (pacientes y personal de salud) y los servicios web. Asimismo, se presenta el #strong[Deployment Diagram] del modelo C4, que ilustra la distribución física de los componentes de software sobre la infraestructura de hardware y servicios en la nube.
 
 #heading(level: 4)[Landing Page] <sec:landing-page-7>
-#metadata((src: "README.md", line: 8093, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8095, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8095))
+#metadata((src: "README.md", line: 8097))
 El Landing Page se despliega como un sitio estático alojado en #strong[GitHub Pages], aprovechando la integración directa con el repositorio de GitHub del equipo.
 
-#metadata((src: "README.md", line: 8103))
+#metadata((src: "README.md", line: 8105))
 #strong[Tabla 66]
 
-#metadata((src: "README.md", line: 8105))
+#metadata((src: "README.md", line: 8107))
 #emph[Software Deployment Configuration — Landing Page]
 
-#metadata((src: "README.md", line: 8107, kind: "table"))
+#metadata((src: "README.md", line: 8109, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -9885,25 +9887,25 @@ El Landing Page se despliega como un sitio estático alojado en #strong[GitHub P
   tline,
 )
 
-#metadata((src: "README.md", line: 8117))
+#metadata((src: "README.md", line: 8119))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8120))
+#metadata((src: "README.md", line: 8122))
 #strong[Tecnologías involucradas:] HTML5, CSS3, JavaScript (ES6+), Font Awesome 6.5.2, como se detalla en la #link("#tabla-66")[Tabla 66].
 
 #heading(level: 4)[Aplicaciones móviles] <sec:aplicaciones-moviles-2>
-#metadata((src: "README.md", line: 8122, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8124, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8124))
+#metadata((src: "README.md", line: 8126))
 Las aplicaciones móviles se distribuyen mediante #strong[Firebase App Distribution] para las pruebas con usuarios de validación, y se publican en #strong[Google Play Store] y #strong[App Store] para la versión final.
 
-#metadata((src: "README.md", line: 8132))
+#metadata((src: "README.md", line: 8134))
 #strong[Tabla 67]
 
-#metadata((src: "README.md", line: 8134))
+#metadata((src: "README.md", line: 8136))
 #emph[Software Deployment Configuration — Aplicaciones móviles]
 
-#metadata((src: "README.md", line: 8136, kind: "table"))
+#metadata((src: "README.md", line: 8138, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -9918,25 +9920,25 @@ Las aplicaciones móviles se distribuyen mediante #strong[Firebase App Distribut
   tline,
 )
 
-#metadata((src: "README.md", line: 8146))
+#metadata((src: "README.md", line: 8148))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8149))
+#metadata((src: "README.md", line: 8151))
 #strong[Tecnologías involucradas:] Kotlin, Kotlin Multiplatform (KMP), Android Studio, Xcode, Firebase App Distribution, como se detalla en la #link("#tabla-67")[Tabla 67].
 
 #heading(level: 4)[Servicios web] <sec:servicios-web-2>
-#metadata((src: "README.md", line: 8151, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8153, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8153))
+#metadata((src: "README.md", line: 8155))
 Los servicios web se despliegan en #strong[AWS EC2], con base de datos #strong[PostgreSQL] desplegada en la misma infraestructura.
 
-#metadata((src: "README.md", line: 8161))
+#metadata((src: "README.md", line: 8163))
 #strong[Tabla 68]
 
-#metadata((src: "README.md", line: 8163))
+#metadata((src: "README.md", line: 8165))
 #emph[Software Deployment Configuration — Servicios web]
 
-#metadata((src: "README.md", line: 8165, kind: "table"))
+#metadata((src: "README.md", line: 8167, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -9952,25 +9954,25 @@ Los servicios web se despliegan en #strong[AWS EC2], con base de datos #strong[P
   tline,
 )
 
-#metadata((src: "README.md", line: 8176))
+#metadata((src: "README.md", line: 8178))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8179))
+#metadata((src: "README.md", line: 8181))
 #strong[Tecnologías involucradas:] Spring Boot, Java, PostgreSQL, OpenAPI, Swagger UI, AWS EC2, como se detalla en la #link("#tabla-68")[Tabla 68].
 
 #heading(level: 4)[Deployment Diagram (C4 Model)] <sec:deployment-diagram-c4-model>
-#metadata((src: "README.md", line: 8181, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8183, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8183))
+#metadata((src: "README.md", line: 8185))
 El #strong[Deployment Diagram] ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube, como se detalla en la #link("#tabla-69")[Tabla 69]:
 
-#metadata((src: "README.md", line: 8191))
+#metadata((src: "README.md", line: 8193))
 #strong[Tabla 69]
 
-#metadata((src: "README.md", line: 8193))
+#metadata((src: "README.md", line: 8195))
 #emph[Deployment Diagram (C4 Model)]
 
-#metadata((src: "README.md", line: 8195, kind: "table"))
+#metadata((src: "README.md", line: 8197, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -9987,41 +9989,41 @@ El #strong[Deployment Diagram] ilustra la distribución física de los component
   tline,
 )
 
-#metadata((src: "README.md", line: 8207))
+#metadata((src: "README.md", line: 8209))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8210))
+#metadata((src: "README.md", line: 8212))
 #strong[Relaciones entre nodos:]
 
-#metadata((src: "README.md", line: 8212))
+#metadata((src: "README.md", line: 8214))
 - El navegador del visitante accede al Landing Page alojado en GitHub Pages vía HTTPS.
 - Los dispositivos móviles descargan las apps desde Firebase App Distribution (pruebas) o las tiendas oficiales (producción).
 - Las apps se comunican con los servicios web desplegados en AWS EC2 mediante HTTPS/REST.
 - Los servicios web acceden a PostgreSQL para la persistencia de datos.
 - Los servicios web envían notificaciones push a las apps a través de Firebase Cloud Messaging.
 
-#metadata((src: "README.md", line: 8218))
+#metadata((src: "README.md", line: 8220))
 #pagebreak()
 
 #heading(level: 2)[4.2. Landing Page & Mobile Application Implementation] <sec:4-2-landing-page-mobile-application-implementation>
-#metadata((src: "README.md", line: 8221, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 8223, kind: "heading", level: 2))
 
 #heading(level: 3)[4.2.1. Sprint 1] <sec:4-2-1-sprint-1>
-#metadata((src: "README.md", line: 8223, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 8225, kind: "heading", level: 3))
 
 #heading(level: 4)[4.2.1.1. Sprint Planning 1] <sec:4-2-1-1-sprint-planning-1>
-#metadata((src: "README.md", line: 8225, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8227, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8227))
+#metadata((src: "README.md", line: 8229))
 A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 1 de #strong[SaludYa]. En esta reunión el equipo #strong[RuwaLabs] definió el Sprint Goal, el alcance de user stories enfocado en el paciente y la capacidad de trabajo del primer sprint, como se detalla en la #link("#tabla-70")[Tabla 70].
 
-#metadata((src: "README.md", line: 8231))
+#metadata((src: "README.md", line: 8233))
 #strong[Tabla 70]
 
-#metadata((src: "README.md", line: 8233))
+#metadata((src: "README.md", line: 8235))
 #emph[Sprint Planning 1 — resumen de la reunión]
 
-#metadata((src: "README.md", line: 8235, kind: "table"))
+#metadata((src: "README.md", line: 8237, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -10043,37 +10045,37 @@ A continuación se presentan los aspectos principales de la reunión de planific
   tline,
 )
 
-#metadata((src: "README.md", line: 8251))
+#metadata((src: "README.md", line: 8253))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
-#metadata((src: "README.md", line: 8253))
+#metadata((src: "README.md", line: 8255))
 El #strong[Sprint Goal] se redactó siguiendo el enfoque propuesto por Scrum.org, priorizando el resultado (Outcome), el impacto (Impact) y la validación (Event):
 
-#metadata((src: "README.md", line: 8255))
+#metadata((src: "README.md", line: 8257))
 #quote(block: true)[
-  #metadata((src: "README.md", line: 8255))
+  #metadata((src: "README.md", line: 8257))
   #strong[Sprint 1 Goal:] #emph[Nuestro #strong[focus] está en habilitar el registro y la reserva de citas médicas del paciente desde la aplicación móvil y en presentar la propuesta de valor de SaludYa en el Landing Page.]
   
-  #metadata((src: "README.md", line: 8257))
+  #metadata((src: "README.md", line: 8259))
   #emph[Creemos que esto #strong[delivers] un acceso rápido, sin colas e informado a los pacientes de establecimientos públicos de salud.]
   
-  #metadata((src: "README.md", line: 8259))
+  #metadata((src: "README.md", line: 8261))
   #emph[Esto se confirmará (#strong[confirmed]) cuando un paciente pueda verificar su identidad, registrar su cuenta, iniciar sesión, reservar, consultar y cancelar una cita desde la aplicación, y cuando un visitante pueda comprender la propuesta de valor y acceder a la descarga desde el Landing Page publicado.]
 ]
 
-#metadata((src: "README.md", line: 8261))
+#metadata((src: "README.md", line: 8263))
 La #strong[velocity] del Sprint 1 se estableció en #strong[99 story points], equivalente a la suma de la estimación de las 30 user stories comprometidas (US-00 a US-29) del Product Backlog (#link("#tabla-22")[Tabla 22]). Al tratarse del primer sprint del proyecto, el equipo no cuenta con una velocity histórica, por lo que se toma como referencia el total comprometido; este valor se ajustará en los siguientes sprints en función de la velocidad real observada.
 
-#metadata((src: "README.md", line: 8263))
+#metadata((src: "README.md", line: 8265))
 El alcance del Sprint 1 se compone de las user stories orientadas al paciente y al Landing Page, agrupadas por épica, como se detalla en la #link("#tabla-71")[Tabla 71].
 
-#metadata((src: "README.md", line: 8267))
+#metadata((src: "README.md", line: 8269))
 #strong[Tabla 71]
 
-#metadata((src: "README.md", line: 8269))
+#metadata((src: "README.md", line: 8271))
 #emph[Alcance del Sprint 1 por épica]
 
-#metadata((src: "README.md", line: 8271, kind: "table"))
+#metadata((src: "README.md", line: 8273, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -10088,22 +10090,22 @@ El alcance del Sprint 1 se compone de las user stories orientadas al paciente y 
   tline,
 )
 
-#metadata((src: "README.md", line: 8280))
+#metadata((src: "README.md", line: 8282))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.]
 
 #heading(level: 4)[4.2.1.2. Aspect Leaders and Collaborators] <sec:4-2-1-2-aspect-leaders-and-collaborators>
-#metadata((src: "README.md", line: 8282, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8284, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8284))
+#metadata((src: "README.md", line: 8286))
 En el Sprint 1 el equipo organizó el trabajo en función de los productos y bounded contexts incluidos en el alcance: el #strong[Landing Page] y la aplicación móvil del paciente, compuesta por #strong[Identity & Access Management (IAM)], #strong[Appointments & Booking], #strong[Dynamic Waitlist & Reassignment], #strong[Arrival & QR Check-in] y #strong[Hospital Operations & Configuration], junto con los servicios web que los soportan. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de #strong[líder (L)] y quién de #strong[colaborador (C)], como se detalla en la #link("#tabla-72")[Tabla 72]. Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog.
 
-#metadata((src: "README.md", line: 8288))
+#metadata((src: "README.md", line: 8290))
 #strong[Tabla 72]
 
-#metadata((src: "README.md", line: 8290))
+#metadata((src: "README.md", line: 8292))
 #emph[Leadership-and-Collaboration Matrix (LACX) — Sprint 1]
 
-#metadata((src: "README.md", line: 8292, kind: "table"))
+#metadata((src: "README.md", line: 8294, kind: "table"))
 #table(
   columns: 8,
   align: (left, left, center, center, center, center, center, center),
@@ -10117,40 +10119,40 @@ En el Sprint 1 el equipo organizó el trabajo en función de los productos y bou
   tline,
 )
 
-#metadata((src: "README.md", line: 8300))
+#metadata((src: "README.md", line: 8302))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. L = Leader, C = Collaborator.]
 
 #heading(level: 4)[4.2.1.3. Sprint Backlog 1] <sec:4-2-1-3-sprint-backlog-1>
-#metadata((src: "README.md", line: 8302, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 8304))
-El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimiento de las citas del paciente en la aplicación móvil, así como publicar el Landing Page con la propuesta de valor de SaludYa. Para su gestión, el equipo utilizó #strong[Jira] como herramienta de control; el tablero del backlog del proyecto se puede revisar en el siguiente enlace y en la #link("#figura-153")[Figura 153].
+#metadata((src: "README.md", line: 8304, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 8306))
+El Sprint 1 tiene como objetivo habilitar el registro, la reserva y el seguimiento de las citas del paciente en la aplicación móvil, así como publicar el Landing Page con la propuesta de valor de SaludYa. Para su gestión, el equipo utilizó #strong[Jira] como herramienta de control; el tablero del backlog del proyecto se puede revisar en el siguiente enlace y en la #link("#figura-153")[Figura 153].
+
+#metadata((src: "README.md", line: 8308))
 - Link Jira: #link("https://ruwalabs-salud-ya.atlassian.net/")[https://ruwalabs-salud-ya.atlassian.net/]
 
-#metadata((src: "README.md", line: 8310))
+#metadata((src: "README.md", line: 8312))
 #strong[Figura 153]
 
-#metadata((src: "README.md", line: 8312))
+#metadata((src: "README.md", line: 8314))
 #emph[Backlog del proyecto SaludYa en Jira]
 
-#metadata((src: "README.md", line: 8314, kind: "figure", img: "assets/execution/sprint-1/jira-backlog.png"))
+#metadata((src: "README.md", line: 8316, kind: "figure", img: "assets/execution/sprint-1/jira-backlog.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/jira-backlog.png", alt: "Backlog del proyecto SaludYa en Jira", width: 100%)]
 
-#metadata((src: "README.md", line: 8316))
+#metadata((src: "README.md", line: 8318))
 #emph[Nota. Captura del tablero Backlog del proyecto SaludYa en Jira.]
 
-#metadata((src: "README.md", line: 8318))
+#metadata((src: "README.md", line: 8320))
 A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la #link("#tabla-73")[Tabla 73].
 
-#metadata((src: "README.md", line: 8322))
+#metadata((src: "README.md", line: 8324))
 #strong[Tabla 73]
 
-#metadata((src: "README.md", line: 8324))
+#metadata((src: "README.md", line: 8326))
 #emph[Sprint Backlog 1]
 
-#metadata((src: "README.md", line: 8326, kind: "table"))
+#metadata((src: "README.md", line: 8328, kind: "table"))
 #table(
   columns: 6,
   align: (left, left, left, left, left, left),
@@ -10215,31 +10217,31 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
   tline,
 )
 
-#metadata((src: "README.md", line: 8385))
+#metadata((src: "README.md", line: 8387))
 #emph[Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. El estado de las tasks corresponde al avance real del Sprint 1.]
 
 #heading(level: 4)[4.2.1.4. Development Evidence for Sprint Review] <sec:4-2-1-4-development-evidence-for-sprint-review>
-#metadata((src: "README.md", line: 8387, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 8389))
-Durante el Sprint 1 se avanzó en la implementación del backend, la aplicación móvil para pacientes y la landing page de SaludYa. El trabajo se distribuyó en ramas por funcionalidad, con commits que registran la construcción de los módulos y sus ajustes de integración.
+#metadata((src: "README.md", line: 8389, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 8391))
-En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama #raw("develop") incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en AWS EC2.
+Durante el Sprint 1 se avanzó en la implementación del backend, la aplicación móvil para pacientes y la landing page de SaludYa. El trabajo se distribuyó en ramas por funcionalidad, con commits que registran la construcción de los módulos y sus ajustes de integración.
 
 #metadata((src: "README.md", line: 8393))
-En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
+En el backend, desarrollado con Java y Spring Boot, se implementaron las API de identidad y acceso, las reservas y la configuración operativa. La rama #raw("develop") incorpora la integración de IAM con el registro de llegada, los ajustes de reasignación según la tolerancia de check-in y la verificación por correo mediante SMTP. Este último cambio reemplaza el envío de códigos por SMS. También se registraron avances en la recuperación de cuenta y la configuración de despliegue en AWS EC2.
 
 #metadata((src: "README.md", line: 8395))
+En la aplicación Android, desarrollada con Kotlin y Jetpack Compose, se implementaron los recorridos de recuperación de acceso, la presentación y las capas de reservas, la consulta del QR de reserva, el ticket y la cola de atención. El módulo de configuración incorpora la validación y desvinculación de menores. Las ramas de dashboard y notificaciones registran avances en navegación y presentación; estos commits documentan ese alcance, sin implicar que todos sus recorridos estén integrados de extremo a extremo.
+
+#metadata((src: "README.md", line: 8397))
 La landing page reúne la presentación del producto y recibió ajustes en la imagen principal y los vídeos. Su repositorio también contiene el flujo de publicación con GitHub Pages. Los avances de implementación se respaldan con los commits seleccionados de los tres repositorios, como se detalla en la #link("#tabla-74")[Tabla 74].
 
-#metadata((src: "README.md", line: 8399))
+#metadata((src: "README.md", line: 8401))
 #strong[Tabla 74]
 
-#metadata((src: "README.md", line: 8401))
+#metadata((src: "README.md", line: 8403))
 #emph[Commits de implementación de SaludYa para la revisión del Sprint 1]
 
-#metadata((src: "README.md", line: 8403, kind: "table"))
+#metadata((src: "README.md", line: 8405, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -10273,37 +10275,37 @@ La landing page reúne la presentación del producto y recibió ajustes en la im
   tline,
 )
 
-#metadata((src: "README.md", line: 8431))
+#metadata((src: "README.md", line: 8433))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir del historial de Git de los repositorios de SaludYa, consultado el 9 de octubre de 2026. Los mensajes se conservan tal como fueron registrados y las fechas corresponden a la fecha de commit. La columna Branch identifica una rama que contiene el commit; no atribuye su creación original a esa rama. Se presentan commits representativos de implementación, sin incluir los commits de edición del reporte.]
 
 #heading(level: 4)[4.2.1.5. Testing Suite Evidence for Sprint Review] <sec:4-2-1-5-testing-suite-evidence-for-sprint-review>
-#metadata((src: "README.md", line: 8433, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 8435))
-Las pruebas del Sprint 1 verifican las reglas de identidad y acceso, los servicios REST y la protección de los recursos del paciente. En el backend de SaludYa se utiliza JUnit Jupiter con AssertJ para comprobar los componentes de seguridad y validación. Las pruebas de integración emplean Spring Boot Test y MockMvc para ejecutar solicitudes a los endpoints, revisar sus respuestas y comprobar los cambios en la persistencia con el perfil #raw("test").
+#metadata((src: "README.md", line: 8435, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 8437))
-La suite de IAM cubre el registro, la verificación por correo, el inicio de sesión, la recuperación de contraseña, el cierre y la expiración de sesión, y la vinculación de menores. Incluye casos de datos inválidos, correos duplicados, credenciales incorrectas, enlaces vencidos y acceso a información de otro paciente. La protección de recursos también se verifica para reservas, check-in y propuestas de reasignación.
+Las pruebas del Sprint 1 verifican las reglas de identidad y acceso, los servicios REST y la protección de los recursos del paciente. En el backend de SaludYa se utiliza JUnit Jupiter con AssertJ para comprobar los componentes de seguridad y validación. Las pruebas de integración emplean Spring Boot Test y MockMvc para ejecutar solicitudes a los endpoints, revisar sus respuestas y comprobar los cambios en la persistencia con el perfil #raw("test").
 
 #metadata((src: "README.md", line: 8439))
-El archivo #raw("iam.feature") expresa escenarios de aceptación en Gherkin. Su cobertura automatizada se implementa en las clases JUnit de integración y seguridad; el archivo funciona como especificación de aceptación y no cuenta con un ejecutor Cucumber configurado en el proyecto. Algunos de sus escenarios contemplan roles internos, mientras que el alcance móvil de este entregable corresponde al paciente.
+La suite de IAM cubre el registro, la verificación por correo, el inicio de sesión, la recuperación de contraseña, el cierre y la expiración de sesión, y la vinculación de menores. Incluye casos de datos inválidos, correos duplicados, credenciales incorrectas, enlaces vencidos y acceso a información de otro paciente. La protección de recursos también se verifica para reservas, check-in y propuestas de reasignación.
 
 #metadata((src: "README.md", line: 8441))
-En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los commits que incorporan o modifican estas pruebas se presentan con su repositorio, rama, identificador, mensaje original y fecha, como se detalla en la #link("#tabla-75")[Tabla 75].
+El archivo #raw("iam.feature") expresa escenarios de aceptación en Gherkin. Su cobertura automatizada se implementa en las clases JUnit de integración y seguridad; el archivo funciona como especificación de aceptación y no cuenta con un ejecutor Cucumber configurado en el proyecto. Algunos de sus escenarios contemplan roles internos, mientras que el alcance móvil de este entregable corresponde al paciente.
 
 #metadata((src: "README.md", line: 8443))
-Repositorio de pruebas del backend y especificación BDD: #link("https://github.com/RuwaLabs/backend-saludya/tree/develop/saludya/src/test")[RuwaLabs/backend-saludya].
+En Android se utilizan JUnit, pruebas de corrutinas y MockWebServer para validar formularios, ViewModels y repositorios HTTP. Las pruebas instrumentadas con Compose UI Test comprueban las pantallas de identidad, registro, acceso, recuperación y sesión. Los commits que incorporan o modifican estas pruebas se presentan con su repositorio, rama, identificador, mensaje original y fecha, como se detalla en la #link("#tabla-75")[Tabla 75].
 
 #metadata((src: "README.md", line: 8445))
+Repositorio de pruebas del backend y especificación BDD: #link("https://github.com/RuwaLabs/backend-saludya/tree/develop/saludya/src/test")[RuwaLabs/backend-saludya].
+
+#metadata((src: "README.md", line: 8447))
 Repositorio de pruebas Android: #link("https://github.com/RuwaLabs/frontend-kotlin-saludya/tree/iam/app/src")[RuwaLabs/frontend-kotlin-saludya].
 
-#metadata((src: "README.md", line: 8449))
+#metadata((src: "README.md", line: 8451))
 #strong[Tabla 75]
 
-#metadata((src: "README.md", line: 8451))
+#metadata((src: "README.md", line: 8453))
 #emph[Commits relacionados con la suite de pruebas del Sprint 1]
 
-#metadata((src: "README.md", line: 8453, kind: "table"))
+#metadata((src: "README.md", line: 8455, kind: "table"))
 #table(
   columns: 5,
   align: (left, left, left, left, left),
@@ -10319,19 +10321,19 @@ Repositorio de pruebas Android: #link("https://github.com/RuwaLabs/frontend-kotl
   tline,
 )
 
-#metadata((src: "README.md", line: 8463))
+#metadata((src: "README.md", line: 8465))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 9 de octubre de 2026. Se verificaron los archivos de prueba modificados por cada commit. Los mensajes y fechas se conservan del repositorio; la rama indicada contiene el commit. Esta sección presenta la suite implementada; las capturas de los componentes publicados y las referencias visuales de la aplicación se presentan en el apartado 4.2.1.6.]
 
-#metadata((src: "README.md", line: 8465))
+#metadata((src: "README.md", line: 8467))
 Los archivos de prueba y su alcance se organizan por componente y tipo de testing, como se detalla en la #link("#tabla-76")[Tabla 76].
 
-#metadata((src: "README.md", line: 8469))
+#metadata((src: "README.md", line: 8471))
 #strong[Tabla 76]
 
-#metadata((src: "README.md", line: 8471))
+#metadata((src: "README.md", line: 8473))
 #emph[Suite de pruebas y escenarios de aceptación de SaludYa para el Sprint 1]
 
-#metadata((src: "README.md", line: 8473, kind: "table"))
+#metadata((src: "README.md", line: 8475, kind: "table"))
 #table(
   columns: 4,
   align: (left, left, left, left),
@@ -10347,642 +10349,642 @@ Los archivos de prueba y su alcance se organizan por componente y tipo de testin
   tline,
 )
 
-#metadata((src: "README.md", line: 8483))
+#metadata((src: "README.md", line: 8485))
 #emph[Nota. Elaboración del equipo RuwaLabs a partir de los archivos de prueba del backend y la aplicación Android. La verificación de registro y acceso se realiza por correo, de acuerdo con el cambio implementado en IAM.]
 
 #heading(level: 4)[4.2.1.6. Execution Evidence for Sprint Review] <sec:4-2-1-6-execution-evidence-for-sprint-review>
-#metadata((src: "README.md", line: 8485, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 8487, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 8487))
+#metadata((src: "README.md", line: 8489))
 En esta sección se presentan las vistas publicadas de la Landing Page y la documentación del backend de SaludYa, junto con las pantallas del paciente diseñadas para la aplicación Android. Las capturas permiten revisar la presentación de la solución, los contratos disponibles en Swagger y los recorridos previstos para el paciente durante el Sprint 1.
 
 #heading(level: 5)[Landing Page] <sec:landing-page-8>
-#metadata((src: "README.md", line: 8489, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 8491))
-La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador de escritorio.
+#metadata((src: "README.md", line: 8491, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 8493))
+La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador de escritorio.
+
+#metadata((src: "README.md", line: 8495))
 Enlace de despliegue: #link("https://ruwalabs.github.io/saludya-landing/")[Landing Page de SaludYa].
 
 #heading(level: 6)[Inicio de la Landing Page] <sec:inicio-de-la-landing-page>
-#metadata((src: "README.md", line: 8495, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8497, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8497))
+#metadata((src: "README.md", line: 8499))
 La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la #link("#figura-154")[Figura 154].
 
-#metadata((src: "README.md", line: 8501))
+#metadata((src: "README.md", line: 8503))
 #strong[Figura 154]
 
-#metadata((src: "README.md", line: 8503))
+#metadata((src: "README.md", line: 8505))
 #emph[Inicio de la Landing Page — SaludYa]
 
-#metadata((src: "README.md", line: 8505, kind: "figure", img: "assets/execution/sprint-1/landing-home.jpg"))
+#metadata((src: "README.md", line: 8507, kind: "figure", img: "assets/execution/sprint-1/landing-home.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-home.jpg", alt: "Inicio de la Landing Page de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8507))
+#metadata((src: "README.md", line: 8509))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Problema identificado] <sec:problema-identificado>
-#metadata((src: "README.md", line: 8509, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8511, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8511))
+#metadata((src: "README.md", line: 8513))
 La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la #link("#figura-155")[Figura 155].
 
-#metadata((src: "README.md", line: 8515))
+#metadata((src: "README.md", line: 8517))
 #strong[Figura 155]
 
-#metadata((src: "README.md", line: 8517))
+#metadata((src: "README.md", line: 8519))
 #emph[Problema identificado — SaludYa]
 
-#metadata((src: "README.md", line: 8519, kind: "figure", img: "assets/execution/sprint-1/landing-problem.jpg"))
+#metadata((src: "README.md", line: 8521, kind: "figure", img: "assets/execution/sprint-1/landing-problem.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-problem.jpg", alt: "Problema identificado de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8521))
+#metadata((src: "README.md", line: 8523))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Propuesta de solución] <sec:propuesta-de-solucion>
-#metadata((src: "README.md", line: 8523, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8525, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8525))
+#metadata((src: "README.md", line: 8527))
 La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la #link("#figura-156")[Figura 156].
 
-#metadata((src: "README.md", line: 8529))
+#metadata((src: "README.md", line: 8531))
 #strong[Figura 156]
 
-#metadata((src: "README.md", line: 8531))
+#metadata((src: "README.md", line: 8533))
 #emph[Propuesta de solución — SaludYa]
 
-#metadata((src: "README.md", line: 8533, kind: "figure", img: "assets/execution/sprint-1/landing-solution.jpg"))
+#metadata((src: "README.md", line: 8535, kind: "figure", img: "assets/execution/sprint-1/landing-solution.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-solution.jpg", alt: "Propuesta de solución de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8535))
+#metadata((src: "README.md", line: 8537))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Modelo de negocio] <sec:modelo-de-negocio>
-#metadata((src: "README.md", line: 8537, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8539, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8539))
+#metadata((src: "README.md", line: 8541))
 La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la #link("#figura-157")[Figura 157].
 
-#metadata((src: "README.md", line: 8543))
+#metadata((src: "README.md", line: 8545))
 #strong[Figura 157]
 
-#metadata((src: "README.md", line: 8545))
+#metadata((src: "README.md", line: 8547))
 #emph[Modelo de negocio — SaludYa]
 
-#metadata((src: "README.md", line: 8547, kind: "figure", img: "assets/execution/sprint-1/landing-business.jpg"))
+#metadata((src: "README.md", line: 8549, kind: "figure", img: "assets/execution/sprint-1/landing-business.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-business.jpg", alt: "Modelo de negocio de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8549))
+#metadata((src: "README.md", line: 8551))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Testimonios] <sec:testimonios>
-#metadata((src: "README.md", line: 8551, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8553, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8553))
+#metadata((src: "README.md", line: 8555))
 Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la #link("#figura-158")[Figura 158].
 
-#metadata((src: "README.md", line: 8557))
+#metadata((src: "README.md", line: 8559))
 #strong[Figura 158]
 
-#metadata((src: "README.md", line: 8559))
+#metadata((src: "README.md", line: 8561))
 #emph[Testimonios — SaludYa]
 
-#metadata((src: "README.md", line: 8561, kind: "figure", img: "assets/execution/sprint-1/landing-testimonials.jpg"))
+#metadata((src: "README.md", line: 8563, kind: "figure", img: "assets/execution/sprint-1/landing-testimonials.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-testimonials.jpg", alt: "Testimonios de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8563))
+#metadata((src: "README.md", line: 8565))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Presentación de RuwaLabs] <sec:presentacion-de-ruwalabs>
-#metadata((src: "README.md", line: 8565, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8567, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8567))
+#metadata((src: "README.md", line: 8569))
 La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la #link("#figura-159")[Figura 159].
 
-#metadata((src: "README.md", line: 8571))
+#metadata((src: "README.md", line: 8573))
 #strong[Figura 159]
 
-#metadata((src: "README.md", line: 8573))
+#metadata((src: "README.md", line: 8575))
 #emph[Presentación de RuwaLabs — SaludYa]
 
-#metadata((src: "README.md", line: 8575, kind: "figure", img: "assets/execution/sprint-1/landing-about.jpg"))
+#metadata((src: "README.md", line: 8577, kind: "figure", img: "assets/execution/sprint-1/landing-about.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-about.jpg", alt: "Presentación de RuwaLabs de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8577))
+#metadata((src: "README.md", line: 8579))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Disponibilidad de la aplicación] <sec:disponibilidad-de-la-aplicacion>
-#metadata((src: "README.md", line: 8579, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8581, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8581))
+#metadata((src: "README.md", line: 8583))
 La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la #link("#figura-160")[Figura 160].
 
-#metadata((src: "README.md", line: 8585))
+#metadata((src: "README.md", line: 8587))
 #strong[Figura 160]
 
-#metadata((src: "README.md", line: 8587))
+#metadata((src: "README.md", line: 8589))
 #emph[Disponibilidad de la aplicación — SaludYa]
 
-#metadata((src: "README.md", line: 8589, kind: "figure", img: "assets/execution/sprint-1/landing-download.jpg"))
+#metadata((src: "README.md", line: 8591, kind: "figure", img: "assets/execution/sprint-1/landing-download.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/landing-download.jpg", alt: "Disponibilidad de la aplicación de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8591))
+#metadata((src: "README.md", line: 8593))
 #emph[Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.]
 
 #heading(level: 5)[Aplicación Android] <sec:aplicacion-android>
-#metadata((src: "README.md", line: 8593, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 8595))
-La aplicación Android de SaludYa se distribuye mediante un APK de prueba generado a partir de la rama #raw("develop") del repositorio Kotlin, commit #raw("74a4b7f"). La compilación finalizó correctamente y se verificó la firma del paquete. Esta versión requiere Android 7.0 o superior y utiliza el backend publicado en #raw("http://3.129.217.49:8080/").
+#metadata((src: "README.md", line: 8595, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 8597))
-Enlace de despliegue: #link("https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/raw/refs/heads/develop/assets/downloads/SaludYa-develop-debug.apk")[Descargar APK de SaludYa para Android].
+La aplicación Android de SaludYa se distribuye mediante un APK de prueba generado a partir de la rama #raw("develop") del repositorio Kotlin, commit #raw("74a4b7f"). La compilación finalizó correctamente y se verificó la firma del paquete. Esta versión requiere Android 7.0 o superior y utiliza el backend publicado en #raw("http://3.129.217.49:8080/").
 
 #metadata((src: "README.md", line: 8599))
-Las imágenes siguientes presentan las pantallas del paciente. Las notas de cada figura identifican su origen.
+Enlace de despliegue: #link("https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/raw/refs/heads/develop/assets/downloads/SaludYa-develop-debug.apk")[Descargar APK de SaludYa para Android].
 
 #metadata((src: "README.md", line: 8601))
+Las imágenes siguientes presentan las pantallas del paciente. Las notas de cada figura identifican su origen.
+
+#metadata((src: "README.md", line: 8603))
 Archivo de interfaz: #link("https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=2-2")[SaludYa en Figma].
 
 #heading(level: 6)[Bienvenida] <sec:bienvenida>
-#metadata((src: "README.md", line: 8603, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8605, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8605))
+#metadata((src: "README.md", line: 8607))
 La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la #link("#figura-161")[Figura 161].
 
-#metadata((src: "README.md", line: 8609))
+#metadata((src: "README.md", line: 8611))
 #strong[Figura 161]
 
-#metadata((src: "README.md", line: 8611))
+#metadata((src: "README.md", line: 8613))
 #emph[Bienvenida — SaludYa]
 
-#metadata((src: "README.md", line: 8613, kind: "figure", img: "assets/execution/sprint-1/android-bienvenida.png"))
+#metadata((src: "README.md", line: 8615, kind: "figure", img: "assets/execution/sprint-1/android-bienvenida.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-bienvenida.png", alt: "Bienvenida de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8615))
+#metadata((src: "README.md", line: 8617))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Verificación de identidad] <sec:verificacion-de-identidad>
-#metadata((src: "README.md", line: 8617, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8619, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8619))
+#metadata((src: "README.md", line: 8621))
 El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la #link("#figura-162")[Figura 162].
 
-#metadata((src: "README.md", line: 8623))
+#metadata((src: "README.md", line: 8625))
 #strong[Figura 162]
 
-#metadata((src: "README.md", line: 8625))
+#metadata((src: "README.md", line: 8627))
 #emph[Verificación de identidad — SaludYa]
 
-#metadata((src: "README.md", line: 8627, kind: "figure", img: "assets/execution/sprint-1/android-identidad.png"))
+#metadata((src: "README.md", line: 8629, kind: "figure", img: "assets/execution/sprint-1/android-identidad.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-identidad.png", alt: "Verificación de identidad de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8629))
+#metadata((src: "README.md", line: 8631))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Registro de credenciales] <sec:registro-de-credenciales>
-#metadata((src: "README.md", line: 8631, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8633, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8633))
+#metadata((src: "README.md", line: 8635))
 El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la #link("#figura-163")[Figura 163].
 
-#metadata((src: "README.md", line: 8637))
+#metadata((src: "README.md", line: 8639))
 #strong[Figura 163]
 
-#metadata((src: "README.md", line: 8639))
+#metadata((src: "README.md", line: 8641))
 #emph[Registro de credenciales — SaludYa]
 
-#metadata((src: "README.md", line: 8641, kind: "figure", img: "assets/execution/sprint-1/android-credenciales.png"))
+#metadata((src: "README.md", line: 8643, kind: "figure", img: "assets/execution/sprint-1/android-credenciales.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-credenciales.png", alt: "Registro de credenciales de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8643))
+#metadata((src: "README.md", line: 8645))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Verificación por correo] <sec:verificacion-por-correo>
-#metadata((src: "README.md", line: 8645, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8647, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8647))
+#metadata((src: "README.md", line: 8649))
 La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la #link("#figura-164")[Figura 164].
 
-#metadata((src: "README.md", line: 8651))
+#metadata((src: "README.md", line: 8653))
 #strong[Figura 164]
 
-#metadata((src: "README.md", line: 8653))
+#metadata((src: "README.md", line: 8655))
 #emph[Verificación por correo — SaludYa]
 
-#metadata((src: "README.md", line: 8655, kind: "figure", img: "assets/execution/sprint-1/android-verificar-correo.png"))
+#metadata((src: "README.md", line: 8657, kind: "figure", img: "assets/execution/sprint-1/android-verificar-correo.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-verificar-correo.png", alt: "Verificación por correo de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8657))
+#metadata((src: "README.md", line: 8659))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Inicio de sesión] <sec:inicio-de-sesion>
-#metadata((src: "README.md", line: 8659, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8661, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8661))
+#metadata((src: "README.md", line: 8663))
 El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la #link("#figura-165")[Figura 165].
 
-#metadata((src: "README.md", line: 8665))
+#metadata((src: "README.md", line: 8667))
 #strong[Figura 165]
 
-#metadata((src: "README.md", line: 8667))
+#metadata((src: "README.md", line: 8669))
 #emph[Inicio de sesión — SaludYa]
 
-#metadata((src: "README.md", line: 8669, kind: "figure", img: "assets/execution/sprint-1/android-login.png"))
+#metadata((src: "README.md", line: 8671, kind: "figure", img: "assets/execution/sprint-1/android-login.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-login.png", alt: "Inicio de sesión de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8671))
+#metadata((src: "README.md", line: 8673))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Recuperación de acceso] <sec:recuperacion-de-acceso>
-#metadata((src: "README.md", line: 8673, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8675, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8675))
+#metadata((src: "README.md", line: 8677))
 El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la #link("#figura-166")[Figura 166].
 
-#metadata((src: "README.md", line: 8679))
+#metadata((src: "README.md", line: 8681))
 #strong[Figura 166]
 
-#metadata((src: "README.md", line: 8681))
+#metadata((src: "README.md", line: 8683))
 #emph[Recuperación de acceso — SaludYa]
 
-#metadata((src: "README.md", line: 8683, kind: "figure", img: "assets/execution/sprint-1/android-recuperacion.png"))
+#metadata((src: "README.md", line: 8685, kind: "figure", img: "assets/execution/sprint-1/android-recuperacion.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-recuperacion.png", alt: "Recuperación de acceso de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8685))
+#metadata((src: "README.md", line: 8687))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Restablecimiento de contraseña] <sec:restablecimiento-de-contrasena>
-#metadata((src: "README.md", line: 8687, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8689, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8689))
+#metadata((src: "README.md", line: 8691))
 El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la #link("#figura-167")[Figura 167].
 
-#metadata((src: "README.md", line: 8693))
+#metadata((src: "README.md", line: 8695))
 #strong[Figura 167]
 
-#metadata((src: "README.md", line: 8695))
+#metadata((src: "README.md", line: 8697))
 #emph[Restablecimiento de contraseña — SaludYa]
 
-#metadata((src: "README.md", line: 8697, kind: "figure", img: "assets/execution/sprint-1/android-nueva-contrasena.png"))
+#metadata((src: "README.md", line: 8699, kind: "figure", img: "assets/execution/sprint-1/android-nueva-contrasena.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-nueva-contrasena.png", alt: "Restablecimiento de contraseña de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8699))
+#metadata((src: "README.md", line: 8701))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Inicio del paciente] <sec:inicio-del-paciente>
-#metadata((src: "README.md", line: 8701, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8703, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8703))
+#metadata((src: "README.md", line: 8705))
 La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la #link("#figura-168")[Figura 168].
 
-#metadata((src: "README.md", line: 8707))
+#metadata((src: "README.md", line: 8709))
 #strong[Figura 168]
 
-#metadata((src: "README.md", line: 8709))
+#metadata((src: "README.md", line: 8711))
 #emph[Inicio del paciente — SaludYa]
 
-#metadata((src: "README.md", line: 8711, kind: "figure", img: "assets/execution/sprint-1/android-inicio.png"))
+#metadata((src: "README.md", line: 8713, kind: "figure", img: "assets/execution/sprint-1/android-inicio.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-inicio.png", alt: "Inicio del paciente de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8713))
+#metadata((src: "README.md", line: 8715))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Reserva de cita] <sec:reserva-de-cita>
-#metadata((src: "README.md", line: 8715, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8717, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8717))
+#metadata((src: "README.md", line: 8719))
 El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la #link("#figura-169")[Figura 169].
 
-#metadata((src: "README.md", line: 8721))
+#metadata((src: "README.md", line: 8723))
 #strong[Figura 169]
 
-#metadata((src: "README.md", line: 8723))
+#metadata((src: "README.md", line: 8725))
 #emph[Reserva de cita — SaludYa]
 
-#metadata((src: "README.md", line: 8725, kind: "figure", img: "assets/execution/sprint-1/android-reserva.png"))
+#metadata((src: "README.md", line: 8727, kind: "figure", img: "assets/execution/sprint-1/android-reserva.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-reserva.png", alt: "Reserva de cita de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8727))
+#metadata((src: "README.md", line: 8729))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Confirmación de reserva] <sec:confirmacion-de-reserva>
-#metadata((src: "README.md", line: 8729, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8731, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8731))
+#metadata((src: "README.md", line: 8733))
 La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la #link("#figura-170")[Figura 170].
 
-#metadata((src: "README.md", line: 8735))
+#metadata((src: "README.md", line: 8737))
 #strong[Figura 170]
 
-#metadata((src: "README.md", line: 8737))
+#metadata((src: "README.md", line: 8739))
 #emph[Confirmación de reserva — SaludYa]
 
-#metadata((src: "README.md", line: 8739, kind: "figure", img: "assets/execution/sprint-1/android-confirmacion.png"))
+#metadata((src: "README.md", line: 8741, kind: "figure", img: "assets/execution/sprint-1/android-confirmacion.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-confirmacion.png", alt: "Confirmación de reserva de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8741))
+#metadata((src: "README.md", line: 8743))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Registro de llegada] <sec:registro-de-llegada>
-#metadata((src: "README.md", line: 8743, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8745, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8745))
+#metadata((src: "README.md", line: 8747))
 La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la #link("#figura-171")[Figura 171].
 
-#metadata((src: "README.md", line: 8749))
+#metadata((src: "README.md", line: 8751))
 #strong[Figura 171]
 
-#metadata((src: "README.md", line: 8751))
+#metadata((src: "README.md", line: 8753))
 #emph[Registro de llegada — SaludYa]
 
-#metadata((src: "README.md", line: 8753, kind: "figure", img: "assets/execution/sprint-1/android-llegada.png"))
+#metadata((src: "README.md", line: 8755, kind: "figure", img: "assets/execution/sprint-1/android-llegada.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-llegada.png", alt: "Registro de llegada de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8755))
+#metadata((src: "README.md", line: 8757))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Ticket de atención] <sec:ticket-de-atencion>
-#metadata((src: "README.md", line: 8757, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8759, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8759))
+#metadata((src: "README.md", line: 8761))
 La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la #link("#figura-172")[Figura 172].
 
-#metadata((src: "README.md", line: 8763))
+#metadata((src: "README.md", line: 8765))
 #strong[Figura 172]
 
-#metadata((src: "README.md", line: 8765))
+#metadata((src: "README.md", line: 8767))
 #emph[Ticket de atención — SaludYa]
 
-#metadata((src: "README.md", line: 8767, kind: "figure", img: "assets/execution/sprint-1/android-ticket.png"))
+#metadata((src: "README.md", line: 8769, kind: "figure", img: "assets/execution/sprint-1/android-ticket.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-ticket.png", alt: "Ticket de atención de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8769))
+#metadata((src: "README.md", line: 8771))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Perfil del paciente] <sec:perfil-del-paciente>
-#metadata((src: "README.md", line: 8771, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8773, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8773))
+#metadata((src: "README.md", line: 8775))
 El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la #link("#figura-173")[Figura 173].
 
-#metadata((src: "README.md", line: 8777))
+#metadata((src: "README.md", line: 8779))
 #strong[Figura 173]
 
-#metadata((src: "README.md", line: 8779))
+#metadata((src: "README.md", line: 8781))
 #emph[Perfil del paciente — SaludYa]
 
-#metadata((src: "README.md", line: 8781, kind: "figure", img: "assets/execution/sprint-1/android-perfil.png"))
+#metadata((src: "README.md", line: 8783, kind: "figure", img: "assets/execution/sprint-1/android-perfil.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-perfil.png", alt: "Perfil del paciente de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8783))
+#metadata((src: "README.md", line: 8785))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Menores vinculados] <sec:menores-vinculados>
-#metadata((src: "README.md", line: 8785, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8787, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8787))
+#metadata((src: "README.md", line: 8789))
 La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la #link("#figura-174")[Figura 174].
 
-#metadata((src: "README.md", line: 8791))
+#metadata((src: "README.md", line: 8793))
 #strong[Figura 174]
 
-#metadata((src: "README.md", line: 8793))
+#metadata((src: "README.md", line: 8795))
 #emph[Menores vinculados — SaludYa]
 
-#metadata((src: "README.md", line: 8795, kind: "figure", img: "assets/execution/sprint-1/android-menores.png"))
+#metadata((src: "README.md", line: 8797, kind: "figure", img: "assets/execution/sprint-1/android-menores.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-menores.png", alt: "Menores vinculados de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8797))
+#metadata((src: "README.md", line: 8799))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 6)[Notificaciones del paciente] <sec:notificaciones-del-paciente>
-#metadata((src: "README.md", line: 8799, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8801, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8801))
+#metadata((src: "README.md", line: 8803))
 La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la #link("#figura-175")[Figura 175].
 
-#metadata((src: "README.md", line: 8805))
+#metadata((src: "README.md", line: 8807))
 #strong[Figura 175]
 
-#metadata((src: "README.md", line: 8807))
+#metadata((src: "README.md", line: 8809))
 #emph[Notificaciones del paciente — SaludYa]
 
-#metadata((src: "README.md", line: 8809, kind: "figure", img: "assets/execution/sprint-1/android-notificaciones.png"))
+#metadata((src: "README.md", line: 8811, kind: "figure", img: "assets/execution/sprint-1/android-notificaciones.png"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/android-notificaciones.png", alt: "Notificaciones del paciente de SaludYa", width: 240pt)]
 
-#metadata((src: "README.md", line: 8811))
+#metadata((src: "README.md", line: 8813))
 #emph[Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.]
 
 #heading(level: 5)[Backend: documentación publicada en Swagger] <sec:backend-documentacion-publicada-en-swagger>
-#metadata((src: "README.md", line: 8813, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 8815))
-El backend dispone de una interfaz Swagger UI que presenta los endpoints y sus contratos HTTP. Las capturas muestran la documentación accesible del servicio desplegado; no constituyen resultados de pruebas ni acreditan por sí solas la ejecución exitosa de las operaciones de negocio.
+#metadata((src: "README.md", line: 8815, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 8817))
+El backend dispone de una interfaz Swagger UI que presenta los endpoints y sus contratos HTTP. Las capturas muestran la documentación accesible del servicio desplegado; no constituyen resultados de pruebas ni acreditan por sí solas la ejecución exitosa de las operaciones de negocio.
+
+#metadata((src: "README.md", line: 8819))
 Enlace de despliegue: #link("http://3.129.217.49:8080/swagger-ui/index.html#/")[Swagger UI de SaludYa].
 
 #heading(level: 6)[Vista general de Swagger] <sec:vista-general-de-swagger>
-#metadata((src: "README.md", line: 8819, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8821, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8821))
+#metadata((src: "README.md", line: 8823))
 La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la #link("#figura-176")[Figura 176].
 
-#metadata((src: "README.md", line: 8825))
+#metadata((src: "README.md", line: 8827))
 #strong[Figura 176]
 
-#metadata((src: "README.md", line: 8827))
+#metadata((src: "README.md", line: 8829))
 #emph[Vista general de Swagger — SaludYa]
 
-#metadata((src: "README.md", line: 8829, kind: "figure", img: "assets/execution/sprint-1/swagger-overview.jpg"))
+#metadata((src: "README.md", line: 8831, kind: "figure", img: "assets/execution/sprint-1/swagger-overview.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-overview.jpg", alt: "Vista general de Swagger de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8831))
+#metadata((src: "README.md", line: 8833))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Verificación de identidad en el backend] <sec:verificacion-de-identidad-en-el-backend>
-#metadata((src: "README.md", line: 8833, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8835, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8835))
+#metadata((src: "README.md", line: 8837))
 El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la #link("#figura-177")[Figura 177].
 
-#metadata((src: "README.md", line: 8839))
+#metadata((src: "README.md", line: 8841))
 #strong[Figura 177]
 
-#metadata((src: "README.md", line: 8841))
+#metadata((src: "README.md", line: 8843))
 #emph[Verificación de identidad en el backend — SaludYa]
 
-#metadata((src: "README.md", line: 8843, kind: "figure", img: "assets/execution/sprint-1/swagger-identity.jpg"))
+#metadata((src: "README.md", line: 8845, kind: "figure", img: "assets/execution/sprint-1/swagger-identity.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-identity.jpg", alt: "Verificación de identidad en el backend de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8845))
+#metadata((src: "README.md", line: 8847))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Cuentas y credenciales] <sec:cuentas-y-credenciales>
-#metadata((src: "README.md", line: 8847, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8849, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8849))
+#metadata((src: "README.md", line: 8851))
 El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la #link("#figura-178")[Figura 178].
 
-#metadata((src: "README.md", line: 8853))
+#metadata((src: "README.md", line: 8855))
 #strong[Figura 178]
 
-#metadata((src: "README.md", line: 8855))
+#metadata((src: "README.md", line: 8857))
 #emph[Cuentas y credenciales — SaludYa]
 
-#metadata((src: "README.md", line: 8857, kind: "figure", img: "assets/execution/sprint-1/swagger-accounts.jpg"))
+#metadata((src: "README.md", line: 8859, kind: "figure", img: "assets/execution/sprint-1/swagger-accounts.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-accounts.jpg", alt: "Cuentas y credenciales de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8859))
+#metadata((src: "README.md", line: 8861))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Perfil del paciente] <sec:perfil-del-paciente-2>
-#metadata((src: "README.md", line: 8861, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8863, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8863))
+#metadata((src: "README.md", line: 8865))
 El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la #link("#figura-179")[Figura 179].
 
-#metadata((src: "README.md", line: 8867))
+#metadata((src: "README.md", line: 8869))
 #strong[Figura 179]
 
-#metadata((src: "README.md", line: 8869))
+#metadata((src: "README.md", line: 8871))
 #emph[Perfil del paciente — SaludYa]
 
-#metadata((src: "README.md", line: 8871, kind: "figure", img: "assets/execution/sprint-1/swagger-patients.jpg"))
+#metadata((src: "README.md", line: 8873, kind: "figure", img: "assets/execution/sprint-1/swagger-patients.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-patients.jpg", alt: "Perfil del paciente de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8873))
+#metadata((src: "README.md", line: 8875))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Vinculación de menores] <sec:vinculacion-de-menores>
-#metadata((src: "README.md", line: 8875, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8877, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8877))
+#metadata((src: "README.md", line: 8879))
 El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la #link("#figura-180")[Figura 180].
 
-#metadata((src: "README.md", line: 8881))
+#metadata((src: "README.md", line: 8883))
 #strong[Figura 180]
 
-#metadata((src: "README.md", line: 8883))
+#metadata((src: "README.md", line: 8885))
 #emph[Vinculación de menores — SaludYa]
 
-#metadata((src: "README.md", line: 8885, kind: "figure", img: "assets/execution/sprint-1/swagger-minors.jpg"))
+#metadata((src: "README.md", line: 8887, kind: "figure", img: "assets/execution/sprint-1/swagger-minors.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-minors.jpg", alt: "Vinculación de menores de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8887))
+#metadata((src: "README.md", line: 8889))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Reservas de citas] <sec:reservas-de-citas>
-#metadata((src: "README.md", line: 8889, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8891, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8891))
+#metadata((src: "README.md", line: 8893))
 El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la #link("#figura-181")[Figura 181].
 
-#metadata((src: "README.md", line: 8895))
+#metadata((src: "README.md", line: 8897))
 #strong[Figura 181]
 
-#metadata((src: "README.md", line: 8897))
+#metadata((src: "README.md", line: 8899))
 #emph[Reservas de citas — SaludYa]
 
-#metadata((src: "README.md", line: 8899, kind: "figure", img: "assets/execution/sprint-1/swagger-appointments.jpg"))
+#metadata((src: "README.md", line: 8901, kind: "figure", img: "assets/execution/sprint-1/swagger-appointments.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-appointments.jpg", alt: "Reservas de citas de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8901))
+#metadata((src: "README.md", line: 8903))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Disponibilidad de horarios] <sec:disponibilidad-de-horarios>
-#metadata((src: "README.md", line: 8903, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8905, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8905))
+#metadata((src: "README.md", line: 8907))
 El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la #link("#figura-182")[Figura 182].
 
-#metadata((src: "README.md", line: 8909))
+#metadata((src: "README.md", line: 8911))
 #strong[Figura 182]
 
-#metadata((src: "README.md", line: 8911))
+#metadata((src: "README.md", line: 8913))
 #emph[Disponibilidad de horarios — SaludYa]
 
-#metadata((src: "README.md", line: 8913, kind: "figure", img: "assets/execution/sprint-1/swagger-time-slots.jpg"))
+#metadata((src: "README.md", line: 8915, kind: "figure", img: "assets/execution/sprint-1/swagger-time-slots.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-time-slots.jpg", alt: "Disponibilidad de horarios de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8915))
+#metadata((src: "README.md", line: 8917))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Registro de asistencia] <sec:registro-de-asistencia>
-#metadata((src: "README.md", line: 8917, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8919, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8919))
+#metadata((src: "README.md", line: 8921))
 El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la #link("#figura-183")[Figura 183].
 
-#metadata((src: "README.md", line: 8923))
+#metadata((src: "README.md", line: 8925))
 #strong[Figura 183]
 
-#metadata((src: "README.md", line: 8925))
+#metadata((src: "README.md", line: 8927))
 #emph[Registro de asistencia — SaludYa]
 
-#metadata((src: "README.md", line: 8927, kind: "figure", img: "assets/execution/sprint-1/swagger-check-in.jpg"))
+#metadata((src: "README.md", line: 8929, kind: "figure", img: "assets/execution/sprint-1/swagger-check-in.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-check-in.jpg", alt: "Registro de asistencia de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8929))
+#metadata((src: "README.md", line: 8931))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Cola de atención] <sec:cola-de-atencion>
-#metadata((src: "README.md", line: 8931, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8933, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8933))
+#metadata((src: "README.md", line: 8935))
 El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la #link("#figura-184")[Figura 184].
 
-#metadata((src: "README.md", line: 8937))
+#metadata((src: "README.md", line: 8939))
 #strong[Figura 184]
 
-#metadata((src: "README.md", line: 8939))
+#metadata((src: "README.md", line: 8941))
 #emph[Cola de atención — SaludYa]
 
-#metadata((src: "README.md", line: 8941, kind: "figure", img: "assets/execution/sprint-1/swagger-queue.jpg"))
+#metadata((src: "README.md", line: 8943, kind: "figure", img: "assets/execution/sprint-1/swagger-queue.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-queue.jpg", alt: "Cola de atención de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8943))
+#metadata((src: "README.md", line: 8945))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 6)[Ofertas de reasignación] <sec:ofertas-de-reasignacion>
-#metadata((src: "README.md", line: 8945, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8947, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8947))
+#metadata((src: "README.md", line: 8949))
 El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la #link("#figura-185")[Figura 185].
 
-#metadata((src: "README.md", line: 8951))
+#metadata((src: "README.md", line: 8953))
 #strong[Figura 185]
 
-#metadata((src: "README.md", line: 8953))
+#metadata((src: "README.md", line: 8955))
 #emph[Ofertas de reasignación — SaludYa]
 
-#metadata((src: "README.md", line: 8955, kind: "figure", img: "assets/execution/sprint-1/swagger-reassignment.jpg"))
+#metadata((src: "README.md", line: 8957, kind: "figure", img: "assets/execution/sprint-1/swagger-reassignment.jpg"))
 #block(breakable: false)[#fit-image("/assets/execution/sprint-1/swagger-reassignment.jpg", alt: "Ofertas de reasignación de SaludYa", width: 750pt)]
 
-#metadata((src: "README.md", line: 8957))
+#metadata((src: "README.md", line: 8959))
 #emph[Nota. Captura de Swagger UI del backend desplegado de SaludYa, tomada el 9 de octubre de 2026.]
 
 #heading(level: 4)[4.2.1.7. Services Documentation Evidence for Sprint Review] <sec:4-2-1-7-services-documentation-evidence-for-sprint-review>
-#metadata((src: "README.md", line: 8959, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 8961))
-En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción #emph[Try it out]. Se documentaron los servicios de los cinco #emph[bounded contexts] del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
+#metadata((src: "README.md", line: 8961, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 8963))
-La especificación OpenAPI se publica en #raw("/v3/api-docs") y se exportó al repositorio de Web Services (#raw("docs/api/openapi.json")) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema #raw("bearerAuth")); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con #raw("@SecurityRequirements") y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción #emph[Try it out]. Se documentaron los servicios de los cinco #emph[bounded contexts] del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
 
 #metadata((src: "README.md", line: 8965))
+La especificación OpenAPI se publica en #raw("/v3/api-docs") y se exportó al repositorio de Web Services (#raw("docs/api/openapi.json")) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema #raw("bearerAuth")); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con #raw("@SecurityRequirements") y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+
+#metadata((src: "README.md", line: 8967))
 - #strong[Swagger UI (documentación desplegada):] #link("http://3.129.217.49:8080/swagger-ui/index.html")[http://3.129.217.49:8080/swagger-ui/index.html]
 - #strong[Especificación OpenAPI (JSON):] #link("http://3.129.217.49:8080/v3/api-docs")[http://3.129.217.49:8080/v3/api-docs]
 - #strong[Repositorio de Web Services:] #link("https://github.com/RuwaLabs/backend-saludya")[https://github.com/RuwaLabs/backend-saludya]
 
 #heading(level: 5)[Commits relacionados con la documentación para este Sprint] <sec:commits-relacionados-con-la-documentacion-para-este-sprint>
-#metadata((src: "README.md", line: 8969, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 8971, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 8971, kind: "table"))
+#metadata((src: "README.md", line: 8973, kind: "table"))
 #table(
   columns: 3,
   align: (left, left, left),
@@ -10997,15 +10999,15 @@ La especificación OpenAPI se publica en #raw("/v3/api-docs") y se exportó al r
 )
 
 #heading(level: 5)[Tabla de endpoints documentados] <sec:tabla-de-endpoints-documentados>
-#metadata((src: "README.md", line: 8979, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 8981, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 8981))
+#metadata((src: "README.md", line: 8983))
 A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es #raw("http://3.129.217.49:8080").
 
 #heading(level: 6)[IAM — Identity & Access Management] <sec:iam-identity-access-management>
-#metadata((src: "README.md", line: 8983, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 8985, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 8985, kind: "table"))
+#metadata((src: "README.md", line: 8987, kind: "table"))
 #table(
   columns: 9,
   align: (center, left, center, left, left, left, left, left, left),
@@ -11040,9 +11042,9 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 )
 
 #heading(level: 6)[Appointments & Booking] <sec:appointments-booking>
-#metadata((src: "README.md", line: 9013, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9015, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9015, kind: "table"))
+#metadata((src: "README.md", line: 9017, kind: "table"))
 #table(
   columns: 9,
   align: (center, left, center, left, left, left, left, left, left),
@@ -11067,9 +11069,9 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 )
 
 #heading(level: 6)[Arrival & QR Check-in] <sec:arrival-qr-check-in>
-#metadata((src: "README.md", line: 9033, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9035, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9035, kind: "table"))
+#metadata((src: "README.md", line: 9037, kind: "table"))
 #table(
   columns: 9,
   align: (center, left, center, left, left, left, left, left, left),
@@ -11094,9 +11096,9 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 )
 
 #heading(level: 6)[Reassignment] <sec:reassignment>
-#metadata((src: "README.md", line: 9053, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9055, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9055, kind: "table"))
+#metadata((src: "README.md", line: 9057, kind: "table"))
 #table(
   columns: 9,
   align: (center, left, center, left, left, left, left, left, left),
@@ -11109,9 +11111,9 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 )
 
 #heading(level: 6)[Hospital Operations & Configuration] <sec:hospital-operations-configuration>
-#metadata((src: "README.md", line: 9061, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9063, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9063, kind: "table"))
+#metadata((src: "README.md", line: 9065, kind: "table"))
 #table(
   columns: 9,
   align: (center, left, center, left, left, left, left, left, left),
@@ -11125,81 +11127,81 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 )
 
 #heading(level: 5)[Evidencias de interacción] <sec:evidencias-de-interaccion>
-#metadata((src: "README.md", line: 9070, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 9072, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 9072))
+#metadata((src: "README.md", line: 9074))
 A continuación se presenta una muestra del modelo de evidencia de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el JSON de envío, la captura y una descripción. Los endpoints elegidos son públicos.
 
 #heading(level: 6)[1. #raw("POST /api/v1/identity-verifications") \-  Verificar identidad por DNI] <sec:1-post-api-v1-identity-verifications-verificar-identidad-por-dni>
-#metadata((src: "README.md", line: 9074, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9076, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9076))
+#metadata((src: "README.md", line: 9078))
 #strong[JSON de envío:]
 
-#metadata((src: "README.md", line: 9077))
+#metadata((src: "README.md", line: 9079))
 #raw("{ \"dni\": \"74500834\", \"name\": \"Neo Daniel\", \"lastname\": \"Ramos Mera\" }", lang: "json", block: true)
 
-#metadata((src: "README.md", line: 9081, kind: "figure", img: "assets/Services%20Deployment/identity_verifications.jpeg"))
+#metadata((src: "README.md", line: 9083, kind: "figure", img: "assets/Services%20Deployment/identity_verifications.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Services Deployment/identity_verifications.jpeg", alt: "Swagger UI - POST /api/v1/identity-verifications", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9085))
+#metadata((src: "README.md", line: 9087))
 #emph[Figura 186. Ejecución de #raw("POST /api/v1/identity-verifications") en Swagger UI con datos de muestra; respuesta #raw("200") con #raw("{\"verified\": true}").]
 
 #heading(level: 6)[2. #raw("POST /api/v1/identity-verifications/exists") \-  Comprobar si un DNI es conocido] <sec:2-post-api-v1-identity-verifications-exists-comprobar-si-un-dni-es-conocido>
-#metadata((src: "README.md", line: 9087, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9089, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9089))
+#metadata((src: "README.md", line: 9091))
 #strong[JSON de envío:]
 
-#metadata((src: "README.md", line: 9090))
+#metadata((src: "README.md", line: 9092))
 #raw("{ \"dni\": \"74500834\" }", lang: "json", block: true)
 
-#metadata((src: "README.md", line: 9094, kind: "figure", img: "assets/Services%20Deployment/identity_verifications_exists.jpeg"))
+#metadata((src: "README.md", line: 9096, kind: "figure", img: "assets/Services%20Deployment/identity_verifications_exists.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Services Deployment/identity_verifications_exists.jpeg", alt: "Swagger UI - POST /api/v1/identity-verifications/exists", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9098))
+#metadata((src: "README.md", line: 9100))
 #emph[Figura 187. Ejecución de #raw("POST /api/v1/identity-verifications/exists"); respuesta #raw("200") con #raw("{\"exists\": true}").]
 
 #heading(level: 6)[3. #raw("POST /api/v1/user-accounts/send-verification-code") \-  Enviar código de verificación] <sec:3-post-api-v1-user-accounts-send-verification-code-enviar-codigo-de-verificacion>
-#metadata((src: "README.md", line: 9100, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9102, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9102))
+#metadata((src: "README.md", line: 9104))
 #strong[JSON de envío:]
 
-#metadata((src: "README.md", line: 9103))
+#metadata((src: "README.md", line: 9105))
 #raw("{ \"email\": \"doriangray292929@gmail.com\" }", lang: "json", block: true)
 
-#metadata((src: "README.md", line: 9107, kind: "figure", img: "assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg"))
+#metadata((src: "README.md", line: 9109, kind: "figure", img: "assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Services Deployment/useraccounts_sendverificationcode.jpeg", alt: "Swagger UI - POST /api/v1/user-accounts/send-verification-code", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9111))
+#metadata((src: "README.md", line: 9113))
 #emph[Figura 188. Ejecución de #raw("POST /api/v1/user-accounts/send-verification-code"); respuesta #raw("202") (sin cuerpo).]
 
 #heading(level: 6)[4. #raw("POST /api/v1/user-accounts/recover-password") \-  Solicitar recuperación de contraseña] <sec:4-post-api-v1-user-accounts-recover-password-solicitar-recuperacion-de-contrasena>
-#metadata((src: "README.md", line: 9113, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9115, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9115))
+#metadata((src: "README.md", line: 9117))
 #strong[JSON de envío:]
 
-#metadata((src: "README.md", line: 9116))
+#metadata((src: "README.md", line: 9118))
 #raw("{ \"email\": \"doriangray292929@gmail.com\" }", lang: "json", block: true)
 
-#metadata((src: "README.md", line: 9120, kind: "figure", img: "assets/Services%20Deployment/useraccounts_recoverpassword.jpeg"))
+#metadata((src: "README.md", line: 9122, kind: "figure", img: "assets/Services%20Deployment/useraccounts_recoverpassword.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Services Deployment/useraccounts_recoverpassword.jpeg", alt: "Swagger UI - POST /api/v1/user-accounts/recover-password", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9124))
+#metadata((src: "README.md", line: 9126))
 #emph[Figura 189. Ejecución de #raw("POST /api/v1/user-accounts/recover-password"); respuesta #raw("202") con un mensaje genérico.]
 
 #heading(level: 4)[4.2.1.8. Software Deployment Evidence for Sprint Review] <sec:4-2-1-8-software-deployment-evidence-for-sprint-review>
-#metadata((src: "README.md", line: 9126, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 9128))
-En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
+#metadata((src: "README.md", line: 9128, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 9130))
-Las actividades realizadas durante el Sprint fueron:
+En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
 
 #metadata((src: "README.md", line: 9132))
+Las actividades realizadas durante el Sprint fueron:
+
+#metadata((src: "README.md", line: 9134))
 - #strong[Creación de la cuenta y de los recursos en el proveedor cloud (AWS):] alta de la cuenta, creación del #emph[key pair] para el acceso SSH, lanzamiento de la instancia EC2 y configuración de la red (security group con los puertos necesarios).
 - #strong[Configuración del servidor:] instalación de Java 25 (Temurin), PostgreSQL y Git, y creación del usuario y la base de datos del backend.
 - #strong[Externalización de secretos:] las variables sensibles (JWT, QR, clave de cifrado de notificaciones, SMTP, ApiPeru y bootstrap) se almacenan en #raw("/etc/saludya/saludya.env"), fuera del repositorio, y systemd las carga mediante #raw("EnvironmentFile"), de modo que sobreviven a cada despliegue.
@@ -11207,18 +11209,18 @@ Las actividades realizadas durante el Sprint fueron:
 - #strong[Verificación:] el backend queda disponible y se comprueba consultando el endpoint #raw("/v3/api-docs").
 
 #heading(level: 5)[Scripts de despliegue] <sec:scripts-de-despliegue>
-#metadata((src: "README.md", line: 9138, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 9140, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 9140))
+#metadata((src: "README.md", line: 9142))
 Para automatizar el aprovisionamiento y el despliegue del backend se utilizaron tres scripts de Bash.
 
 #heading(level: 6)[#raw("setup-server.sh")] <sec:setup-server-sh>
-#metadata((src: "README.md", line: 9142, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 9144))
-Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
+#metadata((src: "README.md", line: 9144, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 9146))
+Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
+
+#metadata((src: "README.md", line: 9148))
 #raw("#!/usr/bin/env bash
 set -euo pipefail
 
@@ -11280,12 +11282,12 @@ echo \"=========================================\"
 echo \"Siguiente paso ->  sudo bash setup-env.sh\"", lang: "bash", block: true)
 
 #heading(level: 6)[#raw("setup-env.sh")] <sec:setup-env-sh>
-#metadata((src: "README.md", line: 9208, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 9210))
-Genera el archivo #raw("/etc/saludya/saludya.env") con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos #raw("600") para mantener los secretos protegidos.
+#metadata((src: "README.md", line: 9210, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 9212))
+Genera el archivo #raw("/etc/saludya/saludya.env") con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos #raw("600") para mantener los secretos protegidos.
+
+#metadata((src: "README.md", line: 9214))
 #raw("#!/usr/bin/env bash
 #
 # setup-env.sh - Crea /etc/saludya/saludya.env con TODAS las variables del backend.
@@ -11355,12 +11357,12 @@ echo \"Editar   ->  sudo nano /etc/saludya/saludya.env\"
 echo \"Aplicar  ->  sudo systemctl restart saludya\"", lang: "bash", block: true)
 
 #heading(level: 6)[#raw("deploy.sh")] <sec:deploy-sh>
-#metadata((src: "README.md", line: 9282, kind: "heading", level: 6))
-
-#metadata((src: "README.md", line: 9284))
-Despliega o actualiza el backend en la EC2: obtiene el código (#raw("git clone") la primera vez o #raw("git pull") después), compila el JAR con Maven (#raw("./mvnw")), (re)genera el servicio #raw("systemd"), lo reinicia y verifica que el backend responda.
+#metadata((src: "README.md", line: 9284, kind: "heading", level: 6))
 
 #metadata((src: "README.md", line: 9286))
+Despliega o actualiza el backend en la EC2: obtiene el código (#raw("git clone") la primera vez o #raw("git pull") después), compila el JAR con Maven (#raw("./mvnw")), (re)genera el servicio #raw("systemd"), lo reinicia y verifica que el backend responda.
+
+#metadata((src: "README.md", line: 9288))
 #raw("#!/usr/bin/env bash
 #
 # deploy.sh - Despliega o ACTUALIZA el backend SaludYa en la EC2.
@@ -11439,233 +11441,233 @@ echo
 echo \"Logs en vivo ->  journalctl -u $SERVICE -f\"", lang: "bash", block: true)
 
 #heading(level: 5)[Evidencias de despliegue] <sec:evidencias-de-despliegue>
-#metadata((src: "README.md", line: 9365, kind: "heading", level: 5))
+#metadata((src: "README.md", line: 9367, kind: "heading", level: 5))
 
-#metadata((src: "README.md", line: 9367))
+#metadata((src: "README.md", line: 9369))
 A continuación se presentan las capturas del proceso de despliegue en AWS.
 
 #heading(level: 6)[Creación del key pair (acceso SSH)] <sec:creacion-del-key-pair-acceso-ssh>
-#metadata((src: "README.md", line: 9369, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9371, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9371, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg"))
+#metadata((src: "README.md", line: 9373, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Backend Deployment Evidence/key pari (login).jpeg", alt: "Creación del key pair en AWS", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9375))
+#metadata((src: "README.md", line: 9377))
 #emph[Figura 190. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.]
 
 #heading(level: 6)[Instancia EC2 (resumen)] <sec:instancia-ec2-resumen>
-#metadata((src: "README.md", line: 9377, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9379, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9379, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg"))
+#metadata((src: "README.md", line: 9381, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Backend Deployment Evidence/instance summary.jpeg", alt: "Resumen de la instancia EC2", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9383))
+#metadata((src: "README.md", line: 9385))
 #emph[Figura 191. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).]
 
 #heading(level: 6)[Configuración de red (security group)] <sec:configuracion-de-red-security-group>
-#metadata((src: "README.md", line: 9385, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9387, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9387, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/network%20settings.jpeg"))
+#metadata((src: "README.md", line: 9389, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/network%20settings.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Backend Deployment Evidence/network settings.jpeg", alt: "Configuración de red de la instancia", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9391))
+#metadata((src: "README.md", line: 9393))
 #emph[Figura 192. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.]
 
 #heading(level: 6)[Acceso SSH a la instancia] <sec:acceso-ssh-a-la-instancia>
-#metadata((src: "README.md", line: 9393, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9395, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9395, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg"))
+#metadata((src: "README.md", line: 9397, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Backend Deployment Evidence/ssh terminal login.jpeg", alt: "Acceso SSH a la instancia EC2", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9399))
+#metadata((src: "README.md", line: 9401))
 #emph[Figura 193. Acceso por SSH a la instancia EC2 del backend.]
 
 #heading(level: 6)[Scripts de despliegue en el servidor] <sec:scripts-de-despliegue-en-el-servidor>
-#metadata((src: "README.md", line: 9401, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9403, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9403, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg"))
+#metadata((src: "README.md", line: 9405, kind: "figure", img: "assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Backend Deployment Evidence/ls to see server-setup server-env and delploy sh files.jpeg", alt: "Listado de los scripts de despliegue en el servidor", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9407))
+#metadata((src: "README.md", line: 9409))
 #emph[Figura 194. Listado del directorio del servidor donde se observan los scripts de despliegue (#raw("setup-server.sh"), #raw("setup-env.sh") y #raw("deploy.sh")).]
 
 #heading(level: 5)[Landing Page] <sec:landing-page-9>
-#metadata((src: "README.md", line: 9410, kind: "heading", level: 5))
-
-#metadata((src: "README.md", line: 9412))
-El Landing Page de SaludYa se desplegó como un sitio estático utilizando #strong[GitHub Pages], aprovechando la integración nativa con el repositorio del proyecto y la ausencia de costos asociados para proyectos académicos. El despliegue se realizó sobre la rama #raw("main") del repositorio #link("https://github.com/RuwaLabs/saludya-landing")[#raw("RuwaLabs/saludya-landing")], y el sitio quedó publicado de forma automática en la URL:
+#metadata((src: "README.md", line: 9412, kind: "heading", level: 5))
 
 #metadata((src: "README.md", line: 9414))
-#strong[URL de despliegue:] #link("https://ruwalabs.github.io/saludya-landing/")[https://ruwalabs.github.io/saludya-landing/]
+El Landing Page de SaludYa se desplegó como un sitio estático utilizando #strong[GitHub Pages], aprovechando la integración nativa con el repositorio del proyecto y la ausencia de costos asociados para proyectos académicos. El despliegue se realizó sobre la rama #raw("main") del repositorio #link("https://github.com/RuwaLabs/saludya-landing")[#raw("RuwaLabs/saludya-landing")], y el sitio quedó publicado de forma automática en la URL:
 
 #metadata((src: "README.md", line: 9416))
-Las actividades realizadas durante el Sprint para el despliegue del Landing Page fueron:
+#strong[URL de despliegue:] #link("https://ruwalabs.github.io/saludya-landing/")[https://ruwalabs.github.io/saludya-landing/]
 
 #metadata((src: "README.md", line: 9418))
+Las actividades realizadas durante el Sprint para el despliegue del Landing Page fueron:
+
+#metadata((src: "README.md", line: 9420))
 - #strong[Creación del repositorio en GitHub:] se creó el repositorio #raw("saludya-landing") dentro de la organización RuwaLabs, con la estructura de carpetas #raw("assets/css"), #raw("assets/js"), #raw("assets/img"), #raw("assets/locales") y el archivo #raw("index.html") en la raíz.
 - #strong[Configuración de GitHub Pages:] se habilitó la publicación del sitio desde la rama #raw("main") y la carpeta #raw("/ (root)") del repositorio.
 - #strong[Automatización del despliegue:] se incorporó un flujo de trabajo de GitHub Actions (#raw(".github/workflows/deploy.yml")) que publica automáticamente el sitio cada vez que se hace #raw("push") a la rama #raw("main").
 - #strong[Verificación del despliegue:] se comprobó el acceso público al sitio mediante la URL generada por GitHub Pages y se validó la carga de estilos, scripts e imágenes.
 
-#metadata((src: "README.md", line: 9423))
+#metadata((src: "README.md", line: 9425))
 A continuación se presentan las capturas de las actividades realizadas.
 
 #heading(level: 6)[Configuración de GitHub Pages] <sec:configuracion-de-github-pages>
-#metadata((src: "README.md", line: 9425, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9427, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9427))
+#metadata((src: "README.md", line: 9429))
 En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama #raw("main") y la carpeta #raw("/ (root)"). La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
 
-#metadata((src: "README.md", line: 9431, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png"))
+#metadata((src: "README.md", line: 9433, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Landing-page Deployment Evidence/landing-github-pages-settings.png", alt: "Configuración de GitHub Pages en el repositorio del Landing Page", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9435))
+#metadata((src: "README.md", line: 9437))
 #emph[Figura 195. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio #raw("saludya-landing") en GitHub.]
 
 #heading(level: 6)[Flujo de trabajo de GitHub Actions] <sec:flujo-de-trabajo-de-github-actions>
-#metadata((src: "README.md", line: 9437, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9439, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9439))
+#metadata((src: "README.md", line: 9441))
 Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (#raw(".github/workflows/deploy.yml")) que se ejecuta en cada #raw("push") a la rama #raw("main"). El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
 
-#metadata((src: "README.md", line: 9443, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png"))
+#metadata((src: "README.md", line: 9445, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Landing-page Deployment Evidence/landing-github-actions.png", alt: "Ejecución exitosa del workflow de despliegue", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9447))
+#metadata((src: "README.md", line: 9449))
 #emph[Figura 196. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio #raw("saludya-landing"), donde se observa la ejecución exitosa del workflow #raw("Deploy to GitHub Pages").]
 
 #heading(level: 6)[Verificación del despliegue] <sec:verificacion-del-despliegue>
-#metadata((src: "README.md", line: 9449, kind: "heading", level: 6))
+#metadata((src: "README.md", line: 9451, kind: "heading", level: 6))
 
-#metadata((src: "README.md", line: 9451))
+#metadata((src: "README.md", line: 9453))
 Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
 
-#metadata((src: "README.md", line: 9455, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-deployed.png"))
+#metadata((src: "README.md", line: 9457, kind: "figure", img: "assets/Landing-page%20Deployment%20Evidence/landing-deployed.png"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Landing-page Deployment Evidence/landing-deployed.png", alt: "Landing Page de SaludYa publicado en GitHub Pages", width: 100%)]]]
 
-#metadata((src: "README.md", line: 9459))
+#metadata((src: "README.md", line: 9461))
 #emph[Figura 197. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en #raw("https://ruwalabs.github.io/saludya-landing/").]
 
-#metadata((src: "README.md", line: 9461))
+#metadata((src: "README.md", line: 9463))
 Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama #raw("main"), cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
 
 #heading(level: 4)[4.2.1.9. Team Collaboration Insights during Sprint] <sec:4-2-1-9-team-collaboration-insights-during-sprint>
-#metadata((src: "README.md", line: 9465, kind: "heading", level: 4))
-
-#metadata((src: "README.md", line: 9467))
-Durante el Sprint 1, el equipo #strong[RuwaLabs] implementó el #strong[Landing Page], los #strong[Web Services] (backend) y la #strong[aplicación móvil para pacientes] (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
+#metadata((src: "README.md", line: 9467, kind: "heading", level: 4))
 
 #metadata((src: "README.md", line: 9469))
+Durante el Sprint 1, el equipo #strong[RuwaLabs] implementó el #strong[Landing Page], los #strong[Web Services] (backend) y la #strong[aplicación móvil para pacientes] (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
+
+#metadata((src: "README.md", line: 9471))
 La colaboración se registra en GitHub a través de los commits y #emph[pull requests] de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con #strong[11 pull requests] integrados y #strong[50 commits] en #raw("develop") realizados por #strong[5 autores]—, como se observa en la #link("#figura-198")[Figura 198] y la #link("#figura-199")[Figura 199].
 
-#metadata((src: "README.md", line: 9473))
+#metadata((src: "README.md", line: 9475))
 #strong[Figura 198]
 
-#metadata((src: "README.md", line: 9475))
+#metadata((src: "README.md", line: 9477))
 #emph[Actividad del equipo durante el Sprint 1]
 
-#metadata((src: "README.md", line: 9477, kind: "figure", img: "assets/insight_tb1_overview.png"))
+#metadata((src: "README.md", line: 9479, kind: "figure", img: "assets/insight_tb1_overview.png"))
 #block(breakable: false)[#fit-image("/assets/insight_tb1_overview.png", alt: "Actividad del equipo durante el Sprint 1 de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 9479))
+#metadata((src: "README.md", line: 9481))
 #emph[Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.]
 
-#metadata((src: "README.md", line: 9483))
+#metadata((src: "README.md", line: 9485))
 #strong[Figura 199]
 
-#metadata((src: "README.md", line: 9485))
+#metadata((src: "README.md", line: 9487))
 #emph[Contribuciones por integrante durante el Sprint 1]
 
-#metadata((src: "README.md", line: 9487, kind: "figure", img: "assets/insight_tb1_contributors.png"))
+#metadata((src: "README.md", line: 9489, kind: "figure", img: "assets/insight_tb1_contributors.png"))
 #block(breakable: false)[#fit-image("/assets/insight_tb1_contributors.png", alt: "Contribuciones por integrante durante el Sprint 1 de SaludYa", width: 100%)]
 
-#metadata((src: "README.md", line: 9489))
+#metadata((src: "README.md", line: 9491))
 #emph[Nota. Captura del panel Contributors de GitHub correspondiente al periodo del Sprint 1.]
 
-#metadata((src: "README.md", line: 9491))
+#metadata((src: "README.md", line: 9493))
 La implementación se distribuyó de la siguiente manera:
 
-#metadata((src: "README.md", line: 9493))
+#metadata((src: "README.md", line: 9495))
 - #strong[Web Services (backend):] Didier (Identity & Access Management), Paula (Appointments & Booking), Neo (Dynamic Waitlist & Reassignment) y Alise (Arrival & QR Check-in), con Rodrigo a cargo de Hospital Operations & Configuration.
 - #strong[Mobile Applications (frontend):] Didier (IAM), Paula (reservas), Alise (check-in), Rodrigo (configuración) y Neo (dashboard y notificaciones/reasignación).
 - #strong[Landing Page:] Rodrigo.
 
-#metadata((src: "README.md", line: 9497))
+#metadata((src: "README.md", line: 9499))
 La interpretación de los analíticos muestra que la actividad del Sprint se concentró en la integración de los bounded contexts y en la construcción de los recorridos del paciente, con una participación equilibrada de los cinco integrantes del equipo.
 
 #heading(level: 2)[4.3. Validation Interviews] <sec:4-3-validation-interviews>
-#metadata((src: "README.md", line: 9499, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 9501, kind: "heading", level: 2))
 
 #heading(level: 3)[4.3.1. Diseño de Entrevistas] <sec:4-3-1-diseno-de-entrevistas>
-#metadata((src: "README.md", line: 9501, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 9503))
-En esta sección se presenta el diseño de las entrevistas de validación aplicadas a los segmentos objetivo de #strong[SaludYa]. Se elaboraron preguntas principales y complementarias orientadas a evaluar la comprensión de la propuesta de valor, la navegación, el diseño visual y la intención de uso de la #strong[Landing Page], considerando buenas prácticas de diseño de entrevistas. La información recolectada —características demográficas (edad, distrito de residencia, ocupación), habilidades, afinidad tecnológica, dispositivos preferidos, canales de interacción, objetivos y frustraciones— sirve como insumo para construir y sustentar los arquetipos (User Personas).
+#metadata((src: "README.md", line: 9503, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 9505))
+En esta sección se presenta el diseño de las entrevistas de validación aplicadas a los segmentos objetivo de #strong[SaludYa]. Se elaboraron preguntas principales y complementarias orientadas a evaluar la comprensión de la propuesta de valor, la navegación, el diseño visual y la intención de uso de la #strong[Landing Page], considerando buenas prácticas de diseño de entrevistas. La información recolectada —características demográficas (edad, distrito de residencia, ocupación), habilidades, afinidad tecnológica, dispositivos preferidos, canales de interacción, objetivos y frustraciones— sirve como insumo para construir y sustentar los arquetipos (User Personas).
+
+#metadata((src: "README.md", line: 9507))
 Las entrevistas se dirigieron a los dos segmentos identificados: #strong[Segmento 1 — Pacientes de zonas urbanas periféricas] y #strong[Segmento 2 — Personal asistencial y administrativo de establecimientos públicos de salud]. Los bloques de preguntas fueron los siguientes.
 
 #heading(level: 4)[Perfil del participante] <sec:perfil-del-participante>
-#metadata((src: "README.md", line: 9507, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9509, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9509))
+#metadata((src: "README.md", line: 9511))
 - ¿Cuál es su edad y distrito de residencia?
 - ¿Con qué frecuencia usa el celular para trámites y qué tan cómodo se siente, en una escala del 1 al 10?
 - ¿Cuál es su rol en el establecimiento de salud? (segmento personal)
 
 #heading(level: 4)[Comprensión de la propuesta de valor] <sec:comprension-de-la-propuesta-de-valor>
-#metadata((src: "README.md", line: 9513, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9515, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9515))
+#metadata((src: "README.md", line: 9517))
 - Al abrir la página, ¿qué cree que ofrece SaludYa? Explíquelo con sus palabras.
 - ¿Entendió para quién está dirigida la solución, es decir, pacientes y personal de salud?
 - ¿El mensaje principal, “Citas médicas sin colas…”, le resulta claro?
 - ¿Identificó qué problema resuelve la solución y cómo lo resuelve?
 
 #heading(level: 4)[Navegación y arquitectura de la información] <sec:navegacion-y-arquitectura-de-la-informacion>
-#metadata((src: "README.md", line: 9520, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9522, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9522))
+#metadata((src: "README.md", line: 9524))
 - ¿Encontró fácilmente las secciones: Producto, Videos, Testimonios, Sobre nosotros y Descarga?
 - ¿La organización de la información le pareció lógica y ordenada?
 - ¿Usó el selector de idioma (español o inglés)? ¿Le resultó útil?
 - ¿Faltó alguna sección que esperaba encontrar?
 
 #heading(level: 4)[Diseño visual, usabilidad y diseño inclusivo] <sec:diseno-visual-usabilidad-y-diseno-inclusivo>
-#metadata((src: "README.md", line: 9527, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9529, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9529))
+#metadata((src: "README.md", line: 9531))
 - ¿El diseño le pareció claro y agradable a la vista?
 - ¿El contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad?
 - ¿Los botones de acción, como descargar y conocer más, son visibles y fáciles de ubicar?
 - ¿La página funcionó bien en su celular, en la versión móvil?
 
 #heading(level: 4)[Contenido] <sec:contenido-2>
-#metadata((src: "README.md", line: 9534, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9536, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9536))
+#metadata((src: "README.md", line: 9538))
 - ¿Los testimonios influyeron en su confianza hacia SaludYa?
 - ¿La sección de modelo de negocio o “sobre nosotros” aportó algo a su decisión?
 
 #heading(level: 4)[Conversión e intención] <sec:conversion-e-intencion>
-#metadata((src: "README.md", line: 9539, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9541, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9541))
+#metadata((src: "README.md", line: 9543))
 - ¿Descargaría la aplicación? ¿Por qué sí o por qué no?
 - ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
 - Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
 - ¿Hay algo más que quiera comentar?
 
 #heading(level: 3)[4.3.2. Registro de Entrevistas] <sec:4-3-2-registro-de-entrevistas>
-#metadata((src: "README.md", line: 9546, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9548, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9548))
+#metadata((src: "README.md", line: 9550))
 Para cada segmento se realizaron entrevistas de validación de la #strong[Landing Page], registradas en video como evidencia. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
 
 #heading(level: 4)[Entrevista 1 — Segmento: Personal administrativo] <sec:entrevista-1-segmento-personal-administrativo>
-#metadata((src: "README.md", line: 9550, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9552, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9552, kind: "table"))
+#metadata((src: "README.md", line: 9554, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -11681,145 +11683,145 @@ Para cada segmento se realizaron entrevistas de validación de la #strong[Landin
   tline,
 )
 
-#metadata((src: "README.md", line: 9562, kind: "figure", img: "assets/Entrevistas%20landing%20page/Alisee.jpeg"))
+#metadata((src: "README.md", line: 9564, kind: "figure", img: "assets/Entrevistas%20landing%20page/Alisee.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Entrevistas landing page/Alisee.jpeg", alt: "Cuadro de video de la entrevista 1 (personal administrativo)", width: 70%)]]]
 
-#metadata((src: "README.md", line: 9566))
+#metadata((src: "README.md", line: 9568))
 #emph[Figura 200. Cuadro de video de la entrevista 1 — personal administrativo.]
 
-#metadata((src: "README.md", line: 9568))
+#metadata((src: "README.md", line: 9570))
 #strong[Resumen.] Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. #strong[Características del arquetipo:] adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
-#metadata((src: "README.md", line: 9570))
+#metadata((src: "README.md", line: 9572))
 #strong[Transcripción.]
 
-#metadata((src: "README.md", line: 9572))
+#metadata((src: "README.md", line: 9574))
 #strong[Entrevistador:] Ah, buenas tardes. Bueno, vamos a empezar con la entrevista para la validación de la landing page. Bueno, eh, vamos a empezar con la presentación, así.
 
-#metadata((src: "README.md", line: 9574))
+#metadata((src: "README.md", line: 9576))
 #strong[Entrevistador:] Que le preguntaría, ¿cuál es su edad y subdistrito de residencia?
 
-#metadata((src: "README.md", line: 9576))
+#metadata((src: "README.md", line: 9578))
 #strong[Entrevistado:] Buenas tardes, joven. Mi edad es 46 años y mi distrito es Santa.
 
-#metadata((src: "README.md", line: 9578))
+#metadata((src: "README.md", line: 9580))
 #strong[Entrevistador:] Okay. ¿Con qué frecuencia usa el celular para trámites y qué tan cómodo se siente?
 
-#metadata((src: "README.md", line: 9580))
+#metadata((src: "README.md", line: 9582))
 #strong[Entrevistado:] Uso mi celular a diario para trámites y en una escala del 1 al 10 me sentiría en un siete de comodidad.
 
-#metadata((src: "README.md", line: 9582))
+#metadata((src: "README.md", line: 9584))
 #strong[Entrevistador:] Okay. ¿Y cuál es su rol en el establecimiento de salud? Eh, me encargo de la administración.
 
-#metadata((src: "README.md", line: 9584))
+#metadata((src: "README.md", line: 9586))
 #strong[Entrevistador:] Okay. Eh, al abrir la página, ¿qué cree que ofrece Salud?
 
-#metadata((src: "README.md", line: 9586))
+#metadata((src: "README.md", line: 9588))
 #strong[Entrevistado:] Por lo que he podido contemplar, están ofreciendo soluciones al aglomeramiento del público y a disipar, ¿no?, este tema de las citas, que es lo más tedioso que puede tener una persona cuando tiene alguna emergencia médica.
 
-#metadata((src: "README.md", line: 9588))
+#metadata((src: "README.md", line: 9590))
 #strong[Entrevistado:] Y por el lado del personal, o sea, por el lado de la institución de salud, eh, también brinda una agilidad para la atención de los pacientes.
 
-#metadata((src: "README.md", line: 9590))
+#metadata((src: "README.md", line: 9592))
 #strong[Entrevistador:] Okay. Y entonces, el mensaje principal, "citas médicas sin colas", ¿le resulta claro?
 
-#metadata((src: "README.md", line: 9592))
+#metadata((src: "README.md", line: 9594))
 #strong[Entrevistado:] Claro, este, clarísimo. Se refiere a, por lo que yo puedo entender y por lo que me parece que cualquier persona podría entender, es dejar de lado las colas y empezar a ir de una forma más práctica, ¿no?, para así conseguir el resultado de una buena atención.
 
-#metadata((src: "README.md", line: 9594))
+#metadata((src: "README.md", line: 9596))
 #strong[Entrevistador:] ¿Encontró fácilmente las secciones, como por ejemplo los productos, el testimonio, sobre nosotros, los videos?
 
-#metadata((src: "README.md", line: 9596))
+#metadata((src: "README.md", line: 9598))
 #strong[Entrevistado:] Sí, este, me parece una forma ordenada y con una facilidad para poder encontrar lo que uno necesita.
 
-#metadata((src: "README.md", line: 9598))
+#metadata((src: "README.md", line: 9600))
 #strong[Entrevistador:] ¿Usó quizás el selector de idioma para español o inglés, o lo habrá notado en la aplicación, eh, perdón, en la page?
 
-#metadata((src: "README.md", line: 9600))
+#metadata((src: "README.md", line: 9602))
 #strong[Entrevistado:] Hm, mira, este, yo lo abrí y salió en español de frente.
 
-#metadata((src: "README.md", line: 9602))
+#metadata((src: "README.md", line: 9604))
 #strong[Entrevistador:] Okay. Okay. Eh, ¿quizás faltó alguna sección que esperaba encontrar?
 
-#metadata((src: "README.md", line: 9604))
+#metadata((src: "README.md", line: 9606))
 #strong[Entrevistado:] Mira, la verdad es la primera vez que veo una app de este tipo y no, para mí está todo correcto.
 
-#metadata((src: "README.md", line: 9606))
+#metadata((src: "README.md", line: 9608))
 #strong[Entrevistador:] Okay. ¿El diseño le pareció claro y agradable a la vista?
 
-#metadata((src: "README.md", line: 9608))
+#metadata((src: "README.md", line: 9610))
 #strong[Entrevistado:] \[Resoplido\]
 
-#metadata((src: "README.md", line: 9610))
+#metadata((src: "README.md", line: 9612))
 #strong[Entrevistado:] Personalmente sí, porque he visto otras páginas que tienen diseños como que un poco más subidos de colores, más saturados, ¿no? Y eso como que me madrea un poco y me distrae, pero en el caso de tu página sí está todo bien.
 
-#metadata((src: "README.md", line: 9612))
+#metadata((src: "README.md", line: 9614))
 #strong[Entrevistador:] Okay. Y por ejemplo, el contraste, el tamaño de las letras y los botones, ¿le permitieron leer y utilizar la página con facilidad?
 
-#metadata((src: "README.md", line: 9614))
+#metadata((src: "README.md", line: 9616))
 #strong[Entrevistado:] Sí, estuvieron bien porque yo últimamente tengo ya poco de fallas en la visión, no creo que ya necesito anteojos, pero sí está bien.
 
-#metadata((src: "README.md", line: 9616))
+#metadata((src: "README.md", line: 9618))
 #strong[Entrevistador:] Okay. Y por ejemplo, los botones de acción, eh, como descargar y conocer más, eh, ¿fueron visibles y fáciles de ubicar?
 
-#metadata((src: "README.md", line: 9618))
+#metadata((src: "README.md", line: 9620))
 #strong[Entrevistado:] Sí, claro. Están a la vista. Se ven en la pantalla del celular.
 
-#metadata((src: "README.md", line: 9620))
+#metadata((src: "README.md", line: 9622))
 #strong[Entrevistador:] Okay. Entonces, la página le funcionó bien en su celular. Para hacer un resumen.
 
-#metadata((src: "README.md", line: 9622))
+#metadata((src: "README.md", line: 9624))
 #strong[Entrevistado:] Sí, este, a pesar que ahorita estoy con un Android que no es de muy alta gama, sí resultó todo veloz y correcto.
 
-#metadata((src: "README.md", line: 9624))
+#metadata((src: "README.md", line: 9626))
 #strong[Entrevistador:] Okay. ¿Quizás haya visto una parte acerca de los testimonios? Esos testimonios, ¿influyeron en su confianza hacia la aplicación Salud Jack?
 
-#metadata((src: "README.md", line: 9626))
+#metadata((src: "README.md", line: 9628))
 #strong[Entrevistado:] La verdad sí, porque uno siempre se tiene que basar también no solo en lo que uno ve, ¿no?, sino también en las pruebas de cada caso, de cada seguimiento que uno hace.
 
-#metadata((src: "README.md", line: 9628))
+#metadata((src: "README.md", line: 9630))
 #strong[Entrevistado:] Y al haber estos testimonios de personas reales que ya aprobaron, eh, sí, sí, sí, sí influyó.
 
-#metadata((src: "README.md", line: 9630))
+#metadata((src: "README.md", line: 9632))
 #strong[Entrevistador:] Okay. Y la sección de modelo de negocio o "sobre nosotros", ¿aportó algo a su decisión, por ejemplo, elegir nuestra aplicación?
 
-#metadata((src: "README.md", line: 9632))
+#metadata((src: "README.md", line: 9634))
 #strong[Entrevistado:] Claro, este, como te digo, no todo tiene un complemento, todo tiene que ser algo ya general y sí, sí, en medida. Sí.
 
-#metadata((src: "README.md", line: 9634))
+#metadata((src: "README.md", line: 9636))
 #strong[Entrevistador:] Okay. Y entonces, eh, para preguntar acerca de la aplicación directamente, ¿usted la descargaría?
 
-#metadata((src: "README.md", line: 9636))
+#metadata((src: "README.md", line: 9638))
 #strong[Entrevistado:] Sí, joven. Sí, sí. Me parece que es una aplicación muy práctica y sí la descargaría. Sí, la utilizaría y la recomendaría también.
 
-#metadata((src: "README.md", line: 9638))
+#metadata((src: "README.md", line: 9640))
 #strong[Entrevistador:] Claro, claro. Y del uno al cinco, ¿qué tan probable es que recomiende la página?
 
-#metadata((src: "README.md", line: 9640))
+#metadata((src: "README.md", line: 9642))
 #strong[Entrevistado:] Cinco. Cinco.
 
-#metadata((src: "README.md", line: 9642))
+#metadata((src: "README.md", line: 9644))
 #strong[Entrevistador:] Un cinco. Okay. Eh, ¿quizás usted cambiaría algo, agregaría algo para convencerlo de utilizar Salud Ya, o ya se siente realmente convencido?
 
-#metadata((src: "README.md", line: 9644))
+#metadata((src: "README.md", line: 9646))
 #strong[Entrevistado:] Yo no cambiaría nada. Para mí está bien tal y como está.
 
-#metadata((src: "README.md", line: 9646))
+#metadata((src: "README.md", line: 9648))
 #strong[Entrevistador:] Okay. Bueno, para terminar, ¿hay algo más que quiera comentar quizá de la landing page o de la aplicación?
 
-#metadata((src: "README.md", line: 9648))
+#metadata((src: "README.md", line: 9650))
 #strong[Entrevistado:] Este, sí, que de verdad cumpla, ¿no?, con las expectativas que yo tengo, sobre todo, ¿no? Y que sea este, ¿cómo te digo?, que no se vuelva lento, que sea práctico, que mantenga una velocidad adecuada para los equipos celulares.
 
-#metadata((src: "README.md", line: 9650))
+#metadata((src: "README.md", line: 9652))
 #strong[Entrevistador:] Bueno, eso sería todo por la entrevista de hoy. De todas formas, gracias por las respuestas y bueno, eso sería todo.
 
-#metadata((src: "README.md", line: 9652))
+#metadata((src: "README.md", line: 9654))
 #strong[Entrevistado:] Ya, joven, ya gracias por la entrevista. Estamos en contacto.
 
 #heading(level: 4)[Entrevista 2 — Segmento: Paciente] <sec:entrevista-2-segmento-paciente>
-#metadata((src: "README.md", line: 9654, kind: "heading", level: 4))
+#metadata((src: "README.md", line: 9656, kind: "heading", level: 4))
 
-#metadata((src: "README.md", line: 9656, kind: "table"))
+#metadata((src: "README.md", line: 9658, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -11835,172 +11837,172 @@ Para cada segmento se realizaron entrevistas de validación de la #strong[Landin
   tline,
 )
 
-#metadata((src: "README.md", line: 9666, kind: "figure", img: "assets/Entrevistas%20landing%20page/Neo.jpeg"))
+#metadata((src: "README.md", line: 9668, kind: "figure", img: "assets/Entrevistas%20landing%20page/Neo.jpeg"))
 #align(center)[#align(center)[#block(breakable: false)[#fit-image("/assets/Entrevistas landing page/Neo.jpeg", alt: "Cuadro de video de la entrevista 2 (paciente)", width: 70%)]]]
 
-#metadata((src: "README.md", line: 9670))
+#metadata((src: "README.md", line: 9672))
 #emph[Figura 201. Cuadro de video de la entrevista 2 — paciente.]
 
-#metadata((src: "README.md", line: 9672))
+#metadata((src: "README.md", line: 9674))
 #strong[Resumen.] Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. #strong[Características del arquetipo:] adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
-#metadata((src: "README.md", line: 9674))
+#metadata((src: "README.md", line: 9676))
 #strong[Transcripción.]
 
-#metadata((src: "README.md", line: 9676))
+#metadata((src: "README.md", line: 9678))
 #strong[Entrevistador:] Buenos días. Hoy estamos con Michelle para la entrevista de validación de la Landing Page. Muy buenos días, Michelle. Gracias por participar.
 
-#metadata((src: "README.md", line: 9678))
+#metadata((src: "README.md", line: 9680))
 #strong[Michelle:] Buenos días, con gusto.
 
-#metadata((src: "README.md", line: 9680))
+#metadata((src: "README.md", line: 9682))
 #strong[Entrevistador:] Bueno, vamos a empezar con el perfil del participante. ¿Cuál es su edad y su distrito de residencia?
 
-#metadata((src: "README.md", line: 9682))
+#metadata((src: "README.md", line: 9684))
 #strong[Michelle:] Tengo 20 años y vivo en Punta Hermosa.
 
-#metadata((src: "README.md", line: 9684))
+#metadata((src: "README.md", line: 9686))
 #strong[Entrevistador:] ¿Con qué frecuencia usa el celular para trámites? ¿Qué tan cómodo se siente?
 
-#metadata((src: "README.md", line: 9686))
+#metadata((src: "README.md", line: 9688))
 #strong[Michelle:] Lo ocupo frecuentemente, pero no es tan común.
 
-#metadata((src: "README.md", line: 9688))
+#metadata((src: "README.md", line: 9690))
 #strong[Entrevistador:] ¿Y cuál es su rol en el establecimiento de salud?
 
-#metadata((src: "README.md", line: 9690))
+#metadata((src: "README.md", line: 9692))
 #strong[Michelle:] Eh… no, no pertenezco al establecimiento de salud. Soy paciente.
 
-#metadata((src: "README.md", line: 9692))
+#metadata((src: "README.md", line: 9694))
 #strong[Entrevistador:] Perfecto, gracias por la aclaración. Ahora, comprensión de la propuesta de valor. Al abrir la página, ¿qué cree que ofrece SaludYa? Explíquelo con sus palabras.
 
-#metadata((src: "README.md", line: 9694))
+#metadata((src: "README.md", line: 9696))
 #strong[Michelle:] Agilizar las citas y ahorrar tiempo.
 
-#metadata((src: "README.md", line: 9696))
+#metadata((src: "README.md", line: 9698))
 #strong[Entrevistador:] ¿Entendió para quién está dirigida la solución, es decir, pacientes y personal de salud?
 
-#metadata((src: "README.md", line: 9698))
-#strong[Michelle:] Sí.
-
 #metadata((src: "README.md", line: 9700))
-#strong[Entrevistador:] ¿El mensaje principal, "Citas médicas sin colas…", le resulta claro?
+#strong[Michelle:] Sí.
 
 #metadata((src: "README.md", line: 9702))
-#strong[Michelle:] Sí.
+#strong[Entrevistador:] ¿El mensaje principal, "Citas médicas sin colas…", le resulta claro?
 
 #metadata((src: "README.md", line: 9704))
-#strong[Entrevistador:] ¿Identificó qué problema resuelve y cómo lo resuelve?
+#strong[Michelle:] Sí.
 
 #metadata((src: "README.md", line: 9706))
-#strong[Michelle:] Sí, para agilizar el tiempo.
+#strong[Entrevistador:] ¿Identificó qué problema resuelve y cómo lo resuelve?
 
 #metadata((src: "README.md", line: 9708))
-#strong[Entrevistador:] Muy bien. Pasamos a navegación y arquitectura de la información. ¿Encontró fácilmente las secciones: Producto, Videos, Testimonios, Sobre nosotros, Descarga?
+#strong[Michelle:] Sí, para agilizar el tiempo.
 
 #metadata((src: "README.md", line: 9710))
-#strong[Michelle:] Sí, es intuitiva.
+#strong[Entrevistador:] Muy bien. Pasamos a navegación y arquitectura de la información. ¿Encontró fácilmente las secciones: Producto, Videos, Testimonios, Sobre nosotros, Descarga?
 
 #metadata((src: "README.md", line: 9712))
-#strong[Entrevistador:] ¿La organización de la información le pareció lógica y ordenada?
+#strong[Michelle:] Sí, es intuitiva.
 
 #metadata((src: "README.md", line: 9714))
-#strong[Michelle:] Sí.
+#strong[Entrevistador:] ¿La organización de la información le pareció lógica y ordenada?
 
 #metadata((src: "README.md", line: 9716))
-#strong[Entrevistador:] ¿Usó el selector de idioma, español o inglés? ¿Le resultó útil?
+#strong[Michelle:] Sí.
 
 #metadata((src: "README.md", line: 9718))
-#strong[Michelle:] Idioma español.
+#strong[Entrevistador:] ¿Usó el selector de idioma, español o inglés? ¿Le resultó útil?
 
 #metadata((src: "README.md", line: 9720))
-#strong[Entrevistador:] ¿Faltó alguna sección que esperaba encontrar?
+#strong[Michelle:] Idioma español.
 
 #metadata((src: "README.md", line: 9722))
-#strong[Michelle:] No.
+#strong[Entrevistador:] ¿Faltó alguna sección que esperaba encontrar?
 
 #metadata((src: "README.md", line: 9724))
-#strong[Entrevistador:] Muy bien. Ahora, diseño visual, usabilidad y diseño inclusivo. ¿El diseño le pareció claro y agradable?
-
-#metadata((src: "README.md", line: 9726))
-#strong[Michelle:] Sí, es intuitivo.
-
-#metadata((src: "README.md", line: 9728))
-#strong[Entrevistador:] ¿El contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad?
-
-#metadata((src: "README.md", line: 9730))
-#strong[Michelle:] Sí.
-
-#metadata((src: "README.md", line: 9732))
-#strong[Entrevistador:] ¿Los botones de acción, como descargar y conocer más, son visibles y fáciles de ubicar?
-
-#metadata((src: "README.md", line: 9734))
-#strong[Michelle:] Sí.
-
-#metadata((src: "README.md", line: 9736))
-#strong[Entrevistador:] ¿La página funcionó bien en su celular, en la versión móvil?
-
-#metadata((src: "README.md", line: 9738))
-#strong[Michelle:] Sí, no he tenido ningún problema.
-
-#metadata((src: "README.md", line: 9740))
-#strong[Entrevistador:] Perfecto. Ahora, contenido. ¿Los testimonios influyeron en su confianza hacia SaludYa?
-
-#metadata((src: "README.md", line: 9742))
-#strong[Michelle:] Sí.
-
-#metadata((src: "README.md", line: 9744))
-#strong[Entrevistador:] ¿La sección de modelo de negocio o "sobre nosotros" aportó algo a su decisión?
-
-#metadata((src: "README.md", line: 9746))
-#strong[Michelle:] Sí, me da confianza.
-
-#metadata((src: "README.md", line: 9748))
-#strong[Entrevistador:] Muy bien. Conversión e intención. ¿Descargaría la aplicación? ¿Por qué sí o por qué no?
-
-#metadata((src: "README.md", line: 9750))
-#strong[Michelle:] Sí, porque me genera confianza y por los testimonios que había escuchado.
-
-#metadata((src: "README.md", line: 9752))
-#strong[Entrevistador:] ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
-
-#metadata((src: "README.md", line: 9754))
-#strong[Michelle:] Pues creo que está muy completa.
-
-#metadata((src: "README.md", line: 9756))
-#strong[Entrevistador:] Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
-
-#metadata((src: "README.md", line: 9758))
-#strong[Michelle:] 4, quizá 5.
-
-#metadata((src: "README.md", line: 9760))
-#strong[Entrevistador:] Muy bien. Para cerrar, ¿hay algo más que quiera comentar?
-
-#metadata((src: "README.md", line: 9762))
 #strong[Michelle:] No.
 
+#metadata((src: "README.md", line: 9726))
+#strong[Entrevistador:] Muy bien. Ahora, diseño visual, usabilidad y diseño inclusivo. ¿El diseño le pareció claro y agradable?
+
+#metadata((src: "README.md", line: 9728))
+#strong[Michelle:] Sí, es intuitivo.
+
+#metadata((src: "README.md", line: 9730))
+#strong[Entrevistador:] ¿El contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad?
+
+#metadata((src: "README.md", line: 9732))
+#strong[Michelle:] Sí.
+
+#metadata((src: "README.md", line: 9734))
+#strong[Entrevistador:] ¿Los botones de acción, como descargar y conocer más, son visibles y fáciles de ubicar?
+
+#metadata((src: "README.md", line: 9736))
+#strong[Michelle:] Sí.
+
+#metadata((src: "README.md", line: 9738))
+#strong[Entrevistador:] ¿La página funcionó bien en su celular, en la versión móvil?
+
+#metadata((src: "README.md", line: 9740))
+#strong[Michelle:] Sí, no he tenido ningún problema.
+
+#metadata((src: "README.md", line: 9742))
+#strong[Entrevistador:] Perfecto. Ahora, contenido. ¿Los testimonios influyeron en su confianza hacia SaludYa?
+
+#metadata((src: "README.md", line: 9744))
+#strong[Michelle:] Sí.
+
+#metadata((src: "README.md", line: 9746))
+#strong[Entrevistador:] ¿La sección de modelo de negocio o "sobre nosotros" aportó algo a su decisión?
+
+#metadata((src: "README.md", line: 9748))
+#strong[Michelle:] Sí, me da confianza.
+
+#metadata((src: "README.md", line: 9750))
+#strong[Entrevistador:] Muy bien. Conversión e intención. ¿Descargaría la aplicación? ¿Por qué sí o por qué no?
+
+#metadata((src: "README.md", line: 9752))
+#strong[Michelle:] Sí, porque me genera confianza y por los testimonios que había escuchado.
+
+#metadata((src: "README.md", line: 9754))
+#strong[Entrevistador:] ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
+
+#metadata((src: "README.md", line: 9756))
+#strong[Michelle:] Pues creo que está muy completa.
+
+#metadata((src: "README.md", line: 9758))
+#strong[Entrevistador:] Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
+
+#metadata((src: "README.md", line: 9760))
+#strong[Michelle:] 4, quizá 5.
+
+#metadata((src: "README.md", line: 9762))
+#strong[Entrevistador:] Muy bien. Para cerrar, ¿hay algo más que quiera comentar?
+
 #metadata((src: "README.md", line: 9764))
-#strong[Entrevistador:] Bueno, eso sería todo por la entrevista de hoy. Muchas gracias por las respuestas, Michelle. Eso sería todo.
+#strong[Michelle:] No.
 
 #metadata((src: "README.md", line: 9766))
+#strong[Entrevistador:] Bueno, eso sería todo por la entrevista de hoy. Muchas gracias por las respuestas, Michelle. Eso sería todo.
+
+#metadata((src: "README.md", line: 9768))
 #strong[Michelle:] Gracias a ustedes. Estamos en contacto.
 
 #heading(level: 3)[4.3.3. Evaluaciones según heurísticas] <sec:4-3-3-evaluaciones-segun-heuristicas>
-#metadata((src: "README.md", line: 9768, kind: "heading", level: 3))
-
-#metadata((src: "README.md", line: 9770))
-En esta sección se presenta la evaluación de la experiencia de usuario de #strong[SaludYa] (mock-ups de la aplicación móvil) aplicando el formato de #strong[Evaluación de User Experience según Heurísticas] (heurísticas de usabilidad, arquitectura de información y diseño inclusivo). La evaluación fue realizada por el equipo #strong[RouteGuard] sobre el prototipo de SaludYa, y a continuación se registran los hallazgos, su severidad y las recomendaciones para cada problema identificado.
+#metadata((src: "README.md", line: 9770, kind: "heading", level: 3))
 
 #metadata((src: "README.md", line: 9772))
+En esta sección se presenta la evaluación de la experiencia de usuario de #strong[SaludYa] (mock-ups de la aplicación móvil) aplicando el formato de #strong[Evaluación de User Experience según Heurísticas] (heurísticas de usabilidad, arquitectura de información y diseño inclusivo). La evaluación fue realizada por el equipo #strong[RouteGuard] sobre el prototipo de SaludYa, y a continuación se registran los hallazgos, su severidad y las recomendaciones para cada problema identificado.
+
+#metadata((src: "README.md", line: 9774))
 #strong[UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture]
 
-#metadata((src: "README.md", line: 9776))
+#metadata((src: "README.md", line: 9778))
 #strong[Tabla 77]
 
-#metadata((src: "README.md", line: 9778))
+#metadata((src: "README.md", line: 9780))
 #emph[Datos de la evaluación]
 
-#metadata((src: "README.md", line: 9780, kind: "table"))
+#metadata((src: "README.md", line: 9782, kind: "table"))
 #table(
   columns: 2,
   align: (left, left),
@@ -12015,22 +12017,22 @@ En esta sección se presenta la evaluación de la experiencia de usuario de #str
   tline,
 )
 
-#metadata((src: "README.md", line: 9789))
+#metadata((src: "README.md", line: 9791))
 #emph[Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre los mock-ups de SaludYa.]
 
-#metadata((src: "README.md", line: 9791))
+#metadata((src: "README.md", line: 9793))
 #strong[SITE o APP A EVALUAR]
 
-#metadata((src: "README.md", line: 9793))
+#metadata((src: "README.md", line: 9795))
 #strong[SaludYa] (Mobile Application Mock-ups) — #link("https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626")[Archivo de Figma]
 
-#metadata((src: "README.md", line: 9795))
+#metadata((src: "README.md", line: 9797))
 #strong[TAREAS A EVALUAR]
 
-#metadata((src: "README.md", line: 9797))
+#metadata((src: "README.md", line: 9799))
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
-#metadata((src: "README.md", line: 9799))
+#metadata((src: "README.md", line: 9801))
 + Registro de un usuario nuevo (pasos 1 a 3 y verificación de correo)
 + Verificación de identidad con DNI durante el registro
 + Inicio de sesión de un paciente
@@ -12045,23 +12047,23 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 + Inicio de una reserva: elegir especialidad, beneficiario y fecha
 + Cierre de sesión
 
-#metadata((src: "README.md", line: 9813))
+#metadata((src: "README.md", line: 9815))
 #strong[No están incluidas] en esta versión de la evaluación las siguientes tareas:
 
-#metadata((src: "README.md", line: 9815))
+#metadata((src: "README.md", line: 9817))
 + Registro de personal por el Super Admin
 + Selección de horario y confirmación final de la reserva
 + Notificaciones
 + Recuperación de contraseña por código (pantallas ocultas en el prototipo)
 + Flujos de Personal de admisión
 
-#metadata((src: "README.md", line: 9821))
+#metadata((src: "README.md", line: 9823))
 #strong[ESCALA DE SEVERIDAD]
 
-#metadata((src: "README.md", line: 9823))
+#metadata((src: "README.md", line: 9825))
 Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 
-#metadata((src: "README.md", line: 9825, kind: "table"))
+#metadata((src: "README.md", line: 9827, kind: "table"))
 #table(
   columns: 2,
   align: (center, left),
@@ -12074,13 +12076,13 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
   tline,
 )
 
-#metadata((src: "README.md", line: 9834))
+#metadata((src: "README.md", line: 9836))
 #strong[Tabla 78]
 
-#metadata((src: "README.md", line: 9836))
+#metadata((src: "README.md", line: 9838))
 #emph[TABLA RESUMEN de la evaluación heurística]
 
-#metadata((src: "README.md", line: 9838, kind: "table"))
+#metadata((src: "README.md", line: 9840, kind: "table"))
 #table(
   columns: 4,
   align: (center, left, center, left),
@@ -12112,783 +12114,783 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
   tline,
 )
 
-#metadata((src: "README.md", line: 9864))
+#metadata((src: "README.md", line: 9866))
 #emph[Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.]
 
-#metadata((src: "README.md", line: 9866))
+#metadata((src: "README.md", line: 9868))
 #strong[DESCRIPCIÓN DE PROBLEMAS]
 
 #heading(level: 3)[PROBLEMA \#1: El registro indica "PASO 3 DE 3" pero aún falta la verificación del correo] <sec:problema-1-el-registro-indica-paso-3-de-3-pero-aun-falta-la-verificacion-del-correo>
-#metadata((src: "README.md", line: 9868, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9870, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9870))
+#metadata((src: "README.md", line: 9872))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Visibilidad del estado del sistema
 
-#metadata((src: "README.md", line: 9873))
+#metadata((src: "README.md", line: 9875))
 #strong[Problema:]
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-#metadata((src: "README.md", line: 9878))
+#metadata((src: "README.md", line: 9880))
 #strong[Figura 202]
 
-#metadata((src: "README.md", line: 9880))
+#metadata((src: "README.md", line: 9882))
 #emph[Registro - Datos de acceso]
 
-#metadata((src: "README.md", line: 9882, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
+#metadata((src: "README.md", line: 9884, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/01-registro-datos-acceso.png", alt: "Registro - Datos de acceso", width: 60%)]
 
-#metadata((src: "README.md", line: 9884))
+#metadata((src: "README.md", line: 9886))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 9888))
-#strong[Figura 203]
 
 #metadata((src: "README.md", line: 9890))
+#strong[Figura 203]
+
+#metadata((src: "README.md", line: 9892))
 #emph[Registro - Verificar correo]
 
-#metadata((src: "README.md", line: 9892, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
+#metadata((src: "README.md", line: 9894, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/02-registro-verificar-correo.png", alt: "Registro - Verificar correo", width: 60%)]
 
-#metadata((src: "README.md", line: 9894))
+#metadata((src: "README.md", line: 9896))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 9896))
+#metadata((src: "README.md", line: 9898))
 #strong[Recomendación:]
 Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del paso 3, y mantener el indicador en la pantalla de verificación.
 
 #heading(level: 3)[PROBLEMA \#2: El mensaje "Correo verificado" dice que se validó el número] <sec:problema-2-el-mensaje-correo-verificado-dice-que-se-valido-el-numero>
-#metadata((src: "README.md", line: 9899, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9901, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9901))
+#metadata((src: "README.md", line: 9903))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Consistencia y estándares
 
-#metadata((src: "README.md", line: 9904))
+#metadata((src: "README.md", line: 9906))
 #strong[Problema:]
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-#metadata((src: "README.md", line: 9909))
+#metadata((src: "README.md", line: 9911))
 #strong[Figura 204]
 
-#metadata((src: "README.md", line: 9911))
+#metadata((src: "README.md", line: 9913))
 #emph[Diálogo correo verificado]
 
-#metadata((src: "README.md", line: 9913, kind: "figure", img: "chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png"))
+#metadata((src: "README.md", line: 9915, kind: "figure", img: "chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png", alt: "Diálogo correo verificado", width: 60%)]
 
-#metadata((src: "README.md", line: 9915))
+#metadata((src: "README.md", line: 9917))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 9917))
+#metadata((src: "README.md", line: 9919))
 #strong[Recomendación:]
 Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con el título y con el paso realizado.
 
 #heading(level: 3)[PROBLEMA \#3: El login pide correo pero el mensaje de error habla de documento] <sec:problema-3-el-login-pide-correo-pero-el-mensaje-de-error-habla-de-documento>
-#metadata((src: "README.md", line: 9920, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9922, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9922))
+#metadata((src: "README.md", line: 9924))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Consistencia y estándares
 
-#metadata((src: "README.md", line: 9925))
+#metadata((src: "README.md", line: 9927))
 #strong[Problema:]
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-#metadata((src: "README.md", line: 9930))
+#metadata((src: "README.md", line: 9932))
 #strong[Figura 205]
 
-#metadata((src: "README.md", line: 9932))
+#metadata((src: "README.md", line: 9934))
 #emph[Login paciente]
 
-#metadata((src: "README.md", line: 9934, kind: "figure", img: "chapter-04/assets/heuristicas/04-login-paciente.png"))
+#metadata((src: "README.md", line: 9936, kind: "figure", img: "chapter-04/assets/heuristicas/04-login-paciente.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/04-login-paciente.png", alt: "Login paciente", width: 60%)]
 
-#metadata((src: "README.md", line: 9936))
+#metadata((src: "README.md", line: 9938))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 9940))
-#strong[Figura 206]
 
 #metadata((src: "README.md", line: 9942))
+#strong[Figura 206]
+
+#metadata((src: "README.md", line: 9944))
 #emph[Diálogo credenciales incorrectas]
 
-#metadata((src: "README.md", line: 9944, kind: "figure", img: "chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png"))
+#metadata((src: "README.md", line: 9946, kind: "figure", img: "chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png", alt: "Diálogo credenciales incorrectas", width: 60%)]
 
-#metadata((src: "README.md", line: 9946))
+#metadata((src: "README.md", line: 9948))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 9948))
+#metadata((src: "README.md", line: 9950))
 #strong[Recomendación:]
 Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes, e indicar en el registro con qué dato se ingresará después.
 
 #heading(level: 3)[PROBLEMA \#4: Los campos de contraseña no muestran requisitos] <sec:problema-4-los-campos-de-contrasena-no-muestran-requisitos>
-#metadata((src: "README.md", line: 9951, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9953, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9953))
+#metadata((src: "README.md", line: 9955))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Prevención de errores
 
-#metadata((src: "README.md", line: 9956))
+#metadata((src: "README.md", line: 9958))
 #strong[Problema:]
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-#metadata((src: "README.md", line: 9961))
+#metadata((src: "README.md", line: 9963))
 #strong[Figura 207]
 
-#metadata((src: "README.md", line: 9963))
+#metadata((src: "README.md", line: 9965))
 #emph[Registro - Datos de acceso]
 
-#metadata((src: "README.md", line: 9965, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
+#metadata((src: "README.md", line: 9967, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/01-registro-datos-acceso.png", alt: "Registro - Datos de acceso", width: 60%)]
 
-#metadata((src: "README.md", line: 9967))
+#metadata((src: "README.md", line: 9969))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 9971))
-#strong[Figura 208]
 
 #metadata((src: "README.md", line: 9973))
+#strong[Figura 208]
+
+#metadata((src: "README.md", line: 9975))
 #emph[Recuperación - Nueva contraseña]
 
-#metadata((src: "README.md", line: 9975, kind: "figure", img: "chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png"))
+#metadata((src: "README.md", line: 9977, kind: "figure", img: "chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png", alt: "Recuperación - Nueva contraseña", width: 60%)]
 
-#metadata((src: "README.md", line: 9977))
+#metadata((src: "README.md", line: 9979))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 9979))
+#metadata((src: "README.md", line: 9981))
 #strong[Recomendación:]
 Mostrar bajo el campo los requisitos de la contraseña y un indicador de seguridad, y validar mientras el usuario escribe.
 
 #heading(level: 3)[PROBLEMA \#5: Íconos y celdas del calendario con áreas táctiles menores a 44 px] <sec:problema-5-iconos-y-celdas-del-calendario-con-areas-tactiles-menores-a-44-px>
-#metadata((src: "README.md", line: 9982, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 9984, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 9984))
+#metadata((src: "README.md", line: 9986))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Inclusive Design - Considera la situación
 
-#metadata((src: "README.md", line: 9987))
+#metadata((src: "README.md", line: 9989))
 #strong[Problema:]
 El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y notificaciones miden 24 x 24 px, y las celdas de día del calendario miden 40 x 32 px. Para usuarios con poca precisión motriz, manos grandes o uso en movimiento, estos elementos son difíciles de tocar. "Cerrar sesión" también es un texto de una sola línea (18 px de alto).
 
-#metadata((src: "README.md", line: 9992))
+#metadata((src: "README.md", line: 9994))
 #strong[Figura 209]
 
-#metadata((src: "README.md", line: 9994))
+#metadata((src: "README.md", line: 9996))
 #emph[Login paciente]
 
-#metadata((src: "README.md", line: 9996, kind: "figure", img: "chapter-04/assets/heuristicas/04-login-paciente.png"))
+#metadata((src: "README.md", line: 9998, kind: "figure", img: "chapter-04/assets/heuristicas/04-login-paciente.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/04-login-paciente.png", alt: "Login paciente", width: 60%)]
 
-#metadata((src: "README.md", line: 9998))
+#metadata((src: "README.md", line: 10000))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10002))
-#strong[Figura 210]
 
 #metadata((src: "README.md", line: 10004))
+#strong[Figura 210]
+
+#metadata((src: "README.md", line: 10006))
 #emph[Dashboard inicio]
 
-#metadata((src: "README.md", line: 10006, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
+#metadata((src: "README.md", line: 10008, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/07-dashboard-inicio.png", alt: "Dashboard inicio", width: 60%)]
 
-#metadata((src: "README.md", line: 10008))
+#metadata((src: "README.md", line: 10010))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10012))
-#strong[Figura 211]
 
 #metadata((src: "README.md", line: 10014))
+#strong[Figura 211]
+
+#metadata((src: "README.md", line: 10016))
 #emph[Reserva - Elegir fecha]
 
-#metadata((src: "README.md", line: 10016, kind: "figure", img: "chapter-04/assets/heuristicas/19-reserva-fecha.png"))
+#metadata((src: "README.md", line: 10018, kind: "figure", img: "chapter-04/assets/heuristicas/19-reserva-fecha.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/19-reserva-fecha.png", alt: "Reserva - Elegir fecha", width: 60%)]
 
-#metadata((src: "README.md", line: 10018))
+#metadata((src: "README.md", line: 10020))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10020))
+#metadata((src: "README.md", line: 10022))
 #strong[Recomendación:]
 Garantizar áreas táctiles de al menos 44 x 44 px (o 48 x 48 dp en Android) ampliando el área sensible, aunque el ícono se mantenga pequeño.
 
 #heading(level: 3)[PROBLEMA \#6: Textos auxiliares muy pequeños (pasos, etiquetas, leyendas)] <sec:problema-6-textos-auxiliares-muy-pequenos-pasos-etiquetas-leyendas>
-#metadata((src: "README.md", line: 10023, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10025, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10025))
+#metadata((src: "README.md", line: 10027))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Inclusive Design - Prioriza el contenido
 
-#metadata((src: "README.md", line: 10028))
+#metadata((src: "README.md", line: 10030))
 #strong[Problema:]
 Las etiquetas de la navegación inferior (15 px de alto de línea), los indicadores "PASO X DE Y" (16 px), la leyenda del calendario y las notas bajo los botones (16–17 px) corresponden a fuentes de aproximadamente 11–12 px. Para usuarios con baja visión o adultos mayores, que son parte del público de una app de salud, es difícil de leer.
 
-#metadata((src: "README.md", line: 10033))
+#metadata((src: "README.md", line: 10035))
 #strong[Figura 212]
 
-#metadata((src: "README.md", line: 10035))
+#metadata((src: "README.md", line: 10037))
 #emph[Dashboard inicio]
 
-#metadata((src: "README.md", line: 10037, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
+#metadata((src: "README.md", line: 10039, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/07-dashboard-inicio.png", alt: "Dashboard inicio", width: 60%)]
 
-#metadata((src: "README.md", line: 10039))
+#metadata((src: "README.md", line: 10041))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10043))
-#strong[Figura 213]
 
 #metadata((src: "README.md", line: 10045))
+#strong[Figura 213]
+
+#metadata((src: "README.md", line: 10047))
 #emph[Registro - Datos de acceso]
 
-#metadata((src: "README.md", line: 10047, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
+#metadata((src: "README.md", line: 10049, kind: "figure", img: "chapter-04/assets/heuristicas/01-registro-datos-acceso.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/01-registro-datos-acceso.png", alt: "Registro - Datos de acceso", width: 60%)]
 
-#metadata((src: "README.md", line: 10049))
+#metadata((src: "README.md", line: 10051))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10051))
+#metadata((src: "README.md", line: 10053))
 #strong[Recomendación:]
 Usar un tamaño mínimo de 12–14 sp en textos auxiliares y verificar que la interfaz respete el tamaño de fuente configurado en el dispositivo.
 
 #heading(level: 3)[PROBLEMA \#7: Los errores de validación se muestran solo en diálogos modales] <sec:problema-7-los-errores-de-validacion-se-muestran-solo-en-dialogos-modales>
-#metadata((src: "README.md", line: 10054, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10056, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10056))
+#metadata((src: "README.md", line: 10058))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Ayudar a reconocer, diagnosticar y recuperarse de errores
 
-#metadata((src: "README.md", line: 10059))
+#metadata((src: "README.md", line: 10061))
 #strong[Problema:]
 Los errores de código incorrecto, identidad no coincidente o contraseñas diferentes se presentan como diálogos que cubren la pantalla. El usuario no ve el campo con el error mientras lee el mensaje, y debe recordar cuál era. Los mensajes tampoco señalan qué dato exacto corregir (por ejemplo, "Revisa el DNI, nombres, apellidos y fecha de nacimiento").
 
-#metadata((src: "README.md", line: 10064))
+#metadata((src: "README.md", line: 10066))
 #strong[Figura 214]
 
-#metadata((src: "README.md", line: 10066))
+#metadata((src: "README.md", line: 10068))
 #emph[Verificar correo]
 
-#metadata((src: "README.md", line: 10068, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
+#metadata((src: "README.md", line: 10070, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/02-registro-verificar-correo.png", alt: "Verificar correo", width: 60%)]
 
-#metadata((src: "README.md", line: 10070))
+#metadata((src: "README.md", line: 10072))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10072))
+#metadata((src: "README.md", line: 10074))
 #strong[Recomendación:]
 Mostrar errores en línea junto al campo afectado, con color, ícono y texto, y reservar los diálogos para errores globales.
 
 #heading(level: 3)[PROBLEMA \#8: "Reenviar código" es un texto plano sin estado ni tiempo de espera] <sec:problema-8-reenviar-codigo-es-un-texto-plano-sin-estado-ni-tiempo-de-espera>
-#metadata((src: "README.md", line: 10075, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10077, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10077))
+#metadata((src: "README.md", line: 10079))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Visibilidad del estado del sistema
 
-#metadata((src: "README.md", line: 10080))
+#metadata((src: "README.md", line: 10082))
 #strong[Problema:]
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
 
-#metadata((src: "README.md", line: 10085))
+#metadata((src: "README.md", line: 10087))
 #strong[Figura 215]
 
-#metadata((src: "README.md", line: 10087))
+#metadata((src: "README.md", line: 10089))
 #emph[Registro - Verificar correo]
 
-#metadata((src: "README.md", line: 10089, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
+#metadata((src: "README.md", line: 10091, kind: "figure", img: "chapter-04/assets/heuristicas/02-registro-verificar-correo.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/02-registro-verificar-correo.png", alt: "Registro - Verificar correo", width: 60%)]
 
-#metadata((src: "README.md", line: 10091))
+#metadata((src: "README.md", line: 10093))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10093))
+#metadata((src: "README.md", line: 10095))
 #strong[Recomendación:]
 Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y presentar la acción como un botón con área táctil adecuada.
 
 #heading(level: 3)[PROBLEMA \#9: La fecha de nacimiento se escribe como texto libre (DD/MM/AAAA)] <sec:problema-9-la-fecha-de-nacimiento-se-escribe-como-texto-libre-dd-mm-aaaa>
-#metadata((src: "README.md", line: 10096, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10098, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10098))
+#metadata((src: "README.md", line: 10100))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Prevención de errores
 
-#metadata((src: "README.md", line: 10101))
+#metadata((src: "README.md", line: 10103))
 #strong[Problema:]
 En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fecha de nacimiento es un campo de texto con el formato DD/MM/AAAA. Esto facilita errores de formato, y como la fecha se compara con el DNI, un error genera el diálogo "Datos no coincidentes".
 
-#metadata((src: "README.md", line: 10106))
+#metadata((src: "README.md", line: 10108))
 #strong[Figura 216]
 
-#metadata((src: "README.md", line: 10108))
+#metadata((src: "README.md", line: 10110))
 #emph[Registro - Verificar identidad]
 
-#metadata((src: "README.md", line: 10110, kind: "figure", img: "chapter-04/assets/heuristicas/08-registro-verificar-identidad.png"))
+#metadata((src: "README.md", line: 10112, kind: "figure", img: "chapter-04/assets/heuristicas/08-registro-verificar-identidad.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/08-registro-verificar-identidad.png", alt: "Registro - Verificar identidad", width: 60%)]
 
-#metadata((src: "README.md", line: 10112))
+#metadata((src: "README.md", line: 10114))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10116))
-#strong[Figura 217]
 
 #metadata((src: "README.md", line: 10118))
+#strong[Figura 217]
+
+#metadata((src: "README.md", line: 10120))
 #emph[Menores - Vincular]
 
-#metadata((src: "README.md", line: 10120, kind: "figure", img: "chapter-04/assets/heuristicas/13-menores-vincular.png"))
+#metadata((src: "README.md", line: 10122, kind: "figure", img: "chapter-04/assets/heuristicas/13-menores-vincular.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/13-menores-vincular.png", alt: "Menores - Vincular", width: 60%)]
 
-#metadata((src: "README.md", line: 10122))
+#metadata((src: "README.md", line: 10124))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10124))
+#metadata((src: "README.md", line: 10126))
 #strong[Recomendación:]
 Usar un selector de fecha nativo o un campo con máscara automática que inserte las diagonales y valide los rangos.
 
 #heading(level: 3)[PROBLEMA \#10: El diálogo "Correo ya registrado" no ofrece ir a iniciar sesión] <sec:problema-10-el-dialogo-correo-ya-registrado-no-ofrece-ir-a-iniciar-sesion>
-#metadata((src: "README.md", line: 10127, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10129, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10129))
+#metadata((src: "README.md", line: 10131))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Libertad y control del usuario
 
-#metadata((src: "README.md", line: 10132))
+#metadata((src: "README.md", line: 10134))
 #strong[Problema:]
 El diálogo indica "Este correo pertenece a otra cuenta. Usa otro o inicia sesión", pero su único botón es "Volver". Si el usuario ya tenía cuenta, debe retroceder y buscar el enlace de inicio de sesión por su cuenta.
 
-#metadata((src: "README.md", line: 10137))
+#metadata((src: "README.md", line: 10139))
 #strong[Figura 218]
 
-#metadata((src: "README.md", line: 10139))
+#metadata((src: "README.md", line: 10141))
 #emph[Diálogo correo duplicado]
 
-#metadata((src: "README.md", line: 10141, kind: "figure", img: "chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png"))
+#metadata((src: "README.md", line: 10143, kind: "figure", img: "chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png", alt: "Diálogo correo duplicado", width: 60%)]
 
-#metadata((src: "README.md", line: 10143))
+#metadata((src: "README.md", line: 10145))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10145))
+#metadata((src: "README.md", line: 10147))
 #strong[Recomendación:]
 Agregar un botón secundario "Iniciar sesión" y mantener "Usar otro correo" como acción principal.
 
 #heading(level: 3)[PROBLEMA \#11: "Ayuda con tu cuenta" no tiene ningún canal de contacto disponible] <sec:problema-11-ayuda-con-tu-cuenta-no-tiene-ningun-canal-de-contacto-disponible>
-#metadata((src: "README.md", line: 10148, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10150, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10150))
+#metadata((src: "README.md", line: 10152))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Ayuda y documentación
 
-#metadata((src: "README.md", line: 10153))
+#metadata((src: "README.md", line: 10155))
 #strong[Problema:]
 La pantalla "15 · Recuperación · Ayuda" informa que "los canales de la mesa de ayuda se mostrarán cuando el establecimiento los configure". Un usuario que perdió acceso a su correo solo puede enviar una solicitud de revisión, sin saber cuánto tarda ni cómo hacer seguimiento, y no tiene teléfono, correo ni dirección de contacto.
 
-#metadata((src: "README.md", line: 10158))
+#metadata((src: "README.md", line: 10160))
 #strong[Figura 219]
 
-#metadata((src: "README.md", line: 10160))
+#metadata((src: "README.md", line: 10162))
 #emph[Recuperación - Ayuda]
 
-#metadata((src: "README.md", line: 10162, kind: "figure", img: "chapter-04/assets/heuristicas/10-recuperacion-ayuda.png"))
+#metadata((src: "README.md", line: 10164, kind: "figure", img: "chapter-04/assets/heuristicas/10-recuperacion-ayuda.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/10-recuperacion-ayuda.png", alt: "Recuperación - Ayuda", width: 60%)]
 
-#metadata((src: "README.md", line: 10164))
+#metadata((src: "README.md", line: 10166))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10166))
+#metadata((src: "README.md", line: 10168))
 #strong[Recomendación:]
 Mostrar siempre un canal alternativo (teléfono o dirección del establecimiento) e indicar el plazo de respuesta y cómo se notificará el resultado.
 
 #heading(level: 3)[PROBLEMA \#12: Pantallas de perfil y menores sin navegación inferior ni botón de retorno] <sec:problema-12-pantallas-de-perfil-y-menores-sin-navegacion-inferior-ni-boton-de-retorno>
-#metadata((src: "README.md", line: 10169, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10171, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10171))
+#metadata((src: "README.md", line: 10173))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Libertad y control del usuario
 
-#metadata((src: "README.md", line: 10174))
+#metadata((src: "README.md", line: 10176))
 #strong[Problema:]
 Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen la navegación inferior que sí existe en el dashboard, y "18 · Menores · Lista" no tiene un botón "Volver". Además, usan la cabecera grande con logo (190 px de alto) en lugar de la cabecera con flecha de retorno del dashboard. El usuario queda sin una salida clara y la experiencia cambia respecto del resto de la app.
 
-#metadata((src: "README.md", line: 10179))
+#metadata((src: "README.md", line: 10181))
 #strong[Figura 220]
 
-#metadata((src: "README.md", line: 10181))
+#metadata((src: "README.md", line: 10183))
 #emph[Perfil paciente]
 
-#metadata((src: "README.md", line: 10183, kind: "figure", img: "chapter-04/assets/heuristicas/11-perfil-paciente.png"))
+#metadata((src: "README.md", line: 10185, kind: "figure", img: "chapter-04/assets/heuristicas/11-perfil-paciente.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/11-perfil-paciente.png", alt: "Perfil paciente", width: 60%)]
 
-#metadata((src: "README.md", line: 10185))
+#metadata((src: "README.md", line: 10187))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10189))
-#strong[Figura 221]
 
 #metadata((src: "README.md", line: 10191))
+#strong[Figura 221]
+
+#metadata((src: "README.md", line: 10193))
 #emph[Menores - Lista]
 
-#metadata((src: "README.md", line: 10193, kind: "figure", img: "chapter-04/assets/heuristicas/12-menores-lista.png"))
+#metadata((src: "README.md", line: 10195, kind: "figure", img: "chapter-04/assets/heuristicas/12-menores-lista.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/12-menores-lista.png", alt: "Menores - Lista", width: 60%)]
 
-#metadata((src: "README.md", line: 10195))
+#metadata((src: "README.md", line: 10197))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10197))
+#metadata((src: "README.md", line: 10199))
 #strong[Recomendación:]
 Usar la misma cabecera con flecha de retorno y la navegación inferior en todas las pantallas posteriores al inicio de sesión, y reservar la cabecera con logo para pantallas de acceso.
 
 #heading(level: 3)[PROBLEMA \#13: La confirmación de adulto responsable es solo texto, sin control explícito] <sec:problema-13-la-confirmacion-de-adulto-responsable-es-solo-texto-sin-control-explicito>
-#metadata((src: "README.md", line: 10200, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10202, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10202))
+#metadata((src: "README.md", line: 10204))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Prevención de errores
 
-#metadata((src: "README.md", line: 10205))
+#metadata((src: "README.md", line: 10207))
 #strong[Problema:]
 En "19 · Menores · Vincular", el texto "Confirmas que eres su adulto responsable." aparece sobre el botón "Verificar y vincular" sin un checkbox ni acción de aceptación. El usuario puede vincular a un menor sin haber leído ni aceptado explícitamente esta declaración, lo que es delicado por tratarse de datos de salud de un menor.
 
-#metadata((src: "README.md", line: 10210))
+#metadata((src: "README.md", line: 10212))
 #strong[Figura 222]
 
-#metadata((src: "README.md", line: 10212))
+#metadata((src: "README.md", line: 10214))
 #emph[Menores - Vincular]
 
-#metadata((src: "README.md", line: 10214, kind: "figure", img: "chapter-04/assets/heuristicas/13-menores-vincular.png"))
+#metadata((src: "README.md", line: 10216, kind: "figure", img: "chapter-04/assets/heuristicas/13-menores-vincular.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/13-menores-vincular.png", alt: "Menores - Vincular", width: 60%)]
 
-#metadata((src: "README.md", line: 10216))
+#metadata((src: "README.md", line: 10218))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10218))
+#metadata((src: "README.md", line: 10220))
 #strong[Recomendación:]
 Agregar un checkbox obligatorio con el texto de la declaración y mantener deshabilitado el botón hasta que se marque.
 
 #heading(level: 3)[PROBLEMA \#14: El DNI de Lucía y de Mateo Torres difiere entre pantallas] <sec:problema-14-el-dni-de-lucia-y-de-mateo-torres-difiere-entre-pantallas>
-#metadata((src: "README.md", line: 10221, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10223, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10223))
+#metadata((src: "README.md", line: 10225))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Consistencia y estándares
 
-#metadata((src: "README.md", line: 10226))
+#metadata((src: "README.md", line: 10228))
 #strong[Problema:]
 En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5678", mientras que en "R02 · Beneficiario" el mismo menor aparece con "••••2716". Lo mismo ocurre con la titular: en "16 · Perfil · Paciente" Lucía Torres tiene DNI "••••1234", pero en "R02 · Beneficiario" aparece con "••••4821". En un contexto de salud, esta diferencia puede hacer dudar al usuario de si los datos son correctos o de si está seleccionando a la persona correcta.
 
-#metadata((src: "README.md", line: 10231))
+#metadata((src: "README.md", line: 10233))
 #strong[Figura 223]
 
-#metadata((src: "README.md", line: 10233))
+#metadata((src: "README.md", line: 10235))
 #emph[Perfil paciente]
 
-#metadata((src: "README.md", line: 10235, kind: "figure", img: "chapter-04/assets/heuristicas/11-perfil-paciente.png"))
+#metadata((src: "README.md", line: 10237, kind: "figure", img: "chapter-04/assets/heuristicas/11-perfil-paciente.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/11-perfil-paciente.png", alt: "Perfil paciente", width: 60%)]
 
-#metadata((src: "README.md", line: 10237))
+#metadata((src: "README.md", line: 10239))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10241))
-#strong[Figura 224]
 
 #metadata((src: "README.md", line: 10243))
+#strong[Figura 224]
+
+#metadata((src: "README.md", line: 10245))
 #emph[Menores - Lista]
 
-#metadata((src: "README.md", line: 10245, kind: "figure", img: "chapter-04/assets/heuristicas/12-menores-lista.png"))
+#metadata((src: "README.md", line: 10247, kind: "figure", img: "chapter-04/assets/heuristicas/12-menores-lista.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/12-menores-lista.png", alt: "Menores - Lista", width: 60%)]
 
-#metadata((src: "README.md", line: 10247))
+#metadata((src: "README.md", line: 10249))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10251))
-#strong[Figura 225]
 
 #metadata((src: "README.md", line: 10253))
+#strong[Figura 225]
+
+#metadata((src: "README.md", line: 10255))
 #emph[Reserva - Beneficiario]
 
-#metadata((src: "README.md", line: 10255, kind: "figure", img: "chapter-04/assets/heuristicas/14-reserva-beneficiario.png"))
+#metadata((src: "README.md", line: 10257, kind: "figure", img: "chapter-04/assets/heuristicas/14-reserva-beneficiario.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/14-reserva-beneficiario.png", alt: "Reserva - Beneficiario", width: 60%)]
 
-#metadata((src: "README.md", line: 10257))
+#metadata((src: "README.md", line: 10259))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10259))
+#metadata((src: "README.md", line: 10261))
 #strong[Recomendación:]
 Usar los mismos datos de ejemplo en todas las pantallas y verificar la coherencia antes de pasar a desarrollo.
 
 #heading(level: 3)[PROBLEMA \#15: Etiqueta "Asistencia" ambigua, íconos que no coinciden con su etiqueta y no existe una opción "Perfil" en la navegación] <sec:problema-15-etiqueta-asistencia-ambigua-iconos-que-no-coinciden-con-su-etiqueta-y-no-existe-una-opcion-perfil-en-la-navegacion>
-#metadata((src: "README.md", line: 10262, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10264, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10264))
+#metadata((src: "README.md", line: 10266))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Information Architecture - Is it findable?
 
-#metadata((src: "README.md", line: 10267))
+#metadata((src: "README.md", line: 10269))
 #strong[Problema:]
 La navegación inferior tiene "Inicio", "Reservar cita", "Asistencia" y "Configuración". "Asistencia" puede interpretarse como ayuda, como registro de llegada (existe "Registrar mi llegada" en el detalle de cita) o como historial de asistencias, y su ícono es un código QR que no aclara ninguna de esas lecturas. El ícono de "Configuración" se parece más a un símbolo de brillo (un sol) que al engranaje habitual de ajustes. Además, el perfil y los menores vinculados no tienen una opción visible en la navegación, por lo que el usuario no sabe dónde encontrarlos.
 
-#metadata((src: "README.md", line: 10272))
+#metadata((src: "README.md", line: 10274))
 #strong[Figura 226]
 
-#metadata((src: "README.md", line: 10274))
+#metadata((src: "README.md", line: 10276))
 #emph[Dashboard inicio]
 
-#metadata((src: "README.md", line: 10276, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
+#metadata((src: "README.md", line: 10278, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/07-dashboard-inicio.png", alt: "Dashboard inicio", width: 60%)]
 
-#metadata((src: "README.md", line: 10278))
+#metadata((src: "README.md", line: 10280))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10280))
+#metadata((src: "README.md", line: 10282))
 #strong[Recomendación:]
 Renombrar la opción según su función ("Ayuda" o "Mi llegada"), incluir "Perfil" en la navegación o dentro de "Configuración" con una etiqueta clara, y validarlo con una prueba de card sorting.
 
 #heading(level: 3)[PROBLEMA \#16: La leyenda del calendario del historial usa "Disponible" y depende solo del color] <sec:problema-16-la-leyenda-del-calendario-del-historial-usa-disponible-y-depende-solo-del-color>
-#metadata((src: "README.md", line: 10283, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10285, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10285))
+#metadata((src: "README.md", line: 10287))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Inclusive Design - Proporciona experiencias comparables
 
-#metadata((src: "README.md", line: 10288))
+#metadata((src: "README.md", line: 10290))
 #strong[Problema:]
 En "D04 · Historial · Calendario" la leyenda indica "● Disponible" y "Fecha seleccionada". "Disponible" no corresponde a un historial de citas pasadas (debería indicar días con atenciones), y la diferencia entre ambos estados se comunica solo con color. Los usuarios con daltonismo o baja visión no podrán distinguir qué días tienen citas.
 
-#metadata((src: "README.md", line: 10293))
+#metadata((src: "README.md", line: 10295))
 #strong[Figura 227]
 
-#metadata((src: "README.md", line: 10295))
+#metadata((src: "README.md", line: 10297))
 #emph[Historial - Calendario]
 
-#metadata((src: "README.md", line: 10297, kind: "figure", img: "chapter-04/assets/heuristicas/15-historial-calendario.png"))
+#metadata((src: "README.md", line: 10299, kind: "figure", img: "chapter-04/assets/heuristicas/15-historial-calendario.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/15-historial-calendario.png", alt: "Historial - Calendario", width: 60%)]
 
-#metadata((src: "README.md", line: 10299))
+#metadata((src: "README.md", line: 10301))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10301))
+#metadata((src: "README.md", line: 10303))
 #strong[Recomendación:]
 Cambiar la leyenda a "Día con atención", usar además una forma o un ícono distinto para marcar los días con atenciones y asegurar un contraste mínimo de 4.5:1.
 
 #heading(level: 3)[PROBLEMA \#17: El historial filtrado no ofrece "Quitar filtro"] <sec:problema-17-el-historial-filtrado-no-ofrece-quitar-filtro>
-#metadata((src: "README.md", line: 10304, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10306, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10306))
+#metadata((src: "README.md", line: 10308))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Usabilidad - Libertad y control del usuario
 
-#metadata((src: "README.md", line: 10309))
+#metadata((src: "README.md", line: 10311))
 #strong[Problema:]
 En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D05 · Historial filtrado" solo aparece "Cambiar fecha". Para volver a ver todo el historial, el usuario debe abrir de nuevo el calendario o retroceder con la flecha.
 
-#metadata((src: "README.md", line: 10314))
+#metadata((src: "README.md", line: 10316))
 #strong[Figura 228]
 
-#metadata((src: "README.md", line: 10316))
+#metadata((src: "README.md", line: 10318))
 #emph[Historial filtrado]
 
-#metadata((src: "README.md", line: 10318, kind: "figure", img: "chapter-04/assets/heuristicas/16-historial-filtrado.png"))
+#metadata((src: "README.md", line: 10320, kind: "figure", img: "chapter-04/assets/heuristicas/16-historial-filtrado.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/16-historial-filtrado.png", alt: "Historial filtrado", width: 60%)]
 
-#metadata((src: "README.md", line: 10320))
+#metadata((src: "README.md", line: 10322))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10324))
-#strong[Figura 229]
 
 #metadata((src: "README.md", line: 10326))
+#strong[Figura 229]
+
+#metadata((src: "README.md", line: 10328))
 #emph[Historial - Calendario]
 
-#metadata((src: "README.md", line: 10328, kind: "figure", img: "chapter-04/assets/heuristicas/15-historial-calendario.png"))
+#metadata((src: "README.md", line: 10330, kind: "figure", img: "chapter-04/assets/heuristicas/15-historial-calendario.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/15-historial-calendario.png", alt: "Historial - Calendario", width: 60%)]
 
-#metadata((src: "README.md", line: 10330))
+#metadata((src: "README.md", line: 10332))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10332))
+#metadata((src: "README.md", line: 10334))
 #strong[Recomendación:]
 Mostrar en la pantalla filtrada un chip con la fecha aplicada y una "x" o un botón "Quitar filtro", visibles junto al resultado.
 
 #heading(level: 3)[PROBLEMA \#18: El plazo de cancelación no se indica y "Cancelar reserva" está junto a la acción principal] <sec:problema-18-el-plazo-de-cancelacion-no-se-indica-y-cancelar-reserva-esta-junto-a-la-accion-principal>
-#metadata((src: "README.md", line: 10335, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10337, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10337))
+#metadata((src: "README.md", line: 10339))
 #strong[Severidad:] 3
 #strong[Heurística violada:] Usabilidad - Prevención de errores
 
-#metadata((src: "README.md", line: 10340))
+#metadata((src: "README.md", line: 10342))
 #strong[Problema:]
 En "D06 · Detalle de cita" el texto "La cancelación está sujeta al plazo del establecimiento" no indica cuál es el plazo, y está al final (17 px de alto, letra pequeña). Además, "Registrar mi llegada" y "Cancelar reserva" son botones consecutivos separados por solo 14 px, con riesgo de toque equivocado.
 
-#metadata((src: "README.md", line: 10345))
+#metadata((src: "README.md", line: 10347))
 #strong[Figura 230]
 
-#metadata((src: "README.md", line: 10347))
+#metadata((src: "README.md", line: 10349))
 #emph[Detalle de cita]
 
-#metadata((src: "README.md", line: 10349, kind: "figure", img: "chapter-04/assets/heuristicas/17-detalle-cita.png"))
+#metadata((src: "README.md", line: 10351, kind: "figure", img: "chapter-04/assets/heuristicas/17-detalle-cita.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/17-detalle-cita.png", alt: "Detalle de cita", width: 60%)]
 
-#metadata((src: "README.md", line: 10351))
+#metadata((src: "README.md", line: 10353))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10353))
+#metadata((src: "README.md", line: 10355))
 #strong[Recomendación:]
 Mostrar el plazo concreto (por ejemplo, "Puedes cancelar hasta 24 horas antes"), diferenciar visualmente la acción destructiva (botón de texto o color de advertencia), separarla de la acción principal y pedir confirmación antes de cancelar.
 
 #heading(level: 3)[PROBLEMA \#19: El campo de búsqueda dice "Buscar por nombre" pero busca especialidades] <sec:problema-19-el-campo-de-busqueda-dice-buscar-por-nombre-pero-busca-especialidades>
-#metadata((src: "README.md", line: 10356, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10358, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10358))
+#metadata((src: "README.md", line: 10360))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Information Architecture - Is it understandable?
 
-#metadata((src: "README.md", line: 10361))
+#metadata((src: "README.md", line: 10363))
 #strong[Problema:]
 En "R01 · Reserva tu cita" la etiqueta del campo es "Buscar especialidad", pero el placeholder indica "Buscar por nombre…". El usuario no sabe si puede escribir el nombre de un médico o solo una especialidad. Además, cada tarjeta repite "Ver disponibilidad", lo que añade ruido visual.
 
-#metadata((src: "README.md", line: 10366))
+#metadata((src: "README.md", line: 10368))
 #strong[Figura 231]
 
-#metadata((src: "README.md", line: 10368))
+#metadata((src: "README.md", line: 10370))
 #emph[Reserva - Especialidades]
 
-#metadata((src: "README.md", line: 10370, kind: "figure", img: "chapter-04/assets/heuristicas/18-reserva-especialidad.png"))
+#metadata((src: "README.md", line: 10372, kind: "figure", img: "chapter-04/assets/heuristicas/18-reserva-especialidad.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/18-reserva-especialidad.png", alt: "Reserva - Especialidades", width: 60%)]
 
-#metadata((src: "README.md", line: 10372))
+#metadata((src: "README.md", line: 10374))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10374))
+#metadata((src: "README.md", line: 10376))
 #strong[Recomendación:]
 Alinear etiqueta y placeholder ("Ej. Pediatría") y quitar el texto repetido de las tarjetas, o dejarlo solo en la primera.
 
 #heading(level: 3)[PROBLEMA \#20: Toda la interfaz está solo en español, sin selector de idioma] <sec:problema-20-toda-la-interfaz-esta-solo-en-espanol-sin-selector-de-idioma>
-#metadata((src: "README.md", line: 10377, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10379, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10379))
+#metadata((src: "README.md", line: 10381))
 #strong[Severidad:] 2
 #strong[Heurística violada:] Inclusive Design - Ofrece opciones
 
-#metadata((src: "README.md", line: 10382))
+#metadata((src: "README.md", line: 10384))
 #strong[Problema:]
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en\_US) y español latinoamericano (es\_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
-#metadata((src: "README.md", line: 10387))
+#metadata((src: "README.md", line: 10389))
 #strong[Figura 232]
 
-#metadata((src: "README.md", line: 10389))
+#metadata((src: "README.md", line: 10391))
 #emph[Dashboard inicio]
 
-#metadata((src: "README.md", line: 10391, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
+#metadata((src: "README.md", line: 10393, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/07-dashboard-inicio.png", alt: "Dashboard inicio", width: 60%)]
 
-#metadata((src: "README.md", line: 10393))
+#metadata((src: "README.md", line: 10395))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10395))
+#metadata((src: "README.md", line: 10397))
 #strong[Recomendación:]
 Incluir en "Configuración" un selector de idioma (English / Español), definir inglés como idioma por defecto y preparar las cadenas para traducción.
 
 #heading(level: 3)[PROBLEMA \#21: Se usa "claves" y "contraseña" para el mismo concepto] <sec:problema-21-se-usa-claves-y-contrasena-para-el-mismo-concepto>
-#metadata((src: "README.md", line: 10398, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10400, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10400))
+#metadata((src: "README.md", line: 10402))
 #strong[Severidad:] 1
 #strong[Heurística violada:] Usabilidad - Consistencia y estándares
 
-#metadata((src: "README.md", line: 10403))
+#metadata((src: "README.md", line: 10405))
 #strong[Problema:]
 El diálogo "Las claves no coinciden" usa "claves", mientras que el resto de la app usa "contraseña". Es un problema menor, pero el usuario puede pensar que se trata de otro dato.
 
-#metadata((src: "README.md", line: 10408))
+#metadata((src: "README.md", line: 10410))
 #strong[Figura 233]
 
-#metadata((src: "README.md", line: 10410))
+#metadata((src: "README.md", line: 10412))
 #emph[Diálogo contraseñas diferentes]
 
-#metadata((src: "README.md", line: 10412, kind: "figure", img: "chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png"))
+#metadata((src: "README.md", line: 10414, kind: "figure", img: "chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png", alt: "Diálogo contraseñas diferentes", width: 60%)]
 
-#metadata((src: "README.md", line: 10414))
+#metadata((src: "README.md", line: 10416))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10416))
+#metadata((src: "README.md", line: 10418))
 #strong[Recomendación:]
 Usar siempre "contraseña" y definir una guía de términos para la app.
 
 #heading(level: 3)[PROBLEMA \#22: Nombres distintos para la misma acción o pantalla] <sec:problema-22-nombres-distintos-para-la-misma-accion-o-pantalla>
-#metadata((src: "README.md", line: 10419, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10421, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10421))
+#metadata((src: "README.md", line: 10423))
 #strong[Severidad:] 1
 #strong[Heurística violada:] Information Architecture - Is it usable?
 
-#metadata((src: "README.md", line: 10424))
+#metadata((src: "README.md", line: 10426))
 #strong[Problema:]
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
-#metadata((src: "README.md", line: 10429))
+#metadata((src: "README.md", line: 10431))
 #strong[Figura 234]
 
-#metadata((src: "README.md", line: 10431))
+#metadata((src: "README.md", line: 10433))
 #emph[Dashboard inicio]
 
-#metadata((src: "README.md", line: 10433, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
+#metadata((src: "README.md", line: 10435, kind: "figure", img: "chapter-04/assets/heuristicas/07-dashboard-inicio.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/07-dashboard-inicio.png", alt: "Dashboard inicio", width: 60%)]
 
-#metadata((src: "README.md", line: 10435))
+#metadata((src: "README.md", line: 10437))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10439))
-#strong[Figura 235]
 
 #metadata((src: "README.md", line: 10441))
+#strong[Figura 235]
+
+#metadata((src: "README.md", line: 10443))
 #emph[Error de carga]
 
-#metadata((src: "README.md", line: 10443, kind: "figure", img: "chapter-04/assets/heuristicas/21-error-carga.png"))
+#metadata((src: "README.md", line: 10445, kind: "figure", img: "chapter-04/assets/heuristicas/21-error-carga.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/21-error-carga.png", alt: "Error de carga", width: 60%)]
 
-#metadata((src: "README.md", line: 10445))
+#metadata((src: "README.md", line: 10447))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
-
-#metadata((src: "README.md", line: 10449))
-#strong[Figura 236]
 
 #metadata((src: "README.md", line: 10451))
+#strong[Figura 236]
+
+#metadata((src: "README.md", line: 10453))
 #emph[Reserva - Especialidades]
 
-#metadata((src: "README.md", line: 10453, kind: "figure", img: "chapter-04/assets/heuristicas/18-reserva-especialidad.png"))
+#metadata((src: "README.md", line: 10455, kind: "figure", img: "chapter-04/assets/heuristicas/18-reserva-especialidad.png"))
 #block(breakable: false)[#fit-image("/chapter-04/assets/heuristicas/18-reserva-especialidad.png", alt: "Reserva - Especialidades", width: 60%)]
 
-#metadata((src: "README.md", line: 10455))
+#metadata((src: "README.md", line: 10457))
 #emph[Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.]
 
-#metadata((src: "README.md", line: 10457))
+#metadata((src: "README.md", line: 10459))
 #strong[Recomendación:]
 Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegación y títulos.
 
-#metadata((src: "README.md", line: 10460))
+#metadata((src: "README.md", line: 10462))
 #v(2pt)
 #line(length: 100%, stroke: 0.6pt + rgb("#c6d0dc"))
 #v(2pt)
 
-#metadata((src: "README.md", line: 10462))
+#metadata((src: "README.md", line: 10464))
 #pagebreak()
 
 #heading(level: 1)[Conclusiones] <sec:conclusiones>
-#metadata((src: "README.md", line: 10464, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 10466, kind: "heading", level: 1))
 
 #heading(level: 2)[Conclusiones y recomendaciones] <sec:conclusiones-y-recomendaciones>
-#metadata((src: "README.md", line: 10466, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 10468, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 10468))
+#metadata((src: "README.md", line: 10470))
 A partir del análisis realizado y de la validación de las hipótesis planteadas, se presentan las siguientes conclusiones y recomendaciones:
 
 #heading(level: 3)[Conclusiones] <sec:conclusiones-2>
-#metadata((src: "README.md", line: 10470, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10472, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10472))
+#metadata((src: "README.md", line: 10474))
 - La problemática planteada sobre la ineficiencia en el acceso a citas en establecimientos públicos de salud se confirmó a través del análisis de contexto y entrevistas, demostrando que la dependencia exclusiva de canales presenciales o telefónicos genera colas prolongadas y desinformación.
 - El supuesto de negocio respecto a la demanda no atendida por soluciones digitales fue validado con éxito, dado que todos los pacientes entrevistados consideraron de alta utilidad consultar la disponibilidad de cupos en tiempo real desde sus dispositivos.
 - Al contrastar las suposiciones con el comportamiento real del segmento de pacientes, se evidenció que la mayoría no ha utilizado aplicaciones médicas previamente. Sin embargo, se sienten cómodos realizando trámites desde sus celulares, lo que confirma la viabilidad de adopción de la plataforma.
@@ -12897,61 +12899,61 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 - La hipótesis sobre la reducción del tiempo de espera percibido es respaldada por la estructuración técnica del sistema, el cual incluye un mecanismo de registro de llegada (#emph[check-in]) por código QR diseñado para descongestionar las ventanillas físicas.
 
 #heading(level: 3)[Recomendaciones] <sec:recomendaciones>
-#metadata((src: "README.md", line: 10484, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10486, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10486))
+#metadata((src: "README.md", line: 10488))
 - #strong[Despliegue incremental basado en el Product Backlog:] Se recomienda ejecutar la priorización del MVP definida en los Sprints 1 y 2, liberando inicialmente el motor de reservas (#emph[Appointments & Booking]), la validación de identidad y el #emph[check-in] por QR, debido a que estos componentes representan el núcleo de valor para descongestionar el flujo presencial de pacientes.
 - #strong[Evolución hacia la Reprogramación Inteligente:] Para futuras versiones, se recomienda integrar un sistema de sugerencias inteligentes de horarios y la posibilidad de reprogramación automática, con el objetivo de resolver de manera proactiva los cruces de agenda y mejorar la experiencia del módulo central de citas.
 - #strong[Ampliación de mecanismos de Check-in:] A partir de las oportunidades identificadas en el contexto #emph[Arrival & QR Check-in], se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
 
-#metadata((src: "README.md", line: 10492))
+#metadata((src: "README.md", line: 10494))
 #pagebreak()
 
 #heading(level: 1)[Bibliografía] <sec:bibliografia>
-#metadata((src: "README.md", line: 10494, kind: "heading", level: 1))
-
-#metadata((src: "README.md", line: 10496))
-Ministerio de Salud (MINSA). (2017, 16 de mayo). #emph[Nuevo sistema “Web colas” reduce el tiempo de espera en hospitales]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales")[https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales]
+#metadata((src: "README.md", line: 10496, kind: "heading", level: 1))
 
 #metadata((src: "README.md", line: 10498))
-Ministerio de Salud (MINSA). (2023, 19 de septiembre). #emph[Minsa reduce tiempos de espera por atención en establecimientos de salud de Lima Metropolitana]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana")[https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana]
+Ministerio de Salud (MINSA). (2017, 16 de mayo). #emph[Nuevo sistema “Web colas” reduce el tiempo de espera en hospitales]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales")[https://www.gob.pe/institucion/minsa/noticias/13263-nuevo-sistema-web-colas-reduce-el-tiempo-de-espera-en-hospitales]
 
 #metadata((src: "README.md", line: 10500))
-Ministerio de Salud (MINSA). (2024, 1 de marzo). #emph[Minsa fortalece sistema de “Citas en Línea”]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea")[https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea]
+Ministerio de Salud (MINSA). (2023, 19 de septiembre). #emph[Minsa reduce tiempos de espera por atención en establecimientos de salud de Lima Metropolitana]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana")[https://www.gob.pe/institucion/minsa/noticias/831946-minsa-reduce-tiempos-de-espera-por-atencion-en-establecimientos-de-salud-de-lima-metropolitana]
 
 #metadata((src: "README.md", line: 10502))
-Ministerio de Salud (MINSA). (2025, 2 de agosto). #emph[Hospital San Juan de Lurigancho: más de 93 000 pacientes accedieron a sus citas por teléfono en el primer semestre de 2025]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025")[https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025]
+Ministerio de Salud (MINSA). (2024, 1 de marzo). #emph[Minsa fortalece sistema de “Citas en Línea”]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea")[https://www.gob.pe/institucion/minsa/noticias/914419-minsa-fortalece-sistema-de-citas-en-linea]
 
 #metadata((src: "README.md", line: 10504))
-Presidencia del Consejo de Ministros (PCM). (2026). #emph[Obtener cita médica en un establecimiento del Minsa]. Plataforma del Estado Peruano. Recuperado de #link("https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa")[https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa]
+Ministerio de Salud (MINSA). (2025, 2 de agosto). #emph[Hospital San Juan de Lurigancho: más de 93 000 pacientes accedieron a sus citas por teléfono en el primer semestre de 2025]. Recuperado de #link("https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025")[https://www.gob.pe/institucion/minsa/noticias/1224054-hospital-san-juan-de-lurigancho-mas-de-93-000-pacientes-accedieron-a-sus-citas-por-telefono-en-el-primer-semestre-de-2025]
 
 #metadata((src: "README.md", line: 10506))
-World Health Organization (WHO). (2025). #emph[Global strategy on digital health 2020–2027]. World Health Organization. Recuperado de #link("https://www.who.int/publications/i/item/9789240116870")[https://www.who.int/publications/i/item/9789240116870]
+Presidencia del Consejo de Ministros (PCM). (2026). #emph[Obtener cita médica en un establecimiento del Minsa]. Plataforma del Estado Peruano. Recuperado de #link("https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa")[https://www.gob.pe/20621-obtener-cita-medica-en-un-establecimiento-del-minsa]
 
 #metadata((src: "README.md", line: 10508))
+World Health Organization (WHO). (2025). #emph[Global strategy on digital health 2020–2027]. World Health Organization. Recuperado de #link("https://www.who.int/publications/i/item/9789240116870")[https://www.who.int/publications/i/item/9789240116870]
+
+#metadata((src: "README.md", line: 10510))
 #pagebreak()
 
 #heading(level: 1)[Anexos] <sec:anexos>
-#metadata((src: "README.md", line: 10509, kind: "heading", level: 1))
+#metadata((src: "README.md", line: 10511, kind: "heading", level: 1))
 
 #heading(level: 2)[Anexo A: Vídeos de entrevistas realizadas] <sec:anexo-a-videos-de-entrevistas-realizadas>
-#metadata((src: "README.md", line: 10511, kind: "heading", level: 2))
+#metadata((src: "README.md", line: 10513, kind: "heading", level: 2))
 
-#metadata((src: "README.md", line: 10513))
+#metadata((src: "README.md", line: 10515))
 Para la identificación de necesidades de los usuarios, se entrevistó a una pequeña parte del conjunto que forma a los segmentos objetivos.
 
 #heading(level: 3)[Segmento objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud] <sec:segmento-objetivo-1-pacientes-de-zonas-urbanas-perifericas-que-acuden-a-establecimientos-publicos-de-salud-2>
-#metadata((src: "README.md", line: 10515, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10517, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10517))
+#metadata((src: "README.md", line: 10519))
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW")[Entrevista \#1]
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCq6uLH5lxNSpoxEAN9q1qfAVF0qgEoHWEvug_aNrID100?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sXQwSj")[Entrevista \#2]
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAAwi-Crd0UR6aM_vPtIyU8AY5rcOh7FEgLdmqvsNkC1bU?e=JGBM7r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D")[Entrevista \#3]
 
 #heading(level: 3)[Segmento objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud] <sec:segmento-objetivo-2-personal-asistencial-y-administrativo-de-establecimientos-publicos-de-salud-2>
-#metadata((src: "README.md", line: 10523, kind: "heading", level: 3))
+#metadata((src: "README.md", line: 10525, kind: "heading", level: 3))
 
-#metadata((src: "README.md", line: 10525))
+#metadata((src: "README.md", line: 10527))
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQDwPo3p7nHzTo_3Q8Hdq5zRASpKzhsImRgOPsWf4awAsOU?e=pY3MtU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D")[Entrevista \#1]
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi")[Entrevista \#2]
 - #link("https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p")[Entrevista \#3]
