@@ -306,6 +306,7 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
       - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
       - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
+      - [4.2.2.5. Testing Suite Evidence for Sprint Review](#4225-testing-suite-evidence-for-sprint-review)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -9661,6 +9662,48 @@ La [Tabla 82](#tabla-82) reúne los commits que respaldan estos avances, con el 
 
 *Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 12 de noviembre de 2026. La rama indicada contiene el commit y no implica que el cambio ya se haya integrado a develop.*
 
+#### 4.2.2.5. Testing Suite Evidence for Sprint Review
+
+Las pruebas automatizadas identificadas para el Sprint 2 se concentran en la aplicación administrativa de Flutter. Con `flutter_test` se comprueban pantallas y cambios de estado; las pruebas de repositorios y del cliente HTTP usan respuestas simuladas para verificar rutas, parámetros y manejo de errores sin depender del servidor publicado.
+
+La [Tabla 83](#tabla-83) enlaza los commits que incorporaron los archivos de prueba. El commit de Agenda incluye tanto la implementación como sus pruebas.
+
+<a id="tabla-83"></a>
+
+**Tabla 83**
+
+*Commits de la suite de pruebas del Sprint 2*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+| :--- | :--- | :--- | :--- | :--- |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `login` | [05b445712c8231e600abe7e3f17d8b123228033f](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/05b445712c8231e600abe7e3f17d8b123228033f) | feat(auth): implement staff login and password recovery | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [a9d67c53661b5089dd3b38ad56660b3a4fe55c73](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/a9d67c53661b5089dd3b38ad56660b3a4fe55c73) | test(home): cover dashboard data navigation and recovery states | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `schedule` | [d689c208bc2a7b65bf06bc3da044a72c75cfa6cc](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/d689c208bc2a7b65bf06bc3da044a72c75cfa6cc) | Pantallas avanzadas | 01/11/2026 |
+
+*Nota. Se verificaron los archivos de prueba modificados por los commits. Los mensajes y fechas se conservan del historial de Git.*
+
+La [Tabla 84](#tabla-84) detalla qué comportamiento verifica cada grupo de pruebas.
+
+<a id="tabla-84"></a>
+
+**Tabla 84**
+
+*Inventario de pruebas automatizadas del Sprint 2*
+
+| Componente | Rama | Archivo | Comportamiento verificado |
+| :--- | :--- | :--- | :--- |
+| Acceso | `login` | [auth_page_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/login/saludya/test/auth_page_test.dart) | Pantalla de inicio de sesión sin registro público y navegación a la solicitud de recuperación por correo. |
+| Inicio: repositorio HTTP | `home` | [home_repository_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/home/saludya/test/home/home_repository_test.dart) | Consultas autenticadas y filtros por fecha y bloque, datos vacíos, errores HTTP, y estados de llegada y atención (US-41 y US-50). |
+| Inicio: controlador | `home` | [home_controller_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/home/saludya/test/home/home_controller_test.dart) | Prevalencia de la respuesta más reciente, finalización segura al desmontar y limpieza de datos al fallar la sesión. |
+| Inicio: pantallas | `home` | [home_page_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/home/saludya/test/home/home_page_test.dart) | Totales, navegación a cancelaciones y pacientes, reintento, accesos a calendario y QR, y desplazamiento con texto ampliado. |
+| Agenda: navegación | `schedule` | [main_schedule_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/schedule/saludya/test/features/schedule/presentation/main_schedule_test.dart) | Entrada a Agenda y navegación al calendario. |
+| Agenda: cliente HTTP | `schedule` | [saludya_api_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/schedule/saludya/test/features/schedule/presentation/saludya_api_test.dart) | Consulta de profesionales y bloques filtrados, y actualización del estado del bloque sin enviar el consultorio como campo editable. |
+| Agenda: ViewModels | `schedule` | [schedule_view_models_test.dart](https://github.com/RuwaLabs/frontend-flutter-saludya/blob/schedule/saludya/test/features/schedule/presentation/schedule_view_models_test.dart) | Filtrado de especialidades y de bloques por especialidad y fecha. |
+
+El 12 de noviembre de 2026 se ejecutó `flutter test` por separado en los commits `820f2f2` de `home` y `d689c20` de `schedule`. Pasaron 21 pruebas en `home` (19 de Inicio y 2 de acceso heredadas de `login`) y 5 en `schedule`: 26 en total, sin duplicar las pruebas de acceso.
+
+No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y reglas de Flutter, ni en los commits del perfil de paciente de Kotlin. Las pruebas de Kotlin documentadas en el Sprint 1 se conservan como evidencia de ese sprint. Queda pendiente validar los recorridos de Flutter de punta a punta con una cuenta de personal y el backend desplegado.
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9936,9 +9979,9 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<a id="tabla-83"></a>
+<a id="tabla-85"></a>
 
-**Tabla 83**
+**Tabla 85**
 
 *Datos de la evaluación*
 
@@ -9994,9 +10037,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<a id="tabla-84"></a>
+<a id="tabla-86"></a>
 
-**Tabla 84**
+**Tabla 86**
 
 *TABLA RESUMEN de la evaluación heurística*
 
