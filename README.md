@@ -305,6 +305,7 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
     - [4.2.2. Sprint 2](#422-sprint-2)
       - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
+      - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -9609,6 +9610,57 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.
 
+#### 4.2.2.4. Development Evidence for Sprint Review
+
+El desarrollo del Sprint 2 se concentró en la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Los avances se distribuyeron en ramas por módulo; la revisión del 12 de noviembre de 2026 recoge los cambios disponibles hasta esa fecha. Las funcionalidades publicadas en ramas de trabajo aún no forman una aplicación integrada en `develop`.
+
+- **Acceso administrativo (`login`).** Inicio de sesión con verificación por correo, recuperación de acceso y validación del rol de admisión o Super Admin (US-30 y US-32).
+- **Inicio del personal (`home`).** Resumen de reservas y cancelaciones del día, listado de pacientes por bloque y estado de llegada o atención (US-41 y US-50). El módulo utiliza la sesión del personal para consultar el backend y reutiliza los accesos de registro de llegada y cola.
+- **Agenda operativa (`schedule`).** Selección de especialidad y profesional, calendario, bloques del día, detalle y edición de bloque (US-36 a US-40 y US-42).
+- **Llegada y cola presencial (`qr`).** Registro por escaneo o código manual, consulta de cola y acciones para llamar, iniciar, finalizar o marcar una ausencia (US-43 a US-49).
+- **Reglas operativas (`settings`).** Consulta y edición de configuración, capacidad, intervalos y otras reglas del establecimiento (US-33 a US-35).
+
+En paralelo, la aplicación del paciente en Kotlin avanzó en `patient-configuration`: se definió la API del perfil, se inyectó el cliente con Hilt y se conectó la pantalla de configuración a la cuenta autenticada. Se registra como avance complementario, fuera del alcance principal de Flutter; estos commits todavía no están en `develop` de Kotlin.
+
+En las ramas revisadas no se identificó evidencia suficiente para dar por completadas la creación de cuentas de admisión (US-31), la vista completa de indicadores (US-51), la demanda por especialidad (US-52) ni la exportación de reportes (US-53). El resumen de Inicio sí presenta conteos de reservas y cancelaciones de la jornada.
+
+La [Tabla 82](#tabla-82) reúne los commits que respaldan estos avances, con el mensaje original y la rama que los contiene.
+
+<a id="tabla-82"></a>
+
+**Tabla 82**
+
+*Commits de implementación de SaludYa para la revisión del Sprint 2*
+
+| Repository | Branch | Commit Id | Commit Message | Committed On |
+| :--- | :--- | :--- | :--- | :--- |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `develop` | [5a7044a52569acb5298b85571e3e33819210f1b1](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/5a7044a52569acb5298b85571e3e33819210f1b1) | feat: Inicicializando proyecto con Flutter | 30/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `login` | [05b445712c8231e600abe7e3f17d8b123228033f](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/05b445712c8231e600abe7e3f17d8b123228033f) | feat(auth): implement staff login and password recovery | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `login` | [13e53e875a6ec09612b86a5cc48441b54ce9504a](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/13e53e875a6ec09612b86a5cc48441b54ce9504a) | fix(auth): point Flutter API to deployed backend | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [f54100022b0e10daa85c8e313a964334ae0c1ac3](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/f54100022b0e10daa85c8e313a964334ae0c1ac3) | feat(home): load staff dashboard and reservation data from backend | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [fbcac20dc85553635abe22daeee121b1ee5b5734](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/fbcac20dc85553635abe22daeee121b1ee5b5734) | feat(home): add staff overview and reservation detail screens | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [10adb156d630baec97a1f8d34724bec3b963843b](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/10adb156d630baec97a1f8d34724bec3b963843b) | feat(home): open staff dashboard after authentication | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [783650498032adb4f5029d4d72eb4c8bf93bdd1c](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/783650498032adb4f5029d4d72eb4c8bf93bdd1c) | feat(home): connect arrival and queue shortcuts to existing QR module | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [893db0f707d0f8cca3b0b47f8dc06fe0265c7b8f](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/893db0f707d0f8cca3b0b47f8dc06fe0265c7b8f) | fix(home): resolve staff identity and handle queue lifecycle states | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `home` | [820f2f2d50af9d8423578b9d1329a0e87be76932](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/820f2f2d50af9d8423578b9d1329a0e87be76932) | chore(home): lock scanner dependency and align analyzer style | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `schedule` | [cc152859ef4388321027f6d9d7822022436e2115](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/cc152859ef4388321027f6d9d7822022436e2115) | Domain, Application terminados | 30/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `schedule` | [d689c208bc2a7b65bf06bc3da044a72c75cfa6cc](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/d689c208bc2a7b65bf06bc3da044a72c75cfa6cc) | Pantallas avanzadas | 01/11/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `qr` | [72862e156c8589518277be06b11a183b8a6ad409](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/72862e156c8589518277be06b11a183b8a6ad409) | feat(qr): implement arrival check-in and attendance qr | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [cc0e20c1199b59d4e721ccb8a8354cc48a931765](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/cc0e20c1199b59d4e721ccb8a8354cc48a931765) | feat(settings): implement configuration API integration | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [b5966b61d604d1606282b050eadfb9f4b1d78039](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/b5966b61d604d1606282b050eadfb9f4b1d78039) | feat(settings): implement general settings screen | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [0cad45c182e13a2eef8e1dada66024ff8f6a6761](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/0cad45c182e13a2eef8e1dada66024ff8f6a6761) | feat(settings): implement additional rules screen | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [83ca3e19eee6ba8262790f8137f9e8c37b912279](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/83ca3e19eee6ba8262790f8137f9e8c37b912279) | feat(settings): implement capacity editing screen | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [27ac50911e64ca26178edb96ca321a5de6235cb9](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/27ac50911e64ca26178edb96ca321a5de6235cb9) | feat(settings): implement attention intervals screen | 31/10/2026 |
+| [RuwaLabs/frontend-flutter-saludya](https://github.com/RuwaLabs/frontend-flutter-saludya) | `settings` | [0ce4c7d61eb05b4266638800eb859f61f1443c1d](https://github.com/RuwaLabs/frontend-flutter-saludya/commit/0ce4c7d61eb05b4266638800eb859f61f1443c1d) | fix(settings): improve capacity validation feedback | 31/10/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [3d3448871ed1d9ae9e7c201234584b2896b4e2fb](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/3d3448871ed1d9ae9e7c201234584b2896b4e2fb) | chore: configure backend API connection | 11/11/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [3cb21d274752fd1924b4aae68f14c02e29626b67](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/3cb21d274752fd1924b4aae68f14c02e29626b67) | feat: define patient profile API endpoints | 11/11/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [749a7261c054377af82df9cedc7fa58cc94b2925](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/749a7261c054377af82df9cedc7fa58cc94b2925) | feat: provide PatientApi through Hilt | 11/11/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [4079dc2f376ec5b613fbd0d4e800acb2e9a33afc](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/4079dc2f376ec5b613fbd0d4e800acb2e9a33afc) | feat: implement authenticated patient profile repository | 11/11/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [77961665061a9accb0b1884a46a6ab09951535a9](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/77961665061a9accb0b1884a46a6ab09951535a9) | feat: display authenticated patient profile in configuration | 11/11/2026 |
+| [RuwaLabs/frontend-kotlin-saludya](https://github.com/RuwaLabs/frontend-kotlin-saludya) | `patient-configuration` | [b93f2b93af9f51406cdcebbb935cd9b7fa4bc7ac](https://github.com/RuwaLabs/frontend-kotlin-saludya/commit/b93f2b93af9f51406cdcebbb935cd9b7fa4bc7ac) | fix: handle coroutine cancellation in patient profile viewmodels | 11/11/2026 |
+
+*Nota. Elaboración del equipo RuwaLabs a partir del historial de Git, consultado el 12 de noviembre de 2026. La rama indicada contiene el commit y no implica que el cambio ya se haya integrado a develop.*
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9884,9 +9936,9 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<a id="tabla-82"></a>
+<a id="tabla-83"></a>
 
-**Tabla 82**
+**Tabla 83**
 
 *Datos de la evaluación*
 
@@ -9942,9 +9994,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<a id="tabla-83"></a>
+<a id="tabla-84"></a>
 
-**Tabla 83**
+**Tabla 84**
 
 *TABLA RESUMEN de la evaluación heurística*
 
