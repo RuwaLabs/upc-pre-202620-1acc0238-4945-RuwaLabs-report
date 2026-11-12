@@ -9566,17 +9566,43 @@ La **velocity** del Sprint 2 se estableció en **84 story points**, equivalente 
 | Login e integración        | Ramos Mera, Neo Daniel              | US-30, US-31, US-32                             |            9 |
 | **Total**                  | **5 integrantes**                   | **24 user stories**                             |       **84** |
 
+#### 4.2.2.2. Aspect Leaders and Collaborators
+
+En el Sprint 2, el equipo RuwaLabs reorientó la distribución del trabajo para abordar la implementación de las capacidades del personal asistencial/administrativo (*Admission Staff*) y del *Super Admin*, así como los servicios backend de soporte. Los aspectos trabajados durante esta iteración abarcan los siguientes *bounded contexts*:
+
+1. **Identity & Access Management (IAM):** Autenticación y gestión de credenciales para el Super Admin y el Personal de Admisión (US-30 a US-32).
+2. **Appointments & Booking (Agenda Operativa):** Búsqueda de especialidades, consulta de calendarios operativos, bloques del día, detalle por profesional y edición de capacidad de bloques (US-36 a US-42).
+3. **Arrival & QR Check-in (Validación en Ventanilla):** Registro presencial de llegada mediante escaneo de código QR y validación por código manual (US-43 y US-44).
+4. **Hospital Operations & Configuration:** Configuración de la duración de intervalos de atención y edición/consulta de reglas operativas del establecimiento (US-33 a US-35).
+5. **Dynamic Waitlist & Reassignment:** Soporte técnico y parametrización de reglas de reasignación automática para la cola de reserva operativa.
+
+Para garantizar la dirección técnica y la colaboración continua en cada entregable del Sprint 2, se actualizó la matriz LACX (*Leadership-and-Collaboration Matrix*). En esta matriz, cada integrante asume la responsabilidad de Líder (**L**) en un aspecto principal y la de Colaborador (**C**) en los aspectos restantes.
+
+**Tabla 81**  
+*Leadership-and-Collaboration Matrix (LACX) — Sprint 2*
+
+| Integrante (Apellidos, Nombres) | Usuario de GitHub | IAM (Admin/Staff) | Appointments & Booking (Agenda Operativa) | Dynamic Waitlist & Reassignment | Arrival & QR Check-in (Validación Ventanilla) | Hospital Operations & Configuration |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Aguilar Untiveros, Rodrigo Fabrizio | Rodri2712 | C | C | C | C | **L** |
+| Meza Solórzano, Didier Sebastian | DidierSebas | **L** | C | C | C | C |
+| Montoya Nina, Paula Fernanda | SeviNyO | C | **L** | C | C | C |
+| Ramos Mera, Neo Daniel | norahccccc | C | C | **L** | C | C |
+| Torres Juárez, Alisee Muriell | Lisee1 | C | C | C | **L** | C |
+
+*Nota.* Elaboración del equipo RuwaLabs para el proyecto SaludYa. **L** = Leader (Líder), **C** = Collaborator (Colaborador).
+
+
 #### 4.2.2.3. Sprint Backlog 2
 
 El Sprint 2 tiene como objetivo habilitar la gestión diaria de la atención para el personal administrativo desde la aplicación móvil Flutter/Dart. Para su gestión, el equipo utiliza **Jira** como herramienta de control; el tablero del proyecto se puede revisar en el siguiente enlace:
 
 - Link Jira: https://ruwalabs-salud-ya.atlassian.net/
 
-A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 81](#tabla-81).
+A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 82](#tabla-82).
 
-<a id="tabla-81"></a>
+<a id="tabla-82"></a>
 
-**Tabla 81**
+**Tabla 82**
 
 *Sprint Backlog 2*
 
