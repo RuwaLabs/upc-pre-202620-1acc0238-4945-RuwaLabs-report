@@ -74,6 +74,7 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
 | 2.4.3 | 09-10-26 | Meza Solórzano, Didier Sebastian | Cap. IV — 4.2.1.4 Development Evidence, 4.2.1.5 Testing Suite y 4.2.1.6 Execution Evidence. |
 | 2.4.4 | 10-10-26 | Ramos Mera, Neo Daniel | Cap. IV — 4.2.1.7 Services Documentation, 4.2.1.8 Software Deployment Evidence y 4.2.1.9 Team Collaboration Insights. |
 | 2.4.5 | 10-10-26 | Montoya Nina, Paula Fernanda | Cap. IV — 4.2.1.2 Aspect Leaders and Collaborators; Project Report Collaboration Insights (TB1) y correcciones de la entrega. |
+| 2.4.6 | 11-11-26 | Montoya Nina, Paula Fernanda | Cap. IV — Sprint Planning 2 y Sprint Backlog 2; actualización del Product Backlog y diferenciación de TB1 y AV2 en Student Outcome. |
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
@@ -301,6 +302,9 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
       - [4.2.1.7. Services Documentation Evidence for Sprint Review](#4217-services-documentation-evidence-for-sprint-review)
       - [4.2.1.8. Software Deployment Evidence for Sprint Review](#4218-software-deployment-evidence-for-sprint-review)
       - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
+    - [4.2.2. Sprint 2](#422-sprint-2)
+      - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -346,35 +350,42 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, Candidate Context Discovery, Domain Message Flows Modeling, Bounded Context Canvases, Context Mapping y el modelo C4 para documentar la arquitectura de SaludYa. Asimismo, incorporé los conceptos de las dos colas complementarias del dominio (Booking Order y Attendance Queue), refinando los bounded contexts existentes y actualizando los diagramas de EventStorming, Context Mapping y Container Level Diagram.</li>
-          <li><strong>AV2:</strong> Apliqué buenas prácticas de diseño de interfaces y de documentación para elaborar las guías de estilo, la arquitectura de información y la propuesta visual del Landing Page, así como las convenciones de código y la configuración de despliegue de la solución.</li>
+          <li><strong>TB1:</strong> Apliqué buenas prácticas de diseño de interfaces y de documentación para elaborar las guías de estilo, la arquitectura de información y la propuesta visual del Landing Page, así como las convenciones de código y la configuración de despliegue de la solución.</li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de configuración operativa al organizar el desarrollo en Flutter de las pantallas de intervalos y reglas del establecimiento, junto con la documentación de la ejecución del Sprint 2.</li>
         </ul>
        <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
   <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre la técnica 5W2H, el diagrama de Ishikawa, la metodología Lean UX, el análisis competitivo y el diseño de entrevistas para desarrollar de principio a fin la problemática, la solución y la validación con usuarios de SaludYa.</li>
-  <li><strong>AV2:</strong> Apliqué nuevos conocimientos de diseño de experiencia de usuario y de aseguramiento de calidad para elaborar los mock-ups y los user flows de las aplicaciones, y para documentar las evidencias de desarrollo, pruebas y ejecución del Sprint 1.</li>
+  <li><strong>TB1:</strong> Apliqué nuevos conocimientos de diseño de experiencia de usuario y de aseguramiento de calidad para elaborar los mock-ups y los user flows de las aplicaciones, y para documentar las evidencias de desarrollo, pruebas y ejecución del Sprint 1.</li>
+  <li><strong>AV2:</strong> Apliqué conocimientos de visualización de información al organizar el módulo Inicio en Flutter: pacientes con reserva por bloque, citas canceladas, indicadores del día, demanda por especialidad y exportación de reportes, además del diseño de las evidencias de desarrollo y pruebas.</li>
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> Investigué y apliqué conceptos avanzados de arquitectura de software para documentar el diseño a nivel de código de los Bounded Contexts. Esto incluyó la definición técnica de controladores, servicios y repositorios, plasmando esta lógica de negocio en diagramas relacionales de base de datos y diagramas de clases precisos para el proyecto.</li>
-          <li><strong>AV2:</strong> Apliqué conocimientos de diseño de wireframes y de gestión ágil de proyectos para elaborar los wireframes y wireflow diagrams de la aplicación, así como el Sprint Planning y el Sprint Backlog del primer sprint.</li>
+          <li><strong>TB1:</strong> Apliqué conocimientos de diseño de wireframes y de gestión ágil de proyectos para elaborar los wireframes y wireflow diagrams de la aplicación, así como el Sprint Planning y el Sprint Backlog del primer sprint.</li>
+          <li><strong>AV2:</strong> Apliqué la planificación ágil al definir el objetivo y descomponer las 24 historias del Sprint 2; organicé el desarrollo del calendario operativo en Flutter, con selección de especialidad, consulta de bloques y edición de horarios. Actualicé las secciones de colaboración del informe y Student Outcome.</li>
         </ul> 
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre el modelado táctico de Domain-Driven Design (DDD), estructurando correctamente las capas de Dominio, Aplicación, Interfaz e Infraestructura. Asimismo, aprendí y utilicé estándares de modelado C4 y UML para elaborar los diagramas de componentes, clases y base de datos de los Bounded Contexts asignados.
 </li>
-          <li><strong>AV2:</strong> Apliqué conocimientos de diseño de wireframes y de documentación de servicios para elaborar los wireframes y wireflow diagrams, y para evidenciar la documentación de los servicios web, el despliegue y la colaboración del equipo durante el Sprint 1.</li>
+          <li><strong>TB1:</strong> Apliqué conocimientos de diseño de wireframes y de documentación de servicios para elaborar los wireframes y wireflow diagrams, y para evidenciar la documentación de los servicios web, el despliegue y la colaboración del equipo durante el Sprint 1.</li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de autenticación e integración móvil al organizar el acceso del Super Admin y del personal de admisión, así como la unión de los módulos administrativos y la documentación de servicios y despliegue del Sprint 2.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
           <li><strong>AV1:</strong> Apliqué nuevos conocimientos sobre EventStorming, diagramas de usuario y la redacción de User Stories para desarrollar de principio a fin la problemática, la solución y la validación de SaludYa </li>
-          <li><strong>AV2:</strong> Apliqué conocimientos de prototipado, de entornos de desarrollo y de control de versiones para elaborar los mock-ups, los user flows, el prototipo de la aplicación y las secciones de entorno de desarrollo y gestión del código.</li>
+          <li><strong>TB1:</strong> Apliqué conocimientos de prototipado, de entornos de desarrollo y de control de versiones para elaborar los mock-ups, los user flows, el prototipo de la aplicación y las secciones de entorno de desarrollo y gestión del código.</li>
+          <li><strong>AV2:</strong> Apliqué conocimientos de interacción con la cámara y gestión de estados para organizar el registro de llegada por QR o código, la cola y la atención presencial, junto con la matriz de líderes y colaboradores y el análisis de colaboración del Sprint 2.</li>
         </ul>
       </td>
       <td width="25%">
         <p><strong>AV1:</strong><br>
         Como equipo, actualizamos de forma práctica nuestros conocimientos en el análisis y modelado de software, integrando metodologías como Lean UX, EventStorming y Domain-Driven Design (DDD). Esto nos permitió diseñar una arquitectura sólida, documentada con diagramas tácticos, estratégicos y de bases de datos, alineando la solución tecnológica a las necesidades reales del sector salud.</p>
-        <p><strong>AV2:</strong><br>
+        <p><strong>TB1:</strong><br>
         Como equipo, aplicamos nuevos conocimientos de diseño UX/UI, documentación de servicios, configuración de software y análisis de nuestra colaboración en GitHub para construir los capítulos III y IV del informe y evidenciar el Sprint 1, demostrando que la actualización de conceptos nos permitió entregar artefactos de mayor calidad.</p>
+        <p><strong>AV2:</strong><br>
+        Como equipo, aplicamos conocimientos de desarrollo móvil con Flutter/Dart y gestión ágil para distribuir las 24 historias y 84 puntos del Sprint 2 entre acceso, calendario, atención presencial, configuración e indicadores, con una visión compartida de la experiencia administrativa de SaludYa.</p>
       </td>
     </tr>
     <tr style="break-inside:auto">
@@ -385,34 +396,41 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
         <strong>Aguilar Untiveros, Rodrigo Fabrizio</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la necesidad de investigar de forma autónoma técnicas de modelado estratégico y táctico que no había aplicado antes, como EventStorming y Domain-Driven Design, para sustentar con criterios arquitectónicos sólidos el diseño de SaludYa. La correcta delimitación de los bounded contexts y la identificación de las dos colas del dominio me exigieron un análisis profundo para alinear el lenguaje ubicuo con la arquitectura del sistema.</li>
-          <li><strong>AV2:</strong> Reconocí la importancia de investigar sobre diseño inclusivo, accesibilidad y arquitectura de la información para sustentar la propuesta visual del producto, así como de conocer las prácticas de despliegue y publicación de la solución.</li>
+          <li><strong>TB1:</strong> Reconocí la importancia de investigar sobre diseño inclusivo, accesibilidad y arquitectura de la información para sustentar la propuesta visual del producto, así como de conocer las prácticas de despliegue y publicación de la solución.</li>
+          <li><strong>AV2:</strong> Reconocí que la implementación de reglas operativas requiere estudiar cómo representar parámetros y validaciones de manera comprensible para el Super Admin. La ejecución de estos flujos en Flutter me permitió relacionar el aprendizaje autónomo con las necesidades reales de configuración del establecimiento.</li>
         </ul>
         <strong>Meza Solórzano, Didier Sebastian</strong>
 <ul>
   <li><strong>AV1:</strong> Reconocí la necesidad de seguir aprendiendo de forma autónoma metodologías que no había aplicado antes, como Lean UX y el diseño de entrevistas cualitativas, para poder sustentar con información real el desarrollo de SaludYa.</li>
-  <li><strong>AV2:</strong> Reconocí la necesidad de aprender sobre patrones de diseño de interfaces y de pruebas de software para sustentar los mock-ups y las evidencias de testing del sprint con criterios de calidad.</li>
+  <li><strong>TB1:</strong> Reconocí la necesidad de aprender sobre patrones de diseño de interfaces y de pruebas de software para sustentar los mock-ups y las evidencias de testing del sprint con criterios de calidad.</li>
+  <li><strong>AV2:</strong> Reconocí la necesidad de aprender a presentar indicadores y demanda por especialidad con claridad, además de verificar los filtros y formatos de los reportes operativos. El trabajo en Inicio y las pruebas del Sprint 2 reforzaron la importancia de contrastar las interfaces con sus historias de usuario.</li>
 </ul>
         <strong>Montoya Nina, Paula Fernanda</strong>
         <ul>
           <li><strong>AV1:</strong> Comprendí que diseñar soluciones de software requiere una constante actualización en metodologías como DDD. Buscar y estudiar información sobre patrones de integración y persistencia por mi cuenta me permitió resolver problemas técnicos complejos al definir las capas de infraestructura y dominio de SaludYa.
 </li>
-          <li><strong>AV2:</strong> Reconocí el valor de la planificación y priorización ágil para organizar el trabajo del equipo y de representar los flujos de usuario para sustentar el diseño del producto.</li>
+          <li><strong>TB1:</strong> Reconocí el valor de la planificación y priorización ágil para organizar el trabajo del equipo y de representar los flujos de usuario para sustentar el diseño del producto.</li>
+          <li><strong>AV2:</strong> Reconocí la necesidad de profundizar en la navegación entre especialidad, fecha y profesional, así como en las reglas de edición de bloques horarios. Al planificar y trabajar el calendario operativo del Sprint 2, relacioné el aprendizaje de Flutter con el flujo cotidiano del personal de admisión.</li>
         </ul>
         <strong>Ramos Mera, Neo Daniel</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la importancia de investigar de manera autónoma sobre arquitectura hexagonal y patrones de diseño. Entendí que este aprendizaje continuo es indispensable para definir correctamente entidades, agregados y repositorios, garantizando que el diseño del software sea escalable y mantenible en el entorno profesional.</li>
-          <li><strong>AV2:</strong> Reconocí la importancia de aprender sobre documentación de API y de analizar la colaboración del equipo en GitHub para evidenciar el avance del sprint.</li>
+          <li><strong>TB1:</strong> Reconocí la importancia de aprender sobre documentación de API y de analizar la colaboración del equipo en GitHub para evidenciar el avance del sprint.</li>
+          <li><strong>AV2:</strong> Reconocí que integrar los módulos administrativos exige profundizar en el control de acceso por rol y en la compatibilidad entre las pantallas Flutter y los servicios. La documentación de servicios y despliegue me permitió consolidar una estrategia de aprendizaje basada en la integración de funcionalidades.</li>
         </ul>
         <strong>Torres Juárez, Alisee Muriel</strong>
         <ul>
           <li><strong>AV1:</strong> Reconocí la importancia de poner en práctica herramientas y metodologías que no había aplicado antes —como el EventStorming, los diagramas de usuario y la estructuración de User Stories para sustentar y modelar con precisión el desarrollo de SaludYa. La correcta definición de las User Stories técnicas, me exigió un análisis mucho más profundo para alinear los eventos del sistema con la arquitectura tecnológica</li>
-          <li><strong>AV2:</strong> Reconocí la importancia de documentar el entorno de desarrollo y aplicar buenas prácticas de control de versiones, así como del prototipado para validar la experiencia antes del desarrollo.</li>
+          <li><strong>TB1:</strong> Reconocí la importancia de documentar el entorno de desarrollo y aplicar buenas prácticas de control de versiones, así como del prototipado para validar la experiencia antes del desarrollo.</li>
+          <li><strong>AV2:</strong> Reconocí la necesidad de aprender sobre lectura de QR, registro manual y transiciones de estado de la cola para cubrir situaciones reales de atención. Este estudio guio mi trabajo en los flujos de llegada, llamado, atención y ausencia del Sprint 2.</li>
         </ul>
       </td>
       <td>
         <p><strong>AV1:</strong><br> El equipo reconoció que el aprendizaje autónomo es un pilar fundamental en el desarrollo del proyecto. La exigencia de investigar y dominar nuevas herramientas tecnológicas, técnicas de entrevistas y patrones arquitectónicos nos demostró que la actualización constante es la única vía para proponer soluciones de software de calidad.</p>
-        <p><strong>AV2:</strong><br>
+        <p><strong>TB1:</strong><br>
         El equipo reconoció que el aprendizaje permanente también se reflejó en esta entrega, al investigar de forma autónoma sobre diseño de interfaces, documentación de API, entornos de despliegue y análisis de colaboración, competencias necesarias para documentar y sustentar el trabajo del sprint.</p>
+        <p><strong>AV2:</strong><br>
+        El equipo reconoció que el desarrollo del módulo administrativo requiere aprender continuamente sobre Flutter/Dart, integración de servicios, estados de la atención y pruebas. La distribución de responsabilidades del Sprint 2 permitió aplicar estos conocimientos a los flujos del establecimiento y fortalecer las competencias de desarrollo móvil colaborativo.</p>
       </td>
     </tr>
   </tbody>
@@ -2721,15 +2739,15 @@ El backlog ordena las historias de usuario por prioridad e identifica su rol, al
 | 43      | US-42         | Personal de Admisión | Edición de un Bloque Horario                                                       | 5                                | Sprint 2 |
 | 44      | US-43         | Personal de Admisión | Registro de Llegada por Escaneo de QR                                              | 8                                | Sprint 2 |
 | 45      | US-44         | Personal de Admisión | Registro de Llegada por Código Manual                                              | 3                                | Sprint 2 |
-| 46      | US-45         | Personal de Admisión | Consulta de la Cola de Atención Presencial                                         | 3                                | Sprint 3 |
-| 47      | US-46         | Personal de Admisión | Llamado del Siguiente Paciente                                                     | 5                                | Sprint 3 |
-| 48      | US-47         | Personal de Admisión | Inicio de Atención de un Paciente Llamado                                          | 3                                | Sprint 3 |
-| 49      | US-48         | Personal de Admisión | Finalización de la Atención de un Paciente                                         | 3                                | Sprint 3 |
-| 50      | US-49         | Personal de Admisión | Registro de Ausencia de un Paciente                                                | 5                                | Sprint 3 |
-| 51      | US-50         | Personal de Admisión | Consulta de Citas Canceladas del Día                                               | 2                                | Sprint 3 |
-| 52      | US-51         | Personal de Admisión | Visualización de Indicadores del Día                                               | 5                                | Sprint 3 |
-| 53      | US-52         | Personal de Admisión | Visualización de Demanda por Especialidad                                          | 3                                | Sprint 3 |
-| 54      | US-53         | Personal de Admisión | Exportación de Reporte Operativo                                                   | 5                                | Sprint 3 |
+| 46      | US-45         | Personal de Admisión | Consulta de la Cola de Atención Presencial                                         | 3                                | Sprint 2 |
+| 47      | US-46         | Personal de Admisión | Llamado del Siguiente Paciente                                                     | 5                                | Sprint 2 |
+| 48      | US-47         | Personal de Admisión | Inicio de Atención de un Paciente Llamado                                          | 3                                | Sprint 2 |
+| 49      | US-48         | Personal de Admisión | Finalización de la Atención de un Paciente                                         | 3                                | Sprint 2 |
+| 50      | US-49         | Personal de Admisión | Registro de Ausencia de un Paciente                                                | 5                                | Sprint 2 |
+| 51      | US-50         | Personal de Admisión | Consulta de Citas Canceladas del Día                                               | 2                                | Sprint 2 |
+| 52      | US-51         | Personal de Admisión | Visualización de Indicadores del Día                                               | 5                                | Sprint 2 |
+| 53      | US-52         | Personal de Admisión | Visualización de Demanda por Especialidad                                          | 3                                | Sprint 2 |
+| 54      | US-53         | Personal de Admisión | Exportación de Reporte Operativo                                                   | 5                                | Sprint 2 |
 | 55      | TECH-01       | Developer            | Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM) | 5                                | Sprint 4 |
 | 56      | TECH-02       | Developer            | Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC    | 8                                | Sprint 4 |
 | 57      | TECH-03       | Developer            | Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias     | 5                                | Sprint 4 |
@@ -9493,6 +9511,104 @@ La implementación se distribuyó de la siguiente manera:
 
 La interpretación de los analíticos muestra que la actividad del Sprint se concentró en la integración de los bounded contexts y en la construcción de los recorridos del paciente, con una participación equilibrada de los cinco integrantes del equipo.
 
+### 4.2.2. Sprint 2
+
+#### 4.2.2.1. Sprint Planning 2
+
+A continuación se presentan los aspectos principales de la reunión de planificación del Sprint 2 de **SaludYa**, organizada por Paula Montoya el **25 de octubre de 2026** mediante **Discord**. En esta reunión el equipo **RuwaLabs** definió el Sprint Goal, el alcance de user stories enfocado en el personal administrativo y la capacidad de trabajo del segundo sprint, como se detalla en la [Tabla 79](#tabla-79).
+
+<a id="tabla-79"></a>
+
+**Tabla 79**
+
+*Sprint Planning 2 — resumen de la reunión*
+
+| Campo                           | Valor                                                                                                                                                                                                                                                              |
+| :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Sprint #                        | Sprint 2                                                                                                                                                                                                                                                           |
+| **Sprint Planning Background**  |                                                                                                                                                                                                                                                                    |
+| Date                            | 2026-10-25                                                                                                                                                                                                                                                         |
+| Time                            | 17:00                                                                                                                                                                                                                                                              |
+| Location                        | Reunión virtual mediante Discord                                                                                                                                                                                                                                   |
+| Prepared By                     | Montoya Nina, Paula Fernanda                                                                                                                                                                                                                                       |
+| Attendees (to planning meeting) | Aguilar Untiveros, Rodrigo Fabrizio / Meza Solórzano, Didier Sebastian / Montoya Nina, Paula Fernanda / Ramos Mera, Neo Daniel / Torres Juárez, Alisee Muriel                                                                                                      |
+| Sprint 1 Review Summary         | El primer sprint se enfocó en la aplicación para pacientes, los servicios web y el Landing Page; el informe presenta evidencias de desarrollo, pruebas, ejecución y despliegue de estos productos. El segundo sprint extiende la solución al flujo administrativo. |
+| Sprint 1 Retrospective Summary  | La organización por módulos y responsables del primer sprint se retoma para el segundo. Se prioriza la integración de la navegación y los flujos administrativos para mantener una experiencia coherente entre las funcionalidades.                                |
+| **Sprint Goal & User Stories**  |                                                                                                                                                                                                                                                                    |
+| Sprint 2 Goal                   | Facilitar al personal de admisión y al Super Admin la operación diaria del establecimiento —acceso, agenda, llegada y cola, reglas e indicadores— desde la aplicación móvil administrativa; validar los flujos comprometidos al cierre del 18/11/2026.             |
+| Sprint 2 Velocity               | 84 story points                                                                                                                                                                                                                                                    |
+| Sum of Story Points             | 84                                                                                                                                                                                                                                                                 |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+El **Sprint Goal** se formula desde el resultado para los usuarios, su impacto y una condición de comprobación, siguiendo el enfoque del Statement:
+
+> **Sprint 2 Goal:** *Nuestro **focus** está en permitir que el personal de admisión y el Super Admin gestionen la jornada de atención desde la aplicación móvil de SaludYa, con acceso según rol, calendario operativo, registro de llegada, cola presencial, reglas e indicadores.*
+>
+> *Creemos que esto **delivers** una operación más ordenada y visible para el establecimiento y una atención presencial más ágil para los pacientes.*
+>
+> *Esto se confirmará (**confirmed**) cuando el personal pueda iniciar sesión, consultar y editar bloques del calendario, registrar llegadas por QR o código, gestionar el llamado y la atención en cola, consultar indicadores y exportar un reporte; y el Super Admin pueda acceder y configurar reglas operativas, con los flujos demostrados en la aplicación y contrastados con los criterios de aceptación de las 24 historias comprometidas.*
+
+La **velocity** del Sprint 2 se estableció en **84 story points**, equivalente a la suma de las 24 historias incluidas en este sprint. El alcance se distribuye por responsable como se detalla en la [Tabla 80](#tabla-80).
+
+<a id="tabla-80"></a>
+
+**Tabla 80**
+
+*Alcance del Sprint 2 por módulo*
+
+| Módulo                     | Responsable                         | User Stories                                    | Story Points |
+| :------------------------- | :---------------------------------- | :---------------------------------------------- | -----------: |
+| Calendario                 | Montoya Nina, Paula Fernanda        | US-36, US-37, US-38, US-39, US-40, US-42        |           18 |
+| Cita y atención presencial | Torres Juárez, Alisee Muriel        | US-43, US-44, US-45, US-46, US-47, US-48, US-49 |           30 |
+| Configuración              | Aguilar Untiveros, Rodrigo Fabrizio | US-33, US-34, US-35                             |           10 |
+| Inicio e indicadores       | Meza Solórzano, Didier Sebastian    | US-41, US-50, US-51, US-52, US-53               |           17 |
+| Login e integración        | Ramos Mera, Neo Daniel              | US-30, US-31, US-32                             |            9 |
+| **Total**                  | **5 integrantes**                   | **24 user stories**                             |       **84** |
+
+#### 4.2.2.3. Sprint Backlog 2
+
+El Sprint 2 tiene como objetivo habilitar la gestión diaria de la atención para el personal administrativo desde la aplicación móvil Flutter/Dart. Para su gestión, el equipo utiliza **Jira** como herramienta de control; el tablero del proyecto se puede revisar en el siguiente enlace:
+
+- Link Jira: https://ruwalabs-salud-ya.atlassian.net/
+
+A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 81](#tabla-81).
+
+<a id="tabla-81"></a>
+
+**Tabla 81**
+
+*Sprint Backlog 2*
+
+| Sprint # | User Story Id    | User Story Title                                   | Work-Item / Task Id | Work-Item / Task Title    | Description                                                         | Estimation (Hours) | Assigned To | Status |
+| :------- | :--------------- | :------------------------------------------------- | :------------------ | :------------------------ | :------------------------------------------------------------------ | -----------------: | :---------- | :----- |
+| Sprint 2 | SCRUM-41 · US-30 | Inicio de Sesión del Super Admin                   | S2-T01              | Acceso Super Admin        | Construir formulario y control de sesión por rol.                   |                  6 | Neo         | To-do  |
+| Sprint 2 | SCRUM-42 · US-31 | Creación de Cuenta de Personal de Admisión         | S2-T02              | Alta de personal          | Construir formulario de creación y validaciones de cuenta.          |                  6 | Neo         | To-do  |
+| Sprint 2 | SCRUM-43 · US-32 | Inicio de Sesión del Personal de Admisión          | S2-T03              | Acceso de admisión        | Implementar inicio de sesión y navegación al módulo administrativo. |                  6 | Neo         | To-do  |
+| Sprint 2 | SCRUM-44 · US-33 | Configuración de la Duración de los Intervalos     | S2-T04              | Duración de intervalos    | Crear controles y validación de intervalos de atención.             |                  6 | Rodrigo     | To-do  |
+| Sprint 2 | SCRUM-45 · US-34 | Edición de una Regla Operativa del Establecimiento | S2-T05              | Editar regla operativa    | Crear formulario de edición y confirmación de cambios.              |                 10 | Rodrigo     | To-do  |
+| Sprint 2 | SCRUM-46 · US-35 | Consulta de Reglas Operativas Vigentes             | S2-T06              | Consultar reglas vigentes | Mostrar reglas y estados de la configuración.                       |                  4 | Rodrigo     | To-do  |
+| Sprint 2 | SCRUM-47 · US-36 | Selección de Especialidad en la Agenda Operativa   | S2-T07              | Selector de especialidad  | Permitir elegir especialidad y filtrar la agenda .                  |                  4 | Paula       | To-do  |
+| Sprint 2 | SCRUM-48 · US-37 | Consulta del Calendario Operativo                  | S2-T08              | Calendario mensual        | Mostrar fecas con bloques y estado sin bloques.                     |                  6 | Paula       | To-do  |
+| Sprint 2 | SCRUM-49 · US-38 | Consulta de Bloques del Día                        | S2-T09              | Bloques por día           | Mostrar bloques correspondientes a la fecha seleccionada.           |                  6 | Paula       | To-do  |
+| Sprint 2 | SCRUM-50 · US-39 | Consulta del Detalle de un Bloque                  | S2-T10              | Detalle de bloque         | Mostrar horario, profesional y disponibilidad del bloque.           |                  4 | Paula       | To-do  |
+| Sprint 2 | SCRUM-51 · US-40 | Consulta de Horario por Profesional                | S2-T11              | Horario profesional       | Filtrar y consultar horarios por profesional.                       |                  6 | Paula       | To-do  |
+| Sprint 2 | SCRUM-52 · US-41 | Consulta de Pacientes con Reserva en un Bloque     | S2-T12              | Reservas de bloque        | Mostrar pacientes con reserva en un bloque.                         |                  4 | Didier      | To-do  |
+| Sprint 2 | SCRUM-53 · US-42 | Edición de un Bloque Horario                       | S2-T13              | Editar bloque             | Editar horario y validar cambios de un bloque.                      |                 10 | Paula       | To-do  |
+| Sprint 2 | SCRUM-54 · US-43 | Registro de Llegada por Escaneo de QR              | S2-T14              | Escanear llegada          | Integrar cámara y lectura de QR para registrar la llegada.          |                 16 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-55 · US-44 | Registro de Llegada por Código Manual              | S2-T15              | Código manual             | Capturar y validar el código de reserva alternativo.                |                  6 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-56 · US-45 | Consulta de la Cola de Atención Presencial         | S2-T16              | Cola presencial           | Mostrar pacientes y estados de la cola.                             |                  6 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-57 · US-46 | Llamado del Siguiente Paciente                     | S2-T17              | Llamar siguiente          | Agregar acción de llamado y actualizar el estado en cola.           |                 10 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-58 · US-47 | Inicio de Atención de un Paciente Llamado          | S2-T18              | Iniciar atención          | Registrar inicio de atención de paciente llamado.                   |                  6 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-59 · US-48 | Finalización de la Atención de un Paciente         | S2-T19              | Finalizar atención        | Registrar cierre de la atención y actualizar la cola.               |                  6 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-60 · US-49 | Registro de Ausencia de un Paciente                | S2-T20              | Registrar ausencia        | Marcar ausencia y reflejarla en la cola.                            |                 10 | Alisee      | To-do  |
+| Sprint 2 | SCRUM-61 · US-50 | Consulta de Citas Canceladas del Día               | S2-T21              | Cancelaciones del día     | Mostrar lista de citas canceladas para la jornada.                  |                  4 | Didier      | To-do  |
+| Sprint 2 | SCRUM-62 · US-51 | Visualización de Indicadores del Día               | S2-T22              | Indicadores diarios       | Mostrar métricas operativas del día.                                |                 10 | Didier      | To-do  |
+| Sprint 2 | SCRUM-63 · US-52 | Visualización de Demanda por Especialidad          | S2-T23              | Demanda por especialidad  | Mostrar demanda desagregada por especialidad.                       |                  6 | Didier      | To-do  |
+| Sprint 2 | SCRUM-64 · US-53 | Exportación de Reporte Operativo                   | S2-T24              | Exportar reporte          | Seleccionar filtros y exportar el reporte operativo.                |                 10 | Didier      | To-do  |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9768,9 +9884,9 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<a id="tabla-77"></a>
+<a id="tabla-82"></a>
 
-**Tabla 77**
+**Tabla 82**
 
 *Datos de la evaluación*
 
@@ -9826,9 +9942,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<a id="tabla-78"></a>
+<a id="tabla-83"></a>
 
-**Tabla 78**
+**Tabla 83**
 
 *TABLA RESUMEN de la evaluación heurística*
 
@@ -10524,5 +10640,3 @@ Para la identificación de necesidades de los usuarios, se entrevistó a una peq
 - [Entrevista #2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi)
 
 - [Entrevista #3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p)
-
-
