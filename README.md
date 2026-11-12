@@ -8959,7 +8959,7 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
+En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado correctamente en AWS EC2; no se añadieron endpoints ni se realizaron cambios nuevos a la especificación OpenAPI durante esta revisión. Swagger UI permite consultar las operaciones existentes y, cuando corresponde, ejecutarlas con datos de muestra mediante *Try it out*. La documentación comprende los cinco *bounded contexts* del sistema: Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, con 62 operaciones distribuidas en 53 rutas.
 
 La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
 
@@ -9126,7 +9126,21 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
+En esta sección se resumen las actividades de despliegue de los productos digitales de SaludYa. El backend Spring Boot ya se encuentra desplegado en AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL; su ejecución se administra mediante `systemd` y su actualización se automatiza con scripts de Bash. El Landing Page también se encuentra publicado en GitHub Pages. Para la distribución de la aplicación Android de prueba se utilizará Firebase App Distribution, que permitirá compartir una versión instalable con los participantes de la validación sin publicarla en una tienda de aplicaciones.
+
+> **Estado de la evidencia Android:** pendiente de completar la primera distribución del APK en Firebase App Distribution. Después de subir el artefacto y verificar su instalación, se incorporará en este espacio la captura de la release y su enlace de distribución. Hasta entonces, esta sección describe el procedimiento previsto y no afirma que la publicación en Firebase ya se haya realizado.
+
+##### Distribución de la aplicación Android mediante Firebase App Distribution
+
+La distribución se realizará desde Firebase App Distribution con un APK de release generado desde el proyecto Android que se utilizará en la validación. Se registrará la aplicación con su identificador de paquete, se cargará el APK, se invitará al grupo de testers y se comprobará la instalación y el funcionamiento de los flujos principales en un dispositivo físico. El acceso al backend se verificará desde la aplicación instalada.
+
+**Evidencia de la distribución:** [Agregar aquí la captura de Firebase App Distribution cuando la release se encuentre cargada y verificada].
+
+**Enlace de distribución para testers:** [Agregar aquí el enlace generado por Firebase App Distribution].
+
+*Nota. La captura y el enlace se añadirán después de completar la distribución real del APK; no se deben incluir invitaciones, correos personales ni credenciales en la imagen.*
+
+Las evidencias del despliegue del backend y del Landing Page se presentan a continuación.
 
 Las actividades realizadas durante el Sprint fueron:
 
@@ -9150,7 +9164,7 @@ set -euo pipefail
 
 DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
-DB_PASSWORD="${DB_PASSWORD:-postgre}"
+DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
 
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
@@ -9201,7 +9215,7 @@ java -version 2>&1 | head -1
 sudo -u postgres psql -tAc "SELECT version();"
 echo "Base de datos : ${DB_NAME}"
 echo "Usuario       : ${DB_USER}"
-echo "Password      : ${DB_PASSWORD}"
+echo "Password      : [no se muestra]"
 echo "========================================="
 echo "Siguiente paso ->  sudo bash setup-env.sh"
 ```
@@ -9222,7 +9236,7 @@ Genera el archivo `/etc/saludya/saludya.env` con todas las variables del backend
 #   sudo bash setup-env.sh
 #
 # Personaliza con variables de entorno:
-#   DB_PASSWORD=MiClave BOOTSTRAP_PASSWORD=Admin2026 sudo -E bash setup-env.sh
+#   DB_PASSWORD=<valor-seguro> BOOTSTRAP_PASSWORD=<valor-seguro> sudo -E bash setup-env.sh
 #
 set -euo pipefail
 
@@ -9230,8 +9244,8 @@ DB_HOST="${DB_HOST:-localhost}"
 DB_PORT="${DB_PORT:-5432}"
 DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
-DB_PASSWORD="${DB_PASSWORD:-postgre}"
-BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:-SaludYa2026}"
+DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
+BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:?Define BOOTSTRAP_PASSWORD antes de ejecutar el script}"
 
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
@@ -9250,25 +9264,25 @@ DB_USER=${DB_USER}
 DB_PASSWORD=${DB_PASSWORD}
 
 # --- Secretos JWT / QR / cifrado de notificaciones ---
-APPLICATION_JWT_SECRET=dr6lu4fCylnYjpuy54LiH9YyJIIX+2mBaMlBFZJMbw49aJTGGJOVk6W9AE1CKsaa
-APPLICATION_QR_SECRET=OSRngazE7OBydWv5sAVcrqlTBTu0uePY8X673ylZiotieKo5cB8ubrYzwjLwuEGZ
-IAM_NOTIFICATIONS_ENCRYPTION_KEY=52Ziy3zob1MIKiCm6mxuQ1E+pjvV6/uh0mcctrbEmys=
+APPLICATION_JWT_SECRET=<GENERATE_A_UNIQUE_SECRET>
+APPLICATION_QR_SECRET=<GENERATE_A_UNIQUE_SECRET>
+IAM_NOTIFICATIONS_ENCRYPTION_KEY=<GENERATE_A_BASE64_ENCODED_KEY>
 
 # --- Verificacion de identidad (ApiPeru) ---
 IAM_IDENTITY_MODE=apiperu
 IAM_IDENTITY_URL=https://api.apiperu.dev/dni
-IAM_IDENTITY_API_KEY=28605|74UTT7gMm04Af243nXEUIRKuL25HJgo7kMw5xUzi8ca579b0
+IAM_IDENTITY_API_KEY=<IDENTITY_PROVIDER_API_KEY>
 
 # --- Administrador inicial (bootstrap) ---
 IAM_BOOTSTRAP_ENABLED=true
-IAM_BOOTSTRAP_EMAIL=admin@saludya.local
+IAM_BOOTSTRAP_EMAIL=<BOOTSTRAP_ADMIN_EMAIL>
 IAM_BOOTSTRAP_PASSWORD=${BOOTSTRAP_PASSWORD}
 
 # --- Correo (Gmail SMTP) ---
 MAIL_ENABLED=true
-MAIL_USERNAME=soporte.saludya.pe@gmail.com
-MAIL_FROM=soporte.saludya.pe@gmail.com
-MAIL_APP_PASSWORD=bhggslpxbaeiszkj
+MAIL_USERNAME=<SMTP_USERNAME>
+MAIL_FROM=<SMTP_FROM_ADDRESS>
+MAIL_APP_PASSWORD=<SMTP_APP_PASSWORD>
 IAM_NOTIFICATIONS_LOG_CODES=true
 EOF
 
