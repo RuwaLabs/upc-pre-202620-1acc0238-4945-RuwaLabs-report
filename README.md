@@ -9635,6 +9635,55 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.
 
+### 4.2.2.9. Team Collaboration Insights during Sprint 2
+
+Durante el **Sprint 2** (periodo del **24 de octubre al 31 de octubre de 2026**), el equipo **RuwaLabs** mantuvo un flujo de trabajo altamente colaborativo a través de la organización en GitHub (`RuwaLabs`), aplicando el modelo de ramificación **GitFlow** y la convención de **Conventional Commits**. En esta iteración, el desarrollo se enfocó en la construcción de los módulos para el personal asistencial/administrativo (*Admission Staff*) y el *Super Admin*, impactando activamente en los repositorios de desarrollo (`backend-saludya` y `frontend-kotlin-saludya`) y en el repositorio del informe final del proyecto (`upc-pre-202620-1acc0238-4945-RuwaLabs-report`).
+
+---
+
+#### **Análisis de colaboración y métricas en GitHub**
+
+Durante la fase de integración del Sprint 2, la actividad registrada en GitHub evidenció la participación constante de los cinco integrantes del equipo. En el conjunto de repositorios se registraron Pull Requests revisados, aprobados e integrados a la rama `develop`, asegurando el cumplimiento de la matriz **LACX (Leadership-and-Collaboration Matrix)** establecida para esta iteración.
+
+**Figura 200**  
+*Resumen de actividad y frecuencia de commits (Sprint 2)*
+
+![Figura 200 — Resumen de actividad en GitHub](assets/ContributorsBackend.png)
+
+*Nota. Captura del panel Insights en GitHub mostrando la distribución del volumen de commits en el periodo del Sprint 2.*
+
+---
+
+#### **Tabla 88**
+*Participación del equipo y métricas de colaboración en GitHub — Sprint 2*
+
+| Integrante (Apellidos, Nombres) | Usuario de GitHub | Commits | Adiciones (+) | Eliminaciones (−) | Repositorios / Ámbitos Principales |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **Aguilar Untiveros, Rodrigo Fabrizio** | Rodri2712 | 38 | +1,420 | −380 | *Hospital Operations & Configuration* (API de intervalos, reglas operativas y consola web). |
+| **Meza Solórzano, Didier Sebastian** | DidierSebas | 41 | +5,180 | −1,940 | *Identity & Access Management (IAM)* (Autenticación RBAC para Staff/Admin y seguridad). |
+| **Montoya Nina, Paula Fernanda** | SeviNyO | 36 | +8,920 | −2,150 | *Appointments & Booking Engine* (Agenda operativa, bloques y calendarios de especialidades). |
+| **Ramos Mera, Neo Daniel** | norahccccc | 32 | +3,110 | −720 | *Dynamic Waitlist & Reassignment* (Colas operativas, triggers de reasignación y desplegables). |
+| **Torres Juárez, Alisee Muriel** | lLisee1 | 30 | +3,450 | −1,120 | *Arrival & QR Check-in System* (Validación de QR en ventanilla y ticket digital). |
+
+*Nota. Elaboración del equipo RuwaLabs a partir de los paneles de Contributors e Insights de los repositorios en GitHub.*
+
+---
+
+**Figura 201**  
+*Contribuciones por integrante en GitHub (Sprint 2)*
+
+![Figura 201 — Contribuciones por integrante](assets/ContributorsReport.png)
+
+*Nota. Captura del panel Contributors en GitHub mostrando la participación de los 5 integrantes del equipo RuwaLabs.*
+
+---
+
+#### **Interpretación de los analíticos de colaboración**
+
+1. **Gestión de Pull Requests y Code Reviews:** Todas las ramas de características (*feature branches*) desarrolladas para las historias del personal asistencial y administrativo (ej. `feat/staff-iam`, `feat/operational-agenda`, `feat/desk-qr-checkin`, `feat/hospital-config`) se integraron mediante Pull Requests a `develop`. Cada PR requirió la revisión y aprobación (*Approve*) de al menos un colaborador antes del *merge*.
+2. **Trabajo Multirrepositorio y Trazabilidad:** En esta iteración se combinó el desarrollo de endpoints en el backend REST (`backend-saludya`), la integración de la app móvil (`frontend-kotlin-saludya`) y la redacción del informe técnico (`upc-pre-202620-1acc0238-4945-RuwaLabs-report`), respetando la arquitectura modular por *Bounded Contexts*.
+3. **Estandarización de Mensajes de Commit:** Se aplicó rigurosamente la convención de **Conventional Commits** (`feat:`, `fix:`, `refactor:`, `docs:`), enlazando cada commit con las User Stories y tareas definidas en la plataforma de gestión del proyecto
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
