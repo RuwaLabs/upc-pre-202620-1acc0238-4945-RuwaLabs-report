@@ -304,12 +304,12 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
       - [4.2.1.9. Team Collaboration Insights during Sprint](#4219-team-collaboration-insights-during-sprint)
     - [4.2.2. Sprint 2](#422-sprint-2)
       - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+      - [4.2.2.2. Aspect Leaders and Collaborators](#4222-aspect-leaders-and-collaborators)
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
       - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
       - [4.2.2.5. Testing Suite Evidence for Sprint Review](#4225-testing-suite-evidence-for-sprint-review)
       - [4.2.2.7. Services Documentation Evidence for Sprint Review](#4227-services-documentation-evidence-for-sprint-review)
       - [4.2.2.8. Software Deployment Evidence for Sprint Review](#4228-software-deployment-evidence-for-sprint-review)
-
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -9555,17 +9555,47 @@ La **velocity** del Sprint 2 se estableció en **84 story points**, equivalente 
 | Login e integración        | Ramos Mera, Neo Daniel              | US-30, US-31, US-32                             |            9 |
 | **Total**                  | **5 integrantes**                   | **24 user stories**                             |       **84** |
 
-#### 4.2.2.3. Sprint Backlog 2
+#### 4.2.2.2. Aspect Leaders and Collaborators
 
-El Sprint 2 tiene como objetivo habilitar la gestión diaria de la atención para el personal administrativo desde la aplicación móvil Flutter/Dart. Para su gestión, el equipo utiliza **Jira** como herramienta de control; el tablero del proyecto se puede revisar en el siguiente enlace:
-
-- Link Jira: https://ruwalabs-salud-ya.atlassian.net/
-
-A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 81](#tabla-81).
+En el Sprint 2 el equipo organizó el trabajo en función de los módulos funcionales de la aplicación móvil administrativa: **Acceso y cuentas (IAM)**, **Inicio e indicadores**, **Agenda operativa**, **Cita y atención presencial**, **Configuración operativa** e **Integración de la aplicación**. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 81](#tabla-81). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog 2.
 
 <a id="tabla-81"></a>
 
 **Tabla 81**
+
+*Leadership-and-Collaboration Matrix (LACX) — Sprint 2*
+
+| Team Member (Last Name, First Name) | GitHub Username | Acceso y cuentas (IAM) | Inicio e indicadores | Agenda operativa | Cita y atención presencial | Configuración operativa | Integración de la aplicación |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Aguilar Untiveros, Rodrigo Fabrizio | Rodri2712 | C | C | C | C | L | C |
+| Meza Solórzano, Didier Sebastian | DidierSebas | C | L | C | C | C | C |
+| Montoya Nina, Paula Fernanda | SeviNyO | C | C | L | C | C | C |
+| Ramos Mera, Neo Daniel | norahccccc | L | C | C | C | C | L |
+| Torres Juárez, Alisee Muriel | lLisee1 | C | C | C | L | C | C |
+
+*Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa. L = Leader, C = Collaborator.*
+
+#### 4.2.2.3. Sprint Backlog 2
+
+El Sprint 2 tiene como objetivo habilitar la gestión diaria de la atención para el personal administrativo desde la aplicación móvil Flutter/Dart. Para su gestión, el equipo utiliza **Jira** como herramienta de control; el tablero del proyecto se puede revisar en el siguiente enlace y en la [Figura 200](#figura-200).
+
+- Link Jira: https://ruwalabs-salud-ya.atlassian.net/
+
+<a id="figura-200"></a>
+
+**Figura 200**
+
+*Tablero de Jira del Sprint 2*
+
+<img src="chapter-04/assets/sprint-2/jira-board-sprint-2.png" alt="Tablero de Jira del Sprint 2" width="100%"/>
+
+*Nota. Captura del tablero SCRUM del Sprint 2 en Jira, con las 24 user stories del sprint y sus responsables.*
+
+A partir de las user stories comprometidas, el equipo descompuso el trabajo en las siguientes tasks (work-items), con su estimación en horas, responsable y estado, como se detalla en la [Tabla 82](#tabla-82).
+
+<a id="tabla-82"></a>
+
+**Tabla 82**
 
 *Sprint Backlog 2*
 
@@ -9600,7 +9630,7 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 
 #### 4.2.2.4. Development Evidence for Sprint Review
 
-El desarrollo del Sprint 2 se concentró en la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Los avances se distribuyeron en ramas por módulo; la revisión del 12 de noviembre de 2026 recoge los cambios disponibles hasta esa fecha. Las funcionalidades publicadas en ramas de trabajo aún no forman una aplicación integrada en `develop`.
+El desarrollo del Sprint 2 se concentró en la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Los avances se distribuyeron en ramas por módulo.
 
 - **Acceso administrativo (`login`).** Inicio de sesión con verificación por correo, recuperación de acceso y validación del rol de admisión o Super Admin (US-30 y US-32).
 - **Inicio del personal (`home`).** Resumen de reservas y cancelaciones del día, listado de pacientes por bloque y estado de llegada o atención (US-41 y US-50). El módulo utiliza la sesión del personal para consultar el backend y reutiliza los accesos de registro de llegada y cola.
@@ -9612,11 +9642,11 @@ En paralelo, la aplicación del paciente en Kotlin avanzó en `patient-configura
 
 En las ramas revisadas no se identificó evidencia suficiente para dar por completadas la creación de cuentas de admisión (US-31), la vista completa de indicadores (US-51), la demanda por especialidad (US-52) ni la exportación de reportes (US-53). El resumen de Inicio sí presenta conteos de reservas y cancelaciones de la jornada.
 
-La [Tabla 82](#tabla-82) reúne los commits que respaldan estos avances, con el mensaje original y la rama que los contiene.
+La [Tabla 83](#tabla-83) reúne los commits que respaldan estos avances, con el mensaje original y la rama que los contiene.
 
-<a id="tabla-82"></a>
+<a id="tabla-83"></a>
 
-**Tabla 82**
+**Tabla 83**
 
 *Commits de implementación de SaludYa para la revisión del Sprint 2*
 
@@ -9653,11 +9683,11 @@ La [Tabla 82](#tabla-82) reúne los commits que respaldan estos avances, con el 
 
 Las pruebas automatizadas identificadas para el Sprint 2 se concentran en la aplicación administrativa de Flutter. Con `flutter_test` se comprueban pantallas y cambios de estado; las pruebas de repositorios y del cliente HTTP usan respuestas simuladas para verificar rutas, parámetros y manejo de errores sin depender del servidor publicado.
 
-La [Tabla 83](#tabla-83) enlaza los commits que incorporaron los archivos de prueba. El commit de Agenda incluye tanto la implementación como sus pruebas.
+La [Tabla 84](#tabla-84) enlaza los commits que incorporaron los archivos de prueba. El commit de Agenda incluye tanto la implementación como sus pruebas.
 
-<a id="tabla-83"></a>
+<a id="tabla-84"></a>
 
-**Tabla 83**
+**Tabla 84**
 
 *Commits de la suite de pruebas del Sprint 2*
 
@@ -9669,11 +9699,11 @@ La [Tabla 83](#tabla-83) enlaza los commits que incorporaron los archivos de pru
 
 *Nota. Se verificaron los archivos de prueba modificados por los commits. Los mensajes y fechas se conservan del historial de Git.*
 
-La [Tabla 84](#tabla-84) detalla qué comportamiento verifica cada grupo de pruebas.
+La [Tabla 85](#tabla-85) detalla qué comportamiento verifica cada grupo de pruebas.
 
-<a id="tabla-84"></a>
+<a id="tabla-85"></a>
 
-**Tabla 84**
+**Tabla 85**
 
 *Inventario de pruebas automatizadas del Sprint 2*
 
@@ -9693,9 +9723,9 @@ No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y 
 
 #### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
-En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado correctamente en AWS EC2; no se añadieron endpoints ni se realizaron cambios nuevos a la especificación OpenAPI durante esta revisión. Swagger UI permite consultar las operaciones existentes y, cuando corresponde, ejecutarlas con datos de muestra mediante *Try it out*. La documentación comprende los cinco *bounded contexts* del sistema: Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, con 62 operaciones distribuidas en 53 rutas.
+En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado en AWS EC2; el alcance del Sprint 2 no incorporó nuevos controladores, sino que la aplicación móvil administrativa consume las operaciones existentes de Identity & Access Management, Appointments & Booking, Arrival & QR Check-in y Hospital Operations & Configuration. La documentación comprende 62 operaciones distribuidas en 53 rutas.
 
-La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+La especificación OpenAPI se publica en `/v3/api-docs` y se mantiene exportada en el repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión. En este Sprint se incorporaron ajustes en el flujo de creación de cuentas de personal de admisión y en la recuperación de acceso mediante código enviado por correo, reflejados en la especificación publicada.
 
 - **Swagger UI (documentación desplegada):** http://3.129.217.49:8080/swagger-ui/index.html
 - **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
@@ -9705,511 +9735,151 @@ La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al reposit
 
 | Commit | Mensaje | Relación |
 |:--|:--|:--|
-| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
-| [`fdf27c4`](https://github.com/RuwaLabs/backend-saludya/commit/fdf27c4) | `chore: drop hardcoded OpenAPI server so Swagger targets the current host` | Ajuste para que Swagger UI resuelva las peticiones contra el host desplegado |
-| [`a870d04`](https://github.com/RuwaLabs/backend-saludya/commit/a870d04) | `docs(iam): add setup guide and API request examples` | Guía de configuración y ejemplos de peticiones de IAM |
-| [`acb79f5`](https://github.com/RuwaLabs/backend-saludya/commit/acb79f5) | `fix(openapi): remove legacy ACME configuration` | Corrección de la configuración OpenAPI |
-| [`955abb6`](https://github.com/RuwaLabs/backend-saludya/commit/955abb6) | `feat: initializing project` | Configuración base de la documentación OpenAPI del proyecto |
+| [`4a8038a`](https://github.com/RuwaLabs/backend-saludya/commit/4a8038a) | `feat(iam): add email-code password recovery and staff seed` | Creación de cuentas de personal de admisión y recuperación por código de correo usada por el acceso administrativo |
+| [`40f9623`](https://github.com/RuwaLabs/backend-saludya/commit/40f9623) | `fix(iam): use Jackson 3 for staff seed` | Ajuste de serialización del personal de admisión para la respuesta documentada del endpoint |
+| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) que se mantiene publicado |
 
 ##### Tabla de endpoints documentados
 
-A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
+A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`. Las operaciones corresponden a las user stories US-30 a US-53 del Sprint 2: IAM (US-30 a US-32), Appointments & Booking (US-36 a US-42 y US-50), Arrival & QR Check-in (US-43 a US-49) y Hospital Operations & Configuration (US-33 a US-35, US-51 a US-53).
 
 ###### IAM — Identity & Access Management
 
-|  #  | Acción implementada                                        | Método | Sintaxis de llamada (endpoint)                   | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                                                              | Respuesta (ejemplo)                                                                                                                                                                              | Explicación del response                                                                                               | Documentación                                                                                             |
-| :-: | :--------------------------------------------------------- | :----: | :----------------------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-|  1  | Enviar código de verificación antes de registrar la cuenta |  POST  | `/api/v1/user-accounts/send-verification-code`   | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` · *sin cuerpo*                                                                                                                                                                             | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
-|  2  | Registrar al paciente verificado                           |  POST  | `/api/v1/user-accounts`                          | body: `dni, name, lastname, birthDate, phone, email, password, code`                         | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register)             |
-|  3  | Iniciar sesión (valida credenciales y envía código)        |  POST  | `/api/v1/user-accounts/login`                    | body: `email, password`                                                                      | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}`                                                                                                                  | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}`                                                                                         | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)                |
-|  4  | Completar inicio de sesión con el código                   |  POST  | `/api/v1/user-accounts/login/verify`             | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                                                                | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}`                                             | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)          |
-|  5  | Reenviar el código del desafío de login                    |  POST  | `/api/v1/user-accounts/login/resend`             | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                                                                | `202` · *sin cuerpo*                                                                                                                                                                             | Genera y reenvía un nuevo código para el mismo desafío                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode)      |
-|  6  | Cerrar sesión (revoca el token actual)                     |  POST  | `/api/v1/user-accounts/logout`                   | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                                                                  | `204` · *sin cuerpo*                                                                                                                                                                             | Revoca la sesión Bearer vigente; responde sin contenido                                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)               |
-|  7  | Solicitar enlace de recuperación de contraseña             |  POST  | `/api/v1/user-accounts/recover-password`         | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` `{"message":"If an active account exists, a recovery email will be sent."}`                                                                                                                | Confirma la recepción de forma genérica, sin revelar si el correo está registrado                                      | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover)              |
-|  8  | Restablecer contraseña con el enlace de recuperación       |  POST  | `/api/v1/user-accounts/reset-password`           | body: `token, password, confirmPassword`                                                     | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                            | `204` · *sin cuerpo*                                                                                                                                                                             | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset)                |
-|  9  | Cambiar la contraseña usando la actual                     |  POST  | `/api/v1/user-accounts/change-password`          | header: `Authorization` · body: `currentPassword, password, confirmPassword`                 | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                     | `204` · *sin cuerpo*                                                                                                                                                                             | Actualiza la contraseña del usuario autenticado; responde sin contenido                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change)               |
-| 10  | Leer la cuenta y el perfil propios                         |  GET   | `/api/v1/user-accounts/me`                       | header: `Authorization`                                                                      | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada                                                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me)                   |
-| 11  | Leer un perfil por id                                      |  GET   | `/api/v1/user-accounts/{id}`                     | path: `id` · header: `Authorization`                                                         | `/api/v1/user-accounts/10`                                                                                                                                                      | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}`                                                                                              | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta                                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get)                  |
-| 12  | Actualizar correo y celular                                |  PUT   | `/api/v1/user-accounts/{id}`                     | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}`                                                                                                                        | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables                                           | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update)               |
-| 13  | Crear cuenta de personal de admisión                       |  POST  | `/api/v1/user-accounts/staff`                    | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}`                                           | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}`                                                                                     | Crea la cuenta del personal y envía una invitación para definir contraseña                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)                |
-| 14  | Verificar identidad por DNI y nombre                       |  POST  | `/api/v1/identity-verifications`                 | body: `dni, name, lastname`                                                                  | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}`                                                                                                                         | `200` `{"verified":true}`                                                                                                                                                                        | Indica si el DNI existe y el nombre completo coincide con el registro oficial                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify)       |
-| 15  | Comprobar si un DNI es conocido                            |  POST  | `/api/v1/identity-verifications/exists`          | body: `dni`                                                                                  | `{"dni":"74218365"}`                                                                                                                                                            | `200` `{"exists":true}`                                                                                                                                                                          | Indica si el DNI es conocido por el proveedor de identidad                                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists)       |
-| 16  | Leer el perfil de paciente                                 |  GET   | `/api/v1/patients/{id}`                          | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1`                                                                                                                                                            | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Devuelve el paciente propio o un menor vinculado                                                                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1)                       |
-| 17  | Actualizar datos de contacto del paciente                  |  PUT   | `/api/v1/patients/{id}`                          | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}`                                                                                                                                 | Actualiza el contacto del paciente propio y devuelve el recurso actualizado                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1)                    |
-| 18  | Listar menores vinculados                                  |  GET   | `/api/v1/patients/{id}/minors`                   | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1/minors`                                                                                                                                                     | `200` `[{"id":5,"patientId":88,"tutorId":1}]`                                                                                                                                                    | Lista los vínculos de tutoría del paciente autenticado                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors)                      |
-| 19  | Vincular a un menor verificado                             |  POST  | `/api/v1/patient-minors`                         | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation`           | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}`                                                                          | `201` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso                                   | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link)                 |
-| 20  | Leer un vínculo de tutoría                                 |  GET   | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `200` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Devuelve el vínculo de tutoría solicitado                                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2)                |
-| 21  | Desvincular a un menor                                     | DELETE | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `204` · *sin cuerpo*                                                                                                                                                                             | Elimina el vínculo de tutoría conservando la historia clínica del menor                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink)               |
-| 22  | Obtener instrucciones de soporte                           |  GET   | `/api/v1/account-recovery-requests/support`      | —                                                                                            | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}`                                                                                                  | Devuelve las instrucciones y el teléfono de soporte (público)                                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support)          |
-| 23  | Solicitar recuperación asistida                            |  POST  | `/api/v1/account-recovery-requests`              | body: `dni, contactEmail`                                                                    | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}`                                                                                                                        | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}`                                                                                                               | Registra la solicitud; no otorga acceso ni revela cuentas                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request)          |
-| 24  | Listar solicitudes de recuperación abiertas                |  GET   | `/api/v1/account-recovery-requests`              | header: `Authorization (SUPER_ADMIN)`                                                        | *(sin cuerpo)*                                                                                                                                                                  | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]`                                                           | Lista las 100 solicitudes abiertas más antiguas                                                                        | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open)             |
-| 25  | Resolver solicitud de recuperación asistida                |  POST  | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson`         | `{"identityCheckedInPerson":true}`                                                                                                                                              | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}`                                                                                                              | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN)                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve)          |
+|  #  | Acción implementada                           | Método | Sintaxis de llamada (endpoint)       | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                    | Respuesta (ejemplo)                                                                                                                                                                                         | Explicación del response                                                                           | Documentación                                                                                        |
+| :-: | :-------------------------------------------- | :----: | :----------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+|  1  | Iniciar sesión del personal y del Super Admin |  POST  | `/api/v1/user-accounts/login`        | body: `email, password`                                                                      | `{"email":"franco@saludya.local","password":"SaludYa#2026"}`                                                                          | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"f***@saludya.local","expiresAt":"2026-11-12T10:35:00Z"}`                                                                                                | Valida las credenciales y envía un código de verificación al correo; no revela si el correo existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)           |
+|  2  | Completar inicio de sesión con el código      |  POST  | `/api/v1/user-accounts/login/verify` | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                      | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-11-12T11:30:00Z","userId":15,"role":"ADMISSION_STAFF","patientId":null}`                                             | Devuelve el token de acceso (JWT) y el rol del usuario (`ADMISSION_STAFF` o `SUPER_ADMIN`)         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)     |
+|  3  | Reenviar el código del desafío de login       |  POST  | `/api/v1/user-accounts/login/resend` | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                      | `200` · *sin cuerpo*                                                                                                                                                                                        | Genera y reenvía un nuevo código para el mismo desafío                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode) |
+|  4  | Cerrar sesión (revoca el token actual)        |  POST  | `/api/v1/user-accounts/logout`       | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                        | `200` · *sin cuerpo*                                                                                                                                                                                        | Revoca la sesión Bearer vigente; responde sin contenido                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)          |
+|  5  | Crear cuenta de personal de admisión          |  POST  | `/api/v1/user-accounts/staff`        | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}` | `200` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777"}` | Crea la cuenta del personal y envía una invitación para definir contraseña                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)           |
 
 ###### Appointments & Booking
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 26 | Reservar una cita | POST | `/api/v1/appointments` | body: `patientId, timeSlotId` | `{"patientId":1,"timeSlotId":31}` | `201` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null}` | Crea la cita y devuelve el recurso; `Location` apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
-| 27 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?patientId=1&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}]` | Devuelve las citas filtradas; si el actor es paciente, `patientId` es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
-| 28 | Obtener una cita por id | GET | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...}` | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
-| 29 | Listar citas de un paciente | GET | `/api/v1/appointments/patient/{patientId}` | path: `patientId` · query: `status` | `/api/v1/appointments/patient/1?status=CONFIRMED` | `200` `[{"id":142,"patientId":1,"status":"CONFIRMED",...}]` | Lista las citas del paciente indicado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentsByPatient) |
-| 30 | Cancelar una cita | DELETE | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"status":"CANCELLED",...}` | Cancela la cita y devuelve el recurso con estado `CANCELLED` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/cancelAppointment) |
-| 31 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
-| 32 | Obtener un doctor por id | GET | `/api/v1/doctors/{id}` | path: `id` | `/api/v1/doctors/7` | `200` `{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}` | Devuelve el doctor solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorById) |
-| 33 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
-| 34 | Obtener una especialidad por id | GET | `/api/v1/specialties/{id}` | path: `id` | `/api/v1/specialties/1` | `200` `{"id":1,"name":"Medicina general","description":"Atención médica primaria"}` | Devuelve la especialidad solicitada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getSpecialtyById) |
-| 35 | Slots disponibles por especialidad y fecha | GET | `/api/v1/time-slots/available` | query: `specialtyId, date` (obligatorios) | `/api/v1/time-slots/available?specialtyId=1&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots con cupo disponible para la especialidad y fecha | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getAvailableTimeSlots) |
-| 36 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","status":"AVAILABLE",...}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
-| 37 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","status":"AVAILABLE",...}` | Devuelve el slot solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
-| 38 | Crear un slot de atención | POST | `/api/v1/time-slots` | body: `doctorId, date, startHour, endHour, room, maxCapacity` | `{"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5}` | `201` `{"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...}` | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
-| 39 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
-| 40 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+| 6 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
+| 7 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
+| 8 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-11-12` | `200` `[{"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
+| 9 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}` | Devuelve el slot solicitado con su disponibilidad | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
+| 10 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+| 11 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
+| 12 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?timeSlotId=31&date=2026-11-12&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED"}]` | Devuelve las citas filtradas del bloque o de la jornada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 13 | Listar citas canceladas del día | GET | `/api/v1/appointments` | query: `date, status=CANCELLED` | `/api/v1/appointments?date=2026-11-12&status=CANCELLED` | `200` `[{"id":139,"timeSlotId":28,"patientId":4,"status":"CANCELLED"}]` | Lista las citas canceladas de la jornada para identificar cupos liberados | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
 
 ###### Arrival & QR Check-in
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 41 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
-| 42 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
-| 43 | Obtener el ticket digital de un check-in | GET | `/api/v1/check-ins/{id}` | path: `id` | `/api/v1/check-ins/15` | `200` `{"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...}` | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
-| 44 | Obtener el ticket digital de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}` | path: `appointmentId` | `/api/v1/check-ins/appointment/142` | `200` `{"id":15,"appointmentId":142,"turnCode":"A-003","status":"VALID",...}` | Devuelve el ticket digital asociado a la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getByAppointment) |
-| 45 | Generar el token QR firmado de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/qr-token` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/qr-token` | `200` `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | Genera el token QR firmado y temporal de la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/generateQrToken) |
-| 46 | Posición del paciente en la cola por cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/position` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición actual del paciente y el total en cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getPosition) |
-| 47 | Obtener una entrada de cola | GET | `/api/v1/queue-entries/{id}` | path: `id` | `/api/v1/queue-entries/9` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}` | Devuelve la entrada de cola (el paciente puede leer la suya) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/getById) |
-| 48 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/9/absent` | `204` · *sin cuerpo* | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
-| 49 | Salir voluntariamente de la cola | POST | `/api/v1/queue-entries/{id}/leave` | path: `id` | `/api/v1/queue-entries/9/leave` | `204` · *sin cuerpo* | El paciente abandona la cola; la cita se marca como ausente | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/leaveQueue) |
-| 50 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"status":"IN_ATTENTION",...}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
-| 51 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"status":"ATTENDED","attendedAt":"2026-10-15T09:25:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
-| 52 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-10-15` | `200` `{"id":4,"timeSlotId":31,"date":"2026-10-15","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
-| 53 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"position":3,"status":"WAITING",...}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
-| 54 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
-| 55 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
-
-###### Reassignment
-
-| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
-|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 56 | Listar ofertas de cupo pendientes | GET | `/api/v1/reassignment-offers/pending` | header: `Authorization` · query: `appointmentId` (opcional) | `/api/v1/reassignment-offers/pending` | `200` `[{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}]` | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
-| 57 | Aceptar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/accept` | path: `id` | `/api/v1/reassignment-offers/21/accept` | `200` `{"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
-| 58 | Rechazar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/reject` | path: `id` | `/api/v1/reassignment-offers/21/reject` | `200` `{"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
+| 14 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `200` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
+| 15 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `200` `{"checkInId":16,"appointmentId":143,"queueEntryId":10,"position":4,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
+| 16 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-11-12` | `200` `{"id":4,"timeSlotId":31,"date":"2026-11-12","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
+| 17 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
+| 18 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
+| 19 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"CALLED","calledAt":"2026-11-12T09:40:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+| 20 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"IN_ATTENTION","calledAt":"2026-11-12T09:40:00Z","attendedAt":null}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
+| 21 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"attendanceQueueId":4,"status":"ATTENDED","attendedAt":"2026-11-12T09:55:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
+| 22 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/10/absent` | `200` `{"id":10,"attendanceQueueId":4,"status":"ABSENT"}` | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
 
 ###### Hospital Operations & Configuration
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 59 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
-| 60 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
-| 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
-| 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
+| 23 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":5,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true,"updatedAt":"2026-11-11T18:00:00Z"}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
+| 24 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, bookingOrderScope, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":20,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":48,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-11-12T09:15:00Z"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
+| 25 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-11-12` | `200` `{"configurationId":1,"metrics":[{"name":"scheduledToday","value":42},{"name":"pendingToday","value":12},{"name":"cancelledToday","value":7},{"name":"attendedToday","value":28},{"name":"absentToday","value":2}],"externalDataAvailable":false,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
+| 26 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-11-01&to=2026-11-12&format=CSV` | `200` `{"format":"CSV","generatedAt":"2026-11-12T09:20:00Z","content":"especialidad;reservas;canceladas;atendidas\nMedicina general;18;2;14\nPediatría;11;1;9"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
 
-##### Evidencias de interacción
+##### Evidencias de la documentación desplegada
 
-A continuación se presenta una muestra del modelo de evidencia de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el JSON de envío, la captura y una descripción. Los endpoints elegidos son públicos.
+A continuación se presentan las capturas de la documentación desplegada en Swagger UI para los controladores que consume la aplicación móvil administrativa. Cada captura muestra las operaciones disponibles del controlador y su protección mediante autenticación Bearer.
 
-###### 1. `POST /api/v1/identity-verifications` -  Verificar identidad por DNI
-
-**JSON de envío:**
-```json
-{ "dni": "74500834", "name": "Neo Daniel", "lastname": "Ramos Mera" }
-```
+###### 1. IAM - User accounts
 
 <p align="center">
-  <img src="assets/Services%20Deployment/identity_verifications.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-user-accounts.png" alt="Swagger UI - IAM User accounts" width="100%"/>
 </p>
 
-*Figura 200. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
+*Figura 201. Documentación desplegada del controlador IAM - User accounts en Swagger UI.*
 
-###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
-
-**JSON de envío:**
-```json
-{ "dni": "74500834" }
-```
+###### 2. Specialties
 
 <p align="center">
-  <img src="assets/Services%20Deployment/identity_verifications_exists.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-specialties.png" alt="Swagger UI - Specialties" width="100%"/>
 </p>
 
-*Figura 201. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
+*Figura 202. Documentación desplegada del controlador Specialties en Swagger UI.*
 
-###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
-
-**JSON de envío:**
-```json
-{ "email": "doriangray292929@gmail.com" }
-```
+###### 3. Doctors
 
 <p align="center">
-  <img src="assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-doctors.png" alt="Swagger UI - Doctors" width="100%"/>
 </p>
 
-*Figura 202. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
+*Figura 203. Documentación desplegada del controlador Doctors en Swagger UI.*
 
-###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
-
-**JSON de envío:**
-```json
-{ "email": "doriangray292929@gmail.com" }
-```
+###### 4. Time Slots
 
 <p align="center">
-  <img src="assets/Services%20Deployment/useraccounts_recoverpassword.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-time-slots.png" alt="Swagger UI - Time Slots" width="100%"/>
 </p>
 
-*Figura 203. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
+*Figura 204. Documentación desplegada del controlador Time Slots en Swagger UI.*
+
+###### 5. Appointments
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-appointments.png" alt="Swagger UI - Appointments" width="100%"/>
+</p>
+
+*Figura 205. Documentación desplegada del controlador Appointments en Swagger UI.*
+
+###### 6. Check-ins
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-check-ins.png" alt="Swagger UI - Check-ins" width="100%"/>
+</p>
+
+*Figura 206. Documentación desplegada del controlador Check-ins en Swagger UI.*
+
+###### 7. Attendance Queues
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-attendance-queues.png" alt="Swagger UI - Attendance Queues" width="100%"/>
+</p>
+
+*Figura 207. Documentación desplegada del controlador Attendance Queues en Swagger UI.*
+
+###### 8. Queue Entries
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-queue-entries.png" alt="Swagger UI - Queue Entries" width="100%"/>
+</p>
+
+*Figura 208. Documentación desplegada del controlador Queue Entries en Swagger UI.*
+
+###### 9. configuration-controller
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-configuration.png" alt="Swagger UI - configuration-controller" width="100%"/>
+</p>
+
+*Figura 209. Documentación desplegada del controlador configuration-controller en Swagger UI.*
 
 #### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-En esta sección se resumen las actividades de despliegue de los productos digitales de SaludYa. El backend Spring Boot ya se encuentra desplegado en AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL; su ejecución se administra mediante `systemd` y su actualización se automatiza con scripts de Bash. El Landing Page también se encuentra publicado en GitHub Pages. Para la distribución de la aplicación Flutter de prueba se utilizará Firebase App Distribution, que permitirá compartir una versión instalable con los participantes de la validación sin publicarla en una tienda de aplicaciones.
-
-> **Estado de la evidencia Flutter:** pendiente de completar la primera distribución del APK en Firebase App Distribution. Después de subir el artefacto y verificar su instalación, se incorporará en este espacio la captura de la release y su enlace de distribución. Hasta entonces, esta sección describe el procedimiento previsto y no afirma que la publicación en Firebase ya se haya realizado.
-
-##### Distribución de la aplicación Flutter mediante Firebase App Distribution
-
-La distribución se realizará desde Firebase App Distribution con un APK de release generado desde el proyecto Flutter que se utilizará en la validación. Se registrará la aplicación con su identificador de paquete, se cargará el APK, se invitará al grupo de testers y se comprobará la instalación y el funcionamiento de los flujos principales en un dispositivo físico. El acceso al backend se verificará desde la aplicación instalada.
-
-**Evidencia de la distribución:** [Agregar aquí la captura de Firebase App Distribution cuando la release se encuentre cargada y verificada].
-
-**Enlace de distribución para testers:** [Agregar aquí el enlace generado por Firebase App Distribution].
-
-*Nota. La captura y el enlace se añadirán después de completar la distribución real del APK; no se deben incluir invitaciones, correos personales ni credenciales en la imagen.*
-
-Las evidencias del despliegue del backend y del Landing Page se presentan a continuación.
-
-Las actividades realizadas durante el Sprint fueron:
-
-- **Creación de la cuenta y de los recursos en el proveedor cloud (AWS):** alta de la cuenta, creación del *key pair* para el acceso SSH, lanzamiento de la instancia EC2 y configuración de la red (security group con los puertos necesarios).
-- **Configuración del servidor:** instalación de Java 25 (Temurin), PostgreSQL y Git, y creación del usuario y la base de datos del backend.
-- **Externalización de secretos:** las variables sensibles (JWT, QR, clave de cifrado de notificaciones, SMTP, ApiPeru y bootstrap) se almacenan en `/etc/saludya/saludya.env`, fuera del repositorio, y systemd las carga mediante `EnvironmentFile`, de modo que sobreviven a cada despliegue.
-- **Automatización del despliegue:** tres scripts de Bash (`setup-server.sh`, `setup-env.sh` y `deploy.sh`) y un servicio `systemd` (`saludya.service`) que recompila el JAR y reinicia el backend.
-- **Verificación:** el backend queda disponible y se comprueba consultando el endpoint `/v3/api-docs`.
-
-##### Scripts de despliegue
-
-Para automatizar el aprovisionamiento y el despliegue del backend se utilizaron tres scripts de Bash.
-
-###### `setup-server.sh`
-
-Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-
-DB_NAME="${DB_NAME:-saludyadb}"
-DB_USER="${DB_USER:-saludya}"
-DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
-
-if [ "$(id -u)" -ne 0 ]; then
-  echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
-  exit 1
-fi
-
-echo "==> [1/3] Instalando Java 25 (Temurin) ..."
-apt-get update
-apt-get install -y wget apt-transport-https gpg
-mkdir -p /etc/apt/keyrings
-wget -qO- https://packages.adoptium.net/artifactory/api/gpg/key/public \
-  | gpg --dearmor > /etc/apt/keyrings/adoptium.gpg
-. /etc/os-release
-echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb ${VERSION_CODENAME} main" \
-> /etc/apt/sources.list.d/adoptium.list
-apt-get update
-apt-get install -y temurin-25-jdk
-
-echo "==> [2/3] Instalando PostgreSQL y git ..."
-apt-get install -y postgresql git
-systemctl enable --now postgresql
-
-echo "==> [3/3] Creando usuario y base de datos ..."
-# Crea el rol si no existe, o actualiza su password si ya existe.
-sudo -u postgres psql -v ON_ERROR_STOP=1 <<SQL
-DO \$\$
-BEGIN
-   IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = '${DB_USER}') THEN
-      CREATE ROLE ${DB_USER} LOGIN PASSWORD '${DB_PASSWORD}';
-   ELSE
-      ALTER ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASSWORD}';
-   END IF;
-END
-\$\$;
-SQL
-
-# Crea la base de datos si no existe, con el usuario como owner.
-if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
-  sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
-fi
-
-sudo -u postgres psql -v ON_ERROR_STOP=1 -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_USER};"
-sudo -u postgres psql -v ON_ERROR_STOP=1 -d "${DB_NAME}" -c "GRANT ALL ON SCHEMA public TO ${DB_USER};"
-
-echo
-echo "================ RESUMEN ================"
-java -version 2>&1 | head -1
-sudo -u postgres psql -tAc "SELECT version();"
-echo "Base de datos : ${DB_NAME}"
-echo "Usuario       : ${DB_USER}"
-echo "Password      : [no se muestra]"
-echo "========================================="
-echo "Siguiente paso ->  sudo bash setup-env.sh"
-```
-
-###### `setup-env.sh`
-
-Genera el archivo `/etc/saludya/saludya.env` con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos `600` para mantener los secretos protegidos.
-
-```bash
-#!/usr/bin/env bash
-#
-# setup-env.sh - Crea /etc/saludya/saludya.env con TODAS las variables del backend.
-#
-#   Las variables viven FUERA del repositorio, y systemd las carga con
-#   EnvironmentFile. Por eso sobreviven a cada "git pull" / despliegue.
-#
-# Uso:
-#   sudo bash setup-env.sh
-#
-# Personaliza con variables de entorno:
-#   DB_PASSWORD=<valor-seguro> BOOTSTRAP_PASSWORD=<valor-seguro> sudo -E bash setup-env.sh
-#
-set -euo pipefail
-
-DB_HOST="${DB_HOST:-localhost}"
-DB_PORT="${DB_PORT:-5432}"
-DB_NAME="${DB_NAME:-saludyadb}"
-DB_USER="${DB_USER:-saludya}"
-DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
-BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:?Define BOOTSTRAP_PASSWORD antes de ejecutar el script}"
-
-if [ "$(id -u)" -ne 0 ]; then
-  echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
-  exit 1
-fi
-
-mkdir -p /etc/saludya
-cat > /etc/saludya/saludya.env <<EOF
-SPRING_PROFILES_ACTIVE=prod
-
-# --- Base de datos (PostgreSQL local) ---
-DB_HOST=${DB_HOST}
-DB_PORT=${DB_PORT}
-DB_NAME=${DB_NAME}
-DB_USER=${DB_USER}
-DB_PASSWORD=${DB_PASSWORD}
-
-# --- Secretos JWT / QR / cifrado de notificaciones ---
-APPLICATION_JWT_SECRET=<GENERATE_A_UNIQUE_SECRET>
-APPLICATION_QR_SECRET=<GENERATE_A_UNIQUE_SECRET>
-IAM_NOTIFICATIONS_ENCRYPTION_KEY=<GENERATE_A_BASE64_ENCODED_KEY>
-
-# --- Verificacion de identidad (ApiPeru) ---
-IAM_IDENTITY_MODE=apiperu
-IAM_IDENTITY_URL=https://api.apiperu.dev/dni
-IAM_IDENTITY_API_KEY=<IDENTITY_PROVIDER_API_KEY>
-
-# --- Administrador inicial (bootstrap) ---
-IAM_BOOTSTRAP_ENABLED=true
-IAM_BOOTSTRAP_EMAIL=<BOOTSTRAP_ADMIN_EMAIL>
-IAM_BOOTSTRAP_PASSWORD=${BOOTSTRAP_PASSWORD}
-
-# --- Correo (Gmail SMTP) ---
-MAIL_ENABLED=true
-MAIL_USERNAME=<SMTP_USERNAME>
-MAIL_FROM=<SMTP_FROM_ADDRESS>
-MAIL_APP_PASSWORD=<SMTP_APP_PASSWORD>
-IAM_NOTIFICATIONS_LOG_CODES=true
-EOF
-
-chmod 600 /etc/saludya/saludya.env
-chown root:root /etc/saludya/saludya.env
-
-echo "OK -> /etc/saludya/saludya.env creado (permisos 600)."
-echo "Editar   ->  sudo nano /etc/saludya/saludya.env"
-echo "Aplicar  ->  sudo systemctl restart saludya"
-```
-
-###### `deploy.sh`
-
-Despliega o actualiza el backend en la EC2: obtiene el código (`git clone` la primera vez o `git pull` después), compila el JAR con Maven (`./mvnw`), (re)genera el servicio `systemd`, lo reinicia y verifica que el backend responda.
-
-```bash
-#!/usr/bin/env bash
-#
-# deploy.sh - Despliega o ACTUALIZA el backend SaludYa en la EC2.
-#
-#   * Clona el repo la primera vez, o hace "git pull" en las siguientes
-#   * Compila el JAR con Maven (./mvnw)
-#   * (Re)genera el servicio systemd y lo reinicia
-#   * Verifica que responda
-#
-# Uso:
-#   bash deploy.sh
-#
-# Requisitos: haber corrido antes setup-server.sh y setup-env.sh
-#
-set -euo pipefail
-
-REPO_URL="${REPO_URL:-https://github.com/RuwaLabs/backend-saludya.git}"
-BRANCH="${BRANCH:-develop}"
-APP_DIR="${APP_DIR:-$HOME/backend-saludya}"
-ENV_FILE="${ENV_FILE:-/etc/saludya/saludya.env}"
-SERVICE="saludya"
-JAR="$APP_DIR/saludya/target/saludya-0.0.1-SNAPSHOT.jar"
-
-if [ ! -f "$ENV_FILE" ]; then
-  echo "ERROR: falta $ENV_FILE. Corre primero ->  sudo bash setup-env.sh" >&2
-  exit 1
-fi
-
-echo "==> [1/4] Obteniendo codigo ..."
-if [ -d "$APP_DIR/.git" ]; then
-  git -C "$APP_DIR" fetch origin "$BRANCH"
-  git -C "$APP_DIR" reset --hard "origin/$BRANCH"
-else
-  git clone --branch "$BRANCH" "$REPO_URL" "$APP_DIR"
-fi
-
-echo "==> [2/4] Compilando (Maven) ..."
-cd "$APP_DIR/saludya"
-./mvnw -q clean package -DskipTests
-
-echo "==> [3/4] Configurando servicio systemd ..."
-sudo tee /etc/systemd/system/saludya.service >/dev/null <<EOF
-[Unit]
-Description=SaludYa backend
-After=network.target postgresql.service
-
-[Service]
-User=$USER
-WorkingDirectory=$APP_DIR
-EnvironmentFile=$ENV_FILE
-ExecStart=/usr/bin/java -Xmx384m -XX:+UseSerialGC -jar $JAR
-SuccessExitStatus=143
-Restart=on-failure
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-sudo systemctl daemon-reload
-sudo systemctl enable "$SERVICE" >/dev/null 2>&1 || true
-sudo systemctl restart "$SERVICE"
-
-echo "==> [4/4] Verificando ..."
-for _ in $(seq 1 60); do
-  code="$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/v3/api-docs || true)"
-  if [ "$code" = "200" ]; then
-    echo "OK: backend arriba -> http://localhost:8080/v3/api-docs (200)"
-    break
-  fi
-  sleep 2
-done
-
-sudo systemctl status "$SERVICE" --no-pager | head -15
-echo
-echo "Logs en vivo ->  journalctl -u $SERVICE -f"
-```
-
-##### Evidencias de despliegue
-
-A continuación se presentan las capturas del proceso de despliegue en AWS.
-
-###### Creación del key pair (acceso SSH)
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg" alt="Creación del key pair en AWS" width="100%"/>
-</p>
-
-*Figura 204. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
-
-###### Instancia EC2 (resumen)
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg" alt="Resumen de la instancia EC2" width="100%"/>
-</p>
-
-*Figura 205. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
-
-###### Configuración de red (security group)
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/network%20settings.jpeg" alt="Configuración de red de la instancia" width="100%"/>
-</p>
-
-*Figura 206. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
-
-###### Acceso SSH a la instancia
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg" alt="Acceso SSH a la instancia EC2" width="100%"/>
-</p>
-
-*Figura 207. Acceso por SSH a la instancia EC2 del backend.*
-
-###### Scripts de despliegue en el servidor
-
-<p align="center">
-  <img src="assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
-</p>
-
-*Figura 208. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
-
-
-##### Landing Page
-
-El Landing Page de SaludYa se desplegó como un sitio estático utilizando **GitHub Pages**, aprovechando la integración nativa con el repositorio del proyecto y la ausencia de costos asociados para proyectos académicos. El despliegue se realizó sobre la rama `main` del repositorio [`RuwaLabs/saludya-landing`](https://github.com/RuwaLabs/saludya-landing), y el sitio quedó publicado de forma automática en la URL:
-
-**URL de despliegue:** https://ruwalabs.github.io/saludya-landing/
-
-Las actividades realizadas durante el Sprint para el despliegue del Landing Page fueron:
-
-- **Creación del repositorio en GitHub:** se creó el repositorio `saludya-landing` dentro de la organización RuwaLabs, con la estructura de carpetas `assets/css`, `assets/js`, `assets/img`, `assets/locales` y el archivo `index.html` en la raíz.
-- **Configuración de GitHub Pages:** se habilitó la publicación del sitio desde la rama `main` y la carpeta `/ (root)` del repositorio.
-- **Automatización del despliegue:** se incorporó un flujo de trabajo de GitHub Actions (`.github/workflows/deploy.yml`) que publica automáticamente el sitio cada vez que se hace `push` a la rama `main`.
-- **Verificación del despliegue:** se comprobó el acceso público al sitio mediante la URL generada por GitHub Pages y se validó la carga de estilos, scripts e imágenes.
-
-A continuación se presentan las capturas de las actividades realizadas.
-
-###### Configuración de GitHub Pages
-
-En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama `main` y la carpeta `/ (root)`. La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
-
-<a id="figura-209"></a>
-
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
-</p>
-
-*Figura 209. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
-
-###### Flujo de trabajo de GitHub Actions
-
-Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (`.github/workflows/deploy.yml`) que se ejecuta en cada `push` a la rama `main`. El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
+El despliegue del backend, del Landing Page y de la aplicación Android ya se realizó en el Sprint 1 y se documentó en la sección 4.2.1.8. En este avance no se repite ese despliegue: la Figura 210 muestra la aplicación Android instalada y ejecutándose con el backend desplegado.
 
 <a id="figura-210"></a>
 
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
-</p>
+**Figura 210**
 
-*Figura 210. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+*Aplicación Android de SaludYa en ejecución*
 
-###### Verificación del despliegue
+<img src="assets/execution/sprint-1/android-inicio.png" alt="Aplicación Android de SaludYa en ejecución" width="60%"/>
 
-Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
+*Nota. Captura de la aplicación Android instalada y ejecutándose con el backend desplegado.*
 
-<a id="figura-211"></a>
-
-<p align="center">
-  <img src="assets/Landing-page%20Deployment%20Evidence/landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
-</p>
-
-*Figura 211. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
-
-Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
-
-
+El despliegue de la aplicación Flutter (personal y administración) no forma parte de este avance; queda pendiente para una entrega posterior.
 
 ## 4.3. Validation Interviews
 
@@ -10278,7 +9948,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 212. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 211. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -10382,7 +10052,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 213. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 212. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -10482,13 +10152,15 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 
 ### 4.3.3. Evaluaciones según heurísticas
 
-En esta sección se presenta la evaluación de la experiencia de usuario de **SaludYa** (mock-ups de la aplicación móvil) aplicando el formato de **Evaluación de User Experience según Heurísticas** (heurísticas de usabilidad, arquitectura de información y diseño inclusivo). La evaluación fue realizada por el equipo **RouteGuard** sobre el prototipo de SaludYa, y a continuación se registran los hallazgos, su severidad y las recomendaciones para cada problema identificado.
+En esta sección se presentan las evaluaciones de la experiencia de usuario de **SaludYa** aplicando el formato de **Evaluación de User Experience según Heurísticas** (heurísticas de usabilidad, arquitectura de información y diseño inclusivo). Las evaluaciones fueron realizadas por el equipo **RouteGuard** y se organizan en dos bloques: (1) la aplicación Android para pacientes y (2) la aplicación Flutter para el personal de admisión y la administración del establecimiento. A continuación se registran los hallazgos, su severidad y las recomendaciones para cada problema identificado.
+
+### Evaluación 1 — Aplicación Android (paciente)
 
 **UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
 
-<a id="tabla-85"></a>
+<a id="tabla-86"></a>
 
-**Tabla 85**
+**Tabla 86**
 
 *Datos de la evaluación*
 
@@ -10505,7 +10177,7 @@ En esta sección se presenta la evaluación de la experiencia de usuario de **Sa
 
 **SITE o APP A EVALUAR**
 
-**SaludYa** (Mobile Application Mock-ups) — [Archivo de Figma](https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626)
+**SaludYa** — aplicación móvil Android para pacientes. La evaluación cubre los mock-ups de las secciones **01 · Registro e inicio de sesión**, **02 · Perfil y menores**, **03 · Inicio y reservas**, **04 · Check-in y atención** y **05 · Configuración** del [archivo de Figma](https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626).
 
 **TAREAS A EVALUAR**
 
@@ -10516,22 +10188,34 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 3. Inicio de sesión de un paciente
 4. Recuperación de contraseña por enlace al correo
 5. Solicitud de ayuda cuando se perdió el acceso al correo
-6. Consulta de perfil del paciente
-7. Vinculación de un menor
+6. Consulta del perfil y de los datos personales del paciente
+7. Vinculación de un menor y verificación de su identidad
 8. Consulta de la lista y el detalle de menores vinculados
 9. Consulta de citas pendientes desde el inicio
-10. Consulta del detalle de una cita (registrar llegada o cancelar reserva)
-11. Filtrado del historial de citas por fecha
-12. Inicio de una reserva: elegir especialidad, beneficiario y fecha
-13. Cierre de sesión
+10. Consulta del detalle de una cita y cancelación de una reserva
+11. Registro de llegada escaneando el QR del establecimiento
+12. Consulta de la posición en la cola y del ticket digital
+13. Atención de la llamada al consultorio y salida de la cola
+14. Registro de llegada de un menor y consulta de su ticket
+15. Recuperación de errores de llegada (QR no válido, fuera de plazo, ventana no habilitada, inasistencia)
+16. Cambio de celular y de correo con verificación por código
+17. Consulta del detalle de un menor, sincronización de datos y desvinculación
+18. Uso de la vista del representado («Hola, Mateo»)
+19. Filtrado del historial de citas por fecha
+20. Inicio de una reserva: elegir especialidad, beneficiario y fecha
+21. Cierre de sesión
 
 **No están incluidas** en esta versión de la evaluación las siguientes tareas:
 
 1. Registro de personal por el Super Admin
 2. Selección de horario y confirmación final de la reserva
-3. Notificaciones
+3. Notificaciones y reasignación (sección 06)
 4. Recuperación de contraseña por código (pantallas ocultas en el prototipo)
-5. Flujos de Personal de admisión
+5. Cambio de contraseña desde Configuración (la pantalla no está en el prototipo)
+6. Sección 09 · Variantes interactivas y estados
+7. Flujos de Personal y de Administración (ver Evaluación 2)
+
+**Alcance de la evaluación.** La evaluación integra los hallazgos de las secciones 01 a 05. Los problemas de las secciones 04 y 05 que ya estaban cubiertos por los de las secciones 01 a 03 no se repiten.
 
 **ESCALA DE SEVERIDAD**
 
@@ -10544,9 +10228,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
 | 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
-<a id="tabla-86"></a>
+<a id="tabla-87"></a>
 
-**Tabla 86**
+**Tabla 87**
 
 *TABLA RESUMEN de la evaluación heurística*
 
@@ -10557,24 +10241,18 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 2 | El mensaje "Correo verificado" dice que se validó el número | 2 | Usability: Consistencia y estándares |
 | 3 | El login pide correo pero el mensaje de error habla de documento | 3 | Usability: Consistencia y estándares |
 | 4 | Los campos de contraseña no muestran requisitos | 3 | Usability: Prevención de errores |
-| 5 | Íconos y celdas del calendario con áreas táctiles menores a 44 px | 3 | Inclusive Design: Considera la situación |
-| 6 | Textos auxiliares muy pequeños (pasos, etiquetas, leyendas) | 2 | Inclusive Design: Prioriza el contenido |
-| 7 | Los errores de validación se muestran solo en diálogos modales | 2 | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores |
-| 8 | "Reenviar código" es un texto plano sin estado ni tiempo de espera | 2 | Usability: Visibilidad del estado del sistema |
-| 9 | La fecha de nacimiento se escribe como texto libre (DD/MM/AAAA) | 2 | Usability: Prevención de errores |
-| 10 | El diálogo "Correo ya registrado" no ofrece ir a iniciar sesión | 2 | Usability: Libertad y control del usuario |
-| 11 | "Ayuda con tu cuenta" no tiene ningún canal de contacto disponible | 3 | Usability: Ayuda y documentación |
-| 12 | Pantallas de perfil y menores sin navegación inferior ni botón de retorno | 3 | Usability: Libertad y control del usuario |
-| 13 | La confirmación de adulto responsable es solo texto, sin control explícito | 3 | Usability: Prevención de errores |
-| 14 | El DNI de Lucía y de Mateo Torres difiere entre pantallas | 2 | Usability: Consistencia y estándares |
-| 15 | Etiqueta "Asistencia" ambigua, íconos que no coinciden con su etiqueta y no existe una opción "Perfil" en la navegación | 3 | Information Architecture: Is it findable? |
-| 16 | La leyenda del calendario del historial usa "Disponible" y depende solo del color | 3 | Inclusive Design: Proporciona experiencias comparables |
-| 17 | El historial filtrado no ofrece "Quitar filtro" | 2 | Usability: Libertad y control del usuario |
-| 18 | El plazo de cancelación no se indica y "Cancelar reserva" está junto a la acción principal | 3 | Usability: Prevención de errores |
-| 19 | El campo de búsqueda dice "Buscar por nombre" pero busca especialidades | 2 | Information Architecture: Is it understandable? |
-| 20 | Toda la interfaz está solo en español, sin selector de idioma | 2 | Inclusive Design: Ofrece opciones |
-| 21 | Se usa "claves" y "contraseña" para el mismo concepto | 1 | Usability: Consistencia y estándares |
-| 22 | Nombres distintos para la misma acción o pantalla ("Reservar una cita", "Reservar cita", "Reserva tu cita", "Mis citas") | 1 | Information Architecture: Is it usable? |
+| 5 | "Reenviar código" es un texto plano sin estado ni tiempo de espera | 2 | Usability: Visibilidad del estado del sistema |
+| 6 | Toda la interfaz está solo en español, sin selector de idioma | 2 | Inclusive Design: Ofrece opciones |
+| 7 | Nombres distintos para la misma acción o pantalla ("Reservar una cita", "Reservar cita", "Reserva tu cita", "Mis citas") | 1 | Information Architecture: Is it usable? |
+| 8 | El paciente llamado no ve cuánto tiempo le queda para llegar | 3 | Usability: Visibilidad del estado del sistema |
+| 9 | "Has sido atendida" usa género fijo y no considera a quien representa a un menor | 2 | Inclusive Design: Considera la situación |
+| 10 | El mismo ícono se usa para estados positivos, neutros y negativos | 2 | Usability: Consistencia y estándares |
+| 11 | Avisos y errores terminan en "Entendido" sin una acción para recuperarse | 2 | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores |
+| 12 | Los campos de solo lectura se ven como campos editables | 2 | Usability: Consistencia y estándares |
+| 13 | La pantalla que confirma el cambio de celular se titula "Verificar correo" | 2 | Usability: Consistencia entre el sistema y el mundo real |
+| 14 | "Sincronizar" es un término técnico y una acción manual poco clara | 2 | Usability: Consistencia entre el sistema y el mundo real |
+| 15 | El mensaje "Revisa el dato ingresado" no dice qué campo falló | 2 | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores |
+| 16 | Configuración no ofrece idioma, notificaciones ni opciones de accesibilidad | 2 | Inclusive Design: Ofrece opciones |
 
 *Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.*
 
@@ -10588,9 +10266,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-<a id="figura-214"></a>
+<a id="figura-213"></a>
 
-**Figura 214**
+**Figura 213**
 
 *Registro - Datos de acceso*
 
@@ -10598,9 +10276,9 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-215"></a>
+<a id="figura-214"></a>
 
-**Figura 215**
+**Figura 214**
 
 *Registro - Verificar correo*
 
@@ -10619,9 +10297,9 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-<a id="figura-216"></a>
+<a id="figura-215"></a>
 
-**Figura 216**
+**Figura 215**
 
 *Diálogo correo verificado*
 
@@ -10640,9 +10318,9 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-<a id="figura-217"></a>
+<a id="figura-216"></a>
 
-**Figura 217**
+**Figura 216**
 
 *Login paciente*
 
@@ -10650,9 +10328,9 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-218"></a>
+<a id="figura-217"></a>
 
-**Figura 218**
+**Figura 217**
 
 *Diálogo credenciales incorrectas*
 
@@ -10671,9 +10349,9 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-<a id="figura-219"></a>
+<a id="figura-218"></a>
 
-**Figura 219**
+**Figura 218**
 
 *Registro - Datos de acceso*
 
@@ -10681,9 +10359,9 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-220"></a>
+<a id="figura-219"></a>
 
-**Figura 220**
+**Figura 219**
 
 *Recuperación - Nueva contraseña*
 
@@ -10694,23 +10372,55 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 **Recomendación:**
 Mostrar bajo el campo los requisitos de la contraseña y un indicador de seguridad, y validar mientras el usuario escribe.
 
-### PROBLEMA #5: Íconos y celdas del calendario con áreas táctiles menores a 44 px
+### PROBLEMA #5: "Reenviar código" es un texto plano sin estado ni tiempo de espera
 
-**Severidad:** 3
-**Heurística violada:** Inclusive Design - Considera la situación
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
 
 **Problema:**
-El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y notificaciones miden 24 x 24 px, y las celdas de día del calendario miden 40 x 32 px. Para usuarios con poca precisión motriz, manos grandes o uso en movimiento, estos elementos son difíciles de tocar. "Cerrar sesión" también es un texto de una sola línea (18 px de alto).
+En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
+
+<a id="figura-220"></a>
+
+**Figura 220**
+
+*Registro - Verificar correo*
+
+<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y presentar la acción como un botón con área táctil adecuada.
+
+### PROBLEMA #6: Toda la interfaz está solo en español, sin selector de idioma
+
+**Severidad:** 2
+**Heurística violada:** Inclusive Design - Ofrece opciones
+
+**Problema:**
+En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
 <a id="figura-221"></a>
 
 **Figura 221**
 
-*Login paciente*
+*Dashboard inicio*
 
-<img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%"/>
+<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Incluir en "Configuración" un selector de idioma (English / Español), definir inglés como idioma por defecto y preparar las cadenas para traducción.
+
+### PROBLEMA #7: Nombres distintos para la misma acción o pantalla ("Reservar una cita", "Reservar cita", "Reserva tu cita", "Mis citas")
+
+**Severidad:** 1
+**Heurística violada:** Information Architecture - Is it usable?
+
+**Problema:**
+La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
 <a id="figura-222"></a>
 
@@ -10726,442 +10436,15 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 **Figura 223**
 
-*Reserva - Elegir fecha*
-
-<img src="chapter-04/assets/heuristicas/19-reserva-fecha.png" alt="Reserva - Elegir fecha" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Garantizar áreas táctiles de al menos 44 x 44 px (o 48 x 48 dp en Android) ampliando el área sensible, aunque el ícono se mantenga pequeño.
-
-### PROBLEMA #6: Textos auxiliares muy pequeños (pasos, etiquetas, leyendas)
-
-**Severidad:** 2
-**Heurística violada:** Inclusive Design - Prioriza el contenido
-
-**Problema:**
-Las etiquetas de la navegación inferior (15 px de alto de línea), los indicadores "PASO X DE Y" (16 px), la leyenda del calendario y las notas bajo los botones (16–17 px) corresponden a fuentes de aproximadamente 11–12 px. Para usuarios con baja visión o adultos mayores, que son parte del público de una app de salud, es difícil de leer.
-
-<a id="figura-224"></a>
-
-**Figura 224**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-225"></a>
-
-**Figura 225**
-
-*Registro - Datos de acceso*
-
-<img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Usar un tamaño mínimo de 12–14 sp en textos auxiliares y verificar que la interfaz respete el tamaño de fuente configurado en el dispositivo.
-
-### PROBLEMA #7: Los errores de validación se muestran solo en diálogos modales
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Ayudar a reconocer, diagnosticar y recuperarse de errores
-
-**Problema:**
-Los errores de código incorrecto, identidad no coincidente o contraseñas diferentes se presentan como diálogos que cubren la pantalla. El usuario no ve el campo con el error mientras lee el mensaje, y debe recordar cuál era. Los mensajes tampoco señalan qué dato exacto corregir (por ejemplo, "Revisa el DNI, nombres, apellidos y fecha de nacimiento").
-
-<a id="figura-226"></a>
-
-**Figura 226**
-
-*Verificar correo*
-
-<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Verificar correo" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Mostrar errores en línea junto al campo afectado, con color, ícono y texto, y reservar los diálogos para errores globales.
-
-### PROBLEMA #8: "Reenviar código" es un texto plano sin estado ni tiempo de espera
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
-
-**Problema:**
-En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
-
-<a id="figura-227"></a>
-
-**Figura 227**
-
-*Registro - Verificar correo*
-
-<img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y presentar la acción como un botón con área táctil adecuada.
-
-### PROBLEMA #9: La fecha de nacimiento se escribe como texto libre (DD/MM/AAAA)
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Prevención de errores
-
-**Problema:**
-En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fecha de nacimiento es un campo de texto con el formato DD/MM/AAAA. Esto facilita errores de formato, y como la fecha se compara con el DNI, un error genera el diálogo "Datos no coincidentes".
-
-<a id="figura-228"></a>
-
-**Figura 228**
-
-*Registro - Verificar identidad*
-
-<img src="chapter-04/assets/heuristicas/08-registro-verificar-identidad.png" alt="Registro - Verificar identidad" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-229"></a>
-
-**Figura 229**
-
-*Menores - Vincular*
-
-<img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Usar un selector de fecha nativo o un campo con máscara automática que inserte las diagonales y valide los rangos.
-
-### PROBLEMA #10: El diálogo "Correo ya registrado" no ofrece ir a iniciar sesión
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Libertad y control del usuario
-
-**Problema:**
-El diálogo indica "Este correo pertenece a otra cuenta. Usa otro o inicia sesión", pero su único botón es "Volver". Si el usuario ya tenía cuenta, debe retroceder y buscar el enlace de inicio de sesión por su cuenta.
-
-<a id="figura-230"></a>
-
-**Figura 230**
-
-*Diálogo correo duplicado*
-
-<img src="chapter-04/assets/heuristicas/09-dialogo-correo-duplicado.png" alt="Diálogo correo duplicado" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Agregar un botón secundario "Iniciar sesión" y mantener "Usar otro correo" como acción principal.
-
-### PROBLEMA #11: "Ayuda con tu cuenta" no tiene ningún canal de contacto disponible
-
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Ayuda y documentación
-
-**Problema:**
-La pantalla "15 · Recuperación · Ayuda" informa que "los canales de la mesa de ayuda se mostrarán cuando el establecimiento los configure". Un usuario que perdió acceso a su correo solo puede enviar una solicitud de revisión, sin saber cuánto tarda ni cómo hacer seguimiento, y no tiene teléfono, correo ni dirección de contacto.
-
-<a id="figura-231"></a>
-
-**Figura 231**
-
-*Recuperación - Ayuda*
-
-<img src="chapter-04/assets/heuristicas/10-recuperacion-ayuda.png" alt="Recuperación - Ayuda" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Mostrar siempre un canal alternativo (teléfono o dirección del establecimiento) e indicar el plazo de respuesta y cómo se notificará el resultado.
-
-### PROBLEMA #12: Pantallas de perfil y menores sin navegación inferior ni botón de retorno
-
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Libertad y control del usuario
-
-**Problema:**
-Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen la navegación inferior que sí existe en el dashboard, y "18 · Menores · Lista" no tiene un botón "Volver". Además, usan la cabecera grande con logo (190 px de alto) en lugar de la cabecera con flecha de retorno del dashboard. El usuario queda sin una salida clara y la experiencia cambia respecto del resto de la app.
-
-<a id="figura-232"></a>
-
-**Figura 232**
-
-*Perfil paciente*
-
-<img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-233"></a>
-
-**Figura 233**
-
-*Menores - Lista*
-
-<img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Usar la misma cabecera con flecha de retorno y la navegación inferior en todas las pantallas posteriores al inicio de sesión, y reservar la cabecera con logo para pantallas de acceso.
-
-### PROBLEMA #13: La confirmación de adulto responsable es solo texto, sin control explícito
-
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Prevención de errores
-
-**Problema:**
-En "19 · Menores · Vincular", el texto "Confirmas que eres su adulto responsable." aparece sobre el botón "Verificar y vincular" sin un checkbox ni acción de aceptación. El usuario puede vincular a un menor sin haber leído ni aceptado explícitamente esta declaración, lo que es delicado por tratarse de datos de salud de un menor.
-
-<a id="figura-234"></a>
-
-**Figura 234**
-
-*Menores - Vincular*
-
-<img src="chapter-04/assets/heuristicas/13-menores-vincular.png" alt="Menores - Vincular" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Agregar un checkbox obligatorio con el texto de la declaración y mantener deshabilitado el botón hasta que se marque.
-
-### PROBLEMA #14: El DNI de Lucía y de Mateo Torres difiere entre pantallas
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Consistencia y estándares
-
-**Problema:**
-En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5678", mientras que en "R02 · Beneficiario" el mismo menor aparece con "••••2716". Lo mismo ocurre con la titular: en "16 · Perfil · Paciente" Lucía Torres tiene DNI "••••1234", pero en "R02 · Beneficiario" aparece con "••••4821". En un contexto de salud, esta diferencia puede hacer dudar al usuario de si los datos son correctos o de si está seleccionando a la persona correcta.
-
-<a id="figura-235"></a>
-
-**Figura 235**
-
-*Perfil paciente*
-
-<img src="chapter-04/assets/heuristicas/11-perfil-paciente.png" alt="Perfil paciente" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-236"></a>
-
-**Figura 236**
-
-*Menores - Lista*
-
-<img src="chapter-04/assets/heuristicas/12-menores-lista.png" alt="Menores - Lista" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-237"></a>
-
-**Figura 237**
-
-*Reserva - Beneficiario*
-
-<img src="chapter-04/assets/heuristicas/14-reserva-beneficiario.png" alt="Reserva - Beneficiario" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Usar los mismos datos de ejemplo en todas las pantallas y verificar la coherencia antes de pasar a desarrollo.
-
-### PROBLEMA #15: Etiqueta "Asistencia" ambigua, íconos que no coinciden con su etiqueta y no existe una opción "Perfil" en la navegación
-
-**Severidad:** 3
-**Heurística violada:** Information Architecture - Is it findable?
-
-**Problema:**
-La navegación inferior tiene "Inicio", "Reservar cita", "Asistencia" y "Configuración". "Asistencia" puede interpretarse como ayuda, como registro de llegada (existe "Registrar mi llegada" en el detalle de cita) o como historial de asistencias, y su ícono es un código QR que no aclara ninguna de esas lecturas. El ícono de "Configuración" se parece más a un símbolo de brillo (un sol) que al engranaje habitual de ajustes. Además, el perfil y los menores vinculados no tienen una opción visible en la navegación, por lo que el usuario no sabe dónde encontrarlos.
-
-<a id="figura-238"></a>
-
-**Figura 238**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Renombrar la opción según su función ("Ayuda" o "Mi llegada"), incluir "Perfil" en la navegación o dentro de "Configuración" con una etiqueta clara, y validarlo con una prueba de card sorting.
-
-### PROBLEMA #16: La leyenda del calendario del historial usa "Disponible" y depende solo del color
-
-**Severidad:** 3
-**Heurística violada:** Inclusive Design - Proporciona experiencias comparables
-
-**Problema:**
-En "D04 · Historial · Calendario" la leyenda indica "● Disponible" y "Fecha seleccionada". "Disponible" no corresponde a un historial de citas pasadas (debería indicar días con atenciones), y la diferencia entre ambos estados se comunica solo con color. Los usuarios con daltonismo o baja visión no podrán distinguir qué días tienen citas.
-
-<a id="figura-239"></a>
-
-**Figura 239**
-
-*Historial - Calendario*
-
-<img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Cambiar la leyenda a "Día con atención", usar además una forma o un ícono distinto para marcar los días con atenciones y asegurar un contraste mínimo de 4.5:1.
-
-### PROBLEMA #17: El historial filtrado no ofrece "Quitar filtro"
-
-**Severidad:** 2
-**Heurística violada:** Usabilidad - Libertad y control del usuario
-
-**Problema:**
-En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D05 · Historial filtrado" solo aparece "Cambiar fecha". Para volver a ver todo el historial, el usuario debe abrir de nuevo el calendario o retroceder con la flecha.
-
-<a id="figura-240"></a>
-
-**Figura 240**
-
-*Historial filtrado*
-
-<img src="chapter-04/assets/heuristicas/16-historial-filtrado.png" alt="Historial filtrado" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-241"></a>
-
-**Figura 241**
-
-*Historial - Calendario*
-
-<img src="chapter-04/assets/heuristicas/15-historial-calendario.png" alt="Historial - Calendario" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Mostrar en la pantalla filtrada un chip con la fecha aplicada y una "x" o un botón "Quitar filtro", visibles junto al resultado.
-
-### PROBLEMA #18: El plazo de cancelación no se indica y "Cancelar reserva" está junto a la acción principal
-
-**Severidad:** 3
-**Heurística violada:** Usabilidad - Prevención de errores
-
-**Problema:**
-En "D06 · Detalle de cita" el texto "La cancelación está sujeta al plazo del establecimiento" no indica cuál es el plazo, y está al final (17 px de alto, letra pequeña). Además, "Registrar mi llegada" y "Cancelar reserva" son botones consecutivos separados por solo 14 px, con riesgo de toque equivocado.
-
-<a id="figura-242"></a>
-
-**Figura 242**
-
-*Detalle de cita*
-
-<img src="chapter-04/assets/heuristicas/17-detalle-cita.png" alt="Detalle de cita" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Mostrar el plazo concreto (por ejemplo, "Puedes cancelar hasta 24 horas antes"), diferenciar visualmente la acción destructiva (botón de texto o color de advertencia), separarla de la acción principal y pedir confirmación antes de cancelar.
-
-### PROBLEMA #19: El campo de búsqueda dice "Buscar por nombre" pero busca especialidades
-
-**Severidad:** 2
-**Heurística violada:** Information Architecture - Is it understandable?
-
-**Problema:**
-En "R01 · Reserva tu cita" la etiqueta del campo es "Buscar especialidad", pero el placeholder indica "Buscar por nombre…". El usuario no sabe si puede escribir el nombre de un médico o solo una especialidad. Además, cada tarjeta repite "Ver disponibilidad", lo que añade ruido visual.
-
-<a id="figura-243"></a>
-
-**Figura 243**
-
-*Reserva - Especialidades*
-
-<img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Alinear etiqueta y placeholder ("Ej. Pediatría") y quitar el texto repetido de las tarjetas, o dejarlo solo en la primera.
-
-### PROBLEMA #20: Toda la interfaz está solo en español, sin selector de idioma
-
-**Severidad:** 2
-**Heurística violada:** Inclusive Design - Ofrece opciones
-
-**Problema:**
-En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
-
-<a id="figura-244"></a>
-
-**Figura 244**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Incluir en "Configuración" un selector de idioma (English / Español), definir inglés como idioma por defecto y preparar las cadenas para traducción.
-
-### PROBLEMA #21: Se usa "claves" y "contraseña" para el mismo concepto
-
-**Severidad:** 1
-**Heurística violada:** Usabilidad - Consistencia y estándares
-
-**Problema:**
-El diálogo "Las claves no coinciden" usa "claves", mientras que el resto de la app usa "contraseña". Es un problema menor, pero el usuario puede pensar que se trata de otro dato.
-
-<a id="figura-245"></a>
-
-**Figura 245**
-
-*Diálogo contraseñas diferentes*
-
-<img src="chapter-04/assets/heuristicas/20-dialogo-recuperacion-contrasenas-diferentes.png" alt="Diálogo contraseñas diferentes" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-**Recomendación:**
-Usar siempre "contraseña" y definir una guía de términos para la app.
-
-### PROBLEMA #22: Nombres distintos para la misma acción o pantalla
-
-**Severidad:** 1
-**Heurística violada:** Information Architecture - Is it usable?
-
-**Problema:**
-La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
-
-<a id="figura-246"></a>
-
-**Figura 246**
-
-*Dashboard inicio*
-
-<img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
-
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
-
-<a id="figura-247"></a>
-
-**Figura 247**
-
 *Error de carga*
 
 <img src="chapter-04/assets/heuristicas/21-error-carga.png" alt="Error de carga" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-248"></a>
+<a id="figura-224"></a>
 
-**Figura 248**
+**Figura 224**
 
 *Reserva - Especialidades*
 
@@ -11171,6 +10454,694 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 **Recomendación:**
 Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegación y títulos.
+
+### PROBLEMA #8: El paciente llamado no ve cuánto tiempo le queda para llegar
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**
+En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo indicado por el establecimiento: 5 minutos" y solo muestra la hora de la llamada ("Llamada registrada: 09:15"). No hay contador regresivo ni hora límite, aunque el personal sí ve "Quedan 02:30" en su pantalla. Si el paciente no llega a tiempo, "A11 · Fuera del plazo" le avisa recién cuando la cita ya quedó como inasistencia. El paciente puede perder su turno sin haber visto cuánto tiempo tenía.
+
+<a id="figura-225"></a>
+
+**Figura 225**
+
+*A05 - Llamada a consultorio*
+
+<img src="chapter-04/assets/heuristicas/A05-llamada-a-consultorio.png" alt="A05 - Llamada a consultorio" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-226"></a>
+
+**Figura 226**
+
+*A11 - Fuera del plazo*
+
+<img src="chapter-04/assets/heuristicas/A11-fuera-del-plazo.png" alt="A11 - Fuera del plazo" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:20"), enviar una notificación al llamar y otra cuando falten 2 minutos. En A11 explicar cómo recuperar el turno.
+
+### PROBLEMA #9: "Has sido atendida" usa género fijo y no considera a quien representa a un menor
+
+**Severidad:** 2
+**Heurística violada:** Diseño inclusivo - Considera la situación
+
+**Problema:**
+"A07 · Atención finalizada" dice "Has sido atendida", con género femenino fijo. La app la usan hombres y personas de otros géneros, y además un adulto puede ver los tickets de un menor (A15 · Ticket de menor, que es de Mateo). El mensaje no se adapta a ninguno de esos casos.
+
+<a id="figura-227"></a>
+
+**Figura 227**
+
+*A07 - Atención finalizada*
+
+<img src="chapter-04/assets/heuristicas/A07-atencion-finalizada.png" alt="A07 - Atención finalizada" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-228"></a>
+
+**Figura 228**
+
+*A15 - Ticket de menor*
+
+<img src="chapter-04/assets/heuristicas/A15-ticket-de-menor.png" alt="A15 - Ticket de menor" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Usar un texto neutro ("Tu atención finalizó") o personalizarlo según el beneficiario ("La atención de Mateo finalizó").
+
+### PROBLEMA #10: El mismo ícono se usa para estados positivos, neutros y negativos
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Consistencia y estándares
+
+**Problema:**
+La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin llegada registrada", "A07 · Atención finalizada", "A16 · Turno ausente" y "C12 · Sin menores". Un resultado positivo (atendida) y uno negativo (inasistencia) se ven iguales, y el usuario debe leer el texto para saber qué pasó. En los diálogos de error se usa otro estilo (alerta roja), por lo que el criterio tampoco es uniforme.
+
+<a id="figura-229"></a>
+
+**Figura 229**
+
+*A07 - Atención finalizada*
+
+<img src="chapter-04/assets/heuristicas/A07-atencion-finalizada.png" alt="A07 - Atención finalizada" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-230"></a>
+
+**Figura 230**
+
+*A16 - Turno ausente*
+
+<img src="chapter-04/assets/heuristicas/A16-turno-ausente.png" alt="A16 - Turno ausente" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera, alerta para problema) y combinar ícono, color y texto.
+
+### PROBLEMA #11: Avisos y errores terminan en "Entendido" sin una acción para recuperarse
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Ayudar a reconocer, diagnosticar y recuperarse de errores
+
+**Problema:**
+"C15 · Código vencido" dice "Solicita un nuevo código para completar el cambio", pero su único botón es "Entendido", así que el usuario debe cerrar el diálogo y buscar "Reenviar código". "C18 · Vínculo no acreditado" remite a "admisión" sin ningún canal de contacto. "A11 · Fuera del plazo" y "A16 · Turno ausente" informan la inasistencia, pero solo ofrecen "Entendido" o "Ver mis citas", sin reprogramar ni contactar. El usuario queda sin siguiente paso.
+
+<a id="figura-231"></a>
+
+**Figura 231**
+
+*C15 - Código vencido*
+
+<img src="chapter-04/assets/heuristicas/C15-codigo-vencido.png" alt="C15 - Código vencido" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-232"></a>
+
+**Figura 232**
+
+*C18 - Vínculo no acreditado*
+
+<img src="chapter-04/assets/heuristicas/C18-vinculo-no-acreditado.png" alt="C18 - Vínculo no acreditado" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-233"></a>
+
+**Figura 233**
+
+*A16 - Turno ausente*
+
+<img src="chapter-04/assets/heuristicas/A16-turno-ausente.png" alt="A16 - Turno ausente" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Ofrecer la acción de recuperación en el mismo diálogo ("Solicitar nuevo código", "Reservar de nuevo", "Contactar a admisión" con teléfono o dirección) y reservar "Entendido" para avisos que no requieren acción.
+
+### PROBLEMA #12: Los campos de solo lectura se ven como campos editables
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Consistencia y estándares
+
+**Problema:**
+En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cuadro blanco que "Celular" y "Correo", que sí se pueden cambiar. En estos últimos, la única parte accionable es el pequeño texto "Editar →" dentro del cuadro. El usuario toca el nombre y no pasa nada, y puede no notar el enlace "Editar". La nota que lo explica ("Los datos de identidad verificados se muestran para consulta") está al final y en letra pequeña.
+
+<a id="figura-234"></a>
+
+**Figura 234**
+
+*C02 - Mis datos*
+
+<img src="chapter-04/assets/heuristicas/C02-mis-datos.png" alt="C02 - Mis datos" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabilitado y un ícono de candado. Hacer que todo el campo editable sea tocable y con un ícono de lápiz visible.
+
+### PROBLEMA #13: La pantalla que confirma el cambio de celular se titula "Verificar correo"
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Consistencia entre el sistema y el mundo real
+
+**Problema:**
+"C05 · Confirmar cambio por correo" se titula "Verificar correo", pero su texto dice "...enviado a tu correo registrado para confirmar el cambio de celular". El usuario que quiere cambiar el celular lee que debe "verificar el correo" y puede creer que cambió algo del correo. "C06" usa el mismo título para verificar realmente un correo nuevo, así que dos tareas distintas comparten pantalla de aspecto idéntico.
+
+<a id="figura-235"></a>
+
+**Figura 235**
+
+*C05 - Confirmar cambio por correo*
+
+<img src="chapter-04/assets/heuristicas/C05-confirmar-cambio-por-correo.png" alt="C05 - Confirmar cambio por correo" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-236"></a>
+
+**Figura 236**
+
+*C06 - Verificar correo*
+
+<img src="chapter-04/assets/heuristicas/C06-verificar-correo.png" alt="C06 - Verificar correo" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verificar tu nuevo correo") y repetir el dato que se está cambiando.
+
+### PROBLEMA #14: "Sincronizar" es un término técnico y una acción manual poco clara
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Consistencia entre el sistema y el mundo real
+
+**Problema:**
+"C07 · Parientes vinculados" ofrece "Sincronizar vínculos" y "C08 · Detalle del menor" ofrece "Sincronizar datos". No se explica qué se sincroniza, con qué ni cuándo conviene hacerlo. Una persona no técnica no sabe si debe pulsarlo, y la sincronización debería ser automática. El resultado ("C13 · Vínculos sincronizados") tampoco aclara qué cambió.
+
+<a id="figura-237"></a>
+
+**Figura 237**
+
+*C07 - Parientes vinculados*
+
+<img src="chapter-04/assets/heuristicas/C07-parientes-vinculados.png" alt="C07 - Parientes vinculados" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-238"></a>
+
+**Figura 238**
+
+*C08 - Detalle del menor*
+
+<img src="chapter-04/assets/heuristicas/C08-detalle-del-menor.png" alt="C08 - Detalle del menor" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Reemplazarlo por una actualización automática o por un texto comprensible ("Actualizar datos de Mateo") con una línea que explique para qué sirve, y mostrar la fecha de la última actualización.
+
+### PROBLEMA #15: El mensaje "Revisa el dato ingresado" no dice qué campo falló
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Ayudar a reconocer, diagnosticar y recuperarse de errores
+
+**Problema:**
+"C17 · Dato inválido" dice "Ingresa un correo válido o un celular de 9 dígitos, según el campo". El mismo mensaje sirve para dos pantallas distintas y obliga al usuario a deducir cuál es el suyo. Además, aparece en un diálogo que tapa el campo con error.
+
+<a id="figura-239"></a>
+
+**Figura 239**
+
+*C17 - Dato inválido*
+
+<img src="chapter-04/assets/heuristicas/C17-dato-invalido.png" alt="C17 - Dato inválido" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar el error junto al campo con un mensaje específico ("El celular debe tener 9 dígitos" o "Ingresa un correo válido, por ejemplo nombre@correo.com") y validar mientras se escribe.
+
+### PROBLEMA #16: Configuración no ofrece idioma, notificaciones ni opciones de accesibilidad
+
+**Severidad:** 2
+**Heurística violada:** Diseño inclusivo - Ofrece opciones
+
+**Problema:**
+"C01 · Configuración" solo tiene cuatro botones iguales: "Mis datos", "Parientes vinculados", "Cambiar contraseña" y "Cerrar sesión". No hay selector de idioma (el proyecto exige español e inglés), ajustes de notificaciones ni opciones de accesibilidad como tamaño de texto o contraste. "Cerrar sesión" tiene el mismo peso visual que las funciones de navegación.
+
+**Relación con otros hallazgos:** el selector de idioma ya se reportó en el problema #6; este problema amplía el hallazgo a las opciones de notificación y accesibilidad.
+
+<a id="figura-240"></a>
+
+**Figura 240**
+
+*C01 - Configuración*
+
+<img src="chapter-04/assets/heuristicas/C01-configuracion.png" alt="C01 - Configuración" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Agregar un selector de idioma (inglés por defecto), preferencias de notificación y tamaño de texto, y separar "Cerrar sesión" del resto como acción distinta.
+
+---
+
+### Evaluación 2 — Aplicación Flutter (personal y administración)
+
+**UX Heuristics & Principles Evaluation — Usability · Inclusive Design · Information Architecture**
+
+<a id="tabla-88"></a>
+
+**Tabla 88**
+
+*Datos de la evaluación*
+
+| Campo | Valor |
+| :--- | :--- |
+| CARRERA | Ingeniería de Software |
+| CURSO | 1ACC0238 Aplicaciones para Dispositivos Móviles |
+| NRC | 4945 |
+| PROFESORES | Mayta Guillermo, Jorge Luis |
+| AUDITOR | RouteGuard (Marcelo Pareja, Mathias de la Cruz, Manuel Francia, Nickolas Ramirez) |
+| CLIENTE(S) | Paula Montoya y Neo Ramos (grupo auditado: RuwaLabs) |
+
+*Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre los mock-ups de SaludYa.*
+
+**SITE o APP A EVALUAR**
+
+**SaludYa** — aplicación Flutter para el personal de admisión y la administración del establecimiento. La evaluación cubre los mock-ups de las secciones **07 · Citas y atención · Personal** y **08 · Configuración e indicadores · Administración** del [archivo de Figma](https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626).
+
+**TAREAS A EVALUAR**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Consultar el inicio del personal (citas pendientes y canceladas)
+2. Consultar el calendario operativo y los bloques del día
+3. Consultar, editar y guardar un bloque de atención
+4. Elegir especialidad, profesional y horario
+5. Gestionar la cola presencial (llamar, iniciar y terminar atención)
+6. Marcar a un paciente como ausente
+7. Registrar la llegada de un paciente por QR o por código manual
+8. Consultar citas canceladas y pacientes con reserva
+9. Consultar y editar las reglas del establecimiento (capacidad, tolerancia, plazos, intervalos)
+10. Consultar indicadores diarios y demanda por especialidad
+11. Exportar un reporte por rango de fechas
+
+**No están incluidas** en esta versión de la evaluación las siguientes tareas:
+
+1. Flujos del paciente (ver Evaluación 1)
+2. Sección 09 · Variantes interactivas y estados
+3. Gestión de cuentas del personal (registro por el Super Admin)
+
+**Alcance de la evaluación.** La evaluación se concentra en los problemas propios de las pantallas de personal y administración.
+
+**ESCALA DE SEVERIDAD**
+
+Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| :---: | :--- |
+| 1 | **Problema superficial:** puede ser fácilmente superado por el usuario y ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | **Problema menor:** puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3 | **Problema mayor:** ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | **Problema muy grave:** un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+<a id="tabla-89"></a>
+
+**Tabla 89**
+
+*TABLA RESUMEN de la evaluación heurística*
+
+| # | Problema | Escala de severidad | Heurística / Principio violado(a) |
+| :---: | :--- | :---: | :--- |
+| 1 | Los estados de bloques, turnos y pacientes se distinguen solo por texto verde | 2 | Inclusive Design: Proporciona experiencias comparables |
+| 2 | Editar un bloque no muestra qué reservas se verán afectadas | 3 | Usability: Prevención de errores |
+| 3 | Elegir profesional y horario no indica la tarea ni la selección actual | 2 | Usability: Visibilidad del estado del sistema |
+| 4 | "Terminar atención" se ejecuta sin confirmación ni opción de deshacer | 2 | Usability: Libertad y control del usuario |
+| 5 | "Marcar ausente" es el botón más llamativo y su confirmación usa otro color | 2 | Usability: Prevención de errores |
+| 6 | La pestaña "Cita" con ícono de QR se confunde con "Calendario" | 2 | Information Architecture: Is it findable? |
+| 7 | Las reglas del establecimiento están repartidas en tres lugares | 2 | Information Architecture: Is it findable? |
+| 8 | "Prioridad de reasignación: Por especialidad" contradice la nota que la explica | 2 | Usability: Consistencia entre el sistema y el mundo real |
+| 9 | El mensaje de validación de capacidad mezcla reglas que no corresponden | 2 | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores |
+| 10 | Los indicadores no muestran un control para cambiar la fecha o el periodo | 2 | Usability: Visibilidad del estado del sistema |
+| 11 | Descargar un reporte requiere dos pasos y no indica formato ni archivo | 2 | Usability: Eficiencia de uso |
+
+*Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.*
+
+**DESCRIPCIÓN DE PROBLEMAS**
+
+### PROBLEMA #1: Los estados de bloques, turnos y pacientes se distinguen solo por texto verde
+
+**Severidad:** 2
+**Heurística violada:** Diseño inclusivo - Proporciona experiencias comparables
+
+**Problema:**
+En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestran con el mismo texto verde pequeño, así que un bloque lleno no se distingue de uno con cupos. Pasa lo mismo en "P11 · Cola presencial" ("En atención" y "En espera") y en "P20 · Pacientes con reserva" ("Llegada registrada", "Pendiente de llegada" y "En atención"). Para escanear rápido una lista de decenas de ítems hay que leer cada texto, y una persona con daltonismo no tiene otra pista.
+
+<a id="figura-241"></a>
+
+**Figura 241**
+
+*P04 - Bloques de hoy*
+
+<img src="chapter-04/assets/heuristicas/P04-bloques-de-hoy.png" alt="P04 - Bloques de hoy" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-242"></a>
+
+**Figura 242**
+
+*P11 - Cola presencial*
+
+<img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-243"></a>
+
+**Figura 243**
+
+*P20 - Pacientes con reserva*
+
+<img src="chapter-04/assets/heuristicas/P20-pacientes-con-reserva.png" alt="P20 - Pacientes con reserva" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por ejemplo, rojo con candado para "Completo", verde para "Abierto") y separar el estado de la flecha de navegación.
+
+### PROBLEMA #2: Editar un bloque no muestra qué reservas se verán afectadas
+
+**Severidad:** 3
+**Heurística violada:** Usabilidad - Prevención de errores
+
+**Problema:**
+"P05" indica que el bloque 09:00–09:30 tiene "Capacidad: 8 · Reservas: 8". En "P07 · Editar bloque" se puede cambiar la hora, la especialidad, el profesional y el estado, y solo hay "Confirmar cambios" y "Cancelar". No se muestra cuántos pacientes se afectan ni cuáles, y si hay conflicto "P23" solo dice "El cambio entra en conflicto con reservas confirmadas o con otro bloque del profesional", sin indicar cuál. Un cambio mal hecho puede mover o cancelar citas de hasta 8 pacientes sin que el personal lo sepa.
+
+<a id="figura-244"></a>
+
+**Figura 244**
+
+*P07 - Editar bloque*
+
+<img src="chapter-04/assets/heuristicas/P07-editar-bloque.png" alt="P07 - Editar bloque" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-245"></a>
+
+**Figura 245**
+
+*P23 - Cambio incompatible*
+
+<img src="chapter-04/assets/heuristicas/P23-cambio-incompatible.png" alt="P23 - Cambio incompatible" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con la lista y las opciones (notificar, reasignar, cancelar). En P23 indicar la reserva o el bloque exacto con el que hay conflicto.
+
+### PROBLEMA #3: Elegir profesional y horario no indica la tarea ni la selección actual
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**
+"P08 · Elegir profesional", "P09 · Elegir horario" y "P10 · Horario por profesional" no dicen para qué se elige (¿reasignar una cita?, ¿crear una reserva?, ¿consultar?). En P08 cada tarjeta tiene "Seleccionar →" pero ninguna muestra estado seleccionado antes de "Continuar". En P09 y P10 el horario elegido solo se indica con el texto pequeño "· Seleccionado", sin resaltar la tarjeta. Además, P09 y P10 son casi idénticas.
+
+<a id="figura-246"></a>
+
+**Figura 246**
+
+*P08 - Elegir profesional*
+
+<img src="chapter-04/assets/heuristicas/P08-elegir-profesional.png" alt="P08 - Elegir profesional" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-247"></a>
+
+**Figura 247**
+
+*P09 - Elegir horario*
+
+<img src="chapter-04/assets/heuristicas/P09-elegir-horario.png" alt="P09 - Elegir horario" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-248"></a>
+
+**Figura 248**
+
+*P10 - Horario por profesional*
+
+<img src="chapter-04/assets/heuristicas/P10-horario-por-profesional.png" alt="P10 - Horario por profesional" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Indicar la tarea en el título o subtítulo ("Reasignar cita de Lucía Torres"), resaltar la tarjeta elegida (borde, fondo, check) y fusionar P09 y P10 en un solo selector.
+
+### PROBLEMA #4: "Terminar atención" se ejecuta sin confirmación ni opción de deshacer
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Libertad y control del usuario
+
+**Problema:**
+En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" cierra la atención y retira al paciente de la cola ("P17 · Atención finalizada" aparece después). No hay confirmación previa ni un "Deshacer", y el botón está a solo 14 px de "Llamar al siguiente". Un toque equivocado deja a un paciente fuera de la cola sin forma visible de revertirlo.
+
+<a id="figura-249"></a>
+
+**Figura 249**
+
+*P11 - Cola presencial*
+
+<img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-250"></a>
+
+**Figura 250**
+
+*P17 - Atención finalizada*
+
+<img src="chapter-04/assets/heuristicas/P17-atencion-finalizada.png" alt="P17 - Atención finalizada" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Pedir confirmación breve ("¿Terminar la atención de María Pérez?") o mostrar un aviso con "Deshacer" durante unos segundos, y separar mejor los dos botones.
+
+### PROBLEMA #5: "Marcar ausente" es el botón más llamativo y su confirmación usa otro color
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Prevención de errores
+
+**Problema:**
+En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" está arriba y es el más prominente, mientras "Iniciar atención" (la opción que puede ser correcta si el paciente llegó) es un botón de borde. Luego, en "P16 · Confirmar ausencia" el botón "Confirmar ausencia" es verde, el color de las acciones positivas, aunque es una acción que libera el cupo y marca inasistencia. El color no es coherente y la confirmación se ve igual que cualquier otra.
+
+<a id="figura-251"></a>
+
+**Figura 251**
+
+*P13 - Plazo de llamada vencido*
+
+<img src="chapter-04/assets/heuristicas/P13-plazo-de-llamada-vencido.png" alt="P13 - Plazo de llamada vencido" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-252"></a>
+
+**Figura 252**
+
+*P16 - Confirmar ausencia*
+
+<img src="chapter-04/assets/heuristicas/P16-confirmar-ausencia.png" alt="P16 - Confirmar ausencia" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Dar prioridad visual a "Iniciar atención" y dejar "Marcar ausente" como acción secundaria de advertencia. En P16 usar el mismo color de advertencia en "Confirmar ausencia" y dejar "Volver" como opción segura destacada.
+
+### PROBLEMA #6: La pestaña "Cita" con ícono de QR se confunde con "Calendario"
+
+**Severidad:** 2
+**Heurística violada:** Arquitectura de información - Is it findable?
+
+**Problema:**
+La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configuración". "Calendario" y "Cita" se refieren casi a lo mismo (citas), pero "Cita" abre la cola de atención y el registro de llegada, y su ícono es un QR. El ícono de "Configuración" es un sol. Quien busca la cola de atención no sabe si está en "Calendario" o en "Cita".
+
+<a id="figura-253"></a>
+
+**Figura 253**
+
+*P11 - Cola presencial*
+
+<img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-254"></a>
+
+**Figura 254**
+
+*P01 - Inicio del personal*
+
+<img src="chapter-04/assets/heuristicas/P01-inicio-del-personal.png" alt="P01 - Inicio del personal" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (personas en fila) y cambiar el sol por un engranaje.
+
+### PROBLEMA #7: Las reglas del establecimiento están repartidas en tres lugares
+
+**Severidad:** 2
+**Heurística violada:** Arquitectura de información - Is it findable?
+
+**Problema:**
+"H01 · Configuración general" muestra cuatro reglas (capacidad, tolerancia de llegada, plazo después de la llamada, respuesta a reasignación) y un botón "Ver más reglas". "H02 · Más reglas" muestra otras cuatro (hora límite para reservar, anticipación para cancelar, prioridad de reasignación, posición de cola visible) y un botón aparte "Intervalos de atención" que abre "H13". Todas son reglas del mismo tipo, pero están en tres niveles. Para ver o cambiar una regla hay que recordar en cuál se encuentra.
+
+<a id="figura-255"></a>
+
+**Figura 255**
+
+*H01 - Configuración general*
+
+<img src="chapter-04/assets/heuristicas/H01-configuracion-general.png" alt="H01 - Configuración general" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-256"></a>
+
+**Figura 256**
+
+*H02 - Reglas adicionales*
+
+<img src="chapter-04/assets/heuristicas/H02-reglas-adicionales.png" alt="H02 - Reglas adicionales" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Reunir todas las reglas en una sola lista agrupada por tema (Reservas, Llegada y atención, Reasignación) con buscador o secciones, y dejar la edición como destino de cada fila.
+
+### PROBLEMA #8: "Prioridad de reasignación: Por especialidad" contradice la nota que la explica
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Consistencia entre el sistema y el mundo real
+
+**Problema:**
+En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero la nota inferior dice "La prioridad de reasignación sigue el orden de reserva. La atención sigue el orden de llegada". No se entiende cuál es el criterio real (especialidad u orden de reserva), y la nota, que es la única explicación, está en letra pequeña. Una regla de este tipo afecta a muchos pacientes.
+
+<a id="figura-257"></a>
+
+**Figura 257**
+
+*H02 - Reglas adicionales*
+
+<img src="chapter-04/assets/heuristicas/H02-reglas-adicionales.png" alt="H02 - Reglas adicionales" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reservó antes, dentro de la misma especialidad"), con la explicación junto a la regla y en un tamaño legible.
+
+### PROBLEMA #9: El mensaje de validación de capacidad mezcla reglas que no corresponden
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Ayudar a reconocer, diagnosticar y recuperarse de errores
+
+**Problema:**
+"H05 · Validación de regla" dice "La capacidad debe ser mayor que cero. La tolerancia de llegada no puede superar la duración del intervalo. Revisa los campos antes de guardar". Al editar la capacidad, el segundo mensaje no tiene relación y el usuario no sabe cuál de las dos reglas falló. Además aparece como diálogo, tapando el campo.
+
+<a id="figura-258"></a>
+
+**Figura 258**
+
+*H05 - Validación de regla*
+
+<img src="chapter-04/assets/heuristicas/H05-validacion-de-regla.png" alt="H05 - Validación de regla" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en rojo ("La capacidad debe ser mayor que 0").
+
+### PROBLEMA #10: Los indicadores no muestran un control para cambiar la fecha o el periodo
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Visibilidad del estado del sistema
+
+**Problema:**
+"H06 · Indicadores del día" y "H07 · Demanda" muestran una fecha fija ("Mar 6 oct 2026") sin ningún control visible para cambiarla, aunque "H09 · Periodo sin datos" muestra otra fecha ("1 oct 2026") y "H08" permite elegir un rango para exportar. En las pantallas revisadas no se ve cómo la administración puede consultar otro día o semana, que es el uso básico de un panel de indicadores.
+
+<a id="figura-259"></a>
+
+**Figura 259**
+
+*H06 - Indicadores diarios*
+
+<img src="chapter-04/assets/heuristicas/H06-indicadores-diarios.png" alt="H06 - Indicadores diarios" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-260"></a>
+
+**Figura 260**
+
+*H09 - Periodo sin datos*
+
+<img src="chapter-04/assets/heuristicas/H09-periodo-sin-datos.png" alt="H09 - Periodo sin datos" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Agregar un selector de fecha o periodo visible en la cabecera de los indicadores (con atajos como "Hoy", "Ayer", "Últimos 7 días") y reflejar el periodo elegido en el título.
+
+### PROBLEMA #11: Descargar un reporte requiere dos pasos y no indica formato ni archivo
+
+**Severidad:** 2
+**Heurística violada:** Usabilidad - Eficiencia de uso
+
+**Problema:**
+En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exportación preparada" muestra un diálogo con otro botón "Descargar archivo". El segundo paso es redundante y el diálogo no repite qué archivo es (PDF o CSV), el periodo, el nombre ni el tamaño.
+
+<a id="figura-261"></a>
+
+**Figura 261**
+
+*H08 - Exportación*
+
+<img src="chapter-04/assets/heuristicas/H08-exportacion.png" alt="H08 - Exportación" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+<a id="figura-262"></a>
+
+**Figura 262**
+
+*H11 - Exportación preparada*
+
+<img src="chapter-04/assets/heuristicas/H11-exportacion-preparada.png" alt="H11 - Exportación preparada" width="60%"/>
+
+*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+**Recomendación:**
+Iniciar la descarga al tocar el botón de formato (con una barra de progreso si demora) y mostrar el nombre del archivo y el formato en la confirmación.
 
 ---
 
