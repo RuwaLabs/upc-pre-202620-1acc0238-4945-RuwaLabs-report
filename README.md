@@ -300,8 +300,10 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
       - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
       - [4.2.2.5. Testing Suite Evidence for Sprint Review](#4225-testing-suite-evidence-for-sprint-review)
+      - [4.2.2.6. Execution Evidence for Sprint Review](#4226-execution-evidence-for-sprint-review)
       - [4.2.2.7. Services Documentation Evidence for Sprint Review](#4227-services-documentation-evidence-for-sprint-review)
       - [4.2.2.8. Software Deployment Evidence for Sprint Review](#4228-software-deployment-evidence-for-sprint-review)
+      - [4.2.2.9. Team Collaboration Insights during Sprint](#4229-team-collaboration-insights-during-sprint)
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -8719,88 +8721,88 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 
 |  #  | Acción implementada                                        | Método | Sintaxis de llamada (endpoint)                   | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                                                              | Respuesta (ejemplo)                                                                                                                                                                              | Explicación del response                                                                                               | Documentación                                                                                             |
 | :-: | :--------------------------------------------------------- | :----: | :----------------------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
-|  1  | Enviar código de verificación antes de registrar la cuenta |  POST  | `/api/v1/user-accounts/send-verification-code`   | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` · *sin cuerpo*                                                                                                                                                                             | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
-|  2  | Registrar al paciente verificado                           |  POST  | `/api/v1/user-accounts`                          | body: `dni, name, lastname, birthDate, phone, email, password, code`                         | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register)             |
-|  3  | Iniciar sesión (valida credenciales y envía código)        |  POST  | `/api/v1/user-accounts/login`                    | body: `email, password`                                                                      | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}`                                                                                                                  | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}`                                                                                         | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)                |
-|  4  | Completar inicio de sesión con el código                   |  POST  | `/api/v1/user-accounts/login/verify`             | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                                                                | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}`                                             | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)          |
-|  5  | Reenviar el código del desafío de login                    |  POST  | `/api/v1/user-accounts/login/resend`             | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                                                                | `202` · *sin cuerpo*                                                                                                                                                                             | Genera y reenvía un nuevo código para el mismo desafío                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode)      |
-|  6  | Cerrar sesión (revoca el token actual)                     |  POST  | `/api/v1/user-accounts/logout`                   | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                                                                  | `204` · *sin cuerpo*                                                                                                                                                                             | Revoca la sesión Bearer vigente; responde sin contenido                                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)               |
-|  7  | Solicitar enlace de recuperación de contraseña             |  POST  | `/api/v1/user-accounts/recover-password`         | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` `{"message":"If an active account exists, a recovery email will be sent."}`                                                                                                                | Confirma la recepción de forma genérica, sin revelar si el correo está registrado                                      | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover)              |
-|  8  | Restablecer contraseña con el enlace de recuperación       |  POST  | `/api/v1/user-accounts/reset-password`           | body: `token, password, confirmPassword`                                                     | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                            | `204` · *sin cuerpo*                                                                                                                                                                             | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset)                |
-|  9  | Cambiar la contraseña usando la actual                     |  POST  | `/api/v1/user-accounts/change-password`          | header: `Authorization` · body: `currentPassword, password, confirmPassword`                 | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                     | `204` · *sin cuerpo*                                                                                                                                                                             | Actualiza la contraseña del usuario autenticado; responde sin contenido                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change)               |
-| 10  | Leer la cuenta y el perfil propios                         |  GET   | `/api/v1/user-accounts/me`                       | header: `Authorization`                                                                      | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada                                                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me)                   |
-| 11  | Leer un perfil por id                                      |  GET   | `/api/v1/user-accounts/{id}`                     | path: `id` · header: `Authorization`                                                         | `/api/v1/user-accounts/10`                                                                                                                                                      | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}`                                                                                              | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta                                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get)                  |
-| 12  | Actualizar correo y celular                                |  PUT   | `/api/v1/user-accounts/{id}`                     | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}`                                                                                                                        | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables                                           | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update)               |
-| 13  | Crear cuenta de personal de admisión                       |  POST  | `/api/v1/user-accounts/staff`                    | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}`                                           | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}`                                                                                     | Crea la cuenta del personal y envía una invitación para definir contraseña                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)                |
-| 14  | Verificar identidad por DNI y nombre                       |  POST  | `/api/v1/identity-verifications`                 | body: `dni, name, lastname`                                                                  | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}`                                                                                                                         | `200` `{"verified":true}`                                                                                                                                                                        | Indica si el DNI existe y el nombre completo coincide con el registro oficial                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify)       |
-| 15  | Comprobar si un DNI es conocido                            |  POST  | `/api/v1/identity-verifications/exists`          | body: `dni`                                                                                  | `{"dni":"74218365"}`                                                                                                                                                            | `200` `{"exists":true}`                                                                                                                                                                          | Indica si el DNI es conocido por el proveedor de identidad                                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists)       |
-| 16  | Leer el perfil de paciente                                 |  GET   | `/api/v1/patients/{id}`                          | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1`                                                                                                                                                            | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Devuelve el paciente propio o un menor vinculado                                                                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1)                       |
-| 17  | Actualizar datos de contacto del paciente                  |  PUT   | `/api/v1/patients/{id}`                          | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}`                                                                                                                                 | Actualiza el contacto del paciente propio y devuelve el recurso actualizado                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1)                    |
-| 18  | Listar menores vinculados                                  |  GET   | `/api/v1/patients/{id}/minors`                   | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1/minors`                                                                                                                                                     | `200` `[{"id":5,"patientId":88,"tutorId":1}]`                                                                                                                                                    | Lista los vínculos de tutoría del paciente autenticado                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors)                      |
-| 19  | Vincular a un menor verificado                             |  POST  | `/api/v1/patient-minors`                         | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation`           | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}`                                                                          | `201` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso                                   | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link)                 |
-| 20  | Leer un vínculo de tutoría                                 |  GET   | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `200` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Devuelve el vínculo de tutoría solicitado                                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2)                |
-| 21  | Desvincular a un menor                                     | DELETE | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `204` · *sin cuerpo*                                                                                                                                                                             | Elimina el vínculo de tutoría conservando la historia clínica del menor                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink)               |
-| 22  | Obtener instrucciones de soporte                           |  GET   | `/api/v1/account-recovery-requests/support`      | —                                                                                            | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}`                                                                                                  | Devuelve las instrucciones y el teléfono de soporte (público)                                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support)          |
-| 23  | Solicitar recuperación asistida                            |  POST  | `/api/v1/account-recovery-requests`              | body: `dni, contactEmail`                                                                    | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}`                                                                                                                        | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}`                                                                                                               | Registra la solicitud; no otorga acceso ni revela cuentas                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request)          |
-| 24  | Listar solicitudes de recuperación abiertas                |  GET   | `/api/v1/account-recovery-requests`              | header: `Authorization (SUPER_ADMIN)`                                                        | *(sin cuerpo)*                                                                                                                                                                  | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]`                                                           | Lista las 100 solicitudes abiertas más antiguas                                                                        | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open)             |
-| 25  | Resolver solicitud de recuperación asistida                |  POST  | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson`         | `{"identityCheckedInPerson":true}`                                                                                                                                              | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}`                                                                                                              | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN)                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve)          |
+|  1  | Enviar código de verificación antes de registrar la cuenta |  POST  | /api/v1/user-accounts/send-verification-code   | body: email                                                                                | {"email":"kevin.huaman@gmail.com"}                                                                                                                                            | 202 · *sin cuerpo*                                                                                                                                                                             | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
+|  2  | Registrar al paciente verificado                           |  POST  | /api/v1/user-accounts                          | body: dni, name, lastname, birthDate, phone, email, password, code                         | {"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"} | 201 {"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}                                                                    | Crea la cuenta y devuelve el recurso del paciente; el header Location apunta al recurso creado                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register)             |
+|  3  | Iniciar sesión (valida credenciales y envía código)        |  POST  | /api/v1/user-accounts/login                    | body: email, password                                                                      | {"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}                                                                                                                  | 200 {"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}                                                                                         | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)                |
+|  4  | Completar inicio de sesión con el código                   |  POST  | /api/v1/user-accounts/login/verify             | body: challengeId, code                                                                    | {"challengeId":"8f2c1d40-...","code":"721305"}                                                                                                                                | 200 {"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}                                             | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)          |
+|  5  | Reenviar el código del desafío de login                    |  POST  | /api/v1/user-accounts/login/resend             | body: challengeId                                                                          | {"challengeId":"8f2c1d40-..."}                                                                                                                                                | 202 · *sin cuerpo*                                                                                                                                                                             | Genera y reenvía un nuevo código para el mismo desafío                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode)      |
+|  6  | Cerrar sesión (revoca el token actual)                     |  POST  | /api/v1/user-accounts/logout                   | header: Authorization: Bearer &lt;token&gt;                                                      | *(sin cuerpo)*                                                                                                                                                                  | 204 · *sin cuerpo*                                                                                                                                                                             | Revoca la sesión Bearer vigente; responde sin contenido                                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)               |
+|  7  | Solicitar enlace de recuperación de contraseña             |  POST  | /api/v1/user-accounts/recover-password         | body: email                                                                                | {"email":"kevin.huaman@gmail.com"}                                                                                                                                            | 202 {"message":"If an active account exists, a recovery email will be sent."}                                                                                                                | Confirma la recepción de forma genérica, sin revelar si el correo está registrado                                      | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover)              |
+|  8  | Restablecer contraseña con el enlace de recuperación       |  POST  | /api/v1/user-accounts/reset-password           | body: token, password, confirmPassword                                                     | {"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}                                                                                            | 204 · *sin cuerpo*                                                                                                                                                                             | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset)                |
+|  9  | Cambiar la contraseña usando la actual                     |  POST  | /api/v1/user-accounts/change-password          | header: Authorization · body: currentPassword, password, confirmPassword                 | {"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}                                                                                     | 204 · *sin cuerpo*                                                                                                                                                                             | Actualiza la contraseña del usuario autenticado; responde sin contenido                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change)               |
+| 10  | Leer la cuenta y el perfil propios                         |  GET   | /api/v1/user-accounts/me                       | header: Authorization                                                                      | *(sin cuerpo)*                                                                                                                                                                  | 200 {"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"} | Devuelve el perfil de la cuenta autenticada                                                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me)                   |
+| 11  | Leer un perfil por id                                      |  GET   | /api/v1/user-accounts/{id}                     | path: id · header: Authorization                                                         | /api/v1/user-accounts/10                                                                                                                                                      | 200 {"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}                                                                                              | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta                                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get)                  |
+| 12  | Actualizar correo y celular                                |  PUT   | /api/v1/user-accounts/{id}                     | path: id · body: email, phone                                                            | {"email":"kevin.nuevo@gmail.com","phone":"987111222"}                                                                                                                         | 200 {"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}                                                                                                                        | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables                                           | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update)               |
+| 13  | Crear cuenta de personal de admisión                       |  POST  | /api/v1/user-accounts/staff                    | header: Authorization (SUPER_ADMIN) · body: dni, name, lastname, birthDate, phone, email | {"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}                                           | 201 {"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}                                                                                     | Crea la cuenta del personal y envía una invitación para definir contraseña                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)                |
+| 14  | Verificar identidad por DNI y nombre                       |  POST  | /api/v1/identity-verifications                 | body: dni, name, lastname                                                                  | {"dni":"74218365","name":"Kevin","lastname":"Huamán"}                                                                                                                         | 200 {"verified":true}                                                                                                                                                                        | Indica si el DNI existe y el nombre completo coincide con el registro oficial                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify)       |
+| 15  | Comprobar si un DNI es conocido                            |  POST  | /api/v1/identity-verifications/exists          | body: dni                                                                                  | {"dni":"74218365"}                                                                                                                                                            | 200 {"exists":true}                                                                                                                                                                          | Indica si el DNI es conocido por el proveedor de identidad                                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists)       |
+| 16  | Leer el perfil de paciente                                 |  GET   | /api/v1/patients/{id}                          | path: id · header: Authorization                                                         | /api/v1/patients/1                                                                                                                                                            | 200 {"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}                                                                    | Devuelve el paciente propio o un menor vinculado                                                                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1)                       |
+| 17  | Actualizar datos de contacto del paciente                  |  PUT   | /api/v1/patients/{id}                          | path: id · body: email, phone                                                            | {"email":"kevin.nuevo@gmail.com","phone":"987111222"}                                                                                                                         | 200 {"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}                                                                                                                                 | Actualiza el contacto del paciente propio y devuelve el recurso actualizado                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1)                    |
+| 18  | Listar menores vinculados                                  |  GET   | /api/v1/patients/{id}/minors                   | path: id · header: Authorization                                                         | /api/v1/patients/1/minors                                                                                                                                                     | 200 [{"id":5,"patientId":88,"tutorId":1}]                                                                                                                                                    | Lista los vínculos de tutoría del paciente autenticado                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors)                      |
+| 19  | Vincular a un menor verificado                             |  POST  | /api/v1/patient-minors                         | header: Authorization · body: dni, name, lastname, birthDate, confirmFiliation           | {"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}                                                                          | 201 {"id":5,"patientId":88,"tutorId":1}                                                                                                                                                      | Crea el vínculo de tutoría tras confirmar la filiación; Location apunta al recurso                                   | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link)                 |
+| 20  | Leer un vínculo de tutoría                                 |  GET   | /api/v1/patient-minors/{id}                    | path: id · header: Authorization                                                         | /api/v1/patient-minors/5                                                                                                                                                      | 200 {"id":5,"patientId":88,"tutorId":1}                                                                                                                                                      | Devuelve el vínculo de tutoría solicitado                                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2)                |
+| 21  | Desvincular a un menor                                     | DELETE | /api/v1/patient-minors/{id}                    | path: id · header: Authorization                                                         | /api/v1/patient-minors/5                                                                                                                                                      | 204 · *sin cuerpo*                                                                                                                                                                             | Elimina el vínculo de tutoría conservando la historia clínica del menor                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink)               |
+| 22  | Obtener instrucciones de soporte                           |  GET   | /api/v1/account-recovery-requests/support      | —                                                                                            | *(sin cuerpo)*                                                                                                                                                                  | 200 {"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}                                                                                                  | Devuelve las instrucciones y el teléfono de soporte (público)                                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support)          |
+| 23  | Solicitar recuperación asistida                            |  POST  | /api/v1/account-recovery-requests              | body: dni, contactEmail                                                                    | {"dni":"74218365","contactEmail":"familiar@gmail.com"}                                                                                                                        | 202 {"message":"Request received...","instructions":"...","phone":"999888777"}                                                                                                               | Registra la solicitud; no otorga acceso ni revela cuentas                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request)          |
+| 24  | Listar solicitudes de recuperación abiertas                |  GET   | /api/v1/account-recovery-requests              | header: Authorization (SUPER_ADMIN)                                                        | *(sin cuerpo)*                                                                                                                                                                  | 200 [{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]                                                           | Lista las 100 solicitudes abiertas más antiguas                                                                        | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open)             |
+| 25  | Resolver solicitud de recuperación asistida                |  POST  | /api/v1/account-recovery-requests/{id}/resolve | path: id · header: Authorization (SUPER_ADMIN) · body: identityCheckedInPerson         | {"identityCheckedInPerson":true}                                                                                                                                              | 200 {"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}                                                                                                              | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN)                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve)          |
 
 ###### Appointments & Booking
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 26 | Reservar una cita | POST | `/api/v1/appointments` | body: `patientId, timeSlotId` | `{"patientId":1,"timeSlotId":31}` | `201` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null}` | Crea la cita y devuelve el recurso; `Location` apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
-| 27 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?patientId=1&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}]` | Devuelve las citas filtradas; si el actor es paciente, `patientId` es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
-| 28 | Obtener una cita por id | GET | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...}` | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
-| 29 | Listar citas de un paciente | GET | `/api/v1/appointments/patient/{patientId}` | path: `patientId` · query: `status` | `/api/v1/appointments/patient/1?status=CONFIRMED` | `200` `[{"id":142,"patientId":1,"status":"CONFIRMED",...}]` | Lista las citas del paciente indicado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentsByPatient) |
-| 30 | Cancelar una cita | DELETE | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"status":"CANCELLED",...}` | Cancela la cita y devuelve el recurso con estado `CANCELLED` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/cancelAppointment) |
-| 31 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
-| 32 | Obtener un doctor por id | GET | `/api/v1/doctors/{id}` | path: `id` | `/api/v1/doctors/7` | `200` `{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}` | Devuelve el doctor solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorById) |
-| 33 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
-| 34 | Obtener una especialidad por id | GET | `/api/v1/specialties/{id}` | path: `id` | `/api/v1/specialties/1` | `200` `{"id":1,"name":"Medicina general","description":"Atención médica primaria"}` | Devuelve la especialidad solicitada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getSpecialtyById) |
-| 35 | Slots disponibles por especialidad y fecha | GET | `/api/v1/time-slots/available` | query: `specialtyId, date` (obligatorios) | `/api/v1/time-slots/available?specialtyId=1&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots con cupo disponible para la especialidad y fecha | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getAvailableTimeSlots) |
-| 36 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","status":"AVAILABLE",...}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
-| 37 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","status":"AVAILABLE",...}` | Devuelve el slot solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
-| 38 | Crear un slot de atención | POST | `/api/v1/time-slots` | body: `doctorId, date, startHour, endHour, room, maxCapacity` | `{"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5}` | `201` `{"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...}` | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
-| 39 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
-| 40 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+| 26 | Reservar una cita | POST | /api/v1/appointments | body: patientId, timeSlotId | {"patientId":1,"timeSlotId":31} | 201 {"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null} | Crea la cita y devuelve el recurso; Location apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
+| 27 | Listar citas con filtros | GET | /api/v1/appointments | query: patientId, timeSlotId, doctorId, specialtyId, date, status | /api/v1/appointments?patientId=1&status=RESERVED | 200 [{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}] | Devuelve las citas filtradas; si el actor es paciente, patientId es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 28 | Obtener una cita por id | GET | /api/v1/appointments/{id} | path: id | /api/v1/appointments/142 | 200 {"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...} | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
+| 29 | Listar citas de un paciente | GET | /api/v1/appointments/patient/{patientId} | path: patientId · query: status | /api/v1/appointments/patient/1?status=CONFIRMED | 200 [{"id":142,"patientId":1,"status":"CONFIRMED",...}] | Lista las citas del paciente indicado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentsByPatient) |
+| 30 | Cancelar una cita | DELETE | /api/v1/appointments/{id} | path: id | /api/v1/appointments/142 | 200 {"id":142,"status":"CANCELLED",...} | Cancela la cita y devuelve el recurso con estado CANCELLED | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/cancelAppointment) |
+| 31 | Listar doctores por especialidad | GET | /api/v1/doctors | query: specialtyId (obligatorio) | /api/v1/doctors?specialtyId=1 | 200 [{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}] | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
+| 32 | Obtener un doctor por id | GET | /api/v1/doctors/{id} | path: id | /api/v1/doctors/7 | 200 {"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"} | Devuelve el doctor solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorById) |
+| 33 | Listar especialidades | GET | /api/v1/specialties | — | /api/v1/specialties | 200 [{"id":1,"name":"Medicina general","description":"Atención médica primaria"}] | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
+| 34 | Obtener una especialidad por id | GET | /api/v1/specialties/{id} | path: id | /api/v1/specialties/1 | 200 {"id":1,"name":"Medicina general","description":"Atención médica primaria"} | Devuelve la especialidad solicitada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getSpecialtyById) |
+| 35 | Slots disponibles por especialidad y fecha | GET | /api/v1/time-slots/available | query: specialtyId, date (obligatorios) | /api/v1/time-slots/available?specialtyId=1&date=2026-10-15 | 200 [{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}] | Devuelve los slots con cupo disponible para la especialidad y fecha | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getAvailableTimeSlots) |
+| 36 | Slots de un doctor en una fecha | GET | /api/v1/time-slots | query: doctorId, date (obligatorios) | /api/v1/time-slots?doctorId=7&date=2026-10-15 | 200 [{"id":31,"doctorId":7,"date":"2026-10-15","status":"AVAILABLE",...}] | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
+| 37 | Obtener un slot por id | GET | /api/v1/time-slots/{id} | path: id | /api/v1/time-slots/31 | 200 {"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","status":"AVAILABLE",...} | Devuelve el slot solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
+| 38 | Crear un slot de atención | POST | /api/v1/time-slots | body: doctorId, date, startHour, endHour, room, maxCapacity | {"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5} | 201 {"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...} | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
+| 39 | Actualizar la capacidad de un slot | PUT | /api/v1/time-slots/{id}/capacity | path: id · body: maxCapacity | {"maxCapacity":8} | 200 {"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...} | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
+| 40 | Editar un slot (doctor, horario y estado) | PUT | /api/v1/time-slots/{id} | path: id · body: doctorId, startHour, endHour, status | {"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"} | 200 {"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...} | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
 
 ###### Arrival & QR Check-in
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 41 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
-| 42 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
-| 43 | Obtener el ticket digital de un check-in | GET | `/api/v1/check-ins/{id}` | path: `id` | `/api/v1/check-ins/15` | `200` `{"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...}` | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
-| 44 | Obtener el ticket digital de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}` | path: `appointmentId` | `/api/v1/check-ins/appointment/142` | `200` `{"id":15,"appointmentId":142,"turnCode":"A-003","status":"VALID",...}` | Devuelve el ticket digital asociado a la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getByAppointment) |
-| 45 | Generar el token QR firmado de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/qr-token` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/qr-token` | `200` `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | Genera el token QR firmado y temporal de la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/generateQrToken) |
-| 46 | Posición del paciente en la cola por cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/position` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición actual del paciente y el total en cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getPosition) |
-| 47 | Obtener una entrada de cola | GET | `/api/v1/queue-entries/{id}` | path: `id` | `/api/v1/queue-entries/9` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}` | Devuelve la entrada de cola (el paciente puede leer la suya) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/getById) |
-| 48 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/9/absent` | `204` · *sin cuerpo* | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
-| 49 | Salir voluntariamente de la cola | POST | `/api/v1/queue-entries/{id}/leave` | path: `id` | `/api/v1/queue-entries/9/leave` | `204` · *sin cuerpo* | El paciente abandona la cola; la cita se marca como ausente | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/leaveQueue) |
-| 50 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"status":"IN_ATTENTION",...}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
-| 51 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"status":"ATTENDED","attendedAt":"2026-10-15T09:25:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
-| 52 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-10-15` | `200` `{"id":4,"timeSlotId":31,"date":"2026-10-15","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
-| 53 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"position":3,"status":"WAITING",...}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
-| 54 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
-| 55 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+| 41 | Registrar check-in por token QR | POST | /api/v1/check-ins/qr | body: qrToken | {"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."} | 201 {"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"} | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
+| 42 | Registrar check-in por código de reserva | POST | /api/v1/check-ins/code | body: bookingCode | {"bookingCode":"RSV-000142"} | 201 {"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"} | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
+| 43 | Obtener el ticket digital de un check-in | GET | /api/v1/check-ins/{id} | path: id | /api/v1/check-ins/15 | 200 {"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...} | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
+| 44 | Obtener el ticket digital de una cita | GET | /api/v1/check-ins/appointment/{appointmentId} | path: appointmentId | /api/v1/check-ins/appointment/142 | 200 {"id":15,"appointmentId":142,"turnCode":"A-003","status":"VALID",...} | Devuelve el ticket digital asociado a la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getByAppointment) |
+| 45 | Generar el token QR firmado de una cita | GET | /api/v1/check-ins/appointment/{appointmentId}/qr-token | path: appointmentId | /api/v1/check-ins/appointment/142/qr-token | 200 {"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."} | Genera el token QR firmado y temporal de la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/generateQrToken) |
+| 46 | Posición del paciente en la cola por cita | GET | /api/v1/check-ins/appointment/{appointmentId}/position | path: appointmentId | /api/v1/check-ins/appointment/142/position | 200 {"position":3,"totalInQueue":8} | Devuelve la posición actual del paciente y el total en cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getPosition) |
+| 47 | Obtener una entrada de cola | GET | /api/v1/queue-entries/{id} | path: id | /api/v1/queue-entries/9 | 200 {"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null} | Devuelve la entrada de cola (el paciente puede leer la suya) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/getById) |
+| 48 | Marcar una entrada como ausente | POST | /api/v1/queue-entries/{id}/absent | path: id | /api/v1/queue-entries/9/absent | 204 · *sin cuerpo* | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
+| 49 | Salir voluntariamente de la cola | POST | /api/v1/queue-entries/{id}/leave | path: id | /api/v1/queue-entries/9/leave | 204 · *sin cuerpo* | El paciente abandona la cola; la cita se marca como ausente | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/leaveQueue) |
+| 50 | Iniciar la atención de una entrada llamada | POST | /api/v1/queue-entries/{id}/start | path: id | /api/v1/queue-entries/9/start | 200 {"id":9,"status":"IN_ATTENTION",...} | Cambia la entrada a IN_ATTENTION | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
+| 51 | Finalizar la atención de una entrada | POST | /api/v1/queue-entries/{id}/finish | path: id | /api/v1/queue-entries/9/finish | 200 {"id":9,"status":"ATTENDED","attendedAt":"2026-10-15T09:25:00Z"} | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
+| 52 | Resolver la cola de un slot en una fecha | GET | /api/v1/attendance-queues | query: timeSlotId, date (obligatorios) | /api/v1/attendance-queues?timeSlotId=31&date=2026-10-15 | 200 {"id":4,"timeSlotId":31,"date":"2026-10-15","status":"OPEN"} | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
+| 53 | Listar las entradas de una cola | GET | /api/v1/attendance-queues/{id}/entries | path: id | /api/v1/attendance-queues/4/entries | 200 [{"id":9,"position":3,"status":"WAITING",...}] | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
+| 54 | Posición actual en la cola | GET | /api/v1/attendance-queues/{id}/position | path: id | /api/v1/attendance-queues/4/position | 200 {"position":3,"totalInQueue":8} | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
+| 55 | Llamar al siguiente paciente | POST | /api/v1/attendance-queues/{id}/call-next | path: id | /api/v1/attendance-queues/4/call-next | 200 {"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"} | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
 
 ###### Reassignment
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 56 | Listar ofertas de cupo pendientes | GET | `/api/v1/reassignment-offers/pending` | header: `Authorization` · query: `appointmentId` (opcional) | `/api/v1/reassignment-offers/pending` | `200` `[{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}]` | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
-| 57 | Aceptar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/accept` | path: `id` | `/api/v1/reassignment-offers/21/accept` | `200` `{"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
-| 58 | Rechazar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/reject` | path: `id` | `/api/v1/reassignment-offers/21/reject` | `200` `{"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
+| 56 | Listar ofertas de cupo pendientes | GET | /api/v1/reassignment-offers/pending | header: Authorization · query: appointmentId (opcional) | /api/v1/reassignment-offers/pending | 200 [{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}] | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
+| 57 | Aceptar una oferta de reasignación | POST | /api/v1/reassignment-offers/{id}/accept | path: id | /api/v1/reassignment-offers/21/accept | 200 {"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...} | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
+| 58 | Rechazar una oferta de reasignación | POST | /api/v1/reassignment-offers/{id}/reject | path: id | /api/v1/reassignment-offers/21/reject | 200 {"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...} | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
 
 ###### Hospital Operations & Configuration
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 59 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
-| 60 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
-| 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
-| 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
+| 59 | Leer la configuración del establecimiento | GET | /api/v1/config | — | /api/v1/config | 200 {"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...} | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
+| 60 | Actualizar la configuración del establecimiento | PUT | /api/v1/config | body: maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible | {"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true} | 200 {"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"} | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
+| 61 | Obtener el panel de métricas del día | GET | /api/v1/config/dashboard | query: date (opcional) | /api/v1/config/dashboard?date=2026-10-15 | 200 {"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...} | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
+| 62 | Generar un reporte por rango de fechas | GET | /api/v1/config/reports | query: from, to, format (obligatorios; format por defecto JSON) | /api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON | 200 {"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"} | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
 
 ##### Evidencias de interacción
 
@@ -9339,30 +9341,30 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 
 | Sprint # | User Story Id    | User Story Title                                   | Work-Item / Task Id | Work-Item / Task Title    | Description                                                         | Estimation (Hours) | Assigned To | Status |
 | :------- | :--------------- | :------------------------------------------------- | :------------------ | :------------------------ | :------------------------------------------------------------------ | -----------------: | :---------- | :----- |
-| Sprint 2 | SCRUM-41 · US-30 | Inicio de Sesión del Super Admin                   | S2-T01              | Acceso Super Admin        | Construir formulario y control de sesión por rol.                   |                  6 | Neo         | To-do  |
-| Sprint 2 | SCRUM-42 · US-31 | Creación de Cuenta de Personal de Admisión         | S2-T02              | Alta de personal          | Construir formulario de creación y validaciones de cuenta.          |                  6 | Neo         | To-do  |
-| Sprint 2 | SCRUM-43 · US-32 | Inicio de Sesión del Personal de Admisión          | S2-T03              | Acceso de admisión        | Implementar inicio de sesión y navegación al módulo administrativo. |                  6 | Neo         | To-do  |
-| Sprint 2 | SCRUM-44 · US-33 | Configuración de la Duración de los Intervalos     | S2-T04              | Duración de intervalos    | Crear controles y validación de intervalos de atención.             |                  6 | Rodrigo     | To-do  |
-| Sprint 2 | SCRUM-45 · US-34 | Edición de una Regla Operativa del Establecimiento | S2-T05              | Editar regla operativa    | Crear formulario de edición y confirmación de cambios.              |                 10 | Rodrigo     | To-do  |
-| Sprint 2 | SCRUM-46 · US-35 | Consulta de Reglas Operativas Vigentes             | S2-T06              | Consultar reglas vigentes | Mostrar reglas y estados de la configuración.                       |                  4 | Rodrigo     | To-do  |
-| Sprint 2 | SCRUM-47 · US-36 | Selección de Especialidad en la Agenda Operativa   | S2-T07              | Selector de especialidad  | Permitir elegir especialidad y filtrar la agenda .                  |                  4 | Paula       | To-do  |
-| Sprint 2 | SCRUM-48 · US-37 | Consulta del Calendario Operativo                  | S2-T08              | Calendario mensual        | Mostrar fecas con bloques y estado sin bloques.                     |                  6 | Paula       | To-do  |
-| Sprint 2 | SCRUM-49 · US-38 | Consulta de Bloques del Día                        | S2-T09              | Bloques por día           | Mostrar bloques correspondientes a la fecha seleccionada.           |                  6 | Paula       | To-do  |
-| Sprint 2 | SCRUM-50 · US-39 | Consulta del Detalle de un Bloque                  | S2-T10              | Detalle de bloque         | Mostrar horario, profesional y disponibilidad del bloque.           |                  4 | Paula       | To-do  |
-| Sprint 2 | SCRUM-51 · US-40 | Consulta de Horario por Profesional                | S2-T11              | Horario profesional       | Filtrar y consultar horarios por profesional.                       |                  6 | Paula       | To-do  |
-| Sprint 2 | SCRUM-52 · US-41 | Consulta de Pacientes con Reserva en un Bloque     | S2-T12              | Reservas de bloque        | Mostrar pacientes con reserva en un bloque.                         |                  4 | Didier      | To-do  |
-| Sprint 2 | SCRUM-53 · US-42 | Edición de un Bloque Horario                       | S2-T13              | Editar bloque             | Editar horario y validar cambios de un bloque.                      |                 10 | Paula       | To-do  |
-| Sprint 2 | SCRUM-54 · US-43 | Registro de Llegada por Escaneo de QR              | S2-T14              | Escanear llegada          | Integrar cámara y lectura de QR para registrar la llegada.          |                 16 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-55 · US-44 | Registro de Llegada por Código Manual              | S2-T15              | Código manual             | Capturar y validar el código de reserva alternativo.                |                  6 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-56 · US-45 | Consulta de la Cola de Atención Presencial         | S2-T16              | Cola presencial           | Mostrar pacientes y estados de la cola.                             |                  6 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-57 · US-46 | Llamado del Siguiente Paciente                     | S2-T17              | Llamar siguiente          | Agregar acción de llamado y actualizar el estado en cola.           |                 10 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-58 · US-47 | Inicio de Atención de un Paciente Llamado          | S2-T18              | Iniciar atención          | Registrar inicio de atención de paciente llamado.                   |                  6 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-59 · US-48 | Finalización de la Atención de un Paciente         | S2-T19              | Finalizar atención        | Registrar cierre de la atención y actualizar la cola.               |                  6 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-60 · US-49 | Registro de Ausencia de un Paciente                | S2-T20              | Registrar ausencia        | Marcar ausencia y reflejarla en la cola.                            |                 10 | Alisee      | To-do  |
-| Sprint 2 | SCRUM-61 · US-50 | Consulta de Citas Canceladas del Día               | S2-T21              | Cancelaciones del día     | Mostrar lista de citas canceladas para la jornada.                  |                  4 | Didier      | To-do  |
-| Sprint 2 | SCRUM-62 · US-51 | Visualización de Indicadores del Día               | S2-T22              | Indicadores diarios       | Mostrar métricas operativas del día.                                |                 10 | Didier      | To-do  |
-| Sprint 2 | SCRUM-63 · US-52 | Visualización de Demanda por Especialidad          | S2-T23              | Demanda por especialidad  | Mostrar demanda desagregada por especialidad.                       |                  6 | Didier      | To-do  |
-| Sprint 2 | SCRUM-64 · US-53 | Exportación de Reporte Operativo                   | S2-T24              | Exportar reporte          | Seleccionar filtros y exportar el reporte operativo.                |                 10 | Didier      | To-do  |
+| Sprint 2 | SCRUM-41 · US-30 | Inicio de Sesión del Super Admin                   | S2-T01              | Acceso Super Admin        | Construir formulario y control de sesión por rol.                   |                  6 | Neo         | Done   |
+| Sprint 2 | SCRUM-42 · US-31 | Creación de Cuenta de Personal de Admisión         | S2-T02              | Alta de personal          | Construir formulario de creación y validaciones de cuenta.          |                  6 | Neo         | Done   |
+| Sprint 2 | SCRUM-43 · US-32 | Inicio de Sesión del Personal de Admisión          | S2-T03              | Acceso de admisión        | Implementar inicio de sesión y navegación al módulo administrativo. |                  6 | Neo         | Done   |
+| Sprint 2 | SCRUM-44 · US-33 | Configuración de la Duración de los Intervalos     | S2-T04              | Duración de intervalos    | Crear controles y validación de intervalos de atención.             |                  6 | Rodrigo     | Done   |
+| Sprint 2 | SCRUM-45 · US-34 | Edición de una Regla Operativa del Establecimiento | S2-T05              | Editar regla operativa    | Crear formulario de edición y confirmación de cambios.              |                 10 | Rodrigo     | Done   |
+| Sprint 2 | SCRUM-46 · US-35 | Consulta de Reglas Operativas Vigentes             | S2-T06              | Consultar reglas vigentes | Mostrar reglas y estados de la configuración.                       |                  4 | Rodrigo     | Done   |
+| Sprint 2 | SCRUM-47 · US-36 | Selección de Especialidad en la Agenda Operativa   | S2-T07              | Selector de especialidad  | Permitir elegir especialidad y filtrar la agenda .                  |                  4 | Paula       | Done   |
+| Sprint 2 | SCRUM-48 · US-37 | Consulta del Calendario Operativo                  | S2-T08              | Calendario mensual        | Mostrar fecas con bloques y estado sin bloques.                     |                  6 | Paula       | Done   |
+| Sprint 2 | SCRUM-49 · US-38 | Consulta de Bloques del Día                        | S2-T09              | Bloques por día           | Mostrar bloques correspondientes a la fecha seleccionada.           |                  6 | Paula       | Done   |
+| Sprint 2 | SCRUM-50 · US-39 | Consulta del Detalle de un Bloque                  | S2-T10              | Detalle de bloque         | Mostrar horario, profesional y disponibilidad del bloque.           |                  4 | Paula       | Done   |
+| Sprint 2 | SCRUM-51 · US-40 | Consulta de Horario por Profesional                | S2-T11              | Horario profesional       | Filtrar y consultar horarios por profesional.                       |                  6 | Paula       | Done   |
+| Sprint 2 | SCRUM-52 · US-41 | Consulta de Pacientes con Reserva en un Bloque     | S2-T12              | Reservas de bloque        | Mostrar pacientes con reserva en un bloque.                         |                  4 | Didier      | Done   |
+| Sprint 2 | SCRUM-53 · US-42 | Edición de un Bloque Horario                       | S2-T13              | Editar bloque             | Editar horario y validar cambios de un bloque.                      |                 10 | Paula       | Done   |
+| Sprint 2 | SCRUM-54 · US-43 | Registro de Llegada por Escaneo de QR              | S2-T14              | Escanear llegada          | Integrar cámara y lectura de QR para registrar la llegada.          |                 16 | Alisee      | Done   |
+| Sprint 2 | SCRUM-55 · US-44 | Registro de Llegada por Código Manual              | S2-T15              | Código manual             | Capturar y validar el código de reserva alternativo.                |                  6 | Alisee      | Done   |
+| Sprint 2 | SCRUM-56 · US-45 | Consulta de la Cola de Atención Presencial         | S2-T16              | Cola presencial           | Mostrar pacientes y estados de la cola.                             |                  6 | Alisee      | Done   |
+| Sprint 2 | SCRUM-57 · US-46 | Llamado del Siguiente Paciente                     | S2-T17              | Llamar siguiente          | Agregar acción de llamado y actualizar el estado en cola.           |                 10 | Alisee      | Done   |
+| Sprint 2 | SCRUM-58 · US-47 | Inicio de Atención de un Paciente Llamado          | S2-T18              | Iniciar atención          | Registrar inicio de atención de paciente llamado.                   |                  6 | Alisee      | Done   |
+| Sprint 2 | SCRUM-59 · US-48 | Finalización de la Atención de un Paciente         | S2-T19              | Finalizar atención        | Registrar cierre de la atención y actualizar la cola.               |                  6 | Alisee      | Done   |
+| Sprint 2 | SCRUM-60 · US-49 | Registro de Ausencia de un Paciente                | S2-T20              | Registrar ausencia        | Marcar ausencia y reflejarla en la cola.                            |                 10 | Alisee      | Done   |
+| Sprint 2 | SCRUM-61 · US-50 | Consulta de Citas Canceladas del Día               | S2-T21              | Cancelaciones del día     | Mostrar lista de citas canceladas para la jornada.                  |                  4 | Didier      | Done   |
+| Sprint 2 | SCRUM-62 · US-51 | Visualización de Indicadores del Día               | S2-T22              | Indicadores diarios       | Mostrar métricas operativas del día.                                |                 10 | Didier      | Done   |
+| Sprint 2 | SCRUM-63 · US-52 | Visualización de Demanda por Especialidad          | S2-T23              | Demanda por especialidad  | Mostrar demanda desagregada por especialidad.                       |                  6 | Didier      | Done   |
+| Sprint 2 | SCRUM-64 · US-53 | Exportación de Reporte Operativo                   | S2-T24              | Exportar reporte          | Seleccionar filtros y exportar el reporte operativo.                |                 10 | Didier      | Done   |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.
 
@@ -9457,7 +9459,191 @@ La [Tabla 85](#tabla-85) detalla qué comportamiento verifica cada grupo de prue
 
 El 12 de noviembre de 2026 se ejecutó `flutter test` por separado en los commits `820f2f2` de `home` y `d689c20` de `schedule`. Pasaron 21 pruebas en `home` (19 de Inicio y 2 de acceso heredadas de `login`) y 5 en `schedule`: 26 en total, sin duplicar las pruebas de acceso.
 
-No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y reglas de Flutter, ni en los commits del perfil de paciente de Kotlin. Las pruebas de Kotlin documentadas en el Sprint 1 se conservan como evidencia de ese sprint. Queda pendiente validar los recorridos de Flutter de punta a punta con una cuenta de personal y el backend desplegado.
+No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y reglas de Flutter, ni en los commits del perfil de paciente de Kotlin. Las pruebas de Kotlin documentadas en el Sprint 1 se conservan como evidencia de ese sprint. Queda pendiente la validación automatizada de los recorridos de Flutter de punta a punta con una cuenta de personal y el backend desplegado; la evidencia visual de las pantallas se presenta en la sección 4.2.2.6.
+
+#### 4.2.2.6. Execution Evidence for Sprint Review
+
+En esta sección se presentan las evidencias de ejecución de la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Las capturas corresponden a las pantallas principales de la aplicación administrativa implementada en el Sprint 2 y se organizan por recorrido: inicio y agenda, gestión de bloques, cola de atención, configuración e indicadores. La evaluación heurística de estas mismas pantallas se detalla en la sección 4.3.3.
+
+##### Inicio y agenda del personal
+
+El inicio del personal resume las citas pendientes y canceladas del día y ofrece accesos directos a la agenda y a la cola de atención, como se observa en la [Figura 201](#figura-201).
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-201"></a>
+
+**Figura 201**
+
+*Inicio del personal*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P01-inicio-del-personal.png" alt="Inicio del personal en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de inicio del personal de admisión, con las citas pendientes y canceladas del día.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-202"></a>
+
+**Figura 202**
+
+*Selección de especialidad*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P02-elegir-especialidad.png" alt="Selección de especialidad en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de selección de especialidad para consultar la agenda del establecimiento.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-203"></a>
+
+**Figura 203**
+
+*Calendario operativo*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P03-calendario-operativo.png" alt="Calendario operativo en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla del calendario operativo con la fecha seleccionada.*
+
+##### Gestión de bloques y cola de atención
+
+La agenda permite consultar los bloques del día, abrir su detalle y editar el profesional, el horario y el estado. La cola presencial y las citas canceladas complementan el control operativo de la jornada.
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-204"></a>
+
+**Figura 204**
+
+*Bloques del día*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P04-bloques-de-hoy.png" alt="Bloques del día en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de los bloques del día con sus estados y cupos disponibles.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-205"></a>
+
+**Figura 205**
+
+*Detalle de un bloque*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P05-detalle-de-bloque.png" alt="Detalle de un bloque en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla del detalle de un bloque con sus reservas y acciones disponibles.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-206"></a>
+
+**Figura 206**
+
+*Edición de un bloque*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P07-editar-bloque.png" alt="Edición de un bloque en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de edición de un bloque: profesional, horario y estado.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-207"></a>
+
+**Figura 207**
+
+*Cola presencial*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="Cola presencial en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de la cola presencial con los turnos en espera y en atención.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-208"></a>
+
+**Figura 208**
+
+*Citas canceladas del día*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P19-citas-canceladas.png" alt="Citas canceladas del día en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de las citas canceladas de la jornada.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-209"></a>
+
+**Figura 209**
+
+*Pacientes con reserva*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P20-pacientes-con-reserva.png" alt="Pacientes con reserva en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de los pacientes con reserva y su estado de llegada.*
+
+##### Configuración, indicadores y reportes
+
+La configuración operativa, los indicadores diarios y la exportación de reportes cierran los recorridos principales de la aplicación administrativa.
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-210"></a>
+
+**Figura 210**
+
+*Configuración general*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/H01-configuracion-general.png" alt="Configuración general en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de configuración general del establecimiento.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-211"></a>
+
+**Figura 211**
+
+*Indicadores diarios*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/H06-indicadores-diarios.png" alt="Indicadores diarios en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de los indicadores diarios del establecimiento.*
+
+<!-- pdf-pagebreak -->
+
+<a id="figura-212"></a>
+
+**Figura 212**
+
+*Exportación de reportes*
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/H08-exportacion.png" alt="Exportación de reportes en la aplicación administrativa" width="50%"/>
+</p>
+
+*Nota. Captura de la pantalla de exportación de reportes por rango de fechas.*
 
 #### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
@@ -9485,47 +9671,47 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 
 |  #  | Acción implementada                           | Método | Sintaxis de llamada (endpoint)       | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                    | Respuesta (ejemplo)                                                                                                                                                                                         | Explicación del response                                                                           | Documentación                                                                                        |
 | :-: | :-------------------------------------------- | :----: | :----------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-|  1  | Iniciar sesión del personal y del Super Admin |  POST  | `/api/v1/user-accounts/login`        | body: `email, password`                                                                      | `{"email":"franco@saludya.local","password":"SaludYa#2026"}`                                                                          | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"f***@saludya.local","expiresAt":"2026-11-12T10:35:00Z"}`                                                                                                | Valida las credenciales y envía un código de verificación al correo; no revela si el correo existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)           |
-|  2  | Completar inicio de sesión con el código      |  POST  | `/api/v1/user-accounts/login/verify` | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                      | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-11-12T11:30:00Z","userId":15,"role":"ADMISSION_STAFF","patientId":null}`                                             | Devuelve el token de acceso (JWT) y el rol del usuario (`ADMISSION_STAFF` o `SUPER_ADMIN`)         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)     |
-|  3  | Reenviar el código del desafío de login       |  POST  | `/api/v1/user-accounts/login/resend` | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                      | `200` · *sin cuerpo*                                                                                                                                                                                        | Genera y reenvía un nuevo código para el mismo desafío                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode) |
-|  4  | Cerrar sesión (revoca el token actual)        |  POST  | `/api/v1/user-accounts/logout`       | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                        | `200` · *sin cuerpo*                                                                                                                                                                                        | Revoca la sesión Bearer vigente; responde sin contenido                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)          |
-|  5  | Crear cuenta de personal de admisión          |  POST  | `/api/v1/user-accounts/staff`        | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}` | `200` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777"}` | Crea la cuenta del personal y envía una invitación para definir contraseña                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)           |
+|  1  | Iniciar sesión del personal y del Super Admin |  POST  | /api/v1/user-accounts/login        | body: email, password                                                                      | {"email":"franco@saludya.local","password":"SaludYa#2026"}                                                                          | 200 {"challengeId":"8f2c1d40-...","maskedEmail":"f***@saludya.local","expiresAt":"2026-11-12T10:35:00Z"}                                                                                                | Valida las credenciales y envía un código de verificación al correo; no revela si el correo existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)           |
+|  2  | Completar inicio de sesión con el código      |  POST  | /api/v1/user-accounts/login/verify | body: challengeId, code                                                                    | {"challengeId":"8f2c1d40-...","code":"721305"}                                                                                      | 200 {"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-11-12T11:30:00Z","userId":15,"role":"ADMISSION_STAFF","patientId":null}                                             | Devuelve el token de acceso (JWT) y el rol del usuario (ADMISSION_STAFF o SUPER_ADMIN)         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)     |
+|  3  | Reenviar el código del desafío de login       |  POST  | /api/v1/user-accounts/login/resend | body: challengeId                                                                          | {"challengeId":"8f2c1d40-..."}                                                                                                      | 200 · *sin cuerpo*                                                                                                                                                                                        | Genera y reenvía un nuevo código para el mismo desafío                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode) |
+|  4  | Cerrar sesión (revoca el token actual)        |  POST  | /api/v1/user-accounts/logout       | header: Authorization: Bearer &lt;token&gt;                                                      | *(sin cuerpo)*                                                                                                                        | 200 · *sin cuerpo*                                                                                                                                                                                        | Revoca la sesión Bearer vigente; responde sin contenido                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)          |
+|  5  | Crear cuenta de personal de admisión          |  POST  | /api/v1/user-accounts/staff        | header: Authorization (SUPER_ADMIN) · body: dni, name, lastname, birthDate, phone, email | {"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"} | 200 {"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777"} | Crea la cuenta del personal y envía una invitación para definir contraseña                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)           |
 
 ###### Appointments & Booking
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 6 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
-| 7 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
-| 8 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-11-12` | `200` `[{"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
-| 9 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}` | Devuelve el slot solicitado con su disponibilidad | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
-| 10 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
-| 11 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
-| 12 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?timeSlotId=31&date=2026-11-12&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED"}]` | Devuelve las citas filtradas del bloque o de la jornada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
-| 13 | Listar citas canceladas del día | GET | `/api/v1/appointments` | query: `date, status=CANCELLED` | `/api/v1/appointments?date=2026-11-12&status=CANCELLED` | `200` `[{"id":139,"timeSlotId":28,"patientId":4,"status":"CANCELLED"}]` | Lista las citas canceladas de la jornada para identificar cupos liberados | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 6 | Listar especialidades | GET | /api/v1/specialties | — | /api/v1/specialties | 200 [{"id":1,"name":"Medicina general","description":"Atención médica primaria"}] | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
+| 7 | Listar doctores por especialidad | GET | /api/v1/doctors | query: specialtyId (obligatorio) | /api/v1/doctors?specialtyId=1 | 200 [{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}] | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
+| 8 | Slots de un doctor en una fecha | GET | /api/v1/time-slots | query: doctorId, date (obligatorios) | /api/v1/time-slots?doctorId=7&date=2026-11-12 | 200 [{"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}] | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
+| 9 | Obtener un slot por id | GET | /api/v1/time-slots/{id} | path: id | /api/v1/time-slots/31 | 200 {"id":31,"doctorId":7,"date":"2026-11-12","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"} | Devuelve el slot solicitado con su disponibilidad | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
+| 10 | Editar un slot (doctor, horario y estado) | PUT | /api/v1/time-slots/{id} | path: id · body: doctorId, startHour, endHour, status | {"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"} | 200 {"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...} | Edita los datos del slot y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+| 11 | Actualizar la capacidad de un slot | PUT | /api/v1/time-slots/{id}/capacity | path: id · body: maxCapacity | {"maxCapacity":8} | 200 {"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...} | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
+| 12 | Listar citas con filtros | GET | /api/v1/appointments | query: patientId, timeSlotId, doctorId, specialtyId, date, status | /api/v1/appointments?timeSlotId=31&date=2026-11-12&status=RESERVED | 200 [{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED"}] | Devuelve las citas filtradas del bloque o de la jornada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 13 | Listar citas canceladas del día | GET | /api/v1/appointments | query: date, status=CANCELLED | /api/v1/appointments?date=2026-11-12&status=CANCELLED | 200 [{"id":139,"timeSlotId":28,"patientId":4,"status":"CANCELLED"}] | Lista las citas canceladas de la jornada para identificar cupos liberados | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
 
 ###### Arrival & QR Check-in
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 14 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `200` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
-| 15 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `200` `{"checkInId":16,"appointmentId":143,"queueEntryId":10,"position":4,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
-| 16 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-11-12` | `200` `{"id":4,"timeSlotId":31,"date":"2026-11-12","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
-| 17 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
-| 18 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
-| 19 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"CALLED","calledAt":"2026-11-12T09:40:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
-| 20 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"IN_ATTENTION","calledAt":"2026-11-12T09:40:00Z","attendedAt":null}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
-| 21 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"attendanceQueueId":4,"status":"ATTENDED","attendedAt":"2026-11-12T09:55:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
-| 22 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/10/absent` | `200` `{"id":10,"attendanceQueueId":4,"status":"ABSENT"}` | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
+| 14 | Registrar check-in por token QR | POST | /api/v1/check-ins/qr | body: qrToken | {"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."} | 200 {"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"} | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
+| 15 | Registrar check-in por código de reserva | POST | /api/v1/check-ins/code | body: bookingCode | {"bookingCode":"RSV-000142"} | 200 {"checkInId":16,"appointmentId":143,"queueEntryId":10,"position":4,"totalInQueue":8,"status":"WAITING"} | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
+| 16 | Resolver la cola de un slot en una fecha | GET | /api/v1/attendance-queues | query: timeSlotId, date (obligatorios) | /api/v1/attendance-queues?timeSlotId=31&date=2026-11-12 | 200 {"id":4,"timeSlotId":31,"date":"2026-11-12","status":"OPEN"} | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
+| 17 | Listar las entradas de una cola | GET | /api/v1/attendance-queues/{id}/entries | path: id | /api/v1/attendance-queues/4/entries | 200 [{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}] | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
+| 18 | Posición actual en la cola | GET | /api/v1/attendance-queues/{id}/position | path: id | /api/v1/attendance-queues/4/position | 200 {"position":3,"totalInQueue":8} | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
+| 19 | Llamar al siguiente paciente | POST | /api/v1/attendance-queues/{id}/call-next | path: id | /api/v1/attendance-queues/4/call-next | 200 {"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"CALLED","calledAt":"2026-11-12T09:40:00Z"} | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+| 20 | Iniciar la atención de una entrada llamada | POST | /api/v1/queue-entries/{id}/start | path: id | /api/v1/queue-entries/9/start | 200 {"id":9,"attendanceQueueId":4,"checkInId":15,"position":1,"status":"IN_ATTENTION","calledAt":"2026-11-12T09:40:00Z","attendedAt":null} | Cambia la entrada a IN_ATTENTION | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
+| 21 | Finalizar la atención de una entrada | POST | /api/v1/queue-entries/{id}/finish | path: id | /api/v1/queue-entries/9/finish | 200 {"id":9,"attendanceQueueId":4,"status":"ATTENDED","attendedAt":"2026-11-12T09:55:00Z"} | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
+| 22 | Marcar una entrada como ausente | POST | /api/v1/queue-entries/{id}/absent | path: id | /api/v1/queue-entries/10/absent | 200 {"id":10,"attendanceQueueId":4,"status":"ABSENT"} | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
 
 ###### Hospital Operations & Configuration
 
 | # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
 |:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
-| 23 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":5,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true,"updatedAt":"2026-11-11T18:00:00Z"}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
-| 24 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, bookingOrderScope, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":20,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":48,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-11-12T09:15:00Z"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
-| 25 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-11-12` | `200` `{"configurationId":1,"metrics":[{"name":"scheduledToday","value":42},{"name":"pendingToday","value":12},{"name":"cancelledToday","value":7},{"name":"attendedToday","value":28},{"name":"absentToday","value":2}],"externalDataAvailable":false,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
-| 26 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-11-01&to=2026-11-12&format=CSV` | `200` `{"format":"CSV","generatedAt":"2026-11-12T09:20:00Z","content":"especialidad;reservas;canceladas;atendidas\nMedicina general;18;2;14\nPediatría;11;1;9"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
+| 23 | Leer la configuración del establecimiento | GET | /api/v1/config | — | /api/v1/config | 200 {"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":5,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true,"updatedAt":"2026-11-11T18:00:00Z"} | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
+| 24 | Actualizar la configuración del establecimiento | PUT | /api/v1/config | body: maxCapacityPerSlot, bookingOrderScope, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible | {"maxCapacityPerSlot":6,"checkInToleranceMinutes":20,"postCallToleranceMinutes":10,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":48,"attendanceQueueVisible":true} | 200 {"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-11-12T09:15:00Z"} | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
+| 25 | Obtener el panel de métricas del día | GET | /api/v1/config/dashboard | query: date (opcional) | /api/v1/config/dashboard?date=2026-11-12 | 200 {"configurationId":1,"metrics":[{"name":"scheduledToday","value":42},{"name":"pendingToday","value":12},{"name":"cancelledToday","value":7},{"name":"attendedToday","value":28},{"name":"absentToday","value":2}],"externalDataAvailable":false,...} | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
+| 26 | Generar un reporte por rango de fechas | GET | /api/v1/config/reports | query: from, to, format (obligatorios; format por defecto JSON) | /api/v1/config/reports?from=2026-11-01&to=2026-11-12&format=CSV | 200 {"format":"CSV","generatedAt":"2026-11-12T09:20:00Z","content":"especialidad;reservas;canceladas;atendidas\nMedicina general;18;2;14\nPediatría;11;1;9"} | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
 
 ##### Evidencias de la documentación desplegada
 
@@ -9537,7 +9723,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-user-accounts.png" alt="Swagger UI - IAM User accounts" width="100%"/>
 </p>
 
-*Figura 201. Documentación desplegada del controlador IAM - User accounts en Swagger UI.*
+*Figura 213. Documentación desplegada del controlador IAM - User accounts en Swagger UI.*
 
 ###### 2. Specialties
 
@@ -9545,7 +9731,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-specialties.png" alt="Swagger UI - Specialties" width="100%"/>
 </p>
 
-*Figura 202. Documentación desplegada del controlador Specialties en Swagger UI.*
+*Figura 214. Documentación desplegada del controlador Specialties en Swagger UI.*
 
 ###### 3. Doctors
 
@@ -9553,7 +9739,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-doctors.png" alt="Swagger UI - Doctors" width="100%"/>
 </p>
 
-*Figura 203. Documentación desplegada del controlador Doctors en Swagger UI.*
+*Figura 215. Documentación desplegada del controlador Doctors en Swagger UI.*
 
 ###### 4. Time Slots
 
@@ -9561,7 +9747,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-time-slots.png" alt="Swagger UI - Time Slots" width="100%"/>
 </p>
 
-*Figura 204. Documentación desplegada del controlador Time Slots en Swagger UI.*
+*Figura 216. Documentación desplegada del controlador Time Slots en Swagger UI.*
 
 ###### 5. Appointments
 
@@ -9569,7 +9755,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-appointments.png" alt="Swagger UI - Appointments" width="100%"/>
 </p>
 
-*Figura 205. Documentación desplegada del controlador Appointments en Swagger UI.*
+*Figura 217. Documentación desplegada del controlador Appointments en Swagger UI.*
 
 ###### 6. Check-ins
 
@@ -9577,7 +9763,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-check-ins.png" alt="Swagger UI - Check-ins" width="100%"/>
 </p>
 
-*Figura 206. Documentación desplegada del controlador Check-ins en Swagger UI.*
+*Figura 218. Documentación desplegada del controlador Check-ins en Swagger UI.*
 
 ###### 7. Attendance Queues
 
@@ -9585,7 +9771,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-attendance-queues.png" alt="Swagger UI - Attendance Queues" width="100%"/>
 </p>
 
-*Figura 207. Documentación desplegada del controlador Attendance Queues en Swagger UI.*
+*Figura 219. Documentación desplegada del controlador Attendance Queues en Swagger UI.*
 
 ###### 8. Queue Entries
 
@@ -9593,7 +9779,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-queue-entries.png" alt="Swagger UI - Queue Entries" width="100%"/>
 </p>
 
-*Figura 208. Documentación desplegada del controlador Queue Entries en Swagger UI.*
+*Figura 220. Documentación desplegada del controlador Queue Entries en Swagger UI.*
 
 ###### 9. configuration-controller
 
@@ -9601,15 +9787,15 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-configuration.png" alt="Swagger UI - configuration-controller" width="100%"/>
 </p>
 
-*Figura 209. Documentación desplegada del controlador configuration-controller en Swagger UI.*
+*Figura 221. Documentación desplegada del controlador configuration-controller en Swagger UI.*
 
 #### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-El despliegue del backend, del Landing Page y de la aplicación Android ya se realizó en el Sprint 1 y se documentó en la sección 4.2.1.8. En este avance no se repite ese despliegue: la Figura 210 muestra la aplicación Android instalada y ejecutándose con el backend desplegado.
+El despliegue del backend, del Landing Page y de la aplicación Android ya se realizó en el Sprint 1 y se documentó en la sección 4.2.1.8. En este avance no se repite ese despliegue: la Figura 222 muestra la aplicación Android instalada y ejecutándose con el backend desplegado.
 
-<a id="figura-210"></a>
+<a id="figura-222"></a>
 
-**Figura 210**
+**Figura 222**
 
 *Aplicación Android de SaludYa en ejecución*
 
@@ -9618,6 +9804,22 @@ El despliegue del backend, del Landing Page y de la aplicación Android ya se re
 *Nota. Captura de la aplicación Android instalada y ejecutándose con el backend desplegado.*
 
 El despliegue de la aplicación Flutter (personal y administración) no forma parte de este avance; queda pendiente para una entrega posterior.
+
+#### 4.2.2.9. Team Collaboration Insights during Sprint
+
+Durante el Sprint 2, el trabajo de la aplicación administrativa se concentró en el repositorio `frontend-flutter-saludya`. El analítico de GitHub del periodo **12 de octubre – 12 de noviembre de 2026** registra **5 autores**, **47 commits en todas las ramas** y **2 commits en `main`**, como se observa en la Figura 223. La actividad se distribuyó entre las ramas `login`, `home`, `schedule`, `qr`, `settings` y `develop`.
+
+<a id="figura-223"></a>
+
+**Figura 223**
+
+*Actividad del repositorio Flutter durante el Sprint 2*
+
+<p align="center">
+  <img src="assets/execution/sprint-2/insight-flutter-av2.png" alt="Actividad del repositorio Flutter durante el Sprint 2" width="100%"/>
+</p>
+
+*Nota. Captura del panel Insights de GitHub del repositorio `frontend-flutter-saludya` para el periodo del 12 de octubre al 12 de noviembre de 2026.*
 
 ## 4.3. Validation Interviews
 
@@ -9686,7 +9888,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 211. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 224. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -9790,7 +9992,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 212. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 225. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -10004,9 +10206,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-<a id="figura-213"></a>
+<a id="figura-226"></a>
 
-**Figura 213**
+**Figura 226**
 
 *Registro - Datos de acceso*
 
@@ -10014,9 +10216,9 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-214"></a>
+<a id="figura-227"></a>
 
-**Figura 214**
+**Figura 227**
 
 *Registro - Verificar correo*
 
@@ -10035,9 +10237,9 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-<a id="figura-215"></a>
+<a id="figura-228"></a>
 
-**Figura 215**
+**Figura 228**
 
 *Diálogo correo verificado*
 
@@ -10056,9 +10258,9 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-<a id="figura-216"></a>
+<a id="figura-229"></a>
 
-**Figura 216**
+**Figura 229**
 
 *Login paciente*
 
@@ -10066,9 +10268,9 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-217"></a>
+<a id="figura-230"></a>
 
-**Figura 217**
+**Figura 230**
 
 *Diálogo credenciales incorrectas*
 
@@ -10087,9 +10289,9 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-<a id="figura-218"></a>
+<a id="figura-231"></a>
 
-**Figura 218**
+**Figura 231**
 
 *Registro - Datos de acceso*
 
@@ -10097,9 +10299,9 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-219"></a>
+<a id="figura-232"></a>
 
-**Figura 219**
+**Figura 232**
 
 *Recuperación - Nueva contraseña*
 
@@ -10118,9 +10320,9 @@ Mostrar bajo el campo los requisitos de la contraseña y un indicador de segurid
 **Problema:**
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
 
-<a id="figura-220"></a>
+<a id="figura-233"></a>
 
-**Figura 220**
+**Figura 233**
 
 *Registro - Verificar correo*
 
@@ -10139,9 +10341,9 @@ Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y pr
 **Problema:**
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
-<a id="figura-221"></a>
+<a id="figura-234"></a>
 
-**Figura 221**
+**Figura 234**
 
 *Dashboard inicio*
 
@@ -10160,9 +10362,9 @@ Incluir en "Configuración" un selector de idioma (English / Español), definir 
 **Problema:**
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
-<a id="figura-222"></a>
+<a id="figura-235"></a>
 
-**Figura 222**
+**Figura 235**
 
 *Dashboard inicio*
 
@@ -10170,9 +10372,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-223"></a>
+<a id="figura-236"></a>
 
-**Figura 223**
+**Figura 236**
 
 *Error de carga*
 
@@ -10180,9 +10382,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-224"></a>
+<a id="figura-237"></a>
 
-**Figura 224**
+**Figura 237**
 
 *Reserva - Especialidades*
 
@@ -10201,9 +10403,9 @@ Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegació
 **Problema:**
 En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo indicado por el establecimiento: 5 minutos" y solo muestra la hora de la llamada ("Llamada registrada: 09:15"). No hay contador regresivo ni hora límite, aunque el personal sí ve "Quedan 02:30" en su pantalla. Si el paciente no llega a tiempo, "A11 · Fuera del plazo" le avisa recién cuando la cita ya quedó como inasistencia. El paciente puede perder su turno sin haber visto cuánto tiempo tenía.
 
-<a id="figura-225"></a>
+<a id="figura-238"></a>
 
-**Figura 225**
+**Figura 238**
 
 *A05 - Llamada a consultorio*
 
@@ -10211,9 +10413,9 @@ En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo in
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-226"></a>
+<a id="figura-239"></a>
 
-**Figura 226**
+**Figura 239**
 
 *A11 - Fuera del plazo*
 
@@ -10232,9 +10434,9 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 **Problema:**
 "A07 · Atención finalizada" dice "Has sido atendida", con género femenino fijo. La app la usan hombres y personas de otros géneros, y además un adulto puede ver los tickets de un menor (A15 · Ticket de menor, que es de Mateo). El mensaje no se adapta a ninguno de esos casos.
 
-<a id="figura-227"></a>
+<a id="figura-240"></a>
 
-**Figura 227**
+**Figura 240**
 
 *A07 - Atención finalizada*
 
@@ -10242,9 +10444,9 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-228"></a>
+<a id="figura-241"></a>
 
-**Figura 228**
+**Figura 241**
 
 *A15 - Ticket de menor*
 
@@ -10263,9 +10465,9 @@ Usar un texto neutro ("Tu atención finalizó") o personalizarlo según el benef
 **Problema:**
 La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin llegada registrada", "A07 · Atención finalizada", "A16 · Turno ausente" y "C12 · Sin menores". Un resultado positivo (atendida) y uno negativo (inasistencia) se ven iguales, y el usuario debe leer el texto para saber qué pasó. En los diálogos de error se usa otro estilo (alerta roja), por lo que el criterio tampoco es uniforme.
 
-<a id="figura-229"></a>
+<a id="figura-242"></a>
 
-**Figura 229**
+**Figura 242**
 
 *A07 - Atención finalizada*
 
@@ -10273,9 +10475,9 @@ La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin l
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-230"></a>
+<a id="figura-243"></a>
 
-**Figura 230**
+**Figura 243**
 
 *A16 - Turno ausente*
 
@@ -10294,9 +10496,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 **Problema:**
 "C15 · Código vencido" dice "Solicita un nuevo código para completar el cambio", pero su único botón es "Entendido", así que el usuario debe cerrar el diálogo y buscar "Reenviar código". "C18 · Vínculo no acreditado" remite a "admisión" sin ningún canal de contacto. "A11 · Fuera del plazo" y "A16 · Turno ausente" informan la inasistencia, pero solo ofrecen "Entendido" o "Ver mis citas", sin reprogramar ni contactar. El usuario queda sin siguiente paso.
 
-<a id="figura-231"></a>
+<a id="figura-244"></a>
 
-**Figura 231**
+**Figura 244**
 
 *C15 - Código vencido*
 
@@ -10304,9 +10506,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-232"></a>
+<a id="figura-245"></a>
 
-**Figura 232**
+**Figura 245**
 
 *C18 - Vínculo no acreditado*
 
@@ -10314,9 +10516,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-233"></a>
+<a id="figura-246"></a>
 
-**Figura 233**
+**Figura 246**
 
 *A16 - Turno ausente*
 
@@ -10335,9 +10537,9 @@ Ofrecer la acción de recuperación en el mismo diálogo ("Solicitar nuevo códi
 **Problema:**
 En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cuadro blanco que "Celular" y "Correo", que sí se pueden cambiar. En estos últimos, la única parte accionable es el pequeño texto "Editar →" dentro del cuadro. El usuario toca el nombre y no pasa nada, y puede no notar el enlace "Editar". La nota que lo explica ("Los datos de identidad verificados se muestran para consulta") está al final y en letra pequeña.
 
-<a id="figura-234"></a>
+<a id="figura-247"></a>
 
-**Figura 234**
+**Figura 247**
 
 *C02 - Mis datos*
 
@@ -10356,9 +10558,9 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 **Problema:**
 "C05 · Confirmar cambio por correo" se titula "Verificar correo", pero su texto dice "...enviado a tu correo registrado para confirmar el cambio de celular". El usuario que quiere cambiar el celular lee que debe "verificar el correo" y puede creer que cambió algo del correo. "C06" usa el mismo título para verificar realmente un correo nuevo, así que dos tareas distintas comparten pantalla de aspecto idéntico.
 
-<a id="figura-235"></a>
+<a id="figura-248"></a>
 
-**Figura 235**
+**Figura 248**
 
 *C05 - Confirmar cambio por correo*
 
@@ -10366,9 +10568,9 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-236"></a>
+<a id="figura-249"></a>
 
-**Figura 236**
+**Figura 249**
 
 *C06 - Verificar correo*
 
@@ -10387,9 +10589,9 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 **Problema:**
 "C07 · Parientes vinculados" ofrece "Sincronizar vínculos" y "C08 · Detalle del menor" ofrece "Sincronizar datos". No se explica qué se sincroniza, con qué ni cuándo conviene hacerlo. Una persona no técnica no sabe si debe pulsarlo, y la sincronización debería ser automática. El resultado ("C13 · Vínculos sincronizados") tampoco aclara qué cambió.
 
-<a id="figura-237"></a>
+<a id="figura-250"></a>
 
-**Figura 237**
+**Figura 250**
 
 *C07 - Parientes vinculados*
 
@@ -10397,9 +10599,9 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-238"></a>
+<a id="figura-251"></a>
 
-**Figura 238**
+**Figura 251**
 
 *C08 - Detalle del menor*
 
@@ -10418,9 +10620,9 @@ Reemplazarlo por una actualización automática o por un texto comprensible ("Ac
 **Problema:**
 "C17 · Dato inválido" dice "Ingresa un correo válido o un celular de 9 dígitos, según el campo". El mismo mensaje sirve para dos pantallas distintas y obliga al usuario a deducir cuál es el suyo. Además, aparece en un diálogo que tapa el campo con error.
 
-<a id="figura-239"></a>
+<a id="figura-252"></a>
 
-**Figura 239**
+**Figura 252**
 
 *C17 - Dato inválido*
 
@@ -10441,9 +10643,9 @@ Mostrar el error junto al campo con un mensaje específico ("El celular debe ten
 
 **Relación con otros hallazgos:** el selector de idioma ya se reportó en el problema #6; este problema amplía el hallazgo a las opciones de notificación y accesibilidad.
 
-<a id="figura-240"></a>
+<a id="figura-253"></a>
 
-**Figura 240**
+**Figura 253**
 
 *C01 - Configuración*
 
@@ -10548,9 +10750,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestran con el mismo texto verde pequeño, así que un bloque lleno no se distingue de uno con cupos. Pasa lo mismo en "P11 · Cola presencial" ("En atención" y "En espera") y en "P20 · Pacientes con reserva" ("Llegada registrada", "Pendiente de llegada" y "En atención"). Para escanear rápido una lista de decenas de ítems hay que leer cada texto, y una persona con daltonismo no tiene otra pista.
 
-<a id="figura-241"></a>
+<a id="figura-254"></a>
 
-**Figura 241**
+**Figura 254**
 
 *P04 - Bloques de hoy*
 
@@ -10558,9 +10760,9 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-242"></a>
+<a id="figura-255"></a>
 
-**Figura 242**
+**Figura 255**
 
 *P11 - Cola presencial*
 
@@ -10568,9 +10770,9 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-243"></a>
+<a id="figura-256"></a>
 
-**Figura 243**
+**Figura 256**
 
 *P20 - Pacientes con reserva*
 
@@ -10589,9 +10791,9 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 **Problema:**
 "P05" indica que el bloque 09:00–09:30 tiene "Capacidad: 8 · Reservas: 8". En "P07 · Editar bloque" se puede cambiar la hora, la especialidad, el profesional y el estado, y solo hay "Confirmar cambios" y "Cancelar". No se muestra cuántos pacientes se afectan ni cuáles, y si hay conflicto "P23" solo dice "El cambio entra en conflicto con reservas confirmadas o con otro bloque del profesional", sin indicar cuál. Un cambio mal hecho puede mover o cancelar citas de hasta 8 pacientes sin que el personal lo sepa.
 
-<a id="figura-244"></a>
+<a id="figura-257"></a>
 
-**Figura 244**
+**Figura 257**
 
 *P07 - Editar bloque*
 
@@ -10599,9 +10801,9 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-245"></a>
+<a id="figura-258"></a>
 
-**Figura 245**
+**Figura 258**
 
 *P23 - Cambio incompatible*
 
@@ -10620,9 +10822,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 **Problema:**
 "P08 · Elegir profesional", "P09 · Elegir horario" y "P10 · Horario por profesional" no dicen para qué se elige (¿reasignar una cita?, ¿crear una reserva?, ¿consultar?). En P08 cada tarjeta tiene "Seleccionar →" pero ninguna muestra estado seleccionado antes de "Continuar". En P09 y P10 el horario elegido solo se indica con el texto pequeño "· Seleccionado", sin resaltar la tarjeta. Además, P09 y P10 son casi idénticas.
 
-<a id="figura-246"></a>
+<a id="figura-259"></a>
 
-**Figura 246**
+**Figura 259**
 
 *P08 - Elegir profesional*
 
@@ -10630,9 +10832,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-247"></a>
+<a id="figura-260"></a>
 
-**Figura 247**
+**Figura 260**
 
 *P09 - Elegir horario*
 
@@ -10640,9 +10842,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-248"></a>
+<a id="figura-261"></a>
 
-**Figura 248**
+**Figura 261**
 
 *P10 - Horario por profesional*
 
@@ -10661,9 +10863,9 @@ Indicar la tarea en el título o subtítulo ("Reasignar cita de Lucía Torres"),
 **Problema:**
 En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" cierra la atención y retira al paciente de la cola ("P17 · Atención finalizada" aparece después). No hay confirmación previa ni un "Deshacer", y el botón está a solo 14 px de "Llamar al siguiente". Un toque equivocado deja a un paciente fuera de la cola sin forma visible de revertirlo.
 
-<a id="figura-249"></a>
+<a id="figura-262"></a>
 
-**Figura 249**
+**Figura 262**
 
 *P11 - Cola presencial*
 
@@ -10671,9 +10873,9 @@ En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" c
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-250"></a>
+<a id="figura-263"></a>
 
-**Figura 250**
+**Figura 263**
 
 *P17 - Atención finalizada*
 
@@ -10692,9 +10894,9 @@ Pedir confirmación breve ("¿Terminar la atención de María Pérez?") o mostra
 **Problema:**
 En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" está arriba y es el más prominente, mientras "Iniciar atención" (la opción que puede ser correcta si el paciente llegó) es un botón de borde. Luego, en "P16 · Confirmar ausencia" el botón "Confirmar ausencia" es verde, el color de las acciones positivas, aunque es una acción que libera el cupo y marca inasistencia. El color no es coherente y la confirmación se ve igual que cualquier otra.
 
-<a id="figura-251"></a>
+<a id="figura-264"></a>
 
-**Figura 251**
+**Figura 264**
 
 *P13 - Plazo de llamada vencido*
 
@@ -10702,9 +10904,9 @@ En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" est
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-252"></a>
+<a id="figura-265"></a>
 
-**Figura 252**
+**Figura 265**
 
 *P16 - Confirmar ausencia*
 
@@ -10723,9 +10925,9 @@ Dar prioridad visual a "Iniciar atención" y dejar "Marcar ausente" como acción
 **Problema:**
 La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configuración". "Calendario" y "Cita" se refieren casi a lo mismo (citas), pero "Cita" abre la cola de atención y el registro de llegada, y su ícono es un QR. El ícono de "Configuración" es un sol. Quien busca la cola de atención no sabe si está en "Calendario" o en "Cita".
 
-<a id="figura-253"></a>
+<a id="figura-266"></a>
 
-**Figura 253**
+**Figura 266**
 
 *P11 - Cola presencial*
 
@@ -10733,9 +10935,9 @@ La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configura
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-254"></a>
+<a id="figura-267"></a>
 
-**Figura 254**
+**Figura 267**
 
 *P01 - Inicio del personal*
 
@@ -10754,9 +10956,9 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 **Problema:**
 "H01 · Configuración general" muestra cuatro reglas (capacidad, tolerancia de llegada, plazo después de la llamada, respuesta a reasignación) y un botón "Ver más reglas". "H02 · Más reglas" muestra otras cuatro (hora límite para reservar, anticipación para cancelar, prioridad de reasignación, posición de cola visible) y un botón aparte "Intervalos de atención" que abre "H13". Todas son reglas del mismo tipo, pero están en tres niveles. Para ver o cambiar una regla hay que recordar en cuál se encuentra.
 
-<a id="figura-255"></a>
+<a id="figura-268"></a>
 
-**Figura 255**
+**Figura 268**
 
 *H01 - Configuración general*
 
@@ -10764,9 +10966,9 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-256"></a>
+<a id="figura-269"></a>
 
-**Figura 256**
+**Figura 269**
 
 *H02 - Reglas adicionales*
 
@@ -10785,9 +10987,9 @@ Reunir todas las reglas en una sola lista agrupada por tema (Reservas, Llegada y
 **Problema:**
 En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero la nota inferior dice "La prioridad de reasignación sigue el orden de reserva. La atención sigue el orden de llegada". No se entiende cuál es el criterio real (especialidad u orden de reserva), y la nota, que es la única explicación, está en letra pequeña. Una regla de este tipo afecta a muchos pacientes.
 
-<a id="figura-257"></a>
+<a id="figura-270"></a>
 
-**Figura 257**
+**Figura 270**
 
 *H02 - Reglas adicionales*
 
@@ -10806,9 +11008,9 @@ Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reserv
 **Problema:**
 "H05 · Validación de regla" dice "La capacidad debe ser mayor que cero. La tolerancia de llegada no puede superar la duración del intervalo. Revisa los campos antes de guardar". Al editar la capacidad, el segundo mensaje no tiene relación y el usuario no sabe cuál de las dos reglas falló. Además aparece como diálogo, tapando el campo.
 
-<a id="figura-258"></a>
+<a id="figura-271"></a>
 
-**Figura 258**
+**Figura 271**
 
 *H05 - Validación de regla*
 
@@ -10827,9 +11029,9 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 **Problema:**
 "H06 · Indicadores del día" y "H07 · Demanda" muestran una fecha fija ("Mar 6 oct 2026") sin ningún control visible para cambiarla, aunque "H09 · Periodo sin datos" muestra otra fecha ("1 oct 2026") y "H08" permite elegir un rango para exportar. En las pantallas revisadas no se ve cómo la administración puede consultar otro día o semana, que es el uso básico de un panel de indicadores.
 
-<a id="figura-259"></a>
+<a id="figura-272"></a>
 
-**Figura 259**
+**Figura 272**
 
 *H06 - Indicadores diarios*
 
@@ -10837,9 +11039,9 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-260"></a>
+<a id="figura-273"></a>
 
-**Figura 260**
+**Figura 273**
 
 *H09 - Periodo sin datos*
 
@@ -10858,9 +11060,9 @@ Agregar un selector de fecha o periodo visible en la cabecera de los indicadores
 **Problema:**
 En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exportación preparada" muestra un diálogo con otro botón "Descargar archivo". El segundo paso es redundante y el diálogo no repite qué archivo es (PDF o CSV), el periodo, el nombre ni el tamaño.
 
-<a id="figura-261"></a>
+<a id="figura-274"></a>
 
-**Figura 261**
+**Figura 274**
 
 *H08 - Exportación*
 
@@ -10868,9 +11070,9 @@ En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exp
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-262"></a>
+<a id="figura-275"></a>
 
-**Figura 262**
+**Figura 275**
 
 *H11 - Exportación preparada*
 
