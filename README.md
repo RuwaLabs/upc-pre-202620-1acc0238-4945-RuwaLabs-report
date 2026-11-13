@@ -46,7 +46,6 @@
 # Registro de Versiones del Informe
 
 
-
 El registro de versiones permite seguir las fechas, los responsables y las modificaciones realizadas durante la elaboración del informe, como se detalla en la [Tabla 1](#tabla-1).
 
 <a id="tabla-1"></a>
@@ -97,17 +96,22 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 1 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 1" src="assets/insight_av1_1.jpg" width="100%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
-<a id="figura-2"></a>
 
+<!-- pdf-pagebreak -->
+<a id="figura-2"></a>
 **Figura 2**
 
 *Colaboración en GitHub: evidencia 2 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 2" src="assets/insight_av1_2.jpg" width="100%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -117,7 +121,9 @@ En la primera entrega, el equipo elaboró la estructura base del informe, la car
 
 *Colaboración en GitHub: evidencia 3 (AV1)*
 
-<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg">
+<div align="left">
+<img alt="Colaboración en GitHub: evidencia 3" src="assets/insight_av1_3.jpg" width="80%">
+</div>
 
 *Nota. Captura del registro de colaboración del repositorio del informe en GitHub.*
 
@@ -133,41 +139,27 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 *Resumen de actividad del repositorio del informe (TB1)*
 
+<div align="left">
 <img src="assets/insight_tb1_overview.png" alt="Resumen de actividad del repositorio del informe de SaludYa" width="100%"/>
+</div>
 
 *Nota. Captura del panel Overview del repositorio del informe en GitHub (periodo del 3 al 10 de octubre de 2026).*
 
 <a id="figura-5"></a>
+<!-- pdf-pagebreak -->
+
 
 **Figura 5**
 
 *Contribuciones por integrante (TB1)*
 
-<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="100%"/>
+<div align="left">
+<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante del repositorio del informe de SaludYa" width="75%"/>
+</div>
 
 *Nota. Captura del panel Contributors del repositorio del informe en GitHub.*
 
-La participación de los integrantes del equipo en la elaboración del informe durante esta entrega se detalla en la [Tabla 2](#tabla-2).
-
-<a id="tabla-2"></a>
-
-**Tabla 2**
-
-*Participación del equipo en la elaboración del informe (TB1)*
-
-| Integrante | GitHub Username | Commits | Adiciones | Eliminaciones |
-| :--- | :--- | :--- | :--- | :--- |
-| Aguilar Untiveros, Rodrigo Fabrizio | Rodri2712 | 45 | +668 | −523 |
-| Meza Solórzano, Didier Sebastian | DidierSebas | 43 | +7,315 | −2,287 |
-| Montoya Nina, Paula Fernanda | SeviNyO | 33 | +54,768 | −10,023 |
-| Ramos Mera, Neo Daniel | norahccccc | 29 | +2,588 | −466 |
-| Torres Juárez, Alisee Muriel | lLisee1 | 24 | +2,329 | −1,095 |
-
 *Nota. Elaboración del equipo RuwaLabs a partir del panel Contributors del repositorio del informe en GitHub.*
-
-## Participación del equipo
-
-Todos los integrantes de **RuwaLabs** participaron en la elaboración del informe en cada entrega. La actividad registrada en GitHub es coherente con el [Registro de Versiones del Informe](#registro-de-versiones-del-informe), donde se detallan los responsables y las modificaciones realizadas.
 
 ---
 <!-- pdf-pagebreak -->
@@ -330,8 +322,6 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7, como se detalla en la [Tabla 3](#tabla-3).
 
 
-
-
 <a id="tabla-3"></a>
 
 **Tabla 3**
@@ -444,19 +434,15 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <!-- pdf-pagebreak -->
 
 # Objetivos SMART
 
-En esta sección, cada integrante del equipo formula un plan de desarrollo profesional posterior a su graduación, compuesto por al menos dos objetivos **SMART**. Cada objetivo es **específico** (s), **medible** (m), **alcanzable** (a), **relevante** (r) y cuenta con un **plazo** definido (t), con el fin de evidenciar de manera clara y cuantificable cómo cada miembro planea mantener un crecimiento profesional continuo una vez finalizada su carrera.
+En esta sección, cada integrante del equipo formula un plan de desarrollo profesional posterior a su graduación, compuesto por al menos dos objetivos **SMART**. Cada objetivo es **específico** (s), **medible** (m), **alcanzable** (a), **relevante** (r) y cuenta con un **plazo** definido (t), con el fin de evidenciar de manera clara y cuantificable cómo cada miembro planea mantener un crecimiento profesional continuo.
 
 ## Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio
 
 **Plan de desarrollo profesional:** Consolidar su perfil como desarrollador de aplicaciones móviles e insertarse en el mercado laboral tecnológico, fortaleciendo sus competencias mediante certificaciones y experiencia práctica, como se detalla en la [Tabla 4](#tabla-4).
-
-
-
 
 
 <a id="tabla-4"></a>
@@ -464,6 +450,8 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 **Tabla 4**
 
 *Objetivos SMART – Aguilar Untiveros, Rodrigo Fabrizio*
+
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%225%2074%2021%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -479,14 +467,13 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 **Plan de desarrollo profesional:** Especializarse en el desarrollo multiplataforma y complementar su formación con estudios de posgrado orientados al desarrollo de software móvil, como se detalla en la [Tabla 5](#tabla-5).
 
 
-
-
-
 <a id="tabla-5"></a>
 
 **Tabla 5**
 
 *Objetivos SMART – Meza Solórzano, Didier Sebastian*
+
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%225%2074%2021%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
 
 | N.º | Objetivo SMART | Plazo |
 |:---:|:---|:---|
@@ -500,7 +487,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 ## Objetivos SMART – Montoya Nina, Paula Fernanda
 
 **Plan de desarrollo profesional:** Profundizar en la ingeniería y gestión de datos y en la arquitectura de software, combinando certificaciones técnicas con una maestría orientada a la especialización, como se detalla en la [Tabla 6](#tabla-6).
-
 
 
 <a id="tabla-6"></a>
@@ -523,9 +509,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 **Plan de desarrollo profesional:** Consolidar su perfil en redes y desarrollo backend, integrando certificaciones técnicas con experiencia laboral especializada, como se detalla en la [Tabla 7](#tabla-7).
 
 
-
-
-
 <a id="tabla-7"></a>
 
 **Tabla 7**
@@ -539,14 +522,12 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+ <!-- pdf-pagebreak -->
 
 
 ## Objetivos SMART – Torres Juárez, Alisee Muriel
 
 **Plan de desarrollo profesional:** Orientar su crecimiento hacia la gestión de proyectos tecnológicos, complementando su perfil técnico con certificaciones y estudios de especialización, como se detalla en la [Tabla 8](#tabla-8).
-
-
-
 
 
 <a id="tabla-8"></a>
@@ -583,9 +564,6 @@ SaludYa busca reducir las dificultades asociadas a la gestión tradicional de ci
 Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de salud mediante herramientas que permitan al personal administrar citas y pacientes, visualizar el estado de la atención y mejorar el aprovechamiento de los cupos disponibles, como se detalla en la [Tabla 9](#tabla-9).
 
 
-
-
-
 <a id="tabla-9"></a>
 
 **Tabla 9**
@@ -608,14 +586,10 @@ Asimismo, SaludYa busca facilitar la gestión interna de los establecimientos de
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <!-- pdf-pagebreak -->
 ### 1.1.2. Perfiles de los integrantes del equipo ###
 
 En esta sección, se presentan los perfiles de los integrantes del equipo, incluyendo sus habilidades y conocimientos técnicos relevantes para el desarrollo de **SaludYa**, como se detalla en la [Tabla 10](#tabla-10).
-
-
-
 
 
 <a id="tabla-10"></a>
@@ -671,8 +645,6 @@ En esta sección, se presentan los perfiles de los integrantes del equipo, inclu
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
 <!-- pdf-pagebreak -->
 
 ## 1.2. Solution Profile
@@ -682,9 +654,6 @@ En esta sección se describe el perfil de la solución propuesta por RuwaLabs, i
 La aplicación lleva por nombre **"SaludYa"**. El propósito de la aplicación se centra en la gestión eficiente de citas médicas en establecimientos públicos de salud, permitiendo a los pacientes acceder de forma oportuna a la reserva, seguimiento y *check-in* de sus atenciones. Al mismo tiempo, brinda al personal asistencial y administrativo herramientas para gestionar citas, pacientes y el flujo de atención.
 
 Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conectar la gestión del paciente con la operación del establecimiento de salud, ayudando a reducir las colas presenciales, aprovechar mejor los cupos disponibles y facilitar el seguimiento de la atención. Además, permitirá contar con información oportuna y mejorar la experiencia general de acceso a los servicios de salud, como se observa en la [Figura 6](#figura-6).
-
-
-
 
 
 <a id="figura-6"></a>
@@ -702,7 +671,6 @@ Finalmente, **"SaludYa"** busca convertirse en una herramienta clave para conect
 </p>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ### 1.2.1. Antecedentes y problemática
@@ -798,12 +766,13 @@ Los pacientes suelen consultar diferentes canales para encontrar una cita dispon
 **¿Cómo prefieren los clientes acceder a nuestro producto?**
 
 Los usuarios prefieren una aplicación móvil intuitiva que les permita consultar la disponibilidad de citas, reservar una atención, recibir recordatorios y realizar el seguimiento de su atención sin necesidad de trasladarse previamente al establecimiento o realizar llamadas telefónicas.
+<!-- pdf-pagebreak -->
+
 
 **¿Qué llevó al cliente a llegar a esta situación?**
 
 La dependencia de procesos presenciales y telefónicos, la falta de información en tiempo real sobre la disponibilidad de citas y la ausencia de una gestión integrada de cupos, cancelaciones y listas de espera han llevado a los pacientes y al personal de salud a requerir soluciones digitales que permitan optimizar el acceso y la gestión de la atención.
 
-<!-- pdf-pagebreak -->
 ##### How much?
 
 **¿Cuánto impacto genera este problema en los establecimientos de salud?**
@@ -821,25 +790,21 @@ El **diagrama de Ishikawa**, también conocido como diagrama de espina de pescad
 Este análisis estructurado facilita la comprensión integral del problema y orienta el desarrollo de soluciones específicas para cada categoría de causas identificadas.
 
 
-
-
-
 <a id="figura-7"></a>
 
 **Figura 7**
 
 *Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas*
 
-<p align="center">
-  <img
+<div align="center">
+<img
     src="https://i.imgur.com/V84h3fK.jpeg"
     alt="Diagrama de Ishikawa: causas de las dificultades para acceder a citas médicas"
-    width="700"
+    width="75%"
   />
-</p>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 El diagrama identifica **seis categorías principales de causas** que contribuyen al problema, como se observa en la [Figura 7](#figura-7):
@@ -905,6 +870,9 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 
 #### 1.2.2.3. Lean UX Hypothesis Statements ####
 
+<!-- pdf-pagebreak -->
+
+
 - **Hypothesis Statement 1**
 **Creemos que** lograremos una reducción en las colas presenciales y un mejor aprovechamiento de los cupos disponibles.
 **Sabremos que** si los pacientes
@@ -923,14 +891,11 @@ Actualmente, tanto los pacientes como el personal asistencial y administrativo d
 **Obtiene** la capacidad de gestionar cambios, cancelaciones y el estado de las atenciones en tiempo real
 **Cuando veamos** con una aplicación que centralice la información de pacientes y citas programadas.
 
-<!-- pdf-pagebreak -->
 #### 1.2.2.4. Lean UX Canvas ####
 
 El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visualizar de manera estructurada los elementos clave del proyecto SaludYa. Este canvas facilita la comprensión integral del problema de negocio, las soluciones propuestas, los usuarios objetivo y los resultados esperados, proporcionando una base sólida para el desarrollo ágil del producto.
 
 <p align="center">
-
-
 
 
 <a id="figura-8"></a>
@@ -939,7 +904,9 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 *Lean UX Canvas de SaludYa*
 
-<img src="https://i.imgur.com/ESmSAsu.jpeg" alt="Lean UX Canvas de SaludYa"/>
+<div align="left">
+<img src="https://i.imgur.com/ESmSAsu.jpeg" alt="Lean UX Canvas de SaludYa" width="100%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -983,9 +950,6 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 
 > **¿Por qué llevar a cabo este análisis?**  
 > Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud, como se detalla en la [Tabla 11](#tabla-11) y la [Figura 9](#figura-9), la [Figura 10](#figura-10), la [Figura 11](#figura-11) y la [Figura 12](#figura-12).
-
-
-
 
 
 <a id="tabla-11"></a>
@@ -1039,11 +1003,10 @@ Las entrevistas fueron diseñadas como guías semiestructuradas, considerando tr
 
 En esta sección, se registra cada entrevista realizada. En total, se realizaron tres entrevistas por cada segmento objetivo. Se detalla el nombre del miembro entrevistador y el del entrevistado. Además, se redacta un resumen general del contenido de la entrevista realizada.
 
+<!-- pdf-pagebreak -->
 **Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud**
 
-<!-- pdf-pagebreak -->
-
-** Entrevista 1 ** 
+ Entrevista 1 
 
 La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 12](#tabla-12) y la [Figura 13](#figura-13).
 
@@ -1053,11 +1016,13 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 
 *Ficha de entrevista — Registro de la entrevista a Braulio Núñez*
 
-| Entrevista                                                                                                                                                                                                                                                                                                                      | Registro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <a id="figura-13"></a><strong>Figura 13</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small>            | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW) | **Entrevistador:** Didier Sebastián Meza Solórzano                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Timing: Minuto 00:00-04:22                                                                                                                                                                                                                                                                                                      | **Resumen:** Braulio Núñez, de 24 años, es técnico de mantenimiento y acude con frecuencia al Centro de Salud Comas para llevar a su sobrino a sus controles y vacunas. Relata que, para conseguir una cita, suele madrugar desde las cuatro y media de la mañana, ya que si llega más tarde ya no encuentra cupos disponibles en pediatría, y en alguna ocasión tuvo que regresar al día siguiente por no lograr atención. Menciona que casi nunca puede resolver esto por teléfono, pues las líneas del establecimiento no responden, por lo que siempre debe acudir de forma presencial. También comenta que una vez perdió una cita ya conseguida porque no contaba con ningún recordatorio. En cuanto a tecnología, utiliza un celular Android en el que emplea con frecuencia WhatsApp, Facebook y aplicaciones de delivery, y se muestra cómodo realizando trámites desde el celular. Considera que una aplicación que le muestre la disponibilidad de citas en tiempo real, le envíe notificaciones cuando se libere un cupo y respete el horario reservado, le ahorraría mucho tiempo y evitaría que tenga que madrugar sin certeza de conseguir atención. |
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
+| Entrevista | Registro |
+|:---|:---|
+| <a id="figura-13"></a><strong>Figura 13</strong><br><em>Registro de la entrevista a Braulio Núñez</em><br><img src="https://i.imgur.com/y3RQhO6.jpeg" alt="Registro de la entrevista a Braulio Núñez"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Comas<br>**Entrevistado:** Braulio Núñez |
+| [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQA1UOjt3ewoT49AZwwO8GtcASfbhFc_OfiWOZ0V9ZzQUvU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VApkCW) | **Entrevistador:** Didier Sebastián Meza Solórzano |
+| Timing: Minuto 00:00-04:22 | **Resumen:** Braulio Núñez, de 24 años, es técnico de mantenimiento y acude con frecuencia al Centro de Salud Comas para llevar a su sobrino a sus controles y vacunas. Relata que, para conseguir una cita, suele madrugar desde las cuatro y media de la mañana, ya que si llega más tarde ya no encuentra cupos disponibles en pediatría, y en alguna ocasión tuvo que regresar al día siguiente por no lograr atención. Menciona que casi nunca puede resolver esto por teléfono, pues las líneas del establecimiento no responden, por lo que siempre debe acudir de forma presencial. También comenta que una vez perdió una cita ya conseguida porque no contaba con ningún recordatorio. En cuanto a tecnología, utiliza un celular Android en el que emplea con frecuencia WhatsApp, Facebook y aplicaciones de delivery, y se muestra cómodo realizando trámites desde el celular. Considera que una aplicación que le muestre la disponibilidad de citas en tiempo real, le envíe notificaciones cuando se libere un cupo y respete el horario reservado, le ahorraría mucho tiempo y evitaría que tenga que madrugar sin certeza de conseguir atención. |
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
@@ -1065,7 +1030,6 @@ La entrevista a Braulio Núñez recoge su experiencia con la gestión de citas m
 <!-- pdf-pagebreak -->
 
 **Entrevista 2**
-
 
 
 La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 13](#tabla-13) y la [Figura 14](#figura-14).
@@ -1076,8 +1040,10 @@ La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas mé
 
 *Ficha de entrevista — Registro de la entrevista a Yordi Salazar*
 
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
 | Entrevista | Registro |
-| ----- | ----- |
+|:---|:---|
 | <p align="center"><a id="figura-14"></a><strong>Figura 14</strong><br><em>Registro de la entrevista a Yordi Salazar</em><br><img src="https://i.imgur.com/rxN31fl.jpeg" alt="Registro de la entrevista a Yordi Salazar"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Yordi Salazar |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCq6uLH5lxNSpoxEAN9q1qfAVF0qgEoHWEvug_aNrID100?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=sXQwSj) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-04:06 | **Resumen:** Yordi Salazar, de 27 años, es dueño de una tienda de abarrotes y acude junto con su madre a la posta de salud de su zona de forma mensual. Cuenta que en su última experiencia tuvo que ir hasta tres veces distintas antes de conseguir cupo, ya que las dos primeras veces ya no había disponibilidad al momento de llegar. Señala que la parte más complicada es no saber cuánta gente hay antes en la fila, y que en una ocasión perdió una cita porque solo le avisaron la fecha de forma verbal, sin ningún respaldo escrito. Cuando no logra conseguir cupo, opta por acudir a una clínica particular, aunque esto le representa un gasto adicional. En cuanto a tecnología, utiliza un celular sencillo y no se siente del todo cómodo con trámites digitales, por lo que suele apoyarse en su hijo para este tipo de gestiones. Considera que una aplicación sencilla, con letras grandes y pocos pasos, que le permita conocer la disponibilidad de citas y avisarle mediante llamada o mensaje de texto cuando se libere un cupo, sería de gran ayuda para evitar las largas colas que actualmente enfrenta. |
@@ -1090,7 +1056,6 @@ La entrevista a Yordi Salazar recoge su experiencia con la gestión de citas mé
 Entrevista 3:
 
 
-
 La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 14](#tabla-14) y la [Figura 15](#figura-15).
 
 <a id="tabla-14"></a>
@@ -1099,8 +1064,10 @@ La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas mé
 
 *Ficha de entrevista — Registro de la entrevista a Kevin Huamán*
 
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
 | Entrevista | Registro |
-| ----- | ----- |
+|:---|:---|
 | <p align="center"><a id="figura-15"></a><strong>Figura 15</strong><br><em>Registro de la entrevista a Kevin Huamán</em><br><img src="https://i.imgur.com/mxB4a3G.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Kevin Huamán |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAAwi-Crd0UR6aM_vPtIyU8AY5rcOh7FEgLdmqvsNkC1bU?e=JGBM7r&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-05:35 | **Resumen:** Kevin Huamán, de 22 años, se dedica al reparto mediante aplicaciones de delivery y acude ocasionalmente al centro materno infantil de su zona. Relata que la última vez que necesitó una cita tuvo que pedir el día libre en su trabajo, ya que ni siquiera sabía que existía otra forma de agendar una atención que no fuera de manera presencial. Señala que en una oportunidad llegó al establecimiento y ya no había citas disponibles para medicina general, lo que le hizo perder tiempo de trabajo sin obtener ningún resultado. A diferencia de otros pacientes, se siente muy cómodo utilizando aplicaciones móviles, pues las emplea constantemente para su trabajo de reparto, mapas y redes sociales. Considera que una aplicación confiable, que no se cuelgue y tenga buenas reseñas, que le permita reservar su cita al toque y recibir notificaciones push cuando se libere un cupo, le permitiría organizar mejor su tiempo de trabajo y evitar viajes innecesarios solo para consultar disponibilidad. |
@@ -1108,13 +1075,10 @@ La entrevista a Kevin Huamán recoge su experiencia con la gestión de citas mé
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
+<!-- pdf-pagebreak -->
 **Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
 
-<!-- pdf-pagebreak -->
-
 Entrevista 4:
-
 
 
 La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 15](#tabla-15) y la [Figura 16](#figura-16).
@@ -1125,8 +1089,10 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 
 *Ficha de entrevista — Registro de la entrevista a Franco Alanoca*
 
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
 | Entrevista | Registro |
-| ----- | ----- |
+|:---|:---|
 | <p align="center"><a id="figura-16"></a><strong>Figura 16</strong><br><em>Registro de la entrevista a Franco Alanoca</em><br><img src="https://i.imgur.com/jkrjMWB.jpeg"/><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** San Juan de Lurigancho<br>**Entrevistado:** Franco Alanoca |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQDwPo3p7nHzTo_3Q8Hdq5zRASpKzhsImRgOPsWf4awAsOU?e=pY3MtU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 00:00-06:00 | **Resumen:** Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, cargo que desempeña desde hace dos años. Su labor consiste en registrar a los pacientes conforme llegan y asignar los cupos del día según el orden de llegada, sin que exista un sistema de reserva previa. Explica que cuando los cupos se agotan simplemente se informa a los pacientes que regresen al día siguiente, y que no cuentan con un mecanismo formal para gestionar cancelaciones o inasistencias, por lo que esos cupos terminan perdiéndose. Señala que el principal problema es la desorganización que se genera cuando hay mucha demanda, especialmente en las mañanas, lo que ocasiona reclamos y un ambiente tenso. Actualmente, la gestión se apoya en cuadernos físicos y hojas de Excel, lo que en ocasiones provoca pérdida de información. Considera que contar con un sistema que muestre en tiempo real la disponibilidad de cupos y el estado de cada paciente eliminaría gran parte del registro manual repetitivo y ayudaría a evitar confusiones en la atención diaria. |
@@ -1139,7 +1105,6 @@ La entrevista a Franco Alanoca recoge su experiencia con la gestión de citas m�
 **Entrevista 5**
 
 
-
 La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas médicas y las necesidades identificadas para SaludYa, como se detalla en la [Tabla 16](#tabla-16) y la [Figura 17](#figura-17).
 
 <a id="tabla-16"></a>
@@ -1148,8 +1113,10 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 *Ficha de entrevista — Registro de la entrevista a Wilmer Contreras*
 
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
 | Entrevista | Registro |
-| ----- | ----- |
+|:---|:---|
 | <p align="center"><a id="figura-17"></a><strong>Figura 17</strong><br><em>Registro de la entrevista a Wilmer Contreras</em><br><img src="https://i.imgur.com/I17V5E5.jpeg" alt="Registro de la entrevista a Wilmer Contreras"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small></p> | **Distrito:** Comas<br>**Entrevistado:** Wilmer Contreras |
 | [Link](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | Timing: Minuto 0:00-04:25 | **Resumen:** Wilmer Contreras, de 29 años, se desempeña como jefe de admisión en una posta de salud de Comas desde hace cinco años. Entre sus funciones se encuentra supervisar al personal de admisión, coordinar la distribución de cupos entre especialidades y atender los reclamos de los pacientes. Explica que el proceso actual depende de un cuaderno físico donde se revisa la disponibilidad y se asignan horarios aproximados que no siempre se cumplen, y que cuando los cupos se agotan se deriva a los pacientes a otros establecimientos o se les pide regresar otro día. Menciona que no existe un registro formal de cancelaciones ni de inasistencias, lo que dificulta reasignar los cupos liberados de manera oportuna. Identifica como principal problema la falta de un sistema centralizado que muestre la disponibilidad real de citas, lo que genera colas largas y personal saturado, especialmente los lunes y a inicios de mes. Considera que automatizar la asignación de cupos y las notificaciones a los pacientes sería clave para mejorar la atención y reducir la carga operativa del personal. |
@@ -1162,17 +1129,16 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 **Entrevista 6**
 
 
-
-
-
 <a id="tabla-17"></a>
 
 **Tabla 17**
 
 *Ficha de entrevista — Registro de la entrevista a Deyvis Ochante*
 
+<!-- mdpdf-table:%7B%22caption%22%3A%22%22%2C%22widths%22%3A%2225%2075%22%2C%22heights%22%3A%22%22%2C%22id%22%3A%22%22%2C%22style%22%3A%22%22%2C%22align%22%3A%22%22%2C%22merges%22%3A%22%22%2C%22cells%22%3A%22%22%7D -->
+
 | Entrevista | Registro |
-| ----- | ----- |
+|:---|:---|
 | <a id="figura-18"></a><strong>Figura 18</strong><br><em>Registro de la entrevista a Deyvis Ochante</em><br><img src="https://i.imgur.com/HHqkl6t.jpeg" alt="Registro de la entrevista a Deyvis Ochante"><br><small>Nota. Evidencia de las entrevistas realizadas por el equipo RuwaLabs; vídeos en el Anexo A.</small> | **Distrito:** Villa María del Triunfo<br>**Entrevistado:** Deyvis Ochante<br>**Edad:** 25 años |
 | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p) | **Entrevistador:** Didier Sebastián Meza Solórzano |
 | **Timing:** 00:00-04:10 | **Resumen:** Deyvis Ochante, de 25 años, es técnico de enfermería encargado de la sala de espera en un centro materno infantil de Villa María del Triunfo, donde labora desde hace tres años. Su función principal es organizar el orden de atención de los pacientes y apoyar en el registro cuando es necesario. Relata que actualmente no existe un horario exacto asignado para cada paciente, y que el control de la sala de espera se realiza mediante una lista escrita a mano. Señala que el principal problema es no poder anticipar cuántos pacientes llegarán realmente cada día, lo que se agrava en las mañanas y durante campañas de vacunación. Además, indica que buscar las historias clínicas físicas de cada paciente le toma bastante tiempo, ya que en ocasiones se encuentran mal archivadas. Considera que contar con la información del paciente de forma digital, visible para todo el personal, ayudaría a reducir la dependencia del papel y a mejorar el seguimiento de la atención en los días de mayor demanda. |
@@ -1182,6 +1148,9 @@ La entrevista a Wilmer Contreras recoge su experiencia con la gestión de citas 
 
 
 Los vídeos que respaldan las entrevistas se reúnen en el [Anexo A](#anexo-a-vídeos-de-entrevistas-realizadas), como se detalla en la [Tabla 17](#tabla-17) y la [Figura 18](#figura-18).
+
+<!-- pdf-pagebreak -->
+
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -1198,19 +1167,17 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 * Uso previo de aplicaciones para reservar citas o turnos:
 
 
-
-
-
 <a id="figura-19"></a>
 
 **Figura 19**
 
 *Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados*
 
-<p align="center"><img src="https://i.imgur.com/jQEpbDj.png" alt="Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados"/></p>
+<div align="center">
+<img src="https://i.imgur.com/jQEpbDj.png" alt="Uso de aplicaciones móviles para reservar citas entre los pacientes entrevistados" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados nunca ha utilizado una aplicación para reservar una cita médica, aunque sí han usado aplicaciones similares para otros rubros como restaurantes o bancos, como se observa en la [Figura 19](#figura-19).
@@ -1218,27 +1185,25 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 * Comodidad realizando trámites desde el celular:
 
 
-
-
-
 <a id="figura-20"></a>
+
+<!-- pdf-pagebreak -->
+
 
 **Figura 20**
 
 *Comodidad de los pacientes entrevistados al utilizar el celular*
 
-<p align="center"><img src="https://i.imgur.com/nSAfgXx.png" alt="Comodidad de los pacientes entrevistados al utilizar el celular"/></p>
+<div align="center">
+<img src="https://i.imgur.com/nSAfgXx.png" alt="Comodidad de los pacientes entrevistados al utilizar el celular" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría de los entrevistados se siente cómodo realizando trámites desde su celular. Sin embargo, hay una pequeña parte que aún depende de un familiar para este tipo de gestiones, como se observa en la [Figura 20](#figura-20).
 
 * Utilidad de ver la disponibilidad de citas en tiempo real:
-
-
-
 
 
 <a id="figura-21"></a>
@@ -1247,10 +1212,11 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 
 *Utilidad percibida de consultar la disponibilidad de citas*
 
-<p align="center"><img src="https://i.imgur.com/KN9jH35.png" alt="Utilidad percibida de consultar la disponibilidad de citas"/></p>
+<div align="center">
+<img src="https://i.imgur.com/KN9jH35.png" alt="Utilidad percibida de consultar la disponibilidad de citas" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran muy útil poder conocer la disponibilidad de citas desde su celular antes de acudir al establecimiento, como se observa en la [Figura 21](#figura-21).
@@ -1268,20 +1234,17 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 * Sistema de gestión utilizado actualmente:
 
 
-
-
-
 <a id="figura-22"></a>
-<!-- pdf-pagebreak -->
 
 **Figura 22**
 
 *Sistema actual de gestión de citas del personal entrevistado*
 
-<p align="center"><img src="https://i.imgur.com/2xmnVjy.png" alt="Sistema actual de gestión de citas del personal entrevistado"/></p>
+<div align="center">
+<img src="https://i.imgur.com/2xmnVjy.png" alt="Sistema actual de gestión de citas del personal entrevistado" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que la mayoría del personal entrevistado gestiona las citas únicamente con registros en papel, mientras que una parte más pequeña combina el papel con hojas de Excel, como se observa en la [Figura 22](#figura-22).
@@ -1289,19 +1252,19 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 * Necesidad de un sistema con información en tiempo real:
 
 
-
-
-
 <a id="figura-23"></a>
+<!-- pdf-pagebreak -->
+
 
 **Figura 23**
 
 *Necesidad de un sistema digital según el personal entrevistado*
 
-<p align="center"><img src="https://i.imgur.com/2I5aa41.png" alt="Necesidad de un sistema digital según el personal entrevistado"/></p>
+<div align="center">
+<img src="https://i.imgur.com/2I5aa41.png" alt="Necesidad de un sistema digital según el personal entrevistado" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados consideran necesario contar con un sistema que les muestre información en tiempo real sobre los cupos y el estado de los pacientes, como se observa en la [Figura 23](#figura-23).
@@ -1309,19 +1272,17 @@ A continuación, se presentan los porcentajes destacados en las respuestas de lo
 * Momento del día con mayor cantidad de pacientes:
 
 
-
-
-<!-- pdf-pagebreak -->
 <a id="figura-24"></a>
 
 **Figura 24**
 
 *Especialidades de mayor demanda según las entrevistas al personal*
 
-<p align="center"><img src="https://i.imgur.com/sEnlY8C.png" alt="Especialidades de mayor demanda según las entrevistas al personal"/></p>
+<div align="center">
+<img src="https://i.imgur.com/sEnlY8C.png" alt="Especialidades de mayor demanda según las entrevistas al personal" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs a partir de las entrevistas documentadas en el Anexo A.*
-
 
 
   En esta imagen, se visualiza una relación de respuestas sobre el tema planteado. Luego del análisis a este gráfico, se concluye que todos los entrevistados coinciden en que las mañanas son el momento de mayor afluencia de pacientes, como se observa en la [Figura 24](#figura-24).
@@ -1345,19 +1306,17 @@ Comprender sus dinámicas cotidianas, barreras y prioridades permite diseñar un
 #### Segmento Objetivo 1: Pacientes de zonas urbanas periféricas que acuden a establecimientos públicos de salud
 
 
-
-
-
 <a id="figura-25"></a>
 
 **Figura 25**
 
 *User persona del paciente*
 
-<p align="center"><img src="https://i.imgur.com/HjApNAa.png" alt="User persona del paciente"/></p>
+<div align="center">
+<img src="https://i.imgur.com/HjApNAa.png" alt="User persona del paciente" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bien la tecnología para su trabajo, pero acude poco al centro materno infantil de su zona por depender de procesos presenciales. Busca poder consultar disponibilidad y reservar citas desde su celular, y recibir notificaciones cuando se libere un cupo, evitando perder tiempo y días de trabajo yendo sin certeza de conseguir atención, como se observa en la [Figura 25](#figura-25).
@@ -1366,19 +1325,17 @@ Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bie
 #### Segmento Objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud
 
 
-
-
-
 <a id="figura-26"></a>
 
 **Figura 26**
 
 *User persona del personal asistencial y administrativo*
 
-<p align="center"><img src="https://i.imgur.com/tYgAA19.png" alt="User persona del personal asistencial y administrativo"/></p>
+<div align="center">
+<img src="https://i.imgur.com/tYgAA19.png" alt="User persona del personal asistencial y administrativo" width="50%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados, como se observa en la [Figura 26](#figura-26).
@@ -1387,9 +1344,6 @@ Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de S
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
 
-
-
-<!-- pdf-pagebreak -->
 
 <a id="tabla-18"></a>
 
@@ -1428,19 +1382,17 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
 
-
-
-
 <a id="figura-27"></a>
 
 **Figura 27**
 
 *User journey del paciente*
 
-<p align="center"><img src="https://i.imgur.com/e3SXLtm.png" alt="User journey del paciente"/></p>
+<div align="center">
+<img src="https://i.imgur.com/e3SXLtm.png" alt="User journey del paciente" width="100%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la [Figura 27](#figura-27).
@@ -1449,19 +1401,17 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 #### Segmento 2: Personal asistencial y administrativo
 
 
-
-
-
 <a id="figura-28"></a>
 
 **Figura 28**
 
 *User journey del personal asistencial y administrativo*
 
-<p align="center"><img src="https://i.imgur.com/V0f8Chz.png" alt="User journey del personal asistencial y administrativo"/></p>
+<div align="center">
+<img src="https://i.imgur.com/V0f8Chz.png" alt="User journey del personal asistencial y administrativo" width="100%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la [Figura 28](#figura-28).
@@ -1476,28 +1426,23 @@ El diseño de una solución de software orientada a la salud pública requiere c
 #### Segmento 1: Pacientes de zonas urbanas periféricas
 
 
-
-
-
 <a id="figura-29"></a>
 
 **Figura 29**
 
 *Empathy Map - Paciente de Zonas Periféricas*
 
-<p align="center"><img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="80%"/></p>
+<div align="center">
+<img src="https://i.imgur.com/dH7lB2i.png" alt="Empathy Map - Paciente de Zonas Periféricas" width="60%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha constantemente que "ya no hay citas para hoy" y comentarios de otros pacientes sobre lo difícil que es conseguir cupo, observa colas largas desde temprano y líneas telefónicas que nunca contestan, y piensa que debería existir una forma de saber la disponibilidad sin tener que ir físicamente y perder un día de trabajo. Su necesidad principal es reservar su cita desde el celular y recibir la confirmación sin depender de procesos presenciales, como se observa en la [Figura 29](#figura-29).
 
 <!-- pdf-pagebreak -->
 #### Segmento 2: Personal asistencial y administrativo de establecimientos públicos de salud
-
-
-
 
 
 <a id="figura-30"></a>
@@ -1511,10 +1456,13 @@ Este mapa de empatía refleja la perspectiva de Kevin como paciente: escucha con
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 Este mapa de empatía muestra que el personal escucha reclamos por cupos agotados y presiona por acelerar la digitalización, mientras observa ventanillas saturadas y consultorios desaprovechados por inasistencias. Su dolor principal es la desorganización por el uso exclusivo de papel y Excel, y su motivación es centralizar la información en una herramienta digital que automatice la asignación de turnos, como se observa en la [Figura 30](#figura-30).
 
+<!-- pdf-pagebreak -->
+
+
 ---
+
 ### 2.3.5. Big Picture EventStorming
 
 Para armar un sistema que funcione bien, primero hay que entender cómo trabaja el centro de salud en el día a día. El **Big Picture EventStorming** es una dinámica en equipo que nos sirve para ver todos los hechos importantes que pasan en la posta médica. Al organizar estos sucesos paso a paso, podemos descubrir en qué momentos el proceso se vuelve lento, dónde se pierden los datos o dónde se forman las largas filas de pacientes.
@@ -1525,16 +1473,15 @@ Para armar un sistema que funcione bien, primero hay que entender cómo trabaja 
 En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolutamente todo lo que sucede en el proceso de atención, sin importar el orden todavía. La idea fue soltar todos los eventos reales del negocio en tiempo pasado (por ejemplo: *Cita reservada* o *Check-in realizado*), sin preocuparnos por la parte técnica ni por el diseño del software, como se observa en la [Figura 31](#figura-31).
 
 
-
-
-
 <a id="figura-31"></a>
 
 **Figura 31**
 
 *Big Picture EventStorming - Step 1 Free Exploration*
 
-<p align="center"> <img src="https://i.imgur.com/JwMsEx4.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="85%"/> </p>
+<div align="center">
+<img src="https://i.imgur.com/JwMsEx4.png" alt="Big Picture EventStorming - Step 1 Free Exploration" width="75%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -1543,9 +1490,6 @@ En este primer paso, nos juntamos a hacer una lluvia de ideas para anotar absolu
 #### Step 2 – Enforcing Timelines
 
 En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derecha siguiendo la línea de tiempo real. Esto nos permitió establecer la secuencia cronológica del servicio, desde que el paciente detecta un síntoma en casa hasta que concluye la consulta y se cierra la jornada en el establecimiento de salud, como se observa en la [Figura 32](#figura-32).
-
-
-
 
 
 <a id="figura-32"></a>
@@ -1559,13 +1503,9 @@ En el segundo paso, organizamos todas las tarjetas naranjas de izquierda a derec
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 #### Step 3 – People and Systems (Actors & Read Models)
 
 En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e identificamos a los **Actores** (tarjetas amarillas) que desencadenan cada acción (*Patient* y *Admission Staff*). También mapeamos la información visible o **Read Models** (tarjetas verdes) que necesitan consultar en pantalla para tomar decisiones, como la disponibilidad de cupos y el estado de la lista de espera, como se observa en la [Figura 33](#figura-33).
-
-
-
 
 
 <a id="figura-33"></a>
@@ -1579,13 +1519,9 @@ En este tercer paso, agrupamos el proceso por flujos de trabajo (*Workflows*) e 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 #### Step 4 – Explicit Hotspots & Exceptions
 
 En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del negocio representados con tarjetas/rombos morados `????`). Esto nos ayudó a anticipar problemas y reglas no definidas, tales como el tiempo límite de tolerancia para el check-in QR, la gestión de pacientes sin teléfono inteligente o la confirmación de cupos liberados en la lista de espera dinámica, como se observa en la [Figura 34](#figura-34).
-
-
-
 
 
 <a id="figura-34"></a>
@@ -1600,15 +1536,11 @@ En el paso final, identificamos los **Hotspots** (puntos críticos o dudas del n
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 
 ### 2.3.6. Ubiquitous Language
 
 Para garantizar una comunicación fluida y sin ambigüedades entre el equipo de desarrollo, los diseñadores de UX y los actores del dominio (pacientes y personal de salud), se formalizó el **Lenguaje Ubicuo**. Este glosario unifica los términos clave del negocio que se reflejan tanto en las interfaces de usuario como en los modelos de código del sistema, como se detalla en la [Tabla 19](#tabla-19).
-
-
-
 
 
 <a id="tabla-19"></a>
@@ -1643,7 +1575,6 @@ En esta sección definimos la especificación formal de requisitos para la plata
 #### To-Be Scenario Mapping
 
 
-
 El escenario propuesto relaciona las acciones del paciente con sus pensamientos y emociones durante el registro, la reserva, la reasignación y la atención médica, como se detalla en la [Tabla 20](#tabla-20).
 
 <a id="tabla-20"></a>
@@ -1670,7 +1601,6 @@ El escenario propuesto relaciona las acciones del paciente con sus pensamientos 
 #### Epics
 
 
-
 Las épicas agrupan las historias de usuario según las capacidades de SaludYa y permiten delimitar los objetivos de cada área funcional, como se detalla en la [Tabla 21](#tabla-21).
 
 <a id="tabla-21"></a>
@@ -1695,536 +1625,536 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 #### User stories
 <!-- ===== LANDING PAGE ===== --> <!-- US-00: Visualización de Propuesta de Valor en Landing Page -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-00: Visualización de Propuesta de Valor en Landing Page**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-00</td> <td>Paciente potencial</td> <td>High</td> <td>EP0: Plataforma de Presentación y Captación</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Propuesta de Valor en Landing Page</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente potencial,<br> <b>Quiero</b> visualizar la propuesta de valor y los beneficios de SaludYa en el sitio web público,<br> <b>Para</b> comprender cómo la plataforma optimiza la gestión de mis citas médicas y decidir descargar la aplicación móvil.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Visualización de la propuesta de valor y enlaces de descarga</b><br> • <b>Given</b> que un paciente potencial accede a la dirección web pública de la plataforma,<br> &nbsp;&nbsp;&nbsp;<b>When</b> navega por la página principal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta de forma estructurada los beneficios de SaludYa y habilita los enlaces de descarga hacia las tiendas de aplicaciones móviles.<br><br> <b>Scenario 2: Reproducción de material audiovisual institucional</b><br> • <b>Given</b> que el paciente potencial explora la página principal,<br> &nbsp;&nbsp;&nbsp;<b>When</b> accede a las secciones de presentación audiovisual,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema reproduce los videos explicativos del producto (About-the-Product) y del equipo creador (About-the-Team).<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-00</td><td>Paciente potencial</td><td>High</td><td>EP0: Plataforma de Presentación y Captación</td></tr><tr><th>Title</th><td colspan="3">Visualización de Propuesta de Valor en Landing Page</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente potencial,<br> <b>Quiero</b> visualizar la propuesta de valor y los beneficios de SaludYa en el sitio web público,<br> <b>Para</b> comprender cómo la plataforma optimiza la gestión de mis citas médicas y decidir descargar la aplicación móvil.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Visualización de la propuesta de valor y enlaces de descarga</b><br> • <b>Given</b> que un paciente potencial accede a la dirección web pública de la plataforma,<br> &nbsp;&nbsp;&nbsp;<b>When</b> navega por la página principal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta de forma estructurada los beneficios de SaludYa y habilita los enlaces de descarga hacia las tiendas de aplicaciones móviles.<br><br> <b>Scenario 2: Reproducción de material audiovisual institucional</b><br> • <b>Given</b> que el paciente potencial explora la página principal,<br> &nbsp;&nbsp;&nbsp;<b>When</b> accede a las secciones de presentación audiovisual,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema reproduce los videos explicativos del producto (About-the-Product) y del equipo creador (About-the-Team).<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-01: Verificación de Identidad por DNI**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-01</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Verificación de Identidad por DNI</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> verificar mi identidad ingresando mi DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> que el sistema confirme que mis datos coinciden con mi identidad oficial antes de crear mi cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Validación exitosa de identidad</b><br> • <b>Given</b> que el paciente aún sin cuenta ingresa un DNI de 8 dígitos y nombres, apellidos y fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial y los datos coinciden,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca la identidad como verificada y habilita la continuación del registro.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que el paciente ingresa un DNI inexistente o datos que no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la verificación, indica que los datos no coinciden con el titular del DNI y permite corregirlos.<br><br> <b>Scenario 3: Formato de DNI inválido</b><br> • <b>Given</b> que el paciente ingresa un número de documento que no tiene 8 dígitos numéricos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema la rechaza sin consultar el registro oficial e indica el formato esperado.<br><br> <b>Scenario 4: Servicio de validación de identidad no disponible</b><br> • <b>Given</b> que el servicio externo de validación de identidad no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no pudo verificar la identidad, no habilita la continuación y permite reintentar más tarde.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-01</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Verificación de Identidad por DNI</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> verificar mi identidad ingresando mi DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> que el sistema confirme que mis datos coinciden con mi identidad oficial antes de crear mi cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Validación exitosa de identidad</b><br> • <b>Given</b> que el paciente aún sin cuenta ingresa un DNI de 8 dígitos y nombres, apellidos y fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial y los datos coinciden,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca la identidad como verificada y habilita la continuación del registro.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que el paciente ingresa un DNI inexistente o datos que no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema consulta el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la verificación, indica que los datos no coinciden con el titular del DNI y permite corregirlos.<br><br> <b>Scenario 3: Formato de DNI inválido</b><br> • <b>Given</b> que el paciente ingresa un número de documento que no tiene 8 dígitos numéricos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema la rechaza sin consultar el registro oficial e indica el formato esperado.<br><br> <b>Scenario 4: Servicio de validación de identidad no disponible</b><br> • <b>Given</b> que el servicio externo de validación de identidad no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la verificación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no pudo verificar la identidad, no habilita la continuación y permite reintentar más tarde.<br><br>
 
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-02: Registro de Credenciales de Acceso -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-02: Registro de Credenciales de Acceso**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-02</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Credenciales de Acceso</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> registrar mi correo, contraseña y número de celular una vez verificada mi identidad,<br> <b>Para</b> contar con las credenciales con las que accederé a mi cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Credenciales válidas</b><br> • <b>Given</b> que el paciente con identidad verificada ingresa un correo disponible, una contraseña con su confirmación idéntica y un celular de 9 dígitos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita continuar con el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código de verificación de 6 dígitos por SMS al celular indicado.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que las contraseñas no coinciden.<br><br> <b>Scenario 4: Formato de correo o celular inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e identifica el dato inválido.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-02</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Registro de Credenciales de Acceso</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> registrar mi correo, contraseña y número de celular una vez verificada mi identidad,<br> <b>Para</b> contar con las credenciales con las que accederé a mi cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Credenciales válidas</b><br> • <b>Given</b> que el paciente con identidad verificada ingresa un correo disponible, una contraseña con su confirmación idéntica y un celular de 9 dígitos,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita continuar con el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código de verificación de 6 dígitos por SMS al celular indicado.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e indica que las contraseñas no coinciden.<br><br> <b>Scenario 4: Formato de correo o celular inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita continuar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e identifica el dato inválido.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-03: Verificación de Celular y Creación de Cuenta -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-03: Verificación de Celular y Creación de Cuenta**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-03</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Verificación de Celular y Creación de Cuenta</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ingresar el código de 6 dígitos enviado a mi celular,<br> <b>Para</b> confirmar mi número y obtener mi cuenta de paciente verificada.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Código válido</b><br> • <b>Given</b> que el paciente recibió un código de verificación vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el código correcto,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema confirma el celular, crea la cuenta de paciente verificada y envía un correo de bienvenida.<br><br> <b>Scenario 2: Código incorrecto</b><br> • <b>Given</b> que el paciente ingresa un código distinto al enviado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita completar el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no crea la cuenta, indica que el código es incorrecto y permite reintentar.<br><br> <b>Scenario 3: Reenvío de código</b><br> • <b>Given</b> que el paciente no recibió el código,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita un nuevo código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código nuevo al mismo celular e invalida el anterior.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-03</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Verificación de Celular y Creación de Cuenta</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ingresar el código de 6 dígitos enviado a mi celular,<br> <b>Para</b> confirmar mi número y obtener mi cuenta de paciente verificada.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Código válido</b><br> • <b>Given</b> que el paciente recibió un código de verificación vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> ingresa el código correcto,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema confirma el celular, crea la cuenta de paciente verificada y envía un correo de bienvenida.<br><br> <b>Scenario 2: Código incorrecto</b><br> • <b>Given</b> que el paciente ingresa un código distinto al enviado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita completar el registro,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no crea la cuenta, indica que el código es incorrecto y permite reintentar.<br><br> <b>Scenario 3: Reenvío de código</b><br> • <b>Given</b> que el paciente no recibió el código,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita un nuevo código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un código nuevo al mismo celular e invalida el anterior.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-04: Inicio de Sesión del Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-04: Inicio de Sesión del Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-04</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a mi cuenta de paciente.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso y abre su sesión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que el paciente ingresa un correo no registrado o una contraseña incorrecta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas sin precisar cuál dato falló.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e indica consultar con el personal de admisión.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-04</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Inicio de Sesión del Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a mi cuenta de paciente.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso y abre su sesión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que el paciente ingresa un correo no registrado o una contraseña incorrecta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas sin precisar cuál dato falló.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que el paciente ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e indica consultar con el personal de admisión.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-05: Selección de Especialidad Médica -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-05: Selección de Especialidad Médica**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-05</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Selección de Especialidad Médica</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> buscar y seleccionar una especialidad médica,<br> <b>Para</b> consultar su disponibilidad de atención.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita la consulta de disponibilidad de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad publicada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br> <b>Scenario 3: Consulta sin especialidad seleccionada</b><br> • <b>Given</b> que el paciente no ha seleccionado una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta consultar fechas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema impide la consulta e indica que debe seleccionar una especialidad.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-05</td><td>Paciente</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Selección de Especialidad Médica</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> buscar y seleccionar una especialidad médica,<br> <b>Para</b> consultar su disponibilidad de atención.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita la consulta de disponibilidad de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad publicada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br> <b>Scenario 3: Consulta sin especialidad seleccionada</b><br> • <b>Given</b> que el paciente no ha seleccionado una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta consultar fechas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema impide la consulta e indica que debe seleccionar una especialidad.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-06: Consulta de Horarios Disponibles -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-06: Consulta de Horarios Disponibles**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-06</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Horarios Disponibles</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar los horarios libres de una fecha para la especialidad elegida,<br> <b>Para</b> elegir el turno que mejor se ajuste a mi tiempo.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Horarios libres de la fecha</b><br> • <b>Given</b> que el paciente seleccionó una especialidad con agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta una fecha,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta los bloques horarios con cupos libres de esa fecha.<br><br> <b>Scenario 2: Fecha sin turnos o con cupos agotados</b><br> • <b>Given</b> que la fecha no tiene bloques programados o sus cupos están agotados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay turnos y resalta las fechas más próximas con horarios libres.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-06</td><td>Paciente</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Horarios Disponibles</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar los horarios libres de una fecha para la especialidad elegida,<br> <b>Para</b> elegir el turno que mejor se ajuste a mi tiempo.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Horarios libres de la fecha</b><br> • <b>Given</b> que el paciente seleccionó una especialidad con agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta una fecha,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema presenta los bloques horarios con cupos libres de esa fecha.<br><br> <b>Scenario 2: Fecha sin turnos o con cupos agotados</b><br> • <b>Given</b> que la fecha no tiene bloques programados o sus cupos están agotados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay turnos y resalta las fechas más próximas con horarios libres.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-07: Reserva de Cita para el Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-07: Reserva de Cita para el Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-07</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Reserva de Cita para el Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para mí,<br> <b>Para</b> asegurar mi atención médica en la fecha y hora elegidas.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reserva exitosa</b><br> • <b>Given</b> que el paciente autenticado selecciona un horario con cupo libre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la cita en estado reservado, descuenta el cupo y asigna un código de reserva único.<br><br> <b>Scenario 2: Horario ocupado por otro paciente</b><br> • <b>Given</b> que el cupo seleccionado fue ocupado por otro paciente antes de confirmar,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva, informa que el horario ya no está disponible y permite elegir otro.<br><br> <b>Scenario 3: Solapamiento de horario</b><br> • <b>Given</b> que el paciente ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta confirmar una nueva reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 4: Reserva fuera de la hora límite</b><br> • <b>Given</b> que se superó la hora límite para reservar configurada por el establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa la hora límite vigente.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-07</td><td>Paciente</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Reserva de Cita para el Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para mí,<br> <b>Para</b> asegurar mi atención médica en la fecha y hora elegidas.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Reserva exitosa</b><br> • <b>Given</b> que el paciente autenticado selecciona un horario con cupo libre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la cita en estado reservado, descuenta el cupo y asigna un código de reserva único.<br><br> <b>Scenario 2: Horario ocupado por otro paciente</b><br> • <b>Given</b> que el cupo seleccionado fue ocupado por otro paciente antes de confirmar,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva, informa que el horario ya no está disponible y permite elegir otro.<br><br> <b>Scenario 3: Solapamiento de horario</b><br> • <b>Given</b> que el paciente ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta confirmar una nueva reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 4: Reserva fuera de la hora límite</b><br> • <b>Given</b> que se superó la hora límite para reservar configurada por el establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa la hora límite vigente.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-08: Recepción de Confirmación de Cita por Correo -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-08: Recepción de Confirmación de Cita por Correo**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-08</td> <td>Paciente</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Recepción de Confirmación de Cita por Correo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir por correo la confirmación de mi cita,<br> <b>Para</b> contar con el comprobante y los detalles de mi atención.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Envío de confirmación</b><br> • <b>Given</b> que una cita fue reservada exitosamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al correo del paciente el código de reserva, el paciente beneficiario, la especialidad, el médico, la fecha y la hora.<br><br> <b>Scenario 2: Servicio de correo no disponible</b><br> • <b>Given</b> que el servicio externo de correo no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la cita confirmada y reintenta el envío automáticamente.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-08</td><td>Paciente</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Recepción de Confirmación de Cita por Correo</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir por correo la confirmación de mi cita,<br> <b>Para</b> contar con el comprobante y los detalles de mi atención.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Envío de confirmación</b><br> • <b>Given</b> que una cita fue reservada exitosamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al correo del paciente el código de reserva, el paciente beneficiario, la especialidad, el médico, la fecha y la hora.<br><br> <b>Scenario 2: Servicio de correo no disponible</b><br> • <b>Given</b> que el servicio externo de correo no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> concluye el proceso de reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la cita confirmada y reintenta el envío automáticamente.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-09: Consulta de Citas Agendadas -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-09: Consulta de Citas Agendadas**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-09</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Citas Agendadas</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis citas programadas, finalizadas y canceladas,<br> <b>Para</b> conocer el estado y el detalle de mi atención.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Listado de citas</b><br> • <b>Given</b> que el paciente autenticado tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, finalizadas y canceladas con su estado.<br><br> <b>Scenario 2: Sin citas registradas</b><br> • <b>Given</b> que el paciente no tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas registradas.<br><br> <b>Scenario 3: Error en la consulta</b><br> • <b>Given</b> que la información no puede cargarse por una falla del servicio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa el error y permite reintentar la consulta.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-09</td><td>Paciente</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Citas Agendadas</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis citas programadas, finalizadas y canceladas,<br> <b>Para</b> conocer el estado y el detalle de mi atención.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Listado de citas</b><br> • <b>Given</b> que el paciente autenticado tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, finalizadas y canceladas con su estado.<br><br> <b>Scenario 2: Sin citas registradas</b><br> • <b>Given</b> que el paciente no tiene citas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas registradas.<br><br> <b>Scenario 3: Error en la consulta</b><br> • <b>Given</b> que la información no puede cargarse por una falla del servicio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta sus citas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa el error y permite reintentar la consulta.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-10: Cancelación de Cita -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-10: Cancelación de Cita**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-10</td> <td>Paciente</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Cancelación de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cancelar una cita agendada,<br> <b>Para</b> liberar el cupo cuando no pueda asistir.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cancelación dentro del plazo</b><br> • <b>Given</b> que la cita está activa y cumple la anticipación mínima de cancelación configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la cancelación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado de la cita a cancelada por el paciente, libera el cupo y envía el comprobante de cancelación al correo registrado.<br><br> <b>Scenario 2: Cancelación fuera del plazo</b><br> • <b>Given</b> que la anticipación mínima de cancelación ya venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la cancelación e indica gestionarla de forma presencial con el personal de admisión.<br><br> <b>Scenario 3: Cita no activa</b><br> • <b>Given</b> que la cita ya fue cancelada, atendida o declarada ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelarla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e informa el estado actual de la cita.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-10</td><td>Paciente</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Cancelación de Cita</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cancelar una cita agendada,<br> <b>Para</b> liberar el cupo cuando no pueda asistir.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Cancelación dentro del plazo</b><br> • <b>Given</b> que la cita está activa y cumple la anticipación mínima de cancelación configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente confirma la cancelación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado de la cita a cancelada por el paciente, libera el cupo y envía el comprobante de cancelación al correo registrado.<br><br> <b>Scenario 2: Cancelación fuera del plazo</b><br> • <b>Given</b> que la anticipación mínima de cancelación ya venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la cancelación e indica gestionarla de forma presencial con el personal de admisión.<br><br> <b>Scenario 3: Cita no activa</b><br> • <b>Given</b> que la cita ya fue cancelada, atendida o declarada ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta cancelarla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e informa el estado actual de la cita.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-11: Consulta del Código QR de la Reserva -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-11: Consulta del Código QR de la Reserva**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-11</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Código QR de la Reserva</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el código QR de mi reserva,<br> <b>Para</b> presentarlo al personal de admisión al llegar al establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Código QR disponible</b><br> • <b>Given</b> que el paciente tiene una cita activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema proporciona el código QR asociado a la reserva y su código de reserva.<br><br> <b>Scenario 2: Cita no activa</b><br> • <b>Given</b> que la cita fue cancelada o ya finalizó,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no proporciona el código QR e informa el estado de la cita.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-11</td><td>Paciente</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Consulta del Código QR de la Reserva</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el código QR de mi reserva,<br> <b>Para</b> presentarlo al personal de admisión al llegar al establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Código QR disponible</b><br> • <b>Given</b> que el paciente tiene una cita activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema proporciona el código QR asociado a la reserva y su código de reserva.<br><br> <b>Scenario 2: Cita no activa</b><br> • <b>Given</b> que la cita fue cancelada o ya finalizó,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no proporciona el código QR e informa el estado de la cita.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-12: Consulta del Ticket Digital de Atención -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-12: Consulta del Ticket Digital de Atención**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-12</td> <td>Paciente</td> <td>Medium</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Ticket Digital de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi ticket digital de atención,<br> <b>Para</b> conocer mi código de turno y el consultorio donde seré atendido.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Ticket disponible</b><br> • <b>Given</b> que la llegada del paciente fue registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el código de turno, la especialidad, el profesional, la sala y el consultorio.<br><br> <b>Scenario 2: Llegada no registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que se requiere registrar la llegada presencial.<br><br> <b>Scenario 3: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el estado final del turno.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-12</td><td>Paciente</td><td>Medium</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Consulta del Ticket Digital de Atención</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi ticket digital de atención,<br> <b>Para</b> conocer mi código de turno y el consultorio donde seré atendido.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Ticket disponible</b><br> • <b>Given</b> que la llegada del paciente fue registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el código de turno, la especialidad, el profesional, la sala y el consultorio.<br><br> <b>Scenario 2: Llegada no registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que se requiere registrar la llegada presencial.<br><br> <b>Scenario 3: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su ticket,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el estado final del turno.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-13: Consulta de Posición en la Cola de Atención -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-13: Consulta de Posición en la Cola de Atención**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-13</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Posición en la Cola de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi posición en la cola de atención,<br> <b>Para</b> estimar el momento en que seré llamado.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Posición en la cola</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y la posición de cola es visible según la regla del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su posición y el total de pacientes, ordenados por hora de llegada.<br><br> <b>Scenario 2: Posición de cola no visible</b><br> • <b>Given</b> que el establecimiento configuró la posición de cola como no visible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no revela la posición e informa únicamente el estado del turno.<br><br> <b>Scenario 3: Sin llegada registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra presencia en la cola.<br><br> <b>Scenario 4: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que ya no se encuentra en la cola.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-13</td><td>Paciente</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Consulta de Posición en la Cola de Atención</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mi posición en la cola de atención,<br> <b>Para</b> estimar el momento en que seré llamado.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Posición en la cola</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y la posición de cola es visible según la regla del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su posición y el total de pacientes, ordenados por hora de llegada.<br><br> <b>Scenario 2: Posición de cola no visible</b><br> • <b>Given</b> que el establecimiento configuró la posición de cola como no visible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no revela la posición e informa únicamente el estado del turno.<br><br> <b>Scenario 3: Sin llegada registrada</b><br> • <b>Given</b> que el paciente no tiene llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra presencia en la cola.<br><br> <b>Scenario 4: Turno finalizado</b><br> • <b>Given</b> que el turno ya fue atendido o declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente consulta su posición,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que ya no se encuentra en la cola.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-14: Recepción de Notificación de Llamado a Consultorio -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-14: Recepción de Notificación de Llamado a Consultorio**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-14</td> <td>Paciente</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Recepción de Notificación de Llamado a Consultorio</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir una notificación cuando me llamen a consultorio,<br> <b>Para</b> dirigirme a atención sin depender de un aviso manual.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Notificación de llamado</b><br> • <b>Given</b> que el personal de admisión registra el llamado del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al paciente una notificación con el consultorio asignado y el plazo para acudir.<br><br> <b>Scenario 2: Canal de notificación no disponible</b><br> • <b>Given</b> que el canal de notificación no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra el intento y reintenta el envío sin detener la cola.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-14</td><td>Paciente</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Recepción de Notificación de Llamado a Consultorio</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> recibir una notificación cuando me llamen a consultorio,<br> <b>Para</b> dirigirme a atención sin depender de un aviso manual.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Notificación de llamado</b><br> • <b>Given</b> que el personal de admisión registra el llamado del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía al paciente una notificación con el consultorio asignado y el plazo para acudir.<br><br> <b>Scenario 2: Canal de notificación no disponible</b><br> • <b>Given</b> que el canal de notificación no responde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> se registra el llamado,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra el intento y reintenta el envío sin detener la cola.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-15: Vinculación de un Menor de Edad -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-15: Vinculación de un Menor de Edad**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-15</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Vinculación de un Menor de Edad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> vincular a un menor a mi cuenta ingresando su DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> gestionar sus citas médicas desde mi propia cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Vinculación exitosa</b><br> • <b>Given</b> que el paciente titular autenticado ingresa datos de un menor de 18 años que coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma ser su adulto responsable,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asocia al menor con la cuenta del titular.<br><br> <b>Scenario 2: Menor ya vinculado a otra cuenta</b><br> • <b>Given</b> que el DNI del menor ya está asociado a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica validar la tutela legal con el personal de admisión.<br><br> <b>Scenario 3: Edad no válida</b><br> • <b>Given</b> que el DNI corresponde a una persona de 18 años o más,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la edad no es válida.<br><br> <b>Scenario 4: Incoincidencia de datos del menor</b><br> • <b>Given</b> que los datos ingresados no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincular al menor,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la identidad no coincide.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-15</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Vinculación de un Menor de Edad</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> vincular a un menor a mi cuenta ingresando su DNI, nombres, apellidos y fecha de nacimiento,<br> <b>Para</b> gestionar sus citas médicas desde mi propia cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Vinculación exitosa</b><br> • <b>Given</b> que el paciente titular autenticado ingresa datos de un menor de 18 años que coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma ser su adulto responsable,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asocia al menor con la cuenta del titular.<br><br> <b>Scenario 2: Menor ya vinculado a otra cuenta</b><br> • <b>Given</b> que el DNI del menor ya está asociado a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica validar la tutela legal con el personal de admisión.<br><br> <b>Scenario 3: Edad no válida</b><br> • <b>Given</b> que el DNI corresponde a una persona de 18 años o más,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincularla,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la edad no es válida.<br><br> <b>Scenario 4: Incoincidencia de datos del menor</b><br> • <b>Given</b> que los datos ingresados no coinciden con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta vincular al menor,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la vinculación e indica que la identidad no coincide.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-16: Reserva de Cita para un Menor Vinculado -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-16: Reserva de Cita para un Menor Vinculado**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-16</td> <td>Paciente</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Reserva de Cita para un Menor Vinculado</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para un menor vinculado a mi cuenta,<br> <b>Para</b> asegurar la atención médica del menor.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reserva exitosa para el menor</b><br> • <b>Given</b> que el paciente titular selecciona un horario con cupo libre y un menor vinculado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asigna la cita al menor, registra al titular como adulto responsable y asigna un código de reserva único.<br><br> <b>Scenario 2: Solapamiento de horario del menor</b><br> • <b>Given</b> que el menor ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 3: Menor no vinculado</b><br> • <b>Given</b> que el menor seleccionado no está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta reservar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e indica que el menor no está vinculado.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-16</td><td>Paciente</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Reserva de Cita para un Menor Vinculado</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> reservar un turno disponible para un menor vinculado a mi cuenta,<br> <b>Para</b> asegurar la atención médica del menor.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Reserva exitosa para el menor</b><br> • <b>Given</b> que el paciente titular selecciona un horario con cupo libre y un menor vinculado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> confirma la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asigna la cita al menor, registra al titular como adulto responsable y asigna un código de reserva único.<br><br> <b>Scenario 2: Solapamiento de horario del menor</b><br> • <b>Given</b> que el menor ya tiene una cita activa en el mismo bloque horario,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta confirmar la reserva,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e informa el cruce de horarios.<br><br> <b>Scenario 3: Menor no vinculado</b><br> • <b>Given</b> que el menor seleccionado no está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular intenta reservar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la reserva e indica que el menor no está vinculado.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-17: Consulta de Menores Vinculados -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-17: Consulta de Menores Vinculados**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-17</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Menores Vinculados</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar la lista de menores vinculados a mi cuenta,<br> <b>Para</b> identificar a quiénes puedo gestionar citas.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Lista de menores</b><br> • <b>Given</b> que el paciente titular tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el nombre, la edad y el DNI enmascarado de cada menor.<br><br> <b>Scenario 2: Sin menores vinculados</b><br> • <b>Given</b> que el paciente titular no tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay menores vinculados.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-17</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Consulta de Menores Vinculados</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar la lista de menores vinculados a mi cuenta,<br> <b>Para</b> identificar a quiénes puedo gestionar citas.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Lista de menores</b><br> • <b>Given</b> que el paciente titular tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el nombre, la edad y el DNI enmascarado de cada menor.<br><br> <b>Scenario 2: Sin menores vinculados</b><br> • <b>Given</b> que el paciente titular no tiene menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta sus menores vinculados,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay menores vinculados.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-18: Consulta del Perfil de un Menor -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-18: Consulta del Perfil de un Menor**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-18</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Perfil de un Menor</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el perfil de un menor vinculado,<br> <b>Para</b> revisar sus datos y mi condición de adulto responsable.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Perfil del menor</b><br> • <b>Given</b> que el menor está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el nombre, el DNI enmascarado, la fecha de nacimiento y el adulto responsable.<br><br> <b>Scenario 2: Menor no vinculado a la cuenta</b><br> • <b>Given</b> que el menor no está vinculado a la cuenta del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta consultar su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso a los datos del menor.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-18</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Consulta del Perfil de un Menor</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar el perfil de un menor vinculado,<br> <b>Para</b> revisar sus datos y mi condición de adulto responsable.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Perfil del menor</b><br> • <b>Given</b> que el menor está vinculado a la cuenta del titular,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra el nombre, el DNI enmascarado, la fecha de nacimiento y el adulto responsable.<br><br> <b>Scenario 2: Menor no vinculado a la cuenta</b><br> • <b>Given</b> que el menor no está vinculado a la cuenta del paciente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta consultar su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso a los datos del menor.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-19: Desvinculación de un Menor de Edad -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-19: Desvinculación de un Menor de Edad**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-19</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Desvinculación de un Menor de Edad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> desvincular a un menor de mi cuenta,<br> <b>Para</b> que deje de estar disponible para agendar citas desde mi cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Desvinculación confirmada</b><br> • <b>Given</b> que el paciente titular tiene un menor vinculado y confirma la desvinculación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema elimina el vínculo y el menor deja de estar disponible para agendar citas.<br><br> <b>Scenario 2: Desvinculación no confirmada</b><br> • <b>Given</b> que el titular solicitó la desvinculación y esta requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva el vínculo sin realizar cambios.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-19</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Desvinculación de un Menor de Edad</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> desvincular a un menor de mi cuenta,<br> <b>Para</b> que deje de estar disponible para agendar citas desde mi cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Desvinculación confirmada</b><br> • <b>Given</b> que el paciente titular tiene un menor vinculado y confirma la desvinculación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema elimina el vínculo y el menor deja de estar disponible para agendar citas.<br><br> <b>Scenario 2: Desvinculación no confirmada</b><br> • <b>Given</b> que el titular solicitó la desvinculación y esta requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el titular no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva el vínculo sin realizar cambios.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-20: Aceptación de Adelanto de Cita -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-20: Aceptación de Adelanto de Cita**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-20</td> <td>Paciente</td> <td>High</td> <td>EP3: Reassignment Protocol</td> </tr> <tr> <th>Title</th> <td colspan="3">Aceptación de Adelanto de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> aceptar la propuesta de adelantar mi cita a un intervalo liberado,<br> <b>Para</b> ser atendido más temprano.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Adelanto aceptado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> acepta el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema le asigna el intervalo anterior, libera su horario original y confirma la reasignación.<br><br> <b>Scenario 2: Intervalo ya asignado a otro paciente</b><br> • <b>Given</b> que otro paciente aceptó antes la misma propuesta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta aceptar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que el horario ya no está disponible y mantiene su cita sin cambios.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-20</td><td>Paciente</td><td>High</td><td>EP3: Reassignment Protocol</td></tr><tr><th>Title</th><td colspan="3">Aceptación de Adelanto de Cita</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> aceptar la propuesta de adelantar mi cita a un intervalo liberado,<br> <b>Para</b> ser atendido más temprano.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Adelanto aceptado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> acepta el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema le asigna el intervalo anterior, libera su horario original y confirma la reasignación.<br><br> <b>Scenario 2: Intervalo ya asignado a otro paciente</b><br> • <b>Given</b> que otro paciente aceptó antes la misma propuesta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta aceptar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que el horario ya no está disponible y mantiene su cita sin cambios.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-21: Rechazo de Adelanto de Cita -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-21: Rechazo de Adelanto de Cita**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-21</td> <td>Paciente</td> <td>Medium</td> <td>EP3: Reassignment Protocol</td> </tr> <tr> <th>Title</th> <td colspan="3">Rechazo de Adelanto de Cita</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> rechazar la propuesta de adelantar mi cita,<br> <b>Para</b> mantener mi turno programado originalmente.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Adelanto rechazado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> rechaza el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene su cita en el intervalo original y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br> <b>Scenario 2: Propuesta sin respuesta</b><br> • <b>Given</b> que venció el plazo de respuesta a la reasignación configurado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente no responde,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asume el rechazo, conserva su cita y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-21</td><td>Paciente</td><td>Medium</td><td>EP3: Reassignment Protocol</td></tr><tr><th>Title</th><td colspan="3">Rechazo de Adelanto de Cita</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> rechazar la propuesta de adelantar mi cita,<br> <b>Para</b> mantener mi turno programado originalmente.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Adelanto rechazado</b><br> • <b>Given</b> que el paciente recibió una propuesta de adelanto vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> rechaza el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema mantiene su cita en el intervalo original y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br> <b>Scenario 2: Propuesta sin respuesta</b><br> • <b>Given</b> que venció el plazo de respuesta a la reasignación configurado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente no responde,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema asume el rechazo, conserva su cita y ofrece el cupo al siguiente paciente según el orden de reserva.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-22: Salida Voluntaria de la Cola de Atención -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-22: Salida Voluntaria de la Cola de Atención**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-22</td> <td>Paciente</td> <td>Medium</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Salida Voluntaria de la Cola de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> dejar la cola de atención confirmando mi decisión,<br> <b>Para</b> no ocupar un lugar cuando ya no puedo esperar.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Salida confirmada</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y confirma su salida,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo retira de la cola, recalcula la posición de los demás pacientes y conserva la reserva sin cancelarla.<br><br> <b>Scenario 2: Salida no confirmada</b><br> • <b>Given</b> que el paciente solicitó salir y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo mantiene en la cola con su posición actual.<br><br> <b>Scenario 3: Sin turno activo en la cola</b><br> • <b>Given</b> que el paciente no tiene un turno activo en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta salir de la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra un turno activo.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-22</td><td>Paciente</td><td>Medium</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Salida Voluntaria de la Cola de Atención</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> dejar la cola de atención confirmando mi decisión,<br> <b>Para</b> no ocupar un lugar cuando ya no puedo esperar.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Salida confirmada</b><br> • <b>Given</b> que el paciente tiene un turno activo en la cola y confirma su salida,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo retira de la cola, recalcula la posición de los demás pacientes y conserva la reserva sin cancelarla.<br><br> <b>Scenario 2: Salida no confirmada</b><br> • <b>Given</b> que el paciente solicitó salir y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo mantiene en la cola con su posición actual.<br><br> <b>Scenario 3: Sin turno activo en la cola</b><br> • <b>Given</b> que el paciente no tiene un turno activo en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta salir de la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no registra un turno activo.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-23: Solicitud de Enlace de Recuperación de Contraseña -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-23: Solicitud de Enlace de Recuperación de Contraseña**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-23</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Solicitud de Enlace de Recuperación de Contraseña</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar un enlace de recuperación a mi correo registrado,<br> <b>Para</b> poder definir una nueva contraseña de forma segura.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Envío del enlace</b><br> • <b>Given</b> que el correo ingresado pertenece a una cuenta registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un enlace temporal con vigencia de 15 minutos.<br><br> <b>Scenario 2: Correo no registrado</b><br> • <b>Given</b> que el correo ingresado no pertenece a ninguna cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no genera enlace y responde con un mensaje genérico sin revelar la existencia de la cuenta.<br><br> <b>Scenario 3: Solicitud de nuevo enlace</b><br> • <b>Given</b> que el paciente ya solicitó un enlace previamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita uno nuevo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera un enlace nuevo e invalida el anterior.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-23</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Solicitud de Enlace de Recuperación de Contraseña</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar un enlace de recuperación a mi correo registrado,<br> <b>Para</b> poder definir una nueva contraseña de forma segura.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Envío del enlace</b><br> • <b>Given</b> que el correo ingresado pertenece a una cuenta registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema envía un enlace temporal con vigencia de 15 minutos.<br><br> <b>Scenario 2: Correo no registrado</b><br> • <b>Given</b> que el correo ingresado no pertenece a ninguna cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita la recuperación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema no genera enlace y responde con un mensaje genérico sin revelar la existencia de la cuenta.<br><br> <b>Scenario 3: Solicitud de nuevo enlace</b><br> • <b>Given</b> que el paciente ya solicitó un enlace previamente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita uno nuevo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera un enlace nuevo e invalida el anterior.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-24: Restablecimiento de Contraseña -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-24: Restablecimiento de Contraseña**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-24</td> <td>Paciente</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Restablecimiento de Contraseña</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> definir una nueva contraseña mediante el enlace recibido,<br> <b>Para</b> recuperar el acceso a mi cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Contraseña actualizada</b><br> • <b>Given</b> que el enlace de recuperación está vigente y el paciente ingresa una contraseña con su confirmación idéntica,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita guardar la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la contraseña e indica que ya puede iniciar sesión.<br><br> <b>Scenario 2: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que las contraseñas no coinciden.<br><br> <b>Scenario 3: Enlace expirado</b><br> • <b>Given</b> que transcurrieron más de 15 minutos desde la emisión del enlace,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta definir la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación, indica que el enlace expiró y requiere una nueva solicitud.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-24</td><td>Paciente</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Restablecimiento de Contraseña</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> definir una nueva contraseña mediante el enlace recibido,<br> <b>Para</b> recuperar el acceso a mi cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Contraseña actualizada</b><br> • <b>Given</b> que el enlace de recuperación está vigente y el paciente ingresa una contraseña con su confirmación idéntica,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita guardar la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza la contraseña e indica que ya puede iniciar sesión.<br><br> <b>Scenario 2: Contraseñas que no coinciden</b><br> • <b>Given</b> que la contraseña y su confirmación son diferentes,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente solicita guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que las contraseñas no coinciden.<br><br> <b>Scenario 3: Enlace expirado</b><br> • <b>Given</b> que transcurrieron más de 15 minutos desde la emisión del enlace,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente intenta definir la contraseña,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación, indica que el enlace expiró y requiere una nueva solicitud.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-25: Solicitud de Ayuda por Pérdida de Acceso a la Cuenta**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-25</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Solicitud de Ayuda por Pérdida de Acceso a la Cuenta</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar ayuda indicando mi DNI y un correo de contacto alternativo,<br> <b>Para</b> recuperar mi cuenta cuando no tengo acceso a mi correo ni a mi celular.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Solicitud registrada</b><br> • <b>Given</b> que el paciente ingresa su DNI y un correo de contacto válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la solicitud para que un agente restablezca las credenciales previa verificación de identidad.<br><br> <b>Scenario 2: Datos incompletos o inválidos</b><br> • <b>Given</b> que el DNI o el correo de contacto falta o tiene formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e identifica el dato a corregir.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-25</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Solicitud de Ayuda por Pérdida de Acceso a la Cuenta</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> solicitar ayuda indicando mi DNI y un correo de contacto alternativo,<br> <b>Para</b> recuperar mi cuenta cuando no tengo acceso a mi correo ni a mi celular.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Solicitud registrada</b><br> • <b>Given</b> que el paciente ingresa su DNI y un correo de contacto válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la solicitud para que un agente restablezca las credenciales previa verificación de identidad.<br><br> <b>Scenario 2: Datos incompletos o inválidos</b><br> • <b>Given</b> que el DNI o el correo de contacto falta o tiene formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente envía la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e identifica el dato a corregir.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-26: Consulta del Perfil del Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-26: Consulta del Perfil del Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-26</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Perfil del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis datos de identidad y de contacto,<br> <b>Para</b> verificar la información registrada en mi cuenta.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Datos del perfil</b><br> • <b>Given</b> que el paciente tiene sesión iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su nombre, el DNI con solo los últimos 4 dígitos visibles, el estado de identidad verificada, su correo y su celular.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-26</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Consulta del Perfil del Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> consultar mis datos de identidad y de contacto,<br> <b>Para</b> verificar la información registrada en mi cuenta.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Datos del perfil</b><br> • <b>Given</b> que el paciente tiene sesión iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta su perfil,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema muestra su nombre, el DNI con solo los últimos 4 dígitos visibles, el estado de identidad verificada, su correo y su celular.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-27: Edición de Datos de Contacto -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-27: Edición de Datos de Contacto**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-27</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de Datos de Contacto</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> actualizar mi correo y mi número de celular,<br> <b>Para</b> mantener mis datos de contacto al día.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Actualización exitosa</b><br> • <b>Given</b> que el paciente ingresa un correo disponible y un celular válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza sus datos de contacto y envía una notificación de seguridad.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Formato de contacto inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e identifica el dato inválido.<br><br> <b>Scenario 4: Intento de modificar datos de identidad</b><br> • <b>Given</b> que el paciente intenta modificar su DNI, nombres, apellidos o fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio, pues los datos de identidad no se modifican.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-27</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Edición de Datos de Contacto</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> actualizar mi correo y mi número de celular,<br> <b>Para</b> mantener mis datos de contacto al día.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Actualización exitosa</b><br> • <b>Given</b> que el paciente ingresa un correo disponible y un celular válido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema actualiza sus datos de contacto y envía una notificación de seguridad.<br><br> <b>Scenario 2: Correo ya registrado</b><br> • <b>Given</b> que el correo ingresado pertenece a otra cuenta,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e indica que el correo ya está en uso.<br><br> <b>Scenario 3: Formato de contacto inválido</b><br> • <b>Given</b> que el correo o el celular tiene un formato inválido,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el paciente guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la actualización e identifica el dato inválido.<br><br> <b>Scenario 4: Intento de modificar datos de identidad</b><br> • <b>Given</b> que el paciente intenta modificar su DNI, nombres, apellidos o fecha de nacimiento,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda los cambios,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio, pues los datos de identidad no se modifican.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-28: Cierre de Sesión del Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-28: Cierre de Sesión del Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-28</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Cierre de Sesión del Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cerrar mi sesión,<br> <b>Para</b> proteger el acceso a mi cuenta al terminar de usar la aplicación.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cierre de sesión confirmado</b><br> • <b>Given</b> que el paciente tiene sesión iniciada y confirma el cierre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema finaliza la sesión e invalida el token de acceso.<br><br> <b>Scenario 2: Cierre de sesión no confirmado</b><br> • <b>Given</b> que el paciente solicitó cerrar sesión y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la sesión activa.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-28</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Cierre de Sesión del Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> cerrar mi sesión,<br> <b>Para</b> proteger el acceso a mi cuenta al terminar de usar la aplicación.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Cierre de sesión confirmado</b><br> • <b>Given</b> que el paciente tiene sesión iniciada y confirma el cierre,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el sistema procesa la solicitud,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema finaliza la sesión e invalida el token de acceso.<br><br> <b>Scenario 2: Cierre de sesión no confirmado</b><br> • <b>Given</b> que el paciente solicitó cerrar sesión y esto requiere confirmación,<br> &nbsp;&nbsp;&nbsp;<b>When</b> no confirma,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema conserva la sesión activa.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-29: Aviso de Sesión Expirada -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-29: Aviso de Sesión Expirada**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-29</td> <td>Paciente</td> <td>Medium</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Aviso de Sesión Expirada</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ser informado cuando mi sesión ha expirado,<br> <b>Para</b> volver a iniciar sesión de forma segura.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Sesión expirada</b><br> • <b>Given</b> que el token de acceso del paciente venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta realizar una acción,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la acción, informa que la sesión expiró y requiere un nuevo inicio de sesión.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-29</td><td>Paciente</td><td>Medium</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Aviso de Sesión Expirada</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Paciente,<br> <b>Quiero</b> ser informado cuando mi sesión ha expirado,<br> <b>Para</b> volver a iniciar sesión de forma segura.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Sesión expirada</b><br> • <b>Given</b> que el token de acceso del paciente venció,<br> &nbsp;&nbsp;&nbsp;<b>When</b> intenta realizar una acción,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la acción, informa que la sesión expiró y requiere un nuevo inicio de sesión.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- ===== HUs DE ADMINISTRADORES: Super Admin y Personal de Admisión ===== --> <!-- US-30: Inicio de Sesión del Super Admin -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-30: Inicio de Sesión del Super Admin**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-30</td> <td>Super Admin</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Super Admin</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a la configuración del sistema.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el Super Admin ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Super Admin.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-30</td><td>Super Admin</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Inicio de Sesión del Super Admin</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a la configuración del sistema.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el Super Admin ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Super Admin.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-31: Creación de Cuenta de Personal de Admisión -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-31: Creación de Cuenta de Personal de Admisión**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-31</td> <td>Super Admin</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Creación de Cuenta de Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> registrar al personal de admisión con su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br> <b>Para</b> otorgarle una cuenta verificada para operar el establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Alta exitosa</b><br> • <b>Given</b> que el Super Admin autenticado ingresa datos que coinciden con el registro oficial y un correo corporativo disponible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> registra al personal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de personal de admisión y envía las credenciales de acceso por correo.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que algún dato ingresado no coincide con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que la identidad no coincide con el titular.<br><br> <b>Scenario 3: Correo duplicado</b><br> • <b>Given</b> que el correo ingresado ya pertenece a una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que el correo ya está registrado.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-31</td><td>Super Admin</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Creación de Cuenta de Personal de Admisión</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> registrar al personal de admisión con su DNI, nombres, apellidos, fecha de nacimiento, correo corporativo y teléfono,<br> <b>Para</b> otorgarle una cuenta verificada para operar el establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Alta exitosa</b><br> • <b>Given</b> que el Super Admin autenticado ingresa datos que coinciden con el registro oficial y un correo corporativo disponible,<br> &nbsp;&nbsp;&nbsp;<b>When</b> registra al personal,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema crea la cuenta de personal de admisión y envía las credenciales de acceso por correo.<br><br> <b>Scenario 2: Incoincidencia de datos de identidad</b><br> • <b>Given</b> que algún dato ingresado no coincide con el registro oficial,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que la identidad no coincide con el titular.<br><br> <b>Scenario 3: Correo duplicado</b><br> • <b>Given</b> que el correo ingresado ya pertenece a una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta registrar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el alta e indica que el correo ya está registrado.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-32: Inicio de Sesión del Personal de Admisión -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-32: Inicio de Sesión del Personal de Admisión**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-32</td> <td>Personal de Admisión</td> <td>High</td> <td>EP1: Authentication & Identity Management</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Sesión del Personal de Admisión</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a las herramientas de operación del establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el personal de admisión ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Personal de Admisión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-32</td><td>Personal de Admisión</td><td>High</td><td>EP1: Authentication &amp; Identity Management</td></tr><tr><th>Title</th><td colspan="3">Inicio de Sesión del Personal de Admisión</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar sesión con mi correo y contraseña,<br> <b>Para</b> acceder a las herramientas de operación del establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Inicio de sesión exitoso</b><br> • <b>Given</b> que el personal de admisión ingresa credenciales válidas de una cuenta activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema otorga el acceso con el rol de Personal de Admisión.<br><br> <b>Scenario 2: Credenciales inválidas</b><br> • <b>Given</b> que ingresa un correo no registrado, una contraseña incorrecta o un rol que no corresponde,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa credenciales inválidas.<br><br> <b>Scenario 3: Cuenta inactiva</b><br> • <b>Given</b> que ingresa credenciales válidas de una cuenta inactiva,<br> &nbsp;&nbsp;&nbsp;<b>When</b> envía sus credenciales,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema deniega el acceso e informa que la cuenta está inactiva.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-33: Configuración de la Duración de los Intervalos de Atención -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-33: Configuración de la Duración de los Intervalos de Atención**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-33</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Configuración de la Duración de los Intervalos de Atención</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> definir la duración de cada intervalo de atención,<br> <b>Para</b> adaptar la agenda a la operación del establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Intervalo actualizado</b><br> • <b>Given</b> que el Super Admin ingresa una duración válida coherente con la tolerancia de llegada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el intervalo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica la duración a los nuevos bloques y conserva las citas confirmadas.<br><br> <b>Scenario 2: Duración incoherente</b><br> • <b>Given</b> que la tolerancia de llegada es mayor que la duración ingresada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el conflicto.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-33</td><td>Super Admin</td><td>High</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Configuración de la Duración de los Intervalos de Atención</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> definir la duración de cada intervalo de atención,<br> <b>Para</b> adaptar la agenda a la operación del establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Intervalo actualizado</b><br> • <b>Given</b> que el Super Admin ingresa una duración válida coherente con la tolerancia de llegada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el intervalo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema aplica la duración a los nuevos bloques y conserva las citas confirmadas.<br><br> <b>Scenario 2: Duración incoherente</b><br> • <b>Given</b> que la tolerancia de llegada es mayor que la duración ingresada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el conflicto.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-34: Edición de una Regla Operativa del Establecimiento -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-34: Edición de una Regla Operativa del Establecimiento**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-34</td> <td>Super Admin</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de una Regla Operativa del Establecimiento</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> modificar el valor de una regla operativa (capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar o anticipación para cancelar),<br> <b>Para</b> adaptar el sistema a la capacidad y a las políticas de la institución.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Regla actualizada</b><br> • <b>Given</b> que el Super Admin ingresa un valor válido para la regla,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste el valor, lo aplica a la operación y conserva las reservas confirmadas.<br><br> <b>Scenario 2: Valor inválido</b><br> • <b>Given</b> que el valor ingresado es cero, no numérico o incoherente con la duración del intervalo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el campo en conflicto.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-34</td><td>Super Admin</td><td>High</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Edición de una Regla Operativa del Establecimiento</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> modificar el valor de una regla operativa (capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar o anticipación para cancelar),<br> <b>Para</b> adaptar el sistema a la capacidad y a las políticas de la institución.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Regla actualizada</b><br> • <b>Given</b> que el Super Admin ingresa un valor válido para la regla,<br> &nbsp;&nbsp;&nbsp;<b>When</b> guarda el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema persiste el valor, lo aplica a la operación y conserva las reservas confirmadas.<br><br> <b>Scenario 2: Valor inválido</b><br> • <b>Given</b> que el valor ingresado es cero, no numérico o incoherente con la duración del intervalo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el Super Admin intenta guardar,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica el campo en conflicto.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-35: Consulta de Reglas Operativas Vigentes -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-35: Consulta de Reglas Operativas Vigentes**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-35</td> <td>Super Admin</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Reglas Operativas Vigentes</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> consultar las reglas operativas vigentes del establecimiento,<br> <b>Para</b> conocer cómo está configurado el sistema.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reglas vigentes</b><br> • <b>Given</b> que el Super Admin está autenticado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta las reglas del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el valor vigente de cada regla: capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar, anticipación para cancelar, prioridad de reasignación y posición de cola visible.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-35</td><td>Super Admin</td><td>Medium</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Consulta de Reglas Operativas Vigentes</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Super Admin,<br> <b>Quiero</b> consultar las reglas operativas vigentes del establecimiento,<br> <b>Para</b> conocer cómo está configurado el sistema.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Reglas vigentes</b><br> • <b>Given</b> que el Super Admin está autenticado,<br> &nbsp;&nbsp;&nbsp;<b>When</b> consulta las reglas del establecimiento,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el valor vigente de cada regla: capacidad por bloque, tolerancia de llegada, plazo después de llamada, respuesta a reasignación, hora límite para reservar, anticipación para cancelar, prioridad de reasignación y posición de cola visible.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-36: Selección de Especialidad en la Agenda Operativa -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-36: Selección de Especialidad en la Agenda Operativa**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-36</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Selección de Especialidad en la Agenda Operativa</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> buscar y seleccionar una especialidad,<br> <b>Para</b> consultar su calendario operativo.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita el calendario operativo de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-36</td><td>Personal de Admisión</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Selección de Especialidad en la Agenda Operativa</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> buscar y seleccionar una especialidad,<br> <b>Para</b> consultar su calendario operativo.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Selección de especialidad</b><br> • <b>Given</b> que el catálogo contiene especialidades publicadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal selecciona una especialidad,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema habilita el calendario operativo de esa especialidad.<br><br> <b>Scenario 2: Búsqueda sin coincidencias</b><br> • <b>Given</b> que el término buscado no coincide con ninguna especialidad,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal realiza la búsqueda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no encontró la especialidad y permite volver al catálogo completo.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-37: Consulta del Calendario Operativo -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-37: Consulta del Calendario Operativo**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-37</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Calendario Operativo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el calendario mensual de una especialidad,<br> <b>Para</b> identificar las fechas con bloques programados.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Fechas con bloques</b><br> • <b>Given</b> que la especialidad seleccionada tiene agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta un mes,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema identifica las fechas que tienen bloques programados.<br><br> <b>Scenario 2: Fecha sin bloques</b><br> • <b>Given</b> que la fecha consultada no tiene bloques programados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay bloques para esa fecha.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-37</td><td>Personal de Admisión</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta del Calendario Operativo</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el calendario mensual de una especialidad,<br> <b>Para</b> identificar las fechas con bloques programados.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Fechas con bloques</b><br> • <b>Given</b> que la especialidad seleccionada tiene agenda activa,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta un mes,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema identifica las fechas que tienen bloques programados.<br><br> <b>Scenario 2: Fecha sin bloques</b><br> • <b>Given</b> que la fecha consultada no tiene bloques programados,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal la consulta,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay bloques para esa fecha.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-38: Consulta de Bloques del Día -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-38: Consulta de Bloques del Día**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-38</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Bloques del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques horarios de un día,<br> <b>Para</b> conocer la ocupación de la agenda.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloques del día</b><br> • <b>Given</b> que existen bloques en la fecha y especialidad seleccionadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta el día,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada bloque con su horario, profesional, consultorio, reservas, capacidad y estado.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-38</td><td>Personal de Admisión</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Bloques del Día</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques horarios de un día,<br> <b>Para</b> conocer la ocupación de la agenda.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Bloques del día</b><br> • <b>Given</b> que existen bloques en la fecha y especialidad seleccionadas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta el día,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada bloque con su horario, profesional, consultorio, reservas, capacidad y estado.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-39: Consulta del Detalle de un Bloque -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-39: Consulta del Detalle de un Bloque**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-39</td> <td>Personal de Admisión</td> <td>High</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta del Detalle de un Bloque</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el detalle de un bloque horario,<br> <b>Para</b> revisar su capacidad, reservas y estado.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Detalle del bloque</b><br> • <b>Given</b> que el bloque existe en la agenda,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su detalle,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el horario, la especialidad, el profesional, el consultorio, la capacidad, las reservas y el estado.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-39</td><td>Personal de Admisión</td><td>High</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta del Detalle de un Bloque</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar el detalle de un bloque horario,<br> <b>Para</b> revisar su capacidad, reservas y estado.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Detalle del bloque</b><br> • <b>Given</b> que el bloque existe en la agenda,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su detalle,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el horario, la especialidad, el profesional, el consultorio, la capacidad, las reservas y el estado.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-40: Consulta de Horario por Profesional -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-40: Consulta de Horario por Profesional**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-40</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Horario por Profesional</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques de un profesional con sus cupos disponibles,<br> <b>Para</b> seleccionar el bloque que corresponde.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloques del profesional</b><br> • <b>Given</b> que el profesional pertenece a la especialidad seleccionada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su horario,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna sus bloques con los cupos disponibles de cada uno.<br><br> <b>Scenario 2: Bloque sin cupos</b><br> • <b>Given</b> que un bloque del profesional no tiene cupos disponibles,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta seleccionarlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo identifica como sin cupos y no permite la selección.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-40</td><td>Personal de Admisión</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Horario por Profesional</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los bloques de un profesional con sus cupos disponibles,<br> <b>Para</b> seleccionar el bloque que corresponde.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Bloques del profesional</b><br> • <b>Given</b> que el profesional pertenece a la especialidad seleccionada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta su horario,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna sus bloques con los cupos disponibles de cada uno.<br><br> <b>Scenario 2: Bloque sin cupos</b><br> • <b>Given</b> que un bloque del profesional no tiene cupos disponibles,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta seleccionarlo,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema lo identifica como sin cupos y no permite la selección.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-41: Consulta de Pacientes con Reserva en un Bloque -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-41: Consulta de Pacientes con Reserva en un Bloque**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-41</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Pacientes con Reserva en un Bloque</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los pacientes que tienen reserva en un bloque,<br> <b>Para</b> saber quiénes deben llegar y en qué estado se encuentran.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Pacientes con reserva</b><br> • <b>Given</b> que el bloque tiene reservas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la lista,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada paciente con su código de reserva, si es titular o menor con su representante, y su estado de llegada o atención.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-41</td><td>Personal de Admisión</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Pacientes con Reserva en un Bloque</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar los pacientes que tienen reserva en un bloque,<br> <b>Para</b> saber quiénes deben llegar y en qué estado se encuentran.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Pacientes con reserva</b><br> • <b>Given</b> que el bloque tiene reservas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la lista,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna cada paciente con su código de reserva, si es titular o menor con su representante, y su estado de llegada o atención.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-42: Edición de un Bloque Horario -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-42: Edición de un Bloque Horario**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-42</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Edición de un Bloque Horario</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> modificar la hora de inicio, la especialidad, el profesional o el estado de un bloque,<br> <b>Para</b> mantener la agenda alineada con la operación real.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Bloque actualizado</b><br> • <b>Given</b> que el cambio no entra en conflicto con reservas confirmadas ni con otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema guarda los nuevos datos del bloque.<br><br> <b>Scenario 2: Cambio incompatible</b><br> • <b>Given</b> que el cambio entra en conflicto con reservas confirmadas u otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que debe revisar el bloque.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-42</td><td>Personal de Admisión</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Edición de un Bloque Horario</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> modificar la hora de inicio, la especialidad, el profesional o el estado de un bloque,<br> <b>Para</b> mantener la agenda alineada con la operación real.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Bloque actualizado</b><br> • <b>Given</b> que el cambio no entra en conflicto con reservas confirmadas ni con otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema guarda los nuevos datos del bloque.<br><br> <b>Scenario 2: Cambio incompatible</b><br> • <b>Given</b> que el cambio entra en conflicto con reservas confirmadas u otro bloque del profesional,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma el cambio,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el cambio e indica que debe revisar el bloque.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-43: Registro de Llegada por Escaneo de QR -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-43: Registro de Llegada por Escaneo de QR**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-43</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Llegada por Escaneo de QR</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> registrar la llegada de un paciente escaneando el código QR de su reserva,<br> <b>Para</b> confirmar su presencia y generar su ticket de atención.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Llegada confirmada</b><br> • <b>Given</b> que el código QR corresponde a una reserva vigente y el paciente llega dentro de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la llegada, genera el ticket del paciente y lo ingresa en la cola de atención.<br><br> <b>Scenario 2: Reserva no vigente o inexistente</b><br> • <b>Given</b> que el código QR no corresponde a una reserva vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro y no ingresa al paciente en la cola.<br><br> <b>Scenario 3: Llegada fuera de la tolerancia</b><br> • <b>Given</b> que el paciente llega fuera de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e informa que el horario de la reserva no permite la llegada.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-43</td><td>Personal de Admisión</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Registro de Llegada por Escaneo de QR</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> registrar la llegada de un paciente escaneando el código QR de su reserva,<br> <b>Para</b> confirmar su presencia y generar su ticket de atención.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Llegada confirmada</b><br> • <b>Given</b> que el código QR corresponde a una reserva vigente y el paciente llega dentro de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la llegada, genera el ticket del paciente y lo ingresa en la cola de atención.<br><br> <b>Scenario 2: Reserva no vigente o inexistente</b><br> • <b>Given</b> que el código QR no corresponde a una reserva vigente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro y no ingresa al paciente en la cola.<br><br> <b>Scenario 3: Llegada fuera de la tolerancia</b><br> • <b>Given</b> que el paciente llega fuera de la tolerancia configurada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal escanea el código,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza el registro e informa que el horario de la reserva no permite la llegada.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-44: Registro de Llegada por Código Manual -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-44: Registro de Llegada por Código Manual**
 
@@ -2236,117 +2166,114 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
  <!-- US-45: Consulta de la Cola de Atención Presencial -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-45: Consulta de la Cola de Atención Presencial**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-45</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de la Cola de Atención Presencial</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cola de pacientes presentes de un consultorio,<br> <b>Para</b> conocer el orden de atención.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cola con pacientes</b><br> • <b>Given</b> que existen pacientes con llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna los pacientes ordenados por hora de llegada con su número de turno y estado.<br><br> <b>Scenario 2: Cola vacía</b><br> • <b>Given</b> que no hay llegadas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay pacientes en espera.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-45</td><td>Personal de Admisión</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Consulta de la Cola de Atención Presencial</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cola de pacientes presentes de un consultorio,<br> <b>Para</b> conocer el orden de atención.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Cola con pacientes</b><br> • <b>Given</b> que existen pacientes con llegada registrada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna los pacientes ordenados por hora de llegada con su número de turno y estado.<br><br> <b>Scenario 2: Cola vacía</b><br> • <b>Given</b> que no hay llegadas registradas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la cola,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay pacientes en espera.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-46: Llamado del Siguiente Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-46: Llamado del Siguiente Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-46</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Llamado del Siguiente Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> llamar al siguiente paciente de la cola,<br> <b>Para</b> que se dirija al consultorio dentro del plazo establecido.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Llamado registrado</b><br> • <b>Given</b> que existe un paciente en espera en primer lugar de la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal lo llama,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la hora del llamado, cambia el estado del paciente a llamado e inicia el plazo para acudir configurado.<br><br> <b>Scenario 2: Sin pacientes en espera</b><br> • <b>Given</b> que no hay pacientes en espera en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta llamar al siguiente,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no hay pacientes por llamar.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-46</td><td>Personal de Admisión</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Llamado del Siguiente Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> llamar al siguiente paciente de la cola,<br> <b>Para</b> que se dirija al consultorio dentro del plazo establecido.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Llamado registrado</b><br> • <b>Given</b> que existe un paciente en espera en primer lugar de la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal lo llama,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema registra la hora del llamado, cambia el estado del paciente a llamado e inicia el plazo para acudir configurado.<br><br> <b>Scenario 2: Sin pacientes en espera</b><br> • <b>Given</b> que no hay pacientes en espera en la cola,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta llamar al siguiente,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema informa que no hay pacientes por llamar.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-47: Inicio de Atención de un Paciente Llamado -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-47: Inicio de Atención de un Paciente Llamado**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-47</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Inicio de Atención de un Paciente Llamado</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar la atención del paciente que acudió al consultorio,<br> <b>Para</b> registrar que el paciente está siendo atendido.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Atención iniciada</b><br> • <b>Given</b> que el paciente llamado se encuentra en el consultorio dentro del plazo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención y detiene el conteo del plazo.<br><br> <b>Scenario 2: Atención iniciada con plazo vencido</b><br> • <b>Given</b> que el plazo venció pero el paciente aún no fue marcado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención.<br><br> <b>Scenario 3: Turno ya declarado ausente</b><br> • <b>Given</b> que el turno fue declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta iniciar la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa que el turno se perdió.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-47</td><td>Personal de Admisión</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Inicio de Atención de un Paciente Llamado</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> iniciar la atención del paciente que acudió al consultorio,<br> <b>Para</b> registrar que el paciente está siendo atendido.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Atención iniciada</b><br> • <b>Given</b> que el paciente llamado se encuentra en el consultorio dentro del plazo,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención y detiene el conteo del plazo.<br><br> <b>Scenario 2: Atención iniciada con plazo vencido</b><br> • <b>Given</b> que el plazo venció pero el paciente aún no fue marcado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal inicia la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado del turno a en atención.<br><br> <b>Scenario 3: Turno ya declarado ausente</b><br> • <b>Given</b> que el turno fue declarado ausente,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta iniciar la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa que el turno se perdió.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-48: Finalización de la Atención de un Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-48: Finalización de la Atención de un Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-48</td> <td>Personal de Admisión</td> <td>High</td> <td>EP4: Arrival & QR Check-in System</td> </tr> <tr> <th>Title</th> <td colspan="3">Finalización de la Atención de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> finalizar la atención de un paciente,<br> <b>Para</b> retirarlo de la cola y continuar con el siguiente.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Atención finalizada</b><br> • <b>Given</b> que el turno del paciente está en atención,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal finaliza la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a atendido, retira al paciente de la cola y habilita el llamado del siguiente.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-48</td><td>Personal de Admisión</td><td>High</td><td>EP4: Arrival &amp; QR Check-in System</td></tr><tr><th>Title</th><td colspan="3">Finalización de la Atención de un Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> finalizar la atención de un paciente,<br> <b>Para</b> retirarlo de la cola y continuar con el siguiente.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Atención finalizada</b><br> • <b>Given</b> que el turno del paciente está en atención,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal finaliza la atención,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema cambia el estado a atendido, retira al paciente de la cola y habilita el llamado del siguiente.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-49: Registro de Ausencia de un Paciente -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-49: Registro de Ausencia de un Paciente**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-49</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Registro de Ausencia de un Paciente</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> marcar como ausente a un paciente que no acudió tras ser llamado,<br> <b>Para</b> liberar su cupo según las reglas del establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Ausencia confirmada</b><br> • <b>Given</b> que el plazo posterior al llamado se cumplió sin que el paciente ingresara al consultorio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca el turno como ausente, retira al paciente de la cola y libera el cupo.<br><br> <b>Scenario 2: Plazo aún vigente</b><br> • <b>Given</b> que el plazo posterior al llamado no se cumplió,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa el tiempo restante.<br><br> <b>Scenario 3: Atención ya iniciada</b><br> • <b>Given</b> que la atención del paciente ya fue iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-49</td><td>Personal de Admisión</td><td>High</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Registro de Ausencia de un Paciente</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> marcar como ausente a un paciente que no acudió tras ser llamado,<br> <b>Para</b> liberar su cupo según las reglas del establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Ausencia confirmada</b><br> • <b>Given</b> que el plazo posterior al llamado se cumplió sin que el paciente ingresara al consultorio,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal confirma la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema marca el turno como ausente, retira al paciente de la cola y libera el cupo.<br><br> <b>Scenario 2: Plazo aún vigente</b><br> • <b>Given</b> que el plazo posterior al llamado no se cumplió,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación e informa el tiempo restante.<br><br> <b>Scenario 3: Atención ya iniciada</b><br> • <b>Given</b> que la atención del paciente ya fue iniciada,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal intenta marcar la ausencia,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la operación.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-50: Consulta de Citas Canceladas del Día -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-50: Consulta de Citas Canceladas del Día**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-50</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP2: Appointments & Booking Engine</td> </tr> <tr> <th>Title</th> <td colspan="3">Consulta de Citas Canceladas del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas canceladas del día,<br> <b>Para</b> conocer qué cupos fueron liberados.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Cancelaciones del día</b><br> • <b>Given</b> que existen cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna la especialidad, el paciente, el horario, el momento de la cancelación y el estado del cupo.<br><br> <b>Scenario 2: Sin cancelaciones</b><br> • <b>Given</b> que no hay cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas canceladas.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-50</td><td>Personal de Admisión</td><td>Medium</td><td>EP2: Appointments &amp; Booking Engine</td></tr><tr><th>Title</th><td colspan="3">Consulta de Citas Canceladas del Día</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas canceladas del día,<br> <b>Para</b> conocer qué cupos fueron liberados.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Cancelaciones del día</b><br> • <b>Given</b> que existen cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna la especialidad, el paciente, el horario, el momento de la cancelación y el estado del cupo.<br><br> <b>Scenario 2: Sin cancelaciones</b><br> • <b>Given</b> que no hay cancelaciones registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta las citas canceladas,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema indica que no hay citas canceladas.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-51: Visualización de Indicadores del Día -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-51: Visualización de Indicadores del Día**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-51</td> <td>Personal de Admisión</td> <td>High</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Indicadores del Día</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas programadas, pendientes, canceladas e inasistencias del día junto con el resumen de atención,<br> <b>Para</b> monitorear el flujo de citas e incidencias del establecimiento.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Indicadores del día</b><br> • <b>Given</b> que existen citas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, pendientes, canceladas, las inasistencias, las citas atendidas y los cupos recuperados, con su hora de actualización.<br><br> <b>Scenario 2: Día sin actividad</b><br> • <b>Given</b> que la fecha consultada no tiene citas ni incidencias,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna todos los indicadores en cero.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-51</td><td>Personal de Admisión</td><td>High</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Visualización de Indicadores del Día</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar las citas programadas, pendientes, canceladas e inasistencias del día junto con el resumen de atención,<br> <b>Para</b> monitorear el flujo de citas e incidencias del establecimiento.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Indicadores del día</b><br> • <b>Given</b> que existen citas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna las citas programadas, pendientes, canceladas, las inasistencias, las citas atendidas y los cupos recuperados, con su hora de actualización.<br><br> <b>Scenario 2: Día sin actividad</b><br> • <b>Given</b> que la fecha consultada no tiene citas ni incidencias,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta los indicadores,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna todos los indicadores en cero.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-52: Visualización de Demanda por Especialidad -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-52: Visualización de Demanda por Especialidad**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-52</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Visualización de Demanda por Especialidad</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cantidad de reservas del día por especialidad,<br> <b>Para</b> identificar las especialidades con mayor demanda.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Demanda por especialidad</b><br> • <b>Given</b> que existen reservas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la demanda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el total de reservas y las reservas de cada especialidad.<br><br>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-52</td><td>Personal de Admisión</td><td>Medium</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Visualización de Demanda por Especialidad</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> consultar la cantidad de reservas del día por especialidad,<br> <b>Para</b> identificar las especialidades con mayor demanda.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Demanda por especialidad</b><br> • <b>Given</b> que existen reservas registradas en el día,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal consulta la demanda,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema retorna el total de reservas y las reservas de cada especialidad.<br><br>
 
-</tbody> </table>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
  <!-- US-53: Exportación de Reporte Operativo -->
 
-
+<!-- pdf-pagebreak -->
 
 **US-53: Exportación de Reporte Operativo**
 
-<table> <thead style="display:table-row-group"> <tr> <th>Story ID</th> <th>User</th> <th>Priority</th> <th>Epic</th> </tr> </thead> <tbody> <tr> <td>US-53</td> <td>Personal de Admisión</td> <td>Medium</td> <td>EP5: Hospital Operations & System Configuration</td> </tr> <tr> <th>Title</th> <td colspan="3">Exportación de Reporte Operativo</td> </tr> <tr> <th colspan="4">Description</th> </tr> <tr> <td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> exportar un reporte en PDF o CSV indicando el rango de fechas y la especialidad,<br> <b>Para</b> contar con la información del periodo fuera de la aplicación.</td> </tr> <tr> <th colspan="4">Acceptance Criteria</th> </tr> <tr> <td colspan="4"> <b>Scenario 1: Reporte generado</b><br> • <b>Given</b> que el personal indica un rango de fechas válido y una especialidad o todas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la exportación en PDF o CSV,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera el archivo con reservas, atenciones, ausencias, demanda y reasignaciones del periodo.<br><br> <b>Scenario 2: Rango de fechas inválido</b><br> • <b>Given</b> que la fecha inicial es posterior a la fecha final,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal solicita la exportación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e indica corregir las fechas.<br><br>
-</tbody> </table>
+<table><thead style="display:table-row-group"><tr><th>Story ID</th><th>User</th><th>Priority</th><th>Epic</th></tr></thead><tbody><tr><td>US-53</td><td>Personal de Admisión</td><td>Medium</td><td>EP5: Hospital Operations &amp; System Configuration</td></tr><tr><th>Title</th><td colspan="3">Exportación de Reporte Operativo</td></tr><tr><th colspan="4">Description</th></tr><tr><td colspan="4"> <b>Como</b> Personal de Admisión,<br> <b>Quiero</b> exportar un reporte en PDF o CSV indicando el rango de fechas y la especialidad,<br> <b>Para</b> contar con la información del periodo fuera de la aplicación.</td></tr><tr><th colspan="4">Acceptance Criteria</th></tr><tr><td colspan="4"> <b>Scenario 1: Reporte generado</b><br> • <b>Given</b> que el personal indica un rango de fechas válido y una especialidad o todas,<br> &nbsp;&nbsp;&nbsp;<b>When</b> solicita la exportación en PDF o CSV,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema genera el archivo con reservas, atenciones, ausencias, demanda y reasignaciones del periodo.<br><br> <b>Scenario 2: Rango de fechas inválido</b><br> • <b>Given</b> que la fecha inicial es posterior a la fecha final,<br> &nbsp;&nbsp;&nbsp;<b>When</b> el personal solicita la exportación,<br> &nbsp;&nbsp;&nbsp;<b>Then</b> el sistema rechaza la solicitud e indica corregir las fechas.<br><br>
+</td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 #### Technical stories
 <!-- TECH-01: Servicio de Notificaciones Transaccionales -->
-
-
 
 
 **TECH-01: Configuración de Infraestructura y Clientes para Notificaciones (Email, SMS y FCM)**
@@ -2401,12 +2328,9 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <br>
 
 <!-- TECH-02: Endpoints API REST y OpenAPI -->
-
-
 
 
 **TECH-02: Desarrollo de Endpoints RESTful API con Especificación OpenAPI y Seguridad RBAC**
@@ -2465,12 +2389,9 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <br>
 
 <!-- TECH-03: Cron Jobs para Control de Tolerancia -->
-
-
 
 
 **TECH-03: Desarrollo de Cron Jobs en Segundo Plano para Auditoría y Control de Ausencias**
@@ -2529,12 +2450,9 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <br>
 
 <!-- TECH-04: Consumidor Asíncrono de Notificaciones -->
-
-
 
 
 **TECH-04: Desarrollo de Consumidor Asíncrono de Eventos de Notificaciones de Citas**
@@ -2589,12 +2507,9 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 <br>
 
 <!-- TECH-05: Endpoint de Integración API DNI -->
-
-
 
 
 **TECH-05: Desarrollo del Endpoint API REST para Consulta y Validación de DNI Externa**
@@ -2654,6 +2569,8 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 
 
 ---
+<!-- pdf-pagebreak -->
+
 
 ### 2.4.2. Impact Mapping
 
@@ -2663,7 +2580,7 @@ Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisi
 
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de `bookingOrder`, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional, como se observa en la [Figura 35](#figura-35).
 
-
+<!-- pdf-pagebreak -->
 
 
 
@@ -2678,7 +2595,6 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 
 ### 2.4.3. Product Backlog
@@ -2688,8 +2604,9 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 #### Tabla del Product Backlog
 
 
-
 El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 22](#tabla-22).
+
+<!-- pdf-pagebreak -->
 
 <a id="tabla-22"></a>
 
@@ -2762,8 +2679,7 @@ El backlog ordena las historias de usuario por prioridad e identifica su rol, al
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
-
+/s
 ## 2.5. Strategic-Level Domain-Driven Design
 
 ### 2.5.1. EventStorming
@@ -2775,9 +2691,6 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 **Pasos del proceso:**
 
 **1. Identificación de los Domain Events:** En la primera fase, se identificaron los eventos clave que ocurren dentro del dominio (por ejemplo, "Appointment booked", "Slot released", "Check-in completed"). Estos se colocaron en secuencia sobre una línea de tiempo para visualizar el flujo del negocio. En esta fase se incorporaron los eventos `Booking Order assigned`, `Patient in attendance queue` y `Patient called`, que reflejan la existencia de dos colas complementarias dentro del dominio: la **cola por pedido de cita** (ordenada por `Booking Order`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
-
-
-
 
 
 <a id="figura-36"></a>
@@ -2793,10 +2706,8 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **2. Organización cronológica de los eventos:** Luego, los eventos fueron ordenados según el momento en que ocurren dentro del proceso real de atención, permitiendo entender la secuencia lógica de las operaciones desde la pre-atención hasta el cierre de la consulta. En esta línea de tiempo se distingue que el evento `Booking Order assigned` ocurre inmediatamente después de `Appointment booked`, mientras que `Patient in attendance queue` y `Patient called` ocurren después de `Check-in completed`, evidenciando que ambas colas operan en momentos distintos del flujo, como se observa en la [Figura 36](#figura-36).
-
-
+<!-- pdf-pagebreak -->
 
 
 
@@ -2813,11 +2724,7 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **3. Identificación de Pain Points y Pivotal Points:** En esta etapa se marcaron los **pain points**, es decir, las posibles dificultades o cuellos de botella del proceso actual, y los **pivotal points**, que representan los eventos más críticos o de cambio dentro del flujo. Se identificaron como puntos críticos la **asignación del `Booking Order`** (que determina la prioridad en la lista de espera) y el **waitlist timeout** (que define el paso al siguiente paciente cuando nadie responde una propuesta de cupo liberado). Asimismo, se incorporaron como read models la **attendance queue** y la **waitlist**, como se observa en la [Figura 37](#figura-37).
-
-
-
 
 
 <a id="figura-38"></a>
@@ -2826,18 +2733,14 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 
 *EventStorming - Pain Points y Pivotal Points*
 
-<p align="center">
-  <img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="90%"/>
-</p>
+<div align="center">
+<img src="assets/PaintPints-PivotalPoints.png" alt="EventStorming - Pain Points y Pivotal Points" width="85%"/>
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **4. Incorporación de Commands, Policies y Read Models:** Finalmente, se agregaron los **commands** (acciones que disparan eventos), las **policies** (reglas de negocio que responden a eventos) y los **read models** (consultas de información). Esto permitió obtener una visión más completa y técnica del dominio de SaludYa. En esta fase se incorporaron los commands `Assign Booking Order`, `Add to attendance queue` y `Call next patient`; las policies `When a slot is released, notify the patient with the lowest Booking Order`, `When the timeout expires, move to the next patient in the list` y `If cancelled within the allowed time, release the slot`; y los read models `Attendance Queue` y `Waitlist`, como se observa en la [Figura 38](#figura-38) y la [Figura 39](#figura-39).
-
-
-
 
 
 <a id="figura-39"></a>
@@ -2853,8 +2756,6 @@ La sesión se realizó con una duración aproximada de **2 horas**, con la parti
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
 #### 2.5.1.1. Candidate Context Discovery
 
 A partir del modelado realizado en el EventStorming, se llevó a cabo una sesión de Candidate Context Discovery con el objetivo de identificar los bounded contexts dentro del dominio de SaludYa. Para ello, se aplicó la técnica **"look-for-pivotal-events"**, que permitió detectar los eventos clave del negocio que marcan transiciones de estado y delimitan responsabilidades entre diferentes partes del proceso.
@@ -2864,9 +2765,6 @@ Durante la sesión, se reorganizó la línea de tiempo del EventStorming para ag
 Es importante precisar que **`Attendance Queue` no constituye un bounded context**, sino un **agregado dentro del bounded context `Arrival & QR Check-in`**. Su responsabilidad se limita a ordenar la atención presencial del día según el timestamp de check-in, y su ciclo de vida es efímero (por día y por franja horaria). De manera análoga, **`Booking Order` no constituye un bounded context**, sino un **atributo de `Appointment` dentro del bounded context `Appointments & Booking`**, cuyo propósito es determinar la prioridad de reasignación en la lista de espera dinámica. Un bounded context se justifica únicamente cuando existe lenguaje propio, reglas de negocio complejas y autonomía de modelo; ninguna de las dos colas cumple esas condiciones por separado.
 
 Como resultado del proceso, se identificaron **cinco bounded contexts candidatos** para el dominio de SaludYa:
-
-
-
 
 
 <a id="tabla-23"></a>
@@ -2895,7 +2793,6 @@ A continuación se detalla, para cada bounded context, los elementos incorporado
 - **`Hospital Operations & Configuration`:** se incorpora el parámetro `waitlistResponseTimeout` (y opcionalmente `cascadeWaitlistEnabled` y `maxCapacityPerSlot`) como parte de las reglas operativas configurables por el establecimiento.
 
 
-
 La identificación de bounded contexts delimita las responsabilidades de identidad, reservas, reasignación, llegada y configuración operativa dentro del dominio de SaludYa, como se observa en la [Figura 40](#figura-40).
 
 <a id="figura-40"></a>
@@ -2911,38 +2808,39 @@ La identificación de bounded contexts delimita las responsabilidades de identid
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
 #### 2.5.1.2. Domain Message Flows Modeling
 
 En esta sección se presentan los principales flujos de colaboración entre los bounded contexts, modelados con la técnica de **Domain Message Flow Modelling** propuesta por ddd-crew. Cada diagrama muestra los comandos, eventos y queries que fluyen entre actores, bounded contexts y sistemas para un escenario específico, incluyendo el nombre del mensaje, su orden y los datos que transporta.
 
 Los flujos reflejan las dos colas complementarias del dominio: la **cola por pedido de cita** (ordenada por `bookingOrder`) y la **cola de asistencia** (ordenada por `checkInTimestamp`).
-
+<!-- pdf-pagebreak -->
 **Flow 1: Registro y autenticación de paciente**
 
 ![Flow 1](assets/flow-01-registration.png)
 
 El paciente ejecuta `RegisterPatient`; **Identity & Access Management** valida la identidad con `ValidateIdentity` contra **ApiPeru.dev** (ACL hacia RENIEC) y responde con `IdentityVerified` → `AccountCreated`. Luego `Login` → `SessionStarted`, y `LinkMinor` → `MinorLinked`.
-
+<!-- pdf-pagebreak -->
 **Flow 2: Reserva de cita médica para el titular**
 
 ![Flow 2](assets/flow-02-booking-titular.png)
 
 El paciente ejecuta `BookAppointment`; **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `AssignBookingOrder` y emite `AppointmentBooked`. Finalmente notifica al paciente vía `SendConfirmationEmail` → `EmailSent`.
-
+<!-- pdf-pagebreak -->
 **Flow 3: Reserva de cita médica para un menor a cargo**
 
 ![Flow 3](assets/flow-03-booking-menor.png)
 
 El titular ejecuta `GetLinkedMinors` (IAM) → `MinorRetrieved`, y luego `BookAppointmentForMinor` con el `minorId`. **Appointments & Booking** valida con `VerifySlotAvailability` → `SlotAvailable`, asigna el `bookingOrder` y emite `AppointmentBooked`, notificando al tutor.
 
+<!-- pdf-pagebreak -->
+
 **Flow 4: Check-in presencial mediante código QR**
+
 
 ![Flow 4](assets/flow-04-checkin-qr.png)
 
 El paciente ejecuta `ScanQRCode`; **Arrival & QR Check-in** valida con `ValidateQRTolerance` → `ToleranceValid`, crea la entrada con `CreateQueueEntry`, calcula la posición (`PositionCalculated`) y emite `CheckInCompleted` y `TicketIssued`.
-
+<!-- pdf-pagebreak -->
 **Flow 5: Cancelación de cita y liberación de cupo**
 
 ![Flow 5](assets/flow-05-cancelacion.png)
@@ -2963,6 +2861,9 @@ El personal de admisión ejecuta `CallPatient`; **Arrival & QR Check-in** valida
 
 **Reassignment** ejecuta `FindNextCandidate` en **Appointments & Booking** → `CandidateFound`, envía `ReassignmentOfferSent` al paciente, quien responde con `ReassignmentOfferAccepted`. **Reassignment** ejecuta `ReassignAppointment` y `ReleaseOriginalSlot` para liberar el slot del candidato y re-ofrecerlo al siguiente (cadena). Si el candidato acepta y no llega, se emite `ReassignmentOfferNoShow`.
 
+<!-- pdf-pagebreak -->
+
+
 **Flow 7: Configuración operativa del establecimiento**
 
 ![Flow 7](assets/flow-07-configuracion.png)
@@ -2982,7 +2883,9 @@ En cada uno de los canvases registramos las secciones específicas como el **Con
 
 El bounded context **Identity & Access Management** gestiona el registro, autenticación, vinculación de menores y gestión de roles de los usuarios en SaludYa. Se clasifica como *Generic* con rol *Execution Context*, e interactúa principalmente con `Patient`, `Super Admin` y el servicio externo **ApiPeru.dev** (Anticorruption Layer hacia RENIEC) para la validación de identidad.
 
-![Bounded Context Canvas – Identity & Access Management](assets/bounded-context-canvas-01-iam.png)
+<div align="left">
+<img alt="Bounded Context Canvas – Identity &amp; Access Management" src="assets/bounded-context-canvas-01-iam.png" width="75%">
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -2990,15 +2893,20 @@ El bounded context **Identity & Access Management** gestiona el registro, autent
 
 El bounded context **Appointments & Booking** gestiona la búsqueda de disponibilidad, reserva y cancelación de citas médicas. Se clasifica como *Core* con rol *Execution Context*, e incorpora el atributo `Booking Order`, que asigna un número secuencial a cada cita reservada y determina la prioridad en la cola de reserva consumida por `Reassignment`.
 
-![Bounded Context Canvas – Appointments & Booking](assets/bounded-context-canvas-02-appointments.png)
+<div align="left">
+<img alt="Bounded Context Canvas – Appointments &amp; Booking" src="assets/bounded-context-canvas-02-appointments.png" width="75%">
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+<!-- pdf-pagebreak -->
 
 **Bounded Context Canvas – Reassignment**
 
 El bounded context **Reassignment** gestiona la cola de reserva del sistema y reasigna los cupos liberados por **ausencias**, notificando oportunidades de adelanto a los pacientes. Se clasifica como *Core* con rol *Execution Context*, y aplica una **cadena de reasignación** en la que el candidato que acepta libera su slot original, el cual se re-ofrece al siguiente paciente de la cola.
 
-![Bounded Context Canvas – Reassignment](assets/bounded-context-canvas-03-reassignment.png)
+<div align="left">
+<img alt="Bounded Context Canvas – Reassignment" src="assets/bounded-context-canvas-03-reassignment.png" width="75%">
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -3006,7 +2914,9 @@ El bounded context **Reassignment** gestiona la cola de reserva del sistema y re
 
 El bounded context **Arrival & QR Check-in** valida la presencia presencial del paciente mediante el escaneo de un código QR, gestiona la `Attendance Queue` (cola virtual ordenada por `checkInTimestamp`), emite el ticket digital y declara la ausencia del paciente cuando excede la tolerancia configurada. Se clasifica como *Core* con rol *Execution Context*.
 
-![Bounded Context Canvas – Arrival & QR Check-in](assets/bounded-context-canvas-04-arrival.png)
+<div align="left">
+<img alt="Bounded Context Canvas – Arrival &amp; QR Check-in" src="assets/bounded-context-canvas-04-arrival.png" width="75%">
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -3014,7 +2924,9 @@ El bounded context **Arrival & QR Check-in** valida la presencia presencial del 
 
 El bounded context **Hospital Operations & Configuration** configura los parámetros operativos de cada establecimiento de salud (intervalos de atención, tolerancias, plazos de cancelación, `reassignmentResponseTimeoutMin`, `maxCapacityPerSlot`) y proporciona dashboards y reportes para monitorear la operación diaria, el ausentismo y la demanda. Se clasifica como *Supporting* con rol *Execution Context*.
 
-![Bounded Context Canvas – Hospital Operations & Configuration](assets/bounded-context-canvas-05-hospital-ops.png)
+<div align="left">
+<img alt="Bounded Context Canvas – Hospital Operations &amp; Configuration" src="assets/bounded-context-canvas-05-hospital-ops.png" width="75%">
+</div>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
@@ -3054,9 +2966,6 @@ Durante la elaboración de los context maps, el equipo se planteó las siguiente
 A partir del análisis, se definieron los siguientes patrones de relación entre los bounded contexts de SaludYa, como se detalla en la [Tabla 24](#tabla-24):
 
 
-
-
-
 <a id="tabla-24"></a>
 
 **Tabla 24**
@@ -3080,9 +2989,6 @@ A partir del análisis, se definieron los siguientes patrones de relación entre
 **Mensajes intercambiados entre bounded contexts**
 
 A continuación se detallan los mensajes que se intercambian entre los bounded contexts, reflejando la existencia de las dos colas complementarias del dominio, como se detalla en la [Tabla 25](#tabla-25):
-
-
-
 
 
 <a id="tabla-25"></a>
@@ -3115,7 +3021,6 @@ A continuación se detallan los mensajes que se intercambian entre los bounded c
 - **C/S (Customer/Supplier):** Relación donde el supplier publica y el customer consume.
 
 
-
 El mapa de contextos relaciona las áreas del dominio y sus dependencias para explicar cómo colaboran los componentes de SaludYa, como se observa en la [Figura 41](#figura-41).
 
 <a id="figura-41"></a>
@@ -3129,8 +3034,6 @@ El mapa de contextos relaciona las áreas del dominio y sus dependencias para ex
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
 ### 2.5.3. Software Architecture
 
 #### 2.5.3.1. Software Architecture Context Level Diagrams
@@ -3139,9 +3042,7 @@ En el Software Architecture Context Diagram se pueden apreciar los componentes m
 
 El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pacientes** que reservan y gestionan citas médicas, el **personal de admisión** que controla el flujo de atención en el establecimiento, y el **Super Admin** que configura los parámetros operativos del sistema. Asimismo, el sistema se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto, como se observa en la [Figura 42](#figura-42).
 
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-42"></a>
 
@@ -3152,7 +3053,6 @@ El sistema SaludYa interactúa con tres tipos de usuarios principales: los **pac
 ![ContextSys](assets/ContextDiagram.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
@@ -3166,9 +3066,6 @@ El Backend API orquesta internamente la lógica de los cinco bounded contexts de
 El Backend API se integra con cuatro servicios externos: **RENIEC API** para la validación de identidad por DNI, **Firebase Cloud Messaging** para el envío de notificaciones push, un **Servicio de Correo** para notificaciones transaccionales, y una **Pasarela SMS** para el envío de mensajes de texto a los pacientes que no cuentan con smartphone, como se observa en la [Figura 43](#figura-43).
 
 
-
-
-
 <a id="figura-43"></a>
 
 **Figura 43**
@@ -3180,8 +3077,6 @@ El Backend API se integra con cuatro servicios externos: **RENIEC API** para la 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
 En el Software Architecture Deployment Diagram se muestra la distribución física de los contenedores del sistema SaludYa sobre la infraestructura tecnológica que los aloja. Este diagrama permite visualizar cómo se despliegan las aplicaciones móviles, los servicios del backend y los componentes de infraestructura en los diferentes nodos del sistema.
@@ -3189,9 +3084,6 @@ En el Software Architecture Deployment Diagram se muestra la distribución físi
 El despliegue de SaludYa se distribuye en tres entornos principales. En primer lugar, las **aplicaciones móviles** se ejecutan directamente en los dispositivos de los usuarios: la app del paciente en smartphones Android/iOS, y la app del personal de admisión en smartphones o tablets del establecimiento. En segundo lugar, el **backend del sistema** se despliega en una infraestructura cloud (AWS o GCP) compuesta por un servidor de aplicaciones con contenedores Docker que alojan el API Gateway, el Backend API y los Cron Jobs y un servidor de base de datos PostgreSQL. Finalmente, el sistema se integra con **servicios externos** como RENIEC API para la validación de identidad, Firebase Cloud Messaging para notificaciones push, el servicio de correo SMTP para notificaciones transaccionales, y una pasarela SMS.
 
 Esta arquitectura de despliegue permite escalar horizontalmente los servicios del backend según la demanda, mantener la comunicación asíncrona entre bounded contexts mediante el message broker, y garantizar la disponibilidad de los servicios críticos mediante la infraestructura cloud, como se observa en la [Figura 44](#figura-44).
-
-
-
 
 
 <a id="figura-44"></a>
@@ -3203,7 +3095,6 @@ Esta arquitectura de despliegue permite escalar horizontalmente los servicios de
 ![DeploymentSys](assets/DeploymentDiagram.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ## 2.6. Tactical-Level Domain-Driven Design
@@ -3586,9 +3477,6 @@ Publica eventos de dominio usando Spring Events.
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-
-
-
 <a id="figura-45"></a>
 
 **Figura 45**
@@ -3600,16 +3488,12 @@ Publica eventos de dominio usando Spring Events.
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de componentes del bounded context Identity & Access Management muestra la organización interna del Backend API en sus cuatro capas: Interface, Application, Domain e Infrastructure. Se aprecian los controladores REST, los servicios de aplicación, los aggregates del dominio, las interfaces de repositorio y los adapters de infraestructura, junto con sus dependencias y la comunicación con la base de datos PostgreSQL y los servicios externos, como se observa en la [Figura 45](#figura-45).
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-
 
 
 <a id="figura-46"></a>
@@ -3623,14 +3507,10 @@ El diagrama de componentes del bounded context Identity & Access Management mues
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de clases del dominio del bounded context Identity & Access Management representa los aggregates, entities, value objects, enums, factory e interfaces de repositorio que encapsulan las reglas de negocio de identidad. Se muestran las relaciones entre UserAccount, Patient y PatientMinor, junto con los value objects Email, Dni y PasswordHash, el enum Role y la factory UserAccountFactory, como se observa en la [Figura 46](#figura-46).
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
-
-
-
 
 
 <a id="figura-47"></a>
@@ -3642,7 +3522,6 @@ El diagrama de clases del dominio del bounded context Identity & Access Manageme
 <img src="assets/iam_database_diagram.png" alt="Diagrama de base de datos — IAM" width="85%"/>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ---
@@ -4072,9 +3951,6 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-
-
-
 <a id="figura-48"></a>
 
 **Figura 48**
@@ -4086,16 +3962,12 @@ Requiere un ACL hacia el bounded context `Identity & Access Management` para obt
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de componentes del bounded context Appointments & Booking muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores exponen los endpoints REST para reservar, cancelar, consultar disponibilidad, gestionar bloques horarios y explorar el catálogo médico. En la Application Layer, los Command Services y Query Services orquestan los casos de uso. En la Domain Layer, los aggregates Appointment y TimeSlot encapsulan las reglas de negocio, junto con los aggregates Doctor y Specialty y los domain events. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA y la publicación de eventos de dominio con `ApplicationEventPublisher` de Spring, como se observa en la [Figura 48](#figura-48).
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-
 
 
 <a id="figura-49"></a>
@@ -4109,14 +3981,12 @@ El diagrama de componentes del bounded context Appointments & Booking muestra la
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de clases del dominio del bounded context Appointments & Booking representa los aggregates, value objects, enums, domain events e interfaces de repositorio que encapsulan las reglas de negocio de reserva de citas. Se muestran las relaciones entre Appointment, TimeSlot, Doctor y Specialty, junto con el value object BookingOrder, los enums AppointmentStatus y TimeSlotStatus, los domain events y los repositorios, como se observa en la [Figura 49](#figura-49).
 
+<!-- pdf-pagebreak -->
+
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
-
-
-
 
 
 <a id="figura-50"></a>
@@ -4128,7 +3998,6 @@ El diagrama de clases del dominio del bounded context Appointments & Booking rep
 <img src="assets/appointment_database_diagram.png" alt="Diagrama de base de datos — Appointment" width="85%"/>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ---
@@ -4171,6 +4040,9 @@ Representa una oferta de reasignación enviada a un candidato de la cola de rese
 
 **Propósito:**
 Define los estados del ciclo de vida de una oferta de reasignación.
+
+<!-- pdf-pagebreak -->
+
 
 ---
 
@@ -4332,12 +4204,11 @@ Ejecuta periódicamente dos tareas: (1) expira las ofertas `PENDING` cuya ventan
 Envía notificaciones de ofertas de reasignación al paciente (pendiente de implementación; se integrará consumiendo los domain events).
 **Tecnología:** SMTP + Firebase Cloud Messaging
 
+<!-- pdf-pagebreak -->
+
 ---
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-
-
 
 
 <a id="figura-51"></a>
@@ -4351,16 +4222,15 @@ Envía notificaciones de ofertas de reasignación al paciente (pendiente de impl
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de componentes del bounded context Reassignment muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ReassignmentOffersController expone los endpoints REST para aceptar o rechazar ofertas, y el PatientAbsentEventConsumer escucha el evento de ausencia de Arrival. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que hacen avanzar la cadena de reasignación y los ACLs (AppointmentLookupService y HospitalConfigurationService). En la Domain Layer, el aggregate ReassignmentOffer encapsula las reglas de negocio, junto con el enum ReassignmentStatus, los domain events y la interfaz ReassignmentOfferRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (ReassignmentOfferRepositoryImpl) y la expiración automática de ofertas (ReassignmentExpirationScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 51](#figura-51).
+
+<!-- pdf-pagebreak -->
+
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-
 
 
 <a id="figura-52"></a>
@@ -4374,14 +4244,10 @@ El diagrama de componentes del bounded context Reassignment muestra la organizac
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de clases del dominio del bounded context Reassignment representa el aggregate root ReassignmentOffer que encapsula el estado de la oferta, junto con el enum ReassignmentStatus que define los estados posibles (PENDING, ACCEPTED, REJECTED, EXPIRED, ATTENDED, ABSENT). Se muestran los seis Domain Events (records) que publica el aggregate (ReassignmentOfferSentEvent, ReassignmentOfferAcceptedEvent, ReassignmentOfferRejectedEvent, ReassignmentOfferExpiredEvent, ReassignmentOfferAttendedEvent, ReassignmentOfferNoShowEvent) y la interfaz ReassignmentOfferRepository, como se observa en la [Figura 52](#figura-52).
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
-
-
-
 
 
 <a id="figura-53"></a>
@@ -4393,7 +4259,6 @@ El diagrama de clases del dominio del bounded context Reassignment representa el
 <img src="assets/reassignment_database_diagram.png" alt="Diagrama de base de datos — Reassignment" width="85%"/>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ---
@@ -4827,9 +4692,6 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-
-
-
 <a id="figura-54"></a>
 
 **Figura 54**
@@ -4841,16 +4703,13 @@ Ejecuta periódicamente `detectAbsences` para detectar ausencias automáticament
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de componentes del bounded context Arrival & QR Check-in muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, los controladores CheckInsController, AttendanceQueuesController y QueueEntriesController exponen los endpoints REST para validar el QR, registrar el check-in y gestionar la cola de asistencia. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con los Event Handlers que reaccionan a los eventos de check-in completado y paciente llamado. En la Domain Layer, los aggregates CheckIn y AttendanceQueue encapsulan las reglas de negocio, junto con el QueueDomainService (que calcula la posición y valida la tolerancia) y las interfaces de repositorio. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (CheckInRepositoryImpl, AttendanceQueueRepositoryImpl, QueueEntryRepositoryImpl, HospitalConfigurationRepositoryImpl), la validación del QR firmado por el backend (JwtQRValidator), la generación del ticket digital (TicketGenerationAdapter), el envío de notificaciones (NotificationAdapter), la publicación de eventos con Spring Events (SpringEventPublisherImpl) y la detección automática de ausencias (AbsenceDetectionScheduler). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 54](#figura-54).
+<!-- pdf-pagebreak -->
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-
 
 
 <a id="figura-55"></a>
@@ -4864,14 +4723,11 @@ El diagrama de componentes del bounded context Arrival & QR Check-in muestra la 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ---
 El diagrama de clases del dominio del bounded context Arrival & QR Check-in representa los aggregates root CheckIn y AttendanceQueue, junto con la entity QueueEntry y el value object QueuePosition. Se muestran los enums CheckInStatus, AttendanceQueueStatus y QueueEntryStatus que definen los estados posibles de cada componente, la factory CheckInFactory que encapsula la creación de check-ins, el QueueDomainService que encapsula el cálculo de posición y la validación de la ventana de tolerancia, y las interfaces CheckInRepository, AttendanceQueueRepository, QueueEntryRepository y EventPublisher que definen los contratos de persistencia y publicación de eventos. Se muestran también los tres Domain Events que publica el aggregate: CheckInCompletedEvent, PatientCalledEvent y PatientAbsentEvent, como se observa en la [Figura 55](#figura-55).
+<!-- pdf-pagebreak -->
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
-
-
-
 
 
 <a id="figura-56"></a>
@@ -4883,7 +4739,6 @@ El diagrama de clases del dominio del bounded context Arrival & QR Check-in repr
 <img src="assets/arrival_database_diagram.png" alt="Diagrama de base de datos — Arrival" width="85%"/>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ---
@@ -5045,9 +4900,6 @@ Publica eventos de dominio usando Spring Events.
 #### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
 
 
-
-
-
 <a id="figura-57"></a>
 
 **Figura 57**
@@ -5059,15 +4911,14 @@ Publica eventos de dominio usando Spring Events.
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El diagrama de componentes del bounded context Hospital Operations & Configuration muestra la organización interna del Backend API en sus cuatro capas. En la Interface Layer, el ConfigurationController expone los endpoints REST para consultar y actualizar la configuración, generar reportes y visualizar el dashboard. En la Application Layer, los Command Services y Query Services orquestan los casos de uso, junto con el ConfigurationUpdatedEventHandler que reacciona a los cambios de configuración. En la Domain Layer, el aggregate HospitalConfiguration encapsula las reglas operativas del establecimiento, junto con la interfaz HospitalConfigurationRepository. En la Infrastructure Layer, los adapters implementan la persistencia con Spring Data JPA (HospitalConfigurationRepositoryImpl), la generación de reportes (ReportGeneratorAdapter) y la publicación de eventos con Spring Events (SpringEventPublisherImpl). La comunicación con la base de datos PostgreSQL se realiza mediante JDBC/JPA, como se observa en la [Figura 57](#figura-57).
+
+<!-- pdf-pagebreak -->
+
 
 #### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
-
-
-
 
 
 <a id="figura-58"></a>
@@ -5081,13 +4932,9 @@ El diagrama de componentes del bounded context Hospital Operations & Configurati
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El diagrama de clases del dominio del bounded context Hospital Operations & Configuration representa el aggregate root HospitalConfiguration que encapsula los parámetros operativos del establecimiento, junto con el enum BookingOrderScope que define el alcance del bookingOrder, la interfaz HospitalConfigurationRepository que define el contrato de persistencia y la interfaz EventPublisher que define el contrato para publicar eventos de dominio, como se observa en la [Figura 58](#figura-58).
 
 ##### 2.6.5.6.2. Bounded Context Database Design Diagram
-
-
-
 
 
 <a id="figura-59"></a>
@@ -5099,7 +4946,6 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 <img src="assets/HospitalOperations_Configuration_database_diagram.png" alt="Diagrama de base de datos — Hospital Operations &amp; Configuration" width="85%"/>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 59](#figura-59).
@@ -5121,9 +4967,6 @@ Las decisiones aquí documentadas se sustentan en los principios de diseño incl
 ##### Branding
 
 La identidad de marca de SaludYa se construye sobre los siguientes elementos:
-
-
-
 
 
 <a id="tabla-26"></a>
@@ -5155,9 +4998,7 @@ La tipografía seleccionada prioriza la legibilidad en pantallas de distintos ta
 
 ###### Landing Page (web)
 
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="tabla-27"></a>
 
@@ -5185,9 +5026,6 @@ La elección de fuentes del sistema (Segoe UI, Helvetica Neue, Arial) responde a
 ###### Aplicaciones móviles (Android)
 
 
-
-
-
 <a id="tabla-28"></a>
 
 **Tabla 28**
@@ -5212,7 +5050,6 @@ En las aplicaciones móviles se utiliza la familia **Inter** con `letter-spacing
 La paleta de colores de SaludYa se inspira en el sector salud, utilizando tonos verdes que transmiten confianza, bienestar y cercanía, complementados con un acento amarillo para elementos de foco y llamadas de atención.
 
 ###### Landing Page (web)
-
 
 
 La paleta establece los colores de marca y los tonos utilizados en fondos, textos y estados de los componentes; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 29](#tabla-29).
@@ -5255,9 +5092,6 @@ La paleta establece los colores de marca y los tonos utilizados en fondos, texto
 ###### Aplicaciones móviles (Android)
 
 
-
-
-
 <a id="tabla-30"></a>
 
 **Tabla 30**
@@ -5291,9 +5125,6 @@ Los colores fueron seleccionados para cumplir con el nivel de contraste **WCAG A
 Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, aplicada a márgenes, padding y separación entre elementos en el Landing Page, como se detalla en la [Tabla 31](#tabla-31).
 
 
-
-
-
 <a id="tabla-31"></a>
 
 **Tabla 31**
@@ -5314,9 +5145,6 @@ Se define una escala de espaciado consistente basada en múltiplos de 0.25rem, a
 
 
 ###### Aplicaciones móviles (Android)
-
-
-
 
 
 <a id="tabla-32"></a>
@@ -5345,7 +5173,6 @@ Los valores en **dp** (density-independent pixels) provienen directamente de los
 ###### Landing Page (web)
 
 
-
 Los radios de esquina mantienen una forma consistente en botones, tarjetas y otros contenedores de la interfaz; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 33](#tabla-33).
 
 <a id="tabla-33"></a>
@@ -5365,9 +5192,6 @@ Los radios de esquina mantienen una forma consistente en botones, tarjetas y otr
 
 
 ###### Aplicaciones móviles (Android)
-
-
-
 
 
 <a id="tabla-34"></a>
@@ -5390,7 +5214,6 @@ En las aplicaciones móviles los contenedores principales utilizan un radio supe
 ##### Shadows
 
 ###### Landing Page (web)
-
 
 
 Las sombras distinguen las superficies y refuerzan la jerarquía visual de tarjetas y elementos elevados; estos criterios se aplican a landing page (web), como se detalla en la [Tabla 35](#tabla-35).
@@ -5421,9 +5244,6 @@ Las aplicaciones móviles **no emplean sombras** en su diseño actual. La jerarq
 El tono de comunicación de SaludYa se define a partir de cuatro dimensiones:
 
 
-
-
-
 <a id="tabla-36"></a>
 
 **Tabla 36**
@@ -5446,9 +5266,6 @@ El lenguaje empleado en el Landing Page y las aplicaciones evita tecnicismos inn
 ##### Iconography
 
 Se utiliza la librería **Font Awesome 6.5.2** para la iconografía del Landing Page, seleccionando iconos universales y reconocibles, como se detalla en la [Tabla 37](#tabla-37):
-
-
-
 
 
 <a id="tabla-37"></a>
@@ -5488,7 +5305,6 @@ La organización del contenido en SaludYa combina distintos sistemas según el t
 ##### Landing Page
 
 
-
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a landing page, como se detalla en la [Tabla 38](#tabla-38).
 
 <a id="tabla-38"></a>
@@ -5517,7 +5333,6 @@ La organización de las secciones agrupa la información según las tareas del u
 ##### Aplicación móvil para pacientes
 
 
-
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 39](#tabla-39).
 
 <a id="tabla-39"></a>
@@ -5542,8 +5357,8 @@ La organización de las secciones agrupa la información según las tareas del u
 ##### Aplicación móvil para personal de salud
 
 
-
 La organización de las secciones agrupa la información según las tareas del usuario y define la jerarquía de acceso a cada función; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 40](#tabla-40).
+<!-- pdf-pagebreak -->
 
 <a id="tabla-40"></a>
 
@@ -5581,7 +5396,6 @@ Las etiquetas de SaludYa buscan ser simples, claras y libres de ambigüedad, emp
 ##### Landing Page
 
 
-
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a landing page, como se detalla en la [Tabla 41](#tabla-41).
 
 <a id="tabla-41"></a>
@@ -5608,7 +5422,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 ##### Aplicación móvil para pacientes
 
 
-
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 42](#tabla-42).
 
 <a id="tabla-42"></a>
@@ -5632,7 +5445,6 @@ Las etiquetas permiten reconocer las secciones y acciones mediante nombres que e
 
 
 ##### Aplicación móvil para personal de salud
-
 
 
 Las etiquetas permiten reconocer las secciones y acciones mediante nombres que expresan su función dentro de la aplicación; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 43](#tabla-43).
@@ -5672,7 +5484,6 @@ Los SEO Tags y Meta Tags del Landing Page se definen en el `<head>` del document
 ##### Landing Page
 
 
-
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a landing page, como se detalla en la [Tabla 44](#tabla-44).
 
 <a id="tabla-44"></a>
@@ -5705,8 +5516,8 @@ Los títulos, las descripciones y los metadatos identifican SaludYa y describen 
 ##### ASO (App Store Optimization)
 
 
-
 Los títulos, las descripciones y los metadatos identifican SaludYa y describen su propuesta de valor en buscadores y tiendas de aplicaciones; estos criterios se aplican a aso (app store optimization), como se detalla en la [Tabla 45](#tabla-45).
+<!-- pdf-pagebreak -->
 
 <a id="tabla-45"></a>
 
@@ -5732,7 +5543,6 @@ Los sistemas de búsqueda de SaludYa están diseñados para evitar que el usuari
 ##### Landing Page
 
 
-
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a landing page, como se detalla en la [Tabla 46](#tabla-46).
 
 <a id="tabla-46"></a>
@@ -5752,7 +5562,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 ##### Aplicación móvil para pacientes
-
 
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 47](#tabla-47).
@@ -5775,7 +5584,6 @@ Las opciones de búsqueda relacionan las consultas del usuario con los filtros d
 
 
 ##### Aplicación móvil para personal de salud
-
 
 
 Las opciones de búsqueda relacionan las consultas del usuario con los filtros disponibles y los resultados que ofrece cada sección; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 48](#tabla-48).
@@ -5808,7 +5616,6 @@ Los sistemas de navegación de SaludYa guían al usuario a través del Landing P
 ##### Landing Page
 
 
-
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a landing page, como se detalla en la [Tabla 49](#tabla-49).
 
 <a id="tabla-49"></a>
@@ -5833,8 +5640,8 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 ##### Aplicación móvil para pacientes
 
 
-
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para pacientes, como se detalla en la [Tabla 50](#tabla-50).
+<!-- pdf-pagebreak -->
 
 <a id="tabla-50"></a>
 
@@ -5854,7 +5661,6 @@ La navegación conecta las secciones mediante accesos, menús y recorridos que p
 
 
 ##### Aplicación móvil para personal de salud
-
 
 
 La navegación conecta las secciones mediante accesos, menús y recorridos que permiten completar las tareas del usuario; estos criterios se aplican a aplicación móvil para personal de salud, como se detalla en la [Tabla 51](#tabla-51).
@@ -5911,7 +5717,6 @@ La estructura del Landing Page se organizó en diez secciones principales, sigui
 ##### Wireframe Desktop Web Browser
 
 
-
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 52](#tabla-52).
 
 <a id="tabla-52"></a>
@@ -5927,10 +5732,7 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-
-
+<!-- pdf-pagebreak -->
 
 
 <a id="figura-61"></a>
@@ -5944,10 +5746,10 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
-
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 61](#figura-61) y la [Figura 62](#figura-62).
+
+<!-- pdf-pagebreak -->
+
 
 <a id="figura-62"></a>
 
@@ -5960,9 +5762,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ##### Wireframe Mobile Web Browser
-
 
 
 Las vistas del wireframe distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 53](#tabla-53).
@@ -5981,10 +5781,7 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-63"></a>
 
@@ -5997,10 +5794,8 @@ Las vistas del wireframe distribuyen las secciones de la landing page para su co
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
-
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 63](#figura-63) y la [Figura 64](#figura-64).
+<!-- pdf-pagebreak -->
 
 <a id="figura-64"></a>
 
@@ -6011,7 +5806,6 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 ![Wireframe Mobile - Vista inferior](chapter-03/assets/landing-page/wireframes/wireframe-mobile-inferior.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 ##### Principios de diseño aplicados
@@ -6027,7 +5821,6 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 Los mock-ups fueron desarrollados en **Figma** a partir de la estructura definida en los wireframes y aplicando el **Design System de SaludYa**. Este sistema establece los criterios visuales utilizados para mantener consistencia en colores, tipografía, espaciado, componentes e interacción.
 
 ##### Design System aplicado
-
 
 
 El sistema de diseño reúne los colores, la tipografía y los criterios visuales utilizados para mantener una identidad consistente en la landing page, como se detalla en la [Tabla 54](#tabla-54).
@@ -6059,7 +5852,6 @@ El sistema de diseño reúne los colores, la tipografía y los criterios visuale
 ##### Mock-up Desktop Web Browser
 
 
-
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador de escritorio, como se detalla en la [Tabla 55](#tabla-55).
 
 <a id="tabla-55"></a>
@@ -6075,10 +5867,7 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-
-
+<!-- pdf-pagebreak -->
 
 
 <a id="figura-65"></a>
@@ -6092,10 +5881,8 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
-
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en escritorio, como se observa en la [Figura 65](#figura-65) y la [Figura 66](#figura-66).
+<!-- pdf-pagebreak -->
 
 <a id="figura-66"></a>
 
@@ -6108,9 +5895,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ##### Mock-up Mobile Web Browser
-
 
 
 Las vistas del mockup distribuyen las secciones de la landing page para su consulta desde un navegador móvil, como se detalla en la [Tabla 56](#tabla-56).
@@ -6128,11 +5913,7 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
-
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-67"></a>
 
@@ -6145,10 +5926,8 @@ Las vistas del mockup distribuyen las secciones de la landing page para su consu
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
-
-
 La vista inferior permite revisar la distribución de las secciones finales de la landing page en móvil, como se observa en la [Figura 67](#figura-67) y la [Figura 68](#figura-68).
+<!-- pdf-pagebreak -->
 
 <a id="figura-68"></a>
 
@@ -6161,9 +5940,7 @@ La vista inferior permite revisar la distribución de las secciones finales de l
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 ##### Aplicación del Design System y diseño inclusivo
-
 
 
 Los criterios de diseño combinan la identidad visual de SaludYa con decisiones de legibilidad y accesibilidad para facilitar el uso de la interfaz, como se detalla en la [Tabla 57](#tabla-57).
@@ -6192,7 +5969,6 @@ Los criterios de diseño combinan la identidad visual de SaludYa con decisiones 
 ##### Componentes reutilizables
 
 
-
 Los componentes reutilizables definen la apariencia y los estados de botones, tarjetas y controles para mantener su comportamiento consistente entre pantallas, como se detalla en la [Tabla 58](#tabla-58).
 
 <a id="tabla-58"></a>
@@ -6219,9 +5995,7 @@ Los componentes reutilizables definen la apariencia y los estados de botones, ta
 
 El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a una implementación funcional. Esta versión permite visualizar la aplicación de los lineamientos establecidos en el Design System y comprobar la adaptación de la interfaz a diferentes tamaños de pantalla, como se observa en la [Figura 69](#figura-69).
 
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-69"></a>
 
@@ -6232,7 +6006,6 @@ El diseño definido en los wireframes y mock-ups fue posteriormente trasladado a
 ![Landing Page de SaludYa - Implementación](chapter-03/assets/landing-page/landing-page.png)
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 **Landing Page de SaludYa:**
@@ -6256,6 +6029,8 @@ La propuesta traduce las decisiones de arquitectura de información definidas en
 
 Los wireframes emplean una escala de grises de baja fidelidad que permite distinguir jerarquías, superficies y estados sin depender del color, manteniendo el foco en la estructura y en la organización del contenido. La escala abarca desde el tono más oscuro (WF 900) hasta el blanco (WF White), como se observa en la [Figura 70](#figura-70).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-70"></a>
 
 **Figura 70**
@@ -6271,6 +6046,7 @@ Los wireframes emplean una escala de grises de baja fidelidad que permite distin
 La aplicación para pacientes se organiza en torno a la barra de navegación inferior (**Inicio, Reservar cita, Asistencia y Configuración**), en línea con el sistema de navegación descrito en el apartado 3.1.2.5. Las vistas siguientes cubren el acceso, el inicio, la gestión de citas, la reserva, la asistencia, las notificaciones y la configuración.
 
 El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **Iniciar Sesión** y **Registrarse**, y el formulario de **Inicio de Sesión** con tipo y número de documento y contraseña, como se observa en la [Figura 71](#figura-71).
+<!-- pdf-pagebreak -->
 
 <a id="figura-71"></a>
 
@@ -6283,6 +6059,7 @@ El acceso a la aplicación reúne la pantalla de bienvenida, con las acciones **
 *Nota. Elaboración propia.*
 
 El registro se compone de la verificación de identidad por documento, el alta de credenciales (correo, contraseña y celular) y la verificación del DNI mediante preguntas de seguridad, como se observa en la [Figura 72](#figura-72).
+<!-- pdf-pagebreak -->
 
 <a id="figura-72"></a>
 
@@ -6296,6 +6073,8 @@ El registro se compone de la verificación de identidad por documento, el alta d
 
 La recuperación de acceso permite elegir el restablecimiento por correo, ingresar el código enviado y definir una nueva contraseña con su confirmación, como se observa en la [Figura 73](#figura-73).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-73"></a>
 
 **Figura 73**
@@ -6307,6 +6086,8 @@ La recuperación de acceso permite elegir el restablecimiento por correo, ingres
 *Nota. Elaboración propia.*
 
 El inicio del paciente saluda al usuario, presenta las citas pendientes y el historial, y ofrece el acceso a las notificaciones y a las secciones principales mediante la barra inferior, como se observa en la [Figura 74](#figura-74).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-74"></a>
 
@@ -6320,6 +6101,8 @@ El inicio del paciente saluda al usuario, presenta las citas pendientes y el his
 
 La vista de citas pendientes lista las reservas activas del paciente en tarjetas, con la cabecera de retroceso y la barra de navegación inferior, como se observa en la [Figura 75](#figura-75).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-75"></a>
 
 **Figura 75**
@@ -6331,6 +6114,8 @@ La vista de citas pendientes lista las reservas activas del paciente en tarjetas
 *Nota. Elaboración propia.*
 
 El historial presenta las atenciones pasadas y permite filtrarlas por fecha mediante un selector de calendario, como se observa en la [Figura 76](#figura-76).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-76"></a>
 
@@ -6344,6 +6129,8 @@ El historial presenta las atenciones pasadas y permite filtrarlas por fecha medi
 
 La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha en un calendario y escoger la hora entre los bloques disponibles, como se observa en la [Figura 77](#figura-77).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-77"></a>
 
 **Figura 77**
@@ -6355,6 +6142,8 @@ La reserva de cita permite buscar y elegir la especialidad, seleccionar la fecha
 *Nota. Elaboración propia.*
 
 Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir al doctor y luego seleccionar la hora, como se observa en la [Figura 78](#figura-78).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-78"></a>
 
@@ -6368,6 +6157,8 @@ Cuando el paciente reserva por profesional, la interfaz permite buscar y elegir 
 
 La asistencia reúne el registro de llegada mediante **código QR** y la consulta de la posición en la cola, junto con los diálogos de confirmación para dejar la cola y de atención finalizada, así como la cancelación de la cita, como se observa en la [Figura 79](#figura-79).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-79"></a>
 
 **Figura 79**
@@ -6379,6 +6170,8 @@ La asistencia reúne el registro de llegada mediante **código QR** y la consult
 *Nota. Elaboración propia.*
 
 Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad de una reasignación de horario, que se resuelve en un modal con las acciones **Rechazar** y **Aceptar**, como se observa en la [Figura 80](#figura-80).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-80"></a>
 
@@ -6392,6 +6185,8 @@ Las notificaciones listan los avisos del paciente, entre ellos la disponibilidad
 
 La configuración permite acceder a los datos personales y a los pacientes vinculados, y el cambio de correo se completa verificando el nuevo correo mediante un código, como se observa en la [Figura 81](#figura-81).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-81"></a>
 
 **Figura 81**
@@ -6404,6 +6199,8 @@ La configuración permite acceder a los datos personales y a los pacientes vincu
 
 La gestión de pacientes vinculados permite agregar y sincronizar menores, registrar un menor verificando su documento y administrar el vínculo desde el detalle, como se observa en la [Figura 82](#figura-82).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-82"></a>
 
 **Figura 82**
@@ -6415,6 +6212,8 @@ La gestión de pacientes vinculados permite agregar y sincronizar menores, regis
 *Nota. Elaboración propia.*
 
 El acceso al perfil de un menor incluye la verificación del vínculo, su propia vista de inicio y la opción de volver a la cuenta principal, como se observa en la [Figura 83](#figura-83).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-83"></a>
 
@@ -6432,6 +6231,8 @@ La aplicación para el personal de salud se organiza en la barra inferior **Inic
 
 El inicio del personal presenta el resumen del día con las citas canceladas y pendientes, junto con el acceso a la edición del perfil, como se observa en la [Figura 84](#figura-84).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-84"></a>
 
 **Figura 84**
@@ -6443,6 +6244,8 @@ El inicio del personal presenta el resumen del día con las citas canceladas y p
 *Nota. Elaboración propia.*
 
 El calendario permite elegir la especialidad, la fecha y la hora para gestionar la agenda del establecimiento, como se observa en la [Figura 85](#figura-85).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-85"></a>
 
@@ -6456,6 +6259,8 @@ El calendario permite elegir la especialidad, la fecha y la hora para gestionar 
 
 La vista por profesional permite buscar y seleccionar al doctor y luego elegir la hora de atención, como se observa en la [Figura 86](#figura-86).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-86"></a>
 
 **Figura 86**
@@ -6468,6 +6273,8 @@ La vista por profesional permite buscar y seleccionar al doctor y luego elegir l
 
 La edición de un bloque horario reúne el estado, la hora de inicio, la especialidad, el doctor y los pacientes con reserva, con la acción de editar y la confirmación de cambios, como se observa en la [Figura 87](#figura-87).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-87"></a>
 
 **Figura 87**
@@ -6479,6 +6286,8 @@ La edición de un bloque horario reúne el estado, la hora de inicio, la especia
 *Nota. Elaboración propia.*
 
 La configuración general permite revisar y actualizar los parámetros operativos mediante campos editables y un diálogo para ingresar el nuevo valor, como se observa en la [Figura 88](#figura-88).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-88"></a>
 
@@ -6496,6 +6305,8 @@ Los componentes transversales normalizan la confirmación de acciones y la comun
 
 El diálogo de confirmación de cita solicita validar la reserva antes de registrarla y comunica el resultado exitoso, como se observa en la [Figura 89](#figura-89).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-89"></a>
 
 **Figura 89**
@@ -6508,6 +6319,8 @@ El diálogo de confirmación de cita solicita validar la reserva antes de regist
 
 Los diálogos de configuración comunican errores de validación (código incorrecto, datos incorrectos o inconsistencia de datos) y confirmaciones de éxito, como se observa en la [Figura 90](#figura-90).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-90"></a>
 
 **Figura 90**
@@ -6517,6 +6330,8 @@ Los diálogos de configuración comunican errores de validación (código incorr
 <img src="chapter-03/assets/wireframes/dialogs-configuracion.png" alt="Wireframe de diálogos de estado y validación de SaludYa" width="60%"/>
 
 *Nota. Elaboración propia.*
+<!-- pdf-pagebreak -->
+
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
@@ -6552,9 +6367,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de inicio de sesión (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-02-iniciar-sesion.png" alt="Wireflow de inicio de sesión de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6577,10 +6392,11 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 93](#figura-93) se muestra que, desde Inicio de sesión, se abre la elección de método (celular o correo) y se verifica el código, con camino alterno de código incorrecto. Luego se define la nueva contraseña (diálogo si no coincide o si el cambio fue exitoso) y se vuelve al Inicio de sesión.
-
+<!-- pdf-pagebreak -->
 ###### WF-05 · Cerrar sesión
 
 **User Goal:** Como paciente, quiero cerrar sesión de forma segura.
+
 
 <a id="figura-94"></a>
 
@@ -6588,9 +6404,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de cierre de sesión (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-05-cerrar-sesion.png" alt="Wireflow de cierre de sesión de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6613,12 +6429,13 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 95](#figura-95) se observa que el flujo va de Home a Reservar cita (búsqueda de especialidad), luego Elige tu fecha, Elige la hora, Elige al doctor y la hora con ese doctor. Termina en Confirmar cita y el diálogo «Cita confirmada».
-
+<!-- pdf-pagebreak -->
 ###### WF-08 · Consultar mis citas y su detalle
 
 **User Goal:** Como paciente, quiero ver mis próximas citas y su detalle.
 
 <a id="figura-96"></a>
+
 
 **Figura 96**
 
@@ -6631,7 +6448,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 96](#figura-96) se observa que, desde Home, «Ver más» abre Citas pendientes, y al seleccionar una cita se abre su detalle con las acciones disponibles.
-
+<!-- pdf-pagebreak -->
 ###### WF-09 · Revisar el historial de citas
 
 **User Goal:** Como paciente, quiero revisar mis atenciones anteriores.
@@ -6660,9 +6477,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de gestión de citas de un familiar a cargo (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-10-gestionar-las-citas-de-un-familiar-a-mi-cargo.png" alt="Wireflow de gestión de citas de un familiar a cargo de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6685,7 +6502,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 99](#figura-99) se observa que, desde el ícono de campana del Home, se abre el buzón de Notificaciones y, al seleccionar un aviso, se abre su detalle (por ejemplo, la oferta de reasignación).
-
+<!-- pdf-pagebreak -->
 ###### WF-12 · Registrar mi llegada y seguir mi turno
 
 **User Goal:** Como paciente, quiero registrar mi llegada y saber cuándo me atenderán sin hacer cola.
@@ -6696,9 +6513,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de registro de llegada y seguimiento del turno (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-12-registrar-mi-llegada-y-seguir-mi-turno.png" alt="Wireflow de registro de llegada y seguimiento del turno de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6714,9 +6531,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de aceptación o rechazo de un cupo liberado (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-13-aceptar-o-rechazar-un-cupo-liberado.png" alt="Wireflow de aceptación o rechazo de un cupo liberado de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6732,14 +6549,14 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de actualización de datos de contacto (paciente)*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/wf-14-actualizar-mis-datos-de-contacto.png" alt="Wireflow de actualización de datos de contacto de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 102](#figura-102) se observa que, desde Configuración, se abre Mis datos y se elige cambiar celular o correo. Se edita el dato y se verifica con código en el nuevo contacto (con camino alterno de código incorrecto), y el cambio queda confirmado con un diálogo de éxito.
-
+<!-- pdf-pagebreak -->
 ##### Wireflows de Healthcare Administrators
 
 ###### S01 · Registrarme como personal de admisión
@@ -6752,9 +6569,9 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 
 *Wireflow de registro del personal de admisión*
 
-<p align="center">
-  <img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="100%"/>
-</p>
+<div align="center">
+<img src="chapter-03/assets/wireflows/s01-registrarme-como-personal-de-admision.png" alt="Wireflow de registro del personal de admisión de SaludYa" width="75%"/>
+</div>
 
 *Nota. Elaboración propia.*
 
@@ -6813,7 +6630,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 106](#figura-106) se observa que se llega al bloque por especialidad, fecha y hora, se abre su detalle y se pasa a la pantalla de edición con «Confirmar cambios».
-
+<!-- pdf-pagebreak -->
 ###### S05 · Consultar la disponibilidad de cupos
 
 **User Goal:** Como personal de admisión, quiero consultar los cupos por especialidad, doctor y fecha.
@@ -6831,7 +6648,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 107](#figura-107) se observa que, tras elegir especialidad y fecha, el flujo se bifurca en una vista por especialidad y otra por doctor, y ambas llegan al detalle del bloque con su capacidad.
-
+<!-- pdf-pagebreak -->
 ###### S06 · Consultar las citas pendientes
 
 **User Goal:** Como personal de admisión, quiero ver las citas pendientes para organizar la agenda del día.
@@ -6849,7 +6666,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 108](#figura-108) se observa que, desde la tarjeta «Citas pendientes» del Home, se abre el detalle con los pacientes con reserva.
-
+<!-- pdf-pagebreak -->
 ###### S07 · Consultar las citas atendidas
 
 **User Goal:** Como personal de admisión, quiero consultar las citas ya atendidas y generar reportes por rango de fechas.
@@ -6867,7 +6684,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 109](#figura-109) se observa que el flujo parte del Home; las pantallas de listado y reporte están marcadas como pendientes de wireframe.
-
+<!-- pdf-pagebreak -->
 ###### S08 · Registrar la llegada del paciente (check-in)
 
 **User Goal:** Como personal de admisión, quiero registrar la llegada escaneando el QR o ingresando el código de reserva.
@@ -6885,7 +6702,7 @@ En esta sección se presenta la propuesta de Wireflow Diagrams de las aplicacion
 *Nota. Elaboración propia.*
 
 **Explicación del flujo:** En la [Figura 110](#figura-110) se observa que el flujo parte del Home; las pantallas de escaneo y alta en la cola están marcadas como pendientes de wireframe.
-
+<!-- pdf-pagebreak -->
 ###### S09 · Gestionar la cola de asistencia
 
 **User Goal:** Como personal de admisión, quiero manejar la cola de la sala de espera.
@@ -6928,8 +6745,9 @@ En este entregable se presentan los mock-ups de alta fidelidad de la aplicación
 
 La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipografía Inter. Las pantallas tienen un tamaño de referencia de 375 × 812 píxeles; los botones principales, una altura de 48 píxeles y esquinas de 12 píxeles. Se incluyen estados de confirmación, error y ausencia de información. Los datos son ficticios y las imágenes representan el diseño de la experiencia.
 
-**Sección Autenticación y Registro — Identity & Access Management**
+<!-- pdf-pagebreak -->
 
+**Sección Autenticación y Registro — Identity & Access Management**
 
 
 
@@ -6947,12 +6765,9 @@ La identidad visual utiliza el verde primario `#0B8F6B`, fondos claros y tipogra
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales y el registro del correo, contraseña y celular. Los botones de acceso y registro se agrupan en la bienvenida. La cuenta se verifica mediante un código enviado al correo electrónico registrado. El celular se conserva como dato de contacto; no se utiliza verificación por SMS, como se observa en la [Figura 113](#figura-113).
 
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-114"></a>
 
@@ -6967,11 +6782,11 @@ Presenta la bienvenida, el ingreso del DNI, la verificación de datos personales
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El paciente inicia sesión con su correo y contraseña. El rol de este recorrido es Paciente y no se ofrece un selector de perfiles administrativos. La recuperación envía un enlace al correo registrado, con vigencia de 15 minutos; se muestran la solicitud enviada, el enlace vencido, la nueva contraseña y los errores de acceso, como se observa en la [Figura 114](#figura-114).
 
-**Sección Dashboard del Paciente**
+<!-- pdf-pagebreak -->
 
+**Sección Dashboard del Paciente**
 
 
 
@@ -6989,13 +6804,11 @@ El paciente inicia sesión con su correo y contraseña. El rol de este recorrido
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El inicio reúne las citas pendientes, el acceso al historial y la reserva de una nueva cita. La campana de notificaciones se ubica en el extremo derecho de la cabecera. Las tarjetas identifican al beneficiario, la especialidad, el profesional, la fecha y el estado de la cita. Se incluyen el filtro por fecha, el detalle de la reserva y los estados sin citas o con error de carga, como se observa en la [Figura 115](#figura-115).
 
+<!-- pdf-pagebreak -->
+
 **Sección Reserva de Citas**
-
-
-
 
 
 <a id="figura-116"></a>
@@ -7011,12 +6824,9 @@ El inicio reúne las citas pendientes, el acceso al historial y la reserva de un
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El paciente selecciona la especialidad, al titular o menor vinculado y una fecha disponible. Puede elegir primero al profesional o consultar directamente los horarios mediante la opción ubicada antes de la lista. Los horarios sin cupos se distinguen con texto y color de estado y no permiten selección, como se observa en la [Figura 116](#figura-116).
 
-
-
-
+<!-- pdf-pagebreak -->
 
 <a id="figura-117"></a>
 
@@ -7031,12 +6841,11 @@ El paciente selecciona la especialidad, al titular o menor vinculado y una fecha
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El resumen permite revisar los datos antes de confirmar la cita. La reserva confirmada muestra su código identificador y los detalles de atención. Los estados alternativos contemplan cupos ocupados, cruces de horarios, falta de disponibilidad y restricciones de cancelación. Un fallo en el envío del comprobante no anula la reserva, como se observa en la [Figura 117](#figura-117).
 
+<!-- pdf-pagebreak -->
+
 **Sección Check-in y Atención del Paciente**
-
-
 
 
 
@@ -7053,14 +6862,13 @@ El resumen permite revisar los datos antes de confirmar la cita. La reserva conf
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 Para registrar su llegada, el paciente selecciona una reserva y escanea el QR ubicado en el establecimiento, conforme a US-12. La aplicación valida la cita y la ventana de tolerancia antes de confirmar la presencia. Este recorrido no solicita presentar un QR personal generado al reservar, como se observa en la [Figura 118](#figura-118).
 
 Después del check-in se habilitan el ticket digital y la posición en la cola, ordenada por llegada presencial. Para los menores se identifica al beneficiario y a su representante. Se muestran el llamado a consultorio, la atención finalizada, la ausencia y los errores de QR o de horario. La variante que ocultaba la posición de la cola queda fuera de este entregable.
 
+<!-- pdf-pagebreak -->
+
 **Sección Configuración y Perfil del Paciente**
-
-
 
 
 
@@ -7077,12 +6885,11 @@ Después del check-in se habilitan el ticket digital y la posición en la cola, 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo se verifica con un código enviado a esa dirección. Para cambiar el celular, confirma la operación mediante un código enviado al correo registrado; el número se mantiene como dato de contacto. Se presentan los estados de actualización, código incorrecto o vencido y datos inválidos. La identidad verificada permanece como información de consulta, como se observa en la [Figura 119](#figura-119).
 
+<!-- pdf-pagebreak -->
+
 **Sección Gestión de Menores Vinculados**
-
-
 
 
 
@@ -7099,13 +6906,11 @@ El paciente consulta sus datos y actualiza su celular o correo. El nuevo correo 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 El titular consulta sus menores vinculados, registra un menor y verifica sus datos para gestionar sus citas. Se incluyen el detalle del menor, el inicio del representado, la lista vacía, las restricciones de vinculación y la confirmación de desvinculación, como se observa en la [Figura 120](#figura-120).
 
+<!-- pdf-pagebreak -->
+
 **Sección Notificaciones y Reasignación de Citas**
-
-
-
 
 
 <a id="figura-121"></a>
@@ -7119,7 +6924,6 @@ El titular consulta sus menores vinculados, registra un menor y verifica sus dat
 </p>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 Las notificaciones informan sobre reservas, llamados y propuestas de adelanto. El paciente compara el horario actual con el ofrecido y acepta o rechaza la propuesta dentro del plazo. El rechazo, el vencimiento de la oferta o la ocupación del cupo conservan la reserva original, como se observa en la [Figura 121](#figura-121).
@@ -7143,9 +6947,6 @@ Los recorridos comprenden registro, acceso, recuperación, perfil, menores, cita
 El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos personales. Tras validar su identidad, completa los datos de acceso y verifica su correo mediante el código recibido por email. El recorrido finaliza con la cuenta creada, como se observa en la [Figura 122](#figura-122).
 
 
-
-
-
 <a id="figura-122"></a>
 
 **Figura 122**
@@ -7159,13 +6960,9 @@ El paciente accede a Bienvenida, selecciona Registrarse e ingresa su DNI y datos
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se consideran datos de identidad no coincidentes, correo registrado, código incorrecto e indisponibilidad del servicio de identidad. El paciente corrige sus datos o reintenta la validación antes de crear la cuenta, como se observa en la [Figura 123](#figura-123).
-
-
-
 
 
 <a id="figura-123"></a>
@@ -7181,15 +6978,11 @@ Se consideran datos de identidad no coincidentes, correo registrado, código inc
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 2:** Iniciar sesión como paciente.
 
 **Happy Path**
 
 El paciente ingresa su correo y contraseña. Si la cuenta está activa y las credenciales son válidas, accede a Inicio. El recorrido corresponde exclusivamente al paciente, sin selección de perfiles administrativos, como se observa en la [Figura 124](#figura-124).
-
-
-
 
 
 <a id="figura-124"></a>
@@ -7205,13 +6998,9 @@ El paciente ingresa su correo y contraseña. Si la cuenta está activa y las cre
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta inactiva se indica la consulta con admisión. El acceso se realiza por correo y contraseña, sin verificación por SMS, como se observa en la [Figura 125](#figura-125).
-
-
-
 
 
 <a id="figura-125"></a>
@@ -7227,15 +7016,11 @@ Las credenciales incorrectas mantienen al paciente en el acceso. Para una cuenta
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 3:** Recuperar la contraseña.
 
 **Happy Path**
 
 El paciente solicita la recuperación con su correo registrado. La aplicación muestra una confirmación genérica; el enlace recibido permite definir una nueva contraseña durante sus 15 minutos de vigencia, como se observa en la [Figura 126](#figura-126).
-
-
-
 
 
 <a id="figura-126"></a>
@@ -7251,13 +7036,9 @@ El paciente solicita la recuperación con su correo registrado. La aplicación m
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida de acceso al correo. Un correo no registrado recibe una respuesta genérica y no genera token. La recuperación asistida requiere verificar la identidad del paciente, como se observa en la [Figura 127](#figura-127).
-
-
-
 
 
 <a id="figura-127"></a>
@@ -7272,16 +7053,13 @@ Se presentan enlaces vencidos o inválidos, contraseñas diferentes y pérdida d
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
+<!-- pdf-pagebreak -->
 
 - **User Goal 4:** Vincular o desvincular a un menor.
 
 **Happy Path**
 
 El titular ingresa los datos del menor y confirma su vinculación después de verificar identidad y filiación. Desde el detalle puede consultar sus citas o confirmar la desvinculación, como se observa en la [Figura 128](#figura-128).
-
-
-
 
 
 <a id="figura-128"></a>
@@ -7297,13 +7075,9 @@ El titular ingresa los datos del menor y confirma su vinculación después de ve
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se representan vínculos existentes, datos o edad inválidos y cancelación de la desvinculación. Cuando se requiere revisión de tutela, el titular consulta con admisión, como se observa en la [Figura 129](#figura-129).
-
-
-
 
 
 <a id="figura-129"></a>
@@ -7319,15 +7093,11 @@ Se representan vínculos existentes, datos o edad inválidos y cancelación de l
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 5:** Actualizar el correo o celular del perfil.
 
 **Happy Path**
 
 El paciente consulta sus datos y modifica su correo o celular. Si cambia el correo, verifica la nueva dirección; si cambia el celular, confirma la operación con un código enviado al correo registrado. El recorrido finaliza con la actualización y su confirmación, como se observa en la [Figura 130](#figura-130).
-
-
-
 
 
 <a id="figura-130"></a>
@@ -7343,13 +7113,9 @@ El paciente consulta sus datos y modifica su correo o celular. Si cambia el corr
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se consideran formatos inválidos, correo duplicado y códigos incorrectos o vencidos. El paciente corrige el dato o solicita un nuevo código por correo. Los datos de identidad permanecen de consulta, como se observa en la [Figura 131](#figura-131).
-
-
-
 
 
 <a id="figura-131"></a>
@@ -7365,15 +7131,11 @@ Se consideran formatos inválidos, correo duplicado y códigos incorrectos o ven
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 6:** Consultar disponibilidad de citas.
 
 **Happy Path**
 
 El paciente selecciona una especialidad y una fecha. Consulta profesionales y horarios disponibles; la alternativa de elegir por horario se encuentra antes de la lista de profesionales, como se observa en la [Figura 132](#figura-132).
-
-
-
 
 
 <a id="figura-132"></a>
@@ -7389,13 +7151,9 @@ El paciente selecciona una especialidad y una fecha. Consulta profesionales y ho
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el día, el paciente vuelve al calendario y elige otra fecha. Los horarios sin cupos no se seleccionan, como se observa en la [Figura 133](#figura-133).
-
-
-
 
 
 <a id="figura-133"></a>
@@ -7411,15 +7169,11 @@ Una búsqueda sin resultados permite cambiar el texto. Si no hay cupos para el d
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 7:** Reservar una cita y recibir confirmación.
 
 **Happy Path**
 
 El titular indica el beneficiario, elige fecha, profesional y horario y revisa el resumen. Al confirmar, recibe el código de reserva y el comprobante de la cita, como se observa en la [Figura 134](#figura-134).
-
-
-
 
 
 <a id="figura-134"></a>
@@ -7435,13 +7189,9 @@ El titular indica el beneficiario, elige fecha, profesional y horario y revisa e
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmación y fallo en el envío del comprobante. Si el correo queda pendiente, la reserva continúa confirmada, como se observa en la [Figura 135](#figura-135).
-
-
-
 
 
 <a id="figura-135"></a>
@@ -7457,15 +7207,11 @@ Se contemplan un cupo tomado, una cita coincidente, cancelación de la confirmac
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 8:** Consultar citas, detalles e historial.
 
 **Happy Path**
 
 Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtro por fecha y abre el detalle de una cita propia o de un menor, como se observa en la [Figura 136](#figura-136).
-
-
-
 
 
 <a id="figura-136"></a>
@@ -7481,13 +7227,9 @@ Desde Inicio, el paciente consulta citas pendientes o historial, aplica un filtr
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Se presentan ausencia de citas, error de carga y necesidad de seleccionar al menor representado. El paciente puede reservar, reintentar la consulta o cambiar de beneficiario, como se observa en la [Figura 137](#figura-137).
-
-
-
 
 
 <a id="figura-137"></a>
@@ -7503,15 +7245,11 @@ Se presentan ausencia de citas, error de carga y necesidad de seleccionar al men
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 9:** Cancelar una reserva dentro del plazo.
 
 **Happy Path**
 
 El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del plazo permitido, confirma la operación y consulta el estado Cancelada, como se observa en la [Figura 138](#figura-138).
-
-
-
 
 
 <a id="figura-138"></a>
@@ -7527,13 +7265,9 @@ El paciente abre el detalle de una reserva y solicita cancelarla. Dentro del pla
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. Si cancela la confirmación, conserva la cita. Cancelar una reserva se distingue de dejar la cola presencial, como se observa en la [Figura 139](#figura-139).
-
-
-
 
 
 <a id="figura-139"></a>
@@ -7549,15 +7283,11 @@ Fuera del plazo, la reserva sigue activa y se indica la consulta con admisión. 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 10:** Responder a una oferta de adelanto.
 
 **Happy Path**
 
 El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mientras la oferta y el cupo siguen vigentes. El nuevo horario reemplaza al anterior, como se observa en la [Figura 140](#figura-140).
-
-
-
 
 
 <a id="figura-140"></a>
@@ -7573,13 +7303,9 @@ El paciente recibe una oferta de adelanto, compara ambos horarios y acepta mient
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada estado permite volver a consultar la reserva actual, como se observa en la [Figura 141](#figura-141).
-
-
-
 
 
 <a id="figura-141"></a>
@@ -7595,15 +7321,11 @@ El rechazo, el vencimiento o un cupo ya tomado conservan la cita original. Cada 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 11:** Registrar llegada presencial mediante QR.
 
 **Happy Path**
 
 Al llegar al establecimiento, el titular selecciona su reserva o la del menor y escanea el QR del establecimiento. Si la cita y la ventana horaria son válidas, se confirma la presencia, se ingresa a la cola y se habilita el ticket, como se observa en la [Figura 142](#figura-142).
-
-
-
 
 
 <a id="figura-142"></a>
@@ -7618,14 +7340,11 @@ Al llegar al establecimiento, el titular selecciona su reserva o la del menor y 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
+<!-- pdf-pagebreak -->
 
 **Unhappy Paths**
 
 Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada anticipada requiere esperar la ventana; una llegada fuera de tolerancia registra la inasistencia y activa la liberación del cupo, como se observa en la [Figura 143](#figura-143).
-
-
-
 
 
 <a id="figura-143"></a>
@@ -7641,15 +7360,11 @@ Un QR inválido o una reserva inactiva impiden registrar la llegada. Una llegada
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 12:** Obtener el ticket digital de atención.
 
 **Happy Path**
 
 Después del check-in, el paciente obtiene su código de turno y consulta el ticket con los datos del beneficiario, profesional, sala y consultorio, como se observa en la [Figura 144](#figura-144).
-
-
-
 
 
 <a id="figura-144"></a>
@@ -7665,13 +7380,9 @@ Después del check-in, el paciente obtiene su código de turno y consulta el tic
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Sin presencia confirmada debe registrar primero la llegada. Si el turno ya finalizó o fue declarado ausente, consulta el estado correspondiente, como se observa en la [Figura 145](#figura-145).
-
-
-
 
 
 <a id="figura-145"></a>
@@ -7687,15 +7398,12 @@ Sin presencia confirmada debe registrar primero la llegada. Si el turno ya final
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 13:** Consultar posición o dejar la cola.
 
+<!-- pdf-pagebreak -->
 **Happy Path**
 
 El paciente con check-in confirmado y turno activo consulta su posición y el total de pacientes, ordenados por llegada presencial. También puede confirmar que deja la cola, como se observa en la [Figura 146](#figura-146).
-
-
-
 
 
 <a id="figura-146"></a>
@@ -7711,13 +7419,9 @@ El paciente con check-in confirmado y turno activo consulta su posición y el to
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muestra su estado final; cancelar la salida conserva al paciente en espera. No se incluye la variante de cola oculta, como se observa en la [Figura 147](#figura-147).
-
-
-
 
 
 <a id="figura-147"></a>
@@ -7733,15 +7437,11 @@ Sin check-in se solicita registrar la llegada. Un turno atendido o ausente muest
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 14:** Recibir el llamado y acudir al consultorio.
 
 **Happy Path**
 
 El paciente recibe el llamado, consulta el ticket y se dirige al consultorio dentro del margen establecido para su atención, como se observa en la [Figura 148](#figura-148).
-
-
-
 
 
 <a id="figura-148"></a>
@@ -7757,13 +7457,10 @@ El paciente recibe el llamado, consulta el ticket y se dirige al consultorio den
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
+<!-- pdf-pagebreak -->
 **Unhappy Paths**
 
 Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado y falta de respuesta. La aplicación muestra el estado y orienta al paciente sobre el siguiente paso, como se observa en la [Figura 149](#figura-149).
-
-
-
 
 
 <a id="figura-149"></a>
@@ -7779,15 +7476,11 @@ Se contemplan turno aún no llamado, vencimiento del plazo posterior al llamado 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 - **User Goal 15:** Cerrar sesión o recuperar acceso a una sesión.
 
 **Happy Path**
 
 El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación finaliza la sesión y vuelve a Bienvenida, como se observa en la [Figura 150](#figura-150).
-
-
-
 
 
 <a id="figura-150"></a>
@@ -7803,13 +7496,9 @@ El paciente abre su perfil, solicita cerrar sesión y confirma. La aplicación f
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Unhappy Paths**
 
 Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere volver a ingresar con las credenciales del paciente, como se observa en la [Figura 151](#figura-151).
-
-
-
 
 
 <a id="figura-151"></a>
@@ -7825,7 +7514,6 @@ Cancelar el cierre conserva la sesión activa. Una sesión expirada requiere vol
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
-
 **Archivo de diagramas**
 
 [Mobile Applications User Flow Diagrams — SaludYa](https://www.figma.com/design/9Or15PiTxTluzSQouONYqH/Mobile-Application-Mockups?node-id=0-1)
@@ -7836,9 +7524,6 @@ En esta sección se presenta el prótotipo interactivo desarrollado en Figma par
 
 
 A continuación, se adjunta el enlace al video de demostración, como se observa en la [Figura 152](#figura-152).
-
-
-
 
 
 <a id="figura-152"></a>
@@ -7852,7 +7537,6 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 </p>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
-
 
 
 [Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
@@ -7974,9 +7658,6 @@ Todas las convenciones se aplican en **inglés** para nombres de archivos, varia
 El Landing Page se desarrolla con **HTML5, CSS3 y JavaScript (ES6+)**, aplicando las siguientes convenciones:
 
 
-
-
-
 <a id="tabla-63"></a>
 
 **Tabla 63**
@@ -8017,9 +7698,6 @@ Se adoptan las guías **Google HTML/CSS Style Guide** y **HTML Style Guide and C
 Las aplicaciones móviles se desarrollan con **Kotlin** (Android nativo) y **Kotlin Multiplatform (KMP)** para la lógica compartida con iOS, siguiendo las convenciones oficiales del lenguaje:
 
 
-
-
-
 <a id="tabla-64"></a>
 
 **Tabla 64**
@@ -8056,9 +7734,6 @@ Se adoptan las guías **Android Kotlin Style Guide** y **Kotlin Coding Conventio
 #### Servicios web
 
 Los servicios web se desarrollan con **Spring Boot** (Java) y **OpenAPI Specification** para la documentación, siguiendo las convenciones oficiales:
-
-
-
 
 
 <a id="tabla-65"></a>
@@ -8101,9 +7776,6 @@ En esta sección se describe la configuración de despliegue de la solución **S
 El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**, aprovechando la integración directa con el repositorio de GitHub del equipo.
 
 
-
-
-
 <a id="tabla-66"></a>
 
 **Tabla 66**
@@ -8128,9 +7800,6 @@ El Landing Page se despliega como un sitio estático alojado en **GitHub Pages**
 #### Aplicaciones móviles
 
 Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** para las pruebas con usuarios de validación, y se publican en **Google Play Store** y **App Store** para la versión final.
-
-
-
 
 
 <a id="tabla-67"></a>
@@ -8159,9 +7828,6 @@ Las aplicaciones móviles se distribuyen mediante **Firebase App Distribution** 
 Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL** desplegada en la misma infraestructura.
 
 
-
-
-
 <a id="tabla-68"></a>
 
 **Tabla 68**
@@ -8187,9 +7853,6 @@ Los servicios web se despliegan en **AWS EC2**, con base de datos **PostgreSQL**
 #### Deployment Diagram (C4 Model)
 
 El **Deployment Diagram** ilustra la distribución física de los componentes de SaludYa sobre la infraestructura de hardware y servicios en la nube, como se detalla en la [Tabla 69](#tabla-69):
-
-
-
 
 
 <a id="tabla-69"></a>
@@ -8502,6 +8165,8 @@ Enlace de despliegue: [Landing Page de SaludYa](https://ruwalabs.github.io/salud
 
 La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, sin incertidumbre», la imagen principal y los accesos para conocer el producto y consultar su disponibilidad, como se observa en la [Figura 154](#figura-154).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-154"></a>
 
 **Figura 154**
@@ -8515,6 +8180,8 @@ La vista inicial presenta el mensaje «Citas médicas sin colas, sin madrugar, s
 ###### Problema identificado
 
 La sección describe la incertidumbre al buscar una cita y la pérdida de cupos por cancelaciones e inasistencias, como se observa en la [Figura 155](#figura-155).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-155"></a>
 
@@ -8530,6 +8197,8 @@ La sección describe la incertidumbre al buscar una cita y la pérdida de cupos 
 
 La sección reúne las funciones propuestas para el paciente, entre ellas la reserva de citas, la lista de espera, las notificaciones y el registro de llegada mediante QR; también presenta la aplicación para el personal de salud, como se observa en la [Figura 156](#figura-156).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-156"></a>
 
 **Figura 156**
@@ -8543,6 +8212,8 @@ La sección reúne las funciones propuestas para el paciente, entre ellas la res
 ###### Modelo de negocio
 
 La página presenta el modelo propuesto de implementación institucional, convenios con redes de salud y soporte. Estos contenidos describen la propuesta comercial del proyecto, como se observa en la [Figura 157](#figura-157).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-157"></a>
 
@@ -8558,6 +8229,8 @@ La página presenta el modelo propuesto de implementación institucional, conven
 
 Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y la digitalización del registro, obtenidas durante las entrevistas de validación, como se observa en la [Figura 158](#figura-158).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-158"></a>
 
 **Figura 158**
@@ -8572,6 +8245,8 @@ Los testimonios publicados recogen opiniones sobre la disponibilidad de citas y 
 
 La sección explica el propósito del equipo y presenta la misión y visión de SaludYa, como se observa en la [Figura 159](#figura-159).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-159"></a>
 
 **Figura 159**
@@ -8585,6 +8260,8 @@ La sección explica el propósito del equipo y presenta la misión y visión de 
 ###### Disponibilidad de la aplicación
 
 La sección anuncia la próxima disponibilidad para Android e iOS y muestra los botones de las tiendas. En esta captura, estos accesos todavía corresponden al anuncio de disponibilidad futura, como se observa en la [Figura 160](#figura-160).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-160"></a>
 
@@ -8610,6 +8287,8 @@ Archivo de interfaz: [SaludYa en Figma](https://www.figma.com/design/9Or15PiTxTl
 
 La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar sesión o crear una cuenta, como se observa en la [Figura 161](#figura-161).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-161"></a>
 
 **Figura 161**
@@ -8623,6 +8302,8 @@ La pantalla presenta la identidad visual de SaludYa y los accesos para iniciar s
 ###### Verificación de identidad
 
 El formulario solicita los datos de identidad del paciente antes de continuar con la creación de su cuenta, como se observa en la [Figura 162](#figura-162).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-162"></a>
 
@@ -8638,6 +8319,8 @@ El formulario solicita los datos de identidad del paciente antes de continuar co
 
 El paciente registra su correo, contraseña y datos de contacto después de verificar su identidad, como se observa en la [Figura 163](#figura-163).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-163"></a>
 
 **Figura 163**
@@ -8651,6 +8334,8 @@ El paciente registra su correo, contraseña y datos de contacto después de veri
 ###### Verificación por correo
 
 La pantalla solicita el código de verificación enviado al correo del paciente y permite reenviarlo, como se observa en la [Figura 164](#figura-164).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-164"></a>
 
@@ -8666,6 +8351,8 @@ La pantalla solicita el código de verificación enviado al correo del paciente 
 
 El paciente ingresa su correo y contraseña para acceder a su cuenta, como se observa en la [Figura 165](#figura-165).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-165"></a>
 
 **Figura 165**
@@ -8679,6 +8366,8 @@ El paciente ingresa su correo y contraseña para acceder a su cuenta, como se ob
 ###### Recuperación de acceso
 
 El formulario permite solicitar un enlace de recuperación al correo registrado, como se observa en la [Figura 166](#figura-166).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-166"></a>
 
@@ -8694,6 +8383,8 @@ El formulario permite solicitar un enlace de recuperación al correo registrado,
 
 El paciente define y confirma una nueva contraseña mediante el recorrido de recuperación, como se observa en la [Figura 167](#figura-167).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-167"></a>
 
 **Figura 167**
@@ -8707,6 +8398,8 @@ El paciente define y confirma una nueva contraseña mediante el recorrido de rec
 ###### Inicio del paciente
 
 La vista principal reúne las citas pendientes y los accesos al historial y a la reserva de una nueva cita, como se observa en la [Figura 168](#figura-168).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-168"></a>
 
@@ -8722,6 +8415,8 @@ La vista principal reúne las citas pendientes y los accesos al historial y a la
 
 El recorrido de reserva presenta las opciones necesarias para elegir una cita según la disponibilidad del establecimiento, como se observa en la [Figura 169](#figura-169).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-169"></a>
 
 **Figura 169**
@@ -8735,6 +8430,8 @@ El recorrido de reserva presenta las opciones necesarias para elegir una cita se
 ###### Confirmación de reserva
 
 La pantalla presenta la confirmación y los datos de la cita seleccionada, como se observa en la [Figura 170](#figura-170).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-170"></a>
 
@@ -8750,6 +8447,8 @@ La pantalla presenta la confirmación y los datos de la cita seleccionada, como 
 
 La interfaz indica al paciente que debe escanear el QR del establecimiento para registrar su llegada y confirmar su presencia, como se observa en la [Figura 171](#figura-171).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-171"></a>
 
 **Figura 171**
@@ -8763,6 +8462,8 @@ La interfaz indica al paciente que debe escanear el QR del establecimiento para 
 ###### Ticket de atención
 
 La pantalla presenta el ticket del paciente como parte del seguimiento de su turno de atención, como se observa en la [Figura 172](#figura-172).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-172"></a>
 
@@ -8778,6 +8479,8 @@ La pantalla presenta el ticket del paciente como parte del seguimiento de su tur
 
 El perfil reúne los datos personales y de contacto, junto con las acciones disponibles para la cuenta, como se observa en la [Figura 173](#figura-173).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-173"></a>
 
 **Figura 173**
@@ -8791,6 +8494,8 @@ El perfil reúne los datos personales y de contacto, junto con las acciones disp
 ###### Menores vinculados
 
 La vista permite consultar los menores vinculados al paciente y acceder a las acciones de gestión del vínculo, como se observa en la [Figura 174](#figura-174).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-174"></a>
 
@@ -8806,13 +8511,17 @@ La vista permite consultar los menores vinculados al paciente y acceder a las ac
 
 La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y novedades relacionados con sus citas, como se observa en la [Figura 175](#figura-175).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-175"></a>
 
 **Figura 175**
 
 *Notificaciones del paciente — SaludYa*
 
-<img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="320">
+<div align="left">
+<img src="assets/execution/sprint-1/android-notificaciones.png" alt="Notificaciones del paciente de SaludYa" width="50%">
+</div>
 
 *Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
 
@@ -8825,6 +8534,8 @@ Enlace de despliegue: [Swagger UI de SaludYa](http://3.129.217.49:8080/swagger-u
 ###### Vista general de Swagger
 
 La interfaz identifica el servicio como SaludYa API y presenta el servidor y los grupos de endpoints publicados, como se observa en la [Figura 176](#figura-176).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-176"></a>
 
@@ -8840,6 +8551,8 @@ La interfaz identifica el servicio como SaludYa API y presenta el servidor y los
 
 El grupo IAM - Identity verification documenta las operaciones para verificar la identidad y consultar la existencia de un DNI, como se observa en la [Figura 177](#figura-177).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-177"></a>
 
 **Figura 177**
@@ -8853,6 +8566,8 @@ El grupo IAM - Identity verification documenta las operaciones para verificar la
 ###### Cuentas y credenciales
 
 El grupo IAM - User accounts presenta los contratos de cuentas, registro y recuperación de acceso, como se observa en la [Figura 178](#figura-178).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-178"></a>
 
@@ -8868,6 +8583,8 @@ El grupo IAM - User accounts presenta los contratos de cuentas, registro y recup
 
 El grupo IAM - Patients documenta la consulta y actualización del perfil y la consulta de menores vinculados, como se observa en la [Figura 179](#figura-179).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-179"></a>
 
 **Figura 179**
@@ -8881,6 +8598,8 @@ El grupo IAM - Patients documenta la consulta y actualización del perfil y la c
 ###### Vinculación de menores
 
 El grupo IAM - Linked minors presenta los contratos para crear, consultar y eliminar el vínculo con un menor, como se observa en la [Figura 180](#figura-180).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-180"></a>
 
@@ -8896,6 +8615,8 @@ El grupo IAM - Linked minors presenta los contratos para crear, consultar y elim
 
 El grupo Appointments presenta las operaciones para registrar y consultar reservas, cancelarlas y consultar las citas de un paciente, como se observa en la [Figura 181](#figura-181).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-181"></a>
 
 **Figura 181**
@@ -8909,6 +8630,8 @@ El grupo Appointments presenta las operaciones para registrar y consultar reserv
 ###### Disponibilidad de horarios
 
 El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la reserva de citas, como se observa en la [Figura 182](#figura-182).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-182"></a>
 
@@ -8924,6 +8647,8 @@ El grupo Time Slots documenta la consulta de intervalos y disponibilidad para la
 
 El grupo Check-ins presenta los contratos de registro de llegada por QR o código y las consultas relacionadas con el estado de asistencia, como se observa en la [Figura 183](#figura-183).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-183"></a>
 
 **Figura 183**
@@ -8938,6 +8663,8 @@ El grupo Check-ins presenta los contratos de registro de llegada por QR o códig
 
 El grupo Attendance Queues documenta las consultas de cola, posición y pacientes en espera, junto con la operación de llamado, como se observa en la [Figura 184](#figura-184).
 
+<!-- pdf-pagebreak -->
+
 <a id="figura-184"></a>
 
 **Figura 184**
@@ -8951,6 +8678,8 @@ El grupo Attendance Queues documenta las consultas de cola, posición y paciente
 ###### Ofertas de reasignación
 
 El grupo reassignment-offers-controller documenta la consulta de ofertas pendientes y las acciones para aceptar o rechazar una oferta, como se observa en la [Figura 185](#figura-185).
+
+<!-- pdf-pagebreak -->
 
 <a id="figura-185"></a>
 
@@ -9465,20 +9194,23 @@ Finalmente, se verificó el acceso público al Landing Page mediante la URL gene
 Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
 
 
-
 #### 4.2.1.9. Team Collaboration Insights during Sprint
 
 Durante el Sprint 1, el equipo **RuwaLabs** implementó el **Landing Page**, los **Web Services** (backend) y la **aplicación móvil para pacientes** (frontend). Todos los integrantes participaron en la implementación de los productos del alcance, distribuidos por producto y por bounded context, según lo definido en la matriz LACX del apartado 4.2.1.2.
 
 La colaboración se registra en GitHub a través de los commits y *pull requests* de cada repositorio. El analítico de actividad del periodo del Sprint evidencia la participación de los cinco integrantes —con **11 pull requests** integrados y **50 commits** en `develop` realizados por **5 autores**—, como se observa en la [Figura 198](#figura-198) y la [Figura 199](#figura-199).
-
+<!-- pdf-pagebreak -->
 <a id="figura-198"></a>
+
+
 
 **Figura 198**
 
 *Actividad del equipo durante el Sprint 1*
 
-<img src="assets/insight_tb1_overview.png" alt="Actividad del equipo durante el Sprint 1 de SaludYa" width="100%"/>
+<div align="left">
+<img src="assets/insight_tb1_overview.png" alt="Actividad del equipo durante el Sprint 1 de SaludYa" width="75%"/>
+</div>
 
 *Nota. Captura del panel Overview de GitHub correspondiente al periodo del Sprint 1.*
 
@@ -9488,7 +9220,9 @@ La colaboración se registra en GitHub a través de los commits y *pull requests
 
 *Contribuciones por integrante durante el Sprint 1*
 
-<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante durante el Sprint 1 de SaludYa" width="100%"/>
+<div align="left">
+<img src="assets/insight_tb1_contributors.png" alt="Contribuciones por integrante durante el Sprint 1 de SaludYa" width="50%"/>
+</div>
 
 *Nota. Captura del panel Contributors de GitHub correspondiente al periodo del Sprint 1.*
 
@@ -9558,6 +9292,8 @@ La **velocity** del Sprint 2 se estableció en **84 story points**, equivalente 
 #### 4.2.2.2. Aspect Leaders and Collaborators
 
 En el Sprint 2 el equipo organizó el trabajo en función de los módulos funcionales de la aplicación móvil administrativa: **Acceso y cuentas (IAM)**, **Inicio e indicadores**, **Agenda operativa**, **Cita y atención presencial**, **Configuración operativa** e **Integración de la aplicación**. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 81](#tabla-81). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog 2.
+<!-- pdf-pagebreak -->
+
 
 <a id="tabla-81"></a>
 
@@ -9580,6 +9316,8 @@ En el Sprint 2 el equipo organizó el trabajo en función de los módulos funcio
 El Sprint 2 tiene como objetivo habilitar la gestión diaria de la atención para el personal administrativo desde la aplicación móvil Flutter/Dart. Para su gestión, el equipo utiliza **Jira** como herramienta de control; el tablero del proyecto se puede revisar en el siguiente enlace y en la [Figura 200](#figura-200).
 
 - Link Jira: https://ruwalabs-salud-ya.atlassian.net/
+<!-- pdf-pagebreak -->
+
 
 <a id="figura-200"></a>
 
