@@ -307,6 +307,9 @@ Todos los integrantes de **RuwaLabs** participaron en la elaboración del inform
       - [4.2.2.3. Sprint Backlog 2](#4223-sprint-backlog-2)
       - [4.2.2.4. Development Evidence for Sprint Review](#4224-development-evidence-for-sprint-review)
       - [4.2.2.5. Testing Suite Evidence for Sprint Review](#4225-testing-suite-evidence-for-sprint-review)
+      - [4.2.2.7. Services Documentation Evidence for Sprint Review](#4227-services-documentation-evidence-for-sprint-review)
+      - [4.2.2.8. Software Deployment Evidence for Sprint Review](#4228-software-deployment-evidence-for-sprint-review)
+
   - [4.3. Validation Interviews](#43-validation-interviews)
     - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
@@ -8961,7 +8964,7 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado correctamente en AWS EC2; no se añadieron endpoints ni se realizaron cambios nuevos a la especificación OpenAPI durante esta revisión. Swagger UI permite consultar las operaciones existentes y, cuando corresponde, ejecutarlas con datos de muestra mediante *Try it out*. La documentación comprende los cinco *bounded contexts* del sistema: Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, con 62 operaciones distribuidas en 53 rutas.
+En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
 
 La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
 
@@ -9128,21 +9131,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-En esta sección se resumen las actividades de despliegue de los productos digitales de SaludYa. El backend Spring Boot ya se encuentra desplegado en AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL; su ejecución se administra mediante `systemd` y su actualización se automatiza con scripts de Bash. El Landing Page también se encuentra publicado en GitHub Pages. Para la distribución de la aplicación Android de prueba se utilizará Firebase App Distribution, que permitirá compartir una versión instalable con los participantes de la validación sin publicarla en una tienda de aplicaciones.
-
-> **Estado de la evidencia Android:** pendiente de completar la primera distribución del APK en Firebase App Distribution. Después de subir el artefacto y verificar su instalación, se incorporará en este espacio la captura de la release y su enlace de distribución. Hasta entonces, esta sección describe el procedimiento previsto y no afirma que la publicación en Firebase ya se haya realizado.
-
-##### Distribución de la aplicación Android mediante Firebase App Distribution
-
-La distribución se realizará desde Firebase App Distribution con un APK de release generado desde el proyecto Android que se utilizará en la validación. Se registrará la aplicación con su identificador de paquete, se cargará el APK, se invitará al grupo de testers y se comprobará la instalación y el funcionamiento de los flujos principales en un dispositivo físico. El acceso al backend se verificará desde la aplicación instalada.
-
-**Evidencia de la distribución:** [Agregar aquí la captura de Firebase App Distribution cuando la release se encuentre cargada y verificada].
-
-**Enlace de distribución para testers:** [Agregar aquí el enlace generado por Firebase App Distribution].
-
-*Nota. La captura y el enlace se añadirán después de completar la distribución real del APK; no se deben incluir invitaciones, correos personales ni credenciales en la imagen.*
-
-Las evidencias del despliegue del backend y del Landing Page se presentan a continuación.
+En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
 
 Las actividades realizadas durante el Sprint fueron:
 
@@ -9167,7 +9156,6 @@ set -euo pipefail
 DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
 DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
-
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
   exit 1
@@ -9248,7 +9236,6 @@ DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
 DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
 BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:?Define BOOTSTRAP_PASSWORD antes de ejecutar el script}"
-
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
   exit 1
@@ -9704,6 +9691,526 @@ El 12 de noviembre de 2026 se ejecutó `flutter test` por separado en los commit
 
 No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y reglas de Flutter, ni en los commits del perfil de paciente de Kotlin. Las pruebas de Kotlin documentadas en el Sprint 1 se conservan como evidencia de ese sprint. Queda pendiente validar los recorridos de Flutter de punta a punta con una cuenta de personal y el backend desplegado.
 
+#### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado correctamente en AWS EC2; no se añadieron endpoints ni se realizaron cambios nuevos a la especificación OpenAPI durante esta revisión. Swagger UI permite consultar las operaciones existentes y, cuando corresponde, ejecutarlas con datos de muestra mediante *Try it out*. La documentación comprende los cinco *bounded contexts* del sistema: Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, con 62 operaciones distribuidas en 53 rutas.
+
+La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
+
+- **Swagger UI (documentación desplegada):** http://3.129.217.49:8080/swagger-ui/index.html
+- **Especificación OpenAPI (JSON):** http://3.129.217.49:8080/v3/api-docs
+- **Repositorio de Web Services:** https://github.com/RuwaLabs/backend-saludya
+
+##### Commits relacionados con la documentación para este Sprint
+
+| Commit | Mensaje | Relación |
+|:--|:--|:--|
+| [`a592333`](https://github.com/RuwaLabs/backend-saludya/commit/a592333) | `docs(api): add OpenAPI spec export and Web Services endpoint documentation` | Exportación del documento OpenAPI (`docs/api/openapi.json`) y documentación de endpoints del Sprint |
+| [`fdf27c4`](https://github.com/RuwaLabs/backend-saludya/commit/fdf27c4) | `chore: drop hardcoded OpenAPI server so Swagger targets the current host` | Ajuste para que Swagger UI resuelva las peticiones contra el host desplegado |
+| [`a870d04`](https://github.com/RuwaLabs/backend-saludya/commit/a870d04) | `docs(iam): add setup guide and API request examples` | Guía de configuración y ejemplos de peticiones de IAM |
+| [`acb79f5`](https://github.com/RuwaLabs/backend-saludya/commit/acb79f5) | `fix(openapi): remove legacy ACME configuration` | Corrección de la configuración OpenAPI |
+| [`955abb6`](https://github.com/RuwaLabs/backend-saludya/commit/955abb6) | `feat: initializing project` | Configuración base de la documentación OpenAPI del proyecto |
+
+##### Tabla de endpoints documentados
+
+A continuación se detalla, para cada endpoint, la acción implementada, el verbo HTTP y la sintaxis de llamada, los parámetros admitidos, un ejemplo de petición y de respuesta con datos de muestra, la explicación de la respuesta y el enlace a su documentación desplegada. La URL base es `http://3.129.217.49:8080`.
+
+###### IAM — Identity & Access Management
+
+|  #  | Acción implementada                                        | Método | Sintaxis de llamada (endpoint)                   | Parámetros                                                                                   | Petición (ejemplo)                                                                                                                                                              | Respuesta (ejemplo)                                                                                                                                                                              | Explicación del response                                                                                               | Documentación                                                                                             |
+| :-: | :--------------------------------------------------------- | :----: | :----------------------------------------------- | :------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- |
+|  1  | Enviar código de verificación antes de registrar la cuenta |  POST  | `/api/v1/user-accounts/send-verification-code`   | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` · *sin cuerpo*                                                                                                                                                                             | Acepta la solicitud y envía un código de 6 dígitos al correo; no revela si el correo ya existe                         | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/sendVerificationCode) |
+|  2  | Registrar al paciente verificado                           |  POST  | `/api/v1/user-accounts`                          | body: `dni, name, lastname, birthDate, phone, email, password, code`                         | `{"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321","email":"kevin.huaman@gmail.com","password":"SaludYa#2026","code":"483920"}` | `201` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Crea la cuenta y devuelve el recurso del paciente; el header `Location` apunta al recurso creado                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/register)             |
+|  3  | Iniciar sesión (valida credenciales y envía código)        |  POST  | `/api/v1/user-accounts/login`                    | body: `email, password`                                                                      | `{"email":"kevin.huaman@gmail.com","password":"SaludYa#2026"}`                                                                                                                  | `200` `{"challengeId":"8f2c1d40-...","maskedEmail":"k***@gmail.com","expiresAt":"2026-10-09T10:35:00Z"}`                                                                                         | Valida las credenciales y devuelve el desafío con el correo enmascarado; un mensaje único cubre credenciales inválidas | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/login)                |
+|  4  | Completar inicio de sesión con el código                   |  POST  | `/api/v1/user-accounts/login/verify`             | body: `challengeId, code`                                                                    | `{"challengeId":"8f2c1d40-...","code":"721305"}`                                                                                                                                | `200` `{"accessToken":"eyJhbGciOiJIUzI1NiJ9...","tokenType":"Bearer","expiresAt":"2026-10-09T11:30:00Z","userId":10,"role":"PATIENT","patientId":1}`                                             | Devuelve el token de acceso (JWT) y los identificadores del paciente y su rol                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/verifyLogin)          |
+|  5  | Reenviar el código del desafío de login                    |  POST  | `/api/v1/user-accounts/login/resend`             | body: `challengeId`                                                                          | `{"challengeId":"8f2c1d40-..."}`                                                                                                                                                | `202` · *sin cuerpo*                                                                                                                                                                             | Genera y reenvía un nuevo código para el mismo desafío                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/resendLoginCode)      |
+|  6  | Cerrar sesión (revoca el token actual)                     |  POST  | `/api/v1/user-accounts/logout`                   | header: `Authorization: Bearer <token>`                                                      | *(sin cuerpo)*                                                                                                                                                                  | `204` · *sin cuerpo*                                                                                                                                                                             | Revoca la sesión Bearer vigente; responde sin contenido                                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/logout)               |
+|  7  | Solicitar enlace de recuperación de contraseña             |  POST  | `/api/v1/user-accounts/recover-password`         | body: `email`                                                                                | `{"email":"kevin.huaman@gmail.com"}`                                                                                                                                            | `202` `{"message":"If an active account exists, a recovery email will be sent."}`                                                                                                                | Confirma la recepción de forma genérica, sin revelar si el correo está registrado                                      | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/recover)              |
+|  8  | Restablecer contraseña con el enlace de recuperación       |  POST  | `/api/v1/user-accounts/reset-password`           | body: `token, password, confirmPassword`                                                     | `{"token":"d41d8cd98f00...","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                            | `204` · *sin cuerpo*                                                                                                                                                                             | Canjea el enlace de un solo uso y revoca las sesiones previas; responde sin contenido                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/reset)                |
+|  9  | Cambiar la contraseña usando la actual                     |  POST  | `/api/v1/user-accounts/change-password`          | header: `Authorization` · body: `currentPassword, password, confirmPassword`                 | `{"currentPassword":"SaludYa#2026","password":"Nueva#2026","confirmPassword":"Nueva#2026"}`                                                                                     | `204` · *sin cuerpo*                                                                                                                                                                             | Actualiza la contraseña del usuario autenticado; responde sin contenido                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/change)               |
+| 10  | Leer la cuenta y el perfil propios                         |  GET   | `/api/v1/user-accounts/me`                       | header: `Authorization`                                                                      | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}` | Devuelve el perfil de la cuenta autenticada                                                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/me)                   |
+| 11  | Leer un perfil por id                                      |  GET   | `/api/v1/user-accounts/{id}`                     | path: `id` · header: `Authorization`                                                         | `/api/v1/user-accounts/10`                                                                                                                                                      | `200` `{"id":10,"role":"PATIENT","email":"kevin.huaman@gmail.com","active":true,"patientId":1,...}`                                                                                              | Devuelve el perfil propio; un SUPER_ADMIN puede consultar otra cuenta                                                  | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/get)                  |
+| 12  | Actualizar correo y celular                                |  PUT   | `/api/v1/user-accounts/{id}`                     | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":10,"email":"kevin.nuevo@gmail.com","phone":"987111222",...}`                                                                                                                        | Actualiza solo correo y celular; la identidad y el rol permanecen inmutables                                           | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/update)               |
+| 13  | Crear cuenta de personal de admisión                       |  POST  | `/api/v1/user-accounts/staff`                    | header: `Authorization (SUPER_ADMIN)` · body: `dni, name, lastname, birthDate, phone, email` | `{"dni":"70000002","name":"Franco","lastname":"Alanoca","birthDate":"1999-03-02","phone":"999888777","email":"franco@saludya.local"}`                                           | `201` `{"id":15,"role":"ADMISSION_STAFF","email":"franco@saludya.local","active":true,"patientId":null,...}`                                                                                     | Crea la cuenta del personal y envía una invitación para definir contraseña                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20User%20accounts/staff)                |
+| 14  | Verificar identidad por DNI y nombre                       |  POST  | `/api/v1/identity-verifications`                 | body: `dni, name, lastname`                                                                  | `{"dni":"74218365","name":"Kevin","lastname":"Huamán"}`                                                                                                                         | `200` `{"verified":true}`                                                                                                                                                                        | Indica si el DNI existe y el nombre completo coincide con el registro oficial                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/verify)       |
+| 15  | Comprobar si un DNI es conocido                            |  POST  | `/api/v1/identity-verifications/exists`          | body: `dni`                                                                                  | `{"dni":"74218365"}`                                                                                                                                                            | `200` `{"exists":true}`                                                                                                                                                                          | Indica si el DNI es conocido por el proveedor de identidad                                                             | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Identity%20verification/exists)       |
+| 16  | Leer el perfil de paciente                                 |  GET   | `/api/v1/patients/{id}`                          | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1`                                                                                                                                                            | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin","lastname":"Huamán","birthDate":"2003-05-14","phone":"987654321"}`                                                                    | Devuelve el paciente propio o un menor vinculado                                                                       | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/get_1)                       |
+| 17  | Actualizar datos de contacto del paciente                  |  PUT   | `/api/v1/patients/{id}`                          | path: `id` · body: `email, phone`                                                            | `{"email":"kevin.nuevo@gmail.com","phone":"987111222"}`                                                                                                                         | `200` `{"id":1,"userId":10,"dni":"74218365","name":"Kevin",...}`                                                                                                                                 | Actualiza el contacto del paciente propio y devuelve el recurso actualizado                                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/update_1)                    |
+| 18  | Listar menores vinculados                                  |  GET   | `/api/v1/patients/{id}/minors`                   | path: `id` · header: `Authorization`                                                         | `/api/v1/patients/1/minors`                                                                                                                                                     | `200` `[{"id":5,"patientId":88,"tutorId":1}]`                                                                                                                                                    | Lista los vínculos de tutoría del paciente autenticado                                                                 | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Patients/minors)                      |
+| 19  | Vincular a un menor verificado                             |  POST  | `/api/v1/patient-minors`                         | header: `Authorization` · body: `dni, name, lastname, birthDate, confirmFiliation`           | `{"dni":"76543210","name":"Ana","lastname":"Torres","birthDate":"2015-08-20","confirmFiliation":true}`                                                                          | `201` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Crea el vínculo de tutoría tras confirmar la filiación; `Location` apunta al recurso                                   | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/link)                 |
+| 20  | Leer un vínculo de tutoría                                 |  GET   | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `200` `{"id":5,"patientId":88,"tutorId":1}`                                                                                                                                                      | Devuelve el vínculo de tutoría solicitado                                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/get_2)                |
+| 21  | Desvincular a un menor                                     | DELETE | `/api/v1/patient-minors/{id}`                    | path: `id` · header: `Authorization`                                                         | `/api/v1/patient-minors/5`                                                                                                                                                      | `204` · *sin cuerpo*                                                                                                                                                                             | Elimina el vínculo de tutoría conservando la historia clínica del menor                                                | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Linked%20minors/unlink)               |
+| 22  | Obtener instrucciones de soporte                           |  GET   | `/api/v1/account-recovery-requests/support`      | —                                                                                            | *(sin cuerpo)*                                                                                                                                                                  | `200` `{"instructions":"Acude al área de admisión con tu DNI original...","phone":"999888777"}`                                                                                                  | Devuelve las instrucciones y el teléfono de soporte (público)                                                          | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/support)          |
+| 23  | Solicitar recuperación asistida                            |  POST  | `/api/v1/account-recovery-requests`              | body: `dni, contactEmail`                                                                    | `{"dni":"74218365","contactEmail":"familiar@gmail.com"}`                                                                                                                        | `202` `{"message":"Request received...","instructions":"...","phone":"999888777"}`                                                                                                               | Registra la solicitud; no otorga acceso ni revela cuentas                                                              | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/request)          |
+| 24  | Listar solicitudes de recuperación abiertas                |  GET   | `/api/v1/account-recovery-requests`              | header: `Authorization (SUPER_ADMIN)`                                                        | *(sin cuerpo)*                                                                                                                                                                  | `200` `[{"id":"3f7b...","dni":"74218365","contactEmail":"familiar@gmail.com","status":"OPEN","createdAt":"2026-10-09T10:00:00Z",...}]`                                                           | Lista las 100 solicitudes abiertas más antiguas                                                                        | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/open)             |
+| 25  | Resolver solicitud de recuperación asistida                |  POST  | `/api/v1/account-recovery-requests/{id}/resolve` | path: `id` · header: `Authorization (SUPER_ADMIN)` · body: `identityCheckedInPerson`         | `{"identityCheckedInPerson":true}`                                                                                                                                              | `200` `{"email":"new.user@saludya.local","password":"Temp#a1B2c3","message":"..."}`                                                                                                              | Restablece la cuenta con correo y clave temporal tras verificar el DNI físico (SUPER_ADMIN)                            | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/IAM%20-%20Assisted%20recovery/resolve)          |
+
+###### Appointments & Booking
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
+| 26 | Reservar una cita | POST | `/api/v1/appointments` | body: `patientId, timeSlotId` | `{"patientId":1,"timeSlotId":31}` | `201` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"bookingCode":"RSV-000142","status":"RESERVED","createdAt":"2026-10-09T09:00:00Z","updatedAt":null}` | Crea la cita y devuelve el recurso; `Location` apunta a la cita creada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/bookAppointment) |
+| 27 | Listar citas con filtros | GET | `/api/v1/appointments` | query: `patientId, timeSlotId, doctorId, specialtyId, date, status` | `/api/v1/appointments?patientId=1&status=RESERVED` | `200` `[{"id":142,"timeSlotId":31,"patientId":1,"status":"RESERVED",...}]` | Devuelve las citas filtradas; si el actor es paciente, `patientId` es obligatorio | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointments) |
+| 28 | Obtener una cita por id | GET | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"timeSlotId":31,"patientId":1,"bookingOrder":3,"status":"RESERVED",...}` | Devuelve la cita; error si no existe o no es gestionable por el usuario | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentById) |
+| 29 | Listar citas de un paciente | GET | `/api/v1/appointments/patient/{patientId}` | path: `patientId` · query: `status` | `/api/v1/appointments/patient/1?status=CONFIRMED` | `200` `[{"id":142,"patientId":1,"status":"CONFIRMED",...}]` | Lista las citas del paciente indicado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/getAppointmentsByPatient) |
+| 30 | Cancelar una cita | DELETE | `/api/v1/appointments/{id}` | path: `id` | `/api/v1/appointments/142` | `200` `{"id":142,"status":"CANCELLED",...}` | Cancela la cita y devuelve el recurso con estado `CANCELLED` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Appointments/cancelAppointment) |
+| 31 | Listar doctores por especialidad | GET | `/api/v1/doctors` | query: `specialtyId` (obligatorio) | `/api/v1/doctors?specialtyId=1` | `200` `[{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}]` | Devuelve los doctores de la especialidad indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorsBySpecialty) |
+| 32 | Obtener un doctor por id | GET | `/api/v1/doctors/{id}` | path: `id` | `/api/v1/doctors/7` | `200` `{"id":7,"specialtyId":1,"name":"Ana","lastname":"Rojas"}` | Devuelve el doctor solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Doctors/getDoctorById) |
+| 33 | Listar especialidades | GET | `/api/v1/specialties` | — | `/api/v1/specialties` | `200` `[{"id":1,"name":"Medicina general","description":"Atención médica primaria"}]` | Devuelve el catálogo de especialidades | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getAllSpecialties) |
+| 34 | Obtener una especialidad por id | GET | `/api/v1/specialties/{id}` | path: `id` | `/api/v1/specialties/1` | `200` `{"id":1,"name":"Medicina general","description":"Atención médica primaria"}` | Devuelve la especialidad solicitada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Specialties/getSpecialtyById) |
+| 35 | Slots disponibles por especialidad y fecha | GET | `/api/v1/time-slots/available` | query: `specialtyId, date` (obligatorios) | `/api/v1/time-slots/available?specialtyId=1&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5,"currentBookings":2,"status":"AVAILABLE"}]` | Devuelve los slots con cupo disponible para la especialidad y fecha | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getAvailableTimeSlots) |
+| 36 | Slots de un doctor en una fecha | GET | `/api/v1/time-slots` | query: `doctorId, date` (obligatorios) | `/api/v1/time-slots?doctorId=7&date=2026-10-15` | `200` `[{"id":31,"doctorId":7,"date":"2026-10-15","status":"AVAILABLE",...}]` | Devuelve los slots del doctor en la fecha indicada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotsByDoctorAndDate) |
+| 37 | Obtener un slot por id | GET | `/api/v1/time-slots/{id}` | path: `id` | `/api/v1/time-slots/31` | `200` `{"id":31,"doctorId":7,"date":"2026-10-15","startHour":"09:00","status":"AVAILABLE",...}` | Devuelve el slot solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/getTimeSlotById) |
+| 38 | Crear un slot de atención | POST | `/api/v1/time-slots` | body: `doctorId, date, startHour, endHour, room, maxCapacity` | `{"doctorId":7,"date":"2026-10-16","startHour":"09:00","endHour":"09:30","room":"Consultorio 3","maxCapacity":5}` | `201` `{"id":32,"doctorId":7,"date":"2026-10-16","startHour":"09:00","status":"AVAILABLE",...}` | Crea el slot y devuelve el recurso creado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/createTimeSlot) |
+| 39 | Actualizar la capacidad de un slot | PUT | `/api/v1/time-slots/{id}/capacity` | path: `id` · body: `maxCapacity` | `{"maxCapacity":8}` | `200` `{"id":31,"maxCapacity":8,"currentBookings":2,"status":"AVAILABLE",...}` | Actualiza la capacidad máxima del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlotCapacity) |
+| 40 | Editar un slot (doctor, horario y estado) | PUT | `/api/v1/time-slots/{id}` | path: `id` · body: `doctorId, startHour, endHour, status` | `{"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE"}` | `200` `{"id":31,"doctorId":7,"startHour":"10:00","endHour":"10:30","status":"AVAILABLE",...}` | Edita los datos del slot | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Time%20Slots/updateTimeSlot) |
+
+###### Arrival & QR Check-in
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
+| 41 | Registrar check-in por token QR | POST | `/api/v1/check-ins/qr` | body: `qrToken` | `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Registra la llegada, crea el ticket y la entrada en la cola; devuelve la posición | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckIn) |
+| 42 | Registrar check-in por código de reserva | POST | `/api/v1/check-ins/code` | body: `bookingCode` | `{"bookingCode":"RSV-000142"}` | `201` `{"checkInId":15,"appointmentId":142,"queueEntryId":9,"position":3,"totalInQueue":8,"status":"WAITING"}` | Alternativa manual: registra la llegada con el código de reserva | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/registerCheckInByCode) |
+| 43 | Obtener el ticket digital de un check-in | GET | `/api/v1/check-ins/{id}` | path: `id` | `/api/v1/check-ins/15` | `200` `{"id":15,"appointmentId":142,"bookingCode":"RSV-000142","turnCode":"A-003","specialtyName":"Medicina general","status":"VALID",...}` | Devuelve el ticket digital del check-in | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getById_1) |
+| 44 | Obtener el ticket digital de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}` | path: `appointmentId` | `/api/v1/check-ins/appointment/142` | `200` `{"id":15,"appointmentId":142,"turnCode":"A-003","status":"VALID",...}` | Devuelve el ticket digital asociado a la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getByAppointment) |
+| 45 | Generar el token QR firmado de una cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/qr-token` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/qr-token` | `200` `{"qrToken":"eyJhbGciOiJIUzI1NiJ9.qr.14f..."}` | Genera el token QR firmado y temporal de la cita | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/generateQrToken) |
+| 46 | Posición del paciente en la cola por cita | GET | `/api/v1/check-ins/appointment/{appointmentId}/position` | path: `appointmentId` | `/api/v1/check-ins/appointment/142/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición actual del paciente y el total en cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Check-ins/getPosition) |
+| 47 | Obtener una entrada de cola | GET | `/api/v1/queue-entries/{id}` | path: `id` | `/api/v1/queue-entries/9` | `200` `{"id":9,"attendanceQueueId":4,"checkInId":15,"position":3,"status":"WAITING","calledAt":null,"attendedAt":null}` | Devuelve la entrada de cola (el paciente puede leer la suya) | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/getById) |
+| 48 | Marcar una entrada como ausente | POST | `/api/v1/queue-entries/{id}/absent` | path: `id` | `/api/v1/queue-entries/9/absent` | `204` · *sin cuerpo* | Marca al paciente como ausente y cierra su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/markAbsent) |
+| 49 | Salir voluntariamente de la cola | POST | `/api/v1/queue-entries/{id}/leave` | path: `id` | `/api/v1/queue-entries/9/leave` | `204` · *sin cuerpo* | El paciente abandona la cola; la cita se marca como ausente | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/leaveQueue) |
+| 50 | Iniciar la atención de una entrada llamada | POST | `/api/v1/queue-entries/{id}/start` | path: `id` | `/api/v1/queue-entries/9/start` | `200` `{"id":9,"status":"IN_ATTENTION",...}` | Cambia la entrada a `IN_ATTENTION` | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/startAttention) |
+| 51 | Finalizar la atención de una entrada | POST | `/api/v1/queue-entries/{id}/finish` | path: `id` | `/api/v1/queue-entries/9/finish` | `200` `{"id":9,"status":"ATTENDED","attendedAt":"2026-10-15T09:25:00Z"}` | Marca la entrada como atendida | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Queue%20Entries/finishAttention) |
+| 52 | Resolver la cola de un slot en una fecha | GET | `/api/v1/attendance-queues` | query: `timeSlotId, date` (obligatorios) | `/api/v1/attendance-queues?timeSlotId=31&date=2026-10-15` | `200` `{"id":4,"timeSlotId":31,"date":"2026-10-15","status":"OPEN"}` | Devuelve la cola de atención del slot y fecha; error si no existe | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getQueue) |
+| 53 | Listar las entradas de una cola | GET | `/api/v1/attendance-queues/{id}/entries` | path: `id` | `/api/v1/attendance-queues/4/entries` | `200` `[{"id":9,"position":3,"status":"WAITING",...}]` | Lista las entradas (pacientes) de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getEntries) |
+| 54 | Posición actual en la cola | GET | `/api/v1/attendance-queues/{id}/position` | path: `id` | `/api/v1/attendance-queues/4/position` | `200` `{"position":3,"totalInQueue":8}` | Devuelve la posición y el total de la cola | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/getPosition_1) |
+| 55 | Llamar al siguiente paciente | POST | `/api/v1/attendance-queues/{id}/call-next` | path: `id` | `/api/v1/attendance-queues/4/call-next` | `200` `{"id":9,"position":3,"status":"CALLED","calledAt":"2026-10-15T09:10:00Z"}` | Llama al siguiente paciente en espera y devuelve su entrada | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/Attendance%20Queues/callNext) |
+
+###### Reassignment
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
+| 56 | Listar ofertas de cupo pendientes | GET | `/api/v1/reassignment-offers/pending` | header: `Authorization` · query: `appointmentId` (opcional) | `/api/v1/reassignment-offers/pending` | `200` `[{"id":21,"appointmentId":142,"originalAppointmentId":130,"freedTimeSlotId":31,"candidateTimeSlotId":31,"status":"PENDING","offeredAt":"2026-10-09T09:05:00Z","respondedAt":null,"expiresAt":"2026-10-09T09:15:00Z"}]` | Devuelve las ofertas pendientes del usuario y sus menores | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/getPendingOffers) |
+| 57 | Aceptar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/accept` | path: `id` | `/api/v1/reassignment-offers/21/accept` | `200` `{"id":21,"status":"ACCEPTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Acepta la oferta y agenda la cita en el cupo liberado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/acceptOffer) |
+| 58 | Rechazar una oferta de reasignación | POST | `/api/v1/reassignment-offers/{id}/reject` | path: `id` | `/api/v1/reassignment-offers/21/reject` | `200` `{"id":21,"status":"REJECTED","respondedAt":"2026-10-09T09:08:00Z",...}` | Rechaza la oferta y libera el cupo al siguiente candidato | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/reassignment-offers-controller/rejectOffer) |
+
+###### Hospital Operations & Configuration
+
+| # | Acción implementada | Método | Sintaxis de llamada (endpoint) | Parámetros | Petición (ejemplo) | Respuesta (ejemplo) | Explicación del response | Documentación |
+|:--:|:--|:--:|:--|:--|:--|:--|:--|:--|
+| 59 | Leer la configuración del establecimiento | GET | `/api/v1/config` | — | `/api/v1/config` | `200` `{"id":1,"maxCapacityPerSlot":5,"bookingOrderScope":"PER_SPECIALTY","checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"attendanceQueueVisible":true,...}` | Devuelve la configuración vigente del establecimiento | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getConfiguration) |
+| 60 | Actualizar la configuración del establecimiento | PUT | `/api/v1/config` | body: `maxCapacityPerSlot, checkInToleranceMinutes, postCallToleranceMinutes, reassignmentResponseTimeoutMin, bookingCutoffTime, cancellationDeadlineHours, attendanceQueueVisible` | `{"maxCapacityPerSlot":6,"checkInToleranceMinutes":15,"postCallToleranceMinutes":5,"reassignmentResponseTimeoutMin":10,"bookingCutoffTime":"18:00","cancellationDeadlineHours":24,"attendanceQueueVisible":true}` | `200` `{"id":1,"maxCapacityPerSlot":6,...,"updatedAt":"2026-10-09T08:30:00"}` | Actualiza la configuración y devuelve el recurso actualizado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/updateConfiguration) |
+| 61 | Obtener el panel de métricas del día | GET | `/api/v1/config/dashboard` | query: `date` (opcional) | `/api/v1/config/dashboard?date=2026-10-15` | `200` `{"configurationId":1,"metrics":[{"name":"appointmentsToday","value":24},{"name":"inQueue","value":8}],"externalDataAvailable":true,...}` | Devuelve las métricas operativas del día | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/getDashboard) |
+| 62 | Generar un reporte por rango de fechas | GET | `/api/v1/config/reports` | query: `from, to, format` (obligatorios; `format` por defecto `JSON`) | `/api/v1/config/reports?from=2026-10-01&to=2026-10-07&format=JSON` | `200` `{"format":"JSON","generatedAt":"2026-10-09T12:00:00Z","content":"{...}"}` | Genera el reporte del rango indicado en el formato solicitado | [Swagger](http://3.129.217.49:8080/swagger-ui/index.html#/configuration-controller/generateReport) |
+
+##### Evidencias de interacción
+
+A continuación se presenta una muestra del modelo de evidencia de la interacción con la documentación desplegada (Swagger UI). Para cada endpoint se incluye el JSON de envío, la captura y una descripción. Los endpoints elegidos son públicos.
+
+###### 1. `POST /api/v1/identity-verifications` -  Verificar identidad por DNI
+
+**JSON de envío:**
+```json
+{ "dni": "74500834", "name": "Neo Daniel", "lastname": "Ramos Mera" }
+```
+
+<p align="center">
+  <img src="assets/Services%20Deployment/identity_verifications.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications" width="100%"/>
+</p>
+
+*Figura 200. Ejecución de `POST /api/v1/identity-verifications` en Swagger UI con datos de muestra; respuesta `200` con `{"verified": true}`.*
+
+###### 2. `POST /api/v1/identity-verifications/exists` -  Comprobar si un DNI es conocido
+
+**JSON de envío:**
+```json
+{ "dni": "74500834" }
+```
+
+<p align="center">
+  <img src="assets/Services%20Deployment/identity_verifications_exists.jpeg" alt="Swagger UI - POST /api/v1/identity-verifications/exists" width="100%"/>
+</p>
+
+*Figura 201. Ejecución de `POST /api/v1/identity-verifications/exists`; respuesta `200` con `{"exists": true}`.*
+
+###### 3. `POST /api/v1/user-accounts/send-verification-code` -  Enviar código de verificación
+
+**JSON de envío:**
+```json
+{ "email": "doriangray292929@gmail.com" }
+```
+
+<p align="center">
+  <img src="assets/Services%20Deployment/useraccounts_sendverificationcode.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/send-verification-code" width="100%"/>
+</p>
+
+*Figura 202. Ejecución de `POST /api/v1/user-accounts/send-verification-code`; respuesta `202` (sin cuerpo).*
+
+###### 4. `POST /api/v1/user-accounts/recover-password` -  Solicitar recuperación de contraseña
+
+**JSON de envío:**
+```json
+{ "email": "doriangray292929@gmail.com" }
+```
+
+<p align="center">
+  <img src="assets/Services%20Deployment/useraccounts_recoverpassword.jpeg" alt="Swagger UI - POST /api/v1/user-accounts/recover-password" width="100%"/>
+</p>
+
+*Figura 203. Ejecución de `POST /api/v1/user-accounts/recover-password`; respuesta `202` con un mensaje genérico.*
+
+#### 4.2.2.8. Software Deployment Evidence for Sprint Review
+
+En esta sección se resumen las actividades de despliegue de los productos digitales de SaludYa. El backend Spring Boot ya se encuentra desplegado en AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL; su ejecución se administra mediante `systemd` y su actualización se automatiza con scripts de Bash. El Landing Page también se encuentra publicado en GitHub Pages. Para la distribución de la aplicación Flutter de prueba se utilizará Firebase App Distribution, que permitirá compartir una versión instalable con los participantes de la validación sin publicarla en una tienda de aplicaciones.
+
+> **Estado de la evidencia Flutter:** pendiente de completar la primera distribución del APK en Firebase App Distribution. Después de subir el artefacto y verificar su instalación, se incorporará en este espacio la captura de la release y su enlace de distribución. Hasta entonces, esta sección describe el procedimiento previsto y no afirma que la publicación en Firebase ya se haya realizado.
+
+##### Distribución de la aplicación Flutter mediante Firebase App Distribution
+
+La distribución se realizará desde Firebase App Distribution con un APK de release generado desde el proyecto Flutter que se utilizará en la validación. Se registrará la aplicación con su identificador de paquete, se cargará el APK, se invitará al grupo de testers y se comprobará la instalación y el funcionamiento de los flujos principales en un dispositivo físico. El acceso al backend se verificará desde la aplicación instalada.
+
+**Evidencia de la distribución:** [Agregar aquí la captura de Firebase App Distribution cuando la release se encuentre cargada y verificada].
+
+**Enlace de distribución para testers:** [Agregar aquí el enlace generado por Firebase App Distribution].
+
+*Nota. La captura y el enlace se añadirán después de completar la distribución real del APK; no se deben incluir invitaciones, correos personales ni credenciales en la imagen.*
+
+Las evidencias del despliegue del backend y del Landing Page se presentan a continuación.
+
+Las actividades realizadas durante el Sprint fueron:
+
+- **Creación de la cuenta y de los recursos en el proveedor cloud (AWS):** alta de la cuenta, creación del *key pair* para el acceso SSH, lanzamiento de la instancia EC2 y configuración de la red (security group con los puertos necesarios).
+- **Configuración del servidor:** instalación de Java 25 (Temurin), PostgreSQL y Git, y creación del usuario y la base de datos del backend.
+- **Externalización de secretos:** las variables sensibles (JWT, QR, clave de cifrado de notificaciones, SMTP, ApiPeru y bootstrap) se almacenan en `/etc/saludya/saludya.env`, fuera del repositorio, y systemd las carga mediante `EnvironmentFile`, de modo que sobreviven a cada despliegue.
+- **Automatización del despliegue:** tres scripts de Bash (`setup-server.sh`, `setup-env.sh` y `deploy.sh`) y un servicio `systemd` (`saludya.service`) que recompila el JAR y reinicia el backend.
+- **Verificación:** el backend queda disponible y se comprueba consultando el endpoint `/v3/api-docs`.
+
+##### Scripts de despliegue
+
+Para automatizar el aprovisionamiento y el despliegue del backend se utilizaron tres scripts de Bash.
+
+###### `setup-server.sh`
+
+Instala el entorno base del servidor (Java 25 con Temurin, PostgreSQL y Git) y crea el rol y la base de datos del backend.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/3] Instalando Java 25 (Temurin) ..."
+apt-get update
+apt-get install -y wget apt-transport-https gpg
+mkdir -p /etc/apt/keyrings
+wget -qO- https://packages.adoptium.net/artifactory/api/gpg/key/public \
+  | gpg --dearmor > /etc/apt/keyrings/adoptium.gpg
+. /etc/os-release
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.gpg] https://packages.adoptium.net/artifactory/deb ${VERSION_CODENAME} main" \
+> /etc/apt/sources.list.d/adoptium.list
+apt-get update
+apt-get install -y temurin-25-jdk
+
+echo "==> [2/3] Instalando PostgreSQL y git ..."
+apt-get install -y postgresql git
+systemctl enable --now postgresql
+
+echo "==> [3/3] Creando usuario y base de datos ..."
+# Crea el rol si no existe, o actualiza su password si ya existe.
+sudo -u postgres psql -v ON_ERROR_STOP=1 <<SQL
+DO \$\$
+BEGIN
+   IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = '${DB_USER}') THEN
+      CREATE ROLE ${DB_USER} LOGIN PASSWORD '${DB_PASSWORD}';
+   ELSE
+      ALTER ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASSWORD}';
+   END IF;
+END
+\$\$;
+SQL
+
+# Crea la base de datos si no existe, con el usuario como owner.
+if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
+  sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
+fi
+
+sudo -u postgres psql -v ON_ERROR_STOP=1 -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_USER};"
+sudo -u postgres psql -v ON_ERROR_STOP=1 -d "${DB_NAME}" -c "GRANT ALL ON SCHEMA public TO ${DB_USER};"
+
+echo
+echo "================ RESUMEN ================"
+java -version 2>&1 | head -1
+sudo -u postgres psql -tAc "SELECT version();"
+echo "Base de datos : ${DB_NAME}"
+echo "Usuario       : ${DB_USER}"
+echo "Password      : [no se muestra]"
+echo "========================================="
+echo "Siguiente paso ->  sudo bash setup-env.sh"
+```
+
+###### `setup-env.sh`
+
+Genera el archivo `/etc/saludya/saludya.env` con todas las variables del backend (base de datos, secretos JWT/QR/cifrado, verificación de identidad, correo y bootstrap), con permisos `600` para mantener los secretos protegidos.
+
+```bash
+#!/usr/bin/env bash
+#
+# setup-env.sh - Crea /etc/saludya/saludya.env con TODAS las variables del backend.
+#
+#   Las variables viven FUERA del repositorio, y systemd las carga con
+#   EnvironmentFile. Por eso sobreviven a cada "git pull" / despliegue.
+#
+# Uso:
+#   sudo bash setup-env.sh
+#
+# Personaliza con variables de entorno:
+#   DB_PASSWORD=<valor-seguro> BOOTSTRAP_PASSWORD=<valor-seguro> sudo -E bash setup-env.sh
+#
+set -euo pipefail
+
+DB_HOST="${DB_HOST:-localhost}"
+DB_PORT="${DB_PORT:-5432}"
+DB_NAME="${DB_NAME:-saludyadb}"
+DB_USER="${DB_USER:-saludya}"
+DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
+BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:?Define BOOTSTRAP_PASSWORD antes de ejecutar el script}"
+
+if [ "$(id -u)" -ne 0 ]; then
+  echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+mkdir -p /etc/saludya
+cat > /etc/saludya/saludya.env <<EOF
+SPRING_PROFILES_ACTIVE=prod
+
+# --- Base de datos (PostgreSQL local) ---
+DB_HOST=${DB_HOST}
+DB_PORT=${DB_PORT}
+DB_NAME=${DB_NAME}
+DB_USER=${DB_USER}
+DB_PASSWORD=${DB_PASSWORD}
+
+# --- Secretos JWT / QR / cifrado de notificaciones ---
+APPLICATION_JWT_SECRET=<GENERATE_A_UNIQUE_SECRET>
+APPLICATION_QR_SECRET=<GENERATE_A_UNIQUE_SECRET>
+IAM_NOTIFICATIONS_ENCRYPTION_KEY=<GENERATE_A_BASE64_ENCODED_KEY>
+
+# --- Verificacion de identidad (ApiPeru) ---
+IAM_IDENTITY_MODE=apiperu
+IAM_IDENTITY_URL=https://api.apiperu.dev/dni
+IAM_IDENTITY_API_KEY=<IDENTITY_PROVIDER_API_KEY>
+
+# --- Administrador inicial (bootstrap) ---
+IAM_BOOTSTRAP_ENABLED=true
+IAM_BOOTSTRAP_EMAIL=<BOOTSTRAP_ADMIN_EMAIL>
+IAM_BOOTSTRAP_PASSWORD=${BOOTSTRAP_PASSWORD}
+
+# --- Correo (Gmail SMTP) ---
+MAIL_ENABLED=true
+MAIL_USERNAME=<SMTP_USERNAME>
+MAIL_FROM=<SMTP_FROM_ADDRESS>
+MAIL_APP_PASSWORD=<SMTP_APP_PASSWORD>
+IAM_NOTIFICATIONS_LOG_CODES=true
+EOF
+
+chmod 600 /etc/saludya/saludya.env
+chown root:root /etc/saludya/saludya.env
+
+echo "OK -> /etc/saludya/saludya.env creado (permisos 600)."
+echo "Editar   ->  sudo nano /etc/saludya/saludya.env"
+echo "Aplicar  ->  sudo systemctl restart saludya"
+```
+
+###### `deploy.sh`
+
+Despliega o actualiza el backend en la EC2: obtiene el código (`git clone` la primera vez o `git pull` después), compila el JAR con Maven (`./mvnw`), (re)genera el servicio `systemd`, lo reinicia y verifica que el backend responda.
+
+```bash
+#!/usr/bin/env bash
+#
+# deploy.sh - Despliega o ACTUALIZA el backend SaludYa en la EC2.
+#
+#   * Clona el repo la primera vez, o hace "git pull" en las siguientes
+#   * Compila el JAR con Maven (./mvnw)
+#   * (Re)genera el servicio systemd y lo reinicia
+#   * Verifica que responda
+#
+# Uso:
+#   bash deploy.sh
+#
+# Requisitos: haber corrido antes setup-server.sh y setup-env.sh
+#
+set -euo pipefail
+
+REPO_URL="${REPO_URL:-https://github.com/RuwaLabs/backend-saludya.git}"
+BRANCH="${BRANCH:-develop}"
+APP_DIR="${APP_DIR:-$HOME/backend-saludya}"
+ENV_FILE="${ENV_FILE:-/etc/saludya/saludya.env}"
+SERVICE="saludya"
+JAR="$APP_DIR/saludya/target/saludya-0.0.1-SNAPSHOT.jar"
+
+if [ ! -f "$ENV_FILE" ]; then
+  echo "ERROR: falta $ENV_FILE. Corre primero ->  sudo bash setup-env.sh" >&2
+  exit 1
+fi
+
+echo "==> [1/4] Obteniendo codigo ..."
+if [ -d "$APP_DIR/.git" ]; then
+  git -C "$APP_DIR" fetch origin "$BRANCH"
+  git -C "$APP_DIR" reset --hard "origin/$BRANCH"
+else
+  git clone --branch "$BRANCH" "$REPO_URL" "$APP_DIR"
+fi
+
+echo "==> [2/4] Compilando (Maven) ..."
+cd "$APP_DIR/saludya"
+./mvnw -q clean package -DskipTests
+
+echo "==> [3/4] Configurando servicio systemd ..."
+sudo tee /etc/systemd/system/saludya.service >/dev/null <<EOF
+[Unit]
+Description=SaludYa backend
+After=network.target postgresql.service
+
+[Service]
+User=$USER
+WorkingDirectory=$APP_DIR
+EnvironmentFile=$ENV_FILE
+ExecStart=/usr/bin/java -Xmx384m -XX:+UseSerialGC -jar $JAR
+SuccessExitStatus=143
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable "$SERVICE" >/dev/null 2>&1 || true
+sudo systemctl restart "$SERVICE"
+
+echo "==> [4/4] Verificando ..."
+for _ in $(seq 1 60); do
+  code="$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/v3/api-docs || true)"
+  if [ "$code" = "200" ]; then
+    echo "OK: backend arriba -> http://localhost:8080/v3/api-docs (200)"
+    break
+  fi
+  sleep 2
+done
+
+sudo systemctl status "$SERVICE" --no-pager | head -15
+echo
+echo "Logs en vivo ->  journalctl -u $SERVICE -f"
+```
+
+##### Evidencias de despliegue
+
+A continuación se presentan las capturas del proceso de despliegue en AWS.
+
+###### Creación del key pair (acceso SSH)
+
+<p align="center">
+  <img src="assets/Backend%20Deployment%20Evidence/key%20pari%20(login).jpeg" alt="Creación del key pair en AWS" width="100%"/>
+</p>
+
+*Figura 204. Creación del key pair en AWS, necesario para acceder por SSH a la instancia.*
+
+###### Instancia EC2 (resumen)
+
+<p align="center">
+  <img src="assets/Backend%20Deployment%20Evidence/instance%20summary.jpeg" alt="Resumen de la instancia EC2" width="100%"/>
+</p>
+
+*Figura 205. Resumen de la instancia EC2 donde se desplegó el backend (Web Services).*
+
+###### Configuración de red (security group)
+
+<p align="center">
+  <img src="assets/Backend%20Deployment%20Evidence/network%20settings.jpeg" alt="Configuración de red de la instancia" width="100%"/>
+</p>
+
+*Figura 206. Configuración de red de la instancia, con los puertos habilitados para el acceso al backend.*
+
+###### Acceso SSH a la instancia
+
+<p align="center">
+  <img src="assets/Backend%20Deployment%20Evidence/ssh%20terminal%20login.jpeg" alt="Acceso SSH a la instancia EC2" width="100%"/>
+</p>
+
+*Figura 207. Acceso por SSH a la instancia EC2 del backend.*
+
+###### Scripts de despliegue en el servidor
+
+<p align="center">
+  <img src="assets/Backend%20Deployment%20Evidence/ls%20to%20see%20server-setup%20server-env%20and%20delploy%20sh%20files.jpeg" alt="Listado de los scripts de despliegue en el servidor" width="100%"/>
+</p>
+
+*Figura 208. Listado del directorio del servidor donde se observan los scripts de despliegue (`setup-server.sh`, `setup-env.sh` y `deploy.sh`).*
+
+
+##### Landing Page
+
+El Landing Page de SaludYa se desplegó como un sitio estático utilizando **GitHub Pages**, aprovechando la integración nativa con el repositorio del proyecto y la ausencia de costos asociados para proyectos académicos. El despliegue se realizó sobre la rama `main` del repositorio [`RuwaLabs/saludya-landing`](https://github.com/RuwaLabs/saludya-landing), y el sitio quedó publicado de forma automática en la URL:
+
+**URL de despliegue:** https://ruwalabs.github.io/saludya-landing/
+
+Las actividades realizadas durante el Sprint para el despliegue del Landing Page fueron:
+
+- **Creación del repositorio en GitHub:** se creó el repositorio `saludya-landing` dentro de la organización RuwaLabs, con la estructura de carpetas `assets/css`, `assets/js`, `assets/img`, `assets/locales` y el archivo `index.html` en la raíz.
+- **Configuración de GitHub Pages:** se habilitó la publicación del sitio desde la rama `main` y la carpeta `/ (root)` del repositorio.
+- **Automatización del despliegue:** se incorporó un flujo de trabajo de GitHub Actions (`.github/workflows/deploy.yml`) que publica automáticamente el sitio cada vez que se hace `push` a la rama `main`.
+- **Verificación del despliegue:** se comprobó el acceso público al sitio mediante la URL generada por GitHub Pages y se validó la carga de estilos, scripts e imágenes.
+
+A continuación se presentan las capturas de las actividades realizadas.
+
+###### Configuración de GitHub Pages
+
+En la configuración del repositorio se habilitó GitHub Pages como fuente de publicación, seleccionando la rama `main` y la carpeta `/ (root)`. La plataforma genera automáticamente la URL pública del sitio a partir del nombre de la organización y del repositorio.
+
+<a id="figura-209"></a>
+
+<p align="center">
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-pages-settings.png" alt="Configuración de GitHub Pages en el repositorio del Landing Page" width="100%"/>
+</p>
+
+*Figura 209. Configuración de GitHub Pages en el repositorio del Landing Page. Nota. Captura de la sección Settings → Pages del repositorio `saludya-landing` en GitHub.*
+
+###### Flujo de trabajo de GitHub Actions
+
+Para automatizar la publicación del Landing Page, se incorporó un workflow de GitHub Actions (`.github/workflows/deploy.yml`) que se ejecuta en cada `push` a la rama `main`. El workflow instala las dependencias necesarias, prepara el sitio estático y lo publica en GitHub Pages.
+
+<a id="figura-210"></a>
+
+<p align="center">
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-github-actions.png" alt="Ejecución exitosa del workflow de despliegue" width="100%"/>
+</p>
+
+*Figura 210. Ejecución exitosa del workflow de despliegue. Nota. Captura de la pestaña Actions del repositorio `saludya-landing`, donde se observa la ejecución exitosa del workflow `Deploy to GitHub Pages`.*
+
+###### Verificación del despliegue
+
+Finalmente, se verificó el acceso público al Landing Page mediante la URL generada por GitHub Pages, comprobando la correcta carga de la página principal, los estilos, los scripts de internacionalización y las imágenes del Hero.
+
+<a id="figura-211"></a>
+
+<p align="center">
+  <img src="assets/Landing-page%20Deployment%20Evidence/landing-deployed.png" alt="Landing Page de SaludYa publicado en GitHub Pages" width="100%"/>
+</p>
+
+*Figura 211. Landing Page de SaludYa publicado en GitHub Pages. Nota. Captura del Landing Page accesible en `https://ruwalabs.github.io/saludya-landing/`.*
+
+Con estas actividades, el Landing Page quedó publicado, disponible para su consulta pública y con despliegue automatizado ante cada cambio en la rama `main`, cumpliendo con el objetivo del Sprint 1 de presentar la propuesta de valor de SaludYa.
+
+
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9771,7 +10278,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 200. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 212. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -9875,7 +10382,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 201. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 213. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -10081,9 +10588,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-<a id="figura-202"></a>
+<a id="figura-214"></a>
 
-**Figura 202**
+**Figura 214**
 
 *Registro - Datos de acceso*
 
@@ -10091,9 +10598,9 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-203"></a>
+<a id="figura-215"></a>
 
-**Figura 203**
+**Figura 215**
 
 *Registro - Verificar correo*
 
@@ -10112,9 +10619,9 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-<a id="figura-204"></a>
+<a id="figura-216"></a>
 
-**Figura 204**
+**Figura 216**
 
 *Diálogo correo verificado*
 
@@ -10133,9 +10640,9 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-<a id="figura-205"></a>
+<a id="figura-217"></a>
 
-**Figura 205**
+**Figura 217**
 
 *Login paciente*
 
@@ -10143,9 +10650,9 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-206"></a>
+<a id="figura-218"></a>
 
-**Figura 206**
+**Figura 218**
 
 *Diálogo credenciales incorrectas*
 
@@ -10164,9 +10671,9 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-<a id="figura-207"></a>
+<a id="figura-219"></a>
 
-**Figura 207**
+**Figura 219**
 
 *Registro - Datos de acceso*
 
@@ -10174,9 +10681,9 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-208"></a>
+<a id="figura-220"></a>
 
-**Figura 208**
+**Figura 220**
 
 *Recuperación - Nueva contraseña*
 
@@ -10195,9 +10702,9 @@ Mostrar bajo el campo los requisitos de la contraseña y un indicador de segurid
 **Problema:**
 El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y notificaciones miden 24 x 24 px, y las celdas de día del calendario miden 40 x 32 px. Para usuarios con poca precisión motriz, manos grandes o uso en movimiento, estos elementos son difíciles de tocar. "Cerrar sesión" también es un texto de una sola línea (18 px de alto).
 
-<a id="figura-209"></a>
+<a id="figura-221"></a>
 
-**Figura 209**
+**Figura 221**
 
 *Login paciente*
 
@@ -10205,9 +10712,9 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-210"></a>
+<a id="figura-222"></a>
 
-**Figura 210**
+**Figura 222**
 
 *Dashboard inicio*
 
@@ -10215,9 +10722,9 @@ El ícono para mostrar la contraseña mide 20 x 20 px, los íconos de volver y n
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-211"></a>
+<a id="figura-223"></a>
 
-**Figura 211**
+**Figura 223**
 
 *Reserva - Elegir fecha*
 
@@ -10236,9 +10743,9 @@ Garantizar áreas táctiles de al menos 44 x 44 px (o 48 x 48 dp en Android) amp
 **Problema:**
 Las etiquetas de la navegación inferior (15 px de alto de línea), los indicadores "PASO X DE Y" (16 px), la leyenda del calendario y las notas bajo los botones (16–17 px) corresponden a fuentes de aproximadamente 11–12 px. Para usuarios con baja visión o adultos mayores, que son parte del público de una app de salud, es difícil de leer.
 
-<a id="figura-212"></a>
+<a id="figura-224"></a>
 
-**Figura 212**
+**Figura 224**
 
 *Dashboard inicio*
 
@@ -10246,9 +10753,9 @@ Las etiquetas de la navegación inferior (15 px de alto de línea), los indicado
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-213"></a>
+<a id="figura-225"></a>
 
-**Figura 213**
+**Figura 225**
 
 *Registro - Datos de acceso*
 
@@ -10267,9 +10774,9 @@ Usar un tamaño mínimo de 12–14 sp en textos auxiliares y verificar que la in
 **Problema:**
 Los errores de código incorrecto, identidad no coincidente o contraseñas diferentes se presentan como diálogos que cubren la pantalla. El usuario no ve el campo con el error mientras lee el mensaje, y debe recordar cuál era. Los mensajes tampoco señalan qué dato exacto corregir (por ejemplo, "Revisa el DNI, nombres, apellidos y fecha de nacimiento").
 
-<a id="figura-214"></a>
+<a id="figura-226"></a>
 
-**Figura 214**
+**Figura 226**
 
 *Verificar correo*
 
@@ -10288,9 +10795,9 @@ Mostrar errores en línea junto al campo afectado, con color, ícono y texto, y 
 **Problema:**
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
 
-<a id="figura-215"></a>
+<a id="figura-227"></a>
 
-**Figura 215**
+**Figura 227**
 
 *Registro - Verificar correo*
 
@@ -10309,9 +10816,9 @@ Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y pr
 **Problema:**
 En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fecha de nacimiento es un campo de texto con el formato DD/MM/AAAA. Esto facilita errores de formato, y como la fecha se compara con el DNI, un error genera el diálogo "Datos no coincidentes".
 
-<a id="figura-216"></a>
+<a id="figura-228"></a>
 
-**Figura 216**
+**Figura 228**
 
 *Registro - Verificar identidad*
 
@@ -10319,9 +10826,9 @@ En "02 · Registro · Verificar identidad" y "19 · Menores · Vincular" la fech
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-217"></a>
+<a id="figura-229"></a>
 
-**Figura 217**
+**Figura 229**
 
 *Menores - Vincular*
 
@@ -10340,9 +10847,9 @@ Usar un selector de fecha nativo o un campo con máscara automática que inserte
 **Problema:**
 El diálogo indica "Este correo pertenece a otra cuenta. Usa otro o inicia sesión", pero su único botón es "Volver". Si el usuario ya tenía cuenta, debe retroceder y buscar el enlace de inicio de sesión por su cuenta.
 
-<a id="figura-218"></a>
+<a id="figura-230"></a>
 
-**Figura 218**
+**Figura 230**
 
 *Diálogo correo duplicado*
 
@@ -10361,9 +10868,9 @@ Agregar un botón secundario "Iniciar sesión" y mantener "Usar otro correo" com
 **Problema:**
 La pantalla "15 · Recuperación · Ayuda" informa que "los canales de la mesa de ayuda se mostrarán cuando el establecimiento los configure". Un usuario que perdió acceso a su correo solo puede enviar una solicitud de revisión, sin saber cuánto tarda ni cómo hacer seguimiento, y no tiene teléfono, correo ni dirección de contacto.
 
-<a id="figura-219"></a>
+<a id="figura-231"></a>
 
-**Figura 219**
+**Figura 231**
 
 *Recuperación - Ayuda*
 
@@ -10382,9 +10889,9 @@ Mostrar siempre un canal alternativo (teléfono o dirección del establecimiento
 **Problema:**
 Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen la navegación inferior que sí existe en el dashboard, y "18 · Menores · Lista" no tiene un botón "Volver". Además, usan la cabecera grande con logo (190 px de alto) en lugar de la cabecera con flecha de retorno del dashboard. El usuario queda sin una salida clara y la experiencia cambia respecto del resto de la app.
 
-<a id="figura-220"></a>
+<a id="figura-232"></a>
 
-**Figura 220**
+**Figura 232**
 
 *Perfil paciente*
 
@@ -10392,9 +10899,9 @@ Las pantallas "16 · Perfil · Paciente" y "18 · Menores · Lista" no incluyen 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-221"></a>
+<a id="figura-233"></a>
 
-**Figura 221**
+**Figura 233**
 
 *Menores - Lista*
 
@@ -10413,9 +10920,9 @@ Usar la misma cabecera con flecha de retorno y la navegación inferior en todas 
 **Problema:**
 En "19 · Menores · Vincular", el texto "Confirmas que eres su adulto responsable." aparece sobre el botón "Verificar y vincular" sin un checkbox ni acción de aceptación. El usuario puede vincular a un menor sin haber leído ni aceptado explícitamente esta declaración, lo que es delicado por tratarse de datos de salud de un menor.
 
-<a id="figura-222"></a>
+<a id="figura-234"></a>
 
-**Figura 222**
+**Figura 234**
 
 *Menores - Vincular*
 
@@ -10434,9 +10941,9 @@ Agregar un checkbox obligatorio con el texto de la declaración y mantener desha
 **Problema:**
 En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5678", mientras que en "R02 · Beneficiario" el mismo menor aparece con "••••2716". Lo mismo ocurre con la titular: en "16 · Perfil · Paciente" Lucía Torres tiene DNI "••••1234", pero en "R02 · Beneficiario" aparece con "••••4821". En un contexto de salud, esta diferencia puede hacer dudar al usuario de si los datos son correctos o de si está seleccionando a la persona correcta.
 
-<a id="figura-223"></a>
+<a id="figura-235"></a>
 
-**Figura 223**
+**Figura 235**
 
 *Perfil paciente*
 
@@ -10444,9 +10951,9 @@ En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-224"></a>
+<a id="figura-236"></a>
 
-**Figura 224**
+**Figura 236**
 
 *Menores - Lista*
 
@@ -10454,9 +10961,9 @@ En "18 · Menores · Lista" el menor Mateo Torres aparece con DNI "••••5
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-225"></a>
+<a id="figura-237"></a>
 
-**Figura 225**
+**Figura 237**
 
 *Reserva - Beneficiario*
 
@@ -10475,9 +10982,9 @@ Usar los mismos datos de ejemplo en todas las pantallas y verificar la coherenci
 **Problema:**
 La navegación inferior tiene "Inicio", "Reservar cita", "Asistencia" y "Configuración". "Asistencia" puede interpretarse como ayuda, como registro de llegada (existe "Registrar mi llegada" en el detalle de cita) o como historial de asistencias, y su ícono es un código QR que no aclara ninguna de esas lecturas. El ícono de "Configuración" se parece más a un símbolo de brillo (un sol) que al engranaje habitual de ajustes. Además, el perfil y los menores vinculados no tienen una opción visible en la navegación, por lo que el usuario no sabe dónde encontrarlos.
 
-<a id="figura-226"></a>
+<a id="figura-238"></a>
 
-**Figura 226**
+**Figura 238**
 
 *Dashboard inicio*
 
@@ -10496,9 +11003,9 @@ Renombrar la opción según su función ("Ayuda" o "Mi llegada"), incluir "Perfi
 **Problema:**
 En "D04 · Historial · Calendario" la leyenda indica "● Disponible" y "Fecha seleccionada". "Disponible" no corresponde a un historial de citas pasadas (debería indicar días con atenciones), y la diferencia entre ambos estados se comunica solo con color. Los usuarios con daltonismo o baja visión no podrán distinguir qué días tienen citas.
 
-<a id="figura-227"></a>
+<a id="figura-239"></a>
 
-**Figura 227**
+**Figura 239**
 
 *Historial - Calendario*
 
@@ -10517,9 +11024,9 @@ Cambiar la leyenda a "Día con atención", usar además una forma o un ícono di
 **Problema:**
 En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D05 · Historial filtrado" solo aparece "Cambiar fecha". Para volver a ver todo el historial, el usuario debe abrir de nuevo el calendario o retroceder con la flecha.
 
-<a id="figura-228"></a>
+<a id="figura-240"></a>
 
-**Figura 228**
+**Figura 240**
 
 *Historial filtrado*
 
@@ -10527,9 +11034,9 @@ En "D04 · Historial · Calendario" existe el botón "Quitar filtro", pero en "D
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-229"></a>
+<a id="figura-241"></a>
 
-**Figura 229**
+**Figura 241**
 
 *Historial - Calendario*
 
@@ -10548,9 +11055,9 @@ Mostrar en la pantalla filtrada un chip con la fecha aplicada y una "x" o un bot
 **Problema:**
 En "D06 · Detalle de cita" el texto "La cancelación está sujeta al plazo del establecimiento" no indica cuál es el plazo, y está al final (17 px de alto, letra pequeña). Además, "Registrar mi llegada" y "Cancelar reserva" son botones consecutivos separados por solo 14 px, con riesgo de toque equivocado.
 
-<a id="figura-230"></a>
+<a id="figura-242"></a>
 
-**Figura 230**
+**Figura 242**
 
 *Detalle de cita*
 
@@ -10569,9 +11076,9 @@ Mostrar el plazo concreto (por ejemplo, "Puedes cancelar hasta 24 horas antes"),
 **Problema:**
 En "R01 · Reserva tu cita" la etiqueta del campo es "Buscar especialidad", pero el placeholder indica "Buscar por nombre…". El usuario no sabe si puede escribir el nombre de un médico o solo una especialidad. Además, cada tarjeta repite "Ver disponibilidad", lo que añade ruido visual.
 
-<a id="figura-231"></a>
+<a id="figura-243"></a>
 
-**Figura 231**
+**Figura 243**
 
 *Reserva - Especialidades*
 
@@ -10590,9 +11097,9 @@ Alinear etiqueta y placeholder ("Ej. Pediatría") y quitar el texto repetido de 
 **Problema:**
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
-<a id="figura-232"></a>
+<a id="figura-244"></a>
 
-**Figura 232**
+**Figura 244**
 
 *Dashboard inicio*
 
@@ -10611,9 +11118,9 @@ Incluir en "Configuración" un selector de idioma (English / Español), definir 
 **Problema:**
 El diálogo "Las claves no coinciden" usa "claves", mientras que el resto de la app usa "contraseña". Es un problema menor, pero el usuario puede pensar que se trata de otro dato.
 
-<a id="figura-233"></a>
+<a id="figura-245"></a>
 
-**Figura 233**
+**Figura 245**
 
 *Diálogo contraseñas diferentes*
 
@@ -10632,9 +11139,9 @@ Usar siempre "contraseña" y definir una guía de términos para la app.
 **Problema:**
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
-<a id="figura-234"></a>
+<a id="figura-246"></a>
 
-**Figura 234**
+**Figura 246**
 
 *Dashboard inicio*
 
@@ -10642,9 +11149,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-235"></a>
+<a id="figura-247"></a>
 
-**Figura 235**
+**Figura 247**
 
 *Error de carga*
 
@@ -10652,9 +11159,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-236"></a>
+<a id="figura-248"></a>
 
-**Figura 236**
+**Figura 248**
 
 *Reserva - Especialidades*
 
