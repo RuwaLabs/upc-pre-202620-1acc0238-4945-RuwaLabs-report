@@ -8964,7 +8964,7 @@ El grupo reassignment-offers-controller documenta la consulta de ofertas pendien
 
 #### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-En este Sprint se continuó el trabajo sobre los servicios web de SaludYa. La documentación OpenAPI ya implementada se mantiene publicada junto con el backend desplegado correctamente en AWS EC2; no se añadieron endpoints ni se realizaron cambios nuevos a la especificación OpenAPI durante esta revisión. Swagger UI permite consultar las operaciones existentes y, cuando corresponde, ejecutarlas con datos de muestra mediante *Try it out*. La documentación comprende los cinco *bounded contexts* del sistema: Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, con 62 operaciones distribuidas en 53 rutas.
+En esta sección se presenta la evidencia de la documentación de los Web Services del backend de SaludYa correspondiente a este Sprint. La documentación se generó con springdoc-openapi (OpenAPI 3) a partir de las anotaciones del código y se encuentra desplegada y navegable en Swagger UI, lo que permite consultar cada operación y ejecutarla con datos de muestra mediante la opción *Try it out*. Se documentaron los servicios de los cinco *bounded contexts* del sistema Identity & Access Management, Appointments & Booking, Arrival & QR Check-in, Reassignment y Hospital Operations & Configuration, alcanzando 62 operaciones distribuidas en 53 rutas.
 
 La especificación OpenAPI se publica en `/v3/api-docs` y se exportó al repositorio de Web Services (`docs/api/openapi.json`) para su versionado. La API utiliza autenticación HTTP Bearer con JWT (esquema `bearerAuth`); los endpoints públicos (registro, inicio de sesión, verificación de identidad y recuperación de cuenta) están marcados con `@SecurityRequirements` y no requieren token, mientras que el resto exige un token vigente obtenido tras el inicio de sesión.
 
@@ -9131,21 +9131,7 @@ A continuación se presenta una muestra del modelo de evidencia de la interacci�
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-En esta sección se resumen las actividades de despliegue de los productos digitales de SaludYa. El backend Spring Boot ya se encuentra desplegado en AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL; su ejecución se administra mediante `systemd` y su actualización se automatiza con scripts de Bash. El Landing Page también se encuentra publicado en GitHub Pages. Para la distribución de la aplicación Android de prueba se utilizará Firebase App Distribution, que permitirá compartir una versión instalable con los participantes de la validación sin publicarla en una tienda de aplicaciones.
-
-> **Estado de la evidencia Android:** pendiente de completar la primera distribución del APK en Firebase App Distribution. Después de subir el artefacto y verificar su instalación, se incorporará en este espacio la captura de la release y su enlace de distribución. Hasta entonces, esta sección describe el procedimiento previsto y no afirma que la publicación en Firebase ya se haya realizado.
-
-##### Distribución de la aplicación Android mediante Firebase App Distribution
-
-La distribución se realizará desde Firebase App Distribution con un APK de release generado desde el proyecto Android que se utilizará en la validación. Se registrará la aplicación con su identificador de paquete, se cargará el APK, se invitará al grupo de testers y se comprobará la instalación y el funcionamiento de los flujos principales en un dispositivo físico. El acceso al backend se verificará desde la aplicación instalada.
-
-**Evidencia de la distribución:** [Agregar aquí la captura de Firebase App Distribution cuando la release se encuentre cargada y verificada].
-
-**Enlace de distribución para testers:** [Agregar aquí el enlace generado por Firebase App Distribution].
-
-*Nota. La captura y el enlace se añadirán después de completar la distribución real del APK; no se deben incluir invitaciones, correos personales ni credenciales en la imagen.*
-
-Las evidencias del despliegue del backend y del Landing Page se presentan a continuación.
+En esta sección se presenta la evidencia de las actividades de despliegue (Deployment) realizadas durante este Sprint. El despliegue se enfocó en los Web Services de SaludYa: el backend (Spring Boot) se desplegó en una instancia AWS EC2 con Ubuntu, Java 25 (Temurin) y PostgreSQL, publicándose el servicio mediante un systemd unit y automatizando el proceso con scripts de Bash. Los productos digitales del alcance Landing Page, Web Services y aplicaciones móviles cuentan con su respectiva estrategia de despliegue; en esta entrega, la evidencia corresponde a los Web Services.
 
 Las actividades realizadas durante el Sprint fueron:
 
@@ -9170,7 +9156,6 @@ set -euo pipefail
 DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
 DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
-
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-server.sh" >&2
   exit 1
@@ -9251,7 +9236,6 @@ DB_NAME="${DB_NAME:-saludyadb}"
 DB_USER="${DB_USER:-saludya}"
 DB_PASSWORD="${DB_PASSWORD:?Define DB_PASSWORD antes de ejecutar el script}"
 BOOTSTRAP_PASSWORD="${BOOTSTRAP_PASSWORD:?Define BOOTSTRAP_PASSWORD antes de ejecutar el script}"
-
 if [ "$(id -u)" -ne 0 ]; then
   echo "ERROR: ejecuta con sudo ->  sudo bash setup-env.sh" >&2
   exit 1
@@ -9883,6 +9867,20 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
 
 #### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
+El despliegue del backend, del Landing Page y de la aplicación Android ya se realizó en el Sprint 1 y se documentó en la sección 4.2.1.8. En este avance no se repite ese despliegue: la Figura 210 muestra la aplicación Android instalada y ejecutándose con el backend desplegado.
+
+<a id="figura-210"></a>
+
+**Figura 210**
+
+*Aplicación Android de SaludYa en ejecución*
+
+<img src="assets/execution/sprint-1/android-inicio.png" alt="Aplicación Android de SaludYa en ejecución" width="60%"/>
+
+*Nota. Captura de la aplicación Android instalada y ejecutándose con el backend desplegado.*
+
+El despliegue de la aplicación Flutter (personal y administración) no forma parte de este avance; queda pendiente para una entrega posterior.
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9950,7 +9948,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 210. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 211. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -10054,7 +10052,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 211. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 212. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -10268,9 +10266,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
 
-<a id="figura-212"></a>
+<a id="figura-213"></a>
 
-**Figura 212**
+**Figura 213**
 
 *Registro - Datos de acceso*
 
@@ -10278,9 +10276,9 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-213"></a>
+<a id="figura-214"></a>
 
-**Figura 213**
+**Figura 214**
 
 *Registro - Verificar correo*
 
@@ -10299,9 +10297,9 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
 
-<a id="figura-214"></a>
+<a id="figura-215"></a>
 
-**Figura 214**
+**Figura 215**
 
 *Diálogo correo verificado*
 
@@ -10320,9 +10318,9 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
 
-<a id="figura-215"></a>
+<a id="figura-216"></a>
 
-**Figura 215**
+**Figura 216**
 
 *Login paciente*
 
@@ -10330,9 +10328,9 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-216"></a>
+<a id="figura-217"></a>
 
-**Figura 216**
+**Figura 217**
 
 *Diálogo credenciales incorrectas*
 
@@ -10351,9 +10349,9 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
 
-<a id="figura-217"></a>
+<a id="figura-218"></a>
 
-**Figura 217**
+**Figura 218**
 
 *Registro - Datos de acceso*
 
@@ -10361,9 +10359,9 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-218"></a>
+<a id="figura-219"></a>
 
-**Figura 218**
+**Figura 219**
 
 *Recuperación - Nueva contraseña*
 
@@ -10382,9 +10380,9 @@ Mostrar bajo el campo los requisitos de la contraseña y un indicador de segurid
 **Problema:**
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
 
-<a id="figura-219"></a>
+<a id="figura-220"></a>
 
-**Figura 219**
+**Figura 220**
 
 *Registro - Verificar correo*
 
@@ -10403,9 +10401,9 @@ Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y pr
 **Problema:**
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
 
-<a id="figura-220"></a>
+<a id="figura-221"></a>
 
-**Figura 220**
+**Figura 221**
 
 *Dashboard inicio*
 
@@ -10424,9 +10422,9 @@ Incluir en "Configuración" un selector de idioma (English / Español), definir 
 **Problema:**
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
 
-<a id="figura-221"></a>
+<a id="figura-222"></a>
 
-**Figura 221**
+**Figura 222**
 
 *Dashboard inicio*
 
@@ -10434,9 +10432,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-222"></a>
+<a id="figura-223"></a>
 
-**Figura 222**
+**Figura 223**
 
 *Error de carga*
 
@@ -10444,9 +10442,9 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-223"></a>
+<a id="figura-224"></a>
 
-**Figura 223**
+**Figura 224**
 
 *Reserva - Especialidades*
 
@@ -10465,9 +10463,9 @@ Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegació
 **Problema:**
 En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo indicado por el establecimiento: 5 minutos" y solo muestra la hora de la llamada ("Llamada registrada: 09:15"). No hay contador regresivo ni hora límite, aunque el personal sí ve "Quedan 02:30" en su pantalla. Si el paciente no llega a tiempo, "A11 · Fuera del plazo" le avisa recién cuando la cita ya quedó como inasistencia. El paciente puede perder su turno sin haber visto cuánto tiempo tenía.
 
-<a id="figura-224"></a>
+<a id="figura-225"></a>
 
-**Figura 224**
+**Figura 225**
 
 *A05 - Llamada a consultorio*
 
@@ -10475,9 +10473,9 @@ En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo in
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-225"></a>
+<a id="figura-226"></a>
 
-**Figura 225**
+**Figura 226**
 
 *A11 - Fuera del plazo*
 
@@ -10496,9 +10494,9 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 **Problema:**
 "A07 · Atención finalizada" dice "Has sido atendida", con género femenino fijo. La app la usan hombres y personas de otros géneros, y además un adulto puede ver los tickets de un menor (A15 · Ticket de menor, que es de Mateo). El mensaje no se adapta a ninguno de esos casos.
 
-<a id="figura-226"></a>
+<a id="figura-227"></a>
 
-**Figura 226**
+**Figura 227**
 
 *A07 - Atención finalizada*
 
@@ -10506,9 +10504,9 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-227"></a>
+<a id="figura-228"></a>
 
-**Figura 227**
+**Figura 228**
 
 *A15 - Ticket de menor*
 
@@ -10527,9 +10525,9 @@ Usar un texto neutro ("Tu atención finalizó") o personalizarlo según el benef
 **Problema:**
 La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin llegada registrada", "A07 · Atención finalizada", "A16 · Turno ausente" y "C12 · Sin menores". Un resultado positivo (atendida) y uno negativo (inasistencia) se ven iguales, y el usuario debe leer el texto para saber qué pasó. En los diálogos de error se usa otro estilo (alerta roja), por lo que el criterio tampoco es uniforme.
 
-<a id="figura-228"></a>
+<a id="figura-229"></a>
 
-**Figura 228**
+**Figura 229**
 
 *A07 - Atención finalizada*
 
@@ -10537,9 +10535,9 @@ La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin l
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-229"></a>
+<a id="figura-230"></a>
 
-**Figura 229**
+**Figura 230**
 
 *A16 - Turno ausente*
 
@@ -10558,9 +10556,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 **Problema:**
 "C15 · Código vencido" dice "Solicita un nuevo código para completar el cambio", pero su único botón es "Entendido", así que el usuario debe cerrar el diálogo y buscar "Reenviar código". "C18 · Vínculo no acreditado" remite a "admisión" sin ningún canal de contacto. "A11 · Fuera del plazo" y "A16 · Turno ausente" informan la inasistencia, pero solo ofrecen "Entendido" o "Ver mis citas", sin reprogramar ni contactar. El usuario queda sin siguiente paso.
 
-<a id="figura-230"></a>
+<a id="figura-231"></a>
 
-**Figura 230**
+**Figura 231**
 
 *C15 - Código vencido*
 
@@ -10568,9 +10566,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-231"></a>
+<a id="figura-232"></a>
 
-**Figura 231**
+**Figura 232**
 
 *C18 - Vínculo no acreditado*
 
@@ -10578,9 +10576,9 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-232"></a>
+<a id="figura-233"></a>
 
-**Figura 232**
+**Figura 233**
 
 *A16 - Turno ausente*
 
@@ -10599,9 +10597,9 @@ Ofrecer la acción de recuperación en el mismo diálogo ("Solicitar nuevo códi
 **Problema:**
 En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cuadro blanco que "Celular" y "Correo", que sí se pueden cambiar. En estos últimos, la única parte accionable es el pequeño texto "Editar →" dentro del cuadro. El usuario toca el nombre y no pasa nada, y puede no notar el enlace "Editar". La nota que lo explica ("Los datos de identidad verificados se muestran para consulta") está al final y en letra pequeña.
 
-<a id="figura-233"></a>
+<a id="figura-234"></a>
 
-**Figura 233**
+**Figura 234**
 
 *C02 - Mis datos*
 
@@ -10620,9 +10618,9 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 **Problema:**
 "C05 · Confirmar cambio por correo" se titula "Verificar correo", pero su texto dice "...enviado a tu correo registrado para confirmar el cambio de celular". El usuario que quiere cambiar el celular lee que debe "verificar el correo" y puede creer que cambió algo del correo. "C06" usa el mismo título para verificar realmente un correo nuevo, así que dos tareas distintas comparten pantalla de aspecto idéntico.
 
-<a id="figura-234"></a>
+<a id="figura-235"></a>
 
-**Figura 234**
+**Figura 235**
 
 *C05 - Confirmar cambio por correo*
 
@@ -10630,9 +10628,9 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-235"></a>
+<a id="figura-236"></a>
 
-**Figura 235**
+**Figura 236**
 
 *C06 - Verificar correo*
 
@@ -10651,9 +10649,9 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 **Problema:**
 "C07 · Parientes vinculados" ofrece "Sincronizar vínculos" y "C08 · Detalle del menor" ofrece "Sincronizar datos". No se explica qué se sincroniza, con qué ni cuándo conviene hacerlo. Una persona no técnica no sabe si debe pulsarlo, y la sincronización debería ser automática. El resultado ("C13 · Vínculos sincronizados") tampoco aclara qué cambió.
 
-<a id="figura-236"></a>
+<a id="figura-237"></a>
 
-**Figura 236**
+**Figura 237**
 
 *C07 - Parientes vinculados*
 
@@ -10661,9 +10659,9 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-237"></a>
+<a id="figura-238"></a>
 
-**Figura 237**
+**Figura 238**
 
 *C08 - Detalle del menor*
 
@@ -10682,9 +10680,9 @@ Reemplazarlo por una actualización automática o por un texto comprensible ("Ac
 **Problema:**
 "C17 · Dato inválido" dice "Ingresa un correo válido o un celular de 9 dígitos, según el campo". El mismo mensaje sirve para dos pantallas distintas y obliga al usuario a deducir cuál es el suyo. Además, aparece en un diálogo que tapa el campo con error.
 
-<a id="figura-238"></a>
+<a id="figura-239"></a>
 
-**Figura 238**
+**Figura 239**
 
 *C17 - Dato inválido*
 
@@ -10705,9 +10703,9 @@ Mostrar el error junto al campo con un mensaje específico ("El celular debe ten
 
 **Relación con otros hallazgos:** el selector de idioma ya se reportó en el problema #6; este problema amplía el hallazgo a las opciones de notificación y accesibilidad.
 
-<a id="figura-239"></a>
+<a id="figura-240"></a>
 
-**Figura 239**
+**Figura 240**
 
 *C01 - Configuración*
 
@@ -10812,9 +10810,9 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 **Problema:**
 En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestran con el mismo texto verde pequeño, así que un bloque lleno no se distingue de uno con cupos. Pasa lo mismo en "P11 · Cola presencial" ("En atención" y "En espera") y en "P20 · Pacientes con reserva" ("Llegada registrada", "Pendiente de llegada" y "En atención"). Para escanear rápido una lista de decenas de ítems hay que leer cada texto, y una persona con daltonismo no tiene otra pista.
 
-<a id="figura-240"></a>
+<a id="figura-241"></a>
 
-**Figura 240**
+**Figura 241**
 
 *P04 - Bloques de hoy*
 
@@ -10822,9 +10820,9 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-241"></a>
+<a id="figura-242"></a>
 
-**Figura 241**
+**Figura 242**
 
 *P11 - Cola presencial*
 
@@ -10832,9 +10830,9 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-242"></a>
+<a id="figura-243"></a>
 
-**Figura 242**
+**Figura 243**
 
 *P20 - Pacientes con reserva*
 
@@ -10853,9 +10851,9 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 **Problema:**
 "P05" indica que el bloque 09:00–09:30 tiene "Capacidad: 8 · Reservas: 8". En "P07 · Editar bloque" se puede cambiar la hora, la especialidad, el profesional y el estado, y solo hay "Confirmar cambios" y "Cancelar". No se muestra cuántos pacientes se afectan ni cuáles, y si hay conflicto "P23" solo dice "El cambio entra en conflicto con reservas confirmadas o con otro bloque del profesional", sin indicar cuál. Un cambio mal hecho puede mover o cancelar citas de hasta 8 pacientes sin que el personal lo sepa.
 
-<a id="figura-243"></a>
+<a id="figura-244"></a>
 
-**Figura 243**
+**Figura 244**
 
 *P07 - Editar bloque*
 
@@ -10863,9 +10861,9 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-244"></a>
+<a id="figura-245"></a>
 
-**Figura 244**
+**Figura 245**
 
 *P23 - Cambio incompatible*
 
@@ -10884,9 +10882,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 **Problema:**
 "P08 · Elegir profesional", "P09 · Elegir horario" y "P10 · Horario por profesional" no dicen para qué se elige (¿reasignar una cita?, ¿crear una reserva?, ¿consultar?). En P08 cada tarjeta tiene "Seleccionar →" pero ninguna muestra estado seleccionado antes de "Continuar". En P09 y P10 el horario elegido solo se indica con el texto pequeño "· Seleccionado", sin resaltar la tarjeta. Además, P09 y P10 son casi idénticas.
 
-<a id="figura-245"></a>
+<a id="figura-246"></a>
 
-**Figura 245**
+**Figura 246**
 
 *P08 - Elegir profesional*
 
@@ -10894,9 +10892,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-246"></a>
+<a id="figura-247"></a>
 
-**Figura 246**
+**Figura 247**
 
 *P09 - Elegir horario*
 
@@ -10904,9 +10902,9 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-247"></a>
+<a id="figura-248"></a>
 
-**Figura 247**
+**Figura 248**
 
 *P10 - Horario por profesional*
 
@@ -10925,9 +10923,9 @@ Indicar la tarea en el título o subtítulo ("Reasignar cita de Lucía Torres"),
 **Problema:**
 En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" cierra la atención y retira al paciente de la cola ("P17 · Atención finalizada" aparece después). No hay confirmación previa ni un "Deshacer", y el botón está a solo 14 px de "Llamar al siguiente". Un toque equivocado deja a un paciente fuera de la cola sin forma visible de revertirlo.
 
-<a id="figura-248"></a>
+<a id="figura-249"></a>
 
-**Figura 248**
+**Figura 249**
 
 *P11 - Cola presencial*
 
@@ -10935,9 +10933,9 @@ En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" c
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-249"></a>
+<a id="figura-250"></a>
 
-**Figura 249**
+**Figura 250**
 
 *P17 - Atención finalizada*
 
@@ -10956,9 +10954,9 @@ Pedir confirmación breve ("¿Terminar la atención de María Pérez?") o mostra
 **Problema:**
 En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" está arriba y es el más prominente, mientras "Iniciar atención" (la opción que puede ser correcta si el paciente llegó) es un botón de borde. Luego, en "P16 · Confirmar ausencia" el botón "Confirmar ausencia" es verde, el color de las acciones positivas, aunque es una acción que libera el cupo y marca inasistencia. El color no es coherente y la confirmación se ve igual que cualquier otra.
 
-<a id="figura-250"></a>
+<a id="figura-251"></a>
 
-**Figura 250**
+**Figura 251**
 
 *P13 - Plazo de llamada vencido*
 
@@ -10966,9 +10964,9 @@ En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" est
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-251"></a>
+<a id="figura-252"></a>
 
-**Figura 251**
+**Figura 252**
 
 *P16 - Confirmar ausencia*
 
@@ -10987,9 +10985,9 @@ Dar prioridad visual a "Iniciar atención" y dejar "Marcar ausente" como acción
 **Problema:**
 La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configuración". "Calendario" y "Cita" se refieren casi a lo mismo (citas), pero "Cita" abre la cola de atención y el registro de llegada, y su ícono es un QR. El ícono de "Configuración" es un sol. Quien busca la cola de atención no sabe si está en "Calendario" o en "Cita".
 
-<a id="figura-252"></a>
+<a id="figura-253"></a>
 
-**Figura 252**
+**Figura 253**
 
 *P11 - Cola presencial*
 
@@ -10997,9 +10995,9 @@ La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configura
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-253"></a>
+<a id="figura-254"></a>
 
-**Figura 253**
+**Figura 254**
 
 *P01 - Inicio del personal*
 
@@ -11018,9 +11016,9 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 **Problema:**
 "H01 · Configuración general" muestra cuatro reglas (capacidad, tolerancia de llegada, plazo después de la llamada, respuesta a reasignación) y un botón "Ver más reglas". "H02 · Más reglas" muestra otras cuatro (hora límite para reservar, anticipación para cancelar, prioridad de reasignación, posición de cola visible) y un botón aparte "Intervalos de atención" que abre "H13". Todas son reglas del mismo tipo, pero están en tres niveles. Para ver o cambiar una regla hay que recordar en cuál se encuentra.
 
-<a id="figura-254"></a>
+<a id="figura-255"></a>
 
-**Figura 254**
+**Figura 255**
 
 *H01 - Configuración general*
 
@@ -11028,9 +11026,9 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-255"></a>
+<a id="figura-256"></a>
 
-**Figura 255**
+**Figura 256**
 
 *H02 - Reglas adicionales*
 
@@ -11049,9 +11047,9 @@ Reunir todas las reglas en una sola lista agrupada por tema (Reservas, Llegada y
 **Problema:**
 En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero la nota inferior dice "La prioridad de reasignación sigue el orden de reserva. La atención sigue el orden de llegada". No se entiende cuál es el criterio real (especialidad u orden de reserva), y la nota, que es la única explicación, está en letra pequeña. Una regla de este tipo afecta a muchos pacientes.
 
-<a id="figura-256"></a>
+<a id="figura-257"></a>
 
-**Figura 256**
+**Figura 257**
 
 *H02 - Reglas adicionales*
 
@@ -11070,9 +11068,9 @@ Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reserv
 **Problema:**
 "H05 · Validación de regla" dice "La capacidad debe ser mayor que cero. La tolerancia de llegada no puede superar la duración del intervalo. Revisa los campos antes de guardar". Al editar la capacidad, el segundo mensaje no tiene relación y el usuario no sabe cuál de las dos reglas falló. Además aparece como diálogo, tapando el campo.
 
-<a id="figura-257"></a>
+<a id="figura-258"></a>
 
-**Figura 257**
+**Figura 258**
 
 *H05 - Validación de regla*
 
@@ -11091,9 +11089,9 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 **Problema:**
 "H06 · Indicadores del día" y "H07 · Demanda" muestran una fecha fija ("Mar 6 oct 2026") sin ningún control visible para cambiarla, aunque "H09 · Periodo sin datos" muestra otra fecha ("1 oct 2026") y "H08" permite elegir un rango para exportar. En las pantallas revisadas no se ve cómo la administración puede consultar otro día o semana, que es el uso básico de un panel de indicadores.
 
-<a id="figura-258"></a>
+<a id="figura-259"></a>
 
-**Figura 258**
+**Figura 259**
 
 *H06 - Indicadores diarios*
 
@@ -11101,9 +11099,9 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-259"></a>
+<a id="figura-260"></a>
 
-**Figura 259**
+**Figura 260**
 
 *H09 - Periodo sin datos*
 
@@ -11122,9 +11120,9 @@ Agregar un selector de fecha o periodo visible en la cabecera de los indicadores
 **Problema:**
 En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exportación preparada" muestra un diálogo con otro botón "Descargar archivo". El segundo paso es redundante y el diálogo no repite qué archivo es (PDF o CSV), el periodo, el nombre ni el tamaño.
 
-<a id="figura-260"></a>
+<a id="figura-261"></a>
 
-**Figura 260**
+**Figura 261**
 
 *H08 - Exportación*
 
@@ -11132,9 +11130,9 @@ En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exp
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
-<a id="figura-261"></a>
+<a id="figura-262"></a>
 
-**Figura 261**
+**Figura 262**
 
 *H11 - Exportación preparada*
 
