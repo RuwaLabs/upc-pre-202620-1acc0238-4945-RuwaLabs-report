@@ -11256,3 +11256,9 @@ Para la identificación de necesidades de los usuarios, se entrevistó a una peq
 Demostración de la aplicación SaludYa para pacientes y opinión de una persona del público objetivo. La descripción y la portada se encuentran en [Video About the Product](#video-about-the-product).
 
 - [Ver el video About the Product de SaludYa en SharePoint](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O)
+
+**## Anexo C: Video About the Team**
+
+Presentación del equipo de trabajo de SaludYa. La descripción y la portada se encuentran en [Video About the Team](#video-about-the-team).
+
+- [Ver el video About the Team de SaludYa en SharePoint](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318309_upc_edu_pe/IQDoOEoA098-R64uxy4ko10EAelpnVoXTsriu90ZZh2VgNU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EO61q9)
