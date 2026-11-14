@@ -8157,6 +8157,8 @@ Los archivos de prueba y su alcance se organizan por componente y tipo de testin
 
 En esta sección se presentan las vistas publicadas de la Landing Page y la documentación del backend de SaludYa, junto con las pantallas del paciente diseñadas para la aplicación Android. Las capturas permiten revisar la presentación de la solución, los contratos disponibles en Swagger y los recorridos previstos para el paciente durante el Sprint 1.
 
+Asimismo, durante el Sprint 1 se desarrollaron y presentaron los principales componentes de la solución SaludYa: la Landing Page institucional, las interfaces de las aplicaciones móviles para pacientes y la documentación de los servicios del backend. Las evidencias siguientes permiten revisar el avance visual y técnico alcanzado, así como los recursos disponibles para demostrar su funcionamiento y navegación.
+
 ##### Landing Page
 
 La Landing Page se encuentra publicada en GitHub Pages y presenta el problema, la propuesta de SaludYa y la información del equipo RuwaLabs. Las siguientes capturas corresponden a su visualización en un navegador de escritorio.
@@ -8274,6 +8276,13 @@ La sección anuncia la próxima disponibilidad para Android e iOS y muestra los 
 <img src="assets/execution/sprint-1/landing-download.jpg" alt="Disponibilidad de la aplicación de SaludYa" width="1000">
 
 *Nota. Captura de la Landing Page publicada en GitHub Pages, tomada el 9 de octubre de 2026.*
+
+###### Demostración de la Landing Page
+
+Como complemento de las capturas presentadas, se incluye un video que muestra la Landing Page publicada, sus principales secciones y la navegación entre ellas.
+
+- **Video:** [Ver demostración de la Landing Page](https://youtu.be/fShpjzEHaRk)
+
 
 ##### Aplicación Android
 
@@ -8526,6 +8535,21 @@ La pantalla reúne los avisos dirigidos al paciente para consultar los cambios y
 </div>
 
 *Nota. Interfaz del paciente exportada de Figma; referencia visual, no captura de ejecución del APK.*
+
+
+###### Demostración de la aplicación Android - Kotlin
+
+Se incluye un video de demostración de la aplicación móvil desarrollada con Kotlin y Jetpack Compose, en el que se muestra su ejecución y navegación por las principales interfaces implementadas.
+
+- **Video:** [Ver demostración de la aplicación Kotlin](https://youtu.be/t1hfjFFygcA)
+
+
+###### Demostración de la aplicación móvil - Flutter
+
+Se incluye un video de demostración de la aplicación móvil desarrollada con Flutter y Dart, en el que se presentan sus principales interfaces y navegación.
+
+- **Video:** [Ver demostración de la aplicación Flutter](https://youtu.be/NRcc7F5pXx4)
+
 
 ##### Backend: documentación publicada en Swagger
 
