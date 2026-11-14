@@ -10108,7 +10108,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 
 *Figura 226. Cuadro de video de la entrevista 2 — paciente.*
 
-**Resumen.** En la entrevista de validación, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga[1]. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente[1][2]. La única falla técnica detectada fue en la **función del código QR**, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
+**Resumen.** En la entrevista de validación, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente La única falla técnica detectada fue en la función del código QR, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
 **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
 
