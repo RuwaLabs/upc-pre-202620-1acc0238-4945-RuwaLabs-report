@@ -339,9 +339,9 @@ Como evidencia complementaria de la actividad del equipo durante el periodo del 
     - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-  - [Video App Validation](#video-app-validation)
-  - [Video About the Product](#video-about-the-product)
-  - [Video About the Team](#video-about-the-team)
+- [Video App Validation](#video-app-validation)
+- [Video About the Product](#video-about-the-product)
+- [Video About the Team](#video-about-the-team)
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -11601,7 +11601,7 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 
 :::keep
 
-## Video App Validation
+# Video App Validation
 
 El video de validación reúne las sesiones realizadas con usuarios de los segmentos objetivo: las sesiones 1 y 2 validan la Landing Page y la sesión 3 valida la aplicación móvil de SaludYa para la AV2. Durante las sesiones se recogieron observaciones sobre navegación, claridad del contenido, usabilidad y funcionamiento de las funciones principales.
 
@@ -11619,7 +11619,7 @@ El video de validación reúne las sesiones realizadas con usuarios de los segme
 
 :::keep
 
-## Video About the Product
+# Video About the Product
 
 El video presenta la aplicación de SaludYa para pacientes. La demostración muestra cómo consultar horarios, elegir una cita y revisar los datos de la reserva desde el celular. También recoge la opinión de una persona del público objetivo después de ver la demostración.
 
@@ -11641,7 +11641,7 @@ La [Figura 279](#figura-279) muestra la portada del video. Haz clic en la imagen
 
 :::keep
 
-## Video About the Team
+# Video About the Team
 
 El video presenta al equipo **RuwaLabs**, el proceso de trabajo durante el ciclo y los testimonios de cada integrante sobre las actividades realizadas, el logro del Student Outcome y las competencias desarrolladas. La portada del video se presenta a continuación.
 
