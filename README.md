@@ -168,6 +168,20 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 En la tercera entrega el equipo actualizó el informe con las evidencias del **Sprint 2** (planificación, backlog, desarrollo, pruebas, ejecución, servicios y despliegue), las **entrevistas de validación** y las **evaluaciones según heurísticas**, además de incorporar las secciones de video y el glosario. La redacción se distribuyó entre los cinco integrantes y se evidencia en el historial de colaboración y de commits del repositorio del informe.
 
+La actividad del repositorio del informe durante el periodo se resume en las siguientes capturas: **2 pull requests fusionados**, **18 commits en `develop`** y **20 commits en todas las ramas**, con **5 autores** y **527 archivos modificados**.
+
+<p align="center">
+  <img src="assets/insight-report-av2-overview.png" alt="Resumen de actividad del repositorio del informe (AV2)" width="85%"/>
+</p>
+
+*Evidencia. Panel Overview del repositorio del informe en GitHub para el periodo del 6 al 13 de noviembre de 2026.*
+
+<p align="center">
+  <img src="assets/insight-report-av2-contributors.png" alt="Contribuciones por integrante del repositorio del informe (AV2)" width="85%"/>
+</p>
+
+*Evidencia. Panel Contributors del repositorio del informe en GitHub para el periodo del 6 al 13 de noviembre de 2026.*
+
 Como evidencia complementaria de la actividad del equipo durante el periodo del **6 al 13 de noviembre de 2026**, se presenta el analítico del repositorio de la aplicación Kotlin, que registra **2 autores**, **1 commit en `main`** y **7 commits en todas las ramas**, **101 archivos modificados** y la publicación de la release **v1.1.0-av2** con el APK de la aplicación.
 
 <p align="center">
@@ -9536,7 +9550,7 @@ No se encontraron nuevas pruebas automatizadas en los cambios revisados de QR y 
 
 #### 4.2.2.6. Execution Evidence for Sprint Review
 
-En esta sección se presentan las evidencias de ejecución de la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Las capturas corresponden a las pantallas principales de la aplicación administrativa implementada en el Sprint 2 y se organizan por recorrido: inicio y agenda, gestión de bloques, cola de atención, configuración e indicadores. La evaluación heurística de estas mismas pantallas se detalla en la sección 4.3.3.
+En esta sección se presentan las evidencias de ejecución de la aplicación Flutter/Dart para el personal de admisión y el Super Admin. Las capturas corresponden a las pantallas principales de la aplicación administrativa implementada en el Sprint 2 y se organizan por recorrido: inicio y agenda, gestión de bloques, cola de atención y configuración. La evaluación heurística de estas mismas pantallas se detalla en la sección 4.3.3.
 
 ##### Inicio y agenda del personal
 
@@ -9672,9 +9686,9 @@ La agenda permite consultar los bloques del día, abrir su detalle y editar el p
 
 *Nota. Captura de la pantalla de los pacientes con reserva y su estado de llegada.*
 
-##### Configuración, indicadores y reportes
+##### Configuración operativa
 
-La configuración operativa, los indicadores diarios y la exportación de reportes cierran los recorridos principales de la aplicación administrativa.
+La configuración operativa cierra el recorrido de reglas del establecimiento en la aplicación administrativa.
 
 <!-- pdf-pagebreak -->
 
@@ -9689,34 +9703,6 @@ La configuración operativa, los indicadores diarios y la exportación de report
 </p>
 
 *Nota. Captura de la pantalla de configuración general del establecimiento.*
-
-<!-- pdf-pagebreak -->
-
-<a id="figura-211"></a>
-
-**Figura 211**
-
-*Indicadores diarios*
-
-<p align="center">
-  <img src="chapter-04/assets/heuristicas/H06-indicadores-diarios.png" alt="Indicadores diarios en la aplicación administrativa" width="50%"/>
-</p>
-
-*Nota. Captura de la pantalla de los indicadores diarios del establecimiento.*
-
-<!-- pdf-pagebreak -->
-
-<a id="figura-212"></a>
-
-**Figura 212**
-
-*Exportación de reportes*
-
-<p align="center">
-  <img src="chapter-04/assets/heuristicas/H08-exportacion.png" alt="Exportación de reportes en la aplicación administrativa" width="50%"/>
-</p>
-
-*Nota. Captura de la pantalla de exportación de reportes por rango de fechas.*
 
 #### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
@@ -9788,7 +9774,7 @@ A continuación se detalla, para cada endpoint, la acción implementada, el verb
 
 ##### Evidencias de la documentación desplegada
 
-A continuación se presentan las capturas de la documentación desplegada en Swagger UI para los controladores que consume la aplicación móvil administrativa. Cada captura muestra las operaciones disponibles del controlador y su protección mediante autenticación Bearer.
+A continuación se presentan las capturas de la documentación desplegada en Swagger UI para los controladores del backend, incluyendo los de IAM, Appointments & Booking, Arrival & QR Check-in, Hospital Operations & Configuration y Reassignment. Cada captura muestra las operaciones disponibles del controlador y su protección mediante autenticación Bearer.
 
 ###### 1. IAM - User accounts
 
@@ -9796,7 +9782,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-user-accounts.png" alt="Swagger UI - IAM User accounts" width="100%"/>
 </p>
 
-*Figura 213. Documentación desplegada del controlador IAM - User accounts en Swagger UI.*
+*Figura 211. Documentación desplegada del controlador IAM - User accounts en Swagger UI.*
 
 ###### 2. Specialties
 
@@ -9804,7 +9790,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-specialties.png" alt="Swagger UI - Specialties" width="100%"/>
 </p>
 
-*Figura 214. Documentación desplegada del controlador Specialties en Swagger UI.*
+*Figura 212. Documentación desplegada del controlador Specialties en Swagger UI.*
 
 ###### 3. Doctors
 
@@ -9812,7 +9798,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-doctors.png" alt="Swagger UI - Doctors" width="100%"/>
 </p>
 
-*Figura 215. Documentación desplegada del controlador Doctors en Swagger UI.*
+*Figura 213. Documentación desplegada del controlador Doctors en Swagger UI.*
 
 ###### 4. Time Slots
 
@@ -9820,7 +9806,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-time-slots.png" alt="Swagger UI - Time Slots" width="100%"/>
 </p>
 
-*Figura 216. Documentación desplegada del controlador Time Slots en Swagger UI.*
+*Figura 214. Documentación desplegada del controlador Time Slots en Swagger UI.*
 
 ###### 5. Appointments
 
@@ -9828,7 +9814,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-appointments.png" alt="Swagger UI - Appointments" width="100%"/>
 </p>
 
-*Figura 217. Documentación desplegada del controlador Appointments en Swagger UI.*
+*Figura 215. Documentación desplegada del controlador Appointments en Swagger UI.*
 
 ###### 6. Check-ins
 
@@ -9836,7 +9822,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-check-ins.png" alt="Swagger UI - Check-ins" width="100%"/>
 </p>
 
-*Figura 218. Documentación desplegada del controlador Check-ins en Swagger UI.*
+*Figura 216. Documentación desplegada del controlador Check-ins en Swagger UI.*
 
 ###### 7. Attendance Queues
 
@@ -9844,7 +9830,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-attendance-queues.png" alt="Swagger UI - Attendance Queues" width="100%"/>
 </p>
 
-*Figura 219. Documentación desplegada del controlador Attendance Queues en Swagger UI.*
+*Figura 217. Documentación desplegada del controlador Attendance Queues en Swagger UI.*
 
 ###### 8. Queue Entries
 
@@ -9852,7 +9838,7 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-queue-entries.png" alt="Swagger UI - Queue Entries" width="100%"/>
 </p>
 
-*Figura 220. Documentación desplegada del controlador Queue Entries en Swagger UI.*
+*Figura 218. Documentación desplegada del controlador Queue Entries en Swagger UI.*
 
 ###### 9. configuration-controller
 
@@ -9860,7 +9846,47 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
   <img src="chapter-04/assets/sprint-2/endpoints/swagger-configuration.png" alt="Swagger UI - configuration-controller" width="100%"/>
 </p>
 
-*Figura 221. Documentación desplegada del controlador configuration-controller en Swagger UI.*
+*Figura 219. Documentación desplegada del controlador configuration-controller en Swagger UI.*
+
+###### 10. IAM - Identity verification
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-identity-verification.png" alt="Swagger UI - IAM Identity verification" width="100%"/>
+</p>
+
+*Figura 220. Documentación desplegada del controlador IAM - Identity verification en Swagger UI.*
+
+###### 11. IAM - Patients
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-patients.png" alt="Swagger UI - IAM Patients" width="100%"/>
+</p>
+
+*Figura 221. Documentación desplegada del controlador IAM - Patients en Swagger UI.*
+
+###### 12. IAM - Linked minors
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-linked-minors.png" alt="Swagger UI - IAM Linked minors" width="100%"/>
+</p>
+
+*Figura 222. Documentación desplegada del controlador IAM - Linked minors en Swagger UI.*
+
+###### 13. IAM - Assisted recovery
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-iam-assisted-recovery.png" alt="Swagger UI - IAM Assisted recovery" width="100%"/>
+</p>
+
+*Figura 223. Documentación desplegada del controlador IAM - Assisted recovery en Swagger UI.*
+
+###### 14. reassignment-offers-controller
+
+<p align="center">
+  <img src="chapter-04/assets/sprint-2/endpoints/swagger-reassignment-offers.png" alt="Swagger UI - reassignment-offers-controller" width="100%"/>
+</p>
+
+*Figura 224. Documentación desplegada del controlador reassignment-offers-controller en Swagger UI.*
 
 #### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
@@ -9901,11 +9927,11 @@ La aplicación administrativa desarrollada con Flutter y Dart continúa en desar
 
 #### 4.2.2.9. Team Collaboration Insights during Sprint
 
-Durante el Sprint 2, el trabajo de la aplicación administrativa se concentró en el repositorio `frontend-flutter-saludya`. El analítico de GitHub del periodo **12 de octubre – 12 de noviembre de 2026** registra **5 autores**, **47 commits en todas las ramas** y **2 commits en `main`**, como se observa en la Figura 223. La actividad se distribuyó entre las ramas `login`, `home`, `schedule`, `qr`, `settings` y `develop`.
+Durante el Sprint 2, el trabajo de la aplicación administrativa se concentró en el repositorio `frontend-flutter-saludya`. El analítico de GitHub del periodo **12 de octubre – 12 de noviembre de 2026** registra **5 autores**, **47 commits en todas las ramas** y **2 commits en `main`**, como se observa en la Figura 225. La actividad se distribuyó entre las ramas `login`, `home`, `schedule`, `qr`, `settings` y `develop`.
 
-<a id="figura-223"></a>
+<a id="figura-225"></a>
 
-**Figura 223**
+**Figura 225**
 
 *Actividad del repositorio Flutter durante el Sprint 2*
 
@@ -9977,7 +10003,7 @@ Las entrevistas se dirigieron a los dos segmentos identificados: **Segmento 1 �
 
 ### 4.3.2. Registro de Entrevistas
 
-Para cada segmento se realizaron entrevistas de validación de la **Landing Page y de la aplicación móvil**, registradas en video como evidencia. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
+Para cada segmento se realizaron entrevistas de validación, registradas en video como evidencia: las entrevistas 1 y 2 validan la **Landing Page** y la entrevista 3 valida la **aplicación móvil** para la AV2. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
 
 #### Entrevista 1 — Segmento: Personal administrativo
 
@@ -9995,7 +10021,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Alisee.jpeg" alt="Cuadro de video de la entrevista 1 (personal administrativo)" width="70%"/>
 </p>
 
-*Figura 224. Cuadro de video de la entrevista 1 — personal administrativo.*
+*Figura 226. Cuadro de video de la entrevista 1 — personal administrativo.*
 
 **Resumen.** Alvaro es un adulto de 46 años, residente en el distrito de Santa, con rol administrativo en un establecimiento de salud. Usa el celular a diario para realizar trámites y califica su comodidad con el dispositivo en 7 de 10. Al explorar la Landing Page interpretó correctamente la propuesta de valor: que SaludYa ofrece soluciones al aglomeramiento del público y a la gestión de citas, aportando agilidad tanto al paciente como al personal de salud; además, el mensaje principal “Citas médicas sin colas” le resultó claro. En cuanto a la navegación, encontró las secciones de forma ordenada y la página se abrió por defecto en español. No echó en falta ninguna sección, considerándola completa. Sobre el diseño, lo percibió claro y agradable, y valoró que no fuera saturado en colores; el contraste, el tamaño de las letras y los botones le permitieron leer y usar la página con facilidad, incluso con una ligera dificultad visual. Verificó el funcionamiento en su celular Android (de gama no alta), donde la página cargó de forma veloz y correcta. Los testimonios de personas reales influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio reforzó su decisión. Manifestó que descargaría, usaría y recomendaría la aplicación, y otorgó la máxima probabilidad de recomendación (5 de 5). No cambiaría nada y pidió que la aplicación mantenga un rendimiento ágil en equipos móviles. **Características del arquetipo:** adulto, personal administrativo, usuario frecuente de móvil, orientado a la practicidad, valora la claridad visual y el bajo ruido cromático, prioriza la velocidad y la confianza (respaldada por testimonios), prefiere el español y usa un dispositivo Android de gama media/baja.
 
@@ -10099,7 +10125,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/Entrevistas%20landing%20page/Neo.jpeg" alt="Cuadro de video de la entrevista 2 (paciente)" width="70%"/>
 </p>
 
-*Figura 225. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 227. Cuadro de video de la entrevista 2 — paciente.*
 
 **Resumen.** Michelle es una joven de 20 años, residente en Punta Hermosa y usuaria del servicio como paciente. Usa el celular con frecuencia para realizar trámites. Interpretó la propuesta de valor de SaludYa como una forma de agilizar las citas y ahorrar tiempo, entendió que está dirigida tanto a pacientes como al personal de salud, y le resultó claro el mensaje “Citas médicas sin colas”. Consideró la navegación intuitiva y la organización de la información lógica y ordenada, sin echar en falta secciones, y usó la página en español. Sobre el diseño, lo percibió claro e intuitivo, con un contraste, tamaños de letra y botones adecuados, y sin problemas en la versión móvil. Los testimonios influyeron en su confianza y la sección “sobre nosotros” / modelo de negocio le generó confianza. Indicó que descargaría la aplicación por la confianza y los testimonios, no cambiaría nada por considerarla completa, y su probabilidad de recomendación fue de 4 a 5. **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
@@ -10213,9 +10239,11 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/EntrevistasValida/michelle2.png" alt="Cuadro de video de la entrevista 3 (paciente)" width="70%"/>
 </p>
 
-*Figura 226. Cuadro de video de la entrevista 3 — paciente.*
+*Figura 228. Cuadro de video de la entrevista 3 — paciente.*
 
-**Resumen.** En la entrevista de validación, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente La única falla técnica detectada fue en la función del código QR, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
+**Alcance de la sesión:** esta entrevista valida la **aplicación móvil de SaludYa** para la AV2; no corresponde a la validación de la Landing Page. La misma participante colaboró en la entrevista 2, dedicada a la Landing Page.
+
+**Resumen.** En la sesión de validación de la aplicación móvil, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente La única falla técnica detectada fue en la función del código QR, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
 **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
 
 
@@ -10242,11 +10270,11 @@ En esta sección se presentan las evaluaciones de la experiencia de usuario de *
 | AUDITOR | RouteGuard (Marcelo Pareja, Mathias de la Cruz, Manuel Francia, Nickolas Ramirez) |
 | CLIENTE(S) | Paula Montoya y Neo Ramos (grupo auditado: RuwaLabs) |
 
-*Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre los mock-ups de SaludYa.*
+*Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre la aplicación SaludYa en ejecución.*
 
 **SITE o APP A EVALUAR**
 
-**SaludYa** — aplicación móvil Android para pacientes. La evaluación cubre los mock-ups de las secciones **01 · Registro e inicio de sesión**, **02 · Perfil y menores**, **03 · Inicio y reservas**, **04 · Check-in y atención** y **05 · Configuración** del [archivo de Figma](https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626).
+**SaludYa** — aplicación móvil Android para pacientes. La evaluación cubre las pantallas de las secciones **01 · Registro e inicio de sesión**, **02 · Perfil y menores**, **03 · Inicio y reservas**, **04 · Check-in y atención** y **05 · Configuración** de la aplicación SaludYa en ejecución.
 
 **TAREAS A EVALUAR**
 
@@ -10323,7 +10351,7 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 15 | El mensaje "Revisa el dato ingresado" no dice qué campo falló | 2 | Usability: Ayudar a reconocer, diagnosticar y recuperarse de errores |
 | 16 | Configuración no ofrece idioma, notificaciones ni opciones de accesibilidad | 2 | Inclusive Design: Ofrece opciones |
 
-*Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.*
+*Nota. Elaboración del equipo RouteGuard sobre la aplicación SaludYa en ejecución.*
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
@@ -10341,29 +10369,29 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 :::keep
 
-<a id="figura-226"></a>
+<a id="figura-229"></a>
 
-**Figura 226**
+**Figura 229**
 
 *Registro - Datos de acceso*
 
 <img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-227"></a>
+<a id="figura-230"></a>
 
-**Figura 227**
+**Figura 230**
 
 *Registro - Verificar correo*
 
 <img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10384,15 +10412,15 @@ El diálogo "Registro · Correo validado" tiene el título "Correo verificado", 
 
 :::keep
 
-<a id="figura-228"></a>
+<a id="figura-231"></a>
 
-**Figura 228**
+**Figura 231**
 
 *Diálogo correo verificado*
 
 <img src="chapter-04/assets/heuristicas/03-dialogo-correo-verificado.png" alt="Diálogo correo verificado" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10413,29 +10441,29 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 :::keep
 
-<a id="figura-229"></a>
+<a id="figura-232"></a>
 
-**Figura 229**
+**Figura 232**
 
 *Login paciente*
 
 <img src="chapter-04/assets/heuristicas/04-login-paciente.png" alt="Login paciente" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-230"></a>
+<a id="figura-233"></a>
 
-**Figura 230**
+**Figura 233**
 
 *Diálogo credenciales incorrectas*
 
 <img src="chapter-04/assets/heuristicas/05-dialogo-credenciales-incorrectas.png" alt="Diálogo credenciales incorrectas" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10456,29 +10484,29 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 :::keep
 
-<a id="figura-231"></a>
+<a id="figura-234"></a>
 
-**Figura 231**
+**Figura 234**
 
 *Registro - Datos de acceso*
 
 <img src="chapter-04/assets/heuristicas/01-registro-datos-acceso.png" alt="Registro - Datos de acceso" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-232"></a>
+<a id="figura-235"></a>
 
-**Figura 232**
+**Figura 235**
 
 *Recuperación - Nueva contraseña*
 
 <img src="chapter-04/assets/heuristicas/06-recuperacion-nueva-contrasena.png" alt="Recuperación - Nueva contraseña" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10499,15 +10527,15 @@ En "04 · Registro · Verificar correo" la acción "Reenviar código" es un text
 
 :::keep
 
-<a id="figura-233"></a>
+<a id="figura-236"></a>
 
-**Figura 233**
+**Figura 236**
 
 *Registro - Verificar correo*
 
 <img src="chapter-04/assets/heuristicas/02-registro-verificar-correo.png" alt="Registro - Verificar correo" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10528,15 +10556,15 @@ En las pantallas revisadas todos los textos están en español y no hay una opci
 
 :::keep
 
-<a id="figura-234"></a>
+<a id="figura-237"></a>
 
-**Figura 234**
+**Figura 237**
 
 *Dashboard inicio*
 
 <img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10557,43 +10585,43 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 :::keep
 
-<a id="figura-235"></a>
+<a id="figura-238"></a>
 
-**Figura 235**
+**Figura 238**
 
 *Dashboard inicio*
 
 <img src="chapter-04/assets/heuristicas/07-dashboard-inicio.png" alt="Dashboard inicio" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-236"></a>
+<a id="figura-239"></a>
 
-**Figura 236**
+**Figura 239**
 
 *Error de carga*
 
 <img src="chapter-04/assets/heuristicas/21-error-carga.png" alt="Error de carga" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-237"></a>
+<a id="figura-240"></a>
 
-**Figura 237**
+**Figura 240**
 
 *Reserva - Especialidades*
 
 <img src="chapter-04/assets/heuristicas/18-reserva-especialidad.png" alt="Reserva - Especialidades" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10614,29 +10642,29 @@ En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo in
 
 :::keep
 
-<a id="figura-238"></a>
+<a id="figura-241"></a>
 
-**Figura 238**
+**Figura 241**
 
 *A05 - Llamada a consultorio*
 
 <img src="chapter-04/assets/heuristicas/A05-llamada-a-consultorio.png" alt="A05 - Llamada a consultorio" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-239"></a>
+<a id="figura-242"></a>
 
-**Figura 239**
+**Figura 242**
 
 *A11 - Fuera del plazo*
 
 <img src="chapter-04/assets/heuristicas/A11-fuera-del-plazo.png" alt="A11 - Fuera del plazo" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10657,29 +10685,29 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 :::keep
 
-<a id="figura-240"></a>
+<a id="figura-243"></a>
 
-**Figura 240**
+**Figura 243**
 
 *A07 - Atención finalizada*
 
 <img src="chapter-04/assets/heuristicas/A07-atencion-finalizada.png" alt="A07 - Atención finalizada" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-241"></a>
+<a id="figura-244"></a>
 
-**Figura 241**
+**Figura 244**
 
 *A15 - Ticket de menor*
 
 <img src="chapter-04/assets/heuristicas/A15-ticket-de-menor.png" alt="A15 - Ticket de menor" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10700,29 +10728,29 @@ La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin l
 
 :::keep
 
-<a id="figura-242"></a>
+<a id="figura-245"></a>
 
-**Figura 242**
+**Figura 245**
 
 *A07 - Atención finalizada*
 
 <img src="chapter-04/assets/heuristicas/A07-atencion-finalizada.png" alt="A07 - Atención finalizada" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-243"></a>
+<a id="figura-246"></a>
 
-**Figura 243**
+**Figura 246**
 
 *A16 - Turno ausente*
 
 <img src="chapter-04/assets/heuristicas/A16-turno-ausente.png" alt="A16 - Turno ausente" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10743,43 +10771,43 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 :::keep
 
-<a id="figura-244"></a>
+<a id="figura-247"></a>
 
-**Figura 244**
+**Figura 247**
 
 *C15 - Código vencido*
 
 <img src="chapter-04/assets/heuristicas/C15-codigo-vencido.png" alt="C15 - Código vencido" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-245"></a>
+<a id="figura-248"></a>
 
-**Figura 245**
+**Figura 248**
 
 *C18 - Vínculo no acreditado*
 
 <img src="chapter-04/assets/heuristicas/C18-vinculo-no-acreditado.png" alt="C18 - Vínculo no acreditado" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-246"></a>
+<a id="figura-249"></a>
 
-**Figura 246**
+**Figura 249**
 
 *A16 - Turno ausente*
 
 <img src="chapter-04/assets/heuristicas/A16-turno-ausente.png" alt="A16 - Turno ausente" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10800,15 +10828,15 @@ En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cua
 
 :::keep
 
-<a id="figura-247"></a>
+<a id="figura-250"></a>
 
-**Figura 247**
+**Figura 250**
 
 *C02 - Mis datos*
 
 <img src="chapter-04/assets/heuristicas/C02-mis-datos.png" alt="C02 - Mis datos" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10829,29 +10857,29 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 :::keep
 
-<a id="figura-248"></a>
+<a id="figura-251"></a>
 
-**Figura 248**
+**Figura 251**
 
 *C05 - Confirmar cambio por correo*
 
 <img src="chapter-04/assets/heuristicas/C05-confirmar-cambio-por-correo.png" alt="C05 - Confirmar cambio por correo" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-249"></a>
+<a id="figura-252"></a>
 
-**Figura 249**
+**Figura 252**
 
 *C06 - Verificar correo*
 
 <img src="chapter-04/assets/heuristicas/C06-verificar-correo.png" alt="C06 - Verificar correo" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10872,29 +10900,29 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 :::keep
 
-<a id="figura-250"></a>
+<a id="figura-253"></a>
 
-**Figura 250**
+**Figura 253**
 
 *C07 - Parientes vinculados*
 
 <img src="chapter-04/assets/heuristicas/C07-parientes-vinculados.png" alt="C07 - Parientes vinculados" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-251"></a>
+<a id="figura-254"></a>
 
-**Figura 251**
+**Figura 254**
 
 *C08 - Detalle del menor*
 
 <img src="chapter-04/assets/heuristicas/C08-detalle-del-menor.png" alt="C08 - Detalle del menor" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10915,15 +10943,15 @@ Reemplazarlo por una actualización automática o por un texto comprensible ("Ac
 
 :::keep
 
-<a id="figura-252"></a>
+<a id="figura-255"></a>
 
-**Figura 252**
+**Figura 255**
 
 *C17 - Dato inválido*
 
 <img src="chapter-04/assets/heuristicas/C17-dato-invalido.png" alt="C17 - Dato inválido" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10946,15 +10974,15 @@ Mostrar el error junto al campo con un mensaje específico ("El celular debe ten
 
 :::keep
 
-<a id="figura-253"></a>
+<a id="figura-256"></a>
 
-**Figura 253**
+**Figura 256**
 
 *C01 - Configuración*
 
 <img src="chapter-04/assets/heuristicas/C01-configuracion.png" alt="C01 - Configuración" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -10982,11 +11010,11 @@ Agregar un selector de idioma (inglés por defecto), preferencias de notificaci�
 | AUDITOR | RouteGuard (Marcelo Pareja, Mathias de la Cruz, Manuel Francia, Nickolas Ramirez) |
 | CLIENTE(S) | Paula Montoya y Neo Ramos (grupo auditado: RuwaLabs) |
 
-*Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre los mock-ups de SaludYa.*
+*Nota. Elaboración del equipo RouteGuard; la evaluación se realizó sobre la aplicación SaludYa en ejecución.*
 
 **SITE o APP A EVALUAR**
 
-**SaludYa** — aplicación Flutter para el personal de admisión y la administración del establecimiento. La evaluación cubre los mock-ups de las secciones **07 · Citas y atención · Personal** y **08 · Configuración e indicadores · Administración** del [archivo de Figma](https://www.figma.com/design/jPJKqqqvre7HN5jwOPVvKM/REVISION-DE-HEURISTICAS---Mobile-Application-Mockups?node-id=57-626).
+**SaludYa** — aplicación Flutter para el personal de admisión y la administración del establecimiento. La evaluación cubre las pantallas de las secciones **07 · Citas y atención · Personal** y **08 · Configuración e indicadores · Administración** de la aplicación SaludYa en ejecución.
 
 **TAREAS A EVALUAR**
 
@@ -11043,7 +11071,7 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 | 10 | Los indicadores no muestran un control para cambiar la fecha o el periodo | 2 | Usability: Visibilidad del estado del sistema |
 | 11 | Descargar un reporte requiere dos pasos y no indica formato ni archivo | 2 | Usability: Eficiencia de uso |
 
-*Nota. Elaboración del equipo RouteGuard sobre los mock-ups de SaludYa.*
+*Nota. Elaboración del equipo RouteGuard sobre la aplicación SaludYa en ejecución.*
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
@@ -11061,43 +11089,43 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 :::keep
 
-<a id="figura-254"></a>
+<a id="figura-257"></a>
 
-**Figura 254**
+**Figura 257**
 
 *P04 - Bloques de hoy*
 
 <img src="chapter-04/assets/heuristicas/P04-bloques-de-hoy.png" alt="P04 - Bloques de hoy" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-255"></a>
+<a id="figura-258"></a>
 
-**Figura 255**
+**Figura 258**
 
 *P11 - Cola presencial*
 
 <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-256"></a>
+<a id="figura-259"></a>
 
-**Figura 256**
+**Figura 259**
 
 *P20 - Pacientes con reserva*
 
 <img src="chapter-04/assets/heuristicas/P20-pacientes-con-reserva.png" alt="P20 - Pacientes con reserva" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11118,29 +11146,29 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 :::keep
 
-<a id="figura-257"></a>
+<a id="figura-260"></a>
 
-**Figura 257**
+**Figura 260**
 
 *P07 - Editar bloque*
 
 <img src="chapter-04/assets/heuristicas/P07-editar-bloque.png" alt="P07 - Editar bloque" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-258"></a>
+<a id="figura-261"></a>
 
-**Figura 258**
+**Figura 261**
 
 *P23 - Cambio incompatible*
 
 <img src="chapter-04/assets/heuristicas/P23-cambio-incompatible.png" alt="P23 - Cambio incompatible" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11161,43 +11189,43 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 :::keep
 
-<a id="figura-259"></a>
+<a id="figura-262"></a>
 
-**Figura 259**
+**Figura 262**
 
 *P08 - Elegir profesional*
 
 <img src="chapter-04/assets/heuristicas/P08-elegir-profesional.png" alt="P08 - Elegir profesional" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-260"></a>
+<a id="figura-263"></a>
 
-**Figura 260**
+**Figura 263**
 
 *P09 - Elegir horario*
 
 <img src="chapter-04/assets/heuristicas/P09-elegir-horario.png" alt="P09 - Elegir horario" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-261"></a>
+<a id="figura-264"></a>
 
-**Figura 261**
+**Figura 264**
 
 *P10 - Horario por profesional*
 
 <img src="chapter-04/assets/heuristicas/P10-horario-por-profesional.png" alt="P10 - Horario por profesional" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11218,29 +11246,29 @@ En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" c
 
 :::keep
 
-<a id="figura-262"></a>
+<a id="figura-265"></a>
 
-**Figura 262**
+**Figura 265**
 
 *P11 - Cola presencial*
 
 <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-263"></a>
+<a id="figura-266"></a>
 
-**Figura 263**
+**Figura 266**
 
 *P17 - Atención finalizada*
 
 <img src="chapter-04/assets/heuristicas/P17-atencion-finalizada.png" alt="P17 - Atención finalizada" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11261,29 +11289,29 @@ En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" est
 
 :::keep
 
-<a id="figura-264"></a>
+<a id="figura-267"></a>
 
-**Figura 264**
+**Figura 267**
 
 *P13 - Plazo de llamada vencido*
 
 <img src="chapter-04/assets/heuristicas/P13-plazo-de-llamada-vencido.png" alt="P13 - Plazo de llamada vencido" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-265"></a>
+<a id="figura-268"></a>
 
-**Figura 265**
+**Figura 268**
 
 *P16 - Confirmar ausencia*
 
 <img src="chapter-04/assets/heuristicas/P16-confirmar-ausencia.png" alt="P16 - Confirmar ausencia" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11304,29 +11332,29 @@ La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configura
 
 :::keep
 
-<a id="figura-266"></a>
+<a id="figura-269"></a>
 
-**Figura 266**
+**Figura 269**
 
 *P11 - Cola presencial*
 
 <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-267"></a>
+<a id="figura-270"></a>
 
-**Figura 267**
+**Figura 270**
 
 *P01 - Inicio del personal*
 
 <img src="chapter-04/assets/heuristicas/P01-inicio-del-personal.png" alt="P01 - Inicio del personal" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11347,29 +11375,29 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 :::keep
 
-<a id="figura-268"></a>
+<a id="figura-271"></a>
 
-**Figura 268**
+**Figura 271**
 
 *H01 - Configuración general*
 
 <img src="chapter-04/assets/heuristicas/H01-configuracion-general.png" alt="H01 - Configuración general" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-269"></a>
+<a id="figura-272"></a>
 
-**Figura 269**
+**Figura 272**
 
 *H02 - Reglas adicionales*
 
 <img src="chapter-04/assets/heuristicas/H02-reglas-adicionales.png" alt="H02 - Reglas adicionales" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11390,15 +11418,15 @@ En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero 
 
 :::keep
 
-<a id="figura-270"></a>
+<a id="figura-273"></a>
 
-**Figura 270**
+**Figura 273**
 
 *H02 - Reglas adicionales*
 
 <img src="chapter-04/assets/heuristicas/H02-reglas-adicionales.png" alt="H02 - Reglas adicionales" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11419,15 +11447,15 @@ Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reserv
 
 :::keep
 
-<a id="figura-271"></a>
+<a id="figura-274"></a>
 
-**Figura 271**
+**Figura 274**
 
 *H05 - Validación de regla*
 
 <img src="chapter-04/assets/heuristicas/H05-validacion-de-regla.png" alt="H05 - Validación de regla" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11448,29 +11476,29 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 :::keep
 
-<a id="figura-272"></a>
+<a id="figura-275"></a>
 
-**Figura 272**
+**Figura 275**
 
 *H06 - Indicadores diarios*
 
 <img src="chapter-04/assets/heuristicas/H06-indicadores-diarios.png" alt="H06 - Indicadores diarios" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-273"></a>
+<a id="figura-276"></a>
 
-**Figura 273**
+**Figura 276**
 
 *H09 - Periodo sin datos*
 
 <img src="chapter-04/assets/heuristicas/H09-periodo-sin-datos.png" alt="H09 - Periodo sin datos" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11491,29 +11519,29 @@ En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exp
 
 :::keep
 
-<a id="figura-274"></a>
+<a id="figura-277"></a>
 
-**Figura 274**
+**Figura 277**
 
 *H08 - Exportación*
 
 <img src="chapter-04/assets/heuristicas/H08-exportacion.png" alt="H08 - Exportación" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
 :::keep
 
-<a id="figura-275"></a>
+<a id="figura-278"></a>
 
-**Figura 275**
+**Figura 278**
 
 *H11 - Exportación preparada*
 
 <img src="chapter-04/assets/heuristicas/H11-exportacion-preparada.png" alt="H11 - Exportación preparada" width="60%"/>
 
-*Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+*Nota. Captura de la aplicación SaludYa en ejecución, evaluada por el equipo RouteGuard.*
 
 :::
 
@@ -11556,17 +11584,17 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 
 ## Video App Validation
 
-El video de validación reúne las sesiones realizadas con usuarios de los segmentos objetivo, en las que interactuaron con la Landing Page y con la aplicación móvil de SaludYa. Durante las sesiones se recogieron observaciones sobre navegación, claridad del contenido, usabilidad y funcionamiento de las funciones principales.
+El video de validación reúne las sesiones realizadas con usuarios de los segmentos objetivo: las sesiones 1 y 2 validan la Landing Page y la sesión 3 valida la aplicación móvil de SaludYa para la AV2. Durante las sesiones se recogieron observaciones sobre navegación, claridad del contenido, usabilidad y funcionamiento de las funciones principales.
 
-- [Sesión 1 — Personal administrativo](https://youtu.be/OYaoAsbkC0s)
-- [Sesión 2 — Paciente](https://drive.google.com/file/d/19-pnt9joLZRH_xgGoZjRtWLqU26qJOTC/view?usp=sharing)
-- [Sesión 3 — Paciente](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202624323_upc_edu_pe/IQBRh7AVQOSuSbc_bJVFre1-AT-2hqzjyRj0D8LKK3dvfDU?e=5Z9clg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- [Sesión 1 — Personal administrativo (Landing Page)](https://youtu.be/OYaoAsbkC0s)
+- [Sesión 2 — Paciente (Landing Page)](https://drive.google.com/file/d/19-pnt9joLZRH_xgGoZjRtWLqU26qJOTC/view?usp=sharing)
+- [Sesión 3 — Paciente (validación de la aplicación, AV2)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202624323_upc_edu_pe/IQBRh7AVQOSuSbc_bJVFre1-AT-2hqzjyRj0D8LKK3dvfDU?e=5Z9clg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 <p align="center">
   <img src="assets/EntrevistasValida/michelle2.png" alt="Cuadro de video de la sesión de validación de la aplicación" width="70%"/>
 </p>
 
-*Nota. Cuadro de video de la tercera sesión de validación; el detalle de las tres entrevistas se presenta en la sección 4.3.2.*
+*Nota. Cuadro de video de la tercera sesión, correspondiente a la validación de la aplicación móvil para la AV2; el detalle de las tres entrevistas se presenta en la sección 4.3.2.*
 
 :::
 
@@ -11578,11 +11606,11 @@ El video presenta la aplicación de SaludYa para pacientes. La demostración mue
 
 Enlace al video: [About the Product — SaludYa](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O).
 
-La [Figura 276](#figura-276) muestra la portada del video. Haz clic en la imagen para reproducirlo.
+La [Figura 279](#figura-279) muestra la portada del video. Haz clic en la imagen para reproducirlo.
 
-<a id="figura-276"></a>
+<a id="figura-279"></a>
 
-**Figura 276**
+**Figura 279**
 
 *Portada del video About the Product de SaludYa*
 
@@ -11596,9 +11624,21 @@ La [Figura 276](#figura-276) muestra la portada del video. Haz clic en la imagen
 
 ## Video About the Team
 
-El video presenta al equipo **RuwaLabs**, el proceso de trabajo durante el ciclo y los testimonios de cada integrante sobre las actividades realizadas, el logro del Student Outcome y las competencias desarrolladas. La descripción y la portada se incorporarán en la siguiente versión del informe.
+El video presenta al equipo **RuwaLabs**, el proceso de trabajo durante el ciclo y los testimonios de cada integrante sobre las actividades realizadas, el logro del Student Outcome y las competencias desarrolladas. La portada del video se presenta a continuación.
 
 Enlace al video: [About the Team — SaludYa](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318309_upc_edu_pe/IQDoOEoA098-R64uxy4ko10EAelpnVoXTsriu90ZZh2VgNU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EO61q9).
+
+<a id="figura-280"></a>
+
+**Figura 280**
+
+*Portada del video About the Team de SaludYa*
+
+<p align="center">
+  <img src="assets/video-about-the-team.png" alt="Portada del video About the Team de SaludYa" width="85%"/>
+</p>
+
+*Nota. Portada del video About the Team elaborado por el equipo RuwaLabs.*
 
 :::
 
