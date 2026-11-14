@@ -309,6 +309,7 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
     - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
+  - [Video About the Product](#video-about-the-product)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -11191,6 +11192,24 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 - **Evolución hacia la Reprogramación Inteligente:** Para futuras versiones, se recomienda integrar un sistema de sugerencias inteligentes de horarios y la posibilidad de reprogramación automática, con el objetivo de resolver de manera proactiva los cruces de agenda y mejorar la experiencia del módulo central de citas.
 
 - **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
+
+## Video About the Product
+
+El video presenta la aplicación de SaludYa para pacientes. La demostración muestra cómo consultar horarios, elegir una cita y revisar los datos de la reserva desde el celular. También recoge la opinión de una persona del público objetivo después de ver la demostración.
+
+Enlace al video: [About the Product — SaludYa](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O).
+
+La [Figura 276](#figura-276) muestra la portada del video. Haz clic en la imagen para reproducirlo.
+
+<a id="figura-276"></a>
+
+**Figura 276**
+
+*Portada del video About the Product de SaludYa*
+
+[![Portada del video About the Product de SaludYa](assets/about-the-product-saludya.jpg)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O)
+
+*Nota. Portada del video elaborado por el equipo RuwaLabs.*
 
 <!-- pdf-pagebreak -->
 
