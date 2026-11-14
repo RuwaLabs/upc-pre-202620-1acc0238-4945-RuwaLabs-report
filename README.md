@@ -9296,7 +9296,6 @@ La **velocity** del Sprint 2 se estableció en **84 story points**, equivalente 
 En el Sprint 2 el equipo organizó el trabajo en función de los módulos funcionales de la aplicación móvil administrativa: **Acceso y cuentas (IAM)**, **Inicio e indicadores**, **Agenda operativa**, **Cita y atención presencial**, **Configuración operativa** e **Integración de la aplicación**. La siguiente matriz LACX (Leadership-and-Collaboration Matrix) indica, para cada aspecto, quién asume el rol de **líder (L)** y quién de **colaborador (C)**, como se detalla en la [Tabla 81](#tabla-81). Esta organización guarda relación con la posterior asignación de tasks en el Sprint Backlog 2.
 <!-- pdf-pagebreak -->
 
-
 <a id="tabla-81"></a>
 
 **Tabla 81**
@@ -9867,6 +9866,17 @@ Las entrevistas se dirigieron a los dos segmentos identificados: **Segmento 1 �
 - ¿Qué cambiaría o agregaría para convencerlo de usar SaludYa?
 - Del 1 al 5, ¿qué tan probable es que recomiende la página a otra persona?
 - ¿Hay algo más que quiera comentar?
+
+#### Validación de aplicación
+
+- ¿Notaste elementos visuales cortados, desalineados o problemas de carga de imágenes según el modelo de tu teléfono? 
+- Durante el formulario de registro, ¿hubo algún campo confuso o un paso que detuviera tu avance? 
+- Para agendar consultas o ver tus citas pentiendes, ¿la información clave estuvo accesible de inmediato o tuviste que realizar demasiados clics? 
+- Identificaste íconos, botones o menús que se repitieran innecesariamente o cambiaran de formato entre pantallas? 
+- ¿Seleccionaste alguna opción o botón que no mostrara contenido o no ejecutara ninguna acción? 
+- ¿Notaste algún detalle molesto que, a pesar del inconveniente, te permitiera completar alguna tarea: agendar cita, registrarte, cancelar cita, editar cita? 
+- La función de qr, ¿consideras que es util? ¿funciona correctamente?
+
 
 ### 4.3.2. Registro de Entrevistas
 
