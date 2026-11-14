@@ -312,6 +312,7 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
   - [Video About the Product](#video-about-the-product)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo B: Video About the Product](#anexo-b-video-about-the-product)
 
 ---
 
@@ -11249,3 +11250,9 @@ Para la identificación de necesidades de los usuarios, se entrevistó a una peq
 - [Entrevista #2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQBrqsrdMO0-QLVyjU8m37RyAcAk6_JKY5ZmpVbMa0_eAk8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Rr8mOi)
 
 - [Entrevista #3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQAxoPDUIPTuQou-upR_hnBwARbOntKKq5_cv4dAcDxMApU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9fQ%3D%3D&e=JfXt3p)
+
+## Anexo B: Video About the Product
+
+Demostración de la aplicación SaludYa para pacientes y opinión de una persona del público objetivo. La descripción y la portada se encuentran en [Video About the Product](#video-about-the-product).
+
+- [Ver el video About the Product de SaludYa en SharePoint](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O)
