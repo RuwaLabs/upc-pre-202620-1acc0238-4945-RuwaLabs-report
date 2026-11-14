@@ -335,8 +335,6 @@ Como evidencia complementaria de la actividad del equipo durante el periodo del 
   - [Anexo B: Video About the Product](#anexo-b-video-about-the-product)
   - [Anexo C: Video About the Team](#anexo-c-video-about-the-team)
 
-<!-- pdf-pagebreak -->
-
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -567,8 +565,6 @@ En esta sección, cada integrante del equipo formula un plan de desarrollo profe
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-
-<!-- pdf-pagebreak -->
 
 # Capítulo 1: Presentación #
 
@@ -939,6 +935,8 @@ El Lean UX Canvas es una herramienta metodológica que permite sintetizar y visu
 
 La imagen presenta una matriz dividida en ocho secciones que abordan desde la identificación del problema de acceso a citas médicas hasta los beneficios específicos para pacientes y personal de salud. Aquí se define el problema de negocio relacionado con la dificultad de acceso oportuno a citas médicas en establecimientos públicos de salud, seguido de las ideas de solución que incluyen la reserva digital de citas, la lista de espera dinámica y el check-in mediante código QR. Los resultados empresariales se enfocan en mejorar la percepción de RuwaLabs y ayudar a los establecimientos públicos de salud a reducir colas y optimizar el aprovechamiento de sus cupos disponibles, como se observa en la [Figura 8](#figura-8).
 
+:::keep
+
 ## 1.3. Segmentos objetivos ##
 
 A continuación, se determinan los segmentos objetivos a los que va dirigida la propuesta de solución **SaludYa** para la gestión de citas médicas en establecimientos públicos de salud.
@@ -953,6 +951,10 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Problema:** La dependencia de procesos presenciales o telefónicos para conseguir una cita genera tiempos de espera elevados, cupos limitados, desinformación sobre la disponibilidad y el riesgo de perder citas ya conseguidas por falta de recordatorios.
 - **Necesidad:** Una solución digital accesible desde el celular que permita reservar citas médicas, conocer la disponibilidad en tiempo real, recibir notificaciones cuando se libere un cupo y gestionar tanto sus propias citas como las de sus familiares o dependientes.
 
+:::
+
+:::keep
+
 **Segmento objetivo 2: Personal asistencial y administrativo de establecimientos públicos de salud**
 
 - **Datos demográficos:**
@@ -963,7 +965,7 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 - **Problema:** La asignación manual de cupos, la gestión de cancelaciones, el control de pacientes que no se presentan y el seguimiento de la sala de espera generan una carga operativa elevada y dificultan la visualización del estado de la atención en tiempo real.
 - **Necesidad:** Una herramienta digital que centralice la gestión de citas y pacientes, permita visualizar en tiempo real el estado de la atención y la demanda, y facilite el control de cancelaciones, inasistencias y listas de espera.
 
-<!-- pdf-pagebreak -->
+:::
 
 # Capítulo II: Requirements Development and Software Solution Design
 
@@ -1392,6 +1394,8 @@ Kevin Huamán, de 22 años, es repartidor en San Juan de Lurigancho y domina bie
 
 Franco Alanoca, de 26 años, es técnico de admisión en un centro de salud de San Juan de Lurigancho, donde registra pacientes y asigna cupos de forma manual con cuadernos y Excel. Busca un sistema que centralice el registro y la disponibilidad de citas en tiempo real, reduzca la carga manual y permita reasignar automáticamente los cupos cancelados, como se observa en la [Figura 26](#figura-26).
 
+:::keep
+
 ### 2.3.2. User Task Matrix
 
 Para el siguiente análisis pensamos en dos segmentos principales los cuales podrán utilizar el software **SaludYa**: el **Paciente de zonas urbanas periféricas**, que requiere un acceso ágil para agendar citas propias o de sus dependientes, y el **Personal asistencial y administrativo**, encargado de operar la admisión, el flujo de atención y el control de cupos dentro de los establecimientos públicos de salud. Ambos interactúan con el dominio del problema desde perspectivas distintas pero complementarias, y las tareas identificadas son realizadas por cada segmento con independencia de la existencia de cualquier solución tecnológica, como se detalla en la [Tabla 18](#tabla-18).
@@ -1403,20 +1407,29 @@ Para el siguiente análisis pensamos en dos segmentos principales los cuales pod
 
 *User Task Matrix*
 
-| Tarea | Paciente (Zonas Periféricas) | Personal Asistencial / Administrativo | Frecuencia (Paciente) | Importancia (Paciente) | Frecuencia (Personal) | Importancia (Personal) |
+| Tarea | Paciente | Personal de salud | Frec. paciente | Import. paciente | Frec. personal | Import. personal |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Consultar disponibilidad de cupos y horarios | X | X | High | High | High | High |
 | Solicitar o asignar un cupo / cita médica | X | X | Medium | High | High | High |
 | Registrar o gestionar citas de familiares y dependientes | X | | Medium | High | Low | Medium |
 | Confirmar la asistencia o recibir recordatorios de cita | X | | Medium | High | Low | Medium |
+
+:::
+
+:::keep
+
+*Continuación de la Tabla 18*
+
+| Tarea | Paciente | Personal de salud | Frec. paciente | Import. paciente | Frec. personal | Import. personal |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Realizar el check-in / registro de llegada al establecimiento | X | X | Medium | High | High | High |
 | Gestionar la lista de espera y reasignación de cupos liberados | X | X | Low | High | High | High |
 | Controlar el flujo y estado de la atención en sala de espera | | X | Low | Low | High | High |
 | Registrar admisión y actualizar datos en registros/sistemas | | X | Low | Low | High | High |
 
-
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+:::
 
 #### Análisis del Task Matrix
 
@@ -1427,6 +1440,8 @@ A partir del User Task Matrix elaborado, se identifican los siguientes hallazgos
 * **Coincidencias relevantes:** La gestión de la lista de espera ante cancelaciones e inasistencias es percibida con importancia **High** por ambas partes. Para el personal, representa una oportunidad crítica para reducir la sobrecarga operativa y optimizar el aprovechamiento de los cupos disponibles; para el paciente, constituye el mecanismo clave para acceder a un cupo liberado de forma oportuna sin necesidad de madrugar o realizar viajes innecesarios.
 
 ---
+:::keep
+
 ### 2.3.3. User Journey Mapping
 
 A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal de salud, se elaboraron los User Journey Maps utilizando la herramienta UXPressia. Estos esquemas analizan la experiencia de cada segmento a lo largo del proceso de atención, contrastando las fricciones de la gestión presencial/manual actual contra las oportunidades de optimización que introduce la plataforma **SaludYa**.
@@ -1446,10 +1461,12 @@ A partir de los hallazgos obtenidos en las entrevistas con pacientes y personal 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+:::
 
 El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, espera y confirmación, check-in y atención médica. Su experiencia inicia con frustración al no obtener respuesta telefónica de la posta, mejora al reservar digitalmente desde SaludYa y recibir confirmación con QR, y culmina en alegría al evitar la cola presencial y conocer su posición real en la sala de espera, como se observa en la [Figura 27](#figura-27).
 
-<!-- pdf-pagebreak -->
+:::keep
+
 #### Segmento 2: Personal asistencial y administrativo
 
 
@@ -1465,6 +1482,7 @@ El recorrido de Kevin abarca cinco etapas: sintomatología, intento de reserva, 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+:::
 
 El recorrido de Franco cubre cinco etapas: apertura de agenda, admisión de pacientes, liberaciones, verificación y cierre con reporte. Su experiencia pasa de la serenidad al organizar los cupos del día, a la satisfacción de una ventanilla descongestionada, hasta la total conformidad al cerrar el turno sin sobrecarga administrativa gracias a la digitalización del registro, como se observa en la [Figura 28](#figura-28).
 
@@ -1674,10 +1692,14 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
 
+<!-- pdf-pagebreak -->
+
+:::keep
+
 #### User stories
 <!-- ===== LANDING PAGE ===== --> <!-- US-00: Visualización de Propuesta de Valor en Landing Page -->
 
-<!-- pdf-pagebreak -->
+
 
 **US-00: Visualización de Propuesta de Valor en Landing Page**
 
@@ -1686,6 +1708,8 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 </td></tr></tbody></table>
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
+
+:::
 
  <!-- ===== HUs DE PACIENTES (US-01 a US-29) ===== --> <!-- US-01: Verificación de Identidad por DNI -->
 
@@ -2624,6 +2648,8 @@ Las épicas agrupan las historias de usuario según las capacidades de SaludYa y
 <!-- pdf-pagebreak -->
 
 
+:::keep
+
 ### 2.4.2. Impact Mapping
 
 El mapa de impacto para nuestra plataforma de **gestión de citas médicas y control de sala de espera**, define una meta SMART: *«Optimizar la atención médica y reducir el tiempo de espera operativo; al primer año de despliegue contar con 15 clínicas afiliadas, 25 000 reservas procesadas y un 75% de confirmación de presencia vía QR»*. A partir de esta meta se explicitan los cambios de comportamiento esperados en los actores clave del sistema.
@@ -2632,9 +2658,9 @@ Como referencia cualitativa se emplean dos personas modelo: **Personal de Admisi
 
 A partir de estos impactos se declaran entregables de producto susceptibles de materializar el cambio de conducta: catálogo de especialidades y cupos en tiempo real, protocolo de reasignación de cupos liberados por orden de `bookingOrder`, validador de presencia mediante lectura y verificación de hash QR con tolerancia de tiempo, monitor central para admisión con ordenamiento automático por llegada, dashboard operativo con indicadores de citas programadas, citas pendientes, citas canceladas e inasistencias del día, y motor analítico con exportación de reportes operativos (PDF/CSV). En el ámbito técnico y de arquitectura, se integran endpoints RESTful seguros (HTTP 200/401) para el registro de presencia y un motor de notificaciones en tiempo real para avisos instantáneos de llamados y liberación de cupos. La última dimensión del método vincula estos entregables con historias de usuario (US), historias técnicas (TS) y *spikes* (SP) en formato *Como… / quiero… / para…* (y su equivalente técnico *Objective / Given / When / Then*), asegurando la trazabilidad directa desde la meta estratégica hasta el desarrollo funcional, como se observa en la [Figura 35](#figura-35).
 
-<!-- pdf-pagebreak -->
+:::
 
-
+:::keep
 
 <a id="figura-35"></a>
 
@@ -2646,8 +2672,9 @@ A partir de estos impactos se declaran entregables de producto susceptibles de m
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
+:::
 
----
+<!-- pdf-pagebreak -->
 
 ### 2.4.3. Product Backlog
 
@@ -2657,8 +2684,6 @@ El Product Backlog ha sido priorizado en función del **valor directo entregado 
 
 
 El backlog ordena las historias de usuario por prioridad e identifica su rol, alcance, estimación en story points y sprint previsto, como se detalla en la [Tabla 22](#tabla-22).
-
-<!-- pdf-pagebreak -->
 
 <a id="tabla-22"></a>
 
@@ -5001,8 +5026,6 @@ El diagrama de clases del dominio del bounded context Hospital Operations & Conf
 
 
 El diagrama de base de datos del bounded context Hospital Operations & Configuration muestra la tabla hospital_configurations, que almacena los parámetros operativos del establecimiento. La tabla es un singleton, es decir, contiene un único registro que define la configuración global del hospital. Los campos incluyen la capacidad máxima por bloque horario, el alcance del bookingOrder, las tolerancias de check-in y post-llamado, el timeout de reasignación, la hora de corte para reservas, el plazo de cancelación y la visibilidad de la cola de asistencia, como se observa en la [Figura 59](#figura-59).
-
-<!-- pdf-pagebreak -->
 
 # Capítulo III: Solution UI/UX Design
 
@@ -7592,8 +7615,6 @@ A continuación, se adjunta el enlace al video de demostración, como se observa
 
 
 [Video Mobile Applications Prototyping](https://l1nq.com/u85pwhp)
-
-<!-- pdf-pagebreak -->
 
 # Capítulo IV: Product Implementation & Validation
 
@@ -11522,8 +11543,6 @@ Iniciar la descarga al tocar el botón de formato (con una barra de progreso si 
 
 ---
 
-<!-- pdf-pagebreak -->
-
 # Conclusiones
 
 ## Conclusiones y recomendaciones
@@ -11620,8 +11639,6 @@ Enlace al video: [About the Team — SaludYa](https://upcedupe-my.sharepoint.com
 | **Menor vinculado** | Familiar menor de edad asociado a la cuenta de un paciente tutor para gestionar sus citas. |
 | **Establecimiento** | Centro de salud público que opera la agenda, la cola y las reglas configuradas en SaludYa. |
 | **Landing Page** | Sitio web público que presenta la propuesta de valor, el modelo de negocio y los videos del producto. |
-
-<!-- pdf-pagebreak -->
 
 # Bibliografía #
 
