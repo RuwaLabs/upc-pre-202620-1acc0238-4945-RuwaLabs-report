@@ -10090,6 +10090,28 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
 
 **Michelle:** Gracias a ustedes. Estamos en contacto.
 
+#### Entrevista 3 — Segmento: Paciente
+
+| Campo | Detalle                                                                                                                                                                                                                                                                                                                 |
+|:--|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre(s) y apellidos | Michelle Mendoza                                                                                                                                                                                                                                                                                                        |
+| Edad | 20 años                                                                                                                                                                                                                                                                                                                 |
+| Distrito | Punta Hermosa                                                                                                                                                                                                                                                                                                           |
+| Ocupación / rol | Paciente                                                                                                                                                                                                                                                                                                                |
+| Entrevistador(a) | Alisee                                                                                                                                                                                                                                                                                                                  |
+| Enlace del video | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202624323_upc_edu_pe/IQBRh7AVQOSuSbc_bJVFre1-AT-2hqzjyRj0D8LKK3dvfDU?e=5Z9clg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D |
+| Inicio de la entrevista | 00:00                                                                                                                                                                                                                                                                                                                   |
+
+<p align="center">
+  <img src="assets/EntrevistasValida/michelle2.png" alt="Cuadro de video de la entrevista 3 (paciente)" width="70%"/>
+</p>
+
+*Figura 226. Cuadro de video de la entrevista 2 — paciente.*
+
+**Resumen.** En la entrevista de validación, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga[1]. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente[1][2]. La única falla técnica detectada fue en la **función del código QR**, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
+**Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
+
+
 ### 4.3.3. Evaluaciones según heurísticas
 
 En esta sección se presentan las evaluaciones de la experiencia de usuario de **SaludYa** aplicando el formato de **Evaluación de User Experience según Heurísticas** (heurísticas de usabilidad, arquitectura de información y diseño inclusivo). Las evaluaciones fueron realizadas por el equipo **RouteGuard** y se organizan en dos bloques: (1) la aplicación Android para pacientes y (2) la aplicación Flutter para el personal de admisión y la administración del establecimiento. A continuación se registran los hallazgos, su severidad y las recomendaciones para cada problema identificado.
