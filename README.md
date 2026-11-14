@@ -38,7 +38,7 @@
 </table>
 
 <p align="center" style="text-align:center"><strong>Período 202620</strong></p>
-<p align="center" style="text-align:center"><strong>Septiembre 2026</strong></p>
+<p align="center" style="text-align:center"><strong>Noviembre 2026</strong></p>
 
 
 ---
@@ -74,6 +74,9 @@ El registro de versiones permite seguir las fechas, los responsables y las modif
 | 2.4.4 | 10-10-26 | Ramos Mera, Neo Daniel | Cap. IV — 4.2.1.7 Services Documentation, 4.2.1.8 Software Deployment Evidence y 4.2.1.9 Team Collaboration Insights. |
 | 2.4.5 | 10-10-26 | Montoya Nina, Paula Fernanda | Cap. IV — 4.2.1.2 Aspect Leaders and Collaborators; Project Report Collaboration Insights (TB1) y correcciones de la entrega. |
 | 2.4.6 | 11-11-26 | Montoya Nina, Paula Fernanda | Cap. IV — Sprint Planning 2 y Sprint Backlog 2; actualización del Product Backlog y diferenciación de TB1 y AV2 en Student Outcome. |
+| 2.5.0 | 12-11-26 | Equipo RuwaLabs | Cap. IV — evidencias de desarrollo, pruebas, ejecución, servicios y despliegue del Sprint 2; ajuste de estados del Sprint Backlog 2. |
+| 2.5.1 | 13-11-26 | Equipo RuwaLabs | Cap. IV — 4.3 Validation Interviews, 4.3.3 Evaluaciones según heurísticas, Video App Validation, Video About the Product, Video About the Team y Glosario. |
+| 2.5.2 | 13-11-26 | Equipo RuwaLabs | Cierre AV2: Collaboration Insights de la tercera entrega, corrección de índice y anclas, portada y secciones de video. |
 
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
@@ -161,6 +164,18 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 
 *Nota. Elaboración del equipo RuwaLabs a partir del panel Contributors del repositorio del informe en GitHub.*
 
+## Tercera entrega (AV2)
+
+En la tercera entrega el equipo actualizó el informe con las evidencias del **Sprint 2** (planificación, backlog, desarrollo, pruebas, ejecución, servicios y despliegue), las **entrevistas de validación** y las **evaluaciones según heurísticas**, además de incorporar las secciones de video y el glosario. La redacción se distribuyó entre los cinco integrantes y se evidencia en el historial de colaboración y de commits del repositorio del informe.
+
+Como evidencia complementaria de la actividad del equipo durante el periodo del **6 al 13 de noviembre de 2026**, se presenta el analítico del repositorio de la aplicación Kotlin, que registra **2 autores**, **1 commit en `main`** y **7 commits en todas las ramas**, **101 archivos modificados** y la publicación de la release **v1.1.0-av2** con el APK de la aplicación.
+
+<p align="center">
+  <img src="assets/insight-kotlin-av2.png" alt="Actividad del repositorio Kotlin durante la AV2" width="85%"/>
+</p>
+
+*Evidencia. Panel Insights de GitHub del repositorio `frontend-kotlin-saludya` para el periodo del 6 al 13 de noviembre de 2026.*
+
 ---
 <!-- pdf-pagebreak -->
 # Contenido
@@ -170,18 +185,18 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
 - [Contenido](#contenido)
 - [Student Outcome](#student-outcome)
 - [Objetivos SMART](#objetivos-smart)
-- [Capítulo I: Presentación](#capítulo-i-presentación)
+- [Capítulo I: Presentación](#capítulo-1-presentación)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-los-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
     - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
-      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statement)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivos)
 - [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
   - [2.1. Competidores](#21-competidores)
     - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
@@ -309,10 +324,16 @@ En la segunda entrega, el equipo actualizó el informe incorporando el **Capítu
     - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
     - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
-  - [Video About the Product](#video-about-the-product)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Video App Validation](#video-app-validation)
+- [Video About the Product](#video-about-the-product)
+- [Video About the Team](#video-about-the-team)
+- [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo A: Vídeos de entrevistas realizadas](#anexo-a-vídeos-de-entrevistas-realizadas)
   - [Anexo B: Video About the Product](#anexo-b-video-about-the-product)
+  - [Anexo C: Video About the Team](#anexo-c-video-about-the-team)
 
 ---
 
@@ -9367,7 +9388,7 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 | Sprint # | User Story Id    | User Story Title                                   | Work-Item / Task Id | Work-Item / Task Title    | Description                                                         | Estimation (Hours) | Assigned To | Status |
 | :------- | :--------------- | :------------------------------------------------- | :------------------ | :------------------------ | :------------------------------------------------------------------ | -----------------: | :---------- | :----- |
 | Sprint 2 | SCRUM-41 · US-30 | Inicio de Sesión del Super Admin                   | S2-T01              | Acceso Super Admin        | Construir formulario y control de sesión por rol.                   |                  6 | Neo         | Done   |
-| Sprint 2 | SCRUM-42 · US-31 | Creación de Cuenta de Personal de Admisión         | S2-T02              | Alta de personal          | Construir formulario de creación y validaciones de cuenta.          |                  6 | Neo         | Done   |
+| Sprint 2 | SCRUM-42 · US-31 | Creación de Cuenta de Personal de Admisión         | S2-T02              | Alta de personal          | Construir formulario de creación y validaciones de cuenta.          |                  6 | Neo         | In progress |
 | Sprint 2 | SCRUM-43 · US-32 | Inicio de Sesión del Personal de Admisión          | S2-T03              | Acceso de admisión        | Implementar inicio de sesión y navegación al módulo administrativo. |                  6 | Neo         | Done   |
 | Sprint 2 | SCRUM-44 · US-33 | Configuración de la Duración de los Intervalos     | S2-T04              | Duración de intervalos    | Crear controles y validación de intervalos de atención.             |                  6 | Rodrigo     | Done   |
 | Sprint 2 | SCRUM-45 · US-34 | Edición de una Regla Operativa del Establecimiento | S2-T05              | Editar regla operativa    | Crear formulario de edición y confirmación de cambios.              |                 10 | Rodrigo     | Done   |
@@ -9387,9 +9408,9 @@ A partir de las user stories comprometidas, el equipo descompuso el trabajo en l
 | Sprint 2 | SCRUM-59 · US-48 | Finalización de la Atención de un Paciente         | S2-T19              | Finalizar atención        | Registrar cierre de la atención y actualizar la cola.               |                  6 | Alisee      | Done   |
 | Sprint 2 | SCRUM-60 · US-49 | Registro de Ausencia de un Paciente                | S2-T20              | Registrar ausencia        | Marcar ausencia y reflejarla en la cola.                            |                 10 | Alisee      | Done   |
 | Sprint 2 | SCRUM-61 · US-50 | Consulta de Citas Canceladas del Día               | S2-T21              | Cancelaciones del día     | Mostrar lista de citas canceladas para la jornada.                  |                  4 | Didier      | Done   |
-| Sprint 2 | SCRUM-62 · US-51 | Visualización de Indicadores del Día               | S2-T22              | Indicadores diarios       | Mostrar métricas operativas del día.                                |                 10 | Didier      | Done   |
-| Sprint 2 | SCRUM-63 · US-52 | Visualización de Demanda por Especialidad          | S2-T23              | Demanda por especialidad  | Mostrar demanda desagregada por especialidad.                       |                  6 | Didier      | Done   |
-| Sprint 2 | SCRUM-64 · US-53 | Exportación de Reporte Operativo                   | S2-T24              | Exportar reporte          | Seleccionar filtros y exportar el reporte operativo.                |                 10 | Didier      | Done   |
+| Sprint 2 | SCRUM-62 · US-51 | Visualización de Indicadores del Día               | S2-T22              | Indicadores diarios       | Mostrar métricas operativas del día.                                |                 10 | Didier      | In progress |
+| Sprint 2 | SCRUM-63 · US-52 | Visualización de Demanda por Especialidad          | S2-T23              | Demanda por especialidad  | Mostrar demanda desagregada por especialidad.                       |                  6 | Didier      | In progress |
+| Sprint 2 | SCRUM-64 · US-53 | Exportación de Reporte Operativo                   | S2-T24              | Exportar reporte          | Seleccionar filtros y exportar el reporte operativo.                |                 10 | Didier      | In progress |
 
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.
 
@@ -9403,7 +9424,7 @@ El desarrollo del Sprint 2 se concentró en la aplicación Flutter/Dart para el 
 - **Llegada y cola presencial (`qr`).** Registro por escaneo o código manual, consulta de cola y acciones para llamar, iniciar, finalizar o marcar una ausencia (US-43 a US-49).
 - **Reglas operativas (`settings`).** Consulta y edición de configuración, capacidad, intervalos y otras reglas del establecimiento (US-33 a US-35).
 
-En paralelo, la aplicación del paciente en Kotlin avanzó en `patient-configuration`: se definió la API del perfil, se inyectó el cliente con Hilt y se conectó la pantalla de configuración a la cuenta autenticada. Se registra como avance complementario, fuera del alcance principal de Flutter; estos commits todavía no están en `develop` de Kotlin.
+En paralelo, la aplicación del paciente en Kotlin incorporó el perfil autenticado en la rama `patient-configuration`: se definió la API del perfil, se inyectó el cliente con Hilt y se conectó la pantalla de configuración a la cuenta autenticada. El APK de prueba de la aplicación se genera desde `develop` (commit `74a4b7f`) y está disponible en la sección 4.2.2.8; los cambios del perfil se integrarán en la próxima compilación. Se registra como avance complementario, fuera del alcance principal de Flutter.
 
 En las ramas revisadas no se identificó evidencia suficiente para dar por completadas la creación de cuentas de admisión (US-31), la vista completa de indicadores (US-51), la demanda por especialidad (US-52) ni la exportación de reportes (US-53). El resumen de Inicio sí presenta conteos de reservas y cancelaciones de la jornada.
 
@@ -9867,6 +9888,8 @@ Durante el Sprint 2, el trabajo de la aplicación administrativa se concentró e
 
 *Nota. Captura del panel Insights de GitHub del repositorio `frontend-flutter-saludya` para el periodo del 12 de octubre al 12 de noviembre de 2026.*
 
+Durante el mismo periodo, el repositorio `frontend-kotlin-saludya` registró **2 autores**, **1 commit en `main`** y **7 commits en todas las ramas**, además de la publicación de la release **v1.1.0-av2**; la captura de ese analítico se incluye en la sección Project Report Collaboration Insights, correspondiente a la tercera entrega.
+
 ## 4.3. Validation Interviews
 
 ### 4.3.1. Diseño de Entrevistas
@@ -9918,7 +9941,7 @@ Las entrevistas se dirigieron a los dos segmentos identificados: **Segmento 1 �
 
 - ¿Notaste elementos visuales cortados, desalineados o problemas de carga de imágenes según el modelo de tu teléfono? 
 - Durante el formulario de registro, ¿hubo algún campo confuso o un paso que detuviera tu avance? 
-- Para agendar consultas o ver tus citas pentiendes, ¿la información clave estuvo accesible de inmediato o tuviste que realizar demasiados clics? 
+- Para agendar consultas o ver tus citas pendientes, ¿la información clave estuvo accesible de inmediato o tuviste que realizar demasiados clics? 
 - Identificaste íconos, botones o menús que se repitieran innecesariamente o cambiaran de formato entre pantallas? 
 - ¿Seleccionaste alguna opción o botón que no mostrara contenido o no ejecutara ninguna acción? 
 - ¿Notaste algún detalle molesto que, a pesar del inconveniente, te permitiera completar alguna tarea: agendar cita, registrarte, cancelar cita, editar cita? 
@@ -9927,7 +9950,7 @@ Las entrevistas se dirigieron a los dos segmentos identificados: **Segmento 1 �
 
 ### 4.3.2. Registro de Entrevistas
 
-Para cada segmento se realizaron entrevistas de validación de la **Landing Page**, registradas en video como evidencia. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
+Para cada segmento se realizaron entrevistas de validación de la **Landing Page y de la aplicación móvil**, registradas en video como evidencia. A continuación se presentan, para cada entrevista, los datos del participante, el enlace del video, la captura del cuadro de video, el timing de inicio y un resumen descriptivo de las respuestas, incluyendo las características objetivas y subjetivas del entrevistado.
 
 #### Entrevista 1 — Segmento: Personal administrativo
 
@@ -10163,7 +10186,7 @@ Para cada segmento se realizaron entrevistas de validación de la **Landing Page
   <img src="assets/EntrevistasValida/michelle2.png" alt="Cuadro de video de la entrevista 3 (paciente)" width="70%"/>
 </p>
 
-*Figura 226. Cuadro de video de la entrevista 2 — paciente.*
+*Figura 226. Cuadro de video de la entrevista 3 — paciente.*
 
 **Resumen.** En la entrevista de validación, **Michelle**, paciente de 20 años residente de Punta Hermosa, evaluó la aplicación **SaludYa** destacando que la visualización fue adecuada sin elementos cortados ni demoras de carga. Asimismo, indicó que el proceso de registro fue fluido, la información para agendar consultas estuvo accesible de inmediato sin clics innecesarios y la interfaz mantuvo una navegación e iconografía consistente donde todos los botones respondieron correctamente La única falla técnica detectada fue en la función del código QR, la cual no operó de manera adecuada al no permitirle completar la interacción, evidenciando que requiere un mayor desarrollo 
 **Características del arquetipo:** adulta joven (20 años), paciente, usuaria frecuente de móvil, valora la confianza y las recomendaciones de otras personas, prefiere el español y prioriza la rapidez y la simplicidad.
@@ -11194,7 +11217,23 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 
 - **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
 
-## Video About the Product
+# Video App Validation
+
+El video de validación reúne las sesiones realizadas con usuarios de los segmentos objetivo, en las que interactuaron con la Landing Page y con la aplicación móvil de SaludYa. Durante las sesiones se recogieron observaciones sobre navegación, claridad del contenido, usabilidad y funcionamiento de las funciones principales.
+
+- [Sesión 1 — Personal administrativo](https://youtu.be/OYaoAsbkC0s)
+- [Sesión 2 — Paciente](https://drive.google.com/file/d/19-pnt9joLZRH_xgGoZjRtWLqU26qJOTC/view?usp=sharing)
+- [Sesión 3 — Paciente](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202624323_upc_edu_pe/IQBRh7AVQOSuSbc_bJVFre1-AT-2hqzjyRj0D8LKK3dvfDU?e=5Z9clg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<p align="center">
+  <img src="assets/EntrevistasValida/michelle2.png" alt="Cuadro de video de la sesión de validación de la aplicación" width="70%"/>
+</p>
+
+*Nota. Cuadro de video de la tercera sesión de validación; el detalle de las tres entrevistas se presenta en la sección 4.3.2.*
+
+<!-- pdf-pagebreak -->
+
+# Video About the Product
 
 El video presenta la aplicación de SaludYa para pacientes. La demostración muestra cómo consultar horarios, elegir una cita y revisar los datos de la reserva desde el celular. También recoge la opinión de una persona del público objetivo después de ver la demostración.
 
@@ -11211,6 +11250,33 @@ La [Figura 276](#figura-276) muestra la portada del video. Haz clic en la imagen
 [![Portada del video About the Product de SaludYa](assets/about-the-product-saludya.jpg)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O)
 
 *Nota. Portada del video elaborado por el equipo RuwaLabs.*
+
+<!-- pdf-pagebreak -->
+
+# Video About the Team
+
+El video presenta al equipo **RuwaLabs**, el proceso de trabajo durante el ciclo y los testimonios de cada integrante sobre las actividades realizadas, el logro del Student Outcome y las competencias desarrolladas. La descripción y la portada se incorporarán en la siguiente versión del informe.
+
+Enlace al video: [About the Team — SaludYa](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318309_upc_edu_pe/IQDoOEoA098-R64uxy4ko10EAelpnVoXTsriu90ZZh2VgNU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EO61q9).
+
+<!-- pdf-pagebreak -->
+
+# Glosario
+
+| Término | Definición |
+| :--- | :--- |
+| **Paciente** | Usuario final que solicita, reserva o gestiona atenciones médicas para sí mismo o para sus familiares dependientes en un establecimiento de salud público. |
+| **Personal de admisión** | Usuario operativo encargado de aperturar agendas, gestionar la atención en ventanilla y monitorear el flujo de la sala de espera. |
+| **Super Admin** | Usuario con permisos para configurar las reglas operativas y los parámetros generales del establecimiento. |
+| **Cita** | Reserva de un cupo médico para una especialidad, profesional, fecha y hora determinadas. |
+| **Bloque horario** | Intervalo de tiempo asignado a una especialidad para la atención de un paciente. |
+| **Check-in** | Validación de asistencia presencial mediante el escaneo de un código QR o el ingreso manual del código de reserva. |
+| **Ticket digital** | Comprobante que muestra el código de turno y los datos de la atención del paciente. |
+| **Cola de atención** | Lista ordenada de pacientes que esperan ser llamados a consultorio. |
+| **Reasignación** | Mecanismo que ofrece los cupos liberados por inasistencias a los pacientes en espera, en orden de reserva. |
+| **Menor vinculado** | Familiar menor de edad asociado a la cuenta de un paciente tutor para gestionar sus citas. |
+| **Establecimiento** | Centro de salud público que opera la agenda, la cola y las reglas configuradas en SaludYa. |
+| **Landing Page** | Sitio web público que presenta la propuesta de valor, el modelo de negocio y los videos del producto. |
 
 <!-- pdf-pagebreak -->
 
@@ -11257,7 +11323,7 @@ Demostración de la aplicación SaludYa para pacientes y opinión de una persona
 
 - [Ver el video About the Product de SaludYa en SharePoint](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319950_upc_edu_pe/IQCPRhlZh6zFTLR6nYZZQAznAR5hS0pun1VfUat2dsiFfYg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4HHW9O)
 
-**## Anexo C: Video About the Team**
+## Anexo C: Video About the Team
 
 Presentación del equipo de trabajo de SaludYa. La descripción y la portada se encuentran en [Video About the Team](#video-about-the-team).
 
