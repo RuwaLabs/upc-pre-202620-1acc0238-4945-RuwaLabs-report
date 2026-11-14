@@ -325,17 +325,15 @@ Como evidencia complementaria de la actividad del equipo durante el periodo del 
     - [4.3.3. Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-- [Video App Validation](#video-app-validation)
-- [Video About the Product](#video-about-the-product)
-- [Video About the Team](#video-about-the-team)
+  - [Video App Validation](#video-app-validation)
+  - [Video About the Product](#video-about-the-product)
+  - [Video About the Team](#video-about-the-team)
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A: Vídeos de entrevistas realizadas](#anexo-a-vídeos-de-entrevistas-realizadas)
   - [Anexo B: Video About the Product](#anexo-b-video-about-the-product)
   - [Anexo C: Video About the Team](#anexo-c-video-about-the-team)
-
----
 
 <!-- pdf-pagebreak -->
 
@@ -977,6 +975,8 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 > Mediante este análisis competitivo buscamos identificar las principales características, fortalezas, debilidades y propuestas de valor de las soluciones existentes en el mercado. Esto nos permitirá reconocer oportunidades de diferenciación y definir cómo **SaludYa** puede ofrecer un mayor valor a los pacientes y al personal de los establecimientos públicos de salud, como se detalla en la [Tabla 11](#tabla-11) y la [Figura 9](#figura-9), la [Figura 10](#figura-10), la [Figura 11](#figura-11) y la [Figura 12](#figura-12).
 
 
+:::keep
+
 <a id="tabla-11"></a>
 
 **Tabla 11**
@@ -987,21 +987,48 @@ A continuación, se determinan los segmentos objetivos a los que va dirigida la 
 | :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Logo**                                                       |                                                                                                                          <a id="figura-9"></a><strong>Figura 9</strong><br><em>Logotipo de SaludYa</em><br><img src="assets/Icon_SaludYa.png" alt="Logotipo de SaludYa" width="190">                                                                                                                          |                                                                                            <a id="figura-10"></a><strong>Figura 10</strong><br><em>Logotipo de Doctoralia</em><br><img src="https://i.imgur.com/bKfYERK.png" alt="Logotipo de Doctoralia">                                                                                             |                                                    <a id="figura-11"></a><strong>Figura 11</strong><br><em>Logotipo de Cita Médica</em><br><img src="https://i.imgur.com/Jqy2pqA.png" alt="Logotipo de Cita Médica">                                                     |                                                                                              <a id="figura-12"></a><strong>Figura 12</strong><br><em>Logotipo del MINSA</em><br><img src="https://i.imgur.com/WIV8zHk.jpeg" alt="Logotipo del MINSA">                                                                                               |
 | **Perfil / Overview**                                          |        Es una solución compuesta por dos aplicaciones móviles que conectan a pacientes y personal de establecimientos públicos de salud, permitiendo la reserva de citas, la gestión de listas de espera y el seguimiento del flujo de atención en tiempo real.         | Doctoralia es una plataforma internacional líder en reserva de citas médicas, que conecta a pacientes con más de 29 000 especialistas y clínicas privadas registrados, permitiendo agendar consultas presenciales o por videollamada. | Cita Médica es una aplicación peruana que permite reservar citas médicas en consultorios y clínicas privadas, de forma presencial o por videoconsulta. | Es una iniciativa del Ministerio de Salud (MINSA) que permite generar citas digitales en establecimientos de primer nivel de atención y hospitales seleccionados, como parte de la digitalización del Seguro Integral de Salud (SIS). |
+
+:::
+
+:::keep
+
+*Continuación de la Tabla 11*
+
+| **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
+| :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Ventaja competitiva**<br>*¿Qué valor ofrece a los clientes?* |                         Enfoque específico en establecimientos públicos de salud, conectando la gestión del paciente con la operación interna del establecimiento mediante lista de espera dinámica, check-in por QR y pre-filtro de síntomas.                          |                                                           Amplia red de especialistas verificados, videoconsultas, recordatorios automáticos y chat directo con el médico.                                                            |               Consulta de precios de medicamentos y recetas en farmacias cercanas, además de recordatorios y chat privado con el médico.               |                                        Acceso gratuito y dirigido específicamente a la población que se atiende en establecimientos públicos de salud, con respaldo institucional del Estado.                                         |
 | **Perfil de Marketing**<br>*Mercado objetivo*                  |                                                                          Pacientes de zonas urbanas periféricas y personal asistencial y administrativo de establecimientos públicos de salud.                                                                          |                                                                       Pacientes que buscan atención médica privada, así como especialistas y clínicas privadas.                                                                       |                                    Pacientes que buscan atención médica privada en consultorios y clínicas de Perú.                                    |                                                                Pacientes asegurados al SIS y usuarios de establecimientos públicos de salud en Lima y otras regiones.                                                                 |
 | **Estrategias de marketing**                                   |                                                                               Alianzas con establecimientos públicos de salud y difusión mediante campañas informativas y redes sociales.                                                                               |                                                                            Posicionamiento en redes sociales, SEO y alianzas con seguros médicos privados.                                                                            |                                 Posicionamiento en tiendas de aplicaciones (App Store, Google Play) y redes sociales.                                  |                                                                     Difusión institucional a través de comunicados del MINSA y de cada establecimiento de salud.                                                                      |
+
+:::
+
+:::keep
+
+*Continuación de la Tabla 11*
+
+| **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
+| :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Productos & Servicios**                                      | App para pacientes (reserva de citas, recordatorios, lista de espera dinámica, pre-filtro de síntomas, gestión de familiares y check-in por QR) y app para personal (gestión de citas, visualización del flujo de atención y control de cancelaciones e inasistencias). |                                   Búsqueda de especialistas por ciudad o seguro médico, reserva de citas presenciales o virtuales, recordatorios, videoconsultas y mensajería con el especialista.                                    |  Búsqueda de médicos y consultorios cercanos, reserva de citas presenciales o por videoconsulta, recordatorios y consulta de precios de medicamentos.  |                                                                 Registro y reserva de citas médicas de forma virtual en hospitales y centros de salud seleccionados.                                                                  |
 | **Perfil de Producto**<br>*Precios & Costos*                   |                                                 Al estar dirigida a establecimientos públicos de salud, se plantea como un servicio sin costo directo para el paciente, con un modelo de implementación institucional.                                                  |                                                            Gratuito para pacientes; planes de suscripción mensual para profesionales y clínicas (Plus, VIP, entre otros).                                                             |                                                         Aplicación gratuita para el paciente.                                                          |                                                                                                 Gratuito, al ser un servicio público.                                                                                                 |
 | **Canales de distribución**<br>*Web y/o Móvil*                 |                                                                                                                               Web y Móvil                                                                                                                               |                                                                                                              Web y Móvil                                                                                                              |                                                                 Móvil (iOS y Android)                                                                  |                                                                                      Móvil (aplicaciones por hospital) y, en algunos casos, Web                                                                                       |
+
+:::
+
+:::keep
+
+*Continuación de la Tabla 11*
+
+| **Competitive Analysis Landscape**                             |                                                                                                                               **SaludYa**                                                                                                                               |                                                                                                            **Doctoralia**                                                                                                             |                                                                    **Cita Médica**                                                                     |                                                                                                      **Citas en Línea (MINSA)**                                                                                                       |
+| :------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Fortalezas**                                                 |                                                       Conecta la experiencia del paciente con la operación interna del establecimiento, reduciendo colas y mejorando el aprovechamiento de los cupos disponibles.                                                       |                                                              Amplia base de especialistas y funcionalidades avanzadas como videoconsultas y lista de espera inteligente.                                                              |                   Integración de información sobre precios de medicamentos y recetas, además de comunicación directa con el médico.                    |                                                                       Cobertura directa dentro del sistema público de salud y respaldo institucional del MINSA.                                                                       |
 | **Análisis SWOT — Debilidades**                                |                                                                             Requiere una conexión estable a internet y la adopción digital del personal administrativo del establecimiento.                                                                             |                                                                          Enfocado en el sector privado, sin cobertura de establecimientos públicos de salud.                                                                          |                                                Enfocado únicamente en consultorios y clínicas privadas.                                                |                                       Cobertura limitada a determinados hospitales, sin funcionalidades como lista de espera dinámica, check-in por QR o gestión interna del flujo de atención.                                       |
 | **Análisis SWOT — Oportunidades**                              |                                                                            Alineación con las iniciativas de digitalización del MINSA y expansión a más establecimientos públicos de salud.                                                                             |                                                                                  Expansión hacia convenios con aseguradoras y nuevas especialidades.                                                                                  |                                           Expansión hacia convenios con establecimientos públicos de salud.                                            |                                                                  Expansión a más establecimientos de salud a nivel nacional e integración de nuevas funcionalidades.                                                                  |
 | **Análisis SWOT — Amenazas**                                   |                                                                                 Competencia de plataformas privadas ya consolidadas y resistencia al cambio en instituciones públicas.                                                                                  |                                                                      Aparición de nuevas plataformas especializadas por sector, como establecimientos públicos.                                                                       |                                              Competencia de plataformas más consolidadas como Doctoralia.                                              |                                                                   Falta de mantenimiento o actualización tecnológica constante al depender de presupuesto público.                                                                    |
 
-
 *Nota. Elaboración del equipo RuwaLabs para el proyecto SaludYa.*
 
-<!-- pdf-pagebreak -->
+:::
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
 Una vez realizado la identificación de fortalezas, oportunidades, debilidades y amenazas con el análisis FODA de nuestros competidores en el sector del mercado, pasaremos a plantear las estrategias y tácticas para hacerle frente a estos mismos.
@@ -10300,6 +10327,8 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
+:::keep
+
 ### PROBLEMA #1: El registro indica "PASO 3 DE 3" pero aún falta la verificación del correo
 
 **Severidad:** 2
@@ -10307,6 +10336,10 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 
 **Problema:**
 La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al pulsar "Verificar correo" el usuario llega a la pantalla "04 · Registro · Verificar correo", que no tiene indicador de paso. El usuario cree que terminó y encuentra un paso más, por lo que no sabe cuánto falta para crear su cuenta.
+
+:::
+
+:::keep
 
 <a id="figura-226"></a>
 
@@ -10318,6 +10351,10 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-227"></a>
 
 **Figura 227**
@@ -10328,8 +10365,12 @@ La pantalla "03 · Registro · Datos de acceso" muestra "PASO 3 DE 3", pero al p
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del paso 3, y mantener el indicador en la pantalla de verificación.
+
+:::keep
 
 ### PROBLEMA #2: El mensaje "Correo verificado" dice que se validó el número
 
@@ -10338,6 +10379,10 @@ Pasar a "PASO 4 DE 4" o mostrar que la verificación del correo forma parte del 
 
 **Problema:**
 El diálogo "Registro · Correo validado" tiene el título "Correo verificado", pero el texto indica "Tu número fue validado correctamente". El usuario no sabe si se verificó su correo o su celular, y el mensaje puede hacerle pensar que debe verificar otro dato.
+
+:::
+
+:::keep
 
 <a id="figura-228"></a>
 
@@ -10349,8 +10394,12 @@ El diálogo "Registro · Correo validado" tiene el título "Correo verificado", 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con el título y con el paso realizado.
+
+:::keep
 
 ### PROBLEMA #3: El login pide correo pero el mensaje de error habla de documento
 
@@ -10359,6 +10408,10 @@ Cambiar el texto a "Tu correo fue validado correctamente" para que coincida con 
 
 **Problema:**
 La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña, pero el diálogo "Credenciales incorrectas" dice "El documento o la contraseña son incorrectos". Además, el registro empieza con el DNI, por lo que el usuario no tiene claro con qué dato debe ingresar. Esto genera reintentos fallidos y frustración.
+
+:::
+
+:::keep
 
 <a id="figura-229"></a>
 
@@ -10370,6 +10423,10 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-230"></a>
 
 **Figura 230**
@@ -10380,8 +10437,12 @@ La pantalla "05 · Login · Paciente" solicita correo electrónico y contraseña
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes, e indicar en el registro con qué dato se ingresará después.
+
+:::keep
 
 ### PROBLEMA #4: Los campos de contraseña no muestran requisitos
 
@@ -10390,6 +10451,10 @@ Unificar el identificador de acceso (correo o DNI) en el login y en sus mensajes
 
 **Problema:**
 Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nueva contraseña" piden crear una contraseña sin indicar longitud mínima, caracteres requeridos ni nivel de seguridad. El usuario descubre las reglas solo al fallar, y el único aviso previsto es el diálogo de contraseñas diferentes.
+
+:::
+
+:::keep
 
 <a id="figura-231"></a>
 
@@ -10401,6 +10466,10 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-232"></a>
 
 **Figura 232**
@@ -10411,8 +10480,12 @@ Las pantallas "03 · Registro · Datos de acceso" y "10 · Recuperación · Nuev
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar bajo el campo los requisitos de la contraseña y un indicador de seguridad, y validar mientras el usuario escribe.
+
+:::keep
 
 ### PROBLEMA #5: "Reenviar código" es un texto plano sin estado ni tiempo de espera
 
@@ -10421,6 +10494,10 @@ Mostrar bajo el campo los requisitos de la contraseña y un indicador de segurid
 
 **Problema:**
 En "04 · Registro · Verificar correo" la acción "Reenviar código" es un texto de 18 px de alto que no indica si ya se envió, cuánto falta para poder reenviarlo ni la vigencia del código. El usuario no sabe si debe esperar o pulsarlo de nuevo.
+
+:::
+
+:::keep
 
 <a id="figura-233"></a>
 
@@ -10432,8 +10509,12 @@ En "04 · Registro · Verificar correo" la acción "Reenviar código" es un text
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y presentar la acción como un botón con área táctil adecuada.
+
+:::keep
 
 ### PROBLEMA #6: Toda la interfaz está solo en español, sin selector de idioma
 
@@ -10442,6 +10523,10 @@ Mostrar un contador ("Reenviar en 00:30"), confirmar el envío con un aviso y pr
 
 **Problema:**
 En las pantallas revisadas todos los textos están en español y no hay una opción visible para cambiar de idioma. El proyecto requiere internacionalización (i18n) con inglés (en_US) y español latinoamericano (es_419), y el idioma por defecto de la interfaz debe ser el inglés.
+
+:::
+
+:::keep
 
 <a id="figura-234"></a>
 
@@ -10453,8 +10538,12 @@ En las pantallas revisadas todos los textos están en español y no hay una opci
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Incluir en "Configuración" un selector de idioma (English / Español), definir inglés como idioma por defecto y preparar las cadenas para traducción.
+
+:::keep
 
 ### PROBLEMA #7: Nombres distintos para la misma acción o pantalla ("Reservar una cita", "Reservar cita", "Reserva tu cita", "Mis citas")
 
@@ -10463,6 +10552,10 @@ Incluir en "Configuración" un selector de idioma (English / Español), definir 
 
 **Problema:**
 La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Reservar cita" (navegación y estado vacío) y "Reserva tu cita" (título). La lista de citas se llama "Citas pendientes" y en la pantalla de error "Mis citas". Estas variaciones pueden hacer dudar si se trata de la misma función.
+
+:::
+
+:::keep
 
 <a id="figura-235"></a>
 
@@ -10474,6 +10567,10 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-236"></a>
 
 **Figura 236**
@@ -10483,6 +10580,10 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 <img src="chapter-04/assets/heuristicas/21-error-carga.png" alt="Error de carga" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
+
+:::keep
 
 <a id="figura-237"></a>
 
@@ -10494,8 +10595,12 @@ La acción de reservar aparece como "Reservar una cita" (botón de inicio), "Res
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegación y títulos.
+
+:::keep
 
 ### PROBLEMA #8: El paciente llamado no ve cuánto tiempo le queda para llegar
 
@@ -10504,6 +10609,10 @@ Definir un sistema de etiquetas y aplicar el mismo nombre en botones, navegació
 
 **Problema:**
 En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo indicado por el establecimiento: 5 minutos" y solo muestra la hora de la llamada ("Llamada registrada: 09:15"). No hay contador regresivo ni hora límite, aunque el personal sí ve "Quedan 02:30" en su pantalla. Si el paciente no llega a tiempo, "A11 · Fuera del plazo" le avisa recién cuando la cita ya quedó como inasistencia. El paciente puede perder su turno sin haber visto cuánto tiempo tenía.
+
+:::
+
+:::keep
 
 <a id="figura-238"></a>
 
@@ -10515,6 +10624,10 @@ En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo in
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-239"></a>
 
 **Figura 239**
@@ -10525,8 +10638,12 @@ En "A05 · Llamada a consultorio" el mensaje dice "Acércate dentro del plazo in
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:20"), enviar una notificación al llamar y otra cuando falten 2 minutos. En A11 explicar cómo recuperar el turno.
+
+:::keep
 
 ### PROBLEMA #9: "Has sido atendida" usa género fijo y no considera a quien representa a un menor
 
@@ -10535,6 +10652,10 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 **Problema:**
 "A07 · Atención finalizada" dice "Has sido atendida", con género femenino fijo. La app la usan hombres y personas de otros géneros, y además un adulto puede ver los tickets de un menor (A15 · Ticket de menor, que es de Mateo). El mensaje no se adapta a ninguno de esos casos.
+
+:::
+
+:::keep
 
 <a id="figura-240"></a>
 
@@ -10546,6 +10667,10 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-241"></a>
 
 **Figura 241**
@@ -10556,8 +10681,12 @@ Mostrar en A05 un contador regresivo y la hora límite ("Llega antes de las 09:2
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Usar un texto neutro ("Tu atención finalizó") o personalizarlo según el beneficiario ("La atención de Mateo finalizó").
+
+:::keep
 
 ### PROBLEMA #10: El mismo ícono se usa para estados positivos, neutros y negativos
 
@@ -10566,6 +10695,10 @@ Usar un texto neutro ("Tu atención finalizó") o personalizarlo según el benef
 
 **Problema:**
 La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin llegada registrada", "A07 · Atención finalizada", "A16 · Turno ausente" y "C12 · Sin menores". Un resultado positivo (atendida) y uno negativo (inasistencia) se ven iguales, y el usuario debe leer el texto para saber qué pasó. En los diálogos de error se usa otro estilo (alerta roja), por lo que el criterio tampoco es uniforme.
+
+:::
+
+:::keep
 
 <a id="figura-242"></a>
 
@@ -10577,6 +10710,10 @@ La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin l
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-243"></a>
 
 **Figura 243**
@@ -10587,8 +10724,12 @@ La cruz médica verde aparece igual en "A03 · Salida registrada", "A06 · Sin l
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera, alerta para problema) y combinar ícono, color y texto.
+
+:::keep
 
 ### PROBLEMA #11: Avisos y errores terminan en "Entendido" sin una acción para recuperarse
 
@@ -10597,6 +10738,10 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 **Problema:**
 "C15 · Código vencido" dice "Solicita un nuevo código para completar el cambio", pero su único botón es "Entendido", así que el usuario debe cerrar el diálogo y buscar "Reenviar código". "C18 · Vínculo no acreditado" remite a "admisión" sin ningún canal de contacto. "A11 · Fuera del plazo" y "A16 · Turno ausente" informan la inasistencia, pero solo ofrecen "Entendido" o "Ver mis citas", sin reprogramar ni contactar. El usuario queda sin siguiente paso.
+
+:::
+
+:::keep
 
 <a id="figura-244"></a>
 
@@ -10608,6 +10753,10 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-245"></a>
 
 **Figura 245**
@@ -10617,6 +10766,10 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 <img src="chapter-04/assets/heuristicas/C18-vinculo-no-acreditado.png" alt="C18 - Vínculo no acreditado" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
+
+:::keep
 
 <a id="figura-246"></a>
 
@@ -10628,8 +10781,12 @@ Usar un ícono distinto por tipo de estado (check para éxito, reloj para espera
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Ofrecer la acción de recuperación en el mismo diálogo ("Solicitar nuevo código", "Reservar de nuevo", "Contactar a admisión" con teléfono o dirección) y reservar "Entendido" para avisos que no requieren acción.
+
+:::keep
 
 ### PROBLEMA #12: Los campos de solo lectura se ven como campos editables
 
@@ -10638,6 +10795,10 @@ Ofrecer la acción de recuperación en el mismo diálogo ("Solicitar nuevo códi
 
 **Problema:**
 En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cuadro blanco que "Celular" y "Correo", que sí se pueden cambiar. En estos últimos, la única parte accionable es el pequeño texto "Editar →" dentro del cuadro. El usuario toca el nombre y no pasa nada, y puede no notar el enlace "Editar". La nota que lo explica ("Los datos de identidad verificados se muestran para consulta") está al final y en letra pequeña.
+
+:::
+
+:::keep
 
 <a id="figura-247"></a>
 
@@ -10649,8 +10810,12 @@ En "C02 · Mis datos", "Nombre" y "Documento" (solo lectura) tienen el mismo cua
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabilitado y un ícono de candado. Hacer que todo el campo editable sea tocable y con un ícono de lápiz visible.
+
+:::keep
 
 ### PROBLEMA #13: La pantalla que confirma el cambio de celular se titula "Verificar correo"
 
@@ -10659,6 +10824,10 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 **Problema:**
 "C05 · Confirmar cambio por correo" se titula "Verificar correo", pero su texto dice "...enviado a tu correo registrado para confirmar el cambio de celular". El usuario que quiere cambiar el celular lee que debe "verificar el correo" y puede creer que cambió algo del correo. "C06" usa el mismo título para verificar realmente un correo nuevo, así que dos tareas distintas comparten pantalla de aspecto idéntico.
+
+:::
+
+:::keep
 
 <a id="figura-248"></a>
 
@@ -10670,6 +10839,10 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-249"></a>
 
 **Figura 249**
@@ -10680,8 +10853,12 @@ Mostrar los datos de solo lectura como texto (sin cuadro) o con estilo deshabili
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verificar tu nuevo correo") y repetir el dato que se está cambiando.
+
+:::keep
 
 ### PROBLEMA #14: "Sincronizar" es un término técnico y una acción manual poco clara
 
@@ -10690,6 +10867,10 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 **Problema:**
 "C07 · Parientes vinculados" ofrece "Sincronizar vínculos" y "C08 · Detalle del menor" ofrece "Sincronizar datos". No se explica qué se sincroniza, con qué ni cuándo conviene hacerlo. Una persona no técnica no sabe si debe pulsarlo, y la sincronización debería ser automática. El resultado ("C13 · Vínculos sincronizados") tampoco aclara qué cambió.
+
+:::
+
+:::keep
 
 <a id="figura-250"></a>
 
@@ -10701,6 +10882,10 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-251"></a>
 
 **Figura 251**
@@ -10711,8 +10896,12 @@ Titular cada pantalla según la tarea ("Confirmar cambio de celular" y "Verifica
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Reemplazarlo por una actualización automática o por un texto comprensible ("Actualizar datos de Mateo") con una línea que explique para qué sirve, y mostrar la fecha de la última actualización.
+
+:::keep
 
 ### PROBLEMA #15: El mensaje "Revisa el dato ingresado" no dice qué campo falló
 
@@ -10721,6 +10910,10 @@ Reemplazarlo por una actualización automática o por un texto comprensible ("Ac
 
 **Problema:**
 "C17 · Dato inválido" dice "Ingresa un correo válido o un celular de 9 dígitos, según el campo". El mismo mensaje sirve para dos pantallas distintas y obliga al usuario a deducir cuál es el suyo. Además, aparece en un diálogo que tapa el campo con error.
+
+:::
+
+:::keep
 
 <a id="figura-252"></a>
 
@@ -10732,8 +10925,12 @@ Reemplazarlo por una actualización automática o por un texto comprensible ("Ac
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar el error junto al campo con un mensaje específico ("El celular debe tener 9 dígitos" o "Ingresa un correo válido, por ejemplo nombre@correo.com") y validar mientras se escribe.
+
+:::keep
 
 ### PROBLEMA #16: Configuración no ofrece idioma, notificaciones ni opciones de accesibilidad
 
@@ -10743,7 +10940,11 @@ Mostrar el error junto al campo con un mensaje específico ("El celular debe ten
 **Problema:**
 "C01 · Configuración" solo tiene cuatro botones iguales: "Mis datos", "Parientes vinculados", "Cambiar contraseña" y "Cerrar sesión". No hay selector de idioma (el proyecto exige español e inglés), ajustes de notificaciones ni opciones de accesibilidad como tamaño de texto o contraste. "Cerrar sesión" tiene el mismo peso visual que las funciones de navegación.
 
+:::
+
 **Relación con otros hallazgos:** el selector de idioma ya se reportó en el problema #6; este problema amplía el hallazgo a las opciones de notificación y accesibilidad.
+
+:::keep
 
 <a id="figura-253"></a>
 
@@ -10754,6 +10955,8 @@ Mostrar el error junto al campo con un mensaje específico ("El celular debe ten
 <img src="chapter-04/assets/heuristicas/C01-configuracion.png" alt="C01 - Configuración" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
 
 **Recomendación:**
 Agregar un selector de idioma (inglés por defecto), preferencias de notificación y tamaño de texto, y separar "Cerrar sesión" del resto como acción distinta.
@@ -10844,6 +11047,8 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 
 **DESCRIPCIÓN DE PROBLEMAS**
 
+:::keep
+
 ### PROBLEMA #1: Los estados de bloques, turnos y pacientes se distinguen solo por texto verde
 
 **Severidad:** 2
@@ -10851,6 +11056,10 @@ Los errores se puntúan tomando en cuenta la siguiente escala de severidad:
 
 **Problema:**
 En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestran con el mismo texto verde pequeño, así que un bloque lleno no se distingue de uno con cupos. Pasa lo mismo en "P11 · Cola presencial" ("En atención" y "En espera") y en "P20 · Pacientes con reserva" ("Llegada registrada", "Pendiente de llegada" y "En atención"). Para escanear rápido una lista de decenas de ítems hay que leer cada texto, y una persona con daltonismo no tiene otra pista.
+
+:::
+
+:::keep
 
 <a id="figura-254"></a>
 
@@ -10862,6 +11071,10 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-255"></a>
 
 **Figura 255**
@@ -10871,6 +11084,10 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="P11 - Cola presencial" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
+
+:::keep
 
 <a id="figura-256"></a>
 
@@ -10882,8 +11099,12 @@ En "P04 · Bloques de hoy" los estados "Abierto →" y "Completo →" se muestra
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por ejemplo, rojo con candado para "Completo", verde para "Abierto") y separar el estado de la flecha de navegación.
+
+:::keep
 
 ### PROBLEMA #2: Editar un bloque no muestra qué reservas se verán afectadas
 
@@ -10892,6 +11113,10 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 **Problema:**
 "P05" indica que el bloque 09:00–09:30 tiene "Capacidad: 8 · Reservas: 8". En "P07 · Editar bloque" se puede cambiar la hora, la especialidad, el profesional y el estado, y solo hay "Confirmar cambios" y "Cancelar". No se muestra cuántos pacientes se afectan ni cuáles, y si hay conflicto "P23" solo dice "El cambio entra en conflicto con reservas confirmadas o con otro bloque del profesional", sin indicar cuál. Un cambio mal hecho puede mover o cancelar citas de hasta 8 pacientes sin que el personal lo sepa.
+
+:::
+
+:::keep
 
 <a id="figura-257"></a>
 
@@ -10903,6 +11128,10 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-258"></a>
 
 **Figura 258**
@@ -10913,8 +11142,12 @@ Usar etiquetas tipo "chip" con ícono, forma y color distintos por estado (por e
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con la lista y las opciones (notificar, reasignar, cancelar). En P23 indicar la reserva o el bloque exacto con el que hay conflicto.
+
+:::keep
 
 ### PROBLEMA #3: Elegir profesional y horario no indica la tarea ni la selección actual
 
@@ -10923,6 +11156,10 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 **Problema:**
 "P08 · Elegir profesional", "P09 · Elegir horario" y "P10 · Horario por profesional" no dicen para qué se elige (¿reasignar una cita?, ¿crear una reserva?, ¿consultar?). En P08 cada tarjeta tiene "Seleccionar →" pero ninguna muestra estado seleccionado antes de "Continuar". En P09 y P10 el horario elegido solo se indica con el texto pequeño "· Seleccionado", sin resaltar la tarjeta. Además, P09 y P10 son casi idénticas.
+
+:::
+
+:::keep
 
 <a id="figura-259"></a>
 
@@ -10934,6 +11171,10 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-260"></a>
 
 **Figura 260**
@@ -10943,6 +11184,10 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 <img src="chapter-04/assets/heuristicas/P09-elegir-horario.png" alt="P09 - Elegir horario" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
+
+:::keep
 
 <a id="figura-261"></a>
 
@@ -10954,8 +11199,12 @@ Mostrar, antes de confirmar, un resumen del impacto ("Afecta a 8 reservas") con 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Indicar la tarea en el título o subtítulo ("Reasignar cita de Lucía Torres"), resaltar la tarjeta elegida (borde, fondo, check) y fusionar P09 y P10 en un solo selector.
+
+:::keep
 
 ### PROBLEMA #4: "Terminar atención" se ejecuta sin confirmación ni opción de deshacer
 
@@ -10964,6 +11213,10 @@ Indicar la tarea en el título o subtítulo ("Reasignar cita de Lucía Torres"),
 
 **Problema:**
 En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" cierra la atención y retira al paciente de la cola ("P17 · Atención finalizada" aparece después). No hay confirmación previa ni un "Deshacer", y el botón está a solo 14 px de "Llamar al siguiente". Un toque equivocado deja a un paciente fuera de la cola sin forma visible de revertirlo.
+
+:::
+
+:::keep
 
 <a id="figura-262"></a>
 
@@ -10975,6 +11228,10 @@ En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" c
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-263"></a>
 
 **Figura 263**
@@ -10985,8 +11242,12 @@ En "P11 · Cola presencial" el botón principal "Terminar atención de N.º 1" c
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Pedir confirmación breve ("¿Terminar la atención de María Pérez?") o mostrar un aviso con "Deshacer" durante unos segundos, y separar mejor los dos botones.
+
+:::keep
 
 ### PROBLEMA #5: "Marcar ausente" es el botón más llamativo y su confirmación usa otro color
 
@@ -10995,6 +11256,10 @@ Pedir confirmación breve ("¿Terminar la atención de María Pérez?") o mostra
 
 **Problema:**
 En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" está arriba y es el más prominente, mientras "Iniciar atención" (la opción que puede ser correcta si el paciente llegó) es un botón de borde. Luego, en "P16 · Confirmar ausencia" el botón "Confirmar ausencia" es verde, el color de las acciones positivas, aunque es una acción que libera el cupo y marca inasistencia. El color no es coherente y la confirmación se ve igual que cualquier otra.
+
+:::
+
+:::keep
 
 <a id="figura-264"></a>
 
@@ -11006,6 +11271,10 @@ En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" est
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-265"></a>
 
 **Figura 265**
@@ -11016,8 +11285,12 @@ En "P13 · Plazo de llamada vencido" el botón rojo relleno "Marcar ausente" est
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Dar prioridad visual a "Iniciar atención" y dejar "Marcar ausente" como acción secundaria de advertencia. En P16 usar el mismo color de advertencia en "Confirmar ausencia" y dejar "Volver" como opción segura destacada.
+
+:::keep
 
 ### PROBLEMA #6: La pestaña "Cita" con ícono de QR se confunde con "Calendario"
 
@@ -11026,6 +11299,10 @@ Dar prioridad visual a "Iniciar atención" y dejar "Marcar ausente" como acción
 
 **Problema:**
 La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configuración". "Calendario" y "Cita" se refieren casi a lo mismo (citas), pero "Cita" abre la cola de atención y el registro de llegada, y su ícono es un QR. El ícono de "Configuración" es un sol. Quien busca la cola de atención no sabe si está en "Calendario" o en "Cita".
+
+:::
+
+:::keep
 
 <a id="figura-266"></a>
 
@@ -11037,6 +11314,10 @@ La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configura
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-267"></a>
 
 **Figura 267**
@@ -11047,8 +11328,12 @@ La barra inferior del personal tiene "Inicio", "Calendario", "Cita" y "Configura
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (personas en fila) y cambiar el sol por un engranaje.
+
+:::keep
 
 ### PROBLEMA #7: Las reglas del establecimiento están repartidas en tres lugares
 
@@ -11057,6 +11342,10 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 **Problema:**
 "H01 · Configuración general" muestra cuatro reglas (capacidad, tolerancia de llegada, plazo después de la llamada, respuesta a reasignación) y un botón "Ver más reglas". "H02 · Más reglas" muestra otras cuatro (hora límite para reservar, anticipación para cancelar, prioridad de reasignación, posición de cola visible) y un botón aparte "Intervalos de atención" que abre "H13". Todas son reglas del mismo tipo, pero están en tres niveles. Para ver o cambiar una regla hay que recordar en cuál se encuentra.
+
+:::
+
+:::keep
 
 <a id="figura-268"></a>
 
@@ -11068,6 +11357,10 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-269"></a>
 
 **Figura 269**
@@ -11078,8 +11371,12 @@ Renombrar según la tarea ("Cola" o "Atención"), usar un ícono acorde (persona
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Reunir todas las reglas en una sola lista agrupada por tema (Reservas, Llegada y atención, Reasignación) con buscador o secciones, y dejar la edición como destino de cada fila.
+
+:::keep
 
 ### PROBLEMA #8: "Prioridad de reasignación: Por especialidad" contradice la nota que la explica
 
@@ -11088,6 +11385,10 @@ Reunir todas las reglas en una sola lista agrupada por tema (Reservas, Llegada y
 
 **Problema:**
 En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero la nota inferior dice "La prioridad de reasignación sigue el orden de reserva. La atención sigue el orden de llegada". No se entiende cuál es el criterio real (especialidad u orden de reserva), y la nota, que es la única explicación, está en letra pequeña. Una regla de este tipo afecta a muchos pacientes.
+
+:::
+
+:::keep
 
 <a id="figura-270"></a>
 
@@ -11099,8 +11400,12 @@ En "H02" la tarjeta indica "Prioridad de reasignación: Por especialidad", pero 
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reservó antes, dentro de la misma especialidad"), con la explicación junto a la regla y en un tamaño legible.
+
+:::keep
 
 ### PROBLEMA #9: El mensaje de validación de capacidad mezcla reglas que no corresponden
 
@@ -11109,6 +11414,10 @@ Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reserv
 
 **Problema:**
 "H05 · Validación de regla" dice "La capacidad debe ser mayor que cero. La tolerancia de llegada no puede superar la duración del intervalo. Revisa los campos antes de guardar". Al editar la capacidad, el segundo mensaje no tiene relación y el usuario no sabe cuál de las dos reglas falló. Además aparece como diálogo, tapando el campo.
+
+:::
+
+:::keep
 
 <a id="figura-271"></a>
 
@@ -11120,8 +11429,12 @@ Definir un solo criterio y expresarlo claro ("Se reasigna primero a quien reserv
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en rojo ("La capacidad debe ser mayor que 0").
+
+:::keep
 
 ### PROBLEMA #10: Los indicadores no muestran un control para cambiar la fecha o el periodo
 
@@ -11130,6 +11443,10 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 **Problema:**
 "H06 · Indicadores del día" y "H07 · Demanda" muestran una fecha fija ("Mar 6 oct 2026") sin ningún control visible para cambiarla, aunque "H09 · Periodo sin datos" muestra otra fecha ("1 oct 2026") y "H08" permite elegir un rango para exportar. En las pantallas revisadas no se ve cómo la administración puede consultar otro día o semana, que es el uso básico de un panel de indicadores.
+
+:::
+
+:::keep
 
 <a id="figura-272"></a>
 
@@ -11141,6 +11458,10 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-273"></a>
 
 **Figura 273**
@@ -11151,8 +11472,12 @@ Mostrar solo el mensaje que corresponde al campo editado, junto al campo y en ro
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
 **Recomendación:**
 Agregar un selector de fecha o periodo visible en la cabecera de los indicadores (con atajos como "Hoy", "Ayer", "Últimos 7 días") y reflejar el periodo elegido en el título.
+
+:::keep
 
 ### PROBLEMA #11: Descargar un reporte requiere dos pasos y no indica formato ni archivo
 
@@ -11161,6 +11486,10 @@ Agregar un selector de fecha o periodo visible en la cabecera de los indicadores
 
 **Problema:**
 En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exportación preparada" muestra un diálogo con otro botón "Descargar archivo". El segundo paso es redundante y el diálogo no repite qué archivo es (PDF o CSV), el periodo, el nombre ni el tamaño.
+
+:::
+
+:::keep
 
 <a id="figura-274"></a>
 
@@ -11172,6 +11501,10 @@ En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exp
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
 
+:::
+
+:::keep
+
 <a id="figura-275"></a>
 
 **Figura 275**
@@ -11181,6 +11514,8 @@ En "H08" el usuario elige "Descargar PDF" o "Descargar CSV", y luego "H11 · Exp
 <img src="chapter-04/assets/heuristicas/H11-exportacion-preparada.png" alt="H11 - Exportación preparada" width="60%"/>
 
 *Nota. Captura del mock-up de SaludYa evaluada por el equipo RouteGuard.*
+
+:::
 
 **Recomendación:**
 Iniciar la descarga al tocar el botón de formato (con una barra de progreso si demora) y mostrar el nombre del archivo y el formato en la confirmación.
@@ -11217,7 +11552,9 @@ A partir del análisis realizado y de la validación de las hipótesis planteada
 
 - **Ampliación de mecanismos de Check-in:** A partir de las oportunidades identificadas en el contexto *Arrival & QR Check-in*, se recomienda evaluar en futuras versiones mecanismos alternativos de validación, como el reconocimiento facial, para facilitar el acceso de pacientes que no cuenten con un dispositivo móvil al momento de su atención.
 
-# Video App Validation
+:::keep
+
+## Video App Validation
 
 El video de validación reúne las sesiones realizadas con usuarios de los segmentos objetivo, en las que interactuaron con la Landing Page y con la aplicación móvil de SaludYa. Durante las sesiones se recogieron observaciones sobre navegación, claridad del contenido, usabilidad y funcionamiento de las funciones principales.
 
@@ -11231,9 +11568,11 @@ El video de validación reúne las sesiones realizadas con usuarios de los segme
 
 *Nota. Cuadro de video de la tercera sesión de validación; el detalle de las tres entrevistas se presenta en la sección 4.3.2.*
 
-<!-- pdf-pagebreak -->
+:::
 
-# Video About the Product
+:::keep
+
+## Video About the Product
 
 El video presenta la aplicación de SaludYa para pacientes. La demostración muestra cómo consultar horarios, elegir una cita y revisar los datos de la reserva desde el celular. También recoge la opinión de una persona del público objetivo después de ver la demostración.
 
@@ -11251,13 +11590,17 @@ La [Figura 276](#figura-276) muestra la portada del video. Haz clic en la imagen
 
 *Nota. Portada del video elaborado por el equipo RuwaLabs.*
 
-<!-- pdf-pagebreak -->
+:::
 
-# Video About the Team
+:::keep
+
+## Video About the Team
 
 El video presenta al equipo **RuwaLabs**, el proceso de trabajo durante el ciclo y los testimonios de cada integrante sobre las actividades realizadas, el logro del Student Outcome y las competencias desarrolladas. La descripción y la portada se incorporarán en la siguiente versión del informe.
 
 Enlace al video: [About the Team — SaludYa](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318309_upc_edu_pe/IQDoOEoA098-R64uxy4ko10EAelpnVoXTsriu90ZZh2VgNU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EO61q9).
+
+:::
 
 <!-- pdf-pagebreak -->
 
@@ -11294,7 +11637,6 @@ Presidencia del Consejo de Ministros (PCM). (2026). _Obtener cita médica en un 
 
 World Health Organization (WHO). (2025). _Global strategy on digital health 2020–2027_. World Health Organization. Recuperado de [https://www.who.int/publications/i/item/9789240116870](https://www.who.int/publications/i/item/9789240116870)
 
-<!-- pdf-pagebreak -->
 # Anexos
 
 ## Anexo A: Vídeos de entrevistas realizadas
@@ -11325,6 +11667,6 @@ Demostración de la aplicación SaludYa para pacientes y opinión de una persona
 
 ## Anexo C: Video About the Team
 
-Presentación del equipo de trabajo de SaludYa. La descripción y la portada se encuentran en [Video About the Team](#video-about-the-team).
+Presentación del equipo de trabajo de SaludYa. El enlace al video se incluye a continuación.
 
 - [Ver el video About the Team de SaludYa en SharePoint](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202318309_upc_edu_pe/IQDoOEoA098-R64uxy4ko10EAelpnVoXTsriu90ZZh2VgNU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=EO61q9)
