@@ -9815,19 +9815,40 @@ A continuación se presentan las capturas de la documentación desplegada en Swa
 
 #### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-El despliegue del backend, del Landing Page y de la aplicación Android ya se realizó en el Sprint 1 y se documentó en la sección 4.2.1.8. En este avance no se repite ese despliegue: la Figura 222 muestra la aplicación Android instalada y ejecutándose con el backend desplegado.
+El despliegue del backend, del Landing Page y de la aplicación Android se realizó durante el Sprint 1 y se documentó en la sección 4.2.1.8. Para este avance se mantiene disponible el APK de prueba de Android, generado desde la rama `develop`, y se presenta un recorrido visual de las principales interfaces de la aplicación Kotlin.
 
-<a id="figura-222"></a>
+##### Aplicación Android — Kotlin
 
-**Figura 222**
+La aplicación Android de SaludYa cuenta con un APK de prueba generado desde la rama `develop`, cuya compilación finalizó correctamente y cuya firma fue verificada. La siguiente secuencia presenta las principales interfaces del recorrido del paciente:
 
-*Aplicación Android de SaludYa en ejecución*
+<p align="center">
+  <img src="assets/execution/sprint-1/android-bienvenida.png" alt="Bienvenida" width="115"/>
+  <img src="assets/execution/sprint-1/android-login.png" alt="Inicio de sesión" width="115"/>
+  <img src="assets/execution/sprint-1/android-reserva.png" alt="Reserva de cita" width="115"/>
+  <img src="assets/execution/sprint-1/android-confirmacion.png" alt="Confirmación de reserva" width="115"/>
+  <img src="assets/execution/sprint-1/android-llegada.png" alt="Registro de llegada" width="115"/>
+  <img src="assets/execution/sprint-1/android-ticket.png" alt="Ticket de atención" width="115"/>
+</p>
 
-<img src="assets/execution/sprint-1/android-inicio.png" alt="Aplicación Android de SaludYa en ejecución" width="60%"/>
+*Nota. Secuencia de pantallas de la aplicación Android de SaludYa, desde el acceso del paciente hasta la emisión del ticket de atención.*
 
-*Nota. Captura de la aplicación Android instalada y ejecutándose con el backend desplegado.*
+Enlace de despliegue: [Descargar APK de SaludYa para Android](https://github.com/RuwaLabs/upc-pre-202620-1acc0238-4945-RuwaLabs-report/raw/refs/heads/develop/assets/downloads/SaludYa-develop-debug.apk).
 
-El despliegue de la aplicación Flutter (personal y administración) no forma parte de este avance; queda pendiente para una entrega posterior.
+##### Aplicación administrativa — Flutter
+
+La aplicación administrativa desarrollada con Flutter y Dart continúa en desarrollo. Durante el Sprint 2 se avanzó en las interfaces para el personal de admisión y el Super Admin. Su despliegue queda pendiente para una entrega posterior.
+
+<p align="center">
+  <img src="chapter-04/assets/heuristicas/P01-inicio-del-personal.png" alt="Inicio del personal" width="115"/>
+  <img src="chapter-04/assets/heuristicas/P02-elegir-especialidad.png" alt="Selección de especialidad" width="115"/>
+  <img src="chapter-04/assets/heuristicas/P03-calendario-operativo.png" alt="Calendario operativo" width="115"/>
+  <img src="chapter-04/assets/heuristicas/P04-bloques-de-hoy.png" alt="Bloques del día" width="115"/>
+  <img src="chapter-04/assets/heuristicas/P05-detalle-de-bloque.png" alt="Detalle de bloque" width="115"/>
+  <img src="chapter-04/assets/heuristicas/P11-cola-presencial.png" alt="Cola presencial" width="115"/>
+</p>
+
+*Nota. Secuencia de pantallas de la aplicación administrativa de SaludYa para el personal de admisión, incluyendo la gestión de agenda, bloques y cola presencial. La aplicación continúa en desarrollo.*
+
 
 #### 4.2.2.9. Team Collaboration Insights during Sprint
 
